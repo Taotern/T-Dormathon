@@ -1,0 +1,43 @@
+{
+  "schema": "dormathon.teammate-clean-handoff.v1",
+  "source_commit": "297a4f47dd99805e64dba3bd934ecea3ebffbd3d",
+  "active_site_runtime_commit": "fce3901e7002507d34bbdd71778ae8745f8ca411",
+  "runtime_worker_sha256": "619ea5241ccaca84766ce889739fe195c7d371db96f2e5fc1e9e1767e6f16ee3",
+  "identical_runtime_to_accepted_site": true,
+  "prior_backup_git_commit": "a7dfba514a8aab3072cd13f4ce227005ab26e4c9",
+  "cleanup": {
+    "obsolete_core_paths_removed": 307,
+    "unused_local_wrappers_removed": 2,
+    "active_frontend_source_files": 3,
+    "local_default_config": "config.example.json; optional private config ignored",
+    "history_rewritten": false
+  },
+  "verification": {
+    "platform": "Linux Node24.19.0",
+    "backend_UI": 284,
+    "source_contracts": 74,
+    "local_tests": 32,
+    "local_source_contracts": 74,
+    "offline_real_intake_records": 19466,
+    "offline_real_intake_chunks": 204,
+    "local_v2_receiver_compatibility": true,
+    "failure": 0,
+    "skips": 0
+  },
+  "live_pipeline": {
+    "total_indexed": 19935,
+    "direct": 369,
+    "uploaded_unverified": 100,
+    "reviewed_external_snapshot": 19466,
+    "pending_index": 0,
+    "reviewed_chunks": 204
+  },
+  "limits": [
+    "Comprehensive worldwide current-news/entity coverage unfinished",
+    "EU20/TWSE1158separate pending admission",
+    "Owner Windows execution and unattended daily sync unfinished",
+    "Lexical retrieval only; embeddings/translation/generated answers unavailable",
+    "Repository access does not grant private Site access"
+  ],
+  "private_state_included": false
+}

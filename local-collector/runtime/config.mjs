@@ -5,7 +5,7 @@ import {fileURLToPath} from 'node:url';
 export const ROOT=path.dirname(path.dirname(fileURLToPath(import.meta.url)));
 export const DEFAULTS={time_zone:'Asia/Kuching',daily_time:'08:00',poll_seconds:60,retry_minutes:16,data_directory:'data-local',exports_directory:'exports'};
 export function loadConfig(file=path.join(ROOT,'config.json')) {
-  const input=JSON.parse(fs.readFileSync(file,'utf8'));
+  const input=fs.existsSync(file)?JSON.parse(fs.readFileSync(file,'utf8')):{};
   const allowed=new Set(Object.keys(DEFAULTS));
   for(const key of Object.keys(input))if(!allowed.has(key))throw Error('Unknown config field: '+key);
   const c={...DEFAULTS,...input};

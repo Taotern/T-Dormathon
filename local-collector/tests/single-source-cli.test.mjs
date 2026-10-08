@@ -9,7 +9,7 @@ import {test} from 'node:test';
 const source=path.dirname(path.dirname(fileURLToPath(import.meta.url)));
 function clone() {
   const root=fs.mkdtempSync(path.join(os.tmpdir(),'Dormathon targeted CLI 中文 '));
-  for(const entry of ['collector.mjs','package.json','config.json','runtime','worker','data'])fs.cpSync(path.join(source,entry),path.join(root,entry),{recursive:true});
+  for(const entry of ['collector.mjs','package.json','config.example.json','runtime','worker','data'])fs.cpSync(path.join(source,entry),path.join(root,entry),{recursive:true});
   fs.mkdirSync(path.join(root,'tests'));
   for(const entry of ['fixtures.mjs','global-safe-samples.json','metmalaysia-sarawak-recorded.json'])fs.copyFileSync(path.join(source,'tests',entry),path.join(root,'tests',entry));
   const preload=path.join(root,'tests','offline-targeted-preload.mjs');

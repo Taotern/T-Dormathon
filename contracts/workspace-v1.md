@@ -37,4 +37,4 @@ POST /api/workspace/assist {case_id,question} →409 when LLMunconfigured. Any l
 
 ## Frontend boundary
 
-GUIworker returns additive static/preparation.js and static/preparation.css outside the Site checkout. Accepted export: createPreparationWorkspace({request,esc,safeURL,time,toast,isCurrent,getHost}) → {render,bind,load,dispose}. Core adds #prepare/native navigation, delegates refresh/load and disposes pending state on navigation. The factory may maintain its own bounded view state (overview/project/object/case), without private localStorage persistence or external requests. All controls map to the APIs above. Existing global/status and saved items can show source-only real evidence when watch setup is empty. No seeded watched company or hypothetical case is presented as real.
+The earlier preparation frontend has been retired. These preserved APIs and existing records are available for an authorized downstream consumer; the current workbench covers collection/filtering/organization/ingestion and does not present that old interface.

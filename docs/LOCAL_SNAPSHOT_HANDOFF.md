@@ -6,7 +6,7 @@ The local executor preflight was rejected before the first shell command by an e
 
 ## Manual handoff
 
-Run the local package's `export-site` command and select a JSON partition in the Site's Global Intelligence page. Choosing a file only reads it; the separate save button performs validation and one atomic D1 batch. Import each numbered partition. Repeating a file is idempotent. Independent exports retain stable imported item/version identities; newer local observations advance current pointers, older uploads preserve them. Conflicting immutable evidence identifiers reject the entire file.
+Run the local package's `export-site` command and select a JSON partition in the Site workbench's ingestion/retrieval page. Choosing a file only reads it; the separate save button performs validation and one atomic D1 batch. Import each numbered partition. Repeating a file is idempotent. Independent exports retain stable imported item/version identities; newer local observations advance current pointers, older uploads preserve them. Conflicting immutable evidence identifiers reject the entire file.
 
 `POST /api/global/import-snapshot` accepts exactly `{snapshot: <object>}`. It is protected by the existing owner-private Site access and same-origin request guard. The route does not fetch any URL or invoke an LLM.
 
@@ -24,4 +24,4 @@ Importer tests use a pinned synthetic reconstruction of retained provider metada
 
 ## Separately admitted forecast branch
 
-Version1 and catalog SHA8cb6d74e029b066e4dc6660ec32e804078f3e2c941b5140566052fc94191ef27 retain the exact ten-source contract. Version2 requires catalog SHA551dcc4030a9448cfe6b4951e03fa4821873a3cbe0cc2bd4e17f574950c22f9d and adds the MET Sarawak forward-forecast projection. It preserves date-only validity, unknown occurrence/publication/issue clocks, named area without coordinates and bounded attribution/forecast facts. Unknown nested body fields are rejected even if the hashes are recomputed. The current local1.1.0 producer has not been upgraded to the new catalog; v2 support is a receiver admission boundary, not a local runtime claim.
+Version1 and catalog SHA8cb6d74e029b066e4dc6660ec32e804078f3e2c941b5140566052fc94191ef27 retain the exact ten-source contract. Version2 requires catalog SHA551dcc4030a9448cfe6b4951e03fa4821873a3cbe0cc2bd4e17f574950c22f9d and adds the MET Sarawak forward-forecast projection. It preserves date-only validity, unknown occurrence/publication/issue clocks, named area without coordinates and bounded attribution/forecast facts. Unknown nested body fields are rejected even if the hashes are recomputed. The current local1.2.0 producer supports this eleven-source v2 catalog; its cleaned source preserves adapter/catalog bytes and uses an optional private config with public defaults. The earlier actual one-source cloud-script handoff proved100USGSuploaded records through the Site, without proving Windows execution or autonomous sync.

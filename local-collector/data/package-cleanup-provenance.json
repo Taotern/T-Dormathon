@@ -1,0 +1,18 @@
+{
+  "original_zip_sha256": "021f6adba1db3b1deb65f40f899185be2e527e4bb128c3f262859a472d334311",
+  "original_manifest_sha256": "c19350396fc525b91f181780d8286c75f64f88101eec49de139eecadd5417fda",
+  "removed_unreachable_wrappers": [
+    "worker/index.js",
+    "worker/supervisor.js"
+  ],
+  "changed_packaging_files": [
+    "config.json \u2192 config.example.json",
+    "runtime/config.mjs optional private config fallback",
+    "README.md packaging/default wording",
+    "tests/source-provenance.test.mjs config regression",
+    "tests/single-source-cli.test.mjs uses public example config"
+  ],
+  "adapter_and_catalog_policy_bytes_changed": false,
+  "snapshot_schema_changed": false,
+  "network_or_live_data_operations": 0
+}

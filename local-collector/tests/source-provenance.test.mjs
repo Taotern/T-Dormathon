@@ -9,3 +9,5 @@ test('All adapter/shared provenance hashes and separately admitted catalog remai
 });
 
 test('Original ten adapters and legacy catalog stay byte-identical to frozen1.1 input',()=> {const old=JSON.parse(fs.readFileSync(new URL('data/legacy-adapter-provenance.v1.1.json',root)));for(const f of old.files.filter(x=>x.path.startsWith('worker/adapters/')&&!x.path.endsWith('/index.js')))assert.equal(createHash('sha256').update(fs.readFileSync(new URL(f.path,root))).digest('hex'),f.sha256,f.path);assert.equal(createHash('sha256').update(fs.readFileSync(new URL('data/legacy-global-source-catalog.v0.2.json',root))).digest('hex'),old.registry_sha256);});
+
+test('Public example config is optional; absent private config uses bounded defaults',async()=>{const{loadConfig}=await import('../runtime/config.mjs');const c=loadConfig(new URL('../config-not-present.json',import.meta.url).pathname);assert.equal(c.time_zone,'Asia/Kuching');assert.equal(c.daily_time,'08:00');assert.equal(c.poll_seconds,60);});

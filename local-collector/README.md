@@ -2,7 +2,7 @@
 
 这是一份可解压运行的本地采集器。主界面仍然是 GPT-Site。
 采集器不用模型，不需要 npm 安装、账号、密钥、付费计划或新增云服务。
-它只请求已经固定登记的十一个固定登记的官方公开端点。
+它只请求已经固定登记的官方公开端点。
 
 ## Windows 快速开始
 
@@ -26,7 +26,7 @@
 
 ## 本地文件和设置
 
-`config.json` 默认明确指定 `Asia/Kuching` 和每天 `08:00`。此版本每日时间固定为 08:00，可改为其他有效 IANA 时区。已经有数据的运行目录不能静默改时区；需要在配置中选择另一个本地 `data_directory` 重新建立账本。
+`config.example.json` 是公开默认值示例。无需配置文件时直接使用这些默认值；如需自定义，复制为 git 忽略的 `config.json`。默认明确指定 `Asia/Kuching` 和每天 `08:00`。此版本每日时间固定为 08:00，可改为其他有效 IANA 时区。已经有数据的运行目录不能静默改时区；需要在配置中选择另一个本地 `data_directory` 重新建立账本。
 
 持久数据保存在 `data-local\collector.sqlite`，使用 SQLite WAL 和事务。已有未知数据库不会被覆盖。单独的进程锁防止两个采集窗口并行。异常退出后锁记录会保留，确认原进程已消失后才可自动恢复；不会终止其他进程。
 
@@ -61,7 +61,7 @@
 - Frozen producer1.1 ZIP SHA-256: `f24de7d9dc5703591ebcb0dc4e4e903913e801d13922cd585628db0b7816c6b8`
 - Current v2 catalog SHA-256: `551dcc4030a9448cfe6b4951e03fa4821873a3cbe0cc2bd4e17f574950c22f9d`
 - Preserved v1 catalog SHA-256: `8cb6d74e029b066e4dc6660ec32e804078f3e2c941b5140566052fc94191ef27`
-- `data/adapter-provenance.json` pins preserved adapter bytes, the exact admitted MET module and explicitly adapted compatibility/validation code. Production uses `runtime/supervisor.mjs`, not the copied cloud scheduled wrapper. No cloud deployment configuration is included or required.
+- `data/adapter-provenance.json` pins preserved adapter bytes, the exact admitted MET module and explicitly adapted compatibility/validation code. Production uses `runtime/supervisor.mjs`; the two unused copied cloud wrappers have been removed. The original package manifest is retained under the parent repository docs/provenance; the current source manifest is regenerated and adapter/catalog pins remain unchanged. No cloud deployment configuration is included or required.
 - `tests/source-contracts` is an independent fixed-golden fixture pack. Retained safe projections are reconstructed envelopes, not preserved original HTTP responses or fresh observations. Its runner has only a portable URL-to-path fix; golden cases/fixtures are unchanged.
 - The package has no private Site token or machine ingestion credential, and performs no publication or external commercial deployment.
 

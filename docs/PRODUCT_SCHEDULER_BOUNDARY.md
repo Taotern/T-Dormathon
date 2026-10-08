@@ -12,7 +12,7 @@ An ordinary HTTP timer is not a substitute. [Cloudflare duration limits](https:/
 
 ## Current execution status
 
-The registered daily personal-assistant cloud task is a temporary operator. It is not acceptance of a product-owned autonomous scheduler. Its first scheduled occurrence has not happened. The manual code-backed initial collection has populated ten endpoints and362real items/versions with6rule records. Limits, uneven retention and unknown source appearance times remain visible.
+The temporary personal-assistant task is paused and has not executed a scheduled round. It is not an independent product-owned scheduler. The current Site contains19,935indexed records:369Site-direct,100uploaded/unverified and19,466reviewed retained acquisitions. Importing that batch does not enable those snapshot sources for automated fetching. Source caps, retention and unknown upstream appearance remain explicit.
 
 ## Current owner-selected path
 

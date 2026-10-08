@@ -10,3 +10,16 @@ worker/generated.js
 # Independent fixture inputs are tracked; generated execution reports are not.
 tests/independent-source-contracts/*-report.json
 tests/independent-source-contracts/*-report.txt
+
+# Local execution is never source delivery. Public data/fixtures remain tracked.
+local-collector/config.json
+local-collector/data-local/
+local-collector/exports/
+local-collector/bin/node*
+local-collector/*-report.json
+local-collector/*-report.txt
+*.sqlite
+*.sqlite-shm
+*.sqlite-wal
+*.zip
+*.tar.gz
