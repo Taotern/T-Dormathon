@@ -1,0 +1,2582 @@
+{
+  "schema": "dormathon.reviewed-commodity-admission.v0.18",
+  "batch": "history",
+  "manifest_sha256": "877ce998aeb2988796a9db74278bde7377a6afaed262feb3b6935b343b81edda",
+  "original_policy_sha256": "aa7cb30c93f06c579199053d5d2c0286af00166f463d9a823c9d6f20d2cbf856",
+  "expected_records": 12600,
+  "source_counts": {
+    "stat_worldbank_commodity_monthly": 12600
+  },
+  "selected_period": [
+    "1990-01",
+    "2019-12"
+  ],
+  "chunks": [
+    {
+      "source_id": "stat_worldbank_commodity_monthly",
+      "path": "delivery-history/chunks/stat_worldbank_commodity_monthly-0000.json",
+      "count": 65,
+      "bytes": 244262,
+      "sha256": "6884e87c34f949aeb0195592e60d428547eb0ada91255263c6398a06da93af33"
+    },
+    {
+      "source_id": "stat_worldbank_commodity_monthly",
+      "path": "delivery-history/chunks/stat_worldbank_commodity_monthly-0001.json",
+      "count": 65,
+      "bytes": 244246,
+      "sha256": "1c014931793217945b5c57c848ed310182e232ea26333c15fe1b5ec628860ccd"
+    },
+    {
+      "source_id": "stat_worldbank_commodity_monthly",
+      "path": "delivery-history/chunks/stat_worldbank_commodity_monthly-0002.json",
+      "count": 65,
+      "bytes": 244230,
+      "sha256": "2bb4d22b779290bf21359eb1efbaa25745687c19c982b963ce92f101c7e63a08"
+    },
+    {
+      "source_id": "stat_worldbank_commodity_monthly",
+      "path": "delivery-history/chunks/stat_worldbank_commodity_monthly-0003.json",
+      "count": 65,
+      "bytes": 244270,
+      "sha256": "e9f74670f2de9bb005f5df34b60371247b279fcb27caabe2913004ca68877591"
+    },
+    {
+      "source_id": "stat_worldbank_commodity_monthly",
+      "path": "delivery-history/chunks/stat_worldbank_commodity_monthly-0004.json",
+      "count": 65,
+      "bytes": 244306,
+      "sha256": "f45111cd12d7b6376e99a1d92ffe342fe8ecd11b627968d06a90f9c346e6aebd"
+    },
+    {
+      "source_id": "stat_worldbank_commodity_monthly",
+      "path": "delivery-history/chunks/stat_worldbank_commodity_monthly-0005.json",
+      "count": 64,
+      "bytes": 241899,
+      "sha256": "b25b2c1c2a1aa90bfc7c86937acfe6d2a52a1aecc034c3b2acec5dcb276531d7"
+    },
+    {
+      "source_id": "stat_worldbank_commodity_monthly",
+      "path": "delivery-history/chunks/stat_worldbank_commodity_monthly-0006.json",
+      "count": 64,
+      "bytes": 243614,
+      "sha256": "afa63c215eaf0549af037df7aa3481f41dcf6e4d9715cf93c79a654d9bce14ec"
+    },
+    {
+      "source_id": "stat_worldbank_commodity_monthly",
+      "path": "delivery-history/chunks/stat_worldbank_commodity_monthly-0007.json",
+      "count": 64,
+      "bytes": 243624,
+      "sha256": "b1a0c23f19c782bd242c230d1ed3daf212bd84d4f9b982cc270ced70eb2c5a2a"
+    },
+    {
+      "source_id": "stat_worldbank_commodity_monthly",
+      "path": "delivery-history/chunks/stat_worldbank_commodity_monthly-0008.json",
+      "count": 64,
+      "bytes": 243640,
+      "sha256": "cead668c180c0c727bc6cd78ba73f8832294aed7632237705dbc7f49c041a7c2"
+    },
+    {
+      "source_id": "stat_worldbank_commodity_monthly",
+      "path": "delivery-history/chunks/stat_worldbank_commodity_monthly-0009.json",
+      "count": 64,
+      "bytes": 243682,
+      "sha256": "8e0f5f7c66743e93835f61296c641386e0198f59d9dbdc8dc251ddfbafa2715e"
+    },
+    {
+      "source_id": "stat_worldbank_commodity_monthly",
+      "path": "delivery-history/chunks/stat_worldbank_commodity_monthly-0010.json",
+      "count": 64,
+      "bytes": 243648,
+      "sha256": "1164d009ef85bfd4883c62ea66a511647872e6ac95c55b37b2f656e0d51621b9"
+    },
+    {
+      "source_id": "stat_worldbank_commodity_monthly",
+      "path": "delivery-history/chunks/stat_worldbank_commodity_monthly-0011.json",
+      "count": 59,
+      "bytes": 244177,
+      "sha256": "2ee574f692042b209197611372d09e2990c453350568a00684b34c3808c6f124"
+    },
+    {
+      "source_id": "stat_worldbank_commodity_monthly",
+      "path": "delivery-history/chunks/stat_worldbank_commodity_monthly-0012.json",
+      "count": 58,
+      "bytes": 244510,
+      "sha256": "3a0c484ac7925d4061b077e6f94eb41baabd125f83ab324ca5a78d1ef4dd487d"
+    },
+    {
+      "source_id": "stat_worldbank_commodity_monthly",
+      "path": "delivery-history/chunks/stat_worldbank_commodity_monthly-0013.json",
+      "count": 58,
+      "bytes": 244534,
+      "sha256": "35e253a869fd9eadc9da503f29a2d645b546fe6f8bb88b2d7969caf6019ed9f7"
+    },
+    {
+      "source_id": "stat_worldbank_commodity_monthly",
+      "path": "delivery-history/chunks/stat_worldbank_commodity_monthly-0014.json",
+      "count": 58,
+      "bytes": 244516,
+      "sha256": "6ec6f0617593593127f7548e3b58e89eda585eda9f67dedf223fd2f670096fa5"
+    },
+    {
+      "source_id": "stat_worldbank_commodity_monthly",
+      "path": "delivery-history/chunks/stat_worldbank_commodity_monthly-0015.json",
+      "count": 58,
+      "bytes": 244546,
+      "sha256": "461f60486f4dda12e41ebcf4ac608c3fe5ebe052f657d3e3879eb1e0b9b9d0e5"
+    },
+    {
+      "source_id": "stat_worldbank_commodity_monthly",
+      "path": "delivery-history/chunks/stat_worldbank_commodity_monthly-0016.json",
+      "count": 58,
+      "bytes": 244526,
+      "sha256": "4dd644f855e306e00291c0ddd973aeb8a947ed45f0ae3292e18ffd10a2f1644b"
+    },
+    {
+      "source_id": "stat_worldbank_commodity_monthly",
+      "path": "delivery-history/chunks/stat_worldbank_commodity_monthly-0017.json",
+      "count": 58,
+      "bytes": 244586,
+      "sha256": "557e34405cf970340e73a124e8dd703f843db7997b4200dfaa1c281649b4a44f"
+    },
+    {
+      "source_id": "stat_worldbank_commodity_monthly",
+      "path": "delivery-history/chunks/stat_worldbank_commodity_monthly-0018.json",
+      "count": 58,
+      "bytes": 244720,
+      "sha256": "c14e68ef9983e7dec750ead1b81ad7fa5e67bdb90624c2ab1f83a97448bf3319"
+    },
+    {
+      "source_id": "stat_worldbank_commodity_monthly",
+      "path": "delivery-history/chunks/stat_worldbank_commodity_monthly-0019.json",
+      "count": 58,
+      "bytes": 244800,
+      "sha256": "ec245912d3492b99e7e22b988f20bbe6a4ad3648370699e67cd0d38ab9035b4c"
+    },
+    {
+      "source_id": "stat_worldbank_commodity_monthly",
+      "path": "delivery-history/chunks/stat_worldbank_commodity_monthly-0020.json",
+      "count": 58,
+      "bytes": 244812,
+      "sha256": "4c6200c14d380e5f367f480893ff4778fa9ed6b4f165920fb719efbd835bf78f"
+    },
+    {
+      "source_id": "stat_worldbank_commodity_monthly",
+      "path": "delivery-history/chunks/stat_worldbank_commodity_monthly-0021.json",
+      "count": 58,
+      "bytes": 244852,
+      "sha256": "fbb5496604a1f3db56d6634c6d094918ce29dc71c2acebb40d134bfc94581f10"
+    },
+    {
+      "source_id": "stat_worldbank_commodity_monthly",
+      "path": "delivery-history/chunks/stat_worldbank_commodity_monthly-0022.json",
+      "count": 58,
+      "bytes": 244816,
+      "sha256": "ef832a2c7275da59200545d1d05ef4e59e696bee4334e73a2755250e1350e1d7"
+    },
+    {
+      "source_id": "stat_worldbank_commodity_monthly",
+      "path": "delivery-history/chunks/stat_worldbank_commodity_monthly-0023.json",
+      "count": 60,
+      "bytes": 243876,
+      "sha256": "a87bad4ea4a11edf98e46831bf3da166211389e51783514dc27bb39223bc2d6c"
+    },
+    {
+      "source_id": "stat_worldbank_commodity_monthly",
+      "path": "delivery-history/chunks/stat_worldbank_commodity_monthly-0024.json",
+      "count": 63,
+      "bytes": 243176,
+      "sha256": "bfa81c627f83a9fd0bb672a7ea42622685bc55eec4cc4a11836e6a53f033e0b8"
+    },
+    {
+      "source_id": "stat_worldbank_commodity_monthly",
+      "path": "delivery-history/chunks/stat_worldbank_commodity_monthly-0025.json",
+      "count": 63,
+      "bytes": 243170,
+      "sha256": "889163106c9a58d066cefc94be97322ea00c9c0f9239425f1c5978464c4774b1"
+    },
+    {
+      "source_id": "stat_worldbank_commodity_monthly",
+      "path": "delivery-history/chunks/stat_worldbank_commodity_monthly-0026.json",
+      "count": 63,
+      "bytes": 243166,
+      "sha256": "882b7ffd244c1df2c1d89afee1b16122994c2733dcc5f77a1dbfd45012f044b9"
+    },
+    {
+      "source_id": "stat_worldbank_commodity_monthly",
+      "path": "delivery-history/chunks/stat_worldbank_commodity_monthly-0027.json",
+      "count": 63,
+      "bytes": 243172,
+      "sha256": "be752c87d634aa34cccfade4cb1507cd50813664796df08c2292e8239f38b32c"
+    },
+    {
+      "source_id": "stat_worldbank_commodity_monthly",
+      "path": "delivery-history/chunks/stat_worldbank_commodity_monthly-0028.json",
+      "count": 63,
+      "bytes": 243164,
+      "sha256": "ba0999812601ef654d54ce30fae0a5a6abd3b6aba5d7f6fb66e3204d5c10f1ca"
+    },
+    {
+      "source_id": "stat_worldbank_commodity_monthly",
+      "path": "delivery-history/chunks/stat_worldbank_commodity_monthly-0029.json",
+      "count": 61,
+      "bytes": 241496,
+      "sha256": "dab2e3038136fe98eabf10f6c0d32d63d70fb5b5b03f0776c27e791286cb431c"
+    },
+    {
+      "source_id": "stat_worldbank_commodity_monthly",
+      "path": "delivery-history/chunks/stat_worldbank_commodity_monthly-0030.json",
+      "count": 61,
+      "bytes": 244234,
+      "sha256": "0b9cb86b419af56c165410f5751198986cbb24ff12a9050eb3896b955d89bcf1"
+    },
+    {
+      "source_id": "stat_worldbank_commodity_monthly",
+      "path": "delivery-history/chunks/stat_worldbank_commodity_monthly-0031.json",
+      "count": 61,
+      "bytes": 244234,
+      "sha256": "23786e65f03d8a2dc4ca137d9e5286cfc77edff1422b51183e26f3a63c435295"
+    },
+    {
+      "source_id": "stat_worldbank_commodity_monthly",
+      "path": "delivery-history/chunks/stat_worldbank_commodity_monthly-0032.json",
+      "count": 61,
+      "bytes": 244256,
+      "sha256": "399f2783051b3391f8c56ef19c84769075e9677ab5addd0eec1beff2429b8519"
+    },
+    {
+      "source_id": "stat_worldbank_commodity_monthly",
+      "path": "delivery-history/chunks/stat_worldbank_commodity_monthly-0033.json",
+      "count": 61,
+      "bytes": 244308,
+      "sha256": "2f50cc2854db1d6a811b173a20a79fbdc19bbe1aa3f39ad1e1bd11926516c7e8"
+    },
+    {
+      "source_id": "stat_worldbank_commodity_monthly",
+      "path": "delivery-history/chunks/stat_worldbank_commodity_monthly-0034.json",
+      "count": 61,
+      "bytes": 244236,
+      "sha256": "8a4223ec577d6fce842fb3363ee88d8200b7280f51c32ea2deba27203cb6584e"
+    },
+    {
+      "source_id": "stat_worldbank_commodity_monthly",
+      "path": "delivery-history/chunks/stat_worldbank_commodity_monthly-0035.json",
+      "count": 61,
+      "bytes": 244916,
+      "sha256": "a1fab62de39019c6dab1e77cc3b2f961785a6390378d50020d557b16549e4c47"
+    },
+    {
+      "source_id": "stat_worldbank_commodity_monthly",
+      "path": "delivery-history/chunks/stat_worldbank_commodity_monthly-0036.json",
+      "count": 61,
+      "bytes": 245080,
+      "sha256": "3a409dd2417e5cd31b794fd8518befced7774344e59075b1fc907b1d0ab2453a"
+    },
+    {
+      "source_id": "stat_worldbank_commodity_monthly",
+      "path": "delivery-history/chunks/stat_worldbank_commodity_monthly-0037.json",
+      "count": 61,
+      "bytes": 245094,
+      "sha256": "b2638ba09ba3a05e22980ec7192590d6d885f802ac534182f2594f63155b5378"
+    },
+    {
+      "source_id": "stat_worldbank_commodity_monthly",
+      "path": "delivery-history/chunks/stat_worldbank_commodity_monthly-0038.json",
+      "count": 60,
+      "bytes": 241104,
+      "sha256": "a944760a53dcbf6db55ddf5328707423121ee3cadabcb2589b6a84f448590c88"
+    },
+    {
+      "source_id": "stat_worldbank_commodity_monthly",
+      "path": "delivery-history/chunks/stat_worldbank_commodity_monthly-0039.json",
+      "count": 60,
+      "bytes": 241160,
+      "sha256": "d6870bbcf37a555f039f8122bd1b2514db1d0232dc3f02fb3a068db34779717e"
+    },
+    {
+      "source_id": "stat_worldbank_commodity_monthly",
+      "path": "delivery-history/chunks/stat_worldbank_commodity_monthly-0040.json",
+      "count": 60,
+      "bytes": 241122,
+      "sha256": "2ae9af2009a01dd6f1005e20aa5cc62f7a88ed7e452560ac9cb80855d4c25bc1"
+    },
+    {
+      "source_id": "stat_worldbank_commodity_monthly",
+      "path": "delivery-history/chunks/stat_worldbank_commodity_monthly-0041.json",
+      "count": 62,
+      "bytes": 243468,
+      "sha256": "e4ec941bea86e10b1c0ca39004cf2377db43ae2437819b8d32a7046e4979c7c0"
+    },
+    {
+      "source_id": "stat_worldbank_commodity_monthly",
+      "path": "delivery-history/chunks/stat_worldbank_commodity_monthly-0042.json",
+      "count": 62,
+      "bytes": 242360,
+      "sha256": "d4f6d32d3f7e7e29f3c193d25c2ee689f7a14bcce58bb45b8f6f50be185cfc6a"
+    },
+    {
+      "source_id": "stat_worldbank_commodity_monthly",
+      "path": "delivery-history/chunks/stat_worldbank_commodity_monthly-0043.json",
+      "count": 62,
+      "bytes": 242360,
+      "sha256": "f75a1377290eea7b989a6ed774f200b5007d5dd8180e7e84f7996825daa9a13d"
+    },
+    {
+      "source_id": "stat_worldbank_commodity_monthly",
+      "path": "delivery-history/chunks/stat_worldbank_commodity_monthly-0044.json",
+      "count": 62,
+      "bytes": 242360,
+      "sha256": "37de795b9837184d06f6ba62f3aaf3b3e0dbaa51fe68ed651b6a1cd66970158f"
+    },
+    {
+      "source_id": "stat_worldbank_commodity_monthly",
+      "path": "delivery-history/chunks/stat_worldbank_commodity_monthly-0045.json",
+      "count": 62,
+      "bytes": 242360,
+      "sha256": "4d51eb7c01d32d51ad4be3be43e022bb34727b78934ae81ff9445447b968156d"
+    },
+    {
+      "source_id": "stat_worldbank_commodity_monthly",
+      "path": "delivery-history/chunks/stat_worldbank_commodity_monthly-0046.json",
+      "count": 62,
+      "bytes": 242164,
+      "sha256": "25d36abd8dbbb471789dd972c639bd3eae50b62cebd7042b20911471d292a400"
+    },
+    {
+      "source_id": "stat_worldbank_commodity_monthly",
+      "path": "delivery-history/chunks/stat_worldbank_commodity_monthly-0047.json",
+      "count": 64,
+      "bytes": 243902,
+      "sha256": "7406479138070e3060737c90de35dcf0094b222924fba00d1e1c51b6917c38e8"
+    },
+    {
+      "source_id": "stat_worldbank_commodity_monthly",
+      "path": "delivery-history/chunks/stat_worldbank_commodity_monthly-0048.json",
+      "count": 64,
+      "bytes": 243902,
+      "sha256": "403e106e0c20e943e440bba6ae6537411a790f64c829101bca7e25d6ff83d297"
+    },
+    {
+      "source_id": "stat_worldbank_commodity_monthly",
+      "path": "delivery-history/chunks/stat_worldbank_commodity_monthly-0049.json",
+      "count": 64,
+      "bytes": 243902,
+      "sha256": "58a3ed635bd8114fcfd7cb5e2667b1a6ca73557c244f9d109237635a51ba407c"
+    },
+    {
+      "source_id": "stat_worldbank_commodity_monthly",
+      "path": "delivery-history/chunks/stat_worldbank_commodity_monthly-0050.json",
+      "count": 64,
+      "bytes": 243902,
+      "sha256": "bd6d036fba88cfeb54489d4b2ae6b3478da9c5b1c0d765732ea8035015d30183"
+    },
+    {
+      "source_id": "stat_worldbank_commodity_monthly",
+      "path": "delivery-history/chunks/stat_worldbank_commodity_monthly-0051.json",
+      "count": 64,
+      "bytes": 243902,
+      "sha256": "a5d8a9aa120da6a1564c93c946945197edd3cecd203c20ebedb21b5bcb95e01d"
+    },
+    {
+      "source_id": "stat_worldbank_commodity_monthly",
+      "path": "delivery-history/chunks/stat_worldbank_commodity_monthly-0052.json",
+      "count": 64,
+      "bytes": 242448,
+      "sha256": "f1323111bc4d40d35984b66870c2ecd89ae182ba3eacd56ef4755d80bbb18add"
+    },
+    {
+      "source_id": "stat_worldbank_commodity_monthly",
+      "path": "delivery-history/chunks/stat_worldbank_commodity_monthly-0053.json",
+      "count": 65,
+      "bytes": 244071,
+      "sha256": "7b6be4eb1131785283a512ca4064193ad974f71b773ec994b714654cd1e5369c"
+    },
+    {
+      "source_id": "stat_worldbank_commodity_monthly",
+      "path": "delivery-history/chunks/stat_worldbank_commodity_monthly-0054.json",
+      "count": 65,
+      "bytes": 244071,
+      "sha256": "29eefbac5272a6a1aea3a69ccfd7498c2f3bf89131e03d396c7be71d5e49b341"
+    },
+    {
+      "source_id": "stat_worldbank_commodity_monthly",
+      "path": "delivery-history/chunks/stat_worldbank_commodity_monthly-0055.json",
+      "count": 65,
+      "bytes": 244135,
+      "sha256": "ae54ee67de6010119e78a4b1767375b2e6d7775f0d66e115ba43f744224de231"
+    },
+    {
+      "source_id": "stat_worldbank_commodity_monthly",
+      "path": "delivery-history/chunks/stat_worldbank_commodity_monthly-0056.json",
+      "count": 65,
+      "bytes": 244199,
+      "sha256": "cd37a26f56180647818cf6a8f2684b2e200cfde528495243a3fa456131ebb720"
+    },
+    {
+      "source_id": "stat_worldbank_commodity_monthly",
+      "path": "delivery-history/chunks/stat_worldbank_commodity_monthly-0057.json",
+      "count": 65,
+      "bytes": 244201,
+      "sha256": "9569d09ed2c360d4012160ab70528a7a912925145bf72a3c84802ddfa3f320c6"
+    },
+    {
+      "source_id": "stat_worldbank_commodity_monthly",
+      "path": "delivery-history/chunks/stat_worldbank_commodity_monthly-0058.json",
+      "count": 65,
+      "bytes": 243809,
+      "sha256": "cd43ae64a09acfa0cc1db6b8702615590835e5f18574f426afbb11d4d553d058"
+    },
+    {
+      "source_id": "stat_worldbank_commodity_monthly",
+      "path": "delivery-history/chunks/stat_worldbank_commodity_monthly-0059.json",
+      "count": 65,
+      "bytes": 243746,
+      "sha256": "4236412c33caac450edea6bd3907a33792ee3ab8fbc7d6d7c0bcbe9d57c222d6"
+    },
+    {
+      "source_id": "stat_worldbank_commodity_monthly",
+      "path": "delivery-history/chunks/stat_worldbank_commodity_monthly-0060.json",
+      "count": 65,
+      "bytes": 243746,
+      "sha256": "080f285706b43c082ce92124ddb9214c883475a8b45284e2cd4f12d5cd0e6f0a"
+    },
+    {
+      "source_id": "stat_worldbank_commodity_monthly",
+      "path": "delivery-history/chunks/stat_worldbank_commodity_monthly-0061.json",
+      "count": 65,
+      "bytes": 243844,
+      "sha256": "8141cde3479a5ca757542f6c1a1c556ef5888ef60b025f8c4b34fd454329f689"
+    },
+    {
+      "source_id": "stat_worldbank_commodity_monthly",
+      "path": "delivery-history/chunks/stat_worldbank_commodity_monthly-0062.json",
+      "count": 65,
+      "bytes": 243876,
+      "sha256": "12144a1bcde3e1eaa1e7e91b56dcd4ad3966bd9e812e1cd07996a9f062529c16"
+    },
+    {
+      "source_id": "stat_worldbank_commodity_monthly",
+      "path": "delivery-history/chunks/stat_worldbank_commodity_monthly-0063.json",
+      "count": 65,
+      "bytes": 244573,
+      "sha256": "c577cf87773d81df52eb0a4eb336b702be61c2ed302f7793f2573bbb3ea18ce9"
+    },
+    {
+      "source_id": "stat_worldbank_commodity_monthly",
+      "path": "delivery-history/chunks/stat_worldbank_commodity_monthly-0064.json",
+      "count": 64,
+      "bytes": 242238,
+      "sha256": "9aa10975574716f44fbe97a322b14dd8613097c5ae8f619162cd7e80b6321b77"
+    },
+    {
+      "source_id": "stat_worldbank_commodity_monthly",
+      "path": "delivery-history/chunks/stat_worldbank_commodity_monthly-0065.json",
+      "count": 64,
+      "bytes": 242242,
+      "sha256": "1104565c87bc4f986107f5c8adc6b0a8b8d270d9e44c8919add54ada7c5f07e3"
+    },
+    {
+      "source_id": "stat_worldbank_commodity_monthly",
+      "path": "delivery-history/chunks/stat_worldbank_commodity_monthly-0066.json",
+      "count": 64,
+      "bytes": 242334,
+      "sha256": "2a2a77b41d4f2097f8eec79fd50e04f18278201deb58147ea6fc387513da5326"
+    },
+    {
+      "source_id": "stat_worldbank_commodity_monthly",
+      "path": "delivery-history/chunks/stat_worldbank_commodity_monthly-0067.json",
+      "count": 64,
+      "bytes": 242362,
+      "sha256": "4b204174f307e642068a0ae6ee55d132047e4f65b2d150bc22d88813b7be769f"
+    },
+    {
+      "source_id": "stat_worldbank_commodity_monthly",
+      "path": "delivery-history/chunks/stat_worldbank_commodity_monthly-0068.json",
+      "count": 64,
+      "bytes": 242338,
+      "sha256": "645000fb8784e3aa9e8a74a02774e133b2694cf04e23ab19bcbc05a919201c46"
+    },
+    {
+      "source_id": "stat_worldbank_commodity_monthly",
+      "path": "delivery-history/chunks/stat_worldbank_commodity_monthly-0069.json",
+      "count": 63,
+      "bytes": 241385,
+      "sha256": "d32b358531d00a1f288b35eb1e9521f20d3feddd52b1328be911079d8cbf747f"
+    },
+    {
+      "source_id": "stat_worldbank_commodity_monthly",
+      "path": "delivery-history/chunks/stat_worldbank_commodity_monthly-0070.json",
+      "count": 63,
+      "bytes": 242579,
+      "sha256": "8d7060ffb21e780df01bbad016b04508efbbc7a0f98a2a7041595f4a208d3ab2"
+    },
+    {
+      "source_id": "stat_worldbank_commodity_monthly",
+      "path": "delivery-history/chunks/stat_worldbank_commodity_monthly-0071.json",
+      "count": 63,
+      "bytes": 242543,
+      "sha256": "8511258491cf0f0b35653754e8bce324287090e8ce9d9b90839861bad3d46848"
+    },
+    {
+      "source_id": "stat_worldbank_commodity_monthly",
+      "path": "delivery-history/chunks/stat_worldbank_commodity_monthly-0072.json",
+      "count": 63,
+      "bytes": 242607,
+      "sha256": "757831900c61a92f54b5021d0a85769137f551b5b85381c13325463de02fcb5a"
+    },
+    {
+      "source_id": "stat_worldbank_commodity_monthly",
+      "path": "delivery-history/chunks/stat_worldbank_commodity_monthly-0073.json",
+      "count": 63,
+      "bytes": 242613,
+      "sha256": "769880a0c63f83861ee935afdc0aa3f3cda44d3b5ef9b408b47ad303be5449b8"
+    },
+    {
+      "source_id": "stat_worldbank_commodity_monthly",
+      "path": "delivery-history/chunks/stat_worldbank_commodity_monthly-0074.json",
+      "count": 63,
+      "bytes": 242613,
+      "sha256": "7c9bc65302dbad3888e62657e9c8dc07de481871011be2b9a21c1ed14b80d4a0"
+    },
+    {
+      "source_id": "stat_worldbank_commodity_monthly",
+      "path": "delivery-history/chunks/stat_worldbank_commodity_monthly-0075.json",
+      "count": 61,
+      "bytes": 244215,
+      "sha256": "851b8c96b8e3f2968209fc97baaff8cd5de6b1437cc5ad9d38e9b5462fc95f90"
+    },
+    {
+      "source_id": "stat_worldbank_commodity_monthly",
+      "path": "delivery-history/chunks/stat_worldbank_commodity_monthly-0076.json",
+      "count": 61,
+      "bytes": 244370,
+      "sha256": "6f18b8e10a9178d932c1a145e559ebae09b83d5ad4f69d95f3e48b54dc064dd8"
+    },
+    {
+      "source_id": "stat_worldbank_commodity_monthly",
+      "path": "delivery-history/chunks/stat_worldbank_commodity_monthly-0077.json",
+      "count": 61,
+      "bytes": 244370,
+      "sha256": "9e0fb0d1cff9824c16b72b370e0b23da374dde7b62208a571092e759001a1a5c"
+    },
+    {
+      "source_id": "stat_worldbank_commodity_monthly",
+      "path": "delivery-history/chunks/stat_worldbank_commodity_monthly-0078.json",
+      "count": 61,
+      "bytes": 244382,
+      "sha256": "a69d8808f05d6c6bcafa0077e40bb5cf537ace8ac11358f9be24706fffb2a7b7"
+    },
+    {
+      "source_id": "stat_worldbank_commodity_monthly",
+      "path": "delivery-history/chunks/stat_worldbank_commodity_monthly-0079.json",
+      "count": 61,
+      "bytes": 244492,
+      "sha256": "26375152c94dfa08f50aa95c1fee421cf306cda2ecf876d6a19f485c1612e589"
+    },
+    {
+      "source_id": "stat_worldbank_commodity_monthly",
+      "path": "delivery-history/chunks/stat_worldbank_commodity_monthly-0080.json",
+      "count": 61,
+      "bytes": 244557,
+      "sha256": "d892425c699c6048b737404e358153ccfad2385551e226bb10915633391c566f"
+    },
+    {
+      "source_id": "stat_worldbank_commodity_monthly",
+      "path": "delivery-history/chunks/stat_worldbank_commodity_monthly-0081.json",
+      "count": 60,
+      "bytes": 241230,
+      "sha256": "8eb962451b32691909c54a7c8e47e4664eaf06873c743e97dffecc73c8105be6"
+    },
+    {
+      "source_id": "stat_worldbank_commodity_monthly",
+      "path": "delivery-history/chunks/stat_worldbank_commodity_monthly-0082.json",
+      "count": 60,
+      "bytes": 241238,
+      "sha256": "335d718a60ee1f1ace6aee7708e2b61ac5c1314fffec85c8a764f62d81cd4429"
+    },
+    {
+      "source_id": "stat_worldbank_commodity_monthly",
+      "path": "delivery-history/chunks/stat_worldbank_commodity_monthly-0083.json",
+      "count": 60,
+      "bytes": 241242,
+      "sha256": "e467c54ce6723fb75a139af0f1c5cf09ae7937dc3b99860bb179aa69b4cf6bf7"
+    },
+    {
+      "source_id": "stat_worldbank_commodity_monthly",
+      "path": "delivery-history/chunks/stat_worldbank_commodity_monthly-0084.json",
+      "count": 60,
+      "bytes": 241346,
+      "sha256": "06a029dfbc6c05560e220e30007f23c1b9f7353a1c75683ade6ccf98420bc413"
+    },
+    {
+      "source_id": "stat_worldbank_commodity_monthly",
+      "path": "delivery-history/chunks/stat_worldbank_commodity_monthly-0085.json",
+      "count": 60,
+      "bytes": 241362,
+      "sha256": "faa73fa7107ea6649a17056e792fc06312633ca59c75eaf548d5ac6ee9d6b089"
+    },
+    {
+      "source_id": "stat_worldbank_commodity_monthly",
+      "path": "delivery-history/chunks/stat_worldbank_commodity_monthly-0086.json",
+      "count": 61,
+      "bytes": 244963,
+      "sha256": "cd8b756f754e699b72c2564736ce88aec59c1a2fcdef923971bef69b74cee1d1"
+    },
+    {
+      "source_id": "stat_worldbank_commodity_monthly",
+      "path": "delivery-history/chunks/stat_worldbank_commodity_monthly-0087.json",
+      "count": 62,
+      "bytes": 245088,
+      "sha256": "b134b82a181e475cd3555f0b638171602d7c6d9cbc312b04cc4ad922d907b33e"
+    },
+    {
+      "source_id": "stat_worldbank_commodity_monthly",
+      "path": "delivery-history/chunks/stat_worldbank_commodity_monthly-0088.json",
+      "count": 62,
+      "bytes": 245088,
+      "sha256": "60882043e9daa92d81f39083006be05d3ff0c17a9f0d9e176c3da7fdce22b079"
+    },
+    {
+      "source_id": "stat_worldbank_commodity_monthly",
+      "path": "delivery-history/chunks/stat_worldbank_commodity_monthly-0089.json",
+      "count": 62,
+      "bytes": 245088,
+      "sha256": "c34f24d95040cc14476dd5b28e4591de31465e93b16d83273b11c14c681da813"
+    },
+    {
+      "source_id": "stat_worldbank_commodity_monthly",
+      "path": "delivery-history/chunks/stat_worldbank_commodity_monthly-0090.json",
+      "count": 61,
+      "bytes": 241251,
+      "sha256": "be5f65596e5fa17f32489c138ed5b22ad8a7ed72664b3722014f54752c5ee43d"
+    },
+    {
+      "source_id": "stat_worldbank_commodity_monthly",
+      "path": "delivery-history/chunks/stat_worldbank_commodity_monthly-0091.json",
+      "count": 61,
+      "bytes": 241245,
+      "sha256": "8bc13d9687a444e41c240b28393730173e8846ee9fe9644c9d9bf12956fb3c43"
+    },
+    {
+      "source_id": "stat_worldbank_commodity_monthly",
+      "path": "delivery-history/chunks/stat_worldbank_commodity_monthly-0092.json",
+      "count": 61,
+      "bytes": 245017,
+      "sha256": "10391ab70d16d774df7e9785e8e2384e2bc2c3ba48255ab70eb5782983f2a3af"
+    },
+    {
+      "source_id": "stat_worldbank_commodity_monthly",
+      "path": "delivery-history/chunks/stat_worldbank_commodity_monthly-0093.json",
+      "count": 58,
+      "bytes": 244248,
+      "sha256": "fa67673920d3987d97b8a09a175ed0258295d1a4094a163371d1aa379a540d53"
+    },
+    {
+      "source_id": "stat_worldbank_commodity_monthly",
+      "path": "delivery-history/chunks/stat_worldbank_commodity_monthly-0094.json",
+      "count": 58,
+      "bytes": 244248,
+      "sha256": "8a65a435f4b4d8ac8da5ba2f3b7c003a527dd597a2b98be1c11fba26de790c4f"
+    },
+    {
+      "source_id": "stat_worldbank_commodity_monthly",
+      "path": "delivery-history/chunks/stat_worldbank_commodity_monthly-0095.json",
+      "count": 58,
+      "bytes": 244248,
+      "sha256": "7b871dd91611b89237300d57925ec9b73e4f73c90e84a1f14387c35c7d643501"
+    },
+    {
+      "source_id": "stat_worldbank_commodity_monthly",
+      "path": "delivery-history/chunks/stat_worldbank_commodity_monthly-0096.json",
+      "count": 58,
+      "bytes": 244264,
+      "sha256": "b19a38b686f3675ca49da363c0b25f3167db673122a17d6d6e388e0bb39af9ec"
+    },
+    {
+      "source_id": "stat_worldbank_commodity_monthly",
+      "path": "delivery-history/chunks/stat_worldbank_commodity_monthly-0097.json",
+      "count": 58,
+      "bytes": 244296,
+      "sha256": "d31ee6f58e6330a0027e9076da0a04a8d357b2b4a3673f7281e3859bbdfe72e2"
+    },
+    {
+      "source_id": "stat_worldbank_commodity_monthly",
+      "path": "delivery-history/chunks/stat_worldbank_commodity_monthly-0098.json",
+      "count": 58,
+      "bytes": 243816,
+      "sha256": "8ead1d8b27a07068d0dbb112b2af6cd09cd966ea30ee22be5e7a6b623dcbd3de"
+    },
+    {
+      "source_id": "stat_worldbank_commodity_monthly",
+      "path": "delivery-history/chunks/stat_worldbank_commodity_monthly-0099.json",
+      "count": 60,
+      "bytes": 244026,
+      "sha256": "dee02b23d6c0f013a042073c6886494f51cfbc70a5488089361370191589661e"
+    },
+    {
+      "source_id": "stat_worldbank_commodity_monthly",
+      "path": "delivery-history/chunks/stat_worldbank_commodity_monthly-0100.json",
+      "count": 60,
+      "bytes": 244026,
+      "sha256": "3d7e790d5c889536d5c938401bd0ddbcc2768796109a0bac1b57ef56472a8d4c"
+    },
+    {
+      "source_id": "stat_worldbank_commodity_monthly",
+      "path": "delivery-history/chunks/stat_worldbank_commodity_monthly-0101.json",
+      "count": 60,
+      "bytes": 244026,
+      "sha256": "6c02e192b3c77acb13e52fee413d23fcbe9ac46126542a4e89765d03e27b52f9"
+    },
+    {
+      "source_id": "stat_worldbank_commodity_monthly",
+      "path": "delivery-history/chunks/stat_worldbank_commodity_monthly-0102.json",
+      "count": 60,
+      "bytes": 244026,
+      "sha256": "176cdaea7b4d7bbce328586e02411a0b05797ad3e49e0e0b41d96806351e6ce4"
+    },
+    {
+      "source_id": "stat_worldbank_commodity_monthly",
+      "path": "delivery-history/chunks/stat_worldbank_commodity_monthly-0103.json",
+      "count": 60,
+      "bytes": 244026,
+      "sha256": "dbb0710fef2520857d75c35271616c2d51e07ae6fa8fd175f76d630d8f58ff01"
+    },
+    {
+      "source_id": "stat_worldbank_commodity_monthly",
+      "path": "delivery-history/chunks/stat_worldbank_commodity_monthly-0104.json",
+      "count": 60,
+      "bytes": 244392,
+      "sha256": "96af6bf0f6c0c5a647f776bdadc9d57e43789b1f7b00c3571c57af3fb23a3577"
+    },
+    {
+      "source_id": "stat_worldbank_commodity_monthly",
+      "path": "delivery-history/chunks/stat_worldbank_commodity_monthly-0105.json",
+      "count": 58,
+      "bytes": 242972,
+      "sha256": "884fd1670d6f69c2ed087515f8ba672b0e4c0ff70958002e08318d0a35b64b2e"
+    },
+    {
+      "source_id": "stat_worldbank_commodity_monthly",
+      "path": "delivery-history/chunks/stat_worldbank_commodity_monthly-0106.json",
+      "count": 58,
+      "bytes": 242972,
+      "sha256": "56dbb5ff9e84562ab6c24c2d35ded451380143a89f6907b42eabac355adf2598"
+    },
+    {
+      "source_id": "stat_worldbank_commodity_monthly",
+      "path": "delivery-history/chunks/stat_worldbank_commodity_monthly-0107.json",
+      "count": 58,
+      "bytes": 242972,
+      "sha256": "eee3b2dca41bb2223fbf997cf96fe296ec2639a25c365b7c9d0d846849c5dcbf"
+    },
+    {
+      "source_id": "stat_worldbank_commodity_monthly",
+      "path": "delivery-history/chunks/stat_worldbank_commodity_monthly-0108.json",
+      "count": 58,
+      "bytes": 242972,
+      "sha256": "b65b81378ce2ded117d6fdbe6b8d176d72465f5457f2788297e56e919e33a4b1"
+    },
+    {
+      "source_id": "stat_worldbank_commodity_monthly",
+      "path": "delivery-history/chunks/stat_worldbank_commodity_monthly-0109.json",
+      "count": 58,
+      "bytes": 242972,
+      "sha256": "ecb7066f5f4007ca16ad5835e4993f551a34206eeef6fbdfe6870be2cffa5824"
+    },
+    {
+      "source_id": "stat_worldbank_commodity_monthly",
+      "path": "delivery-history/chunks/stat_worldbank_commodity_monthly-0110.json",
+      "count": 58,
+      "bytes": 242972,
+      "sha256": "339e998bcaa1011e72ce7583a1040ee57454f7bcf7bd7ff3faf7dc5f1afe22a0"
+    },
+    {
+      "source_id": "stat_worldbank_commodity_monthly",
+      "path": "delivery-history/chunks/stat_worldbank_commodity_monthly-0111.json",
+      "count": 64,
+      "bytes": 243691,
+      "sha256": "77398a22899b9e426f6d59abe05bc245d67e93ed4a26ba8edcdfb9e784cfe876"
+    },
+    {
+      "source_id": "stat_worldbank_commodity_monthly",
+      "path": "delivery-history/chunks/stat_worldbank_commodity_monthly-0112.json",
+      "count": 65,
+      "bytes": 243416,
+      "sha256": "a4139b69cf3b6cf6073c651ff857267df92ec577ff8435eba25a8c048d8c6a61"
+    },
+    {
+      "source_id": "stat_worldbank_commodity_monthly",
+      "path": "delivery-history/chunks/stat_worldbank_commodity_monthly-0113.json",
+      "count": 65,
+      "bytes": 243384,
+      "sha256": "cfef3f057f8bbe5c1a93f9b71a59c8e5f64ec1f05fe2d0ececa6ee013fb019ab"
+    },
+    {
+      "source_id": "stat_worldbank_commodity_monthly",
+      "path": "delivery-history/chunks/stat_worldbank_commodity_monthly-0114.json",
+      "count": 65,
+      "bytes": 243464,
+      "sha256": "acdf4449fb31e13170556268cbde404b08de91fa4524c9b8cf5c9fb3022d1c58"
+    },
+    {
+      "source_id": "stat_worldbank_commodity_monthly",
+      "path": "delivery-history/chunks/stat_worldbank_commodity_monthly-0115.json",
+      "count": 65,
+      "bytes": 243470,
+      "sha256": "9e0b38da4a29673a1fb88f7836eddff5752f6cd843dc2c58d67dd397ae8cd848"
+    },
+    {
+      "source_id": "stat_worldbank_commodity_monthly",
+      "path": "delivery-history/chunks/stat_worldbank_commodity_monthly-0116.json",
+      "count": 64,
+      "bytes": 242518,
+      "sha256": "3a9d03cbbd9781610725118c30a7de7c93a90db2d7f86f8979181eaad1a8ddfd"
+    },
+    {
+      "source_id": "stat_worldbank_commodity_monthly",
+      "path": "delivery-history/chunks/stat_worldbank_commodity_monthly-0117.json",
+      "count": 62,
+      "bytes": 241374,
+      "sha256": "cff72098fd56d119c7486002cf7efe69960d33005fab88e4fcf8ac7ed32fb6e0"
+    },
+    {
+      "source_id": "stat_worldbank_commodity_monthly",
+      "path": "delivery-history/chunks/stat_worldbank_commodity_monthly-0118.json",
+      "count": 62,
+      "bytes": 241350,
+      "sha256": "7446114107fde1238bd6489891dfaf4d2a49b71fbee9b4af062ab68b333918ae"
+    },
+    {
+      "source_id": "stat_worldbank_commodity_monthly",
+      "path": "delivery-history/chunks/stat_worldbank_commodity_monthly-0119.json",
+      "count": 62,
+      "bytes": 241366,
+      "sha256": "2b1f48a342af2049f01952b4fb2761223a4856f80985e2a0dd0a94025e9a7175"
+    },
+    {
+      "source_id": "stat_worldbank_commodity_monthly",
+      "path": "delivery-history/chunks/stat_worldbank_commodity_monthly-0120.json",
+      "count": 62,
+      "bytes": 241346,
+      "sha256": "9347aecb7deef2f0b9b5b66a1256f73109fd31831298089b1c5dcd700159d912"
+    },
+    {
+      "source_id": "stat_worldbank_commodity_monthly",
+      "path": "delivery-history/chunks/stat_worldbank_commodity_monthly-0121.json",
+      "count": 62,
+      "bytes": 241230,
+      "sha256": "a8cd627f764b6ad561eac88e2a2cfc95a0958d06573e9560814a2f0ae59f3caf"
+    },
+    {
+      "source_id": "stat_worldbank_commodity_monthly",
+      "path": "delivery-history/chunks/stat_worldbank_commodity_monthly-0122.json",
+      "count": 62,
+      "bytes": 242228,
+      "sha256": "65c894e603f7dba4a45f5975caadbe8ad8cd0484068f6b70186e43b7293ebfe9"
+    },
+    {
+      "source_id": "stat_worldbank_commodity_monthly",
+      "path": "delivery-history/chunks/stat_worldbank_commodity_monthly-0123.json",
+      "count": 62,
+      "bytes": 243266,
+      "sha256": "7a528e9b61a59aa7e6e876e4d48f097960ea1aed5453da18007ade1b02f6990d"
+    },
+    {
+      "source_id": "stat_worldbank_commodity_monthly",
+      "path": "delivery-history/chunks/stat_worldbank_commodity_monthly-0124.json",
+      "count": 62,
+      "bytes": 243262,
+      "sha256": "6e1fd7a5decb6fc1d725a12f417d57d55457ff09330fac7d9a1ff33fcd36bfbf"
+    },
+    {
+      "source_id": "stat_worldbank_commodity_monthly",
+      "path": "delivery-history/chunks/stat_worldbank_commodity_monthly-0125.json",
+      "count": 62,
+      "bytes": 243266,
+      "sha256": "3ce252a2bcab7a88aaddc28fdd9b31f987878a4a8aaccc0401b292227f3b6bbb"
+    },
+    {
+      "source_id": "stat_worldbank_commodity_monthly",
+      "path": "delivery-history/chunks/stat_worldbank_commodity_monthly-0126.json",
+      "count": 62,
+      "bytes": 243258,
+      "sha256": "569edcb049e6520eda8c7c2e0f60ec76a5645364d69b1b7d2d5926cb22373337"
+    },
+    {
+      "source_id": "stat_worldbank_commodity_monthly",
+      "path": "delivery-history/chunks/stat_worldbank_commodity_monthly-0127.json",
+      "count": 62,
+      "bytes": 243278,
+      "sha256": "4ddb4e649546e0d614cbb496a7ce3ea11534132cde237465655914b8f989d334"
+    },
+    {
+      "source_id": "stat_worldbank_commodity_monthly",
+      "path": "delivery-history/chunks/stat_worldbank_commodity_monthly-0128.json",
+      "count": 63,
+      "bytes": 243680,
+      "sha256": "063228f3bea00c8ca9abb5e90ee0335b8c9aa9253f4f360b8d051e4d01f4375e"
+    },
+    {
+      "source_id": "stat_worldbank_commodity_monthly",
+      "path": "delivery-history/chunks/stat_worldbank_commodity_monthly-0129.json",
+      "count": 63,
+      "bytes": 242138,
+      "sha256": "158a301bcd0579d5122e614100304ef2fe8b5481d0c2c206459f0fe150bd9de5"
+    },
+    {
+      "source_id": "stat_worldbank_commodity_monthly",
+      "path": "delivery-history/chunks/stat_worldbank_commodity_monthly-0130.json",
+      "count": 63,
+      "bytes": 242110,
+      "sha256": "c63aa3b428af0fdbd4b105f2141e63ea662a0bf03a09bdaa2e545cd64ea7f49a"
+    },
+    {
+      "source_id": "stat_worldbank_commodity_monthly",
+      "path": "delivery-history/chunks/stat_worldbank_commodity_monthly-0131.json",
+      "count": 63,
+      "bytes": 242156,
+      "sha256": "7516c2b2294e3e83c22d7e2faa922044e5ecb379e14832c54aacd5d583cb7202"
+    },
+    {
+      "source_id": "stat_worldbank_commodity_monthly",
+      "path": "delivery-history/chunks/stat_worldbank_commodity_monthly-0132.json",
+      "count": 63,
+      "bytes": 242152,
+      "sha256": "509bac24383049df578886f73570386f036713145009f8d94fdf96d775ce711a"
+    },
+    {
+      "source_id": "stat_worldbank_commodity_monthly",
+      "path": "delivery-history/chunks/stat_worldbank_commodity_monthly-0133.json",
+      "count": 63,
+      "bytes": 242128,
+      "sha256": "75181d755132118dee30ab6018f1479a4997dd14cd2f0dc91c777b31584ea68e"
+    },
+    {
+      "source_id": "stat_worldbank_commodity_monthly",
+      "path": "delivery-history/chunks/stat_worldbank_commodity_monthly-0134.json",
+      "count": 62,
+      "bytes": 241846,
+      "sha256": "333568010d924e4ad78bf6dd4c5328010c0e0f9143bf85af6183d3e748bf006d"
+    },
+    {
+      "source_id": "stat_worldbank_commodity_monthly",
+      "path": "delivery-history/chunks/stat_worldbank_commodity_monthly-0135.json",
+      "count": 62,
+      "bytes": 241910,
+      "sha256": "f04b621cb7439e2545ca5ae3e1a43aa18a0e6929f47632151a31f2439f4d27aa"
+    },
+    {
+      "source_id": "stat_worldbank_commodity_monthly",
+      "path": "delivery-history/chunks/stat_worldbank_commodity_monthly-0136.json",
+      "count": 62,
+      "bytes": 241912,
+      "sha256": "174587f1cf1191be40facbd812c470b58c7ddc0fb886018dbfe3addfb6bc07af"
+    },
+    {
+      "source_id": "stat_worldbank_commodity_monthly",
+      "path": "delivery-history/chunks/stat_worldbank_commodity_monthly-0137.json",
+      "count": 62,
+      "bytes": 241898,
+      "sha256": "1e682e1b9c2ab2767e75a60e272ba45bf4304c0353f3bd515cc0fa027ee89a3d"
+    },
+    {
+      "source_id": "stat_worldbank_commodity_monthly",
+      "path": "delivery-history/chunks/stat_worldbank_commodity_monthly-0138.json",
+      "count": 62,
+      "bytes": 241916,
+      "sha256": "0e99010cc58b22df7adffbeefd4dd9e98911ec353075184a1ea64a1fce79732d"
+    },
+    {
+      "source_id": "stat_worldbank_commodity_monthly",
+      "path": "delivery-history/chunks/stat_worldbank_commodity_monthly-0139.json",
+      "count": 62,
+      "bytes": 242318,
+      "sha256": "348b865833033c8a12fae10e994a6cbb5b661c39d3fefa4fa736d532ae7cdffe"
+    },
+    {
+      "source_id": "stat_worldbank_commodity_monthly",
+      "path": "delivery-history/chunks/stat_worldbank_commodity_monthly-0140.json",
+      "count": 62,
+      "bytes": 244266,
+      "sha256": "78c0cd7971afd0c541d858e0c004bcd1a7b707c3a994d524e0276b6927840059"
+    },
+    {
+      "source_id": "stat_worldbank_commodity_monthly",
+      "path": "delivery-history/chunks/stat_worldbank_commodity_monthly-0141.json",
+      "count": 62,
+      "bytes": 244272,
+      "sha256": "ad47169452ea10a9f15d602b06765720ff90a49403f8b619a7fc5c517afd4502"
+    },
+    {
+      "source_id": "stat_worldbank_commodity_monthly",
+      "path": "delivery-history/chunks/stat_worldbank_commodity_monthly-0142.json",
+      "count": 62,
+      "bytes": 244270,
+      "sha256": "8a67854dddce502dda939abb4f657115f8453a083e7e10bb3f3c986816b285de"
+    },
+    {
+      "source_id": "stat_worldbank_commodity_monthly",
+      "path": "delivery-history/chunks/stat_worldbank_commodity_monthly-0143.json",
+      "count": 62,
+      "bytes": 244266,
+      "sha256": "555f7dcd190522ee99dc72798b469834ba8f6b80c2d7ddba168e40bc0a44760d"
+    },
+    {
+      "source_id": "stat_worldbank_commodity_monthly",
+      "path": "delivery-history/chunks/stat_worldbank_commodity_monthly-0144.json",
+      "count": 62,
+      "bytes": 244266,
+      "sha256": "927957db870e0e8735126378bbbd1665f2515b77364a94b036fe6a7707c6d7ad"
+    },
+    {
+      "source_id": "stat_worldbank_commodity_monthly",
+      "path": "delivery-history/chunks/stat_worldbank_commodity_monthly-0145.json",
+      "count": 62,
+      "bytes": 244112,
+      "sha256": "4284e8904e04b23d8df098ef364271954925e0eb4be1715979640bb5ff3610c4"
+    },
+    {
+      "source_id": "stat_worldbank_commodity_monthly",
+      "path": "delivery-history/chunks/stat_worldbank_commodity_monthly-0146.json",
+      "count": 62,
+      "bytes": 243890,
+      "sha256": "fb1d9e4a3664bf42d6bee5209f2ab5393200443413bdbe14c4995cc9735abb62"
+    },
+    {
+      "source_id": "stat_worldbank_commodity_monthly",
+      "path": "delivery-history/chunks/stat_worldbank_commodity_monthly-0147.json",
+      "count": 62,
+      "bytes": 243890,
+      "sha256": "80facc578b98c727829bad61db4a2b6391b8a5880e1ac0bb1750715b56fdafb7"
+    },
+    {
+      "source_id": "stat_worldbank_commodity_monthly",
+      "path": "delivery-history/chunks/stat_worldbank_commodity_monthly-0148.json",
+      "count": 62,
+      "bytes": 243896,
+      "sha256": "d4218fbb4ba2dc971bc3b00c50ba39910203a9fb030912826dd06246b11bd325"
+    },
+    {
+      "source_id": "stat_worldbank_commodity_monthly",
+      "path": "delivery-history/chunks/stat_worldbank_commodity_monthly-0149.json",
+      "count": 62,
+      "bytes": 243892,
+      "sha256": "fdf002eeee1abae340f4d9e8f5ed2955683a39e855861e20445dcabf338fc2d3"
+    },
+    {
+      "source_id": "stat_worldbank_commodity_monthly",
+      "path": "delivery-history/chunks/stat_worldbank_commodity_monthly-0150.json",
+      "count": 62,
+      "bytes": 243884,
+      "sha256": "7d0cc40b1724869fbd66a52d384feef8a2569a257c8d6c8221b4694dc82eca74"
+    },
+    {
+      "source_id": "stat_worldbank_commodity_monthly",
+      "path": "delivery-history/chunks/stat_worldbank_commodity_monthly-0151.json",
+      "count": 62,
+      "bytes": 244215,
+      "sha256": "f6e4cd9f198fa65a25b6b5807c9a9bf1d82958dac717dd56501af4bf46f63df8"
+    },
+    {
+      "source_id": "stat_worldbank_commodity_monthly",
+      "path": "delivery-history/chunks/stat_worldbank_commodity_monthly-0152.json",
+      "count": 62,
+      "bytes": 244448,
+      "sha256": "b4f955912ef5ac6ed11ebe9eb774fe006f57faa7854fe54913d9852201224d0a"
+    },
+    {
+      "source_id": "stat_worldbank_commodity_monthly",
+      "path": "delivery-history/chunks/stat_worldbank_commodity_monthly-0153.json",
+      "count": 62,
+      "bytes": 244454,
+      "sha256": "85412472b857bd2b48189a495ef447df8652dbf79a9f507fcd33eec6a0f6e78d"
+    },
+    {
+      "source_id": "stat_worldbank_commodity_monthly",
+      "path": "delivery-history/chunks/stat_worldbank_commodity_monthly-0154.json",
+      "count": 62,
+      "bytes": 244454,
+      "sha256": "81aab878f299cc43133c3e5a363b6e2ed17da5e67a1f963ba6320164ba692c00"
+    },
+    {
+      "source_id": "stat_worldbank_commodity_monthly",
+      "path": "delivery-history/chunks/stat_worldbank_commodity_monthly-0155.json",
+      "count": 62,
+      "bytes": 244456,
+      "sha256": "0dc976b89befb0af3b62b8a5e6cca8360e9284877d17a68f316be84014cd15a3"
+    },
+    {
+      "source_id": "stat_worldbank_commodity_monthly",
+      "path": "delivery-history/chunks/stat_worldbank_commodity_monthly-0156.json",
+      "count": 62,
+      "bytes": 244458,
+      "sha256": "82ab43d01325a0291736c9f75f87fd80a7eccdf11b290d2c577ef23ec2eadd87"
+    },
+    {
+      "source_id": "stat_worldbank_commodity_monthly",
+      "path": "delivery-history/chunks/stat_worldbank_commodity_monthly-0157.json",
+      "count": 62,
+      "bytes": 245077,
+      "sha256": "56e79c547b2a90a69c4ac6049f076f020babadf9063e307d497c8bd5b98f1f41"
+    },
+    {
+      "source_id": "stat_worldbank_commodity_monthly",
+      "path": "delivery-history/chunks/stat_worldbank_commodity_monthly-0158.json",
+      "count": 61,
+      "bytes": 241320,
+      "sha256": "a731c514e5590c294ae3be47cd58e06121eaabee7350ffee8170e3f528829f4e"
+    },
+    {
+      "source_id": "stat_worldbank_commodity_monthly",
+      "path": "delivery-history/chunks/stat_worldbank_commodity_monthly-0159.json",
+      "count": 61,
+      "bytes": 241176,
+      "sha256": "9cf29e47bac746b04a2468fde78ee5d8ce2544dd89f084dff740035c2f9373b5"
+    },
+    {
+      "source_id": "stat_worldbank_commodity_monthly",
+      "path": "delivery-history/chunks/stat_worldbank_commodity_monthly-0160.json",
+      "count": 61,
+      "bytes": 241188,
+      "sha256": "63b710255faf08121f4b19e0f84ba71195e94c48720701375f1349273db6a6ee"
+    },
+    {
+      "source_id": "stat_worldbank_commodity_monthly",
+      "path": "delivery-history/chunks/stat_worldbank_commodity_monthly-0161.json",
+      "count": 61,
+      "bytes": 241178,
+      "sha256": "fd994ea11f7f3ac789e86c987a72c54b818b4b90e2b0ab74d1702f5be7ec1321"
+    },
+    {
+      "source_id": "stat_worldbank_commodity_monthly",
+      "path": "delivery-history/chunks/stat_worldbank_commodity_monthly-0162.json",
+      "count": 61,
+      "bytes": 241186,
+      "sha256": "961f0b9b8a728ddbd9a8f60d0ec923676369b84a27ff0ccf628eaa90d9fbd036"
+    },
+    {
+      "source_id": "stat_worldbank_commodity_monthly",
+      "path": "delivery-history/chunks/stat_worldbank_commodity_monthly-0163.json",
+      "count": 62,
+      "bytes": 241336,
+      "sha256": "d6dfe53ef73cf89c05764374d81777480fdeeca0ec192e56f075bcd56a08eba7"
+    },
+    {
+      "source_id": "stat_worldbank_commodity_monthly",
+      "path": "delivery-history/chunks/stat_worldbank_commodity_monthly-0164.json",
+      "count": 63,
+      "bytes": 244706,
+      "sha256": "19d308f55aa717f2e1e20adca399d34bedcd4718a4f6de3c4dbe3224dbe3779a"
+    },
+    {
+      "source_id": "stat_worldbank_commodity_monthly",
+      "path": "delivery-history/chunks/stat_worldbank_commodity_monthly-0165.json",
+      "count": 63,
+      "bytes": 244700,
+      "sha256": "9ca0234f7810729e46161f4dacfe8fc2314a68e9dd94d049c70db85506aeca3c"
+    },
+    {
+      "source_id": "stat_worldbank_commodity_monthly",
+      "path": "delivery-history/chunks/stat_worldbank_commodity_monthly-0166.json",
+      "count": 63,
+      "bytes": 244772,
+      "sha256": "3ec8f9de6a37a55975121ae6b6ea7c6e6ce89c706bdd71934fffa8dd5fda06df"
+    },
+    {
+      "source_id": "stat_worldbank_commodity_monthly",
+      "path": "delivery-history/chunks/stat_worldbank_commodity_monthly-0167.json",
+      "count": 63,
+      "bytes": 244802,
+      "sha256": "1ee03046b763388bb08ff4dc43ec54971c0d884213be977790805cf32bdfe79f"
+    },
+    {
+      "source_id": "stat_worldbank_commodity_monthly",
+      "path": "delivery-history/chunks/stat_worldbank_commodity_monthly-0168.json",
+      "count": 63,
+      "bytes": 244435,
+      "sha256": "05138f197136c71c2bd5ae25422675abef9c75d41959223f3c0a7812c3abe5b9"
+    },
+    {
+      "source_id": "stat_worldbank_commodity_monthly",
+      "path": "delivery-history/chunks/stat_worldbank_commodity_monthly-0169.json",
+      "count": 63,
+      "bytes": 242471,
+      "sha256": "b9771a638d3c43ec6c6552455a83f28217b53f4cf3c043eff7d012d11a682122"
+    },
+    {
+      "source_id": "stat_worldbank_commodity_monthly",
+      "path": "delivery-history/chunks/stat_worldbank_commodity_monthly-0170.json",
+      "count": 63,
+      "bytes": 242483,
+      "sha256": "60c3490d69c51d7a4ee097f6f7a79a017d6fc4889f67a62b0c8afd104840ddee"
+    },
+    {
+      "source_id": "stat_worldbank_commodity_monthly",
+      "path": "delivery-history/chunks/stat_worldbank_commodity_monthly-0171.json",
+      "count": 63,
+      "bytes": 242475,
+      "sha256": "2148df78cb65737165115205c788155a17009fa1cc893922af3279e294596394"
+    },
+    {
+      "source_id": "stat_worldbank_commodity_monthly",
+      "path": "delivery-history/chunks/stat_worldbank_commodity_monthly-0172.json",
+      "count": 63,
+      "bytes": 242471,
+      "sha256": "e28eb70a81479cbca0a3b6febdddc801b17de94a93d742d3c01ef93f7c112ca3"
+    },
+    {
+      "source_id": "stat_worldbank_commodity_monthly",
+      "path": "delivery-history/chunks/stat_worldbank_commodity_monthly-0173.json",
+      "count": 63,
+      "bytes": 242475,
+      "sha256": "b6120b0aedbaac53ed29f2cef31ae343e9c40e06a8e57800c80da0426eba2a70"
+    },
+    {
+      "source_id": "stat_worldbank_commodity_monthly",
+      "path": "delivery-history/chunks/stat_worldbank_commodity_monthly-0174.json",
+      "count": 62,
+      "bytes": 242674,
+      "sha256": "c9a0aaa16879556fbe453fd0e86801f49d65d36254834afb980d66998672c10c"
+    },
+    {
+      "source_id": "stat_worldbank_commodity_monthly",
+      "path": "delivery-history/chunks/stat_worldbank_commodity_monthly-0175.json",
+      "count": 61,
+      "bytes": 244273,
+      "sha256": "ebd98afe49c09ba73f24146971f7a1d0947ce1a691bd79f1183253b4d2adc1f7"
+    },
+    {
+      "source_id": "stat_worldbank_commodity_monthly",
+      "path": "delivery-history/chunks/stat_worldbank_commodity_monthly-0176.json",
+      "count": 61,
+      "bytes": 244297,
+      "sha256": "f98246f95d923ec356fae39ba647da21fd18589dc2f1865e8230add235760789"
+    },
+    {
+      "source_id": "stat_worldbank_commodity_monthly",
+      "path": "delivery-history/chunks/stat_worldbank_commodity_monthly-0177.json",
+      "count": 61,
+      "bytes": 244269,
+      "sha256": "4edb4fd904e3a9deb732967d733e283d9a40ac51f910eea8e7c5eb3d2671c7ec"
+    },
+    {
+      "source_id": "stat_worldbank_commodity_monthly",
+      "path": "delivery-history/chunks/stat_worldbank_commodity_monthly-0178.json",
+      "count": 61,
+      "bytes": 244277,
+      "sha256": "5a4953ed69c8449c7d51db21553fdd9d66c5cf8f221686e332459dab14670e74"
+    },
+    {
+      "source_id": "stat_worldbank_commodity_monthly",
+      "path": "delivery-history/chunks/stat_worldbank_commodity_monthly-0179.json",
+      "count": 61,
+      "bytes": 244293,
+      "sha256": "5024bec0ed85c4b8afb4617359010174674a21b6741b528651cee234c01d5ddf"
+    },
+    {
+      "source_id": "stat_worldbank_commodity_monthly",
+      "path": "delivery-history/chunks/stat_worldbank_commodity_monthly-0180.json",
+      "count": 60,
+      "bytes": 243049,
+      "sha256": "f298808b3bf05821fe8d3bcaef9671bac5c927e2171c20b549c958a37ccb84bf"
+    },
+    {
+      "source_id": "stat_worldbank_commodity_monthly",
+      "path": "delivery-history/chunks/stat_worldbank_commodity_monthly-0181.json",
+      "count": 59,
+      "bytes": 241530,
+      "sha256": "856daa775c1f55064d753870a646763c49ef6242130282748ab3207d0df0a729"
+    },
+    {
+      "source_id": "stat_worldbank_commodity_monthly",
+      "path": "delivery-history/chunks/stat_worldbank_commodity_monthly-0182.json",
+      "count": 59,
+      "bytes": 241510,
+      "sha256": "44918cc9d155be35d8ad417d9f14c4023e2c818a8848effcd955e97f5682264e"
+    },
+    {
+      "source_id": "stat_worldbank_commodity_monthly",
+      "path": "delivery-history/chunks/stat_worldbank_commodity_monthly-0183.json",
+      "count": 59,
+      "bytes": 241538,
+      "sha256": "2d2b46f0782210fe0036d741d42388ab645ac317e02ba26966d8bc100e79317c"
+    },
+    {
+      "source_id": "stat_worldbank_commodity_monthly",
+      "path": "delivery-history/chunks/stat_worldbank_commodity_monthly-0184.json",
+      "count": 59,
+      "bytes": 241526,
+      "sha256": "2b4245c4e0bc00199b4f6a7d5dd5d92ba2c31d170f3f1bd3074525dcacf6a477"
+    },
+    {
+      "source_id": "stat_worldbank_commodity_monthly",
+      "path": "delivery-history/chunks/stat_worldbank_commodity_monthly-0185.json",
+      "count": 59,
+      "bytes": 241518,
+      "sha256": "f263d098137f4deffb75039c97952eeea2c4754033f3deb63bbb6675eeb9451a"
+    },
+    {
+      "source_id": "stat_worldbank_commodity_monthly",
+      "path": "delivery-history/chunks/stat_worldbank_commodity_monthly-0186.json",
+      "count": 61,
+      "bytes": 242637,
+      "sha256": "eebce12096f606dd543e0bcbe57f79f807031a9cc65e0df82bcc8bf4b97486c1"
+    },
+    {
+      "source_id": "stat_worldbank_commodity_monthly",
+      "path": "delivery-history/chunks/stat_worldbank_commodity_monthly-0187.json",
+      "count": 63,
+      "bytes": 241291,
+      "sha256": "9e42597aabf9ddfe4716bce333043f99de66efd6fd77ff074807ec53e3f3265a"
+    },
+    {
+      "source_id": "stat_worldbank_commodity_monthly",
+      "path": "delivery-history/chunks/stat_worldbank_commodity_monthly-0188.json",
+      "count": 63,
+      "bytes": 241331,
+      "sha256": "2e6f4618fed643f3f4d1ab9e07ac9e02efe1c69732f61cd2fdf75f4f59da8419"
+    },
+    {
+      "source_id": "stat_worldbank_commodity_monthly",
+      "path": "delivery-history/chunks/stat_worldbank_commodity_monthly-0189.json",
+      "count": 63,
+      "bytes": 241441,
+      "sha256": "b03182ecbd4fb9143066024f9ec3bd3a0afe911e311a5e8b02dab9300498933a"
+    },
+    {
+      "source_id": "stat_worldbank_commodity_monthly",
+      "path": "delivery-history/chunks/stat_worldbank_commodity_monthly-0190.json",
+      "count": 63,
+      "bytes": 241431,
+      "sha256": "f68404ca60866431ef0f120c38aa53ee2b923d4caf38d06dd0214cfe0511bcea"
+    },
+    {
+      "source_id": "stat_worldbank_commodity_monthly",
+      "path": "delivery-history/chunks/stat_worldbank_commodity_monthly-0191.json",
+      "count": 63,
+      "bytes": 241403,
+      "sha256": "ddfab367f7b852437782739ffd3c16d43921dbcd647c522e7aa1316406f3711b"
+    },
+    {
+      "source_id": "stat_worldbank_commodity_monthly",
+      "path": "delivery-history/chunks/stat_worldbank_commodity_monthly-0192.json",
+      "count": 64,
+      "bytes": 242380,
+      "sha256": "631e10454f5c4e4f511f09c35f3b73fa520d74f4a6fde6c117875afd68433e5d"
+    },
+    {
+      "source_id": "stat_worldbank_commodity_monthly",
+      "path": "delivery-history/chunks/stat_worldbank_commodity_monthly-0193.json",
+      "count": 65,
+      "bytes": 245006,
+      "sha256": "6919eb5c878bb55745559ccd46e44720112d270b87fc3f435f3a39519c7d429a"
+    },
+    {
+      "source_id": "stat_worldbank_commodity_monthly",
+      "path": "delivery-history/chunks/stat_worldbank_commodity_monthly-0194.json",
+      "count": 65,
+      "bytes": 244998,
+      "sha256": "12e603d5fcafd4ba20cce98d0867489485be325977277f38f8c24a69cf4fefcb"
+    },
+    {
+      "source_id": "stat_worldbank_commodity_monthly",
+      "path": "delivery-history/chunks/stat_worldbank_commodity_monthly-0195.json",
+      "count": 65,
+      "bytes": 245012,
+      "sha256": "ebbef36729de98b63522ec7a52154044e964d5f2b36e4bdc1fcde5a59a9148b5"
+    },
+    {
+      "source_id": "stat_worldbank_commodity_monthly",
+      "path": "delivery-history/chunks/stat_worldbank_commodity_monthly-0196.json",
+      "count": 65,
+      "bytes": 245018,
+      "sha256": "f61e60f0ddec966c47533e89c491e3b6d6b5bbdbb33f56c1e96f7fa16ec8d4c3"
+    },
+    {
+      "source_id": "stat_worldbank_commodity_monthly",
+      "path": "delivery-history/chunks/stat_worldbank_commodity_monthly-0197.json",
+      "count": 64,
+      "bytes": 241776,
+      "sha256": "4445ee10a817d23083d9b173eb3b32c14b7c46b4d620ad1993489d86beca061b"
+    },
+    {
+      "source_id": "stat_worldbank_commodity_monthly",
+      "path": "delivery-history/chunks/stat_worldbank_commodity_monthly-0198.json",
+      "count": 64,
+      "bytes": 244926,
+      "sha256": "b6c068d1f3eb95c499b66bba1c510666bf4976c71736291df5e1c76c66de5be7"
+    },
+    {
+      "source_id": "stat_worldbank_commodity_monthly",
+      "path": "delivery-history/chunks/stat_worldbank_commodity_monthly-0199.json",
+      "count": 64,
+      "bytes": 244814,
+      "sha256": "7933ed84945e74f63371619d69707ead91674ced4fd25cc98ee6bfc5356581db"
+    },
+    {
+      "source_id": "stat_worldbank_commodity_monthly",
+      "path": "delivery-history/chunks/stat_worldbank_commodity_monthly-0200.json",
+      "count": 64,
+      "bytes": 244670,
+      "sha256": "f3717462be180ff3538671fdbe53e104108e2ad530cf5de7e3dfbc34281f59df"
+    },
+    {
+      "source_id": "stat_worldbank_commodity_monthly",
+      "path": "delivery-history/chunks/stat_worldbank_commodity_monthly-0201.json",
+      "count": 64,
+      "bytes": 244790,
+      "sha256": "cbaabf65f3afbfbd3959e097da6215f6aa08d7afc1f6dd28d00e10d83404b2d7"
+    },
+    {
+      "source_id": "stat_worldbank_commodity_monthly",
+      "path": "delivery-history/chunks/stat_worldbank_commodity_monthly-0202.json",
+      "count": 64,
+      "bytes": 244960,
+      "sha256": "3754e79f3cc46766101d7ed2bc0a7340829066752ec6a621273cb4599a946498"
+    },
+    {
+      "source_id": "stat_worldbank_commodity_monthly",
+      "path": "delivery-history/chunks/stat_worldbank_commodity_monthly-0203.json",
+      "count": 30,
+      "bytes": 114840,
+      "sha256": "705b59fa7ca13a9c2205d5552d69f37e3264cf1985663f0d9b0f9931266c8b05"
+    }
+  ],
+  "policies": [
+    {
+      "id": "stat_worldbank_commodity_monthly",
+      "version": "0.18.0",
+      "name": "World Bank Pink Sheet selected monthly nominal commodity benchmarks1990–September2026",
+      "provider_family": "World Bank",
+      "original_data_provider": "World Bank Prospects Group compilation; supplied underlying-provider references retained per series",
+      "official_url": "https://www.worldbank.org/en/research/commodity-markets",
+      "endpoint": "https://thedocs.worldbank.org/en/doc/74e8be41ceb20fa0da750cda2f6b9e4e-0050012026/related/CMO-Historical-Data-Monthly.xlsx",
+      "format": "licensed_monthly_XLSX_safe_projection",
+      "category": "economy",
+      "domain": "commodity_prices",
+      "source_country": null,
+      "source_language": "en",
+      "material_kind": "statistical_observation",
+      "content_depth": "structured_facts",
+      "adapter_version": "worldbank-pink-sheet-monthly-v0.18",
+      "adapter_exports": [
+        "readEnvelope",
+        "project",
+        "validateCommodity",
+        "semanticPayload"
+      ],
+      "enabled": false,
+      "collection_enabled": false,
+      "recurring_operational": false,
+      "stage": "actually_collected_not_site_ingested",
+      "rights": {
+        "status": "cleared_structured_facts",
+        "license_id": "CC-BY-4.0",
+        "primary_url": "https://datacatalog.worldbank.org/search/dataset/0038238/commodity-prices-history-and-projections",
+        "license_policy_url": "https://datacatalog.worldbank.org/public-licenses",
+        "permission_basis": "Exact official dataset page declares Public and CC BY4.0 and links the current Commodity Markets website. That site links this exact historical-monthly workbook and its data-use terms. Source metadata/nominal data are distinct from forecast and annual/real-index assets.",
+        "third_party_scope": "Retain supplied underlying-provider names as compiler provenance. This licence does not grant direct access or rights to proprietary vendor feeds, articles, software or logos. Only the publicly licensed World Bank compilation data and permitted factual metadata are exported.",
+        "attribution": "World Bank Commodity Price Data (The Pink Sheet), Prospects Group. CC BY4.0; selected/normalized historical monthly nominal reference observations with source missingness and definitions preserved. No World Bank or underlying-provider endorsement.",
+        "use_constraints": [
+          "Credit source and licence; indicate normalization/selection",
+          "Retain original units/definitions/underlying-provider references and uncertainty",
+          "No endorsement or proprietary-feed access inferred",
+          "Keep actual historical prices separate from forecasts/real indexes/tradable contracts"
+        ],
+        "permitted_use_scope": "team_product_metadata_or_facts",
+        "product_admission_eligible": true,
+        "allowed_fields": [
+          "Selected native monthly nominal numeric/missing price cells",
+          "Exact series headers/native units/current and historical definition metadata",
+          "Underlying-provider and literal benchmark-location references"
+        ],
+        "excluded_content": [
+          "Forecasts/real-index/annual-series assets",
+          "Auxiliary comparison sheet and unrelated worksheet data",
+          "Unit-conflicted iron-ore series",
+          "Full PDF/report/article bodies, contacts/persons/logos and proprietary raw vendor feeds"
+        ]
+      },
+      "source_update_cadence": "Provider says second business day monthly; current landing release2026-10-02,next2026-11-03. Timing is publisher-declared, not a tested recurring runtime SLA.",
+      "collection_cadence": "One bounded workbook/source-PDF acquisition plus deterministic retained replay; daily baseline not configured for this source",
+      "series_identity_basis": "Derived stable dataset-qualified IDs from frozen source column names; not exchange tickers or upstream API codes",
+      "series_templates": [
+        {
+          "id": "crude_average",
+          "name": "Crude oil, average",
+          "group": "energy",
+          "definition_row": 7,
+          "source_name": "Crude oil, average",
+          "unit_raw": "($/bbl)",
+          "unit": "USD_per_barrel",
+          "currency": "USD",
+          "unit_scale": 1,
+          "definition": "Crude oil, average spot price of Brent, Dubai and West Texas  Intermediate, equally weighed",
+          "provider_reference": "World Bank.",
+          "definition_metadata_scope": "Current source Description includes historical regimes; not evidence of a homogeneous quote basis across all months",
+          "reference_locations": [],
+          "reference_locations_basis": "Literal source-definition text matches; no geocoding/current-country/impact assertion",
+          "futures_forward_inputs_mentioned": false,
+          "latest_two_months_estimate_rule": false
+        },
+        {
+          "id": "crude_brent",
+          "name": "Crude oil, Brent",
+          "group": "energy",
+          "definition_row": 8,
+          "source_name": "Crude oil, Brent",
+          "unit_raw": "($/bbl)",
+          "unit": "USD_per_barrel",
+          "currency": "USD",
+          "unit_scale": 1,
+          "definition": "Crude oil, UK Brent 38` API.",
+          "provider_reference": "Bloomberg Finance L.P. Finance L.P.; Energy Intelligence Group (EIG); Organization of Petroleum Exporting Countries (OPEC); World Bank.",
+          "definition_metadata_scope": "Current source Description includes historical regimes; not evidence of a homogeneous quote basis across all months",
+          "reference_locations": [],
+          "reference_locations_basis": "Literal source-definition text matches; no geocoding/current-country/impact assertion",
+          "futures_forward_inputs_mentioned": false,
+          "latest_two_months_estimate_rule": false
+        },
+        {
+          "id": "coal_australia",
+          "name": "Coal, Australian",
+          "group": "energy",
+          "definition_row": 4,
+          "source_name": "Coal, Australian",
+          "unit_raw": "($/mt)",
+          "unit": "USD_per_metric_ton",
+          "currency": "USD",
+          "unit_scale": 1,
+          "definition": "Coal (Australia), from February 2022, port thermal, f.o.b. Newcastle, 6000 kcal/kg futures price. From 2015 to January 2022, port thermal, f.o.b. Newcastle, 6000 kcal/kg spot price. 2002-2014, thermal GAR, f.o.b. piers, Newcastle/Port Kembla , 6,300 kcal/kg (11,340 btu/lb), less than 0.8%, sulfur 13% ash; previously 6,667 kcal/kg (12,000 btu/lb), less than 1.0% sulfur, 14%  ash",
+          "provider_reference": "Bloomberg Finance L.P. Finance L.P. Finance L.P.; Coal Week International; Coal Week; IHS McCloskey Coal Report; International Coal Report World Bank.",
+          "definition_metadata_scope": "Current source Description includes historical regimes; not evidence of a homogeneous quote basis across all months",
+          "reference_locations": [
+            "Newcastle"
+          ],
+          "reference_locations_basis": "Literal source-definition text matches; no geocoding/current-country/impact assertion",
+          "futures_forward_inputs_mentioned": true,
+          "latest_two_months_estimate_rule": false
+        },
+        {
+          "id": "coal_south_africa",
+          "name": "Coal, South African **",
+          "group": "energy",
+          "definition_row": 6,
+          "source_name": "Coal, South African **",
+          "unit_raw": "($/mt)",
+          "unit": "USD_per_metric_ton",
+          "currency": "USD",
+          "unit_scale": 1,
+          "definition": "Coal (South Africa), from January 2015, f.o.b. Richards Bay, NAR, 6,000 kcal/kg, sulfur less than 1%, forward month 1;  from February 13, 2017 to December 2017, thermal NAR netback assessment f.o.b. Richards Bay 6,000 kcal/kg; during 2006-February 10, 2017 thermal NAR; during 2002-2005 6,200 kcal/kg (11,200 btu/lb), less than 1.0%, sulfur 16% ash; years 1990-2001 6390 kcal/kg (11,500 btu/lb)",
+          "provider_reference": "Bloomberg Finance L.P. Finance L.P.; Coal Week; Coal Week International; International Coal Report; World Bank.",
+          "definition_metadata_scope": "Current source Description includes historical regimes; not evidence of a homogeneous quote basis across all months",
+          "reference_locations": [
+            "Richards Bay"
+          ],
+          "reference_locations_basis": "Literal source-definition text matches; no geocoding/current-country/impact assertion",
+          "futures_forward_inputs_mentioned": true,
+          "latest_two_months_estimate_rule": false
+        },
+        {
+          "id": "gas_us",
+          "name": "Natural gas, US",
+          "group": "energy",
+          "definition_row": 13,
+          "source_name": "Natural gas, US",
+          "unit_raw": "($/mmbtu)",
+          "unit": "USD_per_million_British_thermal_units",
+          "currency": "USD",
+          "unit_scale": 1,
+          "definition": "Natural Gas (U.S.), spot price at Henry Hub, Louisiana",
+          "provider_reference": "Bloomberg Finance L.P. Finance L.P.; Thomson Reuters Datastream; The Wall Street Journal; World Bank.",
+          "definition_metadata_scope": "Current source Description includes historical regimes; not evidence of a homogeneous quote basis across all months",
+          "reference_locations": [
+            "Louisiana",
+            "Henry Hub"
+          ],
+          "reference_locations_basis": "Literal source-definition text matches; no geocoding/current-country/impact assertion",
+          "futures_forward_inputs_mentioned": false,
+          "latest_two_months_estimate_rule": false
+        },
+        {
+          "id": "gas_europe",
+          "name": "Natural gas, Europe",
+          "group": "energy",
+          "definition_row": 12,
+          "source_name": "Natural gas, Europe",
+          "unit_raw": "($/mmbtu)",
+          "unit": "USD_per_million_British_thermal_units",
+          "currency": "USD",
+          "unit_scale": 1,
+          "definition": "Natural Gas (Europe), from April 2015, Netherlands Title Transfer Facility (TTF); April 2010 to March 2015, average import border price and a spot price component, including UK; during June 2000 - March 2010 prices excludes UK.  ",
+          "provider_reference": "Bloomberg Finance L.P. Finance L.P.; World Gas Intelligence; World Bank.",
+          "definition_metadata_scope": "Current source Description includes historical regimes; not evidence of a homogeneous quote basis across all months",
+          "reference_locations": [
+            "Europe"
+          ],
+          "reference_locations_basis": "Literal source-definition text matches; no geocoding/current-country/impact assertion",
+          "futures_forward_inputs_mentioned": false,
+          "latest_two_months_estimate_rule": false
+        },
+        {
+          "id": "lng_japan",
+          "name": "Liquefied natural gas, Japan",
+          "group": "energy",
+          "definition_row": 14,
+          "source_name": "Liquefied natural gas, Japan",
+          "unit_raw": "($/mmbtu)",
+          "unit": "USD_per_million_British_thermal_units",
+          "currency": "USD",
+          "unit_scale": 1,
+          "definition": "Liquefied natural gas (Japan), LNG, import price, cif; recent two months' averages are estimates.",
+          "provider_reference": "Official Statistics of Japan; World Gas Intelligence; World Bank.",
+          "definition_metadata_scope": "Current source Description includes historical regimes; not evidence of a homogeneous quote basis across all months",
+          "reference_locations": [
+            "Japan"
+          ],
+          "reference_locations_basis": "Literal source-definition text matches; no geocoding/current-country/impact assertion",
+          "futures_forward_inputs_mentioned": false,
+          "latest_two_months_estimate_rule": true
+        },
+        {
+          "id": "aluminum",
+          "name": "Aluminum",
+          "group": "metals",
+          "definition_row": 88,
+          "source_name": "Aluminum",
+          "unit_raw": "($/mt)",
+          "unit": "USD_per_metric_ton",
+          "currency": "USD",
+          "unit_scale": 1,
+          "definition": "Aluminum (LME) London Metal Exchange, unalloyed primary ingots, high grade, minimum 99.7% purity, settlement price beginning 2005; previously cash price",
+          "provider_reference": "Bloomberg Finance L.P.; Engineering and Mining Journal; Platts Metals Week; Thomson Reuters Datastream; World Bank.",
+          "definition_metadata_scope": "Current source Description includes historical regimes; not evidence of a homogeneous quote basis across all months",
+          "reference_locations": [
+            "London"
+          ],
+          "reference_locations_basis": "Literal source-definition text matches; no geocoding/current-country/impact assertion",
+          "futures_forward_inputs_mentioned": false,
+          "latest_two_months_estimate_rule": false
+        },
+        {
+          "id": "copper",
+          "name": "Copper",
+          "group": "metals",
+          "definition_row": 89,
+          "source_name": "Copper",
+          "unit_raw": "($/mt)",
+          "unit": "USD_per_metric_ton",
+          "currency": "USD",
+          "unit_scale": 1,
+          "definition": "Copper (LME), grade A, minimum 99.9935% purity, cathodes and wire bar shapes, settlement price",
+          "provider_reference": "Bloomberg Finance L.P.; Engineering and Mining Journal; Platts Metals Week; Thomson Reuters Datastream; World Bank.",
+          "definition_metadata_scope": "Current source Description includes historical regimes; not evidence of a homogeneous quote basis across all months",
+          "reference_locations": [],
+          "reference_locations_basis": "Literal source-definition text matches; no geocoding/current-country/impact assertion",
+          "futures_forward_inputs_mentioned": false,
+          "latest_two_months_estimate_rule": false
+        },
+        {
+          "id": "lead",
+          "name": "Lead",
+          "group": "metals",
+          "definition_row": 92,
+          "source_name": "Lead",
+          "unit_raw": "($/mt)",
+          "unit": "USD_per_metric_ton",
+          "currency": "USD",
+          "unit_scale": 1,
+          "definition": "Lead (LME), refined, 99.97% purity, settlement price",
+          "provider_reference": "Bloomberg Finance L.P.; Engineering and Mining Journal; Platts Metals Week; Thomson Reuters Datastream; World Bank.",
+          "definition_metadata_scope": "Current source Description includes historical regimes; not evidence of a homogeneous quote basis across all months",
+          "reference_locations": [],
+          "reference_locations_basis": "Literal source-definition text matches; no geocoding/current-country/impact assertion",
+          "futures_forward_inputs_mentioned": false,
+          "latest_two_months_estimate_rule": false
+        },
+        {
+          "id": "tin",
+          "name": "Tin",
+          "group": "metals",
+          "definition_row": 99,
+          "source_name": "Tin",
+          "unit_raw": "($/mt)",
+          "unit": "USD_per_metric_ton",
+          "currency": "USD",
+          "unit_scale": 1,
+          "definition": "Tin (LME), refined, 99.85% purity, settlement price",
+          "provider_reference": "Bloomberg Finance L.P.; Engineering and Mining Journal; Platts Metals Week; Thomson Reuters Datastream; World Bank.",
+          "definition_metadata_scope": "Current source Description includes historical regimes; not evidence of a homogeneous quote basis across all months",
+          "reference_locations": [],
+          "reference_locations_basis": "Literal source-definition text matches; no geocoding/current-country/impact assertion",
+          "futures_forward_inputs_mentioned": false,
+          "latest_two_months_estimate_rule": false
+        },
+        {
+          "id": "nickel",
+          "name": "Nickel",
+          "group": "metals",
+          "definition_row": 93,
+          "source_name": "Nickel",
+          "unit_raw": "($/mt)",
+          "unit": "USD_per_metric_ton",
+          "currency": "USD",
+          "unit_scale": 1,
+          "definition": "Nickel (LME), cathodes, minimum 99.8% purity, settlement price beginning 2005; previously cash price",
+          "provider_reference": "Bloomberg Finance L.P.; Platts Metals Week, Thomson Reuters Datastream; World Bank.",
+          "definition_metadata_scope": "Current source Description includes historical regimes; not evidence of a homogeneous quote basis across all months",
+          "reference_locations": [],
+          "reference_locations_basis": "Literal source-definition text matches; no geocoding/current-country/impact assertion",
+          "futures_forward_inputs_mentioned": false,
+          "latest_two_months_estimate_rule": false
+        },
+        {
+          "id": "zinc",
+          "name": "Zinc",
+          "group": "metals",
+          "definition_row": 100,
+          "source_name": "Zinc",
+          "unit_raw": "($/mt)",
+          "unit": "USD_per_metric_ton",
+          "currency": "USD",
+          "unit_scale": 1,
+          "definition": "Zinc (LME), high grade, minimum 99.95% purity, settlement price beginning April 1990; previously special high grade, minimum 99.995%, cash prices ",
+          "provider_reference": "Bloomberg Finance L.P.; Engineering and Mining Journal; Platts Metals Week; Thomson Reuters Datastream; World Bank.",
+          "definition_metadata_scope": "Current source Description includes historical regimes; not evidence of a homogeneous quote basis across all months",
+          "reference_locations": [],
+          "reference_locations_basis": "Literal source-definition text matches; no geocoding/current-country/impact assertion",
+          "futures_forward_inputs_mentioned": false,
+          "latest_two_months_estimate_rule": false
+        },
+        {
+          "id": "gold",
+          "name": "Gold",
+          "group": "precious_metals",
+          "definition_row": 103,
+          "source_name": "Gold",
+          "unit_raw": "($/troy oz)",
+          "unit": "USD_per_troy_ounce",
+          "currency": "USD",
+          "unit_scale": 1,
+          "definition": "Gold, spot average of daily rates, from June 2025; previously (UK), 99.5% fine, London afternoon fixing, average of daily rates",
+          "provider_reference": "Bloomberg Finance L.P.; Kitco.com; International Monetary Fund, International Financial Statistics; London Bullion Market; Metals Week; Platts Metals Week; Shearson Lehman Brothers, Metal Market Weekly Review; Thomson Reuters Datastream; World Bank.",
+          "definition_metadata_scope": "Current source Description includes historical regimes; not evidence of a homogeneous quote basis across all months",
+          "reference_locations": [
+            "London"
+          ],
+          "reference_locations_basis": "Literal source-definition text matches; no geocoding/current-country/impact assertion",
+          "futures_forward_inputs_mentioned": false,
+          "latest_two_months_estimate_rule": false
+        },
+        {
+          "id": "silver",
+          "name": "Silver",
+          "group": "precious_metals",
+          "definition_row": 105,
+          "source_name": "Silver",
+          "unit_raw": "($/troy oz)",
+          "unit": "USD_per_troy_ounce",
+          "currency": "USD",
+          "unit_scale": 1,
+          "definition": "Silver (UK), 99.9% refined, London afternoon fixing; prior to July 1976 Handy & Harman.  Grade prior to 1962 unrefined silver.",
+          "provider_reference": "American Metal Market; Australian Mineral Economics Pty. Ltd.; Bloomberg Finance L.P.; London Bullion Market; Metals Week; Metals Statistics; Platts Metasl Week; The Silver Institute, Silver World Supply & Demand; Thomson Reuters Datastream; World Bank.",
+          "definition_metadata_scope": "Current source Description includes historical regimes; not evidence of a homogeneous quote basis across all months",
+          "reference_locations": [
+            "London"
+          ],
+          "reference_locations_basis": "Literal source-definition text matches; no geocoding/current-country/impact assertion",
+          "futures_forward_inputs_mentioned": false,
+          "latest_two_months_estimate_rule": false
+        },
+        {
+          "id": "platinum",
+          "name": "Platinum",
+          "group": "precious_metals",
+          "definition_row": 104,
+          "source_name": "Platinum",
+          "unit_raw": "($/troy oz)",
+          "unit": "USD_per_troy_ounce",
+          "currency": "USD",
+          "unit_scale": 1,
+          "definition": "Platinum,  99.95% minimum purity, plate or ingot form, spot average of daily rates, from June 2025; previously, (UK), 99.9% refined, London afternoon fixing",
+          "provider_reference": "Bloomberg Finance L.P.; London Platinum & Palladium Market; Platts Metals Week, CRB Commodity Yearbook; Thomson Reuters Datastream; World Bank.",
+          "definition_metadata_scope": "Current source Description includes historical regimes; not evidence of a homogeneous quote basis across all months",
+          "reference_locations": [
+            "London"
+          ],
+          "reference_locations_basis": "Literal source-definition text matches; no geocoding/current-country/impact assertion",
+          "futures_forward_inputs_mentioned": false,
+          "latest_two_months_estimate_rule": false
+        },
+        {
+          "id": "palm_oil",
+          "name": "Palm oil",
+          "group": "agriculture",
+          "definition_row": 31,
+          "source_name": "Palm oil",
+          "unit_raw": "($/mt)",
+          "unit": "USD_per_metric_ton",
+          "currency": "USD",
+          "unit_scale": 1,
+          "definition": "Palm oil (Malaysia), from January 2026, RBD, average export price FOB;February-December 2025, Crude, DAP; November 2024-January 2025, 5% Bulk, CIF North West Europe; January 2021 to October 2024, RBD, FOB Malaysia Ports; December 2001 to December 2020, RBD, CIF Rotterdam; previously Malaysia 5%,  c.i.f. N.W. Europe, bulk, nearest forward .",
+          "provider_reference": "S&P Global (formerly Markit Group Limited and earlier IHS Markit Agribusiness UK Ltd); Bloomberg Finance L.P.; ISTA Mielke GmbH, Oil World; US Department of Agriculture; World Bank.",
+          "definition_metadata_scope": "Current source Description includes historical regimes; not evidence of a homogeneous quote basis across all months",
+          "reference_locations": [
+            "Malaysia",
+            "Europe",
+            "Rotterdam"
+          ],
+          "reference_locations_basis": "Literal source-definition text matches; no geocoding/current-country/impact assertion",
+          "futures_forward_inputs_mentioned": true,
+          "latest_two_months_estimate_rule": false
+        },
+        {
+          "id": "soybeans",
+          "name": "Soybeans",
+          "group": "agriculture",
+          "definition_row": 36,
+          "source_name": "Soybeans",
+          "unit_raw": "($/mt)",
+          "unit": "USD_per_metric_ton",
+          "currency": "USD",
+          "unit_scale": 1,
+          "definition": "Soybeans, from January 2025, U.S. Soybeans, FOB U.S. Gulf ;January 2021-December 2024, U.S Gulf Yellow Soybean #2, CIF Rotterdam; December 2007 to December 2020, U.S. No. 2 yellow meal, CIF Rotterdam; previously US origin, nearest forward.",
+          "provider_reference": "S&P Global (formerly Markit Group Limited and earlier IHS Markit Agribusiness UK Ltd); Bloomberg Finance L.P.; ISTA Mielke GmbH, Oil World; US Department of Agriculture; World Bank.",
+          "definition_metadata_scope": "Current source Description includes historical regimes; not evidence of a homogeneous quote basis across all months",
+          "reference_locations": [
+            "Rotterdam"
+          ],
+          "reference_locations_basis": "Literal source-definition text matches; no geocoding/current-country/impact assertion",
+          "futures_forward_inputs_mentioned": true,
+          "latest_two_months_estimate_rule": false
+        },
+        {
+          "id": "soybean_meal",
+          "name": "Soybean meal",
+          "group": "agriculture",
+          "definition_row": 34,
+          "source_name": "Soybean meal",
+          "unit_raw": "($/mt)",
+          "unit": "USD_per_metric_ton",
+          "currency": "USD",
+          "unit_scale": 1,
+          "definition": "Soybean meal, from January 2025, U.S. Soymeal, 48% protein, average weekly price, FOB Rotterdam; January 2021-December 2024, Soybean Pellets 48% Pro, Brazil, CIF Rotterdam; January 1999 to December 2020, Brazilian pellets 48% protein, CIF Rotterdam; during 1990 - 1998, 45/46% c.i.f. Rotterdam, nearest forward; previously US origin 44%.",
+          "provider_reference": "S&P Global (formerly Markit Group Limited and earlier IHS Markit Agribusiness UK Ltd); Bloomberg Finance L.P.; ISTA Mielke GmbH, Oil World; US Department of Agriculture; World Bank.",
+          "definition_metadata_scope": "Current source Description includes historical regimes; not evidence of a homogeneous quote basis across all months",
+          "reference_locations": [
+            "Rotterdam"
+          ],
+          "reference_locations_basis": "Literal source-definition text matches; no geocoding/current-country/impact assertion",
+          "futures_forward_inputs_mentioned": true,
+          "latest_two_months_estimate_rule": false
+        },
+        {
+          "id": "maize",
+          "name": "Maize",
+          "group": "agriculture",
+          "definition_row": 41,
+          "source_name": "Maize",
+          "unit_raw": "($/mt)",
+          "unit": "USD_per_metric_ton",
+          "currency": "USD",
+          "unit_scale": 1,
+          "definition": "Maize (U.S.), no. 2, yellow, f.o.b. US Gulf ports",
+          "provider_reference": "Bloomberg Finance L.P.; US Department of Agriculture; World Bank.",
+          "definition_metadata_scope": "Current source Description includes historical regimes; not evidence of a homogeneous quote basis across all months",
+          "reference_locations": [
+            "US Gulf"
+          ],
+          "reference_locations_basis": "Literal source-definition text matches; no geocoding/current-country/impact assertion",
+          "futures_forward_inputs_mentioned": false,
+          "latest_two_months_estimate_rule": false
+        },
+        {
+          "id": "rice_thai_5",
+          "name": "Rice, Thai 5% ",
+          "group": "agriculture",
+          "definition_row": 42,
+          "source_name": "Rice, Thai 5% ",
+          "unit_raw": "($/mt)",
+          "unit": "USD_per_metric_ton",
+          "currency": "USD",
+          "unit_scale": 1,
+          "definition": "Rice (Thailand), 5% broken, white rice (WR), milled, indicative price based on  weekly surveys of export transactions, government standard, f.o.b. Bangkok",
+          "provider_reference": "Bloomberg Finance L.P.; US Department of Agricuture; World Bank.",
+          "definition_metadata_scope": "Current source Description includes historical regimes; not evidence of a homogeneous quote basis across all months",
+          "reference_locations": [
+            "Bangkok"
+          ],
+          "reference_locations_basis": "Literal source-definition text matches; no geocoding/current-country/impact assertion",
+          "futures_forward_inputs_mentioned": false,
+          "latest_two_months_estimate_rule": false
+        },
+        {
+          "id": "wheat_hrw",
+          "name": "Wheat, US HRW",
+          "group": "agriculture",
+          "definition_row": 48,
+          "source_name": "Wheat, US HRW",
+          "unit_raw": "($/mt)",
+          "unit": "USD_per_metric_ton",
+          "currency": "USD",
+          "unit_scale": 1,
+          "definition": "Wheat (U.S.), no. 2 hard red winter Gulf export price; June 2020 backwards, no. 1, hard red winter, ordinary protein, export price delivered at the US Gulf port for prompt or 30 days shipment",
+          "provider_reference": "Bloomberg Finance L.P.; US Department of Agriculture; World Bank.",
+          "definition_metadata_scope": "Current source Description includes historical regimes; not evidence of a homogeneous quote basis across all months",
+          "reference_locations": [
+            "US Gulf"
+          ],
+          "reference_locations_basis": "Literal source-definition text matches; no geocoding/current-country/impact assertion",
+          "futures_forward_inputs_mentioned": false,
+          "latest_two_months_estimate_rule": false
+        },
+        {
+          "id": "wheat_srw",
+          "name": "Wheat, US SRW",
+          "group": "agriculture",
+          "definition_row": 49,
+          "source_name": "Wheat, US SRW",
+          "unit_raw": "($/mt)",
+          "unit": "USD_per_metric_ton",
+          "currency": "USD",
+          "unit_scale": 1,
+          "definition": "Wheat (U.S.), no. 2, soft red winter, export price delivered at the US Gulf port for prompt or 30 days shipment",
+          "provider_reference": "Bloomberg Finance L.P.; US Department of Agriculture; World Bank.",
+          "definition_metadata_scope": "Current source Description includes historical regimes; not evidence of a homogeneous quote basis across all months",
+          "reference_locations": [
+            "US Gulf"
+          ],
+          "reference_locations_basis": "Literal source-definition text matches; no geocoding/current-country/impact assertion",
+          "futures_forward_inputs_mentioned": false,
+          "latest_two_months_estimate_rule": false
+        },
+        {
+          "id": "cocoa",
+          "name": "Cocoa",
+          "group": "agriculture",
+          "definition_row": 18,
+          "source_name": "Cocoa",
+          "unit_raw": "($/kg)",
+          "unit": "USD_per_kilogram",
+          "currency": "USD",
+          "unit_scale": 1,
+          "definition": "Cocoa (ICCO), International Cocoa Organization daily price, average of  the first three positions on the terminal markets of New York and London, nearest three future trading months.",
+          "provider_reference": "Bloomberg Finance L.P. Finance L.P.; International Cocoa Organization Secretariat; World Bank.",
+          "definition_metadata_scope": "Current source Description includes historical regimes; not evidence of a homogeneous quote basis across all months",
+          "reference_locations": [
+            "London"
+          ],
+          "reference_locations_basis": "Literal source-definition text matches; no geocoding/current-country/impact assertion",
+          "futures_forward_inputs_mentioned": true,
+          "latest_two_months_estimate_rule": false
+        },
+        {
+          "id": "coffee_arabica",
+          "name": "Coffee, Arabica",
+          "group": "agriculture",
+          "definition_row": 19,
+          "source_name": "Coffee, Arabica",
+          "unit_raw": "($/kg)",
+          "unit": "USD_per_kilogram",
+          "currency": "USD",
+          "unit_scale": 1,
+          "definition": "Coffee, Arabica (ICO), International Coffee Organization indicator price, other mild Arabicas, average New York and Bremen/Hamburg markets, ex-dock",
+          "provider_reference": "Bloomberg Finance L.P. Finance L.P.; Complete Coffee Coverage; International Coffee Organization; Thomson Reuters Datastream; World Bank.",
+          "definition_metadata_scope": "Current source Description includes historical regimes; not evidence of a homogeneous quote basis across all months",
+          "reference_locations": [],
+          "reference_locations_basis": "Literal source-definition text matches; no geocoding/current-country/impact assertion",
+          "futures_forward_inputs_mentioned": false,
+          "latest_two_months_estimate_rule": false
+        },
+        {
+          "id": "coffee_robusta",
+          "name": "Coffee, Robusta",
+          "group": "agriculture",
+          "definition_row": 20,
+          "source_name": "Coffee, Robusta",
+          "unit_raw": "($/kg)",
+          "unit": "USD_per_kilogram",
+          "currency": "USD",
+          "unit_scale": 1,
+          "definition": "Coffee, Robusta (ICO), International Coffee Organization indicator price, Robustas, average New York and Le Havre/Marseilles markets, ex-dock",
+          "provider_reference": "Bloomberg Finance L.P. Finance L.P.; Complete Coffee Coverage; International Coffee Organization; Thomson Reuters Datastream; World Bank.",
+          "definition_metadata_scope": "Current source Description includes historical regimes; not evidence of a homogeneous quote basis across all months",
+          "reference_locations": [],
+          "reference_locations_basis": "Literal source-definition text matches; no geocoding/current-country/impact assertion",
+          "futures_forward_inputs_mentioned": false,
+          "latest_two_months_estimate_rule": false
+        },
+        {
+          "id": "cotton_a",
+          "name": "Cotton, A Index",
+          "group": "agriculture_raw_material",
+          "definition_row": 74,
+          "source_name": "Cotton, A Index",
+          "unit_raw": "($/kg)",
+          "unit": "USD_per_kilogram",
+          "currency": "USD",
+          "unit_scale": 1,
+          "definition": "Cotton (Cotton Outlook \"CotlookA index\"), middling 1-3/32 inch, traded in Far East, C/F beginning 2006; previously Northern Europe, c.i.f.",
+          "provider_reference": "Bloomberg Finance L.P.; Cotton Outlook; International Cotton Advisory Committee; Liverpool Cotton Services Ltd.; World Bank.",
+          "definition_metadata_scope": "Current source Description includes historical regimes; not evidence of a homogeneous quote basis across all months",
+          "reference_locations": [
+            "Europe"
+          ],
+          "reference_locations_basis": "Literal source-definition text matches; no geocoding/current-country/impact assertion",
+          "futures_forward_inputs_mentioned": false,
+          "latest_two_months_estimate_rule": false
+        },
+        {
+          "id": "rubber_tsr20",
+          "name": "Rubber, TSR20 **",
+          "group": "agriculture_raw_material",
+          "definition_row": 77,
+          "source_name": "Rubber, TSR20 **",
+          "unit_raw": "($/kg)",
+          "unit": "USD_per_kilogram",
+          "currency": "USD",
+          "unit_scale": 1,
+          "definition": "Rubber (Asia), TSR 20, Technically Specified Rubber, SGX/SICOM nearby futures contract",
+          "provider_reference": "Asian Wall Street Journal; Bloomberg Finance L.P.; International Rubber Study Group; Rubber Association of Singapore Commodity Exchange (RASCE); Singapore Exchange Ltd (SGX previously SICOM); World Bank.",
+          "definition_metadata_scope": "Current source Description includes historical regimes; not evidence of a homogeneous quote basis across all months",
+          "reference_locations": [],
+          "reference_locations_basis": "Literal source-definition text matches; no geocoding/current-country/impact assertion",
+          "futures_forward_inputs_mentioned": true,
+          "latest_two_months_estimate_rule": false
+        },
+        {
+          "id": "barley",
+          "name": "Barley",
+          "group": "agriculture",
+          "definition_row": 40,
+          "source_name": "Barley",
+          "unit_raw": "($/mt)",
+          "unit": "USD_per_metric_ton",
+          "currency": "USD",
+          "unit_scale": 1,
+          "definition": "Barley (U.S.) feed, No. 2, spot, 20 days To-Arrive, delivered Minneapolis from May 2012 onwards; during 1980 - 2012 April Canadian, feed, Western No. 1, Winnipeg Commodity Exchange, spot, wholesale farmers' price",
+          "provider_reference": "Bloomberg Finance L.P.; US Department of Agriculture; World Bank.",
+          "definition_metadata_scope": "Current source Description includes historical regimes; not evidence of a homogeneous quote basis across all months",
+          "reference_locations": [],
+          "reference_locations_basis": "Literal source-definition text matches; no geocoding/current-country/impact assertion",
+          "futures_forward_inputs_mentioned": false,
+          "latest_two_months_estimate_rule": false
+        },
+        {
+          "id": "sugar_world",
+          "name": "Sugar, world",
+          "group": "agriculture",
+          "definition_row": 61,
+          "source_name": "Sugar, world",
+          "unit_raw": "($/kg)",
+          "unit": "USD_per_kilogram",
+          "currency": "USD",
+          "unit_scale": 1,
+          "definition": "Sugar (World), International Sugar Agreement (ISA) daily price, raw,  f.o.b. and stowed at greater Caribbean ports",
+          "provider_reference": "Bloomberg Finance L.P.; International Sugar Organization; Thomson Reuters Datastream; World Bank.",
+          "definition_metadata_scope": "Current source Description includes historical regimes; not evidence of a homogeneous quote basis across all months",
+          "reference_locations": [],
+          "reference_locations_basis": "Literal source-definition text matches; no geocoding/current-country/impact assertion",
+          "futures_forward_inputs_mentioned": false,
+          "latest_two_months_estimate_rule": false
+        },
+        {
+          "id": "logs_malaysia",
+          "name": "Logs, Malaysian",
+          "group": "timber",
+          "definition_row": 67,
+          "source_name": "Logs, Malaysian",
+          "unit_raw": "($/cubic meter)",
+          "unit": "USD_per_cubic_meter",
+          "currency": "USD",
+          "unit_scale": 1,
+          "definition": "Logs (Southeast Asia), meranti, Sarawak, sale price charged by importers, Tokyo beginning February 1993; previously average of Sabah and Sarawak weighted by Japanese import volumes",
+          "provider_reference": "International Tropical Timber Organization; Mokuzai Shikyo Geppo; World Bank.",
+          "definition_metadata_scope": "Current source Description includes historical regimes; not evidence of a homogeneous quote basis across all months",
+          "reference_locations": [
+            "Sarawak",
+            "Sabah",
+            "Tokyo",
+            "Japan"
+          ],
+          "reference_locations_basis": "Literal source-definition text matches; no geocoding/current-country/impact assertion",
+          "futures_forward_inputs_mentioned": false,
+          "latest_two_months_estimate_rule": false
+        },
+        {
+          "id": "sawnwood_malaysia",
+          "name": "Sawnwood, Malaysian",
+          "group": "timber",
+          "definition_row": 70,
+          "source_name": "Sawnwood, Malaysian",
+          "unit_raw": "($/cubic meter)",
+          "unit": "USD_per_cubic_meter",
+          "currency": "USD",
+          "unit_scale": 1,
+          "definition": "Sawnwood (Southeast Asia), dark red seraya/meranti, select and better quality, average 7 to 8 inches; length average 12 to 14 inches; thickness 1 to 2 inch(es);  kiln dry, c. & f. UK ports, with 5% agents commission including premium for products of certified sustainable forest beginning January 2005; previously excluding the premium",
+          "provider_reference": "International Tropical Timber Organization; Tropical Timbers; World Bank.",
+          "definition_metadata_scope": "Current source Description includes historical regimes; not evidence of a homogeneous quote basis across all months",
+          "reference_locations": [],
+          "reference_locations_basis": "Literal source-definition text matches; no geocoding/current-country/impact assertion",
+          "futures_forward_inputs_mentioned": false,
+          "latest_two_months_estimate_rule": false
+        },
+        {
+          "id": "urea",
+          "name": "Urea ",
+          "group": "fertilizers",
+          "definition_row": 85,
+          "source_name": "Urea ",
+          "unit_raw": "($/mt)",
+          "unit": "USD_per_metric_ton",
+          "currency": "USD",
+          "unit_scale": 1,
+          "definition": "Urea, (Ukraine), prill spot f.o.b. Middle East, beginning March 2022; previously, f.o.b. Black Sea.",
+          "provider_reference": "Bloomberg Finance L.P.; Bloomberg Finance L.P. L.P. - Green Markets (formerly Kennedy Information LLC)",
+          "definition_metadata_scope": "Current source Description includes historical regimes; not evidence of a homogeneous quote basis across all months",
+          "reference_locations": [
+            "Middle East"
+          ],
+          "reference_locations_basis": "Literal source-definition text matches; no geocoding/current-country/impact assertion",
+          "futures_forward_inputs_mentioned": false,
+          "latest_two_months_estimate_rule": false
+        },
+        {
+          "id": "dap",
+          "name": "DAP",
+          "group": "fertilizers",
+          "definition_row": 81,
+          "source_name": "DAP",
+          "unit_raw": "($/mt)",
+          "unit": "USD_per_metric_ton",
+          "currency": "USD",
+          "unit_scale": 1,
+          "definition": "DAP (diammonium phosphate), spot, f.o.b. US Gulf",
+          "provider_reference": "Bloomberg Finance L.P.; Bloomberg Finance L.P. L.P. - Green Markets (formerly Kennedy Information LLC)",
+          "definition_metadata_scope": "Current source Description includes historical regimes; not evidence of a homogeneous quote basis across all months",
+          "reference_locations": [
+            "US Gulf"
+          ],
+          "reference_locations_basis": "Literal source-definition text matches; no geocoding/current-country/impact assertion",
+          "futures_forward_inputs_mentioned": false,
+          "latest_two_months_estimate_rule": false
+        },
+        {
+          "id": "phosphate_rock",
+          "name": "Phosphate rock",
+          "group": "fertilizers",
+          "definition_row": 82,
+          "source_name": "Phosphate rock",
+          "unit_raw": "($/mt)",
+          "unit": "USD_per_metric_ton",
+          "currency": "USD",
+          "unit_scale": 1,
+          "definition": "Phosphate rock , f.o.b. North Africa",
+          "provider_reference": "Bloomberg Finance L.P.; Bloomberg Finance L.P. L.P. - Green Markets (formerly Kennedy Information LLC)",
+          "definition_metadata_scope": "Current source Description includes historical regimes; not evidence of a homogeneous quote basis across all months",
+          "reference_locations": [
+            "North Africa"
+          ],
+          "reference_locations_basis": "Literal source-definition text matches; no geocoding/current-country/impact assertion",
+          "futures_forward_inputs_mentioned": false,
+          "latest_two_months_estimate_rule": false
+        }
+      ],
+      "source_snapshot": {
+        "edition_date": "2026-10-02",
+        "edition_raw": "Updated on October 02, 2026",
+        "latest_observation_month": "2026-09",
+        "edition_date_is_per_observation_publication": false,
+        "monthly_prices_nominal_only": true,
+        "source_method_change_log": [
+          {
+            "source_row": 108,
+            "text": "denotes forecast series"
+          },
+          {
+            "source_row": 109,
+            "text": "Rubber TSR20 replaces Rubber RSS3 in Other Raw Materials index from 2018"
+          },
+          {
+            "source_row": 110,
+            "text": "Groundnut oil, replacement series from January 2023"
+          },
+          {
+            "source_row": 111,
+            "text": "Coal (South Africa), June to November 2022, March, April, June to September, December 2023, and January-May 2024 are estimates based on similar benchmarks, December 2022 to February 2023, May, and October-November 2023 replaced with source data."
+          },
+          {
+            "source_row": 112,
+            "text": "Potassium chloride changed from Vancouver to Brazil from January 2020; Groundnut oil corrected for February 2023."
+          },
+          {
+            "source_row": 113,
+            "text": "Chicken changed from U.S.A to Brazil from September 2021."
+          },
+          {
+            "source_row": 114,
+            "text": "Coffee (Arabica), Cotton, Kolkata tea, and Metal updated for February 2024."
+          },
+          {
+            "source_row": 115,
+            "text": "Beef, replacement series from January 2024"
+          },
+          {
+            "source_row": 116,
+            "text": "Lamb, replacement series from January 2020"
+          },
+          {
+            "source_row": 117,
+            "text": "Some oilseed November prices have updated entries while December are World Bank estimates. Some oilseed series have been replaced."
+          },
+          {
+            "source_row": 118,
+            "text": "January Kolkata corrected. Some oilseed January prices have updated entries while February are World Bank estimates. Some oilseed series have been replaced from January."
+          },
+          {
+            "source_row": 119,
+            "text": "Some oilseed February prices have updated entries while some March prices are World Bank estimates."
+          },
+          {
+            "source_row": 120,
+            "text": "Several oilseed series have been updated for the period April-November 2025."
+          },
+          {
+            "source_row": 121,
+            "text": "Peanut (Groundnut) series updated for the period November 2024-July 2025."
+          },
+          {
+            "source_row": 122,
+            "text": "Tobacco series updated for the period July-October 2025."
+          },
+          {
+            "source_row": 123,
+            "text": "January 2026: Kolkata and average tea have been updated for November."
+          },
+          {
+            "source_row": 124,
+            "text": "February 2026: LNG (Japan) corrected for 2024 (year) and the October-December 2024 (quarterly)."
+          },
+          {
+            "source_row": 125,
+            "text": "February 2026 edition onwards: Tobacco series are updated for the last three months, with the two most recent months reflecting estimates."
+          },
+          {
+            "source_row": 126,
+            "text": "March 2026: Wheat (US SRW) and Phosphate rock corrected for 2023 and 2024."
+          },
+          {
+            "source_row": 127,
+            "text": "April 2026: Tea updated for February 2026."
+          },
+          {
+            "source_row": 128,
+            "text": "July 2026: Tea updated for June 2026."
+          },
+          {
+            "source_row": 129,
+            "text": "August 2026: Replacement series for Fishmeal from July 2026."
+          },
+          {
+            "source_row": 130,
+            "text": "September 2026: Some minor inconsistencies in grain prices shown in the August release were the result of formatting issues and have since been addressed. Periods where data are unavailable are indicated by \"..\""
+          },
+          {
+            "source_row": 131,
+            "text": "October 2026: Replacement series for Palm oil from January 2026."
+          }
+        ],
+        "source_auxiliary_sheets_excluded": [
+          "Mismatch Details",
+          "Monthly Indices",
+          "Index Weights"
+        ],
+        "current_publisher_LNG_estimate_window": [
+          "2026-08",
+          "2026-09"
+        ],
+        "cell_specific_estimate_flags_supplied": false
+      },
+      "coverage": {
+        "scope": "35 selected nominal monthly commodity benchmark/reference series,441 month rows1990-01..2026-09 each; no country/firm/contract/forecast completeness claim",
+        "selected_series": 35,
+        "provider_price_columns_including_index": 71,
+        "unselected_physical_price_columns": 34,
+        "excluded_index_columns": 1,
+        "quarantined_unit_conflict": [
+          {
+            "source_name": "Iron ore, cfr spot",
+            "workbook_unit": "($/dmtu)",
+            "current_pdf_unit": "$/dmt",
+            "reason": "Native denominator conflict; no conversion or homogeneous historical-unit assumption",
+            "product_admission_eligible": false
+          }
+        ],
+        "observation_window": [
+          "1990-01",
+          "2026-09"
+        ],
+        "months_per_series": 441,
+        "continuous_numeric_series": 33,
+        "missing_series": [
+          {
+            "id": "rubber_tsr20",
+            "missing_months": 108
+          },
+          {
+            "id": "barley",
+            "missing_months": 73
+          }
+        ],
+        "forecast_products_excluded": true,
+        "monthly_actual_price_rows_after2026_09": 0
+      },
+      "time_semantics": {
+        "observation": "Month label only; no UTC occurrence or publication instant",
+        "edition": "Dataset release/update date2026-10-02 in receipt/source snapshot, not per-cell clock",
+        "per_record_published_updated_event_at": null,
+        "history_benchmark_definition": "Current descriptions include prior regime changes; no homogeneous specification claim",
+        "source_revision_history": "One current workbook vintage acquired; prior-vintage versions not reconstructed"
+      },
+      "limits": {
+        "max_source_requests": 2,
+        "raw_workbook_cap_bytes": 2097152,
+        "raw_pdf_cap_bytes": 1048576,
+        "decoded_workbook_cap_bytes": 33554432,
+        "safe_payload_cap_bytes": 4194304,
+        "strict_overall_deadline_seconds": 30,
+        "deadline_runtime": "Linux main-thread SIGALRM",
+        "max_chunk_items": 100,
+        "max_chunk_bytes": 262144,
+        "max_record_bytes": 32768,
+        "redirects": "reject",
+        "automatic_retry": false,
+        "exception_justification": "Explicitly reusable structured World Bank prices;586KB workbook with35×441 selected cells, source PDF267KB; full safe vector metadata2.87MB is local/external-only, not a runtime fetch or article body"
+      },
+      "empty_policy": "Known nonempty historical calendar/series envelope cannot become silentzero. Individual source missing cells are legitimate and retained as null with original marker; no filling.",
+      "retrieval_allowed_text": {
+        "title": true,
+        "fact_paths": [
+          "source_series_name",
+          "source_commodity_group",
+          "observation_period",
+          "value",
+          "unit_raw",
+          "benchmark_location_references.*"
+        ]
+      },
+      "semantic_hash_excluded_paths": [
+        "first_seen_at",
+        "fetched_at",
+        "ingested_at"
+      ],
+      "semantic_hash_rule": "Only acquisition clocks excluded. Nominal values/null markers, native units, current/historical definitions and provider/location metadata remain semantic. Global edition/latest-month-relative estimate window lives in immutable acquisition witness, not every row semantic payload.",
+      "gaps": [
+        "Selected35 benchmark series, not all commodities or all-country prices",
+        "Iron ore excluded for workbook dmtu versus current-PDF dmt denominator conflict",
+        "RubberTSR20 early108 months and barley latest73 months remain source-missing",
+        "No2026-10+ observations, intraday prices, tradable futures contract records, real/PPP prices or forecasts",
+        "Some benchmark inputs reference futures/forward quotes; monthly records do not supply contract identities or execution quotes",
+        "LNG Japan latest two averages are source estimates; per-cell observed-versus-estimated flag is not separately supplied",
+        "Historical benchmark/method replacements and revisions remain in definitions/source snapshot; no constant quote-specification assumption",
+        "No affected-company/operating/event geography or independent vendor corroboration",
+        "No source-vintage archive completeness or autonomous/Windows operation verified"
+      ],
+      "acquisition_receipts": [
+        {
+          "request_id": "pink_sheet_monthly_2026_10_02",
+          "source_version": "0.18.0",
+          "requested_url": "https://thedocs.worldbank.org/en/doc/74e8be41ceb20fa0da750cda2f6b9e4e-0050012026/related/CMO-Historical-Data-Monthly.xlsx",
+          "fetched_at": "2026-10-08T17:08:40.398659+00:00",
+          "http_status": 200,
+          "bytes_read": 586099,
+          "upstream_raw_sha256": "ea1c350827878ea3bbe30e3cda16a13fd3bd5b409b8458940dc94a36b5a33154",
+          "retained_safe_sha256": "9c0b222a933213d9282b07e7adf581c5bfade495815ef9884c01ef1536a2de3c",
+          "retained_safe_bytes": 2866191,
+          "original_response_delivered": false,
+          "source_edition_date": "2026-10-02",
+          "latest_observation_month": "2026-09",
+          "selected_observation_start": "1990-01",
+          "selected_observation_end": "2026-09",
+          "selected_series": 35,
+          "source_cells": 15435,
+          "upstream_count": 15435,
+          "current_LNG_estimate_window": [
+            "2026-08",
+            "2026-09"
+          ],
+          "source_definition_scope": "Current definitions include historical regime changes; not homogeneous benchmark history",
+          "truncated": false,
+          "record_kind": "statistical_observation"
+        }
+      ],
+      "supporting_acquisition_receipts": [
+        {
+          "purpose": "Historical monthly nominal data and source definitions; forecasts/real-index assets excluded",
+          "schema_version": "dormathon.commodity-acquisition.v0.18",
+          "scope": "definitions",
+          "requested_url": "https://thedocs.worldbank.org/en/doc/74e8be41ceb20fa0da750cda2f6b9e4e-0050012026/related/CMO-Pink-Sheet-October-2026.pdf",
+          "started_at": "2026-10-08T17:08:32.528404+00:00",
+          "status": "retrieved_pending_schema_validation",
+          "attempts": 1,
+          "headers": {
+            "User-Agent": "DormathonSourceResearch/0.1 (+public-metadata-test)",
+            "Accept": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet, application/pdf"
+          },
+          "authentication": "none",
+          "redirect_policy": "reject",
+          "body_cap": 1048576,
+          "strict_overall_deadline_seconds": 30,
+          "recurring_operational": false,
+          "http_status": 200,
+          "bytes_read": 267820,
+          "body_complete": true,
+          "response_headers": {
+            "Date": "Wed, 07 Oct 2026 21:28:18 GMT",
+            "Last-Modified": "Fri, 02 Oct 2026 15:59:49 GMT",
+            "Content-Type": "application/pdf"
+          },
+          "upstream_raw_sha256": "1b6bb6961c8a317dfe49afb49c2a0eaf83b5460fc4337fe70a1ecd291cfde2bd",
+          "fetched_at": "2026-10-08T17:08:37.141744+00:00",
+          "retained_path": "source-data/definitions.pdf",
+          "retained_sha256": "1b6bb6961c8a317dfe49afb49c2a0eaf83b5460fc4337fe70a1ecd291cfde2bd",
+          "completed_at": "2026-10-08T17:08:37.142105+00:00",
+          "elapsed_seconds": 4.614
+        }
+      ],
+      "license_evidence": {
+        "method": "Official web tool primary-page reads on2026-10-08",
+        "dataset_page_successfully_read": true,
+        "catalog_metadata_updated": "2025-05-14",
+        "catalog_periodicity_raw": "Annual",
+        "catalog_temporal_coverage_raw": "1960–2030",
+        "catalog_mixes_historical_and_forecast_products": true,
+        "catalog_values_are_not_selected_monthly_observation_scope": true,
+        "upstream_catalog_body_sha256": null,
+        "upstream_landing_body_sha256": null,
+        "body_hash_basis": "Web-rendered source bodies were not retained; unknown digests are not fabricated"
+      },
+      "allowed_fact_paths": [
+        "benchmark_location_basis",
+        "benchmark_location_references.*",
+        "currency",
+        "definition_metadata_scope",
+        "domain",
+        "futures_forward_inputs_mentioned_in_definition",
+        "geography.country_or_operating_impact_assertion",
+        "geography.iso3",
+        "geography.kind",
+        "geography.label",
+        "missingness",
+        "observation_granularity",
+        "observation_period",
+        "price_basis",
+        "raw_value",
+        "record_is_tradable_contract",
+        "record_kind",
+        "reference_type",
+        "series_id",
+        "series_identity_basis",
+        "series_key",
+        "source_cell_kind",
+        "source_commodity_group",
+        "source_definition",
+        "source_estimate_context.cell_specific_estimate_flag",
+        "source_estimate_context.provider_recent_two_months_rule",
+        "source_estimate_context.reference_window_basis",
+        "source_forecast",
+        "source_group_basis",
+        "source_market_basis_homogeneous_for_all_history",
+        "source_provider_reference",
+        "source_series_name",
+        "time_semantics",
+        "transforms.annualized",
+        "transforms.converted_currency",
+        "transforms.converted_unit",
+        "transforms.deflated",
+        "transforms.interpolated",
+        "underlying_contract_identity",
+        "unit",
+        "unit_raw",
+        "unit_scale",
+        "value",
+        "value_status"
+      ],
+      "required_fact_paths": [
+        "record_kind",
+        "domain",
+        "series_id",
+        "series_key",
+        "source_series_name",
+        "observation_period",
+        "observation_granularity",
+        "missingness",
+        "unit",
+        "unit_raw",
+        "price_basis",
+        "source_definition"
+      ],
+      "input_id": "stat_worldbank_commodity_monthly",
+      "semantic_hash_policy": "commodity-transport-only-v0.18"
+    }
+  ],
+  "parser_version": "reviewed-commodity-pinned-v0.18",
+  "semantic_hash_policy": "commodity-transport-only-v0.18",
+  "rights_scope": "Licensed World Bank monthly nominal compiled reference observations; native units/current historical definitions/estimate and missingness preserved; no proprietary-vendor access",
+  "bulk_not_in_Git": true,
+  "source_qualification_addenda": [
+    {
+      "sha256": "1fb906db7ce134b656250ce3ea400df1cc399b75affaed595d72d9f77c286479",
+      "qualification": {
+        "schema_version": "dormathon.commodity-source-qualification.v0.18.2",
+        "reviewed_at": "2026-10-08T17:44:03.413846+00:00",
+        "source_policy_sha256": "aa7cb30c93f06c579199053d5d2c0286af00166f463d9a823c9d6f20d2cbf856",
+        "workbook_sha256": "ea1c350827878ea3bbe30e3cda16a13fd3bd5b409b8458940dc94a36b5a33154",
+        "definitions_pdf_sha256": "1b6bb6961c8a317dfe49afb49c2a0eaf83b5460fc4337fe70a1ecd291cfde2bd",
+        "exact_cells": [
+          {
+            "sheet": "Description",
+            "marker_cell": "A108",
+            "marker_raw": "   *",
+            "text_cell": "B108",
+            "text": "denotes forecast series"
+          },
+          {
+            "sheet": "Description",
+            "marker_cell": "A109",
+            "marker_raw": "   **",
+            "text_cell": "B109",
+            "text": "Rubber TSR20 replaces Rubber RSS3 in Other Raw Materials index from 2018"
+          }
+        ],
+        "pdf_qualifier": {
+          "page": 2,
+          "exact_text": "** = see next page \"Changes in the recent issues\""
+        },
+        "historical_scope_evidence": {
+          "sheet": "Monthly Prices",
+          "selected_last_month": "2026-09",
+          "edition_date": "2026-10-02",
+          "selected_future_months": 0,
+          "title_cell": {
+            "coordinate": "A2",
+            "raw_value": "monthly prices in nominal US dollars, 1960 to present"
+          },
+          "edition_cell": {
+            "coordinate": "A4",
+            "raw_value": "Updated on October 02, 2026"
+          }
+        },
+        "interpretation": {
+          "double_asterisk": "Change-note marker, not the single-asterisk forecast-series marker",
+          "single_asterisk": "Retain publisher forecast-series designation as metadata; no claim that the selected series lacks separate forecasts",
+          "source_forecast_false_scope": "Only the admitted past-month cells from the explicitly historical Monthly Prices sheet; does not assert cells are unestimated or that provider has no forecast series",
+          "forecast_assets_acquired": false,
+          "estimated_history": "Publisher estimates/method changes retained as source qualifiers; missing per-cell flag cannot imply confirmed observation"
+        },
+        "supersedes_clarification_sha256": "020dbfea6e86099d67bf1d5392828a63781586e189d86360105b560b09345ee6",
+        "correction_scope": "Correct historical header coordinates/values only. Original marker, rights, row projection, units, estimate/missingness, policy and both manifest bytes unchanged.",
+        "original_clarification_sha256": "e956fcdbd2a4d19ee580b7bd5531e84d9bb1676bf5c041358642fab232645cdd"
+      }
+    }
+  ]
+}

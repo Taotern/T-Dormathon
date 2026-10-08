@@ -1,0 +1,234 @@
+{
+  "schema_version": "dormathon.commodity-selection.v0.18",
+  "identity_basis": "Derived stable dataset-qualified IDs from frozen source column names; not exchange tickers or upstream API codes",
+  "start_month": "1990-01",
+  "expected_latest_month": "2026-09",
+  "price_sheet": "Monthly Prices",
+  "definition_sheet": "Description",
+  "unit_quarantine": [
+    {
+      "source_name": "Iron ore, cfr spot",
+      "workbook_unit": "($/dmtu)",
+      "current_pdf_unit": "$/dmt",
+      "reason": "Native denominator conflict; no conversion or homogeneous historical-unit assumption",
+      "product_admission_eligible": false
+    }
+  ],
+  "excluded_sheets": [
+    "Mismatch Details",
+    "Monthly Indices",
+    "Index Weights"
+  ],
+  "series": [
+    {
+      "id": "crude_average",
+      "name": "Crude oil, average",
+      "group": "energy",
+      "definition_row": 7
+    },
+    {
+      "id": "crude_brent",
+      "name": "Crude oil, Brent",
+      "group": "energy",
+      "definition_row": 8
+    },
+    {
+      "id": "coal_australia",
+      "name": "Coal, Australian",
+      "group": "energy",
+      "definition_row": 4
+    },
+    {
+      "id": "coal_south_africa",
+      "name": "Coal, South African **",
+      "group": "energy",
+      "definition_row": 6
+    },
+    {
+      "id": "gas_us",
+      "name": "Natural gas, US",
+      "group": "energy",
+      "definition_row": 13
+    },
+    {
+      "id": "gas_europe",
+      "name": "Natural gas, Europe",
+      "group": "energy",
+      "definition_row": 12
+    },
+    {
+      "id": "lng_japan",
+      "name": "Liquefied natural gas, Japan",
+      "group": "energy",
+      "definition_row": 14
+    },
+    {
+      "id": "aluminum",
+      "name": "Aluminum",
+      "group": "metals",
+      "definition_row": 88
+    },
+    {
+      "id": "copper",
+      "name": "Copper",
+      "group": "metals",
+      "definition_row": 89
+    },
+    {
+      "id": "lead",
+      "name": "Lead",
+      "group": "metals",
+      "definition_row": 92
+    },
+    {
+      "id": "tin",
+      "name": "Tin",
+      "group": "metals",
+      "definition_row": 99
+    },
+    {
+      "id": "nickel",
+      "name": "Nickel",
+      "group": "metals",
+      "definition_row": 93
+    },
+    {
+      "id": "zinc",
+      "name": "Zinc",
+      "group": "metals",
+      "definition_row": 100
+    },
+    {
+      "id": "gold",
+      "name": "Gold",
+      "group": "precious_metals",
+      "definition_row": 103
+    },
+    {
+      "id": "silver",
+      "name": "Silver",
+      "group": "precious_metals",
+      "definition_row": 105
+    },
+    {
+      "id": "platinum",
+      "name": "Platinum",
+      "group": "precious_metals",
+      "definition_row": 104
+    },
+    {
+      "id": "palm_oil",
+      "name": "Palm oil",
+      "group": "agriculture",
+      "definition_row": 31
+    },
+    {
+      "id": "soybeans",
+      "name": "Soybeans",
+      "group": "agriculture",
+      "definition_row": 36
+    },
+    {
+      "id": "soybean_meal",
+      "name": "Soybean meal",
+      "group": "agriculture",
+      "definition_row": 34
+    },
+    {
+      "id": "maize",
+      "name": "Maize",
+      "group": "agriculture",
+      "definition_row": 41
+    },
+    {
+      "id": "rice_thai_5",
+      "name": "Rice, Thai 5% ",
+      "group": "agriculture",
+      "definition_row": 42
+    },
+    {
+      "id": "wheat_hrw",
+      "name": "Wheat, US HRW",
+      "group": "agriculture",
+      "definition_row": 48
+    },
+    {
+      "id": "wheat_srw",
+      "name": "Wheat, US SRW",
+      "group": "agriculture",
+      "definition_row": 49
+    },
+    {
+      "id": "cocoa",
+      "name": "Cocoa",
+      "group": "agriculture",
+      "definition_row": 18
+    },
+    {
+      "id": "coffee_arabica",
+      "name": "Coffee, Arabica",
+      "group": "agriculture",
+      "definition_row": 19
+    },
+    {
+      "id": "coffee_robusta",
+      "name": "Coffee, Robusta",
+      "group": "agriculture",
+      "definition_row": 20
+    },
+    {
+      "id": "cotton_a",
+      "name": "Cotton, A Index",
+      "group": "agriculture_raw_material",
+      "definition_row": 74
+    },
+    {
+      "id": "rubber_tsr20",
+      "name": "Rubber, TSR20 **",
+      "group": "agriculture_raw_material",
+      "definition_row": 77
+    },
+    {
+      "id": "barley",
+      "name": "Barley",
+      "group": "agriculture",
+      "definition_row": 40
+    },
+    {
+      "id": "sugar_world",
+      "name": "Sugar, world",
+      "group": "agriculture",
+      "definition_row": 61
+    },
+    {
+      "id": "logs_malaysia",
+      "name": "Logs, Malaysian",
+      "group": "timber",
+      "definition_row": 67
+    },
+    {
+      "id": "sawnwood_malaysia",
+      "name": "Sawnwood, Malaysian",
+      "group": "timber",
+      "definition_row": 70
+    },
+    {
+      "id": "urea",
+      "name": "Urea ",
+      "group": "fertilizers",
+      "definition_row": 85
+    },
+    {
+      "id": "dap",
+      "name": "DAP",
+      "group": "fertilizers",
+      "definition_row": 81
+    },
+    {
+      "id": "phosphate_rock",
+      "name": "Phosphate rock",
+      "group": "fertilizers",
+      "definition_row": 82
+    }
+  ]
+}

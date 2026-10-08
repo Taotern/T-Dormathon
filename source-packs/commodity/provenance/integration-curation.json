@@ -1,0 +1,16 @@
+{
+  "producer_source_zip_sha256": "e064bd53997aa6662669027e8cef6204f84d45fd74c961c0f542c415675096d4",
+  "producer_source_manifest_sha256": "a223fe06872e5695afd89a1e0188b851745e9be7739186b1e52df62a5d9e0962",
+  "source_qualification_sha256": "1fb906db7ce134b656250ce3ea400df1cc399b75affaed595d72d9f77c286479",
+  "transforms": [
+    "Source-original parity report moved to provenance",
+    "Original source manifest retained under provenance; curated manifest generated",
+    "One shared nine-cell fixture, with no duplicate test copy",
+    "Exact marker/header and coverage clarification preserved separately from original rows/policy/chunk pins"
+  ],
+  "excluded": [
+    "full XLSX/PDF/original bodies",
+    "2.86MiB safe vector and250full normalized chunks",
+    "runtime/cache/private state/generated reports"
+  ]
+}

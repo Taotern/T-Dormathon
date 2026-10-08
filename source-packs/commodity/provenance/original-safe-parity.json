@@ -1,0 +1,12 @@
+{
+  "schema_version": "dormathon.commodity-original-safe-parity.v0.18",
+  "status": "passed",
+  "original_observation_cells_verified": 15435,
+  "series_definition_provider_unit_profiles_verified": 35,
+  "original_workbook_sha256": "ea1c350827878ea3bbe30e3cda16a13fd3bd5b409b8458940dc94a36b5a33154",
+  "safe_payload_sha256": "9c0b222a933213d9282b07e7adf581c5bfade495815ef9884c01ef1536a2de3c",
+  "no_interpolation_currency_or_unit_conversion": true,
+  "iron_ore_conflict_excluded": true,
+  "provider_requests": 0,
+  "site_requests": 0
+}

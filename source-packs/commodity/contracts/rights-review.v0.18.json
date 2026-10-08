@@ -1,0 +1,17 @@
+{
+  "schema_version":"dormathon.commodity-rights.v0.18",
+  "license_id":"CC-BY-4.0",
+  "dataset_id":"0038238",
+  "dataset_title":"Commodity Prices - History and Projections",
+  "primary_url":"https://datacatalog.worldbank.org/search/dataset/0038238/commodity-prices-history-and-projections",
+  "current_landing_url":"https://www.worldbank.org/en/research/commodity-markets",
+  "license_policy_url":"https://datacatalog.worldbank.org/public-licenses",
+  "source_access":"Public/keyless official workbook and source PDF",
+  "permission_basis":"Exact official dataset page declares Public and CC BY4.0 and links the current Commodity Markets website. That site links this exact historical-monthly workbook and its data-use terms. Source metadata/nominal data are distinct from forecast and annual/real-index assets.",
+  "third_party_scope":"Retain supplied underlying-provider names as compiler provenance. This licence does not grant direct access or rights to proprietary vendor feeds, articles, software or logos. Only the publicly licensed World Bank compilation data and permitted factual metadata are exported.",
+  "copyright_attribution":"World Bank Commodity Price Data (The Pink Sheet), Prospects Group. CC BY4.0; selected/normalized historical monthly nominal reference observations with source missingness and definitions preserved. No World Bank or underlying-provider endorsement.",
+  "conditions":["Credit source and licence; indicate normalization/selection","Retain original units/definitions/underlying-provider references and uncertainty","No endorsement or proprietary-feed access inferred","Keep actual historical prices separate from forecasts/real indexes/tradable contracts"],
+  "license_evidence":{"method":"Official web tool primary-page reads on2026-10-08","dataset_page_successfully_read":true,"catalog_metadata_updated":"2025-05-14","catalog_periodicity_raw":"Annual","catalog_temporal_coverage_raw":"1960–2030","catalog_mixes_historical_and_forecast_products":true,"catalog_values_are_not_selected_monthly_observation_scope":true,"upstream_catalog_body_sha256":null,"upstream_landing_body_sha256":null,"body_hash_basis":"Web-rendered source bodies were not retained; unknown digests are not fabricated"},
+  "pdf_scope":{"purpose":"Source units/definitions/revisions verification only","original_pdf_redistributed":false,"observed_footer_mark":"Official Use Only","boundary":"Public official page supplies the PDF; exported data use the explicitly Public/CC-BY dataset. Full PDF text/body is excluded from portable/product output."},
+  "product_admission_eligible":true
+}

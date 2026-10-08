@@ -1,0 +1,114 @@
+{
+  "intake_runtime_commit": "cea25c8960c84fdf7180e1f795870cec0db631bc",
+  "final_runtime_commit": "39850740004e31c36f2d7b957038dc89a6e1ef49",
+  "final_deployment_id": "appgdep_6ac7dc40eb688191acd4012f4a32493c",
+  "final_deployed_at": "2026-10-08T18:09:11.388744+00:00",
+  "original_source_policy_sha256": "aa7cb30c93f06c579199053d5d2c0286af00166f463d9a823c9d6f20d2cbf856",
+  "current_manifest_sha256": "885b953b49c9c04aa45e40440aed7967a25232e312441091ac76fd9a1cca107c",
+  "history_manifest_sha256": "877ce998aeb2988796a9db74278bde7377a6afaed262feb3b6935b343b81edda",
+  "qualification_source_sha256": "e956fcdbd2a4d19ee580b7bd5531e84d9bb1676bf5c041358642fab232645cdd",
+  "public_qualification_sha256": "1fb906db7ce134b656250ce3ea400df1cc399b75affaed595d72d9f77c286479",
+  "actual_cells": 15435,
+  "source_numeric_cells": 15254,
+  "source_missing_cells": 181,
+  "series": 35,
+  "month_window": [
+    "1990-01",
+    "2026-09"
+  ],
+  "current_cells": 2835,
+  "history_cells": 12600,
+  "chunks": 250,
+  "intake": {
+    "started_at": "2026-10-08T17:49:09.141997+00:00",
+    "finished_at": "2026-10-08T17:56:58.674762+00:00",
+    "sha256": "0802e538ff57552c32da28549756713c11c2f56ae121523315fcf29e456427d9",
+    "unknown": 0,
+    "provider_fetches": 0
+  },
+  "readback": {
+    "checks": 30,
+    "responses": 21,
+    "reused_prior_responses": 15,
+    "fresh_readonly_requests": 6,
+    "sha256": "88e06c749e8f3f2682e421db62b59a2989c4adb77711133ade4f063beef4f9af",
+    "per_response_runtime_addendum_sha256": "efe19d41ba7a2597020fc0dee272d5dc86e7b17e607a25b04ef4e06b9deb2259"
+  },
+  "independent_source": {
+    "parity_checks": 13,
+    "qualification_checks": 6,
+    "saved_evidence_checks": 7,
+    "saved_final_checks": 14,
+    "saved_final_review_sha256": "dee741ed598bd4e9155b21ac5683effe08a6660c53f545c814f538aba45f0b98"
+  },
+  "gui": {
+    "intake_runtime": "cea25c8960c84fdf7180e1f795870cec0db631bc",
+    "current_status_runtime": "39850740004e31c36f2d7b957038dc89a6e1ef49",
+    "browser": "cloud Chrome",
+    "tab_id": "21",
+    "viewport": 500,
+    "document_width": 485,
+    "scroll_width": 485,
+    "cases": [
+      {
+        "query": "Crude Brent 2026 09",
+        "period": "2026-09",
+        "value": 116.8,
+        "native_unit": "($/bbl)",
+        "version_id": "iver_80fda6f464b22b10c9417f98946e",
+        "real_loaded_detail": true,
+        "detail_focus": true,
+        "detail_top": 0.25,
+        "return_query_and_row_focus": true
+      },
+      {
+        "query": "Barley 2026 09",
+        "period": "2026-09",
+        "value_display": "未提供",
+        "missingness": "source_missing",
+        "cell_kind": "text_marker",
+        "native_unit": "($/mt)",
+        "real_loaded_detail": true,
+        "detail_focus": true,
+        "detail_top": 0.25,
+        "return_query_and_row_focus": true
+      }
+    ],
+    "origin_disclosed_as_reviewed_not_site_refetched": true,
+    "method_and_estimate_limit_visible": true,
+    "marker_and_unit_quarantine_explanation_visible": true,
+    "no_horizontal_overflow": true,
+    "provider_requests": 0,
+    "data_writes": 0,
+    "screenshots": {
+      "brent-500px.png": "0c9648a628d0a071a801e418af2ae8ff7aa14b919908f73db0e0b69a6ff51dac",
+      "barley-null-500px.png": "40154158b23b26ae389df8789da0867b41e975fd1c50e71f4ebfa985a6675a72"
+    },
+    "not_verified": [
+      "touch hardware",
+      "owner Windows",
+      "unattended acquisition/sync"
+    ]
+  },
+  "actual_totals": {
+    "items_versions_indexed": 51457,
+    "direct": 369,
+    "uploaded_unverified": 100,
+    "reviewed": 50988,
+    "reviewed_chunks": 662,
+    "rules": 8
+  },
+  "external_data_zip_sha256": "ed1bd935d8d370266c4fb884499aca56b468622bc8e7389f3a53f86a74bc02eb",
+  "excluded_capabilities": [
+    "all-country/firm commodity impact coverage",
+    "complete tradable futures contracts/real-time price feed",
+    "historical as-of-vintage reconstruction",
+    "per-cell confirmed observation",
+    "autonomous daily runtime",
+    "owner Windows installation",
+    "automatic private Site sync"
+  ],
+  "source_tests": 32,
+  "core_tests": 320,
+  "offline_full_intake_checks": 26
+}

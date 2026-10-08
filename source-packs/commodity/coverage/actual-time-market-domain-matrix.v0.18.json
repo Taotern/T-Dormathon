@@ -1,0 +1,95 @@
+{
+  "schema_version": "dormathon.commodity-coverage.v0.18",
+  "source_id": "stat_worldbank_commodity_monthly",
+  "stage": "actually_collected_not_site_ingested",
+  "observation_period": [
+    "1990-01",
+    "2026-09"
+  ],
+  "monthly_calendar_rows_per_series": 441,
+  "latest_source_edition_date": "2026-10-02",
+  "current2020_forward_month_rows": 81,
+  "source_nominal_price_columns": 71,
+  "selected_series": 35,
+  "continuous_numeric_series": 33,
+  "missing_observation_cells": 181,
+  "domains": {
+    "energy": [
+      "Crude oil, average",
+      "Crude oil, Brent",
+      "Coal, Australian",
+      "Coal, South African **",
+      "Natural gas, US",
+      "Natural gas, Europe",
+      "Liquefied natural gas, Japan"
+    ],
+    "metals": [
+      "Aluminum",
+      "Copper",
+      "Lead",
+      "Tin",
+      "Nickel",
+      "Zinc"
+    ],
+    "precious_metals": [
+      "Gold",
+      "Silver",
+      "Platinum"
+    ],
+    "agriculture": [
+      "Palm oil",
+      "Soybeans",
+      "Soybean meal",
+      "Maize",
+      "Rice, Thai 5% ",
+      "Wheat, US HRW",
+      "Wheat, US SRW",
+      "Cocoa",
+      "Coffee, Arabica",
+      "Coffee, Robusta",
+      "Barley",
+      "Sugar, world"
+    ],
+    "agriculture_raw_material": [
+      "Cotton, A Index",
+      "Rubber, TSR20 **"
+    ],
+    "timber": [
+      "Logs, Malaysian",
+      "Sawnwood, Malaysian"
+    ],
+    "fertilizers": [
+      "Urea ",
+      "DAP",
+      "Phosphate rock"
+    ]
+  },
+  "geography": "Global/regional benchmark, export/import/market-location references; no all-country national price or firm operating/impact mapping",
+  "country_denominator": null,
+  "entities": "35 derived series identities; source provider organizations are compiler provenance, not event/affected-company records",
+  "methodology": "Current descriptions and revision log include historical quote replacements; futures/forward-linked inputs are preserved without tradable-contract claims",
+  "latest_LNG_estimates": [
+    "2026-08",
+    "2026-09"
+  ],
+  "per_cell_estimate_status": "Not separately supplied",
+  "unit_conflict_quarantined": [
+    {
+      "source_name": "Iron ore, cfr spot",
+      "workbook_unit": "($/dmtu)",
+      "current_pdf_unit": "$/dmt",
+      "reason": "Native denominator conflict; no conversion or homogeneous historical-unit assumption",
+      "product_admission_eligible": false
+    }
+  ],
+  "excluded": [
+    "Mismatch Details",
+    "Monthly Indices",
+    "Index Weights",
+    "Annual/real price files",
+    "Forecast files",
+    "Linked/full document bodies"
+  ],
+  "site_ingestion": "not_run",
+  "recurring_operational": false
+}

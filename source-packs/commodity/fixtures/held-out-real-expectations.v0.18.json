@@ -1,0 +1,95 @@
+{
+  "basis": "Independent direct openpyxl extraction from original named Monthly Prices/Description cells; no adapter-generated expectations",
+  "expected": [
+    {
+      "series_key": "crude_brent",
+      "period": "2026-09",
+      "source_series_name": "Crude oil, Brent",
+      "unit_raw": "($/bbl)",
+      "raw_value": 116.8,
+      "value": 116.8,
+      "definition": "Crude oil, UK Brent 38` API.",
+      "provider_reference": "Bloomberg Finance L.P. Finance L.P.; Energy Intelligence Group (EIG); Organization of Petroleum Exporting Countries (OPEC); World Bank."
+    },
+    {
+      "series_key": "coal_australia",
+      "period": "2026-09",
+      "source_series_name": "Coal, Australian",
+      "unit_raw": "($/mt)",
+      "raw_value": 147.1,
+      "value": 147.1,
+      "definition": "Coal (Australia), from February 2022, port thermal, f.o.b. Newcastle, 6000 kcal/kg futures price. From 2015 to January 2022, port thermal, f.o.b. Newcastle, 6000 kcal/kg spot price. 2002-2014, thermal GAR, f.o.b. piers, Newcastle/Port Kembla , 6,300 kcal/kg (11,340 btu/lb), less than 0.8%, sulfur 13% ash; previously 6,667 kcal/kg (12,000 btu/lb), less than 1.0% sulfur, 14%  ash",
+      "provider_reference": "Bloomberg Finance L.P. Finance L.P. Finance L.P.; Coal Week International; Coal Week; IHS McCloskey Coal Report; International Coal Report World Bank."
+    },
+    {
+      "series_key": "lng_japan",
+      "period": "2026-09",
+      "source_series_name": "Liquefied natural gas, Japan",
+      "unit_raw": "($/mmbtu)",
+      "raw_value": 14.25,
+      "value": 14.25,
+      "definition": "Liquefied natural gas (Japan), LNG, import price, cif; recent two months' averages are estimates.",
+      "provider_reference": "Official Statistics of Japan; World Gas Intelligence; World Bank."
+    },
+    {
+      "series_key": "palm_oil",
+      "period": "2026-09",
+      "source_series_name": "Palm oil",
+      "unit_raw": "($/mt)",
+      "raw_value": 1180,
+      "value": 1180,
+      "definition": "Palm oil (Malaysia), from January 2026, RBD, average export price FOB;February-December 2025, Crude, DAP; November 2024-January 2025, 5% Bulk, CIF North West Europe; January 2021 to October 2024, RBD, FOB Malaysia Ports; December 2001 to December 2020, RBD, CIF Rotterdam; previously Malaysia 5%,  c.i.f. N.W. Europe, bulk, nearest forward .",
+      "provider_reference": "S&P Global (formerly Markit Group Limited and earlier IHS Markit Agribusiness UK Ltd); Bloomberg Finance L.P.; ISTA Mielke GmbH, Oil World; US Department of Agriculture; World Bank."
+    },
+    {
+      "series_key": "copper",
+      "period": "2026-09",
+      "source_series_name": "Copper",
+      "unit_raw": "($/mt)",
+      "raw_value": 14474,
+      "value": 14474,
+      "definition": "Copper (LME), grade A, minimum 99.9935% purity, cathodes and wire bar shapes, settlement price",
+      "provider_reference": "Bloomberg Finance L.P.; Engineering and Mining Journal; Platts Metals Week; Thomson Reuters Datastream; World Bank."
+    },
+    {
+      "series_key": "gold",
+      "period": "2026-09",
+      "source_series_name": "Gold",
+      "unit_raw": "($/troy oz)",
+      "raw_value": 4319,
+      "value": 4319,
+      "definition": "Gold, spot average of daily rates, from June 2025; previously (UK), 99.5% fine, London afternoon fixing, average of daily rates",
+      "provider_reference": "Bloomberg Finance L.P.; Kitco.com; International Monetary Fund, International Financial Statistics; London Bullion Market; Metals Week; Platts Metals Week; Shearson Lehman Brothers, Metal Market Weekly Review; Thomson Reuters Datastream; World Bank."
+    },
+    {
+      "series_key": "logs_malaysia",
+      "period": "2026-09",
+      "source_series_name": "Logs, Malaysian",
+      "unit_raw": "($/cubic meter)",
+      "raw_value": 190.3,
+      "value": 190.3,
+      "definition": "Logs (Southeast Asia), meranti, Sarawak, sale price charged by importers, Tokyo beginning February 1993; previously average of Sabah and Sarawak weighted by Japanese import volumes",
+      "provider_reference": "International Tropical Timber Organization; Mokuzai Shikyo Geppo; World Bank."
+    },
+    {
+      "series_key": "rubber_tsr20",
+      "period": "1990-01",
+      "source_series_name": "Rubber, TSR20 **",
+      "unit_raw": "($/kg)",
+      "raw_value": "…",
+      "value": null,
+      "definition": "Rubber (Asia), TSR 20, Technically Specified Rubber, SGX/SICOM nearby futures contract",
+      "provider_reference": "Asian Wall Street Journal; Bloomberg Finance L.P.; International Rubber Study Group; Rubber Association of Singapore Commodity Exchange (RASCE); Singapore Exchange Ltd (SGX previously SICOM); World Bank."
+    },
+    {
+      "series_key": "barley",
+      "period": "2026-09",
+      "source_series_name": "Barley",
+      "unit_raw": "($/mt)",
+      "raw_value": "…",
+      "value": null,
+      "definition": "Barley (U.S.) feed, No. 2, spot, 20 days To-Arrive, delivered Minneapolis from May 2012 onwards; during 1980 - 2012 April Canadian, feed, Western No. 1, Winnipeg Commodity Exchange, spot, wholesale farmers' price",
+      "provider_reference": "Bloomberg Finance L.P.; US Department of Agriculture; World Bank."
+    }
+  ]
+}

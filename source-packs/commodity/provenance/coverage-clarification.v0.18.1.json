@@ -1,0 +1,21 @@
+{
+  "schema_version": "dormathon.commodity-coverage-clarification.v0.18.1",
+  "recorded_at": "2026-10-08T17:45:11.073162+00:00",
+  "original_coverage_matrix_sha256": "d8b3dfe94ec957adc42abf365b9b367eb78a14a56e9f4e6566961a16f863bd4e",
+  "correction": {
+    "original_key": "source_nominal_price_columns",
+    "original_value": 71,
+    "meaning": "71 nonempty monthly data headers including one derived Natural gas index column",
+    "corrected_nonempty_monthly_data_headers": 71,
+    "nominal_physical_price_columns": 70,
+    "excluded_natural_gas_index_columns": 1,
+    "selected_price_series": 35,
+    "unselected_price_columns": 34,
+    "quarantined_iron_ore_price_columns": 1
+  },
+  "source_policy_coverage_already_explicit": true,
+  "effect_on_selected_series_rows_values_or_rights": null,
+  "stage": "actually_collected_validated_not_site_ingested",
+  "provider_calls": 0,
+  "site_calls": 0
+}

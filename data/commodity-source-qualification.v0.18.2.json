@@ -1,0 +1,51 @@
+{
+  "schema_version": "dormathon.commodity-source-qualification.v0.18.2",
+  "reviewed_at": "2026-10-08T17:44:03.413846+00:00",
+  "source_policy_sha256": "aa7cb30c93f06c579199053d5d2c0286af00166f463d9a823c9d6f20d2cbf856",
+  "workbook_sha256": "ea1c350827878ea3bbe30e3cda16a13fd3bd5b409b8458940dc94a36b5a33154",
+  "definitions_pdf_sha256": "1b6bb6961c8a317dfe49afb49c2a0eaf83b5460fc4337fe70a1ecd291cfde2bd",
+  "exact_cells": [
+    {
+      "sheet": "Description",
+      "marker_cell": "A108",
+      "marker_raw": "   *",
+      "text_cell": "B108",
+      "text": "denotes forecast series"
+    },
+    {
+      "sheet": "Description",
+      "marker_cell": "A109",
+      "marker_raw": "   **",
+      "text_cell": "B109",
+      "text": "Rubber TSR20 replaces Rubber RSS3 in Other Raw Materials index from 2018"
+    }
+  ],
+  "pdf_qualifier": {
+    "page": 2,
+    "exact_text": "** = see next page \"Changes in the recent issues\""
+  },
+  "historical_scope_evidence": {
+    "sheet": "Monthly Prices",
+    "selected_last_month": "2026-09",
+    "edition_date": "2026-10-02",
+    "selected_future_months": 0,
+    "title_cell": {
+      "coordinate": "A2",
+      "raw_value": "monthly prices in nominal US dollars, 1960 to present"
+    },
+    "edition_cell": {
+      "coordinate": "A4",
+      "raw_value": "Updated on October 02, 2026"
+    }
+  },
+  "interpretation": {
+    "double_asterisk": "Change-note marker, not the single-asterisk forecast-series marker",
+    "single_asterisk": "Retain publisher forecast-series designation as metadata; no claim that the selected series lacks separate forecasts",
+    "source_forecast_false_scope": "Only the admitted past-month cells from the explicitly historical Monthly Prices sheet; does not assert cells are unestimated or that provider has no forecast series",
+    "forecast_assets_acquired": false,
+    "estimated_history": "Publisher estimates/method changes retained as source qualifiers; missing per-cell flag cannot imply confirmed observation"
+  },
+  "supersedes_clarification_sha256": "020dbfea6e86099d67bf1d5392828a63781586e189d86360105b560b09345ee6",
+  "correction_scope": "Correct historical header coordinates/values only. Original marker, rights, row projection, units, estimate/missingness, policy and both manifest bytes unchanged.",
+  "original_clarification_sha256": "e956fcdbd2a4d19ee580b7bd5531e84d9bb1676bf5c041358642fab232645cdd"
+}

@@ -1,0 +1,32 @@
+{
+  "schema_version": "dormathon.commodity-acquisition.v0.18",
+  "scope": "definitions",
+  "requested_url": "https://thedocs.worldbank.org/en/doc/74e8be41ceb20fa0da750cda2f6b9e4e-0050012026/related/CMO-Pink-Sheet-October-2026.pdf",
+  "started_at": "2026-10-08T17:08:32.528404+00:00",
+  "status": "retrieved_pending_schema_validation",
+  "attempts": 1,
+  "headers": {
+    "User-Agent": "DormathonSourceResearch/0.1 (+public-metadata-test)",
+    "Accept": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet, application/pdf"
+  },
+  "authentication": "none",
+  "redirect_policy": "reject",
+  "body_cap": 1048576,
+  "strict_overall_deadline_seconds": 30,
+  "purpose": "Historical monthly nominal data and source definitions; forecasts/real-index assets excluded",
+  "recurring_operational": false,
+  "http_status": 200,
+  "bytes_read": 267820,
+  "body_complete": true,
+  "response_headers": {
+    "Date": "Wed, 07 Oct 2026 21:28:18 GMT",
+    "Last-Modified": "Fri, 02 Oct 2026 15:59:49 GMT",
+    "Content-Type": "application/pdf"
+  },
+  "upstream_raw_sha256": "1b6bb6961c8a317dfe49afb49c2a0eaf83b5460fc4337fe70a1ecd291cfde2bd",
+  "fetched_at": "2026-10-08T17:08:37.141744+00:00",
+  "retained_path": "source-data/definitions.pdf",
+  "retained_sha256": "1b6bb6961c8a317dfe49afb49c2a0eaf83b5460fc4337fe70a1ecd291cfde2bd",
+  "completed_at": "2026-10-08T17:08:37.142105+00:00",
+  "elapsed_seconds": 4.614
+}
