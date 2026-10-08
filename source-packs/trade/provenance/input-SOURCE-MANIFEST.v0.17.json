@@ -1,0 +1,135 @@
+{
+  "schema_version": "dormathon.trade-source-assets.v0.17",
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 7146,
+      "sha256": "327474917ce89c575b64d9381190eb465e9b23d6aaeb3d5f4f5415570696b71c"
+    },
+    {
+      "path": "acquire-fixed.py",
+      "bytes": 3908,
+      "sha256": "ab30e6eeb6ff8efac8342075542365e1c769e3f443019ca840f3a9d2254cfd6c"
+    },
+    {
+      "path": "adapters/normalized-common.mjs",
+      "bytes": 5755,
+      "sha256": "773d2fc291337bfa225e22b646356eb8aa0be464aaad6024864732678f1f8f5f"
+    },
+    {
+      "path": "adapters/ttbd-safeguards.mjs",
+      "bytes": 9919,
+      "sha256": "7ded558aabe386abf7b24ce591b4a20b20a42606b5ed9c8a894eb9d3dbf58ed5"
+    },
+    {
+      "path": "adapters/typed-common.mjs",
+      "bytes": 2383,
+      "sha256": "01d3849cfe64a1029ccfaa843a1c14cd62a0e0eb4c9cc6161a84a7fe3afb23a8"
+    },
+    {
+      "path": "build-package.mjs",
+      "bytes": 14189,
+      "sha256": "3c84d3b65d74354ff9c00587aeadba27c8b3916cb1286ad8443a474fbc253140"
+    },
+    {
+      "path": "contracts/catalog-license-safe.v0.17.json",
+      "bytes": 1250,
+      "sha256": "2cadff6aa257d4567135e39c2cf4963d779ce357f60a8f3db01bb21e7e9a6dba"
+    },
+    {
+      "path": "contracts/source-manifest.v0.17.json",
+      "bytes": 22056,
+      "sha256": "b1c7c17e568fd664f4aa6ec3e71f2405e8a580a3cf86efb4d7b56d48ecd7de61"
+    },
+    {
+      "path": "coverage/actual-time-jurisdiction-product-matrix.v0.17.json",
+      "bytes": 4053,
+      "sha256": "1e468b7872a11b716ecbb612745a69dc395cfc628b155bbf6f75b10b5ed3c4d2"
+    },
+    {
+      "path": "coverage/source-selection-coverage.v0.17.json",
+      "bytes": 2629,
+      "sha256": "a48cc2cad28ea34560165be2bb0c044c3d3534db365c7f0685521ce0b3dee5f4"
+    },
+    {
+      "path": "extract-safe.py",
+      "bytes": 7571,
+      "sha256": "d5f81f60d8c88428ea00a1081a4b8096b9e94197f47df3a853dd195afaa92051"
+    },
+    {
+      "path": "fixtures/cases.safe.v0.17.json",
+      "bytes": 86751,
+      "sha256": "bec0db4139a26e8679ccb9a525a1b74dc0611a357dbf7dd0bc65cb85d891da53"
+    },
+    {
+      "path": "fixtures/held-out-real-expectations.v0.17.json",
+      "bytes": 1530,
+      "sha256": "e19e8ad6e4637d029d9e370060b190b79dcdd1fcac353e704a250a6dbdf9d06c"
+    },
+    {
+      "path": "fixtures/normalized-known-source-samples.v0.17.json",
+      "bytes": 133291,
+      "sha256": "2127ff9efe35bf92d34000f3d40979faecfb1cb0bfc8c6746237f37b0b4d79bc"
+    },
+    {
+      "path": "read-catalog-rights.py",
+      "bytes": 2701,
+      "sha256": "df346be2a3733323515af00f8b4bcde9a8c2d45b9d2811d8d93a487d214cfb8b"
+    },
+    {
+      "path": "receipts/catalog-rights.json",
+      "bytes": 1071,
+      "sha256": "65690562a66d57cb56a7ea6f9a3c068b9e5d32acff6059348237f95ba980824a"
+    },
+    {
+      "path": "receipts/codebook.json",
+      "bytes": 1379,
+      "sha256": "323dbd16bbd42a2ad0da44d928e87f85d92ba0334d492881560497af9ebd2cfe"
+    },
+    {
+      "path": "receipts/safeguards.json",
+      "bytes": 1375,
+      "sha256": "4dbbea087c52c7614c48cfc41851bfa8e7b5866a30ca3371d481e0cb125a07ff"
+    },
+    {
+      "path": "reports/identity-conflict-quarantine.v0.17.json",
+      "bytes": 11904,
+      "sha256": "7e430e04d6609660b21b35e7ef18637a25e26016fe460030298c79e9aa1d2168"
+    },
+    {
+      "path": "reports/original-safe-parity.json",
+      "bytes": 701,
+      "sha256": "9935622c22eeaa32ec12ed8ac590ff34856ab471de3f8a5565aed9152f8ef42c"
+    },
+    {
+      "path": "run-slice.py",
+      "bytes": 2943,
+      "sha256": "167f5245b0dac661d377bf4c4c41015ecc3b2a7dcafd56242cd202eaaecc5936"
+    },
+    {
+      "path": "test-contract.mjs",
+      "bytes": 6929,
+      "sha256": "b0eab6e1fe17cb168c4be13700fc6a19456fde7ba4dfa6fe84e50160791d4bdf"
+    },
+    {
+      "path": "verify-original-safe.py",
+      "bytes": 2850,
+      "sha256": "a2e2353156ccd510babb321a9fa9b569abb0bd7eb5f14f10a011455a2c25d2d2"
+    }
+  ],
+  "exclusions": [
+    "Original ZIP/XLS/catalog HTML",
+    "Large safe-data/delivery chunks",
+    "Runtime/private data-local/exports",
+    "__pycache__",
+    "Unused intermediate catalog projection with contact fields"
+  ],
+  "not_run": [
+    "Windows",
+    "Unattended scheduler",
+    "Source refresh discovery",
+    "Site ingestion",
+    "Linked WTO/national legal text verification"
+  ],
+  "network_calls_this_packaging": 0
+}

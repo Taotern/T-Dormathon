@@ -1,0 +1,53 @@
+{
+  "basis": "Independent direct xlrd extraction from retained original worksheet, not normalized adapter outputs",
+  "expected": [
+    {
+      "case_id": "MYS-SG-6",
+      "country": "Malaysia",
+      "product": "Ceramic Floor and Wall Tiles",
+      "selection_date": "2020-09-13",
+      "selection_serial": 44087.0,
+      "source_vintage": "Q4_2024"
+    },
+    {
+      "case_id": "CHN-SG-3",
+      "country": "China",
+      "product": "Meat of Bovine Aniimals",
+      "selection_date": "2024-12-27",
+      "selection_serial": 45653.0,
+      "source_vintage": "Q4_2024"
+    },
+    {
+      "case_id": "IND-SG-47",
+      "country": "India",
+      "product": "PVC Suspension Resins with Residual VCM above 2 ppm",
+      "selection_date": "2022-09-16",
+      "selection_serial": 44820.0,
+      "source_vintage": "Q4_2024"
+    },
+    {
+      "case_id": "IDN-SG-35",
+      "country": "Indonesia",
+      "product": "Carpets and Other Textile Floor Coverings",
+      "selection_date": "2020-06-10",
+      "selection_serial": 43992.0,
+      "source_vintage": "Q4_2024"
+    },
+    {
+      "case_id": "EUN-SG-7",
+      "country": "European Union",
+      "product": "Manganese and Silicon-Based Alloying Elements",
+      "selection_date": "2024-12-19",
+      "selection_serial": 45645.0,
+      "source_vintage": "Q4_2024"
+    },
+    {
+      "case_id": "MDG-SG-10",
+      "country": "Madagascar",
+      "product": "Flour",
+      "selection_date": "2023-02-18",
+      "selection_serial": 44975.0,
+      "source_vintage": "Q4_2024"
+    }
+  ]
+}

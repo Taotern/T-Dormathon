@@ -1,0 +1,32 @@
+{
+  "schema_version": "dormathon.trade-remedy-acquisition.v0.17",
+  "scope": "safeguards",
+  "requested_url": "https://thedocs.worldbank.org/en/doc/1b03ee05a4a6d2374c126196ddf0a128-0430012025/related/Global-safeguard-measures.zip",
+  "started_at": "2026-10-08T16:27:27.066459+00:00",
+  "status": "retrieved_pending_license_and_schema_validation",
+  "attempts": 1,
+  "headers": {
+    "User-Agent": "DormathonSourceResearch/0.1 (+public-metadata-test)",
+    "Accept": "application/zip, application/vnd.ms-excel"
+  },
+  "authentication": "none",
+  "redirect_policy": "reject",
+  "body_cap": 2097152,
+  "strict_overall_deadline_seconds": 30,
+  "purpose": "Current official asset/license/schema verification; no product activation inferred",
+  "recurring_operational": false,
+  "http_status": 200,
+  "bytes_read": 1082431,
+  "body_complete": true,
+  "response_headers": {
+    "Date": "Thu, 08 Oct 2026 16:27:33 GMT",
+    "Last-Modified": "Thu, 24 Apr 2025 20:25:55 GMT",
+    "Content-Type": "application/zip"
+  },
+  "upstream_raw_sha256": "efd4833274883470142d8915ad68d3654764fd06648f791aae80e8bd376be440",
+  "fetched_at": "2026-10-08T16:27:33.316374+00:00",
+  "retained_path": "source-data/safeguards.zip",
+  "retained_sha256": "efd4833274883470142d8915ad68d3654764fd06648f791aae80e8bd376be440",
+  "completed_at": "2026-10-08T16:27:33.317383+00:00",
+  "elapsed_seconds": 6.251
+}

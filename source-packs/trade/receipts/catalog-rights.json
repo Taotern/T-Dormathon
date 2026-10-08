@@ -1,0 +1,29 @@
+{
+  "requested_url": "https://datacatalog.worldbank.org/search/dataset/0039583/temporary-trade-barriers-database-including-the-global-antidumping-database",
+  "started_at": "2026-10-08T16:29:38.969664+00:00",
+  "status": "retrieved_pending_rights_review",
+  "purpose": "Exact public dataset licence linkage verification after web tool timeout",
+  "headers": {
+    "User-Agent": "DormathonSourceResearch/0.1 (+public-metadata-test)",
+    "Accept": "text/html"
+  },
+  "attempts": 1,
+  "body_cap": 1048576,
+  "redirect_policy": "reject",
+  "http_status": 200,
+  "bytes_read": 115856,
+  "body_complete": true,
+  "content_type": "text/html; charset=utf-8",
+  "fetched_at": "2026-10-08T16:29:46.725717+00:00",
+  "retained_path": "source-data/catalog-rights.html",
+  "upstream_raw_sha256": "ed2808fc518d6812a7b243d43162d2acc9a2d1f0bca37b4e236f2fb8cf8b5557",
+  "visible_terms_found": [
+    "Creative Commons",
+    "Attribution 4.0",
+    "0039583",
+    "2024",
+    "Temporary Trade Barriers"
+  ],
+  "completed_at": "2026-10-08T16:29:46.729034+00:00",
+  "elapsed_seconds": 7.759
+}

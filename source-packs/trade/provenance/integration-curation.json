@@ -1,0 +1,19 @@
+{
+  "producer_source_zip_sha256": "dc280ed89ab924a32ed22368cf2c06b7a3e0b024fb773cd0316865c63aea0822",
+  "producer_source_manifest_sha256": "3461e93a71c46b0fd170f94f5af9988714c9f5f61e63c671753a67c4988bbb2a",
+  "transforms": [
+    "Immutable source-original parity and identity-conflict reports moved to provenance; no generated runtime reports retained",
+    "Original asset manifest retained as provenance/input-SOURCE-MANIFEST.v0.17.json; current curated asset manifest regenerated",
+    "One shared six-case fixture used by core tests and source tests, without duplicate copy"
+  ],
+  "excluded": [
+    "original ZIP/XLS/catalog HTML/codebook bodies",
+    "full safe-data and normalized delivery chunks",
+    "runtime data-local/generated reports/cache/private state"
+  ],
+  "required_runtime": [
+    "Node24 for Site tests/build",
+    "Python3 standard library for safe replay",
+    "Fresh original BIFF extraction additionally requires xlrd and explicitly external raw files; not part of safe replay"
+  ]
+}

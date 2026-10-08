@@ -1,0 +1,450 @@
+{
+  "source_case_id": "THA-SG-5",
+  "status": "quarantined",
+  "scope": "Both master rows and all related rows keyed by this ambiguous ID are excluded from normalized/retrieval output",
+  "reason": "Conflicting product/date/stage facts under one supplied case ID; related-table attachments cannot be disambiguated",
+  "original_zip_sha256": "efd4833274883470142d8915ad68d3654764fd06648f791aae80e8bd376be440",
+  "safe_conflicting_master_rows": [
+    {
+      "V_NUMBER": "Q4_2024",
+      "SG_CTY_NAME": "Thailand",
+      "CASE_ID": "THA-SG-5",
+      "PRODUCT": "Aluminium Foil  ",
+      "PET_DATE": {
+        "raw_value": "MI",
+        "cell_type": "text",
+        "date": null,
+        "precision": "unknown"
+      },
+      "WTO_INIT_DATE": {
+        "raw_value": 44092.0,
+        "cell_type": "excel_date",
+        "date": "2020-09-18",
+        "precision": "day"
+      },
+      "P_DATE": {
+        "raw_value": ".",
+        "cell_type": "text",
+        "date": null,
+        "precision": "unknown"
+      },
+      "P_INJ_DEC": "B",
+      "P_DEC": "B",
+      "P_SG_DATE": {
+        "raw_value": ".",
+        "cell_type": "text",
+        "date": null,
+        "precision": "unknown"
+      },
+      "P_SG_MEASURE": ".",
+      "F_INJ_DATE": {
+        "raw_value": 44443.0,
+        "cell_type": "excel_date",
+        "date": "2021-09-04",
+        "precision": "day"
+      },
+      "F_INJ_DEC": "N",
+      "F_DATE": {
+        "raw_value": 44443.0,
+        "cell_type": "excel_date",
+        "date": "2021-09-04",
+        "precision": "day"
+      },
+      "F_DEC": "N",
+      "F_SG_DATE": {
+        "raw_value": ".",
+        "cell_type": "text",
+        "date": null,
+        "precision": "unknown"
+      },
+      "F_SG_MEASURE": ".",
+      "TERM_DATE": {
+        "raw_value": ".",
+        "cell_type": "text",
+        "date": null,
+        "precision": "unknown"
+      },
+      "D1_DATE": {
+        "raw_value": ".",
+        "cell_type": "text",
+        "date": null,
+        "precision": "unknown"
+      },
+      "D2_DATE": {
+        "raw_value": ".",
+        "cell_type": "text",
+        "date": null,
+        "precision": "unknown"
+      },
+      "D3_DATE": {
+        "raw_value": ".",
+        "cell_type": "text",
+        "date": null,
+        "precision": "unknown"
+      },
+      "D4_DATE": {
+        "raw_value": ".",
+        "cell_type": "text",
+        "date": null,
+        "precision": "unknown"
+      },
+      "D1_YR": ".",
+      "D2_YR": ".",
+      "D3_YR": ".",
+      "D4_YR": ".",
+      "EXP_DATE": {
+        "raw_value": ".",
+        "cell_type": "text",
+        "date": null,
+        "precision": "unknown"
+      },
+      "EXP_YR": ".",
+      "REVOKE_DATE": {
+        "raw_value": ".",
+        "cell_type": "text",
+        "date": null,
+        "precision": "unknown"
+      },
+      "REVOKE_YEAR": ".",
+      "WTO_INIT_DOC": "G/SG/N/6/THA/5",
+      "WTO_PRELIM_DOC": ".",
+      "WTO_INJ_INV_DOC": "MI",
+      "WTO_FINAL_DOC": "G/SG/N/9/THA/2"
+    },
+    {
+      "V_NUMBER": "Q4_2024",
+      "SG_CTY_NAME": "Thailand",
+      "CASE_ID": "THA-SG-5",
+      "PRODUCT": "Structural Hot Rolled H-Beam with Alloy",
+      "PET_DATE": {
+        "raw_value": "MI",
+        "cell_type": "text",
+        "date": null,
+        "precision": "unknown"
+      },
+      "WTO_INIT_DATE": {
+        "raw_value": 42404.0,
+        "cell_type": "excel_date",
+        "date": "2016-02-04",
+        "precision": "day"
+      },
+      "P_DATE": {
+        "raw_value": ".",
+        "cell_type": "text",
+        "date": null,
+        "precision": "unknown"
+      },
+      "P_INJ_DEC": "B",
+      "P_DEC": "B",
+      "P_SG_DATE": {
+        "raw_value": ".",
+        "cell_type": "text",
+        "date": null,
+        "precision": "unknown"
+      },
+      "P_SG_MEASURE": ".",
+      "F_INJ_DATE": {
+        "raw_value": 42724.0,
+        "cell_type": "excel_date",
+        "date": "2016-12-20",
+        "precision": "day"
+      },
+      "F_INJ_DEC": "A",
+      "F_DATE": {
+        "raw_value": 42732.0,
+        "cell_type": "excel_date",
+        "date": "2016-12-28",
+        "precision": "day"
+      },
+      "F_DEC": "",
+      "F_SG_DATE": {
+        "raw_value": 42763.0,
+        "cell_type": "excel_date",
+        "date": "2017-01-28",
+        "precision": "day"
+      },
+      "F_SG_MEASURE": "AVD",
+      "TERM_DATE": {
+        "raw_value": ".",
+        "cell_type": "text",
+        "date": null,
+        "precision": "unknown"
+      },
+      "D1_DATE": {
+        "raw_value": 43127.0,
+        "cell_type": "excel_date",
+        "date": "2018-01-27",
+        "precision": "day"
+      },
+      "D2_DATE": {
+        "raw_value": ".",
+        "cell_type": "text",
+        "date": null,
+        "precision": "unknown"
+      },
+      "D3_DATE": {
+        "raw_value": ".",
+        "cell_type": "text",
+        "date": null,
+        "precision": "unknown"
+      },
+      "D4_DATE": {
+        "raw_value": ".",
+        "cell_type": "text",
+        "date": null,
+        "precision": "unknown"
+      },
+      "D1_YR": 2018.0,
+      "D2_YR": ".",
+      "D3_YR": ".",
+      "D4_YR": ".",
+      "EXP_DATE": {
+        "raw_value": 43492.0,
+        "cell_type": "excel_date",
+        "date": "2019-01-27",
+        "precision": "day"
+      },
+      "EXP_YR": 2019.0,
+      "REVOKE_DATE": {
+        "raw_value": "IF",
+        "cell_type": "text",
+        "date": null,
+        "precision": "unknown"
+      },
+      "REVOKE_YEAR": "IF",
+      "WTO_INIT_DOC": "G/SG/N/6/THA/5",
+      "WTO_PRELIM_DOC": ".",
+      "WTO_INJ_INV_DOC": "",
+      "WTO_FINAL_DOC": ""
+    }
+  ],
+  "fabricated_ids": false,
+  "row_witnesses": [
+    {
+      "source_zip_sha256": "efd4833274883470142d8915ad68d3654764fd06648f791aae80e8bd376be440",
+      "source_workbook_sha256": "20553b9c56b913c5970a6897308af2636dfd8af83f29a60c1e2f826fbc00b27f",
+      "worksheet": "SG-Master",
+      "excel_row_number": 366,
+      "safe_master_projection_sha256": "a11df4bb9e0e01caab59922c537a60cb3ab05a5e0415f052f6a09b5f2edf59d5",
+      "safe_master_fields": {
+        "V_NUMBER": "Q4_2024",
+        "SG_CTY_NAME": "Thailand",
+        "CASE_ID": "THA-SG-5",
+        "PRODUCT": "Aluminium Foil  ",
+        "PET_DATE": {
+          "raw_value": "MI",
+          "cell_type": "text",
+          "date": null,
+          "precision": "unknown"
+        },
+        "WTO_INIT_DATE": {
+          "raw_value": 44092.0,
+          "cell_type": "excel_date",
+          "date": "2020-09-18",
+          "precision": "day"
+        },
+        "P_DATE": {
+          "raw_value": ".",
+          "cell_type": "text",
+          "date": null,
+          "precision": "unknown"
+        },
+        "P_INJ_DEC": "B",
+        "P_DEC": "B",
+        "P_SG_DATE": {
+          "raw_value": ".",
+          "cell_type": "text",
+          "date": null,
+          "precision": "unknown"
+        },
+        "P_SG_MEASURE": ".",
+        "F_INJ_DATE": {
+          "raw_value": 44443.0,
+          "cell_type": "excel_date",
+          "date": "2021-09-04",
+          "precision": "day"
+        },
+        "F_INJ_DEC": "N",
+        "F_DATE": {
+          "raw_value": 44443.0,
+          "cell_type": "excel_date",
+          "date": "2021-09-04",
+          "precision": "day"
+        },
+        "F_DEC": "N",
+        "F_SG_DATE": {
+          "raw_value": ".",
+          "cell_type": "text",
+          "date": null,
+          "precision": "unknown"
+        },
+        "F_SG_MEASURE": ".",
+        "TERM_DATE": {
+          "raw_value": ".",
+          "cell_type": "text",
+          "date": null,
+          "precision": "unknown"
+        },
+        "D1_DATE": {
+          "raw_value": ".",
+          "cell_type": "text",
+          "date": null,
+          "precision": "unknown"
+        },
+        "D2_DATE": {
+          "raw_value": ".",
+          "cell_type": "text",
+          "date": null,
+          "precision": "unknown"
+        },
+        "D3_DATE": {
+          "raw_value": ".",
+          "cell_type": "text",
+          "date": null,
+          "precision": "unknown"
+        },
+        "D4_DATE": {
+          "raw_value": ".",
+          "cell_type": "text",
+          "date": null,
+          "precision": "unknown"
+        },
+        "D1_YR": ".",
+        "D2_YR": ".",
+        "D3_YR": ".",
+        "D4_YR": ".",
+        "EXP_DATE": {
+          "raw_value": ".",
+          "cell_type": "text",
+          "date": null,
+          "precision": "unknown"
+        },
+        "EXP_YR": ".",
+        "REVOKE_DATE": {
+          "raw_value": ".",
+          "cell_type": "text",
+          "date": null,
+          "precision": "unknown"
+        },
+        "REVOKE_YEAR": ".",
+        "WTO_INIT_DOC": "G/SG/N/6/THA/5",
+        "WTO_PRELIM_DOC": ".",
+        "WTO_INJ_INV_DOC": "MI",
+        "WTO_FINAL_DOC": "G/SG/N/9/THA/2"
+      }
+    },
+    {
+      "source_zip_sha256": "efd4833274883470142d8915ad68d3654764fd06648f791aae80e8bd376be440",
+      "source_workbook_sha256": "20553b9c56b913c5970a6897308af2636dfd8af83f29a60c1e2f826fbc00b27f",
+      "worksheet": "SG-Master",
+      "excel_row_number": 367,
+      "safe_master_projection_sha256": "b1e0d01f79e3cf5946a3b098bb0d5cf7fcbfa0db171bef5e9da6493f1e8d441d",
+      "safe_master_fields": {
+        "V_NUMBER": "Q4_2024",
+        "SG_CTY_NAME": "Thailand",
+        "CASE_ID": "THA-SG-5",
+        "PRODUCT": "Structural Hot Rolled H-Beam with Alloy",
+        "PET_DATE": {
+          "raw_value": "MI",
+          "cell_type": "text",
+          "date": null,
+          "precision": "unknown"
+        },
+        "WTO_INIT_DATE": {
+          "raw_value": 42404.0,
+          "cell_type": "excel_date",
+          "date": "2016-02-04",
+          "precision": "day"
+        },
+        "P_DATE": {
+          "raw_value": ".",
+          "cell_type": "text",
+          "date": null,
+          "precision": "unknown"
+        },
+        "P_INJ_DEC": "B",
+        "P_DEC": "B",
+        "P_SG_DATE": {
+          "raw_value": ".",
+          "cell_type": "text",
+          "date": null,
+          "precision": "unknown"
+        },
+        "P_SG_MEASURE": ".",
+        "F_INJ_DATE": {
+          "raw_value": 42724.0,
+          "cell_type": "excel_date",
+          "date": "2016-12-20",
+          "precision": "day"
+        },
+        "F_INJ_DEC": "A",
+        "F_DATE": {
+          "raw_value": 42732.0,
+          "cell_type": "excel_date",
+          "date": "2016-12-28",
+          "precision": "day"
+        },
+        "F_DEC": "",
+        "F_SG_DATE": {
+          "raw_value": 42763.0,
+          "cell_type": "excel_date",
+          "date": "2017-01-28",
+          "precision": "day"
+        },
+        "F_SG_MEASURE": "AVD",
+        "TERM_DATE": {
+          "raw_value": ".",
+          "cell_type": "text",
+          "date": null,
+          "precision": "unknown"
+        },
+        "D1_DATE": {
+          "raw_value": 43127.0,
+          "cell_type": "excel_date",
+          "date": "2018-01-27",
+          "precision": "day"
+        },
+        "D2_DATE": {
+          "raw_value": ".",
+          "cell_type": "text",
+          "date": null,
+          "precision": "unknown"
+        },
+        "D3_DATE": {
+          "raw_value": ".",
+          "cell_type": "text",
+          "date": null,
+          "precision": "unknown"
+        },
+        "D4_DATE": {
+          "raw_value": ".",
+          "cell_type": "text",
+          "date": null,
+          "precision": "unknown"
+        },
+        "D1_YR": 2018.0,
+        "D2_YR": ".",
+        "D3_YR": ".",
+        "D4_YR": ".",
+        "EXP_DATE": {
+          "raw_value": 43492.0,
+          "cell_type": "excel_date",
+          "date": "2019-01-27",
+          "precision": "day"
+        },
+        "EXP_YR": 2019.0,
+        "REVOKE_DATE": {
+          "raw_value": "IF",
+          "cell_type": "text",
+          "date": null,
+          "precision": "unknown"
+        },
+        "REVOKE_YEAR": "IF",
+        "WTO_INIT_DOC": "G/SG/N/6/THA/5",
+        "WTO_PRELIM_DOC": ".",
+        "WTO_INJ_INV_DOC": "",
+        "WTO_FINAL_DOC": ""
+      }
+    }
+  ]
+}

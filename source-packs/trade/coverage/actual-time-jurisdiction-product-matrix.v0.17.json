@@ -1,0 +1,129 @@
+{
+  "schema_version": "dormathon.trade-policy-coverage.v0.17",
+  "as_of": "2026-10-08T16:27:33.316374+00:00",
+  "stage": "actually_collected_not_site_ingested",
+  "source_id": "policy_worldbank_ttbd_safeguards",
+  "time": {
+    "source_vintage": "Q4_2024",
+    "provider_current_landing_date": "2025-03-12",
+    "catalog_metadata_date": "2023-01-19",
+    "actual_raw_component_date_span": [
+      "1995-03-29",
+      "2024-12-31"
+    ],
+    "projected_source_date_window": [
+      "2020-01-01",
+      "2024-12-31"
+    ],
+    "source_selection_dates_by_year": {
+      "2020": 21,
+      "2021": 9,
+      "2022": 5,
+      "2023": 12,
+      "2024": 13
+    },
+    "date_stage_label_basis": "Original source field names with unverified safeguard-specific semantics",
+    "source_publication_update_occurrence_instants": null,
+    "fresh24h_7day_coverage_claim": false,
+    "current2025_2026_coverage": false,
+    "older_raw_history_downloaded_but_not_projected": true,
+    "continuous_all_policy_history": false
+  },
+  "geography": {
+    "implementing_labels": [
+      "China",
+      "Egypt",
+      "European Union",
+      "India",
+      "Indonesia",
+      "Jordan",
+      "Madagascar",
+      "Malaysia",
+      "Morocco",
+      "Peru",
+      "Philippines",
+      "South Africa",
+      "Tunisia",
+      "Turkey",
+      "USA",
+      "Ukraine"
+    ],
+    "implementing_label_count": 16,
+    "label_basis": "Source SG_CTY_NAME; historical/state/group labels are not automatically ISO countries",
+    "supranational_group_labels": [
+      "European Union"
+    ],
+    "raw_component_label_count": 53,
+    "registry_HQ_operating_impact_location": null,
+    "event_country_or_coordinates_known": 0,
+    "country_denominator": null
+  },
+  "entities": {
+    "case_identities": 60,
+    "source_selected_candidates": 61,
+    "conflicting_identity": "THA-SG-5",
+    "firm_person_identities": 0,
+    "company_applicability": false,
+    "reference_basis": "Product and case-keyed country/measure references supplied by compilation; no operating/ownership joins"
+  },
+  "domains": {
+    "represented": [
+      "Historical global-safeguard trade-remedy case timelines",
+      "Source product/HS references and limited supplied measure/unit fields",
+      "Source WTO document-reference strings"
+    ],
+    "not_represented": [
+      "Current2025–26 notices",
+      "Antidumping/countervailing cases outside this component",
+      "All tariffs/export controls/sanctions or general legislation",
+      "Customer/supplier exposure, rate calculation or business risk conclusions"
+    ]
+  },
+  "granularity": {
+    "primary": "Source case identity with multiple raw date-stage fields",
+    "related_tables": {
+      "SG-Products": {
+        "matched_rows": 447,
+        "retained_rows": 391,
+        "cases_with_truncation": 4
+      },
+      "SG-QR or TRQ": {
+        "matched_rows": 0,
+        "retained_rows": 0,
+        "cases_with_truncation": 0
+      },
+      "SG-Final Measures": {
+        "matched_rows": 559,
+        "retained_rows": 292,
+        "cases_with_truncation": 11
+      },
+      "SG-Exemptions": {
+        "matched_rows": 1,
+        "retained_rows": 1,
+        "cases_with_truncation": 0
+      }
+    },
+    "missing_rows_are_not_absence": true,
+    "HS_codes": "Original raw scalar and supplied digits/subset only; HS version and numeric leading zeros unverified"
+  },
+  "rights": {
+    "license_id": "CC-BY-4.0",
+    "license_catalog_http_200": true,
+    "source_fact_fields_only": true
+  },
+  "source_quality": {
+    "conflicting_id_quarantined_before_time_filter": true,
+    "codebook_definition_mismatch": true,
+    "vintage_notes": "Some unexported NOTES contain2025 references despite Q4_2024 label; no current-event conclusion from them",
+    "no_latest_row_choice_or_fabricated_ids": true
+  },
+  "network": {
+    "data_requests": 2,
+    "rights_requests": 1,
+    "source_retries": 0,
+    "provider_denial_bypass": false
+  },
+  "recurring_operational": false,
+  "site_ingestion": "not_run",
+  "counts_are_reconciliation_not_global_completeness": true
+}

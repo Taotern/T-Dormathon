@@ -23,3 +23,11 @@ local-collector/*-report.txt
 *.sqlite-wal
 *.zip
 *.tar.gz
+
+# Source programs keep bulk acquisition and execution outputs outside teammate source.
+source-packs/*/data-local/
+source-packs/*/__pycache__/
+source-packs/*/source-data/
+source-packs/*/safe-data/
+source-packs/*/delivery/chunks/
+source-packs/*/reports/

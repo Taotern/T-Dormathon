@@ -1,0 +1,129 @@
+{
+  "source_case_rows": 459,
+  "source_distinct_case_ids": 458,
+  "conflicting_ids": [
+    "THA-SG-5"
+  ],
+  "selected_candidate_count": 61,
+  "quarantined_candidate_count": 1,
+  "source_implementing_labels": [
+    "Argentina",
+    "Armenia",
+    "Australia",
+    "Brazil",
+    "Bulgaria",
+    "Canada",
+    "Chile",
+    "China",
+    "Colombia",
+    "Costa Rica",
+    "Croatia",
+    "Czech Republic",
+    "Dominican Republic",
+    "Ecuador",
+    "Egypt",
+    "El Salvador",
+    "Estonia",
+    "European Union",
+    "Gulf Cooperation Council",
+    "Hungary",
+    "India",
+    "Indonesia",
+    "Israel",
+    "Jamaica",
+    "Japan",
+    "Jordan",
+    "Kazakhstan",
+    "Korea",
+    "Kyrgyz Republic",
+    "Latvia",
+    "Lithuania",
+    "Madagascar",
+    "Malaysia",
+    "Mexico",
+    "Moldova",
+    "Morocco",
+    "Pakistan",
+    "Panama",
+    "Peru",
+    "Philippines",
+    "Poland",
+    "Russia",
+    "Slovak Republic",
+    "Slovenia",
+    "South Africa",
+    "Taiwan",
+    "Thailand",
+    "Tunisia",
+    "Turkey",
+    "USA",
+    "Ukraine",
+    "Venezuela",
+    "Vietnam"
+  ],
+  "source_WTO_INIT_DATE_span": [
+    "1995-03-29",
+    "2024-12-31"
+  ],
+  "selected_case_count": 60,
+  "selected_implementing_labels": [
+    "China",
+    "Egypt",
+    "European Union",
+    "India",
+    "Indonesia",
+    "Jordan",
+    "Madagascar",
+    "Malaysia",
+    "Morocco",
+    "Peru",
+    "Philippines",
+    "South Africa",
+    "Tunisia",
+    "Turkey",
+    "USA",
+    "Ukraine"
+  ],
+  "selected_WTO_INIT_DATE_by_year": {
+    "2020": 21,
+    "2021": 9,
+    "2022": 5,
+    "2023": 12,
+    "2024": 13
+  },
+  "related_table_counts": {
+    "SG-Products": {
+      "matched_rows": 447,
+      "retained_rows": 391,
+      "cases_with_truncation": 4
+    },
+    "SG-QR or TRQ": {
+      "matched_rows": 0,
+      "retained_rows": 0,
+      "cases_with_truncation": 0
+    },
+    "SG-Final Measures": {
+      "matched_rows": 559,
+      "retained_rows": 292,
+      "cases_with_truncation": 11
+    },
+    "SG-Exemptions": {
+      "matched_rows": 1,
+      "retained_rows": 1,
+      "cases_with_truncation": 0
+    }
+  },
+  "date_cell_kinds_in_complete_master": {
+    "excel_date": 2460,
+    "text": 3956,
+    "empty": 2,
+    "number": 8
+  },
+  "safe_payload_sha256": "486d61f4c1db9d66aef0aa20275f91884bd503670c73dec09eecb46ffbeaaf26",
+  "workbook_date_mode": 0,
+  "codebook_scope": "Generic downloaded definitions are antidumping-focused; safeguard stage labels/decision markers stay original and uninterpreted",
+  "person_or_firm_rows_exported": 0,
+  "notes_contacts_article_bodies_exported": false,
+  "recurring_operational": false,
+  "site_ingestion": "not_run"
+}

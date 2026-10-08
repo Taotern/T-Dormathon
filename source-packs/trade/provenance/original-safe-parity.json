@@ -1,0 +1,18 @@
+{
+  "schema_version": "dormathon.ttbd-original-safe-parity.v0.17",
+  "status": "passed",
+  "cases_verified": 60,
+  "candidate_cases": 61,
+  "quarantined_identities": [
+    "THA-SG-5"
+  ],
+  "all_original_permitted_master_fields_equal": true,
+  "all_retained_related_field_values_equal": true,
+  "all_related_counts_caps_equal": true,
+  "identity_check_precedes_window_selection": true,
+  "zip_sha256": "efd4833274883470142d8915ad68d3654764fd06648f791aae80e8bd376be440",
+  "workbook_sha256": "20553b9c56b913c5970a6897308af2636dfd8af83f29a60c1e2f826fbc00b27f",
+  "safe_payload_sha256": "486d61f4c1db9d66aef0aa20275f91884bd503670c73dec09eecb46ffbeaaf26",
+  "provider_requests": 0,
+  "site_requests": 0
+}

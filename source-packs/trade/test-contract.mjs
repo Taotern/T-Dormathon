@@ -1,0 +1,35 @@
+import {readFileSync,writeFileSync,mkdirSync} from 'node:fs';import{resolve}from'node:path';import a from'node:assert/strict';
+import {readEnvelope,project,validateTradeCase,semanticPayload,excelDate} from './adapters/ttbd-safeguards.mjs';import{canonical,allowedText}from'./adapters/normalized-common.mjs';
+const root=resolve(import.meta.dirname),read=p=>JSON.parse(readFileSync(resolve(root,p),'utf8')),input=read('fixtures/cases.safe.v0.17.json'),source=read('contracts/source-manifest.v0.17.json').sources[0],env=readEnvelope(JSON.stringify(input)),rows=env.records.map(c=>project(c,source,{fetched_at:'2026-10-08T16:27:30Z'},env)),results=[];function test(name,fn){try{fn();results.push({name,passed:true});}catch(e){results.push({name,passed:false,error:e.message});}}const clone=x=>structuredClone(x);
+for(const e of read('fixtures/held-out-real-expectations.v0.17.json').expected)test('Independent source case facts '+e.case_id,()=>{const r=rows.find(x=>x.upstream_id===e.case_id);a.ok(r);validateTradeCase(r,source);a.equal(r.facts.implementing_jurisdiction.source_name,e.country);a.equal(r.facts.product_description,e.product);a.equal(r.facts.selection_date,e.selection_date);a.equal(r.facts.source_master_fields.WTO_INIT_DATE.raw_value,e.selection_serial);a.equal(r.facts.source_vintage.label,e.source_vintage);});
+function badInput(change){const x=clone(input);change(x);a.throws(()=>readEnvelope(JSON.stringify(x)));}
+function badRow(change){const x=clone(rows[0]);change(x);a.throws(()=>validateTradeCase(x,source));}
+test('Wrong HTML/error root fails',()=>a.throws(()=>readEnvelope('<html>error</html>')));
+test('Known nonempty historical pilot cannot silently returnzero',()=>badInput(x=>{x.cases=[];x.selection.selected_case_count=0;x.selection.candidate_case_count=1;}));
+test('Candidate/admitted/quarantine counts must reconcile',()=>badInput(x=>x.selection.candidate_case_count++));
+test('Conflict quarantine cannot silently disappear',()=>badInput(x=>{x.selection.quarantined_case_ids=[];}));
+test('Quarantined global case ID cannot be admitted by time-window choice',()=>badInput(x=>x.cases[0].master.CASE_ID='THA-SG-5'));
+test('Duplicate official case ID fails rather than inflating coverage',()=>badInput(x=>{x.cases.push(clone(x.cases[0]));x.selection.selected_case_count++;x.selection.candidate_case_count++;}));
+test('Future data vintage needs a new reviewed contract',()=>badInput(x=>x.cases[0].master.V_NUMBER='Q1_2025'));
+test('Changed source-master schema fails',()=>badInput(x=>delete x.cases[0].master.P_DEC));
+test('Article/notes/person/contact source fields prohibited',()=>badInput(x=>x.cases[0].master.NOTES='body text'));
+test('Source serial/day conversion remains exact',()=>{a.equal(excelDate(45292,0),'2024-01-01');a.equal(excelDate(43831,0),'2020-01-01');});
+test('Fractional Excel date time cannot become date-only fact',()=>badInput(x=>x.cases[0].master.WTO_INIT_DATE.raw_value+=0.5));
+test('Source date conversion mismatch fails',()=>badInput(x=>x.cases[0].master.WTO_INIT_DATE.date='2024-01-01'));
+test('Text/MI/IF/dot markers cannot become parsed dates',()=>badInput(x=>{x.cases[0].master.WTO_INIT_DATE={raw_value:'IF',cell_type:'text',date:'2024-01-01',precision:'day'};}));
+test('Unacquired source window not relabeled as2026 current',()=>badInput(x=>x.selection.end='2026-12-31'));
+test('Related matched/selected/cap/truncation counts coherent',()=>badInput(x=>x.cases[0].related['SG-Products'].matched_count=-1));
+test('Related empty response is known rows absence, without policy absence inference',()=>{a.equal(rows[0].facts.source_related_tables['SG-QR or TRQ'].matched_count,0);a.ok(rows[0].facts.related_absence_basis.includes('not evidence'));});
+test('Related rows cannot attach another source case',()=>badInput(x=>x.cases.find(c=>c.related['SG-Products'].rows.length).related['SG-Products'].rows[0].CASE_ID='OTHER-SG-1'));
+test('Supplied country/group labels cannot be replaced by guessed ISO',()=>badRow(x=>x.facts.implementing_jurisdiction.canonical_country_code='MY'));
+test('Product-country publication snapshot is not a company incident',()=>{for(const change of [x=>x.event_country='MY',x=>x.event_time='2024-01-01T00:00:00Z',x=>x.location={latitude:1,longitude:110},x=>x.entities=[{name:'Company',type:'organization',basis:'inferred'}]])badRow(change);});
+test('No fabricated publication or update midnight',()=>{badRow(x=>x.published_at='2024-01-01T00:00:00Z');badRow(x=>x.source_updated_at='2024-01-01T00:00:00Z');});
+test('Current active measure or binding claim fails',()=>{badRow(x=>x.facts.current_effectiveness='active');badRow(x=>x.facts.binding_status='binding');});
+test('Typed stage-date must match original raw source cell',()=>badRow(x=>x.facts.stage_dates[0].date='2026-01-01'));
+test('Unverified stage meaning cannot be replaced with confirmed legal effect',()=>badRow(x=>x.facts.stage_dates[0].label_basis='confirmed_enactment'));
+test('Source unit and missing-marker meaning remain uninterpreted',()=>{badRow(x=>x.facts.units_basis='converted_to_USD');badRow(x=>x.facts.missing_markers_basis='IF_means_active_in2026');});
+test('Unknown factual/body/contacts keys fail',()=>{badRow(x=>x.facts.article_body='body');badRow(x=>x.facts.email='contact');badRow(x=>x.facts.guessed_supply_disruption=true);});
+test('Allowed product/jurisdiction/date text is indexed; rights/header boilerplate excluded',()=>{const t=allowedText(rows[0],source);a.ok(t.includes(rows[0].facts.product_description)&&t.includes('Malaysia')&&t.includes(rows[0].facts.selection_date));a.ok(!t.includes('CC BY4.0')&&!t.includes('WTO_INIT_DATE')&&!t.includes('unknown_not_inferred'));});
+test('Acquisition clocks do not create new semantic case versions',()=>{const x=clone(rows[0]);x.fetched_at='2027-01-01T00:00:00Z';x.first_seen_at=x.fetched_at;a.equal(canonical(semanticPayload(x)),canonical(semanticPayload(rows[0])));});
+test('Actual source date/measure/vintage values remain semantic',()=>{const x=clone(rows[0]);x.facts.source_master_fields.F_DEC='changed';a.notEqual(canonical(semanticPayload(x)),canonical(semanticPayload(rows[0])));});
+const report={schema_version:'dormathon.trade-remedy-offline-checks.v0.17',finished_at:new Date().toISOString(),status:results.every(r=>r.passed)?'passed':'failed',passed:results.filter(r=>r.passed).length,failed:results.filter(r=>!r.passed).length,skipped:0,provider_calls:0,site_calls:0,fixture_scope:'Six independent original worksheet examples; fixture subset count is constructed test metadata, not provider upstream count',results};const out=resolve(process.env.DORMATHON_TRADE_REPORT_DIR||resolve(root,'data-local/reports'));mkdirSync(out,{recursive:true});writeFileSync(resolve(out,'offline-contract-tests.json'),JSON.stringify(report,null,2)+'\n');console.log(JSON.stringify({status:report.status,passed:report.passed,failed:report.failed,failed_checks:results.filter(r=>!r.passed)}));if(report.failed)process.exitCode=1;

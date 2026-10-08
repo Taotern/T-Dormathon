@@ -1,0 +1,78 @@
+{
+  "runtime_commit": "a04d0e9638a16511e3170451c6579be707ed6b41",
+  "deployment_id": "appgdep_6ac7caa4797081919e36446544f7363d",
+  "deployed_at": "2026-10-08T16:54:03.540089+00:00",
+  "manifest_sha256": "9b604e01ab7648285e05837127744dc5b30c45fc15f9e2a38d82dd22c04942b4",
+  "source_policy_sha256": "b1c7c17e568fd664f4aa6ec3e71f2405e8a580a3cf86efb4d7b56d48ecd7de61",
+  "intake": {
+    "started_at": "2026-10-08T16:54:34.412344+00:00",
+    "finished_at": "2026-10-08T16:55:43.716621+00:00",
+    "chunks": 5,
+    "rows": 60,
+    "sha256": "ed6c9dc64c429a25f755b43fed14107305f62a27362c9e16c7f6b60b29c74129",
+    "provider_fetches": 0,
+    "uncertain_requests": 0
+  },
+  "readback": {
+    "checks": 22,
+    "requests": 16,
+    "sha256": "c407ce6906ee91b1dd2504d746a259a73be50bdb192fe4a5a8d3072680d92c52"
+  },
+  "source_review": {
+    "code_checks": 13,
+    "saved_data_checks": 12,
+    "code_receipt_sha256": "dcee6ce9a023d07f20907d33ee3eeef18b3e02ee4380bd8b3497a179dd3ecc29",
+    "saved_receipt_sha256": "52f7e870af4e274abc841786ada46ed80827062e3e534d910941d5e2fd8914e3"
+  },
+  "actual_gui": {
+    "source_commit": "a04d0e9638a16511e3170451c6579be707ed6b41",
+    "deployment_id": "appgdep_6ac7caa4797081919e36446544f7363d",
+    "browser": "cloud Chrome",
+    "tab_id": "21",
+    "viewport_width": 500,
+    "document_client_width": 485,
+    "document_scroll_width": 485,
+    "query": "Malaysia Ceramic",
+    "source_id": "policy_worldbank_ttbd_safeguards",
+    "selected_version_id": "iver_90819ddb8040cd4d65a314896bb6",
+    "selected_upstream_id": "MYS-SG-6",
+    "checks": {
+      "actual_source_query_and_metadata": true,
+      "direct_vs_reviewed_disclosure": true,
+      "source_calendar_selection_and_unknown_effect_disclosed": true,
+      "stage_cell_expansion_original_serial44087_and_day2020_09_13": true,
+      "narrow_detail_focus": true,
+      "narrow_detail_top": 0.25,
+      "return_preserves_query_and_row_focus": true,
+      "horizontal_overflow": false
+    },
+    "screenshot_sha256": "f173e093996cf23223224866ed57012f9ca3fb3690a8b87fd9bb7bc360d44fe1",
+    "writes": 0,
+    "provider_fetches": 0,
+    "unverified": [
+      "Touch hardware",
+      "Windows runtime",
+      "autonomous acquisition/sync",
+      "current legal effectiveness",
+      "worldwide complete trade-policy coverage"
+    ]
+  },
+  "actual_totals": {
+    "indexed": 36022,
+    "direct": 369,
+    "uploaded_unverified": 100,
+    "reviewed": 35553,
+    "rules": 8,
+    "reviewed_chunks": 412
+  },
+  "source_tests": 34,
+  "core_tests": 316,
+  "external_safe_data_zip_sha256": "21cd7cee71e017583e470d964dc8ac4c451864290f99722f766f0e9e8e708a38",
+  "unverified": [
+    "autonomous daily runtime",
+    "Windows installation",
+    "complete global current/historical trade laws",
+    "codebook-specific stage interpretation",
+    "current legal effect or company applicability"
+  ]
+}
