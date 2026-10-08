@@ -1,0 +1,656 @@
+{
+  "schema": "dormathon.reviewed-history-admission.v0.11",
+  "manifest_sha256": "408df7444906025e0495cd9bd758bef52aca6f308b3baaaa2fc43fa2b4dd6325",
+  "original_policy_sha256": "43f9813df916ed6b7a3cdbb8fb9f9cd06a5df5b71d0546f7c4d0e041fe37d5ef",
+  "expected_records": 3975,
+  "source_counts": {
+    "stat_worldbank_gdp_annual": 3975
+  },
+  "chunks": [
+    {
+      "path": "chunks/stat_worldbank_gdp_annual-completion-0000.json",
+      "source_id": "stat_worldbank_gdp_annual",
+      "count": 87,
+      "bytes": 261945,
+      "sha256": "11962075fd8d6b9796d0fdad52c9e10ac7ecfab1b9a532b2e48d082fad411683"
+    },
+    {
+      "path": "chunks/stat_worldbank_gdp_annual-completion-0001.json",
+      "source_id": "stat_worldbank_gdp_annual",
+      "count": 86,
+      "bytes": 259552,
+      "sha256": "1546ecc527c28781339eb4a0149d146b3bae64159c09ac13aa1aa5f2a7bddc52"
+    },
+    {
+      "path": "chunks/stat_worldbank_gdp_annual-completion-0002.json",
+      "source_id": "stat_worldbank_gdp_annual",
+      "count": 87,
+      "bytes": 261381,
+      "sha256": "ac094bbea65c1eaeacfb12de8374e553b03cab37bf0c2706dcc3e409a07a6c9f"
+    },
+    {
+      "path": "chunks/stat_worldbank_gdp_annual-completion-0003.json",
+      "source_id": "stat_worldbank_gdp_annual",
+      "count": 87,
+      "bytes": 260853,
+      "sha256": "1db303f8066ab33540d6d6c83cce6396ccba4a7cdd4e176f3276a2f9bcb3f05d"
+    },
+    {
+      "path": "chunks/stat_worldbank_gdp_annual-completion-0004.json",
+      "source_id": "stat_worldbank_gdp_annual",
+      "count": 87,
+      "bytes": 261055,
+      "sha256": "64157c5d658b942b32a800155778dc4646a2616b79353178e802c7b2de4f50f1"
+    },
+    {
+      "path": "chunks/stat_worldbank_gdp_annual-completion-0005.json",
+      "source_id": "stat_worldbank_gdp_annual",
+      "count": 87,
+      "bytes": 261041,
+      "sha256": "929055be68fbbc16afc82074509f69e0fcdb834e6ffb6507ef329ac8a43c4bb9"
+    },
+    {
+      "path": "chunks/stat_worldbank_gdp_annual-completion-0006.json",
+      "source_id": "stat_worldbank_gdp_annual",
+      "count": 87,
+      "bytes": 261088,
+      "sha256": "2fc7d34219e8ede240a70c288808045e8296d75549f8281f0bd607972b147981"
+    },
+    {
+      "path": "chunks/stat_worldbank_gdp_annual-completion-0007.json",
+      "source_id": "stat_worldbank_gdp_annual",
+      "count": 87,
+      "bytes": 260628,
+      "sha256": "b370f06de284c9b24646805da8e45ba676a5860722e0a1f2f210dda28ad7be41"
+    },
+    {
+      "path": "chunks/stat_worldbank_gdp_annual-completion-0008.json",
+      "source_id": "stat_worldbank_gdp_annual",
+      "count": 87,
+      "bytes": 261481,
+      "sha256": "96a4cfadfe44fc894c1d5e6ad75bce991accbcacfbf2f92ddb8b1af94b761d60"
+    },
+    {
+      "path": "chunks/stat_worldbank_gdp_annual-completion-0009.json",
+      "source_id": "stat_worldbank_gdp_annual",
+      "count": 87,
+      "bytes": 261013,
+      "sha256": "f5961e190a6a369e25c31c123e418849f5b9a78c1d9f8102eb8b196ee06655a9"
+    },
+    {
+      "path": "chunks/stat_worldbank_gdp_annual-completion-0010.json",
+      "source_id": "stat_worldbank_gdp_annual",
+      "count": 87,
+      "bytes": 260897,
+      "sha256": "46ffff4501e226b1058e3fd134d15e1a62d84ce089c185f796cf80e2c3e4701e"
+    },
+    {
+      "path": "chunks/stat_worldbank_gdp_annual-completion-0011.json",
+      "source_id": "stat_worldbank_gdp_annual",
+      "count": 87,
+      "bytes": 261261,
+      "sha256": "fa0de452b5c53f58e6d5cc5e0053ef2cbc7633016873ec3cf184f446113abd1b"
+    },
+    {
+      "path": "chunks/stat_worldbank_gdp_annual-completion-0012.json",
+      "source_id": "stat_worldbank_gdp_annual",
+      "count": 87,
+      "bytes": 261456,
+      "sha256": "b0bc5449b037d86ec994f5a0859f86f9b796362af8ef91a5e62cff83c7e27c96"
+    },
+    {
+      "path": "chunks/stat_worldbank_gdp_annual-completion-0013.json",
+      "source_id": "stat_worldbank_gdp_annual",
+      "count": 87,
+      "bytes": 261346,
+      "sha256": "ff80cbdea0b709a93cf03e25840d01da5e8205e0c457d6f6e1e07df61694df63"
+    },
+    {
+      "path": "chunks/stat_worldbank_gdp_annual-completion-0014.json",
+      "source_id": "stat_worldbank_gdp_annual",
+      "count": 87,
+      "bytes": 261576,
+      "sha256": "0d4b1eb51590c489d09f051beaf79dab3351afcfc534d2110f33f522549c7cd8"
+    },
+    {
+      "path": "chunks/stat_worldbank_gdp_annual-completion-0015.json",
+      "source_id": "stat_worldbank_gdp_annual",
+      "count": 86,
+      "bytes": 259284,
+      "sha256": "c64d3ca0a3da1ffc285f560e074f96a2cbd1fe64c4648868399558d58cb35700"
+    },
+    {
+      "path": "chunks/stat_worldbank_gdp_annual-completion-0016.json",
+      "source_id": "stat_worldbank_gdp_annual",
+      "count": 87,
+      "bytes": 261939,
+      "sha256": "2661127366acb779adb6d8c1a2385fd468b639e6e8c2227a664a3d53c26cc328"
+    },
+    {
+      "path": "chunks/stat_worldbank_gdp_annual-completion-0017.json",
+      "source_id": "stat_worldbank_gdp_annual",
+      "count": 87,
+      "bytes": 261701,
+      "sha256": "e49c777c077457718a58ad1c382207df63b62e1e9303636e1b709089693e73e3"
+    },
+    {
+      "path": "chunks/stat_worldbank_gdp_annual-completion-0018.json",
+      "source_id": "stat_worldbank_gdp_annual",
+      "count": 87,
+      "bytes": 261253,
+      "sha256": "8eb4bc4c2df155b6a2c8054792a2cc6d6b11933044875c7bba4a8a42bc993539"
+    },
+    {
+      "path": "chunks/stat_worldbank_gdp_annual-completion-0019.json",
+      "source_id": "stat_worldbank_gdp_annual",
+      "count": 87,
+      "bytes": 260827,
+      "sha256": "4ecae3bf0a3bc02ec4a2524d296fdf788b7b244ff521a02b712849c39bb0a0f0"
+    },
+    {
+      "path": "chunks/stat_worldbank_gdp_annual-completion-0020.json",
+      "source_id": "stat_worldbank_gdp_annual",
+      "count": 87,
+      "bytes": 260996,
+      "sha256": "ab776bc38ebfc3f220daf53408497bd387b85f31de2c4153b37f114ee3fde020"
+    },
+    {
+      "path": "chunks/stat_worldbank_gdp_annual-completion-0021.json",
+      "source_id": "stat_worldbank_gdp_annual",
+      "count": 87,
+      "bytes": 261222,
+      "sha256": "50a4ffc8e3a3e22f0d3290887e91bf91145fcb2148d13974d56f53a59da6196e"
+    },
+    {
+      "path": "chunks/stat_worldbank_gdp_annual-completion-0022.json",
+      "source_id": "stat_worldbank_gdp_annual",
+      "count": 87,
+      "bytes": 260718,
+      "sha256": "a38130edffba1feefa5f8ce6b2ae23c399048217b4618d29af8179563badd7e1"
+    },
+    {
+      "path": "chunks/stat_worldbank_gdp_annual-completion-0023.json",
+      "source_id": "stat_worldbank_gdp_annual",
+      "count": 87,
+      "bytes": 261256,
+      "sha256": "ff12f836e4e75358b728aab3a36ae583260c69fd12e210280a22a5c5cdb6cfd8"
+    },
+    {
+      "path": "chunks/stat_worldbank_gdp_annual-completion-0024.json",
+      "source_id": "stat_worldbank_gdp_annual",
+      "count": 87,
+      "bytes": 261123,
+      "sha256": "b4e024763b53c230fb02aca6bebcdb5ee54dc663f387aeb419d3267791d5741b"
+    },
+    {
+      "path": "chunks/stat_worldbank_gdp_annual-completion-0025.json",
+      "source_id": "stat_worldbank_gdp_annual",
+      "count": 87,
+      "bytes": 260857,
+      "sha256": "8c9f4a8987c36212755fe69c63944a88628afbf5ae2620e5ef146bf09a5adfea"
+    },
+    {
+      "path": "chunks/stat_worldbank_gdp_annual-completion-0026.json",
+      "source_id": "stat_worldbank_gdp_annual",
+      "count": 87,
+      "bytes": 261205,
+      "sha256": "0d7aa6c075b830b793a86945a2d96c3e1ebb6b717f02c6bceb72a446196df717"
+    },
+    {
+      "path": "chunks/stat_worldbank_gdp_annual-completion-0027.json",
+      "source_id": "stat_worldbank_gdp_annual",
+      "count": 87,
+      "bytes": 261487,
+      "sha256": "011cd4f52bf99101d6d638e526cc9040b04f0f9de2aa51551fea441ec5fb5b53"
+    },
+    {
+      "path": "chunks/stat_worldbank_gdp_annual-completion-0028.json",
+      "source_id": "stat_worldbank_gdp_annual",
+      "count": 87,
+      "bytes": 261681,
+      "sha256": "7449d24b219723fb2c424df6444b8ba1805c756dae0b72e7a57ddf6736b26bf7"
+    },
+    {
+      "path": "chunks/stat_worldbank_gdp_annual-completion-0029.json",
+      "source_id": "stat_worldbank_gdp_annual",
+      "count": 87,
+      "bytes": 261322,
+      "sha256": "88c86e6cfb91d4c2d39cfa5289132e91f52ba54c1a8c6eaaceaafc8529b9749a"
+    },
+    {
+      "path": "chunks/stat_worldbank_gdp_annual-completion-0030.json",
+      "source_id": "stat_worldbank_gdp_annual",
+      "count": 87,
+      "bytes": 261997,
+      "sha256": "6dd94a685d74cd169ecce4d0d883b14e936294b1064691a19662a1c890f3a7eb"
+    },
+    {
+      "path": "chunks/stat_worldbank_gdp_annual-completion-0031.json",
+      "source_id": "stat_worldbank_gdp_annual",
+      "count": 87,
+      "bytes": 261884,
+      "sha256": "de2744778f9d36d7a9e13313c8f964ed190fbee97dadab776f5c48bb05e2e65f"
+    },
+    {
+      "path": "chunks/stat_worldbank_gdp_annual-completion-0032.json",
+      "source_id": "stat_worldbank_gdp_annual",
+      "count": 87,
+      "bytes": 261826,
+      "sha256": "9874a84fce3782f730ff724606eb941607ec9b19abb2dad74d889d7926a507a4"
+    },
+    {
+      "path": "chunks/stat_worldbank_gdp_annual-completion-0033.json",
+      "source_id": "stat_worldbank_gdp_annual",
+      "count": 87,
+      "bytes": 261513,
+      "sha256": "1e567b91cac42c4e7861cd76bdb31f7afed81c2eeb9a12a82ba18f9d68902876"
+    },
+    {
+      "path": "chunks/stat_worldbank_gdp_annual-completion-0034.json",
+      "source_id": "stat_worldbank_gdp_annual",
+      "count": 87,
+      "bytes": 260957,
+      "sha256": "cb8cd6f8f877a21efd4c5a9633bde1586361b1dd114c694493ef212b730df683"
+    },
+    {
+      "path": "chunks/stat_worldbank_gdp_annual-completion-0035.json",
+      "source_id": "stat_worldbank_gdp_annual",
+      "count": 87,
+      "bytes": 261029,
+      "sha256": "9890f7db16b11c54b3296465ce9b334a730075c43f4837cba8779b53ed49a812"
+    },
+    {
+      "path": "chunks/stat_worldbank_gdp_annual-completion-0036.json",
+      "source_id": "stat_worldbank_gdp_annual",
+      "count": 87,
+      "bytes": 261173,
+      "sha256": "5fb1ae9cc973538330796bc6fc13d17722a4da1c0f06c320196004c7c27deb80"
+    },
+    {
+      "path": "chunks/stat_worldbank_gdp_annual-completion-0037.json",
+      "source_id": "stat_worldbank_gdp_annual",
+      "count": 87,
+      "bytes": 260568,
+      "sha256": "f61513754ab33d50a36c76d1a465c1d15152df134e700a24ebf537cbd78b11b9"
+    },
+    {
+      "path": "chunks/stat_worldbank_gdp_annual-completion-0038.json",
+      "source_id": "stat_worldbank_gdp_annual",
+      "count": 87,
+      "bytes": 261309,
+      "sha256": "a03faead59992632f452983a187069feafc89596b75ec7146c1f2b49c3dfba68"
+    },
+    {
+      "path": "chunks/stat_worldbank_gdp_annual-completion-0039.json",
+      "source_id": "stat_worldbank_gdp_annual",
+      "count": 87,
+      "bytes": 261227,
+      "sha256": "1f22e16864752ae1246c82a81bfe645681c909403962002d9e6fa9389a25b5ef"
+    },
+    {
+      "path": "chunks/stat_worldbank_gdp_annual-completion-0040.json",
+      "source_id": "stat_worldbank_gdp_annual",
+      "count": 87,
+      "bytes": 260974,
+      "sha256": "0d031e9aa70ab793059fd81595db686a099854042d58eb0bce62403a3a20817e"
+    },
+    {
+      "path": "chunks/stat_worldbank_gdp_annual-completion-0041.json",
+      "source_id": "stat_worldbank_gdp_annual",
+      "count": 87,
+      "bytes": 260971,
+      "sha256": "8f5e85b241de0d7d4664c5c7d3231c4161638fe8371cf23b95ffc402cd8ddb87"
+    },
+    {
+      "path": "chunks/stat_worldbank_gdp_annual-completion-0042.json",
+      "source_id": "stat_worldbank_gdp_annual",
+      "count": 87,
+      "bytes": 261267,
+      "sha256": "d6849d7dbdaafce220607c91fe9f2538a5dded19ee1391d5937bce44055ad2c4"
+    },
+    {
+      "path": "chunks/stat_worldbank_gdp_annual-completion-0043.json",
+      "source_id": "stat_worldbank_gdp_annual",
+      "count": 87,
+      "bytes": 261612,
+      "sha256": "0a81ddbf2f68981a23f75d11e4bba0383e2088aac1e5e54adb3eca59e2f5b371"
+    },
+    {
+      "path": "chunks/stat_worldbank_gdp_annual-completion-0044.json",
+      "source_id": "stat_worldbank_gdp_annual",
+      "count": 87,
+      "bytes": 261421,
+      "sha256": "aa9d5ec9a706761612e6a5ae289e4961af8e854d218f039b481afa9e4e7aa251"
+    },
+    {
+      "path": "chunks/stat_worldbank_gdp_annual-completion-0045.json",
+      "source_id": "stat_worldbank_gdp_annual",
+      "count": 62,
+      "bytes": 186515,
+      "sha256": "964d25d444a5028e59e98d09bf5010c72838b20b33df1bb0173259f876b57b15"
+    }
+  ],
+  "policies": [
+    {
+      "id": "stat_worldbank_gdp_annual",
+      "version": "0.9.0",
+      "name": "World Bank WDI nominal annual GDP, source-qualified longitudinal slices",
+      "provider_family": "World Bank",
+      "endpoint": "https://api.worldbank.org/v2/country/all/indicator/NY.GDP.MKTP.CD",
+      "official_url": "https://data.worldbank.org/indicator/NY.GDP.MKTP.CD",
+      "format": "worldbank_v2_json",
+      "category": "economy",
+      "source_country": null,
+      "source_language": "en",
+      "material_kind": "statistical_observation",
+      "content_depth": "structured_facts",
+      "adapter_export": [
+        "readEnvelope",
+        "project"
+      ],
+      "stage": "actually_collected_not_site_ingested",
+      "enabled": false,
+      "collection_enabled": false,
+      "recurring_operational": false,
+      "rights": {
+        "status": "cleared_structured_facts",
+        "license_id": "CC-BY-4.0",
+        "permitted_use_scope": "team_product_metadata_or_facts",
+        "product_admission_eligible": true,
+        "permission_basis": "The official indicator page explicitly labels NY.GDP.MKTP.CD CC BY4.0. World Bank data terms permit commercial/noncommercial structured-data reuse, with attribution, transformations, no endorsement and indicator-specific exceptions respected.",
+        "primary_url": "https://data.worldbank.org/indicator/NY.GDP.MKTP.CD",
+        "terms_url": "https://data.worldbank.org/summary-terms-of-use",
+        "allowed_fields": [
+          "indicator",
+          "source country/economy/aggregate IDs and labels",
+          "annual period",
+          "numeric/null value",
+          "provider observation status/display precision",
+          "dataset vintage date",
+          "source-provided dimension classification"
+        ],
+        "attribution": "World Bank: World Development Indicators: GDP (current US$), NY.GDP.MKTP.CD. Source providers: country official national statistics/central banks; OECD national accounts; World Bank staff estimates. Filtered/normalized selection; no World Bank endorsement.",
+        "excluded_content": [
+          "linked documents",
+          "articles/images",
+          "individual records",
+          "personal ranking",
+          "guessed historical geography",
+          "derived forecasts/real-growth/FX conversions"
+        ],
+        "use_constraints": [
+          "Preserve CC BY4.0 attribution and dataset terms for downstream users",
+          "Do not present nominal USD changes as real growth",
+          "Do not treat annual observation year as publication/occurrence time"
+        ]
+      },
+      "source_update_cadence": "WDI dataset updates/revisions; observed vintage2026-07-13, no provider cadence guarantee inferred",
+      "collection_cadence": "Actual bounded backfill slices only; recurring daily operation not configured",
+      "time_semantics": {
+        "observation_period": "source annual year label; country calendar/fiscal alignment unverified",
+        "publication_time": null,
+        "event_time": null,
+        "source_updated_at": "null: date-only dataset vintage is retained in facts.vintage, not fabricated per-record midnight",
+        "vintage": "2026-07-13 snapshot; historical vintages not acquired; source methods can change",
+        "requested_latest_year": 2019,
+        "actual_latest_returned_year": 2019,
+        "previous_acquired_recent_latest_year": 2025,
+        "missing_requested_current_year_basis": "2026 was requested and absent in the separately pinned v0.9 recent slice; not requested again here"
+      },
+      "coverage": {
+        "provider_documented_span": "1960–2025",
+        "acquired_periods": [
+          "2005–2009",
+          "2010–2014",
+          "2015–2019"
+        ],
+        "unacquired_periods": [],
+        "unreturned_requested_periods": [
+          "2026"
+        ],
+        "grain": "World Bank reporting geography × annual GDP indicator; national/aggregate context, no entity/facility/event granularity",
+        "current_event_coverage_claim": false,
+        "previous_acquired_periods": [
+          "1990–2004",
+          "2020–2025"
+        ],
+        "scope": "Same World Bank reporting economies/overlapping aggregates, retained2005–2019 annual GDP slices; not event or enterprise history"
+      },
+      "limits": {
+        "timeout_seconds": 30,
+        "max_body_bytes": 2097152,
+        "max_items": 20000,
+        "max_chunk_items": 100,
+        "max_chunk_bytes": 262144,
+        "max_attempts_per_slice": 1,
+        "exception_justification": "Three bounded same-indicator five-year official CC BY4.0 observation pages; no new provider or article body",
+        "timeout_enforcement": "Linux main-thread30s overall SIGALRM"
+      },
+      "empty_policy": "Recognized pagination/source/indicator schema required; nonzero declared count with zero rows fails; absent requested2026 is a coverage gap, not fabricated null observations",
+      "retrieval_allowed_text": {
+        "title": true,
+        "fact_paths": [
+          "geography.label",
+          "indicator_label",
+          "observation_period",
+          "value",
+          "unit"
+        ]
+      },
+      "semantic_hash_excluded_paths": [
+        "first_seen_at",
+        "fetched_at",
+        "ingested_at"
+      ],
+      "semantic_hash_rule": "Transport-only clocks excluded. Actual value/status/units/geography, observation periods, provider vintage and methodology remain semantic. The separately retained raw-response/chunk witnesses are not embedded into factual content.",
+      "gaps": [
+        "Annual nominal GDP context is not current global incident coverage",
+        "Incremental batch contains2005–2019; combined pinned batches acquire1990–2025, while numeric missingness remains explicit",
+        "2026 not returned; latest annual values are uneven",
+        "Source-returned nulls and absent cells remain distinct from zero",
+        "Country/economy and overlapping aggregate groups remain separate",
+        "Current dimension taxonomy does not reconstruct historical borders/group membership",
+        "Calendar/fiscal alignment and method changes are not supplied per observation",
+        "Historical vintages and per-observation revision timestamps unavailable in this acquisition",
+        "No recurring operation or Site ingestion implied"
+      ],
+      "acquisition_receipts": [
+        {
+          "request_id": "wb_gdp_2005_2009",
+          "requested_url": "https://api.worldbank.org/v2/country/all/indicator/NY.GDP.MKTP.CD?source=2&date=2005:2009&format=json&per_page=5000&page=1",
+          "fetched_at": "2026-10-08T13:26:34.751458+00:00",
+          "http_status": 200,
+          "bytes_read": 280457,
+          "upstream_raw_sha256": "73001bb5391063ccd461a7040c94e9640b604c10ec806b98aa6dec4680a94ae7",
+          "retained_safe_sha256": "73001bb5391063ccd461a7040c94e9640b604c10ec806b98aa6dec4680a94ae7",
+          "source_version": "0.9.0",
+          "provider_dataset_vintage_date": "2026-07-13",
+          "pagination": {
+            "page": 1,
+            "pages": 1,
+            "per_page": 5000,
+            "total": 1325,
+            "sourceid": "2",
+            "lastupdated": "2026-07-13"
+          }
+        },
+        {
+          "request_id": "wb_gdp_2010_2014",
+          "requested_url": "https://api.worldbank.org/v2/country/all/indicator/NY.GDP.MKTP.CD?source=2&date=2010:2014&format=json&per_page=5000&page=1",
+          "fetched_at": "2026-10-08T13:26:49.898675+00:00",
+          "http_status": 200,
+          "bytes_read": 280582,
+          "upstream_raw_sha256": "a516f47d59f45c85d46c9766cf99929eeb68f960e03815e703b54093ada3990b",
+          "retained_safe_sha256": "a516f47d59f45c85d46c9766cf99929eeb68f960e03815e703b54093ada3990b",
+          "source_version": "0.9.0",
+          "provider_dataset_vintage_date": "2026-07-13",
+          "pagination": {
+            "page": 1,
+            "pages": 1,
+            "per_page": 5000,
+            "total": 1325,
+            "sourceid": "2",
+            "lastupdated": "2026-07-13"
+          }
+        },
+        {
+          "request_id": "wb_gdp_2015_2019",
+          "requested_url": "https://api.worldbank.org/v2/country/all/indicator/NY.GDP.MKTP.CD?source=2&date=2015:2019&format=json&per_page=5000&page=1",
+          "fetched_at": "2026-10-08T13:27:05.393020+00:00",
+          "http_status": 200,
+          "bytes_read": 280476,
+          "upstream_raw_sha256": "7fef2e0a59cea4a617415c6412be6c8365bb15e406b9dd22b07f27a74088fc00",
+          "retained_safe_sha256": "7fef2e0a59cea4a617415c6412be6c8365bb15e406b9dd22b07f27a74088fc00",
+          "source_version": "0.9.0",
+          "provider_dataset_vintage_date": "2026-07-13",
+          "pagination": {
+            "page": 1,
+            "pages": 1,
+            "per_page": 5000,
+            "total": 1325,
+            "sourceid": "2",
+            "lastupdated": "2026-07-13"
+          }
+        }
+      ],
+      "allowed_fact_paths": [
+        "accounting_period_alignment",
+        "data_origin_basis",
+        "geography.basis",
+        "geography.classification_time_basis",
+        "geography.kind",
+        "geography.label",
+        "geography.provided_iso3code_raw",
+        "geography.provider",
+        "geography.provider_country_alias",
+        "geography.provider_geography_id",
+        "geography.region_id",
+        "geography.region_label",
+        "indicator",
+        "indicator_label",
+        "methodology.country_method_changes",
+        "methodology.indicator_definition",
+        "methodology.source_organizations.*",
+        "methodology.value_interpretation",
+        "missingness",
+        "observation_granularity",
+        "observation_period",
+        "price_basis",
+        "provider_display_decimals",
+        "provider_status",
+        "publication_clock",
+        "record_kind",
+        "series_id",
+        "unit",
+        "unit_basis",
+        "unit_scale",
+        "value",
+        "vintage.dataset_last_updated_date",
+        "vintage.date_precision",
+        "vintage.historical_vintages_in_this_batch",
+        "vintage.per_observation_revision_time"
+      ],
+      "required_fact_paths": [
+        "record_kind",
+        "series_id",
+        "indicator",
+        "geography.provider_geography_id",
+        "geography.kind",
+        "observation_period",
+        "observation_granularity",
+        "unit",
+        "vintage.dataset_last_updated_date"
+      ],
+      "max_dimension_rows": 20000,
+      "input_id": "stat_worldbank_gdp_annual",
+      "supporting_acquisition_receipts": [
+        {
+          "schema_version": "dormathon.history-acquisition.v0.9",
+          "slice_id": "wb_gdp_metadata",
+          "requested_url": "https://api.worldbank.org/v2/indicator/NY.GDP.MKTP.CD?format=json",
+          "started_at": "2026-10-08T12:31:36.385553+00:00",
+          "attempts": 1,
+          "redirect_policy": "reject",
+          "timeout_seconds": 30,
+          "body_cap": 2097152,
+          "headers": {
+            "User-Agent": "DormathonSourceResearch/0.1 (+public-metadata-test)",
+            "Accept": "application/json,application/rss+xml,application/xml,text/xml;q=0.9,*/*;q=0.2"
+          },
+          "authentication": "none",
+          "status": "retrieved_pending_schema_validation",
+          "recurring_operational": false,
+          "rights": "World Bank indicator-specific CC BY4.0 structured facts",
+          "http_status": 200,
+          "response_headers": {
+            "Date": "Thu, 08 Oct 2026 12:31:43 GMT",
+            "Last-Modified": "Wed, 07 Oct 2026 09:31:55 GMT",
+            "Content-Type": "application/json;charset=utf-8"
+          },
+          "bytes_read": 938,
+          "body_complete": true,
+          "upstream_raw_sha256": "51cec1e144a5bad8d92238630c0a305e20116e86d34ad95c7c315ed166255b28",
+          "fetched_at": "2026-10-08T12:31:43.047077+00:00",
+          "pagination": {
+            "page": 1,
+            "pages": 1,
+            "per_page": "50",
+            "total": 1
+          },
+          "returned_count": 1,
+          "retained_path": "source-data/wb_gdp_metadata.json",
+          "retained_sha256": "51cec1e144a5bad8d92238630c0a305e20116e86d34ad95c7c315ed166255b28",
+          "retained_bytes": 938,
+          "completed_at": "2026-10-08T12:31:43.047422+00:00",
+          "elapsed_seconds": 6.662
+        },
+        {
+          "schema_version": "dormathon.history-acquisition.v0.9",
+          "slice_id": "wb_country_dimensions",
+          "requested_url": "https://api.worldbank.org/v2/country?format=json&per_page=500",
+          "started_at": "2026-10-08T12:31:43.047727+00:00",
+          "attempts": 1,
+          "redirect_policy": "reject",
+          "timeout_seconds": 30,
+          "body_cap": 2097152,
+          "headers": {
+            "User-Agent": "DormathonSourceResearch/0.1 (+public-metadata-test)",
+            "Accept": "application/json,application/rss+xml,application/xml,text/xml;q=0.9,*/*;q=0.2"
+          },
+          "authentication": "none",
+          "status": "retrieved_pending_schema_validation",
+          "recurring_operational": false,
+          "rights": "World Bank indicator-specific CC BY4.0 structured facts",
+          "http_status": 200,
+          "response_headers": {
+            "Date": "Thu, 08 Oct 2026 12:31:46 GMT",
+            "Last-Modified": "Wed, 07 Oct 2026 08:14:20 GMT",
+            "Content-Type": "application/json;charset=utf-8"
+          },
+          "bytes_read": 113954,
+          "body_complete": true,
+          "upstream_raw_sha256": "ba006d57b1fb243ff5a6d13a9fd1283e0a758ab6750cc4159eebbd454a98b462",
+          "fetched_at": "2026-10-08T12:31:46.104783+00:00",
+          "pagination": {
+            "page": 1,
+            "pages": 1,
+            "per_page": "500",
+            "total": 296
+          },
+          "returned_count": 296,
+          "retained_path": "source-data/wb_country_dimensions.json",
+          "retained_sha256": "ba006d57b1fb243ff5a6d13a9fd1283e0a758ab6750cc4159eebbd454a98b462",
+          "retained_bytes": 113954,
+          "completed_at": "2026-10-08T12:31:46.105361+00:00",
+          "elapsed_seconds": 3.058
+        }
+      ],
+      "semantic_hash_policy": "historical-gdp-semantic-v0.9.0"
+    }
+  ],
+  "parser_version": "reviewed-history-gdp-v0.11.0",
+  "semantic_hash_policy": "historical-gdp-semantic-v0.9.0",
+  "external_bulk_artifact_sha256": "0d5aa2d4e709f79d89eebb040ffe51038ae967a1d0291f27a94d54349825b7bb",
+  "bulk_in_Git": false,
+  "admission_transform": "Same-source incremental periods; originals remain source-separated immutable snapshots."
+}

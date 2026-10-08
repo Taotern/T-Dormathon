@@ -1,0 +1,82 @@
+{
+  "schema_version": "dormathon.backfill-progress.v0.9",
+  "completed": [
+    "wb_gdp_1990_1994",
+    "wb_gdp_2020_2026_retry"
+  ],
+  "slices": [
+    {
+      "slice_id": "wb_gdp_1990_1994",
+      "requested_period": [
+        1990,
+        1994
+      ],
+      "returned_periods": [
+        "1990",
+        "1991",
+        "1992",
+        "1993",
+        "1994"
+      ],
+      "accepted_observations": 1325,
+      "provider_total": 1325,
+      "all_returned_pages_acquired": true,
+      "stage": "actually_collected_not_site_ingested",
+      "receipt_sha256": "0d88c6454408e69da2875392d5ec1c80037ae5e4d9e1a113ea3359284d0cc1fe"
+    },
+    {
+      "slice_id": "wb_gdp_2020_2026_retry",
+      "requested_period": [
+        2020,
+        2026
+      ],
+      "returned_periods": [
+        "2020",
+        "2021",
+        "2022",
+        "2023",
+        "2024",
+        "2025"
+      ],
+      "accepted_observations": 1590,
+      "provider_total": 1590,
+      "all_returned_pages_acquired": true,
+      "stage": "actually_collected_not_site_ingested",
+      "receipt_sha256": "12b586eb539e59b51bd8424b409117ad5e91e857d8104eb6b680d9e9489017a8"
+    }
+  ],
+  "next_slices": [
+    {
+      "period": [
+        1995,
+        1999
+      ]
+    },
+    {
+      "period": [
+        2000,
+        2004
+      ]
+    },
+    {
+      "period": [
+        2005,
+        2009
+      ]
+    },
+    {
+      "period": [
+        2010,
+        2014
+      ]
+    },
+    {
+      "period": [
+        2015,
+        2019
+      ]
+    }
+  ],
+  "max_slices_per_future_pass": 2,
+  "no_automatic_fetch_in_builder": true
+}

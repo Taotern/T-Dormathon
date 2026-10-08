@@ -1,0 +1,5 @@
+source-data/
+delivery/chunks/
+reports/
+__pycache__/
+coverage/actual-period-geography-matrix.*.json

@@ -1,0 +1,22 @@
+{
+  "schema_version": "dormathon.history-acquisition.v0.9",
+  "slice_id": "wb_gdp_2020_2026",
+  "requested_url": "https://api.worldbank.org/v2/country/all/indicator/NY.GDP.MKTP.CD?source=2&date=2020:2026&format=json&per_page=5000&page=1",
+  "started_at": "2026-10-08T12:31:46.105949+00:00",
+  "attempts": 1,
+  "redirect_policy": "reject",
+  "timeout_seconds": 30,
+  "body_cap": 2097152,
+  "headers": {
+    "User-Agent": "DormathonSourceResearch/0.1 (+public-metadata-test)",
+    "Accept": "application/json,application/rss+xml,application/xml,text/xml;q=0.9,*/*;q=0.2"
+  },
+  "authentication": "none",
+  "status": "transport_or_schema_failed",
+  "recurring_operational": false,
+  "rights": "World Bank indicator-specific CC BY4.0 structured facts",
+  "error": "The read operation timed out",
+  "automatic_retry": false,
+  "completed_at": "2026-10-08T12:32:18.439309+00:00",
+  "elapsed_seconds": 32.333
+}

@@ -1,0 +1,25 @@
+{
+  "schema_version": "dormathon.history-runtime-limits.v0.9",
+  "frozen_source_manifest_sha256": "cd47c65049557f2ae8b30ec735facb63df8462508a6f1b3a8ed7e42934b67966",
+  "frozen_delivery_manifest_sha256": "e88188dd57399be85450be8828753092c19b379278a36ba39fcfb3511f84ba1c",
+  "interpretation": "Research acquisition is bounded and resumable, not verified autonomous production scheduling.",
+  "timeout": {
+    "configured_seconds": 30,
+    "enforcement": "urllib per-socket/network timeout; no separately verified strict wall-clock deadline",
+    "observed_initial_failed_elapsed_seconds": 32.333,
+    "production_gap": "Require an overall deadline in the operational collector; research receipts retain actual elapsed time."
+  },
+  "retry": "Only one explicit confirmed transport-timeout retry was used. HTTP429/denial never automatically retried.",
+  "portability": {
+    "verified_environment": "Python3 and Node24 on managed Linux, separate code/bulk directories",
+    "Windows": "not_run",
+    "scheduled_unattended_runtime": "not_run"
+  },
+  "reproduction": "Exact normalized chunk hashes reproduce. New coverage generated_at changes the regenerated artifact manifest digest; it does not supersede the frozen original delivery pin.",
+  "missing": {
+    "2026": "not returned; no fabricated observations",
+    "1995_2019": "not acquired",
+    "historical_release_vintages": "not acquired",
+    "fine_grained_entities_or_events": "not covered by annual GDP"
+  }
+}

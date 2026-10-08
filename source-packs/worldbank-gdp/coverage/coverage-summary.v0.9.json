@@ -1,0 +1,238 @@
+{
+  "schema_version": "dormathon.coverage.temporal-geographic.v0.9",
+  "generated_at": "2026-10-08T12:44:05.315Z",
+  "provider_documented_available_period": "1960–2025",
+  "actually_acquired_periods": [
+    "1990–1994",
+    "2020–2025"
+  ],
+  "current_requested_but_unreturned_period": 2026,
+  "unacquired_middle_years": "1995–2019",
+  "provider_dimension_snapshot": {
+    "all_dimensions": 296,
+    "economies": 217,
+    "aggregates": 79,
+    "raw_sha256": "ba006d57b1fb243ff5a6d13a9fd1283e0a758ab6750cc4159eebbd454a98b462"
+  },
+  "acquired_geography_axes": {
+    "country_or_economy": 217,
+    "aggregate": 48,
+    "current2020_2025": {
+      "geographies_returned": 217,
+      "all_years_numeric": 186,
+      "at_least_one_numeric": 211,
+      "entire_slice_no_numeric": [
+        {
+          "id": "VGB",
+          "label": "British Virgin Islands"
+        },
+        {
+          "id": "ERI",
+          "label": "Eritrea"
+        },
+        {
+          "id": "GIB",
+          "label": "Gibraltar"
+        },
+        {
+          "id": "PRK",
+          "label": "Korea, Dem. People's Rep."
+        },
+        {
+          "id": "SSD",
+          "label": "South Sudan"
+        },
+        {
+          "id": "YEM",
+          "label": "Yemen, Rep."
+        }
+      ],
+      "per_year": [
+        {
+          "year": "2020",
+          "numeric": 210,
+          "returned_null": 7,
+          "unreturned": 0
+        },
+        {
+          "year": "2021",
+          "numeric": 210,
+          "returned_null": 7,
+          "unreturned": 0
+        },
+        {
+          "year": "2022",
+          "numeric": 209,
+          "returned_null": 8,
+          "unreturned": 0
+        },
+        {
+          "year": "2023",
+          "numeric": 204,
+          "returned_null": 13,
+          "unreturned": 0
+        },
+        {
+          "year": "2024",
+          "numeric": 200,
+          "returned_null": 17,
+          "unreturned": 0
+        },
+        {
+          "year": "2025",
+          "numeric": 186,
+          "returned_null": 31,
+          "unreturned": 0
+        }
+      ]
+    },
+    "historical1990_1994": {
+      "geographies_returned": 217,
+      "all_years_numeric": 192,
+      "at_least_one_numeric": 196,
+      "entire_slice_no_numeric": [
+        {
+          "id": "AFG",
+          "label": "Afghanistan"
+        },
+        {
+          "id": "ASM",
+          "label": "American Samoa"
+        },
+        {
+          "id": "VGB",
+          "label": "British Virgin Islands"
+        },
+        {
+          "id": "CYM",
+          "label": "Cayman Islands"
+        },
+        {
+          "id": "CHI",
+          "label": "Channel Islands"
+        },
+        {
+          "id": "CUW",
+          "label": "Curacao"
+        },
+        {
+          "id": "GIB",
+          "label": "Gibraltar"
+        },
+        {
+          "id": "GUM",
+          "label": "Guam"
+        },
+        {
+          "id": "PRK",
+          "label": "Korea, Dem. People's Rep."
+        },
+        {
+          "id": "XKX",
+          "label": "Kosovo"
+        },
+        {
+          "id": "LVA",
+          "label": "Latvia"
+        },
+        {
+          "id": "LTU",
+          "label": "Lithuania"
+        },
+        {
+          "id": "MNE",
+          "label": "Montenegro"
+        },
+        {
+          "id": "MNP",
+          "label": "Northern Mariana Islands"
+        },
+        {
+          "id": "SMR",
+          "label": "San Marino"
+        },
+        {
+          "id": "SRB",
+          "label": "Serbia"
+        },
+        {
+          "id": "SXM",
+          "label": "Sint Maarten (Dutch part)"
+        },
+        {
+          "id": "SSD",
+          "label": "South Sudan"
+        },
+        {
+          "id": "MAF",
+          "label": "St. Martin (French part)"
+        },
+        {
+          "id": "TCA",
+          "label": "Turks and Caicos Islands"
+        },
+        {
+          "id": "VIR",
+          "label": "Virgin Islands (U.S.)"
+        }
+      ],
+      "per_year": [
+        {
+          "year": "1990",
+          "numeric": 192,
+          "returned_null": 25,
+          "unreturned": 0
+        },
+        {
+          "year": "1991",
+          "numeric": 193,
+          "returned_null": 24,
+          "unreturned": 0
+        },
+        {
+          "year": "1992",
+          "numeric": 194,
+          "returned_null": 23,
+          "unreturned": 0
+        },
+        {
+          "year": "1993",
+          "numeric": 195,
+          "returned_null": 22,
+          "unreturned": 0
+        },
+        {
+          "year": "1994",
+          "numeric": 196,
+          "returned_null": 21,
+          "unreturned": 0
+        }
+      ]
+    }
+  },
+  "units_and_revision": {
+    "observation_period": "source annual year label; country calendar/fiscal alignment unverified",
+    "publication_time": null,
+    "event_time": null,
+    "source_updated_at": "null: date-only dataset vintage is retained in facts.vintage, not fabricated per-record midnight",
+    "vintage": "2026-07-13 snapshot; historical vintages not acquired; source methods can change",
+    "requested_latest_year": 2026,
+    "actual_latest_returned_year": 2025
+  },
+  "source_constraints": [
+    "Annual nominal GDP context is not current global incident coverage",
+    "1995–2019 not acquired in this batch",
+    "2026 not returned; latest annual values are uneven",
+    "Source-returned nulls and absent cells remain distinct from zero",
+    "Country/economy and overlapping aggregate groups remain separate",
+    "Current dimension taxonomy does not reconstruct historical borders/group membership",
+    "Calendar/fiscal alignment and method changes are not supplied per observation",
+    "Historical vintages and per-observation revision timestamps unavailable in this acquisition",
+    "No recurring operation or Site ingestion implied"
+  ],
+  "complete_matrix_artifact": {
+    "path": "coverage/actual-period-geography-matrix.v0.9.json",
+    "sha256": "8967be1f3e5821dbd2ced8fbaa7deeebb666d55e8349576028cd270691a5826f",
+    "git_policy": "external_bulk_artifact; summary only in Git"
+  }
+}

@@ -1,0 +1,106 @@
+{
+  "schema_version": "dormathon.historical-current.coverage-plan.v0.9",
+  "purpose": "Build measurable longitudinal foundations and permitted recent entity-linked signals for the existing product. A provider range is not acquired continuity; annual context is not a current incident stream.",
+  "minimum_target": "2020 through latest actually published observation; current-year absent/partial data remain explicit",
+  "historical_extension_target": "Toward1990 only where source methods, rights, coverage and identities support it",
+  "order": [
+    {
+      "priority": 1,
+      "domains": ["economy"],
+      "source": "World Bank WDI GDP (current US$)",
+      "primary_url": "https://data.worldbank.org/indicator/NY.GDP.MKTP.CD",
+      "provider_available": "Official indicator page1960–2025",
+      "rights": "Indicator-specific CC BY4.0 with provider attribution/dataset terms",
+      "actually_acquired": ["1990–1994", "2020–2025"],
+      "continuity": "186of217 provider economies have all six2020–2025 values;192have all five1990–1994 values. Actual matrix retains every numeric/null/absent distinction.",
+      "geography": "217WorldBank economies plus48 overlapping aggregates; no sovereign-state/facility equivalence",
+      "entity_grain": "Reporting economy/aggregate × indicator × annual period",
+      "current": "2026requested but not returned; no future value fabricated",
+      "ingestion": "Acquired/validated package; Site ingestion pending core acceptance",
+      "next": "Admit the current continuous2020–2025 baseline before expanding1995–2019. Resume max two five-year slices per pass."
+    },
+    {
+      "priority": 2,
+      "domains": ["employment", "talent_aggregate_context"],
+      "source": "World Bank/ILOSTAT modeled total unemployment and later licensed education/workforce aggregates",
+      "primary_url": "https://data.worldbank.org/indicator/SL.UEM.TOTL.ZS",
+      "provider_available": "Official unemployment indicator page1991–2025, explicitly modeled ILO estimate",
+      "rights": "Indicator-specific CC BY4.0 verified for total unemployment; other indicators require separate checks",
+      "actually_acquired": [],
+      "geography": "Potential provider economies; actual completeness not yet measured",
+      "entity_grain": "Country/economy labor-force aggregates; no individual employee/student records or person ranking",
+      "methodology": "Modeled estimates and revisions remain typed; do not label as directly observed national survey facts",
+      "next": "Bounded2020→latest slice, country-year missingness and version/model notes;1990not covered by this series"
+    },
+    {
+      "priority": 3,
+      "domains": ["FX", "economy", "markets_context"],
+      "source": "World Bank official annual-average FX, then licensed daily/monthly central-bank series",
+      "primary_url": "https://data.worldbank.org/indicator/PA.NUS.FCRF",
+      "provider_available": "Indicator page confirms CC BY4.0 and IMF IFS source; precise historical per-economy ranges require actual bounded reads",
+      "rights": "Indicator-specific CC BY4.0 verified; daily/monthly providers require their own terms",
+      "actually_acquired": "Existing live16-economy annual FX2019–2025 only; no new global FX batch yet",
+      "entity_grain": "Reporting economy/year/currency regime; annual LCU per USD average is not a spot price or inverse USD rate",
+      "gaps": "Currency redenominations, regimes, fiscal/calendar alignment and missing observations require typed treatment; euro daily history cannot be invented before1999",
+      "next": "Expand actual2020→latest economy coverage, then historical slices and higher-frequency series after method/rights validation"
+    },
+    {
+      "priority": 4,
+      "domains": ["futures", "markets"],
+      "source": "CFTC Commitments of Traders historical report datasets",
+      "primary_url": "https://www.cftc.gov/MarketReports/CommitmentsofTraders/HistoricalCompressed/index.htm",
+      "provider_available": "Official page lists annual2020–2026 archives; Disaggregated Futures Only startsSeptember2009. Earlier legacy formats must be separately validated before claiming1990 continuity.",
+      "rights": "Official public-government statistical facts; exact data/reuse notice remains to be pinned before admission",
+      "actually_acquired": [],
+      "geography": "US-regulated reporting venues/products with international relevance; not all world exchanges",
+      "entity_grain": "Market/instrument and trader-class aggregate positions, not identified persons",
+      "methodology": "Report-as-of date and release date differ; legacy/disaggregated/TFF and futures-only/combined formats are separate series, not blindly spliced",
+      "next": "One bounded recent product/date sample and one historical slice before any broad archive"
+    },
+    {
+      "priority": 5,
+      "domains": ["law", "policy", "political_organization_dynamics"],
+      "source": "Official legal gazette/legislation/treaty metadata and permitted institutional release streams",
+      "provider_available": "Candidate scope only; no verified all-world1990→present legal history",
+      "rights": "Per-source reuse and document exceptions required; no unlicensed linked bodies or new accounts",
+      "actually_acquired": "Existing institutional news and three-country parliamentary reference snapshots; EU release batch is separate core admission",
+      "entity_grain": "Source document/instrument IDs, jurisdiction, official institutions and explicit source relationships",
+      "methodology": "Publication/adoption/effective/amended/repealed clocks and source-provided relation types remain separate; metadata does not establish general applicability or legal advice",
+      "next": "One licensed jurisdiction-specific legal metadata slice with stable IDs/version links; expand regions only after actual acceptance"
+    },
+    {
+      "priority": 6,
+      "domains": ["culture", "talent_aggregate_context"],
+      "source": "Official cultural designation and education/workforce aggregate datasets",
+      "provider_available": "Candidate scope only; coverage/licensing not yet verified for new batch",
+      "rights": "Names/codes/years/facts only until exact reuse scope is clear; no copyrighted descriptions/images or personal evaluation",
+      "actually_acquired": [],
+      "entity_grain": "Source-defined institutions/sites/designations/country education aggregates, not individual talent scores",
+      "next": "Validate one official dataset's licence, identifiers, dated changes and region coverage before acquisition"
+    },
+    {
+      "priority": "parallel_recent_dynamics",
+      "domains": ["enterprise", "policy"],
+      "source": "Already prepared TWSE issuer-code-linked monthly facts/material notices and EU Council release metadata",
+      "actually_acquired": "Prepared by source owners; separate candidate manifests. Core owns admission and live receipt.",
+      "methodology": "TWSE monthly observation is2026-08 with table date2026-09-17; company notice day/local time is not a verified UTC instant. EU source update is not publication; English-looking content underfr feed is flagged.",
+      "next": "Complete read-only semantic/policy review and verify actually ingested coverage separately from acquisition"
+    }
+  ],
+  "GDELT": {
+    "latest_status": "One same-URI/same-header probe on2026-10-08 again429; no Retry-After supplied; stop this pass",
+    "not_permanent_ban_claim": true,
+    "role": "Potential current multilingual publisher metadata/dynamics, not the acquired longitudinal GDP foundation",
+    "no_alternate_route_or_proxy": true,
+    "rights": "API metadata permission does not grant linked publisher article/image/body redistribution",
+    "no_acquired_current_news_records_this_pass": true
+  },
+  "operating_constraints": {
+    "no_new_credentials_paid_services_or_cloud": true,
+    "no_person_ranking": true,
+    "code_and_small_fixtures_only_in_Git": true,
+    "raw_and_bulk_backfill_data": "Separate local delivery/storage artifacts with digest manifests; bounded resumable slices, no huge raw repository blobs",
+    "cadence": "Daily baseline only once a verified runtime exists; current historical packages are bounded acquisitions, not recurring-operation proof",
+    "completion": "Actual admitted periods/geographies/entities/domains and missingness, not URL or record totals"
+  }
+}

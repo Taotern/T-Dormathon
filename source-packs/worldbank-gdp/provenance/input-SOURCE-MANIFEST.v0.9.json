@@ -1,0 +1,175 @@
+{
+  "schema_version": "dormathon.clean-source-assets.v0.9",
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 6809,
+      "sha256": "be79f9378437684a26faccdb455c54dc7c2c6080e89928fcb1e29b5227a067bb"
+    },
+    {
+      "path": "acquire-bounded.py",
+      "bytes": 5702,
+      "sha256": "ecc9f23ebafbd1fd96beb76658668bbb102b2e9e33e7fd902c5441b6b996029f"
+    },
+    {
+      "path": "adapters/normalized-common.mjs",
+      "bytes": 5755,
+      "sha256": "773d2fc291337bfa225e22b646356eb8aa0be464aaad6024864732678f1f8f5f"
+    },
+    {
+      "path": "adapters/worldbank-gdp-annual.mjs",
+      "bytes": 7099,
+      "sha256": "c1af66ad7b440184f1fa2724681495f57749c2a2e156e459fd894361e0aefc3c"
+    },
+    {
+      "path": "build-package.mjs",
+      "bytes": 13608,
+      "sha256": "999c7dc19c20005eefde0b82af5763d883708a88de5cb9b914e8f1ce1ffc4bdf"
+    },
+    {
+      "path": "contracts/portable-runtime-limits-addendum.v0.9.json",
+      "bytes": 1465,
+      "sha256": "b9132d26224c0bba6de785d5c166fc15071220d21d512a436bd8b0fdd374278d"
+    },
+    {
+      "path": "contracts/source-manifest.v0.9.json",
+      "bytes": 12323,
+      "sha256": "cd47c65049557f2ae8b30ec735facb63df8462508a6f1b3a8ed7e42934b67966"
+    },
+    {
+      "path": "coverage/coverage-summary.v0.9.json",
+      "bytes": 6045,
+      "sha256": "cb5bf54244c5df463bc3a834a36a1ddebfd0b350a80b76cddb83ff1fb19c09ab"
+    },
+    {
+      "path": "coverage/gdelt-reassessment.v0.9.json",
+      "bytes": 2170,
+      "sha256": "77d48865ca4421d5065cf7d8b69b8dbeaa8a3f26f60e85fe1481c439ac2ad2d4"
+    },
+    {
+      "path": "coverage/prioritized-source-matrix.v0.9.json",
+      "bytes": 8426,
+      "sha256": "74b53b4a212da70dc5450d725c5f6f7c85ce6b9f83b55d0da815ce45b26af823"
+    },
+    {
+      "path": "coverage/resumable-progress.v0.9.json",
+      "bytes": 1577,
+      "sha256": "9fc5ca313c61f74dcc31188000bb0842f3b972507f414d4a00a29261abe0fb0c"
+    },
+    {
+      "path": "delivery/manifest.json",
+      "bytes": 9250,
+      "sha256": "e88188dd57399be85450be8828753092c19b379278a36ba39fcfb3511f84ba1c"
+    },
+    {
+      "path": "fixtures/normalized-known-source-samples.v0.9.json",
+      "bytes": 14721,
+      "sha256": "ed2aa6e3ffb66cbd2da31cfd724ecbd50760b57c75d037857857da793e90051b"
+    },
+    {
+      "path": "receipts/gdelt_controlled_status_20261008.json",
+      "bytes": 1301,
+      "sha256": "72e464411e2940bb3b97930be9f4e897eaa4eccbab8b37e77701b45ddbbf8c91"
+    },
+    {
+      "path": "receipts/wb_country_dimensions.json",
+      "bytes": 1479,
+      "sha256": "8d3b1a6c3fe3e894741320372098144d3962ba40d04bbba4da76bf62d59ef6f2"
+    },
+    {
+      "path": "receipts/wb_gdp_1990_1994.json",
+      "bytes": 1586,
+      "sha256": "0d88c6454408e69da2875392d5ec1c80037ae5e4d9e1a113ea3359284d0cc1fe"
+    },
+    {
+      "path": "receipts/wb_gdp_2020_2026.json",
+      "bytes": 904,
+      "sha256": "9d1be347a6b96ac09f2ff2ef8d727ceeabed47a9d3f3f699b6691ad5849ddd5e"
+    },
+    {
+      "path": "receipts/wb_gdp_2020_2026_retry.json",
+      "bytes": 1597,
+      "sha256": "12b586eb539e59b51bd8424b409117ad5e91e857d8104eb6b680d9e9489017a8"
+    },
+    {
+      "path": "receipts/wb_gdp_metadata.json",
+      "bytes": 1460,
+      "sha256": "342951b084df2b00193b7af78efa3ffd5141975a8f122914659d23501c593695"
+    },
+    {
+      "path": "reports/contract-tests.v0.9.json",
+      "bytes": 3746,
+      "sha256": "a2a047dc4875a6b514dd58f4afaae5e47c07af3fafbc4de144f6d9235fe9e690"
+    },
+    {
+      "path": "reports/portable-check.initial-failure.v0.9.json",
+      "bytes": 1807,
+      "sha256": "28c313abec25042735805c1b255a88f3e11ee7ee983dc5a3a22d714df298611f"
+    },
+    {
+      "path": "reports/portable-check.v0.9.json",
+      "bytes": 783,
+      "sha256": "2f0f0fad05b753e7761b6f83a6692c2999549c0f49d5cb96edc1795105f1e554"
+    },
+    {
+      "path": "run-slice.py",
+      "bytes": 2137,
+      "sha256": "3c2e5c2af892a8290b2c90bc781ce8de6adeef14c4bcb204179dbce6b7a12429"
+    },
+    {
+      "path": "test-contract.mjs",
+      "bytes": 9072,
+      "sha256": "00f7360ee74be6ae688e1ac30b38008ddde5bc8ad317bd61233e197e588ce0cc"
+    }
+  ],
+  "bulk_excluded_from_git": [
+    "coverage/actual-period-geography-matrix.v0.9.json",
+    "delivery/chunks/stat_worldbank_gdp_annual-0000.json",
+    "delivery/chunks/stat_worldbank_gdp_annual-0001.json",
+    "delivery/chunks/stat_worldbank_gdp_annual-0002.json",
+    "delivery/chunks/stat_worldbank_gdp_annual-0003.json",
+    "delivery/chunks/stat_worldbank_gdp_annual-0004.json",
+    "delivery/chunks/stat_worldbank_gdp_annual-0005.json",
+    "delivery/chunks/stat_worldbank_gdp_annual-0006.json",
+    "delivery/chunks/stat_worldbank_gdp_annual-0007.json",
+    "delivery/chunks/stat_worldbank_gdp_annual-0008.json",
+    "delivery/chunks/stat_worldbank_gdp_annual-0009.json",
+    "delivery/chunks/stat_worldbank_gdp_annual-0010.json",
+    "delivery/chunks/stat_worldbank_gdp_annual-0011.json",
+    "delivery/chunks/stat_worldbank_gdp_annual-0012.json",
+    "delivery/chunks/stat_worldbank_gdp_annual-0013.json",
+    "delivery/chunks/stat_worldbank_gdp_annual-0014.json",
+    "delivery/chunks/stat_worldbank_gdp_annual-0015.json",
+    "delivery/chunks/stat_worldbank_gdp_annual-0016.json",
+    "delivery/chunks/stat_worldbank_gdp_annual-0017.json",
+    "delivery/chunks/stat_worldbank_gdp_annual-0018.json",
+    "delivery/chunks/stat_worldbank_gdp_annual-0019.json",
+    "delivery/chunks/stat_worldbank_gdp_annual-0020.json",
+    "delivery/chunks/stat_worldbank_gdp_annual-0021.json",
+    "delivery/chunks/stat_worldbank_gdp_annual-0022.json",
+    "delivery/chunks/stat_worldbank_gdp_annual-0023.json",
+    "delivery/chunks/stat_worldbank_gdp_annual-0024.json",
+    "delivery/chunks/stat_worldbank_gdp_annual-0025.json",
+    "delivery/chunks/stat_worldbank_gdp_annual-0026.json",
+    "delivery/chunks/stat_worldbank_gdp_annual-0027.json",
+    "delivery/chunks/stat_worldbank_gdp_annual-0028.json",
+    "delivery/chunks/stat_worldbank_gdp_annual-0029.json",
+    "delivery/chunks/stat_worldbank_gdp_annual-0030.json",
+    "delivery/chunks/stat_worldbank_gdp_annual-0031.json",
+    "delivery/chunks/stat_worldbank_gdp_annual-0032.json",
+    "delivery/chunks/stat_worldbank_gdp_annual-0033.json",
+    "source-data/wb_country_dimensions.json",
+    "source-data/wb_gdp_1990_1994.json",
+    "source-data/wb_gdp_2020_2026_retry.json",
+    "source-data/wb_gdp_metadata.json"
+  ],
+  "runtime_exclusions": [
+    "__pycache__/",
+    "data-local/",
+    "exports/",
+    "credentials",
+    "private_runtime_state"
+  ],
+  "all_data_is_public_licensed_facts": true,
+  "code_and_bulk_are_separate": true
+}

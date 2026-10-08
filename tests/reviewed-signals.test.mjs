@@ -57,6 +57,6 @@ test('Missing canonical response witness rejects before any durable source or ch
  try{await store.ensureSeed();await intelEnsureRegistry(store);delete w.upstream_raw_sha256;await assert.rejects(importReviewedChunk(store,bodies[0]),/见证缺失/);assert.equal(db.db.prepare('SELECT count(*) n FROM intel_versions').get().n,0);assert.equal(db.db.prepare("SELECT count(*) n FROM settings WHERE key LIKE 'reviewed_chunk:%'").get().n,0);}finally{w.upstream_raw_sha256=saved;db.close()}
 });
 test('Existing batch completion remains separately visible while the new registered batch is pending',async()=>{
- const store={rows:async(sql)=>sql.includes('GROUP BY')?Object.entries(REVIEWED_ADMISSION.source_counts).map(([source_id,item_count])=>({source_id,item_count})):REVIEWED_ADMISSION.chunks.map(c=>({value:JSON.stringify({manifest_sha256:REVIEWED_ADMISSION.manifest_sha256,chunk_sha256:c.sha256})}))};
- const s=await reviewedIntakeStatus(store);assert.equal(s.batches[0].complete,true);assert.equal(s.batches[1].imported_chunks,0);assert.equal(s.complete,false);assert.equal(s.imported_records,19466);assert.equal(s.expected_records,20644);
+ const store={rows:async(sql)=>sql.includes('GROUP BY')?Object.entries(REVIEWED_ADMISSION.source_counts).map(([source_id,item_count])=>({source_id,item_count})):REVIEWED_ADMISSION.chunks.map(c=>({value:JSON.stringify({manifest_sha256:REVIEWED_ADMISSION.manifest_sha256,chunk_sha256:c.sha256,rows:c.count,source_id:c.source_id,policy_sha256:REVIEWED_ADMISSION.original_policy_sha256})}))};
+ const s=await reviewedIntakeStatus(store);assert.equal(s.batches[0].complete,true);assert.equal(s.batches[1].imported_chunks,0);assert.equal(s.complete,false);assert.equal(s.imported_records,19466);assert.equal(s.expected_records,30184);
 });

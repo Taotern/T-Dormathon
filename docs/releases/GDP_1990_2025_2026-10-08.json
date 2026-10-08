@@ -1,0 +1,92 @@
+{
+  "schema_version": "dormathon.release-receipt.v1",
+  "release": "World Bank GDP annual historical foundation",
+  "runtime_source_commit": "5c8441d0857808d8d4f90aa092792d65d4aa3062",
+  "runtime_deployment": "appgdep_6ac7a59ae71081918438a475cb6d2fd8",
+  "published_at": "2026-10-08T14:16:01.381978+00:00",
+  "source_count_added": 1,
+  "provider_count_added": "World Bank already present; no independent new provider claim",
+  "historical_scope": {
+    "years": "1990–2025",
+    "reporting_economies": 217,
+    "overlapping_aggregates": 48,
+    "economies_numeric_all36years": 177,
+    "economies_any_numeric": 214,
+    "source_null_economy_year_cells": 411,
+    "source_null_entire_span": [
+      "VGB",
+      "GIB",
+      "PRK"
+    ],
+    "2026": "not returned",
+    "vintage_date": "2026-07-13",
+    "publication_event_times": "unknown",
+    "grain": "annual reporting geography; no city/company/event history",
+    "unit": "current_USD",
+    "price_basis": "nominal/current, not real/PPP"
+  },
+  "intake": {
+    "started_at": "2026-10-08T14:16:49.662906+00:00",
+    "finished_at": "2026-10-08T14:21:43.134856+00:00",
+    "passed": true,
+    "confirmed_chunks": 111,
+    "maximum_concurrency": 4,
+    "provider_fetches": 0,
+    "client_state": "completed"
+  },
+  "per_batch": [
+    {
+      "manifest_sha256": "e88188dd57399be85450be8828753092c19b379278a36ba39fcfb3511f84ba1c",
+      "policy_sha256": "cd47c65049557f2ae8b30ec735facb63df8462508a6f1b3a8ed7e42934b67966",
+      "imported_records": 2915,
+      "imported_chunks": 34,
+      "complete": true
+    },
+    {
+      "manifest_sha256": "45ac64665ed14941bba61452ccfafa5438b8594322b8a7cf054f1bd509af1c9c",
+      "policy_sha256": "570f6a932f3e4d739161badb3f7fe8af4f8932df9cc01dd9e5120a6b415130f9",
+      "imported_records": 2650,
+      "imported_chunks": 31,
+      "complete": true
+    },
+    {
+      "manifest_sha256": "408df7444906025e0495cd9bd758bef52aca6f308b3baaaa2fc43fa2b4dd6325",
+      "policy_sha256": "43f9813df916ed6b7a3cdbb8fb9f9cd06a5df5b71d0546f7c4d0e041fe37d5ef",
+      "imported_records": 3975,
+      "imported_chunks": 46,
+      "complete": true
+    }
+  ],
+  "corrected_run_unique_post_hashes": 111,
+  "initial_rejections": {
+    "count": 4,
+    "http_status": 503,
+    "runtime_source": "f6a3c00fa39bd4428d862920dd4fba808a91f765",
+    "cause": "history validator omitted from production bundle; failure during validation before source writes",
+    "durable_GDP_rows": 0,
+    "old_corpus_unchanged": 21113,
+    "scope": "preserved first-run evidence; corrected run followed fresh zero-state reconciliation"
+  },
+  "readback": {
+    "checks": 23,
+    "requests": 21,
+    "passed": true,
+    "finished_at": "2026-10-08T14:28:11.756534+00:00",
+    "sha256": "af255bfdf7cde38c91885d0bd1c65dfa7017bda8115a77f8d549246c2923cb53"
+  },
+  "saved_indexed": {
+    "total": 30653,
+    "direct": 369,
+    "uploaded_unverified": 100,
+    "reviewed": 30184,
+    "pending": 0,
+    "old_rule_records": 8
+  },
+  "source_bulk_in_Git": false,
+  "known_gaps": [
+    "Broad laws/culture/company relationships/current global events not covered by GDP",
+    "Daily unattended local runtime/Windows/automaticSite handoff unverified",
+    "One current dataset vintage; no historical as-of releases",
+    "Employment/ECB reference FX are acquired candidates, not yet ingested"
+  ]
+}

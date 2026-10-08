@@ -1,0 +1,4 @@
+{
+  "source_zip_sha256": "e785090d2ff44058b04774d4d81f6fc995e550851e659059184935029b31f4ad",
+  "curation": "Active single GDP source pack preserves exact deterministic parser/acquisition/build/test bytes and small public fixtures/contracts/witnesses; generated review reports and unrelated GDELT artifacts omitted. Full chunks and raw bodies remain in separately pinned external artifacts. Original source manifests retained as provenance, not current completeness claims."
+}

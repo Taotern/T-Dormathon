@@ -1,7 +1,7 @@
 {
   "schema_version": "dormathon.clean-teammate-export.v1",
-  "source_commit": "dac3b927214524df782b3af84863a2cdca3881f5",
-  "accepted_runtime_commit": "f845922b133bb45588efb7d205cd78bcc6393ad7",
+  "source_commit": "da2743eaeb796f81b5434f9f88e8622978355256",
+  "accepted_runtime_commit": "5c8441d0857808d8d4f90aa092792d65d4aa3062",
   "files": [
     {
       "path": ".gitignore",
@@ -15,18 +15,18 @@
     },
     {
       "path": "PROJECT_STATUS.md",
-      "bytes": 2721,
-      "sha256": "279a889d028e4af9566939e10796d04e3b6be45531273f7e5129cdc5b0805673"
+      "bytes": 2344,
+      "sha256": "3d70fe61c189cf881e861868e7ff30fec5b39265397de8a5a00a396847bdae0a"
     },
     {
       "path": "README.md",
-      "bytes": 8373,
-      "sha256": "53c01e7c5edc0558fc1d80cfe4bcb8e0912d2ea866a457838f12504038d5ed07"
+      "bytes": 9057,
+      "sha256": "295708e6bb1f5b1f5b5160bf37b2fda4ab42dd1f75a6161623624527298ebdf9"
     },
     {
       "path": "contracts/retrieval-v1.md",
-      "bytes": 11107,
-      "sha256": "f4ac6c48a5af1ba75393912c595dc002716e5d6c74dffcaacc2d9670d4c4911a"
+      "bytes": 12035,
+      "sha256": "59345f894433e8398d251365328d1623b1f33481c14a809e15932285833e0f53"
     },
     {
       "path": "contracts/workspace-v1.md",
@@ -72,6 +72,21 @@
       "path": "data/reviewed-acquisition-admission.json",
       "bytes": 162440,
       "sha256": "3ecc89f5cc9a433e4e06d1b266e519bef9ec7b7ce9e8125c7a6ea3396370b735"
+    },
+    {
+      "path": "data/reviewed-history-admission.json",
+      "bytes": 22113,
+      "sha256": "4d752094fea13624ffcc6672d21d39af82dbaecf2b0b0dabb8e0756f68bcd1cb"
+    },
+    {
+      "path": "data/reviewed-history-completion-admission.json",
+      "bytes": 26747,
+      "sha256": "cf681172f5762f4e57667e4a713dc06332f8eee2a798505a724d4427fa093713"
+    },
+    {
+      "path": "data/reviewed-history-middle-admission.json",
+      "bytes": 21920,
+      "sha256": "e61e3a8e51a76cb4e0ec262de211811ce41b60e00decf772456fc6e7ac1b988a"
     },
     {
       "path": "data/reviewed-signal-admission.json",
@@ -1324,6 +1339,11 @@
       "sha256": "c9c2b764e604076dadc72bff2df67bbeca600750e8ddd3779863541e400c90cf"
     },
     {
+      "path": "docs/releases/GDP_1990_2025_2026-10-08.json",
+      "bytes": 3328,
+      "sha256": "02b47fef9068c98ac6a3be1ffda6a24fb2991f1f0e7a87de77ee72a79b103c61"
+    },
+    {
       "path": "drizzle.config.ts",
       "bytes": 133,
       "sha256": "39966f3818721bb8bbc31f33ed0eeeaa35878d81a330127a1936b1b334e39ab8"
@@ -2095,8 +2115,8 @@
     },
     {
       "path": "scripts/build.mjs",
-      "bytes": 2534,
-      "sha256": "d7000d06a37962f7ac376d2d3d284122c4984ab26a1157606acbec4eb673492f"
+      "bytes": 3539,
+      "sha256": "926dbb6c488ea0ee98a95fcd310554c0b4b52c084417984f608f3ebbb5b874d7"
     },
     {
       "path": "scripts/build.sh",
@@ -2184,14 +2204,184 @@
       "sha256": "026537cff32569fd4e0ceb961b5814b2756416af6fc32b79e4c6e6844fbdd35f"
     },
     {
+      "path": "scripts/verify-history-batch.mjs",
+      "bytes": 4440,
+      "sha256": "9389711e6f85a3da15e7f177228c1890e207257fd98d50f340c4fda54c6616de"
+    },
+    {
       "path": "scripts/verify-offline-pipeline.mjs",
-      "bytes": 2163,
-      "sha256": "fd763a6257317ffa50fc27ef45173c91e4278349df3f1b1533cf667566ad0209"
+      "bytes": 2446,
+      "sha256": "1ce0b8e504bf728e5447c884eb11335b82ce17bb9dac9a254a425203bb67808f"
+    },
+    {
+      "path": "source-packs/worldbank-gdp/.gitignore",
+      "bytes": 99,
+      "sha256": "3ad071da3b50761bdfdf087ec6a7537c5b2d06d52472b39c7702bd44c9099720"
+    },
+    {
+      "path": "source-packs/worldbank-gdp/MANIFEST-SHA256.txt",
+      "bytes": 3232,
+      "sha256": "752303a784cf27f346809652dd17e47ce2e5d3338168a3ea1fd7a2e4f8c48e88"
+    },
+    {
+      "path": "source-packs/worldbank-gdp/README.md",
+      "bytes": 4068,
+      "sha256": "56b24fc358594308576bebae06fb0a19fc0974f00dafa918a0bb3bade68c7b50"
+    },
+    {
+      "path": "source-packs/worldbank-gdp/acquire-bounded.py",
+      "bytes": 5702,
+      "sha256": "ecc9f23ebafbd1fd96beb76658668bbb102b2e9e33e7fd902c5441b6b996029f"
+    },
+    {
+      "path": "source-packs/worldbank-gdp/adapters/normalized-common.mjs",
+      "bytes": 5755,
+      "sha256": "773d2fc291337bfa225e22b646356eb8aa0be464aaad6024864732678f1f8f5f"
+    },
+    {
+      "path": "source-packs/worldbank-gdp/adapters/worldbank-gdp-annual.mjs",
+      "bytes": 7099,
+      "sha256": "c1af66ad7b440184f1fa2724681495f57749c2a2e156e459fd894361e0aefc3c"
+    },
+    {
+      "path": "source-packs/worldbank-gdp/build-package.mjs",
+      "bytes": 13608,
+      "sha256": "999c7dc19c20005eefde0b82af5763d883708a88de5cb9b914e8f1ce1ffc4bdf"
+    },
+    {
+      "path": "source-packs/worldbank-gdp/completion/contracts/source-manifest.v0.11.json",
+      "bytes": 13852,
+      "sha256": "43f9813df916ed6b7a3cdbb8fb9f9cd06a5df5b71d0546f7c4d0e041fe37d5ef"
+    },
+    {
+      "path": "source-packs/worldbank-gdp/completion/coverage/coverage-summary.v0.11.json",
+      "bytes": 11047,
+      "sha256": "fc52623750bb6b525a133fe2e2ce08ebd9e0d39904937fd20cc329e5e1d3a661"
+    },
+    {
+      "path": "source-packs/worldbank-gdp/completion/delivery/manifest.json",
+      "bytes": 12655,
+      "sha256": "408df7444906025e0495cd9bd758bef52aca6f308b3baaaa2fc43fa2b4dd6325"
+    },
+    {
+      "path": "source-packs/worldbank-gdp/completion/fixtures/normalized-known-source-samples.v0.11.json",
+      "bytes": 14749,
+      "sha256": "338521a07c92838053e33ae1364efa34ac8e31852f43fe91ab56d41c19a4f655"
+    },
+    {
+      "path": "source-packs/worldbank-gdp/contracts/portable-runtime-limits-addendum.v0.9.json",
+      "bytes": 1465,
+      "sha256": "b9132d26224c0bba6de785d5c166fc15071220d21d512a436bd8b0fdd374278d"
+    },
+    {
+      "path": "source-packs/worldbank-gdp/contracts/source-manifest.v0.9.json",
+      "bytes": 12323,
+      "sha256": "cd47c65049557f2ae8b30ec735facb63df8462508a6f1b3a8ed7e42934b67966"
+    },
+    {
+      "path": "source-packs/worldbank-gdp/coverage/coverage-summary.v0.9.json",
+      "bytes": 6045,
+      "sha256": "cb5bf54244c5df463bc3a834a36a1ddebfd0b350a80b76cddb83ff1fb19c09ab"
+    },
+    {
+      "path": "source-packs/worldbank-gdp/coverage/prioritized-source-matrix.v0.9.json",
+      "bytes": 8426,
+      "sha256": "74b53b4a212da70dc5450d725c5f6f7c85ce6b9f83b55d0da815ce45b26af823"
+    },
+    {
+      "path": "source-packs/worldbank-gdp/coverage/resumable-progress.v0.9.json",
+      "bytes": 1577,
+      "sha256": "9fc5ca313c61f74dcc31188000bb0842f3b972507f414d4a00a29261abe0fb0c"
+    },
+    {
+      "path": "source-packs/worldbank-gdp/delivery/manifest.json",
+      "bytes": 9250,
+      "sha256": "e88188dd57399be85450be8828753092c19b379278a36ba39fcfb3511f84ba1c"
+    },
+    {
+      "path": "source-packs/worldbank-gdp/fixtures/normalized-known-source-samples.v0.9.json",
+      "bytes": 14721,
+      "sha256": "ed2aa6e3ffb66cbd2da31cfd724ecbd50760b57c75d037857857da793e90051b"
+    },
+    {
+      "path": "source-packs/worldbank-gdp/middle/contracts/source-manifest.v0.10.json",
+      "bytes": 12958,
+      "sha256": "570f6a932f3e4d739161badb3f7fe8af4f8932df9cc01dd9e5120a6b415130f9"
+    },
+    {
+      "path": "source-packs/worldbank-gdp/middle/coverage/coverage-summary.v0.10.json",
+      "bytes": 7392,
+      "sha256": "5c0dd60fc3d3d14e6df7a30043afd8dc36ef89a8a4b7d4d9b87f4ec7a7e806a5"
+    },
+    {
+      "path": "source-packs/worldbank-gdp/middle/delivery/manifest.json",
+      "bytes": 8657,
+      "sha256": "45ac64665ed14941bba61452ccfafa5438b8594322b8a7cf054f1bd509af1c9c"
+    },
+    {
+      "path": "source-packs/worldbank-gdp/middle/fixtures/normalized-known-source-samples.v0.10.json",
+      "bytes": 14719,
+      "sha256": "86087a65d14a3f66b9eda7175b1422e40347f3326b418c49cf6b32194a5d3d1d"
+    },
+    {
+      "path": "source-packs/worldbank-gdp/provenance/input-ASSET-MANIFEST.v0.9.json",
+      "bytes": 12141,
+      "sha256": "3fd34f5d5f5909009d565da64682dec4f7d6843b1092c5d8d1d29d48007e996c"
+    },
+    {
+      "path": "source-packs/worldbank-gdp/provenance/input-README.md",
+      "bytes": 6809,
+      "sha256": "be79f9378437684a26faccdb455c54dc7c2c6080e89928fcb1e29b5227a067bb"
+    },
+    {
+      "path": "source-packs/worldbank-gdp/provenance/input-SOURCE-MANIFEST.v0.9.json",
+      "bytes": 6572,
+      "sha256": "effe5dfe98e92e7cab9c9e7e1b390a9cceb7ecdfa23fdb47867c837527079704"
+    },
+    {
+      "path": "source-packs/worldbank-gdp/provenance/integration-curation.json",
+      "bytes": 476,
+      "sha256": "b46fa9217aea49cadaff73c69f3f9dfae6ea30a25b2532d33c468636d5aa8761"
+    },
+    {
+      "path": "source-packs/worldbank-gdp/receipts/wb_country_dimensions.json",
+      "bytes": 1479,
+      "sha256": "8d3b1a6c3fe3e894741320372098144d3962ba40d04bbba4da76bf62d59ef6f2"
+    },
+    {
+      "path": "source-packs/worldbank-gdp/receipts/wb_gdp_1990_1994.json",
+      "bytes": 1586,
+      "sha256": "0d88c6454408e69da2875392d5ec1c80037ae5e4d9e1a113ea3359284d0cc1fe"
+    },
+    {
+      "path": "source-packs/worldbank-gdp/receipts/wb_gdp_2020_2026.json",
+      "bytes": 904,
+      "sha256": "9d1be347a6b96ac09f2ff2ef8d727ceeabed47a9d3f3f699b6691ad5849ddd5e"
+    },
+    {
+      "path": "source-packs/worldbank-gdp/receipts/wb_gdp_2020_2026_retry.json",
+      "bytes": 1597,
+      "sha256": "12b586eb539e59b51bd8424b409117ad5e91e857d8104eb6b680d9e9489017a8"
+    },
+    {
+      "path": "source-packs/worldbank-gdp/receipts/wb_gdp_metadata.json",
+      "bytes": 1460,
+      "sha256": "342951b084df2b00193b7af78efa3ffd5141975a8f122914659d23501c593695"
+    },
+    {
+      "path": "source-packs/worldbank-gdp/run-slice.py",
+      "bytes": 2137,
+      "sha256": "3c2e5c2af892a8290b2c90bc781ce8de6adeef14c4bcb204179dbce6b7a12429"
+    },
+    {
+      "path": "source-packs/worldbank-gdp/test-contract.mjs",
+      "bytes": 9072,
+      "sha256": "00f7360ee74be6ae688e1ac30b38008ddde5bc8ad317bd61233e197e588ce0cc"
     },
     {
       "path": "static/collector-index.html",
-      "bytes": 7078,
-      "sha256": "de5f9676dd60841b9ccbdf4a70c4a2ad3b9694b1b5f87d994c7df93ce762003f"
+      "bytes": 7072,
+      "sha256": "a6a5dc7b8503f00b01aece4f5874c838e4901ac6883043660ef95ef596363d89"
     },
     {
       "path": "static/collector-workbench.css",
@@ -2200,8 +2390,13 @@
     },
     {
       "path": "static/collector-workbench.js",
-      "bytes": 23243,
-      "sha256": "d9dc0c19c61f8b0e15633e228e931e1ba71d0feeee01ee8e2c660456ea603328"
+      "bytes": 24324,
+      "sha256": "2f8bf7a3033848a2d9d913dd1682b6cf6b2ab15e1dd98ba23195fd47675e8718"
+    },
+    {
+      "path": "tests/built-history-boundary.test.mjs",
+      "bytes": 2292,
+      "sha256": "130f70e89fa5ec76225fec762a29ce4e9b2ccbe0f42480a124c5947b146eded2"
     },
     {
       "path": "tests/clean-source-export.test.mjs",
@@ -2211,7 +2406,7 @@
     {
       "path": "tests/collector-workbench-behavior.test.mjs",
       "bytes": 18875,
-      "sha256": "bd5b2b6dbaa674a8a7816819f9248ead57cef1b7876e698c5f90bf5c7293dc6c"
+      "sha256": "ec76a6f5a75c5b4b1cd56568adc68c4635cc23cbeb7e0f382ff672081048b7c4"
     },
     {
       "path": "tests/collector-workbench.test.mjs",
@@ -2247,6 +2442,11 @@
       "path": "tests/global-safe-samples.json",
       "bytes": 27214,
       "sha256": "45a0f4752ac5eb4de4d8cbca89074b123e19cfb008d4150e4f949f2ebbf55777"
+    },
+    {
+      "path": "tests/history-gdp.test.mjs",
+      "bytes": 9916,
+      "sha256": "9c2934088e397e19ffd916d9352d36abe40587e3f9f386d9b7796e4dfc189718"
     },
     {
       "path": "tests/independent-source-contracts/README.md",
@@ -2725,8 +2925,8 @@
     },
     {
       "path": "tests/reviewed-signals.test.mjs",
-      "bytes": 8710,
-      "sha256": "9622a0030d9dc991c7ff852db8f9d58a910c9e4004956df8541e53c1553d6171"
+      "bytes": 8801,
+      "sha256": "f980b3deeca87e927bcbcd6bf07d7ff82390364433ab5577651933a1272e2777"
     },
     {
       "path": "tests/runtime-edges.test.mjs",
@@ -2840,8 +3040,13 @@
     },
     {
       "path": "worker/global-store.js",
-      "bytes": 25884,
-      "sha256": "c8ff2f35c67f6d04bbfa5db7f666abd6247b97274787a3e1573f4b465bd93c44"
+      "bytes": 26525,
+      "sha256": "2983892a78247ddb79b5ec8febbda206364117f96afd70f49e333b4053f50368"
+    },
+    {
+      "path": "worker/history-validation.js",
+      "bytes": 2475,
+      "sha256": "5b3ee274f6ae220fcde36b3e531e1dc59579e7f63d26161e5ef87e36ac3a5774"
     },
     {
       "path": "worker/index.js",
@@ -2870,18 +3075,18 @@
     },
     {
       "path": "worker/retrieval.js",
-      "bytes": 13972,
-      "sha256": "85ea4d0b5121fa79b68b9f84a895b9722c85300a72e1536bbc24965e0aaaeb47"
+      "bytes": 15501,
+      "sha256": "e0769fdc3d7d5af9f5705e34db1b205916687ffa0e86a848526030d72e07c372"
     },
     {
       "path": "worker/source-intake-validation.js",
-      "bytes": 11228,
-      "sha256": "79301b91e6caa6263216b942108dd3afdab60f58ba1f95af21f26200359497dc"
+      "bytes": 11374,
+      "sha256": "25cd2e7f2636d317a44a0969906aa891bb5ce19e15bb28cd0850872c4f56a41b"
     },
     {
       "path": "worker/source-intake.js",
-      "bytes": 10386,
-      "sha256": "eecbbf01be46f3c37b8f56328f78ff5efd33482edbceedeb3f47414bad7009f9"
+      "bytes": 12338,
+      "sha256": "dd5eadc2b6066f7380a2c080348bbb9cf6b3f90eb4db37c1a06343dd06f51b46"
     },
     {
       "path": "worker/store.js",
@@ -2894,23 +3099,12 @@
       "sha256": "d6bdda2a95aac2a35c1a7db542d0a07e5efd855423bfe96da2ed7a50f904116a"
     }
   ],
-  "file_count": 578,
-  "exclusions": [
-    ".git",
-    "dist",
-    "worker/generated.js",
-    "node_modules",
-    "credentials",
-    "local private config",
-    "SQLite/runtime state",
-    "provider raw article bodies",
-    "internal QA ledgers",
-    "old frontend"
+  "file_count": 619,
+  "excluded": [
+    "Git/auth/privateconfig/SQLite/runtime/generatedbuild/internalQA",
+    "historicalGDPrawresponses/all111chunks/detailedmatrices",
+    "oldpresentationUI"
   ],
-  "includes": [
-    "current ordinary GUI/backend/migrations",
-    "old and incrementally admitted safe public datasets/policy/provenance",
-    "single current local collector and exact completeness manifests",
-    "reproducible tests/rights/contracts/docs"
-  ]
+  "bulk_reference": "source-packs/worldbank-gdp/README.md binds three external package hashes and explicit offline reproduction paths",
+  "actual_coverage": "oneGDPsource annual1990–2025, 217reporting economies+48overlapping groups; no2026/currentevent/worldwideall-domain claim"
 }

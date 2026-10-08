@@ -1,0 +1,243 @@
+{
+  "schema_version": "dormathon.longitudinal-acquisition.v0.10",
+  "source_id": "stat_worldbank_gdp_annual",
+  "source_counts": {
+    "stat_worldbank_gdp_annual": 2650
+  },
+  "record_count": 2650,
+  "chunks": [
+    {
+      "path": "chunks/stat_worldbank_gdp_annual-middle-0000.json",
+      "source_id": "stat_worldbank_gdp_annual",
+      "count": 87,
+      "bytes": 261948,
+      "sha256": "b5761a6e615e3e53c5cd14f737cb93b4c14fd24ed0e4c052003ffa595b460572"
+    },
+    {
+      "path": "chunks/stat_worldbank_gdp_annual-middle-0001.json",
+      "source_id": "stat_worldbank_gdp_annual",
+      "count": 86,
+      "bytes": 259552,
+      "sha256": "8d4f60728c97a5763b2673de0c7cd943fd1590eb84a0422f50c51e611971872c"
+    },
+    {
+      "path": "chunks/stat_worldbank_gdp_annual-middle-0002.json",
+      "source_id": "stat_worldbank_gdp_annual",
+      "count": 87,
+      "bytes": 261299,
+      "sha256": "91837dc4df3206e104100b54ffe05cb739041e80f27fffcf3e1c32a5a5004ea1"
+    },
+    {
+      "path": "chunks/stat_worldbank_gdp_annual-middle-0003.json",
+      "source_id": "stat_worldbank_gdp_annual",
+      "count": 87,
+      "bytes": 260862,
+      "sha256": "08316836e06990e3756721fca9992d12779baf5975ea94818c5c8b45c7b14f9c"
+    },
+    {
+      "path": "chunks/stat_worldbank_gdp_annual-middle-0004.json",
+      "source_id": "stat_worldbank_gdp_annual",
+      "count": 87,
+      "bytes": 261009,
+      "sha256": "59326bd1412022a62f01d9faa8fc8a6d9606ae8d3f6ceb23a623b0791c9fda67"
+    },
+    {
+      "path": "chunks/stat_worldbank_gdp_annual-middle-0005.json",
+      "source_id": "stat_worldbank_gdp_annual",
+      "count": 87,
+      "bytes": 260940,
+      "sha256": "e7c29a27aecd2b56a6e2bce7dc59169dc766c6285013ca8bc0d616718aa3a1dd"
+    },
+    {
+      "path": "chunks/stat_worldbank_gdp_annual-middle-0006.json",
+      "source_id": "stat_worldbank_gdp_annual",
+      "count": 87,
+      "bytes": 261114,
+      "sha256": "7d91b40dee748db84a0d208145fd5fb6e6741af5e71d79ae88d8c4d80f6df770"
+    },
+    {
+      "path": "chunks/stat_worldbank_gdp_annual-middle-0007.json",
+      "source_id": "stat_worldbank_gdp_annual",
+      "count": 87,
+      "bytes": 260598,
+      "sha256": "b755ac5ae4cb2d2ba25bf9fe56f45ba8141b3d2707de0a212f521a587df27faa"
+    },
+    {
+      "path": "chunks/stat_worldbank_gdp_annual-middle-0008.json",
+      "source_id": "stat_worldbank_gdp_annual",
+      "count": 87,
+      "bytes": 261462,
+      "sha256": "645ae5718837ea4c1e12dd764025720e3b132ce5ce456f8137c9504fd9481dc6"
+    },
+    {
+      "path": "chunks/stat_worldbank_gdp_annual-middle-0009.json",
+      "source_id": "stat_worldbank_gdp_annual",
+      "count": 87,
+      "bytes": 261025,
+      "sha256": "9e45d8ce8688d76ef15e42656b116614ab0bb34401204fce4354b6a949d0218d"
+    },
+    {
+      "path": "chunks/stat_worldbank_gdp_annual-middle-0010.json",
+      "source_id": "stat_worldbank_gdp_annual",
+      "count": 87,
+      "bytes": 260869,
+      "sha256": "819150989ed7fb6a62bd9ef6db8be1aae23b10c010ab81c3b302d4d5b612d039"
+    },
+    {
+      "path": "chunks/stat_worldbank_gdp_annual-middle-0011.json",
+      "source_id": "stat_worldbank_gdp_annual",
+      "count": 87,
+      "bytes": 261213,
+      "sha256": "984678ca41b6ce6a828bd5a9f1ff2d1393935ce420164f0118d14da4d7a54136"
+    },
+    {
+      "path": "chunks/stat_worldbank_gdp_annual-middle-0012.json",
+      "source_id": "stat_worldbank_gdp_annual",
+      "count": 87,
+      "bytes": 261431,
+      "sha256": "010c3d5c5a03f680bc0272ee06d9aa55275b3035e4d4dc139fd206c259fdbe0d"
+    },
+    {
+      "path": "chunks/stat_worldbank_gdp_annual-middle-0013.json",
+      "source_id": "stat_worldbank_gdp_annual",
+      "count": 87,
+      "bytes": 261308,
+      "sha256": "5948b2fa2dc94f3bd16c36ac636d8816459ea798629be3e70ed4a4ef378e90d7"
+    },
+    {
+      "path": "chunks/stat_worldbank_gdp_annual-middle-0014.json",
+      "source_id": "stat_worldbank_gdp_annual",
+      "count": 87,
+      "bytes": 261519,
+      "sha256": "e8e05368afc9967c6e97c11661730c34ada4231c63d7e979f019752a47b4e14a"
+    },
+    {
+      "path": "chunks/stat_worldbank_gdp_annual-middle-0015.json",
+      "source_id": "stat_worldbank_gdp_annual",
+      "count": 86,
+      "bytes": 259289,
+      "sha256": "60cee4b2d515cd429a8c02c9fd79ae71d6d34b9e074145cc87b19005b69ce331"
+    },
+    {
+      "path": "chunks/stat_worldbank_gdp_annual-middle-0016.json",
+      "source_id": "stat_worldbank_gdp_annual",
+      "count": 87,
+      "bytes": 261945,
+      "sha256": "36ca45b8cd4023addf90474cf664dbd3f7d8843c05dc922479e40d3c45aef5c2"
+    },
+    {
+      "path": "chunks/stat_worldbank_gdp_annual-middle-0017.json",
+      "source_id": "stat_worldbank_gdp_annual",
+      "count": 87,
+      "bytes": 261699,
+      "sha256": "700af9bc33bda1e21a910a1fa5f937bf3403363e4400c080241830200bfcd459"
+    },
+    {
+      "path": "chunks/stat_worldbank_gdp_annual-middle-0018.json",
+      "source_id": "stat_worldbank_gdp_annual",
+      "count": 87,
+      "bytes": 261229,
+      "sha256": "e6a1f653df073fcd082273ec32631e00e516b17736663d71274b139cb649f5c8"
+    },
+    {
+      "path": "chunks/stat_worldbank_gdp_annual-middle-0019.json",
+      "source_id": "stat_worldbank_gdp_annual",
+      "count": 87,
+      "bytes": 260823,
+      "sha256": "cebfb3dde702bb7c0f47440b01520b38ffb9832a27d63f38bc990800e9d84d70"
+    },
+    {
+      "path": "chunks/stat_worldbank_gdp_annual-middle-0020.json",
+      "source_id": "stat_worldbank_gdp_annual",
+      "count": 87,
+      "bytes": 260928,
+      "sha256": "b7e3159c2da6243704e40804e87090462eb4c5a1f9a28e0901d2e745fb3a03e1"
+    },
+    {
+      "path": "chunks/stat_worldbank_gdp_annual-middle-0021.json",
+      "source_id": "stat_worldbank_gdp_annual",
+      "count": 87,
+      "bytes": 261257,
+      "sha256": "6b7f4a90e38b372bbf71ae7cf5d2183b10ec78faee1fef17372f76b0d67cf300"
+    },
+    {
+      "path": "chunks/stat_worldbank_gdp_annual-middle-0022.json",
+      "source_id": "stat_worldbank_gdp_annual",
+      "count": 87,
+      "bytes": 260697,
+      "sha256": "093be27f5fe454831f5d2093843e81e4b882844a4ab24828a8a74246855ae87f"
+    },
+    {
+      "path": "chunks/stat_worldbank_gdp_annual-middle-0023.json",
+      "source_id": "stat_worldbank_gdp_annual",
+      "count": 87,
+      "bytes": 261257,
+      "sha256": "bab2e6e470c75bd590c5df2edcbde53f77efb4c6ea2a3d43942222c1794dec26"
+    },
+    {
+      "path": "chunks/stat_worldbank_gdp_annual-middle-0024.json",
+      "source_id": "stat_worldbank_gdp_annual",
+      "count": 87,
+      "bytes": 261039,
+      "sha256": "09224bfb36b903c61604dbe5f0dd6ad627b5db108504d30addb8e5b48c4d5ebf"
+    },
+    {
+      "path": "chunks/stat_worldbank_gdp_annual-middle-0025.json",
+      "source_id": "stat_worldbank_gdp_annual",
+      "count": 87,
+      "bytes": 260863,
+      "sha256": "a3f1cb04fb3607a5d4ac546c9809eb4e678611154aeb09faaaf1a8acaefb6b60"
+    },
+    {
+      "path": "chunks/stat_worldbank_gdp_annual-middle-0026.json",
+      "source_id": "stat_worldbank_gdp_annual",
+      "count": 87,
+      "bytes": 261197,
+      "sha256": "97f55151ef9b8dfa3e4540ba1b68955536e463bd5672a2b51fb6133015b28cf5"
+    },
+    {
+      "path": "chunks/stat_worldbank_gdp_annual-middle-0027.json",
+      "source_id": "stat_worldbank_gdp_annual",
+      "count": 87,
+      "bytes": 261426,
+      "sha256": "6a5203ceb9b20094b7ab3ae0ec0dbd8e0eebdfc90ba0f7dbeb154dff66844bde"
+    },
+    {
+      "path": "chunks/stat_worldbank_gdp_annual-middle-0028.json",
+      "source_id": "stat_worldbank_gdp_annual",
+      "count": 87,
+      "bytes": 261601,
+      "sha256": "4ae0ec8b66d6c83460c3055994b95a72279fa7a8c0c38f6000e9c5f4f440dadf"
+    },
+    {
+      "path": "chunks/stat_worldbank_gdp_annual-middle-0029.json",
+      "source_id": "stat_worldbank_gdp_annual",
+      "count": 87,
+      "bytes": 261319,
+      "sha256": "c48ad49df5c4b2c69f92bfa536bdc03d3fa87d0df995f504dc11f471d11c4adc"
+    },
+    {
+      "path": "chunks/stat_worldbank_gdp_annual-middle-0030.json",
+      "source_id": "stat_worldbank_gdp_annual",
+      "count": 42,
+      "bytes": 126383,
+      "sha256": "caad4e5ffa0c3d97456893a23c33eee2b3aa21b4fd9fbaaf51eebbe497af96ef"
+    }
+  ],
+  "provider_families": [
+    "World Bank"
+  ],
+  "provider_family_count": 1,
+  "new_provider_count": 0,
+  "new_source_count": 0,
+  "new_observation_periods": [
+    "1995–1999",
+    "2000–2004"
+  ],
+  "source_manifest_sha256": "570f6a932f3e4d739161badb3f7fe8af4f8932df9cc01dd9e5120a6b415130f9",
+  "coverage_matrix_sha256": "77b2a815eeba3e2707c6f3bf988b5ee5dd58005b197be6be1f62110c1cdcd713",
+  "base_delivery_manifest_sha256": "e88188dd57399be85450be8828753092c19b379278a36ba39fcfb3511f84ba1c",
+  "site_ingestion": "not_run",
+  "recurring_operational": false,
+  "source_data_not_for_Git": true
+}

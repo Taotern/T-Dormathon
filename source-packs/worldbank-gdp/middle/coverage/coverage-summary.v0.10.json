@@ -1,0 +1,286 @@
+{
+  "schema_version": "dormathon.coverage.incremental-gdp.v0.10",
+  "generated_at": "2026-10-08T13:20:56.147Z",
+  "base_delivery_manifest_sha256": "e88188dd57399be85450be8828753092c19b379278a36ba39fcfb3511f84ba1c",
+  "base_matrix_sha256": "8967be1f3e5821dbd2ced8fbaa7deeebb666d55e8349576028cd270691a5826f",
+  "provider_documented_available_period": "1960–2025",
+  "newly_acquired_periods": [
+    "1995–1999",
+    "2000–2004"
+  ],
+  "actually_acquired_combined_periods": [
+    "1990–2004",
+    "2020–2025"
+  ],
+  "unacquired_periods": [
+    "2005–2019"
+  ],
+  "absent_requested_2026": true,
+  "geography_kind_counts": {
+    "country_or_economy": 217,
+    "aggregate": 48
+  },
+  "continuity": {
+    "new1995_1999": {
+      "period": [
+        1995,
+        1999
+      ],
+      "denominator": "217 provider-defined reporting economies in retained World Bank dimension, not sovereign countries",
+      "geographies": 217,
+      "all_years_numeric": 199,
+      "at_least_one_numeric": 202,
+      "per_year": [
+        {
+          "year": "1995",
+          "numeric": 199,
+          "returned_null": 18,
+          "unreturned": 0
+        },
+        {
+          "year": "1996",
+          "numeric": 199,
+          "returned_null": 18,
+          "unreturned": 0
+        },
+        {
+          "year": "1997",
+          "numeric": 201,
+          "returned_null": 16,
+          "unreturned": 0
+        },
+        {
+          "year": "1998",
+          "numeric": 202,
+          "returned_null": 15,
+          "unreturned": 0
+        },
+        {
+          "year": "1999",
+          "numeric": 202,
+          "returned_null": 15,
+          "unreturned": 0
+        }
+      ]
+    },
+    "new2000_2004": {
+      "period": [
+        2000,
+        2004
+      ],
+      "denominator": "217 provider-defined reporting economies in retained World Bank dimension, not sovereign countries",
+      "geographies": 217,
+      "all_years_numeric": 204,
+      "at_least_one_numeric": 209,
+      "per_year": [
+        {
+          "year": "2000",
+          "numeric": 204,
+          "returned_null": 13,
+          "unreturned": 0
+        },
+        {
+          "year": "2001",
+          "numeric": 205,
+          "returned_null": 12,
+          "unreturned": 0
+        },
+        {
+          "year": "2002",
+          "numeric": 209,
+          "returned_null": 8,
+          "unreturned": 0
+        },
+        {
+          "year": "2003",
+          "numeric": 209,
+          "returned_null": 8,
+          "unreturned": 0
+        },
+        {
+          "year": "2004",
+          "numeric": 209,
+          "returned_null": 8,
+          "unreturned": 0
+        }
+      ]
+    },
+    "combined1990_2004": {
+      "period": [
+        1990,
+        2004
+      ],
+      "denominator": "217 provider-defined reporting economies in retained World Bank dimension, not sovereign countries",
+      "geographies": 217,
+      "all_years_numeric": 192,
+      "at_least_one_numeric": 209,
+      "per_year": [
+        {
+          "year": "1990",
+          "numeric": 192,
+          "returned_null": 25,
+          "unreturned": 0
+        },
+        {
+          "year": "1991",
+          "numeric": 193,
+          "returned_null": 24,
+          "unreturned": 0
+        },
+        {
+          "year": "1992",
+          "numeric": 194,
+          "returned_null": 23,
+          "unreturned": 0
+        },
+        {
+          "year": "1993",
+          "numeric": 195,
+          "returned_null": 22,
+          "unreturned": 0
+        },
+        {
+          "year": "1994",
+          "numeric": 196,
+          "returned_null": 21,
+          "unreturned": 0
+        },
+        {
+          "year": "1995",
+          "numeric": 199,
+          "returned_null": 18,
+          "unreturned": 0
+        },
+        {
+          "year": "1996",
+          "numeric": 199,
+          "returned_null": 18,
+          "unreturned": 0
+        },
+        {
+          "year": "1997",
+          "numeric": 201,
+          "returned_null": 16,
+          "unreturned": 0
+        },
+        {
+          "year": "1998",
+          "numeric": 202,
+          "returned_null": 15,
+          "unreturned": 0
+        },
+        {
+          "year": "1999",
+          "numeric": 202,
+          "returned_null": 15,
+          "unreturned": 0
+        },
+        {
+          "year": "2000",
+          "numeric": 204,
+          "returned_null": 13,
+          "unreturned": 0
+        },
+        {
+          "year": "2001",
+          "numeric": 205,
+          "returned_null": 12,
+          "unreturned": 0
+        },
+        {
+          "year": "2002",
+          "numeric": 209,
+          "returned_null": 8,
+          "unreturned": 0
+        },
+        {
+          "year": "2003",
+          "numeric": 209,
+          "returned_null": 8,
+          "unreturned": 0
+        },
+        {
+          "year": "2004",
+          "numeric": 209,
+          "returned_null": 8,
+          "unreturned": 0
+        }
+      ]
+    },
+    "current2020_2025": {
+      "period": [
+        2020,
+        2025
+      ],
+      "denominator": "217 provider-defined reporting economies in retained World Bank dimension, not sovereign countries",
+      "geographies": 217,
+      "all_years_numeric": 186,
+      "at_least_one_numeric": 211,
+      "per_year": [
+        {
+          "year": "2020",
+          "numeric": 210,
+          "returned_null": 7,
+          "unreturned": 0
+        },
+        {
+          "year": "2021",
+          "numeric": 210,
+          "returned_null": 7,
+          "unreturned": 0
+        },
+        {
+          "year": "2022",
+          "numeric": 209,
+          "returned_null": 8,
+          "unreturned": 0
+        },
+        {
+          "year": "2023",
+          "numeric": 204,
+          "returned_null": 13,
+          "unreturned": 0
+        },
+        {
+          "year": "2024",
+          "numeric": 200,
+          "returned_null": 17,
+          "unreturned": 0
+        },
+        {
+          "year": "2025",
+          "numeric": 186,
+          "returned_null": 31,
+          "unreturned": 0
+        }
+      ]
+    }
+  },
+  "dimensions": {
+    "domain": "economy",
+    "indicator": "NY.GDP.MKTP.CD",
+    "entity_kind": "provider_reporting_economy_or_aggregate",
+    "temporal_grain": "annual",
+    "spatial_grain": "national/economy/group aggregate",
+    "not_covered": [
+      "Subnational/facility/company GDP",
+      "Law/culture/policy/futures/employment/markets/talent in this actual batch",
+      "Historical political boundaries or changing country-group membership",
+      "Current incidents or predictions"
+    ]
+  },
+  "clock_and_unit_semantics": {
+    "observation_period": "source annual year label; country calendar/fiscal alignment unverified",
+    "publication_time": null,
+    "event_time": null,
+    "source_updated_at": "null: date-only dataset vintage is retained in facts.vintage, not fabricated per-record midnight",
+    "vintage": "2026-07-13 snapshot; historical vintages not acquired; source methods can change",
+    "requested_latest_year": 2004,
+    "actual_latest_returned_year": 2004,
+    "previous_acquired_recent_latest_year": 2025,
+    "missing_requested_current_year_basis": "2026 was requested and absent in the separately pinned v0.9 recent slice; not requested again here"
+  },
+  "site_ingestion": "not_run",
+  "recurring_operational": false,
+  "full_matrix_sha256": "77b2a815eeba3e2707c6f3bf988b5ee5dd58005b197be6be1f62110c1cdcd713"
+}
