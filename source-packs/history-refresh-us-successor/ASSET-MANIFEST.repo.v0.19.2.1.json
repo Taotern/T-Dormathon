@@ -1,0 +1,75 @@
+{
+  "schema_version": "dormathon.US-repository-source-addendum.v0.19.2.1",
+  "ready_at": "2026-10-08T22:09:45.365984+00:00",
+  "supersedes_repository_ZIP_sha256": "05f2c8cd871e00e63de91800e2a137155827c375bf2d65f3e07b719eccad0755",
+  "profile_sha256": "9c33c077cc30fe4946e519eb795cbc33e9640320623db19db62333c6ad6ca130",
+  "parser_version": "history-refresh-v0.19.2",
+  "delta": "Repository entrypoint checks any existing marker before SQLite condition; matching interrupted initialization remains recoverable",
+  "source_adapter_profile_projector_dependencies_unchanged": true,
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 5538,
+      "sha256": "ffbef977e1aee022a785f6286882250e879940899b3cc12ecd0c9891890cb304"
+    },
+    {
+      "path": "repository-entrypoint.py",
+      "bytes": 5509,
+      "sha256": "66cdfa4cfe92aa08885b12f7dbfcfde2fcc35150a5806e4aeef0cc850e30301a"
+    },
+    {
+      "path": "project-us.mjs",
+      "bytes": 2144,
+      "sha256": "ea84aa655ee3e703d7e82fa94e46482823ab25ff02c3560e80af75c76d30d10d"
+    },
+    {
+      "path": "DEPENDENCIES.repo.json",
+      "bytes": 1839,
+      "sha256": "189af6f3072fc9a200002aa0fd564441f418105bde85b1c62e28eaf68d82ed23"
+    },
+    {
+      "path": "adapters/us-federal-register.mjs",
+      "bytes": 6702,
+      "sha256": "d8ef328dad1d036cf82a1deeff6d88697e5c27d600df0a5f627ab2ed56589ea0"
+    },
+    {
+      "path": "replay-three-saved.py",
+      "bytes": 6544,
+      "sha256": "62ca2f58e4f22e652a87df4c08a5d3f8b8801f255d30314501ee55f14a6f9113"
+    },
+    {
+      "path": "tests/repository-replay-equality.json",
+      "bytes": 699,
+      "sha256": "9cd87d9b9ccd705e036ff73b465d13c4c6a7d82d1027c49ce884b05abf2be9a2"
+    },
+    {
+      "path": "tests/repository-entrypoint-check.json",
+      "bytes": 627,
+      "sha256": "8f9c8e47dd73c45cd16b26cee2b7134a906ef5da28c17080d44c373cdb7ab821"
+    },
+    {
+      "path": "tests/state-marker-delta.json",
+      "bytes": 1094,
+      "sha256": "13b066897f1de2c33bd8a46b6c643f6611f9bc582d9704ddada8a6069b2d5b0f"
+    }
+  ],
+  "provider_requests": 0,
+  "Site_requests": 0,
+  "300_row_replay_repeated": false,
+  "base_ZIP_required": false,
+  "excluded": [
+    "raw_source_bodies",
+    "SQLite/runtime/raw/exports/lock_state",
+    "credentials",
+    "scheduler_config",
+    "full55_file_package",
+    "synthetic_negative_snapshot_parts"
+  ],
+  "not_run": [
+    "new_genuine_US_using_successor",
+    "Site_ingestion",
+    "unattended_schedule",
+    "Windows",
+    "automatic_sync"
+  ]
+}

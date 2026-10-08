@@ -1,0 +1,406 @@
+{
+  "scope": "Two actual saved US field projections with claimed retained-replay witnesses; bounded test transport, not live acceptance",
+  "replay_report_sha256": "6f11a6e67d5c1d91e629dd090e95132f929f56c0f4af09c9d8bc3cea1b1f2046",
+  "snapshot": {
+    "payload": {
+      "coverage": [
+        {
+          "coverage": [
+            {
+              "empty_allowed": true,
+              "has_next_page": true,
+              "known_empty": false,
+              "recognized_schema": true,
+              "returned_count": 100,
+              "scope": {
+                "period_end": "2026-10-08",
+                "period_start": "2026-10-01"
+              },
+              "total_pages": 7,
+              "truncated": true,
+              "upstream_count": 605
+            },
+            {
+              "empty_allowed": true,
+              "has_next_page": true,
+              "known_empty": false,
+              "recognized_schema": true,
+              "returned_count": 100,
+              "scope": {
+                "period_end": "2026-10-08",
+                "period_start": "2026-10-01"
+              },
+              "total_pages": 7,
+              "truncated": true,
+              "upstream_count": 605
+            },
+            {
+              "empty_allowed": true,
+              "has_next_page": true,
+              "known_empty": false,
+              "recognized_schema": true,
+              "returned_count": 100,
+              "scope": {
+                "period_end": "2026-10-08",
+                "period_start": "2026-10-01"
+              },
+              "total_pages": 7,
+              "truncated": true,
+              "upstream_count": 605
+            }
+          ],
+          "job_id": "us.current",
+          "last_good_preserved_on_failure": false,
+          "requests": 3,
+          "status": "partial"
+        }
+      ],
+      "exported_at": "2026-10-08T21:29:04.150760+00:00",
+      "parser_version": "history-refresh-v0.19.2",
+      "part_id": "rpart_9d2f72d5fda03f2bf61fbd17a4a5",
+      "producer": {
+        "execution_mode": "foreground_explicit",
+        "name": "Dormathon deterministic history refresh",
+        "version": "0.19.2"
+      },
+      "profile_id": "dormathon-approved-history-refresh-v0.19.2",
+      "profile_sha256": "9c33c077cc30fe4946e519eb795cbc33e9640320623db19db62333c6ad6ca130",
+      "records": [
+        {
+          "acquisition_id": "racq_1214e65129ab52cab68b30679257",
+          "content_hash": "0df2803d0b3c08b659c5cc6d5f56fdb0739d378e34f48b861509db34120c29f8",
+          "metadata": {
+            "category": "policy",
+            "content_depth": "structured_facts",
+            "entities": [
+              {
+                "basis": "source_provided",
+                "name": "Commerce Department",
+                "type": "organization"
+              },
+              {
+                "basis": "source_provided",
+                "name": "National Telecommunications and Information Administration",
+                "type": "organization"
+              },
+              {
+                "basis": "source_provided",
+                "name": "Transportation Department",
+                "type": "organization"
+              },
+              {
+                "basis": "source_provided",
+                "name": "National Highway Traffic Safety Administration",
+                "type": "organization"
+              }
+            ],
+            "event_country": null,
+            "event_time": null,
+            "evidence_url": "https://www.govinfo.gov/content/pkg/FR-2026-10-06/pdf/2026-20493.pdf",
+            "facts": {
+              "action": "Final rule.",
+              "action_omission": null,
+              "agencies": [
+                {
+                  "basis": "source_provided",
+                  "id": 54,
+                  "name": "Commerce Department",
+                  "parent_id": null,
+                  "raw_name": "DEPARTMENT OF COMMERCE",
+                  "url": "https://www.federalregister.gov/agencies/commerce-department"
+                },
+                {
+                  "basis": "source_provided",
+                  "id": 373,
+                  "name": "National Telecommunications and Information Administration",
+                  "parent_id": 54,
+                  "raw_name": "National Telecommunications and Information Administration",
+                  "url": "https://www.federalregister.gov/agencies/national-telecommunications-and-information-administration"
+                },
+                {
+                  "basis": "source_provided",
+                  "id": 492,
+                  "name": "Transportation Department",
+                  "parent_id": null,
+                  "raw_name": "DEPARTMENT OF TRANSPORTATION",
+                  "url": "https://www.federalregister.gov/agencies/transportation-department"
+                },
+                {
+                  "basis": "source_provided",
+                  "id": 345,
+                  "name": "National Highway Traffic Safety Administration",
+                  "parent_id": 492,
+                  "raw_name": "National Highway Traffic Safety Administration",
+                  "url": "https://www.federalregister.gov/agencies/national-highway-traffic-safety-administration"
+                }
+              ],
+              "binding_status": "unknown_not_inferred",
+              "cfr_references": [
+                {
+                  "basis": "source_provided_reference",
+                  "chapter": "IV",
+                  "part": null,
+                  "title": 47
+                }
+              ],
+              "citation": "91 FR 63500",
+              "comments_close_date": null,
+              "docket_ids": [
+                "Docket ID 260108-0020"
+              ],
+              "document_id": "2026-20493",
+              "document_kind": "Rule",
+              "document_kind_basis": "source_provided",
+              "domain": "law_policy",
+              "effective_date": "2026-10-06",
+              "effectiveness_status": "unknown_not_verified",
+              "jurisdiction": {
+                "basis": "source_publication_system",
+                "country_code": "US",
+                "level": "federal",
+                "territorial_application": null
+              },
+              "official_legal_edition_verified": false,
+              "official_pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-10-06/pdf/2026-20493.pdf",
+              "oversized_optional_action_omitted": false,
+              "publication_date": "2026-10-06",
+              "publication_time_basis": "source_date_only",
+              "record_kind": "legal_document_publication",
+              "regulation_id_numbers": [
+                "0660-AA40",
+                "2127-AN06"
+              ],
+              "relationships_basis": "supplied agency-parent/CFR/docket/RIN references only; no automatic applicability or company link",
+              "source_representation": "FederalRegister.gov unofficial API rendition; linked govinfo PDF not fetched/verified",
+              "text_scope": "title_and_structured_metadata_only; abstracts/bodies/contacts excluded",
+              "time_precision": {
+                "comments_close": "unknown",
+                "effective": "day",
+                "event": "unknown",
+                "publication": "day",
+                "source_update": "unknown"
+              }
+            },
+            "fetched_at": "2026-10-08T21:18:57.894319+00:00",
+            "first_seen_at": "2026-10-08T21:18:57.894319+00:00",
+            "ingested_at": null,
+            "location": null,
+            "location_basis": "unknown",
+            "published_at": null,
+            "short_summary": null,
+            "source_country": "US",
+            "source_id": "legal_us_federal_register",
+            "source_language": "en",
+            "source_license": "Office of the Federal Register, National Archives and Records Administration / U.S. Government Publishing Office; FederalRegister.gov API metadata. Unofficial API rendition; consult the linked official govinfo edition. Normalized metadata; no endorsement.",
+            "source_updated_at": null,
+            "title": "Eliminating Obsolete Regulations Related to the 911 Grant Program",
+            "upstream_id": "2026-20493",
+            "url": "https://www.federalregister.gov/documents/2026/10/06/2026-20493/eliminating-obsolete-regulations-related-to-the-911-grant-program"
+          },
+          "metadata_sha256": "1de4759263d7c83bc49ad8abf4e9e8328b8a69cde3b8abc8a6dbd46a92d39e53",
+          "source_id": "legal_us_federal_register",
+          "upstream_id": "2026-20493",
+          "version_id": "lver_5c8b14f57cd0a90c1d5ff738a762"
+        },
+        {
+          "acquisition_id": "racq_1214e65129ab52cab68b30679257",
+          "content_hash": "d5d7e9ad3584d12905adc4d78254a5714de4be8c4a786c1dc40f54299d3a739a",
+          "metadata": {
+            "category": "policy",
+            "content_depth": "structured_facts",
+            "entities": [
+              {
+                "basis": "source_provided",
+                "name": "Federal Reserve System",
+                "type": "organization"
+              }
+            ],
+            "event_country": null,
+            "event_time": null,
+            "evidence_url": "https://www.govinfo.gov/content/pkg/FR-2026-10-06/pdf/2026-20478.pdf",
+            "facts": {
+              "action": null,
+              "action_omission": {
+                "basis": "source_supplied_optional_text_exceeded_1000_character_metadata_scope; complete_field_omitted_not_truncated",
+                "length_unit": "UTF16_code_units",
+                "original_field_length": 1296,
+                "original_field_sha256": "9cf40ed3bdde0acaa5365a7f98b164edcab41f08c976631d5ad98ca2d343056d",
+                "source_pointer": {
+                  "document_id": "2026-20478",
+                  "field": "action",
+                  "url": "https://www.federalregister.gov/documents/2026/10/06/2026-20478/agency-information-collection-activities-announcement-of-board-approval-under-delegated-authority"
+                }
+              },
+              "agencies": [
+                {
+                  "basis": "source_provided",
+                  "id": 188,
+                  "name": "Federal Reserve System",
+                  "parent_id": null,
+                  "raw_name": "FEDERAL RESERVE SYSTEM",
+                  "url": "https://www.federalregister.gov/agencies/federal-reserve-system"
+                }
+              ],
+              "binding_status": "unknown_not_inferred",
+              "cfr_references": [],
+              "citation": "91 FR 63561",
+              "comments_close_date": null,
+              "docket_ids": [],
+              "document_id": "2026-20478",
+              "document_kind": "Notice",
+              "document_kind_basis": "source_provided",
+              "domain": "law_policy",
+              "effective_date": "2026-10-05",
+              "effectiveness_status": "unknown_not_verified",
+              "jurisdiction": {
+                "basis": "source_publication_system",
+                "country_code": "US",
+                "level": "federal",
+                "territorial_application": null
+              },
+              "official_legal_edition_verified": false,
+              "official_pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-10-06/pdf/2026-20478.pdf",
+              "oversized_optional_action_omitted": true,
+              "publication_date": "2026-10-06",
+              "publication_time_basis": "source_date_only",
+              "record_kind": "legal_document_publication",
+              "regulation_id_numbers": [],
+              "relationships_basis": "supplied agency-parent/CFR/docket/RIN references only; no automatic applicability or company link",
+              "source_representation": "FederalRegister.gov unofficial API rendition; linked govinfo PDF not fetched/verified",
+              "text_scope": "title_and_structured_metadata_only; abstracts/bodies/contacts excluded",
+              "time_precision": {
+                "comments_close": "unknown",
+                "effective": "day",
+                "event": "unknown",
+                "publication": "day",
+                "source_update": "unknown"
+              }
+            },
+            "fetched_at": "2026-10-08T21:18:57.894319+00:00",
+            "first_seen_at": "2026-10-08T21:18:57.894319+00:00",
+            "ingested_at": null,
+            "location": null,
+            "location_basis": "unknown",
+            "published_at": null,
+            "short_summary": null,
+            "source_country": "US",
+            "source_id": "legal_us_federal_register",
+            "source_language": "en",
+            "source_license": "Office of the Federal Register, National Archives and Records Administration / U.S. Government Publishing Office; FederalRegister.gov API metadata. Unofficial API rendition; consult the linked official govinfo edition. Normalized metadata; no endorsement.",
+            "source_updated_at": null,
+            "title": "Agency Information Collection Activities: Announcement of Board Approval Under Delegated Authority and Submission to OMB",
+            "upstream_id": "2026-20478",
+            "url": "https://www.federalregister.gov/documents/2026/10/06/2026-20478/agency-information-collection-activities-announcement-of-board-approval-under-delegated-authority"
+          },
+          "metadata_sha256": "5324a2a6eabe9096dacfec543eff82f075a6db835408c064dbba36eb55d73f5a",
+          "source_id": "legal_us_federal_register",
+          "upstream_id": "2026-20478",
+          "version_id": "lver_466a7b35a7b8819f452abdec7b28"
+        }
+      ],
+      "runs": [
+        {
+          "body_complete": true,
+          "bytes_read": 113981,
+          "completed_at": "2026-10-08T21:29:03.859514+00:00",
+          "coverage": {
+            "empty_allowed": true,
+            "has_next_page": true,
+            "known_empty": false,
+            "recognized_schema": true,
+            "request_role": "data",
+            "requested_window": {
+              "end": "2026-10-08",
+              "grain": "day",
+              "start": "2026-10-01"
+            },
+            "returned_count": 100,
+            "rows_changed": 100,
+            "rows_parsed": 100,
+            "scope": {
+              "period_end": "2026-10-08",
+              "period_start": "2026-10-01"
+            },
+            "total_pages": 7,
+            "truncated": true,
+            "upstream_count": 605
+          },
+          "error": null,
+          "fetched_at": "2026-10-08T21:18:48.775688+00:00",
+          "http_status": 200,
+          "id": "racq_056c5c3d193b3e2c6e3717298fb3",
+          "job_id": "us.current",
+          "no_change": false,
+          "requested_url": "https://www.federalregister.gov/api/v1/documents.json?per_page=100&page=2&order=newest&conditions%5Bpublication_date%5D%5Bgte%5D=2026-10-01&conditions%5Bpublication_date%5D%5Blte%5D=2026-10-08&conditions%5Btype%5D%5B%5D=RULE&conditions%5Btype%5D%5B%5D=PRORULE&conditions%5Btype%5D%5B%5D=NOTICE&fields%5B%5D=document_number&fields%5B%5D=title&fields%5B%5D=type&fields%5B%5D=publication_date&fields%5B%5D=html_url&fields%5B%5D=pdf_url&fields%5B%5D=agencies&fields%5B%5D=effective_on&fields%5B%5D=comments_close_on&fields%5B%5D=citation&fields%5B%5D=cfr_references&fields%5B%5D=docket_ids&fields%5B%5D=regulation_id_numbers&fields%5B%5D=action",
+          "rows_changed": 100,
+          "source_id": "legal_us_federal_register",
+          "source_snapshot": {
+            "current_binding_effect": "unknown_not_inferred",
+            "feed_generated_at": null,
+            "publication_basis": "Source day-only publication",
+            "source_scope": {
+              "period_end": "2026-10-08",
+              "period_start": "2026-10-01"
+            }
+          },
+          "started_at": "2026-10-08T21:18:48.775688+00:00",
+          "status": "partial",
+          "transport_mode": "retained_replay",
+          "upstream_raw_sha256": "4847d17128d4a8e21dc43b3fdafdd9aa99362fc5c0e1da57b82ca333ae12fdf4"
+        },
+        {
+          "body_complete": true,
+          "bytes_read": 117258,
+          "completed_at": "2026-10-08T21:29:03.991278+00:00",
+          "coverage": {
+            "empty_allowed": true,
+            "has_next_page": true,
+            "known_empty": false,
+            "recognized_schema": true,
+            "request_role": "data",
+            "requested_window": {
+              "end": "2026-10-08",
+              "grain": "day",
+              "start": "2026-10-01"
+            },
+            "returned_count": 100,
+            "rows_changed": 100,
+            "rows_parsed": 100,
+            "scope": {
+              "period_end": "2026-10-08",
+              "period_start": "2026-10-01"
+            },
+            "total_pages": 7,
+            "truncated": true,
+            "upstream_count": 605
+          },
+          "error": null,
+          "fetched_at": "2026-10-08T21:18:57.894319+00:00",
+          "http_status": 200,
+          "id": "racq_1214e65129ab52cab68b30679257",
+          "job_id": "us.current",
+          "no_change": false,
+          "requested_url": "https://www.federalregister.gov/api/v1/documents.json?per_page=100&page=3&order=newest&conditions%5Bpublication_date%5D%5Bgte%5D=2026-10-01&conditions%5Bpublication_date%5D%5Blte%5D=2026-10-08&conditions%5Btype%5D%5B%5D=RULE&conditions%5Btype%5D%5B%5D=PRORULE&conditions%5Btype%5D%5B%5D=NOTICE&fields%5B%5D=document_number&fields%5B%5D=title&fields%5B%5D=type&fields%5B%5D=publication_date&fields%5B%5D=html_url&fields%5B%5D=pdf_url&fields%5B%5D=agencies&fields%5B%5D=effective_on&fields%5B%5D=comments_close_on&fields%5B%5D=citation&fields%5B%5D=cfr_references&fields%5B%5D=docket_ids&fields%5B%5D=regulation_id_numbers&fields%5B%5D=action",
+          "rows_changed": 100,
+          "source_id": "legal_us_federal_register",
+          "source_snapshot": {
+            "current_binding_effect": "unknown_not_inferred",
+            "feed_generated_at": null,
+            "publication_basis": "Source day-only publication",
+            "source_scope": {
+              "period_end": "2026-10-08",
+              "period_start": "2026-10-01"
+            }
+          },
+          "started_at": "2026-10-08T21:18:57.894319+00:00",
+          "status": "partial",
+          "transport_mode": "retained_replay",
+          "upstream_raw_sha256": "8eed2a42b938e4a1b857ea9253a68d7da3bc0f1a47f55f42670376500a99a82b"
+        }
+      ],
+      "transport_mode": "retained_replay"
+    },
+    "payload_sha256": "118c2ca4951e919769c3691493fc3ce2c5306c04b926ea4887bcea7f1d1f2b04",
+    "schema_version": "dormathon.source-refresh.snapshot.v1"
+  }
+}

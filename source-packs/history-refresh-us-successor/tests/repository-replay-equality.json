@@ -1,0 +1,16 @@
+{
+  "schema_version": "dormathon.us-repository-replay-equality.v0.19.2",
+  "baseline_replay_sha256": "6f11a6e67d5c1d91e629dd090e95132f929f56c0f4af09c9d8bc3cea1b1f2046",
+  "repository_replay_sha256": "14a6178f1d868a278e3f6e33afa2ae408a6da089b887e30f92dd2d9b2c370927",
+  "rows_exact_metadata_content_version_equal": 300,
+  "allowed_differences": [
+    "new logical replay acquisition IDs,completion/export clocks and payload/part hashes"
+  ],
+  "native_metadata_first_seen_and_source_fetch_clocks_unchanged": true,
+  "synthetic_bad_page3_atomic_rollback": true,
+  "provider_requests": 0,
+  "Site_requests": 0,
+  "base_ZIP_used": false,
+  "full55_file_copy": false,
+  "runtime_code_profile_files": 9
+}

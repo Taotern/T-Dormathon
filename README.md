@@ -26,7 +26,7 @@ GDP历史的9,540行/111分片保持在三个独立外部数据包，不进Git�
 
 新增 [月度商品准入说明](docs/COMMODITY_MONTHLY_ADMISSION.md)：1990-01至2026-09的35条原生单位参考序列，共15,435单元格，含181源缺失；33条序列441个月都为数值。全球基准 / 定义中的地点参照不能等同国家或企业影响覆盖，底层 futures / forward 输入参照没有被改成可交易合约。完整价格向量和250分片保持在外部数据包；source-packs/commodity只保留代码/合同/许可/小样例及资格说明。
 
-新增 [7 源确定性刷新与手动入库](docs/DETERMINISTIC_REFRESH.md)：来源配置和事实 / 单位限定、不可变取得回执与版本、失败保留最后良好状态、规范化载荷完整性及上传未验证来源分离。接收路径已在同一私有 Site 发布；一次 ECB 实际前台取得与手动上传已验证，未安装定时任务或自动同步。当前统一前台入口是 source-packs/history-refresh/refresh.py；Python3.12 / Node24 离线28项测试与 plan 可从完整克隆复现。
+新增 [7 源确定性刷新与手动入库](docs/DETERMINISTIC_REFRESH.md)：来源配置和事实 / 单位限定、不可变取得回执与版本、失败保留最后良好状态、规范化载荷完整性及上传未验证来源分离。接收路径已在同一私有 Site 发布；一次 ECB 实际前台取得与手动上传已验证，未安装定时任务或自动同步。当前统一前台入口是 source-packs/history-refresh/refresh.py；US 可空 CFR / 超长可选 Action 的独立版本说明见 [US 刷新兼容说明](docs/US_REFRESH_SUCCESSOR.md)，其保留页重放没有作为新数据上传；Python3.12 / Node24 离线28项测试与 plan 可从完整克隆复现。
 
 生成的发布产物是 `dist/server/index.js` 和 `dist/.openai/hosting.json`。`dist`、`worker/generated.js`、测试报告和本地运行数据库不进 Git。
 

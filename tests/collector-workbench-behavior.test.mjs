@@ -7,7 +7,7 @@ import {fileURLToPath} from 'node:url';
 import {test} from 'node:test';
 const sourcePath=fileURLToPath(new URL('../static/collector-workbench.js',import.meta.url));
 const source=fs.readFileSync(sourcePath,'utf8');
-assert.equal(createHash('sha256').update(source).digest('hex'),'62cde116806aace18d6f0d3dd0993930cfa0052f9c93729848701ece01f66d2d','Rebind reviewed behavior tests only after intentional client changes');
+assert.equal(createHash('sha256').update(source).digest('hex'),'d66d35db8e19e0c7830496611f4e1af24e45e01347f0f1271e9678d2927538b9','Rebind reviewed behavior tests only after intentional client changes');
 
 function deferred() {
   let resolve;

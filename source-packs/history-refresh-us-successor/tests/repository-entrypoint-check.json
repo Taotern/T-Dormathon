@@ -1,0 +1,18 @@
+{
+  "schema_version": "dormathon.us-repository-entrypoint-check.v0.19.2",
+  "finished_at": "2026-10-08T21:55:50.178030+00:00",
+  "passed": 4,
+  "total": 4,
+  "checks": [
+    "Exact seven curated dependencies materialize only nine runtime files and plan without state/network",
+    "Dependency hash drift rejects before request",
+    "Mixed-source state rejects before request",
+    "Unmarked/earlier state rejects before relabelling"
+  ],
+  "source_original_dependency_files_unchanged": true,
+  "base_ZIP_used": false,
+  "full55_file_copy": false,
+  "provider_requests": 0,
+  "Site_requests": 0,
+  "scheduler_created": false
+}

@@ -1,0 +1,46 @@
+{
+  "schema_version": "dormathon.us-repository-dependencies.v0.19.2",
+  "successor_profile_sha256": "9c33c077cc30fe4946e519eb795cbc33e9640320623db19db62333c6ad6ca130",
+  "legacy_profile_sha256": "3eb4fbdcf987c4c944ae90f512ba9ab73085d740f21b3b90c64b06bfe46aee7a",
+  "repository_files": [
+    {
+      "path": "source-packs/history-refresh/refresh.py",
+      "bytes": 25555,
+      "sha256": "124dd9e59f048d9eeda3b32d2b960b10517993eb283c3f49d8d83820303c7ff2"
+    },
+    {
+      "path": "source-packs/history-refresh/canonical.mjs",
+      "bytes": 304,
+      "sha256": "99c64443adf790df260f37dfbdb68d7cea075d1fed01d091194d1c62ea56f757"
+    },
+    {
+      "path": "source-packs/history-refresh/contracts/refresh-jobs.json",
+      "bytes": 6277,
+      "sha256": "211f92f0b5a4018b4fbd7708380fe7bb75de91037574a81729719941f4b1722f"
+    },
+    {
+      "path": "source-packs/legal/adapters/legal-common.mjs",
+      "bytes": 2383,
+      "sha256": "01d3849cfe64a1029ccfaa843a1c14cd62a0e0eb4c9cc6161a84a7fe3afb23a8"
+    },
+    {
+      "path": "source-packs/legal/adapters/normalized-common.mjs",
+      "bytes": 5755,
+      "sha256": "773d2fc291337bfa225e22b646356eb8aa0be464aaad6024864732678f1f8f5f"
+    },
+    {
+      "path": "data/refresh-source-profiles.v0.19.json",
+      "bytes": 133893,
+      "sha256": "3eb4fbdcf987c4c944ae90f512ba9ab73085d740f21b3b90c64b06bfe46aee7a"
+    },
+    {
+      "path": "data/refresh-source-profiles.us-v0.19.2.json",
+      "bytes": 136016,
+      "sha256": "9c33c077cc30fe4946e519eb795cbc33e9640320623db19db62333c6ad6ca130"
+    }
+  ],
+  "US_adapter_sha256": "d8ef328dad1d036cf82a1deeff6d88697e5c27d600df0a5f627ab2ed56589ea0",
+  "no_base_ZIP_required": true,
+  "runtime_materialization": "Exactly nine small code/profile/job files in a temporary folder; no full55-file package copy",
+  "legacy_history_migration": false
+}

@@ -1,9 +1,9 @@
 {
   "schema_version": "dormathon.clean-teammate-export.v1",
-  "source_commit": "cf43a95e5f89be52961746cd7fb7cb5fc9665721",
-  "accepted_runtime_commit": "5cd53b53dbc7aff5dc16e1aea42457f54de7eea7",
+  "source_commit": "6a80460b8dbe0e0f9d3bcada722dff47d4f6a1e9",
+  "accepted_runtime_commit": "627fcf09ff137dce0f8ecc432a97df4988c6b55a",
   "data_intake_runtime_commit": "2eb04de6c2d3c8b2488f4431d73619a9bb053462",
-  "file_count": 811,
+  "file_count": 828,
   "files": [
     {
       "path": ".gitignore",
@@ -17,13 +17,13 @@
     },
     {
       "path": "PROJECT_STATUS.md",
-      "bytes": 8935,
-      "sha256": "08ca41fe4eeccf837736d7521dbcea3fccee92ceccc07ab67caae0e1e95acc37"
+      "bytes": 10356,
+      "sha256": "e6478171116b6630ac9406fc340054a38b5d0d7902351e631081e20cf5dc552d"
     },
     {
       "path": "README.md",
-      "bytes": 11251,
-      "sha256": "563dd882fa46529780a40201a029a53ce4cb8074d64f0c6d9cae64606177cf18"
+      "bytes": 11416,
+      "sha256": "7b729f789db8f39f383202c795d69af4f11f54864e41f9a13068bc9d90422cdc"
     },
     {
       "path": "contracts/retrieval-v1.md",
@@ -89,6 +89,11 @@
       "path": "data/refresh-snapshot-contract.v1.json",
       "bytes": 3860,
       "sha256": "9c87ea2f200e74eb8b1008fb44fc907c1f458bee24523b26596643264a25417b"
+    },
+    {
+      "path": "data/refresh-source-profiles.us-v0.19.2.json",
+      "bytes": 136016,
+      "sha256": "9c33c077cc30fe4946e519eb795cbc33e9640320623db19db62333c6ad6ca130"
     },
     {
       "path": "data/refresh-source-profiles.v0.19.json",
@@ -1416,6 +1421,11 @@
       "sha256": "7b91326cf7c84c3c336ab0f72e5f3c2cf676fd0ff976730dc26604e24918a891"
     },
     {
+      "path": "docs/US_REFRESH_SUCCESSOR.md",
+      "bytes": 5093,
+      "sha256": "02d5e58664560073351f4cf38be753df95522d462e45b58946961451eac2d9cc"
+    },
+    {
       "path": "docs/history/GITHUB_PROGRESS.md",
       "bytes": 4470,
       "sha256": "d2a6ccfb72cd5439a4fae2a64cd127b8dd89de6a39a92fb00f1b7a74e45da421"
@@ -1469,6 +1479,11 @@
       "path": "docs/releases/TRADE_REMEDY_2026-10-08.json",
       "bytes": 2857,
       "sha256": "f73f1354c4084cadcb30951c4f22c0cab6e11e6a0c3858fbb7ed8256bde308df"
+    },
+    {
+      "path": "docs/releases/US_REFRESH_SUCCESSOR_2026-10-08.json",
+      "bytes": 2707,
+      "sha256": "2a3fb5c90e1d02852a0cb2ca4bfdc33d66640c289444f538604d9459dd6546ff"
     },
     {
       "path": "drizzle.config.ts",
@@ -2242,8 +2257,8 @@
     },
     {
       "path": "scripts/build.mjs",
-      "bytes": 5120,
-      "sha256": "84d4ecdc9e83d4700f25c1caf0bd264e14ccf90c88ed1870eca79c8f6eb14cd4"
+      "bytes": 5291,
+      "sha256": "ba72a05a0c5f5e9849211c2e429aa2a283cf9fd73c32239629dab2e1a120192e"
     },
     {
       "path": "scripts/build.sh",
@@ -2679,6 +2694,56 @@
       "path": "source-packs/fx/test-contract.mjs",
       "bytes": 9091,
       "sha256": "2a1ff9798c6aec098de43c7aac6a9ccc34e8a19eb60beb18e572d5c510b9c517"
+    },
+    {
+      "path": "source-packs/history-refresh-us-successor/ASSET-MANIFEST.repo.v0.19.2.1.json",
+      "bytes": 2492,
+      "sha256": "fcfdb01d83769e7a91ef3b5107eb4213f932b40509c115261927445f474dc896"
+    },
+    {
+      "path": "source-packs/history-refresh-us-successor/DEPENDENCIES.repo.json",
+      "bytes": 1839,
+      "sha256": "189af6f3072fc9a200002aa0fd564441f418105bde85b1c62e28eaf68d82ed23"
+    },
+    {
+      "path": "source-packs/history-refresh-us-successor/README.md",
+      "bytes": 5538,
+      "sha256": "ffbef977e1aee022a785f6286882250e879940899b3cc12ecd0c9891890cb304"
+    },
+    {
+      "path": "source-packs/history-refresh-us-successor/adapters/us-federal-register.mjs",
+      "bytes": 6702,
+      "sha256": "d8ef328dad1d036cf82a1deeff6d88697e5c27d600df0a5f627ab2ed56589ea0"
+    },
+    {
+      "path": "source-packs/history-refresh-us-successor/project-us.mjs",
+      "bytes": 2144,
+      "sha256": "ea84aa655ee3e703d7e82fa94e46482823ab25ff02c3560e80af75c76d30d10d"
+    },
+    {
+      "path": "source-packs/history-refresh-us-successor/replay-three-saved.py",
+      "bytes": 6544,
+      "sha256": "62ca2f58e4f22e652a87df4c08a5d3f8b8801f255d30314501ee55f14a6f9113"
+    },
+    {
+      "path": "source-packs/history-refresh-us-successor/repository-entrypoint.py",
+      "bytes": 5509,
+      "sha256": "66cdfa4cfe92aa08885b12f7dbfcfde2fcc35150a5806e4aeef0cc850e30301a"
+    },
+    {
+      "path": "source-packs/history-refresh-us-successor/tests/repository-entrypoint-check.json",
+      "bytes": 627,
+      "sha256": "8f9c8e47dd73c45cd16b26cee2b7134a906ef5da28c17080d44c373cdb7ab821"
+    },
+    {
+      "path": "source-packs/history-refresh-us-successor/tests/repository-replay-equality.json",
+      "bytes": 699,
+      "sha256": "9cd87d9b9ccd705e036ff73b465d13c4c6a7d82d1027c49ce884b05abf2be9a2"
+    },
+    {
+      "path": "source-packs/history-refresh-us-successor/tests/state-marker-delta.json",
+      "bytes": 1094,
+      "sha256": "13b066897f1de2c33bd8a46b6c643f6611f9bc582d9704ddada8a6069b2d5b0f"
     },
     {
       "path": "source-packs/history-refresh/DEPENDENCIES.json",
@@ -3267,8 +3332,8 @@
     },
     {
       "path": "static/collector-workbench.js",
-      "bytes": 31962,
-      "sha256": "62cde116806aace18d6f0d3dd0993930cfa0052f9c93729848701ece01f66d2d"
+      "bytes": 32396,
+      "sha256": "d66d35db8e19e0c7830496611f4e1af24e45e01347f0f1271e9678d2927538b9"
     },
     {
       "path": "tests/built-history-boundary.test.mjs",
@@ -3283,7 +3348,7 @@
     {
       "path": "tests/collector-workbench-behavior.test.mjs",
       "bytes": 21856,
-      "sha256": "0bd34dd6aff32fd47e90f9b094818fd02fed29300bfd2f33877eae509a57caf0"
+      "sha256": "38e74dafe016f013931d632022061f3849138226dcc9950c7f2e5772df002afb"
     },
     {
       "path": "tests/collector-workbench.test.mjs",
@@ -3801,6 +3866,21 @@
       "sha256": "155234dab213a5c5f26e8c8b39d8d4f936da99812caee7dcefa5255d29a4859e"
     },
     {
+      "path": "tests/refresh-us-repository-package.test.mjs",
+      "bytes": 2661,
+      "sha256": "5cd3718e6c709603e858305a16ec5494ae11bda3975c47423a40268e7d0bd5ce"
+    },
+    {
+      "path": "tests/refresh-us-successor-fixture.retained.json",
+      "bytes": 18702,
+      "sha256": "929f6ecbdb3820be522681d375744bd033c2313d2a6f17b57607df4540576d58"
+    },
+    {
+      "path": "tests/refresh-us-successor.test.mjs",
+      "bytes": 7857,
+      "sha256": "86cc46410f88d89dc3a60ad982924aaf0d601bbdaf6057f2798baac0f20cc259"
+    },
+    {
       "path": "tests/refresh-wb-label-fixture.json",
       "bytes": 27013,
       "sha256": "6df9f16125e720d0520989160c721a840755bfd13b9d3c40fbc29333faecc94d"
@@ -4016,14 +4096,19 @@
       "sha256": "586b18072008714cc6c8a233e1d9b961b950e72b83472962d8828bbe0476fd15"
     },
     {
+      "path": "worker/refresh-us-legal-validation.js",
+      "bytes": 2753,
+      "sha256": "c1a7e85326ea73e49bc0deb63bf2a5da4f90a1096f77b9c5ad5c76149474cc83"
+    },
+    {
       "path": "worker/refresh-validation.js",
-      "bytes": 26558,
-      "sha256": "1ba4fd6a891352b8cd40a1bd7c71166dd9b02e60a7adeb5569cb0f927eccceef"
+      "bytes": 27151,
+      "sha256": "e9bbfd25aaa7237418d16bdd1cbc3813b91e81548d2468183530d0b2c909aee8"
     },
     {
       "path": "worker/retrieval.js",
-      "bytes": 22887,
-      "sha256": "30e18c2339f62f3fafba6b771b84209d1184fd4c9a9957840761449e510a852d"
+      "bytes": 22937,
+      "sha256": "5819227e156f11ffa3b600e6660bd16a594052a4d4da019bbeeeac9ad45b8c4c"
     },
     {
       "path": "worker/source-intake-validation.js",
@@ -4037,8 +4122,8 @@
     },
     {
       "path": "worker/source-refresh.js",
-      "bytes": 8610,
-      "sha256": "42b525dbd7b2c9d7885c20cb0c1d6f2dac45819cef0e33689f8443d5f9c59a25"
+      "bytes": 8476,
+      "sha256": "9dce566d84b15aeaa8a1a7b78966e1230878cb60f5383d7ff987577b085fd720"
     },
     {
       "path": "worker/statistics-validation.js",
@@ -4066,7 +4151,7 @@
     "runtime/source HTTP bodies/SQLite/export files/cache/generated execution logs/dist",
     "retired presentation frontend/artwork",
     "full external GDP/ILO/ECB/legal/trade/commodity bulk",
-    "six-job foreground runtime/raw/SQLite/export parts and unadmitted US successor"
+    "six-job foreground runtime/raw/SQLite/export parts and all300 US retained replay rows; synthetic negative outputs"
   ],
   "bulk_reference": {
     "prior_external_chunks": 433,
@@ -4096,6 +4181,17 @@
     "six_additional_genuine_transport_requests": 10,
     "six_job_local_versions_not_imported": 6095,
     "US_original_atomic_failure_zero_versions": true,
-    "source_period_filter": "Explicit year/month/day inclusive metadata range, separate from first-seen clocks"
+    "source_period_filter": "Explicit year/month/day inclusive metadata range, separate from first-seen clocks",
+    "US_successor_profile_sha256": "9c33c077cc30fe4946e519eb795cbc33e9640320623db19db62333c6ad6ca130",
+    "US_retained_replay_rows_external": 300,
+    "US_replay_rows_imported": 0,
+    "US_original_genuine_failure_rows": 0,
+    "US_replay_partial_scope": {
+      "records": 300,
+      "declared_total": 605,
+      "pages": 3,
+      "declared_pages": 7
+    },
+    "US_repo_only_addon": "0.19.2.1"
   }
 }

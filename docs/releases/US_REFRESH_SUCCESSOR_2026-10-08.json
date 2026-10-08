@@ -1,0 +1,66 @@
+{
+  "schema_version": "dormathon.US-refresh-successor.release.v1",
+  "runtime_commit": "627fcf09ff137dce0f8ecc432a97df4988c6b55a",
+  "deployment_id": "appgdep_6ac811dd9b2c81918f91062484770363",
+  "published_at": "2026-10-08T21:57:55.110801+00:00",
+  "profiles": {
+    "legacy": "3eb4fbdcf987c4c944ae90f512ba9ab73085d740f21b3b90c64b06bfe46aee7a",
+    "US_successor": "9c33c077cc30fe4946e519eb795cbc33e9640320623db19db62333c6ad6ca130"
+  },
+  "parser": "history-refresh-v0.19.2",
+  "legacy_legal_and_7source_CLI_unchanged": true,
+  "typed_delta": [
+    "Nullable supplied CFR title/part/chapter; no inferred part or effect",
+    "Oversized optional Action fully null with exact length/UTF8-SHA/document-field-URL witness",
+    "Omission text/technical witness excluded from lexical projection",
+    "Exact immutable run/version/part profile, independent of current registry"
+  ],
+  "evidence": {
+    "core_tests": 349,
+    "source_parity_checks": 14,
+    "IO_policy_checks": 7,
+    "worker_sha256": "35c86d4be25171759da922844fdddb0dbfe316ea4a2f5f6b12d4ced8f8849732",
+    "source_review_sha256": "e4f8a8a72073f350514e9b26aaea34148a7b208946ae062d4bff94298807e491",
+    "IO_review_sha256": "5d680fd33854bbf5c60483bcc2b1fdbfe7eec2ff04c7e877fa17a20887cf5a06",
+    "native_saved_field_review_sha256": "d27e4c82e22e1206bf686a58fd931e34be4596215d0835a86baff5684c86dc9b",
+    "actual_code_checkpoint_sha256": "4442eda540997493935d09bc17fddf5ef1aa03cf2f2e43d9235a70e6dcd82bef"
+  },
+  "saved_replay": {
+    "mode": "retained_replay",
+    "rows": 300,
+    "parts": 4,
+    "original_pages": 3,
+    "declared_matching_records": 605,
+    "declared_pages": 7,
+    "provider_requests": 0,
+    "Site_imported_rows": 0,
+    "replay_report_sha256": "6f11a6e67d5c1d91e629dd090e95132f929f56c0f4af09c9d8bc3cea1b1f2046",
+    "old_failed_US_versions": 0
+  },
+  "repo_entrypoint": {
+    "source_pack": "source-packs/history-refresh-us-successor",
+    "addon_version": "0.19.2.1",
+    "ZIP_sha256": "9d5bd6cf49e86f1e75ffbb6661bc291420b6d41d6fe23d6f73c35e4b424723fd",
+    "manifest_sha256": "fcfdb01d83769e7a91ef3b5107eb4213f932b40509c115261927445f474dc896",
+    "exact_assets": 9,
+    "pinned_shared_dependencies": 7,
+    "runtime_files": 9,
+    "independent_state_cases": 6,
+    "integrated_plan": "zero acquisition",
+    "review_sha256": "d7cad22348e456ff0b2a4441fbdf5226e3b1cf8f433541d52d2711b537ffa768"
+  },
+  "Site_unchanged": {
+    "indexed": 51471,
+    "direct": 369,
+    "uploaded_unverified": 114,
+    "reviewed": 50988
+  },
+  "not_verified": [
+    "New genuine US request using successor",
+    "Live US data ingress",
+    "Complete seven-page US coverage",
+    "Windows",
+    "Unattended scheduler",
+    "Automatic sync"
+  ]
+}
