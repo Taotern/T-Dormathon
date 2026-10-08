@@ -58,5 +58,5 @@ test('Missing canonical response witness rejects before any durable source or ch
 });
 test('Existing batch completion remains separately visible while the new registered batch is pending',async()=>{
  const store={rows:async(sql)=>sql.includes('GROUP BY')?Object.entries(REVIEWED_ADMISSION.source_counts).map(([source_id,item_count])=>({source_id,item_count})):REVIEWED_ADMISSION.chunks.map(c=>({value:JSON.stringify({manifest_sha256:REVIEWED_ADMISSION.manifest_sha256,chunk_sha256:c.sha256,rows:c.count,source_id:c.source_id,policy_sha256:REVIEWED_ADMISSION.original_policy_sha256})}))};
- const s=await reviewedIntakeStatus(store);assert.equal(s.batches[0].complete,true);assert.equal(s.batches[1].imported_chunks,0);assert.equal(s.complete,false);assert.equal(s.imported_records,19466);assert.equal(s.expected_records,30184);
+ const s=await reviewedIntakeStatus(store);assert.equal(s.batches[0].complete,true);assert.equal(s.batches[1].imported_chunks,0);assert.equal(s.complete,false);assert.equal(s.imported_records,19466);assert.equal(s.expected_records,35244);
 });

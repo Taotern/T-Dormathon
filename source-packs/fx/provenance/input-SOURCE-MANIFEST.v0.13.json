@@ -1,0 +1,144 @@
+{
+  "schema_version": "dormathon.clean-source-assets.v0.13",
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 4850,
+      "sha256": "40287331500181d90ad948b08f3ddea5c3059e8f33415eb199ab8ea250bfd1b7"
+    },
+    {
+      "path": "acquire-fixed.py",
+      "bytes": 4186,
+      "sha256": "a6268a961334198ccbae875839d8e2d131556d14782d2a05634e86cd86fea482"
+    },
+    {
+      "path": "adapters/ecb-reference-daily.mjs",
+      "bytes": 6766,
+      "sha256": "cf55ffd481c186e27b81ae22868d020a30d7d1ec88ea4d210cf06d677965f28c"
+    },
+    {
+      "path": "adapters/normalized-common.mjs",
+      "bytes": 5755,
+      "sha256": "773d2fc291337bfa225e22b646356eb8aa0be464aaad6024864732678f1f8f5f"
+    },
+    {
+      "path": "build-package.mjs",
+      "bytes": 12030,
+      "sha256": "f0d582c6a24705b656c339810f0ac5fd23d0dd2b9534f311f50fb8354eb66905"
+    },
+    {
+      "path": "contracts/rights-review.v0.13.json",
+      "bytes": 1966,
+      "sha256": "0ce78081b634365841dcac2395d9376570ce082f95ce2efc61b25bbba9fddcaf"
+    },
+    {
+      "path": "contracts/source-manifest.v0.13.json",
+      "bytes": 13830,
+      "sha256": "9125dba6da7ece4e683a419f1c107f6e39b700e555b869eb8f1d2579d6d42370"
+    },
+    {
+      "path": "coverage/coverage-summary.v0.13.json",
+      "bytes": 3916,
+      "sha256": "efd8d63d694b07f049cc7deca3feec69c47905fe3ba9f7b909c9d1763875c00a"
+    },
+    {
+      "path": "delivery/manifest.json",
+      "bytes": 11201,
+      "sha256": "775f06b84e4c7efc6e3583073547b1456bb07d645bd7082ca0ac18b2bcb5d7ff"
+    },
+    {
+      "path": "fixtures/normalized-known-source-samples.v0.13.json",
+      "bytes": 16068,
+      "sha256": "63e4aad03c548b954de48aa79e5b9666a1251bf09570a6fe826330eb0df7a4d8"
+    },
+    {
+      "path": "receipts/ecb_fx_backfill.json",
+      "bytes": 1823,
+      "sha256": "7e62f75cf87e76ab2b308450c0628c2169930aa5dd6783eba5c7791e86a27843"
+    },
+    {
+      "path": "receipts/ecb_fx_probe.json",
+      "bytes": 1787,
+      "sha256": "86a8aba9576f71e3e5e2e4af7a77e37cada2a235ce278bc7b99b2b438fb4f233"
+    },
+    {
+      "path": "reports/contract-tests.v0.13.json",
+      "bytes": 2857,
+      "sha256": "b9117651e1021791d4d8b5141889eb47f14fa505e96cf62b9501c9e144581bab"
+    },
+    {
+      "path": "reports/initial-local-syntax-failure.json",
+      "bytes": 289,
+      "sha256": "5995982d39b96009e8df7319d0f479b1b4f77d9c9fe903dae6b795821dd5a769"
+    },
+    {
+      "path": "reports/probe-schema-review.json",
+      "bytes": 1697,
+      "sha256": "cfac2df662dabb704867db991334ba8771182a5c7d2224f4553383f91abd3ea3"
+    },
+    {
+      "path": "run-slice.py",
+      "bytes": 1064,
+      "sha256": "3b88fdfcfa1b769df9f30f6880d1eba9ae5591f148dce90ab2fc2a51d4121d9c"
+    },
+    {
+      "path": "test-contract.mjs",
+      "bytes": 9091,
+      "sha256": "2a1ff9798c6aec098de43c7aac6a9ccc34e8a19eb60beb18e572d5c510b9c517"
+    }
+  ],
+  "bulk_excluded_from_git": [
+    "coverage/actual-series-date-matrix.v0.13.json",
+    "delivery/chunks/stat_ecb_fx_daily_reference-0000.json",
+    "delivery/chunks/stat_ecb_fx_daily_reference-0001.json",
+    "delivery/chunks/stat_ecb_fx_daily_reference-0002.json",
+    "delivery/chunks/stat_ecb_fx_daily_reference-0003.json",
+    "delivery/chunks/stat_ecb_fx_daily_reference-0004.json",
+    "delivery/chunks/stat_ecb_fx_daily_reference-0005.json",
+    "delivery/chunks/stat_ecb_fx_daily_reference-0006.json",
+    "delivery/chunks/stat_ecb_fx_daily_reference-0007.json",
+    "delivery/chunks/stat_ecb_fx_daily_reference-0008.json",
+    "delivery/chunks/stat_ecb_fx_daily_reference-0009.json",
+    "delivery/chunks/stat_ecb_fx_daily_reference-0010.json",
+    "delivery/chunks/stat_ecb_fx_daily_reference-0011.json",
+    "delivery/chunks/stat_ecb_fx_daily_reference-0012.json",
+    "delivery/chunks/stat_ecb_fx_daily_reference-0013.json",
+    "delivery/chunks/stat_ecb_fx_daily_reference-0014.json",
+    "delivery/chunks/stat_ecb_fx_daily_reference-0015.json",
+    "delivery/chunks/stat_ecb_fx_daily_reference-0016.json",
+    "delivery/chunks/stat_ecb_fx_daily_reference-0017.json",
+    "delivery/chunks/stat_ecb_fx_daily_reference-0018.json",
+    "delivery/chunks/stat_ecb_fx_daily_reference-0019.json",
+    "delivery/chunks/stat_ecb_fx_daily_reference-0020.json",
+    "delivery/chunks/stat_ecb_fx_daily_reference-0021.json",
+    "delivery/chunks/stat_ecb_fx_daily_reference-0022.json",
+    "delivery/chunks/stat_ecb_fx_daily_reference-0023.json",
+    "delivery/chunks/stat_ecb_fx_daily_reference-0024.json",
+    "delivery/chunks/stat_ecb_fx_daily_reference-0025.json",
+    "delivery/chunks/stat_ecb_fx_daily_reference-0026.json",
+    "delivery/chunks/stat_ecb_fx_daily_reference-0027.json",
+    "delivery/chunks/stat_ecb_fx_daily_reference-0028.json",
+    "delivery/chunks/stat_ecb_fx_daily_reference-0029.json",
+    "delivery/chunks/stat_ecb_fx_daily_reference-0030.json",
+    "delivery/chunks/stat_ecb_fx_daily_reference-0031.json",
+    "delivery/chunks/stat_ecb_fx_daily_reference-0032.json",
+    "delivery/chunks/stat_ecb_fx_daily_reference-0033.json",
+    "delivery/chunks/stat_ecb_fx_daily_reference-0034.json",
+    "delivery/chunks/stat_ecb_fx_daily_reference-0035.json",
+    "delivery/chunks/stat_ecb_fx_daily_reference-0036.json",
+    "delivery/chunks/stat_ecb_fx_daily_reference-0037.json",
+    "delivery/chunks/stat_ecb_fx_daily_reference-0038.json",
+    "delivery/chunks/stat_ecb_fx_daily_reference-0039.json",
+    "delivery/chunks/stat_ecb_fx_daily_reference-0040.json",
+    "delivery/chunks/stat_ecb_fx_daily_reference-0041.json",
+    "source-data/ecb_fx_backfill.csv",
+    "source-data/ecb_fx_probe.csv"
+  ],
+  "runtime_exclusions": [
+    "__pycache__",
+    "data-local",
+    "exports",
+    "credentials",
+    "private_runtime_state"
+  ]
+}

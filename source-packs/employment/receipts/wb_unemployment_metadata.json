@@ -1,0 +1,45 @@
+{
+  "schema_version": "dormathon.history-acquisition.v0.12",
+  "slice_id": "wb_unemployment_metadata",
+  "requested_url": "https://api.worldbank.org/v2/indicator/SL.UEM.TOTL.ZS?format=json",
+  "started_at": "2026-10-08T13:33:35.003787+00:00",
+  "attempts": 1,
+  "period": [
+    null,
+    null
+  ],
+  "headers": {
+    "User-Agent": "DormathonSourceResearch/0.1 (+public-metadata-test)",
+    "Accept": "application/json,application/rss+xml,application/xml,text/xml;q=0.9,*/*;q=0.2"
+  },
+  "authentication": "none",
+  "redirect_policy": "reject",
+  "strict_overall_deadline_seconds": 30,
+  "deadline_runtime": "Linux main-thread SIGALRM",
+  "body_cap": 2097152,
+  "status": "retrieved_pending_schema_validation",
+  "recurring_operational": false,
+  "rights": "World Bank modeled ILO unemployment indicator-specific CC BY4.0; exact indicator page/terms verified2026-10-08",
+  "http_status": 200,
+  "response_headers": {
+    "Date": "Thu, 08 Oct 2026 13:33:42 GMT",
+    "Last-Modified": "Thu, 08 Oct 2026 06:47:33 GMT",
+    "Content-Type": "application/json;charset=utf-8"
+  },
+  "bytes_read": 670,
+  "body_complete": true,
+  "upstream_raw_sha256": "3ae370ed4bebba092338e94334c35add71490324ee57f1dfe81885dade51f52f",
+  "fetched_at": "2026-10-08T13:33:42.561816+00:00",
+  "pagination": {
+    "page": 1,
+    "pages": 1,
+    "per_page": "50",
+    "total": 1
+  },
+  "returned_count": 1,
+  "retained_path": "source-data/wb_unemployment_metadata.json",
+  "retained_sha256": "3ae370ed4bebba092338e94334c35add71490324ee57f1dfe81885dade51f52f",
+  "retained_bytes": 670,
+  "completed_at": "2026-10-08T13:33:42.561986+00:00",
+  "elapsed_seconds": 7.558
+}

@@ -1,0 +1,147 @@
+{
+  "schema_version": "dormathon.statistics-release.v1",
+  "recorded_at": "2026-10-08T15:23:56.202058+00:00",
+  "source_commit": "1ea785b52112f0bab4e448e29af5cc77fec7fdd2",
+  "deployment_id": "appgdep_6ac7b16c79148191a0ed63ac33fc4506",
+  "deployment_status": "succeeded",
+  "deployment_completed_at": "2026-10-08T15:06:28.562670+00:00",
+  "owner_private": true,
+  "extra_access_or_fees": false,
+  "new_intake": {
+    "started_at": "2026-10-08T15:10:21.586900+00:00",
+    "finished_at": "2026-10-08T15:13:42.344559+00:00",
+    "client_state": "completed",
+    "maximum_concurrency": 4,
+    "different_chunks": 62,
+    "confirmed_chunks": 62,
+    "unknown_outcomes": 0,
+    "in_flight_at_terminal": 0,
+    "rows": 5060,
+    "provider_fetches": 0,
+    "old_chunk_replay": 0,
+    "post_retries": 0,
+    "terminal_receipt_sha256": "51db0085d9e3a9111d7e3c808b4f0d1f634ececff7506c7bd24fba9497a69e40",
+    "runner_sha256": "d34336c26bb8d32c5a9cab5390d59d87674502c5d1eff4f7d8752cfe1adb108d"
+  },
+  "accepted_inputs": [
+    {
+      "source_id": "stat_worldbank_unemployment_ilo_annual",
+      "manifest_sha256": "a6f2b0051c47642cefcfa122c573fe6a15b387a8bcfd06aa363b39ae14dac9a1",
+      "source_policy_sha256": "277c7967b0d7ff47d473b747ff52e262de4f9462f022ef6f331dda673512537f",
+      "rows": 1590,
+      "chunks": 20
+    },
+    {
+      "source_id": "stat_ecb_fx_daily_reference",
+      "manifest_sha256": "775f06b84e4c7efc6e3583073547b1456bb07d645bd7082ca0ac18b2bcb5d7ff",
+      "source_policy_sha256": "9125dba6da7ece4e683a419f1c107f6e39b700e555b869eb8f1d2579d6d42370",
+      "rows": 3470,
+      "chunks": 42
+    }
+  ],
+  "final_counts": {
+    "item_count": 35713,
+    "version_count": 35713,
+    "direct_item_count": 369,
+    "uploaded_item_count": 100,
+    "reviewed_snapshot_item_count": 35244,
+    "alert_count": 8,
+    "endpoint_count": 11,
+    "registered_source_count": 40,
+    "reviewed_snapshot_source_count": 19
+  },
+  "retrieval": {
+    "indexed_documents": 35713,
+    "pending_versions": 0,
+    "policy_mismatch_documents": 0,
+    "mode": "indexed_lexical_fts5_bm25",
+    "semantic": false,
+    "embeddings": false
+  },
+  "source_port_review": {
+    "checks": 15,
+    "passed": true,
+    "sha256": "571d57304e10eedf98b940c9694122c2f31b9c89725281f45986b8b332382660"
+  },
+  "actual_readback": {
+    "checks": 30,
+    "requests": 30,
+    "passed": true,
+    "started_at": "2026-10-08T15:14:14.532458+00:00",
+    "finished_at": "2026-10-08T15:18:56.714746+00:00",
+    "sha256": "a2ccfb960c41a711f38e67dfb6f3d7612db3b954151e5a4b2e0470e20250c13a"
+  },
+  "basic_gui": {
+    "source_examples": 2,
+    "viewport": 500,
+    "document_width": 485,
+    "query_detail_back_focus": "passed",
+    "origin_model_unit_clock_disclosures": "passed",
+    "receipt_sha256": "f9fbbf55af9110ec61d69679fc0a6687f71f9b9fbb938e17ca977a863b853195"
+  },
+  "tests": {
+    "worker_dom_boundary": {
+      "pass": 308,
+      "fail": 0,
+      "skip": 0,
+      "log_sha256": "e1ebc0b13417fc0ce5fb34c22e7e4cd320f4a875b392737e098cad48b52f55f6"
+    },
+    "external_actual_rows": {
+      "rows": 5060,
+      "chunks": 62,
+      "checks": 20,
+      "fail": 0,
+      "network": 0,
+      "site_operations": 0
+    },
+    "production_artifact": "Exact built Worker VM executes both actual four-row sample sets; transformed scales reject. Artifact export/client-body identity smoke passed.",
+    "source_pack_restore": {
+      "employment_checks": 20,
+      "fx_checks": 20,
+      "unified_gdp_checks": 12,
+      "unified_reproduced_chunks": 111,
+      "requests": 0
+    }
+  },
+  "clean_consumer": {
+    "source_files": 668,
+    "source_git_commit": "1ea785b52112f0bab4e448e29af5cc77fec7fdd2",
+    "node_version": "24.19.0",
+    "worker_tests": 308,
+    "failed": 0,
+    "skipped": 0,
+    "artifact_link_body_smoke": "passed",
+    "existing_local_manifest_entries": 135,
+    "external_actual_rows": 5060,
+    "external_chunks": 62,
+    "external_checks": 20,
+    "network_requests": 0,
+    "live_site_operations": 0,
+    "test_log_sha256": "43e05159aaa1c03636f18e37b61b6d0fd54b097958c03e97e6e5259e6c55560e",
+    "external_log_sha256": "437bde6326c612b79c6fdaea7504dfba27cdc22478034cff5f7007cc342dbcef"
+  },
+  "artifacts": {
+    "worker": {
+      "bytes": 1709571,
+      "sha256": "c4c15ce3e12cc614c40bc3c81115c675758c28db8e086ea7d976d4552483d42a"
+    },
+    "archive_sha256": "7769599a8edd146c9175288b7cd9cfacea9a9a68a3692d160c9d6ac348eafcb4"
+  },
+  "limits": [
+    "Only two EUR reference currency series, no intraday executable-price claim",
+    "Modeled annual total labor-force unemployment, no person/company layoff inference",
+    "Source-observation date filtering not implemented; numeric date queries are ordinary unordered lexical terms",
+    "Current supplied geography taxonomy, not historical borders or operating impact locations",
+    "Worldwide law/culture/futures/policy/company/organization relationships remain incomplete",
+    "Windows/closed-process scheduling/daily autonomy/automatic Site sync remain unverified",
+    "Full raw bodies/matrices/chunks/execution logs outside Git"
+  ],
+  "independent_saved_data_review": {
+    "passed": true,
+    "checks": 11,
+    "actual_evidence_projections": 8,
+    "actual_document_projections": 300,
+    "source_and_site_requests": 0,
+    "receipt_sha256": "de185ab21829abd5da9e00f893c8fae5a8eda6c3da33995703b2c60581f259f7"
+  }
+}

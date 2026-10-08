@@ -1,0 +1,229 @@
+{
+  "schema_version": "dormathon.employment-assets.v0.12",
+  "ready_at": "2026-10-08T13:41:25.302066+00:00",
+  "source_manifest_sha256": "d11ccdbc14cab6f23d368bf9817df2ed10ceacd66fa8ddd1c3e8b7179230bf24",
+  "delivery_manifest_sha256": "a6f2b0051c47642cefcfa122c573fe6a15b387a8bcfd06aa363b39ae14dac9a1",
+  "source_contract_sha256": "277c7967b0d7ff47d473b747ff52e262de4f9462f022ef6f331dda673512537f",
+  "counts": {
+    "observations": 1590,
+    "chunks": 20,
+    "new_indicators": 1,
+    "new_domains": [
+      "employment"
+    ],
+    "new_WorldBank_provider_families": 0
+  },
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 4284,
+      "sha256": "abe2e89ef5bb84e7c1ed7e231c198b5d0fee0d75b3588ee1fdcc626fa75aa93d"
+    },
+    {
+      "path": "acquire-bounded.py",
+      "bytes": 5046,
+      "sha256": "6f3c58b77599c3858de7dc818ce9ecaaeb746f1ad556083a9009418c2c0c0222"
+    },
+    {
+      "path": "adapters/normalized-common.mjs",
+      "bytes": 5755,
+      "sha256": "773d2fc291337bfa225e22b646356eb8aa0be464aaad6024864732678f1f8f5f"
+    },
+    {
+      "path": "adapters/worldbank-dimensions-pinned.mjs",
+      "bytes": 7099,
+      "sha256": "c1af66ad7b440184f1fa2724681495f57749c2a2e156e459fd894361e0aefc3c"
+    },
+    {
+      "path": "adapters/worldbank-unemployment-annual.mjs",
+      "bytes": 7482,
+      "sha256": "453fa3b93682c61f484abab68cbb45c33ddbee33ce162098304e826cbfcead9b"
+    },
+    {
+      "path": "build-package.mjs",
+      "bytes": 12412,
+      "sha256": "48964568913d929141080eef856a4316ffaa2e5d602fde58365d151ed1ce2ca5"
+    },
+    {
+      "path": "contracts/rights-review.v0.12.json",
+      "bytes": 1490,
+      "sha256": "0e7bf4e3ef48b201e1d42d6ba7b33b4409ba99042e6a97a8fdee8a8d642b655b"
+    },
+    {
+      "path": "contracts/source-manifest.v0.12.json",
+      "bytes": 12488,
+      "sha256": "277c7967b0d7ff47d473b747ff52e262de4f9462f022ef6f331dda673512537f"
+    },
+    {
+      "path": "coverage/coverage-summary.v0.12.json",
+      "bytes": 5029,
+      "sha256": "fdd46b3a87d83760e81dc376c182eec1593cd0917b426741a74503d75a5178cd"
+    },
+    {
+      "path": "delivery/manifest.json",
+      "bytes": 6144,
+      "sha256": "a6f2b0051c47642cefcfa122c573fe6a15b387a8bcfd06aa363b39ae14dac9a1"
+    },
+    {
+      "path": "fixtures/normalized-known-source-samples.v0.12.json",
+      "bytes": 15536,
+      "sha256": "51a2fabdafff32e119f972769d26924d2d456ae3603434d4d7c99dfe878a01d8"
+    },
+    {
+      "path": "receipts/wb_country_dimensions.json",
+      "bytes": 1479,
+      "sha256": "8d3b1a6c3fe3e894741320372098144d3962ba40d04bbba4da76bf62d59ef6f2"
+    },
+    {
+      "path": "receipts/wb_unemployment_2020_2026.json",
+      "bytes": 1765,
+      "sha256": "2f0a1d79fedde4c6055ae2061e507cbee81d2206ba34fef653f7e64ff112ada2"
+    },
+    {
+      "path": "receipts/wb_unemployment_metadata.json",
+      "bytes": 1639,
+      "sha256": "173327ff9e44e1c38b840e1fe236e9e5d83b6b05f4eba7228c3f9a8ad0726c1b"
+    },
+    {
+      "path": "reports/contract-tests.v0.12.json",
+      "bytes": 2874,
+      "sha256": "96e759869341e287152b37730802f00731576115216ae48055e65ec8d6ae7d4b"
+    },
+    {
+      "path": "run-slice.py",
+      "bytes": 1055,
+      "sha256": "c77e74e7157daf84d606ea9a4060debd0e5d1107c4273c144de9e9b4a1d37d53"
+    },
+    {
+      "path": "test-contract.mjs",
+      "bytes": 9601,
+      "sha256": "b9217c616c086fa61ac7afe1f4e640a5f72f31e4e63e34314bab5654177476a7"
+    },
+    {
+      "path": "coverage/actual-period-geography-matrix.v0.12.json",
+      "bytes": 261307,
+      "sha256": "d1d58f77c10eaf768228699bc248a0aa94c58b32aa075b68304b3ead01223811"
+    },
+    {
+      "path": "delivery/chunks/stat_worldbank_unemployment_ilo_annual-0000.json",
+      "bytes": 260350,
+      "sha256": "76ebc9ac9d0b75e5e6961f62046b3c169787dc3a951b842e7bbf6afb51cb760d"
+    },
+    {
+      "path": "delivery/chunks/stat_worldbank_unemployment_ilo_annual-0001.json",
+      "bytes": 259757,
+      "sha256": "471fe2a17fc8cf315a8e610c49ffdf98bf556d7e04e08bbffaccedda9f899bc7"
+    },
+    {
+      "path": "delivery/chunks/stat_worldbank_unemployment_ilo_annual-0002.json",
+      "bytes": 260345,
+      "sha256": "e5a993cb7662a41e64f1bda32941cf2b5d22d1ef0c49be8018f7d464274c3295"
+    },
+    {
+      "path": "delivery/chunks/stat_worldbank_unemployment_ilo_annual-0003.json",
+      "bytes": 259221,
+      "sha256": "802a91290c5dcf85c1b64a30d052c806f5b1f4781b00a3860f93c58550280179"
+    },
+    {
+      "path": "delivery/chunks/stat_worldbank_unemployment_ilo_annual-0004.json",
+      "bytes": 261595,
+      "sha256": "64f32ed20c85b51dc0942dee69ec09ddd6dadddf27e48bfad2e86a378f33be0f"
+    },
+    {
+      "path": "delivery/chunks/stat_worldbank_unemployment_ilo_annual-0005.json",
+      "bytes": 261527,
+      "sha256": "a44b719e5e771398563ecbae0d115e8331903fce9e4cd4416e917330c36e9935"
+    },
+    {
+      "path": "delivery/chunks/stat_worldbank_unemployment_ilo_annual-0006.json",
+      "bytes": 261503,
+      "sha256": "9aca8633a0c2717cbb3286d2a8e34442a920fc348579212532655d89fe8cd82b"
+    },
+    {
+      "path": "delivery/chunks/stat_worldbank_unemployment_ilo_annual-0007.json",
+      "bytes": 261917,
+      "sha256": "75c71ed32dba1981a2875e602a3b8c96277c840feacc615753b090251cad1804"
+    },
+    {
+      "path": "delivery/chunks/stat_worldbank_unemployment_ilo_annual-0008.json",
+      "bytes": 261336,
+      "sha256": "112afc221ac8284fbfbdffe0589d2bf9f60c5ae482acf5ff41aa1a9573ba2039"
+    },
+    {
+      "path": "delivery/chunks/stat_worldbank_unemployment_ilo_annual-0009.json",
+      "bytes": 261243,
+      "sha256": "746bb3d68b7f7a2813b038079185befb8ef15ed6bfeac838a7b7545c910c7b69"
+    },
+    {
+      "path": "delivery/chunks/stat_worldbank_unemployment_ilo_annual-0010.json",
+      "bytes": 261814,
+      "sha256": "6b532d15d1034234ad2a3eefbbdee215a08e67acb709403a877b1f459987db70"
+    },
+    {
+      "path": "delivery/chunks/stat_worldbank_unemployment_ilo_annual-0011.json",
+      "bytes": 261737,
+      "sha256": "333fc289cd3a50da69fa1bc971e00e6315f107e34154792415750f14b93881fd"
+    },
+    {
+      "path": "delivery/chunks/stat_worldbank_unemployment_ilo_annual-0012.json",
+      "bytes": 261554,
+      "sha256": "83dba7a1aceecace4a772a411ae8b23344e3189204eb61fbdc8b39f930e23396"
+    },
+    {
+      "path": "delivery/chunks/stat_worldbank_unemployment_ilo_annual-0013.json",
+      "bytes": 261386,
+      "sha256": "4617f78b2d2e15afc9cf687e41b144e1061649d5bd7841bca366135d6ff1fa33"
+    },
+    {
+      "path": "delivery/chunks/stat_worldbank_unemployment_ilo_annual-0014.json",
+      "bytes": 261839,
+      "sha256": "3e6dfbbacc3a8a2d55d02085df756e9172ba2cc504b0ad88f13e74882256556f"
+    },
+    {
+      "path": "delivery/chunks/stat_worldbank_unemployment_ilo_annual-0015.json",
+      "bytes": 261854,
+      "sha256": "895e85e72a96c855f80d1814cbb809b7eb4a060a6e5d4c776fb294e099d0a403"
+    },
+    {
+      "path": "delivery/chunks/stat_worldbank_unemployment_ilo_annual-0016.json",
+      "bytes": 261714,
+      "sha256": "d4fa564d328bf1695c08e0fa537d7b86f558bd87c611098a2879df867c94d852"
+    },
+    {
+      "path": "delivery/chunks/stat_worldbank_unemployment_ilo_annual-0017.json",
+      "bytes": 259040,
+      "sha256": "2bafb09f524f832d1de87c586bcb5c76cac91ec7bc4c3a1cb9801e9e2d72e8f5"
+    },
+    {
+      "path": "delivery/chunks/stat_worldbank_unemployment_ilo_annual-0018.json",
+      "bytes": 262020,
+      "sha256": "a23b53b25106f6884f00dfbd3c0be57f6a330c4ae992ca8d63447ba948fea25c"
+    },
+    {
+      "path": "delivery/chunks/stat_worldbank_unemployment_ilo_annual-0019.json",
+      "bytes": 181356,
+      "sha256": "0fc0fdd5d29fda74eaeafb977591942aa94d2dc667dce74d9400015dbd648c88"
+    },
+    {
+      "path": "source-data/wb_country_dimensions.json",
+      "bytes": 113954,
+      "sha256": "ba006d57b1fb243ff5a6d13a9fd1283e0a758ab6750cc4159eebbd454a98b462"
+    },
+    {
+      "path": "source-data/wb_unemployment_2020_2026.json",
+      "bytes": 402927,
+      "sha256": "4eb7989ef6eeb3a4cecd1374629bdfca5e3779e629930b468e7804352d540ff5"
+    },
+    {
+      "path": "source-data/wb_unemployment_metadata.json",
+      "bytes": 670,
+      "sha256": "3ae370ed4bebba092338e94334c35add71490324ee57f1dfe81885dade51f52f"
+    },
+    {
+      "path": "SOURCE-MANIFEST.v0.12.json",
+      "bytes": 4693,
+      "sha256": "d11ccdbc14cab6f23d368bf9817df2ed10ceacd66fa8ddd1c3e8b7179230bf24"
+    }
+  ],
+  "stage": "acquired_normalized_tested_not_site_ingested"
+}

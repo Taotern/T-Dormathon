@@ -1,0 +1,161 @@
+{
+  "schema_version": "dormathon.longitudinal-acquisition.v0.12",
+  "source_id": "stat_worldbank_unemployment_ilo_annual",
+  "source_counts": {
+    "stat_worldbank_unemployment_ilo_annual": 1590
+  },
+  "record_count": 1590,
+  "chunks": [
+    {
+      "path": "chunks/stat_worldbank_unemployment_ilo_annual-0000.json",
+      "source_id": "stat_worldbank_unemployment_ilo_annual",
+      "count": 80,
+      "bytes": 260350,
+      "sha256": "76ebc9ac9d0b75e5e6961f62046b3c169787dc3a951b842e7bbf6afb51cb760d"
+    },
+    {
+      "path": "chunks/stat_worldbank_unemployment_ilo_annual-0001.json",
+      "source_id": "stat_worldbank_unemployment_ilo_annual",
+      "count": 80,
+      "bytes": 259757,
+      "sha256": "471fe2a17fc8cf315a8e610c49ffdf98bf556d7e04e08bbffaccedda9f899bc7"
+    },
+    {
+      "path": "chunks/stat_worldbank_unemployment_ilo_annual-0002.json",
+      "source_id": "stat_worldbank_unemployment_ilo_annual",
+      "count": 80,
+      "bytes": 260345,
+      "sha256": "e5a993cb7662a41e64f1bda32941cf2b5d22d1ef0c49be8018f7d464274c3295"
+    },
+    {
+      "path": "chunks/stat_worldbank_unemployment_ilo_annual-0003.json",
+      "source_id": "stat_worldbank_unemployment_ilo_annual",
+      "count": 80,
+      "bytes": 259221,
+      "sha256": "802a91290c5dcf85c1b64a30d052c806f5b1f4781b00a3860f93c58550280179"
+    },
+    {
+      "path": "chunks/stat_worldbank_unemployment_ilo_annual-0004.json",
+      "source_id": "stat_worldbank_unemployment_ilo_annual",
+      "count": 81,
+      "bytes": 261595,
+      "sha256": "64f32ed20c85b51dc0942dee69ec09ddd6dadddf27e48bfad2e86a378f33be0f"
+    },
+    {
+      "path": "chunks/stat_worldbank_unemployment_ilo_annual-0005.json",
+      "source_id": "stat_worldbank_unemployment_ilo_annual",
+      "count": 81,
+      "bytes": 261527,
+      "sha256": "a44b719e5e771398563ecbae0d115e8331903fce9e4cd4416e917330c36e9935"
+    },
+    {
+      "path": "chunks/stat_worldbank_unemployment_ilo_annual-0006.json",
+      "source_id": "stat_worldbank_unemployment_ilo_annual",
+      "count": 81,
+      "bytes": 261503,
+      "sha256": "9aca8633a0c2717cbb3286d2a8e34442a920fc348579212532655d89fe8cd82b"
+    },
+    {
+      "path": "chunks/stat_worldbank_unemployment_ilo_annual-0007.json",
+      "source_id": "stat_worldbank_unemployment_ilo_annual",
+      "count": 81,
+      "bytes": 261917,
+      "sha256": "75c71ed32dba1981a2875e602a3b8c96277c840feacc615753b090251cad1804"
+    },
+    {
+      "path": "chunks/stat_worldbank_unemployment_ilo_annual-0008.json",
+      "source_id": "stat_worldbank_unemployment_ilo_annual",
+      "count": 81,
+      "bytes": 261336,
+      "sha256": "112afc221ac8284fbfbdffe0589d2bf9f60c5ae482acf5ff41aa1a9573ba2039"
+    },
+    {
+      "path": "chunks/stat_worldbank_unemployment_ilo_annual-0009.json",
+      "source_id": "stat_worldbank_unemployment_ilo_annual",
+      "count": 81,
+      "bytes": 261243,
+      "sha256": "746bb3d68b7f7a2813b038079185befb8ef15ed6bfeac838a7b7545c910c7b69"
+    },
+    {
+      "path": "chunks/stat_worldbank_unemployment_ilo_annual-0010.json",
+      "source_id": "stat_worldbank_unemployment_ilo_annual",
+      "count": 81,
+      "bytes": 261814,
+      "sha256": "6b532d15d1034234ad2a3eefbbdee215a08e67acb709403a877b1f459987db70"
+    },
+    {
+      "path": "chunks/stat_worldbank_unemployment_ilo_annual-0011.json",
+      "source_id": "stat_worldbank_unemployment_ilo_annual",
+      "count": 81,
+      "bytes": 261737,
+      "sha256": "333fc289cd3a50da69fa1bc971e00e6315f107e34154792415750f14b93881fd"
+    },
+    {
+      "path": "chunks/stat_worldbank_unemployment_ilo_annual-0012.json",
+      "source_id": "stat_worldbank_unemployment_ilo_annual",
+      "count": 81,
+      "bytes": 261554,
+      "sha256": "83dba7a1aceecace4a772a411ae8b23344e3189204eb61fbdc8b39f930e23396"
+    },
+    {
+      "path": "chunks/stat_worldbank_unemployment_ilo_annual-0013.json",
+      "source_id": "stat_worldbank_unemployment_ilo_annual",
+      "count": 81,
+      "bytes": 261386,
+      "sha256": "4617f78b2d2e15afc9cf687e41b144e1061649d5bd7841bca366135d6ff1fa33"
+    },
+    {
+      "path": "chunks/stat_worldbank_unemployment_ilo_annual-0014.json",
+      "source_id": "stat_worldbank_unemployment_ilo_annual",
+      "count": 81,
+      "bytes": 261839,
+      "sha256": "3e6dfbbacc3a8a2d55d02085df756e9172ba2cc504b0ad88f13e74882256556f"
+    },
+    {
+      "path": "chunks/stat_worldbank_unemployment_ilo_annual-0015.json",
+      "source_id": "stat_worldbank_unemployment_ilo_annual",
+      "count": 81,
+      "bytes": 261854,
+      "sha256": "895e85e72a96c855f80d1814cbb809b7eb4a060a6e5d4c776fb294e099d0a403"
+    },
+    {
+      "path": "chunks/stat_worldbank_unemployment_ilo_annual-0016.json",
+      "source_id": "stat_worldbank_unemployment_ilo_annual",
+      "count": 81,
+      "bytes": 261714,
+      "sha256": "d4fa564d328bf1695c08e0fa537d7b86f558bd87c611098a2879df867c94d852"
+    },
+    {
+      "path": "chunks/stat_worldbank_unemployment_ilo_annual-0017.json",
+      "source_id": "stat_worldbank_unemployment_ilo_annual",
+      "count": 80,
+      "bytes": 259040,
+      "sha256": "2bafb09f524f832d1de87c586bcb5c76cac91ec7bc4c3a1cb9801e9e2d72e8f5"
+    },
+    {
+      "path": "chunks/stat_worldbank_unemployment_ilo_annual-0018.json",
+      "source_id": "stat_worldbank_unemployment_ilo_annual",
+      "count": 81,
+      "bytes": 262020,
+      "sha256": "a23b53b25106f6884f00dfbd3c0be57f6a330c4ae992ca8d63447ba948fea25c"
+    },
+    {
+      "path": "chunks/stat_worldbank_unemployment_ilo_annual-0019.json",
+      "source_id": "stat_worldbank_unemployment_ilo_annual",
+      "count": 56,
+      "bytes": 181356,
+      "sha256": "0fc0fdd5d29fda74eaeafb977591942aa94d2dc667dce74d9400015dbd648c88"
+    }
+  ],
+  "provider_families": [
+    "World Bank"
+  ],
+  "original_data_provider": "ILOSTAT / ILOEST",
+  "new_provider_family_count": 0,
+  "new_indicator_domain": "employment",
+  "source_manifest_sha256": "277c7967b0d7ff47d473b747ff52e262de4f9462f022ef6f331dda673512537f",
+  "coverage_matrix_sha256": "d1d58f77c10eaf768228699bc248a0aa94c58b32aa075b68304b3ead01223811",
+  "site_ingestion": "not_run",
+  "recurring_operational": false,
+  "source_data_not_for_Git": true
+}

@@ -1,0 +1,213 @@
+{
+  "schema_version": "dormathon.coverage.employment.v0.12",
+  "generated_at": "2026-10-08T13:37:31.330Z",
+  "domains": [
+    "employment"
+  ],
+  "provider_available_period": "1991–2025",
+  "actually_acquired_periods": [
+    "2020–2025"
+  ],
+  "unacquired_history": "1991–2019",
+  "unreturned_requested_periods": [
+    "2026"
+  ],
+  "actual_geography_kind_counts": {
+    "country_or_economy": 217,
+    "aggregate": 48
+  },
+  "economy_continuity": {
+    "geographies_returned": 217,
+    "all_years_numeric": 182,
+    "at_least_one_numeric": 187,
+    "entire_slice_no_numeric": [
+      {
+        "id": "ASM",
+        "label": "American Samoa"
+      },
+      {
+        "id": "AND",
+        "label": "Andorra"
+      },
+      {
+        "id": "ATG",
+        "label": "Antigua and Barbuda"
+      },
+      {
+        "id": "ABW",
+        "label": "Aruba"
+      },
+      {
+        "id": "BMU",
+        "label": "Bermuda"
+      },
+      {
+        "id": "VGB",
+        "label": "British Virgin Islands"
+      },
+      {
+        "id": "CYM",
+        "label": "Cayman Islands"
+      },
+      {
+        "id": "CUW",
+        "label": "Curacao"
+      },
+      {
+        "id": "DMA",
+        "label": "Dominica"
+      },
+      {
+        "id": "FRO",
+        "label": "Faroe Islands"
+      },
+      {
+        "id": "GIB",
+        "label": "Gibraltar"
+      },
+      {
+        "id": "GRL",
+        "label": "Greenland"
+      },
+      {
+        "id": "GRD",
+        "label": "Grenada"
+      },
+      {
+        "id": "IMN",
+        "label": "Isle of Man"
+      },
+      {
+        "id": "KIR",
+        "label": "Kiribati"
+      },
+      {
+        "id": "XKX",
+        "label": "Kosovo"
+      },
+      {
+        "id": "LIE",
+        "label": "Liechtenstein"
+      },
+      {
+        "id": "MHL",
+        "label": "Marshall Islands"
+      },
+      {
+        "id": "FSM",
+        "label": "Micronesia, Fed. Sts."
+      },
+      {
+        "id": "MCO",
+        "label": "Monaco"
+      },
+      {
+        "id": "NRU",
+        "label": "Naoero"
+      },
+      {
+        "id": "MNP",
+        "label": "Northern Mariana Islands"
+      },
+      {
+        "id": "PLW",
+        "label": "Palau"
+      },
+      {
+        "id": "SMR",
+        "label": "San Marino"
+      },
+      {
+        "id": "SYC",
+        "label": "Seychelles"
+      },
+      {
+        "id": "SXM",
+        "label": "Sint Maarten (Dutch part)"
+      },
+      {
+        "id": "KNA",
+        "label": "St. Kitts and Nevis"
+      },
+      {
+        "id": "MAF",
+        "label": "St. Martin (French part)"
+      },
+      {
+        "id": "TCA",
+        "label": "Turks and Caicos Islands"
+      },
+      {
+        "id": "TUV",
+        "label": "Tuvalu"
+      }
+    ],
+    "per_year": [
+      {
+        "year": "2020",
+        "numeric": 187,
+        "returned_null": 30,
+        "unreturned": 0
+      },
+      {
+        "year": "2021",
+        "numeric": 187,
+        "returned_null": 30,
+        "unreturned": 0
+      },
+      {
+        "year": "2022",
+        "numeric": 186,
+        "returned_null": 31,
+        "unreturned": 0
+      },
+      {
+        "year": "2023",
+        "numeric": 184,
+        "returned_null": 33,
+        "unreturned": 0
+      },
+      {
+        "year": "2024",
+        "numeric": 182,
+        "returned_null": 35,
+        "unreturned": 0
+      },
+      {
+        "year": "2025",
+        "numeric": 182,
+        "returned_null": 35,
+        "unreturned": 0
+      }
+    ]
+  },
+  "temporal_grain": "annual",
+  "entity_grain": "Reporting economy/aggregate, not individual or company",
+  "geography_basis": "World Bank provider IDs/current dimension classification, not event location or historical sovereignty",
+  "measurement": "Total unemployment percent of labor force, explicitly modeled ILO estimate",
+  "units_and_clocks": {
+    "observation_period": "Annual source year label; specific country reference/calendar/fiscal alignment unverified",
+    "publication_time": null,
+    "event_time": null,
+    "source_updated_at": null,
+    "dataset_vintage": "Date-only2026-07-13, retained in facts.vintage, not per-record midnight",
+    "source_metadata_date_accessed": "2026-01-17",
+    "metadata_date_accessed_is_model_release": false,
+    "model_release_vintage": null,
+    "requested_latest_year": 2026,
+    "actual_latest_returned_year": 2025
+  },
+  "gaps": [
+    "1991–2019 provider availability is not acquired history",
+    "2026 requested but absent if not returned",
+    "Source nulls remain unknown, not zero",
+    "Modeled estimates are not independently observed country survey facts",
+    "Annual labor-force percentages are not current layoffs, job openings or talent rankings",
+    "Current dimension taxonomy is not historical borders/group membership",
+    "Per-country methods and model-release vintage are not supplied",
+    "Site ingestion and recurring operation not established"
+  ],
+  "site_ingestion": "not_run",
+  "recurring_operational": false,
+  "full_matrix_sha256": "d1d58f77c10eaf768228699bc248a0aa94c58b32aa075b68304b3ead01223811"
+}

@@ -1,0 +1,318 @@
+{
+  "schema_version": "dormathon.daily-reference-acquisition.v0.13",
+  "source_id": "stat_ecb_fx_daily_reference",
+  "source_counts": {
+    "stat_ecb_fx_daily_reference": 3470
+  },
+  "record_count": 3470,
+  "chunks": [
+    {
+      "path": "chunks/stat_ecb_fx_daily_reference-0000.json",
+      "source_id": "stat_ecb_fx_daily_reference",
+      "count": 83,
+      "bytes": 260263,
+      "sha256": "76b0aa75019a22d23a9ff399a67d1456c5c8aa81b8cfb3848cc94972555be1a9"
+    },
+    {
+      "path": "chunks/stat_ecb_fx_daily_reference-0001.json",
+      "source_id": "stat_ecb_fx_daily_reference",
+      "count": 83,
+      "bytes": 260248,
+      "sha256": "5afe60a5110271c5bbf5b9a784900d1cf7b8a71ec55f7498caa2d8ffed70f811"
+    },
+    {
+      "path": "chunks/stat_ecb_fx_daily_reference-0002.json",
+      "source_id": "stat_ecb_fx_daily_reference",
+      "count": 83,
+      "bytes": 260254,
+      "sha256": "e57468eaae339db72b29a96cfadcb435dbf12cb2ca6c781607df4e1395c26326"
+    },
+    {
+      "path": "chunks/stat_ecb_fx_daily_reference-0003.json",
+      "source_id": "stat_ecb_fx_daily_reference",
+      "count": 83,
+      "bytes": 260242,
+      "sha256": "33b57703ad9946d40da8ef3c668aa9c801dae1dcfba2648fabfafeab8eee3d8d"
+    },
+    {
+      "path": "chunks/stat_ecb_fx_daily_reference-0004.json",
+      "source_id": "stat_ecb_fx_daily_reference",
+      "count": 83,
+      "bytes": 260260,
+      "sha256": "a48e938d6200b4ed57a9e55b7c19c4073d8b2916c3b787cf8f6cc08abf9d77da"
+    },
+    {
+      "path": "chunks/stat_ecb_fx_daily_reference-0005.json",
+      "source_id": "stat_ecb_fx_daily_reference",
+      "count": 83,
+      "bytes": 260260,
+      "sha256": "f6ef46080381b4fd2c91733bb462c8b5820dbc1177e68a5eac9a7465152b6869"
+    },
+    {
+      "path": "chunks/stat_ecb_fx_daily_reference-0006.json",
+      "source_id": "stat_ecb_fx_daily_reference",
+      "count": 83,
+      "bytes": 260254,
+      "sha256": "58e107a53e8907a3256c259989b5a82865083bdcc064369245a20c8a5f1e9567"
+    },
+    {
+      "path": "chunks/stat_ecb_fx_daily_reference-0007.json",
+      "source_id": "stat_ecb_fx_daily_reference",
+      "count": 83,
+      "bytes": 260269,
+      "sha256": "5e6e76a6ca8e1880453a8f39ddedeba6e4634e93e1f0b9ae248bb2277574907c"
+    },
+    {
+      "path": "chunks/stat_ecb_fx_daily_reference-0008.json",
+      "source_id": "stat_ecb_fx_daily_reference",
+      "count": 83,
+      "bytes": 260269,
+      "sha256": "4dd5af8f27ec8c7db2cde6ed96a5269d20fc409d11847207546e2f3ed34b4daa"
+    },
+    {
+      "path": "chunks/stat_ecb_fx_daily_reference-0009.json",
+      "source_id": "stat_ecb_fx_daily_reference",
+      "count": 83,
+      "bytes": 260248,
+      "sha256": "6ef53517b77d18a833cefeefabcc95296325964bc6e49bc199ee8057ee493f23"
+    },
+    {
+      "path": "chunks/stat_ecb_fx_daily_reference-0010.json",
+      "source_id": "stat_ecb_fx_daily_reference",
+      "count": 83,
+      "bytes": 260260,
+      "sha256": "0c27e8edb914873f94140b7d25417bf371cd7a6b83f8a416182f089708a65056"
+    },
+    {
+      "path": "chunks/stat_ecb_fx_daily_reference-0011.json",
+      "source_id": "stat_ecb_fx_daily_reference",
+      "count": 83,
+      "bytes": 260260,
+      "sha256": "438daa09ba2c5137664e0a829461f05fcfe3eabb28a401f8b6b126463d1f627d"
+    },
+    {
+      "path": "chunks/stat_ecb_fx_daily_reference-0012.json",
+      "source_id": "stat_ecb_fx_daily_reference",
+      "count": 83,
+      "bytes": 260251,
+      "sha256": "4145ee194c4f8c2e7f0b92c99a4668bc0bfbceae345736b20598f72d6fc836cb"
+    },
+    {
+      "path": "chunks/stat_ecb_fx_daily_reference-0013.json",
+      "source_id": "stat_ecb_fx_daily_reference",
+      "count": 83,
+      "bytes": 260236,
+      "sha256": "bbf307f25f04af17cb105401ad9635282381daccf98e4c5ef8f0395c96d5ceb8"
+    },
+    {
+      "path": "chunks/stat_ecb_fx_daily_reference-0014.json",
+      "source_id": "stat_ecb_fx_daily_reference",
+      "count": 83,
+      "bytes": 260251,
+      "sha256": "f37bb1a57b946f273ead8c2bc67722c03234ceb978fcb1fa02f61625e6d824f0"
+    },
+    {
+      "path": "chunks/stat_ecb_fx_daily_reference-0015.json",
+      "source_id": "stat_ecb_fx_daily_reference",
+      "count": 83,
+      "bytes": 260245,
+      "sha256": "2b944ff512c8da83445ed6ae478b9c81b72be76e4a6d772ac69df675bc78677a"
+    },
+    {
+      "path": "chunks/stat_ecb_fx_daily_reference-0016.json",
+      "source_id": "stat_ecb_fx_daily_reference",
+      "count": 83,
+      "bytes": 260266,
+      "sha256": "e94db42561a99c2127b7e3f55f6e739c69cefddafbb096c7fe8095a7f8b30d5f"
+    },
+    {
+      "path": "chunks/stat_ecb_fx_daily_reference-0017.json",
+      "source_id": "stat_ecb_fx_daily_reference",
+      "count": 83,
+      "bytes": 260266,
+      "sha256": "19057ee7b3c45985c436937fa6fda3d726818b1720f8407160cb066871c8576e"
+    },
+    {
+      "path": "chunks/stat_ecb_fx_daily_reference-0018.json",
+      "source_id": "stat_ecb_fx_daily_reference",
+      "count": 83,
+      "bytes": 260260,
+      "sha256": "85bf337400874d8fbcb3bdb2e15fcf8821b4a11b200ef9d658c56770c9477edb"
+    },
+    {
+      "path": "chunks/stat_ecb_fx_daily_reference-0019.json",
+      "source_id": "stat_ecb_fx_daily_reference",
+      "count": 83,
+      "bytes": 260269,
+      "sha256": "85a7d788d670f7e0da45a0f47ff9b18583438e7a9ee01e7b971e0681ea03a774"
+    },
+    {
+      "path": "chunks/stat_ecb_fx_daily_reference-0020.json",
+      "source_id": "stat_ecb_fx_daily_reference",
+      "count": 83,
+      "bytes": 259989,
+      "sha256": "6219759654ecdb149a081f4000f95edd5e9f592909037e340a289b4e3bddcdc0"
+    },
+    {
+      "path": "chunks/stat_ecb_fx_daily_reference-0021.json",
+      "source_id": "stat_ecb_fx_daily_reference",
+      "count": 84,
+      "bytes": 260701,
+      "sha256": "673d44289f1f0870164c019f138f2972c729b00cd5fd9b9411387669680d16fc"
+    },
+    {
+      "path": "chunks/stat_ecb_fx_daily_reference-0022.json",
+      "source_id": "stat_ecb_fx_daily_reference",
+      "count": 84,
+      "bytes": 260680,
+      "sha256": "e8aff56360751108e408200633341a9db515df960f3c33ad6a44d44f56736bab"
+    },
+    {
+      "path": "chunks/stat_ecb_fx_daily_reference-0023.json",
+      "source_id": "stat_ecb_fx_daily_reference",
+      "count": 84,
+      "bytes": 260692,
+      "sha256": "fa1cadd0233b93bad9642b01911780421fe1ea649639a3321091b8e40b9a8a51"
+    },
+    {
+      "path": "chunks/stat_ecb_fx_daily_reference-0024.json",
+      "source_id": "stat_ecb_fx_daily_reference",
+      "count": 84,
+      "bytes": 260713,
+      "sha256": "e3ec84b5ffef5ca5f0034905b30d3f43cf1da29678620f0bcf18fe1e263353da"
+    },
+    {
+      "path": "chunks/stat_ecb_fx_daily_reference-0025.json",
+      "source_id": "stat_ecb_fx_daily_reference",
+      "count": 84,
+      "bytes": 260713,
+      "sha256": "54743c96def2343518b7c22cf5c5cbaa82dece49a4ce05f94d0a39fb1ff18fec"
+    },
+    {
+      "path": "chunks/stat_ecb_fx_daily_reference-0026.json",
+      "source_id": "stat_ecb_fx_daily_reference",
+      "count": 84,
+      "bytes": 260704,
+      "sha256": "afed240501a36be9210da4669ee2e4f6f8d0c14e7eb82daf7e75b53ed527d545"
+    },
+    {
+      "path": "chunks/stat_ecb_fx_daily_reference-0027.json",
+      "source_id": "stat_ecb_fx_daily_reference",
+      "count": 84,
+      "bytes": 260704,
+      "sha256": "58b061a4f46e0941cedd04cc144177141c01d3a3769367a90171156682b04e09"
+    },
+    {
+      "path": "chunks/stat_ecb_fx_daily_reference-0028.json",
+      "source_id": "stat_ecb_fx_daily_reference",
+      "count": 84,
+      "bytes": 260701,
+      "sha256": "ca7fe9cba0dfeb99e9fdfafaf75375a30ea968ebf9ee6892320345798905c099"
+    },
+    {
+      "path": "chunks/stat_ecb_fx_daily_reference-0029.json",
+      "source_id": "stat_ecb_fx_daily_reference",
+      "count": 84,
+      "bytes": 260698,
+      "sha256": "0ff849eab83e8714bf8a577b8bd87fd93a1dd4fce83013edbbf9725a2e41465e"
+    },
+    {
+      "path": "chunks/stat_ecb_fx_daily_reference-0030.json",
+      "source_id": "stat_ecb_fx_daily_reference",
+      "count": 84,
+      "bytes": 260692,
+      "sha256": "83cd5cc4c962bb3d81e7dac11e78f8fd71758a75bda9625647e0d7203791f933"
+    },
+    {
+      "path": "chunks/stat_ecb_fx_daily_reference-0031.json",
+      "source_id": "stat_ecb_fx_daily_reference",
+      "count": 84,
+      "bytes": 260707,
+      "sha256": "443659cb483c5fb6bcd8f619c4f89baac18d2b95c15f50c9f10c5ed74690d0f0"
+    },
+    {
+      "path": "chunks/stat_ecb_fx_daily_reference-0032.json",
+      "source_id": "stat_ecb_fx_daily_reference",
+      "count": 84,
+      "bytes": 260701,
+      "sha256": "f66574e13b609fe11d484dbcf343062eebdbac28e0f2afc3edfef6c060ddce1e"
+    },
+    {
+      "path": "chunks/stat_ecb_fx_daily_reference-0033.json",
+      "source_id": "stat_ecb_fx_daily_reference",
+      "count": 84,
+      "bytes": 260719,
+      "sha256": "d1308cb418e4216279e57733d0f3ca028a94b2ccd8eccdd462f0af0257741126"
+    },
+    {
+      "path": "chunks/stat_ecb_fx_daily_reference-0034.json",
+      "source_id": "stat_ecb_fx_daily_reference",
+      "count": 84,
+      "bytes": 260689,
+      "sha256": "126af97619cc4c5395eb68d0e407a981d2c01b6af792e438ef17030abe232800"
+    },
+    {
+      "path": "chunks/stat_ecb_fx_daily_reference-0035.json",
+      "source_id": "stat_ecb_fx_daily_reference",
+      "count": 84,
+      "bytes": 260725,
+      "sha256": "4c98b610cb221e639ecaa7f114f07961a589c709f0197ac32bcdf7fa4ee1d4f6"
+    },
+    {
+      "path": "chunks/stat_ecb_fx_daily_reference-0036.json",
+      "source_id": "stat_ecb_fx_daily_reference",
+      "count": 84,
+      "bytes": 260701,
+      "sha256": "d258373563f3d282303eac4e38ec7d4677d7668ce1311b0a6756ab1a826cd7db"
+    },
+    {
+      "path": "chunks/stat_ecb_fx_daily_reference-0037.json",
+      "source_id": "stat_ecb_fx_daily_reference",
+      "count": 84,
+      "bytes": 260710,
+      "sha256": "7f45c1c58fe7dff07c8689187c07042634e8d1be4fa58f65d26754cb6690b05c"
+    },
+    {
+      "path": "chunks/stat_ecb_fx_daily_reference-0038.json",
+      "source_id": "stat_ecb_fx_daily_reference",
+      "count": 84,
+      "bytes": 260713,
+      "sha256": "34cdb684b6e7e4ea3bf543e097babd9fddc7ad680e6874f96895ad39d52580a7"
+    },
+    {
+      "path": "chunks/stat_ecb_fx_daily_reference-0039.json",
+      "source_id": "stat_ecb_fx_daily_reference",
+      "count": 84,
+      "bytes": 260710,
+      "sha256": "d7efee6caae01e67f2a1e5503ea1e4df923fd382534cb69ba6aba29733609982"
+    },
+    {
+      "path": "chunks/stat_ecb_fx_daily_reference-0040.json",
+      "source_id": "stat_ecb_fx_daily_reference",
+      "count": 84,
+      "bytes": 260686,
+      "sha256": "a30a3dfb67a2b3fa579d4632f9bf842ece26275b325d2ce382381756f47df4cc"
+    },
+    {
+      "path": "chunks/stat_ecb_fx_daily_reference-0041.json",
+      "source_id": "stat_ecb_fx_daily_reference",
+      "count": 47,
+      "bytes": 145908,
+      "sha256": "1055e3550e4fad5b64457d1c3ff50828dbfe6415f8ee336a2c0ae0d17a908e37"
+    }
+  ],
+  "provider_families": [
+    "ECB"
+  ],
+  "new_publisher_family_claim": false,
+  "temporal_grain": "day",
+  "series_keys": [
+    "EXR.D.MYR.EUR.SP00.A",
+    "EXR.D.USD.EUR.SP00.A"
+  ],
+  "source_manifest_sha256": "9125dba6da7ece4e683a419f1c107f6e39b700e555b869eb8f1d2579d6d42370",
+  "coverage_matrix_sha256": "b5e74dc828aefe7d7a9f9798d148e0bacf2999a4fbf6bf762d210108ee6be080",
+  "site_ingestion": "not_run",
+  "recurring_operational": false,
+  "source_data_not_for_Git": true
+}

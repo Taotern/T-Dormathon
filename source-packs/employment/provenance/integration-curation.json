@@ -1,0 +1,14 @@
+{
+  "source_zip": "Dormathon-Employment-Source-v0.12.0-20261008.zip",
+  "source_zip_sha256": "ed39a288d119e3256952f9b6e8d1f0f2459f8c50acbc8d16a054a2149b2c94c3",
+  "excluded_generated_reports": [
+    "reports/contract-tests.v0.12.json"
+  ],
+  "excluded_external_data": [
+    "source-data",
+    "delivery/chunks",
+    "private_runtime"
+  ],
+  "original_manifests": "Retained producer identities, not completeness claims for this curated current tree",
+  "current_manifest": "MANIFEST-SHA256.txt"
+}

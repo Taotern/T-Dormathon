@@ -1,0 +1,16 @@
+{
+  "source_zip": "Dormathon-ECB-FX-Source-v0.13.0-20261008.zip",
+  "source_zip_sha256": "ecad8a01884728cf18f10ee2b8160bdaa60402a7ca603e2f394d421feb9634e3",
+  "excluded_generated_reports": [
+    "reports/contract-tests.v0.13.json",
+    "reports/initial-local-syntax-failure.json",
+    "reports/probe-schema-review.json"
+  ],
+  "excluded_external_data": [
+    "source-data",
+    "delivery/chunks",
+    "private_runtime"
+  ],
+  "original_manifests": "Retained producer identities, not completeness claims for this curated current tree",
+  "current_manifest": "MANIFEST-SHA256.txt"
+}

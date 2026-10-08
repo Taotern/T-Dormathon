@@ -1,0 +1,358 @@
+{
+  "schema_version": "dormathon.source-admission.v0.13",
+  "sources": [
+    {
+      "id": "stat_ecb_fx_daily_reference",
+      "version": "0.13.0",
+      "name": "ECB daily EUR reference rates, USD and MYR",
+      "provider_family": "ECB",
+      "official_url": "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html",
+      "endpoint": "https://data-api.ecb.europa.eu/service/data/EXR/D.USD+MYR.EUR.SP00.A?startPeriod=2020-01-01&endPeriod=2026-10-08&format=csvdata",
+      "format": "ecb_sdmx_csv",
+      "category": "economy",
+      "domain": "FX",
+      "source_country": null,
+      "source_language": "en",
+      "material_kind": "statistical_observation",
+      "content_depth": "structured_facts",
+      "adapter_path": "adapters/ecb-reference-daily.mjs",
+      "adapter_version": "ecb-reference-daily-v0.13",
+      "adapter_exports": [
+        "readEnvelope",
+        "project"
+      ],
+      "enabled": false,
+      "collection_enabled": false,
+      "recurring_operational": false,
+      "stage": "actually_collected_not_site_ingested",
+      "rights": {
+        "status": "cleared_structured_facts",
+        "license_id": "ECB-ESCB-statistics-reuse-policy",
+        "permitted_use_scope": "team_product_metadata_or_facts",
+        "product_admission_eligible": true,
+        "primary_url": "https://www.ecb.europa.eu/stats/ecb_statistics/governance_and_quality_framework/html/usage_policy.en.html",
+        "copyright_url": "https://www.ecb.europa.eu/services/using-our-site/disclaimer/html/index.en.html",
+        "permission_basis": "Official public ECB-owned statistics may be reused commercially/noncommercially with attribution and unchanged statistical values/metadata. SOURCE_AGENCY4F0 is verified as ECB; uncleared third-party data are excluded.",
+        "attribution": "Source: ECB statistics. Euro foreign exchange reference rates; original values/metadata unchanged, source-qualified formatting only.",
+        "use_constraints": [
+          "Preserve original statistical values and metadata",
+          "Attribute ECB and link original data",
+          "No uncleared third-party statistics",
+          "If incorporated in sold documents, disclose free original availability",
+          "No expectation of unbroken source continuity; revisions possible",
+          "Reference rates are informational; provider discourages transaction use"
+        ],
+        "allowed_fields": [
+          "Original two-series reference-rate CSV values and all32 supplied metadata fields",
+          "Separate typed record/date/quote/base/unit/provenance wrappers"
+        ],
+        "excluded_content": [
+          "Third-party statistics without clearance",
+          "Confidential data",
+          "Documents/articles/images",
+          "Inverted/scaled/cross/annualized rates",
+          "Country/company operating geography inferred from currencies"
+        ]
+      },
+      "time_semantics": {
+        "observation_period": "Source date-only reference observation day, not publication or occurrence instant",
+        "observation_granularity": "day",
+        "published_at": null,
+        "event_time": null,
+        "source_updated_at": null,
+        "metadata_clock": "TITLE_COMPL2.15pm retained raw; not parsed as publication timestamp",
+        "http_response_clocks": "Retained only in original response receipt, not per-observation clocks",
+        "dataset_or_per_record_update": "Not supplied in retained CSV"
+      },
+      "source_update_cadence": "Usually around16:00CET on working days excluding TARGET closing days; per-observation publication instant is not inferred",
+      "collection_cadence": "One bounded two-request probe/backfill; no recurring operation configured",
+      "coverage": {
+        "requested_period": [
+          "2020-01-01",
+          "2026-10-08"
+        ],
+        "acquired_period": [
+          "2020-01-02",
+          "2026-10-08"
+        ],
+        "series_keys": [
+          "EXR.D.MYR.EUR.SP00.A",
+          "EXR.D.USD.EUR.SP00.A"
+        ],
+        "base_currency": "EUR",
+        "quote_currencies": [
+          "MYR",
+          "USD"
+        ],
+        "country_count_claim": null,
+        "grain": "Currency reference-series × source observation day, not country/company/event",
+        "provider_calendar_verified": false,
+        "provider_continuity_guaranteed": false,
+        "current_intraday_market_price_claim": false
+      },
+      "limits": {
+        "strict_overall_deadline_seconds": 30,
+        "max_body_bytes": 2097152,
+        "max_items": 5000,
+        "max_chunk_items": 100,
+        "max_chunk_bytes": 262144,
+        "max_attempts_per_request": 1,
+        "exception_justification": "Two explicitly reusable public ECB reference series over a bounded daily interval; raw response749KB, no third-party/document bodies"
+      },
+      "empty_policy": "Exact recognized CSV schema required. Known historical query window/requested series cannot be empty. A explicitly unknown/no-publication window may accept a coherent header-only empty response.",
+      "retrieval_allowed_text": {
+        "title": true,
+        "fact_paths": [
+          "source_title",
+          "observation_period",
+          "value_raw",
+          "quote_currency",
+          "base_currency",
+          "unit"
+        ]
+      },
+      "semantic_hash_excluded_paths": [
+        "first_seen_at",
+        "fetched_at",
+        "ingested_at"
+      ],
+      "semantic_hash_rule": "Only local acquisition clocks excluded; original CSV value/metadata and typed source dimensions remain semantic. Stable canonical series evidence URL prevents probe/backfill-query identity inflation.",
+      "gaps": [
+        "Only two EUR reference currency series; no global currency/country completeness",
+        "Weekends/TARGET closures/other non-observation days are not zero-filled or classified without a verified calendar",
+        "No provider pagination/continuity completeness guarantee inferred from full HTTP response",
+        "2026 is a partial year through actual source date; no future observations generated",
+        "Publication/update instants remain unknown",
+        "Not intraday tradable market prices or derived conversion/risk conclusions",
+        "No pre2020 data acquired",
+        "Site ingestion and recurring operation unverified"
+      ],
+      "acquisition_receipts": [
+        {
+          "request_id": "ecb_fx_backfill",
+          "source_version": "0.13.0",
+          "requested_url": "https://data-api.ecb.europa.eu/service/data/EXR/D.USD+MYR.EUR.SP00.A?startPeriod=2020-01-01&endPeriod=2026-10-08&format=csvdata",
+          "fetched_at": "2026-10-08T13:59:05.477566+00:00",
+          "http_status": 200,
+          "bytes_read": 749459,
+          "upstream_raw_sha256": "141018e93ba49f8787ee2395e2f22b9fd596d7bb09cbfb9eef45e2d4de563a4b",
+          "retained_safe_sha256": "141018e93ba49f8787ee2395e2f22b9fd596d7bb09cbfb9eef45e2d4de563a4b",
+          "upstream_count": 3470,
+          "published_at": null,
+          "record_kind": "statistical_observation"
+        }
+      ],
+      "allowed_fact_paths": [
+        "agency_code_basis",
+        "availability_basis",
+        "base_currency",
+        "data_origin_basis",
+        "domain",
+        "geography_basis",
+        "metadata_preservation",
+        "missingness",
+        "observation_granularity",
+        "observation_period",
+        "publication_clock",
+        "quote_currency",
+        "record_kind",
+        "reference_type",
+        "series_id",
+        "source_agency_code",
+        "source_agency_label",
+        "source_metadata.BREAKS",
+        "source_metadata.COLLECTION",
+        "source_metadata.COMPILATION",
+        "source_metadata.COMPILING_ORG",
+        "source_metadata.COVERAGE",
+        "source_metadata.CURRENCY",
+        "source_metadata.CURRENCY_DENOM",
+        "source_metadata.DECIMALS",
+        "source_metadata.DISS_ORG",
+        "source_metadata.DOM_SER_IDS",
+        "source_metadata.EXR_SUFFIX",
+        "source_metadata.EXR_TYPE",
+        "source_metadata.FREQ",
+        "source_metadata.KEY",
+        "source_metadata.NAT_TITLE",
+        "source_metadata.OBS_COM",
+        "source_metadata.OBS_CONF",
+        "source_metadata.OBS_PRE_BREAK",
+        "source_metadata.OBS_STATUS",
+        "source_metadata.OBS_VALUE",
+        "source_metadata.PUBL_ECB",
+        "source_metadata.PUBL_MU",
+        "source_metadata.PUBL_PUBLIC",
+        "source_metadata.SOURCE_AGENCY",
+        "source_metadata.SOURCE_PUB",
+        "source_metadata.TIME_FORMAT",
+        "source_metadata.TIME_PERIOD",
+        "source_metadata.TITLE",
+        "source_metadata.TITLE_COMPL",
+        "source_metadata.UNIT",
+        "source_metadata.UNIT_INDEX_BASE",
+        "source_metadata.UNIT_MULT",
+        "source_title",
+        "transformations.annualized",
+        "transformations.cross_rate_calculated",
+        "transformations.inverted",
+        "transformations.scaled",
+        "unit",
+        "unit_index_base_semantics",
+        "unit_scale",
+        "value",
+        "value_raw"
+      ],
+      "required_fact_paths": [
+        "record_kind",
+        "domain",
+        "series_id",
+        "observation_period",
+        "observation_granularity",
+        "unit",
+        "quote_currency",
+        "base_currency",
+        "source_agency_code",
+        "source_title"
+      ],
+      "max_dimension_rows": 5000
+    }
+  ],
+  "supporting_probe_receipt": {
+    "schema_version": "dormathon.fx-acquisition.v0.13",
+    "scope": "probe",
+    "requested_url": "https://data-api.ecb.europa.eu/service/data/EXR/D.USD+MYR.EUR.SP00.A?lastNObservations=2&format=csvdata",
+    "started_at": "2026-10-08T13:52:54.770606+00:00",
+    "attempts": 1,
+    "authentication": "none",
+    "headers": {
+      "User-Agent": "DormathonSourceResearch/0.1 (+public-metadata-test)",
+      "Accept": "text/csv"
+    },
+    "status": "retrieved_pending_schema_validation",
+    "redirect_policy": "reject",
+    "body_cap": 262144,
+    "strict_overall_deadline_seconds": 30,
+    "recurring_operational": false,
+    "http_status": 200,
+    "bytes_read": 1190,
+    "body_complete": true,
+    "response_headers": {
+      "Date": "Thu, 08 Oct 2026 13:53:00 GMT",
+      "Last-Modified": "Wed, 07 Oct 2026 13:57:01 GMT",
+      "Content-Type": "text/csv"
+    },
+    "upstream_raw_sha256": "917de1a83d7989885bdf1419d83399db08a5c0e50a3826dea75c03bc0b38ff81",
+    "fetched_at": "2026-10-08T13:53:00.116027+00:00",
+    "retained_path": "source-data/ecb_fx_probe.csv",
+    "retained_sha256": "917de1a83d7989885bdf1419d83399db08a5c0e50a3826dea75c03bc0b38ff81",
+    "returned_rows": 4,
+    "column_names": [
+      "KEY",
+      "FREQ",
+      "CURRENCY",
+      "CURRENCY_DENOM",
+      "EXR_TYPE",
+      "EXR_SUFFIX",
+      "TIME_PERIOD",
+      "OBS_VALUE",
+      "OBS_STATUS",
+      "OBS_CONF",
+      "OBS_PRE_BREAK",
+      "OBS_COM",
+      "TIME_FORMAT",
+      "BREAKS",
+      "COLLECTION",
+      "COMPILING_ORG",
+      "DISS_ORG",
+      "DOM_SER_IDS",
+      "PUBL_ECB",
+      "PUBL_MU",
+      "PUBL_PUBLIC",
+      "UNIT_INDEX_BASE",
+      "COMPILATION",
+      "COVERAGE",
+      "DECIMALS",
+      "NAT_TITLE",
+      "SOURCE_AGENCY",
+      "SOURCE_PUB",
+      "TITLE",
+      "TITLE_COMPL",
+      "UNIT",
+      "UNIT_MULT"
+    ],
+    "completed_at": "2026-10-08T13:53:00.116156+00:00",
+    "elapsed_seconds": 5.345
+  },
+  "source_agency_review": {
+    "schema_version": "dormathon.ecb-probe-schema-review.v0.13",
+    "reviewed_at": "2026-10-08T13:58:43.040709+00:00",
+    "status": "passed",
+    "checks": [
+      {
+        "name": "Exact complete HTTP200 raw response and four records",
+        "passed": true
+      },
+      {
+        "name": "Exactly two declared fixed series, daily EUR base and unscaled quote units",
+        "passed": true
+      },
+      {
+        "name": "Source-agency4F0 is ECB per primary ECB Data Portal organization code",
+        "passed": true
+      },
+      {
+        "name": "Observed Oct7 values exactly match official ECB reference page, dates not publication instants",
+        "passed": true
+      }
+    ],
+    "source_agency_code_basis": {
+      "code": "4F0",
+      "label": "European Central Bank (ECB)",
+      "official_url": "https://data.ecb.europa.eu/data/datasets/NEC",
+      "basis": "Primary ECB Data Portal uses this shared provider/organization code; exact CSV has SOURCE_AGENCY4F0 and identifies these as ECB reference rates"
+    },
+    "source_method_url": "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html",
+    "preservation": "Keep original statistical values and all supplied CSV metadata unchanged; normalization fields separate, no inversion/scaling/annualization. Dataset UNIT_INDEX_BASE default is not interpreted as an index for these currency-unit reference rates. TITLE_COMPL2.15pm is not treated as publication time.",
+    "receipt_sha256": "86a8aba9576f71e3e5e2e4af7a77e37cada2a235ce278bc7b99b2b438fb4f233",
+    "upstream_raw_sha256": "917de1a83d7989885bdf1419d83399db08a5c0e50a3826dea75c03bc0b38ff81",
+    "provider_requests_in_review": 0,
+    "site_operations": 0,
+    "enabled": false
+  },
+  "rights_review_sha256": "0ce78081b634365841dcac2395d9376570ce082f95ce2efc61b25bbba9fddcaf",
+  "raw_column_names": [
+    "KEY",
+    "FREQ",
+    "CURRENCY",
+    "CURRENCY_DENOM",
+    "EXR_TYPE",
+    "EXR_SUFFIX",
+    "TIME_PERIOD",
+    "OBS_VALUE",
+    "OBS_STATUS",
+    "OBS_CONF",
+    "OBS_PRE_BREAK",
+    "OBS_COM",
+    "TIME_FORMAT",
+    "BREAKS",
+    "COLLECTION",
+    "COMPILING_ORG",
+    "DISS_ORG",
+    "DOM_SER_IDS",
+    "PUBL_ECB",
+    "PUBL_MU",
+    "PUBL_PUBLIC",
+    "UNIT_INDEX_BASE",
+    "COMPILATION",
+    "COVERAGE",
+    "DECIMALS",
+    "NAT_TITLE",
+    "SOURCE_AGENCY",
+    "SOURCE_PUB",
+    "TITLE",
+    "TITLE_COMPL",
+    "UNIT",
+    "UNIT_MULT"
+  ]
+}

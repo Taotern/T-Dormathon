@@ -1,0 +1,65 @@
+{
+  "schema_version": "dormathon.unified-gdp-source-assets.v0.14",
+  "ready_at": "2026-10-08T14:40:23.390601+00:00",
+  "source_only": true,
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 4343,
+      "sha256": "e37b6edca2919de8bca31ee7d7327b0a1ecd42b218fa9102b56b1fbaf27e2bac"
+    },
+    {
+      "path": "adapters/normalized-common.mjs",
+      "bytes": 5755,
+      "sha256": "773d2fc291337bfa225e22b646356eb8aa0be464aaad6024864732678f1f8f5f"
+    },
+    {
+      "path": "adapters/worldbank-gdp-annual.mjs",
+      "bytes": 7099,
+      "sha256": "c1af66ad7b440184f1fa2724681495f57749c2a2e156e459fd894361e0aefc3c"
+    },
+    {
+      "path": "contracts/route-registry.json",
+      "bytes": 4695,
+      "sha256": "da9ed8f0e09b2d5850e8823e6f17b29772f4c80000244f165dc875763aa04c6d"
+    },
+    {
+      "path": "fixtures/held-out-real-rows.json",
+      "bytes": 44149,
+      "sha256": "9ba671e83ee05bee3a70370d072c77d23cb272f4c46b51478f54334d21663cf6"
+    },
+    {
+      "path": "reports/offline-tests.json",
+      "bytes": 1799,
+      "sha256": "29c6492b28c64903baf7da7a8bbfa1958201ad82bdb61125330a2cf4740b2ebe"
+    },
+    {
+      "path": "reproduce.mjs",
+      "bytes": 6397,
+      "sha256": "061ae35aa62cd165d04731cecc3f7c7ca3494a1655e099d3ace5ab374ec43ba3"
+    },
+    {
+      "path": "run.py",
+      "bytes": 9227,
+      "sha256": "edd9bd0bb31d339de3825acc6931ebeb1e2e77763364b8c196061d6cb767301c"
+    },
+    {
+      "path": "test-offline.py",
+      "bytes": 7435,
+      "sha256": "1833e736c376aa3cdd3c52ef2fb187df6b9b6879906b45f9cab7e774d679e592"
+    }
+  ],
+  "shared_adapter_sha256": "c1af66ad7b440184f1fa2724681495f57749c2a2e156e459fd894361e0aefc3c",
+  "source_policy_and_bulk_pins_unchanged": true,
+  "provider_requests": 0,
+  "site_operations": 0,
+  "bulk_exclusions": [
+    "source-data",
+    "delivery/chunks",
+    "derived-output",
+    "private-runtime-state",
+    "credentials",
+    "__pycache__"
+  ],
+  "verified": "Twelve offline checks plus exact all111 accepted chunk reconstruction; not Windows/OS scheduling/fresh acquisition proof"
+}

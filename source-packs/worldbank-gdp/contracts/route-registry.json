@@ -1,0 +1,125 @@
+{
+  "schema_version": "dormathon.gdp-unified-routes.v0.14",
+  "source_id": "stat_worldbank_gdp_annual",
+  "source_version": "0.9.0",
+  "indicator": "NY.GDP.MKTP.CD",
+  "adapter_sha256": "c1af66ad7b440184f1fa2724681495f57749c2a2e156e459fd894361e0aefc3c",
+  "dimension_helper_and_projection": "Exact unchanged accepted v0.9 pure adapter",
+  "allowed_hostname": "api.worldbank.org",
+  "headers": {
+    "User-Agent": "DormathonSourceResearch/0.1 (+public-metadata-test)",
+    "Accept": "application/json,application/rss+xml,application/xml,text/xml;q=0.9,*/*;q=0.2"
+  },
+  "slices": [
+    {
+      "id": "wb_gdp_1990_1994",
+      "period_start": 1990,
+      "period_end": 1994,
+      "group": "foundation",
+      "url": "https://api.worldbank.org/v2/country/all/indicator/NY.GDP.MKTP.CD?source=2&date=1990:1994&format=json&per_page=5000&page=1",
+      "retained_receipt_aliases": []
+    },
+    {
+      "id": "wb_gdp_1995_1999",
+      "period_start": 1995,
+      "period_end": 1999,
+      "group": "middle",
+      "url": "https://api.worldbank.org/v2/country/all/indicator/NY.GDP.MKTP.CD?source=2&date=1995:1999&format=json&per_page=5000&page=1",
+      "retained_receipt_aliases": []
+    },
+    {
+      "id": "wb_gdp_2000_2004",
+      "period_start": 2000,
+      "period_end": 2004,
+      "group": "middle",
+      "url": "https://api.worldbank.org/v2/country/all/indicator/NY.GDP.MKTP.CD?source=2&date=2000:2004&format=json&per_page=5000&page=1",
+      "retained_receipt_aliases": []
+    },
+    {
+      "id": "wb_gdp_2005_2009",
+      "period_start": 2005,
+      "period_end": 2009,
+      "group": "completion",
+      "url": "https://api.worldbank.org/v2/country/all/indicator/NY.GDP.MKTP.CD?source=2&date=2005:2009&format=json&per_page=5000&page=1",
+      "retained_receipt_aliases": []
+    },
+    {
+      "id": "wb_gdp_2010_2014",
+      "period_start": 2010,
+      "period_end": 2014,
+      "group": "completion",
+      "url": "https://api.worldbank.org/v2/country/all/indicator/NY.GDP.MKTP.CD?source=2&date=2010:2014&format=json&per_page=5000&page=1",
+      "retained_receipt_aliases": []
+    },
+    {
+      "id": "wb_gdp_2015_2019",
+      "period_start": 2015,
+      "period_end": 2019,
+      "group": "completion",
+      "url": "https://api.worldbank.org/v2/country/all/indicator/NY.GDP.MKTP.CD?source=2&date=2015:2019&format=json&per_page=5000&page=1",
+      "retained_receipt_aliases": []
+    },
+    {
+      "id": "wb_gdp_2020_2026",
+      "period_start": 2020,
+      "period_end": 2026,
+      "group": "foundation",
+      "url": "https://api.worldbank.org/v2/country/all/indicator/NY.GDP.MKTP.CD?source=2&date=2020:2026&format=json&per_page=5000&page=1",
+      "retained_receipt_aliases": [
+        "wb_gdp_2020_2026_retry"
+      ]
+    }
+  ],
+  "metadata_routes": [
+    {
+      "id": "wb_gdp_metadata",
+      "url": "https://api.worldbank.org/v2/indicator/NY.GDP.MKTP.CD?format=json"
+    },
+    {
+      "id": "wb_country_dimensions",
+      "url": "https://api.worldbank.org/v2/country?format=json&per_page=500"
+    }
+  ],
+  "limits": {
+    "max_explicit_requests_per_invocation": 2,
+    "overall_deadline_seconds": 30,
+    "max_body_bytes": 2097152,
+    "redirects": "reject",
+    "automatic_retries": 0
+  },
+  "rights": {
+    "license_id": "CC-BY-4.0",
+    "official_url": "https://data.worldbank.org/indicator/NY.GDP.MKTP.CD",
+    "terms_url": "https://data.worldbank.org/summary-terms-of-use",
+    "attribution": "World Bank WDI GDP; national statistical/central-bank sources, OECD and World Bank staff estimates; normalized selection, no endorsement"
+  },
+  "accepted_groups": [
+    {
+      "name": "foundation",
+      "version": "v0.9",
+      "manifest_sha256": "e88188dd57399be85450be8828753092c19b379278a36ba39fcfb3511f84ba1c",
+      "source_policy_sha256": "cd47c65049557f2ae8b30ec735facb63df8462508a6f1b3a8ed7e42934b67966",
+      "expected_rows": 2915,
+      "expected_chunks": 34,
+      "chunk_stem": "stat_worldbank_gdp_annual"
+    },
+    {
+      "name": "middle",
+      "version": "v0.10",
+      "manifest_sha256": "45ac64665ed14941bba61452ccfafa5438b8594322b8a7cf054f1bd509af1c9c",
+      "source_policy_sha256": "570f6a932f3e4d739161badb3f7fe8af4f8932df9cc01dd9e5120a6b415130f9",
+      "expected_rows": 2650,
+      "expected_chunks": 31,
+      "chunk_stem": "stat_worldbank_gdp_annual-middle"
+    },
+    {
+      "name": "completion",
+      "version": "v0.11",
+      "manifest_sha256": "408df7444906025e0495cd9bd758bef52aca6f308b3baaaa2fc43fa2b4dd6325",
+      "source_policy_sha256": "43f9813df916ed6b7a3cdbb8fb9f9cd06a5df5b71d0546f7c4d0e041fe37d5ef",
+      "expected_rows": 3975,
+      "expected_chunks": 46,
+      "chunk_stem": "stat_worldbank_gdp_annual-completion"
+    }
+  ]
+}

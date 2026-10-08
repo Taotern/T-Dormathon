@@ -1,0 +1,110 @@
+{
+  "schema_version": "dormathon.coverage.daily-fx.v0.13",
+  "generated_at": "2026-10-08T14:10:58.821Z",
+  "domains": [
+    "FX"
+  ],
+  "temporal_grain": "source_date_only_daily_reference",
+  "geographic_grain": "Currency dimensions only",
+  "entity_grain": "Two currency-series identifiers, no companies/persons",
+  "country_count": null,
+  "requested_period": [
+    "2020-01-01",
+    "2026-10-08"
+  ],
+  "actually_acquired_period": [
+    "2020-01-02",
+    "2026-10-08"
+  ],
+  "series_count": 2,
+  "series": [
+    {
+      "series_key": "EXR.D.MYR.EUR.SP00.A",
+      "base_currency": "EUR",
+      "quote_currency": "MYR",
+      "unit": "MYR_per_EUR",
+      "observed_start": "2020-01-02",
+      "observed_end": "2026-10-08",
+      "returned_observation_days": 1735,
+      "numeric_values": 1735,
+      "source_empty_values": 0,
+      "per_year_observation_days": {
+        "2020": 257,
+        "2021": 258,
+        "2022": 257,
+        "2023": 255,
+        "2024": 256,
+        "2025": 255,
+        "2026": 197
+      },
+      "calendar_absence_basis": "Absent source rows are measured calendar days only; no verified TARGET/holiday calendar or provider completeness denominator. No synthetic null/zero/forward-fill records.",
+      "unreturned_weekday_count": 32,
+      "unreturned_weekend_count": 706,
+      "unclassified_weekday_examples": [
+        "2020-01-01",
+        "2020-04-10",
+        "2020-04-13",
+        "2020-05-01",
+        "2020-12-25",
+        "2021-01-01"
+      ]
+    },
+    {
+      "series_key": "EXR.D.USD.EUR.SP00.A",
+      "base_currency": "EUR",
+      "quote_currency": "USD",
+      "unit": "USD_per_EUR",
+      "observed_start": "2020-01-02",
+      "observed_end": "2026-10-08",
+      "returned_observation_days": 1735,
+      "numeric_values": 1735,
+      "source_empty_values": 0,
+      "per_year_observation_days": {
+        "2020": 257,
+        "2021": 258,
+        "2022": 257,
+        "2023": 255,
+        "2024": 256,
+        "2025": 255,
+        "2026": 197
+      },
+      "calendar_absence_basis": "Absent source rows are measured calendar days only; no verified TARGET/holiday calendar or provider completeness denominator. No synthetic null/zero/forward-fill records.",
+      "unreturned_weekday_count": 32,
+      "unreturned_weekend_count": 706,
+      "unclassified_weekday_examples": [
+        "2020-01-01",
+        "2020-04-10",
+        "2020-04-13",
+        "2020-05-01",
+        "2020-12-25",
+        "2021-01-01"
+      ]
+    }
+  ],
+  "probe_backfill_differences": [],
+  "unit_and_clock_semantics": {
+    "observation_period": "Source date-only reference observation day, not publication or occurrence instant",
+    "observation_granularity": "day",
+    "published_at": null,
+    "event_time": null,
+    "source_updated_at": null,
+    "metadata_clock": "TITLE_COMPL2.15pm retained raw; not parsed as publication timestamp",
+    "http_response_clocks": "Retained only in original response receipt, not per-observation clocks",
+    "dataset_or_per_record_update": "Not supplied in retained CSV"
+  },
+  "calendar_completeness_percentage": null,
+  "provider_continuity_guaranteed": false,
+  "gaps": [
+    "Only two EUR reference currency series; no global currency/country completeness",
+    "Weekends/TARGET closures/other non-observation days are not zero-filled or classified without a verified calendar",
+    "No provider pagination/continuity completeness guarantee inferred from full HTTP response",
+    "2026 is a partial year through actual source date; no future observations generated",
+    "Publication/update instants remain unknown",
+    "Not intraday tradable market prices or derived conversion/risk conclusions",
+    "No pre2020 data acquired",
+    "Site ingestion and recurring operation unverified"
+  ],
+  "site_ingestion": "not_run",
+  "recurring_operational": false,
+  "full_matrix_sha256": "b5e74dc828aefe7d7a9f9798d148e0bacf2999a4fbf6bf762d210108ee6be080"
+}

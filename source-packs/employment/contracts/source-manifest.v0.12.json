@@ -1,0 +1,310 @@
+{
+  "schema_version": "dormathon.source-admission.v0.12",
+  "sources": [
+    {
+      "id": "stat_worldbank_unemployment_ilo_annual",
+      "version": "0.12.0",
+      "name": "World Bank/ILO modeled annual total unemployment",
+      "provider_family": "World Bank",
+      "original_data_provider": "ILOSTAT / ILOEST",
+      "official_url": "https://data.worldbank.org/indicator/SL.UEM.TOTL.ZS",
+      "endpoint": "https://api.worldbank.org/v2/country/all/indicator/SL.UEM.TOTL.ZS",
+      "format": "worldbank_v2_json",
+      "category": "economy",
+      "domain": "employment",
+      "source_country": null,
+      "source_language": "en",
+      "material_kind": "statistical_observation",
+      "content_depth": "structured_facts",
+      "adapter_path": "adapters/worldbank-unemployment-annual.mjs",
+      "adapter_version": "worldbank-unemployment-annual-v0.12",
+      "adapter_exports": [
+        "readMetadata",
+        "readEnvelope",
+        "project"
+      ],
+      "stage": "actually_collected_not_site_ingested",
+      "enabled": false,
+      "collection_enabled": false,
+      "recurring_operational": false,
+      "rights": {
+        "status": "cleared_structured_facts",
+        "license_id": "CC-BY-4.0",
+        "permitted_use_scope": "team_product_metadata_or_facts",
+        "product_admission_eligible": true,
+        "primary_url": "https://data.worldbank.org/indicator/SL.UEM.TOTL.ZS",
+        "terms_url": "https://data.worldbank.org/summary-terms-of-use",
+        "permission_basis": "Exact official total-unemployment indicator declares CC BY4.0; World Bank data terms permit commercial/noncommercial reuse subject to attribution, metadata exceptions and no endorsement.",
+        "attribution": "World Bank: World Development Indicators: total unemployment, modeled ILO estimate (SL.UEM.TOTL.ZS). Original data provider ILOSTAT/ILO Modelled Estimates database (ILOEST). Filtered/normalized data; no provider endorsement.",
+        "allowed_fields": [
+          "Annual percent values/nulls",
+          "Exact source geography/indicator IDs and labels",
+          "Observation/status/display fields",
+          "Typed dataset vintage and source metadata definition/provider/date-accessed"
+        ],
+        "excluded_content": [
+          "Linked documents/images",
+          "Persons/contacts",
+          "Individual talent scores",
+          "Guessed job-loss events/firm risk",
+          "Provider-body redistribution outside licensed statistical facts"
+        ],
+        "use_constraints": [
+          "Attribute World Bank WDI and ILOSTAT/ILOEST original provider",
+          "Retain dataset terms and no endorsement",
+          "Indicate normalization",
+          "Keep source indicator-specific exceptions distinct"
+        ]
+      },
+      "source_update_cadence": "Provider dataset/model revisions; no fixed update SLA verified",
+      "collection_cadence": "One bounded current foundation acquisition; daily/unattended runtime not configured",
+      "time_semantics": {
+        "observation_period": "Annual source year label; specific country reference/calendar/fiscal alignment unverified",
+        "publication_time": null,
+        "event_time": null,
+        "source_updated_at": null,
+        "dataset_vintage": "Date-only2026-07-13, retained in facts.vintage, not per-record midnight",
+        "source_metadata_date_accessed": "2026-01-17",
+        "metadata_date_accessed_is_model_release": false,
+        "model_release_vintage": null,
+        "requested_latest_year": 2026,
+        "actual_latest_returned_year": 2025
+      },
+      "coverage": {
+        "provider_documented_span": "1991–2025",
+        "acquired_periods": [
+          "2020–2025"
+        ],
+        "unacquired_periods": [
+          "1991–2019"
+        ],
+        "unreturned_requested_periods": [
+          "2026"
+        ],
+        "grain": "Provider reporting economy/overlapping aggregate × modeled annual unemployment percentage; no individual, workplace or event granularity",
+        "current_event_coverage_claim": false
+      },
+      "limits": {
+        "strict_overall_deadline_seconds": 30,
+        "deadline_runtime": "Linux main-thread SIGALRM",
+        "max_body_bytes": 2097152,
+        "max_items": 5000,
+        "max_chunk_items": 100,
+        "max_chunk_bytes": 262144,
+        "max_attempts_per_read": 1,
+        "exception_justification": "Indicator-specific CC BY4.0 modeled statistical facts; one metadata and one bounded year-range page, no article bodies"
+      },
+      "retrieval_allowed_text": {
+        "title": true,
+        "fact_paths": [
+          "geography.label",
+          "indicator_label",
+          "observation_period",
+          "value",
+          "unit"
+        ]
+      },
+      "semantic_hash_excluded_paths": [
+        "first_seen_at",
+        "fetched_at",
+        "ingested_at"
+      ],
+      "semantic_hash_rule": "Transport clocks only excluded. Values/units/period/geography, model designation and source provider/vintage context remain semantic.",
+      "gaps": [
+        "1991–2019 provider availability is not acquired history",
+        "2026 requested but absent if not returned",
+        "Source nulls remain unknown, not zero",
+        "Modeled estimates are not independently observed country survey facts",
+        "Annual labor-force percentages are not current layoffs, job openings or talent rankings",
+        "Current dimension taxonomy is not historical borders/group membership",
+        "Per-country methods and model-release vintage are not supplied",
+        "Site ingestion and recurring operation not established"
+      ],
+      "acquisition_receipts": [
+        {
+          "request_id": "wb_unemployment_2020_2026",
+          "requested_url": "https://api.worldbank.org/v2/country/all/indicator/SL.UEM.TOTL.ZS?source=2&date=2020:2026&format=json&per_page=5000&page=1",
+          "fetched_at": "2026-10-08T13:33:55.884624+00:00",
+          "http_status": 200,
+          "bytes_read": 402927,
+          "upstream_raw_sha256": "4eb7989ef6eeb3a4cecd1374629bdfca5e3779e629930b468e7804352d540ff5",
+          "retained_safe_sha256": "4eb7989ef6eeb3a4cecd1374629bdfca5e3779e629930b468e7804352d540ff5",
+          "source_version": "0.12.0",
+          "provider_dataset_vintage_date": "2026-07-13",
+          "pagination": {
+            "page": 1,
+            "pages": 1,
+            "per_page": 5000,
+            "total": 1590,
+            "sourceid": "2",
+            "lastupdated": "2026-07-13"
+          }
+        }
+      ],
+      "allowed_fact_paths": [
+        "accounting_period_alignment",
+        "country_model_method_changes",
+        "data_origin_basis",
+        "definition",
+        "domain",
+        "estimate_basis",
+        "geography.basis",
+        "geography.classification_time_basis",
+        "geography.kind",
+        "geography.label",
+        "geography.provided_iso3code_raw",
+        "geography.provider",
+        "geography.provider_country_alias",
+        "geography.provider_geography_id",
+        "geography.region_id",
+        "geography.region_label",
+        "indicator",
+        "indicator_label",
+        "metadata_date_accessed_semantics",
+        "missingness",
+        "model_release_vintage",
+        "observation_granularity",
+        "observation_period",
+        "original_provider",
+        "provider_display_decimals",
+        "provider_metadata_date_accessed",
+        "provider_status",
+        "publication_clock",
+        "record_kind",
+        "reference_population",
+        "series_id",
+        "unit",
+        "unit_basis",
+        "unit_scale",
+        "value",
+        "value_interpretation",
+        "vintage.dataset_last_updated_date",
+        "vintage.date_precision",
+        "vintage.historical_vintages_in_this_batch",
+        "vintage.per_observation_revision_time"
+      ],
+      "required_fact_paths": [
+        "record_kind",
+        "domain",
+        "series_id",
+        "indicator",
+        "geography.provider_geography_id",
+        "geography.kind",
+        "observation_period",
+        "observation_granularity",
+        "unit",
+        "estimate_basis",
+        "vintage.dataset_last_updated_date"
+      ],
+      "max_dimension_rows": 5000
+    }
+  ],
+  "provider_indicator_metadata": {
+    "id": "SL.UEM.TOTL.ZS",
+    "name": "Unemployment, total (% of total labor force) (modeled ILO estimate)",
+    "unit": "",
+    "source": {
+      "id": "2",
+      "value": "World Development Indicators"
+    },
+    "sourceNote": "Unemployment refers to the share of the labor force that is without work but available for and seeking employment.",
+    "sourceOrganization": "ILO Modelled Estimates database (ILOEST), International Labour Organization (ILO), uri: https://ilostat.ilo.org/data/bulk/, publisher: ILOSTAT, type: external database, date accessed: January 17, 2026",
+    "topics": [
+      {
+        "id": "4",
+        "value": "Education "
+      },
+      {
+        "id": "10",
+        "value": "Social Protection & Labor"
+      }
+    ],
+    "provider_metadata_date_accessed": "2026-01-17"
+  },
+  "provider_metadata_receipt": {
+    "schema_version": "dormathon.history-acquisition.v0.12",
+    "slice_id": "wb_unemployment_metadata",
+    "requested_url": "https://api.worldbank.org/v2/indicator/SL.UEM.TOTL.ZS?format=json",
+    "started_at": "2026-10-08T13:33:35.003787+00:00",
+    "attempts": 1,
+    "period": [
+      null,
+      null
+    ],
+    "headers": {
+      "User-Agent": "DormathonSourceResearch/0.1 (+public-metadata-test)",
+      "Accept": "application/json,application/rss+xml,application/xml,text/xml;q=0.9,*/*;q=0.2"
+    },
+    "authentication": "none",
+    "redirect_policy": "reject",
+    "strict_overall_deadline_seconds": 30,
+    "deadline_runtime": "Linux main-thread SIGALRM",
+    "body_cap": 2097152,
+    "status": "retrieved_pending_schema_validation",
+    "recurring_operational": false,
+    "rights": "World Bank modeled ILO unemployment indicator-specific CC BY4.0; exact indicator page/terms verified2026-10-08",
+    "http_status": 200,
+    "response_headers": {
+      "Date": "Thu, 08 Oct 2026 13:33:42 GMT",
+      "Last-Modified": "Thu, 08 Oct 2026 06:47:33 GMT",
+      "Content-Type": "application/json;charset=utf-8"
+    },
+    "bytes_read": 670,
+    "body_complete": true,
+    "upstream_raw_sha256": "3ae370ed4bebba092338e94334c35add71490324ee57f1dfe81885dade51f52f",
+    "fetched_at": "2026-10-08T13:33:42.561816+00:00",
+    "pagination": {
+      "page": 1,
+      "pages": 1,
+      "per_page": "50",
+      "total": 1
+    },
+    "returned_count": 1,
+    "retained_path": "source-data/wb_unemployment_metadata.json",
+    "retained_sha256": "3ae370ed4bebba092338e94334c35add71490324ee57f1dfe81885dade51f52f",
+    "retained_bytes": 670,
+    "completed_at": "2026-10-08T13:33:42.561986+00:00",
+    "elapsed_seconds": 7.558
+  },
+  "country_dimension_receipt": {
+    "schema_version": "dormathon.history-acquisition.v0.9",
+    "slice_id": "wb_country_dimensions",
+    "requested_url": "https://api.worldbank.org/v2/country?format=json&per_page=500",
+    "started_at": "2026-10-08T12:31:43.047727+00:00",
+    "attempts": 1,
+    "redirect_policy": "reject",
+    "timeout_seconds": 30,
+    "body_cap": 2097152,
+    "headers": {
+      "User-Agent": "DormathonSourceResearch/0.1 (+public-metadata-test)",
+      "Accept": "application/json,application/rss+xml,application/xml,text/xml;q=0.9,*/*;q=0.2"
+    },
+    "authentication": "none",
+    "status": "retrieved_pending_schema_validation",
+    "recurring_operational": false,
+    "rights": "World Bank indicator-specific CC BY4.0 structured facts",
+    "http_status": 200,
+    "response_headers": {
+      "Date": "Thu, 08 Oct 2026 12:31:46 GMT",
+      "Last-Modified": "Wed, 07 Oct 2026 08:14:20 GMT",
+      "Content-Type": "application/json;charset=utf-8"
+    },
+    "bytes_read": 113954,
+    "body_complete": true,
+    "upstream_raw_sha256": "ba006d57b1fb243ff5a6d13a9fd1283e0a758ab6750cc4159eebbd454a98b462",
+    "fetched_at": "2026-10-08T12:31:46.104783+00:00",
+    "pagination": {
+      "page": 1,
+      "pages": 1,
+      "per_page": "500",
+      "total": 296
+    },
+    "returned_count": 296,
+    "retained_path": "source-data/wb_country_dimensions.json",
+    "retained_sha256": "ba006d57b1fb243ff5a6d13a9fd1283e0a758ab6750cc4159eebbd454a98b462",
+    "retained_bytes": 113954,
+    "completed_at": "2026-10-08T12:31:46.105361+00:00",
+    "elapsed_seconds": 3.058
+  },
+  "rights_review_sha256": "0e7bf4e3ef48b201e1d42d6ba7b33b4409ba99042e6a97a8fdee8a8d642b655b"
+}
