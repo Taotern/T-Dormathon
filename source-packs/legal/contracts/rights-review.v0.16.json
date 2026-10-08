@@ -1,0 +1,44 @@
+{
+  "schema_version": "dormathon.legal-rights-review.v0.16",
+  "reviewed_at": "2026-10-08T15:42:00Z",
+  "uk": {
+    "license_id": "OGL-UK-3.0",
+    "primary_url": "https://legislation.github.io/data-documentation/reuse-licence.html",
+    "license_url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+    "permission_basis": "Publisher-owned official API documentation explicitly permits commercial/noncommercial reuse under OGL v3 with attribution. This pilot accepts domestic legislation metadata only; no EU-derived or pre1987 Westlaw resources.",
+    "attribution": "© Crown and database right. Derived from legislation.gov.uk metadata under the Open Government Licence v3.0. Normalized metadata; no official endorsement.",
+    "allowed_scope": "Titles, official resource/instrument IDs, supplied subjects/type/year/number/ISBN/CreationDate, website publication/update clocks and supplied Supersedes attributes",
+    "excluded_scope": "Summaries, linked legal text/PDF bodies, images/logos, persons/contacts and inferred legal applicability",
+    "fair_use_url": "https://legislation.github.io/data-documentation/fair-use.html",
+    "robots_url": "https://www.legislation.gov.uk/robots.txt",
+    "observed_robots_crawl_delay_seconds": 5,
+    "documented_request_limit": "3000 requests per five minutes per user; lower practical rates required by robots policy",
+    "user_agent": "DormathonSourceResearch/0.1 (+public-metadata-test)",
+    "contact_details": "Recommended by publisher, not supplied; no fabricated contact",
+    "rights_scope_directly_verified": true,
+    "license_document_read_outcome": "Official standalone OGL URL returned403 in web tool; no retry/bypass. Exact publisher licensing/scope documentation was accessible.",
+    "product_admission_eligible": true
+  },
+  "us": {
+    "license_id": "US-government-publication-reuse",
+    "primary_url": "https://www.archives.gov/federal-register/the-federal-register/about.html",
+    "third_party_caveat_url": "https://www.loc.gov/collections/federal-register/about-this-collection/rights-and-access/",
+    "permission_basis": "NARA permits Federal Register reproduction. Library of Congress warns that reprinted third-party works can retain rights. Pilot therefore exports official title and structured publication metadata, excluding abstracts and document bodies.",
+    "attribution": "Office of the Federal Register, National Archives and Records Administration / U.S. Government Publishing Office; FederalRegister.gov API metadata. Unofficial API rendition; consult the linked official govinfo edition. Normalized metadata; no endorsement.",
+    "allowed_scope": "Titles, document numbers/types, citation, action labels, supplied agency IDs/names/parent references, CFR/docket/RIN references, date-only publication/effective/comment dates and official URLs",
+    "excluded_scope": "Abstracts, reprinted third-party material, linked legal text/PDF bodies, contacts, persons and inferred binding/applicability status",
+    "api_documentation_url": "https://www.federalregister.gov/developers/documentation/api/v1",
+    "archive_documentation_url": "https://uploads.federalregister.gov/uploads/2012/11/FR2-API-Case-Study1.pdf",
+    "authentication": "No API key required by official API documentation",
+    "request_rate_limit": null,
+    "request_rate_limit_basis": "No numeric rate SLA verified; pilot made two separately bounded requests with no retries",
+    "product_admission_eligible": true
+  },
+  "eurlex": {
+    "status": "blocked_challenge_this_pass",
+    "attempted_documentation_urls": ["https://eur-lex.europa.eu/content/legal-notice/legal-notice.html", "https://eur-lex.europa.eu/content/help/search/predefined-rss.html?locale=en"],
+    "observed_outcome": "JavaScript robot verification required in direct web reads",
+    "acquired_product_records": 0,
+    "bypass_or_alternate_route": false
+  }
+}

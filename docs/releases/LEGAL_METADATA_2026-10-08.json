@@ -1,0 +1,97 @@
+{
+  "schema_version": "dormathon.legal-metadata-release.v1",
+  "recorded_at": "2026-10-08T16:26:03.356967+00:00",
+  "source_commit": "c3cfc7b7ec29f7baa61a664225ddcdb931f87e6f",
+  "deployment_id": "appgdep_6ac7c02cef188191b962dfe3feb1ec69",
+  "deployment_status": "succeeded",
+  "owner_private": true,
+  "deployed_at": "2026-10-08T16:09:23.826200+00:00",
+  "intake": {
+    "started_at": "2026-10-08T16:10:21.781773+00:00",
+    "finished_at": "2026-10-08T16:11:47.824388+00:00",
+    "client_state": "completed",
+    "distinct_chunks": 5,
+    "acknowledged_chunks": 5,
+    "rows": 249,
+    "provider_fetches": 0,
+    "previous402_replayed": 0,
+    "post_retries": 0,
+    "unknown_outcomes": 0,
+    "terminal_receipt_sha256": "6885a26e539fa41d2aca76e1ed8fbfc6b87cd4679ebf5622ca3f9b3067087d4e",
+    "runner_sha256": "ddf0ac25aa8dc16b1b5d862eac2ebafec77b8ff7204e114b97d773f90b549b36"
+  },
+  "final_counts": {
+    "item_count": 35962,
+    "version_count": 35962,
+    "direct_item_count": 369,
+    "uploaded_item_count": 100,
+    "reviewed_snapshot_item_count": 35493,
+    "alert_count": 8,
+    "endpoint_count": 11,
+    "registered_source_count": 42,
+    "reviewed_snapshot_source_count": 21
+  },
+  "index": {
+    "documents": 35962,
+    "pending": 0,
+    "policy_conflicts": 0,
+    "mode": "indexed_lexical_fts5_bm25",
+    "semantic": false
+  },
+  "pins": {
+    "manifest_sha256": "d4743127295a5e6702ec77ccdcbcc3034e969199a21c9b3dd9eef34b4dbde429",
+    "source_policy_sha256": "65210dc9d274470564b43260daeface8559999593165fdda6e64d5ee8fe58692",
+    "external_safe_data_zip_sha256": "a4d38d2461be6bfe616b8af07b75227439404648581e944877f160989b4090ef"
+  },
+  "tests": {
+    "all": 312,
+    "failed": 0,
+    "skipped": 0,
+    "last_ui_and_built_source_scope": 12,
+    "source": 38,
+    "isolated_actual_intake_rows": 249,
+    "isolated_actual_chunks": 5,
+    "production_artifact_smoke": "passed",
+    "clean_Git_consumer_tests": 312,
+    "source_requests": 0,
+    "live_site_test_writes": 0
+  },
+  "production_worker": {
+    "sha256": "e1f62e7b22726cb4dc23aa14812ca73d251ca4382ff90763f7d3bf73b74cee2f",
+    "bytes": 1734021
+  },
+  "independent_port_review": {
+    "checks": 14,
+    "receipt_sha256": "cfa31b37f4bb27081ae3400be7b4cf01e0ba0ef713a2d7e0161101531c1c1b86"
+  },
+  "actual_readback": {
+    "checks": 27,
+    "requests": 21,
+    "started_at": "2026-10-08T16:15:11.231995+00:00",
+    "finished_at": "2026-10-08T16:18:14.046175+00:00",
+    "sha256": "784ce05067f8f5dba5857c8db8d4a85b314f91cc8841aae239836c4a416de754"
+  },
+  "independent_saved_data_review": {
+    "checks": 12,
+    "actual_documents": 249,
+    "actual_evidence": 8,
+    "source_site_requests": 0,
+    "receipt_sha256": "ccc42437e5b15b7405605f97e556223ae14259fb68d5bf906ddf26cec49be50c"
+  },
+  "basic_gui": {
+    "viewport": 500,
+    "document_width": 485,
+    "two_query_detail_back_focus_flows": "passed",
+    "resource_vs_instrument_and_dates": "passed",
+    "receipt_sha256": "a7a6c54c52756b59abaaf977ff4d7350654be4aab552b0893a154fb9380bcaae"
+  },
+  "scope_limits": [
+    "UK/devolved metadata and US federal publication only; no worldwide legal completeness",
+    "UK2020 public general act listing29/declared29; recent20includes2010/2025correction resources",
+    "US recent100/605 and historical100/306;2021–2025 and other pages not acquired",
+    "Publication/update/CreationDate/instrument year and effective/comment dates remain distinct",
+    "Formal PDF editions not fetched; legal force/application/binding/company impact unknown",
+    "Original HTTP raw-body digests and safe projection digests distinct; original raw bodies not delivered",
+    "Recurring/local Windows/automatic Site sync remain unverified"
+  ]
+}

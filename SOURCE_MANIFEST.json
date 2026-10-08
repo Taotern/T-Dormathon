@@ -1,7 +1,8 @@
 {
   "schema_version": "dormathon.clean-teammate-export.v1",
-  "source_commit": "42145a079b261298993294639ad366ed3cd46587",
-  "accepted_runtime_commit": "1ea785b52112f0bab4e448e29af5cc77fec7fdd2",
+  "source_commit": "bf41e910a105c040ae3eef6189a2838ffbd55a5f",
+  "accepted_runtime_commit": "c3cfc7b7ec29f7baa61a664225ddcdb931f87e6f",
+  "file_count": 707,
   "files": [
     {
       "path": ".gitignore",
@@ -15,18 +16,18 @@
     },
     {
       "path": "PROJECT_STATUS.md",
-      "bytes": 3366,
-      "sha256": "3ce7ae26d574a7129b5bd611a58e0f31b733d06f9ac2a7a39bba27c71f385dd7"
+      "bytes": 3818,
+      "sha256": "24bf5d391096533a61aaa66cfd7318d96e6a261f242fed58aa9a8af9295269db"
     },
     {
       "path": "README.md",
-      "bytes": 9397,
-      "sha256": "ce9b57e34beb4d385b03bb5d59407dfb76c0baa0219273fb22fc495c4a05406d"
+      "bytes": 9454,
+      "sha256": "67009fd7cdf26611460ec7a96226b4573206757733ee7855ad1eda9fb9b933bc"
     },
     {
       "path": "contracts/retrieval-v1.md",
-      "bytes": 14298,
-      "sha256": "e65648cae74e0e069bcd134a97f5c5bce90bf66a5544c888d49eecb473e724aa"
+      "bytes": 15546,
+      "sha256": "9582e4115a97306f3115024ff786aec8b64269880cdd1fd71664d95c94fb8409"
     },
     {
       "path": "contracts/workspace-v1.md",
@@ -97,6 +98,11 @@
       "path": "data/reviewed-history-middle-admission.json",
       "bytes": 21920,
       "sha256": "e61e3a8e51a76cb4e0ec262de211811ce41b60e00decf772456fc6e7ac1b988a"
+    },
+    {
+      "path": "data/reviewed-legal-admission.json",
+      "bytes": 18431,
+      "sha256": "58999b961070d8cf85976e7be118e6f79aa994cc88f454a01a5c7c66d1ff10dd"
     },
     {
       "path": "data/reviewed-signal-admission.json",
@@ -1320,13 +1326,18 @@
     },
     {
       "path": "docs/COVERAGE_CURRENT.md",
-      "bytes": 4995,
-      "sha256": "6be8ed27fbcc78b67f4565708823e3bf1b2cd1d40bf19980d265aeeecbee2277"
+      "bytes": 5492,
+      "sha256": "b9cb8e2ee9acf3d3a3168d989f132bc5d988ba94b119352947f1bca34026710b"
     },
     {
       "path": "docs/EMPLOYMENT_FX_ADMISSION.md",
       "bytes": 6796,
       "sha256": "0a97a4b7f1868746bd978587c3e32fcd504afc2116929307f907e62173bdec88"
+    },
+    {
+      "path": "docs/LEGAL_METADATA_ADMISSION.md",
+      "bytes": 4601,
+      "sha256": "4b4806139fe9326d70879ac015655638b6dfa8402328791dbc9bee7deddd96a3"
     },
     {
       "path": "docs/LOCAL_SNAPSHOT_HANDOFF.md",
@@ -1367,6 +1378,11 @@
       "path": "docs/releases/GDP_1990_2025_2026-10-08.json",
       "bytes": 3328,
       "sha256": "02b47fef9068c98ac6a3be1ffda6a24fb2991f1f0e7a87de77ee72a79b103c61"
+    },
+    {
+      "path": "docs/releases/LEGAL_METADATA_2026-10-08.json",
+      "bytes": 3693,
+      "sha256": "016f93f0eb066152c12a4f1fe4f73c8a69398356bd53abbca44a6bf018b87bec"
     },
     {
       "path": "drizzle/0000_broad_marvel_apes.sql",
@@ -2140,8 +2156,8 @@
     },
     {
       "path": "scripts/build.mjs",
-      "bytes": 3816,
-      "sha256": "b0f6395b8d290b289ffc0cde7dedf3675587e04ec44c9b062379fa46df99c7d4"
+      "bytes": 3961,
+      "sha256": "d98641b27e4f28398020dcc1319a3b599b0eb2c508ab96bb8f185753cb8bef3a"
     },
     {
       "path": "scripts/build.sh",
@@ -2232,6 +2248,11 @@
       "path": "scripts/verify-history-batch.mjs",
       "bytes": 4440,
       "sha256": "9389711e6f85a3da15e7f177228c1890e207257fd98d50f340c4fda54c6616de"
+    },
+    {
+      "path": "scripts/verify-legal-batch.mjs",
+      "bytes": 4413,
+      "sha256": "12713e043c02b58a54bce43f60c31cdc19228b536384faddc6662ce0893ff03a"
     },
     {
       "path": "scripts/verify-offline-pipeline.mjs",
@@ -2434,6 +2455,161 @@
       "sha256": "2a1ff9798c6aec098de43c7aac6a9ccc34e8a19eb60beb18e572d5c510b9c517"
     },
     {
+      "path": "source-packs/legal/MANIFEST-SHA256.txt",
+      "bytes": 2857,
+      "sha256": "c10b748695d5f5392d69b0011089ead307e2030ee6925f8c3793e04b721b9fc9"
+    },
+    {
+      "path": "source-packs/legal/README.md",
+      "bytes": 6205,
+      "sha256": "5faaff7668949b6632637c6c8da0d7889a98cb26e0f95961535377dbb5819afa"
+    },
+    {
+      "path": "source-packs/legal/acquire-fixed.py",
+      "bytes": 5070,
+      "sha256": "88cc3dcdd7527cb2829955f930c286a46cbda420a026157ebae94411200218d9"
+    },
+    {
+      "path": "source-packs/legal/adapters/bounded-xml.mjs",
+      "bytes": 2673,
+      "sha256": "f8ff68459b80c001765b47ee083d5534f342eb9c4a863490d5600abc6d10a16e"
+    },
+    {
+      "path": "source-packs/legal/adapters/legal-common.mjs",
+      "bytes": 2383,
+      "sha256": "01d3849cfe64a1029ccfaa843a1c14cd62a0e0eb4c9cc6161a84a7fe3afb23a8"
+    },
+    {
+      "path": "source-packs/legal/adapters/normalized-common.mjs",
+      "bytes": 5755,
+      "sha256": "773d2fc291337bfa225e22b646356eb8aa0be464aaad6024864732678f1f8f5f"
+    },
+    {
+      "path": "source-packs/legal/adapters/uk-legislation.mjs",
+      "bytes": 6490,
+      "sha256": "1eae67bb779c3742ddaa31ec8069e82d2041f40cc4cb51b8df9c034dd0611480"
+    },
+    {
+      "path": "source-packs/legal/adapters/us-federal-register.mjs",
+      "bytes": 5192,
+      "sha256": "b603dadd81991f35143d70c184c010450e4408ece00ae28a4ee957d05475bb1a"
+    },
+    {
+      "path": "source-packs/legal/adapters/validate-legal.mjs",
+      "bytes": 2909,
+      "sha256": "691b050ccf23345ba0454479f93214640757b4af4c9c76824143d05dfc3e2515"
+    },
+    {
+      "path": "source-packs/legal/build-package.mjs",
+      "bytes": 13655,
+      "sha256": "ec29e45ea31dbec5c3121a37e3b4861a451050bcdc546561ae6389757c3432ee"
+    },
+    {
+      "path": "source-packs/legal/contracts/retained-safe-payload-manifest.json",
+      "bytes": 2709,
+      "sha256": "88c2327ac3c3a9a9f2811ab6b94452d5ea1a670429dc92610ece209413699324"
+    },
+    {
+      "path": "source-packs/legal/contracts/rights-review.v0.16.json",
+      "bytes": 3912,
+      "sha256": "20ff20d398ba5eb058ec4fbc5a605767bc89c244146fbd5c999be1b9be3d4bf8"
+    },
+    {
+      "path": "source-packs/legal/contracts/source-manifest.v0.16.json",
+      "bytes": 16079,
+      "sha256": "65210dc9d274470564b43260daeface8559999593165fdda6e64d5ee8fe58692"
+    },
+    {
+      "path": "source-packs/legal/coverage/actual-jurisdiction-time-domain-matrix.v0.16.json",
+      "bytes": 10087,
+      "sha256": "531fd1fa01719c33adc6a3ca1bfa8ae6820407fead0473ca78d5334360f73489"
+    },
+    {
+      "path": "source-packs/legal/delivery/manifest.json",
+      "bytes": 1883,
+      "sha256": "d4743127295a5e6702ec77ccdcbcc3034e969199a21c9b3dd9eef34b4dbde429"
+    },
+    {
+      "path": "source-packs/legal/fixtures/held-out-real-expectations.v0.16.json",
+      "bytes": 3520,
+      "sha256": "3dd4012d8d5898d6b569b5f0d1255c1676e6e2762249136b9341ead5f616cd16"
+    },
+    {
+      "path": "source-packs/legal/fixtures/normalized-known-source-samples.v0.16.json",
+      "bytes": 27306,
+      "sha256": "bc04bb3eaca69eae9761967b55121ff0fe2aabe385bef22b3a6a50369caa1ef7"
+    },
+    {
+      "path": "source-packs/legal/fixtures/uk_2020.safe.xml",
+      "bytes": 33034,
+      "sha256": "b6c757fd06ca0a1e97206f6c8ac37fded5be7c768885e887b20d0103ac9e682c"
+    },
+    {
+      "path": "source-packs/legal/fixtures/uk_recent.safe.xml",
+      "bytes": 32501,
+      "sha256": "507d385bd324619b8be83fefb88d4b70addf469b608cfbde3dbadb52f3b4b7ec"
+    },
+    {
+      "path": "source-packs/legal/fixtures/us_2020.safe.json",
+      "bytes": 1046,
+      "sha256": "c87726350278467657d931cee291425a9716c46f9dc7f36f1da29d621b9efe4b"
+    },
+    {
+      "path": "source-packs/legal/fixtures/us_recent.safe.json",
+      "bytes": 4134,
+      "sha256": "7d24c8d7151b33a46ecc63257908c7a9416b0feab80b65d8307ee1899131ab16"
+    },
+    {
+      "path": "source-packs/legal/provenance/input-SOURCE-MANIFEST.v0.16.json",
+      "bytes": 5318,
+      "sha256": "1a77c2849cd7982dc046f6020aa8c059b604af2628d0df48c7443f9510cdc891"
+    },
+    {
+      "path": "source-packs/legal/provenance/integration-curation.json",
+      "bytes": 595,
+      "sha256": "c5add1085e98e79bcec48ea7e9b0f9629cc401d5ada3dc07d2c12e9bce3f5221"
+    },
+    {
+      "path": "source-packs/legal/receipts/uk_2020.json",
+      "bytes": 1227,
+      "sha256": "cc85bd91750f5fcf1d8fea7e80e8290bb8caaab449481d2aaa2e70fd62ea5f10"
+    },
+    {
+      "path": "source-packs/legal/receipts/uk_recent.json",
+      "bytes": 1195,
+      "sha256": "9623a68eeb3c53de0931616c1abdee8aeef3554ba7bc62dfb71948d9c872513f"
+    },
+    {
+      "path": "source-packs/legal/receipts/us_2020.json",
+      "bytes": 1755,
+      "sha256": "45ee38f5694aaf22d4610d064c7fd97b15a01103a08a1c5aea8df02de0d69350"
+    },
+    {
+      "path": "source-packs/legal/receipts/us_recent.json",
+      "bytes": 1759,
+      "sha256": "ed00e0cbdb491591cb1d3e34408ae5bd3274b5b12df14b536d039a2bd68533b0"
+    },
+    {
+      "path": "source-packs/legal/run-slice.py",
+      "bytes": 2740,
+      "sha256": "3a12f3428503b25a35063f5442a71cf0fa4b4b49169b5873568f1f297a585d42"
+    },
+    {
+      "path": "source-packs/legal/stage-safe-payloads.py",
+      "bytes": 2332,
+      "sha256": "85ba62160d689c6f3588da253b22144b9695ebb95dbf1dd938dd2f296d0288e8"
+    },
+    {
+      "path": "source-packs/legal/test-contract.mjs",
+      "bytes": 8148,
+      "sha256": "cd3aa1793b79b4ec144833a5cbe902784e61fce5ed54191bb7e8626623c6d9db"
+    },
+    {
+      "path": "source-packs/legal/verify-original-safe.mjs",
+      "bytes": 1756,
+      "sha256": "9bbbfa17b3fa3fbdcf2793a577df003a1d6b4383d8b99c14933728be16e2a4dd"
+    },
+    {
       "path": "source-packs/worldbank-gdp/.gitignore",
       "bytes": 99,
       "sha256": "3ad071da3b50761bdfdf087ec6a7537c5b2d06d52472b39c7702bd44c9099720"
@@ -2630,8 +2806,8 @@
     },
     {
       "path": "static/collector-workbench.js",
-      "bytes": 25470,
-      "sha256": "fb9dd7b9d7a8df8ff8aeedf6f5c3047f8142d90c72d032b5aae5c87fb43d6e1f"
+      "bytes": 27136,
+      "sha256": "3175bdb90b3a38ded6a00c1a5063e597b7ea942da65fdbf4bddb9d815c31c611"
     },
     {
       "path": "tests/built-history-boundary.test.mjs",
@@ -2646,7 +2822,7 @@
     {
       "path": "tests/collector-workbench-behavior.test.mjs",
       "bytes": 18875,
-      "sha256": "1be66b27ddaafde7ae5fa315db643604570c80a61c373009cb23626e4655402c"
+      "sha256": "72e68ae1880caf48be1e680e4cb4e1ba1facae240e146215d6b7d0cd7e40c2dc"
     },
     {
       "path": "tests/collector-workbench.test.mjs",
@@ -3094,6 +3270,11 @@
       "sha256": "67147cc81ca166458b92f34aefebdb7f5bc1f7aa2da9b3d21597c0eb5c5b68c1"
     },
     {
+      "path": "tests/legal-publications.test.mjs",
+      "bytes": 4609,
+      "sha256": "46e540a03ca6faa14a4a7fe0c2bd724bce6a366cc19710339a3133b234417e4f"
+    },
+    {
       "path": "tests/local-snapshot-before-export-fixture.json",
       "bytes": 206324,
       "sha256": "42b781f051b7ee038680229e156738f8ef78eb0ea502a220b0879d1cc74042a9"
@@ -3166,7 +3347,7 @@
     {
       "path": "tests/reviewed-signals.test.mjs",
       "bytes": 8801,
-      "sha256": "eaa6f07e005eccdfc24172dd5b192afc1b8326279eecb5c824f13de217fc82d0"
+      "sha256": "d516d7805bf12429f1628ce539691881ead02ce4eb8d28eb3aba8333c29a1f6b"
     },
     {
       "path": "tests/runtime-edges.test.mjs",
@@ -3180,8 +3361,8 @@
     },
     {
       "path": "tests/source-pack-completeness.test.mjs",
-      "bytes": 1953,
-      "sha256": "0a4692455b546f756a9fc2e64393adf54191000c5b058cdefb5e84f92c74c471"
+      "bytes": 2294,
+      "sha256": "299f0c409388b1212ffbe992b950797c19f1031269ed0b7db28b6aa445fe4202"
     },
     {
       "path": "tests/statistical-context.test.mjs",
@@ -3304,6 +3485,11 @@
       "sha256": "f51ab8332bacf92a822be7ad4ecab8d46c70359ef9d12dcba49c9e83dc7a21ed"
     },
     {
+      "path": "worker/legal-validation.js",
+      "bytes": 7008,
+      "sha256": "78331f05c19800d5b4862d14ba9b26f540232f6b38f64169805459ce2914b32d"
+    },
+    {
       "path": "worker/llm.js",
       "bytes": 3476,
       "sha256": "7de30bdf74b51d06f917cd657934ae10f4b56850e29b9869191acef08359a9d4"
@@ -3325,18 +3511,18 @@
     },
     {
       "path": "worker/retrieval.js",
-      "bytes": 15958,
-      "sha256": "f13554257acf05a097969a72350227d1b189736912026cd963a5db4f117c1118"
+      "bytes": 16757,
+      "sha256": "5f53544416525097a5d0b388a461a6e84a0cbf73f4686ec12f1e46d8d7debded"
     },
     {
       "path": "worker/source-intake-validation.js",
-      "bytes": 11485,
-      "sha256": "ffe3b006179128837fb48d7989daca4a371af826123a774e90db58a4412c6563"
+      "bytes": 11581,
+      "sha256": "e9533a66ebfc44f982d3101f5359de23e51c1e0d11867d1d6cae6e7c21aaa37f"
     },
     {
       "path": "worker/source-intake.js",
-      "bytes": 12402,
-      "sha256": "db864fc1ebdcf84294dc825a862faa5343a2d602f072d5b5f4b67e4d9f7aac6b"
+      "bytes": 12462,
+      "sha256": "1911dd390c03c3314cd62befc1c9a14700a72780322fd990bdc9862a3477fed0"
     },
     {
       "path": "worker/statistics-validation.js",
@@ -3354,12 +3540,12 @@
       "sha256": "d6bdda2a95aac2a35c1a7db542d0a07e5efd855423bfe96da2ed7a50f904116a"
     }
   ],
-  "file_count": 670,
   "excluded": [
     "Git/auth/privateconfig/SQLite/runtime/generatedbuild/internalQA",
-    "GDP/employment/FX raw source bodies, all173 chunks and detailed matrices",
-    "retired presentation-heavy UI and geodata/vendor assets"
+    "GDP/employment/FX173fullchunks/raw/detailedmatrices",
+    "Full249legal-safe-input rows/fivechunks and all original legal raw bodies",
+    "retired presentation-heavy UI"
   ],
-  "bulk_reference": "source-packs/worldbank-gdp/README.md and docs/EMPLOYMENT_FX_ADMISSION.md bind exact external package hashes and explicit offline paths",
-  "actual_coverage": "GDP1990\u20132025 annual217 reporting economies/48overlapping aggregates; modeled labor2020\u20132025;2ECB EUR reference series2020-01-02\u20132026-10-08. See docs/COVERAGE_CURRENT.md. No complete all-domain/world/every-major-entity or unattended-operation claim."
+  "bulk_reference": "Source-specific READMEs and docs/LEGAL_METADATA_ADMISSION.md give immutable external-data pins and explicit reproduction commands",
+  "actual_coverage": "Earlier GDP/labor/FX plus UK49 and US200 bounded legal publications; no continuous/legal-effect/worldwide/unattended claim"
 }

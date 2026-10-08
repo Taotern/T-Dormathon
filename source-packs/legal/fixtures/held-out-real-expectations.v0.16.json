@@ -1,0 +1,102 @@
+{
+  "fixture_basis": "Independent Python extraction of retained original metadata; fixture envelopes/counts are constructed subsets, not provider response counts",
+  "expectations": [
+    {
+      "fixture": "uk_recent",
+      "upstream_id": "http://www.legislation.gov.uk/id/nia/2026/9",
+      "title": "Inquiry (Mother and Baby Institutions, Magdalene Laundries and Workhouses) and Redress Scheme Act (Northern Ireland) 2026",
+      "published_at": "2026-10-08T16:08:48.907044+01:00",
+      "source_updated_at": "2026-10-08T16:08:49+01:00",
+      "document_kind": "NorthernIrelandAct",
+      "instrument_year": 2026,
+      "source_creation_date": null
+    },
+    {
+      "fixture": "uk_recent",
+      "upstream_id": "http://www.legislation.gov.uk/wsi/2025/1169/pdfs/wsics_20251169_we_001.pdf",
+      "title": "Correction Slip",
+      "published_at": "2026-10-08T00:00:00+01:00",
+      "source_updated_at": "2026-10-08T08:24:32+01:00",
+      "document_kind": "WelshStatutoryInstrument",
+      "instrument_year": 2025,
+      "source_creation_date": "2025-11-04"
+    },
+    {
+      "fixture": "uk_recent",
+      "upstream_id": "http://www.legislation.gov.uk/ssi/2010/270/pdfs/ssics_20100270_en_001.pdf",
+      "title": "Correction Slip",
+      "published_at": "2026-10-06T00:00:00+01:00",
+      "source_updated_at": "2026-10-06T16:20:55+01:00",
+      "document_kind": "ScottishStatutoryInstrument",
+      "instrument_year": 2010,
+      "source_creation_date": "2010-06-28"
+    },
+    {
+      "fixture": "uk_2020",
+      "upstream_id": "http://www.legislation.gov.uk/id/ukpga/2020/29",
+      "title": "European Union (Future Relationship) Act 2020",
+      "published_at": "2020-12-31T04:03:27.032954+01:00",
+      "source_updated_at": "2024-05-04T19:05:28+01:00",
+      "document_kind": "UnitedKingdomPublicGeneralAct",
+      "instrument_year": 2020,
+      "source_creation_date": "2020-12-31"
+    },
+    {
+      "fixture": "us_recent",
+      "upstream_id": "C1-2026-19812",
+      "title": "Biweekly Notice; Applications and Amendments to Facility Operating Licenses and Combined Licenses Involving No Significant Hazards Considerations",
+      "published_at": null,
+      "source_updated_at": null,
+      "document_kind": "Notice",
+      "publication_date": "2026-10-08",
+      "effective_date": null,
+      "comments_close_date": null,
+      "agency_ids": [
+        383
+      ]
+    },
+    {
+      "fixture": "us_recent",
+      "upstream_id": "2026-20687",
+      "title": "Impact Aid Programs",
+      "published_at": null,
+      "source_updated_at": null,
+      "document_kind": "Rule",
+      "publication_date": "2026-10-08",
+      "effective_date": "2026-11-09",
+      "comments_close_date": null,
+      "agency_ids": [
+        126
+      ]
+    },
+    {
+      "fixture": "us_recent",
+      "upstream_id": "2026-20701",
+      "title": "Airworthiness Directives; Airbus SAS Airplanes",
+      "published_at": null,
+      "source_updated_at": null,
+      "document_kind": "Proposed Rule",
+      "publication_date": "2026-10-08",
+      "effective_date": null,
+      "comments_close_date": "2026-11-23",
+      "agency_ids": [
+        492,
+        159
+      ]
+    },
+    {
+      "fixture": "us_2020",
+      "upstream_id": "2020-00098",
+      "title": "Sunshine Act Meeting",
+      "published_at": null,
+      "source_updated_at": null,
+      "document_kind": "Notice",
+      "publication_date": "2020-01-07",
+      "effective_date": null,
+      "comments_close_date": null,
+      "agency_ids": [
+        366
+      ]
+    }
+  ]
+}

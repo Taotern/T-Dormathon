@@ -1,0 +1,48 @@
+import {readFileSync,writeFileSync,mkdirSync} from 'node:fs';
+import {resolve} from 'node:path';
+import {strict as a} from 'node:assert';
+import {readEnvelope as uk,project as ukProject} from './adapters/uk-legislation.mjs';
+import {readEnvelope as us,project as usProject} from './adapters/us-federal-register.mjs';
+import {validateLegalItem} from './adapters/validate-legal.mjs';
+import {canonical,allowedText} from './adapters/normalized-common.mjs';
+import {semanticPayload} from './adapters/legal-common.mjs';
+const root=resolve(import.meta.dirname),read=p=>JSON.parse(readFileSync(resolve(root,p),'utf8')),raw=p=>readFileSync(resolve(root,p),'utf8'),clone=x=>JSON.parse(JSON.stringify(x));
+const sourceRows=read('contracts/source-manifest.v0.16.json').sources,U=sourceRows.find(s=>s.source_country==='GB'),F=sourceRows.find(s=>s.source_country==='US');
+const windows={us_recent:{period_start:'2026-10-01',period_end:'2026-10-08'},us_2020:{period_start:'2020-01-01',period_end:'2020-01-07'}};
+const clocks={fetched_at:'2026-10-08T15:38:00Z'},samples={},results=[];
+function test(name,fn){try{fn();results.push({name,status:'passed'});}catch(error){results.push({name,status:'failed',error:error.message});}}
+for(const scope of ['uk_recent','uk_2020','us_recent','us_2020']){const isUK=scope.startsWith('uk_'),envelope=(isUK?uk:us)(raw('fixtures/'+scope+'.safe.'+(isUK?'xml':'json')),isUK?(scope==='uk_2020'?{year:2020}:{}):windows[scope]);samples[scope]=envelope.records.map(r=>(isUK?ukProject:usProject)(r,isUK?U:F,clocks));}
+for(const expected of read('fixtures/held-out-real-expectations.v0.16.json').expectations)test('Independent retained facts '+expected.upstream_id,()=>{const item=samples[expected.fixture].find(r=>r.upstream_id===expected.upstream_id);a.ok(item);validateLegalItem(item,expected.fixture.startsWith('uk_')?U:F);for(const[k,v]of Object.entries(expected)){if(['fixture','upstream_id'].includes(k))continue;if(k==='agency_ids')a.deepEqual(item.facts.agencies.map(s=>s.id),v);else a.deepEqual(Object.hasOwn(item,k)?item[k]:item.facts[k],v,k);}a.equal(item.event_time,null);a.equal(item.event_country,null);a.equal(item.location,null);});
+const usInput=read('fixtures/us_recent.safe.json'),ukInput=raw('fixtures/uk_recent.safe.xml');
+function badUS(change){const x=clone(usInput);change(x);a.throws(()=>us(JSON.stringify(x),windows.us_recent));}
+test('US recognized legitimate empty result',()=>{const x={count:0,total_pages:0,next_page_url:null,results:[]};a.equal(us(JSON.stringify(x),windows.us_recent).known_empty,true);});
+test('US wrong-root HTML/schema drift fails',()=>a.throws(()=>us('<html>error</html>',windows.us_recent)));
+test('US positive upstream count with zero items fails',()=>badUS(x=>{x.results=[];}));
+test('US empty count with positive page range fails',()=>badUS(x=>{x.count=0;x.results=[];x.total_pages=3;}));
+test('US invalid calendar date fails',()=>badUS(x=>{x.results[0].publication_date='2026-02-30';}));
+test('US publication outside fixed interval fails',()=>badUS(x=>{x.results[0].publication_date='2020-01-01';}));
+test('US PDF source/date/document mismatch fails',()=>badUS(x=>{x.results[0].pdf_url=x.results[0].pdf_url.replace('2026-10-08','2026-10-07');}));
+test('US unsupported presidential document not silently projected',()=>badUS(x=>{x.results[0].type='Presidential Document';}));
+test('US conflicting duplicate stable ID fails',()=>badUS(x=>{const r=clone(x.results[0]);r.title+=' changed';x.results.push(r);x.count++;}));
+test('US identical duplicate stable ID dedupes',()=>{const x=clone(usInput);x.results.push(clone(x.results[0]));x.count++;a.equal(us(JSON.stringify(x),windows.us_recent).records.length,usInput.results.length);});
+test('UK recognized Atom zero total is legitimate empty',()=>{const x=ukInput.replace(/<(\w+:)?entry>[\s\S]*?<\/(\w+:)?entry>/g,'').replace(/(<(?:\w+:)?totalResults>)\d+(<\/(?:\w+:)?totalResults>)/,'$10$2');a.equal(uk(x).known_empty,true);});
+test('UK empty without zero-total proof fails',()=>a.throws(()=>uk(ukInput.replace(/<(\w+:)?entry>[\s\S]*?<\/(\w+:)?entry>/g,''))));
+test('UK namespace drift is not silent zero',()=>a.throws(()=>uk(ukInput.replaceAll('http://www.w3.org/2005/Atom','urn:unexpected'))));
+test('UK unknown XML entities fail',()=>a.throws(()=>uk(ukInput.replace('Correction Slip','Correction &unknown; Slip'))));
+test('UK DTD/entity expansion fails',()=>a.throws(()=>uk('<!DOCTYPE feed [<!ENTITY secret SYSTEM "file:///etc/passwd">]>'+ukInput)));
+test('UK malformed closing tag fails',()=>a.throws(()=>uk(ukInput.replace('</ns0:entry>','</ns0:wrong>'))));
+test('UK unknown legal family fails without dropping rows',()=>a.throws(()=>uk(ukInput.replace('/id/nia/','/id/unknown/'))));
+test('UK mismatched year dimension fails',()=>a.throws(()=>uk(ukInput,{year:2020})));
+test('UK missing timezone fails',()=>a.throws(()=>uk(ukInput.replace(/\+01:00/g,''))));
+test('UK correction slip stays separate from related instrument',()=>{const r=samples.uk_recent.find(r=>r.facts.resource_kind==='correction_slip');a.notEqual(r.upstream_id,r.facts.instrument_id);a.equal(r.facts.instrument_year,2025);a.equal(r.published_at.slice(0,4),'2026');});
+test('US day-only publication does not invent midnight or occurrence',()=>{const r=samples.us_recent[0];a.equal(r.published_at,null);a.equal(r.facts.publication_date,'2026-10-08');a.equal(r.event_time,null);});
+test('US invented publication instant fails normalized legal contract',()=>{const r=clone(samples.us_recent[0]);r.published_at='2026-10-08T00:00:00Z';a.throws(()=>validateLegalItem(r,F));});
+test('Legal jurisdiction is not event/operating geography',()=>{const r=clone(samples.uk_recent[0]);r.event_country='GB';a.throws(()=>validateLegalItem(r,U));});
+test('Unverified in-force/applicability assertion fails',()=>{const r=clone(samples.us_recent[0]);r.facts.effectiveness_status='in_force';a.throws(()=>validateLegalItem(r,F));});
+test('Abstract/body/contacts prohibited in product facts',()=>{for(const key of ['abstract','article_body','email']){const r=clone(samples.us_recent[0]);r.facts[key]='forbidden';a.throws(()=>validateLegalItem(r,F));}});
+test('Unknown source fact key fails strict whitelist',()=>{const r=clone(samples.uk_recent[0]);r.facts.unsupplied_impact='confirmed disruption';a.throws(()=>validateLegalItem(r,U));});
+test('Permitted legal fact text is indexed; rights/parser boilerplate excluded',()=>{const r=samples.us_recent[0],t=allowedText(r,F);a.ok(t.includes(r.title)&&t.includes('Nuclear Regulatory Commission'));a.ok(!t.includes('Copyright')&&!t.includes('upstream_raw_sha256')&&!t.includes(F.id));});
+test('Transport-only clock change has stable semantic identity',()=>{const r=clone(samples.us_recent[0]);r.fetched_at='2026-10-09T00:00:00Z';r.first_seen_at=r.fetched_at;a.equal(canonical(semanticPayload(r)),canonical(semanticPayload(samples.us_recent[0])));});
+test('Supplied legal date update changes semantic identity',()=>{const r=clone(samples.us_recent[1]);r.facts.effective_date='2026-12-01';a.notEqual(canonical(semanticPayload(r)),canonical(semanticPayload(samples.us_recent[1])));});
+test('Website entry update remains semantic; feed generation not copied',()=>{const r=clone(samples.uk_recent[0]);r.source_updated_at='2026-10-09T00:00:00Z';a.notEqual(canonical(semanticPayload(r)),canonical(semanticPayload(samples.uk_recent[0])));a.equal(Object.hasOwn(r.facts,'feed_generated_at'),false);});
+const report={schema_version:'dormathon.legal-offline-tests.v0.16',finished_at:new Date().toISOString(),status:results.every(r=>r.status==='passed')?'passed':'failed',passed:results.filter(r=>r.status==='passed').length,failed:results.filter(r=>r.status!=='passed').length,skipped:0,network_calls:0,fixture_basis:'Eight independently extracted real rows; constructed subset envelope counts are not provider upstream totals',results};const reportDir=resolve(process.env.DORMATHON_LEGAL_REPORT_DIR||resolve(root,'data-local/reports'));mkdirSync(reportDir,{recursive:true});writeFileSync(resolve(reportDir,'offline-contract-tests.json'),JSON.stringify(report,null,2)+'\n');console.log(JSON.stringify(report));if(report.failed)process.exitCode=1;

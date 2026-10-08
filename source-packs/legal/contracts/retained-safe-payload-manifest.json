@@ -1,0 +1,46 @@
+{
+  "schema_version": "dormathon.legal-safe-payloads.v0.16",
+  "raw_response_distribution": "Original responses remain research-side only; safe metadata projections are portable",
+  "payloads": {
+    "uk_recent": {
+      "path": "safe-data/uk_recent.xml",
+      "bytes": 59456,
+      "sha256": "12b4d4628ad471004c1d1bc66ecedd69da1219f2ab3d7f7cc7d866c953cbf2f8",
+      "original_response_sha256": "742d30e0e585d0a512f22811253a322dc1b161fdea76fb82ec7b2aafd61d806e",
+      "original_response_delivered": false,
+      "original_receipt_path": "receipts/uk_recent.json",
+      "original_receipt_sha256": "9623a68eeb3c53de0931616c1abdee8aeef3554ba7bc62dfb71948d9c872513f",
+      "scope": "Complete returned metadata page, excluding summary/abstract/author/body fields; original upstream response hash is a separate witness"
+    },
+    "uk_2020": {
+      "path": "safe-data/uk_2020.xml",
+      "bytes": 87251,
+      "sha256": "56ad910d82a597729e7d193c07707eb997d7eb32a0ccd95c5b4216bdd317b2b5",
+      "original_response_sha256": "647ba33ec53d3be273d69064c9bce27000c66a428b6e1ef24e721e85876395f6",
+      "original_response_delivered": false,
+      "original_receipt_path": "receipts/uk_2020.json",
+      "original_receipt_sha256": "cc85bd91750f5fcf1d8fea7e80e8290bb8caaab449481d2aaa2e70fd62ea5f10",
+      "scope": "Complete returned metadata page, excluding summary/abstract/author/body fields; original upstream response hash is a separate witness"
+    },
+    "us_recent": {
+      "path": "safe-data/us_recent.json",
+      "bytes": 146013,
+      "sha256": "838aaec0df53c454774f4d5f60a339ba59cac2147a1507d1d0485f617eb0d058",
+      "original_response_sha256": "6e1a07a8c8bf011f3bd1d9b5b5792f5f755c979fde61ce10e04ad9342a4e4ee9",
+      "original_response_delivered": false,
+      "original_receipt_path": "receipts/us_recent.json",
+      "original_receipt_sha256": "ed00e0cbdb491591cb1d3e34408ae5bd3274b5b12df14b536d039a2bd68533b0",
+      "scope": "Complete returned metadata page, excluding summary/abstract/author/body fields; original upstream response hash is a separate witness"
+    },
+    "us_2020": {
+      "path": "safe-data/us_2020.json",
+      "bytes": 141015,
+      "sha256": "c1e64cad61da86ae28e85a38ed1e281982c3d703d9038173aea59152ce51607e",
+      "original_response_sha256": "a15f007b83d427b3745de3bf17a5ee471d08f710017438823193e5dffc5eac28",
+      "original_response_delivered": false,
+      "original_receipt_path": "receipts/us_2020.json",
+      "original_receipt_sha256": "45ee38f5694aaf22d4610d064c7fd97b15a01103a08a1c5aea8df02de0d69350",
+      "scope": "Complete returned metadata page, excluding summary/abstract/author/body fields; original upstream response hash is a separate witness"
+    }
+  }
+}

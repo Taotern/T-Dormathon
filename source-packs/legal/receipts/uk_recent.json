@@ -1,0 +1,31 @@
+{
+  "schema_version": "dormathon.legal-acquisition.v0.16",
+  "scope": "uk_recent",
+  "requested_url": "https://www.legislation.gov.uk/new/data.feed",
+  "started_at": "2026-10-08T15:37:37.443187+00:00",
+  "attempts": 1,
+  "authentication": "none",
+  "headers": {
+    "User-Agent": "DormathonSourceResearch/0.1 (+public-metadata-test)",
+    "Accept": "application/atom+xml, application/json"
+  },
+  "status": "retrieved_pending_schema_validation",
+  "redirect_policy": "reject",
+  "body_cap": 1048576,
+  "strict_overall_deadline_seconds": 30,
+  "recurring_operational": false,
+  "http_status": 200,
+  "bytes_read": 63531,
+  "body_complete": true,
+  "response_headers": {
+    "Date": "Thu, 08 Oct 2026 15:37:47 GMT",
+    "Last-Modified": "Thu, 08 Oct 2026 15:37:46 GMT",
+    "Content-Type": "application/atom+xml;charset=utf-8"
+  },
+  "upstream_raw_sha256": "742d30e0e585d0a512f22811253a322dc1b161fdea76fb82ec7b2aafd61d806e",
+  "fetched_at": "2026-10-08T15:37:47.163705+00:00",
+  "retained_path": "source-data/uk_recent.xml",
+  "retained_sha256": "742d30e0e585d0a512f22811253a322dc1b161fdea76fb82ec7b2aafd61d806e",
+  "completed_at": "2026-10-08T15:37:47.163907+00:00",
+  "elapsed_seconds": 9.721
+}

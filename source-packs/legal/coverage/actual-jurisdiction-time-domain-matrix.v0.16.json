@@ -1,0 +1,293 @@
+{
+  "schema_version": "dormathon.legal-coverage.v0.16",
+  "stage": "actually_collected_not_site_ingested",
+  "as_of": "2026-10-08T15:38:21.382678+00:00",
+  "source_ids": [
+    "legal_uk_legislation_publications",
+    "legal_us_federal_register"
+  ],
+  "source_systems": 2,
+  "geography": {
+    "publisher_countries": [
+      "GB",
+      "US"
+    ],
+    "jurisdiction_country_codes": [
+      "GB",
+      "US"
+    ],
+    "uk_document_families": [
+      "Northern Ireland Assembly",
+      "UK statutory instrument family",
+      "Scottish statutory instrument family",
+      "Welsh statutory instrument family",
+      "Northern Ireland statutory rule family",
+      "UK Parliament"
+    ],
+    "territorial_extent_application_known_records": 0,
+    "event_country_or_location_known_records": 0,
+    "country_count_denominator": null,
+    "worldwide_coverage_claim": false
+  },
+  "entities": {
+    "supplied_distinct_us_agency_ids": 70,
+    "agency_ids": [
+      5,
+      9,
+      12,
+      18,
+      20,
+      22,
+      42,
+      44,
+      45,
+      49,
+      52,
+      53,
+      54,
+      74,
+      103,
+      116,
+      126,
+      127,
+      136,
+      142,
+      145,
+      154,
+      159,
+      161,
+      167,
+      181,
+      188,
+      192,
+      199,
+      203,
+      209,
+      210,
+      221,
+      222,
+      227,
+      228,
+      234,
+      237,
+      253,
+      254,
+      261,
+      262,
+      268,
+      271,
+      275,
+      301,
+      342,
+      345,
+      353,
+      361,
+      362,
+      366,
+      373,
+      383,
+      406,
+      409,
+      444,
+      466,
+      468,
+      470,
+      476,
+      479,
+      481,
+      491,
+      492,
+      497,
+      501,
+      520,
+      524,
+      591
+    ],
+    "agency_roles": "Issuing agencies/source parent references, not impacted businesses or independent corroboration",
+    "uk_named_issuer_entities": 0,
+    "company_applicability_or_relationships_verified": 0,
+    "person_records": 0
+  },
+  "time": {
+    "pages": {
+      "uk_recent": {
+        "requested_url": "https://www.legislation.gov.uk/new/data.feed",
+        "source_snapshot_fetched_at": "2026-10-08T15:37:47.163705+00:00",
+        "scope": {},
+        "returned_records": 20,
+        "declared_matching_records": null,
+        "declared_pages": null,
+        "pages_hint_raw": 12,
+        "has_next_page": true,
+        "truncated": true,
+        "page_complete_http": true,
+        "acquired_all_matching_rows": false,
+        "publication_span": [
+          "2026-10-02T13:13:57.486531+01:00",
+          "2026-10-08T16:08:48.907044+01:00"
+        ],
+        "publication_semantics": "Website Atom publication, including corrections/backfilled resources; not enactment/commencement",
+        "source_entry_update_span": [
+          "2026-10-02T13:13:57.486531+01:00",
+          "2026-10-08T16:08:49+01:00"
+        ],
+        "feed_generated_at_not_record_clock": "2026-10-08T16:37:46.912074+01:00",
+        "document_kind_counts": {
+          "NorthernIrelandAct": 1,
+          "UnitedKingdomStatutoryInstrument": 3,
+          "ScottishStatutoryInstrument": 7,
+          "WelshStatutoryInstrument": 1,
+          "NorthernIrelandStatutoryRule": 8
+        },
+        "instrument_years": [
+          2010,
+          2025,
+          2026
+        ],
+        "correction_slip_count": 2,
+        "effective_date_known": 0,
+        "comment_close_date_known": 0,
+        "original_response_sha256": "742d30e0e585d0a512f22811253a322dc1b161fdea76fb82ec7b2aafd61d806e"
+      },
+      "uk_2020": {
+        "requested_url": "https://www.legislation.gov.uk/ukpga/2020/data.feed?results-count=100&sort=type",
+        "source_snapshot_fetched_at": "2026-10-08T15:38:19.706084+00:00",
+        "scope": {
+          "year": 2020
+        },
+        "returned_records": 29,
+        "declared_matching_records": 29,
+        "declared_pages": null,
+        "pages_hint_raw": 1,
+        "has_next_page": false,
+        "truncated": false,
+        "page_complete_http": true,
+        "acquired_all_matching_rows": true,
+        "publication_span": [
+          "2020-01-23T19:16:25.074039+01:00",
+          "2024-03-07T00:00:00+01:00"
+        ],
+        "publication_semantics": "Website Atom publication, including corrections/backfilled resources; not enactment/commencement",
+        "source_entry_update_span": [
+          "2024-05-04T00:03:41+01:00",
+          "2026-10-05T10:22:06+01:00"
+        ],
+        "feed_generated_at_not_record_clock": "2026-10-05T23:59:59+01:00",
+        "document_kind_counts": {
+          "UnitedKingdomPublicGeneralAct": 29
+        },
+        "instrument_years": [
+          2020
+        ],
+        "correction_slip_count": 0,
+        "effective_date_known": 0,
+        "comment_close_date_known": 0,
+        "original_response_sha256": "647ba33ec53d3be273d69064c9bce27000c66a428b6e1ef24e721e85876395f6"
+      },
+      "us_recent": {
+        "requested_url": "https://www.federalregister.gov/api/v1/documents.json?per_page=100&page=1&order=newest&conditions%5Bpublication_date%5D%5Bgte%5D=2026-10-01&conditions%5Bpublication_date%5D%5Blte%5D=2026-10-08&conditions%5Btype%5D%5B%5D=RULE&conditions%5Btype%5D%5B%5D=PRORULE&conditions%5Btype%5D%5B%5D=NOTICE&fields%5B%5D=document_number&fields%5B%5D=title&fields%5B%5D=type&fields%5B%5D=publication_date&fields%5B%5D=html_url&fields%5B%5D=pdf_url&fields%5B%5D=abstract&fields%5B%5D=agencies&fields%5B%5D=effective_on&fields%5B%5D=comments_close_on&fields%5B%5D=citation&fields%5B%5D=cfr_references&fields%5B%5D=docket_ids&fields%5B%5D=regulation_id_numbers&fields%5B%5D=action",
+        "source_snapshot_fetched_at": "2026-10-08T15:37:49.920255+00:00",
+        "scope": {
+          "period_start": "2026-10-01",
+          "period_end": "2026-10-08"
+        },
+        "returned_records": 100,
+        "declared_matching_records": 605,
+        "declared_pages": 7,
+        "pages_hint_raw": null,
+        "has_next_page": true,
+        "truncated": true,
+        "page_complete_http": true,
+        "acquired_all_matching_rows": false,
+        "publication_span": [
+          "2026-10-08",
+          "2026-10-08"
+        ],
+        "publication_semantics": "Federal Register date-only publication; exact release instant unknown",
+        "source_entry_update_span": null,
+        "feed_generated_at_not_record_clock": null,
+        "document_kind_counts": {
+          "Notice": 77,
+          "Proposed Rule": 8,
+          "Rule": 15
+        },
+        "instrument_years": null,
+        "correction_slip_count": null,
+        "effective_date_known": 18,
+        "comment_close_date_known": 25,
+        "original_response_sha256": "6e1a07a8c8bf011f3bd1d9b5b5792f5f755c979fde61ce10e04ad9342a4e4ee9"
+      },
+      "us_2020": {
+        "requested_url": "https://www.federalregister.gov/api/v1/documents.json?per_page=100&page=1&order=newest&conditions%5Bpublication_date%5D%5Bgte%5D=2020-01-01&conditions%5Bpublication_date%5D%5Blte%5D=2020-01-07&conditions%5Btype%5D%5B%5D=RULE&conditions%5Btype%5D%5B%5D=PRORULE&conditions%5Btype%5D%5B%5D=NOTICE&fields%5B%5D=document_number&fields%5B%5D=title&fields%5B%5D=type&fields%5B%5D=publication_date&fields%5B%5D=html_url&fields%5B%5D=pdf_url&fields%5B%5D=abstract&fields%5B%5D=agencies&fields%5B%5D=effective_on&fields%5B%5D=comments_close_on&fields%5B%5D=citation&fields%5B%5D=cfr_references&fields%5B%5D=docket_ids&fields%5B%5D=regulation_id_numbers&fields%5B%5D=action",
+        "source_snapshot_fetched_at": "2026-10-08T15:38:21.382678+00:00",
+        "scope": {
+          "period_start": "2020-01-01",
+          "period_end": "2020-01-07"
+        },
+        "returned_records": 100,
+        "declared_matching_records": 306,
+        "declared_pages": 4,
+        "pages_hint_raw": null,
+        "has_next_page": true,
+        "truncated": true,
+        "page_complete_http": true,
+        "acquired_all_matching_rows": false,
+        "publication_span": [
+          "2020-01-06",
+          "2020-01-07"
+        ],
+        "publication_semantics": "Federal Register date-only publication; exact release instant unknown",
+        "source_entry_update_span": null,
+        "feed_generated_at_not_record_clock": null,
+        "document_kind_counts": {
+          "Notice": 90,
+          "Proposed Rule": 5,
+          "Rule": 5
+        },
+        "instrument_years": null,
+        "correction_slip_count": null,
+        "effective_date_known": 9,
+        "comment_close_date_known": 36,
+        "original_response_sha256": "a15f007b83d427b3745de3bf17a5ee471d08f710017438823193e5dffc5eac28"
+      }
+    },
+    "continuous_history_acquired": false,
+    "claimed_fresh24h_count": null,
+    "claimed_fresh7day_count": null,
+    "freshness_count_basis": "Not computed across heterogeneous date-only/website publication and update clocks; no incident-time freshness claim",
+    "uk_instrument_year_not_publication_year": true,
+    "us_1990_1993_unverified": true
+  },
+  "domains": {
+    "represented": [
+      "US final-rule/proposed-rule/notice publication metadata",
+      "UK/devolved instrument publication, two correction-slip resources and current metadata listing for2020 public-general acts"
+    ],
+    "excluded": [
+      "Presidential documents excluded from US query",
+      "Regulatory body/full legal text and current in-force consolidation",
+      "National law outside UK/US",
+      "Court decisions and case-law",
+      "Fine-grained legal applicability to companies/persons",
+      "Continuous1990/2020-present legal archive",
+      "Private and local law completeness"
+    ]
+  },
+  "rights": {
+    "uk": "OGL v3 domestic metadata with Crown/source/license attribution",
+    "us": "Federal Register government publication metadata only; third-party reprints/abstract/body excluded"
+  },
+  "recurring_operational": false,
+  "site_ingestion": "not_run",
+  "network_requests": {
+    "data_requests": 4,
+    "automatic_retries": 0,
+    "all_http_200": true,
+    "body_cap_bytes": 1048576
+  },
+  "record_counts": {
+    "legal_uk_legislation_publications": 49,
+    "legal_us_federal_register": 200
+  },
+  "coverage_is_not_inferred_from_raw_record_count": true
+}

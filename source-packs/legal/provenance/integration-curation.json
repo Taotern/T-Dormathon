@@ -1,0 +1,15 @@
+{
+  "source_zip_sha256": "0048d43e488e595683897e98f349493b29f9cdaa68020279a34ac0b9d18fc055",
+  "excluded_execution_reports": [
+    "reports/offline-contract-tests.json",
+    "reports/original-safe-parity.json"
+  ],
+  "excluded_data": [
+    "original_raw_bodies",
+    "delivery/chunks",
+    "private_runtime"
+  ],
+  "required_small_source_fixtures": "Eight independently extracted expected rows and bounded subset envelopes; full249 delivered safe payloads/chunks stay external",
+  "current_manifest": "MANIFEST-SHA256.txt",
+  "producer_manifest": "provenance/input-SOURCE-MANIFEST.v0.16.json"
+}

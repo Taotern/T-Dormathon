@@ -1,0 +1,30 @@
+{
+  "schema_version": "dormathon.legal-acquisition.v0.16",
+  "scope": "us_recent",
+  "requested_url": "https://www.federalregister.gov/api/v1/documents.json?per_page=100&page=1&order=newest&conditions%5Bpublication_date%5D%5Bgte%5D=2026-10-01&conditions%5Bpublication_date%5D%5Blte%5D=2026-10-08&conditions%5Btype%5D%5B%5D=RULE&conditions%5Btype%5D%5B%5D=PRORULE&conditions%5Btype%5D%5B%5D=NOTICE&fields%5B%5D=document_number&fields%5B%5D=title&fields%5B%5D=type&fields%5B%5D=publication_date&fields%5B%5D=html_url&fields%5B%5D=pdf_url&fields%5B%5D=abstract&fields%5B%5D=agencies&fields%5B%5D=effective_on&fields%5B%5D=comments_close_on&fields%5B%5D=citation&fields%5B%5D=cfr_references&fields%5B%5D=docket_ids&fields%5B%5D=regulation_id_numbers&fields%5B%5D=action",
+  "started_at": "2026-10-08T15:37:37.446597+00:00",
+  "attempts": 1,
+  "authentication": "none",
+  "headers": {
+    "User-Agent": "DormathonSourceResearch/0.1 (+public-metadata-test)",
+    "Accept": "application/atom+xml, application/json"
+  },
+  "status": "retrieved_pending_schema_validation",
+  "redirect_policy": "reject",
+  "body_cap": 1048576,
+  "strict_overall_deadline_seconds": 30,
+  "recurring_operational": false,
+  "http_status": 200,
+  "bytes_read": 154185,
+  "body_complete": true,
+  "response_headers": {
+    "Date": "Thu, 08 Oct 2026 15:37:49 GMT",
+    "Content-Type": "application/json; charset=utf-8"
+  },
+  "upstream_raw_sha256": "6e1a07a8c8bf011f3bd1d9b5b5792f5f755c979fde61ce10e04ad9342a4e4ee9",
+  "fetched_at": "2026-10-08T15:37:49.920255+00:00",
+  "retained_path": "source-data/us_recent.json",
+  "retained_sha256": "6e1a07a8c8bf011f3bd1d9b5b5792f5f755c979fde61ce10e04ad9342a4e4ee9",
+  "completed_at": "2026-10-08T15:37:49.920536+00:00",
+  "elapsed_seconds": 12.474
+}

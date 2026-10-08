@@ -1,0 +1,33 @@
+{
+  "count": 1,
+  "total_pages": 1,
+  "next_page_url": null,
+  "results": [
+    {
+      "document_number": "2020-00098",
+      "title": "Sunshine Act Meeting",
+      "type": "Notice",
+      "publication_date": "2020-01-07",
+      "html_url": "https://www.federalregister.gov/documents/2020/01/07/2020-00098/sunshine-act-meeting",
+      "pdf_url": "https://www.govinfo.gov/content/pkg/FR-2020-01-07/pdf/2020-00098.pdf",
+      "agencies": [
+        {
+          "raw_name": "NATIONAL SCIENCE FOUNDATION",
+          "name": "National Science Foundation",
+          "id": 366,
+          "url": "https://www.federalregister.gov/agencies/national-science-foundation",
+          "json_url": "https://www.federalregister.gov/api/v1/agencies/366",
+          "parent_id": null,
+          "slug": "national-science-foundation"
+        }
+      ],
+      "effective_on": null,
+      "comments_close_on": null,
+      "citation": "85 FR 727",
+      "cfr_references": [],
+      "docket_ids": [],
+      "regulation_id_numbers": [],
+      "action": null
+    }
+  ]
+}

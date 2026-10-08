@@ -1,0 +1,163 @@
+{
+  "schema_version": "dormathon.legal-source-assets.v0.16",
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 6205,
+      "sha256": "5faaff7668949b6632637c6c8da0d7889a98cb26e0f95961535377dbb5819afa"
+    },
+    {
+      "path": "acquire-fixed.py",
+      "bytes": 5070,
+      "sha256": "88cc3dcdd7527cb2829955f930c286a46cbda420a026157ebae94411200218d9"
+    },
+    {
+      "path": "adapters/bounded-xml.mjs",
+      "bytes": 2673,
+      "sha256": "f8ff68459b80c001765b47ee083d5534f342eb9c4a863490d5600abc6d10a16e"
+    },
+    {
+      "path": "adapters/legal-common.mjs",
+      "bytes": 2383,
+      "sha256": "01d3849cfe64a1029ccfaa843a1c14cd62a0e0eb4c9cc6161a84a7fe3afb23a8"
+    },
+    {
+      "path": "adapters/normalized-common.mjs",
+      "bytes": 5755,
+      "sha256": "773d2fc291337bfa225e22b646356eb8aa0be464aaad6024864732678f1f8f5f"
+    },
+    {
+      "path": "adapters/uk-legislation.mjs",
+      "bytes": 6490,
+      "sha256": "1eae67bb779c3742ddaa31ec8069e82d2041f40cc4cb51b8df9c034dd0611480"
+    },
+    {
+      "path": "adapters/us-federal-register.mjs",
+      "bytes": 5192,
+      "sha256": "b603dadd81991f35143d70c184c010450e4408ece00ae28a4ee957d05475bb1a"
+    },
+    {
+      "path": "adapters/validate-legal.mjs",
+      "bytes": 2909,
+      "sha256": "691b050ccf23345ba0454479f93214640757b4af4c9c76824143d05dfc3e2515"
+    },
+    {
+      "path": "build-package.mjs",
+      "bytes": 13655,
+      "sha256": "ec29e45ea31dbec5c3121a37e3b4861a451050bcdc546561ae6389757c3432ee"
+    },
+    {
+      "path": "contracts/retained-safe-payload-manifest.json",
+      "bytes": 2709,
+      "sha256": "88c2327ac3c3a9a9f2811ab6b94452d5ea1a670429dc92610ece209413699324"
+    },
+    {
+      "path": "contracts/rights-review.v0.16.json",
+      "bytes": 3912,
+      "sha256": "20ff20d398ba5eb058ec4fbc5a605767bc89c244146fbd5c999be1b9be3d4bf8"
+    },
+    {
+      "path": "contracts/source-manifest.v0.16.json",
+      "bytes": 16079,
+      "sha256": "65210dc9d274470564b43260daeface8559999593165fdda6e64d5ee8fe58692"
+    },
+    {
+      "path": "coverage/actual-jurisdiction-time-domain-matrix.v0.16.json",
+      "bytes": 10087,
+      "sha256": "531fd1fa01719c33adc6a3ca1bfa8ae6820407fead0473ca78d5334360f73489"
+    },
+    {
+      "path": "fixtures/held-out-real-expectations.v0.16.json",
+      "bytes": 3520,
+      "sha256": "3dd4012d8d5898d6b569b5f0d1255c1676e6e2762249136b9341ead5f616cd16"
+    },
+    {
+      "path": "fixtures/normalized-known-source-samples.v0.16.json",
+      "bytes": 27306,
+      "sha256": "bc04bb3eaca69eae9761967b55121ff0fe2aabe385bef22b3a6a50369caa1ef7"
+    },
+    {
+      "path": "fixtures/uk_2020.safe.xml",
+      "bytes": 33034,
+      "sha256": "b6c757fd06ca0a1e97206f6c8ac37fded5be7c768885e887b20d0103ac9e682c"
+    },
+    {
+      "path": "fixtures/uk_recent.safe.xml",
+      "bytes": 32501,
+      "sha256": "507d385bd324619b8be83fefb88d4b70addf469b608cfbde3dbadb52f3b4b7ec"
+    },
+    {
+      "path": "fixtures/us_2020.safe.json",
+      "bytes": 1046,
+      "sha256": "c87726350278467657d931cee291425a9716c46f9dc7f36f1da29d621b9efe4b"
+    },
+    {
+      "path": "fixtures/us_recent.safe.json",
+      "bytes": 4134,
+      "sha256": "7d24c8d7151b33a46ecc63257908c7a9416b0feab80b65d8307ee1899131ab16"
+    },
+    {
+      "path": "receipts/uk_2020.json",
+      "bytes": 1227,
+      "sha256": "cc85bd91750f5fcf1d8fea7e80e8290bb8caaab449481d2aaa2e70fd62ea5f10"
+    },
+    {
+      "path": "receipts/uk_recent.json",
+      "bytes": 1195,
+      "sha256": "9623a68eeb3c53de0931616c1abdee8aeef3554ba7bc62dfb71948d9c872513f"
+    },
+    {
+      "path": "receipts/us_2020.json",
+      "bytes": 1755,
+      "sha256": "45ee38f5694aaf22d4610d064c7fd97b15a01103a08a1c5aea8df02de0d69350"
+    },
+    {
+      "path": "receipts/us_recent.json",
+      "bytes": 1759,
+      "sha256": "ed00e0cbdb491591cb1d3e34408ae5bd3274b5b12df14b536d039a2bd68533b0"
+    },
+    {
+      "path": "reports/offline-contract-tests.json",
+      "bytes": 4337,
+      "sha256": "751116b669b8603885c6abda6ffb99ae28017cb6b890e7e0fe364647a1587087"
+    },
+    {
+      "path": "reports/original-safe-parity.json",
+      "bytes": 1690,
+      "sha256": "5fa8a98a1252aad5e9c47d3fe599ce736d0950315870b7ad2bbd7b7c2677b0dc"
+    },
+    {
+      "path": "run-slice.py",
+      "bytes": 2740,
+      "sha256": "3a12f3428503b25a35063f5442a71cf0fa4b4b49169b5873568f1f297a585d42"
+    },
+    {
+      "path": "stage-safe-payloads.py",
+      "bytes": 2332,
+      "sha256": "85ba62160d689c6f3588da253b22144b9695ebb95dbf1dd938dd2f296d0288e8"
+    },
+    {
+      "path": "test-contract.mjs",
+      "bytes": 8148,
+      "sha256": "cd3aa1793b79b4ec144833a5cbe902784e61fce5ed54191bb7e8626623c6d9db"
+    },
+    {
+      "path": "verify-original-safe.mjs",
+      "bytes": 1756,
+      "sha256": "9bbbfa17b3fa3fbdcf2793a577df003a1d6b4383d8b99c14933728be16e2a4dd"
+    }
+  ],
+  "excluded": [
+    "source-data (original responses with unadmitted abstract/summary fields)",
+    "safe-data and delivery chunks (external metadata/data package)",
+    "data-local/runtime/exports/private state",
+    "__pycache__"
+  ],
+  "not_run": [
+    "Windows execution",
+    "Unattended scheduler",
+    "New source requests during replay",
+    "Original byte-to-safe verification in external consumer: raw bodies excluded; producer-side proof retained"
+  ],
+  "network_requests_this_packaging": 0
+}

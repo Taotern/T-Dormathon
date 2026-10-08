@@ -1,0 +1,23 @@
+import {test} from 'node:test';import assert from 'node:assert/strict';import fs from 'node:fs';import vm from 'node:vm';import {webcrypto} from 'node:crypto';
+import {REVIEWED_LEGAL} from '../worker/generated.js';import {validateItem,scaleAllowedText,scaleSemanticContent} from '../worker/source-intake-validation.js';
+import {retrievalProjection} from '../worker/retrieval.js';
+const samples=JSON.parse(fs.readFileSync(new URL('../source-packs/legal/fixtures/normalized-known-source-samples.v0.16.json',import.meta.url),'utf8')).items;
+const policy=m=>REVIEWED_LEGAL.policies.find(p=>p.id===m.source_id);
+test('Eight actual legal publications preserve resource versus instrument, supplied dates and unknown territorial/binding status',()=>{
+ for(const m of samples){validateItem(m,policy(m));assert.equal(m.event_time,null);assert.equal(m.event_country,null);assert.equal(m.location,null);assert.equal(m.facts.binding_status,'unknown_not_inferred');}
+ const slips=samples.filter(m=>m.facts.resource_kind==='correction_slip');assert.equal(slips.length,2);assert.deepEqual(slips.map(m=>m.facts.instrument_year).sort(),[2010,2025]);assert.ok(slips.every(m=>m.upstream_id!==m.facts.instrument_id&&m.title==='Correction Slip'));
+ assert.ok(samples.filter(m=>m.source_id==='legal_us_federal_register').every(m=>m.published_at===null&&m.facts.time_precision.publication==='day'&&m.facts.official_legal_edition_verified===false));
+});
+test('Legal metadata rejects bodies, inferred effectiveness, country events, altered dates/agency references and collapsed correction IDs',()=>{
+ const uk=samples.find(m=>m.facts.resource_kind==='correction_slip'),us=samples.find(m=>m.source_id==='legal_us_federal_register');
+ for(const original of[uk,us])for(const change of[m=>m.event_country=m.source_country,m=>m.facts.binding_status='binding',m=>m.facts.time_precision.event='exact',m=>m.facts.document_kind_basis='independently_verified',m=>m.facts.effectiveness_status='in_force',m=>m.facts.jurisdiction.territorial_application='whole country',m=>m.facts.article_body='unexpected body',m=>m.short_summary='unsupported abstract',m=>m.facts.effective_date='2020-02-30',m=>m.source_license='rights unknown']){const m=structuredClone(original);change(m);assert.throws(()=>validateItem(m,policy(m)));}
+ for(const change of[m=>m.published_at=m.facts.publication_date+'T00:00:00Z',m=>m.facts.official_pdf_url='https://example.com/not-official.pdf',m=>m.facts.agencies[0].parent_id=-1,m=>m.entities[0].email='not allowed',m=>m.facts.agencies[0].article_body='excluded']){const m=structuredClone(us);change(m);assert.throws(()=>validateItem(m,policy(m)));}
+ for(const change of[m=>m.facts.instrument_id=m.upstream_id,m=>m.facts.resource_kind='legislation',m=>m.facts.instrument_year=2026,m=>m.title='New law',m=>m.facts.supersedes=[{URI:'https://example.com/foreign',basis:'inferred'}]]){const m=structuredClone(uk);change(m);assert.throws(()=>validateItem(m,policy(m)));}
+});
+test('Actual legal allowed text and semantic policy retain references without licensing/body noise or transport version churn',()=>{
+ for(const m of samples){const p=policy(m),projection=retrievalProjection(m,REVIEWED_LEGAL.original_policy_sha256);assert.equal(projection.text,scaleAllowedText(m,p));assert.ok(projection.text.includes(m.title));assert.ok(!projection.text.includes(m.source_license));assert.ok(!projection.text.includes('official_legal_edition_verified'));const later=structuredClone(m);later.first_seen_at=later.fetched_at=later.ingested_at='2026-10-09T00:00:00Z';assert.deepEqual(scaleSemanticContent(m,m.source_id),scaleSemanticContent(later,m.source_id));const revised=structuredClone(m);revised.title+=' source correction';assert.notDeepEqual(scaleSemanticContent(m,m.source_id),scaleSemanticContent(revised,m.source_id));}
+});
+test('The actual production Worker contains the legal validator and executes all retained samples',()=>{
+ const code=fs.readFileSync(new URL('../dist/server/index.js',import.meta.url),'utf8'),context={TextEncoder,TextDecoder,URL,URLSearchParams,crypto:webcrypto,Request,Response,Headers,console,atob,btoa};vm.createContext(context);new vm.Script(code.replace(/^export default/gm,'globalThis.publishedWorker =')+'\nglobalThis.legalBoundary=(item)=>validateItem(item,REVIEWED_LEGAL.policies.find(p=>p.id===item.source_id));').runInContext(context);
+ for(const m of samples)assert.equal(context.legalBoundary(m),m);const wrong=structuredClone(samples[0]);wrong.facts.binding_status='in_force';assert.throws(()=>context.legalBoundary(wrong));assert.equal(typeof context.publishedWorker.fetch,'function');
+});

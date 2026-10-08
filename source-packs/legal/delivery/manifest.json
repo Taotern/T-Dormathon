@@ -1,0 +1,51 @@
+{
+  "schema_version": "dormathon.legal-acquisition.v0.16",
+  "source_counts": {
+    "legal_uk_legislation_publications": 49,
+    "legal_us_federal_register": 200
+  },
+  "record_count": 249,
+  "chunks": [
+    {
+      "source_id": "legal_uk_legislation_publications",
+      "path": "delivery/chunks/legal_uk_legislation_publications-0000.json",
+      "count": 49,
+      "bytes": 161821,
+      "sha256": "d325366743dc3404afe414628ee564a5817d6a227a6850411e3c09a43045445f"
+    },
+    {
+      "source_id": "legal_us_federal_register",
+      "path": "delivery/chunks/legal_us_federal_register-0000.json",
+      "count": 65,
+      "bytes": 241948,
+      "sha256": "f8c9475a97a5cf185ac9d68e22db909ea6037a070ddb3c26f6d1635f29fec360"
+    },
+    {
+      "source_id": "legal_us_federal_register",
+      "path": "delivery/chunks/legal_us_federal_register-0001.json",
+      "count": 67,
+      "bytes": 243788,
+      "sha256": "cb4349ab5aeaad43597bc5684e944ca9ecc9cf5d6e078d2afd6b5661803c346e"
+    },
+    {
+      "source_id": "legal_us_federal_register",
+      "path": "delivery/chunks/legal_us_federal_register-0002.json",
+      "count": 67,
+      "bytes": 243049,
+      "sha256": "d32ceec226f7baa0b62d8cd75a550c39d8d54ab64edf1c7c1442c974db095d9c"
+    },
+    {
+      "source_id": "legal_us_federal_register",
+      "path": "delivery/chunks/legal_us_federal_register-0003.json",
+      "count": 1,
+      "bytes": 4079,
+      "sha256": "679c0df5523f1bbdcfc5027aba23e517cb88d492c30f53e8efa0e207f39832ef"
+    }
+  ],
+  "source_manifest_sha256": "65210dc9d274470564b43260daeface8559999593165fdda6e64d5ee8fe58692",
+  "coverage_matrix_sha256": "531fd1fa01719c33adc6a3ca1bfa8ae6820407fead0473ca78d5334360f73489",
+  "rights_review_sha256": "20ff20d398ba5eb058ec4fbc5a605767bc89c244146fbd5c999be1b9be3d4bf8",
+  "site_ingestion": "not_run",
+  "recurring_operational": false,
+  "source_data_not_for_Git": true
+}
