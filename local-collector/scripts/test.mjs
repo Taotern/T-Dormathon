@@ -3,7 +3,7 @@ import path from 'node:path';
 import {fileURLToPath} from 'node:url';
 const root=path.dirname(path.dirname(fileURLToPath(import.meta.url)));
 const steps=[
-  ['--test',...['local-runtime.test.mjs','source-provenance.test.mjs','single-source-cli.test.mjs'].map(f=>path.join(root,'tests',f))],
+  ['--test',...['local-runtime.test.mjs','source-provenance.test.mjs','single-source-cli.test.mjs','forecast-v2.test.mjs'].map(f=>path.join(root,'tests',f))],
   [path.join(root,'tests/source-contracts/run-source-contracts.mjs'),'--checkout',root,'--report-prefix','local-runtime-contract-report']
 ];
 for(const args of steps) {

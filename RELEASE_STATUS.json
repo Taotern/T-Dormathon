@@ -1,0 +1,49 @@
+{
+  "schema": "dormathon.accepted-round.v1",
+  "accepted_at": "2026-10-08T06:18:59Z",
+  "site_source_commit": "6197b08065c56a0e812aa5ecc4fda50f898c0e37",
+  "private_deployment_id": "appgdep_6ac7345699e081919e7ee2be546cb150",
+  "private_deployment_status": "succeeded",
+  "same_product": true,
+  "existing_four_domains_preserved": true,
+  "schema_tables": 18,
+  "source_endpoints": 11,
+  "global_records": {
+    "direct": 369,
+    "uploaded_unverified": 100,
+    "rule_records": 8
+  },
+  "actual_source_acceptance": "One official MET Sarawak fetch persisted seven immutable forecasts; no incident or business-delay inference; reviewed independently",
+  "actual_browser_acceptance": [
+    "Country-bounded Malaysia map and Kuching streets/buildings, pan and zoom-out floor",
+    "Keyboard real project entry and creation-form cancel preserving project count",
+    "Editor draft/focus survives background completion; inbox mode survives bootstrap",
+    "Native500px without overflow; frozen action version/hash preserved",
+    "Correct source/provider attribution and country-scope record captions"
+  ],
+  "offline_checks": {
+    "Worker": 271,
+    "pinned_original_source_contracts": 74,
+    "original_DOM": 41,
+    "preparation_DOM": 16,
+    "regional_state_and_real_assets": 19,
+    "raster_state": 7,
+    "local_v1_2_runtime_CLI": 31,
+    "local_unchanged_source_contracts": 74,
+    "producer_to_current_receiver_offline": true,
+    "failed": 0,
+    "skipped": 0
+  },
+  "local_package_version": "1.2.0",
+  "local_package_input_sha256": "021f6adba1db3b1deb65f40f899185be2e527e4bb128c3f262859a472d334311",
+  "known_runtime_boundaries": [
+    "Owner computer execution remains unverified after prelaunch runtime errors",
+    "Local daily loop requires an awake computer/open process; no closed-process OS scheduler",
+    "Automatic local-to-Site sync is not configured; manual bounded JSON handoff",
+    "Trusted request-country metadata is unavailable; manual remembered selection",
+    "LLM unconfigured; no real provider call or paid model service",
+    "Free public basemaps have service limits; no full-world or continuous realtime coverage claim"
+  ],
+  "source_export_correction": "Required public collector data catalog/provenance restored on prior main635572ad; this snapshot retains canonical and legacy required source assets",
+  "supersedes": "Pending-caption/district/local-v2 wording in older source documents; their intermediate chronology remains accurate"
+}

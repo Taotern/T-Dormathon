@@ -8,4 +8,5 @@ import {ADAPTER_UN_ZH} from './un_zh.js';
 import {ADAPTER_ECB} from './ecb.js';
 import {ADAPTER_BIS_PRESS} from './bis_press.js';
 import {ADAPTER_BIS_SPEECHES} from './bis_speeches.js';
-export const INTEL_SOURCE_ADAPTERS=Object.freeze({'usgs':ADAPTER_USGS,'eonet':ADAPTER_EONET,'my_fuel_latest':ADAPTER_MY_FUEL_LATEST,'my_warning':ADAPTER_MY_WARNING,'nasa_metadata':ADAPTER_NASA_METADATA,'gdacs':ADAPTER_GDACS,'un_zh':ADAPTER_UN_ZH,'ecb':ADAPTER_ECB,'bis_press':ADAPTER_BIS_PRESS,'bis_speeches':ADAPTER_BIS_SPEECHES});
+import {ADAPTER_METMALAYSIA_SARAWAK_FORECAST} from './metmalaysia_sarawak_forecast.js';
+export const INTEL_SOURCE_ADAPTERS=Object.freeze({'usgs':ADAPTER_USGS,'eonet':ADAPTER_EONET,'my_fuel_latest':ADAPTER_MY_FUEL_LATEST,'my_warning':ADAPTER_MY_WARNING,'nasa_metadata':ADAPTER_NASA_METADATA,'gdacs':ADAPTER_GDACS,'un_zh':ADAPTER_UN_ZH,'ecb':ADAPTER_ECB,'bis_press':ADAPTER_BIS_PRESS,'bis_speeches':ADAPTER_BIS_SPEECHES,'metmalaysia_sarawak_forecast':ADAPTER_METMALAYSIA_SARAWAK_FORECAST});

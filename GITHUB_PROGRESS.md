@@ -17,3 +17,7 @@ Owner-computer execution, OS scheduling and unattended Site synchronization rema
 ## Required-source export correction
 
 The initial embedded local collector omitted its public catalog and adapter-provenance files because the export filter treated the entire data directory as runtime state. Those two exact source assets are restored from the approved1.1 ZIP; SOURCE_EXPORT_CORRECTION.json binds their hashes and the original frozen input. All128 original collector manifest entries now verify. An independently reconstructed clean consumer passed20 runtime/provenance checks and74 source-contract cases with zero failures/skips; the source-contract runner reported zero network calls. No provider collection, user database, generated local configuration or runtime log is included.
+
+## Accepted incremental preparation and regional-map source
+
+The next clean source is Site commit6197b08065c56a0e812aa5ecc4fda50f898c0e37, with owner-private deployment successful and actual country/city/district/evidence workflow acceptance on 2026-10-08. See RELEASE_STATUS.json for bounded tested capabilities and remaining runtime gates. It includes the independently reviewed local collector1.2.0 with all canonical/legacy public data assets. Earlier auth/source-delivery correction history is retained. This prepared source document does not itself establish its GitHub publication commit; the repository writer records that separately after native push/readback.

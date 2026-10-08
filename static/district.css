@@ -1,0 +1,48 @@
+.district-concept{color:#151915;background:#f5f5f0;padding:28px;min-height:640px}
+.district-concept header{display:flex;justify-content:space-between;align-items:flex-end;gap:34px;border-top:3px solid #191f19;padding:24px 0 22px}
+.district-kicker{font:13px/1.6 ui-monospace,monospace;letter-spacing:1.5px;color:#647060}
+.district-concept h1{font-size:33px;line-height:1.35;margin:8px 0 0;letter-spacing:-.8px}
+.district-concept header p{font-size:16px;line-height:1.65;max-width:330px;margin:0;color:#677062}
+.district-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}
+.district-slot{position:relative;isolation:isolate;min-width:0;min-height:388px;display:flex;flex-direction:column;align-items:center;border:1px solid #d1d6cb;background:#fff;color:#20291a;padding:20px 18px;font:inherit;font-size:16px;line-height:1.6;text-align:left;cursor:pointer;overflow:hidden}
+.district-slot:hover,.district-slot:focus-visible{border-color:#7d916d}
+.district-slot:focus-visible{outline:3px solid #6a8153;outline-offset:4px}
+.district-address{align-self:flex-start;font:13px/1.5 ui-monospace,monospace;color:#7d8874;letter-spacing:1.3px}
+.district-cluster{display:block;width:100%;max-width:300px;margin:22px 0 14px;overflow:visible}
+.district-architecture{display:block;width:100%;max-width:330px}
+.district-roof{fill:#f2f3ed;stroke:#6c7863;stroke-width:1}
+.district-front{fill:#dce1d4;stroke:#687961;stroke-width:1}
+.district-side{fill:#323c2c;stroke:#323c2c;stroke-width:1}
+.district-seam{fill:none;stroke:#69795e;stroke-width:.9}
+.district-rib{fill:none;stroke:#acb79f;stroke-width:.7}
+.district-base{fill:#e8ebe1;stroke:#7c8b6e;stroke-width:1}
+.district-base-edge{fill:none;stroke:#758667;stroke-width:1}
+.district-bridge{fill:#2b3625;stroke:#2b3625;stroke-width:1}
+.district-support{fill:none;stroke:#586c47;stroke-width:1.2}
+.district-access{fill:none;stroke:#8a9b7a;stroke-width:1.1}
+.district-ground-rule{fill:none;stroke:#c6ceba;stroke-width:.8}
+.district-floating-title{font-size:16px;line-height:1.55;font-weight:600;align-self:flex-start;max-width:100%;overflow-wrap:anywhere;transition:opacity 100ms;position:relative;z-index:3}
+.district-front-title{position:absolute;z-index:4;inset:160px 18px auto;font-size:27px;line-height:1.35;letter-spacing:-.7px;font-weight:650;min-height:110px;opacity:0;pointer-events:none;background:#ffffffed;border-left:3px solid #26351d;padding:14px;transform:translateY(7px);transition:opacity 180ms,transform 180ms}
+.district-front-title>span{display:block;clip-path:inset(calc(var(--slice)*25%) 0 calc((3 - var(--slice))*25%) 0);position:absolute;inset:14px}
+.district-slot:hover .district-front-title,.district-slot:focus-visible .district-front-title{opacity:1;transform:translateY(0)}
+.district-slot:hover .district-floating-title,.district-slot:focus-visible .district-floating-title{opacity:.18}
+.district-open{align-self:flex-start;font-size:14px;margin-top:12px;color:#5a7047;position:relative;z-index:3}
+.district-slot.empty{border-style:dashed;background:#f5f6f1;color:#727d66}
+.district-slot.empty .district-cluster{opacity:.55}
+.district-slot.empty .district-cluster path{fill:none;stroke:#9aa88b;stroke-dasharray:4 4}
+.district-slot.empty .district-rib,.district-slot.empty .district-seam,.district-slot.empty .district-support,.district-slot.empty .district-bridge{display:none}
+.district-create{align-self:flex-start;margin-top:12px;padding:8px 12px;border:1px dashed #9aab87;color:#526943;font-size:15px}
+.district-keyboard-note{margin-top:22px;padding-top:16px;border-top:1px solid #d4dcc8;color:#748166;font-size:14px;line-height:1.7}
+::view-transition-old(dormathon-navigation){animation:district-out 120ms ease-out both}
+::view-transition-new(dormathon-navigation){animation:district-in 240ms cubic-bezier(.2,.7,.2,1) both;transform-origin:var(--transition-x) var(--transition-y)}
+@keyframes district-out{to{opacity:0;clip-path:inset(2% 1% 4% 1%)}}
+@keyframes district-in{from{opacity:.25;clip-path:circle(0 at var(--transition-x) var(--transition-y))}to{opacity:1;clip-path:circle(150vmax at var(--transition-x) var(--transition-y))}}
+::view-transition-old(project-arch-0){animation:district-split-left 220ms ease-in both}
+::view-transition-old(project-arch-1){animation:district-split-up 220ms ease-in both}
+::view-transition-old(project-arch-2){animation:district-split-right 220ms ease-in both}
+@keyframes district-split-left{to{opacity:0;transform:translate(-32px,18px) skewY(-4deg);clip-path:inset(8% 18% 12% 3%)}}
+@keyframes district-split-up{to{opacity:0;transform:translate(6px,-32px) skewX(3deg);clip-path:inset(4% 3% 20% 12%)}}
+@keyframes district-split-right{to{opacity:0;transform:translate(32px,20px) skewY(4deg);clip-path:inset(14% 4% 3% 17%)}}
+@media(max-width:850px){.district-grid{grid-template-columns:1fr}.district-concept header{display:block}.district-concept header p{margin-top:14px;max-width:none}.district-slot{min-height:320px}.district-cluster{max-width:280px}.district-front-title{inset:140px 25% auto}.district-concept{padding:20px}}
+@media(hover:none){.district-floating-title{opacity:1!important}.district-front-title{display:none}}
+@media(prefers-reduced-motion:reduce){.district-front-title,.district-floating-title{transition:none}.district-slot:hover .district-floating-title,.district-slot:focus-visible .district-floating-title{opacity:1}.district-front-title{display:none}::view-transition-old(dormathon-navigation),::view-transition-new(dormathon-navigation){animation:none}}

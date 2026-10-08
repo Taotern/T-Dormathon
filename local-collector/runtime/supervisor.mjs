@@ -42,6 +42,16 @@ export async function localTick(db,config,{clock=Date.now(),fetcher=fetch,should
       catch_up:clock-scheduledAt(day,config)>config.poll_seconds*1000,
       sources:Object.fromEntries(GLOBAL_CATALOG.sources.filter(s=>s.enabled).map(s=>[s.id,{status:'pending',attempts:0,run_ids:[]}]))
     };
+    // A durable ten-source completion is valid for its original scope. Adding a
+    // registered source cannot silently turn it into an eleven-source success.
+    const registered=GLOBAL_CATALOG.sources.filter(s=>s.enabled).map(s=>s.id);
+    const priorScope=Object.keys(job.sources),added=registered.filter(id=>!Object.hasOwn(job.sources,id));
+    if(added.length) {
+      job.catalog_scope_change={observed_at:iso(clock),previous_source_ids:priorScope,current_source_ids:registered,added_source_ids:added,previous_status:job.status,previous_completed_at:job.completed_at||null};
+      for(const id of added)job.sources[id]={status:'pending',attempts:0,run_ids:[]};
+      job.status='in_progress';delete job.completed_at;
+      await saveJob(store,job);
+    }
     if(job.status==='complete_success')return {status:'already_complete',job,external_requests:0,next_due_at:iso(nextDue(clock,config))};
     if(job.status==='partial_failure')return {status:'partial_failure',job,external_requests:0,next_due_at:iso(nextDue(clock,config))};
     await saveJob(store,job);

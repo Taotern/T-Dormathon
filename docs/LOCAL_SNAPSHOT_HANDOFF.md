@@ -21,3 +21,7 @@ The export is a selected-current-item and rule-evidence projection. It explicitl
 ## Verification limits
 
 Importer tests use a pinned synthetic reconstruction of retained provider metadata, never a new live observation. The fixture is tests-only and is not seeded or uploaded to the deployed Site. Local SQLite restart/rollback, HTTP contracts and mock DOM checks establish the bounded code path. They do not verify execution on the blocked user computer or an actual owner local-data upload.
+
+## Separately admitted forecast branch
+
+Version1 and catalog SHA8cb6d74e029b066e4dc6660ec32e804078f3e2c941b5140566052fc94191ef27 retain the exact ten-source contract. Version2 requires catalog SHA551dcc4030a9448cfe6b4951e03fa4821873a3cbe0cc2bd4e17f574950c22f9d and adds the MET Sarawak forward-forecast projection. It preserves date-only validity, unknown occurrence/publication/issue clocks, named area without coordinates and bounded attribution/forecast facts. Unknown nested body fields are rejected even if the hashes are recomputed. The current local1.1.0 producer has not been upgraded to the new catalog; v2 support is a receiver admission boundary, not a local runtime claim.

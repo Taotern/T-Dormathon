@@ -4,6 +4,7 @@ export const catalog=JSON.parse(fs.readFileSync(new URL('../data/global-source-c
 const samples=JSON.parse(fs.readFileSync(new URL('./global-safe-samples.json',import.meta.url)));
 const encode=x=>String(x??'').replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('>','&gt;').replaceAll('"','&quot;');
 export function body(id) {
+  if(id==='metmalaysia_sarawak_forecast')return fs.readFileSync(new URL('./metmalaysia-sarawak-recorded.json',import.meta.url),'utf8');
   const x=samples[id].items;
   if(id==='usgs')return JSON.stringify({type:'FeatureCollection',metadata:{count:x.length},features:x});
   if(id==='eonet')return JSON.stringify({events:x});

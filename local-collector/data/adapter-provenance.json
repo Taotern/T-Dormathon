@@ -1,70 +1,109 @@
 {
-  "source_site_commit": "e197857444fa3c5386d1e896f10c0cc8814d2f9b",
-  "registry_sha256": "8cb6d74e029b066e4dc6660ec32e804078f3e2c941b5140566052fc94191ef27",
+  "schema_version": "dormathon.local-collector-provenance.v1.2",
+  "source_site_commit": "4a9f9bbd3e941f26935c7a0a5fab90adb6f24fa7",
+  "baseline_producer_archive_sha256": "f24de7d9dc5703591ebcb0dc4e4e903913e801d13922cd585628db0b7816c6b8",
+  "registry_sha256": "551dcc4030a9448cfe6b4951e03fa4821873a3cbe0cc2bd4e17f574950c22f9d",
+  "legacy_registry_sha256": "8cb6d74e029b066e4dc6660ec32e804078f3e2c941b5140566052fc94191ef27",
+  "original_ten_adapter_bytes_preserved": true,
+  "new_source_id": "metmalaysia_sarawak_forecast",
+  "new_source_module_sha256": "b0cef677fde6ba8bcc87a405fc5a271d9a3b14c6fe92c3458ca5b9f865a5f374",
+  "snapshot_validator_upstream_full_sha256": "daa1b7a072387596bcf62889bd34761a860fb33f85410dcbeda3e83a5298346a",
+  "snapshot_validator_adaptation": "Copied pure validation prefix of accepted Site validator; persistence/import function omitted; export of existing snapshotMetadata helper appended. Common imports unchanged.",
   "files": [
     {
       "path": "worker/common.js",
-      "sha256": "d312540652cee5d011a9b020520fdc09ff520debbb58b88fbee5705c083154e5"
+      "sha256": "d312540652cee5d011a9b020520fdc09ff520debbb58b88fbee5705c083154e5",
+      "origin": "original_v1.1_unchanged"
     },
     {
       "path": "worker/db.js",
-      "sha256": "e2d8ad3452f142ea6c315c63b27bb12bb7c4cc38a5d19d7b9611b4dff2938e81"
+      "sha256": "e2d8ad3452f142ea6c315c63b27bb12bb7c4cc38a5d19d7b9611b4dff2938e81",
+      "origin": "original_v1.1_unchanged"
     },
     {
       "path": "worker/adapter-common.js",
-      "sha256": "830092a4d9f7430ade435c48e6f663bcffb7aa347677818a0306a224fa7d8944"
+      "sha256": "830092a4d9f7430ade435c48e6f663bcffb7aa347677818a0306a224fa7d8944",
+      "origin": "original_v1.1_unchanged"
     },
     {
       "path": "worker/global-parse.js",
-      "sha256": "ebf66358bf7b3cf6b54d12957412f29c97f212b5c41e4861523052fa5501edfd"
+      "sha256": "1c4ca48967294611e65e9abe5e2a1fa878b8977a83cbb695b7192ef0986d586a",
+      "origin": "local_v1.2_compatibility_adaptation"
     },
     {
       "path": "worker/global-store.js",
-      "sha256": "a4569de118f1affdbcb726c60e014050fde3c3fd8284e392c510a0bde0d77f20"
+      "sha256": "adb0f4e5e616c4ca9328372f1ee581dc3dffb903083c32a0933b0aa389009f7d",
+      "origin": "local_v1.2_compatibility_adaptation"
     },
     {
       "path": "worker/adapters/bis_press.js",
-      "sha256": "949e7f1805f6a53e5e14419aa006f37c841fa3ffdb366e080ad5887d65f910c9"
+      "sha256": "949e7f1805f6a53e5e14419aa006f37c841fa3ffdb366e080ad5887d65f910c9",
+      "origin": "original_v1.1_unchanged"
     },
     {
       "path": "worker/adapters/bis_speeches.js",
-      "sha256": "4bc0762f8e15e5b3b52f3175352d313329e6e67ff75d140ff31a90f817d13890"
+      "sha256": "4bc0762f8e15e5b3b52f3175352d313329e6e67ff75d140ff31a90f817d13890",
+      "origin": "original_v1.1_unchanged"
     },
     {
       "path": "worker/adapters/ecb.js",
-      "sha256": "2112606bd4e224911d8188ae7583744160f2a5b9c4bebd2103a552cc6934e3c2"
+      "sha256": "2112606bd4e224911d8188ae7583744160f2a5b9c4bebd2103a552cc6934e3c2",
+      "origin": "original_v1.1_unchanged"
     },
     {
       "path": "worker/adapters/eonet.js",
-      "sha256": "10f53455330628fe95c85522800654a0f4172b62a8718b121eba1fe3d443eed8"
+      "sha256": "10f53455330628fe95c85522800654a0f4172b62a8718b121eba1fe3d443eed8",
+      "origin": "original_v1.1_unchanged"
     },
     {
       "path": "worker/adapters/gdacs.js",
-      "sha256": "5e4227eaf73d0aeb823c2d364adc4427533b0ce385227ec3b3da4649ecd4f7de"
+      "sha256": "5e4227eaf73d0aeb823c2d364adc4427533b0ce385227ec3b3da4649ecd4f7de",
+      "origin": "original_v1.1_unchanged"
     },
     {
       "path": "worker/adapters/index.js",
-      "sha256": "01235af7910dde6352b5de20618d646cb576afed436e47fda64d052a5e3033f7"
+      "sha256": "34a125b9f9a0639164dc38cbcb2e19b1dcd6782983aa834a83c70739fe3a41c9",
+      "origin": "local_v1.2_compatibility_adaptation"
     },
     {
       "path": "worker/adapters/my_fuel_latest.js",
-      "sha256": "dab9c1810f6ddd2a5af2d78545cf872770a13756bfdd131df57a5566bade70c4"
+      "sha256": "dab9c1810f6ddd2a5af2d78545cf872770a13756bfdd131df57a5566bade70c4",
+      "origin": "original_v1.1_unchanged"
     },
     {
       "path": "worker/adapters/my_warning.js",
-      "sha256": "64c3e46219919e18d0a01688a994acbead2bd7a1b8932a84e8aebfde01c082df"
+      "sha256": "64c3e46219919e18d0a01688a994acbead2bd7a1b8932a84e8aebfde01c082df",
+      "origin": "original_v1.1_unchanged"
     },
     {
       "path": "worker/adapters/nasa_metadata.js",
-      "sha256": "dd357d37ede810a4a4670df121a585fc272eaa3b4340fac08ca0f29f96690360"
+      "sha256": "dd357d37ede810a4a4670df121a585fc272eaa3b4340fac08ca0f29f96690360",
+      "origin": "original_v1.1_unchanged"
     },
     {
       "path": "worker/adapters/un_zh.js",
-      "sha256": "f01a4dae4633affbebffb14000270d941e5bca5580fb1bca8f145bef674a4698"
+      "sha256": "f01a4dae4633affbebffb14000270d941e5bca5580fb1bca8f145bef674a4698",
+      "origin": "original_v1.1_unchanged"
     },
     {
       "path": "worker/adapters/usgs.js",
-      "sha256": "408f5dd39966f6c4ee6798007d86ed76cf07c4a97f2869d64dc7d55291e996aa"
+      "sha256": "408f5dd39966f6c4ee6798007d86ed76cf07c4a97f2869d64dc7d55291e996aa",
+      "origin": "original_v1.1_unchanged"
+    },
+    {
+      "path": "worker/adapters/metmalaysia_sarawak_forecast.js",
+      "sha256": "b0cef677fde6ba8bcc87a405fc5a271d9a3b14c6fe92c3458ca5b9f865a5f374",
+      "origin": "accepted_site_met_exact"
+    },
+    {
+      "path": "worker/snapshot-contract.js",
+      "sha256": "66b96a7e51f40289808934e46a0c0ebdc3948db1b21bdd986c98249f0f882ded",
+      "origin": "accepted_site_pure_validator_prefix_with_metadata_export"
+    },
+    {
+      "path": "worker/generated.js",
+      "sha256": "954e57f507e095e35c27008308ad05ff7048d8abf6899c62aa804a37d8ca364d",
+      "origin": "generated_from_exact_admitted_catalog"
     }
   ]
 }

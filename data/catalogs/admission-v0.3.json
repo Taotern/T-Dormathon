@@ -1,0 +1,22 @@
+{
+  "schema_version": "0.3.0",
+  "catalog_sha256": "551dcc4030a9448cfe6b4951e03fa4821873a3cbe0cc2bd4e17f574950c22f9d",
+  "legacy_catalog_sha256": "8cb6d74e029b066e4dc6660ec32e804078f3e2c941b5140566052fc94191ef27",
+  "admitted_source_id": "metmalaysia_sarawak_forecast",
+  "rights_primary_url": "https://www.met.gov.my/en/info/data-terbuka/",
+  "permission": "Official open-dataset integration/reuse expressly allowed; named standard licence unspecified; portal articles/images excluded",
+  "forecast_not_incident": true,
+  "named_area_no_coordinates": true,
+  "research_response_sha256": "550b222694a3476f6370482ea1fe7daebdf751d2a06156fab0775569ffe41dc9",
+  "live_hosted_collection": {
+    "status": "verified_one_manual_collection",
+    "run_id": "irun_5e305342b38041ac",
+    "completed_at": "2026-10-08T05:46:18.350000Z",
+    "http_status": 200,
+    "bytes": 2846,
+    "raw_sha256": "550b222694a3476f6370482ea1fe7daebdf751d2a06156fab0775569ffe41dc9",
+    "persisted_versions": 7,
+    "new_rule_alerts": 0,
+    "autonomous_local_execution_verified": false
+  }
+}

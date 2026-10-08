@@ -5,6 +5,7 @@ import {CollectorStore} from '../worker/store.js';
 import {intelEnsureRegistry,intelSources} from '../worker/global-store.js';
 import {sha256,stableJSON} from '../worker/common.js';
 import {nextDue} from './calendar.mjs';
+import {validateLocalSnapshot,validateLocalMetadata,LOCAL_ADMITTED_CATALOG_SHA} from '../worker/snapshot-contract.js';
 
 export const MAX_SNAPSHOT_BYTES=1572864;
 export const MAX_ARCHIVE_BYTES=25*1024*1024;
@@ -19,8 +20,8 @@ export async function buildSnapshot(db,config,clock=Date.now()) {
     let alive=false;if(loop?.state==='running')try {process.kill(loop.pid,0);alive=true;}catch{}
     const catalogBytes=fs.readFileSync(new URL('../data/global-source-catalog.json',import.meta.url));
     const snapshot={
-      schema_version:'dormathon.local-intel.snapshot.v1',
-      producer:{name:'Dormathon Local Deterministic Collector',version:'1.1.0',source_site_commit:'e197857444fa3c5386d1e896f10c0cc8814d2f9b',sidecar_commit:'4cdbb2202eb06046529dbe819bbbc09279efcece'},
+      schema_version:'dormathon.local-intel.snapshot.v2',
+      producer:{name:'Dormathon Local Deterministic Collector',version:'1.2.0',source_site_commit:'4a9f9bbd3e941f26935c7a0a5fab90adb6f24fa7',baseline_collector_version:'1.1.0'},
       exported_at:null,catalog_sha256:await sha256(catalogBytes),
       registry:rows('intel_registry').map(r=>({...r,config:JSON.parse(r.config)})),
       sources:await intelSources(store,clock),
@@ -95,8 +96,14 @@ function writeExport(target,body) {
   const temporary=target+'.tmp';fs.writeFileSync(temporary,body,{flag:'wx',mode:0o600});fs.renameSync(temporary,target);
 }
 export async function verifySnapshot(snapshot) {
-  if(snapshot?.schema_version!=='dormathon.local-intel.snapshot.v1')throw Error('Unsupported snapshot schema.');
+  const version=snapshot?.schema_version==='dormathon.local-intel.snapshot.v1'?1:snapshot?.schema_version==='dormathon.local-intel.snapshot.v2'?2:0;
+  if(!version)throw Error('Unsupported snapshot schema.');
   const {integrity,...payload}=snapshot;
   if(integrity?.algorithm!=='SHA-256'||integrity?.canonicalization!=='stableJSON-v1'||integrity.payload_sha256!==await sha256(stableJSON(payload)))throw Error('Snapshot integrity mismatch.');
+  if(version===2) {
+    if(snapshot.catalog_sha256!==LOCAL_ADMITTED_CATALOG_SHA)throw Error('Snapshot v2 requires the separately admitted eleven-source catalog pin.');
+    for(const v of snapshot.versions||[])validateLocalMetadata(v.metadata,2);
+    if(snapshot.export_scope)await validateLocalSnapshot(snapshot);
+  }
   return true; // Corruption detection only; never proves authenticity or grants instruction authority.
 }

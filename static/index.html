@@ -8,18 +8,25 @@
   <title>Dormathon · 风险工作区</title>
   <link rel="stylesheet" href="/styles.css">
   <link rel="stylesheet" href="/preparation.css">
+  <link rel="stylesheet" href="/vendor/maplibre-gl.css">
+  <link rel="stylesheet" href="/vendor/leaflet.css">
+  <link rel="stylesheet" href="/district.css">
+  <link rel="stylesheet" href="/regional.css">
+  <script defer src="/vendor/maplibre-gl.js"></script>
+  <script defer src="/vendor/leaflet.js"></script>
   <script type="module" src="/app.js"></script>
 </head>
 <body>
   <a class="skip-link" href="#main">跳转到工作区</a>
   <div class="app-shell">
     <aside class="sidebar" aria-label="主导航">
-      <a href="#prepare" class="brand" aria-label="Dormathon 风险工作区首页">
+      <a href="#explore" class="brand" aria-label="Dormathon 风险工作区首页">
         <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span>
         <span>DORMATHON<span class="brand-sub">RISK WORKSPACE</span></span>
       </a>
       <div class="sidebar-section">工作流程</div>
       <nav id="main-nav">
+        <a href="#explore" data-route="explore"><span class="nav-number">◎</span>地域与项目<span class="nav-arrow">↗</span></a>
         <a href="#prepare" data-route="prepare"><span class="nav-number">↗</span>赛前研判<span class="nav-arrow">↗</span></a>
         <a href="#global" data-route="global"><span class="nav-number">00</span>全球情报<span class="nav-arrow">↗</span></a>
         <a href="#overview" data-route="overview"><span class="nav-number">01</span>基线总览<span class="nav-arrow">↗</span></a>

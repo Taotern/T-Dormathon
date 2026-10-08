@@ -17,7 +17,7 @@ import {transport,body} from './fixtures.mjs';
 // This entire suite is offline; every intended transport is an explicit fixture function.
 globalThis.fetch=()=>{throw Error('Unexpected real network request in offline runtime tests');};
 const c={...DEFAULTS},clock=Date.parse('2026-10-08T01:00:00Z');
-test('Targeted success collects one allowed source, preserves nine pending budgets and full-day truth',async()=> {
+test('Targeted success collects one allowed source, preserves ten pending budgets and full-day truth',async()=> {
   const db=new LocalD1(),counts={};
   try {
     const result=await localTick(db,c,{clock,sourceId:'usgs',fetcher:transport(counts)});
@@ -27,7 +27,7 @@ test('Targeted success collects one allowed source, preserves nine pending budge
     const duplicate=await localTick(db,c,{clock:clock+60000,sourceId:'usgs',fetcher:()=>{throw Error('same-day selected success must not refetch');}});
     assert.equal(duplicate.external_requests,0);assert.equal(duplicate.job.sources.usgs.attempts,1);
     const rest=await localTick(db,c,{clock:clock+16*60000,fetcher:transport(counts)});
-    assert.equal(rest.status,'complete_success');assert.equal(counts.usgs,1);assert.equal(Object.keys(counts).length,10);
+    assert.equal(rest.status,'complete_success');assert.equal(counts.usgs,1);assert.equal(Object.keys(counts).length,11);
   }finally {db.close();}
 });
 test('Targeted source validation rejects unknown IDs and arbitrary URLs before registry writes/fetch',async()=> {
@@ -63,7 +63,7 @@ test('Persistent SQLite migration runs once, restart retains rows and successful
   let db=new LocalD1(file);const counts={};
   try {
     const first=await localTick(db,c,{clock,fetcher:transport(counts)});
-    assert.equal(first.status,'complete_success');assert.equal(Object.keys(counts).length,10);
+    assert.equal(first.status,'complete_success');assert.equal(Object.keys(counts).length,11);
     const before=(await intelItems(new CollectorStore(db),{limit:100})).items;
     db.close();db=new LocalD1(file);
     assert.equal((await localTick(db,c,{clock:clock+60000,fetcher:()=>{throw Error('completed day must not fetch')}})).status,'already_complete');
@@ -75,7 +75,7 @@ test('Failed-only retries honor16min cooldown without burning budget; daily cap3
   const db=new LocalD1();const counts={};
   try {
     let r=await localTick(db,c,{clock,fetcher:transport(counts,{ecb:true})});
-    assert.equal(r.job.summary.sources_succeeded,9);assert.equal(r.job.sources.ecb.attempts,1);
+    assert.equal(r.job.summary.sources_succeeded,10);assert.equal(r.job.sources.ecb.attempts,1);
     r=await localTick(db,c,{clock:clock+60000,fetcher:transport(counts,{ecb:true})});
     assert.equal(r.job.sources.ecb.attempts,1);assert.equal(counts.ecb,1);
     for(const minutes of [16,32,48])r=await localTick(db,c,{clock:clock+minutes*60000,fetcher:transport(counts,{ecb:true})});
@@ -176,7 +176,7 @@ test('Snapshot integrity/cross-links preserved; current projected handoff is bou
     for(const f of out.files) {
       assert.ok(f.bytes<=MAX_SNAPSHOT_BYTES);
       const s=JSON.parse(fs.readFileSync(f.file));assert.equal(await verifySnapshot(s),true);
-      assert.equal(s.catalog_sha256,'8cb6d74e029b066e4dc6660ec32e804078f3e2c941b5140566052fc94191ef27');
+      assert.equal(s.catalog_sha256,'551dcc4030a9448cfe6b4951e03fa4821873a3cbe0cc2bd4e17f574950c22f9d');
       assert.ok(!JSON.stringify(s).includes(folder));
       const versions=new Map(s.versions.map(v=>[v.id,v])),runs=new Set(s.runs.map(r=>r.id));
       for(const item of s.items)assert.ok(versions.has(item.current_version_id));

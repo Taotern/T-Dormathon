@@ -1,8 +1,8 @@
 {
-  "schema_version": "0.2.0",
-  "generated_at": "2026-10-07T23:44:32.245197+00:00",
+  "schema_version": "0.3.0",
+  "generated_at": "2026-10-08T04:47:05.860736+00:00",
   "ready_for_parallel_review_at": "2026-10-07T23:44:32.245197+00:00",
-  "purpose": "Bounded tested world-information source acquisition baseline; no exhaustive-global claim.",
+  "purpose": "Eleven curated public endpoints, with separately labelled official Sarawak forward forecast; no exhaustive-global or current-incident guarantee.",
   "collector_contract": {
     "https_fixed_allowlist": true,
     "redirects": "reject",
@@ -683,6 +683,104 @@
         "lookback": "at least48h where supported; source-specific overlapping snapshot otherwise",
         "overflow": "Do not silently call capped items complete. Record upstream_count, accepted_count, items_truncated, lookback_supported, retention_gap, failed, body_truncated."
       }
+    },
+    {
+      "id": "metmalaysia_sarawak_forecast",
+      "version": "0.5.0",
+      "enabled": true,
+      "collector_state": "admitted_fixed_official_forecast_endpoint",
+      "name": "MET Malaysia official Sarawak 7-day forward forecast",
+      "official_url": "https://developer.data.gov.my/realtime-api/weather",
+      "endpoint": "https://api.data.gov.my/weather/forecast/?filter=Sarawak@location__location_name&limit=14&sort=date",
+      "format": "json",
+      "category": "weather",
+      "source_country": "MY",
+      "source_language": "ms",
+      "publisher_family": "Government of Malaysia",
+      "geographic_coverage": "Source-supplied state area Sarawak, location ID St501; administrative area only, no coordinates or facility geofence. Country MY follows explicitly Malaysian forecast dataset scope.",
+      "publisher_country_semantics": "Publisher jurisdiction separately attributed; not used as a substitute for item geography.",
+      "cadence": "Provider documentation: general seven-day forecast updated daily; exact issuance/publication time not supplied.",
+      "source_update_cadence": "daily per provider documentation; exact update timestamp unknown",
+      "baseline_schedule": "daily",
+      "collection_cadence_hours": 24,
+      "lookback_hours": null,
+      "lookback_supported": false,
+      "forward_validity_days": 7,
+      "retention": "Current seven forward forecast dates; no documented historical forecast/issue archive or >=48h past lookback. Daily overlapping validity dates plus locally retained immutable versions record observed changes; overnight-issued/withdrawn forecasts between pulls may be missed.",
+      "license": "MET Malaysia open-dataset reuse permission explicitly covers integration/reuse by public, government and private entities; named standard license not specified. Official weather dataset factual fields only; general portal articles/images excluded.",
+      "license_url": "https://www.met.gov.my/en/info/data-terbuka/",
+      "attribution": "Malaysian Meteorological Department (MET Malaysia), distributed through data.gov.my; official forward forecast, not Dormathon prediction.",
+      "content_policy": "licensed_open_dataset_structured_facts_only",
+      "content_depth": "structured_facts",
+      "max_body_bytes": 262144,
+      "max_items_per_run": 100,
+      "upstream_query_limit": 14,
+      "timeout_seconds": 30,
+      "rate_limit": "Official Weather API limit 4 requests/minute; conservatively share bucket with existing MY warning requests. No token/login/key required.",
+      "rate_limit_url": "https://developer.data.gov.my/rate-limit",
+      "authentication": "none",
+      "redirect_policy": "reject; exact HTTPS canonical endpoint returned 200 with no redirect",
+      "allow_article_fetch": false,
+      "allow_images": false,
+      "expected_location_name": "Sarawak",
+      "expected_location_id": "St501",
+      "time_semantics": {
+        "valid_date": "date-only official forecast validity; not publication, issuance or observed occurrence",
+        "published_at": null,
+        "issued_at": null,
+        "event_time": null,
+        "source_updated_at": null,
+        "fetched_at": "actual collector receipt time",
+        "first_seen_at": "core first successful persistence observation; research fetch does not create Site first_seen"
+      },
+      "identity_semantics": {
+        "upstream_id": "derived met-forecast:<source location_id>:<date>",
+        "version_identity": "canonical permitted factual projection hash; changed forecast same location/day creates revised version",
+        "no_automatic_incident_identity": true,
+        "no_person_matching": true
+      },
+      "fetch_plan": {
+        "schedule": "daily",
+        "timeout_seconds": 30,
+        "max_items": 100,
+        "selection": "fixed state filter, sort=date ascending; retain returned date order; publication/update/occurrence selection clocks absent",
+        "dedupe": "derived source location ID + date, plus canonical permitted projection version hash; preserve first_seen on revision",
+        "lookback": "historical lookback unsupported; overlapping seven forward valid dates; daily coverage gap explicit",
+        "overflow": "record source row count, selected count, 14-row API saturation, cap/body/fetch/schema failures; never call complete historic incident coverage"
+      },
+      "blindspots": [
+        "State-wide text forecast cannot locate a facility or individual incident",
+        "Forecast rain/thunderstorms do not confirm flood/disruption/severity/business delay",
+        "No quantitative rain/wind probabilities, source issuance clock or forecast skill validation supplied",
+        "Daily pulls can miss intraday revisions; no past issue archive verified",
+        "Same MET publisher as existing MY warning endpoint; adds locality/context, not an independent publisher"
+      ],
+      "daily_status": "working_actual_sarawak_forward_snapshot_no_past_retention",
+      "safe_sample_file": "breadth-associations-v0.5/evidence/metmalaysia_sarawak_forecast-licensed-payload.json",
+      "test": {
+        "http_status": 200,
+        "final_url": "https://api.data.gov.my/weather/forecast/?filter=Sarawak@location__location_name&limit=14&sort=date",
+        "content_type": "application/json",
+        "bytes_read": 2846,
+        "truncated": false,
+        "parse_status": "valid_array",
+        "sample_count": 7,
+        "requested_at": "2026-10-08T04:23:00.856698+00:00",
+        "fetched_at": "2026-10-08T04:23:09.077697+00:00",
+        "response_headers": {
+          "Date": "Thu, 08 Oct 2026 04:23:09 GMT",
+          "Cache-Control": "private",
+          "Content-Length": "2846"
+        },
+        "upstream_response_body_sha256": "550b222694a3476f6370482ea1fe7daebdf751d2a06156fab0775569ffe41dc9",
+        "oldest_publication_at": null,
+        "newest_publication_at": null,
+        "oldest_valid_date": "2026-10-08",
+        "newest_valid_date": "2026-10-14"
+      },
+      "admission_reviewed": true,
+      "quota_group": "met_weather",
+      "quota_per_minute": 4
     }
   ],
   "disabled_context_sources": [
@@ -1111,6 +1209,7 @@
     "Onlyfetchtests in thiscloudresearchenvironment;hostedCloudflare runtime health is separate.",
     "BIS/ECB improve policy breadth, but global general-news acquisition remains a gap.",
     "No effective daily historical completeness guarantee for rollingRSS/livewarnings.",
-    "Dataset-specific METMalaysia warning license is unverified; full warning text and instructions excluded."
+    "Dataset-specific METMalaysia warning license is unverified; full warning text and instructions excluded.",
+    "Sarawak weather source is an official forward forecast with date-only validity, no verified issue/publication clock or historical issue archive; it does not establish an incident or business interruption."
   ]
 }

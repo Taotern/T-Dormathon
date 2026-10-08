@@ -1,0 +1,70 @@
+{
+  "source_site_commit": "e197857444fa3c5386d1e896f10c0cc8814d2f9b",
+  "registry_sha256": "8cb6d74e029b066e4dc6660ec32e804078f3e2c941b5140566052fc94191ef27",
+  "files": [
+    {
+      "path": "worker/common.js",
+      "sha256": "d312540652cee5d011a9b020520fdc09ff520debbb58b88fbee5705c083154e5"
+    },
+    {
+      "path": "worker/db.js",
+      "sha256": "e2d8ad3452f142ea6c315c63b27bb12bb7c4cc38a5d19d7b9611b4dff2938e81"
+    },
+    {
+      "path": "worker/adapter-common.js",
+      "sha256": "830092a4d9f7430ade435c48e6f663bcffb7aa347677818a0306a224fa7d8944"
+    },
+    {
+      "path": "worker/global-parse.js",
+      "sha256": "ebf66358bf7b3cf6b54d12957412f29c97f212b5c41e4861523052fa5501edfd"
+    },
+    {
+      "path": "worker/global-store.js",
+      "sha256": "a4569de118f1affdbcb726c60e014050fde3c3fd8284e392c510a0bde0d77f20"
+    },
+    {
+      "path": "worker/adapters/bis_press.js",
+      "sha256": "949e7f1805f6a53e5e14419aa006f37c841fa3ffdb366e080ad5887d65f910c9"
+    },
+    {
+      "path": "worker/adapters/bis_speeches.js",
+      "sha256": "4bc0762f8e15e5b3b52f3175352d313329e6e67ff75d140ff31a90f817d13890"
+    },
+    {
+      "path": "worker/adapters/ecb.js",
+      "sha256": "2112606bd4e224911d8188ae7583744160f2a5b9c4bebd2103a552cc6934e3c2"
+    },
+    {
+      "path": "worker/adapters/eonet.js",
+      "sha256": "10f53455330628fe95c85522800654a0f4172b62a8718b121eba1fe3d443eed8"
+    },
+    {
+      "path": "worker/adapters/gdacs.js",
+      "sha256": "5e4227eaf73d0aeb823c2d364adc4427533b0ce385227ec3b3da4649ecd4f7de"
+    },
+    {
+      "path": "worker/adapters/index.js",
+      "sha256": "01235af7910dde6352b5de20618d646cb576afed436e47fda64d052a5e3033f7"
+    },
+    {
+      "path": "worker/adapters/my_fuel_latest.js",
+      "sha256": "dab9c1810f6ddd2a5af2d78545cf872770a13756bfdd131df57a5566bade70c4"
+    },
+    {
+      "path": "worker/adapters/my_warning.js",
+      "sha256": "64c3e46219919e18d0a01688a994acbead2bd7a1b8932a84e8aebfde01c082df"
+    },
+    {
+      "path": "worker/adapters/nasa_metadata.js",
+      "sha256": "dd357d37ede810a4a4670df121a585fc272eaa3b4340fac08ca0f29f96690360"
+    },
+    {
+      "path": "worker/adapters/un_zh.js",
+      "sha256": "f01a4dae4633affbebffb14000270d941e5bca5580fb1bca8f145bef674a4698"
+    },
+    {
+      "path": "worker/adapters/usgs.js",
+      "sha256": "408f5dd39966f6c4ee6798007d86ed76cf07c4a97f2869d64dc7d55291e996aa"
+    }
+  ]
+}
