@@ -1,0 +1,128 @@
+{
+  "schema_version": "dormathon.refresh.repository-dependencies.v1",
+  "producer_zip_sha256": "dd9f23c1cf24c1892cd4fc8c5f9540f0598c3e8bc8eed00a142bf2289cc1c010",
+  "producer_source_manifest_sha256": "ba5868501102c449f1dc6dd8edcafe87a236d64f5d5783fa51303ba7226e34f7",
+  "curation_transform": "Only relative module/profile/dimension paths changed in four new entrypoint files; all 19 reused pure adapter bytes and 5 shared contracts unchanged",
+  "dependencies": [
+    {
+      "producer_path": "adapters/gdp/normalized-common.mjs",
+      "repository_path": "source-packs/worldbank-gdp/adapters/normalized-common.mjs",
+      "sha256": "773d2fc291337bfa225e22b646356eb8aa0be464aaad6024864732678f1f8f5f"
+    },
+    {
+      "producer_path": "adapters/gdp/worldbank-gdp-annual.mjs",
+      "repository_path": "source-packs/worldbank-gdp/adapters/worldbank-gdp-annual.mjs",
+      "sha256": "c1af66ad7b440184f1fa2724681495f57749c2a2e156e459fd894361e0aefc3c"
+    },
+    {
+      "producer_path": "adapters/employment/normalized-common.mjs",
+      "repository_path": "source-packs/employment/adapters/normalized-common.mjs",
+      "sha256": "773d2fc291337bfa225e22b646356eb8aa0be464aaad6024864732678f1f8f5f"
+    },
+    {
+      "producer_path": "adapters/employment/worldbank-dimensions-pinned.mjs",
+      "repository_path": "source-packs/employment/adapters/worldbank-dimensions-pinned.mjs",
+      "sha256": "c1af66ad7b440184f1fa2724681495f57749c2a2e156e459fd894361e0aefc3c"
+    },
+    {
+      "producer_path": "adapters/employment/worldbank-unemployment-annual.mjs",
+      "repository_path": "source-packs/employment/adapters/worldbank-unemployment-annual.mjs",
+      "sha256": "453fa3b93682c61f484abab68cbb45c33ddbee33ce162098304e826cbfcead9b"
+    },
+    {
+      "producer_path": "adapters/fx/ecb-reference-daily.mjs",
+      "repository_path": "source-packs/fx/adapters/ecb-reference-daily.mjs",
+      "sha256": "cf55ffd481c186e27b81ae22868d020a30d7d1ec88ea4d210cf06d677965f28c"
+    },
+    {
+      "producer_path": "adapters/fx/normalized-common.mjs",
+      "repository_path": "source-packs/fx/adapters/normalized-common.mjs",
+      "sha256": "773d2fc291337bfa225e22b646356eb8aa0be464aaad6024864732678f1f8f5f"
+    },
+    {
+      "producer_path": "adapters/legal/bounded-xml.mjs",
+      "repository_path": "source-packs/legal/adapters/bounded-xml.mjs",
+      "sha256": "f8ff68459b80c001765b47ee083d5534f342eb9c4a863490d5600abc6d10a16e"
+    },
+    {
+      "producer_path": "adapters/legal/normalized-common.mjs",
+      "repository_path": "source-packs/legal/adapters/normalized-common.mjs",
+      "sha256": "773d2fc291337bfa225e22b646356eb8aa0be464aaad6024864732678f1f8f5f"
+    },
+    {
+      "producer_path": "adapters/legal/us-federal-register.mjs",
+      "repository_path": "source-packs/legal/adapters/us-federal-register.mjs",
+      "sha256": "b603dadd81991f35143d70c184c010450e4408ece00ae28a4ee957d05475bb1a"
+    },
+    {
+      "producer_path": "adapters/legal/legal-common.mjs",
+      "repository_path": "source-packs/legal/adapters/legal-common.mjs",
+      "sha256": "01d3849cfe64a1029ccfaa843a1c14cd62a0e0eb4c9cc6161a84a7fe3afb23a8"
+    },
+    {
+      "producer_path": "adapters/legal/uk-legislation.mjs",
+      "repository_path": "source-packs/legal/adapters/uk-legislation.mjs",
+      "sha256": "1eae67bb779c3742ddaa31ec8069e82d2041f40cc4cb51b8df9c034dd0611480"
+    },
+    {
+      "producer_path": "adapters/legal/validate-legal.mjs",
+      "repository_path": "source-packs/legal/adapters/validate-legal.mjs",
+      "sha256": "691b050ccf23345ba0454479f93214640757b4af4c9c76824143d05dfc3e2515"
+    },
+    {
+      "producer_path": "adapters/trade/ttbd-safeguards.mjs",
+      "repository_path": "source-packs/trade/adapters/ttbd-safeguards.mjs",
+      "sha256": "7ded558aabe386abf7b24ce591b4a20b20a42606b5ed9c8a894eb9d3dbf58ed5"
+    },
+    {
+      "producer_path": "adapters/trade/normalized-common.mjs",
+      "repository_path": "source-packs/trade/adapters/normalized-common.mjs",
+      "sha256": "773d2fc291337bfa225e22b646356eb8aa0be464aaad6024864732678f1f8f5f"
+    },
+    {
+      "producer_path": "adapters/trade/typed-common.mjs",
+      "repository_path": "source-packs/trade/adapters/typed-common.mjs",
+      "sha256": "01d3849cfe64a1029ccfaa843a1c14cd62a0e0eb4c9cc6161a84a7fe3afb23a8"
+    },
+    {
+      "producer_path": "adapters/commodity/normalized-common.mjs",
+      "repository_path": "source-packs/commodity/adapters/normalized-common.mjs",
+      "sha256": "773d2fc291337bfa225e22b646356eb8aa0be464aaad6024864732678f1f8f5f"
+    },
+    {
+      "producer_path": "adapters/commodity/typed-common.mjs",
+      "repository_path": "source-packs/commodity/adapters/typed-common.mjs",
+      "sha256": "01d3849cfe64a1029ccfaa843a1c14cd62a0e0eb4c9cc6161a84a7fe3afb23a8"
+    },
+    {
+      "producer_path": "adapters/commodity/commodity-monthly.mjs",
+      "repository_path": "source-packs/commodity/adapters/commodity-monthly.mjs",
+      "sha256": "9e6eaabb0894d2f5244abdc04f8ebe6906642ca6111a07f2af996722182ac228"
+    },
+    {
+      "producer_path": "contracts/snapshot-contract.v1.json",
+      "repository_path": "data/refresh-snapshot-contract.v1.json",
+      "sha256": "9c87ea2f200e74eb8b1008fb44fc907c1f458bee24523b26596643264a25417b"
+    },
+    {
+      "producer_path": "contracts/witness-schema.v0.19.1.json",
+      "repository_path": "data/refresh-witness-schema.v0.19.1.json",
+      "sha256": "d222cae383f122043b2a30601141eebbc1148c0a99b2067bcd21e2f104871d91"
+    },
+    {
+      "producer_path": "contracts/source-profiles.json",
+      "repository_path": "data/refresh-source-profiles.v0.19.json",
+      "sha256": "3eb4fbdcf987c4c944ae90f512ba9ab73085d740f21b3b90c64b06bfe46aee7a"
+    },
+    {
+      "producer_path": "contracts/operational-boundaries.v0.19.2.json",
+      "repository_path": "data/refresh-operational-boundaries.v0.19.2.json",
+      "sha256": "26c9edfc1347c752c72e50d6a409744890648146b2ea87942808e794a64c5062"
+    },
+    {
+      "producer_path": "contracts/worldbank-dimensions.safe.json",
+      "repository_path": "data/refresh-worldbank-dimensions.v0.19.json",
+      "sha256": "270f80c883208ac344706f4bc4f24d5865f4f269b9ff9207d5ef8eddc17c7c7a"
+    }
+  ]
+}

@@ -1,0 +1,177 @@
+{
+  "schema_version": "dormathon.refresh.witness-schema.v0.19.1",
+  "profile_sha256": "3eb4fbdcf987c4c944ae90f512ba9ab73085d740f21b3b90c64b06bfe46aee7a",
+  "snapshot_contract_sha256": "9c87ea2f200e74eb8b1008fb44fc907c1f458bee24523b26596643264a25417b",
+  "common_coverage_keys": [
+    "request_role",
+    "outcome",
+    "requested_window",
+    "rows_parsed",
+    "rows_changed",
+    "truncated",
+    "retry_after",
+    "access_state",
+    "conditional_not_modified"
+  ],
+  "requested_window": {
+    "keys": [
+      "start",
+      "end",
+      "grain"
+    ],
+    "start_end": "nullable bounded source-specific period strings",
+    "grain_enum": [
+      "year",
+      "day",
+      "month",
+      "rolling_feed",
+      "instrument_year",
+      "source_date_cell"
+    ]
+  },
+  "family_coverage_keys": {
+    "gdp": [
+      "requested_period",
+      "returned_years",
+      "returned_count",
+      "source_null_count",
+      "provider_all_geographies_completeness"
+    ],
+    "employment": [
+      "requested_period",
+      "returned_years",
+      "returned_count",
+      "source_null_count",
+      "provider_all_geographies_completeness"
+    ],
+    "fx": [
+      "requested_period",
+      "returned_count",
+      "legitimate_empty",
+      "provider_calendar_completeness",
+      "missing_requested_series"
+    ],
+    "uk": [
+      "upstream_count",
+      "returned_count",
+      "pages_declared",
+      "has_next_page",
+      "empty_allowed",
+      "known_empty",
+      "recognized_schema",
+      "feed_generated_at",
+      "scope"
+    ],
+    "us": [
+      "upstream_count",
+      "returned_count",
+      "total_pages",
+      "has_next_page",
+      "empty_allowed",
+      "known_empty",
+      "recognized_schema",
+      "scope"
+    ],
+    "commodity": [
+      "selected_series",
+      "requested_period",
+      "returned_period",
+      "provider_completeness_claim"
+    ],
+    "trade": [
+      "requested_period",
+      "candidate_unambiguous_cases",
+      "selected_cases",
+      "cap",
+      "global_conflict_count",
+      "provider_completeness_claim"
+    ]
+  },
+  "family_source_snapshot_keys": {
+    "gdp": [
+      "dataset_vintage_date",
+      "indicator_metadata",
+      "country_dimension_policy",
+      "metadata_witness_id"
+    ],
+    "employment": [
+      "dataset_vintage_date",
+      "indicator_metadata",
+      "country_dimension_policy",
+      "metadata_witness_id"
+    ],
+    "fx": [
+      "source_agency",
+      "quote_units"
+    ],
+    "uk": [
+      "feed_generated_at",
+      "source_scope",
+      "publication_basis",
+      "current_binding_effect"
+    ],
+    "us": [
+      "feed_generated_at",
+      "source_scope",
+      "publication_basis",
+      "current_binding_effect"
+    ],
+    "commodity": [
+      "edition_date",
+      "edition_raw",
+      "latest_observation_month",
+      "source_available_period",
+      "method_change_log",
+      "estimate_flag_basis",
+      "historical_sheet",
+      "quarantined_iron_ore"
+    ],
+    "trade": [
+      "workbook_member",
+      "workbook_sha256",
+      "dataset_vintage_labels",
+      "quarantined_case_ids",
+      "conflict_scope",
+      "codebook_scope"
+    ]
+  },
+  "conditional_cache_snapshot_keys": [
+    "prior_raw_sha256",
+    "prior_acquisition_id"
+  ],
+  "nested_source_snapshot_schema": {
+    "indicator_metadata": [
+      "id",
+      "name",
+      "unit",
+      "sourceNote",
+      "sourceOrganization"
+    ],
+    "method_change_log_item": [
+      "source_row",
+      "marker_raw",
+      "text"
+    ],
+    "source_scope": [
+      "period_start",
+      "period_end",
+      "year"
+    ],
+    "access_state": [
+      "access_review_required",
+      "http_status",
+      "target",
+      "recorded_at",
+      "cooldown_until",
+      "retry_after",
+      "basis"
+    ]
+  },
+  "source_metadata_rules": {
+    "gdp": "Exact indicatorid/source2/name/currentUSD unit and approved definition required; preserve metadata response witness separately from value response",
+    "employment": "Exact indicator/source2/percent/modeledILO and approved definition required; access-date metadata remains distinct from release",
+    "commodity": "Fixed35source names/native units/definition/provider references; changed definition or unit stops admission, not an inferred conversion",
+    "trade": "Exact worksheets/headers/master&related IDs and raw cell types; new valid source quarter/year is typed, no in-force inference"
+  },
+  "mode_rules": "Synthetic or mixed witness modes rejected by live receiver. All old reviewed andv1/v2 imports preserved. Source claims remain uploaded-unverified."
+}

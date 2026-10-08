@@ -1,0 +1,587 @@
+{
+  "payload": {
+    "coverage": [
+      {
+        "coverage": [
+          {
+            "provider_all_geographies_completeness": false,
+            "requested_period": [
+              "2020",
+              "2026"
+            ],
+            "returned_count": 6,
+            "returned_years": [
+              "2020",
+              "2025"
+            ],
+            "source_null_count": 2
+          }
+        ],
+        "job_id": "gdp.current",
+        "last_good_preserved_on_failure": false,
+        "requests": 2,
+        "status": "updated"
+      }
+    ],
+    "exported_at": "2026-10-08T19:38:27.725836+00:00",
+    "parser_version": "history-refresh-v0.19.0",
+    "part_id": "rpart_e68f7a4711a68d230ff842867eb6",
+    "producer": {
+      "execution_mode": "foreground_explicit",
+      "name": "Dormathon deterministic history refresh",
+      "version": "0.19.0"
+    },
+    "profile_id": "dormathon-approved-history-refresh-v0.19",
+    "profile_sha256": "3eb4fbdcf987c4c944ae90f512ba9ab73085d740f21b3b90c64b06bfe46aee7a",
+    "records": [
+      {
+        "acquisition_id": "racq_ff6628c255212c071fd6955dbf31",
+        "content_hash": "8c5c59314c2186192ef1e895f328d0b70f9488615d71e07719b69ee68979187c",
+        "metadata": {
+          "category": "economy",
+          "content_depth": "structured_facts",
+          "entities": [],
+          "event_country": null,
+          "event_time": null,
+          "evidence_url": "https://api.worldbank.org/v2/country/all/indicator/NY.GDP.MKTP.CD",
+          "facts": {
+            "accounting_period_alignment": "Provider annual year label; country-specific calendar/fiscal alignment not independently verified",
+            "data_origin_basis": "Actual retained official World Bank API response; Site admission is separate",
+            "geography": {
+              "basis": "source_provided_countryiso3code_matched_WorldBank_dimension",
+              "classification_time_basis": "Current retained dimension snapshot; not a reconstruction of historical membership/borders or sovereign recognition",
+              "kind": "country_or_economy",
+              "label": "China",
+              "provided_iso3code_raw": "CHN",
+              "provider": "World Bank",
+              "provider_country_alias": "CN",
+              "provider_geography_id": "CHN",
+              "region_id": "EAS",
+              "region_label": "East Asia & Pacific"
+            },
+            "indicator": "NY.GDP.MKTP.CD",
+            "indicator_label": "GDP (current US$)",
+            "methodology": {
+              "country_method_changes": "Not exposed per observation in this API slice; preserve revision/vintage context, do not assume comparable national-accounting methods",
+              "indicator_definition": "Nominal annual gross domestic product for the reporting economic territory; not inflation-adjusted or PPP",
+              "source_organizations": [
+                "Country official national statistics/central banks",
+                "OECD national accounts",
+                "World Bank staff estimates"
+              ],
+              "value_interpretation": "Changes can reflect price/FX/method revisions; no derived real-growth or risk inference"
+            },
+            "missingness": "source_numeric_value",
+            "observation_granularity": "year",
+            "observation_period": "2025",
+            "price_basis": "current_prices_not_constant_or_PPP",
+            "provider_display_decimals": 0,
+            "provider_status": null,
+            "publication_clock": "unknown; annual observation period is not publication or occurrence",
+            "record_kind": "statistical_observation",
+            "series_id": "worldbank:wdi:NY.GDP.MKTP.CD:CHN",
+            "unit": "current_USD",
+            "unit_basis": "Official GDP indicator definition explicitly states current United States dollars; source row unit may be blank",
+            "unit_scale": 1,
+            "value": 19498039388042.6,
+            "vintage": {
+              "dataset_last_updated_date": "2026-07-13",
+              "date_precision": "date_only_dataset_vintage_not_per_observation_update",
+              "historical_vintages_in_this_batch": false,
+              "per_observation_revision_time": null
+            }
+          },
+          "fetched_at": "2026-10-08T19:00:00Z",
+          "first_seen_at": "2026-10-08T19:00:00Z",
+          "ingested_at": null,
+          "location": null,
+          "location_basis": "unknown",
+          "published_at": null,
+          "short_summary": null,
+          "source_country": null,
+          "source_id": "stat_worldbank_gdp_annual",
+          "source_language": "en",
+          "source_license": "World Bank WDI GDP (NY.GDP.MKTP.CD), explicitly CC BY4.0; attribute World Bank and listed data providers, indicate transformations, retain dataset terms and no endorsement",
+          "source_updated_at": null,
+          "title": "GDP (current US$) — China — 2025",
+          "upstream_id": "NY.GDP.MKTP.CD:CHN:2025",
+          "url": "https://data.worldbank.org/indicator/NY.GDP.MKTP.CD?locations=CN"
+        },
+        "metadata_sha256": "488eb253b5c6cca9e70c6ecee45b78e27041f059633035e84ad62e7c5b10dff4",
+        "source_id": "stat_worldbank_gdp_annual",
+        "upstream_id": "NY.GDP.MKTP.CD:CHN:2025",
+        "version_id": "lver_d4d3990bbbf01575b4b5f87c5a04"
+      },
+      {
+        "acquisition_id": "racq_ff6628c255212c071fd6955dbf31",
+        "content_hash": "b5914ecaa47ae5fdf36b422ced32f2f8a045c33f07dbc167a7fbbbbb91c6cb07",
+        "metadata": {
+          "category": "economy",
+          "content_depth": "structured_facts",
+          "entities": [],
+          "event_country": null,
+          "event_time": null,
+          "evidence_url": "https://api.worldbank.org/v2/country/all/indicator/NY.GDP.MKTP.CD",
+          "facts": {
+            "accounting_period_alignment": "Provider annual year label; country-specific calendar/fiscal alignment not independently verified",
+            "data_origin_basis": "Actual retained official World Bank API response; Site admission is separate",
+            "geography": {
+              "basis": "source_provided_countryiso3code_matched_WorldBank_dimension",
+              "classification_time_basis": "Current retained dimension snapshot; not a reconstruction of historical membership/borders or sovereign recognition",
+              "kind": "country_or_economy",
+              "label": "China",
+              "provided_iso3code_raw": "CHN",
+              "provider": "World Bank",
+              "provider_country_alias": "CN",
+              "provider_geography_id": "CHN",
+              "region_id": "EAS",
+              "region_label": "East Asia & Pacific"
+            },
+            "indicator": "NY.GDP.MKTP.CD",
+            "indicator_label": "GDP (current US$)",
+            "methodology": {
+              "country_method_changes": "Not exposed per observation in this API slice; preserve revision/vintage context, do not assume comparable national-accounting methods",
+              "indicator_definition": "Nominal annual gross domestic product for the reporting economic territory; not inflation-adjusted or PPP",
+              "source_organizations": [
+                "Country official national statistics/central banks",
+                "OECD national accounts",
+                "World Bank staff estimates"
+              ],
+              "value_interpretation": "Changes can reflect price/FX/method revisions; no derived real-growth or risk inference"
+            },
+            "missingness": "source_numeric_value",
+            "observation_granularity": "year",
+            "observation_period": "2020",
+            "price_basis": "current_prices_not_constant_or_PPP",
+            "provider_display_decimals": 0,
+            "provider_status": null,
+            "publication_clock": "unknown; annual observation period is not publication or occurrence",
+            "record_kind": "statistical_observation",
+            "series_id": "worldbank:wdi:NY.GDP.MKTP.CD:CHN",
+            "unit": "current_USD",
+            "unit_basis": "Official GDP indicator definition explicitly states current United States dollars; source row unit may be blank",
+            "unit_scale": 1,
+            "value": 14996414166715.1,
+            "vintage": {
+              "dataset_last_updated_date": "2026-07-13",
+              "date_precision": "date_only_dataset_vintage_not_per_observation_update",
+              "historical_vintages_in_this_batch": false,
+              "per_observation_revision_time": null
+            }
+          },
+          "fetched_at": "2026-10-08T19:00:00Z",
+          "first_seen_at": "2026-10-08T19:00:00Z",
+          "ingested_at": null,
+          "location": null,
+          "location_basis": "unknown",
+          "published_at": null,
+          "short_summary": null,
+          "source_country": null,
+          "source_id": "stat_worldbank_gdp_annual",
+          "source_language": "en",
+          "source_license": "World Bank WDI GDP (NY.GDP.MKTP.CD), explicitly CC BY4.0; attribute World Bank and listed data providers, indicate transformations, retain dataset terms and no endorsement",
+          "source_updated_at": null,
+          "title": "GDP (current US$) — China — 2020",
+          "upstream_id": "NY.GDP.MKTP.CD:CHN:2020",
+          "url": "https://data.worldbank.org/indicator/NY.GDP.MKTP.CD?locations=CN"
+        },
+        "metadata_sha256": "8dd568a9723b37f90fb28e146864eedc764aa4f7f2bcc8ff89fd4e264f6487b0",
+        "source_id": "stat_worldbank_gdp_annual",
+        "upstream_id": "NY.GDP.MKTP.CD:CHN:2020",
+        "version_id": "lver_ef96050270ab3316ddc1777560fa"
+      },
+      {
+        "acquisition_id": "racq_ff6628c255212c071fd6955dbf31",
+        "content_hash": "ab9c90d1e2ee69a9d39ecbffdefb08dcffb6c671a5a3621f8817b9c2c06da25a",
+        "metadata": {
+          "category": "economy",
+          "content_depth": "structured_facts",
+          "entities": [],
+          "event_country": null,
+          "event_time": null,
+          "evidence_url": "https://api.worldbank.org/v2/country/all/indicator/NY.GDP.MKTP.CD",
+          "facts": {
+            "accounting_period_alignment": "Provider annual year label; country-specific calendar/fiscal alignment not independently verified",
+            "data_origin_basis": "Actual retained official World Bank API response; Site admission is separate",
+            "geography": {
+              "basis": "source_provided_countryiso3code_matched_WorldBank_dimension",
+              "classification_time_basis": "Current retained dimension snapshot; not a reconstruction of historical membership/borders or sovereign recognition",
+              "kind": "country_or_economy",
+              "label": "Malaysia",
+              "provided_iso3code_raw": "MYS",
+              "provider": "World Bank",
+              "provider_country_alias": "MY",
+              "provider_geography_id": "MYS",
+              "region_id": "EAS",
+              "region_label": "East Asia & Pacific"
+            },
+            "indicator": "NY.GDP.MKTP.CD",
+            "indicator_label": "GDP (current US$)",
+            "methodology": {
+              "country_method_changes": "Not exposed per observation in this API slice; preserve revision/vintage context, do not assume comparable national-accounting methods",
+              "indicator_definition": "Nominal annual gross domestic product for the reporting economic territory; not inflation-adjusted or PPP",
+              "source_organizations": [
+                "Country official national statistics/central banks",
+                "OECD national accounts",
+                "World Bank staff estimates"
+              ],
+              "value_interpretation": "Changes can reflect price/FX/method revisions; no derived real-growth or risk inference"
+            },
+            "missingness": "source_numeric_value",
+            "observation_granularity": "year",
+            "observation_period": "2025",
+            "price_basis": "current_prices_not_constant_or_PPP",
+            "provider_display_decimals": 0,
+            "provider_status": null,
+            "publication_clock": "unknown; annual observation period is not publication or occurrence",
+            "record_kind": "statistical_observation",
+            "series_id": "worldbank:wdi:NY.GDP.MKTP.CD:MYS",
+            "unit": "current_USD",
+            "unit_basis": "Official GDP indicator definition explicitly states current United States dollars; source row unit may be blank",
+            "unit_scale": 1,
+            "value": 472193128644.597,
+            "vintage": {
+              "dataset_last_updated_date": "2026-07-13",
+              "date_precision": "date_only_dataset_vintage_not_per_observation_update",
+              "historical_vintages_in_this_batch": false,
+              "per_observation_revision_time": null
+            }
+          },
+          "fetched_at": "2026-10-08T19:00:00Z",
+          "first_seen_at": "2026-10-08T19:00:00Z",
+          "ingested_at": null,
+          "location": null,
+          "location_basis": "unknown",
+          "published_at": null,
+          "short_summary": null,
+          "source_country": null,
+          "source_id": "stat_worldbank_gdp_annual",
+          "source_language": "en",
+          "source_license": "World Bank WDI GDP (NY.GDP.MKTP.CD), explicitly CC BY4.0; attribute World Bank and listed data providers, indicate transformations, retain dataset terms and no endorsement",
+          "source_updated_at": null,
+          "title": "GDP (current US$) — Malaysia — 2025",
+          "upstream_id": "NY.GDP.MKTP.CD:MYS:2025",
+          "url": "https://data.worldbank.org/indicator/NY.GDP.MKTP.CD?locations=MY"
+        },
+        "metadata_sha256": "7de7c002ebba7f180bd08d424e11ab743636445a24c43a180817cf2968343222",
+        "source_id": "stat_worldbank_gdp_annual",
+        "upstream_id": "NY.GDP.MKTP.CD:MYS:2025",
+        "version_id": "lver_c8f57616f638716caca875c23fc1"
+      },
+      {
+        "acquisition_id": "racq_ff6628c255212c071fd6955dbf31",
+        "content_hash": "1e01642a31b70be897cda9023f8a3f20b93724c817569c31964484ac566723b9",
+        "metadata": {
+          "category": "economy",
+          "content_depth": "structured_facts",
+          "entities": [],
+          "event_country": null,
+          "event_time": null,
+          "evidence_url": "https://api.worldbank.org/v2/country/all/indicator/NY.GDP.MKTP.CD",
+          "facts": {
+            "accounting_period_alignment": "Provider annual year label; country-specific calendar/fiscal alignment not independently verified",
+            "data_origin_basis": "Actual retained official World Bank API response; Site admission is separate",
+            "geography": {
+              "basis": "source_provided_countryiso3code_matched_WorldBank_dimension",
+              "classification_time_basis": "Current retained dimension snapshot; not a reconstruction of historical membership/borders or sovereign recognition",
+              "kind": "country_or_economy",
+              "label": "Malaysia",
+              "provided_iso3code_raw": "MYS",
+              "provider": "World Bank",
+              "provider_country_alias": "MY",
+              "provider_geography_id": "MYS",
+              "region_id": "EAS",
+              "region_label": "East Asia & Pacific"
+            },
+            "indicator": "NY.GDP.MKTP.CD",
+            "indicator_label": "GDP (current US$)",
+            "methodology": {
+              "country_method_changes": "Not exposed per observation in this API slice; preserve revision/vintage context, do not assume comparable national-accounting methods",
+              "indicator_definition": "Nominal annual gross domestic product for the reporting economic territory; not inflation-adjusted or PPP",
+              "source_organizations": [
+                "Country official national statistics/central banks",
+                "OECD national accounts",
+                "World Bank staff estimates"
+              ],
+              "value_interpretation": "Changes can reflect price/FX/method revisions; no derived real-growth or risk inference"
+            },
+            "missingness": "source_numeric_value",
+            "observation_granularity": "year",
+            "observation_period": "2020",
+            "price_basis": "current_prices_not_constant_or_PPP",
+            "provider_display_decimals": 0,
+            "provider_status": null,
+            "publication_clock": "unknown; annual observation period is not publication or occurrence",
+            "record_kind": "statistical_observation",
+            "series_id": "worldbank:wdi:NY.GDP.MKTP.CD:MYS",
+            "unit": "current_USD",
+            "unit_basis": "Official GDP indicator definition explicitly states current United States dollars; source row unit may be blank",
+            "unit_scale": 1,
+            "value": 337456163961.211,
+            "vintage": {
+              "dataset_last_updated_date": "2026-07-13",
+              "date_precision": "date_only_dataset_vintage_not_per_observation_update",
+              "historical_vintages_in_this_batch": false,
+              "per_observation_revision_time": null
+            }
+          },
+          "fetched_at": "2026-10-08T19:00:00Z",
+          "first_seen_at": "2026-10-08T19:00:00Z",
+          "ingested_at": null,
+          "location": null,
+          "location_basis": "unknown",
+          "published_at": null,
+          "short_summary": null,
+          "source_country": null,
+          "source_id": "stat_worldbank_gdp_annual",
+          "source_language": "en",
+          "source_license": "World Bank WDI GDP (NY.GDP.MKTP.CD), explicitly CC BY4.0; attribute World Bank and listed data providers, indicate transformations, retain dataset terms and no endorsement",
+          "source_updated_at": null,
+          "title": "GDP (current US$) — Malaysia — 2020",
+          "upstream_id": "NY.GDP.MKTP.CD:MYS:2020",
+          "url": "https://data.worldbank.org/indicator/NY.GDP.MKTP.CD?locations=MY"
+        },
+        "metadata_sha256": "92531a8a404482eb40c873e11d47c04f4e8769f55ee0e2424f17a03f7dd22a56",
+        "source_id": "stat_worldbank_gdp_annual",
+        "upstream_id": "NY.GDP.MKTP.CD:MYS:2020",
+        "version_id": "lver_bd5fe3591e33ed16c56296ee8a7e"
+      },
+      {
+        "acquisition_id": "racq_ff6628c255212c071fd6955dbf31",
+        "content_hash": "8edfe75e2b61bdfab53800b3f4abbef153bf63e13c1c97f571197c5be46bf6b0",
+        "metadata": {
+          "category": "economy",
+          "content_depth": "structured_facts",
+          "entities": [],
+          "event_country": null,
+          "event_time": null,
+          "evidence_url": "https://api.worldbank.org/v2/country/all/indicator/NY.GDP.MKTP.CD",
+          "facts": {
+            "accounting_period_alignment": "Provider annual year label; country-specific calendar/fiscal alignment not independently verified",
+            "data_origin_basis": "Actual retained official World Bank API response; Site admission is separate",
+            "geography": {
+              "basis": "source_provided_countryiso3code_matched_WorldBank_dimension",
+              "classification_time_basis": "Current retained dimension snapshot; not a reconstruction of historical membership/borders or sovereign recognition",
+              "kind": "country_or_economy",
+              "label": "South Sudan",
+              "provided_iso3code_raw": "SSD",
+              "provider": "World Bank",
+              "provider_country_alias": "SS",
+              "provider_geography_id": "SSD",
+              "region_id": "SSF",
+              "region_label": "Sub-Saharan Africa "
+            },
+            "indicator": "NY.GDP.MKTP.CD",
+            "indicator_label": "GDP (current US$)",
+            "methodology": {
+              "country_method_changes": "Not exposed per observation in this API slice; preserve revision/vintage context, do not assume comparable national-accounting methods",
+              "indicator_definition": "Nominal annual gross domestic product for the reporting economic territory; not inflation-adjusted or PPP",
+              "source_organizations": [
+                "Country official national statistics/central banks",
+                "OECD national accounts",
+                "World Bank staff estimates"
+              ],
+              "value_interpretation": "Changes can reflect price/FX/method revisions; no derived real-growth or risk inference"
+            },
+            "missingness": "source_returned_null",
+            "observation_granularity": "year",
+            "observation_period": "2025",
+            "price_basis": "current_prices_not_constant_or_PPP",
+            "provider_display_decimals": 0,
+            "provider_status": null,
+            "publication_clock": "unknown; annual observation period is not publication or occurrence",
+            "record_kind": "statistical_observation",
+            "series_id": "worldbank:wdi:NY.GDP.MKTP.CD:SSD",
+            "unit": "current_USD",
+            "unit_basis": "Official GDP indicator definition explicitly states current United States dollars; source row unit may be blank",
+            "unit_scale": 1,
+            "value": null,
+            "vintage": {
+              "dataset_last_updated_date": "2026-07-13",
+              "date_precision": "date_only_dataset_vintage_not_per_observation_update",
+              "historical_vintages_in_this_batch": false,
+              "per_observation_revision_time": null
+            }
+          },
+          "fetched_at": "2026-10-08T19:00:00Z",
+          "first_seen_at": "2026-10-08T19:00:00Z",
+          "ingested_at": null,
+          "location": null,
+          "location_basis": "unknown",
+          "published_at": null,
+          "short_summary": null,
+          "source_country": null,
+          "source_id": "stat_worldbank_gdp_annual",
+          "source_language": "en",
+          "source_license": "World Bank WDI GDP (NY.GDP.MKTP.CD), explicitly CC BY4.0; attribute World Bank and listed data providers, indicate transformations, retain dataset terms and no endorsement",
+          "source_updated_at": null,
+          "title": "GDP (current US$) — South Sudan — 2025",
+          "upstream_id": "NY.GDP.MKTP.CD:SSD:2025",
+          "url": "https://data.worldbank.org/indicator/NY.GDP.MKTP.CD?locations=SS"
+        },
+        "metadata_sha256": "e12f18ffe84c235e1b5d71b007c142849a921fe1a3250102a080295767b8e954",
+        "source_id": "stat_worldbank_gdp_annual",
+        "upstream_id": "NY.GDP.MKTP.CD:SSD:2025",
+        "version_id": "lver_556bde7e0d4f285503461a21923d"
+      },
+      {
+        "acquisition_id": "racq_ff6628c255212c071fd6955dbf31",
+        "content_hash": "de4f60a4fe9702d9d5d70f99fbce325545ffefbd2b020047f91a49695fb540de",
+        "metadata": {
+          "category": "economy",
+          "content_depth": "structured_facts",
+          "entities": [],
+          "event_country": null,
+          "event_time": null,
+          "evidence_url": "https://api.worldbank.org/v2/country/all/indicator/NY.GDP.MKTP.CD",
+          "facts": {
+            "accounting_period_alignment": "Provider annual year label; country-specific calendar/fiscal alignment not independently verified",
+            "data_origin_basis": "Actual retained official World Bank API response; Site admission is separate",
+            "geography": {
+              "basis": "source_provided_countryiso3code_matched_WorldBank_dimension",
+              "classification_time_basis": "Current retained dimension snapshot; not a reconstruction of historical membership/borders or sovereign recognition",
+              "kind": "country_or_economy",
+              "label": "South Sudan",
+              "provided_iso3code_raw": "SSD",
+              "provider": "World Bank",
+              "provider_country_alias": "SS",
+              "provider_geography_id": "SSD",
+              "region_id": "SSF",
+              "region_label": "Sub-Saharan Africa "
+            },
+            "indicator": "NY.GDP.MKTP.CD",
+            "indicator_label": "GDP (current US$)",
+            "methodology": {
+              "country_method_changes": "Not exposed per observation in this API slice; preserve revision/vintage context, do not assume comparable national-accounting methods",
+              "indicator_definition": "Nominal annual gross domestic product for the reporting economic territory; not inflation-adjusted or PPP",
+              "source_organizations": [
+                "Country official national statistics/central banks",
+                "OECD national accounts",
+                "World Bank staff estimates"
+              ],
+              "value_interpretation": "Changes can reflect price/FX/method revisions; no derived real-growth or risk inference"
+            },
+            "missingness": "source_returned_null",
+            "observation_granularity": "year",
+            "observation_period": "2020",
+            "price_basis": "current_prices_not_constant_or_PPP",
+            "provider_display_decimals": 0,
+            "provider_status": null,
+            "publication_clock": "unknown; annual observation period is not publication or occurrence",
+            "record_kind": "statistical_observation",
+            "series_id": "worldbank:wdi:NY.GDP.MKTP.CD:SSD",
+            "unit": "current_USD",
+            "unit_basis": "Official GDP indicator definition explicitly states current United States dollars; source row unit may be blank",
+            "unit_scale": 1,
+            "value": null,
+            "vintage": {
+              "dataset_last_updated_date": "2026-07-13",
+              "date_precision": "date_only_dataset_vintage_not_per_observation_update",
+              "historical_vintages_in_this_batch": false,
+              "per_observation_revision_time": null
+            }
+          },
+          "fetched_at": "2026-10-08T19:00:00Z",
+          "first_seen_at": "2026-10-08T19:00:00Z",
+          "ingested_at": null,
+          "location": null,
+          "location_basis": "unknown",
+          "published_at": null,
+          "short_summary": null,
+          "source_country": null,
+          "source_id": "stat_worldbank_gdp_annual",
+          "source_language": "en",
+          "source_license": "World Bank WDI GDP (NY.GDP.MKTP.CD), explicitly CC BY4.0; attribute World Bank and listed data providers, indicate transformations, retain dataset terms and no endorsement",
+          "source_updated_at": null,
+          "title": "GDP (current US$) — South Sudan — 2020",
+          "upstream_id": "NY.GDP.MKTP.CD:SSD:2020",
+          "url": "https://data.worldbank.org/indicator/NY.GDP.MKTP.CD?locations=SS"
+        },
+        "metadata_sha256": "cf836c831f604bb535087eaed16fc4f4f775b9bbdb2e31fa64ee3e5e6b544dcb",
+        "source_id": "stat_worldbank_gdp_annual",
+        "upstream_id": "NY.GDP.MKTP.CD:SSD:2020",
+        "version_id": "lver_f3fa2f08c97b6d81fef64e31d3e8"
+      }
+    ],
+    "runs": [
+      {
+        "body_complete": true,
+        "bytes_read": 938,
+        "completed_at": "2026-10-08T19:38:26.936547+00:00",
+        "coverage": {
+          "request_role": "metadata",
+          "rows_changed": 0
+        },
+        "error": null,
+        "fetched_at": "2026-10-08T19:00:00Z",
+        "http_status": 200,
+        "id": "racq_7a3b78eecfd2bd95f70691d8b022",
+        "job_id": "gdp.current",
+        "no_change": true,
+        "requested_url": "https://api.worldbank.org/v2/indicator/NY.GDP.MKTP.CD?format=json",
+        "rows_changed": 0,
+        "source_id": "stat_worldbank_gdp_annual",
+        "source_snapshot": {},
+        "started_at": "2026-10-08T19:00:00Z",
+        "status": "no_change",
+        "transport_mode": "synthetic_fixture",
+        "upstream_raw_sha256": "51cec1e144a5bad8d92238630c0a305e20116e86d34ad95c7c315ed166255b28"
+      },
+      {
+        "body_complete": true,
+        "bytes_read": 2134,
+        "completed_at": "2026-10-08T19:38:26.936928+00:00",
+        "coverage": {
+          "provider_all_geographies_completeness": false,
+          "request_role": "data",
+          "requested_period": [
+            "2020",
+            "2026"
+          ],
+          "requested_window": {
+            "end": "2026",
+            "grain": "year",
+            "start": "2020"
+          },
+          "returned_count": 6,
+          "returned_years": [
+            "2020",
+            "2025"
+          ],
+          "rows_changed": 6,
+          "rows_parsed": 6,
+          "source_null_count": 2,
+          "truncated": false
+        },
+        "error": null,
+        "fetched_at": "2026-10-08T19:00:00Z",
+        "http_status": 200,
+        "id": "racq_ff6628c255212c071fd6955dbf31",
+        "job_id": "gdp.current",
+        "no_change": false,
+        "requested_url": "https://api.worldbank.org/v2/country/all/indicator/NY.GDP.MKTP.CD?source=2&date=2020:2026&format=json&per_page=5000&page=1",
+        "rows_changed": 6,
+        "source_id": "stat_worldbank_gdp_annual",
+        "source_snapshot": {
+          "country_dimension_policy": "Retained approved classification; unknown source IDs/aliases fail; historical borders not reconstructed",
+          "dataset_vintage_date": "2026-07-13",
+          "indicator_metadata": {
+            "id": "NY.GDP.MKTP.CD",
+            "name": "GDP (current US$)",
+            "sourceNote": "Gross domestic product is the total income earned through the production of goods and services in an economic territory during an accounting period. It can be measured in three different ways: using either the expenditure approach, the income approach, or the production approach. This indicator is expressed in current prices, meaning no adjustment has been made to account for price changes over time. This indicator is expressed in United States dollars.",
+            "sourceOrganization": "Country official statistics, National Statistical Organizations and/or Central Banks;\nNational Accounts data files, Organisation for Economic Co-operation and Development (OECD);\nStaff estimates, World Bank (WB)",
+            "unit": ""
+          },
+          "metadata_witness_id": "racq_7a3b78eecfd2bd95f70691d8b022"
+        },
+        "started_at": "2026-10-08T19:00:00Z",
+        "status": "succeeded",
+        "transport_mode": "synthetic_fixture",
+        "upstream_raw_sha256": "75e4e606be7cf6d98468d52f81a112e95c5ebdf012f62c13b7d81703f4c472b0"
+      }
+    ],
+    "transport_mode": "synthetic_fixture"
+  },
+  "payload_sha256": "bc450b3bec0c8a71979df290f879a844599ef8d687e624ecc0a8bd5c82bd94f9",
+  "schema_version": "dormathon.source-refresh.snapshot.v1"
+}

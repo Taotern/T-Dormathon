@@ -1,0 +1,19 @@
+{
+  "schema_version": "dormathon.refresh-operational-boundaries.v0.19.2",
+  "profile_sha256": "3eb4fbdcf987c4c944ae90f512ba9ab73085d740f21b3b90c64b06bfe46aee7a",
+  "contract_sha256": "9c87ea2f200e74eb8b1008fb44fc907c1f458bee24523b26596643264a25417b",
+  "witness_schema_sha256": "d222cae383f122043b2a30601141eebbc1148c0a99b2067bcd21e2f104871d91",
+  "annual_evidence_url_rule": "Refresh-only GDP/ILO rows use their fixed approved source.endpoint. Exact bounded acquired query URL remains in the run witness. Original reviewed rows unchanged; query-window rollover alone must not create observation versions.",
+  "trade_vintage_gate": "Q4_2024 only because approved attribution names that vintage. A new quarter/year requires a new approved profile/attribution; unchanged or same-vintage numeric/stage revisions may refresh.",
+  "version_reversion": "Quarantined before any local mutation. Currentv1 has no separate observation/current-pointer contract, so old content hash reappearance cannot overwrite immutable metadata/acquisition or rewind the current pointer.",
+  "budget_incomplete": "A metadata-only/exhausted budget yields partial/no fabricated rows and does not advance last-good job cadence.",
+  "export_time": "Actual terminal export clock, after all referenced completed runs. Never use run-start clock as exported_at.",
+  "mutable_scope": "Only runtime data-local state/receipts/exports. All existing accepted source/catalog/profile bytes remain immutable.",
+  "operator_requirements": [
+    "Explicit foreground Python/Node process on a verified POSIX runtime",
+    "Known workbook decoder dependencies installed from approved registries",
+    "Owner-session manual uploaded-unverified importer; no machine upload credentials available",
+    "Human profile maintenance for source schema/unit/definition/rights/TTBD-vintage drift",
+    "No Windows or unattended scheduler claim"
+  ]
+}

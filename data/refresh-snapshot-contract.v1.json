@@ -1,0 +1,97 @@
+{
+  "schema_version": "dormathon.source-refresh.snapshot-contract.v1",
+  "profile_id": "dormathon-approved-history-refresh-v0.19",
+  "profile_sha256": "3eb4fbdcf987c4c944ae90f512ba9ab73085d740f21b3b90c64b06bfe46aee7a",
+  "parser_version": "history-refresh-v0.19.0",
+  "envelope": {
+    "schema_version": "dormathon.source-refresh.snapshot.v1",
+    "payload": "object below",
+    "payload_sha256": "SHA256 UTF8 of shipped canonical(payload)"
+  },
+  "payload_required": [
+    "producer",
+    "profile_id",
+    "profile_sha256",
+    "parser_version",
+    "transport_mode",
+    "exported_at",
+    "part_id",
+    "records",
+    "runs",
+    "coverage"
+  ],
+  "producer": {
+    "name": "Dormathon deterministic history refresh",
+    "version": "0.19.0",
+    "execution_mode": "foreground_explicit"
+  },
+  "transport_modes": {
+    "genuine_acquisition": "Explicit supported Linux HTTP acquisition; producer claims remain uploaded-unverified",
+    "retained_replay": "Verified retained original bytes/receipt; original acquired clock preserved, not fresh source collection",
+    "synthetic_fixture": "Offline/mocked/safe reduced fixture transport; live importer MUST reject"
+  },
+  "record_required": [
+    "source_id",
+    "upstream_id",
+    "version_id",
+    "content_hash",
+    "metadata_sha256",
+    "acquisition_id",
+    "metadata"
+  ],
+  "record_semantics": {
+    "metadata": "Existing normalized v0.2 record; unchanged source-specific field/rights/value meanings",
+    "content_hash": "SHA256 canonical(metadata minus first_seen_at,fetched_at,ingested_at)",
+    "metadata_sha256": "SHA256 canonical exact immutable normalized metadata",
+    "version_id": "lver_ + first28 SHA256(source_id|upstream_id|content_hash)",
+    "acquisition_id": "References exactly one included source acquisition run with matching source_id and original fetched_at",
+    "unchanged_rows": "No new local immutable version; durable successful source run/no_change receipt still exported",
+    "revisions": "Same stable source-qualified upstream ID plus new semantic hash; previous version metadata remains immutable"
+  },
+  "run_required": [
+    "id",
+    "source_id",
+    "job_id",
+    "requested_url",
+    "status",
+    "transport_mode",
+    "started_at",
+    "completed_at",
+    "fetched_at",
+    "http_status",
+    "bytes_read",
+    "body_complete",
+    "upstream_raw_sha256",
+    "rows_changed",
+    "no_change",
+    "coverage",
+    "source_snapshot",
+    "error"
+  ],
+  "run_statuses": [
+    "succeeded",
+    "partial",
+    "no_change",
+    "failed",
+    "blocked_access",
+    "blocked_cooldown",
+    "skipped_not_due",
+    "skipped_budget"
+  ],
+  "run_constraints": {
+    "success_record_witness": "HTTP200,positive bounded bytes,complete body,valid64hex raw hash and matching normalized fetched_at",
+    "no_rows_on_failure": "Failure/no-change/skipped source receipts do not fabricate normalized records",
+    "snapshots_and_qualifications": "Source edition/model/dimension/method/estimate metadata are bounded witness context; do not become per-cell publication clocks",
+    "original_vs_site_clocks": "All producer source/acquisition clocks remain separate from Site import/index clocks",
+    "normalization_or_cap_failure": "Explicit status, gap and last-good preservation; never silently report succeeded0",
+    "access_state": "401/402/403 lock exact origin until access review;429 retains actual RetryAfter and cooldown; no auto retry/bypass"
+  },
+  "bounds": {
+    "max_records": 100,
+    "max_bytes": 262144,
+    "max_runs_per_part": 16,
+    "max_run_source_snapshot_bytes": 65536,
+    "max_normalized_record_bytes": 32768
+  },
+  "live_admission": "Separate owner-session manual importer only; new uploaded-unverified records never become reviewed/direct origin. Existing reviewed pins and originalv1/v2 imports remain unchanged. No machine credential or scheduler."
+}

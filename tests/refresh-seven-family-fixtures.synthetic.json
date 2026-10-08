@@ -1,0 +1,2126 @@
+{
+  "schema_version": "dormathon.refresh.derived-wire-fixtures.v1",
+  "origin": "synthetic_fixture; retained real factual fields with mocked/reduced transport; never live ingestion",
+  "original_producer_manifest_sha256": "e5946b33dd35b5478fdf6613788c0848c5087ecd5c77971ba2314e70a87df2b7",
+  "original_parts": [
+    {
+      "path": "fixtures/snapshot-final-seven-00.synthetic.json",
+      "sha256": "5bfa7b294973e4d576869bfa7d835b3a7b2475d4c7ed6a59aa7d05d8b45900ca",
+      "bytes": 251551,
+      "records": 51
+    },
+    {
+      "path": "fixtures/snapshot-final-seven-01.synthetic.json",
+      "sha256": "f9e581cf8b9c9e617b3b6f023439ccebb1daef5b6f4701e6fbdea506106bb03a",
+      "bytes": 174582,
+      "records": 47
+    },
+    {
+      "path": "fixtures/snapshot-final-seven-02.synthetic.json",
+      "sha256": "4a88389616cd1ccf871c017e883d83bcc7c8218d49e160dfd2d111048f489456",
+      "bytes": 3990,
+      "records": 0
+    }
+  ],
+  "snapshots": [
+    {
+      "payload": {
+        "coverage": [
+          {
+            "coverage": [
+              {
+                "provider_all_geographies_completeness": false,
+                "requested_period": [
+                  "2020",
+                  "2026"
+                ],
+                "returned_count": 6,
+                "returned_years": [
+                  "2020",
+                  "2025"
+                ],
+                "source_null_count": 2
+              }
+            ],
+            "job_id": "gdp.current",
+            "last_good_preserved_on_failure": false,
+            "requests": 2,
+            "status": "updated"
+          }
+        ],
+        "exported_at": "2026-10-08T19:38:27.725836+00:00",
+        "parser_version": "history-refresh-v0.19.0",
+        "part_id": "rpart_e68f7a4711a68d230ff842867eb6",
+        "producer": {
+          "execution_mode": "foreground_explicit",
+          "name": "Dormathon deterministic history refresh",
+          "version": "0.19.0"
+        },
+        "profile_id": "dormathon-approved-history-refresh-v0.19",
+        "profile_sha256": "3eb4fbdcf987c4c944ae90f512ba9ab73085d740f21b3b90c64b06bfe46aee7a",
+        "records": [
+          {
+            "acquisition_id": "racq_ff6628c255212c071fd6955dbf31",
+            "content_hash": "8c5c59314c2186192ef1e895f328d0b70f9488615d71e07719b69ee68979187c",
+            "metadata": {
+              "category": "economy",
+              "content_depth": "structured_facts",
+              "entities": [],
+              "event_country": null,
+              "event_time": null,
+              "evidence_url": "https://api.worldbank.org/v2/country/all/indicator/NY.GDP.MKTP.CD",
+              "facts": {
+                "accounting_period_alignment": "Provider annual year label; country-specific calendar/fiscal alignment not independently verified",
+                "data_origin_basis": "Actual retained official World Bank API response; Site admission is separate",
+                "geography": {
+                  "basis": "source_provided_countryiso3code_matched_WorldBank_dimension",
+                  "classification_time_basis": "Current retained dimension snapshot; not a reconstruction of historical membership/borders or sovereign recognition",
+                  "kind": "country_or_economy",
+                  "label": "China",
+                  "provided_iso3code_raw": "CHN",
+                  "provider": "World Bank",
+                  "provider_country_alias": "CN",
+                  "provider_geography_id": "CHN",
+                  "region_id": "EAS",
+                  "region_label": "East Asia & Pacific"
+                },
+                "indicator": "NY.GDP.MKTP.CD",
+                "indicator_label": "GDP (current US$)",
+                "methodology": {
+                  "country_method_changes": "Not exposed per observation in this API slice; preserve revision/vintage context, do not assume comparable national-accounting methods",
+                  "indicator_definition": "Nominal annual gross domestic product for the reporting economic territory; not inflation-adjusted or PPP",
+                  "source_organizations": [
+                    "Country official national statistics/central banks",
+                    "OECD national accounts",
+                    "World Bank staff estimates"
+                  ],
+                  "value_interpretation": "Changes can reflect price/FX/method revisions; no derived real-growth or risk inference"
+                },
+                "missingness": "source_numeric_value",
+                "observation_granularity": "year",
+                "observation_period": "2025",
+                "price_basis": "current_prices_not_constant_or_PPP",
+                "provider_display_decimals": 0,
+                "provider_status": null,
+                "publication_clock": "unknown; annual observation period is not publication or occurrence",
+                "record_kind": "statistical_observation",
+                "series_id": "worldbank:wdi:NY.GDP.MKTP.CD:CHN",
+                "unit": "current_USD",
+                "unit_basis": "Official GDP indicator definition explicitly states current United States dollars; source row unit may be blank",
+                "unit_scale": 1,
+                "value": 19498039388042.6,
+                "vintage": {
+                  "dataset_last_updated_date": "2026-07-13",
+                  "date_precision": "date_only_dataset_vintage_not_per_observation_update",
+                  "historical_vintages_in_this_batch": false,
+                  "per_observation_revision_time": null
+                }
+              },
+              "fetched_at": "2026-10-08T19:00:00Z",
+              "first_seen_at": "2026-10-08T19:00:00Z",
+              "ingested_at": null,
+              "location": null,
+              "location_basis": "unknown",
+              "published_at": null,
+              "short_summary": null,
+              "source_country": null,
+              "source_id": "stat_worldbank_gdp_annual",
+              "source_language": "en",
+              "source_license": "World Bank WDI GDP (NY.GDP.MKTP.CD), explicitly CC BY4.0; attribute World Bank and listed data providers, indicate transformations, retain dataset terms and no endorsement",
+              "source_updated_at": null,
+              "title": "GDP (current US$) — China — 2025",
+              "upstream_id": "NY.GDP.MKTP.CD:CHN:2025",
+              "url": "https://data.worldbank.org/indicator/NY.GDP.MKTP.CD?locations=CN"
+            },
+            "metadata_sha256": "488eb253b5c6cca9e70c6ecee45b78e27041f059633035e84ad62e7c5b10dff4",
+            "source_id": "stat_worldbank_gdp_annual",
+            "upstream_id": "NY.GDP.MKTP.CD:CHN:2025",
+            "version_id": "lver_d4d3990bbbf01575b4b5f87c5a04"
+          }
+        ],
+        "runs": [
+          {
+            "body_complete": true,
+            "bytes_read": 938,
+            "completed_at": "2026-10-08T19:38:26.936547+00:00",
+            "coverage": {
+              "request_role": "metadata",
+              "rows_changed": 0
+            },
+            "error": null,
+            "fetched_at": "2026-10-08T19:00:00Z",
+            "http_status": 200,
+            "id": "racq_7a3b78eecfd2bd95f70691d8b022",
+            "job_id": "gdp.current",
+            "no_change": true,
+            "requested_url": "https://api.worldbank.org/v2/indicator/NY.GDP.MKTP.CD?format=json",
+            "rows_changed": 0,
+            "source_id": "stat_worldbank_gdp_annual",
+            "source_snapshot": {},
+            "started_at": "2026-10-08T19:00:00Z",
+            "status": "no_change",
+            "transport_mode": "synthetic_fixture",
+            "upstream_raw_sha256": "51cec1e144a5bad8d92238630c0a305e20116e86d34ad95c7c315ed166255b28"
+          },
+          {
+            "body_complete": true,
+            "bytes_read": 2134,
+            "completed_at": "2026-10-08T19:38:26.936928+00:00",
+            "coverage": {
+              "provider_all_geographies_completeness": false,
+              "request_role": "data",
+              "requested_period": [
+                "2020",
+                "2026"
+              ],
+              "requested_window": {
+                "end": "2026",
+                "grain": "year",
+                "start": "2020"
+              },
+              "returned_count": 6,
+              "returned_years": [
+                "2020",
+                "2025"
+              ],
+              "rows_changed": 6,
+              "rows_parsed": 6,
+              "source_null_count": 2,
+              "truncated": false
+            },
+            "error": null,
+            "fetched_at": "2026-10-08T19:00:00Z",
+            "http_status": 200,
+            "id": "racq_ff6628c255212c071fd6955dbf31",
+            "job_id": "gdp.current",
+            "no_change": false,
+            "requested_url": "https://api.worldbank.org/v2/country/all/indicator/NY.GDP.MKTP.CD?source=2&date=2020:2026&format=json&per_page=5000&page=1",
+            "rows_changed": 6,
+            "source_id": "stat_worldbank_gdp_annual",
+            "source_snapshot": {
+              "country_dimension_policy": "Retained approved classification; unknown source IDs/aliases fail; historical borders not reconstructed",
+              "dataset_vintage_date": "2026-07-13",
+              "indicator_metadata": {
+                "id": "NY.GDP.MKTP.CD",
+                "name": "GDP (current US$)",
+                "sourceNote": "Gross domestic product is the total income earned through the production of goods and services in an economic territory during an accounting period. It can be measured in three different ways: using either the expenditure approach, the income approach, or the production approach. This indicator is expressed in current prices, meaning no adjustment has been made to account for price changes over time. This indicator is expressed in United States dollars.",
+                "sourceOrganization": "Country official statistics, National Statistical Organizations and/or Central Banks;\nNational Accounts data files, Organisation for Economic Co-operation and Development (OECD);\nStaff estimates, World Bank (WB)",
+                "unit": ""
+              },
+              "metadata_witness_id": "racq_7a3b78eecfd2bd95f70691d8b022"
+            },
+            "started_at": "2026-10-08T19:00:00Z",
+            "status": "succeeded",
+            "transport_mode": "synthetic_fixture",
+            "upstream_raw_sha256": "75e4e606be7cf6d98468d52f81a112e95c5ebdf012f62c13b7d81703f4c472b0"
+          }
+        ],
+        "transport_mode": "synthetic_fixture"
+      },
+      "payload_sha256": "34618cf9aecff549a82f97ceca1068e6e6277f5e8ad44f1647b02456b4d36321",
+      "schema_version": "dormathon.source-refresh.snapshot.v1"
+    },
+    {
+      "payload": {
+        "coverage": [
+          {
+            "coverage": [
+              {
+                "provider_all_geographies_completeness": false,
+                "requested_period": [
+                  "2020",
+                  "2026"
+                ],
+                "returned_count": 6,
+                "returned_years": [
+                  "2020",
+                  "2025"
+                ],
+                "source_null_count": 1
+              }
+            ],
+            "job_id": "employment.current",
+            "last_good_preserved_on_failure": false,
+            "requests": 2,
+            "status": "updated"
+          }
+        ],
+        "exported_at": "2026-10-08T19:38:27.725836+00:00",
+        "parser_version": "history-refresh-v0.19.0",
+        "part_id": "rpart_e68f7a4711a68d230ff842867eb6",
+        "producer": {
+          "execution_mode": "foreground_explicit",
+          "name": "Dormathon deterministic history refresh",
+          "version": "0.19.0"
+        },
+        "profile_id": "dormathon-approved-history-refresh-v0.19",
+        "profile_sha256": "3eb4fbdcf987c4c944ae90f512ba9ab73085d740f21b3b90c64b06bfe46aee7a",
+        "records": [
+          {
+            "acquisition_id": "racq_958f253439be9f73c2b932cead51",
+            "content_hash": "5e52278704702332c62d3cef1824db806c43ad86f5ba7fd9c182bd6c911eae56",
+            "metadata": {
+              "category": "economy",
+              "content_depth": "structured_facts",
+              "entities": [],
+              "event_country": null,
+              "event_time": null,
+              "evidence_url": "https://api.worldbank.org/v2/country/all/indicator/SL.UEM.TOTL.ZS",
+              "facts": {
+                "accounting_period_alignment": "Provider annual label; country-specific reference/calendar/fiscal alignment unverified",
+                "country_model_method_changes": "Not supplied per observation; modeled estimates and revisions may change",
+                "data_origin_basis": "Actual retained official World Bank API response; Site admission is separate",
+                "definition": "Share of labor force without work, available for work and seeking employment",
+                "domain": "employment",
+                "estimate_basis": "modeled_ILO_estimate",
+                "geography": {
+                  "basis": "source_provided_countryiso3code_matched_WorldBank_dimension",
+                  "classification_time_basis": "Current retained dimension snapshot; historical borders/group membership not reconstructed",
+                  "kind": "country_or_economy",
+                  "label": "China",
+                  "provided_iso3code_raw": "CHN",
+                  "provider": "World Bank",
+                  "provider_country_alias": "CN",
+                  "provider_geography_id": "CHN",
+                  "region_id": "EAS",
+                  "region_label": "East Asia & Pacific"
+                },
+                "indicator": "SL.UEM.TOTL.ZS",
+                "indicator_label": "Unemployment, total (% of total labor force) (modeled ILO estimate)",
+                "metadata_date_accessed_semantics": "Date accessed stated in exact indicator metadata; not model-release/publication/event time",
+                "missingness": "source_numeric_value",
+                "model_release_vintage": null,
+                "observation_granularity": "year",
+                "observation_period": "2025",
+                "original_provider": "ILO Modelled Estimates database (ILOEST), International Labour Organization / ILOSTAT",
+                "provider_display_decimals": 1,
+                "provider_metadata_date_accessed": "2026-01-17",
+                "provider_status": null,
+                "publication_clock": "unknown; annual observation label is not publication or occurrence",
+                "record_kind": "statistical_observation",
+                "reference_population": "Total labor force; not total population, unemployed headcount or individual talent",
+                "series_id": "worldbank:wdi:SL.UEM.TOTL.ZS:CHN",
+                "unit": "percent_of_total_labor_force",
+                "unit_basis": "Exact indicator metadata label defines percent of total labor force; row unit may be blank",
+                "unit_scale": 1,
+                "value": 4.615,
+                "value_interpretation": "Annual modeled labor aggregate; no real-time layoff, firm risk or person-level inference",
+                "vintage": {
+                  "dataset_last_updated_date": "2026-07-13",
+                  "date_precision": "date_only_dataset_vintage_not_per_observation_update",
+                  "historical_vintages_in_this_batch": false,
+                  "per_observation_revision_time": null
+                }
+              },
+              "fetched_at": "2026-10-08T19:00:00Z",
+              "first_seen_at": "2026-10-08T19:00:00Z",
+              "ingested_at": null,
+              "location": null,
+              "location_basis": "unknown",
+              "published_at": null,
+              "short_summary": null,
+              "source_country": null,
+              "source_id": "stat_worldbank_unemployment_ilo_annual",
+              "source_language": "en",
+              "source_license": "World Bank WDI total unemployment (SL.UEM.TOTL.ZS), explicitly CC BY4.0; attribute World Bank and ILOSTAT/ILOEST, indicate normalization, retain dataset terms and no endorsement",
+              "source_updated_at": null,
+              "title": "Modeled unemployment (% of labor force) — China — 2025",
+              "upstream_id": "SL.UEM.TOTL.ZS:CHN:2025",
+              "url": "https://data.worldbank.org/indicator/SL.UEM.TOTL.ZS?locations=CN"
+            },
+            "metadata_sha256": "2ca6d82826790bad31ad0f5127a8358e9e2280e88644237617d388734ad55c71",
+            "source_id": "stat_worldbank_unemployment_ilo_annual",
+            "upstream_id": "SL.UEM.TOTL.ZS:CHN:2025",
+            "version_id": "lver_1a4638a86f12d5e6c1fa7849fc41"
+          }
+        ],
+        "runs": [
+          {
+            "body_complete": true,
+            "bytes_read": 670,
+            "completed_at": "2026-10-08T19:38:27.014564+00:00",
+            "coverage": {
+              "request_role": "metadata",
+              "rows_changed": 0
+            },
+            "error": null,
+            "fetched_at": "2026-10-08T19:00:00Z",
+            "http_status": 200,
+            "id": "racq_1d694e15c1d7515c7a5d7d40afba",
+            "job_id": "employment.current",
+            "no_change": true,
+            "requested_url": "https://api.worldbank.org/v2/indicator/SL.UEM.TOTL.ZS?format=json",
+            "rows_changed": 0,
+            "source_id": "stat_worldbank_unemployment_ilo_annual",
+            "source_snapshot": {},
+            "started_at": "2026-10-08T19:00:00Z",
+            "status": "no_change",
+            "transport_mode": "synthetic_fixture",
+            "upstream_raw_sha256": "3ae370ed4bebba092338e94334c35add71490324ee57f1dfe81885dade51f52f"
+          },
+          {
+            "body_complete": true,
+            "bytes_read": 2387,
+            "completed_at": "2026-10-08T19:38:27.015239+00:00",
+            "coverage": {
+              "provider_all_geographies_completeness": false,
+              "request_role": "data",
+              "requested_period": [
+                "2020",
+                "2026"
+              ],
+              "requested_window": {
+                "end": "2026",
+                "grain": "year",
+                "start": "2020"
+              },
+              "returned_count": 6,
+              "returned_years": [
+                "2020",
+                "2025"
+              ],
+              "rows_changed": 6,
+              "rows_parsed": 6,
+              "source_null_count": 1,
+              "truncated": false
+            },
+            "error": null,
+            "fetched_at": "2026-10-08T19:00:00Z",
+            "http_status": 200,
+            "id": "racq_958f253439be9f73c2b932cead51",
+            "job_id": "employment.current",
+            "no_change": false,
+            "requested_url": "https://api.worldbank.org/v2/country/all/indicator/SL.UEM.TOTL.ZS?source=2&date=2020:2026&format=json&per_page=5000&page=1",
+            "rows_changed": 6,
+            "source_id": "stat_worldbank_unemployment_ilo_annual",
+            "source_snapshot": {
+              "country_dimension_policy": "Retained approved classification; unknown source IDs/aliases fail; historical borders not reconstructed",
+              "dataset_vintage_date": "2026-07-13",
+              "indicator_metadata": {
+                "id": "SL.UEM.TOTL.ZS",
+                "name": "Unemployment, total (% of total labor force) (modeled ILO estimate)",
+                "sourceNote": "Unemployment refers to the share of the labor force that is without work but available for and seeking employment.",
+                "sourceOrganization": "ILO Modelled Estimates database (ILOEST), International Labour Organization (ILO), uri: https://ilostat.ilo.org/data/bulk/, publisher: ILOSTAT, type: external database, date accessed: January 17, 2026",
+                "unit": ""
+              },
+              "metadata_witness_id": "racq_1d694e15c1d7515c7a5d7d40afba"
+            },
+            "started_at": "2026-10-08T19:00:00Z",
+            "status": "succeeded",
+            "transport_mode": "synthetic_fixture",
+            "upstream_raw_sha256": "607c547353e593a3d4aa16e788951876f728da92fca0a3f2db68eb2deed17207"
+          }
+        ],
+        "transport_mode": "synthetic_fixture"
+      },
+      "payload_sha256": "483af15628015468d72bf40af54a5ef405b340259e14207a40e39663248be2b5",
+      "schema_version": "dormathon.source-refresh.snapshot.v1"
+    },
+    {
+      "payload": {
+        "coverage": [
+          {
+            "coverage": [
+              {
+                "legitimate_empty": false,
+                "missing_requested_series": [],
+                "provider_calendar_completeness": false,
+                "requested_period": [
+                  "2026-09-30",
+                  "2026-10-08"
+                ],
+                "returned_count": 4,
+                "truncated": false
+              }
+            ],
+            "job_id": "fx.current",
+            "last_good_preserved_on_failure": false,
+            "requests": 1,
+            "status": "updated"
+          }
+        ],
+        "exported_at": "2026-10-08T19:38:27.725836+00:00",
+        "parser_version": "history-refresh-v0.19.0",
+        "part_id": "rpart_e68f7a4711a68d230ff842867eb6",
+        "producer": {
+          "execution_mode": "foreground_explicit",
+          "name": "Dormathon deterministic history refresh",
+          "version": "0.19.0"
+        },
+        "profile_id": "dormathon-approved-history-refresh-v0.19",
+        "profile_sha256": "3eb4fbdcf987c4c944ae90f512ba9ab73085d740f21b3b90c64b06bfe46aee7a",
+        "records": [
+          {
+            "acquisition_id": "racq_cf5c863bb6c21ed128bed6c821b9",
+            "content_hash": "4970c523fbab954e584e64856376f1094e04bba2cc8f6b8c434a356ec4f8b85b",
+            "metadata": {
+              "category": "economy",
+              "content_depth": "structured_facts",
+              "entities": [],
+              "event_country": null,
+              "event_time": null,
+              "evidence_url": "https://data-api.ecb.europa.eu/service/data/EXR/D.MYR.EUR.SP00.A",
+              "facts": {
+                "agency_code_basis": "Primary ECB Data Portal maps shared organization/provider code4F0 to ECB",
+                "availability_basis": "Published source observation dates; TARGET closure calendar and full provider continuity not verified",
+                "base_currency": "EUR",
+                "data_origin_basis": "Actual retained official ECB API CSV response; Site admission is separate",
+                "domain": "FX",
+                "geography_basis": "Supplied currency dimensions only; no country, company operating footprint or event location inferred",
+                "metadata_preservation": "Original CSV values, codes and metadata retained unchanged; typed wrapper/formatting only",
+                "missingness": "source_numeric_value",
+                "observation_granularity": "day",
+                "observation_period": "2026-10-06",
+                "publication_clock": "Unknown; source date and TITLE_COMPL clock are not per-record publication instants",
+                "quote_currency": "MYR",
+                "record_kind": "statistical_observation",
+                "reference_type": "ECB_euro_reference_rate_informational",
+                "series_id": "ECB:EXR.D.MYR.EUR.SP00.A",
+                "source_agency_code": "4F0",
+                "source_agency_label": "European Central Bank (ECB)",
+                "source_metadata": {
+                  "BREAKS": "",
+                  "COLLECTION": "A",
+                  "COMPILATION": "",
+                  "COMPILING_ORG": "",
+                  "COVERAGE": "",
+                  "CURRENCY": "MYR",
+                  "CURRENCY_DENOM": "EUR",
+                  "DECIMALS": "4",
+                  "DISS_ORG": "",
+                  "DOM_SER_IDS": "",
+                  "EXR_SUFFIX": "A",
+                  "EXR_TYPE": "SP00",
+                  "FREQ": "D",
+                  "KEY": "EXR.D.MYR.EUR.SP00.A",
+                  "NAT_TITLE": "",
+                  "OBS_COM": "",
+                  "OBS_CONF": "F",
+                  "OBS_PRE_BREAK": "",
+                  "OBS_STATUS": "A",
+                  "OBS_VALUE": "4.6034",
+                  "PUBL_ECB": "",
+                  "PUBL_MU": "",
+                  "PUBL_PUBLIC": "",
+                  "SOURCE_AGENCY": "4F0",
+                  "SOURCE_PUB": "",
+                  "TIME_FORMAT": "P1D",
+                  "TIME_PERIOD": "2026-10-06",
+                  "TITLE": "Malaysian ringgit/Euro ECB reference exchange rate",
+                  "TITLE_COMPL": "ECB reference exchange rate, Malaysian ringgit/Euro, 2.15 pm (C.E.T.)",
+                  "UNIT": "MYR",
+                  "UNIT_INDEX_BASE": "99Q1=100",
+                  "UNIT_MULT": "0"
+                },
+                "source_title": "Malaysian ringgit/Euro ECB reference exchange rate",
+                "transformations": {
+                  "annualized": false,
+                  "cross_rate_calculated": false,
+                  "inverted": false,
+                  "scaled": false
+                },
+                "unit": "MYR_per_EUR",
+                "unit_index_base_semantics": "UNIT_INDEX_BASE is retained raw and not interpreted as an index/base period for these currency-unit reference rates",
+                "unit_scale": 1,
+                "value": 4.6034,
+                "value_raw": "4.6034"
+              },
+              "fetched_at": "2026-10-08T19:00:00Z",
+              "first_seen_at": "2026-10-08T19:00:00Z",
+              "ingested_at": null,
+              "location": null,
+              "location_basis": "unknown",
+              "published_at": null,
+              "short_summary": null,
+              "source_country": null,
+              "source_id": "stat_ecb_fx_daily_reference",
+              "source_language": "en",
+              "source_license": "ECB/ESCB public statistics reuse policy: commercial/noncommercial reuse with ECB attribution and unchanged statistics/metadata; exclude uncleared third-party data. Source: ECB statistics; original reference-rate values and metadata unchanged.",
+              "source_updated_at": null,
+              "title": "Malaysian ringgit/Euro ECB reference exchange rate — 2026-10-06",
+              "upstream_id": "EXR.D.MYR.EUR.SP00.A:2026-10-06",
+              "url": "https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html"
+            },
+            "metadata_sha256": "0b24e65c3290f1b35592e1c98715000a80a5d4c28ae5147df7bc89eb168db292",
+            "source_id": "stat_ecb_fx_daily_reference",
+            "upstream_id": "EXR.D.MYR.EUR.SP00.A:2026-10-06",
+            "version_id": "lver_256efa6a032881660668b63dfd13"
+          }
+        ],
+        "runs": [
+          {
+            "body_complete": true,
+            "bytes_read": 1190,
+            "completed_at": "2026-10-08T19:38:27.093454+00:00",
+            "coverage": {
+              "legitimate_empty": false,
+              "missing_requested_series": [],
+              "provider_calendar_completeness": false,
+              "request_role": "data",
+              "requested_period": [
+                "2026-09-30",
+                "2026-10-08"
+              ],
+              "requested_window": {
+                "end": "2026-10-08",
+                "grain": "day",
+                "start": "2026-09-30"
+              },
+              "returned_count": 4,
+              "rows_changed": 4,
+              "rows_parsed": 4,
+              "truncated": false
+            },
+            "error": null,
+            "fetched_at": "2026-10-08T19:00:00Z",
+            "http_status": 200,
+            "id": "racq_cf5c863bb6c21ed128bed6c821b9",
+            "job_id": "fx.current",
+            "no_change": false,
+            "requested_url": "https://data-api.ecb.europa.eu/service/data/EXR/D.USD+MYR.EUR.SP00.A?startPeriod=2026-09-30&endPeriod=2026-10-08&format=csvdata",
+            "rows_changed": 4,
+            "source_id": "stat_ecb_fx_daily_reference",
+            "source_snapshot": {
+              "quote_units": "Unscaled supplied USD_per_EUR/MYR_per_EUR;32 raw CSV metadata fields preserved",
+              "source_agency": "ECB4F0"
+            },
+            "started_at": "2026-10-08T19:00:00Z",
+            "status": "succeeded",
+            "transport_mode": "synthetic_fixture",
+            "upstream_raw_sha256": "917de1a83d7989885bdf1419d83399db08a5c0e50a3826dea75c03bc0b38ff81"
+          }
+        ],
+        "transport_mode": "synthetic_fixture"
+      },
+      "payload_sha256": "57201b1519e44ca2c8d4a67e8f7ff246d39b8eaff71cd359e641bfb93cf70d67",
+      "schema_version": "dormathon.source-refresh.snapshot.v1"
+    },
+    {
+      "payload": {
+        "coverage": [
+          {
+            "coverage": [
+              {
+                "empty_allowed": true,
+                "feed_generated_at": "2026-10-08T16:37:46.912074+01:00",
+                "has_next_page": false,
+                "known_empty": false,
+                "pages_declared": 1,
+                "recognized_schema": true,
+                "returned_count": 3,
+                "scope": {},
+                "truncated": false,
+                "upstream_count": 3
+              }
+            ],
+            "job_id": "uk.current",
+            "last_good_preserved_on_failure": false,
+            "requests": 1,
+            "status": "updated"
+          }
+        ],
+        "exported_at": "2026-10-08T19:38:27.725836+00:00",
+        "parser_version": "history-refresh-v0.19.0",
+        "part_id": "rpart_e68f7a4711a68d230ff842867eb6",
+        "producer": {
+          "execution_mode": "foreground_explicit",
+          "name": "Dormathon deterministic history refresh",
+          "version": "0.19.0"
+        },
+        "profile_id": "dormathon-approved-history-refresh-v0.19",
+        "profile_sha256": "3eb4fbdcf987c4c944ae90f512ba9ab73085d740f21b3b90c64b06bfe46aee7a",
+        "records": [
+          {
+            "acquisition_id": "racq_027cdb600f45f29d8e0de9412f8c",
+            "content_hash": "db9c5005a2b3acb2ba8319532a679644fe026ce4b632d98cc3dbe7048ef42f49",
+            "metadata": {
+              "category": "policy",
+              "content_depth": "structured_facts",
+              "entities": [],
+              "event_country": null,
+              "event_time": null,
+              "evidence_url": "https://www.legislation.gov.uk/nia/2026/9/enacted",
+              "facts": {
+                "binding_status": "unknown_not_inferred",
+                "comments_close_date": null,
+                "document_id": "http://www.legislation.gov.uk/id/nia/2026/9",
+                "document_kind": "NorthernIrelandAct",
+                "document_kind_basis": "source_provided",
+                "domain": "law_policy",
+                "effective_date": null,
+                "effectiveness_status": "unknown_not_verified",
+                "instrument_id": "http://www.legislation.gov.uk/id/nia/2026/9",
+                "instrument_id_basis": "source_identifier_components",
+                "instrument_number": 9,
+                "instrument_year": 2026,
+                "isbn": null,
+                "jurisdiction": {
+                  "basis": "source_type_identifier_mapping",
+                  "country_code": "GB",
+                  "document_family": "Northern Ireland Assembly",
+                  "territorial_application": null,
+                  "territorial_extent": null
+                },
+                "navigable_link_scheme": "https",
+                "original_identifier_scheme": "http",
+                "publication_at_raw": "2026-10-08T16:08:48.907044+01:00",
+                "publication_time_basis": "website_Atom_published_not_enactment_or_commencement",
+                "record_kind": "legal_document_publication",
+                "relationships_basis": "Supersedes attributes supplied by feed only; effects/amendment graph not acquired",
+                "resource_kind": "legislation",
+                "resource_kind_basis": "source_title_and_identifier_shape",
+                "source_creation_date": null,
+                "source_date_semantics": "CreationDate retained as source field; enactment/made/commencement interpretation not established by this feed pilot",
+                "source_update_basis": "website_entry_Atom_updated_not_legal_amendment_proof",
+                "subjects": [],
+                "supersedes": [],
+                "text_scope": "title_and_structured_metadata_only; summaries/bodies/contacts excluded",
+                "time_precision": {
+                  "creation": "unknown",
+                  "effective": "unknown",
+                  "event": "unknown",
+                  "publication": "source_timezone_timestamp",
+                  "source_update": "source_timezone_timestamp"
+                },
+                "type_code": "nia",
+                "updated_at_raw": "2026-10-08T16:08:49+01:00"
+              },
+              "fetched_at": "2026-10-08T19:00:00Z",
+              "first_seen_at": "2026-10-08T19:00:00Z",
+              "ingested_at": null,
+              "location": null,
+              "location_basis": "unknown",
+              "published_at": "2026-10-08T16:08:48.907044+01:00",
+              "short_summary": null,
+              "source_country": "GB",
+              "source_id": "legal_uk_legislation_publications",
+              "source_language": "en",
+              "source_license": "© Crown and database right. Derived from legislation.gov.uk metadata under the Open Government Licence v3.0. Normalized metadata; no official endorsement.",
+              "source_updated_at": "2026-10-08T16:08:49+01:00",
+              "title": "Inquiry (Mother and Baby Institutions, Magdalene Laundries and Workhouses) and Redress Scheme Act (Northern Ireland) 2026",
+              "upstream_id": "http://www.legislation.gov.uk/id/nia/2026/9",
+              "url": "https://www.legislation.gov.uk/nia/2026/9/enacted"
+            },
+            "metadata_sha256": "7cedd290fe40e493b650b2328f26749b1346019355eca42464b16eaff8c5f81e",
+            "source_id": "legal_uk_legislation_publications",
+            "upstream_id": "http://www.legislation.gov.uk/id/nia/2026/9",
+            "version_id": "lver_65cd1bafb9443efd6a4f1249953c"
+          }
+        ],
+        "runs": [
+          {
+            "body_complete": true,
+            "bytes_read": 32501,
+            "completed_at": "2026-10-08T19:38:27.176503+00:00",
+            "coverage": {
+              "empty_allowed": true,
+              "feed_generated_at": "2026-10-08T16:37:46.912074+01:00",
+              "has_next_page": false,
+              "known_empty": false,
+              "pages_declared": 1,
+              "recognized_schema": true,
+              "request_role": "data",
+              "requested_window": {
+                "end": null,
+                "grain": "rolling_feed",
+                "start": null
+              },
+              "returned_count": 3,
+              "rows_changed": 3,
+              "rows_parsed": 3,
+              "scope": {},
+              "truncated": false,
+              "upstream_count": 3
+            },
+            "error": null,
+            "fetched_at": "2026-10-08T19:00:00Z",
+            "http_status": 200,
+            "id": "racq_027cdb600f45f29d8e0de9412f8c",
+            "job_id": "uk.current",
+            "no_change": false,
+            "requested_url": "https://www.legislation.gov.uk/new/data.feed",
+            "rows_changed": 3,
+            "source_id": "legal_uk_legislation_publications",
+            "source_snapshot": {
+              "current_binding_effect": "unknown_not_inferred",
+              "feed_generated_at": "2026-10-08T16:37:46.912074+01:00",
+              "publication_basis": "Website published/updated; not legal commencement",
+              "source_scope": {}
+            },
+            "started_at": "2026-10-08T19:00:00Z",
+            "status": "succeeded",
+            "transport_mode": "synthetic_fixture",
+            "upstream_raw_sha256": "507d385bd324619b8be83fefb88d4b70addf469b608cfbde3dbadb52f3b4b7ec"
+          }
+        ],
+        "transport_mode": "synthetic_fixture"
+      },
+      "payload_sha256": "97812d8fd3c7f626f074d54828fd6429897af050120fe550f5870c3e8a5a1508",
+      "schema_version": "dormathon.source-refresh.snapshot.v1"
+    },
+    {
+      "payload": {
+        "coverage": [
+          {
+            "coverage": [
+              {
+                "empty_allowed": true,
+                "has_next_page": false,
+                "known_empty": false,
+                "recognized_schema": true,
+                "returned_count": 3,
+                "scope": {
+                  "period_end": "2026-10-08",
+                  "period_start": "2026-10-01"
+                },
+                "total_pages": 1,
+                "truncated": false,
+                "upstream_count": 3
+              }
+            ],
+            "job_id": "us.current",
+            "last_good_preserved_on_failure": false,
+            "requests": 1,
+            "status": "updated"
+          }
+        ],
+        "exported_at": "2026-10-08T19:38:27.725836+00:00",
+        "parser_version": "history-refresh-v0.19.0",
+        "part_id": "rpart_e68f7a4711a68d230ff842867eb6",
+        "producer": {
+          "execution_mode": "foreground_explicit",
+          "name": "Dormathon deterministic history refresh",
+          "version": "0.19.0"
+        },
+        "profile_id": "dormathon-approved-history-refresh-v0.19",
+        "profile_sha256": "3eb4fbdcf987c4c944ae90f512ba9ab73085d740f21b3b90c64b06bfe46aee7a",
+        "records": [
+          {
+            "acquisition_id": "racq_de06398cf176ab0b0b9a75aa7dd1",
+            "content_hash": "9286144cee83ad6325772fad056eb3fa6ca11a6b8f96c7cec3c1f41ebe28da95",
+            "metadata": {
+              "category": "policy",
+              "content_depth": "structured_facts",
+              "entities": [
+                {
+                  "basis": "source_provided",
+                  "name": "Nuclear Regulatory Commission",
+                  "type": "organization"
+                }
+              ],
+              "event_country": null,
+              "event_time": null,
+              "evidence_url": "https://www.govinfo.gov/content/pkg/FR-2026-10-08/pdf/C1-2026-19812.pdf",
+              "facts": {
+                "action": null,
+                "agencies": [
+                  {
+                    "basis": "source_provided",
+                    "id": 383,
+                    "name": "Nuclear Regulatory Commission",
+                    "parent_id": null,
+                    "raw_name": "NUCLEAR REGULATORY COMMISSION",
+                    "url": "https://www.federalregister.gov/agencies/nuclear-regulatory-commission"
+                  }
+                ],
+                "binding_status": "unknown_not_inferred",
+                "cfr_references": [],
+                "citation": "91 FR 64408",
+                "comments_close_date": null,
+                "docket_ids": [
+                  "NRC-2026-4555"
+                ],
+                "document_id": "C1-2026-19812",
+                "document_kind": "Notice",
+                "document_kind_basis": "source_provided",
+                "domain": "law_policy",
+                "effective_date": null,
+                "effectiveness_status": "unknown_not_verified",
+                "jurisdiction": {
+                  "basis": "source_publication_system",
+                  "country_code": "US",
+                  "level": "federal",
+                  "territorial_application": null
+                },
+                "official_legal_edition_verified": false,
+                "official_pdf_url": "https://www.govinfo.gov/content/pkg/FR-2026-10-08/pdf/C1-2026-19812.pdf",
+                "publication_date": "2026-10-08",
+                "publication_time_basis": "source_date_only",
+                "record_kind": "legal_document_publication",
+                "regulation_id_numbers": [],
+                "relationships_basis": "supplied agency-parent/CFR/docket/RIN references only; no automatic applicability or company link",
+                "source_representation": "FederalRegister.gov unofficial API rendition; linked govinfo PDF not fetched/verified",
+                "text_scope": "title_and_structured_metadata_only; abstracts/bodies/contacts excluded",
+                "time_precision": {
+                  "comments_close": "unknown",
+                  "effective": "unknown",
+                  "event": "unknown",
+                  "publication": "day",
+                  "source_update": "unknown"
+                }
+              },
+              "fetched_at": "2026-10-08T19:00:00Z",
+              "first_seen_at": "2026-10-08T19:00:00Z",
+              "ingested_at": null,
+              "location": null,
+              "location_basis": "unknown",
+              "published_at": null,
+              "short_summary": null,
+              "source_country": "US",
+              "source_id": "legal_us_federal_register",
+              "source_language": "en",
+              "source_license": "Office of the Federal Register, National Archives and Records Administration / U.S. Government Publishing Office; FederalRegister.gov API metadata. Unofficial API rendition; consult the linked official govinfo edition. Normalized metadata; no endorsement.",
+              "source_updated_at": null,
+              "title": "Biweekly Notice; Applications and Amendments to Facility Operating Licenses and Combined Licenses Involving No Significant Hazards Considerations",
+              "upstream_id": "C1-2026-19812",
+              "url": "https://www.federalregister.gov/documents/2026/10/08/C1-2026-19812/biweekly-notice-applications-and-amendments-to-facility-operating-licenses-and-combined-licenses"
+            },
+            "metadata_sha256": "bf7092e279f30e7d9f95a8b27767dd1a95908dfc6775851693ba376b831451b4",
+            "source_id": "legal_us_federal_register",
+            "upstream_id": "C1-2026-19812",
+            "version_id": "lver_3d50a784d7f0b22a8f0d90b7edb6"
+          }
+        ],
+        "runs": [
+          {
+            "body_complete": true,
+            "bytes_read": 4134,
+            "completed_at": "2026-10-08T19:38:27.263244+00:00",
+            "coverage": {
+              "empty_allowed": true,
+              "has_next_page": false,
+              "known_empty": false,
+              "recognized_schema": true,
+              "request_role": "data",
+              "requested_window": {
+                "end": "2026-10-08",
+                "grain": "day",
+                "start": "2026-10-01"
+              },
+              "returned_count": 3,
+              "rows_changed": 3,
+              "rows_parsed": 3,
+              "scope": {
+                "period_end": "2026-10-08",
+                "period_start": "2026-10-01"
+              },
+              "total_pages": 1,
+              "truncated": false,
+              "upstream_count": 3
+            },
+            "error": null,
+            "fetched_at": "2026-10-08T19:00:00Z",
+            "http_status": 200,
+            "id": "racq_de06398cf176ab0b0b9a75aa7dd1",
+            "job_id": "us.current",
+            "no_change": false,
+            "requested_url": "https://www.federalregister.gov/api/v1/documents.json?per_page=100&page=1&order=newest&conditions%5Bpublication_date%5D%5Bgte%5D=2026-10-01&conditions%5Bpublication_date%5D%5Blte%5D=2026-10-08&conditions%5Btype%5D%5B%5D=RULE&conditions%5Btype%5D%5B%5D=PRORULE&conditions%5Btype%5D%5B%5D=NOTICE&fields%5B%5D=document_number&fields%5B%5D=title&fields%5B%5D=type&fields%5B%5D=publication_date&fields%5B%5D=html_url&fields%5B%5D=pdf_url&fields%5B%5D=agencies&fields%5B%5D=effective_on&fields%5B%5D=comments_close_on&fields%5B%5D=citation&fields%5B%5D=cfr_references&fields%5B%5D=docket_ids&fields%5B%5D=regulation_id_numbers&fields%5B%5D=action",
+            "rows_changed": 3,
+            "source_id": "legal_us_federal_register",
+            "source_snapshot": {
+              "current_binding_effect": "unknown_not_inferred",
+              "feed_generated_at": null,
+              "publication_basis": "Source day-only publication",
+              "source_scope": {
+                "period_end": "2026-10-08",
+                "period_start": "2026-10-01"
+              }
+            },
+            "started_at": "2026-10-08T19:00:00Z",
+            "status": "succeeded",
+            "transport_mode": "synthetic_fixture",
+            "upstream_raw_sha256": "7d24c8d7151b33a46ecc63257908c7a9416b0feab80b65d8307ee1899131ab16"
+          }
+        ],
+        "transport_mode": "synthetic_fixture"
+      },
+      "payload_sha256": "28f65acfb9a191690bf128a11e6d026b4f13338c6f8ede77842ca6faeb9b0709",
+      "schema_version": "dormathon.source-refresh.snapshot.v1"
+    },
+    {
+      "payload": {
+        "coverage": [
+          {
+            "coverage": [
+              {
+                "cap": 100,
+                "fixture_reduced_case_cohort": true,
+                "provider_completeness_claim": false,
+                "requested_period": [
+                  "2020-01-01",
+                  "2026-10-08"
+                ],
+                "selected_cases": 6,
+                "truncated": false
+              }
+            ],
+            "job_id": "trade.current",
+            "last_good_preserved_on_failure": false,
+            "requests": 1,
+            "status": "updated"
+          }
+        ],
+        "exported_at": "2026-10-08T19:38:27.725836+00:00",
+        "parser_version": "history-refresh-v0.19.0",
+        "part_id": "rpart_e68f7a4711a68d230ff842867eb6",
+        "producer": {
+          "execution_mode": "foreground_explicit",
+          "name": "Dormathon deterministic history refresh",
+          "version": "0.19.0"
+        },
+        "profile_id": "dormathon-approved-history-refresh-v0.19",
+        "profile_sha256": "3eb4fbdcf987c4c944ae90f512ba9ab73085d740f21b3b90c64b06bfe46aee7a",
+        "records": [
+          {
+            "acquisition_id": "racq_8432ab694a8fb86d0e9da654ef26",
+            "content_hash": "c5c5235d218c6846c5a1d2b00f083cee1d0f23d2c131ea56ffdaf18bd08804cc",
+            "metadata": {
+              "category": "policy",
+              "content_depth": "structured_facts",
+              "entities": [],
+              "event_country": null,
+              "event_time": null,
+              "evidence_url": "https://thedocs.worldbank.org/en/doc/1b03ee05a4a6d2374c126196ddf0a128-0430012025/related/Global-safeguard-measures.zip",
+              "facts": {
+                "binding_status": "unknown_not_inferred",
+                "case_id": "MYS-SG-6",
+                "case_id_basis": "source_CASE_ID_unambiguous_after_conflict_quarantine",
+                "current_effectiveness": "unknown_not_verified",
+                "date_precision": "Source Excel date cells are day-only; source publication/update and incident clocks unknown",
+                "domain": "trade_policy",
+                "implementing_jurisdiction": {
+                  "basis": "source_SG_CTY_NAME_and_CASE_ID",
+                  "canonical_country_code": null,
+                  "entity_kind": "unresolved_source_country_or_group_label",
+                  "source_case_prefix": "MYS",
+                  "source_name": "Malaysia",
+                  "territorial_application": null
+                },
+                "measure_family": "global_safeguard",
+                "measure_family_basis": "official_World_Bank_TTBD_component",
+                "missing_markers_basis": "Original dots/MI/IF/empty cells retained without antidumping-codebook reinterpretation",
+                "product_description": "Ceramic Floor and Wall Tiles",
+                "record_kind": "trade_remedy_case",
+                "related_absence_basis": "No returned related rows is not evidence of no exceptions, quotas or measures",
+                "relationship_basis": "Provided case-keyed product/country/measure references only; no company applicability or source-country-code harmonization",
+                "selection_clock_basis": "source_WTO_INIT_DATE_calendar_cell; exact initiation_vs_notification meaning unverified",
+                "selection_date": "2020-09-13",
+                "source_document_status": "World_Bank_compilation_of_WTO_notifications_and_national_case_documents; originals_not_refetched",
+                "source_master_fields": {
+                  "CASE_ID": "MYS-SG-6",
+                  "D1_DATE": {
+                    "cell_type": "text",
+                    "date": null,
+                    "precision": "unknown",
+                    "raw_value": "."
+                  },
+                  "D1_YR": ".",
+                  "D2_DATE": {
+                    "cell_type": "text",
+                    "date": null,
+                    "precision": "unknown",
+                    "raw_value": "."
+                  },
+                  "D2_YR": ".",
+                  "D3_DATE": {
+                    "cell_type": "text",
+                    "date": null,
+                    "precision": "unknown",
+                    "raw_value": "."
+                  },
+                  "D3_YR": ".",
+                  "D4_DATE": {
+                    "cell_type": "text",
+                    "date": null,
+                    "precision": "unknown",
+                    "raw_value": "."
+                  },
+                  "D4_YR": ".",
+                  "EXP_DATE": {
+                    "cell_type": "text",
+                    "date": null,
+                    "precision": "unknown",
+                    "raw_value": "."
+                  },
+                  "EXP_YR": ".",
+                  "F_DATE": {
+                    "cell_type": "text",
+                    "date": null,
+                    "precision": "unknown",
+                    "raw_value": "."
+                  },
+                  "F_DEC": ".",
+                  "F_INJ_DATE": {
+                    "cell_type": "text",
+                    "date": null,
+                    "precision": "unknown",
+                    "raw_value": "."
+                  },
+                  "F_INJ_DEC": ".",
+                  "F_SG_DATE": {
+                    "cell_type": "text",
+                    "date": null,
+                    "precision": "unknown",
+                    "raw_value": "."
+                  },
+                  "F_SG_MEASURE": ".",
+                  "PET_DATE": {
+                    "cell_type": "text",
+                    "date": null,
+                    "precision": "unknown",
+                    "raw_value": "MI"
+                  },
+                  "PRODUCT": "Ceramic Floor and Wall Tiles",
+                  "P_DATE": {
+                    "cell_type": "excel_date",
+                    "date": "2021-01-11",
+                    "precision": "day",
+                    "raw_value": 44207
+                  },
+                  "P_DEC": "N",
+                  "P_INJ_DEC": "N",
+                  "P_SG_DATE": {
+                    "cell_type": "text",
+                    "date": null,
+                    "precision": "unknown",
+                    "raw_value": "."
+                  },
+                  "P_SG_MEASURE": ".",
+                  "REVOKE_DATE": {
+                    "cell_type": "text",
+                    "date": null,
+                    "precision": "unknown",
+                    "raw_value": "."
+                  },
+                  "REVOKE_YEAR": ".",
+                  "SG_CTY_NAME": "Malaysia",
+                  "TERM_DATE": {
+                    "cell_type": "text",
+                    "date": null,
+                    "precision": "unknown",
+                    "raw_value": "."
+                  },
+                  "V_NUMBER": "Q4_2024",
+                  "WTO_FINAL_DOC": "G/SG/N/9/MYS/3",
+                  "WTO_INIT_DATE": {
+                    "cell_type": "excel_date",
+                    "date": "2020-09-13",
+                    "precision": "day",
+                    "raw_value": 44087
+                  },
+                  "WTO_INIT_DOC": "G/SG/N/6/MYS/6",
+                  "WTO_INJ_INV_DOC": ".",
+                  "WTO_PRELIM_DOC": "MI"
+                },
+                "source_related_tables": {
+                  "SG-Exemptions": {
+                    "cap": 24,
+                    "matched_count": 0,
+                    "rows": [],
+                    "selected_count": 0,
+                    "selection_basis": "First supplied workbook rows for this case, in source order; not a representative/full product or country list",
+                    "truncated": false
+                  },
+                  "SG-Final Measures": {
+                    "cap": 12,
+                    "matched_count": 12,
+                    "rows": [
+                      {
+                        "AVD": ".",
+                        "CASE_ID": "MYS-SG-6",
+                        "DPU": ".",
+                        "F_SG_PRODUCT": ".",
+                        "F_SG_PRODUCT_D1": ".",
+                        "F_SG_PRODUCT_D2": ".",
+                        "F_SG_PRODUCT_D3": ".",
+                        "F_SG_PRODUCT_D4": ".",
+                        "F_SG_QR": ".",
+                        "F_SG_QR_D1": ".",
+                        "F_SG_QR_D2": ".",
+                        "F_SG_QR_D3": ".",
+                        "F_SG_QR_D4": ".",
+                        "HS_CODE": 6907212100,
+                        "HS_DIGITS": 10,
+                        "HS_SUBSET": 1,
+                        "QR": ".",
+                        "REC_CTY_CODE": ".",
+                        "REC_CTY_NAME": ".",
+                        "SD": ".",
+                        "SG_CTY_NAME": "Malaysia",
+                        "TRQ/AVD": ".",
+                        "TRQ/SD": ".",
+                        "UNIT_DUTY": ".",
+                        "UNIT_QR": "."
+                      },
+                      {
+                        "AVD": ".",
+                        "CASE_ID": "MYS-SG-6",
+                        "DPU": ".",
+                        "F_SG_PRODUCT": ".",
+                        "F_SG_PRODUCT_D1": ".",
+                        "F_SG_PRODUCT_D2": ".",
+                        "F_SG_PRODUCT_D3": ".",
+                        "F_SG_PRODUCT_D4": ".",
+                        "F_SG_QR": ".",
+                        "F_SG_QR_D1": ".",
+                        "F_SG_QR_D2": ".",
+                        "F_SG_QR_D3": ".",
+                        "F_SG_QR_D4": ".",
+                        "HS_CODE": 6907212300,
+                        "HS_DIGITS": 10,
+                        "HS_SUBSET": 1,
+                        "QR": ".",
+                        "REC_CTY_CODE": ".",
+                        "REC_CTY_NAME": ".",
+                        "SD": ".",
+                        "SG_CTY_NAME": "Malaysia",
+                        "TRQ/AVD": ".",
+                        "TRQ/SD": ".",
+                        "UNIT_DUTY": ".",
+                        "UNIT_QR": "."
+                      },
+                      {
+                        "AVD": ".",
+                        "CASE_ID": "MYS-SG-6",
+                        "DPU": ".",
+                        "F_SG_PRODUCT": ".",
+                        "F_SG_PRODUCT_D1": ".",
+                        "F_SG_PRODUCT_D2": ".",
+                        "F_SG_PRODUCT_D3": ".",
+                        "F_SG_PRODUCT_D4": ".",
+                        "F_SG_QR": ".",
+                        "F_SG_QR_D1": ".",
+                        "F_SG_QR_D2": ".",
+                        "F_SG_QR_D3": ".",
+                        "F_SG_QR_D4": ".",
+                        "HS_CODE": 6907219100,
+                        "HS_DIGITS": 10,
+                        "HS_SUBSET": 1,
+                        "QR": ".",
+                        "REC_CTY_CODE": ".",
+                        "REC_CTY_NAME": ".",
+                        "SD": ".",
+                        "SG_CTY_NAME": "Malaysia",
+                        "TRQ/AVD": ".",
+                        "TRQ/SD": ".",
+                        "UNIT_DUTY": ".",
+                        "UNIT_QR": "."
+                      },
+                      {
+                        "AVD": ".",
+                        "CASE_ID": "MYS-SG-6",
+                        "DPU": ".",
+                        "F_SG_PRODUCT": ".",
+                        "F_SG_PRODUCT_D1": ".",
+                        "F_SG_PRODUCT_D2": ".",
+                        "F_SG_PRODUCT_D3": ".",
+                        "F_SG_PRODUCT_D4": ".",
+                        "F_SG_QR": ".",
+                        "F_SG_QR_D1": ".",
+                        "F_SG_QR_D2": ".",
+                        "F_SG_QR_D3": ".",
+                        "F_SG_QR_D4": ".",
+                        "HS_CODE": 6907219300,
+                        "HS_DIGITS": 10,
+                        "HS_SUBSET": 1,
+                        "QR": ".",
+                        "REC_CTY_CODE": ".",
+                        "REC_CTY_NAME": ".",
+                        "SD": ".",
+                        "SG_CTY_NAME": "Malaysia",
+                        "TRQ/AVD": ".",
+                        "TRQ/SD": ".",
+                        "UNIT_DUTY": ".",
+                        "UNIT_QR": "."
+                      },
+                      {
+                        "AVD": ".",
+                        "CASE_ID": "MYS-SG-6",
+                        "DPU": ".",
+                        "F_SG_PRODUCT": ".",
+                        "F_SG_PRODUCT_D1": ".",
+                        "F_SG_PRODUCT_D2": ".",
+                        "F_SG_PRODUCT_D3": ".",
+                        "F_SG_PRODUCT_D4": ".",
+                        "F_SG_QR": ".",
+                        "F_SG_QR_D1": ".",
+                        "F_SG_QR_D2": ".",
+                        "F_SG_QR_D3": ".",
+                        "F_SG_QR_D4": ".",
+                        "HS_CODE": 6907221100,
+                        "HS_DIGITS": 10,
+                        "HS_SUBSET": 1,
+                        "QR": ".",
+                        "REC_CTY_CODE": ".",
+                        "REC_CTY_NAME": ".",
+                        "SD": ".",
+                        "SG_CTY_NAME": "Malaysia",
+                        "TRQ/AVD": ".",
+                        "TRQ/SD": ".",
+                        "UNIT_DUTY": ".",
+                        "UNIT_QR": "."
+                      },
+                      {
+                        "AVD": ".",
+                        "CASE_ID": "MYS-SG-6",
+                        "DPU": ".",
+                        "F_SG_PRODUCT": ".",
+                        "F_SG_PRODUCT_D1": ".",
+                        "F_SG_PRODUCT_D2": ".",
+                        "F_SG_PRODUCT_D3": ".",
+                        "F_SG_PRODUCT_D4": ".",
+                        "F_SG_QR": ".",
+                        "F_SG_QR_D1": ".",
+                        "F_SG_QR_D2": ".",
+                        "F_SG_QR_D3": ".",
+                        "F_SG_QR_D4": ".",
+                        "HS_CODE": 6907221300,
+                        "HS_DIGITS": 10,
+                        "HS_SUBSET": 1,
+                        "QR": ".",
+                        "REC_CTY_CODE": ".",
+                        "REC_CTY_NAME": ".",
+                        "SD": ".",
+                        "SG_CTY_NAME": "Malaysia",
+                        "TRQ/AVD": ".",
+                        "TRQ/SD": ".",
+                        "UNIT_DUTY": ".",
+                        "UNIT_QR": "."
+                      },
+                      {
+                        "AVD": ".",
+                        "CASE_ID": "MYS-SG-6",
+                        "DPU": ".",
+                        "F_SG_PRODUCT": ".",
+                        "F_SG_PRODUCT_D1": ".",
+                        "F_SG_PRODUCT_D2": ".",
+                        "F_SG_PRODUCT_D3": ".",
+                        "F_SG_PRODUCT_D4": ".",
+                        "F_SG_QR": ".",
+                        "F_SG_QR_D1": ".",
+                        "F_SG_QR_D2": ".",
+                        "F_SG_QR_D3": ".",
+                        "F_SG_QR_D4": ".",
+                        "HS_CODE": 6907229100,
+                        "HS_DIGITS": 10,
+                        "HS_SUBSET": 1,
+                        "QR": ".",
+                        "REC_CTY_CODE": ".",
+                        "REC_CTY_NAME": ".",
+                        "SD": ".",
+                        "SG_CTY_NAME": "Malaysia",
+                        "TRQ/AVD": ".",
+                        "TRQ/SD": ".",
+                        "UNIT_DUTY": ".",
+                        "UNIT_QR": "."
+                      },
+                      {
+                        "AVD": ".",
+                        "CASE_ID": "MYS-SG-6",
+                        "DPU": ".",
+                        "F_SG_PRODUCT": ".",
+                        "F_SG_PRODUCT_D1": ".",
+                        "F_SG_PRODUCT_D2": ".",
+                        "F_SG_PRODUCT_D3": ".",
+                        "F_SG_PRODUCT_D4": ".",
+                        "F_SG_QR": ".",
+                        "F_SG_QR_D1": ".",
+                        "F_SG_QR_D2": ".",
+                        "F_SG_QR_D3": ".",
+                        "F_SG_QR_D4": ".",
+                        "HS_CODE": 6907229300,
+                        "HS_DIGITS": 10,
+                        "HS_SUBSET": 1,
+                        "QR": ".",
+                        "REC_CTY_CODE": ".",
+                        "REC_CTY_NAME": ".",
+                        "SD": ".",
+                        "SG_CTY_NAME": "Malaysia",
+                        "TRQ/AVD": ".",
+                        "TRQ/SD": ".",
+                        "UNIT_DUTY": ".",
+                        "UNIT_QR": "."
+                      },
+                      {
+                        "AVD": ".",
+                        "CASE_ID": "MYS-SG-6",
+                        "DPU": ".",
+                        "F_SG_PRODUCT": ".",
+                        "F_SG_PRODUCT_D1": ".",
+                        "F_SG_PRODUCT_D2": ".",
+                        "F_SG_PRODUCT_D3": ".",
+                        "F_SG_PRODUCT_D4": ".",
+                        "F_SG_QR": ".",
+                        "F_SG_QR_D1": ".",
+                        "F_SG_QR_D2": ".",
+                        "F_SG_QR_D3": ".",
+                        "F_SG_QR_D4": ".",
+                        "HS_CODE": 6907231100,
+                        "HS_DIGITS": 10,
+                        "HS_SUBSET": 1,
+                        "QR": ".",
+                        "REC_CTY_CODE": ".",
+                        "REC_CTY_NAME": ".",
+                        "SD": ".",
+                        "SG_CTY_NAME": "Malaysia",
+                        "TRQ/AVD": ".",
+                        "TRQ/SD": ".",
+                        "UNIT_DUTY": ".",
+                        "UNIT_QR": "."
+                      },
+                      {
+                        "AVD": ".",
+                        "CASE_ID": "MYS-SG-6",
+                        "DPU": ".",
+                        "F_SG_PRODUCT": ".",
+                        "F_SG_PRODUCT_D1": ".",
+                        "F_SG_PRODUCT_D2": ".",
+                        "F_SG_PRODUCT_D3": ".",
+                        "F_SG_PRODUCT_D4": ".",
+                        "F_SG_QR": ".",
+                        "F_SG_QR_D1": ".",
+                        "F_SG_QR_D2": ".",
+                        "F_SG_QR_D3": ".",
+                        "F_SG_QR_D4": ".",
+                        "HS_CODE": 6907231300,
+                        "HS_DIGITS": 10,
+                        "HS_SUBSET": 1,
+                        "QR": ".",
+                        "REC_CTY_CODE": ".",
+                        "REC_CTY_NAME": ".",
+                        "SD": ".",
+                        "SG_CTY_NAME": "Malaysia",
+                        "TRQ/AVD": ".",
+                        "TRQ/SD": ".",
+                        "UNIT_DUTY": ".",
+                        "UNIT_QR": "."
+                      },
+                      {
+                        "AVD": ".",
+                        "CASE_ID": "MYS-SG-6",
+                        "DPU": ".",
+                        "F_SG_PRODUCT": ".",
+                        "F_SG_PRODUCT_D1": ".",
+                        "F_SG_PRODUCT_D2": ".",
+                        "F_SG_PRODUCT_D3": ".",
+                        "F_SG_PRODUCT_D4": ".",
+                        "F_SG_QR": ".",
+                        "F_SG_QR_D1": ".",
+                        "F_SG_QR_D2": ".",
+                        "F_SG_QR_D3": ".",
+                        "F_SG_QR_D4": ".",
+                        "HS_CODE": 6907239100,
+                        "HS_DIGITS": 10,
+                        "HS_SUBSET": 1,
+                        "QR": ".",
+                        "REC_CTY_CODE": ".",
+                        "REC_CTY_NAME": ".",
+                        "SD": ".",
+                        "SG_CTY_NAME": "Malaysia",
+                        "TRQ/AVD": ".",
+                        "TRQ/SD": ".",
+                        "UNIT_DUTY": ".",
+                        "UNIT_QR": "."
+                      },
+                      {
+                        "AVD": ".",
+                        "CASE_ID": "MYS-SG-6",
+                        "DPU": ".",
+                        "F_SG_PRODUCT": ".",
+                        "F_SG_PRODUCT_D1": ".",
+                        "F_SG_PRODUCT_D2": ".",
+                        "F_SG_PRODUCT_D3": ".",
+                        "F_SG_PRODUCT_D4": ".",
+                        "F_SG_QR": ".",
+                        "F_SG_QR_D1": ".",
+                        "F_SG_QR_D2": ".",
+                        "F_SG_QR_D3": ".",
+                        "F_SG_QR_D4": ".",
+                        "HS_CODE": 69239300,
+                        "HS_DIGITS": 10,
+                        "HS_SUBSET": 1,
+                        "QR": ".",
+                        "REC_CTY_CODE": ".",
+                        "REC_CTY_NAME": ".",
+                        "SD": ".",
+                        "SG_CTY_NAME": "Malaysia",
+                        "TRQ/AVD": ".",
+                        "TRQ/SD": ".",
+                        "UNIT_DUTY": ".",
+                        "UNIT_QR": "."
+                      }
+                    ],
+                    "selected_count": 12,
+                    "selection_basis": "First supplied workbook rows for this case, in source order; not a representative/full product or country list",
+                    "truncated": false
+                  },
+                  "SG-Products": {
+                    "cap": 24,
+                    "matched_count": 12,
+                    "rows": [
+                      {
+                        "CASE_ID": "MYS-SG-6",
+                        "F_SG_PRODUCT": "MI",
+                        "F_SG_PRODUCT_D1": "MI",
+                        "F_SG_PRODUCT_D2": "MI",
+                        "F_SG_PRODUCT_D3": "MI",
+                        "F_SG_PRODUCT_D4": "MI",
+                        "HS_CODE": 6907212100,
+                        "HS_DIGITS": 10,
+                        "HS_SUBSET": 1,
+                        "SG_CTY_NAME": "Malaysia"
+                      },
+                      {
+                        "CASE_ID": "MYS-SG-6",
+                        "F_SG_PRODUCT": "MI",
+                        "F_SG_PRODUCT_D1": "MI",
+                        "F_SG_PRODUCT_D2": "MI",
+                        "F_SG_PRODUCT_D3": "MI",
+                        "F_SG_PRODUCT_D4": "MI",
+                        "HS_CODE": 6907212300,
+                        "HS_DIGITS": 10,
+                        "HS_SUBSET": 1,
+                        "SG_CTY_NAME": "Malaysia"
+                      },
+                      {
+                        "CASE_ID": "MYS-SG-6",
+                        "F_SG_PRODUCT": "MI",
+                        "F_SG_PRODUCT_D1": "MI",
+                        "F_SG_PRODUCT_D2": "MI",
+                        "F_SG_PRODUCT_D3": "MI",
+                        "F_SG_PRODUCT_D4": "MI",
+                        "HS_CODE": 6907219100,
+                        "HS_DIGITS": 10,
+                        "HS_SUBSET": 1,
+                        "SG_CTY_NAME": "Malaysia"
+                      },
+                      {
+                        "CASE_ID": "MYS-SG-6",
+                        "F_SG_PRODUCT": "MI",
+                        "F_SG_PRODUCT_D1": "MI",
+                        "F_SG_PRODUCT_D2": "MI",
+                        "F_SG_PRODUCT_D3": "MI",
+                        "F_SG_PRODUCT_D4": "MI",
+                        "HS_CODE": 6907219300,
+                        "HS_DIGITS": 10,
+                        "HS_SUBSET": 1,
+                        "SG_CTY_NAME": "Malaysia"
+                      },
+                      {
+                        "CASE_ID": "MYS-SG-6",
+                        "F_SG_PRODUCT": "MI",
+                        "F_SG_PRODUCT_D1": "MI",
+                        "F_SG_PRODUCT_D2": "MI",
+                        "F_SG_PRODUCT_D3": "MI",
+                        "F_SG_PRODUCT_D4": "MI",
+                        "HS_CODE": 6907221100,
+                        "HS_DIGITS": 10,
+                        "HS_SUBSET": 1,
+                        "SG_CTY_NAME": "Malaysia"
+                      },
+                      {
+                        "CASE_ID": "MYS-SG-6",
+                        "F_SG_PRODUCT": "MI",
+                        "F_SG_PRODUCT_D1": "MI",
+                        "F_SG_PRODUCT_D2": "MI",
+                        "F_SG_PRODUCT_D3": "MI",
+                        "F_SG_PRODUCT_D4": "MI",
+                        "HS_CODE": 6907221300,
+                        "HS_DIGITS": 10,
+                        "HS_SUBSET": 1,
+                        "SG_CTY_NAME": "Malaysia"
+                      },
+                      {
+                        "CASE_ID": "MYS-SG-6",
+                        "F_SG_PRODUCT": "MI",
+                        "F_SG_PRODUCT_D1": "MI",
+                        "F_SG_PRODUCT_D2": "MI",
+                        "F_SG_PRODUCT_D3": "MI",
+                        "F_SG_PRODUCT_D4": "MI",
+                        "HS_CODE": 6907229100,
+                        "HS_DIGITS": 10,
+                        "HS_SUBSET": 1,
+                        "SG_CTY_NAME": "Malaysia"
+                      },
+                      {
+                        "CASE_ID": "MYS-SG-6",
+                        "F_SG_PRODUCT": "MI",
+                        "F_SG_PRODUCT_D1": "MI",
+                        "F_SG_PRODUCT_D2": "MI",
+                        "F_SG_PRODUCT_D3": "MI",
+                        "F_SG_PRODUCT_D4": "MI",
+                        "HS_CODE": 6907229300,
+                        "HS_DIGITS": 10,
+                        "HS_SUBSET": 1,
+                        "SG_CTY_NAME": "Malaysia"
+                      },
+                      {
+                        "CASE_ID": "MYS-SG-6",
+                        "F_SG_PRODUCT": "MI",
+                        "F_SG_PRODUCT_D1": "MI",
+                        "F_SG_PRODUCT_D2": "MI",
+                        "F_SG_PRODUCT_D3": "MI",
+                        "F_SG_PRODUCT_D4": "MI",
+                        "HS_CODE": 6907231100,
+                        "HS_DIGITS": 10,
+                        "HS_SUBSET": 1,
+                        "SG_CTY_NAME": "Malaysia"
+                      },
+                      {
+                        "CASE_ID": "MYS-SG-6",
+                        "F_SG_PRODUCT": "MI",
+                        "F_SG_PRODUCT_D1": "MI",
+                        "F_SG_PRODUCT_D2": "MI",
+                        "F_SG_PRODUCT_D3": "MI",
+                        "F_SG_PRODUCT_D4": "MI",
+                        "HS_CODE": 6907231300,
+                        "HS_DIGITS": 10,
+                        "HS_SUBSET": 1,
+                        "SG_CTY_NAME": "Malaysia"
+                      },
+                      {
+                        "CASE_ID": "MYS-SG-6",
+                        "F_SG_PRODUCT": "MI",
+                        "F_SG_PRODUCT_D1": "MI",
+                        "F_SG_PRODUCT_D2": "MI",
+                        "F_SG_PRODUCT_D3": "MI",
+                        "F_SG_PRODUCT_D4": "MI",
+                        "HS_CODE": 6907239100,
+                        "HS_DIGITS": 10,
+                        "HS_SUBSET": 1,
+                        "SG_CTY_NAME": "Malaysia"
+                      },
+                      {
+                        "CASE_ID": "MYS-SG-6",
+                        "F_SG_PRODUCT": "MI",
+                        "F_SG_PRODUCT_D1": "MI",
+                        "F_SG_PRODUCT_D2": "MI",
+                        "F_SG_PRODUCT_D3": "MI",
+                        "F_SG_PRODUCT_D4": "MI",
+                        "HS_CODE": 69239300,
+                        "HS_DIGITS": 10,
+                        "HS_SUBSET": 1,
+                        "SG_CTY_NAME": "Malaysia"
+                      }
+                    ],
+                    "selected_count": 12,
+                    "selection_basis": "First supplied workbook rows for this case, in source order; not a representative/full product or country list",
+                    "truncated": false
+                  },
+                  "SG-QR or TRQ": {
+                    "cap": 12,
+                    "matched_count": 0,
+                    "rows": [],
+                    "selected_count": 0,
+                    "selection_basis": "First supplied workbook rows for this case, in source order; not a representative/full product or country list",
+                    "truncated": false
+                  }
+                },
+                "source_vintage": {
+                  "basis": "source_V_NUMBER_not_case_publication",
+                  "exact_release_date": null,
+                  "label": "Q4_2024",
+                  "quarter": 4,
+                  "year": 2024
+                },
+                "source_workbook_member": "Global safeguard measures/GSGD-WTO.xls",
+                "stage_dates": [
+                  {
+                    "cell_type": "text",
+                    "date": null,
+                    "field": "PET_DATE",
+                    "label_basis": "source_column_name; safeguard_specific_definition_not_verified",
+                    "precision": "unknown",
+                    "raw_value": "MI"
+                  },
+                  {
+                    "cell_type": "excel_date",
+                    "date": "2020-09-13",
+                    "field": "WTO_INIT_DATE",
+                    "label_basis": "source_column_name; safeguard_specific_definition_not_verified",
+                    "precision": "day",
+                    "raw_value": 44087
+                  },
+                  {
+                    "cell_type": "excel_date",
+                    "date": "2021-01-11",
+                    "field": "P_DATE",
+                    "label_basis": "source_column_name; safeguard_specific_definition_not_verified",
+                    "precision": "day",
+                    "raw_value": 44207
+                  },
+                  {
+                    "cell_type": "text",
+                    "date": null,
+                    "field": "P_SG_DATE",
+                    "label_basis": "source_column_name; safeguard_specific_definition_not_verified",
+                    "precision": "unknown",
+                    "raw_value": "."
+                  },
+                  {
+                    "cell_type": "text",
+                    "date": null,
+                    "field": "F_INJ_DATE",
+                    "label_basis": "source_column_name; safeguard_specific_definition_not_verified",
+                    "precision": "unknown",
+                    "raw_value": "."
+                  },
+                  {
+                    "cell_type": "text",
+                    "date": null,
+                    "field": "F_DATE",
+                    "label_basis": "source_column_name; safeguard_specific_definition_not_verified",
+                    "precision": "unknown",
+                    "raw_value": "."
+                  },
+                  {
+                    "cell_type": "text",
+                    "date": null,
+                    "field": "F_SG_DATE",
+                    "label_basis": "source_column_name; safeguard_specific_definition_not_verified",
+                    "precision": "unknown",
+                    "raw_value": "."
+                  },
+                  {
+                    "cell_type": "text",
+                    "date": null,
+                    "field": "TERM_DATE",
+                    "label_basis": "source_column_name; safeguard_specific_definition_not_verified",
+                    "precision": "unknown",
+                    "raw_value": "."
+                  },
+                  {
+                    "cell_type": "text",
+                    "date": null,
+                    "field": "D1_DATE",
+                    "label_basis": "source_column_name; safeguard_specific_definition_not_verified",
+                    "precision": "unknown",
+                    "raw_value": "."
+                  },
+                  {
+                    "cell_type": "text",
+                    "date": null,
+                    "field": "D2_DATE",
+                    "label_basis": "source_column_name; safeguard_specific_definition_not_verified",
+                    "precision": "unknown",
+                    "raw_value": "."
+                  },
+                  {
+                    "cell_type": "text",
+                    "date": null,
+                    "field": "D3_DATE",
+                    "label_basis": "source_column_name; safeguard_specific_definition_not_verified",
+                    "precision": "unknown",
+                    "raw_value": "."
+                  },
+                  {
+                    "cell_type": "text",
+                    "date": null,
+                    "field": "D4_DATE",
+                    "label_basis": "source_column_name; safeguard_specific_definition_not_verified",
+                    "precision": "unknown",
+                    "raw_value": "."
+                  },
+                  {
+                    "cell_type": "text",
+                    "date": null,
+                    "field": "EXP_DATE",
+                    "label_basis": "source_column_name; safeguard_specific_definition_not_verified",
+                    "precision": "unknown",
+                    "raw_value": "."
+                  },
+                  {
+                    "cell_type": "text",
+                    "date": null,
+                    "field": "REVOKE_DATE",
+                    "label_basis": "source_column_name; safeguard_specific_definition_not_verified",
+                    "precision": "unknown",
+                    "raw_value": "."
+                  }
+                ],
+                "text_scope": "structured_case_facts_only; NOTES/full_legal_bodies/contacts/persons excluded",
+                "title_basis": "derived_from_supplied_case_country_product_fields",
+                "units_basis": "Raw supplied numeric/text units preserved; no duty/currency/unit conversion or rate interpretation",
+                "workbook_date_mode": 0
+              },
+              "fetched_at": "2026-10-08T19:00:00Z",
+              "first_seen_at": "2026-10-08T19:00:00Z",
+              "ingested_at": null,
+              "location": null,
+              "location_basis": "unknown",
+              "published_at": null,
+              "short_summary": null,
+              "source_country": null,
+              "source_id": "policy_worldbank_ttbd_safeguards",
+              "source_language": "en",
+              "source_license": "World Bank: Temporary Trade Barriers Database (Bown, Cieszkowsky, Erbahar and Signoret), global safeguard case data, source vintage Q4_2024. CC BY4.0; filtered/normalized and bounded related-row projection. No World Bank/WTO endorsement or current legal applicability implied.",
+              "source_updated_at": null,
+              "title": "Safeguard case MYS-SG-6: Malaysia — Ceramic Floor and Wall Tiles",
+              "upstream_id": "MYS-SG-6",
+              "url": "https://www.worldbank.org/en/data/interactive/2021/03/02/temporary-trade-barriers-database"
+            },
+            "metadata_sha256": "c65eb2ae26861dfbd9d6beeae7613a9c6eb185fc4606c8f36d3164133acfd072",
+            "source_id": "policy_worldbank_ttbd_safeguards",
+            "upstream_id": "MYS-SG-6",
+            "version_id": "lver_37c4d95cb68d003ce794a30e1953"
+          }
+        ],
+        "runs": [
+          {
+            "body_complete": true,
+            "bytes_read": 87483,
+            "completed_at": "2026-10-08T19:38:27.347676+00:00",
+            "coverage": {
+              "cap": 100,
+              "fixture_reduced_case_cohort": true,
+              "provider_completeness_claim": false,
+              "request_role": "data",
+              "requested_period": [
+                "2020-01-01",
+                "2026-10-08"
+              ],
+              "requested_window": {
+                "end": "2026-10-08",
+                "grain": "source_date_cell",
+                "start": "2020-01-01"
+              },
+              "rows_changed": 6,
+              "rows_parsed": 6,
+              "selected_cases": 6,
+              "truncated": false
+            },
+            "error": null,
+            "fetched_at": "2026-10-08T19:00:00Z",
+            "http_status": 200,
+            "id": "racq_8432ab694a8fb86d0e9da654ef26",
+            "job_id": "trade.current",
+            "no_change": false,
+            "requested_url": "https://thedocs.worldbank.org/en/doc/1b03ee05a4a6d2374c126196ddf0a128-0430012025/related/Global-safeguard-measures.zip",
+            "rows_changed": 6,
+            "source_id": "policy_worldbank_ttbd_safeguards",
+            "source_snapshot": {
+              "codebook_scope": "Safeguard-specific definitions unverified; source stage/unit cells retained raw",
+              "conflict_scope": "Global master identity quarantine; all ambiguous attachments excluded",
+              "dataset_vintage_labels": [
+                "Q4_2024"
+              ],
+              "quarantined_case_ids": [
+                "THA-SG-5"
+              ],
+              "workbook_member": "Global safeguard measures/GSGD-WTO.xls",
+              "workbook_sha256": "20553b9c56b913c5970a6897308af2636dfd8af83f29a60c1e2f826fbc00b27f"
+            },
+            "started_at": "2026-10-08T19:00:00Z",
+            "status": "succeeded",
+            "transport_mode": "synthetic_fixture",
+            "upstream_raw_sha256": "e706b81d32a284e65550e678dfa056779ae3ee25b78efed90219b2db23a9f717"
+          }
+        ],
+        "transport_mode": "synthetic_fixture"
+      },
+      "payload_sha256": "721687aa15e42bae86a0fb2749fee64c7383d0b272958efa944e4e0f55144cfa",
+      "schema_version": "dormathon.source-refresh.snapshot.v1"
+    },
+    {
+      "payload": {
+        "coverage": [
+          {
+            "coverage": [
+              {
+                "fixture_reduced_month_grid": true,
+                "provider_completeness_claim": false,
+                "requested_period": [
+                  "2020-01",
+                  "2026-10"
+                ],
+                "returned_period": [
+                  "2026-08",
+                  "2026-09"
+                ],
+                "selected_series": 35
+              }
+            ],
+            "job_id": "commodity.current",
+            "last_good_preserved_on_failure": false,
+            "requests": 1,
+            "status": "updated"
+          }
+        ],
+        "exported_at": "2026-10-08T19:38:27.725836+00:00",
+        "parser_version": "history-refresh-v0.19.0",
+        "part_id": "rpart_e68f7a4711a68d230ff842867eb6",
+        "producer": {
+          "execution_mode": "foreground_explicit",
+          "name": "Dormathon deterministic history refresh",
+          "version": "0.19.0"
+        },
+        "profile_id": "dormathon-approved-history-refresh-v0.19",
+        "profile_sha256": "3eb4fbdcf987c4c944ae90f512ba9ab73085d740f21b3b90c64b06bfe46aee7a",
+        "records": [
+          {
+            "acquisition_id": "racq_e25e8253949cc9f11398aed47243",
+            "content_hash": "79adbf2ca76673099a57b6e4b275b483d32b4b10b5cb2f6b2b112e600c921a2b",
+            "metadata": {
+              "category": "economy",
+              "content_depth": "structured_facts",
+              "entities": [],
+              "event_country": null,
+              "event_time": null,
+              "evidence_url": "https://thedocs.worldbank.org/en/doc/74e8be41ceb20fa0da750cda2f6b9e4e-0050012026/related/CMO-Historical-Data-Monthly.xlsx",
+              "facts": {
+                "benchmark_location_basis": "Literal source-definition text matches; no geocoding/current-country/impact assertion",
+                "benchmark_location_references": [],
+                "currency": "USD",
+                "definition_metadata_scope": "Current source Description includes historical regimes; not evidence of a homogeneous quote basis across all months",
+                "domain": "commodity_prices",
+                "futures_forward_inputs_mentioned_in_definition": false,
+                "geography": {
+                  "country_or_operating_impact_assertion": false,
+                  "iso3": null,
+                  "kind": "commodity_benchmark_reference",
+                  "label": "Crude oil, average"
+                },
+                "missingness": "supplied_numeric",
+                "observation_granularity": "month",
+                "observation_period": "2026-08",
+                "price_basis": "nominal_current_USD",
+                "raw_value": 84.4,
+                "record_is_tradable_contract": false,
+                "record_kind": "statistical_observation",
+                "reference_type": "monthly_compiled_benchmark_price",
+                "series_id": "wb-pink-monthly:crude_average",
+                "series_identity_basis": "derived_frozen_dataset_source_column_registry; not_exchange_ticker",
+                "series_key": "crude_average",
+                "source_cell_kind": "number",
+                "source_commodity_group": "energy",
+                "source_definition": "Crude oil, average spot price of Brent, Dubai and West Texas  Intermediate, equally weighed",
+                "source_estimate_context": {
+                  "cell_specific_estimate_flag": "not_separately_supplied; absence is not confirmed_observed",
+                  "provider_recent_two_months_rule": null,
+                  "reference_window_basis": null
+                },
+                "source_forecast": false,
+                "source_group_basis": "explicit_selection_profile_based_on_provider_commodity_categories",
+                "source_market_basis_homogeneous_for_all_history": false,
+                "source_provider_reference": "World Bank.",
+                "source_series_name": "Crude oil, average",
+                "time_semantics": "Observation month is not publication/event instant; original edition/definition/vintage clocks are separate acquisition evidence",
+                "transforms": {
+                  "annualized": false,
+                  "converted_currency": false,
+                  "converted_unit": false,
+                  "deflated": false,
+                  "interpolated": false
+                },
+                "underlying_contract_identity": null,
+                "unit": "USD_per_barrel",
+                "unit_raw": "($/bbl)",
+                "unit_scale": 1,
+                "value": 84.4,
+                "value_status": "supplied_numeric"
+              },
+              "fetched_at": "2026-10-08T19:00:00Z",
+              "first_seen_at": "2026-10-08T19:00:00Z",
+              "ingested_at": null,
+              "location": null,
+              "location_basis": "unknown",
+              "published_at": null,
+              "short_summary": null,
+              "source_country": null,
+              "source_id": "stat_worldbank_commodity_monthly",
+              "source_language": "en",
+              "source_license": "World Bank Commodity Price Data (The Pink Sheet), Prospects Group. CC BY4.0; selected/normalized historical monthly nominal reference observations with source missingness and definitions preserved. No World Bank or underlying-provider endorsement.",
+              "source_updated_at": null,
+              "title": "Crude oil, average — 2026-08 monthly nominal benchmark",
+              "upstream_id": "wb-pink-monthly:crude_average:2026-08",
+              "url": "https://www.worldbank.org/en/research/commodity-markets"
+            },
+            "metadata_sha256": "bda4ce829234c48b58904940b31404f75e0e2b2b7379455bbf853fa290614fc2",
+            "source_id": "stat_worldbank_commodity_monthly",
+            "upstream_id": "wb-pink-monthly:crude_average:2026-08",
+            "version_id": "lver_58c47008b36c56180ec0027839d6"
+          }
+        ],
+        "runs": [
+          {
+            "body_complete": true,
+            "bytes_read": 59355,
+            "completed_at": "2026-10-08T19:38:27.612337+00:00",
+            "coverage": {
+              "fixture_reduced_month_grid": true,
+              "provider_completeness_claim": false,
+              "request_role": "data",
+              "requested_period": [
+                "2020-01",
+                "2026-10"
+              ],
+              "requested_window": {
+                "end": "2026-10",
+                "grain": "month",
+                "start": "2020-01"
+              },
+              "returned_period": [
+                "2026-08",
+                "2026-09"
+              ],
+              "rows_changed": 70,
+              "rows_parsed": 70,
+              "selected_series": 35,
+              "truncated": false
+            },
+            "error": null,
+            "fetched_at": "2026-10-08T19:00:00Z",
+            "http_status": 200,
+            "id": "racq_e25e8253949cc9f11398aed47243",
+            "job_id": "commodity.current",
+            "no_change": false,
+            "requested_url": "https://thedocs.worldbank.org/en/doc/74e8be41ceb20fa0da750cda2f6b9e4e-0050012026/related/CMO-Historical-Data-Monthly.xlsx",
+            "rows_changed": 70,
+            "source_id": "stat_worldbank_commodity_monthly",
+            "source_snapshot": {
+              "edition_date": "2026-10-02",
+              "edition_raw": "Updated on October 02, 2026",
+              "estimate_flag_basis": "Publisher notes; no per-cell binary estimate certainty",
+              "historical_sheet": "Monthly Prices",
+              "latest_observation_month": "2026-09",
+              "method_change_log": [
+                {
+                  "marker_raw": "   *",
+                  "source_row": 108,
+                  "text": "denotes forecast series"
+                },
+                {
+                  "marker_raw": "   **",
+                  "source_row": 109,
+                  "text": "Rubber TSR20 replaces Rubber RSS3 in Other Raw Materials index from 2018"
+                },
+                {
+                  "marker_raw": null,
+                  "source_row": 110,
+                  "text": "Groundnut oil, replacement series from January 2023"
+                },
+                {
+                  "marker_raw": null,
+                  "source_row": 111,
+                  "text": "Coal (South Africa), June to November 2022, March, April, June to September, December 2023, and January-May 2024 are estimates based on similar benchmarks, December 2022 to February 2023, May, and October-November 2023 replaced with source data."
+                },
+                {
+                  "marker_raw": null,
+                  "source_row": 112,
+                  "text": "Potassium chloride changed from Vancouver to Brazil from January 2020; Groundnut oil corrected for February 2023."
+                },
+                {
+                  "marker_raw": null,
+                  "source_row": 113,
+                  "text": "Chicken changed from U.S.A to Brazil from September 2021."
+                },
+                {
+                  "marker_raw": null,
+                  "source_row": 114,
+                  "text": "Coffee (Arabica), Cotton, Kolkata tea, and Metal updated for February 2024."
+                },
+                {
+                  "marker_raw": null,
+                  "source_row": 115,
+                  "text": "Beef, replacement series from January 2024"
+                },
+                {
+                  "marker_raw": null,
+                  "source_row": 116,
+                  "text": "Lamb, replacement series from January 2020"
+                },
+                {
+                  "marker_raw": null,
+                  "source_row": 117,
+                  "text": "Some oilseed November prices have updated entries while December are World Bank estimates. Some oilseed series have been replaced."
+                },
+                {
+                  "marker_raw": null,
+                  "source_row": 118,
+                  "text": "January Kolkata corrected. Some oilseed January prices have updated entries while February are World Bank estimates. Some oilseed series have been replaced from January."
+                },
+                {
+                  "marker_raw": null,
+                  "source_row": 119,
+                  "text": "Some oilseed February prices have updated entries while some March prices are World Bank estimates."
+                },
+                {
+                  "marker_raw": null,
+                  "source_row": 120,
+                  "text": "Several oilseed series have been updated for the period April-November 2025."
+                },
+                {
+                  "marker_raw": null,
+                  "source_row": 121,
+                  "text": "Peanut (Groundnut) series updated for the period November 2024-July 2025."
+                },
+                {
+                  "marker_raw": null,
+                  "source_row": 122,
+                  "text": "Tobacco series updated for the period July-October 2025."
+                },
+                {
+                  "marker_raw": null,
+                  "source_row": 123,
+                  "text": "January 2026: Kolkata and average tea have been updated for November."
+                },
+                {
+                  "marker_raw": null,
+                  "source_row": 124,
+                  "text": "February 2026: LNG (Japan) corrected for 2024 (year) and the October-December 2024 (quarterly)."
+                },
+                {
+                  "marker_raw": null,
+                  "source_row": 125,
+                  "text": "February 2026 edition onwards: Tobacco series are updated for the last three months, with the two most recent months reflecting estimates."
+                },
+                {
+                  "marker_raw": null,
+                  "source_row": 126,
+                  "text": "March 2026: Wheat (US SRW) and Phosphate rock corrected for 2023 and 2024."
+                },
+                {
+                  "marker_raw": null,
+                  "source_row": 127,
+                  "text": "April 2026: Tea updated for February 2026."
+                },
+                {
+                  "marker_raw": null,
+                  "source_row": 128,
+                  "text": "July 2026: Tea updated for June 2026."
+                },
+                {
+                  "marker_raw": null,
+                  "source_row": 129,
+                  "text": "August 2026: Replacement series for Fishmeal from July 2026."
+                },
+                {
+                  "marker_raw": null,
+                  "source_row": 130,
+                  "text": "September 2026: Some minor inconsistencies in grain prices shown in the August release were the result of formatting issues and have since been addressed. Periods where data are unavailable are indicated by \"..\""
+                },
+                {
+                  "marker_raw": null,
+                  "source_row": 131,
+                  "text": "October 2026: Replacement series for Palm oil from January 2026."
+                }
+              ],
+              "quarantined_iron_ore": true,
+              "source_available_period": [
+                "2026-08",
+                "2026-09"
+              ]
+            },
+            "started_at": "2026-10-08T19:00:00Z",
+            "status": "succeeded",
+            "transport_mode": "synthetic_fixture",
+            "upstream_raw_sha256": "cc60c348b75f0a9458059326d3e321eff74a7379681f3ffc53d79af9cbae80a5"
+          }
+        ],
+        "transport_mode": "synthetic_fixture"
+      },
+      "payload_sha256": "0cd3a0fb416ffb046641e2c1c6910dc7e743a54f09eb3aa4a03f3e1a032eb270",
+      "schema_version": "dormathon.source-refresh.snapshot.v1"
+    }
+  ]
+}

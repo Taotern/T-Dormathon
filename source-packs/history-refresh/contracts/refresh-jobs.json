@@ -1,0 +1,186 @@
+{
+  "schema_version": "dormathon.refresh.jobs.v0.19",
+  "profile_id": "dormathon-approved-history-refresh-v0.19",
+  "profile_sha256": "3eb4fbdcf987c4c944ae90f512ba9ab73085d740f21b3b90c64b06bfe46aee7a",
+  "jobs": [
+    {
+      "id": "gdp.current",
+      "source_id": "stat_worldbank_gdp_annual",
+      "kind": "gdp",
+      "cadence_days": 30,
+      "window": "2020..current UTC year; absent source years retained as gaps",
+      "max_requests": 2,
+      "metadata_required": true,
+      "mode": "current",
+      "default_enabled": true
+    },
+    {
+      "id": "employment.current",
+      "source_id": "stat_worldbank_unemployment_ilo_annual",
+      "kind": "employment",
+      "cadence_days": 30,
+      "window": "2020..current UTC year; modeled percent, not live labor/talent events",
+      "max_requests": 2,
+      "metadata_required": true,
+      "mode": "current",
+      "default_enabled": true
+    },
+    {
+      "id": "fx.current",
+      "source_id": "stat_ecb_fx_daily_reference",
+      "kind": "fx",
+      "cadence_days": 1,
+      "lookback_days": 8,
+      "max_requests": 1,
+      "mode": "current",
+      "default_enabled": true
+    },
+    {
+      "id": "uk.current",
+      "source_id": "legal_uk_legislation_publications",
+      "kind": "uk",
+      "cadence_days": 1,
+      "window": "Publisher current/new Atom window; feed retention/completeness not established",
+      "max_requests": 1,
+      "mode": "current",
+      "default_enabled": true
+    },
+    {
+      "id": "us.current",
+      "source_id": "legal_us_federal_register",
+      "kind": "us",
+      "cadence_days": 1,
+      "lookback_days": 7,
+      "max_requests": 4,
+      "max_pages": 4,
+      "mode": "current",
+      "default_enabled": true
+    },
+    {
+      "id": "trade.current",
+      "source_id": "policy_worldbank_ttbd_safeguards",
+      "kind": "trade",
+      "cadence_days": 90,
+      "window": "Source WTO_INIT_DATE2020..today; actual latest vintage may remainQ4_2024",
+      "max_requests": 1,
+      "mode": "current",
+      "default_enabled": true
+    },
+    {
+      "id": "commodity.current",
+      "source_id": "stat_worldbank_commodity_monthly",
+      "kind": "commodity",
+      "cadence_days": 30,
+      "window": "All source months2020..latest supplied past month; compare revisions across whole current window",
+      "max_requests": 1,
+      "mode": "current",
+      "default_enabled": true
+    },
+    {
+      "id": "gdp.archive",
+      "source_id": "stat_worldbank_gdp_annual",
+      "kind": "gdp",
+      "cadence_days": 90,
+      "window": "2020..current UTC year; absent source years retained as gaps",
+      "max_requests": 2,
+      "metadata_required": true,
+      "mode": "archive",
+      "default_enabled": false,
+      "parameter_bounds": "1990..current year,max5years"
+    },
+    {
+      "id": "employment.archive",
+      "source_id": "stat_worldbank_unemployment_ilo_annual",
+      "kind": "employment",
+      "cadence_days": 90,
+      "window": "2020..current UTC year; modeled percent, not live labor/talent events",
+      "max_requests": 2,
+      "metadata_required": true,
+      "mode": "archive",
+      "default_enabled": false,
+      "parameter_bounds": "1991..current year,max5years"
+    },
+    {
+      "id": "fx.archive",
+      "source_id": "stat_ecb_fx_daily_reference",
+      "kind": "fx",
+      "cadence_days": 90,
+      "lookback_days": 8,
+      "max_requests": 1,
+      "mode": "archive",
+      "default_enabled": false,
+      "metadata_required": false,
+      "parameter_bounds": "2020..today,max366days"
+    },
+    {
+      "id": "uk.archive",
+      "source_id": "legal_uk_legislation_publications",
+      "kind": "uk",
+      "cadence_days": 90,
+      "window": "Publisher current/new Atom window; feed retention/completeness not established",
+      "max_requests": 1,
+      "mode": "archive",
+      "default_enabled": false,
+      "metadata_required": false,
+      "parameter_bounds": "ukpga1988..current year,one100-entry feed"
+    },
+    {
+      "id": "us.archive",
+      "source_id": "legal_us_federal_register",
+      "kind": "us",
+      "cadence_days": 90,
+      "lookback_days": 7,
+      "max_requests": 4,
+      "max_pages": 4,
+      "mode": "archive",
+      "default_enabled": false,
+      "metadata_required": false,
+      "parameter_bounds": "1994..today,max7days/max4pages"
+    },
+    {
+      "id": "trade.archive",
+      "source_id": "policy_worldbank_ttbd_safeguards",
+      "kind": "trade",
+      "cadence_days": 90,
+      "window": "Source WTO_INIT_DATE2020..today; actual latest vintage may remainQ4_2024",
+      "max_requests": 1,
+      "mode": "archive",
+      "default_enabled": false,
+      "metadata_required": false,
+      "parameter_bounds": "1990..today,max5years/source100casecap; no fabricated absence"
+    },
+    {
+      "id": "commodity.archive",
+      "source_id": "stat_worldbank_commodity_monthly",
+      "kind": "commodity",
+      "cadence_days": 90,
+      "window": "All source months2020..latest supplied past month; compare revisions across whole current window",
+      "max_requests": 1,
+      "mode": "archive",
+      "default_enabled": false,
+      "metadata_required": false,
+      "parameter_bounds": "1990..latest published past month,max60months"
+    }
+  ],
+  "fetch_policy": {
+    "max_requests_per_invocation": 12,
+    "concurrency": 1,
+    "strict_deadline_seconds": 30,
+    "redirects": "reject",
+    "attempts_per_request": 1,
+    "user_agent": "DormathonSourceResearch/0.1 (+public-metadata-test)",
+    "minimum_origin_spacing_seconds": 5,
+    "HTTP401_402_403": "Origin access lock, no automatic unlock or alternate route",
+    "HTTP429": "ActualRetryAfter retained and honored; conservative1h when absent",
+    "HTTP5xx_or_timeout": "Failed receipt/last-good preserved,30min local cooldown; no in-run retry",
+    "body_cap": "Per-source1MiB legal/2MiB licensed structured datasets",
+    "conditional_requests": "If-None-Match/If-Modified-Since only from last successful identical fixed URL;304 requires retained hash-verified body"
+  },
+  "operating_limits": {
+    "Windows": "blocked until deadline/lock runtime independently verified",
+    "scheduler_or_service_created": false,
+    "machine_upload_or_authentication": false,
+    "acquisition_requires_explicit_flag": true,
+    "offline_first": true
+  }
+}

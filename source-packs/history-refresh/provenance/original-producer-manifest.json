@@ -1,0 +1,296 @@
+{
+  "schema_version": "dormathon.refresh-source-assets.v0.19",
+  "profile_sha256": "3eb4fbdcf987c4c944ae90f512ba9ab73085d740f21b3b90c64b06bfe46aee7a",
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 8606,
+      "sha256": "6303039bc1ba3070a2fe9ea1572c3a43b6ba745e63afb57a62915dcb6915ec04"
+    },
+    {
+      "path": "adapters/commodity/commodity-monthly.mjs",
+      "bytes": 8071,
+      "sha256": "9e6eaabb0894d2f5244abdc04f8ebe6906642ca6111a07f2af996722182ac228"
+    },
+    {
+      "path": "adapters/commodity/normalized-common.mjs",
+      "bytes": 5755,
+      "sha256": "773d2fc291337bfa225e22b646356eb8aa0be464aaad6024864732678f1f8f5f"
+    },
+    {
+      "path": "adapters/commodity/typed-common.mjs",
+      "bytes": 2383,
+      "sha256": "01d3849cfe64a1029ccfaa843a1c14cd62a0e0eb4c9cc6161a84a7fe3afb23a8"
+    },
+    {
+      "path": "adapters/employment/normalized-common.mjs",
+      "bytes": 5755,
+      "sha256": "773d2fc291337bfa225e22b646356eb8aa0be464aaad6024864732678f1f8f5f"
+    },
+    {
+      "path": "adapters/employment/worldbank-dimensions-pinned.mjs",
+      "bytes": 7099,
+      "sha256": "c1af66ad7b440184f1fa2724681495f57749c2a2e156e459fd894361e0aefc3c"
+    },
+    {
+      "path": "adapters/employment/worldbank-unemployment-annual.mjs",
+      "bytes": 7482,
+      "sha256": "453fa3b93682c61f484abab68cbb45c33ddbee33ce162098304e826cbfcead9b"
+    },
+    {
+      "path": "adapters/fx/ecb-reference-daily.mjs",
+      "bytes": 6766,
+      "sha256": "cf55ffd481c186e27b81ae22868d020a30d7d1ec88ea4d210cf06d677965f28c"
+    },
+    {
+      "path": "adapters/fx/normalized-common.mjs",
+      "bytes": 5755,
+      "sha256": "773d2fc291337bfa225e22b646356eb8aa0be464aaad6024864732678f1f8f5f"
+    },
+    {
+      "path": "adapters/gdp/normalized-common.mjs",
+      "bytes": 5755,
+      "sha256": "773d2fc291337bfa225e22b646356eb8aa0be464aaad6024864732678f1f8f5f"
+    },
+    {
+      "path": "adapters/gdp/worldbank-gdp-annual.mjs",
+      "bytes": 7099,
+      "sha256": "c1af66ad7b440184f1fa2724681495f57749c2a2e156e459fd894361e0aefc3c"
+    },
+    {
+      "path": "adapters/legal/bounded-xml.mjs",
+      "bytes": 2673,
+      "sha256": "f8ff68459b80c001765b47ee083d5534f342eb9c4a863490d5600abc6d10a16e"
+    },
+    {
+      "path": "adapters/legal/legal-common.mjs",
+      "bytes": 2383,
+      "sha256": "01d3849cfe64a1029ccfaa843a1c14cd62a0e0eb4c9cc6161a84a7fe3afb23a8"
+    },
+    {
+      "path": "adapters/legal/normalized-common.mjs",
+      "bytes": 5755,
+      "sha256": "773d2fc291337bfa225e22b646356eb8aa0be464aaad6024864732678f1f8f5f"
+    },
+    {
+      "path": "adapters/legal/uk-legislation.mjs",
+      "bytes": 6490,
+      "sha256": "1eae67bb779c3742ddaa31ec8069e82d2041f40cc4cb51b8df9c034dd0611480"
+    },
+    {
+      "path": "adapters/legal/us-federal-register.mjs",
+      "bytes": 5192,
+      "sha256": "b603dadd81991f35143d70c184c010450e4408ece00ae28a4ee957d05475bb1a"
+    },
+    {
+      "path": "adapters/legal/validate-legal.mjs",
+      "bytes": 2909,
+      "sha256": "691b050ccf23345ba0454479f93214640757b4af4c9c76824143d05dfc3e2515"
+    },
+    {
+      "path": "adapters/trade/normalized-common.mjs",
+      "bytes": 5755,
+      "sha256": "773d2fc291337bfa225e22b646356eb8aa0be464aaad6024864732678f1f8f5f"
+    },
+    {
+      "path": "adapters/trade/ttbd-safeguards.mjs",
+      "bytes": 9919,
+      "sha256": "7ded558aabe386abf7b24ce591b4a20b20a42606b5ed9c8a894eb9d3dbf58ed5"
+    },
+    {
+      "path": "adapters/trade/typed-common.mjs",
+      "bytes": 2383,
+      "sha256": "01d3849cfe64a1029ccfaa843a1c14cd62a0e0eb4c9cc6161a84a7fe3afb23a8"
+    },
+    {
+      "path": "binary_extract.py",
+      "bytes": 10126,
+      "sha256": "817642ba02d52da735f5ea9a5274fd0393826e6ac43bea0336e33b083bb95b26"
+    },
+    {
+      "path": "canonical.mjs",
+      "bytes": 303,
+      "sha256": "b4695e4987c66ff4228bff2fa1d684fae633f6887e37a6786d5907043de8604d"
+    },
+    {
+      "path": "contracts/operational-boundaries.v0.19.2.json",
+      "bytes": 1896,
+      "sha256": "26c9edfc1347c752c72e50d6a409744890648146b2ea87942808e794a64c5062"
+    },
+    {
+      "path": "contracts/refresh-jobs.json",
+      "bytes": 6277,
+      "sha256": "211f92f0b5a4018b4fbd7708380fe7bb75de91037574a81729719941f4b1722f"
+    },
+    {
+      "path": "contracts/snapshot-contract.v1.json",
+      "bytes": 3860,
+      "sha256": "9c87ea2f200e74eb8b1008fb44fc907c1f458bee24523b26596643264a25417b"
+    },
+    {
+      "path": "contracts/source-profiles.json",
+      "bytes": 133893,
+      "sha256": "3eb4fbdcf987c4c944ae90f512ba9ab73085d740f21b3b90c64b06bfe46aee7a"
+    },
+    {
+      "path": "contracts/trade-headers.json",
+      "bytes": 1648,
+      "sha256": "53ce6c11580b876fb98dcff69fe8ab65c851f451dc73eaa111108b3da9f25703"
+    },
+    {
+      "path": "contracts/witness-schema.v0.19.1.json",
+      "bytes": 4548,
+      "sha256": "d222cae383f122043b2a30601141eebbc1148c0a99b2067bcd21e2f104871d91"
+    },
+    {
+      "path": "contracts/worldbank-dimensions.safe.json",
+      "bytes": 60135,
+      "sha256": "270f80c883208ac344706f4bc4f24d5865f4f269b9ff9207d5ef8eddc17c7c7a"
+    },
+    {
+      "path": "fixtures/commodity_reduced.corrected.safe.json",
+      "bytes": 59355,
+      "sha256": "cc60c348b75f0a9458059326d3e321eff74a7379681f3ffc53d79af9cbae80a5"
+    },
+    {
+      "path": "fixtures/commodity_reduced.safe.json",
+      "bytes": 58678,
+      "sha256": "ea97755aa7ea38aff40e8cd418b4faa312e4aa888e028744c8abd67bfec1d810"
+    },
+    {
+      "path": "fixtures/employment_current.json",
+      "bytes": 2387,
+      "sha256": "607c547353e593a3d4aa16e788951876f728da92fca0a3f2db68eb2deed17207"
+    },
+    {
+      "path": "fixtures/employment_metadata.json",
+      "bytes": 670,
+      "sha256": "3ae370ed4bebba092338e94334c35add71490324ee57f1dfe81885dade51f52f"
+    },
+    {
+      "path": "fixtures/failure-sample-manifest.json",
+      "bytes": 640,
+      "sha256": "be4607efc3abacb165d289f9c85d9fc07a77dc8aad4e9cf5ee174fb77232bdd5"
+    },
+    {
+      "path": "fixtures/final-seven-sample-manifest.json",
+      "bytes": 904,
+      "sha256": "e5946b33dd35b5478fdf6613788c0848c5087ecd5c77971ba2314e70a87df2b7"
+    },
+    {
+      "path": "fixtures/fx_recent.csv",
+      "bytes": 1190,
+      "sha256": "917de1a83d7989885bdf1419d83399db08a5c0e50a3826dea75c03bc0b38ff81"
+    },
+    {
+      "path": "fixtures/gdp_current.json",
+      "bytes": 2134,
+      "sha256": "75e4e606be7cf6d98468d52f81a112e95c5ebdf012f62c13b7d81703f4c472b0"
+    },
+    {
+      "path": "fixtures/gdp_metadata.json",
+      "bytes": 938,
+      "sha256": "51cec1e144a5bad8d92238630c0a305e20116e86d34ad95c7c315ed166255b28"
+    },
+    {
+      "path": "fixtures/snapshot-failure-fx.synthetic.json",
+      "bytes": 1868,
+      "sha256": "bca486324109d70c4649ab514d039a17caa3e40257381e16860a629d829cf354"
+    },
+    {
+      "path": "fixtures/snapshot-failure-us.synthetic.json",
+      "bytes": 2024,
+      "sha256": "75739d909c7570f95bac2bcec9a912b646cc5214c36c4b1189d77e98e78ebaf2"
+    },
+    {
+      "path": "fixtures/snapshot-final-seven-00.synthetic.json",
+      "bytes": 251551,
+      "sha256": "5bfa7b294973e4d576869bfa7d835b3a7b2475d4c7ed6a59aa7d05d8b45900ca"
+    },
+    {
+      "path": "fixtures/snapshot-final-seven-01.synthetic.json",
+      "bytes": 174582,
+      "sha256": "f9e581cf8b9c9e617b3b6f023439ccebb1daef5b6f4701e6fbdea506106bb03a"
+    },
+    {
+      "path": "fixtures/snapshot-final-seven-02.synthetic.json",
+      "bytes": 3990,
+      "sha256": "4a88389616cd1ccf871c017e883d83bcc7c8218d49e160dfd2d111048f489456"
+    },
+    {
+      "path": "fixtures/snapshot-small.corrected.sample-receipt.json",
+      "bytes": 394,
+      "sha256": "8661c66eb2d3459e24320d3af1d87e12b89179274c6e1ca7f2023431860d03da"
+    },
+    {
+      "path": "fixtures/snapshot-small.corrected.synthetic.json",
+      "bytes": 23462,
+      "sha256": "848bc497ce4be855f462b18836af8714e4e24b3fef2e2bb67fb264353f8e82d1"
+    },
+    {
+      "path": "fixtures/snapshot-small.sample-receipt.json",
+      "bytes": 245,
+      "sha256": "fa0868a2cc0823f90e4e4b506e5de35bbd94c6c21fd12c2819f4baa7745a9f0e"
+    },
+    {
+      "path": "fixtures/snapshot-small.synthetic.json",
+      "bytes": 23450,
+      "sha256": "feaaa81b57de060b639b0731caaf86e4deeeba93c5b6cb93018dd21a481945cf"
+    },
+    {
+      "path": "fixtures/trade_reduced.safe.json",
+      "bytes": 87483,
+      "sha256": "e706b81d32a284e65550e678dfa056779ae3ee25b78efed90219b2db23a9f717"
+    },
+    {
+      "path": "fixtures/uk_recent.xml",
+      "bytes": 32501,
+      "sha256": "507d385bd324619b8be83fefb88d4b70addf469b608cfbde3dbadb52f3b4b7ec"
+    },
+    {
+      "path": "fixtures/us_recent.json",
+      "bytes": 4134,
+      "sha256": "7d24c8d7151b33a46ecc63257908c7a9416b0feab80b65d8307ee1899131ab16"
+    },
+    {
+      "path": "project.mjs",
+      "bytes": 9631,
+      "sha256": "5eb8cb7e0628f6911fbaf721e07637d6782e5a1df300332a736637535e41e3a4"
+    },
+    {
+      "path": "refresh.py",
+      "bytes": 25525,
+      "sha256": "adad12d8ea05e7a97ede76f3c7c5754da5f50da2c896cecb6fa0f2a887c71945"
+    },
+    {
+      "path": "reports/offline-tests.final.json",
+      "bytes": 3418,
+      "sha256": "9a544d3ebc65c1df7a1bfc3bc641f3ba6113a0e87d179ec0bf8e7e67c7c6499e"
+    },
+    {
+      "path": "reports/retained-binary-proof.json",
+      "bytes": 1571,
+      "sha256": "51c6b37030d7ea7c65809ed2f1810e1a6ddf6d1929fbcd8be44854088c0c3842"
+    },
+    {
+      "path": "test_refresh.py",
+      "bytes": 14379,
+      "sha256": "ed49f1f714c551855523a308ed8fbeeecae8c66a1130ffea11146dd59bb2ea57"
+    }
+  ],
+  "excluded": [
+    "__pycache__",
+    "data-local",
+    "exports",
+    "raw",
+    "refresh.sqlite",
+    "run.lock",
+    "Original provider workbook/ZIP/CSV bodies, acquired bulk chunks, credentials/session tokens",
+    "Any scheduler/service configuration"
+  ],
+  "copied_original_adapters_unchanged": 19,
+  "fixture_mode": "All produced mock/reduced samples are synthetic and live must reject",
+  "genuine_combined_network_run": "not_run",
+  "Windows": "unverified_blocked",
+  "automatic_ingress": "unsupported_no_machine_auth"
+}

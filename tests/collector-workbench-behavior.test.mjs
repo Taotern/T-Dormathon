@@ -7,7 +7,7 @@ import {fileURLToPath} from 'node:url';
 import {test} from 'node:test';
 const sourcePath=fileURLToPath(new URL('../static/collector-workbench.js',import.meta.url));
 const source=fs.readFileSync(sourcePath,'utf8');
-assert.equal(createHash('sha256').update(source).digest('hex'),'ea9dbc387086c53ac0b9cde571a60716ff4d27a079c2158e456a9aad44cf28a2','Rebind reviewed behavior tests only after intentional client changes');
+assert.equal(createHash('sha256').update(source).digest('hex'),'c802bb17753403bdf7d52002b2bf55d45b3a12dafeea3b7a7877b57c97d3365a','Rebind reviewed behavior tests only after intentional client changes');
 
 function deferred() {
   let resolve;
@@ -351,6 +351,21 @@ await run('newer snapshot file read wins over older pending read', async () => {
   await harness.elements.get('snapshot-save').click();
   assert.equal(importBody.snapshot.schema_version, 'new-file');
   assert.equal(harness.app.state.snapshot, null);
+});
+
+await run('refresh picker rejects synthetic/oversized parts with the actual reason and no save',async()=>{
+  const harness=await readyHarness();
+  for(const [size,mode,message]of [[262145,'retained_replay',/256KiB/],[100,'synthetic_fixture',/合成测试/]]){
+    await harness.app.readSnapshot({name:'refresh.json',size,text:async()=>JSON.stringify({schema_version:'dormathon.source-refresh.snapshot.v1',payload:{transport_mode:mode,records:[]}})});
+    assert.equal(harness.app.state.snapshot,null);assert.equal(harness.elements.get('snapshot-save').disabled,true);assert.match(textOf(harness.elements.get('snapshot-state')),message);
+  }
+});
+
+await run('refresh picker uses the bounded manual refresh route and preserves explicit replay label',async()=>{
+  let savedPath,savedBody;
+  const harness=await readyHarness((path,init)=>{if(init?.body&&path.includes('import')){savedPath=path;savedBody=JSON.parse(init.body);return response({status:'imported'});}if(path==='/api/global/sources')return response({sources:[]});if(path==='/api/global/runs')return response({runs:[]});if(path.includes('/items?'))return response({items:[initialItem]});return response({});});
+  const snapshot={schema_version:'dormathon.source-refresh.snapshot.v1',payload:{transport_mode:'retained_replay',records:[]}};
+  await harness.app.readSnapshot({name:'refresh.json',size:100,text:async()=>JSON.stringify(snapshot)});assert.match(textOf(harness.elements.get('snapshot-state')),/retained_replay/);await harness.elements.get('snapshot-save').click();assert.equal(savedPath,'/api/global/import-refresh-snapshot');assert.deepEqual(savedBody,{snapshot});assert.equal(harness.app.state.snapshot,null);
 });
 
 for (const scenario of ['http failure', 'network uncertainty']) {

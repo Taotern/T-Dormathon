@@ -1,0 +1,74 @@
+{
+  "schema_version": "dormathon.refresh-stage-delivery.v1",
+  "runtime_commit": "2eb04de6c2d3c8b2488f4431d73619a9bb053462",
+  "deployment_id": "appgdep_6ac7fcd6bbb08191bc24d0cdee95b17a",
+  "deployed_at": "2026-10-08T20:28:12.590651+00:00",
+  "producer_zip_sha256": "dd9f23c1cf24c1892cd4fc8c5f9540f0598c3e8bc8eed00a142bf2289cc1c010",
+  "producer_manifest_sha256": "ba5868501102c449f1dc6dd8edcafe87a236d64f5d5783fa51303ba7226e34f7",
+  "profile_sha256": "3eb4fbdcf987c4c944ae90f512ba9ab73085d740f21b3b90c64b06bfe46aee7a",
+  "genuine_provider_requests": 1,
+  "genuine_rows": 14,
+  "genuine_window": [
+    "2026-09-30",
+    "2026-10-08"
+  ],
+  "genuine_raw_response_sha256": "790000fa68a7e1e8e9ac5083fa27ab5dede84cf1a4f2037cb78ecb98f36f263f",
+  "genuine_consumed_file_sha256": "878d07c8279eb6f985bf875d1688c4cdeffa5f8a558fb823182b957861b11300",
+  "genuine_payload_sha256": "06761370a467bc3f6e6dec7cffec2f2d8d631a543d00b45091d8f5184bbdf483",
+  "manual_site_submissions": 1,
+  "origin": "uploaded_unverified",
+  "indexed_documents": 51471,
+  "direct_items": 369,
+  "uploaded_items": 114,
+  "reviewed_items": 50988,
+  "old_rules": 8,
+  "local_replay": {
+    "transport_mode": "retained_replay",
+    "provider_requests": 0,
+    "new_versions": 0,
+    "exact14_versions_and_current_pointers_unchanged": true,
+    "cadence_override": "validation-only copied job cadence0"
+  },
+  "scope": "One operator-driven foreground ECB request/export/manual-ingress validation; no new source/geographic/domain coverage and no daily unattended/Windows/automatic sync claim",
+  "evidence": [
+    {
+      "artifact_name": "genuine-acquisition-intent.json",
+      "sha256": "02634307fb8ed78f6794e4a52e49b4c902d9d079c4f4837f8af1b5f094b7616c"
+    },
+    {
+      "artifact_name": "local-replay-no-http.json",
+      "sha256": "b223c3460085d1a3699d724e0b77d86a1a277e5830cfa05cae0c4734c6b2284e"
+    },
+    {
+      "artifact_name": "site-import-intent.json",
+      "sha256": "c88e2c71ae95018211a69dc81a59bb29bf100726f5135f3b89e3769657929154"
+    },
+    {
+      "artifact_name": "site-pilot-readback.json",
+      "sha256": "9a94fd8cde18d46b9d904bcd329404e3dce88adca8fa4c54a5b5c0c423708fd2"
+    },
+    {
+      "artifact_name": "core-parity-review.json",
+      "sha256": "c0c739dda0e065ad312726ee790ec3b4084f238141cdd7b133f2e691f0b09527"
+    },
+    {
+      "artifact_name": "cap-delta-review.json",
+      "sha256": "64c54f56b6c3ad3578cc3e4cee99cba9c375a2e76073dfead974a5d74161b4af"
+    },
+    {
+      "artifact_name": "saved-live-ecb-review.json",
+      "sha256": "8f55014df7f6f5ef50947b1c7f88290b6e26e556d813d9a7fe07389e04ff3281"
+    },
+    {
+      "artifact_name": "clean-consumer.json",
+      "sha256": "36f8db1502eda34e2ef0786505b2bbfb80229db92bc531d2480910d5e86a0cd2"
+    }
+  ],
+  "not_verified": [
+    "user Windows execution",
+    "closed-process daily scheduling",
+    "automatic Site ingress",
+    "genuine HTTP transport for the other six source families",
+    "full global domain/entity/relationship coverage"
+  ]
+}

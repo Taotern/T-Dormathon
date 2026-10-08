@@ -1,0 +1,1522 @@
+{
+  "schema_version": "dormathon.commodity-monthly-safe.v0.18",
+  "source_workbook_sha256": "ea1c350827878ea3bbe30e3cda16a13fd3bd5b409b8458940dc94a36b5a33154",
+  "source_sheet": "Monthly Prices",
+  "source_price_basis": "monthly prices in nominal US dollars",
+  "source_edition_raw": "Updated on October 02, 2026",
+  "source_edition_date": "2026-10-02",
+  "original_available_period": [
+    "1960-01",
+    "2026-09"
+  ],
+  "selected_period": [
+    "1990-01",
+    "2026-09"
+  ],
+  "expected_months_per_series": 441,
+  "source_price_columns_including_index": 71,
+  "price_series_selected": 35,
+  "series": [
+    {
+      "id": "crude_average",
+      "name": "Crude oil, average",
+      "group": "energy",
+      "definition_row": 7,
+      "source_name": "Crude oil, average",
+      "unit_raw": "($/bbl)",
+      "unit": "USD_per_barrel",
+      "currency": "USD",
+      "unit_scale": 1,
+      "definition": "Crude oil, average spot price of Brent, Dubai and West Texas  Intermediate, equally weighed",
+      "provider_reference": "World Bank.",
+      "definition_metadata_scope": "Current source Description includes historical regimes; not evidence of a homogeneous quote basis across all months",
+      "reference_locations": [],
+      "reference_locations_basis": "Literal source-definition text matches; no geocoding/current-country/impact assertion",
+      "futures_forward_inputs_mentioned": false,
+      "latest_two_months_estimate_rule": false,
+      "cells": [
+        {
+          "period": "2026-08",
+          "raw_value": 84.4,
+          "value": 84.4,
+          "missingness": "supplied_numeric",
+          "cell_kind": "number"
+        },
+        {
+          "period": "2026-09",
+          "raw_value": 102.3,
+          "value": 102.3,
+          "missingness": "supplied_numeric",
+          "cell_kind": "number"
+        }
+      ]
+    },
+    {
+      "id": "crude_brent",
+      "name": "Crude oil, Brent",
+      "group": "energy",
+      "definition_row": 8,
+      "source_name": "Crude oil, Brent",
+      "unit_raw": "($/bbl)",
+      "unit": "USD_per_barrel",
+      "currency": "USD",
+      "unit_scale": 1,
+      "definition": "Crude oil, UK Brent 38` API.",
+      "provider_reference": "Bloomberg Finance L.P. Finance L.P.; Energy Intelligence Group (EIG); Organization of Petroleum Exporting Countries (OPEC); World Bank.",
+      "definition_metadata_scope": "Current source Description includes historical regimes; not evidence of a homogeneous quote basis across all months",
+      "reference_locations": [],
+      "reference_locations_basis": "Literal source-definition text matches; no geocoding/current-country/impact assertion",
+      "futures_forward_inputs_mentioned": false,
+      "latest_two_months_estimate_rule": false,
+      "cells": [
+        {
+          "period": "2026-08",
+          "raw_value": 90.9,
+          "value": 90.9,
+          "missingness": "supplied_numeric",
+          "cell_kind": "number"
+        },
+        {
+          "period": "2026-09",
+          "raw_value": 116.8,
+          "value": 116.8,
+          "missingness": "supplied_numeric",
+          "cell_kind": "number"
+        }
+      ]
+    },
+    {
+      "id": "coal_australia",
+      "name": "Coal, Australian",
+      "group": "energy",
+      "definition_row": 4,
+      "source_name": "Coal, Australian",
+      "unit_raw": "($/mt)",
+      "unit": "USD_per_metric_ton",
+      "currency": "USD",
+      "unit_scale": 1,
+      "definition": "Coal (Australia), from February 2022, port thermal, f.o.b. Newcastle, 6000 kcal/kg futures price. From 2015 to January 2022, port thermal, f.o.b. Newcastle, 6000 kcal/kg spot price. 2002-2014, thermal GAR, f.o.b. piers, Newcastle/Port Kembla , 6,300 kcal/kg (11,340 btu/lb), less than 0.8%, sulfur 13% ash; previously 6,667 kcal/kg (12,000 btu/lb), less than 1.0% sulfur, 14%  ash",
+      "provider_reference": "Bloomberg Finance L.P. Finance L.P. Finance L.P.; Coal Week International; Coal Week; IHS McCloskey Coal Report; International Coal Report World Bank.",
+      "definition_metadata_scope": "Current source Description includes historical regimes; not evidence of a homogeneous quote basis across all months",
+      "reference_locations": [
+        "Newcastle"
+      ],
+      "reference_locations_basis": "Literal source-definition text matches; no geocoding/current-country/impact assertion",
+      "futures_forward_inputs_mentioned": true,
+      "latest_two_months_estimate_rule": false,
+      "cells": [
+        {
+          "period": "2026-08",
+          "raw_value": 135.2,
+          "value": 135.2,
+          "missingness": "supplied_numeric",
+          "cell_kind": "number"
+        },
+        {
+          "period": "2026-09",
+          "raw_value": 147.1,
+          "value": 147.1,
+          "missingness": "supplied_numeric",
+          "cell_kind": "number"
+        }
+      ]
+    },
+    {
+      "id": "coal_south_africa",
+      "name": "Coal, South African **",
+      "group": "energy",
+      "definition_row": 6,
+      "source_name": "Coal, South African **",
+      "unit_raw": "($/mt)",
+      "unit": "USD_per_metric_ton",
+      "currency": "USD",
+      "unit_scale": 1,
+      "definition": "Coal (South Africa), from January 2015, f.o.b. Richards Bay, NAR, 6,000 kcal/kg, sulfur less than 1%, forward month 1;  from February 13, 2017 to December 2017, thermal NAR netback assessment f.o.b. Richards Bay 6,000 kcal/kg; during 2006-February 10, 2017 thermal NAR; during 2002-2005 6,200 kcal/kg (11,200 btu/lb), less than 1.0%, sulfur 16% ash; years 1990-2001 6390 kcal/kg (11,500 btu/lb)",
+      "provider_reference": "Bloomberg Finance L.P. Finance L.P.; Coal Week; Coal Week International; International Coal Report; World Bank.",
+      "definition_metadata_scope": "Current source Description includes historical regimes; not evidence of a homogeneous quote basis across all months",
+      "reference_locations": [
+        "Richards Bay"
+      ],
+      "reference_locations_basis": "Literal source-definition text matches; no geocoding/current-country/impact assertion",
+      "futures_forward_inputs_mentioned": true,
+      "latest_two_months_estimate_rule": false,
+      "cells": [
+        {
+          "period": "2026-08",
+          "raw_value": 96.8,
+          "value": 96.8,
+          "missingness": "supplied_numeric",
+          "cell_kind": "number"
+        },
+        {
+          "period": "2026-09",
+          "raw_value": 98.2,
+          "value": 98.2,
+          "missingness": "supplied_numeric",
+          "cell_kind": "number"
+        }
+      ]
+    },
+    {
+      "id": "gas_us",
+      "name": "Natural gas, US",
+      "group": "energy",
+      "definition_row": 13,
+      "source_name": "Natural gas, US",
+      "unit_raw": "($/mmbtu)",
+      "unit": "USD_per_million_British_thermal_units",
+      "currency": "USD",
+      "unit_scale": 1,
+      "definition": "Natural Gas (U.S.), spot price at Henry Hub, Louisiana",
+      "provider_reference": "Bloomberg Finance L.P. Finance L.P.; Thomson Reuters Datastream; The Wall Street Journal; World Bank.",
+      "definition_metadata_scope": "Current source Description includes historical regimes; not evidence of a homogeneous quote basis across all months",
+      "reference_locations": [
+        "Louisiana",
+        "Henry Hub"
+      ],
+      "reference_locations_basis": "Literal source-definition text matches; no geocoding/current-country/impact assertion",
+      "futures_forward_inputs_mentioned": false,
+      "latest_two_months_estimate_rule": false,
+      "cells": [
+        {
+          "period": "2026-08",
+          "raw_value": 2.77,
+          "value": 2.77,
+          "missingness": "supplied_numeric",
+          "cell_kind": "number"
+        },
+        {
+          "period": "2026-09",
+          "raw_value": 2.95,
+          "value": 2.95,
+          "missingness": "supplied_numeric",
+          "cell_kind": "number"
+        }
+      ]
+    },
+    {
+      "id": "gas_europe",
+      "name": "Natural gas, Europe",
+      "group": "energy",
+      "definition_row": 12,
+      "source_name": "Natural gas, Europe",
+      "unit_raw": "($/mmbtu)",
+      "unit": "USD_per_million_British_thermal_units",
+      "currency": "USD",
+      "unit_scale": 1,
+      "definition": "Natural Gas (Europe), from April 2015, Netherlands Title Transfer Facility (TTF); April 2010 to March 2015, average import border price and a spot price component, including UK; during June 2000 - March 2010 prices excludes UK.  ",
+      "provider_reference": "Bloomberg Finance L.P. Finance L.P.; World Gas Intelligence; World Bank.",
+      "definition_metadata_scope": "Current source Description includes historical regimes; not evidence of a homogeneous quote basis across all months",
+      "reference_locations": [
+        "Europe"
+      ],
+      "reference_locations_basis": "Literal source-definition text matches; no geocoding/current-country/impact assertion",
+      "futures_forward_inputs_mentioned": false,
+      "latest_two_months_estimate_rule": false,
+      "cells": [
+        {
+          "period": "2026-08",
+          "raw_value": 21.11,
+          "value": 21.11,
+          "missingness": "supplied_numeric",
+          "cell_kind": "number"
+        },
+        {
+          "period": "2026-09",
+          "raw_value": 25.42,
+          "value": 25.42,
+          "missingness": "supplied_numeric",
+          "cell_kind": "number"
+        }
+      ]
+    },
+    {
+      "id": "lng_japan",
+      "name": "Liquefied natural gas, Japan",
+      "group": "energy",
+      "definition_row": 14,
+      "source_name": "Liquefied natural gas, Japan",
+      "unit_raw": "($/mmbtu)",
+      "unit": "USD_per_million_British_thermal_units",
+      "currency": "USD",
+      "unit_scale": 1,
+      "definition": "Liquefied natural gas (Japan), LNG, import price, cif; recent two months' averages are estimates.",
+      "provider_reference": "Official Statistics of Japan; World Gas Intelligence; World Bank.",
+      "definition_metadata_scope": "Current source Description includes historical regimes; not evidence of a homogeneous quote basis across all months",
+      "reference_locations": [
+        "Japan"
+      ],
+      "reference_locations_basis": "Literal source-definition text matches; no geocoding/current-country/impact assertion",
+      "futures_forward_inputs_mentioned": false,
+      "latest_two_months_estimate_rule": true,
+      "cells": [
+        {
+          "period": "2026-08",
+          "raw_value": 15.27,
+          "value": 15.27,
+          "missingness": "supplied_numeric",
+          "cell_kind": "number"
+        },
+        {
+          "period": "2026-09",
+          "raw_value": 14.25,
+          "value": 14.25,
+          "missingness": "supplied_numeric",
+          "cell_kind": "number"
+        }
+      ]
+    },
+    {
+      "id": "aluminum",
+      "name": "Aluminum",
+      "group": "metals",
+      "definition_row": 88,
+      "source_name": "Aluminum",
+      "unit_raw": "($/mt)",
+      "unit": "USD_per_metric_ton",
+      "currency": "USD",
+      "unit_scale": 1,
+      "definition": "Aluminum (LME) London Metal Exchange, unalloyed primary ingots, high grade, minimum 99.7% purity, settlement price beginning 2005; previously cash price",
+      "provider_reference": "Bloomberg Finance L.P.; Engineering and Mining Journal; Platts Metals Week; Thomson Reuters Datastream; World Bank.",
+      "definition_metadata_scope": "Current source Description includes historical regimes; not evidence of a homogeneous quote basis across all months",
+      "reference_locations": [
+        "London"
+      ],
+      "reference_locations_basis": "Literal source-definition text matches; no geocoding/current-country/impact assertion",
+      "futures_forward_inputs_mentioned": false,
+      "latest_two_months_estimate_rule": false,
+      "cells": [
+        {
+          "period": "2026-08",
+          "raw_value": 3251,
+          "value": 3251,
+          "missingness": "supplied_numeric",
+          "cell_kind": "number"
+        },
+        {
+          "period": "2026-09",
+          "raw_value": 3283,
+          "value": 3283,
+          "missingness": "supplied_numeric",
+          "cell_kind": "number"
+        }
+      ]
+    },
+    {
+      "id": "copper",
+      "name": "Copper",
+      "group": "metals",
+      "definition_row": 89,
+      "source_name": "Copper",
+      "unit_raw": "($/mt)",
+      "unit": "USD_per_metric_ton",
+      "currency": "USD",
+      "unit_scale": 1,
+      "definition": "Copper (LME), grade A, minimum 99.9935% purity, cathodes and wire bar shapes, settlement price",
+      "provider_reference": "Bloomberg Finance L.P.; Engineering and Mining Journal; Platts Metals Week; Thomson Reuters Datastream; World Bank.",
+      "definition_metadata_scope": "Current source Description includes historical regimes; not evidence of a homogeneous quote basis across all months",
+      "reference_locations": [],
+      "reference_locations_basis": "Literal source-definition text matches; no geocoding/current-country/impact assertion",
+      "futures_forward_inputs_mentioned": false,
+      "latest_two_months_estimate_rule": false,
+      "cells": [
+        {
+          "period": "2026-08",
+          "raw_value": 14326,
+          "value": 14326,
+          "missingness": "supplied_numeric",
+          "cell_kind": "number"
+        },
+        {
+          "period": "2026-09",
+          "raw_value": 14474,
+          "value": 14474,
+          "missingness": "supplied_numeric",
+          "cell_kind": "number"
+        }
+      ]
+    },
+    {
+      "id": "lead",
+      "name": "Lead",
+      "group": "metals",
+      "definition_row": 92,
+      "source_name": "Lead",
+      "unit_raw": "($/mt)",
+      "unit": "USD_per_metric_ton",
+      "currency": "USD",
+      "unit_scale": 1,
+      "definition": "Lead (LME), refined, 99.97% purity, settlement price",
+      "provider_reference": "Bloomberg Finance L.P.; Engineering and Mining Journal; Platts Metals Week; Thomson Reuters Datastream; World Bank.",
+      "definition_metadata_scope": "Current source Description includes historical regimes; not evidence of a homogeneous quote basis across all months",
+      "reference_locations": [],
+      "reference_locations_basis": "Literal source-definition text matches; no geocoding/current-country/impact assertion",
+      "futures_forward_inputs_mentioned": false,
+      "latest_two_months_estimate_rule": false,
+      "cells": [
+        {
+          "period": "2026-08",
+          "raw_value": 1855,
+          "value": 1855,
+          "missingness": "supplied_numeric",
+          "cell_kind": "number"
+        },
+        {
+          "period": "2026-09",
+          "raw_value": 1873,
+          "value": 1873,
+          "missingness": "supplied_numeric",
+          "cell_kind": "number"
+        }
+      ]
+    },
+    {
+      "id": "tin",
+      "name": "Tin",
+      "group": "metals",
+      "definition_row": 99,
+      "source_name": "Tin",
+      "unit_raw": "($/mt)",
+      "unit": "USD_per_metric_ton",
+      "currency": "USD",
+      "unit_scale": 1,
+      "definition": "Tin (LME), refined, 99.85% purity, settlement price",
+      "provider_reference": "Bloomberg Finance L.P.; Engineering and Mining Journal; Platts Metals Week; Thomson Reuters Datastream; World Bank.",
+      "definition_metadata_scope": "Current source Description includes historical regimes; not evidence of a homogeneous quote basis across all months",
+      "reference_locations": [],
+      "reference_locations_basis": "Literal source-definition text matches; no geocoding/current-country/impact assertion",
+      "futures_forward_inputs_mentioned": false,
+      "latest_two_months_estimate_rule": false,
+      "cells": [
+        {
+          "period": "2026-08",
+          "raw_value": 55385,
+          "value": 55385,
+          "missingness": "supplied_numeric",
+          "cell_kind": "number"
+        },
+        {
+          "period": "2026-09",
+          "raw_value": 53712,
+          "value": 53712,
+          "missingness": "supplied_numeric",
+          "cell_kind": "number"
+        }
+      ]
+    },
+    {
+      "id": "nickel",
+      "name": "Nickel",
+      "group": "metals",
+      "definition_row": 93,
+      "source_name": "Nickel",
+      "unit_raw": "($/mt)",
+      "unit": "USD_per_metric_ton",
+      "currency": "USD",
+      "unit_scale": 1,
+      "definition": "Nickel (LME), cathodes, minimum 99.8% purity, settlement price beginning 2005; previously cash price",
+      "provider_reference": "Bloomberg Finance L.P.; Platts Metals Week, Thomson Reuters Datastream; World Bank.",
+      "definition_metadata_scope": "Current source Description includes historical regimes; not evidence of a homogeneous quote basis across all months",
+      "reference_locations": [],
+      "reference_locations_basis": "Literal source-definition text matches; no geocoding/current-country/impact assertion",
+      "futures_forward_inputs_mentioned": false,
+      "latest_two_months_estimate_rule": false,
+      "cells": [
+        {
+          "period": "2026-08",
+          "raw_value": 16751,
+          "value": 16751,
+          "missingness": "supplied_numeric",
+          "cell_kind": "number"
+        },
+        {
+          "period": "2026-09",
+          "raw_value": 16324,
+          "value": 16324,
+          "missingness": "supplied_numeric",
+          "cell_kind": "number"
+        }
+      ]
+    },
+    {
+      "id": "zinc",
+      "name": "Zinc",
+      "group": "metals",
+      "definition_row": 100,
+      "source_name": "Zinc",
+      "unit_raw": "($/mt)",
+      "unit": "USD_per_metric_ton",
+      "currency": "USD",
+      "unit_scale": 1,
+      "definition": "Zinc (LME), high grade, minimum 99.95% purity, settlement price beginning April 1990; previously special high grade, minimum 99.995%, cash prices ",
+      "provider_reference": "Bloomberg Finance L.P.; Engineering and Mining Journal; Platts Metals Week; Thomson Reuters Datastream; World Bank.",
+      "definition_metadata_scope": "Current source Description includes historical regimes; not evidence of a homogeneous quote basis across all months",
+      "reference_locations": [],
+      "reference_locations_basis": "Literal source-definition text matches; no geocoding/current-country/impact assertion",
+      "futures_forward_inputs_mentioned": false,
+      "latest_two_months_estimate_rule": false,
+      "cells": [
+        {
+          "period": "2026-08",
+          "raw_value": 3875,
+          "value": 3875,
+          "missingness": "supplied_numeric",
+          "cell_kind": "number"
+        },
+        {
+          "period": "2026-09",
+          "raw_value": 4021,
+          "value": 4021,
+          "missingness": "supplied_numeric",
+          "cell_kind": "number"
+        }
+      ]
+    },
+    {
+      "id": "gold",
+      "name": "Gold",
+      "group": "precious_metals",
+      "definition_row": 103,
+      "source_name": "Gold",
+      "unit_raw": "($/troy oz)",
+      "unit": "USD_per_troy_ounce",
+      "currency": "USD",
+      "unit_scale": 1,
+      "definition": "Gold, spot average of daily rates, from June 2025; previously (UK), 99.5% fine, London afternoon fixing, average of daily rates",
+      "provider_reference": "Bloomberg Finance L.P.; Kitco.com; International Monetary Fund, International Financial Statistics; London Bullion Market; Metals Week; Platts Metals Week; Shearson Lehman Brothers, Metal Market Weekly Review; Thomson Reuters Datastream; World Bank.",
+      "definition_metadata_scope": "Current source Description includes historical regimes; not evidence of a homogeneous quote basis across all months",
+      "reference_locations": [
+        "London"
+      ],
+      "reference_locations_basis": "Literal source-definition text matches; no geocoding/current-country/impact assertion",
+      "futures_forward_inputs_mentioned": false,
+      "latest_two_months_estimate_rule": false,
+      "cells": [
+        {
+          "period": "2026-08",
+          "raw_value": 4411,
+          "value": 4411,
+          "missingness": "supplied_numeric",
+          "cell_kind": "number"
+        },
+        {
+          "period": "2026-09",
+          "raw_value": 4319,
+          "value": 4319,
+          "missingness": "supplied_numeric",
+          "cell_kind": "number"
+        }
+      ]
+    },
+    {
+      "id": "silver",
+      "name": "Silver",
+      "group": "precious_metals",
+      "definition_row": 105,
+      "source_name": "Silver",
+      "unit_raw": "($/troy oz)",
+      "unit": "USD_per_troy_ounce",
+      "currency": "USD",
+      "unit_scale": 1,
+      "definition": "Silver (UK), 99.9% refined, London afternoon fixing; prior to July 1976 Handy & Harman.  Grade prior to 1962 unrefined silver.",
+      "provider_reference": "American Metal Market; Australian Mineral Economics Pty. Ltd.; Bloomberg Finance L.P.; London Bullion Market; Metals Week; Metals Statistics; Platts Metasl Week; The Silver Institute, Silver World Supply & Demand; Thomson Reuters Datastream; World Bank.",
+      "definition_metadata_scope": "Current source Description includes historical regimes; not evidence of a homogeneous quote basis across all months",
+      "reference_locations": [
+        "London"
+      ],
+      "reference_locations_basis": "Literal source-definition text matches; no geocoding/current-country/impact assertion",
+      "futures_forward_inputs_mentioned": false,
+      "latest_two_months_estimate_rule": false,
+      "cells": [
+        {
+          "period": "2026-08",
+          "raw_value": 65.4,
+          "value": 65.4,
+          "missingness": "supplied_numeric",
+          "cell_kind": "number"
+        },
+        {
+          "period": "2026-09",
+          "raw_value": 64.6,
+          "value": 64.6,
+          "missingness": "supplied_numeric",
+          "cell_kind": "number"
+        }
+      ]
+    },
+    {
+      "id": "platinum",
+      "name": "Platinum",
+      "group": "precious_metals",
+      "definition_row": 104,
+      "source_name": "Platinum",
+      "unit_raw": "($/troy oz)",
+      "unit": "USD_per_troy_ounce",
+      "currency": "USD",
+      "unit_scale": 1,
+      "definition": "Platinum,  99.95% minimum purity, plate or ingot form, spot average of daily rates, from June 2025; previously, (UK), 99.9% refined, London afternoon fixing",
+      "provider_reference": "Bloomberg Finance L.P.; London Platinum & Palladium Market; Platts Metals Week, CRB Commodity Yearbook; Thomson Reuters Datastream; World Bank.",
+      "definition_metadata_scope": "Current source Description includes historical regimes; not evidence of a homogeneous quote basis across all months",
+      "reference_locations": [
+        "London"
+      ],
+      "reference_locations_basis": "Literal source-definition text matches; no geocoding/current-country/impact assertion",
+      "futures_forward_inputs_mentioned": false,
+      "latest_two_months_estimate_rule": false,
+      "cells": [
+        {
+          "period": "2026-08",
+          "raw_value": 1780,
+          "value": 1780,
+          "missingness": "supplied_numeric",
+          "cell_kind": "number"
+        },
+        {
+          "period": "2026-09",
+          "raw_value": 1784,
+          "value": 1784,
+          "missingness": "supplied_numeric",
+          "cell_kind": "number"
+        }
+      ]
+    },
+    {
+      "id": "palm_oil",
+      "name": "Palm oil",
+      "group": "agriculture",
+      "definition_row": 31,
+      "source_name": "Palm oil",
+      "unit_raw": "($/mt)",
+      "unit": "USD_per_metric_ton",
+      "currency": "USD",
+      "unit_scale": 1,
+      "definition": "Palm oil (Malaysia), from January 2026, RBD, average export price FOB;February-December 2025, Crude, DAP; November 2024-January 2025, 5% Bulk, CIF North West Europe; January 2021 to October 2024, RBD, FOB Malaysia Ports; December 2001 to December 2020, RBD, CIF Rotterdam; previously Malaysia 5%,  c.i.f. N.W. Europe, bulk, nearest forward .",
+      "provider_reference": "S&P Global (formerly Markit Group Limited and earlier IHS Markit Agribusiness UK Ltd); Bloomberg Finance L.P.; ISTA Mielke GmbH, Oil World; US Department of Agriculture; World Bank.",
+      "definition_metadata_scope": "Current source Description includes historical regimes; not evidence of a homogeneous quote basis across all months",
+      "reference_locations": [
+        "Malaysia",
+        "Europe",
+        "Rotterdam"
+      ],
+      "reference_locations_basis": "Literal source-definition text matches; no geocoding/current-country/impact assertion",
+      "futures_forward_inputs_mentioned": true,
+      "latest_two_months_estimate_rule": false,
+      "cells": [
+        {
+          "period": "2026-08",
+          "raw_value": 1132,
+          "value": 1132,
+          "missingness": "supplied_numeric",
+          "cell_kind": "number"
+        },
+        {
+          "period": "2026-09",
+          "raw_value": 1180,
+          "value": 1180,
+          "missingness": "supplied_numeric",
+          "cell_kind": "number"
+        }
+      ]
+    },
+    {
+      "id": "soybeans",
+      "name": "Soybeans",
+      "group": "agriculture",
+      "definition_row": 36,
+      "source_name": "Soybeans",
+      "unit_raw": "($/mt)",
+      "unit": "USD_per_metric_ton",
+      "currency": "USD",
+      "unit_scale": 1,
+      "definition": "Soybeans, from January 2025, U.S. Soybeans, FOB U.S. Gulf ;January 2021-December 2024, U.S Gulf Yellow Soybean #2, CIF Rotterdam; December 2007 to December 2020, U.S. No. 2 yellow meal, CIF Rotterdam; previously US origin, nearest forward.",
+      "provider_reference": "S&P Global (formerly Markit Group Limited and earlier IHS Markit Agribusiness UK Ltd); Bloomberg Finance L.P.; ISTA Mielke GmbH, Oil World; US Department of Agriculture; World Bank.",
+      "definition_metadata_scope": "Current source Description includes historical regimes; not evidence of a homogeneous quote basis across all months",
+      "reference_locations": [
+        "Rotterdam"
+      ],
+      "reference_locations_basis": "Literal source-definition text matches; no geocoding/current-country/impact assertion",
+      "futures_forward_inputs_mentioned": true,
+      "latest_two_months_estimate_rule": false,
+      "cells": [
+        {
+          "period": "2026-08",
+          "raw_value": 482,
+          "value": 482,
+          "missingness": "supplied_numeric",
+          "cell_kind": "number"
+        },
+        {
+          "period": "2026-09",
+          "raw_value": 524,
+          "value": 524,
+          "missingness": "supplied_numeric",
+          "cell_kind": "number"
+        }
+      ]
+    },
+    {
+      "id": "soybean_meal",
+      "name": "Soybean meal",
+      "group": "agriculture",
+      "definition_row": 34,
+      "source_name": "Soybean meal",
+      "unit_raw": "($/mt)",
+      "unit": "USD_per_metric_ton",
+      "currency": "USD",
+      "unit_scale": 1,
+      "definition": "Soybean meal, from January 2025, U.S. Soymeal, 48% protein, average weekly price, FOB Rotterdam; January 2021-December 2024, Soybean Pellets 48% Pro, Brazil, CIF Rotterdam; January 1999 to December 2020, Brazilian pellets 48% protein, CIF Rotterdam; during 1990 - 1998, 45/46% c.i.f. Rotterdam, nearest forward; previously US origin 44%.",
+      "provider_reference": "S&P Global (formerly Markit Group Limited and earlier IHS Markit Agribusiness UK Ltd); Bloomberg Finance L.P.; ISTA Mielke GmbH, Oil World; US Department of Agriculture; World Bank.",
+      "definition_metadata_scope": "Current source Description includes historical regimes; not evidence of a homogeneous quote basis across all months",
+      "reference_locations": [
+        "Rotterdam"
+      ],
+      "reference_locations_basis": "Literal source-definition text matches; no geocoding/current-country/impact assertion",
+      "futures_forward_inputs_mentioned": true,
+      "latest_two_months_estimate_rule": false,
+      "cells": [
+        {
+          "period": "2026-08",
+          "raw_value": 406,
+          "value": 406,
+          "missingness": "supplied_numeric",
+          "cell_kind": "number"
+        },
+        {
+          "period": "2026-09",
+          "raw_value": 447,
+          "value": 447,
+          "missingness": "supplied_numeric",
+          "cell_kind": "number"
+        }
+      ]
+    },
+    {
+      "id": "maize",
+      "name": "Maize",
+      "group": "agriculture",
+      "definition_row": 41,
+      "source_name": "Maize",
+      "unit_raw": "($/mt)",
+      "unit": "USD_per_metric_ton",
+      "currency": "USD",
+      "unit_scale": 1,
+      "definition": "Maize (U.S.), no. 2, yellow, f.o.b. US Gulf ports",
+      "provider_reference": "Bloomberg Finance L.P.; US Department of Agriculture; World Bank.",
+      "definition_metadata_scope": "Current source Description includes historical regimes; not evidence of a homogeneous quote basis across all months",
+      "reference_locations": [
+        "US Gulf"
+      ],
+      "reference_locations_basis": "Literal source-definition text matches; no geocoding/current-country/impact assertion",
+      "futures_forward_inputs_mentioned": false,
+      "latest_two_months_estimate_rule": false,
+      "cells": [
+        {
+          "period": "2026-08",
+          "raw_value": 224,
+          "value": 224,
+          "missingness": "supplied_numeric",
+          "cell_kind": "number"
+        },
+        {
+          "period": "2026-09",
+          "raw_value": 239.6,
+          "value": 239.6,
+          "missingness": "supplied_numeric",
+          "cell_kind": "number"
+        }
+      ]
+    },
+    {
+      "id": "rice_thai_5",
+      "name": "Rice, Thai 5% ",
+      "group": "agriculture",
+      "definition_row": 42,
+      "source_name": "Rice, Thai 5% ",
+      "unit_raw": "($/mt)",
+      "unit": "USD_per_metric_ton",
+      "currency": "USD",
+      "unit_scale": 1,
+      "definition": "Rice (Thailand), 5% broken, white rice (WR), milled, indicative price based on  weekly surveys of export transactions, government standard, f.o.b. Bangkok",
+      "provider_reference": "Bloomberg Finance L.P.; US Department of Agricuture; World Bank.",
+      "definition_metadata_scope": "Current source Description includes historical regimes; not evidence of a homogeneous quote basis across all months",
+      "reference_locations": [
+        "Bangkok"
+      ],
+      "reference_locations_basis": "Literal source-definition text matches; no geocoding/current-country/impact assertion",
+      "futures_forward_inputs_mentioned": false,
+      "latest_two_months_estimate_rule": false,
+      "cells": [
+        {
+          "period": "2026-08",
+          "raw_value": 471,
+          "value": 471,
+          "missingness": "supplied_numeric",
+          "cell_kind": "number"
+        },
+        {
+          "period": "2026-09",
+          "raw_value": 482,
+          "value": 482,
+          "missingness": "supplied_numeric",
+          "cell_kind": "number"
+        }
+      ]
+    },
+    {
+      "id": "wheat_hrw",
+      "name": "Wheat, US HRW",
+      "group": "agriculture",
+      "definition_row": 48,
+      "source_name": "Wheat, US HRW",
+      "unit_raw": "($/mt)",
+      "unit": "USD_per_metric_ton",
+      "currency": "USD",
+      "unit_scale": 1,
+      "definition": "Wheat (U.S.), no. 2 hard red winter Gulf export price; June 2020 backwards, no. 1, hard red winter, ordinary protein, export price delivered at the US Gulf port for prompt or 30 days shipment",
+      "provider_reference": "Bloomberg Finance L.P.; US Department of Agriculture; World Bank.",
+      "definition_metadata_scope": "Current source Description includes historical regimes; not evidence of a homogeneous quote basis across all months",
+      "reference_locations": [
+        "US Gulf"
+      ],
+      "reference_locations_basis": "Literal source-definition text matches; no geocoding/current-country/impact assertion",
+      "futures_forward_inputs_mentioned": false,
+      "latest_two_months_estimate_rule": false,
+      "cells": [
+        {
+          "period": "2026-08",
+          "raw_value": 330,
+          "value": 330,
+          "missingness": "supplied_numeric",
+          "cell_kind": "number"
+        },
+        {
+          "period": "2026-09",
+          "raw_value": 347,
+          "value": 347,
+          "missingness": "supplied_numeric",
+          "cell_kind": "number"
+        }
+      ]
+    },
+    {
+      "id": "wheat_srw",
+      "name": "Wheat, US SRW",
+      "group": "agriculture",
+      "definition_row": 49,
+      "source_name": "Wheat, US SRW",
+      "unit_raw": "($/mt)",
+      "unit": "USD_per_metric_ton",
+      "currency": "USD",
+      "unit_scale": 1,
+      "definition": "Wheat (U.S.), no. 2, soft red winter, export price delivered at the US Gulf port for prompt or 30 days shipment",
+      "provider_reference": "Bloomberg Finance L.P.; US Department of Agriculture; World Bank.",
+      "definition_metadata_scope": "Current source Description includes historical regimes; not evidence of a homogeneous quote basis across all months",
+      "reference_locations": [
+        "US Gulf"
+      ],
+      "reference_locations_basis": "Literal source-definition text matches; no geocoding/current-country/impact assertion",
+      "futures_forward_inputs_mentioned": false,
+      "latest_two_months_estimate_rule": false,
+      "cells": [
+        {
+          "period": "2026-08",
+          "raw_value": 263.2,
+          "value": 263.2,
+          "missingness": "supplied_numeric",
+          "cell_kind": "number"
+        },
+        {
+          "period": "2026-09",
+          "raw_value": 278.6,
+          "value": 278.6,
+          "missingness": "supplied_numeric",
+          "cell_kind": "number"
+        }
+      ]
+    },
+    {
+      "id": "cocoa",
+      "name": "Cocoa",
+      "group": "agriculture",
+      "definition_row": 18,
+      "source_name": "Cocoa",
+      "unit_raw": "($/kg)",
+      "unit": "USD_per_kilogram",
+      "currency": "USD",
+      "unit_scale": 1,
+      "definition": "Cocoa (ICCO), International Cocoa Organization daily price, average of  the first three positions on the terminal markets of New York and London, nearest three future trading months.",
+      "provider_reference": "Bloomberg Finance L.P. Finance L.P.; International Cocoa Organization Secretariat; World Bank.",
+      "definition_metadata_scope": "Current source Description includes historical regimes; not evidence of a homogeneous quote basis across all months",
+      "reference_locations": [
+        "London"
+      ],
+      "reference_locations_basis": "Literal source-definition text matches; no geocoding/current-country/impact assertion",
+      "futures_forward_inputs_mentioned": true,
+      "latest_two_months_estimate_rule": false,
+      "cells": [
+        {
+          "period": "2026-08",
+          "raw_value": 5.95,
+          "value": 5.95,
+          "missingness": "supplied_numeric",
+          "cell_kind": "number"
+        },
+        {
+          "period": "2026-09",
+          "raw_value": 5.92,
+          "value": 5.92,
+          "missingness": "supplied_numeric",
+          "cell_kind": "number"
+        }
+      ]
+    },
+    {
+      "id": "coffee_arabica",
+      "name": "Coffee, Arabica",
+      "group": "agriculture",
+      "definition_row": 19,
+      "source_name": "Coffee, Arabica",
+      "unit_raw": "($/kg)",
+      "unit": "USD_per_kilogram",
+      "currency": "USD",
+      "unit_scale": 1,
+      "definition": "Coffee, Arabica (ICO), International Coffee Organization indicator price, other mild Arabicas, average New York and Bremen/Hamburg markets, ex-dock",
+      "provider_reference": "Bloomberg Finance L.P. Finance L.P.; Complete Coffee Coverage; International Coffee Organization; Thomson Reuters Datastream; World Bank.",
+      "definition_metadata_scope": "Current source Description includes historical regimes; not evidence of a homogeneous quote basis across all months",
+      "reference_locations": [],
+      "reference_locations_basis": "Literal source-definition text matches; no geocoding/current-country/impact assertion",
+      "futures_forward_inputs_mentioned": false,
+      "latest_two_months_estimate_rule": false,
+      "cells": [
+        {
+          "period": "2026-08",
+          "raw_value": 7.97,
+          "value": 7.97,
+          "missingness": "supplied_numeric",
+          "cell_kind": "number"
+        },
+        {
+          "period": "2026-09",
+          "raw_value": 7.26,
+          "value": 7.26,
+          "missingness": "supplied_numeric",
+          "cell_kind": "number"
+        }
+      ]
+    },
+    {
+      "id": "coffee_robusta",
+      "name": "Coffee, Robusta",
+      "group": "agriculture",
+      "definition_row": 20,
+      "source_name": "Coffee, Robusta",
+      "unit_raw": "($/kg)",
+      "unit": "USD_per_kilogram",
+      "currency": "USD",
+      "unit_scale": 1,
+      "definition": "Coffee, Robusta (ICO), International Coffee Organization indicator price, Robustas, average New York and Le Havre/Marseilles markets, ex-dock",
+      "provider_reference": "Bloomberg Finance L.P. Finance L.P.; Complete Coffee Coverage; International Coffee Organization; Thomson Reuters Datastream; World Bank.",
+      "definition_metadata_scope": "Current source Description includes historical regimes; not evidence of a homogeneous quote basis across all months",
+      "reference_locations": [],
+      "reference_locations_basis": "Literal source-definition text matches; no geocoding/current-country/impact assertion",
+      "futures_forward_inputs_mentioned": false,
+      "latest_two_months_estimate_rule": false,
+      "cells": [
+        {
+          "period": "2026-08",
+          "raw_value": 3.98,
+          "value": 3.98,
+          "missingness": "supplied_numeric",
+          "cell_kind": "number"
+        },
+        {
+          "period": "2026-09",
+          "raw_value": 3.69,
+          "value": 3.69,
+          "missingness": "supplied_numeric",
+          "cell_kind": "number"
+        }
+      ]
+    },
+    {
+      "id": "cotton_a",
+      "name": "Cotton, A Index",
+      "group": "agriculture_raw_material",
+      "definition_row": 74,
+      "source_name": "Cotton, A Index",
+      "unit_raw": "($/kg)",
+      "unit": "USD_per_kilogram",
+      "currency": "USD",
+      "unit_scale": 1,
+      "definition": "Cotton (Cotton Outlook \"CotlookA index\"), middling 1-3/32 inch, traded in Far East, C/F beginning 2006; previously Northern Europe, c.i.f.",
+      "provider_reference": "Bloomberg Finance L.P.; Cotton Outlook; International Cotton Advisory Committee; Liverpool Cotton Services Ltd.; World Bank.",
+      "definition_metadata_scope": "Current source Description includes historical regimes; not evidence of a homogeneous quote basis across all months",
+      "reference_locations": [
+        "Europe"
+      ],
+      "reference_locations_basis": "Literal source-definition text matches; no geocoding/current-country/impact assertion",
+      "futures_forward_inputs_mentioned": false,
+      "latest_two_months_estimate_rule": false,
+      "cells": [
+        {
+          "period": "2026-08",
+          "raw_value": 2.11,
+          "value": 2.11,
+          "missingness": "supplied_numeric",
+          "cell_kind": "number"
+        },
+        {
+          "period": "2026-09",
+          "raw_value": 2.1,
+          "value": 2.1,
+          "missingness": "supplied_numeric",
+          "cell_kind": "number"
+        }
+      ]
+    },
+    {
+      "id": "rubber_tsr20",
+      "name": "Rubber, TSR20 **",
+      "group": "agriculture_raw_material",
+      "definition_row": 77,
+      "source_name": "Rubber, TSR20 **",
+      "unit_raw": "($/kg)",
+      "unit": "USD_per_kilogram",
+      "currency": "USD",
+      "unit_scale": 1,
+      "definition": "Rubber (Asia), TSR 20, Technically Specified Rubber, SGX/SICOM nearby futures contract",
+      "provider_reference": "Asian Wall Street Journal; Bloomberg Finance L.P.; International Rubber Study Group; Rubber Association of Singapore Commodity Exchange (RASCE); Singapore Exchange Ltd (SGX previously SICOM); World Bank.",
+      "definition_metadata_scope": "Current source Description includes historical regimes; not evidence of a homogeneous quote basis across all months",
+      "reference_locations": [],
+      "reference_locations_basis": "Literal source-definition text matches; no geocoding/current-country/impact assertion",
+      "futures_forward_inputs_mentioned": true,
+      "latest_two_months_estimate_rule": false,
+      "cells": [
+        {
+          "period": "2026-08",
+          "raw_value": 2.24,
+          "value": 2.24,
+          "missingness": "supplied_numeric",
+          "cell_kind": "number"
+        },
+        {
+          "period": "2026-09",
+          "raw_value": 2.41,
+          "value": 2.41,
+          "missingness": "supplied_numeric",
+          "cell_kind": "number"
+        }
+      ]
+    },
+    {
+      "id": "barley",
+      "name": "Barley",
+      "group": "agriculture",
+      "definition_row": 40,
+      "source_name": "Barley",
+      "unit_raw": "($/mt)",
+      "unit": "USD_per_metric_ton",
+      "currency": "USD",
+      "unit_scale": 1,
+      "definition": "Barley (U.S.) feed, No. 2, spot, 20 days To-Arrive, delivered Minneapolis from May 2012 onwards; during 1980 - 2012 April Canadian, feed, Western No. 1, Winnipeg Commodity Exchange, spot, wholesale farmers' price",
+      "provider_reference": "Bloomberg Finance L.P.; US Department of Agriculture; World Bank.",
+      "definition_metadata_scope": "Current source Description includes historical regimes; not evidence of a homogeneous quote basis across all months",
+      "reference_locations": [],
+      "reference_locations_basis": "Literal source-definition text matches; no geocoding/current-country/impact assertion",
+      "futures_forward_inputs_mentioned": false,
+      "latest_two_months_estimate_rule": false,
+      "cells": [
+        {
+          "period": "2026-08",
+          "raw_value": "…",
+          "value": null,
+          "missingness": "source_missing",
+          "cell_kind": "text_marker"
+        },
+        {
+          "period": "2026-09",
+          "raw_value": "…",
+          "value": null,
+          "missingness": "source_missing",
+          "cell_kind": "text_marker"
+        }
+      ]
+    },
+    {
+      "id": "sugar_world",
+      "name": "Sugar, world",
+      "group": "agriculture",
+      "definition_row": 61,
+      "source_name": "Sugar, world",
+      "unit_raw": "($/kg)",
+      "unit": "USD_per_kilogram",
+      "currency": "USD",
+      "unit_scale": 1,
+      "definition": "Sugar (World), International Sugar Agreement (ISA) daily price, raw,  f.o.b. and stowed at greater Caribbean ports",
+      "provider_reference": "Bloomberg Finance L.P.; International Sugar Organization; Thomson Reuters Datastream; World Bank.",
+      "definition_metadata_scope": "Current source Description includes historical regimes; not evidence of a homogeneous quote basis across all months",
+      "reference_locations": [],
+      "reference_locations_basis": "Literal source-definition text matches; no geocoding/current-country/impact assertion",
+      "futures_forward_inputs_mentioned": false,
+      "latest_two_months_estimate_rule": false,
+      "cells": [
+        {
+          "period": "2026-08",
+          "raw_value": 0.38,
+          "value": 0.38,
+          "missingness": "supplied_numeric",
+          "cell_kind": "number"
+        },
+        {
+          "period": "2026-09",
+          "raw_value": 0.41,
+          "value": 0.41,
+          "missingness": "supplied_numeric",
+          "cell_kind": "number"
+        }
+      ]
+    },
+    {
+      "id": "logs_malaysia",
+      "name": "Logs, Malaysian",
+      "group": "timber",
+      "definition_row": 67,
+      "source_name": "Logs, Malaysian",
+      "unit_raw": "($/cubic meter)",
+      "unit": "USD_per_cubic_meter",
+      "currency": "USD",
+      "unit_scale": 1,
+      "definition": "Logs (Southeast Asia), meranti, Sarawak, sale price charged by importers, Tokyo beginning February 1993; previously average of Sabah and Sarawak weighted by Japanese import volumes",
+      "provider_reference": "International Tropical Timber Organization; Mokuzai Shikyo Geppo; World Bank.",
+      "definition_metadata_scope": "Current source Description includes historical regimes; not evidence of a homogeneous quote basis across all months",
+      "reference_locations": [
+        "Sarawak",
+        "Sabah",
+        "Tokyo",
+        "Japan"
+      ],
+      "reference_locations_basis": "Literal source-definition text matches; no geocoding/current-country/impact assertion",
+      "futures_forward_inputs_mentioned": false,
+      "latest_two_months_estimate_rule": false,
+      "cells": [
+        {
+          "period": "2026-08",
+          "raw_value": 187.4,
+          "value": 187.4,
+          "missingness": "supplied_numeric",
+          "cell_kind": "number"
+        },
+        {
+          "period": "2026-09",
+          "raw_value": 190.3,
+          "value": 190.3,
+          "missingness": "supplied_numeric",
+          "cell_kind": "number"
+        }
+      ]
+    },
+    {
+      "id": "sawnwood_malaysia",
+      "name": "Sawnwood, Malaysian",
+      "group": "timber",
+      "definition_row": 70,
+      "source_name": "Sawnwood, Malaysian",
+      "unit_raw": "($/cubic meter)",
+      "unit": "USD_per_cubic_meter",
+      "currency": "USD",
+      "unit_scale": 1,
+      "definition": "Sawnwood (Southeast Asia), dark red seraya/meranti, select and better quality, average 7 to 8 inches; length average 12 to 14 inches; thickness 1 to 2 inch(es);  kiln dry, c. & f. UK ports, with 5% agents commission including premium for products of certified sustainable forest beginning January 2005; previously excluding the premium",
+      "provider_reference": "International Tropical Timber Organization; Tropical Timbers; World Bank.",
+      "definition_metadata_scope": "Current source Description includes historical regimes; not evidence of a homogeneous quote basis across all months",
+      "reference_locations": [],
+      "reference_locations_basis": "Literal source-definition text matches; no geocoding/current-country/impact assertion",
+      "futures_forward_inputs_mentioned": false,
+      "latest_two_months_estimate_rule": false,
+      "cells": [
+        {
+          "period": "2026-08",
+          "raw_value": 737.9,
+          "value": 737.9,
+          "missingness": "supplied_numeric",
+          "cell_kind": "number"
+        },
+        {
+          "period": "2026-09",
+          "raw_value": 731.3,
+          "value": 731.3,
+          "missingness": "supplied_numeric",
+          "cell_kind": "number"
+        }
+      ]
+    },
+    {
+      "id": "urea",
+      "name": "Urea ",
+      "group": "fertilizers",
+      "definition_row": 85,
+      "source_name": "Urea ",
+      "unit_raw": "($/mt)",
+      "unit": "USD_per_metric_ton",
+      "currency": "USD",
+      "unit_scale": 1,
+      "definition": "Urea, (Ukraine), prill spot f.o.b. Middle East, beginning March 2022; previously, f.o.b. Black Sea.",
+      "provider_reference": "Bloomberg Finance L.P.; Bloomberg Finance L.P. L.P. - Green Markets (formerly Kennedy Information LLC)",
+      "definition_metadata_scope": "Current source Description includes historical regimes; not evidence of a homogeneous quote basis across all months",
+      "reference_locations": [
+        "Middle East"
+      ],
+      "reference_locations_basis": "Literal source-definition text matches; no geocoding/current-country/impact assertion",
+      "futures_forward_inputs_mentioned": false,
+      "latest_two_months_estimate_rule": false,
+      "cells": [
+        {
+          "period": "2026-08",
+          "raw_value": 390,
+          "value": 390,
+          "missingness": "supplied_numeric",
+          "cell_kind": "number"
+        },
+        {
+          "period": "2026-09",
+          "raw_value": 407.5,
+          "value": 407.5,
+          "missingness": "supplied_numeric",
+          "cell_kind": "number"
+        }
+      ]
+    },
+    {
+      "id": "dap",
+      "name": "DAP",
+      "group": "fertilizers",
+      "definition_row": 81,
+      "source_name": "DAP",
+      "unit_raw": "($/mt)",
+      "unit": "USD_per_metric_ton",
+      "currency": "USD",
+      "unit_scale": 1,
+      "definition": "DAP (diammonium phosphate), spot, f.o.b. US Gulf",
+      "provider_reference": "Bloomberg Finance L.P.; Bloomberg Finance L.P. L.P. - Green Markets (formerly Kennedy Information LLC)",
+      "definition_metadata_scope": "Current source Description includes historical regimes; not evidence of a homogeneous quote basis across all months",
+      "reference_locations": [
+        "US Gulf"
+      ],
+      "reference_locations_basis": "Literal source-definition text matches; no geocoding/current-country/impact assertion",
+      "futures_forward_inputs_mentioned": false,
+      "latest_two_months_estimate_rule": false,
+      "cells": [
+        {
+          "period": "2026-08",
+          "raw_value": 793.5,
+          "value": 793.5,
+          "missingness": "supplied_numeric",
+          "cell_kind": "number"
+        },
+        {
+          "period": "2026-09",
+          "raw_value": 800.6,
+          "value": 800.6,
+          "missingness": "supplied_numeric",
+          "cell_kind": "number"
+        }
+      ]
+    },
+    {
+      "id": "phosphate_rock",
+      "name": "Phosphate rock",
+      "group": "fertilizers",
+      "definition_row": 82,
+      "source_name": "Phosphate rock",
+      "unit_raw": "($/mt)",
+      "unit": "USD_per_metric_ton",
+      "currency": "USD",
+      "unit_scale": 1,
+      "definition": "Phosphate rock , f.o.b. North Africa",
+      "provider_reference": "Bloomberg Finance L.P.; Bloomberg Finance L.P. L.P. - Green Markets (formerly Kennedy Information LLC)",
+      "definition_metadata_scope": "Current source Description includes historical regimes; not evidence of a homogeneous quote basis across all months",
+      "reference_locations": [
+        "North Africa"
+      ],
+      "reference_locations_basis": "Literal source-definition text matches; no geocoding/current-country/impact assertion",
+      "futures_forward_inputs_mentioned": false,
+      "latest_two_months_estimate_rule": false,
+      "cells": [
+        {
+          "period": "2026-08",
+          "raw_value": 170,
+          "value": 170,
+          "missingness": "supplied_numeric",
+          "cell_kind": "number"
+        },
+        {
+          "period": "2026-09",
+          "raw_value": 170,
+          "value": 170,
+          "missingness": "supplied_numeric",
+          "cell_kind": "number"
+        }
+      ]
+    }
+  ],
+  "method_change_log": [
+    {
+      "source_row": 108,
+      "text": "denotes forecast series"
+    },
+    {
+      "source_row": 109,
+      "text": "Rubber TSR20 replaces Rubber RSS3 in Other Raw Materials index from 2018"
+    },
+    {
+      "source_row": 110,
+      "text": "Groundnut oil, replacement series from January 2023"
+    },
+    {
+      "source_row": 111,
+      "text": "Coal (South Africa), June to November 2022, March, April, June to September, December 2023, and January-May 2024 are estimates based on similar benchmarks, December 2022 to February 2023, May, and October-November 2023 replaced with source data."
+    },
+    {
+      "source_row": 112,
+      "text": "Potassium chloride changed from Vancouver to Brazil from January 2020; Groundnut oil corrected for February 2023."
+    },
+    {
+      "source_row": 113,
+      "text": "Chicken changed from U.S.A to Brazil from September 2021."
+    },
+    {
+      "source_row": 114,
+      "text": "Coffee (Arabica), Cotton, Kolkata tea, and Metal updated for February 2024."
+    },
+    {
+      "source_row": 115,
+      "text": "Beef, replacement series from January 2024"
+    },
+    {
+      "source_row": 116,
+      "text": "Lamb, replacement series from January 2020"
+    },
+    {
+      "source_row": 117,
+      "text": "Some oilseed November prices have updated entries while December are World Bank estimates. Some oilseed series have been replaced."
+    },
+    {
+      "source_row": 118,
+      "text": "January Kolkata corrected. Some oilseed January prices have updated entries while February are World Bank estimates. Some oilseed series have been replaced from January."
+    },
+    {
+      "source_row": 119,
+      "text": "Some oilseed February prices have updated entries while some March prices are World Bank estimates."
+    },
+    {
+      "source_row": 120,
+      "text": "Several oilseed series have been updated for the period April-November 2025."
+    },
+    {
+      "source_row": 121,
+      "text": "Peanut (Groundnut) series updated for the period November 2024-July 2025."
+    },
+    {
+      "source_row": 122,
+      "text": "Tobacco series updated for the period July-October 2025."
+    },
+    {
+      "source_row": 123,
+      "text": "January 2026: Kolkata and average tea have been updated for November."
+    },
+    {
+      "source_row": 124,
+      "text": "February 2026: LNG (Japan) corrected for 2024 (year) and the October-December 2024 (quarterly)."
+    },
+    {
+      "source_row": 125,
+      "text": "February 2026 edition onwards: Tobacco series are updated for the last three months, with the two most recent months reflecting estimates."
+    },
+    {
+      "source_row": 126,
+      "text": "March 2026: Wheat (US SRW) and Phosphate rock corrected for 2023 and 2024."
+    },
+    {
+      "source_row": 127,
+      "text": "April 2026: Tea updated for February 2026."
+    },
+    {
+      "source_row": 128,
+      "text": "July 2026: Tea updated for June 2026."
+    },
+    {
+      "source_row": 129,
+      "text": "August 2026: Replacement series for Fishmeal from July 2026."
+    },
+    {
+      "source_row": 130,
+      "text": "September 2026: Some minor inconsistencies in grain prices shown in the August release were the result of formatting issues and have since been addressed. Periods where data are unavailable are indicated by \"..\""
+    },
+    {
+      "source_row": 131,
+      "text": "October 2026: Replacement series for Palm oil from January 2026."
+    }
+  ],
+  "auxiliary_sheets_excluded": [
+    "Mismatch Details",
+    "Monthly Indices",
+    "Index Weights"
+  ],
+  "unit_quarantine": [
+    {
+      "source_name": "Iron ore, cfr spot",
+      "workbook_unit": "($/dmtu)",
+      "current_pdf_unit": "$/dmt",
+      "reason": "Native denominator conflict; no conversion or homogeneous historical-unit assumption",
+      "product_admission_eligible": false
+    }
+  ],
+  "definitions_pdf_sha256": "1b6bb6961c8a317dfe49afb49c2a0eaf83b5460fc4337fe70a1ecd291cfde2bd",
+  "fixture_scope": "Original last-two-month fields; reduced fixture envelope only, not an upstream body",
+  "source_snapshot": {
+    "edition_date": "2026-10-02",
+    "edition_raw": "Updated on October 02, 2026",
+    "latest_observation_month": "2026-09",
+    "source_available_period": [
+      "2026-08",
+      "2026-09"
+    ],
+    "method_change_log": [
+      {
+        "source_row": 108,
+        "text": "denotes forecast series",
+        "marker_raw": "   *"
+      },
+      {
+        "source_row": 109,
+        "text": "Rubber TSR20 replaces Rubber RSS3 in Other Raw Materials index from 2018",
+        "marker_raw": "   **"
+      },
+      {
+        "source_row": 110,
+        "text": "Groundnut oil, replacement series from January 2023",
+        "marker_raw": null
+      },
+      {
+        "source_row": 111,
+        "text": "Coal (South Africa), June to November 2022, March, April, June to September, December 2023, and January-May 2024 are estimates based on similar benchmarks, December 2022 to February 2023, May, and October-November 2023 replaced with source data.",
+        "marker_raw": null
+      },
+      {
+        "source_row": 112,
+        "text": "Potassium chloride changed from Vancouver to Brazil from January 2020; Groundnut oil corrected for February 2023.",
+        "marker_raw": null
+      },
+      {
+        "source_row": 113,
+        "text": "Chicken changed from U.S.A to Brazil from September 2021.",
+        "marker_raw": null
+      },
+      {
+        "source_row": 114,
+        "text": "Coffee (Arabica), Cotton, Kolkata tea, and Metal updated for February 2024.",
+        "marker_raw": null
+      },
+      {
+        "source_row": 115,
+        "text": "Beef, replacement series from January 2024",
+        "marker_raw": null
+      },
+      {
+        "source_row": 116,
+        "text": "Lamb, replacement series from January 2020",
+        "marker_raw": null
+      },
+      {
+        "source_row": 117,
+        "text": "Some oilseed November prices have updated entries while December are World Bank estimates. Some oilseed series have been replaced.",
+        "marker_raw": null
+      },
+      {
+        "source_row": 118,
+        "text": "January Kolkata corrected. Some oilseed January prices have updated entries while February are World Bank estimates. Some oilseed series have been replaced from January.",
+        "marker_raw": null
+      },
+      {
+        "source_row": 119,
+        "text": "Some oilseed February prices have updated entries while some March prices are World Bank estimates.",
+        "marker_raw": null
+      },
+      {
+        "source_row": 120,
+        "text": "Several oilseed series have been updated for the period April-November 2025.",
+        "marker_raw": null
+      },
+      {
+        "source_row": 121,
+        "text": "Peanut (Groundnut) series updated for the period November 2024-July 2025.",
+        "marker_raw": null
+      },
+      {
+        "source_row": 122,
+        "text": "Tobacco series updated for the period July-October 2025.",
+        "marker_raw": null
+      },
+      {
+        "source_row": 123,
+        "text": "January 2026: Kolkata and average tea have been updated for November.",
+        "marker_raw": null
+      },
+      {
+        "source_row": 124,
+        "text": "February 2026: LNG (Japan) corrected for 2024 (year) and the October-December 2024 (quarterly).",
+        "marker_raw": null
+      },
+      {
+        "source_row": 125,
+        "text": "February 2026 edition onwards: Tobacco series are updated for the last three months, with the two most recent months reflecting estimates.",
+        "marker_raw": null
+      },
+      {
+        "source_row": 126,
+        "text": "March 2026: Wheat (US SRW) and Phosphate rock corrected for 2023 and 2024.",
+        "marker_raw": null
+      },
+      {
+        "source_row": 127,
+        "text": "April 2026: Tea updated for February 2026.",
+        "marker_raw": null
+      },
+      {
+        "source_row": 128,
+        "text": "July 2026: Tea updated for June 2026.",
+        "marker_raw": null
+      },
+      {
+        "source_row": 129,
+        "text": "August 2026: Replacement series for Fishmeal from July 2026.",
+        "marker_raw": null
+      },
+      {
+        "source_row": 130,
+        "text": "September 2026: Some minor inconsistencies in grain prices shown in the August release were the result of formatting issues and have since been addressed. Periods where data are unavailable are indicated by \"..\"",
+        "marker_raw": null
+      },
+      {
+        "source_row": 131,
+        "text": "October 2026: Replacement series for Palm oil from January 2026.",
+        "marker_raw": null
+      }
+    ],
+    "estimate_flag_basis": "Publisher notes; no per-cell binary estimate certainty",
+    "historical_sheet": "Monthly Prices",
+    "quarantined_iron_ore": true
+  },
+  "coverage": {
+    "selected_series": 35,
+    "requested_period": [
+      "2020-01",
+      "2026-10"
+    ],
+    "returned_period": [
+      "2026-08",
+      "2026-09"
+    ],
+    "provider_completeness_claim": false,
+    "fixture_reduced_month_grid": true
+  }
+}

@@ -3,6 +3,7 @@ import {retrievalStatus,retrievalDocuments,retrievalIndex} from './retrieval.js'
 import {PUBLIC_BUNDLE,ASSETS,SITE_ORIGIN,GLOBAL_CATALOG} from './generated.js';
 import {RiskStore} from './store.js';
 import {WorkspaceService} from './workspace.js';
+import {importRefreshSnapshot} from './source-refresh.js';
 import {importLocalSnapshot} from './local-snapshot.js';
 import {DOMAINS,ValidationError,has,validDomain,textField,dateMicros} from './common.js';
 import {refreshEnergy} from './collector.js';
@@ -49,6 +50,7 @@ export async function handleRequest(request,env,context={}){
      if(path==='/api/workspace/impact')return responseJSON(200,await workspace.impact(body));
      if(path==='/api/workspace/actions')return responseJSON(200,await workspace.createAction(body));
      if(path==='/api/workspace/assist'){const r=await workspace.assist(body);return responseJSON(r.status,r.body)}
+     if(path==='/api/global/import-refresh-snapshot'){if(Object.keys(body).length!==1||!Object.hasOwn(body,'snapshot'))throw new ValidationError('刷新导入请求仅接受snapshot对象');return responseJSON(200,await importRefreshSnapshot(store,body.snapshot))}
      if(path==='/api/global/import-snapshot'){if(Object.keys(body).length!==1||!Object.hasOwn(body,'snapshot'))throw new ValidationError('导入请求仅接受snapshot对象');return responseJSON(200,await importLocalSnapshot(store,body.snapshot))}
      if(path==='/api/reviewed-intake/chunk')return responseJSON(200,await importReviewedChunk(store,body));if(path==='/api/retrieval/index'){if(Object.keys(body).length)throw new ValidationError('索引操作不接收URL或参数');return responseJSON(200,await retrievalIndex(store))}if(path==='/api/global/search'){if(Object.keys(body).some(k=>!['query','limit','source_id','category','language','origin','saved_from','saved_to','sort'].includes(k)))throw new ValidationError('检索仅支持query/limit/source_id/category/language/origin/saved_from/saved_to/sort');return responseJSON(200,await intelSearch(store,body.query,has(body,'limit')?body.limit:20,{source_id:body.source_id,category:body.category,language:body.language,origin:body.origin,saved_from:body.saved_from,saved_to:body.saved_to,sort:body.sort}));}
      if(path==='/api/global/collect'){if(Object.keys(body).length!==1)throw new ValidationError('采集请求仅接受source_id，不接受URL/查询词');const result=await intelCollect(store,textField(body.source_id,'source_id',100,true));return responseJSON(result.status==='in_progress'?409:200,result)}
