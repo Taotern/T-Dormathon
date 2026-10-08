@@ -1,0 +1,63 @@
+{
+  "package_version": "1.1.0",
+  "verified_at": "2026-10-08T03:06:00Z",
+  "environment": {
+    "platform": "linux",
+    "node": "24.19.0",
+    "sqlite": "3.53.3"
+  },
+  "runtime_and_provenance_tests": {
+    "passed": 20,
+    "failed": 0
+  },
+  "independent_frozen_source_contracts": {
+    "passed": 74,
+    "failed": 0,
+    "network_requests": 0
+  },
+  "exact_original_files_pinned": 16,
+  "isolated_zip_restore": {
+    "manifest_verified": true,
+    "path_with_spaces_and_chinese_characters": true,
+    "no_node_modules_or_installed_dependencies": true,
+    "persistent_fixture_run": "complete_success",
+    "completed_day_restart_zero_refetch": true,
+    "graceful_foreground_loop_sigint_stop": true,
+    "forced_process_death_and_restart": true,
+    "snapshot_corruption_check": true,
+    "provider_requests": 0
+  },
+  "stress_fixture_check": {
+    "synthetic_items": 1000,
+    "multipart_export_required": true,
+    "byte_cap_per_partition": 1572864,
+    "integrity_and_item_version_run_rule_links": "passed",
+    "complete_nonduplicated_selected_item_coverage": "passed"
+  },
+  "windows_execution": "not_run",
+  "windows_limitation": "The selected desktop executor rejected access-control setup before the first command. No alternate local route was used.",
+  "live_provider_refetch": "not_run_in_this_packaging_task",
+  "gpt_site_import": "consumer_owned_separate_acceptance_gate",
+  "os_task_service_firewall_or_credential_created": false,
+  "external_cloud_deployment": false,
+  "scope": "Offline code, package restore and foreground loop lifecycle verification. This does not certify a running Windows deployment, closed-process scheduling, provider uptime, exhaustive coverage or automatic Site synchronization.",
+  "snapshot_timestamp_boundary": {
+    "status": "passed",
+    "exported_at": "Stamped after the consistent SQLite read, not at function entry or collection start.",
+    "regression": "Simulated concurrent completion after exporter entry is no later than exported_at.",
+    "strict_import_timestamp_validation": "unchanged"
+  },
+  "candidate_only": true,
+  "frozen_base_zip_sha256": "7e8c30c8e69f1183d50818aa84c850e4cc464dbe516c9368b674e343f73da7ba",
+  "targeted_source_entrypoint": {
+    "command": "node collector.mjs collect-source --source REGISTERED_ID",
+    "registered_enabled_id_only": true,
+    "unselected_daily_budgets_unchanged": true,
+    "operation_vs_daily_job_status_separate": true,
+    "request_count_separate": true,
+    "unknown_url_rejected_before_state_creation": true,
+    "partial_source_then_full_tick_no_refetch": "passed",
+    "targeted_denial_cooldown_and_cap": "passed",
+    "cli_scoped_success_and_integrity": "passed"
+  }
+}

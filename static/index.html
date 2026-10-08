@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <meta name="description" content="Dormathon 私人证据研判：关注对象、真实公开线索、调查复核、业务情景和行动记录。">
+  <title>Dormathon · 风险工作区</title>
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="stylesheet" href="/preparation.css">
+  <script type="module" src="/app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">跳转到工作区</a>
+  <div class="app-shell">
+    <aside class="sidebar" aria-label="主导航">
+      <a href="#prepare" class="brand" aria-label="Dormathon 风险工作区首页">
+        <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span>
+        <span>DORMATHON<span class="brand-sub">RISK WORKSPACE</span></span>
+      </a>
+      <div class="sidebar-section">工作流程</div>
+      <nav id="main-nav">
+        <a href="#prepare" data-route="prepare"><span class="nav-number">↗</span>赛前研判<span class="nav-arrow">↗</span></a>
+        <a href="#global" data-route="global"><span class="nav-number">00</span>全球情报<span class="nav-arrow">↗</span></a>
+        <a href="#overview" data-route="overview"><span class="nav-number">01</span>基线总览<span class="nav-arrow">↗</span></a>
+        <a href="#import" data-route="import"><span class="nav-number">02</span>导入与校验<span class="nav-arrow">↗</span></a>
+        <a href="#alerts" data-route="alerts"><span class="nav-number">03</span>预警与证据<span id="alert-nav-count" class="nav-count">—</span></a>
+        <a href="#sources" data-route="sources"><span class="nav-number">04</span>来源资料<span class="nav-arrow">↗</span></a>
+        <a href="#consult" data-route="consult"><span class="nav-number">05</span>有据问询<span class="nav-arrow">↗</span></a>
+        <a href="#actions" data-route="actions"><span class="nav-number">06</span>行动记录<span class="nav-arrow">↗</span></a>
+      </nav>
+      <div class="sidebar-foot">
+        <span class="side-kicker">EVIDENCE BASELINE</span>
+        <p>把每个判断<br>接回它的证据。</p>
+        <div class="side-system"><span id="side-status-dot" class="status-dot"></span><span id="side-status">正在连接私人站点服务</span></div>
+      </div>
+    </aside>
+    <div class="workspace">
+      <header class="topbar">
+        <div class="breadcrumb"><span>Dormathon</span><span class="breadcrumb-slash">/</span><span id="breadcrumb-page">基线总览</span></div>
+        <div class="topbar-right"><span id="llm-top-status" class="top-status">LLM 状态检查中</span><button class="icon-button" id="refresh-button" aria-label="刷新数据" title="刷新数据">↻</button><span class="local-avatar" aria-label="私人工作区">D</span></div>
+      </header>
+      <main id="main" tabindex="-1">
+        <div id="connection-notice" class="notice warning" hidden></div>
+        <div id="page-content" aria-busy="true"><div class="initial-loading"><span class="loading-line"></span><h1>正在建立证据视图</h1><p>连接私人站点服务，读取四个分析域与来源状态。</p></div></div>
+      </main>
+      <footer class="workspace-footer"><span>DORMATHON / BASELINE 01</span><span>公开基线与运营观测分开呈现 · 所有结论保留边界</span></footer>
+    </div>
+  </div>
+  <div id="toast-region" class="toast-region" role="status" aria-live="polite"></div>
+  <dialog id="detail-dialog" class="detail-dialog"><div class="dialog-inner" id="detail-content"></div></dialog>
+  <noscript><div class="notice warning">此工作区需要 JavaScript。请开启后重新载入。</div></noscript>
+</body>
+</html>

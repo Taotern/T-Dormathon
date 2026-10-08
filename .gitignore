@@ -1,0 +1,12 @@
+dist/
+site.tar.gz
+node_modules/
+.env
+.env.*
+.sites-runtime/
+.sites-checkout-*/
+*.log
+worker/generated.js
+# Independent fixture inputs are tracked; generated execution reports are not.
+tests/independent-source-contracts/*-report.json
+tests/independent-source-contracts/*-report.txt

@@ -1,0 +1,137 @@
+{
+  "schema_version": "0.4.0",
+  "test_only": true,
+  "production_contract": "Existing parseIntelFeed public interface. Source-specific modules own validation; shared fetching, retries and storage stay unchanged.",
+  "fetch_frozen_at": "2026-10-08T00:00:00.000Z",
+  "source_contracts": {
+    "usgs": {
+      "envelope": "FeatureCollection.features array. A provided metadata.count must match the returned feature count.",
+      "required_fields": [
+        "nonempty feature.id",
+        "properties.title",
+        "safe HTTP(S) properties.url",
+        "finite numeric properties.mag/time/updated",
+        "Point coordinates: finite longitude, latitude and depth, with geographic range checks"
+      ],
+      "unknown_fields": "Publication time and event country remain null; optional measurements may be null.",
+      "empty_result": "An empty feature array with coherent count=0 is legitimate."
+    },
+    "gdacs": {
+      "envelope": "RSS channel with direct item children. Hidden items or a declared nonzero count with zero items must fail.",
+      "required_fields": [
+        "title",
+        "safe link",
+        "supplied stable ID or explicitly derived URL/publication key"
+      ],
+      "optional_fields": "Absent country/ISO3/point remain unknown. Missing fields do not authorize inference.",
+      "time_semantics": "fromdate and pubDate are independent. Supplied invalid dates fail validation; absent dates can remain null.",
+      "geometry": "Supplied latitude/longitude pairs must be finite and in range.",
+      "empty_result": "A correctly recognized, coherent RSS channel can legitimately be empty."
+    },
+    "eonet": {
+      "envelope": "JSON events array.",
+      "required_fields": [
+        "nonempty string event ID",
+        "title",
+        "safe HTTP(S) link"
+      ],
+      "optional_geometry": "Missing geometry remains null/unknown. Supplied geometry requires a valid type, coordinates and source datetime.",
+      "geometry": "Documented Point/Polygon geometries. Non-Point projections must be labeled coordinate samples with total/stored counts and truncation; at most 16 pairs are stored.",
+      "unknown_fields": "Publication time and event country remain null.",
+      "empty_result": "An empty events array is legitimate."
+    },
+    "un_zh": {
+      "envelope": "RSS channel with direct items. A provided feed language must match the Chinese endpoint.",
+      "required_fields": [
+        "metadata identity",
+        "title",
+        "safe link"
+      ],
+      "time_semantics": "Absent publication time remains unknown; invalid supplied publication dates fail validation.",
+      "geography": "Chinese is a language, not an event-country assertion.",
+      "content": "Headlines, links and times only; no description, content:encoded or media.",
+      "empty_result": "A coherent recognized container can be empty. Wrong roots or nonzero-count/zero-item responses fail."
+    },
+    "ecb": {
+      "envelope": "RSS channel with direct items.",
+      "required_fields": [
+        "metadata identity",
+        "title",
+        "safe link"
+      ],
+      "time_semantics": "Supplied publication dates must be calendar-valid and offset-aware. Event time remains null.",
+      "geography": "Publisher country Germany does not determine an event country.",
+      "content": "Metadata only.",
+      "empty_result": "A coherent recognized channel can legitimately be empty."
+    },
+    "bis_press": {
+      "envelope": "RSS 1 RDF root: item nodes are siblings of channel. Sequence references must be coherent with actual items.",
+      "required_fields": [
+        "title",
+        "safe link",
+        "valid supplied dc:date when present"
+      ],
+      "identity": "Fallback URL/publication keys must be explicitly labeled derived.",
+      "time_semantics": "Source midnight dates carry exact-clock uncertainty; never label them event onset times.",
+      "content": "Limited metadata with BIS credit and a direct original link.",
+      "empty_result": "Zero items with zero sequence references is legitimate. Nonzero references with zero items or hidden items fail."
+    },
+    "bis_speeches": {
+      "envelope": "Same RDF container/reference coherence as BIS press.",
+      "required_fields": [
+        "title",
+        "safe link",
+        "valid supplied dc:date when present"
+      ],
+      "time_semantics": "Calendar-valid midnight dates remain exact-time-unverified. Event time remains null.",
+      "geography": "Swiss publisher jurisdiction is not the speech event country.",
+      "content": "No full speeches; preserve attribution.",
+      "empty_result": "A coherent zero-reference RDF feed can be empty. Hidden or unprojected referenced items must not silently become zero."
+    },
+    "my_fuel_latest": {
+      "envelope": "JSON array.",
+      "required_fields": [
+        "calendar-valid effective YYYY-MM-DD date",
+        "series_type: level or change_weekly",
+        "present price fields must be numbers or null"
+      ],
+      "facts_allowlist": [
+        "date",
+        "series_type",
+        "ron95",
+        "ron97",
+        "diesel",
+        "diesel_eastmsia",
+        "ron95_skps",
+        "diesel_budi",
+        "diesel_skds",
+        "ron95_budi95"
+      ],
+      "time_semantics": "Effective date remains date-only; publication and event timestamps remain null.",
+      "content": "Only approved price facts; unexpected narrative columns must never be persisted.",
+      "empty_result": "An empty array is structurally recognized, but it does not establish latest pricing availability."
+    },
+    "my_warning": {
+      "envelope": "JSON array.",
+      "required_fields": [
+        "warning_issue.issued",
+        "validity strings",
+        "display title or heading sufficient for a deterministic derived identity"
+      ],
+      "time_semantics": "Calendar-valid timezone-naive values are permitted and retained raw. Canonical times remain null until timezone semantics are verified.",
+      "content": "Only issue/title/heading/validity metadata, including a narrow nested issue allowlist. No full text or instructions.",
+      "empty_result": "An empty array can legitimately mean no warnings in the current snapshot."
+    },
+    "nasa_metadata": {
+      "envelope": "JSON array. API error objects must fail.",
+      "required_fields": [
+        "positive integer post ID",
+        "title.rendered",
+        "safe HTTP(S) link",
+        "calendar-valid date_gmt and modified_gmt UTC strings"
+      ],
+      "content": "Requested metadata fields only. Never persist content, excerpt or media; title is bounded to 500 characters.",
+      "empty_result": "An empty array can be legitimate for the requested rolling window. Runtime query dates must be generated, never taken from the fixture endpoint."
+    }
+  }
+}

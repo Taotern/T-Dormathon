@@ -1,0 +1,13 @@
+[
+  {
+    "warning_issue": {
+      "issued": "2026-10-08T06:30:00",
+      "title_bm": "Amaran Angin Kencang dan Laut Bergelora",
+      "title_en": "Strong Winds and Rough Seas Warning"
+    },
+    "valid_from": "TEST_invalid_date",
+    "valid_to": "2026-10-08T11:00:00",
+    "heading_en": "Warning on Strong Wind and Rough Seas",
+    "heading_bm": "Amaran Angin kencang dan laut bergelora"
+  }
+]

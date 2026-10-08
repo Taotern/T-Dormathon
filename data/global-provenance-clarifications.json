@@ -1,0 +1,76 @@
+{
+  "schema_version": "0.1.0",
+  "generated_at": "2026-10-07T23:48:59.861639+00:00",
+  "frozen_registry_sha256": "8cb6d74e029b066e4dc6660ec32e804078f3e2c941b5140566052fc94191ef27",
+  "frozen_registry_digest_scope": "Bytes of final generated registry file; not an upstream response body.",
+  "upstream_response_body_sha256": null,
+  "upstream_digest_status": "Unknown. Original complete HTTP body bytes were parsed in memory, not retained or hashed. No invented upstream body digest.",
+  "projection_schema_mapping": {
+    "upstream safe projection schema0.1": "Original seven source-specific safe field projections: usgs,gdacs,eonet,un_zh,my_fuel_latest,ecb,my_warning. These source wrappers are not the normalized record contract.",
+    "upstream safe projection schema0.2": "New metadata projections for nasa_metadata,bis_press,bis_speeches.",
+    "normalized schema0.2": "All30normalizedfixtures are validated against normalized-item.schema.v0.2.json."
+  },
+  "retained_projection_sha256_bindings": [
+    {
+      "path": "usgs-safe-sample.json",
+      "bytes": 4338,
+      "sha256": "2247dfb665937322d78623887268707824f837152b6f2b700a65abd3a72192cb",
+      "digest_scope": "Exact retained metadata/factual projection JSON file; not full upstream body."
+    },
+    {
+      "path": "gdacs-safe-sample.json",
+      "bytes": 3691,
+      "sha256": "b239f1ce6933504a69aa127aeecd00eade8366c477a797f9fde6c02e8f8f070b",
+      "digest_scope": "Exact retained metadata/factual projection JSON file; not full upstream body."
+    },
+    {
+      "path": "eonet-safe-sample.json",
+      "bytes": 3449,
+      "sha256": "2bfa76e91da73b69452d997fe7e8e0201d400f6c4bd46fe0197e383588f6ff37",
+      "digest_scope": "Exact retained metadata/factual projection JSON file; not full upstream body."
+    },
+    {
+      "path": "un_zh-safe-sample.json",
+      "bytes": 1852,
+      "sha256": "f7b8d401db84a11363f63b5ef48f5e0035da579ef94ed43255a1d12b64aa488f",
+      "digest_scope": "Exact retained metadata/factual projection JSON file; not full upstream body."
+    },
+    {
+      "path": "my_fuel_latest-safe-sample.json",
+      "bytes": 1918,
+      "sha256": "75f04d33e8ef88afa9051e7089aec7801b2bf4fe4ae45296d83506dc5a65d8e3",
+      "digest_scope": "Exact retained metadata/factual projection JSON file; not full upstream body."
+    },
+    {
+      "path": "ecb-safe-sample.json",
+      "bytes": 2187,
+      "sha256": "c538b4f909cbec2171c520046cabfdcf8f1f8c3028c5fa6c59c3ced71f265677",
+      "digest_scope": "Exact retained metadata/factual projection JSON file; not full upstream body."
+    },
+    {
+      "path": "my_warning-safe-sample.json",
+      "bytes": 2062,
+      "sha256": "b56a72ae641f9a8957343f3d549eaf77920f04acbb3c5d8c5648bd034959735c",
+      "digest_scope": "Exact retained metadata/factual projection JSON file; not full upstream body."
+    },
+    {
+      "path": "nasa_metadata-safe-sample.json",
+      "bytes": 2391,
+      "sha256": "3381b4d27daef96bd06a07ce20cf10322c13373734a302f11077bda6c00c569a",
+      "digest_scope": "Exact retained metadata/factual projection JSON file; not full upstream body."
+    },
+    {
+      "path": "bis_press-safe-sample.json",
+      "bytes": 2013,
+      "sha256": "ffc1ec184aa7093c973f01c2d5ebfc6aa350e3f53f10b31a081b65a68b0494fe",
+      "digest_scope": "Exact retained metadata/factual projection JSON file; not full upstream body."
+    },
+    {
+      "path": "bis_speeches-safe-sample.json",
+      "bytes": 1667,
+      "sha256": "1c01db58f4e4927f1319c62b10ea1e99db3c0f3fa6aa3e67c0c384338ec6f485",
+      "digest_scope": "Exact retained metadata/factual projection JSON file; not full upstream body."
+    }
+  ],
+  "enabled_contract_supersession": "Initial v0.2 ready preceded a late disabled RTHK metadata annotation. Final registry hash supersedes any pre-manifest hash; enabled contracts, test evidence and normalized fixtures were not changed by that annotation. Final frozen at manifest2026-10-07T23:47:03.988342Z."
+}

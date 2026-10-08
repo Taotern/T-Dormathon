@@ -1,0 +1,6 @@
+data-local/
+exports/
+bin/
+node_modules/
+*.zip
+tests/source-contracts/local-runtime-contract-report.*

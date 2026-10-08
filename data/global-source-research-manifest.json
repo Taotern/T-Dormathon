@@ -1,0 +1,94 @@
+{
+  "schema_version": "0.2.0",
+  "generated_at": "2026-10-07T23:47:03.988342+00:00",
+  "catalog_ready_at": "2026-10-07T23:44:32.245197+00:00",
+  "enabled_source_ids": [
+    "usgs",
+    "gdacs",
+    "eonet",
+    "un_zh",
+    "my_fuel_latest",
+    "ecb",
+    "my_warning",
+    "nasa_metadata",
+    "bis_press",
+    "bis_speeches"
+  ],
+  "files": [
+    {
+      "path": "source-registry.v0.2.json",
+      "bytes": 58164,
+      "sha256": "8cb6d74e029b066e4dc6660ec32e804078f3e2c941b5140566052fc94191ef27"
+    },
+    {
+      "path": "source-registry.v0.2.compact.json",
+      "bytes": 48775,
+      "sha256": "9cdcd20c92a8a8db57327cf51c730205d756626329c14a478e67d7b1681ec724"
+    },
+    {
+      "path": "normalized-fixtures.v0.2.json",
+      "bytes": 42078,
+      "sha256": "98bcf4da101504175d5942b8e4f3116415a3e61435fd213a09ad6ebc49fe669c"
+    },
+    {
+      "path": "normalized-item.schema.v0.2.json",
+      "bytes": 3808,
+      "sha256": "1b4f8ede00b6bfe0691b9e090f7c9ececd7fa48ae513e27cb02d0c157f171c72"
+    },
+    {
+      "path": "parsing-contract.v0.2.json",
+      "bytes": 11064,
+      "sha256": "ac976e873b5b97db6c616af0d065307ef0f95eb7a5c17163a8a1b1b34ecef329"
+    },
+    {
+      "path": "usgs-safe-sample.json",
+      "bytes": 4338,
+      "sha256": "2247dfb665937322d78623887268707824f837152b6f2b700a65abd3a72192cb"
+    },
+    {
+      "path": "gdacs-safe-sample.json",
+      "bytes": 3691,
+      "sha256": "b239f1ce6933504a69aa127aeecd00eade8366c477a797f9fde6c02e8f8f070b"
+    },
+    {
+      "path": "eonet-safe-sample.json",
+      "bytes": 3449,
+      "sha256": "2bfa76e91da73b69452d997fe7e8e0201d400f6c4bd46fe0197e383588f6ff37"
+    },
+    {
+      "path": "un_zh-safe-sample.json",
+      "bytes": 1852,
+      "sha256": "f7b8d401db84a11363f63b5ef48f5e0035da579ef94ed43255a1d12b64aa488f"
+    },
+    {
+      "path": "my_fuel_latest-safe-sample.json",
+      "bytes": 1918,
+      "sha256": "75f04d33e8ef88afa9051e7089aec7801b2bf4fe4ae45296d83506dc5a65d8e3"
+    },
+    {
+      "path": "ecb-safe-sample.json",
+      "bytes": 2187,
+      "sha256": "c538b4f909cbec2171c520046cabfdcf8f1f8c3028c5fa6c59c3ced71f265677"
+    },
+    {
+      "path": "my_warning-safe-sample.json",
+      "bytes": 2062,
+      "sha256": "b56a72ae641f9a8957343f3d549eaf77920f04acbb3c5d8c5648bd034959735c"
+    },
+    {
+      "path": "nasa_metadata-safe-sample.json",
+      "bytes": 2391,
+      "sha256": "3381b4d27daef96bd06a07ce20cf10322c13373734a302f11077bda6c00c569a"
+    },
+    {
+      "path": "bis_press-safe-sample.json",
+      "bytes": 2013,
+      "sha256": "ffc1ec184aa7093c973f01c2d5ebfc6aa350e3f53f10b31a081b65a68b0494fe"
+    },
+    {
+      "path": "bis_speeches-safe-sample.json",
+      "bytes": 1667,
+      "sha256": "1c01db58f4e4927f1319c62b10ea1e99db3c0f3fa6aa3e67c0c384338ec6f485"
+    }
+  ]
+}

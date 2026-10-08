@@ -1,0 +1,42 @@
+import { sqliteTable, text, integer, index, uniqueIndex } from 'drizzle-orm/sqlite-core';
+export const sources = sqliteTable('sources', {
+  id:text('id').primaryKey(),title:text('title').notNull(),url:text('url').default(''),publisher:text('publisher').default(''),
+  retrievedAt:text('retrieved_at'),kind:text('kind').notNull(),license:text('license').default(''),domainTags:text('domain_tags').notNull().default('[]'),
+  sha256:text('sha256').default(''),availability:text('availability').default('available'),metadata:text('metadata').notNull().default('{}')
+});
+export const records = sqliteTable('records', {
+  id:text('id').primaryKey(),domain:text('domain').notNull(),occurredAt:text('occurred_at').notNull(),sourceId:text('source_id').notNull().references(()=>sources.id),
+  payload:text('payload').notNull(),fingerprint:text('fingerprint').notNull()
+}, t=>[index('record_domain_idx').on(t.domain),uniqueIndex('record_fingerprint_idx').on(t.fingerprint)]);
+export const documents = sqliteTable('documents', {
+  id:text('id').primaryKey(),sourceId:text('source_id').notNull().references(()=>sources.id),title:text('title').notNull(),text:text('text').notNull(),domainTags:text('domain_tags').notNull().default('[]'),recordId:text('record_id')
+},t=>[index('document_record_idx').on(t.recordId)]);
+export const chunks = sqliteTable('chunks', {
+  id:text('id').primaryKey(),documentId:text('document_id').notNull().references(()=>documents.id),sourceId:text('source_id').notNull().references(()=>sources.id),
+  text:text('text').notNull(),domainTags:text('domain_tags').notNull().default('[]')
+},t=>[index('chunk_source_idx').on(t.sourceId)]);
+export const alerts = sqliteTable('alerts', {
+  id:text('id').primaryKey(),domain:text('domain').notNull(),ruleId:text('rule_id').notNull(),title:text('title').notNull(),severity:text('severity').notNull(),detail:text('detail').notNull(),
+  evidenceIds:text('evidence_ids').notNull().default('[]'),recommendedAction:text('recommended_action').notNull(),status:text('status').notNull().default('open'),active:integer('active').notNull().default(1),
+  createdAt:text('created_at').notNull(),updatedAt:text('updated_at').notNull(),dataKind:text('data_kind').notNull().default('operational'),evidenceKind:text('evidence_kind').notNull().default('record')
+},t=>[index('alert_domain_active_idx').on(t.domain,t.active)]);
+export const actions = sqliteTable('actions', {
+  id:text('id').primaryKey(),alertId:text('alert_id').references(()=>alerts.id),title:text('title').notNull(),owner:text('owner').notNull().default(''),status:text('status').notNull().default('open'),
+  notes:text('notes').notNull().default(''),createdAt:text('created_at').notNull(),updatedAt:text('updated_at').notNull(),evidenceSnapshot:text('evidence_snapshot').notNull().default('{}')
+});
+export const settings=sqliteTable('settings',{key:text('key').primaryKey(),value:text('value').notNull()});
+
+// Global public intelligence uses a separate namespace from the four operational domains.
+export const intelRegistry=sqliteTable('intel_registry',{id:text('id').primaryKey(),config:text('config').notNull(),enabled:integer('enabled').notNull(),version:text('version').notNull()});
+export const intelRuns=sqliteTable('intel_runs',{id:text('id').primaryKey(),sourceId:text('source_id').notNull().references(()=>intelRegistry.id),status:text('status').notNull(),attemptedAt:text('attempted_at').notNull(),completedAt:text('completed_at'),receipt:text('receipt').notNull().default('{}')},t=>[index('intel_run_source_time_idx').on(t.sourceId,t.attemptedAt)]);
+export const intelItems=sqliteTable('intel_items',{id:text('id').primaryKey(),sourceId:text('source_id').notNull().references(()=>intelRegistry.id),upstreamId:text('upstream_id').notNull(),title:text('title').notNull(),url:text('url').notNull(),category:text('category').notNull(),language:text('language'),publishedAt:text('published_at'),eventTime:text('event_time'),firstSeenAt:text('first_seen_at').notNull(),fetchedAt:text('fetched_at').notNull(),ingestedAt:text('ingested_at').notNull(),currentVersionId:text('current_version_id').notNull()},t=>[uniqueIndex('intel_item_source_upstream_idx').on(t.sourceId,t.upstreamId),index('intel_item_time_idx').on(t.firstSeenAt),index('intel_item_category_idx').on(t.category)]);
+export const intelVersions=sqliteTable('intel_versions',{id:text('id').primaryKey(),itemId:text('item_id').notNull().references(()=>intelItems.id),runId:text('run_id').notNull().references(()=>intelRuns.id),contentHash:text('content_hash').notNull(),observedAt:text('observed_at').notNull(),metadata:text('metadata').notNull()},t=>[index('intel_version_item_idx').on(t.itemId)]);
+export const intelRuleAlerts=sqliteTable('intel_rule_alerts',{id:text('id').primaryKey(),itemId:text('item_id').notNull().references(()=>intelItems.id),versionId:text('version_id').notNull().references(()=>intelVersions.id),ruleId:text('rule_id').notNull(),severity:text('severity').notNull(),title:text('title').notNull(),createdAt:text('created_at').notNull(),evidenceSnapshot:text('evidence_snapshot').notNull()},t=>[index('intel_alert_created_idx').on(t.createdAt)]);
+
+// Human-reviewed watch/investigation workspace. Existing domain/global tables remain separate.
+export const workspaceProjects=sqliteTable('workspace_projects',{id:text('id').primaryKey(),title:text('title').notNull(),objective:text('objective').notNull(),domain:text('domain').notNull(),status:text('status').notNull().default('active'),createdAt:text('created_at').notNull(),updatedAt:text('updated_at').notNull()});
+export const workspaceObjects=sqliteTable('workspace_objects',{id:text('id').primaryKey(),projectId:text('project_id').notNull().references(()=>workspaceProjects.id),type:text('type').notNull(),name:text('name').notNull(),keywords:text('keywords').notNull().default('[]'),identifiers:text('identifiers').notNull().default('[]'),notes:text('notes').notNull().default(''),identityBasis:text('identity_basis').notNull(),createdAt:text('created_at').notNull(),updatedAt:text('updated_at').notNull()},t=>[index('workspace_object_project_idx').on(t.projectId)]);
+export const workspaceCases=sqliteTable('workspace_cases',{id:text('id').primaryKey(),projectId:text('project_id').notNull().references(()=>workspaceProjects.id),objectId:text('object_id').references(()=>workspaceObjects.id),title:text('title').notNull(),question:text('question').notNull(),domain:text('domain').notNull(),priority:text('priority').notNull(),status:text('status').notNull().default('draft'),createdAt:text('created_at').notNull(),updatedAt:text('updated_at').notNull()},t=>[index('workspace_case_project_idx').on(t.projectId)]);
+export const workspaceEvidence=sqliteTable('workspace_evidence',{id:text('id').primaryKey(),caseId:text('case_id').notNull().references(()=>workspaceCases.id),versionId:text('version_id').notNull().references(()=>intelVersions.id),associationStatus:text('association_status').notNull(),associationNote:text('association_note').notNull().default(''),snapshot:text('snapshot').notNull(),addedAt:text('added_at').notNull(),updatedAt:text('updated_at').notNull()},t=>[uniqueIndex('workspace_evidence_case_version_idx').on(t.caseId,t.versionId)]);
+export const workspaceReviews=sqliteTable('workspace_reviews',{id:text('id').primaryKey(),caseId:text('case_id').notNull().references(()=>workspaceCases.id),kind:text('kind').notNull(),payload:text('payload').notNull(),createdAt:text('created_at').notNull()},t=>[index('workspace_review_case_idx').on(t.caseId)]);
+export const workspaceActions=sqliteTable('workspace_actions',{id:text('id').primaryKey(),caseId:text('case_id').notNull().references(()=>workspaceCases.id),title:text('title').notNull(),owner:text('owner').notNull().default(''),dueAt:text('due_at'),status:text('status').notNull().default('open'),notes:text('notes').notNull().default(''),evidenceSnapshot:text('evidence_snapshot').notNull(),createdAt:text('created_at').notNull(),updatedAt:text('updated_at').notNull()},t=>[index('workspace_action_case_idx').on(t.caseId)]);

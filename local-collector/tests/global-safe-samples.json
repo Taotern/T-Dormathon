@@ -1,0 +1,754 @@
+{
+  "usgs": {
+    "schema_version": "0.1.0",
+    "source_id": "usgs",
+    "projection_policy": "Exact selected upstream metadata/factual fields only; no descriptions/content/images/article bodies. Geometry sample explicitly bounded.",
+    "test": {
+      "http_status": 200,
+      "final_url": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/2.5_week.geojson",
+      "content_type": "application/json; charset=utf-8",
+      "bytes_read": 222348,
+      "truncated": false,
+      "parse_status": "json_ok",
+      "sample_count": 314,
+      "elapsed_seconds": 5.001,
+      "response_headers": {
+        "Date": "Wed, 07 Oct 2026 23:37:17 GMT",
+        "Last-Modified": "Wed, 07 Oct 2026 23:37:17 GMT",
+        "Cache-Control": "public, max-age=60"
+      },
+      "requested_at": "2026-10-07T23:37:37.572882+00:00",
+      "fetched_at": "2026-10-07T23:37:42.573882+00:00",
+      "timestamp_precision_note": "fetched_at reconstructed from observed request start plus measured elapsed_seconds; millisecond approximation.",
+      "oldest_publication_at": null,
+      "newest_publication_at": null
+    },
+    "items": [
+      {
+        "type": "Feature",
+        "properties": {
+          "mag": 2.6,
+          "place": "51 km SW of Manley Hot Springs, Alaska",
+          "time": 1791416114039,
+          "updated": 1791416199226,
+          "tz": null,
+          "url": "https://earthquake.usgs.gov/earthquakes/eventpage/aka2026txdhrc",
+          "detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/aka2026txdhrc.geojson",
+          "felt": null,
+          "cdi": null,
+          "mmi": null,
+          "alert": null,
+          "status": "automatic",
+          "tsunami": 0,
+          "sig": 104,
+          "net": "ak",
+          "code": "a2026txdhrc",
+          "ids": ",aka2026txdhrc,",
+          "sources": ",ak,",
+          "types": ",origin,phase-data,",
+          "nst": 25,
+          "dmin": 0.6,
+          "rms": 0.7,
+          "gap": 48,
+          "magType": "ml",
+          "type": "earthquake",
+          "title": "M 2.6 - 51 km SW of Manley Hot Springs, Alaska"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -151.305,
+            64.636,
+            14.7
+          ]
+        },
+        "id": "aka2026txdhrc"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "mag": 4.9,
+          "place": "13 km SE of Yokoshiba, Japan",
+          "time": 1791400427589,
+          "updated": 1791407128953,
+          "tz": null,
+          "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u0u7",
+          "detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000u0u7.geojson",
+          "felt": 2,
+          "cdi": 2.7,
+          "mmi": null,
+          "alert": null,
+          "status": "reviewed",
+          "tsunami": 0,
+          "sig": 370,
+          "net": "us",
+          "code": "6000u0u7",
+          "ids": ",us6000u0u7,",
+          "sources": ",us,",
+          "types": ",dyfi,origin,phase-data,",
+          "nst": 113,
+          "dmin": 2.159,
+          "rms": 0.7,
+          "gap": 123,
+          "magType": "mww",
+          "type": "earthquake",
+          "title": "M 4.9 - 13 km SE of Yokoshiba, Japan"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            140.5835,
+            35.5597,
+            50.601
+          ]
+        },
+        "id": "us6000u0u7"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "mag": 2.8,
+          "place": "16 km WSW of Anchor Point, Alaska",
+          "time": 1791399596119,
+          "updated": 1791409883040,
+          "tz": null,
+          "url": "https://earthquake.usgs.gov/earthquakes/eventpage/aka2026twucys",
+          "detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/aka2026twucys.geojson",
+          "felt": null,
+          "cdi": null,
+          "mmi": null,
+          "alert": null,
+          "status": "automatic",
+          "tsunami": 0,
+          "sig": 121,
+          "net": "ak",
+          "code": "a2026twucys",
+          "ids": ",us6000u0u1,aka2026twucys,",
+          "sources": ",us,ak,",
+          "types": ",origin,phase-data,",
+          "nst": 115,
+          "dmin": 0.4,
+          "rms": 1.1,
+          "gap": 99,
+          "magType": "ml",
+          "type": "earthquake",
+          "title": "M 2.8 - 16 km WSW of Anchor Point, Alaska"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -152.115,
+            59.734,
+            73.7
+          ]
+        },
+        "id": "aka2026twucys"
+      }
+    ]
+  },
+  "gdacs": {
+    "schema_version": "0.1.0",
+    "source_id": "gdacs",
+    "projection_policy": "Exact selected upstream metadata/factual fields only; no descriptions/content/images/article bodies. Geometry sample explicitly bounded.",
+    "test": {
+      "http_status": 200,
+      "final_url": "https://www.gdacs.org/xml/rss.xml",
+      "content_type": "application/xml",
+      "bytes_read": 502642,
+      "truncated": false,
+      "parse_status": "xml_ok",
+      "sample_count": 163,
+      "elapsed_seconds": 5.852,
+      "response_headers": {
+        "Date": "Wed, 07 Oct 2026 23:37:41 GMT",
+        "Last-Modified": "Wed, 07 Oct 2026 23:35:35 GMT",
+        "ETag": "\"c43c678db456dd1:0\"",
+        "Content-Length": "502642"
+      },
+      "requested_at": "2026-10-07T23:37:37.573803+00:00",
+      "fetched_at": "2026-10-07T23:37:43.425803+00:00",
+      "timestamp_precision_note": "fetched_at reconstructed from observed request start plus measured elapsed_seconds; millisecond approximation.",
+      "oldest_publication_at": "2026-02-04T09:58:20Z",
+      "newest_publication_at": "2026-10-07T23:15:43Z"
+    },
+    "items": [
+      {
+        "title": "Red notification for tropical cyclone SIMON-26. Population affected by Category 1 (120 km/h) wind speeds or higher is 1.056 million .",
+        "link": "https://www.gdacs.org/report.aspx?eventtype=TC&eventid=1001335",
+        "pubDate": "Wed, 07 Oct 2026 15:33:28 GMT",
+        "fromdate": "Wed, 07 Oct 2026 15:00:00 GMT",
+        "todate": "Wed, 07 Oct 2026 21:00:00 GMT",
+        "guid": "TC1001335",
+        "point": "15.5 -101.6",
+        "eventtype": "TC",
+        "alertlevel": "Red",
+        "eventid": "1001335",
+        "episodeid": "2",
+        "severity": "Tropical Storm (maximum wind speed of 185 km/h)",
+        "severity_attributes": {
+          "unit": "km/h",
+          "value": "185.184"
+        },
+        "population": "Population affected by Category 1 (120 km/h) wind speeds or higher is 1.056 million",
+        "population_attributes": {
+          "unit": "Pop74",
+          "value": "1056218"
+        },
+        "iso3": "MEX",
+        "country": "Mexico"
+      },
+      {
+        "title": "Green forest fire notification in Australia",
+        "link": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032616",
+        "pubDate": "Wed, 07 Oct 2026 23:00:30 GMT",
+        "fromdate": "Wed, 07 Oct 2026 00:00:00 GMT",
+        "todate": "Wed, 07 Oct 2026 00:00:00 GMT",
+        "guid": "WF1032616",
+        "point": "-16.209699118617088 134.06725109070939",
+        "eventtype": "WF",
+        "alertlevel": "Green",
+        "eventid": "1032616",
+        "episodeid": "1",
+        "severity": "Green impact for forestfire in 8497 ha",
+        "severity_attributes": {
+          "unit": "ha",
+          "value": "8497"
+        },
+        "population": "0 people affected in the area",
+        "population_attributes": {
+          "unit": "",
+          "value": "0"
+        },
+        "iso3": "AUS",
+        "country": "Australia"
+      },
+      {
+        "title": "Green forest fire notification in Australia",
+        "link": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032617",
+        "pubDate": "Wed, 07 Oct 2026 23:00:38 GMT",
+        "fromdate": "Wed, 07 Oct 2026 00:00:00 GMT",
+        "todate": "Wed, 07 Oct 2026 00:00:00 GMT",
+        "guid": "WF1032617",
+        "point": "-22.468100198402663 130.96129152969758",
+        "eventtype": "WF",
+        "alertlevel": "Green",
+        "eventid": "1032617",
+        "episodeid": "1",
+        "severity": "Green impact for forestfire in 5479 ha",
+        "severity_attributes": {
+          "unit": "ha",
+          "value": "5479"
+        },
+        "population": "0 people affected in the area",
+        "population_attributes": {
+          "unit": "",
+          "value": "0"
+        },
+        "iso3": "AUS",
+        "country": "Australia"
+      }
+    ]
+  },
+  "eonet": {
+    "schema_version": "0.1.0",
+    "source_id": "eonet",
+    "projection_policy": "Exact selected upstream metadata/factual fields only; no descriptions/content/images/article bodies. Geometry sample explicitly bounded.",
+    "test": {
+      "http_status": 200,
+      "final_url": "https://eonet.gsfc.nasa.gov/api/v3/events?days=7&status=all&limit=100",
+      "content_type": "application/rss+xml; charset=utf-8",
+      "bytes_read": 459938,
+      "truncated": false,
+      "parse_status": "json_ok",
+      "sample_count": 44,
+      "elapsed_seconds": 9.697,
+      "response_headers": {
+        "Date": "Wed, 07 Oct 2026 23:37:45 GMT",
+        "Cache-Control": "no-cache, private",
+        "X-RateLimit-Limit": "60",
+        "X-RateLimit-Remaining": "59"
+      },
+      "requested_at": "2026-10-07T23:37:37.574327+00:00",
+      "fetched_at": "2026-10-07T23:37:47.271327+00:00",
+      "timestamp_precision_note": "fetched_at reconstructed from observed request start plus measured elapsed_seconds; millisecond approximation.",
+      "oldest_publication_at": null,
+      "newest_publication_at": null
+    },
+    "items": [
+      {
+        "id": "EONET_25063",
+        "title": "Tropical Storm Isaias",
+        "link": "https://eonet.gsfc.nasa.gov/api/v3/events/EONET_25063",
+        "closed": null,
+        "categories": [
+          {
+            "id": "severeStorms",
+            "title": "Severe Storms"
+          }
+        ],
+        "sources": [
+          {
+            "id": "NOAA_NHC",
+            "url": "https://www.nhc.noaa.gov/archive/2026/ISAIAS.shtml"
+          }
+        ],
+        "geometry": [
+          {
+            "magnitudeValue": 35.0,
+            "magnitudeUnit": "kts",
+            "date": "2026-10-07T09:00:00Z",
+            "type": "Point",
+            "coordinates": [
+              -94.1,
+              22
+            ]
+          }
+        ]
+      },
+      {
+        "id": "EONET_25064",
+        "title": "Wildfire in Tanzania 1032590",
+        "link": "https://eonet.gsfc.nasa.gov/api/v3/events/EONET_25064",
+        "closed": "2026-10-05T00:00:00Z",
+        "categories": [
+          {
+            "id": "wildfires",
+            "title": "Wildfires"
+          }
+        ],
+        "sources": [
+          {
+            "id": "GDACS",
+            "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032590"
+          }
+        ],
+        "geometry": [
+          {
+            "magnitudeValue": 6587.0,
+            "magnitudeUnit": "hectare",
+            "date": "2026-10-05T19:00:00Z",
+            "type": "Point",
+            "coordinates": [
+              34.212456606446,
+              -6.9177099530355
+            ]
+          }
+        ]
+      },
+      {
+        "id": "EONET_25046",
+        "title": "Tropical Storm Koguma",
+        "link": "https://eonet.gsfc.nasa.gov/api/v3/events/EONET_25046",
+        "closed": null,
+        "categories": [
+          {
+            "id": "severeStorms",
+            "title": "Severe Storms"
+          }
+        ],
+        "sources": [
+          {
+            "id": "JTWC",
+            "url": "https://www.metoc.navy.mil/jtwc/products/wp2726.tcw"
+          }
+        ],
+        "geometry": [
+          {
+            "magnitudeValue": 35.0,
+            "magnitudeUnit": "kts",
+            "date": "2026-10-05T06:00:00Z",
+            "type": "Point",
+            "coordinates": [
+              168.2,
+              10.9
+            ]
+          },
+          {
+            "magnitudeValue": 35.0,
+            "magnitudeUnit": "kts",
+            "date": "2026-10-05T12:00:00Z",
+            "type": "Point",
+            "coordinates": [
+              168,
+              11.5
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "un_zh": {
+    "schema_version": "0.1.0",
+    "source_id": "un_zh",
+    "projection_policy": "Exact selected upstream metadata/factual fields only; no descriptions/content/images/article bodies. Geometry sample explicitly bounded.",
+    "test": {
+      "http_status": 200,
+      "final_url": "https://news.un.org/feed/subscribe/zh/news/all/rss.xml",
+      "content_type": "application/rss+xml; charset=utf-8",
+      "bytes_read": 35042,
+      "truncated": false,
+      "parse_status": "xml_ok",
+      "sample_count": 30,
+      "elapsed_seconds": 4.466,
+      "response_headers": {
+        "Date": "Wed, 07 Oct 2026 23:37:47 GMT",
+        "Content-Length": "35042"
+      },
+      "requested_at": "2026-10-07T23:37:43.426657+00:00",
+      "fetched_at": "2026-10-07T23:37:47.892657+00:00",
+      "timestamp_precision_note": "fetched_at reconstructed from observed request start plus measured elapsed_seconds; millisecond approximation.",
+      "oldest_publication_at": "2026-10-02T12:00:00Z",
+      "newest_publication_at": "2026-10-07T12:00:00Z"
+    },
+    "items": [
+      {
+        "title": "古特雷斯：多边主义面临四大挑战",
+        "link": "https://news.un.org/feed/view/zh/story/2026/10/1142958",
+        "guid": "https://news.un.org/zh/story/2026/10/1142958",
+        "pubDate": "Wed, 07 Oct 2026 12:00:00 +0000"
+      },
+      {
+        "title": "世卫组织：肯尼亚加紧追踪埃博拉病例所有密切接触者",
+        "link": "https://news.un.org/feed/view/zh/story/2026/10/1142957",
+        "guid": "https://news.un.org/zh/story/2026/10/1142957",
+        "pubDate": "Wed, 07 Oct 2026 12:00:00 +0000"
+      },
+      {
+        "title": "联合国常务副秘书长：必须加快减排并扩大气候融资",
+        "link": "https://news.un.org/feed/view/zh/story/2026/10/1142956",
+        "guid": "https://news.un.org/zh/story/2026/10/1142956",
+        "pubDate": "Wed, 07 Oct 2026 12:00:00 +0000"
+      }
+    ]
+  },
+  "my_fuel_latest": {
+    "schema_version": "0.1.0",
+    "source_id": "my_fuel_latest",
+    "projection_policy": "Exact selected upstream metadata/factual fields only; no descriptions/content/images/article bodies. Geometry sample explicitly bounded.",
+    "test": {
+      "http_status": 200,
+      "final_url": "https://api.data.gov.my/data-catalogue/?id=fuelprice&limit=4&sort=-date",
+      "content_type": "application/json",
+      "bytes_read": 892,
+      "truncated": false,
+      "parse_status": "json_ok",
+      "sample_count": 4,
+      "elapsed_seconds": 4.786,
+      "response_headers": {
+        "Date": "Wed, 07 Oct 2026 23:39:21 GMT",
+        "Cache-Control": "private",
+        "Content-Length": "892"
+      },
+      "requested_at": "2026-10-07T23:39:16.833461+00:00",
+      "fetched_at": "2026-10-07T23:39:21.619461+00:00",
+      "timestamp_precision_note": "fetched_at reconstructed from observed request start plus measured elapsed_seconds; millisecond approximation.",
+      "oldest_publication_at": null,
+      "newest_publication_at": null
+    },
+    "items": [
+      {
+        "date": "2026-10-08",
+        "ron95": 0.15000000000000036,
+        "ron97": 0.15000000000000036,
+        "diesel": 0.0,
+        "ron95_skps": 0.0,
+        "diesel_budi": 0.0,
+        "diesel_skds": 0.0,
+        "series_type": "change_weekly",
+        "ron95_budi95": 0.0,
+        "diesel_eastmsia": 0.0
+      },
+      {
+        "date": "2026-10-08",
+        "ron95": 4.67,
+        "ron97": 5.15,
+        "diesel": 5.27,
+        "ron95_skps": 2.05,
+        "diesel_budi": 2.1,
+        "diesel_skds": 2.15,
+        "series_type": "level",
+        "ron95_budi95": 1.99,
+        "diesel_eastmsia": 2.15
+      },
+      {
+        "date": "2026-10-01",
+        "ron95": -0.05000000000000071,
+        "ron97": -0.04999999999999982,
+        "diesel": -0.15000000000000036,
+        "ron95_skps": 0.0,
+        "diesel_budi": 0.0,
+        "diesel_skds": 0.0,
+        "series_type": "change_weekly",
+        "ron95_budi95": 0.0,
+        "diesel_eastmsia": 0.0
+      }
+    ]
+  },
+  "ecb": {
+    "schema_version": "0.1.0",
+    "source_id": "ecb",
+    "projection_policy": "Exact selected upstream metadata/factual fields only; no descriptions/content/images/article bodies. Geometry sample explicitly bounded.",
+    "test": {
+      "http_status": 200,
+      "final_url": "https://www.ecb.europa.eu/rss/press.html",
+      "content_type": "application/rss+xml",
+      "bytes_read": 5885,
+      "truncated": false,
+      "parse_status": "xml_ok",
+      "sample_count": 15,
+      "elapsed_seconds": 3.816,
+      "response_headers": {
+        "Date": "Wed, 07 Oct 2026 23:39:20 GMT",
+        "ETag": "\"myra-657738ab\"",
+        "Cache-Control": "max-age=60"
+      },
+      "requested_at": "2026-10-07T23:39:16.619766+00:00",
+      "fetched_at": "2026-10-07T23:39:20.435766+00:00",
+      "timestamp_precision_note": "fetched_at reconstructed from observed request start plus measured elapsed_seconds; millisecond approximation.",
+      "oldest_publication_at": "2026-09-24T12:00:00Z",
+      "newest_publication_at": "2026-10-07T08:00:00Z"
+    },
+    "items": [
+      {
+        "title": "Results of the September 2026 survey on credit terms and conditions in euro-denominated securities financing and OTC derivatives markets (SESFOD)",
+        "link": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr261007~6447350434.en.html",
+        "guid": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr261007~6447350434.en.html",
+        "pubDate": "Wed, 07 Oct 2026 10:00:00 +0200"
+      },
+      {
+        "title": "Frank Elderson: Effective supervision through timely remediation",
+        "link": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261006_1~0df91e4e44.en.html",
+        "guid": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261006_1~0df91e4e44.en.html",
+        "pubDate": "Tue, 06 Oct 2026 15:00:00 +0200"
+      },
+      {
+        "title": "Piero Cipollone: Money in the digital age: digital euro, tokenisation and the role of central banks",
+        "link": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261006~0da978f159.en.html",
+        "guid": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261006~0da978f159.en.html",
+        "pubDate": "Tue, 06 Oct 2026 15:00:00 +0200"
+      }
+    ]
+  },
+  "my_warning": {
+    "schema_version": "0.1.0",
+    "source_id": "my_warning",
+    "projection_policy": "Exact selected upstream metadata/factual fields only; no descriptions/content/images/article bodies. Geometry sample explicitly bounded.",
+    "test": {
+      "http_status": 200,
+      "final_url": "https://api.data.gov.my/weather/warning/?sort=-warning_issue__issued&limit=100",
+      "content_type": "application/json",
+      "bytes_read": 4020,
+      "truncated": false,
+      "parse_status": "json_ok",
+      "sample_count": 3,
+      "elapsed_seconds": 4.878,
+      "response_headers": {
+        "Date": "Wed, 07 Oct 2026 23:39:37 GMT",
+        "Cache-Control": "private",
+        "Content-Length": "4020"
+      },
+      "requested_at": "2026-10-07T23:39:32.181606+00:00",
+      "fetched_at": "2026-10-07T23:39:37.059606+00:00",
+      "timestamp_precision_note": "fetched_at reconstructed from observed request start plus measured elapsed_seconds; millisecond approximation.",
+      "oldest_publication_at": null,
+      "newest_publication_at": null
+    },
+    "items": [
+      {
+        "warning_issue": {
+          "issued": "2026-10-08T06:30:00",
+          "title_bm": "Amaran Angin Kencang dan Laut Bergelora",
+          "title_en": "Strong Winds and Rough Seas Warning"
+        },
+        "valid_from": "2026-10-08T06:00:00",
+        "valid_to": "2026-10-08T11:00:00",
+        "heading_en": "Warning on Strong Wind and Rough Seas",
+        "heading_bm": "Amaran Angin kencang dan laut bergelora"
+      },
+      {
+        "warning_issue": {
+          "issued": "2026-10-08T05:30:00",
+          "title_bm": "Tiada Nasihat",
+          "title_en": "No Advisory"
+        },
+        "valid_from": null,
+        "valid_to": null,
+        "heading_en": "No Advisory",
+        "heading_bm": "Tiada Nasihat"
+      },
+      {
+        "warning_issue": {
+          "issued": "2026-10-08T04:40:00",
+          "title_bm": "Amaran Ribut Petir",
+          "title_en": "Thunderstorms Warning"
+        },
+        "valid_from": "2026-10-08T04:00:00",
+        "valid_to": "2026-10-08T08:00:00",
+        "heading_en": "THUNDERSTORMS WARNING",
+        "heading_bm": "AMARAN RIBUT PETIR"
+      }
+    ]
+  },
+  "nasa_metadata": {
+    "schema_version": "0.2.0",
+    "source_id": "nasa_metadata",
+    "projection_policy": "Exact selected upstream metadata only; no content/description/images/article bodies.",
+    "test": {
+      "http_status": 200,
+      "final_url": "https://www.nasa.gov/wp-json/wp/v2/posts?per_page=30&_fields=id,date_gmt,modified_gmt,link,title,categories&after=2026-10-05T00%3A00%3A00",
+      "content_type": "application/json; charset=UTF-8",
+      "bytes_read": 1009,
+      "truncated": false,
+      "parse_status": "json_ok",
+      "sample_count": 3,
+      "elapsed_seconds": 3.335,
+      "response_headers": {
+        "Date": "Wed, 07 Oct 2026 23:42:19 GMT",
+        "Cache-Control": "max-age=60"
+      },
+      "requested_at": "2026-10-07T23:42:16.464147+00:00",
+      "fetched_at": "2026-10-07T23:42:19.799147+00:00",
+      "oldest_publication_at": "2026-10-06T15:30:07Z",
+      "newest_publication_at": "2026-10-07T20:17:16Z",
+      "timestamp_precision_note": "Fetch completion approximated from request start plus measured elapsed milliseconds."
+    },
+    "items": [
+      {
+        "id": 1054755,
+        "date_gmt": "2026-10-07T20:17:16",
+        "modified_gmt": "2026-10-07T20:17:18",
+        "link": "https://www.nasa.gov/general/nasas-spacex-35th-commercial-resupply-mission-overview/",
+        "title": {
+          "rendered": "NASA’s SpaceX 35th Commercial Resupply Mission Overview"
+        },
+        "categories": [
+          1,
+          3190,
+          2735,
+          12746
+        ]
+      },
+      {
+        "id": 1053834,
+        "date_gmt": "2026-10-06T18:22:24",
+        "modified_gmt": "2026-10-07T14:32:20",
+        "link": "https://www.nasa.gov/directorates/stmd/prizes-challenges-crowdsourcing-program/center-of-excellence-for-collaborative-innovation-coeci/lunar-grounding-challenge/",
+        "title": {
+          "rendered": "Lunar Grounding Challenge"
+        },
+        "categories": [
+          11535,
+          12646,
+          2673,
+          12395,
+          12645,
+          3343
+        ]
+      },
+      {
+        "id": 1052208,
+        "date_gmt": "2026-10-06T15:30:07",
+        "modified_gmt": "2026-10-06T15:30:09",
+        "link": "https://www.nasa.gov/missions/mars-science-laboratory/curiosity-rover/nasas-curiosity-rover-catches-stunning-martian-dawn/",
+        "title": {
+          "rendered": "NASA’s Curiosity Rover Catches Stunning Martian Dawn"
+        },
+        "categories": [
+          9420,
+          2860,
+          3229,
+          2749,
+          2835
+        ]
+      }
+    ]
+  },
+  "bis_press": {
+    "schema_version": "0.2.0",
+    "source_id": "bis_press",
+    "projection_policy": "Exact selected upstream metadata only; no content/description/images/article bodies.",
+    "test": {
+      "http_status": 200,
+      "final_url": "https://www.bis.org/doclist/all_pressrels.rss",
+      "content_type": "application/rss+xml; charset=utf-8",
+      "bytes_read": 14977,
+      "truncated": false,
+      "parse_status": "xml_ok",
+      "sample_count": 10,
+      "elapsed_seconds": 4.132,
+      "response_headers": {
+        "Date": "Wed, 07 Oct 2026 22:21:12 GMT",
+        "Last-Modified": "Wed, 07 Oct 2026 22:21:12 GMT",
+        "ETag": "W/\"1791411672-gzip\"",
+        "Cache-Control": "public, max-age=60",
+        "Content-Length": "14977"
+      },
+      "requested_at": "2026-10-07T23:42:13.215989+00:00",
+      "fetched_at": "2026-10-07T23:42:17.347989+00:00",
+      "oldest_publication_at": "2026-05-20T00:00:00Z",
+      "newest_publication_at": "2026-10-05T00:00:00Z",
+      "timestamp_precision_note": "Fetch completion approximated from request start plus measured elapsed milliseconds."
+    },
+    "items": [
+      {
+        "title": "Basel III applicable in almost all member jurisdictions by 2027",
+        "link": "https://www.bis.org/media-releases/20261005-basel-iii-applicable-almost-all-member-jurisdictions-2027",
+        "date": "2026-10-05T00:00:00Z"
+      },
+      {
+        "title": "Basel Committee meets to advance supervisory and regulatory initiatives and discuss risks and vulnerabilities to the global banking system",
+        "link": "https://www.bis.org/media-releases/20261001-basel-committee-meets-advance-supervisory-and-regulatory-initiatives-and-discuss-risks-and",
+        "date": "2026-10-01T00:00:00Z"
+      },
+      {
+        "title": "International supervisory community meets to discuss the future of global bank supervision and regulation",
+        "link": "https://www.bis.org/media-releases/20261001-international-supervisory-community-meets-discuss-future-global-bank-supervision-and-regulation",
+        "date": "2026-10-01T00:00:00Z"
+      }
+    ]
+  },
+  "bis_speeches": {
+    "schema_version": "0.2.0",
+    "source_id": "bis_speeches",
+    "projection_policy": "Exact selected upstream metadata only; no content/description/images/article bodies.",
+    "test": {
+      "http_status": 200,
+      "final_url": "https://www.bis.org/doclist/cbspeeches.rss",
+      "content_type": "application/rss+xml; charset=utf-8",
+      "bytes_read": 64943,
+      "truncated": false,
+      "parse_status": "xml_ok",
+      "sample_count": 50,
+      "elapsed_seconds": 3.247,
+      "response_headers": {
+        "Date": "Wed, 07 Oct 2026 22:25:02 GMT",
+        "Last-Modified": "Wed, 07 Oct 2026 22:25:02 GMT",
+        "ETag": "W/\"1791411902-gzip\"",
+        "Cache-Control": "public, max-age=60",
+        "Content-Length": "64943"
+      },
+      "requested_at": "2026-10-07T23:42:13.216657+00:00",
+      "fetched_at": "2026-10-07T23:42:16.463657+00:00",
+      "oldest_publication_at": "2026-09-28T00:00:00Z",
+      "newest_publication_at": "2026-10-07T00:00:00Z",
+      "timestamp_precision_note": "Fetch completion approximated from request start plus measured elapsed milliseconds."
+    },
+    "items": [
+      {
+        "title": "The data version of Godzilla versus Kong - FRED takes on AI",
+        "link": "https://www.bis.org/speeches/20261007-data-version-godzilla-versus-kong-fred-takes-ai",
+        "date": "2026-10-07T00:00:00Z"
+      },
+      {
+        "title": "More momentum for the economy",
+        "link": "https://www.bis.org/speeches/20261007-more-momentum-economy",
+        "date": "2026-10-07T00:00:00Z"
+      },
+      {
+        "title": "The US economy and monetary policy",
+        "link": "https://www.bis.org/speeches/20261007-us-economy-and-monetary-policy",
+        "date": "2026-10-07T00:00:00Z"
+      }
+    ]
+  }
+}

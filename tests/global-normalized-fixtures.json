@@ -1,0 +1,1072 @@
+{
+  "schema_version": "0.2.0",
+  "fixture_only": true,
+  "items": [
+    {
+      "source_id": "usgs",
+      "upstream_id": "aka2026txdhrc",
+      "title": "M 2.6 - 51 km SW of Manley Hot Springs, Alaska",
+      "url": "https://earthquake.usgs.gov/earthquakes/eventpage/aka2026txdhrc",
+      "short_summary": null,
+      "category": "hazard",
+      "source_country": "US",
+      "source_language": "en",
+      "event_country": null,
+      "location": {
+        "type": "Point",
+        "coordinates": [
+          -151.305,
+          64.636,
+          14.7
+        ],
+        "place": "51 km SW of Manley Hot Springs, Alaska",
+        "coordinate_order": "longitude,latitude,depth_km"
+      },
+      "location_basis": "source_provided",
+      "entities": [],
+      "event_time": "2026-10-07T23:35:14.039000+00:00",
+      "published_at": null,
+      "source_updated_at": "2026-10-07T23:36:39.226000+00:00",
+      "first_seen_at": "2026-10-07T23:37:42.573882+00:00",
+      "fetched_at": "2026-10-07T23:37:42.573882+00:00",
+      "ingested_at": null,
+      "content_depth": "structured_facts",
+      "facts": {
+        "mag": 2.6,
+        "magType": "ml",
+        "alert": null,
+        "status": "automatic",
+        "tsunami": 0,
+        "sig": 104,
+        "type": "earthquake"
+      },
+      "source_license": "USGS-produced data are US public domain; acknowledge USGS; third-party assets excluded.",
+      "evidence_url": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/geojson.php"
+    },
+    {
+      "source_id": "usgs",
+      "upstream_id": "us6000u0u7",
+      "title": "M 4.9 - 13 km SE of Yokoshiba, Japan",
+      "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u0u7",
+      "short_summary": null,
+      "category": "hazard",
+      "source_country": "US",
+      "source_language": "en",
+      "event_country": null,
+      "location": {
+        "type": "Point",
+        "coordinates": [
+          140.5835,
+          35.5597,
+          50.601
+        ],
+        "place": "13 km SE of Yokoshiba, Japan",
+        "coordinate_order": "longitude,latitude,depth_km"
+      },
+      "location_basis": "source_provided",
+      "entities": [],
+      "event_time": "2026-10-07T19:13:47.589000+00:00",
+      "published_at": null,
+      "source_updated_at": "2026-10-07T21:05:28.953000+00:00",
+      "first_seen_at": "2026-10-07T23:37:42.573882+00:00",
+      "fetched_at": "2026-10-07T23:37:42.573882+00:00",
+      "ingested_at": null,
+      "content_depth": "structured_facts",
+      "facts": {
+        "mag": 4.9,
+        "magType": "mww",
+        "alert": null,
+        "status": "reviewed",
+        "tsunami": 0,
+        "sig": 370,
+        "type": "earthquake"
+      },
+      "source_license": "USGS-produced data are US public domain; acknowledge USGS; third-party assets excluded.",
+      "evidence_url": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/geojson.php"
+    },
+    {
+      "source_id": "usgs",
+      "upstream_id": "aka2026twucys",
+      "title": "M 2.8 - 16 km WSW of Anchor Point, Alaska",
+      "url": "https://earthquake.usgs.gov/earthquakes/eventpage/aka2026twucys",
+      "short_summary": null,
+      "category": "hazard",
+      "source_country": "US",
+      "source_language": "en",
+      "event_country": null,
+      "location": {
+        "type": "Point",
+        "coordinates": [
+          -152.115,
+          59.734,
+          73.7
+        ],
+        "place": "16 km WSW of Anchor Point, Alaska",
+        "coordinate_order": "longitude,latitude,depth_km"
+      },
+      "location_basis": "source_provided",
+      "entities": [],
+      "event_time": "2026-10-07T18:59:56.119000+00:00",
+      "published_at": null,
+      "source_updated_at": "2026-10-07T21:51:23.040000+00:00",
+      "first_seen_at": "2026-10-07T23:37:42.573882+00:00",
+      "fetched_at": "2026-10-07T23:37:42.573882+00:00",
+      "ingested_at": null,
+      "content_depth": "structured_facts",
+      "facts": {
+        "mag": 2.8,
+        "magType": "ml",
+        "alert": null,
+        "status": "automatic",
+        "tsunami": 0,
+        "sig": 121,
+        "type": "earthquake"
+      },
+      "source_license": "USGS-produced data are US public domain; acknowledge USGS; third-party assets excluded.",
+      "evidence_url": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/geojson.php"
+    },
+    {
+      "source_id": "gdacs",
+      "upstream_id": "TC1001335",
+      "title": "Red notification for tropical cyclone SIMON-26. Population affected by Category 1 (120 km/h) wind speeds or higher is 1.056 million .",
+      "url": "https://www.gdacs.org/report.aspx?eventtype=TC&eventid=1001335",
+      "short_summary": null,
+      "category": "hazard",
+      "source_country": null,
+      "source_language": "en",
+      "event_country": "MEX",
+      "location": {
+        "lat": 15.5,
+        "lon": -101.6
+      },
+      "location_basis": "source_provided",
+      "entities": [],
+      "event_time": "2026-10-07T15:00:00Z",
+      "published_at": "2026-10-07T15:33:28Z",
+      "source_updated_at": null,
+      "first_seen_at": "2026-10-07T23:37:43.425803+00:00",
+      "fetched_at": "2026-10-07T23:37:43.425803+00:00",
+      "ingested_at": null,
+      "content_depth": "structured_facts",
+      "facts": {
+        "eventtype": "TC",
+        "eventid": "1001335",
+        "episodeid": "2",
+        "alertlevel": "Red",
+        "severity_attributes": {
+          "unit": "km/h",
+          "value": "185.184"
+        },
+        "population_attributes": {
+          "unit": "Pop74",
+          "value": "1056218"
+        },
+        "country": "Mexico",
+        "iso3": "MEX",
+        "todate": "Wed, 07 Oct 2026 21:00:00 GMT"
+      },
+      "source_license": "GDACS explicitly permits integration via RSS; retain GDACS credit and source links. Estimates are indicative and require independent confirmation.",
+      "evidence_url": "https://www.gdacs.org/About/overview.aspx"
+    },
+    {
+      "source_id": "gdacs",
+      "upstream_id": "WF1032616",
+      "title": "Green forest fire notification in Australia",
+      "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032616",
+      "short_summary": null,
+      "category": "hazard",
+      "source_country": null,
+      "source_language": "en",
+      "event_country": "AUS",
+      "location": {
+        "lat": -16.20969911861709,
+        "lon": 134.0672510907094
+      },
+      "location_basis": "source_provided",
+      "entities": [],
+      "event_time": "2026-10-07T00:00:00Z",
+      "published_at": "2026-10-07T23:00:30Z",
+      "source_updated_at": null,
+      "first_seen_at": "2026-10-07T23:37:43.425803+00:00",
+      "fetched_at": "2026-10-07T23:37:43.425803+00:00",
+      "ingested_at": null,
+      "content_depth": "structured_facts",
+      "facts": {
+        "eventtype": "WF",
+        "eventid": "1032616",
+        "episodeid": "1",
+        "alertlevel": "Green",
+        "severity_attributes": {
+          "unit": "ha",
+          "value": "8497"
+        },
+        "population_attributes": {
+          "unit": "",
+          "value": "0"
+        },
+        "country": "Australia",
+        "iso3": "AUS",
+        "todate": "Wed, 07 Oct 2026 00:00:00 GMT"
+      },
+      "source_license": "GDACS explicitly permits integration via RSS; retain GDACS credit and source links. Estimates are indicative and require independent confirmation.",
+      "evidence_url": "https://www.gdacs.org/About/overview.aspx"
+    },
+    {
+      "source_id": "gdacs",
+      "upstream_id": "WF1032617",
+      "title": "Green forest fire notification in Australia",
+      "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032617",
+      "short_summary": null,
+      "category": "hazard",
+      "source_country": null,
+      "source_language": "en",
+      "event_country": "AUS",
+      "location": {
+        "lat": -22.468100198402663,
+        "lon": 130.96129152969758
+      },
+      "location_basis": "source_provided",
+      "entities": [],
+      "event_time": "2026-10-07T00:00:00Z",
+      "published_at": "2026-10-07T23:00:38Z",
+      "source_updated_at": null,
+      "first_seen_at": "2026-10-07T23:37:43.425803+00:00",
+      "fetched_at": "2026-10-07T23:37:43.425803+00:00",
+      "ingested_at": null,
+      "content_depth": "structured_facts",
+      "facts": {
+        "eventtype": "WF",
+        "eventid": "1032617",
+        "episodeid": "1",
+        "alertlevel": "Green",
+        "severity_attributes": {
+          "unit": "ha",
+          "value": "5479"
+        },
+        "population_attributes": {
+          "unit": "",
+          "value": "0"
+        },
+        "country": "Australia",
+        "iso3": "AUS",
+        "todate": "Wed, 07 Oct 2026 00:00:00 GMT"
+      },
+      "source_license": "GDACS explicitly permits integration via RSS; retain GDACS credit and source links. Estimates are indicative and require independent confirmation.",
+      "evidence_url": "https://www.gdacs.org/About/overview.aspx"
+    },
+    {
+      "source_id": "eonet",
+      "upstream_id": "EONET_25063",
+      "title": "Tropical Storm Isaias",
+      "url": "https://eonet.gsfc.nasa.gov/api/v3/events/EONET_25063",
+      "short_summary": null,
+      "category": "hazard",
+      "source_country": "US",
+      "source_language": "en",
+      "event_country": null,
+      "location": {
+        "magnitudeValue": 35.0,
+        "magnitudeUnit": "kts",
+        "date": "2026-10-07T09:00:00Z",
+        "type": "Point",
+        "coordinates": [
+          -94.1,
+          22
+        ]
+      },
+      "location_basis": "source_provided",
+      "entities": [],
+      "event_time": "2026-10-07T09:00:00Z",
+      "published_at": null,
+      "source_updated_at": null,
+      "first_seen_at": "2026-10-07T23:37:47.271327+00:00",
+      "fetched_at": "2026-10-07T23:37:47.271327+00:00",
+      "ingested_at": null,
+      "content_depth": "structured_facts",
+      "facts": {
+        "closed": null,
+        "categories": [
+          {
+            "id": "severeStorms",
+            "title": "Severe Storms"
+          }
+        ],
+        "sources": [
+          {
+            "id": "NOAA_NHC",
+            "url": "https://www.nhc.noaa.gov/archive/2026/ISAIAS.shtml"
+          }
+        ],
+        "sample_geometry": [
+          {
+            "magnitudeValue": 35.0,
+            "magnitudeUnit": "kts",
+            "date": "2026-10-07T09:00:00Z",
+            "type": "Point",
+            "coordinates": [
+              -94.1,
+              22
+            ]
+          }
+        ],
+        "temporal_extent_precision": "approximate per EONET;00:00Z may be date placeholder"
+      },
+      "source_license": "NASA EONET metadata for visualization/general information; approximate extents. Retain NASA EONET and upstream source attribution; no linked article/image reuse.",
+      "evidence_url": "https://eonet.gsfc.nasa.gov/docs/v3"
+    },
+    {
+      "source_id": "eonet",
+      "upstream_id": "EONET_25064",
+      "title": "Wildfire in Tanzania 1032590",
+      "url": "https://eonet.gsfc.nasa.gov/api/v3/events/EONET_25064",
+      "short_summary": null,
+      "category": "hazard",
+      "source_country": "US",
+      "source_language": "en",
+      "event_country": null,
+      "location": {
+        "magnitudeValue": 6587.0,
+        "magnitudeUnit": "hectare",
+        "date": "2026-10-05T19:00:00Z",
+        "type": "Point",
+        "coordinates": [
+          34.212456606446,
+          -6.9177099530355
+        ]
+      },
+      "location_basis": "source_provided",
+      "entities": [],
+      "event_time": "2026-10-05T19:00:00Z",
+      "published_at": null,
+      "source_updated_at": null,
+      "first_seen_at": "2026-10-07T23:37:47.271327+00:00",
+      "fetched_at": "2026-10-07T23:37:47.271327+00:00",
+      "ingested_at": null,
+      "content_depth": "structured_facts",
+      "facts": {
+        "closed": "2026-10-05T00:00:00Z",
+        "categories": [
+          {
+            "id": "wildfires",
+            "title": "Wildfires"
+          }
+        ],
+        "sources": [
+          {
+            "id": "GDACS",
+            "url": "https://www.gdacs.org/report.aspx?eventtype=WF&eventid=1032590"
+          }
+        ],
+        "sample_geometry": [
+          {
+            "magnitudeValue": 6587.0,
+            "magnitudeUnit": "hectare",
+            "date": "2026-10-05T19:00:00Z",
+            "type": "Point",
+            "coordinates": [
+              34.212456606446,
+              -6.9177099530355
+            ]
+          }
+        ],
+        "temporal_extent_precision": "approximate per EONET;00:00Z may be date placeholder"
+      },
+      "source_license": "NASA EONET metadata for visualization/general information; approximate extents. Retain NASA EONET and upstream source attribution; no linked article/image reuse.",
+      "evidence_url": "https://eonet.gsfc.nasa.gov/docs/v3"
+    },
+    {
+      "source_id": "eonet",
+      "upstream_id": "EONET_25046",
+      "title": "Tropical Storm Koguma",
+      "url": "https://eonet.gsfc.nasa.gov/api/v3/events/EONET_25046",
+      "short_summary": null,
+      "category": "hazard",
+      "source_country": "US",
+      "source_language": "en",
+      "event_country": null,
+      "location": {
+        "magnitudeValue": 35.0,
+        "magnitudeUnit": "kts",
+        "date": "2026-10-05T06:00:00Z",
+        "type": "Point",
+        "coordinates": [
+          168.2,
+          10.9
+        ]
+      },
+      "location_basis": "source_provided",
+      "entities": [],
+      "event_time": "2026-10-05T06:00:00Z",
+      "published_at": null,
+      "source_updated_at": null,
+      "first_seen_at": "2026-10-07T23:37:47.271327+00:00",
+      "fetched_at": "2026-10-07T23:37:47.271327+00:00",
+      "ingested_at": null,
+      "content_depth": "structured_facts",
+      "facts": {
+        "closed": null,
+        "categories": [
+          {
+            "id": "severeStorms",
+            "title": "Severe Storms"
+          }
+        ],
+        "sources": [
+          {
+            "id": "JTWC",
+            "url": "https://www.metoc.navy.mil/jtwc/products/wp2726.tcw"
+          }
+        ],
+        "sample_geometry": [
+          {
+            "magnitudeValue": 35.0,
+            "magnitudeUnit": "kts",
+            "date": "2026-10-05T06:00:00Z",
+            "type": "Point",
+            "coordinates": [
+              168.2,
+              10.9
+            ]
+          },
+          {
+            "magnitudeValue": 35.0,
+            "magnitudeUnit": "kts",
+            "date": "2026-10-05T12:00:00Z",
+            "type": "Point",
+            "coordinates": [
+              168,
+              11.5
+            ]
+          }
+        ],
+        "temporal_extent_precision": "approximate per EONET;00:00Z may be date placeholder"
+      },
+      "source_license": "NASA EONET metadata for visualization/general information; approximate extents. Retain NASA EONET and upstream source attribution; no linked article/image reuse.",
+      "evidence_url": "https://eonet.gsfc.nasa.gov/docs/v3"
+    },
+    {
+      "source_id": "un_zh",
+      "upstream_id": "https://news.un.org/zh/story/2026/10/1142958",
+      "title": "古特雷斯：多边主义面临四大挑战",
+      "url": "https://news.un.org/feed/view/zh/story/2026/10/1142958",
+      "short_summary": null,
+      "category": "policy",
+      "source_country": null,
+      "source_language": "zh-Hans",
+      "event_country": null,
+      "location": null,
+      "location_basis": "unknown",
+      "entities": [],
+      "event_time": null,
+      "published_at": "2026-10-07T12:00:00Z",
+      "source_updated_at": null,
+      "first_seen_at": "2026-10-07T23:37:47.892657+00:00",
+      "fetched_at": "2026-10-07T23:37:47.892657+00:00",
+      "ingested_at": null,
+      "content_depth": "headline_metadata",
+      "facts": {},
+      "source_license": "UN copyright; use only headline/link metadata with UN News credit. No full article, photo, or content mirroring. Broader news reuse requires appropriate credit and notifying UN.",
+      "evidence_url": "https://www.un.org/en/department-global-communications/news-media"
+    },
+    {
+      "source_id": "un_zh",
+      "upstream_id": "https://news.un.org/zh/story/2026/10/1142957",
+      "title": "世卫组织：肯尼亚加紧追踪埃博拉病例所有密切接触者",
+      "url": "https://news.un.org/feed/view/zh/story/2026/10/1142957",
+      "short_summary": null,
+      "category": "policy",
+      "source_country": null,
+      "source_language": "zh-Hans",
+      "event_country": null,
+      "location": null,
+      "location_basis": "unknown",
+      "entities": [],
+      "event_time": null,
+      "published_at": "2026-10-07T12:00:00Z",
+      "source_updated_at": null,
+      "first_seen_at": "2026-10-07T23:37:47.892657+00:00",
+      "fetched_at": "2026-10-07T23:37:47.892657+00:00",
+      "ingested_at": null,
+      "content_depth": "headline_metadata",
+      "facts": {},
+      "source_license": "UN copyright; use only headline/link metadata with UN News credit. No full article, photo, or content mirroring. Broader news reuse requires appropriate credit and notifying UN.",
+      "evidence_url": "https://www.un.org/en/department-global-communications/news-media"
+    },
+    {
+      "source_id": "un_zh",
+      "upstream_id": "https://news.un.org/zh/story/2026/10/1142956",
+      "title": "联合国常务副秘书长：必须加快减排并扩大气候融资",
+      "url": "https://news.un.org/feed/view/zh/story/2026/10/1142956",
+      "short_summary": null,
+      "category": "policy",
+      "source_country": null,
+      "source_language": "zh-Hans",
+      "event_country": null,
+      "location": null,
+      "location_basis": "unknown",
+      "entities": [],
+      "event_time": null,
+      "published_at": "2026-10-07T12:00:00Z",
+      "source_updated_at": null,
+      "first_seen_at": "2026-10-07T23:37:47.892657+00:00",
+      "fetched_at": "2026-10-07T23:37:47.892657+00:00",
+      "ingested_at": null,
+      "content_depth": "headline_metadata",
+      "facts": {},
+      "source_license": "UN copyright; use only headline/link metadata with UN News credit. No full article, photo, or content mirroring. Broader news reuse requires appropriate credit and notifying UN.",
+      "evidence_url": "https://www.un.org/en/department-global-communications/news-media"
+    },
+    {
+      "source_id": "my_fuel_latest",
+      "upstream_id": "fuelprice:2026-10-08:change_weekly",
+      "title": "Malaysia fuel prices 2026-10-08 (change_weekly)",
+      "url": "https://data.gov.my/data-catalogue/fuelprice",
+      "short_summary": null,
+      "category": "economy",
+      "source_country": "MY",
+      "source_language": "zxx",
+      "event_country": "MY",
+      "location": null,
+      "location_basis": "unknown",
+      "entities": [],
+      "event_time": null,
+      "published_at": null,
+      "source_updated_at": null,
+      "first_seen_at": "2026-10-07T23:39:21.619461+00:00",
+      "fetched_at": "2026-10-07T23:39:21.619461+00:00",
+      "ingested_at": null,
+      "content_depth": "structured_facts",
+      "facts": {
+        "date": "2026-10-08",
+        "ron95": 0.15000000000000036,
+        "ron97": 0.15000000000000036,
+        "diesel": 0.0,
+        "ron95_skps": 0.0,
+        "diesel_budi": 0.0,
+        "diesel_skds": 0.0,
+        "series_type": "change_weekly",
+        "ron95_budi95": 0.0,
+        "diesel_eastmsia": 0.0,
+        "date_semantics": "effective date; date-only",
+        "units": "MYR/litre forlevel;MYR/litre change forchange_weekly"
+      },
+      "source_license": "CC BY4.0; credit Malaysia Ministry of Finance/data.gov.my, link license, indicate transformations.",
+      "evidence_url": "https://data.gov.my/data-catalogue/fuelprice"
+    },
+    {
+      "source_id": "my_fuel_latest",
+      "upstream_id": "fuelprice:2026-10-08:level",
+      "title": "Malaysia fuel prices 2026-10-08 (level)",
+      "url": "https://data.gov.my/data-catalogue/fuelprice",
+      "short_summary": null,
+      "category": "economy",
+      "source_country": "MY",
+      "source_language": "zxx",
+      "event_country": "MY",
+      "location": null,
+      "location_basis": "unknown",
+      "entities": [],
+      "event_time": null,
+      "published_at": null,
+      "source_updated_at": null,
+      "first_seen_at": "2026-10-07T23:39:21.619461+00:00",
+      "fetched_at": "2026-10-07T23:39:21.619461+00:00",
+      "ingested_at": null,
+      "content_depth": "structured_facts",
+      "facts": {
+        "date": "2026-10-08",
+        "ron95": 4.67,
+        "ron97": 5.15,
+        "diesel": 5.27,
+        "ron95_skps": 2.05,
+        "diesel_budi": 2.1,
+        "diesel_skds": 2.15,
+        "series_type": "level",
+        "ron95_budi95": 1.99,
+        "diesel_eastmsia": 2.15,
+        "date_semantics": "effective date; date-only",
+        "units": "MYR/litre forlevel;MYR/litre change forchange_weekly"
+      },
+      "source_license": "CC BY4.0; credit Malaysia Ministry of Finance/data.gov.my, link license, indicate transformations.",
+      "evidence_url": "https://data.gov.my/data-catalogue/fuelprice"
+    },
+    {
+      "source_id": "my_fuel_latest",
+      "upstream_id": "fuelprice:2026-10-01:change_weekly",
+      "title": "Malaysia fuel prices 2026-10-01 (change_weekly)",
+      "url": "https://data.gov.my/data-catalogue/fuelprice",
+      "short_summary": null,
+      "category": "economy",
+      "source_country": "MY",
+      "source_language": "zxx",
+      "event_country": "MY",
+      "location": null,
+      "location_basis": "unknown",
+      "entities": [],
+      "event_time": null,
+      "published_at": null,
+      "source_updated_at": null,
+      "first_seen_at": "2026-10-07T23:39:21.619461+00:00",
+      "fetched_at": "2026-10-07T23:39:21.619461+00:00",
+      "ingested_at": null,
+      "content_depth": "structured_facts",
+      "facts": {
+        "date": "2026-10-01",
+        "ron95": -0.05000000000000071,
+        "ron97": -0.04999999999999982,
+        "diesel": -0.15000000000000036,
+        "ron95_skps": 0.0,
+        "diesel_budi": 0.0,
+        "diesel_skds": 0.0,
+        "series_type": "change_weekly",
+        "ron95_budi95": 0.0,
+        "diesel_eastmsia": 0.0,
+        "date_semantics": "effective date; date-only",
+        "units": "MYR/litre forlevel;MYR/litre change forchange_weekly"
+      },
+      "source_license": "CC BY4.0; credit Malaysia Ministry of Finance/data.gov.my, link license, indicate transformations.",
+      "evidence_url": "https://data.gov.my/data-catalogue/fuelprice"
+    },
+    {
+      "source_id": "ecb",
+      "upstream_id": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr261007~6447350434.en.html",
+      "title": "Results of the September 2026 survey on credit terms and conditions in euro-denominated securities financing and OTC derivatives markets (SESFOD)",
+      "url": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr261007~6447350434.en.html",
+      "short_summary": null,
+      "category": "policy",
+      "source_country": "DE",
+      "source_language": "en",
+      "event_country": null,
+      "location": null,
+      "location_basis": "unknown",
+      "entities": [],
+      "event_time": null,
+      "published_at": "2026-10-07T08:00:00Z",
+      "source_updated_at": null,
+      "first_seen_at": "2026-10-07T23:39:20.435766+00:00",
+      "fetched_at": "2026-10-07T23:39:20.435766+00:00",
+      "ingested_at": null,
+      "content_depth": "headline_metadata",
+      "facts": {},
+      "source_license": "ECB copyright permits free accurate use with ECB source citation, subject to listed third-party exceptions; metadata only.",
+      "evidence_url": "https://www.ecb.europa.eu/home/html/rss.en.html"
+    },
+    {
+      "source_id": "ecb",
+      "upstream_id": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261006_1~0df91e4e44.en.html",
+      "title": "Frank Elderson: Effective supervision through timely remediation",
+      "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261006_1~0df91e4e44.en.html",
+      "short_summary": null,
+      "category": "policy",
+      "source_country": "DE",
+      "source_language": "en",
+      "event_country": null,
+      "location": null,
+      "location_basis": "unknown",
+      "entities": [],
+      "event_time": null,
+      "published_at": "2026-10-06T13:00:00Z",
+      "source_updated_at": null,
+      "first_seen_at": "2026-10-07T23:39:20.435766+00:00",
+      "fetched_at": "2026-10-07T23:39:20.435766+00:00",
+      "ingested_at": null,
+      "content_depth": "headline_metadata",
+      "facts": {},
+      "source_license": "ECB copyright permits free accurate use with ECB source citation, subject to listed third-party exceptions; metadata only.",
+      "evidence_url": "https://www.ecb.europa.eu/home/html/rss.en.html"
+    },
+    {
+      "source_id": "ecb",
+      "upstream_id": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261006~0da978f159.en.html",
+      "title": "Piero Cipollone: Money in the digital age: digital euro, tokenisation and the role of central banks",
+      "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261006~0da978f159.en.html",
+      "short_summary": null,
+      "category": "policy",
+      "source_country": "DE",
+      "source_language": "en",
+      "event_country": null,
+      "location": null,
+      "location_basis": "unknown",
+      "entities": [],
+      "event_time": null,
+      "published_at": "2026-10-06T13:00:00Z",
+      "source_updated_at": null,
+      "first_seen_at": "2026-10-07T23:39:20.435766+00:00",
+      "fetched_at": "2026-10-07T23:39:20.435766+00:00",
+      "ingested_at": null,
+      "content_depth": "headline_metadata",
+      "facts": {},
+      "source_license": "ECB copyright permits free accurate use with ECB source citation, subject to listed third-party exceptions; metadata only.",
+      "evidence_url": "https://www.ecb.europa.eu/home/html/rss.en.html"
+    },
+    {
+      "source_id": "my_warning",
+      "upstream_id": "derived-warning:04c1a230781fa1a252f0e9ee",
+      "title": "Amaran Angin Kencang dan Laut Bergelora",
+      "url": "https://developer.data.gov.my/realtime-api/weather",
+      "short_summary": null,
+      "category": "weather",
+      "source_country": "MY",
+      "source_language": "ms,en",
+      "event_country": null,
+      "location": null,
+      "location_basis": "unknown",
+      "entities": [],
+      "event_time": null,
+      "published_at": null,
+      "source_updated_at": null,
+      "first_seen_at": "2026-10-07T23:39:37.059606+00:00",
+      "fetched_at": "2026-10-07T23:39:37.059606+00:00",
+      "ingested_at": null,
+      "content_depth": "headline_metadata",
+      "facts": {
+        "warning_issue": {
+          "issued": "2026-10-08T06:30:00",
+          "title_bm": "Amaran Angin Kencang dan Laut Bergelora",
+          "title_en": "Strong Winds and Rough Seas Warning"
+        },
+        "valid_from": "2026-10-08T06:00:00",
+        "valid_to": "2026-10-08T11:00:00",
+        "heading_bm": "Amaran Angin kencang dan laut bergelora",
+        "heading_en": "Warning on Strong Wind and Rough Seas",
+        "datetime_semantics": "timezone-naive source strings retained; canonical timestamps null pending verified timezone",
+        "upstream_id_basis": "Derived from supplied issue/heading/valid_from metadata; not an upstream-issued ID."
+      },
+      "source_license": "Public government API; exact warning-dataset redistribution license not verified. Persist only issue/title/heading/time metadata and links; no full warning text or instructions.",
+      "evidence_url": "https://developer.data.gov.my/realtime-api/weather"
+    },
+    {
+      "source_id": "my_warning",
+      "upstream_id": "derived-warning:3aded95f56a9b5116caf0a8c",
+      "title": "Tiada Nasihat",
+      "url": "https://developer.data.gov.my/realtime-api/weather",
+      "short_summary": null,
+      "category": "weather",
+      "source_country": "MY",
+      "source_language": "ms,en",
+      "event_country": null,
+      "location": null,
+      "location_basis": "unknown",
+      "entities": [],
+      "event_time": null,
+      "published_at": null,
+      "source_updated_at": null,
+      "first_seen_at": "2026-10-07T23:39:37.059606+00:00",
+      "fetched_at": "2026-10-07T23:39:37.059606+00:00",
+      "ingested_at": null,
+      "content_depth": "headline_metadata",
+      "facts": {
+        "warning_issue": {
+          "issued": "2026-10-08T05:30:00",
+          "title_bm": "Tiada Nasihat",
+          "title_en": "No Advisory"
+        },
+        "valid_from": null,
+        "valid_to": null,
+        "heading_bm": "Tiada Nasihat",
+        "heading_en": "No Advisory",
+        "datetime_semantics": "timezone-naive source strings retained; canonical timestamps null pending verified timezone",
+        "upstream_id_basis": "Derived from supplied issue/heading/valid_from metadata; not an upstream-issued ID."
+      },
+      "source_license": "Public government API; exact warning-dataset redistribution license not verified. Persist only issue/title/heading/time metadata and links; no full warning text or instructions.",
+      "evidence_url": "https://developer.data.gov.my/realtime-api/weather"
+    },
+    {
+      "source_id": "my_warning",
+      "upstream_id": "derived-warning:cfbc71076006e4871d35bd0a",
+      "title": "Amaran Ribut Petir",
+      "url": "https://developer.data.gov.my/realtime-api/weather",
+      "short_summary": null,
+      "category": "weather",
+      "source_country": "MY",
+      "source_language": "ms,en",
+      "event_country": null,
+      "location": null,
+      "location_basis": "unknown",
+      "entities": [],
+      "event_time": null,
+      "published_at": null,
+      "source_updated_at": null,
+      "first_seen_at": "2026-10-07T23:39:37.059606+00:00",
+      "fetched_at": "2026-10-07T23:39:37.059606+00:00",
+      "ingested_at": null,
+      "content_depth": "headline_metadata",
+      "facts": {
+        "warning_issue": {
+          "issued": "2026-10-08T04:40:00",
+          "title_bm": "Amaran Ribut Petir",
+          "title_en": "Thunderstorms Warning"
+        },
+        "valid_from": "2026-10-08T04:00:00",
+        "valid_to": "2026-10-08T08:00:00",
+        "heading_bm": "AMARAN RIBUT PETIR",
+        "heading_en": "THUNDERSTORMS WARNING",
+        "datetime_semantics": "timezone-naive source strings retained; canonical timestamps null pending verified timezone",
+        "upstream_id_basis": "Derived from supplied issue/heading/valid_from metadata; not an upstream-issued ID."
+      },
+      "source_license": "Public government API; exact warning-dataset redistribution license not verified. Persist only issue/title/heading/time metadata and links; no full warning text or instructions.",
+      "evidence_url": "https://developer.data.gov.my/realtime-api/weather"
+    },
+    {
+      "source_id": "nasa_metadata",
+      "upstream_id": "1054755",
+      "title": "NASA’s SpaceX 35th Commercial Resupply Mission Overview",
+      "url": "https://www.nasa.gov/general/nasas-spacex-35th-commercial-resupply-mission-overview/",
+      "short_summary": null,
+      "category": "technology",
+      "source_country": "US",
+      "source_language": "en",
+      "event_country": null,
+      "location": null,
+      "location_basis": "unknown",
+      "entities": [],
+      "event_time": null,
+      "published_at": "2026-10-07T20:17:16Z",
+      "source_updated_at": "2026-10-07T20:17:18Z",
+      "first_seen_at": "2026-10-07T23:42:19.799147+00:00",
+      "fetched_at": "2026-10-07T23:42:19.799147+00:00",
+      "ingested_at": null,
+      "content_depth": "headline_metadata",
+      "facts": {
+        "source_publication_time_precision": "UTC datetime supplied via date_gmt",
+        "upstream_categories": [
+          1,
+          3190,
+          2735,
+          12746
+        ]
+      },
+      "source_license": "NASA public information unless individually restricted; metadata-only with NASA credit.",
+      "evidence_url": "https://www.nasa.gov/rss-feeds/"
+    },
+    {
+      "source_id": "nasa_metadata",
+      "upstream_id": "1053834",
+      "title": "Lunar Grounding Challenge",
+      "url": "https://www.nasa.gov/directorates/stmd/prizes-challenges-crowdsourcing-program/center-of-excellence-for-collaborative-innovation-coeci/lunar-grounding-challenge/",
+      "short_summary": null,
+      "category": "technology",
+      "source_country": "US",
+      "source_language": "en",
+      "event_country": null,
+      "location": null,
+      "location_basis": "unknown",
+      "entities": [],
+      "event_time": null,
+      "published_at": "2026-10-06T18:22:24Z",
+      "source_updated_at": "2026-10-07T14:32:20Z",
+      "first_seen_at": "2026-10-07T23:42:19.799147+00:00",
+      "fetched_at": "2026-10-07T23:42:19.799147+00:00",
+      "ingested_at": null,
+      "content_depth": "headline_metadata",
+      "facts": {
+        "source_publication_time_precision": "UTC datetime supplied via date_gmt",
+        "upstream_categories": [
+          11535,
+          12646,
+          2673,
+          12395,
+          12645,
+          3343
+        ]
+      },
+      "source_license": "NASA public information unless individually restricted; metadata-only with NASA credit.",
+      "evidence_url": "https://www.nasa.gov/rss-feeds/"
+    },
+    {
+      "source_id": "nasa_metadata",
+      "upstream_id": "1052208",
+      "title": "NASA’s Curiosity Rover Catches Stunning Martian Dawn",
+      "url": "https://www.nasa.gov/missions/mars-science-laboratory/curiosity-rover/nasas-curiosity-rover-catches-stunning-martian-dawn/",
+      "short_summary": null,
+      "category": "technology",
+      "source_country": "US",
+      "source_language": "en",
+      "event_country": null,
+      "location": null,
+      "location_basis": "unknown",
+      "entities": [],
+      "event_time": null,
+      "published_at": "2026-10-06T15:30:07Z",
+      "source_updated_at": "2026-10-06T15:30:09Z",
+      "first_seen_at": "2026-10-07T23:42:19.799147+00:00",
+      "fetched_at": "2026-10-07T23:42:19.799147+00:00",
+      "ingested_at": null,
+      "content_depth": "headline_metadata",
+      "facts": {
+        "source_publication_time_precision": "UTC datetime supplied via date_gmt",
+        "upstream_categories": [
+          9420,
+          2860,
+          3229,
+          2749,
+          2835
+        ]
+      },
+      "source_license": "NASA public information unless individually restricted; metadata-only with NASA credit.",
+      "evidence_url": "https://www.nasa.gov/rss-feeds/"
+    },
+    {
+      "source_id": "bis_press",
+      "upstream_id": "https://www.bis.org/media-releases/20261005-basel-iii-applicable-almost-all-member-jurisdictions-2027",
+      "title": "Basel III applicable in almost all member jurisdictions by 2027",
+      "url": "https://www.bis.org/media-releases/20261005-basel-iii-applicable-almost-all-member-jurisdictions-2027",
+      "short_summary": null,
+      "category": "policy",
+      "source_country": "CH",
+      "source_language": "en",
+      "event_country": null,
+      "location": null,
+      "location_basis": "unknown",
+      "entities": [],
+      "event_time": null,
+      "published_at": "2026-10-05T00:00:00Z",
+      "source_updated_at": null,
+      "first_seen_at": "2026-10-07T23:42:17.347989+00:00",
+      "fetched_at": "2026-10-07T23:42:17.347989+00:00",
+      "ingested_at": null,
+      "content_depth": "headline_metadata",
+      "facts": {
+        "source_publication_time_precision": "midnightUTC supplied; exact clock time unverified",
+        "publication_date_raw": "2026-10-05T00:00:00Z"
+      },
+      "source_license": "BIS copyright; non-commercial use and limited excerpts with source credit and direct original-content link. Preserve metadata only, no full speeches.",
+      "evidence_url": "https://www.bis.org/rss"
+    },
+    {
+      "source_id": "bis_press",
+      "upstream_id": "https://www.bis.org/media-releases/20261001-basel-committee-meets-advance-supervisory-and-regulatory-initiatives-and-discuss-risks-and",
+      "title": "Basel Committee meets to advance supervisory and regulatory initiatives and discuss risks and vulnerabilities to the global banking system",
+      "url": "https://www.bis.org/media-releases/20261001-basel-committee-meets-advance-supervisory-and-regulatory-initiatives-and-discuss-risks-and",
+      "short_summary": null,
+      "category": "policy",
+      "source_country": "CH",
+      "source_language": "en",
+      "event_country": null,
+      "location": null,
+      "location_basis": "unknown",
+      "entities": [],
+      "event_time": null,
+      "published_at": "2026-10-01T00:00:00Z",
+      "source_updated_at": null,
+      "first_seen_at": "2026-10-07T23:42:17.347989+00:00",
+      "fetched_at": "2026-10-07T23:42:17.347989+00:00",
+      "ingested_at": null,
+      "content_depth": "headline_metadata",
+      "facts": {
+        "source_publication_time_precision": "midnightUTC supplied; exact clock time unverified",
+        "publication_date_raw": "2026-10-01T00:00:00Z"
+      },
+      "source_license": "BIS copyright; non-commercial use and limited excerpts with source credit and direct original-content link. Preserve metadata only, no full speeches.",
+      "evidence_url": "https://www.bis.org/rss"
+    },
+    {
+      "source_id": "bis_press",
+      "upstream_id": "https://www.bis.org/media-releases/20261001-international-supervisory-community-meets-discuss-future-global-bank-supervision-and-regulation",
+      "title": "International supervisory community meets to discuss the future of global bank supervision and regulation",
+      "url": "https://www.bis.org/media-releases/20261001-international-supervisory-community-meets-discuss-future-global-bank-supervision-and-regulation",
+      "short_summary": null,
+      "category": "policy",
+      "source_country": "CH",
+      "source_language": "en",
+      "event_country": null,
+      "location": null,
+      "location_basis": "unknown",
+      "entities": [],
+      "event_time": null,
+      "published_at": "2026-10-01T00:00:00Z",
+      "source_updated_at": null,
+      "first_seen_at": "2026-10-07T23:42:17.347989+00:00",
+      "fetched_at": "2026-10-07T23:42:17.347989+00:00",
+      "ingested_at": null,
+      "content_depth": "headline_metadata",
+      "facts": {
+        "source_publication_time_precision": "midnightUTC supplied; exact clock time unverified",
+        "publication_date_raw": "2026-10-01T00:00:00Z"
+      },
+      "source_license": "BIS copyright; non-commercial use and limited excerpts with source credit and direct original-content link. Preserve metadata only, no full speeches.",
+      "evidence_url": "https://www.bis.org/rss"
+    },
+    {
+      "source_id": "bis_speeches",
+      "upstream_id": "https://www.bis.org/speeches/20261007-data-version-godzilla-versus-kong-fred-takes-ai",
+      "title": "The data version of Godzilla versus Kong - FRED takes on AI",
+      "url": "https://www.bis.org/speeches/20261007-data-version-godzilla-versus-kong-fred-takes-ai",
+      "short_summary": null,
+      "category": "policy",
+      "source_country": "CH",
+      "source_language": "en",
+      "event_country": null,
+      "location": null,
+      "location_basis": "unknown",
+      "entities": [],
+      "event_time": null,
+      "published_at": "2026-10-07T00:00:00Z",
+      "source_updated_at": null,
+      "first_seen_at": "2026-10-07T23:42:16.463657+00:00",
+      "fetched_at": "2026-10-07T23:42:16.463657+00:00",
+      "ingested_at": null,
+      "content_depth": "headline_metadata",
+      "facts": {
+        "source_publication_time_precision": "midnightUTC supplied; exact clock time unverified",
+        "publication_date_raw": "2026-10-07T00:00:00Z"
+      },
+      "source_license": "BIS copyright; non-commercial use and limited excerpts with source credit and direct original-content link. Preserve metadata only, no full speeches.",
+      "evidence_url": "https://www.bis.org/rss"
+    },
+    {
+      "source_id": "bis_speeches",
+      "upstream_id": "https://www.bis.org/speeches/20261007-more-momentum-economy",
+      "title": "More momentum for the economy",
+      "url": "https://www.bis.org/speeches/20261007-more-momentum-economy",
+      "short_summary": null,
+      "category": "policy",
+      "source_country": "CH",
+      "source_language": "en",
+      "event_country": null,
+      "location": null,
+      "location_basis": "unknown",
+      "entities": [],
+      "event_time": null,
+      "published_at": "2026-10-07T00:00:00Z",
+      "source_updated_at": null,
+      "first_seen_at": "2026-10-07T23:42:16.463657+00:00",
+      "fetched_at": "2026-10-07T23:42:16.463657+00:00",
+      "ingested_at": null,
+      "content_depth": "headline_metadata",
+      "facts": {
+        "source_publication_time_precision": "midnightUTC supplied; exact clock time unverified",
+        "publication_date_raw": "2026-10-07T00:00:00Z"
+      },
+      "source_license": "BIS copyright; non-commercial use and limited excerpts with source credit and direct original-content link. Preserve metadata only, no full speeches.",
+      "evidence_url": "https://www.bis.org/rss"
+    },
+    {
+      "source_id": "bis_speeches",
+      "upstream_id": "https://www.bis.org/speeches/20261007-us-economy-and-monetary-policy",
+      "title": "The US economy and monetary policy",
+      "url": "https://www.bis.org/speeches/20261007-us-economy-and-monetary-policy",
+      "short_summary": null,
+      "category": "policy",
+      "source_country": "CH",
+      "source_language": "en",
+      "event_country": null,
+      "location": null,
+      "location_basis": "unknown",
+      "entities": [],
+      "event_time": null,
+      "published_at": "2026-10-07T00:00:00Z",
+      "source_updated_at": null,
+      "first_seen_at": "2026-10-07T23:42:16.463657+00:00",
+      "fetched_at": "2026-10-07T23:42:16.463657+00:00",
+      "ingested_at": null,
+      "content_depth": "headline_metadata",
+      "facts": {
+        "source_publication_time_precision": "midnightUTC supplied; exact clock time unverified",
+        "publication_date_raw": "2026-10-07T00:00:00Z"
+      },
+      "source_license": "BIS copyright; non-commercial use and limited excerpts with source credit and direct original-content link. Preserve metadata only, no full speeches.",
+      "evidence_url": "https://www.bis.org/rss"
+    }
+  ]
+}

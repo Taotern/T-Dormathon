@@ -1,0 +1,4048 @@
+{
+  "type": "FeatureCollection",
+  "metadata": {
+    "count": 101
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 2.6,
+        "place": "51 km SW of Manley Hot Springs, Alaska",
+        "time": 1791410000000,
+        "updated": 1791416199226,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/TEST_USGS_000",
+        "detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/aka2026txdhrc.geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "automatic",
+        "tsunami": 0,
+        "sig": 104,
+        "net": "ak",
+        "code": "a2026txdhrc",
+        "ids": ",aka2026txdhrc,",
+        "sources": ",ak,",
+        "types": ",origin,phase-data,",
+        "nst": 25,
+        "dmin": 0.6,
+        "rms": 0.7,
+        "gap": 48,
+        "magType": "ml",
+        "type": "earthquake",
+        "title": "TEST synthetic earthquake 0"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -151.305,
+          64.636,
+          14.7
+        ]
+      },
+      "id": "TEST_USGS_000"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 2.6,
+        "place": "51 km SW of Manley Hot Springs, Alaska",
+        "time": 1791410001000,
+        "updated": 1791416199226,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/TEST_USGS_001",
+        "detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/aka2026txdhrc.geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "automatic",
+        "tsunami": 0,
+        "sig": 104,
+        "net": "ak",
+        "code": "a2026txdhrc",
+        "ids": ",aka2026txdhrc,",
+        "sources": ",ak,",
+        "types": ",origin,phase-data,",
+        "nst": 25,
+        "dmin": 0.6,
+        "rms": 0.7,
+        "gap": 48,
+        "magType": "ml",
+        "type": "earthquake",
+        "title": "TEST synthetic earthquake 1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -151.305,
+          64.636,
+          14.7
+        ]
+      },
+      "id": "TEST_USGS_001"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 2.6,
+        "place": "51 km SW of Manley Hot Springs, Alaska",
+        "time": 1791410002000,
+        "updated": 1791416199226,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/TEST_USGS_002",
+        "detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/aka2026txdhrc.geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "automatic",
+        "tsunami": 0,
+        "sig": 104,
+        "net": "ak",
+        "code": "a2026txdhrc",
+        "ids": ",aka2026txdhrc,",
+        "sources": ",ak,",
+        "types": ",origin,phase-data,",
+        "nst": 25,
+        "dmin": 0.6,
+        "rms": 0.7,
+        "gap": 48,
+        "magType": "ml",
+        "type": "earthquake",
+        "title": "TEST synthetic earthquake 2"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -151.305,
+          64.636,
+          14.7
+        ]
+      },
+      "id": "TEST_USGS_002"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 2.6,
+        "place": "51 km SW of Manley Hot Springs, Alaska",
+        "time": 1791410003000,
+        "updated": 1791416199226,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/TEST_USGS_003",
+        "detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/aka2026txdhrc.geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "automatic",
+        "tsunami": 0,
+        "sig": 104,
+        "net": "ak",
+        "code": "a2026txdhrc",
+        "ids": ",aka2026txdhrc,",
+        "sources": ",ak,",
+        "types": ",origin,phase-data,",
+        "nst": 25,
+        "dmin": 0.6,
+        "rms": 0.7,
+        "gap": 48,
+        "magType": "ml",
+        "type": "earthquake",
+        "title": "TEST synthetic earthquake 3"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -151.305,
+          64.636,
+          14.7
+        ]
+      },
+      "id": "TEST_USGS_003"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 2.6,
+        "place": "51 km SW of Manley Hot Springs, Alaska",
+        "time": 1791410004000,
+        "updated": 1791416199226,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/TEST_USGS_004",
+        "detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/aka2026txdhrc.geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "automatic",
+        "tsunami": 0,
+        "sig": 104,
+        "net": "ak",
+        "code": "a2026txdhrc",
+        "ids": ",aka2026txdhrc,",
+        "sources": ",ak,",
+        "types": ",origin,phase-data,",
+        "nst": 25,
+        "dmin": 0.6,
+        "rms": 0.7,
+        "gap": 48,
+        "magType": "ml",
+        "type": "earthquake",
+        "title": "TEST synthetic earthquake 4"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -151.305,
+          64.636,
+          14.7
+        ]
+      },
+      "id": "TEST_USGS_004"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 2.6,
+        "place": "51 km SW of Manley Hot Springs, Alaska",
+        "time": 1791410005000,
+        "updated": 1791416199226,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/TEST_USGS_005",
+        "detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/aka2026txdhrc.geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "automatic",
+        "tsunami": 0,
+        "sig": 104,
+        "net": "ak",
+        "code": "a2026txdhrc",
+        "ids": ",aka2026txdhrc,",
+        "sources": ",ak,",
+        "types": ",origin,phase-data,",
+        "nst": 25,
+        "dmin": 0.6,
+        "rms": 0.7,
+        "gap": 48,
+        "magType": "ml",
+        "type": "earthquake",
+        "title": "TEST synthetic earthquake 5"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -151.305,
+          64.636,
+          14.7
+        ]
+      },
+      "id": "TEST_USGS_005"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 2.6,
+        "place": "51 km SW of Manley Hot Springs, Alaska",
+        "time": 1791410006000,
+        "updated": 1791416199226,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/TEST_USGS_006",
+        "detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/aka2026txdhrc.geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "automatic",
+        "tsunami": 0,
+        "sig": 104,
+        "net": "ak",
+        "code": "a2026txdhrc",
+        "ids": ",aka2026txdhrc,",
+        "sources": ",ak,",
+        "types": ",origin,phase-data,",
+        "nst": 25,
+        "dmin": 0.6,
+        "rms": 0.7,
+        "gap": 48,
+        "magType": "ml",
+        "type": "earthquake",
+        "title": "TEST synthetic earthquake 6"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -151.305,
+          64.636,
+          14.7
+        ]
+      },
+      "id": "TEST_USGS_006"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 2.6,
+        "place": "51 km SW of Manley Hot Springs, Alaska",
+        "time": 1791410007000,
+        "updated": 1791416199226,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/TEST_USGS_007",
+        "detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/aka2026txdhrc.geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "automatic",
+        "tsunami": 0,
+        "sig": 104,
+        "net": "ak",
+        "code": "a2026txdhrc",
+        "ids": ",aka2026txdhrc,",
+        "sources": ",ak,",
+        "types": ",origin,phase-data,",
+        "nst": 25,
+        "dmin": 0.6,
+        "rms": 0.7,
+        "gap": 48,
+        "magType": "ml",
+        "type": "earthquake",
+        "title": "TEST synthetic earthquake 7"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -151.305,
+          64.636,
+          14.7
+        ]
+      },
+      "id": "TEST_USGS_007"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 2.6,
+        "place": "51 km SW of Manley Hot Springs, Alaska",
+        "time": 1791410008000,
+        "updated": 1791416199226,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/TEST_USGS_008",
+        "detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/aka2026txdhrc.geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "automatic",
+        "tsunami": 0,
+        "sig": 104,
+        "net": "ak",
+        "code": "a2026txdhrc",
+        "ids": ",aka2026txdhrc,",
+        "sources": ",ak,",
+        "types": ",origin,phase-data,",
+        "nst": 25,
+        "dmin": 0.6,
+        "rms": 0.7,
+        "gap": 48,
+        "magType": "ml",
+        "type": "earthquake",
+        "title": "TEST synthetic earthquake 8"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -151.305,
+          64.636,
+          14.7
+        ]
+      },
+      "id": "TEST_USGS_008"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 2.6,
+        "place": "51 km SW of Manley Hot Springs, Alaska",
+        "time": 1791410009000,
+        "updated": 1791416199226,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/TEST_USGS_009",
+        "detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/aka2026txdhrc.geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "automatic",
+        "tsunami": 0,
+        "sig": 104,
+        "net": "ak",
+        "code": "a2026txdhrc",
+        "ids": ",aka2026txdhrc,",
+        "sources": ",ak,",
+        "types": ",origin,phase-data,",
+        "nst": 25,
+        "dmin": 0.6,
+        "rms": 0.7,
+        "gap": 48,
+        "magType": "ml",
+        "type": "earthquake",
+        "title": "TEST synthetic earthquake 9"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -151.305,
+          64.636,
+          14.7
+        ]
+      },
+      "id": "TEST_USGS_009"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 2.6,
+        "place": "51 km SW of Manley Hot Springs, Alaska",
+        "time": 1791410010000,
+        "updated": 1791416199226,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/TEST_USGS_010",
+        "detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/aka2026txdhrc.geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "automatic",
+        "tsunami": 0,
+        "sig": 104,
+        "net": "ak",
+        "code": "a2026txdhrc",
+        "ids": ",aka2026txdhrc,",
+        "sources": ",ak,",
+        "types": ",origin,phase-data,",
+        "nst": 25,
+        "dmin": 0.6,
+        "rms": 0.7,
+        "gap": 48,
+        "magType": "ml",
+        "type": "earthquake",
+        "title": "TEST synthetic earthquake 10"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -151.305,
+          64.636,
+          14.7
+        ]
+      },
+      "id": "TEST_USGS_010"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 2.6,
+        "place": "51 km SW of Manley Hot Springs, Alaska",
+        "time": 1791410011000,
+        "updated": 1791416199226,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/TEST_USGS_011",
+        "detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/aka2026txdhrc.geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "automatic",
+        "tsunami": 0,
+        "sig": 104,
+        "net": "ak",
+        "code": "a2026txdhrc",
+        "ids": ",aka2026txdhrc,",
+        "sources": ",ak,",
+        "types": ",origin,phase-data,",
+        "nst": 25,
+        "dmin": 0.6,
+        "rms": 0.7,
+        "gap": 48,
+        "magType": "ml",
+        "type": "earthquake",
+        "title": "TEST synthetic earthquake 11"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -151.305,
+          64.636,
+          14.7
+        ]
+      },
+      "id": "TEST_USGS_011"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 2.6,
+        "place": "51 km SW of Manley Hot Springs, Alaska",
+        "time": 1791410012000,
+        "updated": 1791416199226,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/TEST_USGS_012",
+        "detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/aka2026txdhrc.geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "automatic",
+        "tsunami": 0,
+        "sig": 104,
+        "net": "ak",
+        "code": "a2026txdhrc",
+        "ids": ",aka2026txdhrc,",
+        "sources": ",ak,",
+        "types": ",origin,phase-data,",
+        "nst": 25,
+        "dmin": 0.6,
+        "rms": 0.7,
+        "gap": 48,
+        "magType": "ml",
+        "type": "earthquake",
+        "title": "TEST synthetic earthquake 12"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -151.305,
+          64.636,
+          14.7
+        ]
+      },
+      "id": "TEST_USGS_012"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 2.6,
+        "place": "51 km SW of Manley Hot Springs, Alaska",
+        "time": 1791410013000,
+        "updated": 1791416199226,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/TEST_USGS_013",
+        "detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/aka2026txdhrc.geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "automatic",
+        "tsunami": 0,
+        "sig": 104,
+        "net": "ak",
+        "code": "a2026txdhrc",
+        "ids": ",aka2026txdhrc,",
+        "sources": ",ak,",
+        "types": ",origin,phase-data,",
+        "nst": 25,
+        "dmin": 0.6,
+        "rms": 0.7,
+        "gap": 48,
+        "magType": "ml",
+        "type": "earthquake",
+        "title": "TEST synthetic earthquake 13"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -151.305,
+          64.636,
+          14.7
+        ]
+      },
+      "id": "TEST_USGS_013"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 2.6,
+        "place": "51 km SW of Manley Hot Springs, Alaska",
+        "time": 1791410014000,
+        "updated": 1791416199226,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/TEST_USGS_014",
+        "detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/aka2026txdhrc.geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "automatic",
+        "tsunami": 0,
+        "sig": 104,
+        "net": "ak",
+        "code": "a2026txdhrc",
+        "ids": ",aka2026txdhrc,",
+        "sources": ",ak,",
+        "types": ",origin,phase-data,",
+        "nst": 25,
+        "dmin": 0.6,
+        "rms": 0.7,
+        "gap": 48,
+        "magType": "ml",
+        "type": "earthquake",
+        "title": "TEST synthetic earthquake 14"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -151.305,
+          64.636,
+          14.7
+        ]
+      },
+      "id": "TEST_USGS_014"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 2.6,
+        "place": "51 km SW of Manley Hot Springs, Alaska",
+        "time": 1791410015000,
+        "updated": 1791416199226,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/TEST_USGS_015",
+        "detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/aka2026txdhrc.geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "automatic",
+        "tsunami": 0,
+        "sig": 104,
+        "net": "ak",
+        "code": "a2026txdhrc",
+        "ids": ",aka2026txdhrc,",
+        "sources": ",ak,",
+        "types": ",origin,phase-data,",
+        "nst": 25,
+        "dmin": 0.6,
+        "rms": 0.7,
+        "gap": 48,
+        "magType": "ml",
+        "type": "earthquake",
+        "title": "TEST synthetic earthquake 15"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -151.305,
+          64.636,
+          14.7
+        ]
+      },
+      "id": "TEST_USGS_015"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 2.6,
+        "place": "51 km SW of Manley Hot Springs, Alaska",
+        "time": 1791410016000,
+        "updated": 1791416199226,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/TEST_USGS_016",
+        "detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/aka2026txdhrc.geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "automatic",
+        "tsunami": 0,
+        "sig": 104,
+        "net": "ak",
+        "code": "a2026txdhrc",
+        "ids": ",aka2026txdhrc,",
+        "sources": ",ak,",
+        "types": ",origin,phase-data,",
+        "nst": 25,
+        "dmin": 0.6,
+        "rms": 0.7,
+        "gap": 48,
+        "magType": "ml",
+        "type": "earthquake",
+        "title": "TEST synthetic earthquake 16"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -151.305,
+          64.636,
+          14.7
+        ]
+      },
+      "id": "TEST_USGS_016"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 2.6,
+        "place": "51 km SW of Manley Hot Springs, Alaska",
+        "time": 1791410017000,
+        "updated": 1791416199226,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/TEST_USGS_017",
+        "detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/aka2026txdhrc.geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "automatic",
+        "tsunami": 0,
+        "sig": 104,
+        "net": "ak",
+        "code": "a2026txdhrc",
+        "ids": ",aka2026txdhrc,",
+        "sources": ",ak,",
+        "types": ",origin,phase-data,",
+        "nst": 25,
+        "dmin": 0.6,
+        "rms": 0.7,
+        "gap": 48,
+        "magType": "ml",
+        "type": "earthquake",
+        "title": "TEST synthetic earthquake 17"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -151.305,
+          64.636,
+          14.7
+        ]
+      },
+      "id": "TEST_USGS_017"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 2.6,
+        "place": "51 km SW of Manley Hot Springs, Alaska",
+        "time": 1791410018000,
+        "updated": 1791416199226,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/TEST_USGS_018",
+        "detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/aka2026txdhrc.geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "automatic",
+        "tsunami": 0,
+        "sig": 104,
+        "net": "ak",
+        "code": "a2026txdhrc",
+        "ids": ",aka2026txdhrc,",
+        "sources": ",ak,",
+        "types": ",origin,phase-data,",
+        "nst": 25,
+        "dmin": 0.6,
+        "rms": 0.7,
+        "gap": 48,
+        "magType": "ml",
+        "type": "earthquake",
+        "title": "TEST synthetic earthquake 18"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -151.305,
+          64.636,
+          14.7
+        ]
+      },
+      "id": "TEST_USGS_018"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 2.6,
+        "place": "51 km SW of Manley Hot Springs, Alaska",
+        "time": 1791410019000,
+        "updated": 1791416199226,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/TEST_USGS_019",
+        "detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/aka2026txdhrc.geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "automatic",
+        "tsunami": 0,
+        "sig": 104,
+        "net": "ak",
+        "code": "a2026txdhrc",
+        "ids": ",aka2026txdhrc,",
+        "sources": ",ak,",
+        "types": ",origin,phase-data,",
+        "nst": 25,
+        "dmin": 0.6,
+        "rms": 0.7,
+        "gap": 48,
+        "magType": "ml",
+        "type": "earthquake",
+        "title": "TEST synthetic earthquake 19"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -151.305,
+          64.636,
+          14.7
+        ]
+      },
+      "id": "TEST_USGS_019"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 2.6,
+        "place": "51 km SW of Manley Hot Springs, Alaska",
+        "time": 1791410020000,
+        "updated": 1791416199226,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/TEST_USGS_020",
+        "detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/aka2026txdhrc.geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "automatic",
+        "tsunami": 0,
+        "sig": 104,
+        "net": "ak",
+        "code": "a2026txdhrc",
+        "ids": ",aka2026txdhrc,",
+        "sources": ",ak,",
+        "types": ",origin,phase-data,",
+        "nst": 25,
+        "dmin": 0.6,
+        "rms": 0.7,
+        "gap": 48,
+        "magType": "ml",
+        "type": "earthquake",
+        "title": "TEST synthetic earthquake 20"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -151.305,
+          64.636,
+          14.7
+        ]
+      },
+      "id": "TEST_USGS_020"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 2.6,
+        "place": "51 km SW of Manley Hot Springs, Alaska",
+        "time": 1791410021000,
+        "updated": 1791416199226,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/TEST_USGS_021",
+        "detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/aka2026txdhrc.geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "automatic",
+        "tsunami": 0,
+        "sig": 104,
+        "net": "ak",
+        "code": "a2026txdhrc",
+        "ids": ",aka2026txdhrc,",
+        "sources": ",ak,",
+        "types": ",origin,phase-data,",
+        "nst": 25,
+        "dmin": 0.6,
+        "rms": 0.7,
+        "gap": 48,
+        "magType": "ml",
+        "type": "earthquake",
+        "title": "TEST synthetic earthquake 21"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -151.305,
+          64.636,
+          14.7
+        ]
+      },
+      "id": "TEST_USGS_021"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 2.6,
+        "place": "51 km SW of Manley Hot Springs, Alaska",
+        "time": 1791410022000,
+        "updated": 1791416199226,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/TEST_USGS_022",
+        "detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/aka2026txdhrc.geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "automatic",
+        "tsunami": 0,
+        "sig": 104,
+        "net": "ak",
+        "code": "a2026txdhrc",
+        "ids": ",aka2026txdhrc,",
+        "sources": ",ak,",
+        "types": ",origin,phase-data,",
+        "nst": 25,
+        "dmin": 0.6,
+        "rms": 0.7,
+        "gap": 48,
+        "magType": "ml",
+        "type": "earthquake",
+        "title": "TEST synthetic earthquake 22"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -151.305,
+          64.636,
+          14.7
+        ]
+      },
+      "id": "TEST_USGS_022"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 2.6,
+        "place": "51 km SW of Manley Hot Springs, Alaska",
+        "time": 1791410023000,
+        "updated": 1791416199226,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/TEST_USGS_023",
+        "detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/aka2026txdhrc.geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "automatic",
+        "tsunami": 0,
+        "sig": 104,
+        "net": "ak",
+        "code": "a2026txdhrc",
+        "ids": ",aka2026txdhrc,",
+        "sources": ",ak,",
+        "types": ",origin,phase-data,",
+        "nst": 25,
+        "dmin": 0.6,
+        "rms": 0.7,
+        "gap": 48,
+        "magType": "ml",
+        "type": "earthquake",
+        "title": "TEST synthetic earthquake 23"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -151.305,
+          64.636,
+          14.7
+        ]
+      },
+      "id": "TEST_USGS_023"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 2.6,
+        "place": "51 km SW of Manley Hot Springs, Alaska",
+        "time": 1791410024000,
+        "updated": 1791416199226,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/TEST_USGS_024",
+        "detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/aka2026txdhrc.geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "automatic",
+        "tsunami": 0,
+        "sig": 104,
+        "net": "ak",
+        "code": "a2026txdhrc",
+        "ids": ",aka2026txdhrc,",
+        "sources": ",ak,",
+        "types": ",origin,phase-data,",
+        "nst": 25,
+        "dmin": 0.6,
+        "rms": 0.7,
+        "gap": 48,
+        "magType": "ml",
+        "type": "earthquake",
+        "title": "TEST synthetic earthquake 24"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -151.305,
+          64.636,
+          14.7
+        ]
+      },
+      "id": "TEST_USGS_024"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 2.6,
+        "place": "51 km SW of Manley Hot Springs, Alaska",
+        "time": 1791410025000,
+        "updated": 1791416199226,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/TEST_USGS_025",
+        "detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/aka2026txdhrc.geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "automatic",
+        "tsunami": 0,
+        "sig": 104,
+        "net": "ak",
+        "code": "a2026txdhrc",
+        "ids": ",aka2026txdhrc,",
+        "sources": ",ak,",
+        "types": ",origin,phase-data,",
+        "nst": 25,
+        "dmin": 0.6,
+        "rms": 0.7,
+        "gap": 48,
+        "magType": "ml",
+        "type": "earthquake",
+        "title": "TEST synthetic earthquake 25"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -151.305,
+          64.636,
+          14.7
+        ]
+      },
+      "id": "TEST_USGS_025"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 2.6,
+        "place": "51 km SW of Manley Hot Springs, Alaska",
+        "time": 1791410026000,
+        "updated": 1791416199226,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/TEST_USGS_026",
+        "detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/aka2026txdhrc.geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "automatic",
+        "tsunami": 0,
+        "sig": 104,
+        "net": "ak",
+        "code": "a2026txdhrc",
+        "ids": ",aka2026txdhrc,",
+        "sources": ",ak,",
+        "types": ",origin,phase-data,",
+        "nst": 25,
+        "dmin": 0.6,
+        "rms": 0.7,
+        "gap": 48,
+        "magType": "ml",
+        "type": "earthquake",
+        "title": "TEST synthetic earthquake 26"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -151.305,
+          64.636,
+          14.7
+        ]
+      },
+      "id": "TEST_USGS_026"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 2.6,
+        "place": "51 km SW of Manley Hot Springs, Alaska",
+        "time": 1791410027000,
+        "updated": 1791416199226,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/TEST_USGS_027",
+        "detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/aka2026txdhrc.geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "automatic",
+        "tsunami": 0,
+        "sig": 104,
+        "net": "ak",
+        "code": "a2026txdhrc",
+        "ids": ",aka2026txdhrc,",
+        "sources": ",ak,",
+        "types": ",origin,phase-data,",
+        "nst": 25,
+        "dmin": 0.6,
+        "rms": 0.7,
+        "gap": 48,
+        "magType": "ml",
+        "type": "earthquake",
+        "title": "TEST synthetic earthquake 27"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -151.305,
+          64.636,
+          14.7
+        ]
+      },
+      "id": "TEST_USGS_027"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 2.6,
+        "place": "51 km SW of Manley Hot Springs, Alaska",
+        "time": 1791410028000,
+        "updated": 1791416199226,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/TEST_USGS_028",
+        "detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/aka2026txdhrc.geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "automatic",
+        "tsunami": 0,
+        "sig": 104,
+        "net": "ak",
+        "code": "a2026txdhrc",
+        "ids": ",aka2026txdhrc,",
+        "sources": ",ak,",
+        "types": ",origin,phase-data,",
+        "nst": 25,
+        "dmin": 0.6,
+        "rms": 0.7,
+        "gap": 48,
+        "magType": "ml",
+        "type": "earthquake",
+        "title": "TEST synthetic earthquake 28"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -151.305,
+          64.636,
+          14.7
+        ]
+      },
+      "id": "TEST_USGS_028"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 2.6,
+        "place": "51 km SW of Manley Hot Springs, Alaska",
+        "time": 1791410029000,
+        "updated": 1791416199226,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/TEST_USGS_029",
+        "detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/aka2026txdhrc.geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "automatic",
+        "tsunami": 0,
+        "sig": 104,
+        "net": "ak",
+        "code": "a2026txdhrc",
+        "ids": ",aka2026txdhrc,",
+        "sources": ",ak,",
+        "types": ",origin,phase-data,",
+        "nst": 25,
+        "dmin": 0.6,
+        "rms": 0.7,
+        "gap": 48,
+        "magType": "ml",
+        "type": "earthquake",
+        "title": "TEST synthetic earthquake 29"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -151.305,
+          64.636,
+          14.7
+        ]
+      },
+      "id": "TEST_USGS_029"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 2.6,
+        "place": "51 km SW of Manley Hot Springs, Alaska",
+        "time": 1791410030000,
+        "updated": 1791416199226,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/TEST_USGS_030",
+        "detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/aka2026txdhrc.geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "automatic",
+        "tsunami": 0,
+        "sig": 104,
+        "net": "ak",
+        "code": "a2026txdhrc",
+        "ids": ",aka2026txdhrc,",
+        "sources": ",ak,",
+        "types": ",origin,phase-data,",
+        "nst": 25,
+        "dmin": 0.6,
+        "rms": 0.7,
+        "gap": 48,
+        "magType": "ml",
+        "type": "earthquake",
+        "title": "TEST synthetic earthquake 30"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -151.305,
+          64.636,
+          14.7
+        ]
+      },
+      "id": "TEST_USGS_030"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 2.6,
+        "place": "51 km SW of Manley Hot Springs, Alaska",
+        "time": 1791410031000,
+        "updated": 1791416199226,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/TEST_USGS_031",
+        "detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/aka2026txdhrc.geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "automatic",
+        "tsunami": 0,
+        "sig": 104,
+        "net": "ak",
+        "code": "a2026txdhrc",
+        "ids": ",aka2026txdhrc,",
+        "sources": ",ak,",
+        "types": ",origin,phase-data,",
+        "nst": 25,
+        "dmin": 0.6,
+        "rms": 0.7,
+        "gap": 48,
+        "magType": "ml",
+        "type": "earthquake",
+        "title": "TEST synthetic earthquake 31"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -151.305,
+          64.636,
+          14.7
+        ]
+      },
+      "id": "TEST_USGS_031"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 2.6,
+        "place": "51 km SW of Manley Hot Springs, Alaska",
+        "time": 1791410032000,
+        "updated": 1791416199226,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/TEST_USGS_032",
+        "detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/aka2026txdhrc.geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "automatic",
+        "tsunami": 0,
+        "sig": 104,
+        "net": "ak",
+        "code": "a2026txdhrc",
+        "ids": ",aka2026txdhrc,",
+        "sources": ",ak,",
+        "types": ",origin,phase-data,",
+        "nst": 25,
+        "dmin": 0.6,
+        "rms": 0.7,
+        "gap": 48,
+        "magType": "ml",
+        "type": "earthquake",
+        "title": "TEST synthetic earthquake 32"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -151.305,
+          64.636,
+          14.7
+        ]
+      },
+      "id": "TEST_USGS_032"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 2.6,
+        "place": "51 km SW of Manley Hot Springs, Alaska",
+        "time": 1791410033000,
+        "updated": 1791416199226,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/TEST_USGS_033",
+        "detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/aka2026txdhrc.geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "automatic",
+        "tsunami": 0,
+        "sig": 104,
+        "net": "ak",
+        "code": "a2026txdhrc",
+        "ids": ",aka2026txdhrc,",
+        "sources": ",ak,",
+        "types": ",origin,phase-data,",
+        "nst": 25,
+        "dmin": 0.6,
+        "rms": 0.7,
+        "gap": 48,
+        "magType": "ml",
+        "type": "earthquake",
+        "title": "TEST synthetic earthquake 33"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -151.305,
+          64.636,
+          14.7
+        ]
+      },
+      "id": "TEST_USGS_033"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 2.6,
+        "place": "51 km SW of Manley Hot Springs, Alaska",
+        "time": 1791410034000,
+        "updated": 1791416199226,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/TEST_USGS_034",
+        "detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/aka2026txdhrc.geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "automatic",
+        "tsunami": 0,
+        "sig": 104,
+        "net": "ak",
+        "code": "a2026txdhrc",
+        "ids": ",aka2026txdhrc,",
+        "sources": ",ak,",
+        "types": ",origin,phase-data,",
+        "nst": 25,
+        "dmin": 0.6,
+        "rms": 0.7,
+        "gap": 48,
+        "magType": "ml",
+        "type": "earthquake",
+        "title": "TEST synthetic earthquake 34"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -151.305,
+          64.636,
+          14.7
+        ]
+      },
+      "id": "TEST_USGS_034"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 2.6,
+        "place": "51 km SW of Manley Hot Springs, Alaska",
+        "time": 1791410035000,
+        "updated": 1791416199226,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/TEST_USGS_035",
+        "detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/aka2026txdhrc.geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "automatic",
+        "tsunami": 0,
+        "sig": 104,
+        "net": "ak",
+        "code": "a2026txdhrc",
+        "ids": ",aka2026txdhrc,",
+        "sources": ",ak,",
+        "types": ",origin,phase-data,",
+        "nst": 25,
+        "dmin": 0.6,
+        "rms": 0.7,
+        "gap": 48,
+        "magType": "ml",
+        "type": "earthquake",
+        "title": "TEST synthetic earthquake 35"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -151.305,
+          64.636,
+          14.7
+        ]
+      },
+      "id": "TEST_USGS_035"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 2.6,
+        "place": "51 km SW of Manley Hot Springs, Alaska",
+        "time": 1791410036000,
+        "updated": 1791416199226,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/TEST_USGS_036",
+        "detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/aka2026txdhrc.geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "automatic",
+        "tsunami": 0,
+        "sig": 104,
+        "net": "ak",
+        "code": "a2026txdhrc",
+        "ids": ",aka2026txdhrc,",
+        "sources": ",ak,",
+        "types": ",origin,phase-data,",
+        "nst": 25,
+        "dmin": 0.6,
+        "rms": 0.7,
+        "gap": 48,
+        "magType": "ml",
+        "type": "earthquake",
+        "title": "TEST synthetic earthquake 36"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -151.305,
+          64.636,
+          14.7
+        ]
+      },
+      "id": "TEST_USGS_036"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 2.6,
+        "place": "51 km SW of Manley Hot Springs, Alaska",
+        "time": 1791410037000,
+        "updated": 1791416199226,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/TEST_USGS_037",
+        "detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/aka2026txdhrc.geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "automatic",
+        "tsunami": 0,
+        "sig": 104,
+        "net": "ak",
+        "code": "a2026txdhrc",
+        "ids": ",aka2026txdhrc,",
+        "sources": ",ak,",
+        "types": ",origin,phase-data,",
+        "nst": 25,
+        "dmin": 0.6,
+        "rms": 0.7,
+        "gap": 48,
+        "magType": "ml",
+        "type": "earthquake",
+        "title": "TEST synthetic earthquake 37"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -151.305,
+          64.636,
+          14.7
+        ]
+      },
+      "id": "TEST_USGS_037"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 2.6,
+        "place": "51 km SW of Manley Hot Springs, Alaska",
+        "time": 1791410038000,
+        "updated": 1791416199226,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/TEST_USGS_038",
+        "detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/aka2026txdhrc.geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "automatic",
+        "tsunami": 0,
+        "sig": 104,
+        "net": "ak",
+        "code": "a2026txdhrc",
+        "ids": ",aka2026txdhrc,",
+        "sources": ",ak,",
+        "types": ",origin,phase-data,",
+        "nst": 25,
+        "dmin": 0.6,
+        "rms": 0.7,
+        "gap": 48,
+        "magType": "ml",
+        "type": "earthquake",
+        "title": "TEST synthetic earthquake 38"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -151.305,
+          64.636,
+          14.7
+        ]
+      },
+      "id": "TEST_USGS_038"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 2.6,
+        "place": "51 km SW of Manley Hot Springs, Alaska",
+        "time": 1791410039000,
+        "updated": 1791416199226,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/TEST_USGS_039",
+        "detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/aka2026txdhrc.geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "automatic",
+        "tsunami": 0,
+        "sig": 104,
+        "net": "ak",
+        "code": "a2026txdhrc",
+        "ids": ",aka2026txdhrc,",
+        "sources": ",ak,",
+        "types": ",origin,phase-data,",
+        "nst": 25,
+        "dmin": 0.6,
+        "rms": 0.7,
+        "gap": 48,
+        "magType": "ml",
+        "type": "earthquake",
+        "title": "TEST synthetic earthquake 39"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -151.305,
+          64.636,
+          14.7
+        ]
+      },
+      "id": "TEST_USGS_039"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 2.6,
+        "place": "51 km SW of Manley Hot Springs, Alaska",
+        "time": 1791410040000,
+        "updated": 1791416199226,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/TEST_USGS_040",
+        "detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/aka2026txdhrc.geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "automatic",
+        "tsunami": 0,
+        "sig": 104,
+        "net": "ak",
+        "code": "a2026txdhrc",
+        "ids": ",aka2026txdhrc,",
+        "sources": ",ak,",
+        "types": ",origin,phase-data,",
+        "nst": 25,
+        "dmin": 0.6,
+        "rms": 0.7,
+        "gap": 48,
+        "magType": "ml",
+        "type": "earthquake",
+        "title": "TEST synthetic earthquake 40"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -151.305,
+          64.636,
+          14.7
+        ]
+      },
+      "id": "TEST_USGS_040"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 2.6,
+        "place": "51 km SW of Manley Hot Springs, Alaska",
+        "time": 1791410041000,
+        "updated": 1791416199226,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/TEST_USGS_041",
+        "detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/aka2026txdhrc.geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "automatic",
+        "tsunami": 0,
+        "sig": 104,
+        "net": "ak",
+        "code": "a2026txdhrc",
+        "ids": ",aka2026txdhrc,",
+        "sources": ",ak,",
+        "types": ",origin,phase-data,",
+        "nst": 25,
+        "dmin": 0.6,
+        "rms": 0.7,
+        "gap": 48,
+        "magType": "ml",
+        "type": "earthquake",
+        "title": "TEST synthetic earthquake 41"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -151.305,
+          64.636,
+          14.7
+        ]
+      },
+      "id": "TEST_USGS_041"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 2.6,
+        "place": "51 km SW of Manley Hot Springs, Alaska",
+        "time": 1791410042000,
+        "updated": 1791416199226,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/TEST_USGS_042",
+        "detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/aka2026txdhrc.geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "automatic",
+        "tsunami": 0,
+        "sig": 104,
+        "net": "ak",
+        "code": "a2026txdhrc",
+        "ids": ",aka2026txdhrc,",
+        "sources": ",ak,",
+        "types": ",origin,phase-data,",
+        "nst": 25,
+        "dmin": 0.6,
+        "rms": 0.7,
+        "gap": 48,
+        "magType": "ml",
+        "type": "earthquake",
+        "title": "TEST synthetic earthquake 42"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -151.305,
+          64.636,
+          14.7
+        ]
+      },
+      "id": "TEST_USGS_042"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 2.6,
+        "place": "51 km SW of Manley Hot Springs, Alaska",
+        "time": 1791410043000,
+        "updated": 1791416199226,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/TEST_USGS_043",
+        "detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/aka2026txdhrc.geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "automatic",
+        "tsunami": 0,
+        "sig": 104,
+        "net": "ak",
+        "code": "a2026txdhrc",
+        "ids": ",aka2026txdhrc,",
+        "sources": ",ak,",
+        "types": ",origin,phase-data,",
+        "nst": 25,
+        "dmin": 0.6,
+        "rms": 0.7,
+        "gap": 48,
+        "magType": "ml",
+        "type": "earthquake",
+        "title": "TEST synthetic earthquake 43"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -151.305,
+          64.636,
+          14.7
+        ]
+      },
+      "id": "TEST_USGS_043"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 2.6,
+        "place": "51 km SW of Manley Hot Springs, Alaska",
+        "time": 1791410044000,
+        "updated": 1791416199226,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/TEST_USGS_044",
+        "detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/aka2026txdhrc.geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "automatic",
+        "tsunami": 0,
+        "sig": 104,
+        "net": "ak",
+        "code": "a2026txdhrc",
+        "ids": ",aka2026txdhrc,",
+        "sources": ",ak,",
+        "types": ",origin,phase-data,",
+        "nst": 25,
+        "dmin": 0.6,
+        "rms": 0.7,
+        "gap": 48,
+        "magType": "ml",
+        "type": "earthquake",
+        "title": "TEST synthetic earthquake 44"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -151.305,
+          64.636,
+          14.7
+        ]
+      },
+      "id": "TEST_USGS_044"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 2.6,
+        "place": "51 km SW of Manley Hot Springs, Alaska",
+        "time": 1791410045000,
+        "updated": 1791416199226,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/TEST_USGS_045",
+        "detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/aka2026txdhrc.geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "automatic",
+        "tsunami": 0,
+        "sig": 104,
+        "net": "ak",
+        "code": "a2026txdhrc",
+        "ids": ",aka2026txdhrc,",
+        "sources": ",ak,",
+        "types": ",origin,phase-data,",
+        "nst": 25,
+        "dmin": 0.6,
+        "rms": 0.7,
+        "gap": 48,
+        "magType": "ml",
+        "type": "earthquake",
+        "title": "TEST synthetic earthquake 45"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -151.305,
+          64.636,
+          14.7
+        ]
+      },
+      "id": "TEST_USGS_045"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 2.6,
+        "place": "51 km SW of Manley Hot Springs, Alaska",
+        "time": 1791410046000,
+        "updated": 1791416199226,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/TEST_USGS_046",
+        "detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/aka2026txdhrc.geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "automatic",
+        "tsunami": 0,
+        "sig": 104,
+        "net": "ak",
+        "code": "a2026txdhrc",
+        "ids": ",aka2026txdhrc,",
+        "sources": ",ak,",
+        "types": ",origin,phase-data,",
+        "nst": 25,
+        "dmin": 0.6,
+        "rms": 0.7,
+        "gap": 48,
+        "magType": "ml",
+        "type": "earthquake",
+        "title": "TEST synthetic earthquake 46"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -151.305,
+          64.636,
+          14.7
+        ]
+      },
+      "id": "TEST_USGS_046"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 2.6,
+        "place": "51 km SW of Manley Hot Springs, Alaska",
+        "time": 1791410047000,
+        "updated": 1791416199226,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/TEST_USGS_047",
+        "detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/aka2026txdhrc.geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "automatic",
+        "tsunami": 0,
+        "sig": 104,
+        "net": "ak",
+        "code": "a2026txdhrc",
+        "ids": ",aka2026txdhrc,",
+        "sources": ",ak,",
+        "types": ",origin,phase-data,",
+        "nst": 25,
+        "dmin": 0.6,
+        "rms": 0.7,
+        "gap": 48,
+        "magType": "ml",
+        "type": "earthquake",
+        "title": "TEST synthetic earthquake 47"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -151.305,
+          64.636,
+          14.7
+        ]
+      },
+      "id": "TEST_USGS_047"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 2.6,
+        "place": "51 km SW of Manley Hot Springs, Alaska",
+        "time": 1791410048000,
+        "updated": 1791416199226,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/TEST_USGS_048",
+        "detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/aka2026txdhrc.geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "automatic",
+        "tsunami": 0,
+        "sig": 104,
+        "net": "ak",
+        "code": "a2026txdhrc",
+        "ids": ",aka2026txdhrc,",
+        "sources": ",ak,",
+        "types": ",origin,phase-data,",
+        "nst": 25,
+        "dmin": 0.6,
+        "rms": 0.7,
+        "gap": 48,
+        "magType": "ml",
+        "type": "earthquake",
+        "title": "TEST synthetic earthquake 48"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -151.305,
+          64.636,
+          14.7
+        ]
+      },
+      "id": "TEST_USGS_048"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 2.6,
+        "place": "51 km SW of Manley Hot Springs, Alaska",
+        "time": 1791410049000,
+        "updated": 1791416199226,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/TEST_USGS_049",
+        "detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/aka2026txdhrc.geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "automatic",
+        "tsunami": 0,
+        "sig": 104,
+        "net": "ak",
+        "code": "a2026txdhrc",
+        "ids": ",aka2026txdhrc,",
+        "sources": ",ak,",
+        "types": ",origin,phase-data,",
+        "nst": 25,
+        "dmin": 0.6,
+        "rms": 0.7,
+        "gap": 48,
+        "magType": "ml",
+        "type": "earthquake",
+        "title": "TEST synthetic earthquake 49"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -151.305,
+          64.636,
+          14.7
+        ]
+      },
+      "id": "TEST_USGS_049"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 2.6,
+        "place": "51 km SW of Manley Hot Springs, Alaska",
+        "time": 1791410050000,
+        "updated": 1791416199226,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/TEST_USGS_050",
+        "detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/aka2026txdhrc.geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "automatic",
+        "tsunami": 0,
+        "sig": 104,
+        "net": "ak",
+        "code": "a2026txdhrc",
+        "ids": ",aka2026txdhrc,",
+        "sources": ",ak,",
+        "types": ",origin,phase-data,",
+        "nst": 25,
+        "dmin": 0.6,
+        "rms": 0.7,
+        "gap": 48,
+        "magType": "ml",
+        "type": "earthquake",
+        "title": "TEST synthetic earthquake 50"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -151.305,
+          64.636,
+          14.7
+        ]
+      },
+      "id": "TEST_USGS_050"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 2.6,
+        "place": "51 km SW of Manley Hot Springs, Alaska",
+        "time": 1791410051000,
+        "updated": 1791416199226,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/TEST_USGS_051",
+        "detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/aka2026txdhrc.geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "automatic",
+        "tsunami": 0,
+        "sig": 104,
+        "net": "ak",
+        "code": "a2026txdhrc",
+        "ids": ",aka2026txdhrc,",
+        "sources": ",ak,",
+        "types": ",origin,phase-data,",
+        "nst": 25,
+        "dmin": 0.6,
+        "rms": 0.7,
+        "gap": 48,
+        "magType": "ml",
+        "type": "earthquake",
+        "title": "TEST synthetic earthquake 51"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -151.305,
+          64.636,
+          14.7
+        ]
+      },
+      "id": "TEST_USGS_051"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 2.6,
+        "place": "51 km SW of Manley Hot Springs, Alaska",
+        "time": 1791410052000,
+        "updated": 1791416199226,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/TEST_USGS_052",
+        "detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/aka2026txdhrc.geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "automatic",
+        "tsunami": 0,
+        "sig": 104,
+        "net": "ak",
+        "code": "a2026txdhrc",
+        "ids": ",aka2026txdhrc,",
+        "sources": ",ak,",
+        "types": ",origin,phase-data,",
+        "nst": 25,
+        "dmin": 0.6,
+        "rms": 0.7,
+        "gap": 48,
+        "magType": "ml",
+        "type": "earthquake",
+        "title": "TEST synthetic earthquake 52"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -151.305,
+          64.636,
+          14.7
+        ]
+      },
+      "id": "TEST_USGS_052"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 2.6,
+        "place": "51 km SW of Manley Hot Springs, Alaska",
+        "time": 1791410053000,
+        "updated": 1791416199226,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/TEST_USGS_053",
+        "detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/aka2026txdhrc.geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "automatic",
+        "tsunami": 0,
+        "sig": 104,
+        "net": "ak",
+        "code": "a2026txdhrc",
+        "ids": ",aka2026txdhrc,",
+        "sources": ",ak,",
+        "types": ",origin,phase-data,",
+        "nst": 25,
+        "dmin": 0.6,
+        "rms": 0.7,
+        "gap": 48,
+        "magType": "ml",
+        "type": "earthquake",
+        "title": "TEST synthetic earthquake 53"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -151.305,
+          64.636,
+          14.7
+        ]
+      },
+      "id": "TEST_USGS_053"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 2.6,
+        "place": "51 km SW of Manley Hot Springs, Alaska",
+        "time": 1791410054000,
+        "updated": 1791416199226,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/TEST_USGS_054",
+        "detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/aka2026txdhrc.geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "automatic",
+        "tsunami": 0,
+        "sig": 104,
+        "net": "ak",
+        "code": "a2026txdhrc",
+        "ids": ",aka2026txdhrc,",
+        "sources": ",ak,",
+        "types": ",origin,phase-data,",
+        "nst": 25,
+        "dmin": 0.6,
+        "rms": 0.7,
+        "gap": 48,
+        "magType": "ml",
+        "type": "earthquake",
+        "title": "TEST synthetic earthquake 54"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -151.305,
+          64.636,
+          14.7
+        ]
+      },
+      "id": "TEST_USGS_054"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 2.6,
+        "place": "51 km SW of Manley Hot Springs, Alaska",
+        "time": 1791410055000,
+        "updated": 1791416199226,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/TEST_USGS_055",
+        "detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/aka2026txdhrc.geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "automatic",
+        "tsunami": 0,
+        "sig": 104,
+        "net": "ak",
+        "code": "a2026txdhrc",
+        "ids": ",aka2026txdhrc,",
+        "sources": ",ak,",
+        "types": ",origin,phase-data,",
+        "nst": 25,
+        "dmin": 0.6,
+        "rms": 0.7,
+        "gap": 48,
+        "magType": "ml",
+        "type": "earthquake",
+        "title": "TEST synthetic earthquake 55"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -151.305,
+          64.636,
+          14.7
+        ]
+      },
+      "id": "TEST_USGS_055"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 2.6,
+        "place": "51 km SW of Manley Hot Springs, Alaska",
+        "time": 1791410056000,
+        "updated": 1791416199226,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/TEST_USGS_056",
+        "detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/aka2026txdhrc.geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "automatic",
+        "tsunami": 0,
+        "sig": 104,
+        "net": "ak",
+        "code": "a2026txdhrc",
+        "ids": ",aka2026txdhrc,",
+        "sources": ",ak,",
+        "types": ",origin,phase-data,",
+        "nst": 25,
+        "dmin": 0.6,
+        "rms": 0.7,
+        "gap": 48,
+        "magType": "ml",
+        "type": "earthquake",
+        "title": "TEST synthetic earthquake 56"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -151.305,
+          64.636,
+          14.7
+        ]
+      },
+      "id": "TEST_USGS_056"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 2.6,
+        "place": "51 km SW of Manley Hot Springs, Alaska",
+        "time": 1791410057000,
+        "updated": 1791416199226,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/TEST_USGS_057",
+        "detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/aka2026txdhrc.geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "automatic",
+        "tsunami": 0,
+        "sig": 104,
+        "net": "ak",
+        "code": "a2026txdhrc",
+        "ids": ",aka2026txdhrc,",
+        "sources": ",ak,",
+        "types": ",origin,phase-data,",
+        "nst": 25,
+        "dmin": 0.6,
+        "rms": 0.7,
+        "gap": 48,
+        "magType": "ml",
+        "type": "earthquake",
+        "title": "TEST synthetic earthquake 57"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -151.305,
+          64.636,
+          14.7
+        ]
+      },
+      "id": "TEST_USGS_057"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 2.6,
+        "place": "51 km SW of Manley Hot Springs, Alaska",
+        "time": 1791410058000,
+        "updated": 1791416199226,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/TEST_USGS_058",
+        "detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/aka2026txdhrc.geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "automatic",
+        "tsunami": 0,
+        "sig": 104,
+        "net": "ak",
+        "code": "a2026txdhrc",
+        "ids": ",aka2026txdhrc,",
+        "sources": ",ak,",
+        "types": ",origin,phase-data,",
+        "nst": 25,
+        "dmin": 0.6,
+        "rms": 0.7,
+        "gap": 48,
+        "magType": "ml",
+        "type": "earthquake",
+        "title": "TEST synthetic earthquake 58"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -151.305,
+          64.636,
+          14.7
+        ]
+      },
+      "id": "TEST_USGS_058"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 2.6,
+        "place": "51 km SW of Manley Hot Springs, Alaska",
+        "time": 1791410059000,
+        "updated": 1791416199226,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/TEST_USGS_059",
+        "detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/aka2026txdhrc.geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "automatic",
+        "tsunami": 0,
+        "sig": 104,
+        "net": "ak",
+        "code": "a2026txdhrc",
+        "ids": ",aka2026txdhrc,",
+        "sources": ",ak,",
+        "types": ",origin,phase-data,",
+        "nst": 25,
+        "dmin": 0.6,
+        "rms": 0.7,
+        "gap": 48,
+        "magType": "ml",
+        "type": "earthquake",
+        "title": "TEST synthetic earthquake 59"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -151.305,
+          64.636,
+          14.7
+        ]
+      },
+      "id": "TEST_USGS_059"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 2.6,
+        "place": "51 km SW of Manley Hot Springs, Alaska",
+        "time": 1791410060000,
+        "updated": 1791416199226,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/TEST_USGS_060",
+        "detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/aka2026txdhrc.geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "automatic",
+        "tsunami": 0,
+        "sig": 104,
+        "net": "ak",
+        "code": "a2026txdhrc",
+        "ids": ",aka2026txdhrc,",
+        "sources": ",ak,",
+        "types": ",origin,phase-data,",
+        "nst": 25,
+        "dmin": 0.6,
+        "rms": 0.7,
+        "gap": 48,
+        "magType": "ml",
+        "type": "earthquake",
+        "title": "TEST synthetic earthquake 60"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -151.305,
+          64.636,
+          14.7
+        ]
+      },
+      "id": "TEST_USGS_060"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 2.6,
+        "place": "51 km SW of Manley Hot Springs, Alaska",
+        "time": 1791410061000,
+        "updated": 1791416199226,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/TEST_USGS_061",
+        "detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/aka2026txdhrc.geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "automatic",
+        "tsunami": 0,
+        "sig": 104,
+        "net": "ak",
+        "code": "a2026txdhrc",
+        "ids": ",aka2026txdhrc,",
+        "sources": ",ak,",
+        "types": ",origin,phase-data,",
+        "nst": 25,
+        "dmin": 0.6,
+        "rms": 0.7,
+        "gap": 48,
+        "magType": "ml",
+        "type": "earthquake",
+        "title": "TEST synthetic earthquake 61"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -151.305,
+          64.636,
+          14.7
+        ]
+      },
+      "id": "TEST_USGS_061"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 2.6,
+        "place": "51 km SW of Manley Hot Springs, Alaska",
+        "time": 1791410062000,
+        "updated": 1791416199226,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/TEST_USGS_062",
+        "detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/aka2026txdhrc.geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "automatic",
+        "tsunami": 0,
+        "sig": 104,
+        "net": "ak",
+        "code": "a2026txdhrc",
+        "ids": ",aka2026txdhrc,",
+        "sources": ",ak,",
+        "types": ",origin,phase-data,",
+        "nst": 25,
+        "dmin": 0.6,
+        "rms": 0.7,
+        "gap": 48,
+        "magType": "ml",
+        "type": "earthquake",
+        "title": "TEST synthetic earthquake 62"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -151.305,
+          64.636,
+          14.7
+        ]
+      },
+      "id": "TEST_USGS_062"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 2.6,
+        "place": "51 km SW of Manley Hot Springs, Alaska",
+        "time": 1791410063000,
+        "updated": 1791416199226,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/TEST_USGS_063",
+        "detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/aka2026txdhrc.geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "automatic",
+        "tsunami": 0,
+        "sig": 104,
+        "net": "ak",
+        "code": "a2026txdhrc",
+        "ids": ",aka2026txdhrc,",
+        "sources": ",ak,",
+        "types": ",origin,phase-data,",
+        "nst": 25,
+        "dmin": 0.6,
+        "rms": 0.7,
+        "gap": 48,
+        "magType": "ml",
+        "type": "earthquake",
+        "title": "TEST synthetic earthquake 63"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -151.305,
+          64.636,
+          14.7
+        ]
+      },
+      "id": "TEST_USGS_063"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 2.6,
+        "place": "51 km SW of Manley Hot Springs, Alaska",
+        "time": 1791410064000,
+        "updated": 1791416199226,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/TEST_USGS_064",
+        "detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/aka2026txdhrc.geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "automatic",
+        "tsunami": 0,
+        "sig": 104,
+        "net": "ak",
+        "code": "a2026txdhrc",
+        "ids": ",aka2026txdhrc,",
+        "sources": ",ak,",
+        "types": ",origin,phase-data,",
+        "nst": 25,
+        "dmin": 0.6,
+        "rms": 0.7,
+        "gap": 48,
+        "magType": "ml",
+        "type": "earthquake",
+        "title": "TEST synthetic earthquake 64"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -151.305,
+          64.636,
+          14.7
+        ]
+      },
+      "id": "TEST_USGS_064"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 2.6,
+        "place": "51 km SW of Manley Hot Springs, Alaska",
+        "time": 1791410065000,
+        "updated": 1791416199226,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/TEST_USGS_065",
+        "detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/aka2026txdhrc.geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "automatic",
+        "tsunami": 0,
+        "sig": 104,
+        "net": "ak",
+        "code": "a2026txdhrc",
+        "ids": ",aka2026txdhrc,",
+        "sources": ",ak,",
+        "types": ",origin,phase-data,",
+        "nst": 25,
+        "dmin": 0.6,
+        "rms": 0.7,
+        "gap": 48,
+        "magType": "ml",
+        "type": "earthquake",
+        "title": "TEST synthetic earthquake 65"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -151.305,
+          64.636,
+          14.7
+        ]
+      },
+      "id": "TEST_USGS_065"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 2.6,
+        "place": "51 km SW of Manley Hot Springs, Alaska",
+        "time": 1791410066000,
+        "updated": 1791416199226,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/TEST_USGS_066",
+        "detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/aka2026txdhrc.geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "automatic",
+        "tsunami": 0,
+        "sig": 104,
+        "net": "ak",
+        "code": "a2026txdhrc",
+        "ids": ",aka2026txdhrc,",
+        "sources": ",ak,",
+        "types": ",origin,phase-data,",
+        "nst": 25,
+        "dmin": 0.6,
+        "rms": 0.7,
+        "gap": 48,
+        "magType": "ml",
+        "type": "earthquake",
+        "title": "TEST synthetic earthquake 66"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -151.305,
+          64.636,
+          14.7
+        ]
+      },
+      "id": "TEST_USGS_066"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 2.6,
+        "place": "51 km SW of Manley Hot Springs, Alaska",
+        "time": 1791410067000,
+        "updated": 1791416199226,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/TEST_USGS_067",
+        "detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/aka2026txdhrc.geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "automatic",
+        "tsunami": 0,
+        "sig": 104,
+        "net": "ak",
+        "code": "a2026txdhrc",
+        "ids": ",aka2026txdhrc,",
+        "sources": ",ak,",
+        "types": ",origin,phase-data,",
+        "nst": 25,
+        "dmin": 0.6,
+        "rms": 0.7,
+        "gap": 48,
+        "magType": "ml",
+        "type": "earthquake",
+        "title": "TEST synthetic earthquake 67"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -151.305,
+          64.636,
+          14.7
+        ]
+      },
+      "id": "TEST_USGS_067"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 2.6,
+        "place": "51 km SW of Manley Hot Springs, Alaska",
+        "time": 1791410068000,
+        "updated": 1791416199226,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/TEST_USGS_068",
+        "detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/aka2026txdhrc.geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "automatic",
+        "tsunami": 0,
+        "sig": 104,
+        "net": "ak",
+        "code": "a2026txdhrc",
+        "ids": ",aka2026txdhrc,",
+        "sources": ",ak,",
+        "types": ",origin,phase-data,",
+        "nst": 25,
+        "dmin": 0.6,
+        "rms": 0.7,
+        "gap": 48,
+        "magType": "ml",
+        "type": "earthquake",
+        "title": "TEST synthetic earthquake 68"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -151.305,
+          64.636,
+          14.7
+        ]
+      },
+      "id": "TEST_USGS_068"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 2.6,
+        "place": "51 km SW of Manley Hot Springs, Alaska",
+        "time": 1791410069000,
+        "updated": 1791416199226,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/TEST_USGS_069",
+        "detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/aka2026txdhrc.geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "automatic",
+        "tsunami": 0,
+        "sig": 104,
+        "net": "ak",
+        "code": "a2026txdhrc",
+        "ids": ",aka2026txdhrc,",
+        "sources": ",ak,",
+        "types": ",origin,phase-data,",
+        "nst": 25,
+        "dmin": 0.6,
+        "rms": 0.7,
+        "gap": 48,
+        "magType": "ml",
+        "type": "earthquake",
+        "title": "TEST synthetic earthquake 69"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -151.305,
+          64.636,
+          14.7
+        ]
+      },
+      "id": "TEST_USGS_069"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 2.6,
+        "place": "51 km SW of Manley Hot Springs, Alaska",
+        "time": 1791410070000,
+        "updated": 1791416199226,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/TEST_USGS_070",
+        "detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/aka2026txdhrc.geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "automatic",
+        "tsunami": 0,
+        "sig": 104,
+        "net": "ak",
+        "code": "a2026txdhrc",
+        "ids": ",aka2026txdhrc,",
+        "sources": ",ak,",
+        "types": ",origin,phase-data,",
+        "nst": 25,
+        "dmin": 0.6,
+        "rms": 0.7,
+        "gap": 48,
+        "magType": "ml",
+        "type": "earthquake",
+        "title": "TEST synthetic earthquake 70"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -151.305,
+          64.636,
+          14.7
+        ]
+      },
+      "id": "TEST_USGS_070"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 2.6,
+        "place": "51 km SW of Manley Hot Springs, Alaska",
+        "time": 1791410071000,
+        "updated": 1791416199226,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/TEST_USGS_071",
+        "detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/aka2026txdhrc.geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "automatic",
+        "tsunami": 0,
+        "sig": 104,
+        "net": "ak",
+        "code": "a2026txdhrc",
+        "ids": ",aka2026txdhrc,",
+        "sources": ",ak,",
+        "types": ",origin,phase-data,",
+        "nst": 25,
+        "dmin": 0.6,
+        "rms": 0.7,
+        "gap": 48,
+        "magType": "ml",
+        "type": "earthquake",
+        "title": "TEST synthetic earthquake 71"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -151.305,
+          64.636,
+          14.7
+        ]
+      },
+      "id": "TEST_USGS_071"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 2.6,
+        "place": "51 km SW of Manley Hot Springs, Alaska",
+        "time": 1791410072000,
+        "updated": 1791416199226,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/TEST_USGS_072",
+        "detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/aka2026txdhrc.geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "automatic",
+        "tsunami": 0,
+        "sig": 104,
+        "net": "ak",
+        "code": "a2026txdhrc",
+        "ids": ",aka2026txdhrc,",
+        "sources": ",ak,",
+        "types": ",origin,phase-data,",
+        "nst": 25,
+        "dmin": 0.6,
+        "rms": 0.7,
+        "gap": 48,
+        "magType": "ml",
+        "type": "earthquake",
+        "title": "TEST synthetic earthquake 72"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -151.305,
+          64.636,
+          14.7
+        ]
+      },
+      "id": "TEST_USGS_072"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 2.6,
+        "place": "51 km SW of Manley Hot Springs, Alaska",
+        "time": 1791410073000,
+        "updated": 1791416199226,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/TEST_USGS_073",
+        "detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/aka2026txdhrc.geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "automatic",
+        "tsunami": 0,
+        "sig": 104,
+        "net": "ak",
+        "code": "a2026txdhrc",
+        "ids": ",aka2026txdhrc,",
+        "sources": ",ak,",
+        "types": ",origin,phase-data,",
+        "nst": 25,
+        "dmin": 0.6,
+        "rms": 0.7,
+        "gap": 48,
+        "magType": "ml",
+        "type": "earthquake",
+        "title": "TEST synthetic earthquake 73"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -151.305,
+          64.636,
+          14.7
+        ]
+      },
+      "id": "TEST_USGS_073"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 2.6,
+        "place": "51 km SW of Manley Hot Springs, Alaska",
+        "time": 1791410074000,
+        "updated": 1791416199226,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/TEST_USGS_074",
+        "detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/aka2026txdhrc.geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "automatic",
+        "tsunami": 0,
+        "sig": 104,
+        "net": "ak",
+        "code": "a2026txdhrc",
+        "ids": ",aka2026txdhrc,",
+        "sources": ",ak,",
+        "types": ",origin,phase-data,",
+        "nst": 25,
+        "dmin": 0.6,
+        "rms": 0.7,
+        "gap": 48,
+        "magType": "ml",
+        "type": "earthquake",
+        "title": "TEST synthetic earthquake 74"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -151.305,
+          64.636,
+          14.7
+        ]
+      },
+      "id": "TEST_USGS_074"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 2.6,
+        "place": "51 km SW of Manley Hot Springs, Alaska",
+        "time": 1791410075000,
+        "updated": 1791416199226,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/TEST_USGS_075",
+        "detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/aka2026txdhrc.geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "automatic",
+        "tsunami": 0,
+        "sig": 104,
+        "net": "ak",
+        "code": "a2026txdhrc",
+        "ids": ",aka2026txdhrc,",
+        "sources": ",ak,",
+        "types": ",origin,phase-data,",
+        "nst": 25,
+        "dmin": 0.6,
+        "rms": 0.7,
+        "gap": 48,
+        "magType": "ml",
+        "type": "earthquake",
+        "title": "TEST synthetic earthquake 75"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -151.305,
+          64.636,
+          14.7
+        ]
+      },
+      "id": "TEST_USGS_075"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 2.6,
+        "place": "51 km SW of Manley Hot Springs, Alaska",
+        "time": 1791410076000,
+        "updated": 1791416199226,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/TEST_USGS_076",
+        "detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/aka2026txdhrc.geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "automatic",
+        "tsunami": 0,
+        "sig": 104,
+        "net": "ak",
+        "code": "a2026txdhrc",
+        "ids": ",aka2026txdhrc,",
+        "sources": ",ak,",
+        "types": ",origin,phase-data,",
+        "nst": 25,
+        "dmin": 0.6,
+        "rms": 0.7,
+        "gap": 48,
+        "magType": "ml",
+        "type": "earthquake",
+        "title": "TEST synthetic earthquake 76"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -151.305,
+          64.636,
+          14.7
+        ]
+      },
+      "id": "TEST_USGS_076"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 2.6,
+        "place": "51 km SW of Manley Hot Springs, Alaska",
+        "time": 1791410077000,
+        "updated": 1791416199226,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/TEST_USGS_077",
+        "detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/aka2026txdhrc.geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "automatic",
+        "tsunami": 0,
+        "sig": 104,
+        "net": "ak",
+        "code": "a2026txdhrc",
+        "ids": ",aka2026txdhrc,",
+        "sources": ",ak,",
+        "types": ",origin,phase-data,",
+        "nst": 25,
+        "dmin": 0.6,
+        "rms": 0.7,
+        "gap": 48,
+        "magType": "ml",
+        "type": "earthquake",
+        "title": "TEST synthetic earthquake 77"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -151.305,
+          64.636,
+          14.7
+        ]
+      },
+      "id": "TEST_USGS_077"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 2.6,
+        "place": "51 km SW of Manley Hot Springs, Alaska",
+        "time": 1791410078000,
+        "updated": 1791416199226,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/TEST_USGS_078",
+        "detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/aka2026txdhrc.geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "automatic",
+        "tsunami": 0,
+        "sig": 104,
+        "net": "ak",
+        "code": "a2026txdhrc",
+        "ids": ",aka2026txdhrc,",
+        "sources": ",ak,",
+        "types": ",origin,phase-data,",
+        "nst": 25,
+        "dmin": 0.6,
+        "rms": 0.7,
+        "gap": 48,
+        "magType": "ml",
+        "type": "earthquake",
+        "title": "TEST synthetic earthquake 78"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -151.305,
+          64.636,
+          14.7
+        ]
+      },
+      "id": "TEST_USGS_078"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 2.6,
+        "place": "51 km SW of Manley Hot Springs, Alaska",
+        "time": 1791410079000,
+        "updated": 1791416199226,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/TEST_USGS_079",
+        "detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/aka2026txdhrc.geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "automatic",
+        "tsunami": 0,
+        "sig": 104,
+        "net": "ak",
+        "code": "a2026txdhrc",
+        "ids": ",aka2026txdhrc,",
+        "sources": ",ak,",
+        "types": ",origin,phase-data,",
+        "nst": 25,
+        "dmin": 0.6,
+        "rms": 0.7,
+        "gap": 48,
+        "magType": "ml",
+        "type": "earthquake",
+        "title": "TEST synthetic earthquake 79"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -151.305,
+          64.636,
+          14.7
+        ]
+      },
+      "id": "TEST_USGS_079"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 2.6,
+        "place": "51 km SW of Manley Hot Springs, Alaska",
+        "time": 1791410080000,
+        "updated": 1791416199226,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/TEST_USGS_080",
+        "detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/aka2026txdhrc.geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "automatic",
+        "tsunami": 0,
+        "sig": 104,
+        "net": "ak",
+        "code": "a2026txdhrc",
+        "ids": ",aka2026txdhrc,",
+        "sources": ",ak,",
+        "types": ",origin,phase-data,",
+        "nst": 25,
+        "dmin": 0.6,
+        "rms": 0.7,
+        "gap": 48,
+        "magType": "ml",
+        "type": "earthquake",
+        "title": "TEST synthetic earthquake 80"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -151.305,
+          64.636,
+          14.7
+        ]
+      },
+      "id": "TEST_USGS_080"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 2.6,
+        "place": "51 km SW of Manley Hot Springs, Alaska",
+        "time": 1791410081000,
+        "updated": 1791416199226,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/TEST_USGS_081",
+        "detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/aka2026txdhrc.geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "automatic",
+        "tsunami": 0,
+        "sig": 104,
+        "net": "ak",
+        "code": "a2026txdhrc",
+        "ids": ",aka2026txdhrc,",
+        "sources": ",ak,",
+        "types": ",origin,phase-data,",
+        "nst": 25,
+        "dmin": 0.6,
+        "rms": 0.7,
+        "gap": 48,
+        "magType": "ml",
+        "type": "earthquake",
+        "title": "TEST synthetic earthquake 81"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -151.305,
+          64.636,
+          14.7
+        ]
+      },
+      "id": "TEST_USGS_081"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 2.6,
+        "place": "51 km SW of Manley Hot Springs, Alaska",
+        "time": 1791410082000,
+        "updated": 1791416199226,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/TEST_USGS_082",
+        "detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/aka2026txdhrc.geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "automatic",
+        "tsunami": 0,
+        "sig": 104,
+        "net": "ak",
+        "code": "a2026txdhrc",
+        "ids": ",aka2026txdhrc,",
+        "sources": ",ak,",
+        "types": ",origin,phase-data,",
+        "nst": 25,
+        "dmin": 0.6,
+        "rms": 0.7,
+        "gap": 48,
+        "magType": "ml",
+        "type": "earthquake",
+        "title": "TEST synthetic earthquake 82"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -151.305,
+          64.636,
+          14.7
+        ]
+      },
+      "id": "TEST_USGS_082"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 2.6,
+        "place": "51 km SW of Manley Hot Springs, Alaska",
+        "time": 1791410083000,
+        "updated": 1791416199226,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/TEST_USGS_083",
+        "detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/aka2026txdhrc.geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "automatic",
+        "tsunami": 0,
+        "sig": 104,
+        "net": "ak",
+        "code": "a2026txdhrc",
+        "ids": ",aka2026txdhrc,",
+        "sources": ",ak,",
+        "types": ",origin,phase-data,",
+        "nst": 25,
+        "dmin": 0.6,
+        "rms": 0.7,
+        "gap": 48,
+        "magType": "ml",
+        "type": "earthquake",
+        "title": "TEST synthetic earthquake 83"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -151.305,
+          64.636,
+          14.7
+        ]
+      },
+      "id": "TEST_USGS_083"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 2.6,
+        "place": "51 km SW of Manley Hot Springs, Alaska",
+        "time": 1791410084000,
+        "updated": 1791416199226,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/TEST_USGS_084",
+        "detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/aka2026txdhrc.geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "automatic",
+        "tsunami": 0,
+        "sig": 104,
+        "net": "ak",
+        "code": "a2026txdhrc",
+        "ids": ",aka2026txdhrc,",
+        "sources": ",ak,",
+        "types": ",origin,phase-data,",
+        "nst": 25,
+        "dmin": 0.6,
+        "rms": 0.7,
+        "gap": 48,
+        "magType": "ml",
+        "type": "earthquake",
+        "title": "TEST synthetic earthquake 84"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -151.305,
+          64.636,
+          14.7
+        ]
+      },
+      "id": "TEST_USGS_084"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 2.6,
+        "place": "51 km SW of Manley Hot Springs, Alaska",
+        "time": 1791410085000,
+        "updated": 1791416199226,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/TEST_USGS_085",
+        "detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/aka2026txdhrc.geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "automatic",
+        "tsunami": 0,
+        "sig": 104,
+        "net": "ak",
+        "code": "a2026txdhrc",
+        "ids": ",aka2026txdhrc,",
+        "sources": ",ak,",
+        "types": ",origin,phase-data,",
+        "nst": 25,
+        "dmin": 0.6,
+        "rms": 0.7,
+        "gap": 48,
+        "magType": "ml",
+        "type": "earthquake",
+        "title": "TEST synthetic earthquake 85"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -151.305,
+          64.636,
+          14.7
+        ]
+      },
+      "id": "TEST_USGS_085"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 2.6,
+        "place": "51 km SW of Manley Hot Springs, Alaska",
+        "time": 1791410086000,
+        "updated": 1791416199226,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/TEST_USGS_086",
+        "detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/aka2026txdhrc.geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "automatic",
+        "tsunami": 0,
+        "sig": 104,
+        "net": "ak",
+        "code": "a2026txdhrc",
+        "ids": ",aka2026txdhrc,",
+        "sources": ",ak,",
+        "types": ",origin,phase-data,",
+        "nst": 25,
+        "dmin": 0.6,
+        "rms": 0.7,
+        "gap": 48,
+        "magType": "ml",
+        "type": "earthquake",
+        "title": "TEST synthetic earthquake 86"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -151.305,
+          64.636,
+          14.7
+        ]
+      },
+      "id": "TEST_USGS_086"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 2.6,
+        "place": "51 km SW of Manley Hot Springs, Alaska",
+        "time": 1791410087000,
+        "updated": 1791416199226,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/TEST_USGS_087",
+        "detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/aka2026txdhrc.geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "automatic",
+        "tsunami": 0,
+        "sig": 104,
+        "net": "ak",
+        "code": "a2026txdhrc",
+        "ids": ",aka2026txdhrc,",
+        "sources": ",ak,",
+        "types": ",origin,phase-data,",
+        "nst": 25,
+        "dmin": 0.6,
+        "rms": 0.7,
+        "gap": 48,
+        "magType": "ml",
+        "type": "earthquake",
+        "title": "TEST synthetic earthquake 87"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -151.305,
+          64.636,
+          14.7
+        ]
+      },
+      "id": "TEST_USGS_087"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 2.6,
+        "place": "51 km SW of Manley Hot Springs, Alaska",
+        "time": 1791410088000,
+        "updated": 1791416199226,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/TEST_USGS_088",
+        "detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/aka2026txdhrc.geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "automatic",
+        "tsunami": 0,
+        "sig": 104,
+        "net": "ak",
+        "code": "a2026txdhrc",
+        "ids": ",aka2026txdhrc,",
+        "sources": ",ak,",
+        "types": ",origin,phase-data,",
+        "nst": 25,
+        "dmin": 0.6,
+        "rms": 0.7,
+        "gap": 48,
+        "magType": "ml",
+        "type": "earthquake",
+        "title": "TEST synthetic earthquake 88"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -151.305,
+          64.636,
+          14.7
+        ]
+      },
+      "id": "TEST_USGS_088"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 2.6,
+        "place": "51 km SW of Manley Hot Springs, Alaska",
+        "time": 1791410089000,
+        "updated": 1791416199226,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/TEST_USGS_089",
+        "detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/aka2026txdhrc.geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "automatic",
+        "tsunami": 0,
+        "sig": 104,
+        "net": "ak",
+        "code": "a2026txdhrc",
+        "ids": ",aka2026txdhrc,",
+        "sources": ",ak,",
+        "types": ",origin,phase-data,",
+        "nst": 25,
+        "dmin": 0.6,
+        "rms": 0.7,
+        "gap": 48,
+        "magType": "ml",
+        "type": "earthquake",
+        "title": "TEST synthetic earthquake 89"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -151.305,
+          64.636,
+          14.7
+        ]
+      },
+      "id": "TEST_USGS_089"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 2.6,
+        "place": "51 km SW of Manley Hot Springs, Alaska",
+        "time": 1791410090000,
+        "updated": 1791416199226,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/TEST_USGS_090",
+        "detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/aka2026txdhrc.geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "automatic",
+        "tsunami": 0,
+        "sig": 104,
+        "net": "ak",
+        "code": "a2026txdhrc",
+        "ids": ",aka2026txdhrc,",
+        "sources": ",ak,",
+        "types": ",origin,phase-data,",
+        "nst": 25,
+        "dmin": 0.6,
+        "rms": 0.7,
+        "gap": 48,
+        "magType": "ml",
+        "type": "earthquake",
+        "title": "TEST synthetic earthquake 90"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -151.305,
+          64.636,
+          14.7
+        ]
+      },
+      "id": "TEST_USGS_090"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 2.6,
+        "place": "51 km SW of Manley Hot Springs, Alaska",
+        "time": 1791410091000,
+        "updated": 1791416199226,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/TEST_USGS_091",
+        "detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/aka2026txdhrc.geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "automatic",
+        "tsunami": 0,
+        "sig": 104,
+        "net": "ak",
+        "code": "a2026txdhrc",
+        "ids": ",aka2026txdhrc,",
+        "sources": ",ak,",
+        "types": ",origin,phase-data,",
+        "nst": 25,
+        "dmin": 0.6,
+        "rms": 0.7,
+        "gap": 48,
+        "magType": "ml",
+        "type": "earthquake",
+        "title": "TEST synthetic earthquake 91"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -151.305,
+          64.636,
+          14.7
+        ]
+      },
+      "id": "TEST_USGS_091"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 2.6,
+        "place": "51 km SW of Manley Hot Springs, Alaska",
+        "time": 1791410092000,
+        "updated": 1791416199226,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/TEST_USGS_092",
+        "detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/aka2026txdhrc.geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "automatic",
+        "tsunami": 0,
+        "sig": 104,
+        "net": "ak",
+        "code": "a2026txdhrc",
+        "ids": ",aka2026txdhrc,",
+        "sources": ",ak,",
+        "types": ",origin,phase-data,",
+        "nst": 25,
+        "dmin": 0.6,
+        "rms": 0.7,
+        "gap": 48,
+        "magType": "ml",
+        "type": "earthquake",
+        "title": "TEST synthetic earthquake 92"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -151.305,
+          64.636,
+          14.7
+        ]
+      },
+      "id": "TEST_USGS_092"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 2.6,
+        "place": "51 km SW of Manley Hot Springs, Alaska",
+        "time": 1791410093000,
+        "updated": 1791416199226,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/TEST_USGS_093",
+        "detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/aka2026txdhrc.geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "automatic",
+        "tsunami": 0,
+        "sig": 104,
+        "net": "ak",
+        "code": "a2026txdhrc",
+        "ids": ",aka2026txdhrc,",
+        "sources": ",ak,",
+        "types": ",origin,phase-data,",
+        "nst": 25,
+        "dmin": 0.6,
+        "rms": 0.7,
+        "gap": 48,
+        "magType": "ml",
+        "type": "earthquake",
+        "title": "TEST synthetic earthquake 93"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -151.305,
+          64.636,
+          14.7
+        ]
+      },
+      "id": "TEST_USGS_093"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 2.6,
+        "place": "51 km SW of Manley Hot Springs, Alaska",
+        "time": 1791410094000,
+        "updated": 1791416199226,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/TEST_USGS_094",
+        "detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/aka2026txdhrc.geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "automatic",
+        "tsunami": 0,
+        "sig": 104,
+        "net": "ak",
+        "code": "a2026txdhrc",
+        "ids": ",aka2026txdhrc,",
+        "sources": ",ak,",
+        "types": ",origin,phase-data,",
+        "nst": 25,
+        "dmin": 0.6,
+        "rms": 0.7,
+        "gap": 48,
+        "magType": "ml",
+        "type": "earthquake",
+        "title": "TEST synthetic earthquake 94"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -151.305,
+          64.636,
+          14.7
+        ]
+      },
+      "id": "TEST_USGS_094"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 2.6,
+        "place": "51 km SW of Manley Hot Springs, Alaska",
+        "time": 1791410095000,
+        "updated": 1791416199226,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/TEST_USGS_095",
+        "detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/aka2026txdhrc.geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "automatic",
+        "tsunami": 0,
+        "sig": 104,
+        "net": "ak",
+        "code": "a2026txdhrc",
+        "ids": ",aka2026txdhrc,",
+        "sources": ",ak,",
+        "types": ",origin,phase-data,",
+        "nst": 25,
+        "dmin": 0.6,
+        "rms": 0.7,
+        "gap": 48,
+        "magType": "ml",
+        "type": "earthquake",
+        "title": "TEST synthetic earthquake 95"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -151.305,
+          64.636,
+          14.7
+        ]
+      },
+      "id": "TEST_USGS_095"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 2.6,
+        "place": "51 km SW of Manley Hot Springs, Alaska",
+        "time": 1791410096000,
+        "updated": 1791416199226,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/TEST_USGS_096",
+        "detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/aka2026txdhrc.geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "automatic",
+        "tsunami": 0,
+        "sig": 104,
+        "net": "ak",
+        "code": "a2026txdhrc",
+        "ids": ",aka2026txdhrc,",
+        "sources": ",ak,",
+        "types": ",origin,phase-data,",
+        "nst": 25,
+        "dmin": 0.6,
+        "rms": 0.7,
+        "gap": 48,
+        "magType": "ml",
+        "type": "earthquake",
+        "title": "TEST synthetic earthquake 96"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -151.305,
+          64.636,
+          14.7
+        ]
+      },
+      "id": "TEST_USGS_096"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 2.6,
+        "place": "51 km SW of Manley Hot Springs, Alaska",
+        "time": 1791410097000,
+        "updated": 1791416199226,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/TEST_USGS_097",
+        "detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/aka2026txdhrc.geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "automatic",
+        "tsunami": 0,
+        "sig": 104,
+        "net": "ak",
+        "code": "a2026txdhrc",
+        "ids": ",aka2026txdhrc,",
+        "sources": ",ak,",
+        "types": ",origin,phase-data,",
+        "nst": 25,
+        "dmin": 0.6,
+        "rms": 0.7,
+        "gap": 48,
+        "magType": "ml",
+        "type": "earthquake",
+        "title": "TEST synthetic earthquake 97"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -151.305,
+          64.636,
+          14.7
+        ]
+      },
+      "id": "TEST_USGS_097"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 2.6,
+        "place": "51 km SW of Manley Hot Springs, Alaska",
+        "time": 1791410098000,
+        "updated": 1791416199226,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/TEST_USGS_098",
+        "detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/aka2026txdhrc.geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "automatic",
+        "tsunami": 0,
+        "sig": 104,
+        "net": "ak",
+        "code": "a2026txdhrc",
+        "ids": ",aka2026txdhrc,",
+        "sources": ",ak,",
+        "types": ",origin,phase-data,",
+        "nst": 25,
+        "dmin": 0.6,
+        "rms": 0.7,
+        "gap": 48,
+        "magType": "ml",
+        "type": "earthquake",
+        "title": "TEST synthetic earthquake 98"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -151.305,
+          64.636,
+          14.7
+        ]
+      },
+      "id": "TEST_USGS_098"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 2.6,
+        "place": "51 km SW of Manley Hot Springs, Alaska",
+        "time": 1791410099000,
+        "updated": 1791416199226,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/TEST_USGS_099",
+        "detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/aka2026txdhrc.geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "automatic",
+        "tsunami": 0,
+        "sig": 104,
+        "net": "ak",
+        "code": "a2026txdhrc",
+        "ids": ",aka2026txdhrc,",
+        "sources": ",ak,",
+        "types": ",origin,phase-data,",
+        "nst": 25,
+        "dmin": 0.6,
+        "rms": 0.7,
+        "gap": 48,
+        "magType": "ml",
+        "type": "earthquake",
+        "title": "TEST synthetic earthquake 99"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -151.305,
+          64.636,
+          14.7
+        ]
+      },
+      "id": "TEST_USGS_099"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "mag": 2.6,
+        "place": "51 km SW of Manley Hot Springs, Alaska",
+        "time": 1791410100000,
+        "updated": 1791416199226,
+        "tz": null,
+        "url": "https://earthquake.usgs.gov/earthquakes/eventpage/TEST_USGS_100",
+        "detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/aka2026txdhrc.geojson",
+        "felt": null,
+        "cdi": null,
+        "mmi": null,
+        "alert": null,
+        "status": "automatic",
+        "tsunami": 0,
+        "sig": 104,
+        "net": "ak",
+        "code": "a2026txdhrc",
+        "ids": ",aka2026txdhrc,",
+        "sources": ",ak,",
+        "types": ",origin,phase-data,",
+        "nst": 25,
+        "dmin": 0.6,
+        "rms": 0.7,
+        "gap": 48,
+        "magType": "ml",
+        "type": "earthquake",
+        "title": "TEST synthetic earthquake 100"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -151.305,
+          64.636,
+          14.7
+        ]
+      },
+      "id": "TEST_USGS_100"
+    }
+  ]
+}

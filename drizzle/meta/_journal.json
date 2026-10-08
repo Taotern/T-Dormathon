@@ -1,0 +1,27 @@
+{
+  "version": "7",
+  "dialect": "sqlite",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "6",
+      "when": 1791413146525,
+      "tag": "0000_broad_marvel_apes",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "6",
+      "when": 1791416601621,
+      "tag": "0001_eminent_darwin",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "6",
+      "when": 1791432890907,
+      "tag": "0002_ancient_the_fallen",
+      "breakpoints": true
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "schema_version": "0.4.1",
+  "verified_at": "2026-10-08T00:39:35.574904+00:00",
+  "purpose": "Immutable implementation-binding correction only. The original independent-final result listed13implementation files but omitted the shared worker/adapter-common.js guard helper. Fixture expectations and pinned runner are unchanged.",
+  "original_report": {
+    "path": "independent-final.json",
+    "sha256": "d3321b6c7483ee59bcae9878f7429491f289d7f65d8a6742be963c9520cab26f"
+  },
+  "additional_implementation_binding": {
+    "path": "/workspace/shared/dormathon-private-site-20261007/worker/adapter-common.js",
+    "bytes": 7925,
+    "sha256": "830092a4d9f7430ade435c48e6f663bcffb7aa347677818a0306a224fa7d8944",
+    "role": "Shared strict calendar, RSS declared-count/container coherence and geographic guard helpers."
+  },
+  "complete_known_parser_implementation_file_count": 14,
+  "verification_recheck": {
+    "report": "shared-helper-binding-recheck.json",
+    "report_sha256": "5dc5c15b66b8cf42f1bee507c35cbee72de5f6f32b098eb273d5e903d3ba3a6c",
+    "passed": 74,
+    "failed": 0,
+    "network_calls": 0,
+    "helper_digest_matches_before_and_after": true
+  },
+  "pinned_fixture_pack_unchanged": true,
+  "no_site_edits": true,
+  "no_source_fetches": true
+}

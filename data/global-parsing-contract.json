@@ -1,0 +1,201 @@
+{
+  "schema_version": "0.2.0",
+  "generated_at": "2026-10-07T23:47:03.985612+00:00",
+  "operational_contract": {
+    "daily_collection": "Explicit baseline. Source cadence is independent and recorded separately in registry. No real-time or worldwide completeness claim.",
+    "lookback": "Use at least 48 hours publication windows with overlap where the API supports it; fetch rolling snapshots otherwise and disclose missing historical retention.",
+    "network": "Fixed HTTPS origin/path allowlist; redirect:manual then fail/reject3xx; do not follow a redirect or switch egress after access denial. Never fetch links/articles/media.",
+    "limits": "30 seconds entire request;256 KiB unless approved structured hazard exception up to1 MiB. Parse all returned metadata before newest100 selection; report all caps and count gaps.",
+    "daily_health": "Store last_successful_fetch_at, status, HTTP/error, Retry-After, bodybytes, response_count, accepted_count, items_truncated, body_truncated, date_range_available, empirical_oldest_date, retention_gap and timezone_unknown. HTTP200 alone is not health: reject HTML, stale/invalid/error JSON and missing expected arrays.",
+    "rate_behavior": "No retries after this pass for GDELT429 or WTO402. No Retry-After was supplied by GDELT; quarantine/cooldown and expose blocked state. For Malaysia family stay below4 requests/minute; Only two MY endpoints are enabled.",
+    "dedupe": "Use provider stable ID; revisions change content hash without resetting first_seen_at. RSS uses guid/id/link; fallback canonicalURL+publication timestamp. Explicitly label derived IDs.",
+    "time_semantics": "All nullable provider timestamps are independently preserved. Date-only effective/observation/forecast fields belong in facts. Never use fetched_at as publication_at or calculate publication latency when published_at is null.",
+    "country_semantics": "US/DE/CH/MY publisher country is provenance only. Multilateral publisher country null. Coordinates/countries are source provided only; any future title-derived entity/country must carry inferred basis/evidence, never masquerade as supplied.",
+    "safe_content": "No content:encoded, abstracts, descriptions, photos, article bodies or full warning instructions retained. Headline/link/time metadata by default; licensed hazard/fuel facts can be structured."
+  },
+  "parsing": {
+    "usgs": {
+      "root": "FeatureCollection.features",
+      "upstream_id": "feature.id",
+      "title": "properties.title",
+      "url": "properties.url",
+      "event_time": "properties.time Unix milliseconds",
+      "source_updated_at": "properties.updated Unix milliseconds",
+      "published_at": "null; not provided",
+      "location": "geometry.coordinates [longitude,latitude,depth_km]; properties.place remains free text",
+      "event_country": "null; no structured country",
+      "facts": [
+        "mag",
+        "magType",
+        "alert",
+        "status",
+        "tsunami",
+        "sig",
+        "type"
+      ],
+      "sort": "properties.time descending before100-item selection",
+      "max_body_bytes": 1048576,
+      "lookback": "2.5_week=168h,6-day daily overlap; note magnitude threshold and accepted item cap"
+    },
+    "gdacs": {
+      "root": "RSS channel.item; namespace-local names safely",
+      "upstream_id": "guid / eventtype+eventid; preserve episodeid as revision metadata",
+      "title": "title",
+      "url": "link",
+      "published_at": "pubDate RSS RFC822 timezone aware",
+      "event_time": "gdacs:fromdate separately; gdacs:todate remains range end",
+      "source_updated_at": "null unless a distinct provider field exists; pubDate is not automatically update time",
+      "location": "georss:point is latitude then longitude; parse only valid supplied pair",
+      "event_country": "gdacs:iso3 or supplied country; no publisher-derived country",
+      "facts": [
+        "eventtype",
+        "eventid",
+        "episodeid",
+        "alertlevel",
+        "severity attributes",
+        "population attributes",
+        "country",
+        "iso3",
+        "fromdate",
+        "todate"
+      ],
+      "warning": "Models are indicative estimates, not confirmed damages and not substitute for local official warnings",
+      "retention": "Active feed includes old ongoing events; cannot infer historical completeness from itsoldest pubDate"
+    },
+    "eonet": {
+      "root": "JSON events[] even when server mislabeled Content-Type as application/rss+xml",
+      "upstream_id": "event.id",
+      "title": "event.title",
+      "url": "event.link",
+      "published_at": "null; absent",
+      "source_updated_at": "null; absent",
+      "event_time": "geometry[0].date, retaining approximate/date-midnight caveat; do not pretend exact onset",
+      "location": "supplied geometry; first geometry is sample position, not full extent",
+      "event_country": "null; no structured country",
+      "facts": [
+        "closed",
+        "categories",
+        "sources",
+        "geometry date/coordinates/magnitude"
+      ],
+      "warning": "Provider says geometry/time extents approximate; preserve source links. events includes long geometry histories; no arbitrary first100 raw geometry items as event count.",
+      "lookback": "days=7&status=all&limit=100; currently 44 events, cap saturation must be reported"
+    },
+    "un_zh": {
+      "root": "RSS channel.item",
+      "upstream_id": "guid preferred",
+      "title": "title unchanged Chinese",
+      "url": "link or guid direct supplied source",
+      "published_at": "pubDate",
+      "event_time": "null",
+      "source_language": "channel.language=zh-hans normalized to zh-Hans",
+      "event_country": "null; Chinese is language, not country",
+      "discard": [
+        "description",
+        "content:encoded",
+        "image/media"
+      ],
+      "retention": "30 latest, currently 120 hours; variable feed size not guaranteed 48 hours"
+    },
+    "my_fuel_latest": {
+      "root": "JSON array",
+      "query": "Canonical /data-catalogue/?id=fuelprice&limit=4&sort=-date; no slash redirect",
+      "upstream_id": "derived fuelprice:date:series_type",
+      "title": "neutral generated label from date/series type",
+      "published_at": "null; absent",
+      "event_time": "null; date-only effective date kept in facts.date",
+      "event_country": "MY only because dataset explicitly describes Malaysian prices, not because publisherMY",
+      "facts": [
+        "date",
+        "series_type",
+        "ron95",
+        "ron97",
+        "diesel",
+        "diesel_eastmsia",
+        "subsidy-specific price fields"
+      ],
+      "units": "MYR/litre forlevel;MYR/litre weeklydelta forchange_weekly",
+      "warning": "Never mix level and change_weekly or use default unsorted oldest rows as latest; publication-to-fetch latency unknown"
+    },
+    "my_warning": {
+      "root": "JSON array",
+      "query": "Canonical /weather/warning/?sort=-warning_issue__issued&limit=100",
+      "upstream_id": "derived stable hash of warning_issue.issued + heading_en + valid_from; label derived, versionhash handles changes",
+      "title": "warning_issue.title_bm with heading_bm fallback",
+      "url": "official metadata page; no per-item URL supplied",
+      "published_at": "null if issued lacks offset; retain raw issue string in facts",
+      "event_time": "null if valid_from lacks offset; retain raw validity interval",
+      "event_country": "null; covers regional shipping waters without per-item country",
+      "location": "null; no invented coordinates",
+      "allowed_metadata": [
+        "warning_issue",
+        "valid_from",
+        "valid_to",
+        "heading_en",
+        "heading_bm"
+      ],
+      "discard": [
+        "text_en",
+        "text_bm",
+        "instruction_en",
+        "instruction_bm"
+      ],
+      "warning": "Live warning retention is not guaranteed; daily collection may miss short-lived warnings. Exact dataset license not confirmed, so metadata-only."
+    },
+    "ecb": {
+      "root": "RSS channel.item",
+      "upstream_id": "guid or link",
+      "title": "title",
+      "url": "supplied link; no article fetch",
+      "published_at": "pubDate with offset",
+      "event_time": "null; do not treat publication as decision/effective time",
+      "event_country": "null; euro-area scope notGermany per item",
+      "retention": "15 latest, currently 308 hours; cadence as issued, not daily"
+    },
+    "nasa_metadata": {
+      "root": "JSON array of WordPress posts; detect error-object/non-array response",
+      "query": "Fixed /wp-json/wp/v2/posts; per_page=30; _fields whitelist id,date_gmt,modified_gmt,link,title,categories; generated after at or before UTCnow minus 48 hours plus overlap",
+      "upstream_id": "id string",
+      "title": "HTML-decode and strip tags from title.rendered",
+      "url": "link",
+      "published_at": "date_gmt plus Z because field explicitlyGMT; preserve original string in evidence if needed",
+      "source_updated_at": "modified_gmt+Z",
+      "event_time": "null",
+      "event_country": "null",
+      "discard": [
+        "content",
+        "excerpt",
+        "featured_media",
+        "images"
+      ],
+      "warning": "after filters publication time; revisions to older posts outside window remain a gap. Count==30 requires pagination/overlap or cap warning; no false completeness."
+    },
+    "bis_press": {
+      "root": "RSS/RDF item with Dublin Core namespace",
+      "upstream_id": "guid/id or link",
+      "published_at": "dc:date supplied ISO8601; source midnightUTC clock values are exact-time-unverified",
+      "title": "title",
+      "url": "link",
+      "event_time": "null",
+      "event_country": "null",
+      "retention": "10 latest; test spans2026-05-20 to2026-10-05. Oldestmetadata not proof ofmissing48 hours content.",
+      "attribution": "BIS; direct original source link; no full publication ortranslation"
+    },
+    "bis_speeches": {
+      "root": "RSS/RDF item with Dublin Core namespace",
+      "upstream_id": "guid/id or link",
+      "published_at": "dc:date supplied ISO8601 with midnightclock caveat",
+      "title": "title",
+      "url": "link",
+      "event_time": "null; speech date may differ from publication date",
+      "event_country": "null; not CH from BIS publisher",
+      "retention": "50 latest; test spans2026-09-28 to2026-10-07",
+      "attribution": "BIS; direct original source link; preserve author only if separately supplied, with source_provided basis"
+    }
+  },
+  "disabled_context": {
+    "worldbank": "Annual GDP structural context only; outer JSON[metadata,rows], total 532 rows inworking query, includes regional aggregates. Observation year stays in facts.date; metadata.lastupdated is date-only. Today’s fetch does not refresh the observation year.",
+    "my_weather": "7-day forward forecast snapshot,112 rows; disabled until explicit location/row budget. Forecast valid date kept date-only; no fake historicallookback.",
+    "nasa_tech_rss": "Replaced bymetadata JSON becausefull-content RSS at 464,440 bytes breaches non-hazard default cap."
+  }
+}

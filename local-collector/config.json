@@ -1,0 +1,8 @@
+{
+  "time_zone": "Asia/Kuching",
+  "daily_time": "08:00",
+  "poll_seconds": 60,
+  "retry_minutes": 16,
+  "data_directory": "data-local",
+  "exports_directory": "exports"
+}

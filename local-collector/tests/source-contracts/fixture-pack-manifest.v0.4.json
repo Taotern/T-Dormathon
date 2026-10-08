@@ -1,0 +1,411 @@
+{
+  "schema_version": "0.4.0",
+  "ready_for_parallel_review_at": "2026-10-08T00:34:03.223497+00:00",
+  "test_only": true,
+  "cases": 74,
+  "sources": 10,
+  "consumer_dependencies": "Node built-ins plus the supplied existing public parser checkout. No npm installs or network.",
+  "catalog_sha256": "8cb6d74e029b066e4dc6660ec32e804078f3e2c941b5140566052fc94191ef27",
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 3672,
+      "sha256": "cca8b263e9b03b9efdb12a5187c6b78304bcd5abe21f490318005a44bb918a6e"
+    },
+    {
+      "path": "run-source-contracts.mjs",
+      "bytes": 6055,
+      "sha256": "a855f4682215aba6aa5ba32eba7a3ef47231a2acf3bcfefd8ca7524178770b29"
+    },
+    {
+      "path": "build_fixtures.py",
+      "bytes": 21259,
+      "sha256": "54f80bcb4421a9d9818c8b34278f2d630e289ca35d9630336fec5470a2ff6b8d"
+    },
+    {
+      "path": "cases.v0.4.json",
+      "bytes": 61520,
+      "sha256": "037622395a477ee2f3e03e7409f81cd77f40c709911240f09fee83e214f2d794"
+    },
+    {
+      "path": "source-contracts.v0.4.json",
+      "bytes": 6787,
+      "sha256": "67147cc81ca166458b92f34aefebdb7f5bc1f7aa2da9b3d21597c0eb5c5b68c1"
+    },
+    {
+      "path": "catalog/source-registry.v0.2.json",
+      "bytes": 58164,
+      "sha256": "8cb6d74e029b066e4dc6660ec32e804078f3e2c941b5140566052fc94191ef27"
+    },
+    {
+      "path": "fixtures/bis_press--coherent_empty.xml",
+      "bytes": 310,
+      "sha256": "d0d56f9bb9028ba2dd645ed5263d13c873f868c6d828847d36d015916c7c5d8a"
+    },
+    {
+      "path": "fixtures/bis_press--invalid_calendar_dc_date.xml",
+      "bytes": 794,
+      "sha256": "35e4d8204d20953df80ea07676205fb3511ae7af83114180fd2bb032e6dea98e"
+    },
+    {
+      "path": "fixtures/bis_press--provider_error_or_wrong_root.xml",
+      "bytes": 51,
+      "sha256": "950e4a73e67d2ed42462897668818b34b0481825ff57c665a4aecfea12de2c16"
+    },
+    {
+      "path": "fixtures/bis_press--rdf_items_wrong_container.xml",
+      "bytes": 1471,
+      "sha256": "dbf6c4e64dcab2f7e9bccfa907696495bf6102319da15d40a8578735fbd864bb"
+    },
+    {
+      "path": "fixtures/bis_press--rdf_nonzero_references_zero_items.xml",
+      "bytes": 369,
+      "sha256": "a46b38b087c5b5579f0ceef8e1ba8df1f7248c5646348cd71f5eeb186d486580"
+    },
+    {
+      "path": "fixtures/bis_press--saved_metadata_positive.xml",
+      "bytes": 1452,
+      "sha256": "3b055b7ecc1ac686f9fc9a1d7cca2f599c6dccc7d46ea25b1aaecfe294c4fbc4"
+    },
+    {
+      "path": "fixtures/bis_speeches--coherent_empty.xml",
+      "bytes": 320,
+      "sha256": "22af73201587b296fa7b106d950d361feedc6a40266f0b27ce3e5fd49e96861d"
+    },
+    {
+      "path": "fixtures/bis_speeches--invalid_supplied_dc_date.xml",
+      "bytes": 749,
+      "sha256": "1077ad81787eb347a6c029c306414caeeb12fe5e36c05d2669b621f91a365997"
+    },
+    {
+      "path": "fixtures/bis_speeches--provider_error_or_wrong_root.xml",
+      "bytes": 51,
+      "sha256": "950e4a73e67d2ed42462897668818b34b0481825ff57c665a4aecfea12de2c16"
+    },
+    {
+      "path": "fixtures/bis_speeches--rdf_items_wrong_container.xml",
+      "bytes": 1095,
+      "sha256": "42a46043de00c3ed37844656a636b74d289b79623f9c09050c31cc3d95f108a9"
+    },
+    {
+      "path": "fixtures/bis_speeches--rdf_nonzero_references_zero_items.xml",
+      "bytes": 379,
+      "sha256": "ad1b658eec4d8b3c8917b9418b56ee7bc90862480ddb6150738bb10f32632a4c"
+    },
+    {
+      "path": "fixtures/bis_speeches--saved_metadata_positive.xml",
+      "bytes": 1076,
+      "sha256": "c0a807b4e7814df39e9f13d411f8935fef98e70792280099b281a6b2a06deb6e"
+    },
+    {
+      "path": "fixtures/ecb--coherent_empty.xml",
+      "bytes": 220,
+      "sha256": "bc04a78459e7d1cfca281190c7b05aec5c51ddb1e60f6519b39ae482ea4afe48"
+    },
+    {
+      "path": "fixtures/ecb--invalid_calendar_publication.xml",
+      "bytes": 631,
+      "sha256": "a1b5161ab290f8833ed7b6ef1d992a9659efd359da9be692c6e49ff6c5cc75b9"
+    },
+    {
+      "path": "fixtures/ecb--nonzero_upstream_count_zero_items.xml",
+      "bytes": 250,
+      "sha256": "adf49f62eae223ce18dcb9d7e68034b498547231a948386aa24cdc15daae38fc"
+    },
+    {
+      "path": "fixtures/ecb--provider_error_or_wrong_root.xml",
+      "bytes": 51,
+      "sha256": "950e4a73e67d2ed42462897668818b34b0481825ff57c665a4aecfea12de2c16"
+    },
+    {
+      "path": "fixtures/ecb--rss_missing_channel.xml",
+      "bytes": 25,
+      "sha256": "adbc963b3a41aa0dec391f4d03d60e9a8085b1154fbcffa50707fe3cd3ab1aaa"
+    },
+    {
+      "path": "fixtures/ecb--saved_metadata_positive.xml",
+      "bytes": 994,
+      "sha256": "16acdeb7611e019141920d81ea8e28113d3b40f9b832f151daa7e639ef64fe06"
+    },
+    {
+      "path": "fixtures/eonet--bounded_polygon_21pairs.json",
+      "bytes": 2545,
+      "sha256": "0b6bb48b0f98f0bedb95002dec975911a54a4221013265cdee65b3a6632c8c7b"
+    },
+    {
+      "path": "fixtures/eonet--coherent_empty.json",
+      "bytes": 18,
+      "sha256": "f06260af4cb93131b55cd34abc8e2f7799ec134926b685f4f7702993def5d0c3"
+    },
+    {
+      "path": "fixtures/eonet--geometry_unknown_preserved.json",
+      "bytes": 478,
+      "sha256": "edf6fa418f39c8413b40dc3322cb7f7240a2f2939fa56d4d4da761f95fa8cf36"
+    },
+    {
+      "path": "fixtures/eonet--invalid_calendar_datetime.json",
+      "bytes": 715,
+      "sha256": "018fba3041471519aa282b517c515c8dee131231b02cd3f004022828cf9c6126"
+    },
+    {
+      "path": "fixtures/eonet--missing_event_id.json",
+      "bytes": 688,
+      "sha256": "32239dea490306c668333ef22b18ee7db6cfa3001df9891f5ac67794301bff97"
+    },
+    {
+      "path": "fixtures/eonet--out_of_range_coordinates.json",
+      "bytes": 713,
+      "sha256": "e9a5a3ff1ffd57498fa30b20fa1ef7a0dffe7d428da89a995b9d91a794efff5e"
+    },
+    {
+      "path": "fixtures/eonet--provider_error_or_wrong_root.json",
+      "bytes": 46,
+      "sha256": "e6504c0002590a85c8c3db45361733e0b9d064a7dcbc9a98fbe7243837a3c110"
+    },
+    {
+      "path": "fixtures/eonet--saved_metadata_positive.json",
+      "bytes": 1467,
+      "sha256": "a0dffd628de3e6dcde3e2b01fa1613bc5ad90b920d4b98aa2dc5732a9bb56db1"
+    },
+    {
+      "path": "fixtures/gdacs--coherent_empty.xml",
+      "bytes": 192,
+      "sha256": "77f619668e4105a22566a1e62999adc33628c6da28ef3fbdbdd190af54416b68"
+    },
+    {
+      "path": "fixtures/gdacs--nonzero_upstream_count_zero_items.xml",
+      "bytes": 234,
+      "sha256": "b7dedda758d8b0fe9175747010c65316b21c54717c8b9b3f3360452021a3302f"
+    },
+    {
+      "path": "fixtures/gdacs--out_of_range_supplied_point.xml",
+      "bytes": 1130,
+      "sha256": "edf9afa652aa6789a86550c361b70798fbd8bae16d0723c00caed47df4638035"
+    },
+    {
+      "path": "fixtures/gdacs--provider_error_or_wrong_root.xml",
+      "bytes": 51,
+      "sha256": "950e4a73e67d2ed42462897668818b34b0481825ff57c665a4aecfea12de2c16"
+    },
+    {
+      "path": "fixtures/gdacs--rss_missing_channel.xml",
+      "bytes": 25,
+      "sha256": "adbc963b3a41aa0dec391f4d03d60e9a8085b1154fbcffa50707fe3cd3ab1aaa"
+    },
+    {
+      "path": "fixtures/gdacs--saved_metadata_positive.xml",
+      "bytes": 1941,
+      "sha256": "2cf303a943b248c288f088e0dc0f64b1937a2b7e228eeb049f58ad2ffa11b26c"
+    },
+    {
+      "path": "fixtures/gdacs--unknown_geography_preserved.xml",
+      "bytes": 1030,
+      "sha256": "dcc502ce4a92078c7cd7a1038e9186dddd47b79a40e3a7c4aab859f76f8e2782"
+    },
+    {
+      "path": "fixtures/my_fuel_latest--coherent_empty.json",
+      "bytes": 2,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "path": "fixtures/my_fuel_latest--extra_article_field_never_persisted.json",
+      "bytes": 338,
+      "sha256": "112cc3171c6b6ad8530435893fa4ae6a63bac966846ed6dbe98d48a8ea4cf2fa"
+    },
+    {
+      "path": "fixtures/my_fuel_latest--invalid_effective_calendar_date.json",
+      "bytes": 283,
+      "sha256": "e75a63782c9f9cde510d9858ed736fae2371df991382b5ee5eaa820767c42326"
+    },
+    {
+      "path": "fixtures/my_fuel_latest--missing_effective_date_and_series.json",
+      "bytes": 221,
+      "sha256": "321633ebdfda158259050140214f0be52318f839cbf180d0593a6248a4231379"
+    },
+    {
+      "path": "fixtures/my_fuel_latest--nonnumeric_price.json",
+      "bytes": 282,
+      "sha256": "97fed6fac06ec17e8f804cf499ad832964068a7d9bde487a757f943f5b36a28a"
+    },
+    {
+      "path": "fixtures/my_fuel_latest--provider_error_or_wrong_root.json",
+      "bytes": 46,
+      "sha256": "e6504c0002590a85c8c3db45361733e0b9d064a7dcbc9a98fbe7243837a3c110"
+    },
+    {
+      "path": "fixtures/my_fuel_latest--saved_metadata_positive.json",
+      "bytes": 531,
+      "sha256": "9f0ec7adc20fb2eddd9f1ed1cce8bc0c805ca1f0d207b1b8df31157d3611235c"
+    },
+    {
+      "path": "fixtures/my_fuel_latest--unknown_series_type.json",
+      "bytes": 289,
+      "sha256": "bd83833e7d9c8977c83a6b9392cb94e91561ea407f09c87aad134273a3194604"
+    },
+    {
+      "path": "fixtures/my_warning--coherent_empty.json",
+      "bytes": 2,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "path": "fixtures/my_warning--invalid_supplied_validity.json",
+      "bytes": 394,
+      "sha256": "ead750e10ad131f400fc4a0bcb94d659ccb86f9aa83596be00b0488425a79ba3"
+    },
+    {
+      "path": "fixtures/my_warning--missing_issue_identity.json",
+      "bytes": 357,
+      "sha256": "736e350e6047aa20b11b015b4df9c9766a457d2ef23b062ed00256d73ccbb33c"
+    },
+    {
+      "path": "fixtures/my_warning--nested_full_text_never_persisted.json",
+      "bytes": 560,
+      "sha256": "085d175932130a35c04e4d52e11c7ea5088074869ab7de3634c20644f2014beb"
+    },
+    {
+      "path": "fixtures/my_warning--provider_error_or_wrong_root.json",
+      "bytes": 46,
+      "sha256": "e6504c0002590a85c8c3db45361733e0b9d064a7dcbc9a98fbe7243837a3c110"
+    },
+    {
+      "path": "fixtures/my_warning--saved_metadata_positive.json",
+      "bytes": 654,
+      "sha256": "9fc58db3d0799cee2ffebfd6fd71323dae548be316c9e5805aa16526d2b0bd51"
+    },
+    {
+      "path": "fixtures/nasa_metadata--article_content_never_persisted.json",
+      "bytes": 535,
+      "sha256": "2f89631678520530ff4afbcd39d9380258309cbedbdec2e63afbf716c4ff17ea"
+    },
+    {
+      "path": "fixtures/nasa_metadata--coherent_empty.json",
+      "bytes": 2,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "path": "fixtures/nasa_metadata--exact_duplicate_id_dedupes.json",
+      "bytes": 1220,
+      "sha256": "36bb619bd830e2e3be247c5fc5e64f73894f78310362ef4ac6f58da6b4e9b36a"
+    },
+    {
+      "path": "fixtures/nasa_metadata--invalid_calendar_publication.json",
+      "bytes": 383,
+      "sha256": "d1f463cee40c4a7b01e719ce5e4a0d0fe37c71e823224ae9e7729aeb5ccf5c43"
+    },
+    {
+      "path": "fixtures/nasa_metadata--missing_integer_post_id.json",
+      "bytes": 364,
+      "sha256": "6bf5a5919a5016739acdd829216b2afce1bc92b38bbd97c79a974b56bb56bb92"
+    },
+    {
+      "path": "fixtures/nasa_metadata--nonnumeric_post_id.json",
+      "bytes": 394,
+      "sha256": "495f04d36b58ce99c5d2c789cf6049372f373f203cceda8ae3e1803f3c92a471"
+    },
+    {
+      "path": "fixtures/nasa_metadata--provider_error_or_wrong_root.json",
+      "bytes": 46,
+      "sha256": "e6504c0002590a85c8c3db45361733e0b9d064a7dcbc9a98fbe7243837a3c110"
+    },
+    {
+      "path": "fixtures/nasa_metadata--query_cap100_flag.json",
+      "bytes": 35692,
+      "sha256": "7d638bc04218d190894f236d8402eaed02a1184c46adccfd63fc84c4dd04a94b"
+    },
+    {
+      "path": "fixtures/nasa_metadata--saved_metadata_positive.json",
+      "bytes": 839,
+      "sha256": "1a48cbc40d7a26199407a923a155a8ff22ca73dc5d9cc7125556daa31aacce38"
+    },
+    {
+      "path": "fixtures/un_zh--absent_publication_stays_unknown.xml",
+      "bytes": 440,
+      "sha256": "c68fbe02476284a82761a0242177164d0345bce6d727fc051a94e698c54fd2e4"
+    },
+    {
+      "path": "fixtures/un_zh--coherent_empty.xml",
+      "bytes": 243,
+      "sha256": "a43b34a9120db268e0361842b1bad815a436bb8db3b0b744863f3cd35a6649ff"
+    },
+    {
+      "path": "fixtures/un_zh--declared_language_mismatch.xml",
+      "bytes": 759,
+      "sha256": "11a87b790a240352f9173aeb6f7867529d58a7a2cc6735b16c3fb9e2bf99c1a0"
+    },
+    {
+      "path": "fixtures/un_zh--invalid_supplied_publication.xml",
+      "bytes": 487,
+      "sha256": "0b1ec78f9b88ab62c54fcb95f36950cd76f199f00dca437c6b1ecb47f9aefe0f"
+    },
+    {
+      "path": "fixtures/un_zh--nonzero_upstream_count_zero_items.xml",
+      "bytes": 245,
+      "sha256": "941a3ec492e865f1ba51aaefdc4f6232ae766c64406447933381d7c00d3cf0cd"
+    },
+    {
+      "path": "fixtures/un_zh--provider_error_or_wrong_root.xml",
+      "bytes": 51,
+      "sha256": "950e4a73e67d2ed42462897668818b34b0481825ff57c665a4aecfea12de2c16"
+    },
+    {
+      "path": "fixtures/un_zh--rss_missing_channel.xml",
+      "bytes": 25,
+      "sha256": "adbc963b3a41aa0dec391f4d03d60e9a8085b1154fbcffa50707fe3cd3ab1aaa"
+    },
+    {
+      "path": "fixtures/un_zh--saved_metadata_positive.xml",
+      "bytes": 764,
+      "sha256": "de01c79b3c6617044c4ea36b0e102273629cf7510a6aa84a85a8ad83dc15086c"
+    },
+    {
+      "path": "fixtures/un_zh--xml_dtd_entity_prohibited.xml",
+      "bytes": 780,
+      "sha256": "e4cd85584a6573d4a0cd2f7eaa6a0247e1247140407de81d714e79ec9ee5a2f6"
+    },
+    {
+      "path": "fixtures/usgs--coherent_empty.json",
+      "bytes": 106,
+      "sha256": "5fef5a9110ea27de4e00264f930b9509190d1d850b7dce7ab5abecee2ee15f62"
+    },
+    {
+      "path": "fixtures/usgs--count_mismatch.json",
+      "bytes": 1187,
+      "sha256": "30fb242e3755c9b1a1eaf09d9a39f3d3de587bf2a25ac0343fc1a851ecc25734"
+    },
+    {
+      "path": "fixtures/usgs--empty_coordinates.json",
+      "bytes": 1125,
+      "sha256": "e1a6a9b1daed9859820043bc000fc4055b65ab7e1c008a23930e10698687bb44"
+    },
+    {
+      "path": "fixtures/usgs--missing_event_epoch.json",
+      "bytes": 1156,
+      "sha256": "4892d1220ae1ca42b165533787e091ce7433e083b4951f0641fa6db364159127"
+    },
+    {
+      "path": "fixtures/usgs--newest100_of101_cap.json",
+      "bytes": 109162,
+      "sha256": "76a6c53a30592c0aaee633d234d285d0ed6b19fa48fa957dcde7db3cc533a651"
+    },
+    {
+      "path": "fixtures/usgs--numeric_string_magnitude.json",
+      "bytes": 1189,
+      "sha256": "353b615f76ce06ac83f963115abf3ccc104acb8bceabb5931146f6f7bb301dc2"
+    },
+    {
+      "path": "fixtures/usgs--out_of_range_coordinates.json",
+      "bytes": 1176,
+      "sha256": "4f724f294285889b7bbd001478c0b4593c19b18cd90db54dfc8da62523f533a3"
+    },
+    {
+      "path": "fixtures/usgs--provider_error_or_wrong_root.json",
+      "bytes": 46,
+      "sha256": "e6504c0002590a85c8c3db45361733e0b9d064a7dcbc9a98fbe7243837a3c110"
+    },
+    {
+      "path": "fixtures/usgs--saved_metadata_positive.json",
+      "bytes": 2277,
+      "sha256": "221d84355f0e8c46610b3da17af3e8cf8204000aae0689ea6c4a5ac949dfd39a"
+    }
+  ]
+}
