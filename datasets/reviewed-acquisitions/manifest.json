@@ -1,0 +1,1691 @@
+{
+  "schema_version": "dormathon.retained-acquisition-manifest.v0.7",
+  "record_count": 19466,
+  "source_counts": {
+    "enterprise_sec_registry": 8016,
+    "enterprise_cvm_registry": 2567,
+    "enterprise_twse_registry": 1095,
+    "enterprise_gleif_reference": 911,
+    "stat_eurostat_sbs_size": 6476,
+    "stat_worldbank_annual_fx": 112,
+    "enterprise_sec_disclosures": 3,
+    "country_ma_hcp_releases": 5,
+    "country_au_rba_releases": 1,
+    "political_jp_house_groups": 7,
+    "political_za_assembly_parties": 18,
+    "political_ca_commons_parties": 5,
+    "country_un_m49_reference": 250
+  },
+  "chunks": [
+    {
+      "path": "chunks/enterprise_sec_registry-0000.json",
+      "source_id": "enterprise_sec_registry",
+      "count": 100,
+      "bytes": 138324,
+      "sha256": "9ad9938dca5b698ebb0eb837d4b3518103c21bad8984a00374da1cc19c678bc5",
+      "rights_primary_url": "https://www.sec.gov/files/about/webmaster-faq.htm"
+    },
+    {
+      "path": "chunks/enterprise_sec_registry-0001.json",
+      "source_id": "enterprise_sec_registry",
+      "count": 100,
+      "bytes": 139156,
+      "sha256": "670c73ed939b1b8c0457d581a2424f0ec1524e174485fc2e46d894a7ccde4087",
+      "rights_primary_url": "https://www.sec.gov/files/about/webmaster-faq.htm"
+    },
+    {
+      "path": "chunks/enterprise_sec_registry-0002.json",
+      "source_id": "enterprise_sec_registry",
+      "count": 100,
+      "bytes": 137637,
+      "sha256": "1cbc3a8cd3aa25d2aabbac87ca06a05d201481a7dc04a26055ebb8c1583fb7a7",
+      "rights_primary_url": "https://www.sec.gov/files/about/webmaster-faq.htm"
+    },
+    {
+      "path": "chunks/enterprise_sec_registry-0003.json",
+      "source_id": "enterprise_sec_registry",
+      "count": 100,
+      "bytes": 137654,
+      "sha256": "312271ea62f762ee7513ceed9f4fc43e838639b84cc91edcf8f6362c820f5c72",
+      "rights_primary_url": "https://www.sec.gov/files/about/webmaster-faq.htm"
+    },
+    {
+      "path": "chunks/enterprise_sec_registry-0004.json",
+      "source_id": "enterprise_sec_registry",
+      "count": 100,
+      "bytes": 137062,
+      "sha256": "d5c20559d16973268108f783f5dc3d6c1d612dea6534bab24276008003cc3750",
+      "rights_primary_url": "https://www.sec.gov/files/about/webmaster-faq.htm"
+    },
+    {
+      "path": "chunks/enterprise_sec_registry-0005.json",
+      "source_id": "enterprise_sec_registry",
+      "count": 100,
+      "bytes": 137106,
+      "sha256": "a386f85badfefe5eeb64782b1b9fe66fbe582389893d8ef84acaba51ee774ae2",
+      "rights_primary_url": "https://www.sec.gov/files/about/webmaster-faq.htm"
+    },
+    {
+      "path": "chunks/enterprise_sec_registry-0006.json",
+      "source_id": "enterprise_sec_registry",
+      "count": 100,
+      "bytes": 136382,
+      "sha256": "97a2fc7cb825ec72165dd8e4eab0e8e9bc555894e5412bd67a929a47ea90bd8a",
+      "rights_primary_url": "https://www.sec.gov/files/about/webmaster-faq.htm"
+    },
+    {
+      "path": "chunks/enterprise_sec_registry-0007.json",
+      "source_id": "enterprise_sec_registry",
+      "count": 100,
+      "bytes": 137121,
+      "sha256": "d7683a1797849cecd554a97f5fbfbe53095ba49ed539b794a67f974365c49ca8",
+      "rights_primary_url": "https://www.sec.gov/files/about/webmaster-faq.htm"
+    },
+    {
+      "path": "chunks/enterprise_sec_registry-0008.json",
+      "source_id": "enterprise_sec_registry",
+      "count": 100,
+      "bytes": 136406,
+      "sha256": "b862b8cfe6ad2cc3e7abae69feaf9c437038c92cac77648ded704cebbc7f057c",
+      "rights_primary_url": "https://www.sec.gov/files/about/webmaster-faq.htm"
+    },
+    {
+      "path": "chunks/enterprise_sec_registry-0009.json",
+      "source_id": "enterprise_sec_registry",
+      "count": 100,
+      "bytes": 136842,
+      "sha256": "3feb483085d0f329f523eeeb897dc3fc99b366fa5c5586b18c7863a2ed424398",
+      "rights_primary_url": "https://www.sec.gov/files/about/webmaster-faq.htm"
+    },
+    {
+      "path": "chunks/enterprise_sec_registry-0010.json",
+      "source_id": "enterprise_sec_registry",
+      "count": 100,
+      "bytes": 136384,
+      "sha256": "dd92172c5b7025eab3136a92e01b17bb23d6504d8dc3392631c61312a527f16f",
+      "rights_primary_url": "https://www.sec.gov/files/about/webmaster-faq.htm"
+    },
+    {
+      "path": "chunks/enterprise_sec_registry-0011.json",
+      "source_id": "enterprise_sec_registry",
+      "count": 100,
+      "bytes": 136013,
+      "sha256": "158ce1fb0d8764cb3370e26671eb506e8502ee4b6cfcc557d0a51a4c3bcd6219",
+      "rights_primary_url": "https://www.sec.gov/files/about/webmaster-faq.htm"
+    },
+    {
+      "path": "chunks/enterprise_sec_registry-0012.json",
+      "source_id": "enterprise_sec_registry",
+      "count": 100,
+      "bytes": 136261,
+      "sha256": "e475006d6c6b4d064291d5ad706e9a469eeb08f45fd905da7e9f4b22a55b03c3",
+      "rights_primary_url": "https://www.sec.gov/files/about/webmaster-faq.htm"
+    },
+    {
+      "path": "chunks/enterprise_sec_registry-0013.json",
+      "source_id": "enterprise_sec_registry",
+      "count": 100,
+      "bytes": 136034,
+      "sha256": "216bf307b008f7bcac556de861ad9f273570ecb9cf8318fe0ec8853454f6d414",
+      "rights_primary_url": "https://www.sec.gov/files/about/webmaster-faq.htm"
+    },
+    {
+      "path": "chunks/enterprise_sec_registry-0014.json",
+      "source_id": "enterprise_sec_registry",
+      "count": 100,
+      "bytes": 137132,
+      "sha256": "87063bebe7508e5822bcb9e486430d853eca2281d05912136033c71910ea52a9",
+      "rights_primary_url": "https://www.sec.gov/files/about/webmaster-faq.htm"
+    },
+    {
+      "path": "chunks/enterprise_sec_registry-0015.json",
+      "source_id": "enterprise_sec_registry",
+      "count": 100,
+      "bytes": 136190,
+      "sha256": "63344fd7e3048ea712770212a2c345d60c1b8f70d9f75ffdbbff985be82dd335",
+      "rights_primary_url": "https://www.sec.gov/files/about/webmaster-faq.htm"
+    },
+    {
+      "path": "chunks/enterprise_sec_registry-0016.json",
+      "source_id": "enterprise_sec_registry",
+      "count": 100,
+      "bytes": 136282,
+      "sha256": "d287b7ac60c07c5d526896b66c3912109036847664fdd2dda2d082db6992dd65",
+      "rights_primary_url": "https://www.sec.gov/files/about/webmaster-faq.htm"
+    },
+    {
+      "path": "chunks/enterprise_sec_registry-0017.json",
+      "source_id": "enterprise_sec_registry",
+      "count": 100,
+      "bytes": 135898,
+      "sha256": "8523db08ce02675c3ca5b3a3ecd6cceffb8148935ca493101a4b5e936f5c2818",
+      "rights_primary_url": "https://www.sec.gov/files/about/webmaster-faq.htm"
+    },
+    {
+      "path": "chunks/enterprise_sec_registry-0018.json",
+      "source_id": "enterprise_sec_registry",
+      "count": 100,
+      "bytes": 136371,
+      "sha256": "f4d423bf97d816d8ba10b9791ac60beae5f3a18de34619c9d5a7cb34de9d8906",
+      "rights_primary_url": "https://www.sec.gov/files/about/webmaster-faq.htm"
+    },
+    {
+      "path": "chunks/enterprise_sec_registry-0019.json",
+      "source_id": "enterprise_sec_registry",
+      "count": 100,
+      "bytes": 137341,
+      "sha256": "8af18598154a3a4ba61cfda8d1b7c51622c99225b1ac516dc1e15da4c4fc0441",
+      "rights_primary_url": "https://www.sec.gov/files/about/webmaster-faq.htm"
+    },
+    {
+      "path": "chunks/enterprise_sec_registry-0020.json",
+      "source_id": "enterprise_sec_registry",
+      "count": 100,
+      "bytes": 136632,
+      "sha256": "b60bfa21d52962180935b17b34055bcdfe94ab7a9085fb07c597890c87e37726",
+      "rights_primary_url": "https://www.sec.gov/files/about/webmaster-faq.htm"
+    },
+    {
+      "path": "chunks/enterprise_sec_registry-0021.json",
+      "source_id": "enterprise_sec_registry",
+      "count": 100,
+      "bytes": 136388,
+      "sha256": "5ba47f8d686ebeeaeb9e55a48c2eef32a29732f62bab81dc85f6d38f8484fe74",
+      "rights_primary_url": "https://www.sec.gov/files/about/webmaster-faq.htm"
+    },
+    {
+      "path": "chunks/enterprise_sec_registry-0022.json",
+      "source_id": "enterprise_sec_registry",
+      "count": 100,
+      "bytes": 136284,
+      "sha256": "f40af38d916e272864d6ba7cde6133a0fa49deda04cc65f3b15967185beb5be7",
+      "rights_primary_url": "https://www.sec.gov/files/about/webmaster-faq.htm"
+    },
+    {
+      "path": "chunks/enterprise_sec_registry-0023.json",
+      "source_id": "enterprise_sec_registry",
+      "count": 100,
+      "bytes": 136548,
+      "sha256": "7ad5893005cba28544207f57869f72cb4ff80c261eb27341b1ce11e0f44ed501",
+      "rights_primary_url": "https://www.sec.gov/files/about/webmaster-faq.htm"
+    },
+    {
+      "path": "chunks/enterprise_sec_registry-0024.json",
+      "source_id": "enterprise_sec_registry",
+      "count": 100,
+      "bytes": 136439,
+      "sha256": "bfc22e18940d6b0bd10a91d1210b1033f4b0d88fa467e4ceedf7886f88d76505",
+      "rights_primary_url": "https://www.sec.gov/files/about/webmaster-faq.htm"
+    },
+    {
+      "path": "chunks/enterprise_sec_registry-0025.json",
+      "source_id": "enterprise_sec_registry",
+      "count": 100,
+      "bytes": 136228,
+      "sha256": "7de0da068b882e8aba65b720d87fd947cf16503334a840465e8ecdc5021f000b",
+      "rights_primary_url": "https://www.sec.gov/files/about/webmaster-faq.htm"
+    },
+    {
+      "path": "chunks/enterprise_sec_registry-0026.json",
+      "source_id": "enterprise_sec_registry",
+      "count": 100,
+      "bytes": 136359,
+      "sha256": "e95ed754fe4bf6a18b377fe005c8cb68a72af9faebeb63b564aec521a016a877",
+      "rights_primary_url": "https://www.sec.gov/files/about/webmaster-faq.htm"
+    },
+    {
+      "path": "chunks/enterprise_sec_registry-0027.json",
+      "source_id": "enterprise_sec_registry",
+      "count": 100,
+      "bytes": 136525,
+      "sha256": "a6be37366cb895c3f2a6f651a9937bb764a6414283ffa8cb1dad29c09157d915",
+      "rights_primary_url": "https://www.sec.gov/files/about/webmaster-faq.htm"
+    },
+    {
+      "path": "chunks/enterprise_sec_registry-0028.json",
+      "source_id": "enterprise_sec_registry",
+      "count": 100,
+      "bytes": 136837,
+      "sha256": "95930de4705fe93081d9a04c6428fcbbc50f80234297da4a43c3443a2fa10927",
+      "rights_primary_url": "https://www.sec.gov/files/about/webmaster-faq.htm"
+    },
+    {
+      "path": "chunks/enterprise_sec_registry-0029.json",
+      "source_id": "enterprise_sec_registry",
+      "count": 100,
+      "bytes": 136842,
+      "sha256": "847b3ad33d2bb4c3748bcc24c16f2385b7b30f77167d2e1090045eaf12a4ba3f",
+      "rights_primary_url": "https://www.sec.gov/files/about/webmaster-faq.htm"
+    },
+    {
+      "path": "chunks/enterprise_sec_registry-0030.json",
+      "source_id": "enterprise_sec_registry",
+      "count": 100,
+      "bytes": 136944,
+      "sha256": "de44b8daba8e5cae39aabc2fed86ecee09ce3c3fbe0b2fd5e7686b0b9f06426d",
+      "rights_primary_url": "https://www.sec.gov/files/about/webmaster-faq.htm"
+    },
+    {
+      "path": "chunks/enterprise_sec_registry-0031.json",
+      "source_id": "enterprise_sec_registry",
+      "count": 100,
+      "bytes": 136695,
+      "sha256": "4814c04cf8cdefe1c567424eaa1366b689cb0bd4cac961ada0434196d30534b3",
+      "rights_primary_url": "https://www.sec.gov/files/about/webmaster-faq.htm"
+    },
+    {
+      "path": "chunks/enterprise_sec_registry-0032.json",
+      "source_id": "enterprise_sec_registry",
+      "count": 100,
+      "bytes": 137048,
+      "sha256": "c854b262715090f3d2257afc08f4b98d7a825bc6a1205838dbd7db2d45ad7359",
+      "rights_primary_url": "https://www.sec.gov/files/about/webmaster-faq.htm"
+    },
+    {
+      "path": "chunks/enterprise_sec_registry-0033.json",
+      "source_id": "enterprise_sec_registry",
+      "count": 100,
+      "bytes": 137313,
+      "sha256": "24d169944730ee75cf48052ff2f2c9c5792a28d27b4d34bf9764b8458145f20b",
+      "rights_primary_url": "https://www.sec.gov/files/about/webmaster-faq.htm"
+    },
+    {
+      "path": "chunks/enterprise_sec_registry-0034.json",
+      "source_id": "enterprise_sec_registry",
+      "count": 100,
+      "bytes": 137652,
+      "sha256": "00045e69513ecfa79623d04ff195979c31e04184301c9caa26df1c7d3d42a944",
+      "rights_primary_url": "https://www.sec.gov/files/about/webmaster-faq.htm"
+    },
+    {
+      "path": "chunks/enterprise_sec_registry-0035.json",
+      "source_id": "enterprise_sec_registry",
+      "count": 100,
+      "bytes": 138741,
+      "sha256": "61b9b40b469652443aef6bf718aef48c73c3c01b4a21b104c37d64446a1c7424",
+      "rights_primary_url": "https://www.sec.gov/files/about/webmaster-faq.htm"
+    },
+    {
+      "path": "chunks/enterprise_sec_registry-0036.json",
+      "source_id": "enterprise_sec_registry",
+      "count": 100,
+      "bytes": 138247,
+      "sha256": "7de24facc9fdbb21acc11ef33c99aa5005fd428feaa0b1ef1d92543686483f39",
+      "rights_primary_url": "https://www.sec.gov/files/about/webmaster-faq.htm"
+    },
+    {
+      "path": "chunks/enterprise_sec_registry-0037.json",
+      "source_id": "enterprise_sec_registry",
+      "count": 100,
+      "bytes": 138690,
+      "sha256": "93d66e025fb703b4fb8b3c7344d253498f2fea8d7a83efc8fe735a57f506068a",
+      "rights_primary_url": "https://www.sec.gov/files/about/webmaster-faq.htm"
+    },
+    {
+      "path": "chunks/enterprise_sec_registry-0038.json",
+      "source_id": "enterprise_sec_registry",
+      "count": 100,
+      "bytes": 138294,
+      "sha256": "61927e6e3f724651afca0c29a1c8e24d574a282dd87b2f99b29eced87b4a04d3",
+      "rights_primary_url": "https://www.sec.gov/files/about/webmaster-faq.htm"
+    },
+    {
+      "path": "chunks/enterprise_sec_registry-0039.json",
+      "source_id": "enterprise_sec_registry",
+      "count": 100,
+      "bytes": 137666,
+      "sha256": "6b7b7ddba45c62a076ae42167156353a5524439aa933ed64b82a413cb80e2af3",
+      "rights_primary_url": "https://www.sec.gov/files/about/webmaster-faq.htm"
+    },
+    {
+      "path": "chunks/enterprise_sec_registry-0040.json",
+      "source_id": "enterprise_sec_registry",
+      "count": 100,
+      "bytes": 138013,
+      "sha256": "9da551a61e2e14540fdc3f65c06db3e93a9b855b1b6d7917ee1ef7104588cdb7",
+      "rights_primary_url": "https://www.sec.gov/files/about/webmaster-faq.htm"
+    },
+    {
+      "path": "chunks/enterprise_sec_registry-0041.json",
+      "source_id": "enterprise_sec_registry",
+      "count": 100,
+      "bytes": 137448,
+      "sha256": "ab8a02236bad99071ab845a2bb1e343835905c5b92980625264c5d34663fe841",
+      "rights_primary_url": "https://www.sec.gov/files/about/webmaster-faq.htm"
+    },
+    {
+      "path": "chunks/enterprise_sec_registry-0042.json",
+      "source_id": "enterprise_sec_registry",
+      "count": 100,
+      "bytes": 137915,
+      "sha256": "64d8dd36a760239fd88bee9ac3134b611ae3e3b305d9aea9d5e567350d5df97a",
+      "rights_primary_url": "https://www.sec.gov/files/about/webmaster-faq.htm"
+    },
+    {
+      "path": "chunks/enterprise_sec_registry-0043.json",
+      "source_id": "enterprise_sec_registry",
+      "count": 100,
+      "bytes": 137853,
+      "sha256": "985caec3426919d95e17d71f32c58070b6d8599e71466f3aa3dca4cd9489674e",
+      "rights_primary_url": "https://www.sec.gov/files/about/webmaster-faq.htm"
+    },
+    {
+      "path": "chunks/enterprise_sec_registry-0044.json",
+      "source_id": "enterprise_sec_registry",
+      "count": 100,
+      "bytes": 137839,
+      "sha256": "3a818a487a66e8fa533b2b31497d415329083c21cd3f0df8e0dc60c8ef8ada34",
+      "rights_primary_url": "https://www.sec.gov/files/about/webmaster-faq.htm"
+    },
+    {
+      "path": "chunks/enterprise_sec_registry-0045.json",
+      "source_id": "enterprise_sec_registry",
+      "count": 100,
+      "bytes": 137061,
+      "sha256": "eb32754c060b1d146c7caeeddbff30163b1c5515848cc9145fc2a30f3aacb476",
+      "rights_primary_url": "https://www.sec.gov/files/about/webmaster-faq.htm"
+    },
+    {
+      "path": "chunks/enterprise_sec_registry-0046.json",
+      "source_id": "enterprise_sec_registry",
+      "count": 100,
+      "bytes": 136736,
+      "sha256": "244d48c94b4860c1af7a7e3a4fc77fb787d44cf6612cf60ebd9d8ecea4ec5e05",
+      "rights_primary_url": "https://www.sec.gov/files/about/webmaster-faq.htm"
+    },
+    {
+      "path": "chunks/enterprise_sec_registry-0047.json",
+      "source_id": "enterprise_sec_registry",
+      "count": 100,
+      "bytes": 136792,
+      "sha256": "7b7f416b4dfa6150805fb55ba848b4b3e779456848df4b79ec86c93b3386d362",
+      "rights_primary_url": "https://www.sec.gov/files/about/webmaster-faq.htm"
+    },
+    {
+      "path": "chunks/enterprise_sec_registry-0048.json",
+      "source_id": "enterprise_sec_registry",
+      "count": 100,
+      "bytes": 136959,
+      "sha256": "8b4bd193d68b78c7d3aacc275dec3442e5ada78cf1f285477f44497a17fbc9b8",
+      "rights_primary_url": "https://www.sec.gov/files/about/webmaster-faq.htm"
+    },
+    {
+      "path": "chunks/enterprise_sec_registry-0049.json",
+      "source_id": "enterprise_sec_registry",
+      "count": 100,
+      "bytes": 136730,
+      "sha256": "082969335167755f9b8f02fdce67bb010fc3b4dfe23305616ccdd9522e23d8e0",
+      "rights_primary_url": "https://www.sec.gov/files/about/webmaster-faq.htm"
+    },
+    {
+      "path": "chunks/enterprise_sec_registry-0050.json",
+      "source_id": "enterprise_sec_registry",
+      "count": 100,
+      "bytes": 136297,
+      "sha256": "b64bb8e818607c70ca90afb285377bba7d55636169abba1c68af180d1e7f693f",
+      "rights_primary_url": "https://www.sec.gov/files/about/webmaster-faq.htm"
+    },
+    {
+      "path": "chunks/enterprise_sec_registry-0051.json",
+      "source_id": "enterprise_sec_registry",
+      "count": 100,
+      "bytes": 136382,
+      "sha256": "205c8c53729c9737c72cc5cdb1ce29edffedcf5e27bfd590aab7b99d2df0e96d",
+      "rights_primary_url": "https://www.sec.gov/files/about/webmaster-faq.htm"
+    },
+    {
+      "path": "chunks/enterprise_sec_registry-0052.json",
+      "source_id": "enterprise_sec_registry",
+      "count": 100,
+      "bytes": 136745,
+      "sha256": "f3d16fc7fafd51101c81819e8394fe0718008eee6322c6d2a9c939a24394570c",
+      "rights_primary_url": "https://www.sec.gov/files/about/webmaster-faq.htm"
+    },
+    {
+      "path": "chunks/enterprise_sec_registry-0053.json",
+      "source_id": "enterprise_sec_registry",
+      "count": 100,
+      "bytes": 136793,
+      "sha256": "f9cf72872e8a7a7ba8f55640c5125d8e0b3dc11f1f4079608a4cfc4d5996a21b",
+      "rights_primary_url": "https://www.sec.gov/files/about/webmaster-faq.htm"
+    },
+    {
+      "path": "chunks/enterprise_sec_registry-0054.json",
+      "source_id": "enterprise_sec_registry",
+      "count": 100,
+      "bytes": 136121,
+      "sha256": "f62f2202f255c5ead15ab00766151421d46c5fbb71d4abf5842b5a4c5b41268f",
+      "rights_primary_url": "https://www.sec.gov/files/about/webmaster-faq.htm"
+    },
+    {
+      "path": "chunks/enterprise_sec_registry-0055.json",
+      "source_id": "enterprise_sec_registry",
+      "count": 100,
+      "bytes": 136258,
+      "sha256": "8a2be8511eff1341525aace3a5ebd1c85d6365162654964e4c38863f35b7b084",
+      "rights_primary_url": "https://www.sec.gov/files/about/webmaster-faq.htm"
+    },
+    {
+      "path": "chunks/enterprise_sec_registry-0056.json",
+      "source_id": "enterprise_sec_registry",
+      "count": 100,
+      "bytes": 136173,
+      "sha256": "14bffdba084ce3adba602f3f825f5a476da31c8aa4eeb646202c8a826a07c57d",
+      "rights_primary_url": "https://www.sec.gov/files/about/webmaster-faq.htm"
+    },
+    {
+      "path": "chunks/enterprise_sec_registry-0057.json",
+      "source_id": "enterprise_sec_registry",
+      "count": 100,
+      "bytes": 136248,
+      "sha256": "ba31ddd5baae66e96a10f8884eb728a32e92b6cbda96c06f1be4e8038183f853",
+      "rights_primary_url": "https://www.sec.gov/files/about/webmaster-faq.htm"
+    },
+    {
+      "path": "chunks/enterprise_sec_registry-0058.json",
+      "source_id": "enterprise_sec_registry",
+      "count": 100,
+      "bytes": 135989,
+      "sha256": "5f0cc8f6804e9175b3d6c19a97b50ebfd0c3c492dfdbf201d5529855c5614031",
+      "rights_primary_url": "https://www.sec.gov/files/about/webmaster-faq.htm"
+    },
+    {
+      "path": "chunks/enterprise_sec_registry-0059.json",
+      "source_id": "enterprise_sec_registry",
+      "count": 100,
+      "bytes": 136217,
+      "sha256": "f3a8b29796d2552f567b1326a5efc0d51cd17083b5f731d0157a83e5dbdcd4d9",
+      "rights_primary_url": "https://www.sec.gov/files/about/webmaster-faq.htm"
+    },
+    {
+      "path": "chunks/enterprise_sec_registry-0060.json",
+      "source_id": "enterprise_sec_registry",
+      "count": 100,
+      "bytes": 136202,
+      "sha256": "16825586f3773e40f8f446f1932c35976503abfdcc8676d2849a9155dfe3a047",
+      "rights_primary_url": "https://www.sec.gov/files/about/webmaster-faq.htm"
+    },
+    {
+      "path": "chunks/enterprise_sec_registry-0061.json",
+      "source_id": "enterprise_sec_registry",
+      "count": 100,
+      "bytes": 135987,
+      "sha256": "0461ab58221d6255820c95ebe6ae82a953af43aeb166cfae2080bd5529218229",
+      "rights_primary_url": "https://www.sec.gov/files/about/webmaster-faq.htm"
+    },
+    {
+      "path": "chunks/enterprise_sec_registry-0062.json",
+      "source_id": "enterprise_sec_registry",
+      "count": 100,
+      "bytes": 136108,
+      "sha256": "5fd79133a9e1ff6a5e650296327277596d8512334d0201c1c1ae3f9f65b374ff",
+      "rights_primary_url": "https://www.sec.gov/files/about/webmaster-faq.htm"
+    },
+    {
+      "path": "chunks/enterprise_sec_registry-0063.json",
+      "source_id": "enterprise_sec_registry",
+      "count": 100,
+      "bytes": 136087,
+      "sha256": "65d7c4ac605b0ee785aa5951d1475e671d1da5399131cbc46da47f818d59a763",
+      "rights_primary_url": "https://www.sec.gov/files/about/webmaster-faq.htm"
+    },
+    {
+      "path": "chunks/enterprise_sec_registry-0064.json",
+      "source_id": "enterprise_sec_registry",
+      "count": 100,
+      "bytes": 136145,
+      "sha256": "c05f01a8ff1f26bcf55994663e1e0c480dbc045c26bdbcc27ee0709e168f5da4",
+      "rights_primary_url": "https://www.sec.gov/files/about/webmaster-faq.htm"
+    },
+    {
+      "path": "chunks/enterprise_sec_registry-0065.json",
+      "source_id": "enterprise_sec_registry",
+      "count": 100,
+      "bytes": 136455,
+      "sha256": "7a982e7a7ae4acf640569c805182818bb6d14128d797100fa5cfd845a3521d5a",
+      "rights_primary_url": "https://www.sec.gov/files/about/webmaster-faq.htm"
+    },
+    {
+      "path": "chunks/enterprise_sec_registry-0066.json",
+      "source_id": "enterprise_sec_registry",
+      "count": 100,
+      "bytes": 136112,
+      "sha256": "377c567135c25f47a6cf8f2b5a5a272668125a9801be51593838d7643ef2ee26",
+      "rights_primary_url": "https://www.sec.gov/files/about/webmaster-faq.htm"
+    },
+    {
+      "path": "chunks/enterprise_sec_registry-0067.json",
+      "source_id": "enterprise_sec_registry",
+      "count": 100,
+      "bytes": 136014,
+      "sha256": "ca7ccac7c4c8c97c5a1fa944fec31be201998392b51608fa85cf2b407b7f8dce",
+      "rights_primary_url": "https://www.sec.gov/files/about/webmaster-faq.htm"
+    },
+    {
+      "path": "chunks/enterprise_sec_registry-0068.json",
+      "source_id": "enterprise_sec_registry",
+      "count": 100,
+      "bytes": 137026,
+      "sha256": "abf47f2a7fc6c6d92c23c25e9932483638f72551b745ddc55088dbfc8b27616f",
+      "rights_primary_url": "https://www.sec.gov/files/about/webmaster-faq.htm"
+    },
+    {
+      "path": "chunks/enterprise_sec_registry-0069.json",
+      "source_id": "enterprise_sec_registry",
+      "count": 100,
+      "bytes": 137754,
+      "sha256": "d3a7337469893aff1985c18d0ffeb304acbb17bcfee83647504b5bc899075e21",
+      "rights_primary_url": "https://www.sec.gov/files/about/webmaster-faq.htm"
+    },
+    {
+      "path": "chunks/enterprise_sec_registry-0070.json",
+      "source_id": "enterprise_sec_registry",
+      "count": 100,
+      "bytes": 137537,
+      "sha256": "dfe5f1ff24bbc5102afb439d2671efab8192783c2eed4ffb0e7df2d6c86c787c",
+      "rights_primary_url": "https://www.sec.gov/files/about/webmaster-faq.htm"
+    },
+    {
+      "path": "chunks/enterprise_sec_registry-0071.json",
+      "source_id": "enterprise_sec_registry",
+      "count": 100,
+      "bytes": 136591,
+      "sha256": "1b3281513163da25a04af4444e332da5a4bd6a6e9e2710ebb0c921db5d354f04",
+      "rights_primary_url": "https://www.sec.gov/files/about/webmaster-faq.htm"
+    },
+    {
+      "path": "chunks/enterprise_sec_registry-0072.json",
+      "source_id": "enterprise_sec_registry",
+      "count": 100,
+      "bytes": 137919,
+      "sha256": "1c1b1360e21eabedea977c29529b9cde204ef30a86e9bcd70bf9b0c3d12687e2",
+      "rights_primary_url": "https://www.sec.gov/files/about/webmaster-faq.htm"
+    },
+    {
+      "path": "chunks/enterprise_sec_registry-0073.json",
+      "source_id": "enterprise_sec_registry",
+      "count": 100,
+      "bytes": 137405,
+      "sha256": "ca076ea4c783a077cf39a674d65160f46df549203332d3a6832d15f4bd04e792",
+      "rights_primary_url": "https://www.sec.gov/files/about/webmaster-faq.htm"
+    },
+    {
+      "path": "chunks/enterprise_sec_registry-0074.json",
+      "source_id": "enterprise_sec_registry",
+      "count": 100,
+      "bytes": 137514,
+      "sha256": "84731c3829c881336e1385637c609760cb94d967f7bef30dbdaee79619179eac",
+      "rights_primary_url": "https://www.sec.gov/files/about/webmaster-faq.htm"
+    },
+    {
+      "path": "chunks/enterprise_sec_registry-0075.json",
+      "source_id": "enterprise_sec_registry",
+      "count": 100,
+      "bytes": 137809,
+      "sha256": "2dd4c32ac616c62dbebac9ebde217a8db66252dabe64c35925a5775874eced96",
+      "rights_primary_url": "https://www.sec.gov/files/about/webmaster-faq.htm"
+    },
+    {
+      "path": "chunks/enterprise_sec_registry-0076.json",
+      "source_id": "enterprise_sec_registry",
+      "count": 100,
+      "bytes": 136350,
+      "sha256": "c63200cc5a437dcd572b97fab79461a721ccfae7a0162a7a46ae4ef6f9a9614c",
+      "rights_primary_url": "https://www.sec.gov/files/about/webmaster-faq.htm"
+    },
+    {
+      "path": "chunks/enterprise_sec_registry-0077.json",
+      "source_id": "enterprise_sec_registry",
+      "count": 100,
+      "bytes": 136435,
+      "sha256": "11bdd9dfab0bca60fd4b7b5d62a77a65f15f921d65b84df1e1a7d027a17aeb01",
+      "rights_primary_url": "https://www.sec.gov/files/about/webmaster-faq.htm"
+    },
+    {
+      "path": "chunks/enterprise_sec_registry-0078.json",
+      "source_id": "enterprise_sec_registry",
+      "count": 100,
+      "bytes": 137575,
+      "sha256": "7dbe72054f7d34e62ac5e3c9f142ba94c3db6fa9d53ac2db549f70a4be838ad5",
+      "rights_primary_url": "https://www.sec.gov/files/about/webmaster-faq.htm"
+    },
+    {
+      "path": "chunks/enterprise_sec_registry-0079.json",
+      "source_id": "enterprise_sec_registry",
+      "count": 100,
+      "bytes": 135693,
+      "sha256": "8b9beb9bfc8140a631d39641ab8370e61ba03ba08f86dade910551bd149f7056",
+      "rights_primary_url": "https://www.sec.gov/files/about/webmaster-faq.htm"
+    },
+    {
+      "path": "chunks/enterprise_sec_registry-0080.json",
+      "source_id": "enterprise_sec_registry",
+      "count": 16,
+      "bytes": 21804,
+      "sha256": "56f8292b4be344b231f99b4dbcea35771ca6932a26f122feab5ec502e5036b74",
+      "rights_primary_url": "https://www.sec.gov/files/about/webmaster-faq.htm"
+    },
+    {
+      "path": "chunks/enterprise_cvm_registry-0000.json",
+      "source_id": "enterprise_cvm_registry",
+      "count": 100,
+      "bytes": 182982,
+      "sha256": "8b58302d911c8c9734e6688290694d48a6f122c8d4cfb690af1666cc1be946ba",
+      "rights_primary_url": "https://dados.cvm.gov.br/dataset/cia_aberta-cad"
+    },
+    {
+      "path": "chunks/enterprise_cvm_registry-0001.json",
+      "source_id": "enterprise_cvm_registry",
+      "count": 100,
+      "bytes": 182712,
+      "sha256": "98b8fea9b39f979cd84b1a7e4a63672e76c9da75df3603fbdf3f79cea39f7c42",
+      "rights_primary_url": "https://dados.cvm.gov.br/dataset/cia_aberta-cad"
+    },
+    {
+      "path": "chunks/enterprise_cvm_registry-0002.json",
+      "source_id": "enterprise_cvm_registry",
+      "count": 100,
+      "bytes": 180610,
+      "sha256": "689bedf5ec1201ad5d29b473b46c037fc613487c76d1aedf84aff0a57c176849",
+      "rights_primary_url": "https://dados.cvm.gov.br/dataset/cia_aberta-cad"
+    },
+    {
+      "path": "chunks/enterprise_cvm_registry-0003.json",
+      "source_id": "enterprise_cvm_registry",
+      "count": 100,
+      "bytes": 182604,
+      "sha256": "31e5050c20edddcc22a4b7bcb9a00e4da3af99b362c97ff2932a369d58c02452",
+      "rights_primary_url": "https://dados.cvm.gov.br/dataset/cia_aberta-cad"
+    },
+    {
+      "path": "chunks/enterprise_cvm_registry-0004.json",
+      "source_id": "enterprise_cvm_registry",
+      "count": 100,
+      "bytes": 183007,
+      "sha256": "6828cdeaa82d4ec250fad42cf128c4becc06b9a291845eecbef9e08e54516793",
+      "rights_primary_url": "https://dados.cvm.gov.br/dataset/cia_aberta-cad"
+    },
+    {
+      "path": "chunks/enterprise_cvm_registry-0005.json",
+      "source_id": "enterprise_cvm_registry",
+      "count": 100,
+      "bytes": 182703,
+      "sha256": "2a5624e1de6cd9759a7eccc1a5a33f52d9031028923cdcae01b629bed80b6906",
+      "rights_primary_url": "https://dados.cvm.gov.br/dataset/cia_aberta-cad"
+    },
+    {
+      "path": "chunks/enterprise_cvm_registry-0006.json",
+      "source_id": "enterprise_cvm_registry",
+      "count": 100,
+      "bytes": 182000,
+      "sha256": "af4798af5619109aecf92303d94786be61881dc9080c5f29bea59454758bfb99",
+      "rights_primary_url": "https://dados.cvm.gov.br/dataset/cia_aberta-cad"
+    },
+    {
+      "path": "chunks/enterprise_cvm_registry-0007.json",
+      "source_id": "enterprise_cvm_registry",
+      "count": 100,
+      "bytes": 182528,
+      "sha256": "eb786b2742271cbd3ba8725a8c4b80f2a54fe72d44d5fe5ee0dea15a88fc3383",
+      "rights_primary_url": "https://dados.cvm.gov.br/dataset/cia_aberta-cad"
+    },
+    {
+      "path": "chunks/enterprise_cvm_registry-0008.json",
+      "source_id": "enterprise_cvm_registry",
+      "count": 100,
+      "bytes": 184709,
+      "sha256": "4bd5c531c736a30aaf503d80e882ba1942aa70ca49a9d48726ebf2f205f0e4a5",
+      "rights_primary_url": "https://dados.cvm.gov.br/dataset/cia_aberta-cad"
+    },
+    {
+      "path": "chunks/enterprise_cvm_registry-0009.json",
+      "source_id": "enterprise_cvm_registry",
+      "count": 100,
+      "bytes": 182995,
+      "sha256": "ec40f8087a5a310256c1cddc5a9d8ba41a4d046c35fdf9a94c343fb9503b68ee",
+      "rights_primary_url": "https://dados.cvm.gov.br/dataset/cia_aberta-cad"
+    },
+    {
+      "path": "chunks/enterprise_cvm_registry-0010.json",
+      "source_id": "enterprise_cvm_registry",
+      "count": 100,
+      "bytes": 182972,
+      "sha256": "d1cca83cd08c749edddcf5050ce5a008d7f62e5a6164e8068b011179a9490749",
+      "rights_primary_url": "https://dados.cvm.gov.br/dataset/cia_aberta-cad"
+    },
+    {
+      "path": "chunks/enterprise_cvm_registry-0011.json",
+      "source_id": "enterprise_cvm_registry",
+      "count": 100,
+      "bytes": 182741,
+      "sha256": "b315cc7809c47ed1ffc680727a1129056a2710827b7f38a270f0ed6e0fa42ddf",
+      "rights_primary_url": "https://dados.cvm.gov.br/dataset/cia_aberta-cad"
+    },
+    {
+      "path": "chunks/enterprise_cvm_registry-0012.json",
+      "source_id": "enterprise_cvm_registry",
+      "count": 100,
+      "bytes": 182830,
+      "sha256": "67dd6242e7b6afd2999d22f97883314916f6f9ba35c3e901e3de7aa1b7297662",
+      "rights_primary_url": "https://dados.cvm.gov.br/dataset/cia_aberta-cad"
+    },
+    {
+      "path": "chunks/enterprise_cvm_registry-0013.json",
+      "source_id": "enterprise_cvm_registry",
+      "count": 100,
+      "bytes": 182447,
+      "sha256": "4c554582754c538afbc9b6fa8b60e8f4d654a6166d703b8f7d93848d6a728601",
+      "rights_primary_url": "https://dados.cvm.gov.br/dataset/cia_aberta-cad"
+    },
+    {
+      "path": "chunks/enterprise_cvm_registry-0014.json",
+      "source_id": "enterprise_cvm_registry",
+      "count": 100,
+      "bytes": 182784,
+      "sha256": "c0b674e9a2e894c89d2c50782ae9bd99eb7fb990f5cad27961f3b86cbeae0c6d",
+      "rights_primary_url": "https://dados.cvm.gov.br/dataset/cia_aberta-cad"
+    },
+    {
+      "path": "chunks/enterprise_cvm_registry-0015.json",
+      "source_id": "enterprise_cvm_registry",
+      "count": 100,
+      "bytes": 182800,
+      "sha256": "42f083483d6affa46a74ef160f111ec556717ccbdd0d54c61251c0442aff571a",
+      "rights_primary_url": "https://dados.cvm.gov.br/dataset/cia_aberta-cad"
+    },
+    {
+      "path": "chunks/enterprise_cvm_registry-0016.json",
+      "source_id": "enterprise_cvm_registry",
+      "count": 100,
+      "bytes": 182788,
+      "sha256": "9f60360a1f37f14772253e3563bf277f31f5653e151b1c7879ca5a26c8016716",
+      "rights_primary_url": "https://dados.cvm.gov.br/dataset/cia_aberta-cad"
+    },
+    {
+      "path": "chunks/enterprise_cvm_registry-0017.json",
+      "source_id": "enterprise_cvm_registry",
+      "count": 100,
+      "bytes": 182891,
+      "sha256": "6d8f45e4a3b5f801aac8272bb0fc0d965ba8f4d8a7a41bdec024e3bf95872c3f",
+      "rights_primary_url": "https://dados.cvm.gov.br/dataset/cia_aberta-cad"
+    },
+    {
+      "path": "chunks/enterprise_cvm_registry-0018.json",
+      "source_id": "enterprise_cvm_registry",
+      "count": 100,
+      "bytes": 182781,
+      "sha256": "77bf8fc527230294b116443664561ae6c9ee5442716e4705f449af8e484fcc18",
+      "rights_primary_url": "https://dados.cvm.gov.br/dataset/cia_aberta-cad"
+    },
+    {
+      "path": "chunks/enterprise_cvm_registry-0019.json",
+      "source_id": "enterprise_cvm_registry",
+      "count": 100,
+      "bytes": 182984,
+      "sha256": "6731ab973a915de75ab294a6ebdb9f93f626e17f25b8b2875da2fd1416e34c99",
+      "rights_primary_url": "https://dados.cvm.gov.br/dataset/cia_aberta-cad"
+    },
+    {
+      "path": "chunks/enterprise_cvm_registry-0020.json",
+      "source_id": "enterprise_cvm_registry",
+      "count": 100,
+      "bytes": 183222,
+      "sha256": "c785f86ead87d3d50eef5dfb5e7404c2fd23cc8d804b45c6c6c951aadf0079f6",
+      "rights_primary_url": "https://dados.cvm.gov.br/dataset/cia_aberta-cad"
+    },
+    {
+      "path": "chunks/enterprise_cvm_registry-0021.json",
+      "source_id": "enterprise_cvm_registry",
+      "count": 100,
+      "bytes": 182814,
+      "sha256": "7e20bdc3f3d927e01ca951c91eae32444fb68f8457576edff4e148b92e2774c1",
+      "rights_primary_url": "https://dados.cvm.gov.br/dataset/cia_aberta-cad"
+    },
+    {
+      "path": "chunks/enterprise_cvm_registry-0022.json",
+      "source_id": "enterprise_cvm_registry",
+      "count": 100,
+      "bytes": 182795,
+      "sha256": "8cb605ca9616c09aafa3b41ee4b1a8bb2286bc6016ea0b055fb1c6ea1e04bc60",
+      "rights_primary_url": "https://dados.cvm.gov.br/dataset/cia_aberta-cad"
+    },
+    {
+      "path": "chunks/enterprise_cvm_registry-0023.json",
+      "source_id": "enterprise_cvm_registry",
+      "count": 100,
+      "bytes": 182437,
+      "sha256": "4e73f91e9a6a1621f31f11b89d209c05e24d4226405d45c8f197ce49ffa7bbd9",
+      "rights_primary_url": "https://dados.cvm.gov.br/dataset/cia_aberta-cad"
+    },
+    {
+      "path": "chunks/enterprise_cvm_registry-0024.json",
+      "source_id": "enterprise_cvm_registry",
+      "count": 100,
+      "bytes": 183213,
+      "sha256": "347a4d8aa74dfe9202e2a3d98ca68026955df304c1f44fb66d92becf399eec5f",
+      "rights_primary_url": "https://dados.cvm.gov.br/dataset/cia_aberta-cad"
+    },
+    {
+      "path": "chunks/enterprise_cvm_registry-0025.json",
+      "source_id": "enterprise_cvm_registry",
+      "count": 67,
+      "bytes": 122606,
+      "sha256": "9936891907dc157841c3d2163d26cd0ec6a3b43a0ac2db766cce7783e40bf220",
+      "rights_primary_url": "https://dados.cvm.gov.br/dataset/cia_aberta-cad"
+    },
+    {
+      "path": "chunks/enterprise_twse_registry-0000.json",
+      "source_id": "enterprise_twse_registry",
+      "count": 100,
+      "bytes": 160717,
+      "sha256": "3e7184228ccde7b1d9b2963c26597d2bfd26db82778b87e028b7129bbe73eaca",
+      "rights_primary_url": "https://data.gov.tw/dataset/18419"
+    },
+    {
+      "path": "chunks/enterprise_twse_registry-0001.json",
+      "source_id": "enterprise_twse_registry",
+      "count": 100,
+      "bytes": 160504,
+      "sha256": "6ba7f74ef0632388e95d73741b6433a9adf16d8ea87ca69d7a9fb8d6f184b0a6",
+      "rights_primary_url": "https://data.gov.tw/dataset/18419"
+    },
+    {
+      "path": "chunks/enterprise_twse_registry-0002.json",
+      "source_id": "enterprise_twse_registry",
+      "count": 100,
+      "bytes": 160562,
+      "sha256": "09b4c5a979323424f487b4cf9d4ef0b8b1fecbf892a72029d459afc23e4946bc",
+      "rights_primary_url": "https://data.gov.tw/dataset/18419"
+    },
+    {
+      "path": "chunks/enterprise_twse_registry-0003.json",
+      "source_id": "enterprise_twse_registry",
+      "count": 100,
+      "bytes": 160409,
+      "sha256": "ccb48427b08476bddf4bd22111c2843dbce46c9779671b935e1ad3b5b7578ddc",
+      "rights_primary_url": "https://data.gov.tw/dataset/18419"
+    },
+    {
+      "path": "chunks/enterprise_twse_registry-0004.json",
+      "source_id": "enterprise_twse_registry",
+      "count": 100,
+      "bytes": 160944,
+      "sha256": "e74e36b5d33cb005b6ea992161bb2fe0d07344ee529afe4d483b601e24f4c8cc",
+      "rights_primary_url": "https://data.gov.tw/dataset/18419"
+    },
+    {
+      "path": "chunks/enterprise_twse_registry-0005.json",
+      "source_id": "enterprise_twse_registry",
+      "count": 100,
+      "bytes": 160522,
+      "sha256": "9f17ddbca959c5b6f8892265492ab396d357bea1b3bb9d0a8495be35ba50e85b",
+      "rights_primary_url": "https://data.gov.tw/dataset/18419"
+    },
+    {
+      "path": "chunks/enterprise_twse_registry-0006.json",
+      "source_id": "enterprise_twse_registry",
+      "count": 100,
+      "bytes": 160983,
+      "sha256": "184c7ed6dfe7e8fb933faa88fb6fa6afffa46bd36cf661d1804584334bc81b4f",
+      "rights_primary_url": "https://data.gov.tw/dataset/18419"
+    },
+    {
+      "path": "chunks/enterprise_twse_registry-0007.json",
+      "source_id": "enterprise_twse_registry",
+      "count": 100,
+      "bytes": 160950,
+      "sha256": "85d029e1d3682308a19b4e8546dcd53b66df0ded69b6d56e10d721796e6c7407",
+      "rights_primary_url": "https://data.gov.tw/dataset/18419"
+    },
+    {
+      "path": "chunks/enterprise_twse_registry-0008.json",
+      "source_id": "enterprise_twse_registry",
+      "count": 100,
+      "bytes": 160846,
+      "sha256": "c264940e39d9068137b1d05727d3dbf55fba6e19948e5f2e72ebe35a5034b9a2",
+      "rights_primary_url": "https://data.gov.tw/dataset/18419"
+    },
+    {
+      "path": "chunks/enterprise_twse_registry-0009.json",
+      "source_id": "enterprise_twse_registry",
+      "count": 100,
+      "bytes": 161485,
+      "sha256": "ec28eeaa378a089fc36d8d7d77fad66f699ae54726fee4307b8854ed6eb5a9a9",
+      "rights_primary_url": "https://data.gov.tw/dataset/18419"
+    },
+    {
+      "path": "chunks/enterprise_twse_registry-0010.json",
+      "source_id": "enterprise_twse_registry",
+      "count": 95,
+      "bytes": 153012,
+      "sha256": "fc6d366384ec47866bcb5f93dde4bd3156767fefc3a14054d54a285f1bfcb1f9",
+      "rights_primary_url": "https://data.gov.tw/dataset/18419"
+    },
+    {
+      "path": "chunks/enterprise_gleif_reference-0000.json",
+      "source_id": "enterprise_gleif_reference",
+      "count": 100,
+      "bytes": 181828,
+      "sha256": "c835d161ac82acdca6df1e0006941de9774e01a2617efe342c6ef7320bd29a91",
+      "rights_primary_url": "https://www.gleif.org/en/about/open-data"
+    },
+    {
+      "path": "chunks/enterprise_gleif_reference-0001.json",
+      "source_id": "enterprise_gleif_reference",
+      "count": 100,
+      "bytes": 180849,
+      "sha256": "2eef23a219a92734b6a107a5131a51d0fee56c201c7ee8937f1b913939a76925",
+      "rights_primary_url": "https://www.gleif.org/en/about/open-data"
+    },
+    {
+      "path": "chunks/enterprise_gleif_reference-0002.json",
+      "source_id": "enterprise_gleif_reference",
+      "count": 100,
+      "bytes": 178907,
+      "sha256": "60c2eda6a19ca336e029b3abfa06b20a55a179b943100781620b4afe36c622bf",
+      "rights_primary_url": "https://www.gleif.org/en/about/open-data"
+    },
+    {
+      "path": "chunks/enterprise_gleif_reference-0003.json",
+      "source_id": "enterprise_gleif_reference",
+      "count": 100,
+      "bytes": 178772,
+      "sha256": "260b98aeba61241a244547f0d2614a6cfcc7655902a32097637adc4583085ca6",
+      "rights_primary_url": "https://www.gleif.org/en/about/open-data"
+    },
+    {
+      "path": "chunks/enterprise_gleif_reference-0004.json",
+      "source_id": "enterprise_gleif_reference",
+      "count": 100,
+      "bytes": 183429,
+      "sha256": "9c8a6364b06023d86ca50440bd65547a6e7bc5b76926f675c3dec6ee26fc099d",
+      "rights_primary_url": "https://www.gleif.org/en/about/open-data"
+    },
+    {
+      "path": "chunks/enterprise_gleif_reference-0005.json",
+      "source_id": "enterprise_gleif_reference",
+      "count": 100,
+      "bytes": 176573,
+      "sha256": "1bbbb42a30775501b05b49d6481c11912caf7e82efcd562a72875a58b32f4b06",
+      "rights_primary_url": "https://www.gleif.org/en/about/open-data"
+    },
+    {
+      "path": "chunks/enterprise_gleif_reference-0006.json",
+      "source_id": "enterprise_gleif_reference",
+      "count": 100,
+      "bytes": 179601,
+      "sha256": "6899fb1bb9a2e5209d9fc151d84a2e6082fdc521ff515bbe198707ac4dffa454",
+      "rights_primary_url": "https://www.gleif.org/en/about/open-data"
+    },
+    {
+      "path": "chunks/enterprise_gleif_reference-0007.json",
+      "source_id": "enterprise_gleif_reference",
+      "count": 100,
+      "bytes": 184155,
+      "sha256": "dd39ba122449c23ab894c0bc38137f8f17e345911c026809853c6954f377913b",
+      "rights_primary_url": "https://www.gleif.org/en/about/open-data"
+    },
+    {
+      "path": "chunks/enterprise_gleif_reference-0008.json",
+      "source_id": "enterprise_gleif_reference",
+      "count": 100,
+      "bytes": 178055,
+      "sha256": "a1c048e2b9aae68f832a2b09f48633b546aee110dc7825e887c7711cea011911",
+      "rights_primary_url": "https://www.gleif.org/en/about/open-data"
+    },
+    {
+      "path": "chunks/enterprise_gleif_reference-0009.json",
+      "source_id": "enterprise_gleif_reference",
+      "count": 11,
+      "bytes": 19186,
+      "sha256": "259fd9829658b827c222d045c531498422a12e898ccbcf5358fe767855cde928",
+      "rights_primary_url": "https://www.gleif.org/en/about/open-data"
+    },
+    {
+      "path": "chunks/stat_eurostat_sbs_size-0000.json",
+      "source_id": "stat_eurostat_sbs_size",
+      "count": 100,
+      "bytes": 212687,
+      "sha256": "451ed417a92992c262c0b1fe9f9a61d936cce5a86e54031811e9e47f5a89cb84",
+      "rights_primary_url": "https://ec.europa.eu/eurostat/help/copyright-notice"
+    },
+    {
+      "path": "chunks/stat_eurostat_sbs_size-0001.json",
+      "source_id": "stat_eurostat_sbs_size",
+      "count": 100,
+      "bytes": 216076,
+      "sha256": "74435d762611a1b30638cd0c4c786c71fe96ea816e96d2d182770b9f0809de8b",
+      "rights_primary_url": "https://ec.europa.eu/eurostat/help/copyright-notice"
+    },
+    {
+      "path": "chunks/stat_eurostat_sbs_size-0002.json",
+      "source_id": "stat_eurostat_sbs_size",
+      "count": 100,
+      "bytes": 217432,
+      "sha256": "2b9eedbea289cf3b0c5d13d793b027dc917531dc72ff95ca9dc8c2a6dc68b35d",
+      "rights_primary_url": "https://ec.europa.eu/eurostat/help/copyright-notice"
+    },
+    {
+      "path": "chunks/stat_eurostat_sbs_size-0003.json",
+      "source_id": "stat_eurostat_sbs_size",
+      "count": 100,
+      "bytes": 217580,
+      "sha256": "72eaf5b8253e08eb654efec328a68227cbff5526584050c6da95e623f32fd7c8",
+      "rights_primary_url": "https://ec.europa.eu/eurostat/help/copyright-notice"
+    },
+    {
+      "path": "chunks/stat_eurostat_sbs_size-0004.json",
+      "source_id": "stat_eurostat_sbs_size",
+      "count": 100,
+      "bytes": 218006,
+      "sha256": "6107e4ff5ac48eae8f21a635ad5b1efb18ebd6a51bb0bb9878c2eaa2b70e2f2f",
+      "rights_primary_url": "https://ec.europa.eu/eurostat/help/copyright-notice"
+    },
+    {
+      "path": "chunks/stat_eurostat_sbs_size-0005.json",
+      "source_id": "stat_eurostat_sbs_size",
+      "count": 100,
+      "bytes": 217374,
+      "sha256": "6ece48b7e3fb3e371df8192893c2fef68f2e92dc27dae88e922bdcec90a801db",
+      "rights_primary_url": "https://ec.europa.eu/eurostat/help/copyright-notice"
+    },
+    {
+      "path": "chunks/stat_eurostat_sbs_size-0006.json",
+      "source_id": "stat_eurostat_sbs_size",
+      "count": 100,
+      "bytes": 221539,
+      "sha256": "c35ced03079591fe29b8245cc0a9ef328c7bb79c6137f7593a2663d99a6ef29e",
+      "rights_primary_url": "https://ec.europa.eu/eurostat/help/copyright-notice"
+    },
+    {
+      "path": "chunks/stat_eurostat_sbs_size-0007.json",
+      "source_id": "stat_eurostat_sbs_size",
+      "count": 100,
+      "bytes": 225858,
+      "sha256": "f52d62c0f25e2240678276c7bf149eb817e52eea4d431db99a4a94d7144da6dd",
+      "rights_primary_url": "https://ec.europa.eu/eurostat/help/copyright-notice"
+    },
+    {
+      "path": "chunks/stat_eurostat_sbs_size-0008.json",
+      "source_id": "stat_eurostat_sbs_size",
+      "count": 100,
+      "bytes": 227402,
+      "sha256": "a63870de34635d6e90312d0702668afd0beb8d126a28dbc133252692a6dd0c83",
+      "rights_primary_url": "https://ec.europa.eu/eurostat/help/copyright-notice"
+    },
+    {
+      "path": "chunks/stat_eurostat_sbs_size-0009.json",
+      "source_id": "stat_eurostat_sbs_size",
+      "count": 100,
+      "bytes": 227514,
+      "sha256": "6d4932d82e246dcd05819fe6ec2ca4850739d970ea9a3673acd47b27f14c2e60",
+      "rights_primary_url": "https://ec.europa.eu/eurostat/help/copyright-notice"
+    },
+    {
+      "path": "chunks/stat_eurostat_sbs_size-0010.json",
+      "source_id": "stat_eurostat_sbs_size",
+      "count": 100,
+      "bytes": 228025,
+      "sha256": "a187b0fd7a45433f19b19103d0409f9a241a83a118590c8f90a2518dd293a679",
+      "rights_primary_url": "https://ec.europa.eu/eurostat/help/copyright-notice"
+    },
+    {
+      "path": "chunks/stat_eurostat_sbs_size-0011.json",
+      "source_id": "stat_eurostat_sbs_size",
+      "count": 100,
+      "bytes": 228570,
+      "sha256": "1205cc3ac05be5060a0b7692b1617b5f493f47f3c2904b082ee63224b515de4c",
+      "rights_primary_url": "https://ec.europa.eu/eurostat/help/copyright-notice"
+    },
+    {
+      "path": "chunks/stat_eurostat_sbs_size-0012.json",
+      "source_id": "stat_eurostat_sbs_size",
+      "count": 100,
+      "bytes": 228801,
+      "sha256": "dbef85af04731e302bcbd5cec5e947537eef5e81b719d1d824c767fd644c15f5",
+      "rights_primary_url": "https://ec.europa.eu/eurostat/help/copyright-notice"
+    },
+    {
+      "path": "chunks/stat_eurostat_sbs_size-0013.json",
+      "source_id": "stat_eurostat_sbs_size",
+      "count": 100,
+      "bytes": 228784,
+      "sha256": "6ddd157c3edd5517c687416aa4ff11e06a69614a92afa28bdd0e499a731e0827",
+      "rights_primary_url": "https://ec.europa.eu/eurostat/help/copyright-notice"
+    },
+    {
+      "path": "chunks/stat_eurostat_sbs_size-0014.json",
+      "source_id": "stat_eurostat_sbs_size",
+      "count": 100,
+      "bytes": 224542,
+      "sha256": "530a72979b226f37eb9fb290d71c64870151a8754a2a9a9d2997a373d7df3da7",
+      "rights_primary_url": "https://ec.europa.eu/eurostat/help/copyright-notice"
+    },
+    {
+      "path": "chunks/stat_eurostat_sbs_size-0015.json",
+      "source_id": "stat_eurostat_sbs_size",
+      "count": 100,
+      "bytes": 216669,
+      "sha256": "20fcc5ecba9af655c2c063fff11abc69fb542bcd76993a595c7131d70eb26163",
+      "rights_primary_url": "https://ec.europa.eu/eurostat/help/copyright-notice"
+    },
+    {
+      "path": "chunks/stat_eurostat_sbs_size-0016.json",
+      "source_id": "stat_eurostat_sbs_size",
+      "count": 100,
+      "bytes": 219503,
+      "sha256": "53eab3227b7fb9e85c7542c95efe79100e9add5ab770c3b7f3b9f2b0b477a88f",
+      "rights_primary_url": "https://ec.europa.eu/eurostat/help/copyright-notice"
+    },
+    {
+      "path": "chunks/stat_eurostat_sbs_size-0017.json",
+      "source_id": "stat_eurostat_sbs_size",
+      "count": 100,
+      "bytes": 219657,
+      "sha256": "8125e0afef1eb6ce25465586aa84a984f35d782e4c9e1161d7ca588a00610fda",
+      "rights_primary_url": "https://ec.europa.eu/eurostat/help/copyright-notice"
+    },
+    {
+      "path": "chunks/stat_eurostat_sbs_size-0018.json",
+      "source_id": "stat_eurostat_sbs_size",
+      "count": 100,
+      "bytes": 219724,
+      "sha256": "41a83ccadad100964d7d095c08e2580e6e200c8c60f2e37183a90ce509e99dd9",
+      "rights_primary_url": "https://ec.europa.eu/eurostat/help/copyright-notice"
+    },
+    {
+      "path": "chunks/stat_eurostat_sbs_size-0019.json",
+      "source_id": "stat_eurostat_sbs_size",
+      "count": 100,
+      "bytes": 220712,
+      "sha256": "08510254aeebe41f3f54ea84358423765f919b63ef41aae7a0b7afaf6c3b5e8c",
+      "rights_primary_url": "https://ec.europa.eu/eurostat/help/copyright-notice"
+    },
+    {
+      "path": "chunks/stat_eurostat_sbs_size-0020.json",
+      "source_id": "stat_eurostat_sbs_size",
+      "count": 100,
+      "bytes": 220530,
+      "sha256": "19d57f92486ac2897666632f3191f5495709a38ba9ffd736ca8b6adfb9021749",
+      "rights_primary_url": "https://ec.europa.eu/eurostat/help/copyright-notice"
+    },
+    {
+      "path": "chunks/stat_eurostat_sbs_size-0021.json",
+      "source_id": "stat_eurostat_sbs_size",
+      "count": 100,
+      "bytes": 221197,
+      "sha256": "9d6f19021d22d690dbcc5e5b1d5b0a1fa2b264119ce401c299e532844f71a475",
+      "rights_primary_url": "https://ec.europa.eu/eurostat/help/copyright-notice"
+    },
+    {
+      "path": "chunks/stat_eurostat_sbs_size-0022.json",
+      "source_id": "stat_eurostat_sbs_size",
+      "count": 100,
+      "bytes": 220209,
+      "sha256": "9b62701393a3f2a9dad3ef536808976f98734ba0ee8cde680bd222766348b959",
+      "rights_primary_url": "https://ec.europa.eu/eurostat/help/copyright-notice"
+    },
+    {
+      "path": "chunks/stat_eurostat_sbs_size-0023.json",
+      "source_id": "stat_eurostat_sbs_size",
+      "count": 100,
+      "bytes": 214733,
+      "sha256": "eb0c15c438038423e297353b747e1f8c16da9c96580b76be6f28cbc6c06d9ddc",
+      "rights_primary_url": "https://ec.europa.eu/eurostat/help/copyright-notice"
+    },
+    {
+      "path": "chunks/stat_eurostat_sbs_size-0024.json",
+      "source_id": "stat_eurostat_sbs_size",
+      "count": 100,
+      "bytes": 217392,
+      "sha256": "b481526bcac9957f55e9ac54c9d9ec2a5c6c5f0749406dac3627b0debc2474e3",
+      "rights_primary_url": "https://ec.europa.eu/eurostat/help/copyright-notice"
+    },
+    {
+      "path": "chunks/stat_eurostat_sbs_size-0025.json",
+      "source_id": "stat_eurostat_sbs_size",
+      "count": 100,
+      "bytes": 218955,
+      "sha256": "b7758163ec43438c7b75524a1b0c3b8c175d1a2eed4e49399cab9b222f0942cd",
+      "rights_primary_url": "https://ec.europa.eu/eurostat/help/copyright-notice"
+    },
+    {
+      "path": "chunks/stat_eurostat_sbs_size-0026.json",
+      "source_id": "stat_eurostat_sbs_size",
+      "count": 100,
+      "bytes": 219212,
+      "sha256": "f2e43edbbf757f20a745bcdec28b1b5571fae45902900051671e90d1fbd3eb50",
+      "rights_primary_url": "https://ec.europa.eu/eurostat/help/copyright-notice"
+    },
+    {
+      "path": "chunks/stat_eurostat_sbs_size-0027.json",
+      "source_id": "stat_eurostat_sbs_size",
+      "count": 100,
+      "bytes": 219666,
+      "sha256": "cc6a0b384845344ef06263b90cbaaefc46ab117edef174d84d8bda8e72d5af94",
+      "rights_primary_url": "https://ec.europa.eu/eurostat/help/copyright-notice"
+    },
+    {
+      "path": "chunks/stat_eurostat_sbs_size-0028.json",
+      "source_id": "stat_eurostat_sbs_size",
+      "count": 100,
+      "bytes": 219161,
+      "sha256": "b7ad7d0bbc00db9b267782bedce7f68945fc1d66bfe0b343592b16100d4c82d2",
+      "rights_primary_url": "https://ec.europa.eu/eurostat/help/copyright-notice"
+    },
+    {
+      "path": "chunks/stat_eurostat_sbs_size-0029.json",
+      "source_id": "stat_eurostat_sbs_size",
+      "count": 100,
+      "bytes": 223105,
+      "sha256": "2e99f6c0dae18731c325248cdff83b2b6b93cfd697be94838db6525a2dfd95eb",
+      "rights_primary_url": "https://ec.europa.eu/eurostat/help/copyright-notice"
+    },
+    {
+      "path": "chunks/stat_eurostat_sbs_size-0030.json",
+      "source_id": "stat_eurostat_sbs_size",
+      "count": 100,
+      "bytes": 227338,
+      "sha256": "9cb538bec525744e3e9589e6abad96350d0b51826d5c72ba0d5a0b7481863073",
+      "rights_primary_url": "https://ec.europa.eu/eurostat/help/copyright-notice"
+    },
+    {
+      "path": "chunks/stat_eurostat_sbs_size-0031.json",
+      "source_id": "stat_eurostat_sbs_size",
+      "count": 100,
+      "bytes": 228929,
+      "sha256": "6c31122ccdea7adfabfaabff43a6610b221ad5722c0c9166c39ac7161616ed0b",
+      "rights_primary_url": "https://ec.europa.eu/eurostat/help/copyright-notice"
+    },
+    {
+      "path": "chunks/stat_eurostat_sbs_size-0032.json",
+      "source_id": "stat_eurostat_sbs_size",
+      "count": 100,
+      "bytes": 229046,
+      "sha256": "ec7e05bfc250e38d6d5f6620dca9a70fc3d2a61bf01b719638441443ab535ab3",
+      "rights_primary_url": "https://ec.europa.eu/eurostat/help/copyright-notice"
+    },
+    {
+      "path": "chunks/stat_eurostat_sbs_size-0033.json",
+      "source_id": "stat_eurostat_sbs_size",
+      "count": 100,
+      "bytes": 229586,
+      "sha256": "d8554936c51e35005a8a213fca77c769403accc7e5ab34b6ff8d5f183c2e3c5a",
+      "rights_primary_url": "https://ec.europa.eu/eurostat/help/copyright-notice"
+    },
+    {
+      "path": "chunks/stat_eurostat_sbs_size-0034.json",
+      "source_id": "stat_eurostat_sbs_size",
+      "count": 100,
+      "bytes": 230198,
+      "sha256": "624a0e3e4a76f215c5e7c35b81c713d8eea001ff01dd620538f3546c35edf033",
+      "rights_primary_url": "https://ec.europa.eu/eurostat/help/copyright-notice"
+    },
+    {
+      "path": "chunks/stat_eurostat_sbs_size-0035.json",
+      "source_id": "stat_eurostat_sbs_size",
+      "count": 100,
+      "bytes": 230453,
+      "sha256": "c5543d69d4e068bb83f02f432263586d4ffb21ac20d81215d59a1783042ec167",
+      "rights_primary_url": "https://ec.europa.eu/eurostat/help/copyright-notice"
+    },
+    {
+      "path": "chunks/stat_eurostat_sbs_size-0036.json",
+      "source_id": "stat_eurostat_sbs_size",
+      "count": 100,
+      "bytes": 230477,
+      "sha256": "6c7150840a2f812e708fbfba721dd9787be0c392ca0d772e6e15257f26f2abd2",
+      "rights_primary_url": "https://ec.europa.eu/eurostat/help/copyright-notice"
+    },
+    {
+      "path": "chunks/stat_eurostat_sbs_size-0037.json",
+      "source_id": "stat_eurostat_sbs_size",
+      "count": 100,
+      "bytes": 225626,
+      "sha256": "686712fd02ac520ce5c2732dd86f44398405efd2738e9b39d40ede01dc129db7",
+      "rights_primary_url": "https://ec.europa.eu/eurostat/help/copyright-notice"
+    },
+    {
+      "path": "chunks/stat_eurostat_sbs_size-0038.json",
+      "source_id": "stat_eurostat_sbs_size",
+      "count": 100,
+      "bytes": 218400,
+      "sha256": "2abd5ff5408327d9824d098e1f4c5cc4ed445786f4f43f71f6e769610809503d",
+      "rights_primary_url": "https://ec.europa.eu/eurostat/help/copyright-notice"
+    },
+    {
+      "path": "chunks/stat_eurostat_sbs_size-0039.json",
+      "source_id": "stat_eurostat_sbs_size",
+      "count": 100,
+      "bytes": 220998,
+      "sha256": "f8526264ba6a51fccf012a0fe97470eddb242181c98756643b51425ad3d25cd8",
+      "rights_primary_url": "https://ec.europa.eu/eurostat/help/copyright-notice"
+    },
+    {
+      "path": "chunks/stat_eurostat_sbs_size-0040.json",
+      "source_id": "stat_eurostat_sbs_size",
+      "count": 100,
+      "bytes": 221176,
+      "sha256": "f5a930d14650212061ae12640a4dfd90b9de54fe5ac601e50c37865ed2e57f5a",
+      "rights_primary_url": "https://ec.europa.eu/eurostat/help/copyright-notice"
+    },
+    {
+      "path": "chunks/stat_eurostat_sbs_size-0041.json",
+      "source_id": "stat_eurostat_sbs_size",
+      "count": 100,
+      "bytes": 221352,
+      "sha256": "584ab9cd0a8815a79749a92b86e4d9c768035262cdb6bad64119f8b61fe3bbb1",
+      "rights_primary_url": "https://ec.europa.eu/eurostat/help/copyright-notice"
+    },
+    {
+      "path": "chunks/stat_eurostat_sbs_size-0042.json",
+      "source_id": "stat_eurostat_sbs_size",
+      "count": 100,
+      "bytes": 222341,
+      "sha256": "7b070156a8e50be1f1a55729886da9d057e9cd1f42c4375915c95c5d1de6b4d9",
+      "rights_primary_url": "https://ec.europa.eu/eurostat/help/copyright-notice"
+    },
+    {
+      "path": "chunks/stat_eurostat_sbs_size-0043.json",
+      "source_id": "stat_eurostat_sbs_size",
+      "count": 100,
+      "bytes": 222402,
+      "sha256": "adc4e2fd9c130fa1fdb48260fb4311dc3d3f3b9af311a1d33a550fb0178e3364",
+      "rights_primary_url": "https://ec.europa.eu/eurostat/help/copyright-notice"
+    },
+    {
+      "path": "chunks/stat_eurostat_sbs_size-0044.json",
+      "source_id": "stat_eurostat_sbs_size",
+      "count": 100,
+      "bytes": 222950,
+      "sha256": "3aa7829b06ba5191ffc6c5458637c048447137492cc6728075daeac89263a15e",
+      "rights_primary_url": "https://ec.europa.eu/eurostat/help/copyright-notice"
+    },
+    {
+      "path": "chunks/stat_eurostat_sbs_size-0045.json",
+      "source_id": "stat_eurostat_sbs_size",
+      "count": 100,
+      "bytes": 221729,
+      "sha256": "ca17aaa395467756fd7560b964b3e2d324a27bbb64869ff89a72803ac151a391",
+      "rights_primary_url": "https://ec.europa.eu/eurostat/help/copyright-notice"
+    },
+    {
+      "path": "chunks/stat_eurostat_sbs_size-0046.json",
+      "source_id": "stat_eurostat_sbs_size",
+      "count": 100,
+      "bytes": 215045,
+      "sha256": "9bcc860d0dd21649acb24ff6bf6718cac1baba146f3f523a078866de233d4dde",
+      "rights_primary_url": "https://ec.europa.eu/eurostat/help/copyright-notice"
+    },
+    {
+      "path": "chunks/stat_eurostat_sbs_size-0047.json",
+      "source_id": "stat_eurostat_sbs_size",
+      "count": 100,
+      "bytes": 218114,
+      "sha256": "204c715a213267c1ae8502ce1d89439885c891b499126ce4b9bfa65e7883be69",
+      "rights_primary_url": "https://ec.europa.eu/eurostat/help/copyright-notice"
+    },
+    {
+      "path": "chunks/stat_eurostat_sbs_size-0048.json",
+      "source_id": "stat_eurostat_sbs_size",
+      "count": 100,
+      "bytes": 219616,
+      "sha256": "bda5713dec176d39b679d72bca118b6ad100615df0e8fef9e28361837807808b",
+      "rights_primary_url": "https://ec.europa.eu/eurostat/help/copyright-notice"
+    },
+    {
+      "path": "chunks/stat_eurostat_sbs_size-0049.json",
+      "source_id": "stat_eurostat_sbs_size",
+      "count": 100,
+      "bytes": 219782,
+      "sha256": "720733dd1e22718d56aa2fd62b62f8104edc7ffb29480bef1f2fb991ae019294",
+      "rights_primary_url": "https://ec.europa.eu/eurostat/help/copyright-notice"
+    },
+    {
+      "path": "chunks/stat_eurostat_sbs_size-0050.json",
+      "source_id": "stat_eurostat_sbs_size",
+      "count": 100,
+      "bytes": 220264,
+      "sha256": "379fad3fa32191461de1112fe012f12cabcfb8c5babf2cb26667884d3bf299c4",
+      "rights_primary_url": "https://ec.europa.eu/eurostat/help/copyright-notice"
+    },
+    {
+      "path": "chunks/stat_eurostat_sbs_size-0051.json",
+      "source_id": "stat_eurostat_sbs_size",
+      "count": 100,
+      "bytes": 219690,
+      "sha256": "b6f58e4586c8121b3b6c5e4b6222f108ab924491997f487a29519f1ca29917ee",
+      "rights_primary_url": "https://ec.europa.eu/eurostat/help/copyright-notice"
+    },
+    {
+      "path": "chunks/stat_eurostat_sbs_size-0052.json",
+      "source_id": "stat_eurostat_sbs_size",
+      "count": 100,
+      "bytes": 224538,
+      "sha256": "7bcecc6925682630d1830c18f44c2d6fe1da989f2bd54f707e31afee539dcf35",
+      "rights_primary_url": "https://ec.europa.eu/eurostat/help/copyright-notice"
+    },
+    {
+      "path": "chunks/stat_eurostat_sbs_size-0053.json",
+      "source_id": "stat_eurostat_sbs_size",
+      "count": 100,
+      "bytes": 228636,
+      "sha256": "78ceef19f42643b3e59182de7030d3be6e0f89e4020a8ec1e7c67700222a2b63",
+      "rights_primary_url": "https://ec.europa.eu/eurostat/help/copyright-notice"
+    },
+    {
+      "path": "chunks/stat_eurostat_sbs_size-0054.json",
+      "source_id": "stat_eurostat_sbs_size",
+      "count": 100,
+      "bytes": 230474,
+      "sha256": "f207027039f0728ca836a1c45a3b6589397d1f19f8ada826de6ea595d3b6df26",
+      "rights_primary_url": "https://ec.europa.eu/eurostat/help/copyright-notice"
+    },
+    {
+      "path": "chunks/stat_eurostat_sbs_size-0055.json",
+      "source_id": "stat_eurostat_sbs_size",
+      "count": 100,
+      "bytes": 230869,
+      "sha256": "6756ca77cdbcd59e2728ae19683abe3248460f11e06d9833d24d4f62c47c6095",
+      "rights_primary_url": "https://ec.europa.eu/eurostat/help/copyright-notice"
+    },
+    {
+      "path": "chunks/stat_eurostat_sbs_size-0056.json",
+      "source_id": "stat_eurostat_sbs_size",
+      "count": 100,
+      "bytes": 231102,
+      "sha256": "70279a558be72fea30de5abc91a6e1a89488af99853b2e0083f178f45eb35278",
+      "rights_primary_url": "https://ec.europa.eu/eurostat/help/copyright-notice"
+    },
+    {
+      "path": "chunks/stat_eurostat_sbs_size-0057.json",
+      "source_id": "stat_eurostat_sbs_size",
+      "count": 100,
+      "bytes": 230813,
+      "sha256": "ff7827dc6486c3da70b9682d4f33fddfe9d7ff337fd2da2c5303efe1b4812cae",
+      "rights_primary_url": "https://ec.europa.eu/eurostat/help/copyright-notice"
+    },
+    {
+      "path": "chunks/stat_eurostat_sbs_size-0058.json",
+      "source_id": "stat_eurostat_sbs_size",
+      "count": 100,
+      "bytes": 223656,
+      "sha256": "544c8a08c39366f262756ad9679763b5f2065384daec7b86b6c5e7cb987e914a",
+      "rights_primary_url": "https://ec.europa.eu/eurostat/help/copyright-notice"
+    },
+    {
+      "path": "chunks/stat_eurostat_sbs_size-0059.json",
+      "source_id": "stat_eurostat_sbs_size",
+      "count": 100,
+      "bytes": 219812,
+      "sha256": "fd1a1293bce884c862a28a3de721e077b3fd588e41d3b4cb27b8a3f3db5c88e4",
+      "rights_primary_url": "https://ec.europa.eu/eurostat/help/copyright-notice"
+    },
+    {
+      "path": "chunks/stat_eurostat_sbs_size-0060.json",
+      "source_id": "stat_eurostat_sbs_size",
+      "count": 100,
+      "bytes": 222276,
+      "sha256": "e48c8cda61927b34cd11e3f0b1458023d24a9018f812e2c3bc27e74a8ca8f501",
+      "rights_primary_url": "https://ec.europa.eu/eurostat/help/copyright-notice"
+    },
+    {
+      "path": "chunks/stat_eurostat_sbs_size-0061.json",
+      "source_id": "stat_eurostat_sbs_size",
+      "count": 100,
+      "bytes": 222961,
+      "sha256": "800c9af9497452f3c9190607419a076ce6c347bdbada409a62f47108fb623893",
+      "rights_primary_url": "https://ec.europa.eu/eurostat/help/copyright-notice"
+    },
+    {
+      "path": "chunks/stat_eurostat_sbs_size-0062.json",
+      "source_id": "stat_eurostat_sbs_size",
+      "count": 100,
+      "bytes": 223179,
+      "sha256": "61e3b83a63ec519dccc189b4a1559f01973ccdea568ed9de01dcbf4fb45194be",
+      "rights_primary_url": "https://ec.europa.eu/eurostat/help/copyright-notice"
+    },
+    {
+      "path": "chunks/stat_eurostat_sbs_size-0063.json",
+      "source_id": "stat_eurostat_sbs_size",
+      "count": 100,
+      "bytes": 223325,
+      "sha256": "5aa31503e18519376689f806efd33d215e852e3ad84ab42e9b5af3fb45634ec9",
+      "rights_primary_url": "https://ec.europa.eu/eurostat/help/copyright-notice"
+    },
+    {
+      "path": "chunks/stat_eurostat_sbs_size-0064.json",
+      "source_id": "stat_eurostat_sbs_size",
+      "count": 76,
+      "bytes": 169046,
+      "sha256": "b0685fe2fd93f5a2319068c93002b8a9a73db1de5c8670ba9f628e76644e19ab",
+      "rights_primary_url": "https://ec.europa.eu/eurostat/help/copyright-notice"
+    },
+    {
+      "path": "chunks/stat_worldbank_annual_fx-0000.json",
+      "source_id": "stat_worldbank_annual_fx",
+      "count": 100,
+      "bytes": 152980,
+      "sha256": "9a6c1880c2f0d8498dd328f59a6a264232225037c9065df4a5f83d0f97d9f118",
+      "rights_primary_url": "https://databank.worldbank.org/metadataglossary/world-development-indicators/series/PA.NUS.FCRF"
+    },
+    {
+      "path": "chunks/stat_worldbank_annual_fx-0001.json",
+      "source_id": "stat_worldbank_annual_fx",
+      "count": 12,
+      "bytes": 18492,
+      "sha256": "08542c56d5feb22f314eb8af5743441cf6f4a2e9db9a39acddba9c0229f98cb2",
+      "rights_primary_url": "https://databank.worldbank.org/metadataglossary/world-development-indicators/series/PA.NUS.FCRF"
+    },
+    {
+      "path": "chunks/enterprise_sec_disclosures-0000.json",
+      "source_id": "enterprise_sec_disclosures",
+      "count": 3,
+      "bytes": 10390,
+      "sha256": "bdc5fbd2ee2997a7a022d075041dde4539f18a2826447621858c3b4bab0c2dd9",
+      "rights_primary_url": "https://www.sec.gov/files/about/webmaster-faq.htm"
+    },
+    {
+      "path": "chunks/country_ma_hcp_releases-0000.json",
+      "source_id": "country_ma_hcp_releases",
+      "count": 5,
+      "bytes": 7568,
+      "sha256": "eec5b28abb7d2d0cddfd54e9d23e09a2929c3e06132ee9730142c2c130bba4e1",
+      "original_safe_fixture_sha256": "8d4e22236e51d964ba4293efe7df39ea7914ec1eb32ed1e8a0e228950cce4856"
+    },
+    {
+      "path": "chunks/country_au_rba_releases-0000.json",
+      "source_id": "country_au_rba_releases",
+      "count": 1,
+      "bytes": 1624,
+      "sha256": "802abd8af047178cfb43c17a9ea06ea6ec8e70d42ddfd059d05c0c3a62fb90ad",
+      "original_safe_fixture_sha256": "eab6f9ea1f153f726146e83a192985753aac07c424f7ab3827371e4551cef698"
+    },
+    {
+      "path": "chunks/political_jp_house_groups-0000.json",
+      "source_id": "political_jp_house_groups",
+      "count": 7,
+      "bytes": 15355,
+      "sha256": "d996e16d6867a569758b88dc283027511c494c209ca03405d131ff13ab22315c",
+      "original_safe_fixture_sha256": "c462dcdbbee743d7ac0ffb2bc9c77ad403f837b9cb31666d8cb56e83996442f7"
+    },
+    {
+      "path": "chunks/political_za_assembly_parties-0000.json",
+      "source_id": "political_za_assembly_parties",
+      "count": 18,
+      "bytes": 36955,
+      "sha256": "91c7006126f9d48308bb96c1cf53a181daba80fcefa9e9f2a6c13509c279dea9",
+      "original_safe_fixture_sha256": "6a0062688af68166b05583e5ef49c13579d0da57f906259bd24e7b0ef87a6b80"
+    },
+    {
+      "path": "chunks/political_ca_commons_parties-0000.json",
+      "source_id": "political_ca_commons_parties",
+      "count": 5,
+      "bytes": 10487,
+      "sha256": "ebdfb13c07b83b17f932a399e94d244c73079bca0974e01962cf9bfc00146ce7",
+      "original_safe_fixture_sha256": "09b00891137f60444174f8f2c6204234dab2b67ca1a0ab221df94267f22c76b5"
+    },
+    {
+      "path": "chunks/country_un_m49_reference-0000.json",
+      "source_id": "country_un_m49_reference",
+      "count": 100,
+      "bytes": 233888,
+      "sha256": "12ca833fc4424260a3484eb9a8be27e1e6cf8c25bbb98fcb6cb8e361b49634bf",
+      "original_safe_fixture_sha256": "92d312ae9f618cadcce53b0ab15deaf42b03c6c8744b679215d6835f7379dad6"
+    },
+    {
+      "path": "chunks/country_un_m49_reference-0001.json",
+      "source_id": "country_un_m49_reference",
+      "count": 100,
+      "bytes": 232755,
+      "sha256": "3a7a0488d3f6c522b23db90ded2e8cee5cec9a294f58e81d403c161cdb9c7b15",
+      "original_safe_fixture_sha256": "92d312ae9f618cadcce53b0ab15deaf42b03c6c8744b679215d6835f7379dad6"
+    },
+    {
+      "path": "chunks/country_un_m49_reference-0002.json",
+      "source_id": "country_un_m49_reference",
+      "count": 50,
+      "bytes": 115331,
+      "sha256": "bfdeabee97310c28ec3a4f9d534aa0a5c88b5c9b02f180ae001ccca1c2e984c4",
+      "original_safe_fixture_sha256": "92d312ae9f618cadcce53b0ab15deaf42b03c6c8744b679215d6835f7379dad6"
+    }
+  ],
+  "input_pins": [
+    {
+      "path": "/workspace/shared/dormathon-enterprise-coverage-20261008/data/admission-v0.7/manifest.json",
+      "sha256": "e4b959fac34db79d00a1a82e1bb0595d61f07205f443202e665f3c9ba1a352de"
+    },
+    {
+      "path": "/workspace/shared/dormathon-country-coverage-20261008/source-manifest.json",
+      "sha256": "33d9fadcefe73888899e01f90b8138cc14cf87ac9f206e34fb4e07e5f091aeff"
+    },
+    {
+      "path": "/workspace/shared/dormathon-country-coverage-20261008/political-source-manifest.json",
+      "sha256": "3575a607853069a77e1e889288fe7f24de4eb8bc3fa5240a494844e08b13d2d7"
+    },
+    {
+      "path": "/workspace/shared/dormathon-country-coverage-20261008/identity-source-manifest.json",
+      "sha256": "778a62838426d201d2b0fe8266e0c699514d3e3e340f035ee268442731737b04"
+    },
+    {
+      "path": "/workspace/shared/dormathon-enterprise-coverage-20261008/contracts/semantic-hash-addendum.v0.7.1.json",
+      "sha256": "1947906674fd0fde6afa4afb235ec3ad8ac81c05e53c947e63858732f4abe0a6"
+    },
+    {
+      "path": "/workspace/shared/dormathon-country-coverage-20261008/identity-semantic-hash-addendum.json",
+      "sha256": "d438af0595810a27f3f28c9e74bda7e8724b32f36a6cc8b6134bc4ae58035e4e"
+    },
+    {
+      "path": "/workspace/shared/dormathon-country-coverage-20261008/admission-mapping-addendum.json",
+      "sha256": "16c9bc78ff8c9be9e8dbdd6ded29bf363b4c3086a99cf1168b7bd51dbf413f71"
+    },
+    {
+      "path": "/workspace/shared/dormathon-country-coverage-20261008/admission-update.json",
+      "sha256": "90ec08eaa6bd35552631fe56acb642f8cda53d32501fdecc191794636aed1cc0"
+    }
+  ],
+  "new_public_fetches": 0,
+  "site_ingestion": "not_run",
+  "recurring_operational": false,
+  "initial_package_superseded_for_admission": true
+}

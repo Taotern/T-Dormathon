@@ -21,3 +21,9 @@ The initial embedded local collector omitted its public catalog and adapter-prov
 ## Accepted incremental preparation and regional-map source
 
 The next clean source is Site commit6197b08065c56a0e812aa5ecc4fda50f898c0e37, with owner-private deployment successful and actual country/city/district/evidence workflow acceptance on 2026-10-08. See RELEASE_STATUS.json for bounded tested capabilities and remaining runtime gates. It includes the independently reviewed local collector1.2.0 with all canonical/legacy public data assets. Earlier auth/source-delivery correction history is retained. This prepared source document does not itself establish its GitHub publication commit; the repository writer records that separately after native push/readback.
+
+## Ordinary source-pipeline replacement
+
+The owner retired the entire former active frontend. Its source/artwork remains recovery-only; the build serves only the current collection/filter/organization/ingestion data browser. This successor includes indexed lexical FTS5 retrieval and a pinned reviewed public acquisition receiver. See RELEASE_STATUS.json for the exact source/live distinction and pending gates. The source archive retains previous delivery/correction history. This document does not claim the next native GitHub push until the publishing writer records/readbacks it.
+
+The successor ordinary backend checkpoint is now live and accepted at fce3901e7002507d34bbdd71778ae8745f8ca411. Actual204/204reviewed chunks are stored;19,935versions are indexed with0pending, including19,466source-reviewed snapshot rows. Changed-boundary500px UI and source/date/clock readback passed;49read-only Site requests verified13source evidence samples and14real queries. PIPELINE_HANDOFF.md and RELEASE_STATUS.json supersede earlier provisional pipeline/intake wording. This metadata records the producer handoff; native GitHub publication identity will be appended by the single publishing writer.

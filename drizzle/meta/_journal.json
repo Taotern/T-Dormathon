@@ -22,6 +22,27 @@
       "when": 1791432890907,
       "tag": "0002_ancient_the_fallen",
       "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "6",
+      "when": 1791450521686,
+      "tag": "0003_slimy_skullbuster",
+      "breakpoints": true
+    },
+    {
+      "idx": 4,
+      "version": "6",
+      "when": 1791450522158,
+      "tag": "0004_intel_fts_index",
+      "breakpoints": true
+    },
+    {
+      "idx": 5,
+      "version": "6",
+      "when": 1791450689651,
+      "tag": "0005_retrieval_cjk_terms",
+      "breakpoints": true
     }
   ]
 }

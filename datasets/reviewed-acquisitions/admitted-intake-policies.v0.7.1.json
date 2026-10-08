@@ -1,0 +1,2286 @@
+{
+  "schema_version": "dormathon.source-scale.policies.v0.7.1",
+  "sources": [
+    {
+      "id": "enterprise_sec_registry",
+      "version": "0.1.0",
+      "name": "SEC issuer/ticker exchange reference",
+      "provider_family": "SEC",
+      "endpoint": "https://www.sec.gov/files/company_tickers_exchange.json",
+      "official_url": "https://www.sec.gov/search-filings/edgar-application-programming-interfaces",
+      "format": "json",
+      "category": "business",
+      "source_country": "US",
+      "source_language": "en",
+      "material_kind": "legal_entity_registry",
+      "coverage": {
+        "scope": "source-qualified retained research batch; see acquisition_receipts and coverage counts",
+        "complete_global": false,
+        "identity_is_event_coverage": false
+      },
+      "source_update_cadence": "Provider documented/observed cadence; not an application guarantee",
+      "collection_cadence": "manual bounded batch only; recurring not scheduled/operational",
+      "time_semantics": {
+        "provider_published_at": "null unless supplied as awaretimestamp",
+        "observation_dates": "date/year-only retained in facts",
+        "local_acquisition": "exact collector receipt clocks, never publication time"
+      },
+      "rights": {
+        "status": "cleared_structured_facts",
+        "permission_basis": "SEC public metadata/EDGAR filing content free access/reuse; no source documents mirrored",
+        "primary_url": "https://www.sec.gov/files/about/webmaster-faq.htm",
+        "allowed_fields": [
+          "CIK",
+          "name",
+          "ticker",
+          "exchange"
+        ],
+        "attribution": "Source: U.S. Securities and Exchange Commission (SEC), ticker/exchange lookup, fetched2026-10-08",
+        "excluded_content": [
+          "personal contacts",
+          "directors/officers",
+          "tax identifiers/EIN/CNPJ",
+          "street addresses",
+          "full article/document/PDF bodies",
+          "photos/logos",
+          "credentials"
+        ]
+      },
+      "limits": {
+        "max_body_bytes": 2097152,
+        "max_items": 20000,
+        "safe_output_chunk_max_bytes": 262144,
+        "safe_output_chunk_max_items": 100,
+        "timeout_seconds": 30,
+        "redirect_policy": "reject",
+        "justification": "source-specific licensed identity/statistical dimension exception reviewed in v0.7; actual initial rawfetch limits preserved in receipts"
+      },
+      "empty_policy": "Wrong root/error/HTML/nonzero upstream with no records rejects; genuinely empty recognizedprovider root stays empty",
+      "adapter_path": "/workspace/shared/dormathon-enterprise-coverage-20261008/adapters/enterprise-statistics.mjs",
+      "adapter_export": "secRegistry",
+      "stage": "actually_collected",
+      "gaps": [
+        "10,434security rows vs8,016uniqueCIKissuers; not globalcompany population",
+        "Listing does not prove major-companyeligibility, USHQ, actual operatingfootprint",
+        "SECfair-access/contactprerequisite unresolved forrecurringcollection; neverinvent ortransmitownercontact"
+      ],
+      "retrieval_allowed_text": {
+        "title": true,
+        "fact_paths": [
+          "listings.*.ticker",
+          "listings.*.exchange"
+        ]
+      },
+      "retrieval_excluded_text": [
+        "facts.record_kind",
+        "facts.eligibility",
+        "facts.coverage_warning",
+        "facts.universe",
+        "facts.sme_semantics",
+        "facts.aggregation_warning",
+        "facts.missing_value_policy",
+        "facts.conversion_warning",
+        "facts.license_boundary",
+        "source_license",
+        "allrights/parser/coverageboilerplate"
+      ],
+      "acquisition_receipts": [
+        {
+          "request_id": "sec_company_register",
+          "requested_url": "https://www.sec.gov/files/company_tickers_exchange.json",
+          "fetched_at": "2026-10-08T09:29:47.796998+00:00",
+          "http_status": 200,
+          "upstream_raw_sha256": "e0033204d27cbf7149023b2e94432b2c90735fe9c4743ae4f156fd82843bcb3c",
+          "bytes_read": 523582,
+          "body_cap": 4194304,
+          "response_clocks": {
+            "server_date_raw": "Thu, 08 Oct 2026 09:29:47 GMT",
+            "last_modified_raw": "Mon, 05 Oct 2026 14:06:22 GMT"
+          },
+          "receipt_manifest_path": "/workspace/shared/dormathon-enterprise-coverage-20261008/data/admission-v0.7/manifest.json",
+          "receipt_manifest_sha256": "e4b959fac34db79d00a1a82e1bb0595d61f07205f443202e665f3c9ba1a352de",
+          "retained_safe_sha256": "e0033204d27cbf7149023b2e94432b2c90735fe9c4743ae4f156fd82843bcb3c"
+        }
+      ],
+      "recurring_state": "not_scheduled",
+      "production_admission": "pending_catalog_review",
+      "input_id": "enterprise_sec_registry",
+      "content_depth": "structured_facts",
+      "max_dimension_rows": 20000,
+      "allowed_fact_paths": [
+        "eligibility",
+        "entity_id",
+        "geography.headquarters_country",
+        "geography.legal_country",
+        "identifier_basis",
+        "listings.*.exchange",
+        "listings.*.ticker",
+        "record_kind",
+        "response_clocks.last_modified_raw",
+        "response_clocks.semantics",
+        "response_clocks.server_date_raw",
+        "sector",
+        "universe"
+      ],
+      "required_fact_paths": [
+        "record_kind",
+        "entity_id"
+      ],
+      "coverage_complete": false
+    },
+    {
+      "id": "enterprise_cvm_registry",
+      "version": "0.1.0",
+      "name": "CVM company register, source-separated ODbL projection",
+      "provider_family": "CVM",
+      "endpoint": "https://dados.cvm.gov.br/dados/CIA_ABERTA/CAD/DADOS/cad_cia_aberta.csv",
+      "official_url": "https://dados.cvm.gov.br/dataset/cia_aberta-cad",
+      "format": "csv",
+      "category": "business",
+      "source_country": "BR",
+      "source_language": "pt-BR",
+      "material_kind": "legal_entity_registry",
+      "coverage": {
+        "scope": "source-qualified retained research batch; see acquisition_receipts and coverage counts",
+        "complete_global": false,
+        "identity_is_event_coverage": false
+      },
+      "source_update_cadence": "Provider documented/observed cadence; not an application guarantee",
+      "collection_cadence": "manual bounded batch only; recurring not scheduled/operational",
+      "time_semantics": {
+        "provider_published_at": "null unless supplied as awaretimestamp",
+        "observation_dates": "date/year-only retained in facts",
+        "local_acquisition": "exact collector receipt clocks, never publication time"
+      },
+      "rights": {
+        "status": "cleared_structured_facts",
+        "permission_basis": "ODbL-1.0. Retain CVM attribution and license notice; source-separated derivative projection. Public distribution of adapted databases must comply with ODbL share-alike/access obligations; internaluse does not relicense mixedsources.",
+        "primary_url": "https://dados.cvm.gov.br/dataset/cia_aberta-cad",
+        "allowed_fields": [
+          "CD_CVM",
+          "DENOM_SOCIAL",
+          "SIT",
+          "SIT_EMISSOR",
+          "SETOR_ATIV",
+          "PAIS",
+          "CONTROLE_ACIONARIO",
+          "DT_REG",
+          "DT_CANCEL"
+        ],
+        "attribution": "Source: Comissão de Valores Mobiliários (CVM), Cias Abertas: Informação Cadastral, acquired2026-10-08, derived/minimized under ODbL1.0",
+        "excluded_content": [
+          "personal contacts",
+          "directors/officers",
+          "tax identifiers/EIN/CNPJ",
+          "street addresses",
+          "full article/document/PDF bodies",
+          "photos/logos",
+          "credentials"
+        ],
+        "license_id": "ODbL-1.0",
+        "license_metadata_receipt": "/workspace/shared/dormathon-enterprise-coverage-20261008/receipts/cvm_license.json"
+      },
+      "limits": {
+        "max_body_bytes": 2097152,
+        "max_items": 20000,
+        "safe_output_chunk_max_bytes": 262144,
+        "safe_output_chunk_max_items": 100,
+        "timeout_seconds": 30,
+        "redirect_policy": "reject",
+        "justification": "source-specific licensed identity/statistical dimension exception reviewed in v0.7; actual initial rawfetch limits preserved in receipts"
+      },
+      "empty_policy": "Wrong root/error/HTML/nonzero upstream with no records rejects; genuinely empty recognizedprovider root stays empty",
+      "adapter_path": "/workspace/shared/dormathon-enterprise-coverage-20261008/adapters/enterprise-statistics.mjs",
+      "adapter_export": "cvmRegistry",
+      "stage": "actually_collected",
+      "gaps": [
+        "Windows-1252 transport mustdecode before pureUTF8adapter; safeprojectionUTF8supplied",
+        "2,678rows collapse2,567CVMidentities;662uniqueactiveIDs; includeshistoricalinactivecompanies",
+        "CVM PAIS preserved as registry_country/raw; headquarters_country null because dictionarysemanticnotverified; exactBRASIL/EGITOlabelmapping"
+      ],
+      "retrieval_allowed_text": {
+        "title": true,
+        "fact_paths": [
+          "sector.label",
+          "geography.source_country_raw",
+          "registry_status"
+        ]
+      },
+      "retrieval_excluded_text": [
+        "facts.record_kind",
+        "facts.eligibility",
+        "facts.coverage_warning",
+        "facts.universe",
+        "facts.sme_semantics",
+        "facts.aggregation_warning",
+        "facts.missing_value_policy",
+        "facts.conversion_warning",
+        "facts.license_boundary",
+        "source_license",
+        "allrights/parser/coverageboilerplate"
+      ],
+      "acquisition_receipts": [
+        {
+          "request_id": "cvm_company_register",
+          "requested_url": "https://dados.cvm.gov.br/dados/CIA_ABERTA/CAD/DADOS/cad_cia_aberta.csv",
+          "fetched_at": "2026-10-08T09:29:42.778372+00:00",
+          "http_status": 200,
+          "upstream_raw_sha256": "c20082b22d5eb45f01589dff02c52de4835cd0b08efddabc85c22dbef6fc55fc",
+          "bytes_read": 1493830,
+          "body_cap": 4194304,
+          "response_clocks": {
+            "server_date_raw": "Thu, 08 Oct 2026 09:29:42 GMT",
+            "last_modified_raw": "Thu, 08 Oct 2026 04:11:30 GMT"
+          },
+          "receipt_manifest_path": "/workspace/shared/dormathon-enterprise-coverage-20261008/data/admission-v0.7/manifest.json",
+          "receipt_manifest_sha256": "e4b959fac34db79d00a1a82e1bb0595d61f07205f443202e665f3c9ba1a352de",
+          "retained_safe_sha256": "a481948a8cc26d9b215307f2383e43f5adcf4953ec4e108b1fc891e3730e467f"
+        }
+      ],
+      "recurring_state": "not_scheduled",
+      "production_admission": "pending_catalog_review",
+      "transport_encoding": "windows-1252",
+      "retained_encoding": "UTF-8",
+      "input_id": "enterprise_cvm_registry",
+      "content_depth": "structured_facts",
+      "max_dimension_rows": 20000,
+      "allowed_fact_paths": [
+        "cancellation_date",
+        "eligibility",
+        "entity_id",
+        "geography.basis",
+        "geography.headquarters_country",
+        "geography.registry_country",
+        "geography.source_country_raw",
+        "identifier_basis",
+        "issuer_operating_status",
+        "license_boundary",
+        "ownership_control",
+        "record_kind",
+        "registration_date",
+        "registry_status",
+        "response_clocks.last_modified_raw",
+        "response_clocks.semantics",
+        "response_clocks.server_date_raw",
+        "sector.code",
+        "sector.label",
+        "sector.mapping_status",
+        "sector.scheme"
+      ],
+      "required_fact_paths": [
+        "record_kind",
+        "entity_id"
+      ],
+      "coverage_complete": false
+    },
+    {
+      "id": "enterprise_twse_registry",
+      "version": "0.1.0",
+      "name": "TWSE listed-issuer reference",
+      "provider_family": "TWSE",
+      "endpoint": "https://openapi.twse.com.tw/v1/opendata/t187ap03_L",
+      "official_url": "https://data.gov.tw/dataset/18419",
+      "format": "json",
+      "category": "business",
+      "source_country": "TW",
+      "source_language": "zh-Hant",
+      "material_kind": "legal_entity_registry",
+      "coverage": {
+        "scope": "source-qualified retained research batch; see acquisition_receipts and coverage counts",
+        "complete_global": false,
+        "identity_is_event_coverage": false
+      },
+      "source_update_cadence": "Provider documented/observed cadence; not an application guarantee",
+      "collection_cadence": "manual bounded batch only; recurring not scheduled/operational",
+      "time_semantics": {
+        "provider_published_at": "null unless supplied as awaretimestamp",
+        "observation_dates": "date/year-only retained in facts",
+        "local_acquisition": "exact collector receipt clocks, never publication time"
+      },
+      "rights": {
+        "status": "cleared_structured_facts",
+        "permission_basis": "Taiwan Government Open Data License v1.0; acknowledge provider and dataset; no personalexecutive/contact fields",
+        "primary_url": "https://data.gov.tw/dataset/18419",
+        "allowed_fields": [
+          "公司代號",
+          "公司名稱",
+          "公司簡稱",
+          "英文簡稱",
+          "外國企業註冊地國",
+          "產業別",
+          "出表日期",
+          "上市日期",
+          "網址"
+        ],
+        "attribution": "Source: TWSE / Financial Supervisory Commission Securities and Futures Bureau, 上市公司基本資料, retrieved2026-10-08",
+        "excluded_content": [
+          "personal contacts",
+          "directors/officers",
+          "tax identifiers/EIN/CNPJ",
+          "street addresses",
+          "full article/document/PDF bodies",
+          "photos/logos",
+          "credentials"
+        ]
+      },
+      "limits": {
+        "max_body_bytes": 2097152,
+        "max_items": 20000,
+        "safe_output_chunk_max_bytes": 262144,
+        "safe_output_chunk_max_items": 100,
+        "timeout_seconds": 30,
+        "redirect_policy": "reject",
+        "justification": "source-specific licensed identity/statistical dimension exception reviewed in v0.7; actual initial rawfetch limits preserved in receipts"
+      },
+      "empty_policy": "Wrong root/error/HTML/nonzero upstream with no records rejects; genuinely empty recognizedprovider root stays empty",
+      "adapter_path": "/workspace/shared/dormathon-enterprise-coverage-20261008/adapters/enterprise-statistics.mjs",
+      "adapter_export": "twseRegistry",
+      "stage": "actually_collected",
+      "gaps": [
+        "1,095listedissuers; not all Taiwancompanies, notmajor-companyqualification",
+        "Exchangejurisdiction isnotHQ; foreignregistration rawfieldretained",
+        "Listingcode isscopedidentifier; possiblecode reuse requiresversionedreview"
+      ],
+      "retrieval_allowed_text": {
+        "title": true,
+        "fact_paths": [
+          "abbreviation",
+          "english_abbreviation",
+          "sector.code",
+          "geography.foreign_registration_country_raw"
+        ]
+      },
+      "retrieval_excluded_text": [
+        "facts.record_kind",
+        "facts.eligibility",
+        "facts.coverage_warning",
+        "facts.universe",
+        "facts.sme_semantics",
+        "facts.aggregation_warning",
+        "facts.missing_value_policy",
+        "facts.conversion_warning",
+        "facts.license_boundary",
+        "source_license",
+        "allrights/parser/coverageboilerplate"
+      ],
+      "acquisition_receipts": [
+        {
+          "request_id": "twse_company_register",
+          "requested_url": "https://openapi.twse.com.tw/v1/opendata/t187ap03_L",
+          "fetched_at": "2026-10-08T09:31:34.689820+00:00",
+          "http_status": 200,
+          "upstream_raw_sha256": "154d8129ab0db28404b93ca46ce8057f71f036d440d1592b53f8dd5fc2048115",
+          "bytes_read": 1327573,
+          "body_cap": 4194304,
+          "response_clocks": {
+            "server_date_raw": "Thu, 08 Oct 2026 09:29:45 GMT",
+            "last_modified_raw": "Wed, 07 Oct 2026 21:24:33 GMT"
+          },
+          "receipt_manifest_path": "/workspace/shared/dormathon-enterprise-coverage-20261008/data/admission-v0.7/manifest.json",
+          "receipt_manifest_sha256": "e4b959fac34db79d00a1a82e1bb0595d61f07205f443202e665f3c9ba1a352de",
+          "retained_safe_sha256": "0be2a02a8b19ebd5103cf245c4d5e6752ff33c01898c898c00b31b0b50c565bd"
+        }
+      ],
+      "recurring_state": "not_scheduled",
+      "production_admission": "pending_catalog_review",
+      "input_id": "enterprise_twse_registry",
+      "content_depth": "structured_facts",
+      "max_dimension_rows": 20000,
+      "allowed_fact_paths": [
+        "abbreviation",
+        "eligibility",
+        "english_abbreviation",
+        "entity_id",
+        "geography.basis",
+        "geography.foreign_registration_country_raw",
+        "geography.headquarters_country",
+        "identifier_basis",
+        "listing_date_raw",
+        "official_website_raw",
+        "record_kind",
+        "response_clocks.last_modified_raw",
+        "response_clocks.semantics",
+        "response_clocks.server_date_raw",
+        "sector.code",
+        "sector.label",
+        "sector.mapping_status",
+        "sector.scheme",
+        "snapshot_date_raw"
+      ],
+      "required_fact_paths": [
+        "record_kind",
+        "entity_id"
+      ],
+      "coverage_complete": false
+    },
+    {
+      "id": "enterprise_gleif_reference",
+      "version": "0.1.0",
+      "name": "GLEIF legal-entity reference, bounded global and34country samples",
+      "provider_family": "GLEIF",
+      "endpoint": "https://api.gleif.org/api/v1/lei-records",
+      "official_url": "https://www.gleif.org/en/lei-data/gleif-api",
+      "format": "jsonapi",
+      "category": "business",
+      "source_country": null,
+      "source_language": null,
+      "material_kind": "legal_entity_registry",
+      "coverage": {
+        "scope": "source-qualified retained research batch; see acquisition_receipts and coverage counts",
+        "complete_global": false,
+        "identity_is_event_coverage": false
+      },
+      "source_update_cadence": "Provider documented/observed cadence; not an application guarantee",
+      "collection_cadence": "manual bounded batch only; recurring not scheduled/operational",
+      "time_semantics": {
+        "provider_published_at": "null unless supplied as awaretimestamp",
+        "observation_dates": "date/year-only retained in facts",
+        "local_acquisition": "exact collector receipt clocks, never publication time"
+      },
+      "rights": {
+        "status": "cleared_structured_facts",
+        "permission_basis": "CC0-1.0 GLEIF reference data; no linkedrelationship documents or sourcebodymirrors",
+        "primary_url": "https://www.gleif.org/en/about/open-data",
+        "allowed_fields": [
+          "LEI",
+          "legalName",
+          "otherNames",
+          "legalAddress.country",
+          "headquartersAddress.country",
+          "jurisdiction",
+          "category",
+          "status",
+          "registeredAt.id",
+          "registration.status",
+          "goldenCopy.publishDate",
+          "pagination.total"
+        ],
+        "attribution": "Source: Global Legal Entity Identifier Foundation (GLEIF), GoldenCopy2026-10-08",
+        "excluded_content": [
+          "personal contacts",
+          "directors/officers",
+          "tax identifiers/EIN/CNPJ",
+          "street addresses",
+          "full article/document/PDF bodies",
+          "photos/logos",
+          "credentials"
+        ]
+      },
+      "limits": {
+        "max_body_bytes": 2097152,
+        "max_items": 20000,
+        "safe_output_chunk_max_bytes": 262144,
+        "safe_output_chunk_max_items": 100,
+        "timeout_seconds": 30,
+        "redirect_policy": "reject",
+        "justification": "source-specific licensed identity/statistical dimension exception reviewed in v0.7; actual initial rawfetch limits preserved in receipts"
+      },
+      "empty_policy": "Wrong root/error/HTML/nonzero upstream with no records rejects; genuinely empty recognizedprovider root stays empty",
+      "adapter_path": "/workspace/shared/dormathon-enterprise-coverage-20261008/adapters/enterprise-statistics.mjs",
+      "adapter_export": "gleifRegistry",
+      "stage": "actually_collected",
+      "gaps": [
+        "First100global+34countryfirst25filters,911deduplicatedreferences; totaluniverse3,066,098isnotcollectedcount",
+        "Notrepresentative/majorcompanypopulation; GENERAL includespartnerships/specialpurposevehicles",
+        "Legalcountry,HQcountry and operatingfootprintareseparate; sectornotprovided",
+        "Oneproviderwith35queryscopes,not35independentsources"
+      ],
+      "retrieval_allowed_text": {
+        "title": true,
+        "fact_paths": [
+          "legal_names.alternative.*.name",
+          "geography.legal_country",
+          "geography.headquarters_country",
+          "geography.legal_jurisdiction"
+        ]
+      },
+      "retrieval_excluded_text": [
+        "facts.record_kind",
+        "facts.eligibility",
+        "facts.coverage_warning",
+        "facts.universe",
+        "facts.sme_semantics",
+        "facts.aggregation_warning",
+        "facts.missing_value_policy",
+        "facts.conversion_warning",
+        "facts.license_boundary",
+        "source_license",
+        "allrights/parser/coverageboilerplate"
+      ],
+      "acquisition_receipts": [
+        {
+          "request_id": "gleif_general_AE",
+          "requested_url": "https://api.gleif.org/api/v1/lei-records?filter%5Bentity.category%5D=GENERAL&filter%5Bentity.legalAddress.country%5D=AE&page%5Bsize%5D=25",
+          "fetched_at": "2026-10-08T09:34:24.462007+00:00",
+          "http_status": 200,
+          "upstream_raw_sha256": "497f8c657f25311b81da77f60b4bd490d5fb576b604199df2b039c91867c1da2",
+          "bytes_read": 67554,
+          "body_cap": 262144,
+          "response_clocks": {
+            "server_date_raw": "Thu, 08 Oct 2026 09:34:24 GMT",
+            "last_modified_raw": null
+          },
+          "receipt_manifest_path": "/workspace/shared/dormathon-enterprise-coverage-20261008/data/admission-v0.7/manifest.json",
+          "receipt_manifest_sha256": "e4b959fac34db79d00a1a82e1bb0595d61f07205f443202e665f3c9ba1a352de",
+          "retained_safe_sha256": "2e4b5455c36ff70db68189ff89d075d3237e8bd24732c38a528f1466dca3fb0f"
+        },
+        {
+          "request_id": "gleif_general_AR",
+          "requested_url": "https://api.gleif.org/api/v1/lei-records?filter%5Bentity.category%5D=GENERAL&filter%5Bentity.legalAddress.country%5D=AR&page%5Bsize%5D=25",
+          "fetched_at": "2026-10-08T09:34:42.454189+00:00",
+          "http_status": 200,
+          "upstream_raw_sha256": "5398ca915fe1511b650f016f975288a84b39e06fa366e7ae6830ad517f6b1aab",
+          "bytes_read": 62143,
+          "body_cap": 262144,
+          "response_clocks": {
+            "server_date_raw": "Thu, 08 Oct 2026 09:34:42 GMT",
+            "last_modified_raw": null
+          },
+          "receipt_manifest_path": "/workspace/shared/dormathon-enterprise-coverage-20261008/data/admission-v0.7/manifest.json",
+          "receipt_manifest_sha256": "e4b959fac34db79d00a1a82e1bb0595d61f07205f443202e665f3c9ba1a352de",
+          "retained_safe_sha256": "57d21183ac41f9e9a776e13e7a583926239f4a757c13dad3ecd329a2be0bf24c"
+        },
+        {
+          "request_id": "gleif_general_AU",
+          "requested_url": "https://api.gleif.org/api/v1/lei-records?filter%5Bentity.category%5D=GENERAL&filter%5Bentity.legalAddress.country%5D=AU&page%5Bsize%5D=25",
+          "fetched_at": "2026-10-08T09:34:05.863693+00:00",
+          "http_status": 200,
+          "upstream_raw_sha256": "6599687eed12c87ae37af056d52c54cf8e81e26c928ba3f920340b66f7f1b03a",
+          "bytes_read": 60710,
+          "body_cap": 262144,
+          "response_clocks": {
+            "server_date_raw": "Thu, 08 Oct 2026 09:34:05 GMT",
+            "last_modified_raw": null
+          },
+          "receipt_manifest_path": "/workspace/shared/dormathon-enterprise-coverage-20261008/data/admission-v0.7/manifest.json",
+          "receipt_manifest_sha256": "e4b959fac34db79d00a1a82e1bb0595d61f07205f443202e665f3c9ba1a352de",
+          "retained_safe_sha256": "5eb64e02b7de7b31b9dd536dde8f031694dfab06d8d41551368ad2a02ae6c83e"
+        },
+        {
+          "request_id": "gleif_general_BR",
+          "requested_url": "https://api.gleif.org/api/v1/lei-records?filter%5Bentity.category%5D=GENERAL&filter%5Bentity.legalAddress.country%5D=BR&page%5Bsize%5D=25",
+          "fetched_at": "2026-10-08T09:34:37.027138+00:00",
+          "http_status": 200,
+          "upstream_raw_sha256": "34688527d5a93e8f8b6f716b390e16de99692013550fd904653da11b496a1d56",
+          "bytes_read": 62094,
+          "body_cap": 262144,
+          "response_clocks": {
+            "server_date_raw": "Thu, 08 Oct 2026 09:34:36 GMT",
+            "last_modified_raw": null
+          },
+          "receipt_manifest_path": "/workspace/shared/dormathon-enterprise-coverage-20261008/data/admission-v0.7/manifest.json",
+          "receipt_manifest_sha256": "e4b959fac34db79d00a1a82e1bb0595d61f07205f443202e665f3c9ba1a352de",
+          "retained_safe_sha256": "1aba876aae49961d91d1fcfe172791b4afcab6c771c97444fdec570e070a0ef0"
+        },
+        {
+          "request_id": "gleif_general_CA",
+          "requested_url": "https://api.gleif.org/api/v1/lei-records?filter%5Bentity.category%5D=GENERAL&filter%5Bentity.legalAddress.country%5D=CA&page%5Bsize%5D=25",
+          "fetched_at": "2026-10-08T09:34:47.164612+00:00",
+          "http_status": 200,
+          "upstream_raw_sha256": "a059f608e4eeca3fdc49b2dcef0873b710479c2a871694c521171a20001df60d",
+          "bytes_read": 60178,
+          "body_cap": 262144,
+          "response_clocks": {
+            "server_date_raw": "Thu, 08 Oct 2026 09:34:46 GMT",
+            "last_modified_raw": null
+          },
+          "receipt_manifest_path": "/workspace/shared/dormathon-enterprise-coverage-20261008/data/admission-v0.7/manifest.json",
+          "receipt_manifest_sha256": "e4b959fac34db79d00a1a82e1bb0595d61f07205f443202e665f3c9ba1a352de",
+          "retained_safe_sha256": "d49a8280c6358903a7dbb083289178584f7bf1971d0893c919a100577cf7a497"
+        },
+        {
+          "request_id": "gleif_general_CH",
+          "requested_url": "https://api.gleif.org/api/v1/lei-records?filter%5Bentity.category%5D=GENERAL&filter%5Bentity.legalAddress.country%5D=CH&page%5Bsize%5D=25",
+          "fetched_at": "2026-10-08T09:35:08.346806+00:00",
+          "http_status": 200,
+          "upstream_raw_sha256": "7a8d06ae4556272a086fe6c81e53c14b1cd5a47d4b70cc3af87e42746db5d0c8",
+          "bytes_read": 59934,
+          "body_cap": 262144,
+          "response_clocks": {
+            "server_date_raw": "Thu, 08 Oct 2026 09:35:08 GMT",
+            "last_modified_raw": null
+          },
+          "receipt_manifest_path": "/workspace/shared/dormathon-enterprise-coverage-20261008/data/admission-v0.7/manifest.json",
+          "receipt_manifest_sha256": "e4b959fac34db79d00a1a82e1bb0595d61f07205f443202e665f3c9ba1a352de",
+          "retained_safe_sha256": "76e22f31754d9525506938efd7b02756b0e9956a0d726d99f04cfb4dd915fdf5"
+        },
+        {
+          "request_id": "gleif_general_CL",
+          "requested_url": "https://api.gleif.org/api/v1/lei-records?filter%5Bentity.category%5D=GENERAL&filter%5Bentity.legalAddress.country%5D=CL&page%5Bsize%5D=25",
+          "fetched_at": "2026-10-08T09:34:43.248536+00:00",
+          "http_status": 200,
+          "upstream_raw_sha256": "b5c6247a0535da36d9ee6bc281c5b75951e52a0e4978fd1712594acf05cd439b",
+          "bytes_read": 60953,
+          "body_cap": 262144,
+          "response_clocks": {
+            "server_date_raw": "Thu, 08 Oct 2026 09:34:42 GMT",
+            "last_modified_raw": null
+          },
+          "receipt_manifest_path": "/workspace/shared/dormathon-enterprise-coverage-20261008/data/admission-v0.7/manifest.json",
+          "receipt_manifest_sha256": "e4b959fac34db79d00a1a82e1bb0595d61f07205f443202e665f3c9ba1a352de",
+          "retained_safe_sha256": "5670140f3423ab3dccfc0907da9de68c7e7b0f3eaff260d45154333b68e6b827"
+        },
+        {
+          "request_id": "gleif_general_CN",
+          "requested_url": "https://api.gleif.org/api/v1/lei-records?filter%5Bentity.category%5D=GENERAL&filter%5Bentity.legalAddress.country%5D=CN&page%5Bsize%5D=25",
+          "fetched_at": "2026-10-08T09:33:33.306841+00:00",
+          "http_status": 200,
+          "upstream_raw_sha256": "74b7e115f2918f96441d6cac8fdac5cc5aaa124c76ba683bc46a28fbf1fed19d",
+          "bytes_read": 78865,
+          "body_cap": 262144,
+          "response_clocks": {
+            "server_date_raw": "Thu, 08 Oct 2026 09:33:33 GMT",
+            "last_modified_raw": null
+          },
+          "receipt_manifest_path": "/workspace/shared/dormathon-enterprise-coverage-20261008/data/admission-v0.7/manifest.json",
+          "receipt_manifest_sha256": "e4b959fac34db79d00a1a82e1bb0595d61f07205f443202e665f3c9ba1a352de",
+          "retained_safe_sha256": "2efa8a2973901c73883210e612f7c6ef0e642605a7de416328cfac083927060f"
+        },
+        {
+          "request_id": "gleif_general_CO",
+          "requested_url": "https://api.gleif.org/api/v1/lei-records?filter%5Bentity.category%5D=GENERAL&filter%5Bentity.legalAddress.country%5D=CO&page%5Bsize%5D=25",
+          "fetched_at": "2026-10-08T09:34:47.102594+00:00",
+          "http_status": 200,
+          "upstream_raw_sha256": "8fff3cf547055bb158de989443568ca0543aeed2f6e568eaec88ce7b7c40492a",
+          "bytes_read": 60605,
+          "body_cap": 262144,
+          "response_clocks": {
+            "server_date_raw": "Thu, 08 Oct 2026 09:34:46 GMT",
+            "last_modified_raw": null
+          },
+          "receipt_manifest_path": "/workspace/shared/dormathon-enterprise-coverage-20261008/data/admission-v0.7/manifest.json",
+          "receipt_manifest_sha256": "e4b959fac34db79d00a1a82e1bb0595d61f07205f443202e665f3c9ba1a352de",
+          "retained_safe_sha256": "245776299e89b94bbdb6661e1d586ff721384e66fc781d335d8d395ab4cf6ea7"
+        },
+        {
+          "request_id": "gleif_general_DE",
+          "requested_url": "https://api.gleif.org/api/v1/lei-records?filter%5Bentity.category%5D=GENERAL&filter%5Bentity.legalAddress.country%5D=DE&page%5Bsize%5D=25",
+          "fetched_at": "2026-10-08T09:34:51.642171+00:00",
+          "http_status": 200,
+          "upstream_raw_sha256": "e09ce66ec6f27ce8ebd92e0db00cd78d6467f0b954b56a10d2245409cc890d57",
+          "bytes_read": 58783,
+          "body_cap": 262144,
+          "response_clocks": {
+            "server_date_raw": "Thu, 08 Oct 2026 09:34:51 GMT",
+            "last_modified_raw": null
+          },
+          "receipt_manifest_path": "/workspace/shared/dormathon-enterprise-coverage-20261008/data/admission-v0.7/manifest.json",
+          "receipt_manifest_sha256": "e4b959fac34db79d00a1a82e1bb0595d61f07205f443202e665f3c9ba1a352de",
+          "retained_safe_sha256": "1ed1274511042bed687649f7f89b9fc92bfdd80a82e989a4f18979c4e0aaddae"
+        },
+        {
+          "request_id": "gleif_general_EG",
+          "requested_url": "https://api.gleif.org/api/v1/lei-records?filter%5Bentity.category%5D=GENERAL&filter%5Bentity.legalAddress.country%5D=EG&page%5Bsize%5D=25",
+          "fetched_at": "2026-10-08T09:34:17.496693+00:00",
+          "http_status": 200,
+          "upstream_raw_sha256": "53bf3db995ea8c256b4d61a411531cf3598dd2925085d4c825e9909cd9d59647",
+          "bytes_read": 65610,
+          "body_cap": 262144,
+          "response_clocks": {
+            "server_date_raw": "Thu, 08 Oct 2026 09:34:17 GMT",
+            "last_modified_raw": null
+          },
+          "receipt_manifest_path": "/workspace/shared/dormathon-enterprise-coverage-20261008/data/admission-v0.7/manifest.json",
+          "receipt_manifest_sha256": "e4b959fac34db79d00a1a82e1bb0595d61f07205f443202e665f3c9ba1a352de",
+          "retained_safe_sha256": "c3d76bb8df8219a79a48b0858e61df72c08629d038b6d231e955c325373365d2"
+        },
+        {
+          "request_id": "gleif_general_FR",
+          "requested_url": "https://api.gleif.org/api/v1/lei-records?filter%5Bentity.category%5D=GENERAL&filter%5Bentity.legalAddress.country%5D=FR&page%5Bsize%5D=25",
+          "fetched_at": "2026-10-08T09:34:51.569393+00:00",
+          "http_status": 200,
+          "upstream_raw_sha256": "f4f0a78e20a6af2ffc221795d3db908ee46a0acd287c7408e61b15c8bc031299",
+          "bytes_read": 61802,
+          "body_cap": 262144,
+          "response_clocks": {
+            "server_date_raw": "Thu, 08 Oct 2026 09:34:51 GMT",
+            "last_modified_raw": null
+          },
+          "receipt_manifest_path": "/workspace/shared/dormathon-enterprise-coverage-20261008/data/admission-v0.7/manifest.json",
+          "receipt_manifest_sha256": "e4b959fac34db79d00a1a82e1bb0595d61f07205f443202e665f3c9ba1a352de",
+          "retained_safe_sha256": "930e5bfef174c6169b7b77735dc9779ede9780938dd93e1fe8c625c25e74741d"
+        },
+        {
+          "request_id": "gleif_general_GB",
+          "requested_url": "https://api.gleif.org/api/v1/lei-records?filter%5Bentity.category%5D=GENERAL&filter%5Bentity.legalAddress.country%5D=GB&page%5Bsize%5D=25",
+          "fetched_at": "2026-10-08T09:34:59.858389+00:00",
+          "http_status": 200,
+          "upstream_raw_sha256": "f175f36776a76098f7e6b50d95b435dc4825d8f9cf6bac02a75585094327c17a",
+          "bytes_read": 59056,
+          "body_cap": 262144,
+          "response_clocks": {
+            "server_date_raw": "Thu, 08 Oct 2026 09:34:59 GMT",
+            "last_modified_raw": null
+          },
+          "receipt_manifest_path": "/workspace/shared/dormathon-enterprise-coverage-20261008/data/admission-v0.7/manifest.json",
+          "receipt_manifest_sha256": "e4b959fac34db79d00a1a82e1bb0595d61f07205f443202e665f3c9ba1a352de",
+          "retained_safe_sha256": "2ca25a5a9e67ac2e30133660f1c6b873073c57d5d13063279a74d57c23663cd2"
+        },
+        {
+          "request_id": "gleif_general_ID",
+          "requested_url": "https://api.gleif.org/api/v1/lei-records?filter%5Bentity.category%5D=GENERAL&filter%5Bentity.legalAddress.country%5D=ID&page%5Bsize%5D=25",
+          "fetched_at": "2026-10-08T09:33:54.949384+00:00",
+          "http_status": 200,
+          "upstream_raw_sha256": "d12fd31674197ffc94897ed045cc57bb72c66ab745921d369de97049d3095e53",
+          "bytes_read": 63214,
+          "body_cap": 262144,
+          "response_clocks": {
+            "server_date_raw": "Thu, 08 Oct 2026 09:33:54 GMT",
+            "last_modified_raw": null
+          },
+          "receipt_manifest_path": "/workspace/shared/dormathon-enterprise-coverage-20261008/data/admission-v0.7/manifest.json",
+          "receipt_manifest_sha256": "e4b959fac34db79d00a1a82e1bb0595d61f07205f443202e665f3c9ba1a352de",
+          "retained_safe_sha256": "3a7df407f2d6ada4e64842d0d25c1dfcdd35b1c40c717428d86442d2624dd036"
+        },
+        {
+          "request_id": "gleif_general_IL",
+          "requested_url": "https://api.gleif.org/api/v1/lei-records?filter%5Bentity.category%5D=GENERAL&filter%5Bentity.legalAddress.country%5D=IL&page%5Bsize%5D=25",
+          "fetched_at": "2026-10-08T09:34:29.881942+00:00",
+          "http_status": 200,
+          "upstream_raw_sha256": "a4e7700aa1ceeb08d688740586656d967f11b43fd15f8ca716d0a3e854519870",
+          "bytes_read": 67828,
+          "body_cap": 262144,
+          "response_clocks": {
+            "server_date_raw": "Thu, 08 Oct 2026 09:34:29 GMT",
+            "last_modified_raw": null
+          },
+          "receipt_manifest_path": "/workspace/shared/dormathon-enterprise-coverage-20261008/data/admission-v0.7/manifest.json",
+          "receipt_manifest_sha256": "e4b959fac34db79d00a1a82e1bb0595d61f07205f443202e665f3c9ba1a352de",
+          "retained_safe_sha256": "4507a28f07d45272f9c45c8df5f9004915b182de29605b56f2c502167837bb0b"
+        },
+        {
+          "request_id": "gleif_general_IN",
+          "requested_url": "https://api.gleif.org/api/v1/lei-records?filter%5Bentity.category%5D=GENERAL&filter%5Bentity.legalAddress.country%5D=IN&page%5Bsize%5D=25",
+          "fetched_at": "2026-10-08T09:33:40.318551+00:00",
+          "http_status": 200,
+          "upstream_raw_sha256": "d832cfd61bcb8910b33006dde8afb63725e82e5e001553a0e2d4683d02059a3f",
+          "bytes_read": 61822,
+          "body_cap": 262144,
+          "response_clocks": {
+            "server_date_raw": "Thu, 08 Oct 2026 09:33:40 GMT",
+            "last_modified_raw": null
+          },
+          "receipt_manifest_path": "/workspace/shared/dormathon-enterprise-coverage-20261008/data/admission-v0.7/manifest.json",
+          "receipt_manifest_sha256": "e4b959fac34db79d00a1a82e1bb0595d61f07205f443202e665f3c9ba1a352de",
+          "retained_safe_sha256": "cff23107168477939913998ace9ad31af308ae88c45c2b4dec7676f1af8ed7f9"
+        },
+        {
+          "request_id": "gleif_general_JP",
+          "requested_url": "https://api.gleif.org/api/v1/lei-records?filter%5Bentity.category%5D=GENERAL&filter%5Bentity.legalAddress.country%5D=JP&page%5Bsize%5D=25",
+          "fetched_at": "2026-10-08T09:33:33.026949+00:00",
+          "http_status": 200,
+          "upstream_raw_sha256": "ebe982c73dd8da80843e8b3e54c1591ca34b323b0561150355aab997ab965628",
+          "bytes_read": 76567,
+          "body_cap": 262144,
+          "response_clocks": {
+            "server_date_raw": "Thu, 08 Oct 2026 09:33:32 GMT",
+            "last_modified_raw": null
+          },
+          "receipt_manifest_path": "/workspace/shared/dormathon-enterprise-coverage-20261008/data/admission-v0.7/manifest.json",
+          "receipt_manifest_sha256": "e4b959fac34db79d00a1a82e1bb0595d61f07205f443202e665f3c9ba1a352de",
+          "retained_safe_sha256": "c325438d5bed80afa69460c6ebf5ebd08e4103065edf700973e022ffb640117f"
+        },
+        {
+          "request_id": "gleif_general_KE",
+          "requested_url": "https://api.gleif.org/api/v1/lei-records?filter%5Bentity.category%5D=GENERAL&filter%5Bentity.legalAddress.country%5D=KE&page%5Bsize%5D=25",
+          "fetched_at": "2026-10-08T09:34:17.870846+00:00",
+          "http_status": 200,
+          "upstream_raw_sha256": "04ae01d3b32063eb747d4cee9af60b32259c299d3ef3e4f2071ddff0e90cae2a",
+          "bytes_read": 62691,
+          "body_cap": 262144,
+          "response_clocks": {
+            "server_date_raw": "Thu, 08 Oct 2026 09:34:17 GMT",
+            "last_modified_raw": null
+          },
+          "receipt_manifest_path": "/workspace/shared/dormathon-enterprise-coverage-20261008/data/admission-v0.7/manifest.json",
+          "receipt_manifest_sha256": "e4b959fac34db79d00a1a82e1bb0595d61f07205f443202e665f3c9ba1a352de",
+          "retained_safe_sha256": "8e83592e240f186b32fae05009157699e766a4838f4a6d2be42867f9e444d7ef"
+        },
+        {
+          "request_id": "gleif_general_KR",
+          "requested_url": "https://api.gleif.org/api/v1/lei-records?filter%5Bentity.category%5D=GENERAL&filter%5Bentity.legalAddress.country%5D=KR&page%5Bsize%5D=25",
+          "fetched_at": "2026-10-08T09:33:40.253774+00:00",
+          "http_status": 200,
+          "upstream_raw_sha256": "557cb0e5e65bddb088326761b84378b405904f530c45ba52bf8d95abb25e6437",
+          "bytes_read": 80019,
+          "body_cap": 262144,
+          "response_clocks": {
+            "server_date_raw": "Thu, 08 Oct 2026 09:33:39 GMT",
+            "last_modified_raw": null
+          },
+          "receipt_manifest_path": "/workspace/shared/dormathon-enterprise-coverage-20261008/data/admission-v0.7/manifest.json",
+          "receipt_manifest_sha256": "e4b959fac34db79d00a1a82e1bb0595d61f07205f443202e665f3c9ba1a352de",
+          "retained_safe_sha256": "a470c0f42381bf8ae0faf7f49296fd4492a6594a3378757e6fb2cf102b614083"
+        },
+        {
+          "request_id": "gleif_general_MX",
+          "requested_url": "https://api.gleif.org/api/v1/lei-records?filter%5Bentity.category%5D=GENERAL&filter%5Bentity.legalAddress.country%5D=MX&page%5Bsize%5D=25",
+          "fetched_at": "2026-10-08T09:34:36.982374+00:00",
+          "http_status": 200,
+          "upstream_raw_sha256": "3be9c9de6a93dd390579eeeb51e03f2e9c33ad8d0ed505aa273220c0ad787275",
+          "bytes_read": 62077,
+          "body_cap": 262144,
+          "response_clocks": {
+            "server_date_raw": "Thu, 08 Oct 2026 09:34:36 GMT",
+            "last_modified_raw": null
+          },
+          "receipt_manifest_path": "/workspace/shared/dormathon-enterprise-coverage-20261008/data/admission-v0.7/manifest.json",
+          "receipt_manifest_sha256": "e4b959fac34db79d00a1a82e1bb0595d61f07205f443202e665f3c9ba1a352de",
+          "retained_safe_sha256": "739808191d049cf696e2d7c700375a4be8b5ccdd92f5afbb7ac8cc688218398e"
+        },
+        {
+          "request_id": "gleif_general_MY",
+          "requested_url": "https://api.gleif.org/api/v1/lei-records?filter%5Bentity.category%5D=GENERAL&filter%5Bentity.legalAddress.country%5D=MY&page%5Bsize%5D=25",
+          "fetched_at": "2026-10-08T09:33:48.323192+00:00",
+          "http_status": 200,
+          "upstream_raw_sha256": "198f7f06efc96cab45644e492aa9bbdbe35c5000516b7e4a9347dfc628b81189",
+          "bytes_read": 64133,
+          "body_cap": 262144,
+          "response_clocks": {
+            "server_date_raw": "Thu, 08 Oct 2026 09:33:47 GMT",
+            "last_modified_raw": null
+          },
+          "receipt_manifest_path": "/workspace/shared/dormathon-enterprise-coverage-20261008/data/admission-v0.7/manifest.json",
+          "receipt_manifest_sha256": "e4b959fac34db79d00a1a82e1bb0595d61f07205f443202e665f3c9ba1a352de",
+          "retained_safe_sha256": "da8a2de9388569c6c69666ce1ec17216a9d0a755d29eb08fc6ab5c81062e2fbc"
+        },
+        {
+          "request_id": "gleif_general_NG",
+          "requested_url": "https://api.gleif.org/api/v1/lei-records?filter%5Bentity.category%5D=GENERAL&filter%5Bentity.legalAddress.country%5D=NG&page%5Bsize%5D=25",
+          "fetched_at": "2026-10-08T09:34:11.383317+00:00",
+          "http_status": 200,
+          "upstream_raw_sha256": "db59098eb733d2f4103e93931fa70706ca0fdc632f4861d8ff2f9873f247d495",
+          "bytes_read": 60728,
+          "body_cap": 262144,
+          "response_clocks": {
+            "server_date_raw": "Thu, 08 Oct 2026 09:34:11 GMT",
+            "last_modified_raw": null
+          },
+          "receipt_manifest_path": "/workspace/shared/dormathon-enterprise-coverage-20261008/data/admission-v0.7/manifest.json",
+          "receipt_manifest_sha256": "e4b959fac34db79d00a1a82e1bb0595d61f07205f443202e665f3c9ba1a352de",
+          "retained_safe_sha256": "4f9a8e76db9f38221fa00d0d1e584b1698a44dce4b8f680dfe0a5494de691649"
+        },
+        {
+          "request_id": "gleif_general_NL",
+          "requested_url": "https://api.gleif.org/api/v1/lei-records?filter%5Bentity.category%5D=GENERAL&filter%5Bentity.legalAddress.country%5D=NL&page%5Bsize%5D=25",
+          "fetched_at": "2026-10-08T09:34:59.796409+00:00",
+          "http_status": 200,
+          "upstream_raw_sha256": "e3a0a4e81a0696d94cc2716add2cd136d0fa50e191ab4a000d5b780d76cee8eb",
+          "bytes_read": 58133,
+          "body_cap": 262144,
+          "response_clocks": {
+            "server_date_raw": "Thu, 08 Oct 2026 09:34:59 GMT",
+            "last_modified_raw": null
+          },
+          "receipt_manifest_path": "/workspace/shared/dormathon-enterprise-coverage-20261008/data/admission-v0.7/manifest.json",
+          "receipt_manifest_sha256": "e4b959fac34db79d00a1a82e1bb0595d61f07205f443202e665f3c9ba1a352de",
+          "retained_safe_sha256": "dd713bf721bee84570d1d88d391d7abfc7625fccc2bf6f870206f9c438469fec"
+        },
+        {
+          "request_id": "gleif_general_NO",
+          "requested_url": "https://api.gleif.org/api/v1/lei-records?filter%5Bentity.category%5D=GENERAL&filter%5Bentity.legalAddress.country%5D=NO&page%5Bsize%5D=25",
+          "fetched_at": "2026-10-08T09:35:14.256892+00:00",
+          "http_status": 200,
+          "upstream_raw_sha256": "c77ba4ba1b4a28783871773b3a13f424fa7813eb0add70850071f822cab8a00b",
+          "bytes_read": 61031,
+          "body_cap": 262144,
+          "response_clocks": {
+            "server_date_raw": "Thu, 08 Oct 2026 09:35:14 GMT",
+            "last_modified_raw": null
+          },
+          "receipt_manifest_path": "/workspace/shared/dormathon-enterprise-coverage-20261008/data/admission-v0.7/manifest.json",
+          "receipt_manifest_sha256": "e4b959fac34db79d00a1a82e1bb0595d61f07205f443202e665f3c9ba1a352de",
+          "retained_safe_sha256": "d20d490ee6cb9cacb5f89b9c829b7885e5793a2b445b777f8a5c5af120e58225"
+        },
+        {
+          "request_id": "gleif_general_NZ",
+          "requested_url": "https://api.gleif.org/api/v1/lei-records?filter%5Bentity.category%5D=GENERAL&filter%5Bentity.legalAddress.country%5D=NZ&page%5Bsize%5D=25",
+          "fetched_at": "2026-10-08T09:34:05.755239+00:00",
+          "http_status": 200,
+          "upstream_raw_sha256": "675e01a541797a73a31c232d3f02e18f43dd8b7712242d60b47661a6a0da8e70",
+          "bytes_read": 60241,
+          "body_cap": 262144,
+          "response_clocks": {
+            "server_date_raw": "Thu, 08 Oct 2026 09:34:05 GMT",
+            "last_modified_raw": null
+          },
+          "receipt_manifest_path": "/workspace/shared/dormathon-enterprise-coverage-20261008/data/admission-v0.7/manifest.json",
+          "receipt_manifest_sha256": "e4b959fac34db79d00a1a82e1bb0595d61f07205f443202e665f3c9ba1a352de",
+          "retained_safe_sha256": "f956b7d1f29d16beb87b81f78e0aca2547a4e37cbcb5c6300945e3773ed5ac4b"
+        },
+        {
+          "request_id": "gleif_general_PH",
+          "requested_url": "https://api.gleif.org/api/v1/lei-records?filter%5Bentity.category%5D=GENERAL&filter%5Bentity.legalAddress.country%5D=PH&page%5Bsize%5D=25",
+          "fetched_at": "2026-10-08T09:34:00.542501+00:00",
+          "http_status": 200,
+          "upstream_raw_sha256": "4ba6931b7fff23552f113fe8d95c4c5196770f216e824997b1dedf4446863f30",
+          "bytes_read": 63363,
+          "body_cap": 262144,
+          "response_clocks": {
+            "server_date_raw": "Thu, 08 Oct 2026 09:34:00 GMT",
+            "last_modified_raw": null
+          },
+          "receipt_manifest_path": "/workspace/shared/dormathon-enterprise-coverage-20261008/data/admission-v0.7/manifest.json",
+          "receipt_manifest_sha256": "e4b959fac34db79d00a1a82e1bb0595d61f07205f443202e665f3c9ba1a352de",
+          "retained_safe_sha256": "50fe16f678cc218ba5905a418d7e479088f38a8e3836eb07dce03d8504b5b896"
+        },
+        {
+          "request_id": "gleif_general_PL",
+          "requested_url": "https://api.gleif.org/api/v1/lei-records?filter%5Bentity.category%5D=GENERAL&filter%5Bentity.legalAddress.country%5D=PL&page%5Bsize%5D=25",
+          "fetched_at": "2026-10-08T09:35:14.444583+00:00",
+          "http_status": 200,
+          "upstream_raw_sha256": "c65c89982df6d6de527b66ee3cfa415a9b02e4c938063c8514c06db1d8a573a4",
+          "bytes_read": 64120,
+          "body_cap": 262144,
+          "response_clocks": {
+            "server_date_raw": "Thu, 08 Oct 2026 09:35:14 GMT",
+            "last_modified_raw": null
+          },
+          "receipt_manifest_path": "/workspace/shared/dormathon-enterprise-coverage-20261008/data/admission-v0.7/manifest.json",
+          "receipt_manifest_sha256": "e4b959fac34db79d00a1a82e1bb0595d61f07205f443202e665f3c9ba1a352de",
+          "retained_safe_sha256": "3d929b2734ed35f3cca3fa1da25c54fb6c118a5b176c73a8342aef692ed11d52"
+        },
+        {
+          "request_id": "gleif_general_SA",
+          "requested_url": "https://api.gleif.org/api/v1/lei-records?filter%5Bentity.category%5D=GENERAL&filter%5Bentity.legalAddress.country%5D=SA&page%5Bsize%5D=25",
+          "fetched_at": "2026-10-08T09:34:24.618977+00:00",
+          "http_status": 200,
+          "upstream_raw_sha256": "d0360d050ef5478e42396a5381974d033e0b751efbb73a683329895047c5c8be",
+          "bytes_read": 59838,
+          "body_cap": 262144,
+          "response_clocks": {
+            "server_date_raw": "Thu, 08 Oct 2026 09:34:24 GMT",
+            "last_modified_raw": null
+          },
+          "receipt_manifest_path": "/workspace/shared/dormathon-enterprise-coverage-20261008/data/admission-v0.7/manifest.json",
+          "receipt_manifest_sha256": "e4b959fac34db79d00a1a82e1bb0595d61f07205f443202e665f3c9ba1a352de",
+          "retained_safe_sha256": "25989a01dada776ae3831335af8555b1c35652fd9bcfc753b24947f6a865ec56"
+        },
+        {
+          "request_id": "gleif_general_SE",
+          "requested_url": "https://api.gleif.org/api/v1/lei-records?filter%5Bentity.category%5D=GENERAL&filter%5Bentity.legalAddress.country%5D=SE&page%5Bsize%5D=25",
+          "fetched_at": "2026-10-08T09:35:08.344446+00:00",
+          "http_status": 200,
+          "upstream_raw_sha256": "3e19bc0ace60bb8a8f63d4ebf1ba3ecee964220cbd9d473824d3aef41e2701c8",
+          "bytes_read": 65360,
+          "body_cap": 262144,
+          "response_clocks": {
+            "server_date_raw": "Thu, 08 Oct 2026 09:35:08 GMT",
+            "last_modified_raw": null
+          },
+          "receipt_manifest_path": "/workspace/shared/dormathon-enterprise-coverage-20261008/data/admission-v0.7/manifest.json",
+          "receipt_manifest_sha256": "e4b959fac34db79d00a1a82e1bb0595d61f07205f443202e665f3c9ba1a352de",
+          "retained_safe_sha256": "a11a7366c59c1305f4b8a96fe3f9c6b4d103fc2a67a91de1884d01e2d6c0b4e9"
+        },
+        {
+          "request_id": "gleif_general_SG",
+          "requested_url": "https://api.gleif.org/api/v1/lei-records?filter%5Bentity.category%5D=GENERAL&filter%5Bentity.legalAddress.country%5D=SG&page%5Bsize%5D=25",
+          "fetched_at": "2026-10-08T09:33:48.641185+00:00",
+          "http_status": 200,
+          "upstream_raw_sha256": "4543bac330885e23e352bc5750c0385b49cdb44f863fc57ac4f52217ec923030",
+          "bytes_read": 61261,
+          "body_cap": 262144,
+          "response_clocks": {
+            "server_date_raw": "Thu, 08 Oct 2026 09:33:48 GMT",
+            "last_modified_raw": null
+          },
+          "receipt_manifest_path": "/workspace/shared/dormathon-enterprise-coverage-20261008/data/admission-v0.7/manifest.json",
+          "receipt_manifest_sha256": "e4b959fac34db79d00a1a82e1bb0595d61f07205f443202e665f3c9ba1a352de",
+          "retained_safe_sha256": "bc7e367b316bc0d36ab15eeeba72c14d7cd7944a8099909b0c846ba6995ea423"
+        },
+        {
+          "request_id": "gleif_general_TH",
+          "requested_url": "https://api.gleif.org/api/v1/lei-records?filter%5Bentity.category%5D=GENERAL&filter%5Bentity.legalAddress.country%5D=TH&page%5Bsize%5D=25",
+          "fetched_at": "2026-10-08T09:33:55.057758+00:00",
+          "http_status": 200,
+          "upstream_raw_sha256": "03e16930016bf3208242c7beaf3dde6d3f4de49fde354725211781f8a0489f9a",
+          "bytes_read": 90824,
+          "body_cap": 262144,
+          "response_clocks": {
+            "server_date_raw": "Thu, 08 Oct 2026 09:33:54 GMT",
+            "last_modified_raw": null
+          },
+          "receipt_manifest_path": "/workspace/shared/dormathon-enterprise-coverage-20261008/data/admission-v0.7/manifest.json",
+          "receipt_manifest_sha256": "e4b959fac34db79d00a1a82e1bb0595d61f07205f443202e665f3c9ba1a352de",
+          "retained_safe_sha256": "112521d42092043007c25e158229990e8efeefad0fd0cdc0d39888842e4a8274"
+        },
+        {
+          "request_id": "gleif_general_TR",
+          "requested_url": "https://api.gleif.org/api/v1/lei-records?filter%5Bentity.category%5D=GENERAL&filter%5Bentity.legalAddress.country%5D=TR&page%5Bsize%5D=25",
+          "fetched_at": "2026-10-08T09:34:30.021029+00:00",
+          "http_status": 200,
+          "upstream_raw_sha256": "a6b373c5708dd69562d19ba6193123f47f124ad59e042bdfc076ec4d47810a9a",
+          "bytes_read": 65084,
+          "body_cap": 262144,
+          "response_clocks": {
+            "server_date_raw": "Thu, 08 Oct 2026 09:34:29 GMT",
+            "last_modified_raw": null
+          },
+          "receipt_manifest_path": "/workspace/shared/dormathon-enterprise-coverage-20261008/data/admission-v0.7/manifest.json",
+          "receipt_manifest_sha256": "e4b959fac34db79d00a1a82e1bb0595d61f07205f443202e665f3c9ba1a352de",
+          "retained_safe_sha256": "fe92245cbfcc96f75e3c465a9baf658f61b03bc90d0adf3138f886f44fa7f1de"
+        },
+        {
+          "request_id": "gleif_general_VN",
+          "requested_url": "https://api.gleif.org/api/v1/lei-records?filter%5Bentity.category%5D=GENERAL&filter%5Bentity.legalAddress.country%5D=VN&page%5Bsize%5D=25",
+          "fetched_at": "2026-10-08T09:34:00.562968+00:00",
+          "http_status": 200,
+          "upstream_raw_sha256": "414e6f7182f63cb221629f8ae9d6b573cc20345541d46bd2c8b593fe960bb3f0",
+          "bytes_read": 72104,
+          "body_cap": 262144,
+          "response_clocks": {
+            "server_date_raw": "Thu, 08 Oct 2026 09:34:00 GMT",
+            "last_modified_raw": null
+          },
+          "receipt_manifest_path": "/workspace/shared/dormathon-enterprise-coverage-20261008/data/admission-v0.7/manifest.json",
+          "receipt_manifest_sha256": "e4b959fac34db79d00a1a82e1bb0595d61f07205f443202e665f3c9ba1a352de",
+          "retained_safe_sha256": "eac8928be564136001ab244b0883ddd4dc551ba149f92774c60513ece7515d9b"
+        },
+        {
+          "request_id": "gleif_general_ZA",
+          "requested_url": "https://api.gleif.org/api/v1/lei-records?filter%5Bentity.category%5D=GENERAL&filter%5Bentity.legalAddress.country%5D=ZA&page%5Bsize%5D=25",
+          "fetched_at": "2026-10-08T09:34:11.192641+00:00",
+          "http_status": 200,
+          "upstream_raw_sha256": "801f48be3a67c243ba36c1531341469a40c168990a763d3c88c2b9a5f2a4bb14",
+          "bytes_read": 61108,
+          "body_cap": 262144,
+          "response_clocks": {
+            "server_date_raw": "Thu, 08 Oct 2026 09:34:10 GMT",
+            "last_modified_raw": null
+          },
+          "receipt_manifest_path": "/workspace/shared/dormathon-enterprise-coverage-20261008/data/admission-v0.7/manifest.json",
+          "receipt_manifest_sha256": "e4b959fac34db79d00a1a82e1bb0595d61f07205f443202e665f3c9ba1a352de",
+          "retained_safe_sha256": "0bcaa348b9c8700f0502394439f8f51d56ab7b63eedf26fd0bf248eab8ec175d"
+        },
+        {
+          "request_id": "gleif_global_general",
+          "requested_url": "https://api.gleif.org/api/v1/lei-records?filter%5Bentity.category%5D=GENERAL&page%5Bsize%5D=100",
+          "fetched_at": "2026-10-08T09:29:44.655873+00:00",
+          "http_status": 200,
+          "upstream_raw_sha256": "61dcc97542e0dd621352736d66196278c69bdc332ae9a1ee75abb9f8824cfbf9",
+          "bytes_read": 238765,
+          "body_cap": 4194304,
+          "response_clocks": {
+            "server_date_raw": "Thu, 08 Oct 2026 09:29:44 GMT",
+            "last_modified_raw": null
+          },
+          "receipt_manifest_path": "/workspace/shared/dormathon-enterprise-coverage-20261008/data/admission-v0.7/manifest.json",
+          "receipt_manifest_sha256": "e4b959fac34db79d00a1a82e1bb0595d61f07205f443202e665f3c9ba1a352de",
+          "retained_safe_sha256": "f9bdb8f92eca55bf3ed080c37c437d1bdb4f961ab0a1d43d2eae5e0cda2885d6"
+        }
+      ],
+      "recurring_state": "not_scheduled",
+      "production_admission": "pending_catalog_review",
+      "input_id": "enterprise_gleif_reference",
+      "content_depth": "structured_facts",
+      "max_dimension_rows": 20000,
+      "allowed_fact_paths": [
+        "coverage_warning",
+        "eligibility",
+        "entity_category",
+        "entity_id",
+        "entity_status",
+        "geography.basis",
+        "geography.headquarters_country",
+        "geography.legal_country",
+        "geography.legal_jurisdiction",
+        "golden_copy_publish_date",
+        "identifier_basis",
+        "legal_names.alternative.*",
+        "legal_names.alternative.*.language",
+        "legal_names.alternative.*.name",
+        "legal_names.alternative.*.type",
+        "legal_names.legal.language",
+        "legal_names.legal.name",
+        "record_kind",
+        "registration_authority",
+        "registration_status",
+        "response_clocks.last_modified_raw",
+        "response_clocks.semantics",
+        "response_clocks.server_date_raw",
+        "sector"
+      ],
+      "required_fact_paths": [
+        "record_kind",
+        "entity_id"
+      ],
+      "coverage_complete": false
+    },
+    {
+      "id": "stat_eurostat_sbs_size",
+      "version": "0.1.0",
+      "name": "Eurostat enterprise size/sector aggregate observations",
+      "provider_family": "Eurostat",
+      "endpoint": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sbs_sc_ovw",
+      "official_url": "https://ec.europa.eu/eurostat/databrowser/view/sbs_sc_ovw/default/table",
+      "format": "jsonstat",
+      "category": "economy",
+      "source_country": null,
+      "source_language": "en",
+      "material_kind": "statistical_observation",
+      "coverage": {
+        "scope": "source-qualified retained research batch; see acquisition_receipts and coverage counts",
+        "complete_global": false,
+        "identity_is_event_coverage": false
+      },
+      "source_update_cadence": "Provider documented/observed cadence; not an application guarantee",
+      "collection_cadence": "manual bounded batch only; recurring not scheduled/operational",
+      "time_semantics": {
+        "provider_published_at": "null unless supplied as awaretimestamp",
+        "observation_dates": "date/year-only retained in facts",
+        "local_acquisition": "exact collector receipt clocks, never publication time"
+      },
+      "rights": {
+        "status": "cleared_structured_facts",
+        "permission_basis": "Eurostat statistical reuse permitted with attribution and modifications disclosed; country/third-party exceptions respected; source data notendorsingderivedselection",
+        "primary_url": "https://ec.europa.eu/eurostat/help/copyright-notice",
+        "allowed_fields": [
+          "dimensioncodes/labels",
+          "value",
+          "status",
+          "updated"
+        ],
+        "attribution": "Source: Eurostat, sbs_sc_ovw, retrieved2026-10-08; filtered/minimized selection, Eurostat is not responsible for derivedselection",
+        "excluded_content": [
+          "personal contacts",
+          "directors/officers",
+          "tax identifiers/EIN/CNPJ",
+          "street addresses",
+          "full article/document/PDF bodies",
+          "photos/logos",
+          "credentials"
+        ]
+      },
+      "limits": {
+        "max_body_bytes": 2097152,
+        "max_items": 20000,
+        "safe_output_chunk_max_bytes": 262144,
+        "safe_output_chunk_max_items": 100,
+        "timeout_seconds": 30,
+        "redirect_policy": "reject",
+        "justification": "source-specific licensed identity/statistical dimension exception reviewed in v0.7; actual initial rawfetch limits preserved in receipts"
+      },
+      "empty_policy": "Wrong root/error/HTML/nonzero upstream with no records rejects; genuinely empty recognizedprovider root stays empty",
+      "adapter_path": "/workspace/shared/dormathon-enterprise-coverage-20261008/adapters/enterprise-statistics.mjs",
+      "adapter_export": "eurostatSbs",
+      "stage": "actually_collected",
+      "gaps": [
+        "6,476suppliedcells vs7,992densecube possible; missing/suppressed unknown, notzero",
+        "37geocategories includesEU27aggregate;36 individualreportinggeographies;sectorsC/G/Jonly;years2022–24",
+        "Employment-size strata notlegalSMEclassification;0-9overlaps0_1+2-9",
+        "Annualobservations arenotcurrentincidents orworldwideSMEcoverage"
+      ],
+      "retrieval_allowed_text": {
+        "title": true,
+        "fact_paths": [
+          "dimension_labels.geo",
+          "dimension_labels.nace_r2",
+          "dimension_labels.size_emp",
+          "dimension_labels.indic_sbs",
+          "observation_period"
+        ]
+      },
+      "retrieval_excluded_text": [
+        "facts.record_kind",
+        "facts.eligibility",
+        "facts.coverage_warning",
+        "facts.universe",
+        "facts.sme_semantics",
+        "facts.aggregation_warning",
+        "facts.missing_value_policy",
+        "facts.conversion_warning",
+        "facts.license_boundary",
+        "source_license",
+        "allrights/parser/coverageboilerplate"
+      ],
+      "acquisition_receipts": [
+        {
+          "request_id": "eurostat_sme_multicountry",
+          "requested_url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/sbs_sc_ovw?lang=EN&indic_sbs=ENT_NR&indic_sbs=EMP_NR&indic_sbs=NETTUR_MEUR&nace_r2=C&nace_r2=G&nace_r2=J&sinceTimePeriod=2022",
+          "fetched_at": "2026-10-08T09:35:19.054634+00:00",
+          "http_status": 200,
+          "upstream_raw_sha256": "d94187f2cc959cd7827a949b11fd22ee4d0dd61ebc4c8cc9df409396236d025c",
+          "bytes_read": 94359,
+          "body_cap": 1048576,
+          "response_clocks": {
+            "server_date_raw": "Thu, 08 Oct 2026 09:35:18 GMT",
+            "last_modified_raw": null
+          },
+          "receipt_manifest_path": "/workspace/shared/dormathon-enterprise-coverage-20261008/data/admission-v0.7/manifest.json",
+          "receipt_manifest_sha256": "e4b959fac34db79d00a1a82e1bb0595d61f07205f443202e665f3c9ba1a352de",
+          "retained_safe_sha256": "44c2e1f25422191d37d4fe1b15631f76395c4cb846166c348a6671cab90e09c3"
+        }
+      ],
+      "recurring_state": "not_scheduled",
+      "production_admission": "pending_catalog_review",
+      "input_id": "stat_eurostat_sbs_size",
+      "content_depth": "structured_facts",
+      "max_dimension_rows": 20000,
+      "allowed_fact_paths": [
+        "aggregation_warning",
+        "dataset_updated_at_raw",
+        "dimension_labels.freq",
+        "dimension_labels.geo",
+        "dimension_labels.indic_sbs",
+        "dimension_labels.nace_r2",
+        "dimension_labels.size_emp",
+        "dimension_labels.time",
+        "dimensions.freq",
+        "dimensions.geo",
+        "dimensions.indic_sbs",
+        "dimensions.nace_r2",
+        "dimensions.size_emp",
+        "dimensions.time",
+        "missing_value_policy",
+        "observation_period",
+        "population_scope",
+        "provider_status_flag",
+        "record_kind",
+        "response_clocks.last_modified_raw",
+        "response_clocks.semantics",
+        "response_clocks.server_date_raw",
+        "series_id",
+        "size_stratum",
+        "sme_semantics",
+        "unit",
+        "value"
+      ],
+      "required_fact_paths": [
+        "record_kind",
+        "series_id"
+      ],
+      "coverage_complete": false
+    },
+    {
+      "id": "stat_worldbank_annual_fx",
+      "version": "0.1.0",
+      "name": "World Bank official annual-average exchange rate observations",
+      "provider_family": "World Bank",
+      "endpoint": "https://api.worldbank.org/v2/country/JPN;CHN;KOR;IND;BRA;MEX;CAN;GBR;DNK;CHE;DEU;NLD;FRA;AUS;ZAF;SGP/indicator/PA.NUS.FCRF?format=json&date=2019:2025&per_page=200",
+      "official_url": "https://data.worldbank.org/indicator/PA.NUS.FCRF",
+      "format": "json",
+      "category": "economy",
+      "source_country": null,
+      "source_language": "en",
+      "material_kind": "statistical_observation",
+      "coverage": {
+        "scope": "source-qualified retained research batch; see acquisition_receipts and coverage counts",
+        "complete_global": false,
+        "identity_is_event_coverage": false
+      },
+      "source_update_cadence": "Provider documented/observed cadence; not an application guarantee",
+      "collection_cadence": "manual bounded batch only; recurring not scheduled/operational",
+      "time_semantics": {
+        "provider_published_at": "null unless supplied as awaretimestamp",
+        "observation_dates": "date/year-only retained in facts",
+        "local_acquisition": "exact collector receipt clocks, never publication time"
+      },
+      "rights": {
+        "status": "cleared_structured_facts",
+        "permission_basis": "World Bank WDI CC-BY4.0 subject to source/dataset exceptions; cited indicator and methodology",
+        "primary_url": "https://databank.worldbank.org/metadataglossary/world-development-indicators/series/PA.NUS.FCRF",
+        "allowed_fields": [
+          "indicator",
+          "country.label",
+          "countryiso3code",
+          "date",
+          "value",
+          "lastupdated"
+        ],
+        "attribution": "Source: World Bank WDI, PA.NUS.FCRF, annual-average official exchange rate, retrieved2026-10-08",
+        "excluded_content": [
+          "personal contacts",
+          "directors/officers",
+          "tax identifiers/EIN/CNPJ",
+          "street addresses",
+          "full article/document/PDF bodies",
+          "photos/logos",
+          "credentials"
+        ]
+      },
+      "limits": {
+        "max_body_bytes": 2097152,
+        "max_items": 20000,
+        "safe_output_chunk_max_bytes": 262144,
+        "safe_output_chunk_max_items": 100,
+        "timeout_seconds": 30,
+        "redirect_policy": "reject",
+        "justification": "source-specific licensed identity/statistical dimension exception reviewed in v0.7; actual initial rawfetch limits preserved in receipts"
+      },
+      "empty_policy": "Wrong root/error/HTML/nonzero upstream with no records rejects; genuinely empty recognizedprovider root stays empty",
+      "adapter_path": "/workspace/shared/dormathon-enterprise-coverage-20261008/adapters/enterprise-statistics.mjs",
+      "adapter_export": "worldBankFx",
+      "stage": "actually_collected",
+      "gaps": [
+        "112cells includeprovider nulls; only16economies2019–25",
+        "UnitLCUperUSD, notUSDperLCU; currencycountrylink reviewedseparately",
+        "Annualcalendaraverage cannotautomaticallyvalueasof-dateprivatecompanyorunalignedfiscalyear"
+      ],
+      "retrieval_allowed_text": {
+        "title": true,
+        "fact_paths": [
+          "country_label",
+          "observation_period"
+        ]
+      },
+      "retrieval_excluded_text": [
+        "facts.record_kind",
+        "facts.eligibility",
+        "facts.coverage_warning",
+        "facts.universe",
+        "facts.sme_semantics",
+        "facts.aggregation_warning",
+        "facts.missing_value_policy",
+        "facts.conversion_warning",
+        "facts.license_boundary",
+        "source_license",
+        "allrights/parser/coverageboilerplate"
+      ],
+      "acquisition_receipts": [
+        {
+          "request_id": "worldbank_annual_fx",
+          "requested_url": "https://api.worldbank.org/v2/country/JPN;CHN;KOR;IND;BRA;MEX;CAN;GBR;DNK;CHE;DEU;NLD;FRA;AUS;ZAF;SGP/indicator/PA.NUS.FCRF?format=json&date=2019:2025&per_page=200",
+          "fetched_at": "2026-10-08T09:35:20.937846+00:00",
+          "http_status": 200,
+          "upstream_raw_sha256": "31762ea011857965c34dd0caa17f00a31abfef4f6030dc81a2b923f8f852f802",
+          "bytes_read": 26921,
+          "body_cap": 262144,
+          "response_clocks": {
+            "server_date_raw": "Thu, 08 Oct 2026 09:35:20 GMT",
+            "last_modified_raw": "Thu, 08 Oct 2026 09:35:20 GMT"
+          },
+          "receipt_manifest_path": "/workspace/shared/dormathon-enterprise-coverage-20261008/data/admission-v0.7/manifest.json",
+          "receipt_manifest_sha256": "e4b959fac34db79d00a1a82e1bb0595d61f07205f443202e665f3c9ba1a352de",
+          "retained_safe_sha256": "31762ea011857965c34dd0caa17f00a31abfef4f6030dc81a2b923f8f852f802"
+        }
+      ],
+      "recurring_state": "not_scheduled",
+      "production_admission": "pending_catalog_review",
+      "input_id": "stat_worldbank_annual_fx",
+      "content_depth": "structured_facts",
+      "max_dimension_rows": 20000,
+      "allowed_fact_paths": [
+        "conversion_warning",
+        "country_code_iso3",
+        "country_label",
+        "currency_code",
+        "dataset_last_updated",
+        "indicator",
+        "observation_period",
+        "record_kind",
+        "response_clocks.last_modified_raw",
+        "response_clocks.semantics",
+        "response_clocks.server_date_raw",
+        "series_id",
+        "unit",
+        "value"
+      ],
+      "required_fact_paths": [
+        "record_kind",
+        "series_id"
+      ],
+      "coverage_complete": false
+    },
+    {
+      "id": "enterprise_sec_disclosures",
+      "version": "0.1.0",
+      "name": "SEC recent issuer disclosure metadata, retained partial batch",
+      "provider_family": "SEC",
+      "endpoint": "https://data.sec.gov/submissions/CIK{10digitCIK}.json",
+      "official_url": "https://www.sec.gov/search-filings/edgar-application-programming-interfaces",
+      "format": "json",
+      "category": "business",
+      "source_country": "US",
+      "source_language": "en",
+      "material_kind": "legal_entity_registry",
+      "coverage": {
+        "scope": "source-qualified retained research batch; see acquisition_receipts and coverage counts",
+        "complete_global": false,
+        "identity_is_event_coverage": false
+      },
+      "source_update_cadence": "Provider documented/observed cadence; not an application guarantee",
+      "collection_cadence": "manual bounded batch only; recurring not scheduled/operational",
+      "time_semantics": {
+        "provider_published_at": "null unless supplied as awaretimestamp",
+        "observation_dates": "date/year-only retained in facts",
+        "local_acquisition": "exact collector receipt clocks, never publication time"
+      },
+      "rights": {
+        "status": "cleared_structured_facts",
+        "permission_basis": "SEC public filing metadata reuse; no linkedfilingbody or personal/taxfields",
+        "primary_url": "https://www.sec.gov/files/about/webmaster-faq.htm",
+        "allowed_fields": [
+          "CIK",
+          "name",
+          "SIC",
+          "SICdescription",
+          "tickers",
+          "exchanges",
+          "businessCountryfields",
+          "accession",
+          "form",
+          "filingDate",
+          "reportDate",
+          "acceptanceDateTime",
+          "primaryDocument"
+        ],
+        "attribution": "Source: U.S. SEC, submissionsmetadata, boundedresearchbatch2026-10-08",
+        "excluded_content": [
+          "personal contacts",
+          "directors/officers",
+          "tax identifiers/EIN/CNPJ",
+          "street addresses",
+          "full article/document/PDF bodies",
+          "photos/logos",
+          "credentials"
+        ]
+      },
+      "limits": {
+        "max_body_bytes": 1048576,
+        "max_items": 20000,
+        "safe_output_chunk_max_bytes": 262144,
+        "safe_output_chunk_max_items": 100,
+        "timeout_seconds": 30,
+        "redirect_policy": "reject",
+        "justification": "source-specific licensed identity/statistical dimension exception reviewed in v0.7; actual initial rawfetch limits preserved in receipts"
+      },
+      "empty_policy": "Wrong root/error/HTML/nonzero upstream with no records rejects; genuinely empty recognizedprovider root stays empty",
+      "adapter_path": "/workspace/shared/dormathon-enterprise-coverage-20261008/adapters/enterprise-statistics.mjs",
+      "adapter_export": "secSubmissions",
+      "stage": "actually_collected",
+      "gaps": [
+        "Only3of27plannedcompanyprofilesadmitted: Apple,Microsoft,Walmart",
+        "DataSECtunnel403accessdenial lockedpendingaccessreview; noautomaticretry",
+        "The15plannedannualrevenueconceptfetcheswerenotexecuted; nofacts/majorqualificationclaimedfromthem",
+        "Recurringfair-accessdeclaredcontactprerequisite unresolved; no ownercontacttransmitted"
+      ],
+      "retrieval_allowed_text": {
+        "title": true,
+        "fact_paths": [
+          "sector.label",
+          "tickers.*",
+          "recent_filing_metadata.*.form",
+          "recent_filing_metadata.*.report_date"
+        ]
+      },
+      "retrieval_excluded_text": [
+        "facts.record_kind",
+        "facts.eligibility",
+        "facts.coverage_warning",
+        "facts.universe",
+        "facts.sme_semantics",
+        "facts.aggregation_warning",
+        "facts.missing_value_policy",
+        "facts.conversion_warning",
+        "facts.license_boundary",
+        "source_license",
+        "allrights/parser/coverageboilerplate"
+      ],
+      "acquisition_receipts": [
+        {
+          "request_id": "sec_submissions_0000104169",
+          "requested_url": "https://data.sec.gov/submissions/CIK0000104169.json",
+          "fetched_at": "2026-10-08T09:35:38.460689+00:00",
+          "http_status": 200,
+          "upstream_raw_sha256": "5cafa5114f8ee98f494579220a476ab0d84c83ecc761a916761382ef11d8e470",
+          "bytes_read": 157326,
+          "body_cap": 1048576,
+          "response_clocks": {
+            "server_date_raw": "Thu, 08 Oct 2026 09:35:38 GMT",
+            "last_modified_raw": null
+          },
+          "receipt_manifest_path": "/workspace/shared/dormathon-enterprise-coverage-20261008/data/admission-v0.7/manifest.json",
+          "receipt_manifest_sha256": "e4b959fac34db79d00a1a82e1bb0595d61f07205f443202e665f3c9ba1a352de",
+          "retained_safe_sha256": "4fa26bc9724d767c94bb3e5e2536b4fe531d52b614e38e2804528c7fa4d0f26f"
+        },
+        {
+          "request_id": "sec_submissions_0000320193",
+          "requested_url": "https://data.sec.gov/submissions/CIK0000320193.json",
+          "fetched_at": "2026-10-08T09:35:25.566024+00:00",
+          "http_status": 200,
+          "upstream_raw_sha256": "e89635068cd46772d1d3859ce2bc839fab781630787943a1874f258fa354e7a9",
+          "bytes_read": 163743,
+          "body_cap": 1048576,
+          "response_clocks": {
+            "server_date_raw": "Thu, 08 Oct 2026 09:35:25 GMT",
+            "last_modified_raw": null
+          },
+          "receipt_manifest_path": "/workspace/shared/dormathon-enterprise-coverage-20261008/data/admission-v0.7/manifest.json",
+          "receipt_manifest_sha256": "e4b959fac34db79d00a1a82e1bb0595d61f07205f443202e665f3c9ba1a352de",
+          "retained_safe_sha256": "77c998f89e64e6f8b1af457811cb10c80261e9cbb7337dfe1d767d95a4c58f25"
+        },
+        {
+          "request_id": "sec_submissions_0000789019",
+          "requested_url": "https://data.sec.gov/submissions/CIK0000789019.json",
+          "fetched_at": "2026-10-08T09:35:31.454549+00:00",
+          "http_status": 200,
+          "upstream_raw_sha256": "2484a2a3b5677d892a1b25af573ce4eda7b6f449f5eda41bac6b3f106dc3139c",
+          "bytes_read": 185250,
+          "body_cap": 1048576,
+          "response_clocks": {
+            "server_date_raw": "Thu, 08 Oct 2026 09:35:31 GMT",
+            "last_modified_raw": null
+          },
+          "receipt_manifest_path": "/workspace/shared/dormathon-enterprise-coverage-20261008/data/admission-v0.7/manifest.json",
+          "receipt_manifest_sha256": "e4b959fac34db79d00a1a82e1bb0595d61f07205f443202e665f3c9ba1a352de",
+          "retained_safe_sha256": "5547b179ba172723b0bbc64f36d55b41b914204f3a942e968dc195132bf27fae"
+        }
+      ],
+      "recurring_state": "not_scheduled",
+      "production_admission": "pending_catalog_review",
+      "current_fetch_state": "blocked_pending_access_review",
+      "input_id": "enterprise_sec_disclosures",
+      "content_depth": "structured_facts",
+      "max_dimension_rows": 20000,
+      "allowed_fact_paths": [
+        "business_address_country_fields.country",
+        "business_address_country_fields.countryCode",
+        "business_address_country_fields.stateOrCountry",
+        "business_address_country_fields.stateOrCountryDescription",
+        "eligibility",
+        "entity_id",
+        "exchanges.*",
+        "filing_selection",
+        "identifier_basis",
+        "recent_filing_metadata.*.acceptance_time",
+        "recent_filing_metadata.*.accession",
+        "recent_filing_metadata.*.filing_date",
+        "recent_filing_metadata.*.form",
+        "recent_filing_metadata.*.primary_document",
+        "recent_filing_metadata.*.report_date",
+        "record_kind",
+        "response_clocks.last_modified_raw",
+        "response_clocks.semantics",
+        "response_clocks.server_date_raw",
+        "sector.code",
+        "sector.label",
+        "sector.mapping_status",
+        "sector.scheme",
+        "tickers.*",
+        "total_recent_filings"
+      ],
+      "required_fact_paths": [
+        "record_kind",
+        "entity_id"
+      ],
+      "coverage_complete": false
+    },
+    {
+      "id": "country_ma_hcp_releases",
+      "version": "0.1.0",
+      "name": "Haut-Commissariat au Plan",
+      "provider_family": "publisher:ma-hcp",
+      "endpoint": "https://www.hcp.ma/xml/syndication.rss",
+      "official_url": "https://www.hcp.ma/feeds/",
+      "format": "rss",
+      "category": "economy",
+      "source_country": "MA",
+      "source_language": "fr",
+      "material_kind": "official_notice",
+      "coverage": {
+        "publisher_area_ids": [
+          "unm49:504"
+        ],
+        "event_countries": [],
+        "country_event_coverage_claim": false,
+        "scope": "Source-language French does not exhaust Arabic national releases."
+      },
+      "source_update_cadence": "provider release driven; no guaranteed frequency",
+      "collection_cadence": "one bounded actual batch; no recurring runtime",
+      "time_semantics": {
+        "published_at": "only explicit source timezone; otherwise null with raw date retained",
+        "event_time": null,
+        "source_updated_at": null
+      },
+      "rights": {
+        "status": "cleared_metadata_only",
+        "permission_basis": "HCP explicitly permits adding lists of links to recently published articles via syndication; titles/links/dates only.",
+        "primary_url": "https://www.hcp.ma/feeds/",
+        "allowed_fields": [
+          "id",
+          "title",
+          "url",
+          "publication_raw"
+        ],
+        "attribution": "Source: Haut-Commissariat au Plan du Maroc",
+        "excluded_content": [
+          "article/summary/body",
+          "images/media",
+          "personal profiles",
+          "linked content",
+          "financial tables",
+          "third-party content"
+        ]
+      },
+      "limits": {
+        "timeout_seconds": 20,
+        "max_body_bytes": 262144,
+        "max_items": 100,
+        "max_pages": 1,
+        "max_http_attempts": 1
+      },
+      "empty_policy": "valid feed metadata permits empty; malformed/error/wrong envelope/count contradiction rejected",
+      "adapter_path": "adapters/official-release.mjs",
+      "adapter_export": [
+        "readEnvelope",
+        "project"
+      ],
+      "stage": "actually_collected",
+      "gaps": [
+        "daily operational runtime not observed",
+        "undocumented feed retention/incomplete page coverage",
+        "no event-country inference",
+        "no semantic or business-impact inference"
+      ],
+      "actual_projection_retained": true,
+      "ingestion_admitted": true,
+      "receipt": "receipts/country_ma_hcp_releases.json",
+      "input_id": "country_ma_hcp_releases",
+      "content_depth": "headline_metadata",
+      "max_dimension_rows": 1000,
+      "allowed_fact_paths": [
+        "event_country_basis",
+        "id_basis",
+        "material_kind",
+        "metadata_only",
+        "publication_raw",
+        "publisher_family",
+        "time_precision"
+      ],
+      "required_fact_paths": [
+        "material_kind"
+      ],
+      "retrieval_allowed_text": {
+        "title": true,
+        "fact_paths": []
+      },
+      "coverage_complete": false,
+      "acquisition_receipts": [
+        {
+          "requested_url": "https://www.hcp.ma/xml/syndication.rss",
+          "fetched_at": "2026-10-08T09:40:06.781787+00:00",
+          "http_status": 200,
+          "upstream_raw_sha256": "6b09421010e2953c0296d3c2289a0fbeebffa3444f8246028412e2aeebd7b485",
+          "bytes_read": 17598,
+          "body_cap": 262144,
+          "original_receipt_sha256": "d2d321bb1fe36ae238e884489b22b49f908aa1a797d748bd64f1faf6a0db4a2c",
+          "original_receipt_path": "/workspace/shared/dormathon-country-coverage-20261008/receipts/country_ma_hcp_releases.json"
+        }
+      ]
+    },
+    {
+      "id": "country_au_rba_releases",
+      "version": "0.1.0",
+      "name": "Reserve Bank of Australia",
+      "provider_family": "publisher:au-rba",
+      "endpoint": "https://www.rba.gov.au/rss/rss-cb-media-releases.xml",
+      "official_url": "https://www.rba.gov.au/rss/",
+      "format": "rss",
+      "category": "economy",
+      "source_country": "AU",
+      "source_language": "en",
+      "material_kind": "official_notice",
+      "coverage": {
+        "publisher_area_ids": [
+          "unm49:036"
+        ],
+        "event_countries": [],
+        "country_event_coverage_claim": false,
+        "scope": "Monetary-policy/central-bank releases, not general national coverage."
+      },
+      "source_update_cadence": "provider release driven; no guaranteed frequency",
+      "collection_cadence": "one bounded actual batch; no recurring runtime",
+      "time_semantics": {
+        "published_at": "only explicit source timezone; otherwise null with raw date retained",
+        "event_time": null,
+        "source_updated_at": null
+      },
+      "rights": {
+        "status": "cleared_metadata_only",
+        "permission_basis": "RBA copyright notice: RBA-authored non-excluded material CC BY4.0; only release titles, links and source-supplied publication fields retained. No financial tables, cash rates, third-party/media/site infrastructure.",
+        "primary_url": "https://www.rba.gov.au/copyright/",
+        "allowed_fields": [
+          "id",
+          "title",
+          "url",
+          "publication_raw"
+        ],
+        "attribution": "Source: Reserve Bank of Australia2026",
+        "excluded_content": [
+          "article/summary/body",
+          "images/media",
+          "personal profiles",
+          "linked content",
+          "financial tables",
+          "third-party content"
+        ]
+      },
+      "limits": {
+        "timeout_seconds": 20,
+        "max_body_bytes": 262144,
+        "max_items": 100,
+        "max_pages": 1,
+        "max_http_attempts": 1
+      },
+      "empty_policy": "valid feed metadata permits empty; malformed/error/wrong envelope/count contradiction rejected",
+      "adapter_path": "adapters/official-release.mjs",
+      "adapter_export": [
+        "readEnvelope",
+        "project"
+      ],
+      "stage": "actually_collected",
+      "gaps": [
+        "daily operational runtime not observed",
+        "undocumented feed retention/incomplete page coverage",
+        "no event-country inference",
+        "no semantic or business-impact inference"
+      ],
+      "actual_projection_retained": true,
+      "ingestion_admitted": true,
+      "receipt": "receipts/country_au_rba_releases.json",
+      "input_id": "country_au_rba_releases",
+      "content_depth": "headline_metadata",
+      "max_dimension_rows": 1000,
+      "allowed_fact_paths": [
+        "event_country_basis",
+        "id_basis",
+        "material_kind",
+        "metadata_only",
+        "publication_raw",
+        "publisher_family",
+        "time_precision"
+      ],
+      "required_fact_paths": [
+        "material_kind"
+      ],
+      "retrieval_allowed_text": {
+        "title": true,
+        "fact_paths": []
+      },
+      "coverage_complete": false,
+      "acquisition_receipts": [
+        {
+          "requested_url": "https://www.rba.gov.au/rss/rss-cb-media-releases.xml",
+          "fetched_at": "2026-10-08T09:40:17.277143+00:00",
+          "http_status": 200,
+          "upstream_raw_sha256": "6f6af8a1ac3283569c5f9f04d09977335177bf35d5b45cfff2e3891a5833f02f",
+          "bytes_read": 2062,
+          "body_cap": 262144,
+          "original_receipt_sha256": "6ffb85afe4df1068ecde0dc28b3a82ec3ca6e7c1b732cd9798fbdb3d0dbf6911",
+          "original_receipt_path": "/workspace/shared/dormathon-country-coverage-20261008/receipts/country_au_rba_releases.json"
+        }
+      ]
+    },
+    {
+      "id": "political_jp_house_groups",
+      "version": "0.1.0",
+      "name": "Japan House of Representatives: strength of in-house groups",
+      "provider_family": "publisher:jp-parliament",
+      "endpoint": "https://www.shugiin.go.jp/internet/itdb_english.nsf/html/statics/english/strength.htm",
+      "official_url": "https://www.shugiin.go.jp/internet/itdb_english.nsf/html/statics/english/strength.htm",
+      "format": "jp_strength_html",
+      "category": "policy",
+      "source_country": "JP",
+      "source_language": "en",
+      "material_kind": "political_organization_identity",
+      "coverage": {
+        "registered_area_id": "unm49:392",
+        "identity_only": true,
+        "event_countries": []
+      },
+      "source_update_cadence": "institutional membership changes; source effective date nullable",
+      "collection_cadence": "bounded reference acquisition and parser verification only",
+      "time_semantics": {
+        "published_at": null,
+        "event_time": null,
+        "source_as_of_raw": "source date if explicit; not a publication/ingestion timestamp"
+      },
+      "rights": {
+        "status": "cleared_structured_facts",
+        "permission_basis": "Public factual aggregate organization names and seat counts only; copyrighted narrative, women counts and individual-member data excluded.",
+        "primary_url": "https://www.shugiin.go.jp/internet/itdb_english.nsf/html/statics/english/strength.htm",
+        "allowed_fields": [
+          "organization_name",
+          "entity_type",
+          "seats",
+          "chamber_seat_capacity",
+          "source_as_of_raw",
+          "area_id"
+        ],
+        "attribution": "Source: Japan House of Representatives: strength of in-house groups",
+        "excluded_content": [
+          "narrative text",
+          "individuals",
+          "officers",
+          "personal affiliations",
+          "contacts",
+          "gender demographics",
+          "images"
+        ]
+      },
+      "limits": {
+        "max_body_bytes": 262144,
+        "max_items": 100,
+        "timeout_seconds": 20,
+        "max_pages": 1,
+        "max_http_attempts": 2
+      },
+      "empty_policy": "No empty strength table permitted; wrong root/foreign or person fields/count contradictions rejected",
+      "adapter_path": "adapters/political-aggregate.mjs",
+      "adapter_export": [
+        "readEnvelope",
+        "project"
+      ],
+      "retrieval_allowed_text": {
+        "title": true,
+        "fact_paths": [
+          "organization_name",
+          "entity_type",
+          "source_as_of_raw",
+          "area_id"
+        ]
+      },
+      "stage": "actually_collected",
+      "gaps": [
+        "not a current-events feed",
+        "no governing status inference",
+        "source effective date may be unknown",
+        "name-derived identity keys require rename reconciliation",
+        "representation threshold is product choice, not official major-party designation"
+      ],
+      "site_acceptance": false,
+      "recurring_operational": false,
+      "research_rights_admitted": true,
+      "receipt": "receipts/political_jp_house_groups.json",
+      "input_id": "political_jp_house_groups",
+      "content_depth": "structured_facts",
+      "max_dimension_rows": 1000,
+      "allowed_fact_paths": [
+        "area_id",
+        "chamber_seat_capacity",
+        "eligibility_basis",
+        "entity_type",
+        "governing_status",
+        "id_basis",
+        "identity_rename_ambiguity",
+        "major_eligibility",
+        "material_kind",
+        "organization_name",
+        "representation_share",
+        "seats",
+        "source_as_of_raw",
+        "temporal_status"
+      ],
+      "required_fact_paths": [
+        "material_kind"
+      ],
+      "coverage_complete": false,
+      "acquisition_receipts": [
+        {
+          "requested_url": "https://www.shugiin.go.jp/internet/itdb_english.nsf/html/statics/english/strength.htm",
+          "fetched_at": "2026-10-08T09:49:17.284009+00:00",
+          "http_status": 200,
+          "upstream_raw_sha256": "eb6235d4eb70e14f5c67f5cd1cb428c34895d7416ceb3dbbfece693e0fc42d18",
+          "bytes_read": 7118,
+          "body_cap": 262144,
+          "original_receipt_sha256": "5dc42d160ec7ad546722df130857e044f24665f7c2692d0ec11a420cf52d4b1d",
+          "original_receipt_path": "/workspace/shared/dormathon-country-coverage-20261008/receipts/political_jp_house_groups.json"
+        }
+      ]
+    },
+    {
+      "id": "political_za_assembly_parties",
+      "version": "0.1.0",
+      "name": "Parliament of South Africa: National Assembly party strengths",
+      "provider_family": "publisher:za-parliament",
+      "endpoint": "https://www.parliament.gov.za/national-assembly",
+      "official_url": "https://www.parliament.gov.za/national-assembly",
+      "format": "za_strength_html",
+      "category": "policy",
+      "source_country": "ZA",
+      "source_language": "en",
+      "material_kind": "political_organization_identity",
+      "coverage": {
+        "registered_area_id": "unm49:710",
+        "identity_only": true,
+        "event_countries": []
+      },
+      "source_update_cadence": "institutional membership changes; source effective date nullable",
+      "collection_cadence": "bounded reference acquisition and parser verification only",
+      "time_semantics": {
+        "published_at": null,
+        "event_time": null,
+        "source_as_of_raw": "source date if explicit; not a publication/ingestion timestamp"
+      },
+      "rights": {
+        "status": "cleared_structured_facts",
+        "permission_basis": "Public factual party names and seat counts only; all page prose, contacts, officers and personal information excluded.",
+        "primary_url": "https://www.parliament.gov.za/national-assembly",
+        "allowed_fields": [
+          "organization_name",
+          "entity_type",
+          "seats",
+          "chamber_seat_capacity",
+          "source_as_of_raw",
+          "area_id"
+        ],
+        "attribution": "Source: Parliament of South Africa: National Assembly party strengths",
+        "excluded_content": [
+          "narrative text",
+          "individuals",
+          "officers",
+          "personal affiliations",
+          "contacts",
+          "gender demographics",
+          "images"
+        ]
+      },
+      "limits": {
+        "max_body_bytes": 262144,
+        "max_items": 100,
+        "timeout_seconds": 20,
+        "max_pages": 1,
+        "max_http_attempts": 2
+      },
+      "empty_policy": "No empty strength table permitted; wrong root/foreign or person fields/count contradictions rejected",
+      "adapter_path": "adapters/political-aggregate.mjs",
+      "adapter_export": [
+        "readEnvelope",
+        "project"
+      ],
+      "retrieval_allowed_text": {
+        "title": true,
+        "fact_paths": [
+          "organization_name",
+          "entity_type",
+          "source_as_of_raw",
+          "area_id"
+        ]
+      },
+      "stage": "actually_collected",
+      "gaps": [
+        "not a current-events feed",
+        "no governing status inference",
+        "source effective date may be unknown",
+        "name-derived identity keys require rename reconciliation",
+        "representation threshold is product choice, not official major-party designation"
+      ],
+      "site_acceptance": false,
+      "recurring_operational": false,
+      "research_rights_admitted": true,
+      "receipt": "receipts/political_za_assembly_parties.json",
+      "input_id": "political_za_assembly_parties",
+      "content_depth": "structured_facts",
+      "max_dimension_rows": 1000,
+      "allowed_fact_paths": [
+        "area_id",
+        "chamber_seat_capacity",
+        "eligibility_basis",
+        "entity_type",
+        "governing_status",
+        "id_basis",
+        "identity_rename_ambiguity",
+        "major_eligibility",
+        "material_kind",
+        "organization_name",
+        "representation_share",
+        "seats",
+        "source_as_of_raw",
+        "temporal_status"
+      ],
+      "required_fact_paths": [
+        "material_kind"
+      ],
+      "coverage_complete": false,
+      "acquisition_receipts": [
+        {
+          "requested_url": "https://www.parliament.gov.za/national-assembly",
+          "fetched_at": "2026-10-08T09:49:17.585418+00:00",
+          "http_status": 200,
+          "upstream_raw_sha256": "3406247bcb8a51afc6997fefd9f0c39ffd98694d0c4a7500381bb2763f41ed36",
+          "bytes_read": 71339,
+          "body_cap": 262144,
+          "original_receipt_sha256": "da096fbd8e2ee5e46ba1b4cf41a1af9b74bd15c5d1575db11a0e9fe537c94197",
+          "original_receipt_path": "/workspace/shared/dormathon-country-coverage-20261008/receipts/political_za_assembly_parties.json"
+        }
+      ]
+    },
+    {
+      "id": "political_ca_commons_parties",
+      "version": "0.1.0",
+      "name": "House of Commons of Canada: aggregate current party standings",
+      "provider_family": "publisher:ca-parliament",
+      "endpoint": "https://www.ourcommons.ca/Members/en/party-standings/XML",
+      "official_url": "https://www.ourcommons.ca/en/open-data",
+      "format": "ca_strength_xml",
+      "category": "policy",
+      "source_country": "CA",
+      "source_language": "en,fr",
+      "material_kind": "political_organization_identity",
+      "coverage": {
+        "registered_area_id": "unm49:124",
+        "identity_only": true,
+        "event_countries": []
+      },
+      "source_update_cadence": "institutional membership changes; source effective date nullable",
+      "collection_cadence": "bounded reference acquisition and parser verification only",
+      "time_semantics": {
+        "published_at": null,
+        "event_time": null,
+        "source_as_of_raw": "source date if explicit; not a publication/ingestion timestamp"
+      },
+      "rights": {
+        "status": "cleared_structured_facts",
+        "permission_basis": "House of Commons open-data page explicitly describes structured data as freely shared, used and built on without restrictions; only party/province aggregate fields acquired.",
+        "primary_url": "https://www.ourcommons.ca/en/open-data",
+        "allowed_fields": [
+          "organization_name",
+          "entity_type",
+          "seats",
+          "chamber_seat_capacity",
+          "source_as_of_raw",
+          "area_id"
+        ],
+        "attribution": "Source: House of Commons of Canada: aggregate current party standings",
+        "excluded_content": [
+          "narrative text",
+          "individuals",
+          "officers",
+          "personal affiliations",
+          "contacts",
+          "gender demographics",
+          "images"
+        ]
+      },
+      "limits": {
+        "max_body_bytes": 262144,
+        "max_items": 100,
+        "timeout_seconds": 20,
+        "max_pages": 1,
+        "max_http_attempts": 2
+      },
+      "empty_policy": "No empty strength table permitted; wrong root/foreign or person fields/count contradictions rejected",
+      "adapter_path": "adapters/political-aggregate.mjs",
+      "adapter_export": [
+        "readEnvelope",
+        "project"
+      ],
+      "retrieval_allowed_text": {
+        "title": true,
+        "fact_paths": [
+          "organization_name",
+          "entity_type",
+          "source_as_of_raw",
+          "area_id"
+        ]
+      },
+      "stage": "actually_collected",
+      "gaps": [
+        "not a current-events feed",
+        "no governing status inference",
+        "source effective date may be unknown",
+        "name-derived identity keys require rename reconciliation",
+        "representation threshold is product choice, not official major-party designation"
+      ],
+      "site_acceptance": false,
+      "recurring_operational": false,
+      "research_rights_admitted": true,
+      "receipt": "receipts/political_ca_commons_parties.json",
+      "input_id": "political_ca_commons_parties",
+      "content_depth": "structured_facts",
+      "max_dimension_rows": 1000,
+      "allowed_fact_paths": [
+        "area_id",
+        "chamber_seat_capacity",
+        "eligibility_basis",
+        "entity_type",
+        "governing_status",
+        "id_basis",
+        "identity_rename_ambiguity",
+        "major_eligibility",
+        "material_kind",
+        "organization_name",
+        "representation_share",
+        "seats",
+        "source_as_of_raw",
+        "temporal_status"
+      ],
+      "required_fact_paths": [
+        "material_kind"
+      ],
+      "coverage_complete": false,
+      "acquisition_receipts": [
+        {
+          "requested_url": "https://www.ourcommons.ca/Members/en/party-standings/XML",
+          "fetched_at": "2026-10-08T09:49:22.449170+00:00",
+          "http_status": 200,
+          "upstream_raw_sha256": "a43d551fa4127d8d76710063d0a6a78c25f043cddfb977a8b3c36b591ea7f2b4",
+          "bytes_read": 4698,
+          "body_cap": 262144,
+          "original_receipt_sha256": "8c2b56779c21955fc277439bc8ca2e993c1fb720c170309f05d6c6882b8ff368",
+          "original_receipt_path": "/workspace/shared/dormathon-country-coverage-20261008/receipts/political_ca_commons_parties.json"
+        }
+      ]
+    },
+    {
+      "id": "country_un_m49_reference",
+      "version": "0.1.0",
+      "name": "UNSD M49 country/area reference plus separately labeled FAQ statistical exceptions",
+      "provider_family": "publisher:un-statistics-division",
+      "endpoint": "https://unstats.un.org/unsd/methodology/m49/overview/",
+      "official_url": "https://unstats.un.org/unsd/methodology/m49/",
+      "format": "primary_projection_artifact_json",
+      "category": "policy",
+      "source_country": null,
+      "source_language": "en,zh,ru,fr,es,ar",
+      "material_kind": "country_area_identity",
+      "coverage": {
+        "canonical_m49_country_or_area_count": 248,
+        "separate_faq_statistical_exceptions": 2,
+        "sovereign_state_count": null,
+        "current_event_count": 0
+      },
+      "source_update_cadence": "UNSD identity classifications update when officially changed; no guaranteed daily publication",
+      "collection_cadence": "one primary snapshot artifact; live HTML endpoint exceeds shared1MiB transport budget",
+      "time_semantics": {
+        "event_time": null,
+        "published_at": null,
+        "source_updated_at": null
+      },
+      "rights": {
+        "status": "cleared_structured_facts",
+        "permission_basis": "Public factual country/area names, statistical codes and classifications only, attributed to UNSD. No source webpage prose/design/terms/raw HTML redistributed; source-defined statistical conventions preserved without political recognition assertions.",
+        "primary_url": "https://unstats.un.org/unsd/methodology/m49/",
+        "allowed_fields": [
+          "statistical_area_id",
+          "source_name",
+          "names_by_language",
+          "statistical_codes",
+          "region",
+          "statistical_groupings",
+          "FAQ_exception_parent_convention"
+        ],
+        "attribution": "Source: United Nations Statistics Division, M49 country/area classifications; snapshot8October2026.",
+        "excluded_content": [
+          "raw source HTML",
+          "narrative text",
+          "political-recognition inference",
+          "sovereignty assertions",
+          "event geolocation"
+        ]
+      },
+      "limits": {
+        "max_items": 1000,
+        "max_artifact_bytes": 1048576,
+        "live_transport_body_cap": 1048576,
+        "live_endpoint_blocker": "Current primary HTML snapshots2051368/1721575bytes exceed shared live-body budget; import pinned factual projection only."
+      },
+      "empty_policy": "Exactly248canonical rows plus2separate FAQ exceptions; missing/duplicate identity rejected",
+      "acquisition_mode": "primary_snapshot_artifact_import",
+      "artifact_import_only": true,
+      "enabled": false,
+      "adapter_path": "adapters/area-identity-import.mjs",
+      "adapter_export": [
+        "readEnvelope",
+        "project"
+      ],
+      "retrieval_allowed_text": {
+        "title": true,
+        "fact_paths": [
+          "source_name",
+          "names_by_language.*",
+          "region.name",
+          "region.subregion_name",
+          "region.intermediate_name",
+          "area_id",
+          "iso_alpha2",
+          "iso_alpha3"
+        ]
+      },
+      "stage": "actually_collected",
+      "gaps": [
+        "No every-country current-event records",
+        "No sovereign-state count or political-recognition assertion",
+        "Current HTML is not a direct live collector under shared budget",
+        "No recurring-runtime evidence",
+        "Statistical-area exceptions are separate from canonical table"
+      ],
+      "site_acceptance": false,
+      "recurring_operational": false,
+      "input_id": "country_un_m49_reference",
+      "content_depth": "structured_facts",
+      "max_dimension_rows": 1000,
+      "allowed_fact_paths": [
+        "area_id",
+        "current_event",
+        "id_basis",
+        "identity_scope",
+        "iso_alpha2",
+        "iso_alpha3",
+        "m49",
+        "m49_statistical_exception",
+        "material_kind",
+        "names_by_language.ar",
+        "names_by_language.en",
+        "names_by_language.es",
+        "names_by_language.fr",
+        "names_by_language.ru",
+        "names_by_language.zh",
+        "political_recognition",
+        "region",
+        "region.code",
+        "region.intermediate_code",
+        "region.intermediate_name",
+        "region.name",
+        "region.subregion_code",
+        "region.subregion_name",
+        "source_name",
+        "source_parent_convention",
+        "source_snapshot_sha256",
+        "sovereignty_status",
+        "statistical_groupings",
+        "statistical_groupings.ldc",
+        "statistical_groupings.lldc",
+        "statistical_groupings.sids",
+        "un_membership_status"
+      ],
+      "required_fact_paths": [
+        "material_kind"
+      ],
+      "coverage_complete": false,
+      "acquisition_receipts": [
+        {
+          "requested_url": "https://unstats.un.org/unsd/methodology/m49/overview/",
+          "fetched_at": "2026-10-08T09:29:34.697593+00:00",
+          "http_status": 200,
+          "upstream_raw_sha256": "b9048114f6e7f2abda83bf03d4263c9d7cd1bd7230e3d0461025ee7839a7a1fb",
+          "bytes_read": 1721575,
+          "body_cap": 3000000,
+          "original_receipt_sha256": "38134dc1eb7e45f202a90c77a07ef4f99a2eda60f755d5db303ed07161bba737",
+          "original_receipt_path": "/workspace/shared/dormathon-country-coverage-20261008/receipts/un_m49_overview.json",
+          "import_receipt_path": "/workspace/shared/dormathon-country-coverage-20261008/receipts/country_un_m49_reference.import.json",
+          "import_mode": "primary_snapshot_artifact_import"
+        },
+        {
+          "requested_url": "https://unstats.un.org/unsd/methodology/m49/",
+          "fetched_at": "2026-10-08T09:29:34.718045+00:00",
+          "http_status": 200,
+          "upstream_raw_sha256": "4d5cabcb10ad9ef184553b5e64c0a34ba8deeb20dab2e02cd0be3599b93bb01d",
+          "bytes_read": 2051368,
+          "body_cap": 3000000,
+          "original_receipt_sha256": "2afa582f9462d17bccc8a332181839caaedf54e5f29b8531fb0f0cfa0e9bf166",
+          "original_receipt_path": "/workspace/shared/dormathon-country-coverage-20261008/receipts/un_m49.json",
+          "import_receipt_path": "/workspace/shared/dormathon-country-coverage-20261008/receipts/country_un_m49_reference.import.json",
+          "import_mode": "primary_snapshot_artifact_import"
+        }
+      ],
+      "composite_acquisition": true,
+      "artifact_clock_basis": "Normalized fetched_at is shared artifact/overview acquisition clock; exact per-component response clocks remain separately cited by witness hash."
+    }
+  ],
+  "supersedes_policy_interpretation": {
+    "path": "/workspace/shared/dormathon-source-intelligence-20261007/source-scale-v0.7/contracts/admitted-intake-policies.v0.7.json",
+    "sha256": "e1c4ca7891022c0d3fc7e2525aa630f8e674aa0234e56fad9e9d0b7b1a332403",
+    "only_change": "M49 composite acquisition evidence; normalized chunk bytes and semantic identities unchanged"
+  }
+}

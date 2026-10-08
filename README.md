@@ -1,6 +1,6 @@
 # Dormathon private GPT-Site prototype
 
-This is the hosted adaptation of frozen portable baseline eaa24be250ff9afda59fb92f9553f292ce3e7ea2. The untouched portable checkout remains separately recoverable. Existing GUI is preserved; the hosted backend is a Worker ESM plus persistent D1 (`DB`). Eighteen schema tables preserve the original domain state, global collection/version receipts and human-reviewed investigation workspace. No browser storage is used as authoritative data.
+This is the hosted adaptation of frozen portable baseline eaa24be250ff9afda59fb92f9553f292ce3e7ea2. The untouched portable checkout remains separately recoverable. The current active GUI is a fresh plain data browser; earlier frontend source is recovery-only; the hosted backend is a Worker ESM plus persistent D1 (`DB`). Nineteen normal schema tables plus a derived FTS5 index preserve the original domain state, global collection/version receipts and human-reviewed investigation workspace. No browser storage is used as authoritative data.
 
 ## Checks/build
 
@@ -8,7 +8,7 @@ This is the hosted adaptation of frozen portable baseline eaa24be250ff9afda59fb9
 `node --test tests/*.test.mjs`
 `node scripts/validate-artifact.mjs`
 
-The build embeds source-derived public constants and original assets into the supported single ES module. No full-stack framework/SSR dependency is introduced. Drizzle generates schema-only production migrations; no runtime CREATE/ALTER or migration data seed. Application batches use prepared statements and atomic D1 transactions.
+The build embeds source-derived public constants and original current data-browser assets into the supported single ES module. No full-stack framework/SSR dependency is introduced. Drizzle generates schema-only production migrations; no runtime CREATE/ALTER or migration data seed. Application batches use prepared statements and atomic D1 transactions.
 
 ## Limits and differences
 
@@ -52,21 +52,19 @@ The Global Intelligence page accepts `export-site` JSON partitions through `POST
 
 ## Evidence preparation workspace
 
-The additive #prepare surface retains this same product and all four domains. User-declared projects/objects can select local lexical candidate events, freeze exact source evidence into an investigation, record explicit supply-coverage assumptions, append human reviews and create actions with frozen evidence. The exact contract is [workspace-v1](contracts/workspace-v1.md). External events never infer supplier identity or delivery delay; recorded historical business samples are not joined to current news as predictions. LLM remains unavailable until an actually configured provider call occurs.
+The existing workspace APIs and data retain this same product and all four domains; their old #prepare UI is retired. User-declared projects/objects can select local lexical candidate events, freeze exact source evidence into an investigation, record explicit supply-coverage assumptions, append human reviews and create actions with frozen evidence. The exact contract is [workspace-v1](contracts/workspace-v1.md). External events never infer supplier identity or delivery delay; recorded historical business samples are not joined to current news as predictions. LLM remains unavailable until an actually configured provider call occurs.
 
 The workflow borrows human-controlled investigation structure from [Babel Street's Investigator brief](https://www.babelstreet.com/resources/data-sheets/babel-street-insights-investigator), without its proprietary data, models, identity matching or claimed coverage. New source-admission work is separately reviewed. `node scripts/test-preparation.mjs` runs16offline frontend checks using labelled synthetic business inputs and actual recorded public source metadata, with no provider calls or live seed.
 
 See [PROJECT_STATUS.md](PROJECT_STATUS.md) for gates and teammate reproduction. Secrets, local collector configuration, private user databases and runtime-only QA artifacts are excluded from clean source delivery. GitHub repository access is separate from owner-private Site access.
 
-## Country/city navigation and project district
+## Current product UI and retrieval boundary
 
-The primary #explore entry opens a country-bounded flat MapLibre map, local country/state/city search and a district of actual saved projects. Existing #prepare investigations and four-domain routes remain accessible. Only platform request.cf.country can provide a coarse request-origin hint; it never verifies physical owner location. Otherwise selection is manual, with remembered correction. No GPS, external place-query service, browser-language or timezone inference is used.
+The owner retired the entire prior frontend. The active application is one real data browser at `/` and `/workbench.html`, with quiet navigation, persistent source/query filters, real record results, selected immutable evidence, source acquisition/processing health and retrieval-ingestion status. All earlier scene/admin routes and artwork assets are excluded from serving; their source and artifacts remain recoverable. Only four current HTML/CSS/JS assets are packaged. Source data and APIs remain intact.
 
-Natural Earth extents are public domain. GeoNames names/cities are CC BY4.0, with visible attribution. Local tables include cities with population over15,000 or capitals, bounded city aliases and disclosed missing countries/places. Admin1 names have no invented coordinates or boundaries. Place coordinates are for navigation, never event geolocation. Exact asset hashes and coverage are in data/geography/navigation-assets-manifest.json.
+Indexed lexical retrieval projects rights-bounded title/fact text into SQLite/D1 FTS5 with BM25 ranking. Deterministic Chinese unigram/bigram candidates require literal original-text verification. There are no embeddings, semantic translation or generated answers. Exact source/version/content/projection/run/response citations accompany hits. Current versions are searched; archived evidence remains addressable. A future policy-version mismatch is explicit rather than silently labelled rebuilt. See [retrieval-v1 handoff](contracts/retrieval-v1.md) for machine examples, sequence-watermark pagination, typed date/origin clocks and limits.
 
-The pinned MapLibre6.10.0 library and local VersaTiles gray style fetch public tiles/glyphs/sprites only from tiles.versatiles.org. The free demo has no service guarantees. OSM/ESA attribution remains visible. CSP permits this one origin, no eval or arbitrary external URLs. Source-provided event points are eligible markers; named-area forecasts and unknown locations remain labelled evidence lists. Counts are records, not distinct incidents or independent confirmations.
-
-Run node static/regional.test.mjs static/geo for19offline state/contract checks. Actual tiles, city zoom, transition and browser performance remain live QA gates until reported separately.
+The present admitted corpus is uneven and does not constitute every-country, major-company or broad business-news coverage. New real producer datasets must pass separate source/rights/field admission before live ingestion. A stored record is not claimed retrievable until the index coverage/status confirms it. Local daily execution/automatic sync remains a separate unverified runtime gate.
 
 ## Sarawak source and snapshot admission
 
@@ -74,12 +72,18 @@ The added deterministic MET Malaysia adapter collects the fixed Sarawak open-dat
 
 Legacy dormathon.local-intel.snapshot.v1 and its original ten-source catalog pin remain accepted unchanged. The separate v2 branch pins the eleven-source admitted catalog and strictly validates nested forecast/attribution/time metadata. SHA indicates corruption detection only; all uploaded source authenticity remains unverified. The independently reviewed local collector1.2.0 adds the admitted source and exports v2, retaining legacy v1 compatibility. Its31runtime/provenance/CLI and74unchanged source-contract checks pass from a fresh extraction. Current receiver compatibility is also checked in isolated SQLite, with no provider or live Site writes. Owner Windows execution and unattended sync remain unverified.
 
-### Verified browser correction
+### Retired frontend recovery
 
-The actual cloud browser could not create WebGL2. The map now has a pinned Leaflet1.9.4 CPU/SVG/raster fallback with real OpenStreetMap standard tiles. It retains country bounds, city navigation, record provenance and reduced-motion behavior. Raster requests use browser cache, origin-only per-image Referrer, visible OSM attribution and current viewport loading only. No bulk/offline/prefetch or custom credentials are used. The standard public tile service is subject to its policy: https://operations.osmfoundation.org/policies/tiles/. Actual browser acceptance is recorded separately for the final deployed candidate.
+Earlier country/city and architectural scene checkpoints are preserved in source/history/archives. They are not part of the active frontend and their old visual tests do not certify the new data browser. New current UI checks and actual hosted pipeline readback are reported separately.
 
 Clean teammate delivery must retain the collector's public data/global-source-catalog.json and data/adapter-provenance.json. Generated private state is excluded by specific paths; a blanket data-directory exclusion would break runtime/export. Run node scripts/validate-clean-export.mjs /path/to/local-collector before treating an export as complete; it checks required assets and every packaged source-manifest hash.
 
 For the complete teammate tree, run node scripts/validate-clean-export.mjs local-collector, then node local-collector/scripts/test.mjs. After the Site build, node scripts/test-local-collector-compatibility.mjs local-collector checks the actual producer-to-receiver v2 path in isolated SQLite; retained source fields are labelled offline test transport and never seeded live.
 
 Actual hosted source acceptance: one MET request persisted seven official forecasts with unknown occurrence/publication clocks and no new rule; existing direct/uploaded state remained separate. Actual cloud-browser acceptance now verifies the2D Malaysia overview, Kuching streets/building footprints, pan and the country zoom-out floor. Province/city navigation data remains distinct from event geolocation. Project/district and changed captions have their own final browser receipts.
+
+## Reviewed global expansion intake
+
+The13-source retained acquisition batch contains19,466 actual identity, political-organization, enterprise/statistical and release records in204 pinned chunks. The fixed receiver is documented in contracts/retrieval-v1.md and enforces byte pins, source rights/field policies, transport-independent semantic versioning and an atomic record/version/FTS/chunk receipt. These records are explicitly `reviewed_external_snapshot`, with preserved producer acquisition evidence and separate Site import clocks. Source refresh is disabled until separately implemented/admitted. They are not Site-direct acquisitions or confirmed current events. Current batch completion is queried through GET /api/reviewed-intake/status, never inferred from the mere presence of a source.
+
+The data browser offers three-way origin filtering, typed source facts, origin-qualified UTC first-seen day bounds and explicit first-seen/source-fetch ordering. Narrow selection opens a focused detail surface; Back restores the results/query/selection position. Publication/occurrence and annual/validity dates are not silently substituted for these filter clocks.

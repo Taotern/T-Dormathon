@@ -1,0 +1,38 @@
+{
+  "schema_version": "0.2.0",
+  "source_id": "country_au_rba_releases",
+  "items": [
+    {
+      "fetched_at": "2026-10-08T09:40:17.277143+00:00",
+      "first_seen_at": null,
+      "ingested_at": null,
+      "source_id": "country_au_rba_releases",
+      "upstream_id": "derived:https://www.rba.gov.au/media-releases/2026/mr-26-28.html|2026-10-01T11:30:00+10:00",
+      "title": "Release of Financial Stability Review – October 2026",
+      "url": "https://www.rba.gov.au/media-releases/2026/mr-26-28.html",
+      "short_summary": null,
+      "category": "economy",
+      "source_country": "AU",
+      "source_language": "en",
+      "event_country": null,
+      "location": null,
+      "location_basis": "unknown",
+      "entities": [],
+      "event_time": null,
+      "published_at": "2026-10-01T01:30:00.000Z",
+      "source_updated_at": null,
+      "content_depth": "headline_metadata",
+      "facts": {
+        "material_kind": "official_notice",
+        "publisher_family": "publisher:au-rba",
+        "publication_raw": "2026-10-01T11:30:00+10:00",
+        "time_precision": "source_supplied_explicit_timezone",
+        "id_basis": "derived_url_publication",
+        "metadata_only": true,
+        "event_country_basis": "unknown; publisher country is not event country"
+      },
+      "source_license": "RBA copyright notice: RBA-authored non-excluded material CC BY4.0; only release titles, links and source-supplied publication fields retained. No financial tables, cash rates, third-party/media/site infrastructure.",
+      "evidence_url": "https://www.rba.gov.au/media-releases/2026/mr-26-28.html"
+    }
+  ]
+}

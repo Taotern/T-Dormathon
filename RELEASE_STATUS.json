@@ -1,49 +1,67 @@
 {
-  "schema": "dormathon.accepted-round.v1",
-  "accepted_at": "2026-10-08T06:18:59Z",
-  "site_source_commit": "6197b08065c56a0e812aa5ecc4fda50f898c0e37",
-  "private_deployment_id": "appgdep_6ac7345699e081919e7ee2be546cb150",
-  "private_deployment_status": "succeeded",
-  "same_product": true,
-  "existing_four_domains_preserved": true,
-  "schema_tables": 18,
-  "source_endpoints": 11,
-  "global_records": {
-    "direct": 369,
-    "uploaded_unverified": 100,
-    "rule_records": 8
+  "schema": "dormathon.clean-source-handoff.v2",
+  "prepared_at": "2026-10-08T10:56:13.449594+00:00",
+  "source_commit": "fce3901e7002507d34bbdd71778ae8745f8ca411",
+  "current_native_site_commit": "fce3901e7002507d34bbdd71778ae8745f8ca411",
+  "current_native_deployment": "appgdep_6ac778a7c7fc8191a605bb64cd0d0521",
+  "code_checks": {
+    "pass": 299,
+    "fail": 0,
+    "skipped": 0,
+    "pinned_original_source_contracts": 74
   },
-  "actual_source_acceptance": "One official MET Sarawak fetch persisted seven immutable forecasts; no incident or business-delay inference; reviewed independently",
-  "actual_browser_acceptance": [
-    "Country-bounded Malaysia map and Kuching streets/buildings, pan and zoom-out floor",
-    "Keyboard real project entry and creation-form cancel preserving project count",
-    "Editor draft/focus survives background completion; inbox mode survives bootstrap",
-    "Native500px without overflow; frozen action version/hash preserved",
-    "Correct source/provider attribution and country-scope record captions"
+  "live_baseline_indexed_versions": 469,
+  "expanded_batch": {
+    "retained_rows": 19466,
+    "chunks": 204,
+    "offline_full_receiver_indexed": 19466,
+    "live_intake": "complete204/204chunks and19466/19466rows at2026-10-08T11:07:15.458192+00:00",
+    "origin": "reviewed_external_snapshot",
+    "manifest_sha256": "ba1ffb102f9d47765060598644a0cb5795c0592c8ca3df621aafbf9b31f4a646",
+    "policy_sha256": "d4824b8e6424e1a4204144e1b4ab1d46949fb22f97b39fe5a9f5ce021a6476a3",
+    "live_total_indexed_versions": 19935,
+    "live_pending_versions": 0
+  },
+  "ordinary_browser_changed_boundary": "Actual500px focused detail/Back/query-position, compact search, origin-qualified dates, per-version/shared-receipt clocks, all13reviewed complete source rows and terminal19935counts passed on fce3901",
+  "recurring_runtime": "not independently operating; owner computer prelaunch-blocked; personal task paused",
+  "local_collector_source": "1.2.0 exact021f6adba...",
+  "retired_frontend": "source retained for recovery; only4collector browser asset URLs are actively served",
+  "excluded_state": [
+    "credentials/secrets",
+    "private user database",
+    "local collector config/data-local/logs/exports",
+    "runtime QA artifacts",
+    "setup/internal notes"
   ],
-  "offline_checks": {
-    "Worker": 271,
-    "pinned_original_source_contracts": 74,
-    "original_DOM": 41,
-    "preparation_DOM": 16,
-    "regional_state_and_real_assets": 19,
-    "raster_state": 7,
-    "local_v1_2_runtime_CLI": 31,
-    "local_unchanged_source_contracts": 74,
-    "producer_to_current_receiver_offline": true,
+  "prior_github_commit": "56c511b076c6f3a6576c3f6e4a9fe5ed8d9a2445",
+  "new_github_push": "not yet performed",
+  "native_published_at": "2026-10-08T11:04:13.509407+00:00",
+  "live_readback": {
+    "completed_at": "2026-10-08T11:11:19.452663+00:00",
+    "same_site_requests": 49,
+    "actual_source_evidence_samples": 13,
+    "real_query_expectations": 14,
+    "no_match_and_metadata_exclusion": true,
+    "provider_fetches": 0,
+    "intake_writes": 0
+  },
+  "clean_consumer": {
+    "backend_UI_pass": 299,
+    "original_source_pass": 74,
+    "local_collector_pass": 31,
+    "local_source_pass": 74,
+    "manifest_entries": 136,
     "failed": 0,
     "skipped": 0
   },
-  "local_package_version": "1.2.0",
-  "local_package_input_sha256": "021f6adba1db3b1deb65f40f899185be2e527e4bb128c3f262859a472d334311",
-  "known_runtime_boundaries": [
-    "Owner computer execution remains unverified after prelaunch runtime errors",
-    "Local daily loop requires an awake computer/open process; no closed-process OS scheduler",
-    "Automatic local-to-Site sync is not configured; manual bounded JSON handoff",
-    "Trusted request-country metadata is unavailable; manual remembered selection",
-    "LLM unconfigured; no real provider call or paid model service",
-    "Free public basemaps have service limits; no full-world or continuous realtime coverage claim"
-  ],
-  "source_export_correction": "Required public collector data catalog/provenance restored on prior main635572ad; this snapshot retains canonical and legacy required source assets",
-  "supersedes": "Pending-caption/district/local-v2 wording in older source documents; their intermediate chronology remains accurate"
+  "separate_pending_batches": {
+    "EU_notice_metadata": {
+      "rows": 20,
+      "admission": "not admitted/imported in this release"
+    },
+    "TWSE_incremental_signals": {
+      "rows": 1158,
+      "admission": "not admitted/imported in this release"
+    }
+  }
 }

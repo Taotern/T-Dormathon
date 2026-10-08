@@ -1,0 +1,1 @@
+ALTER TABLE `intel_retrieval_documents` ADD `cjk_terms` text DEFAULT '' NOT NULL;

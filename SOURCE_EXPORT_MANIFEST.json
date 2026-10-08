@@ -1,32 +1,6 @@
 {
-  "schema": "dormathon.clean-source-export.v2",
-  "site_source_commit": "6197b08065c56a0e812aa5ecc4fda50f898c0e37",
-  "local_collector_version": "1.2.0",
-  "local_collector_zip_sha256": "021f6adba1db3b1deb65f40f899185be2e527e4bb128c3f262859a472d334311",
-  "excluded_tracked_files": [
-    "SETUP_STATUS.md",
-    "qa/daily-schedule-creation-receipt.json",
-    "qa/global-corrected-data-quality-review.json",
-    "qa/global-corrected-live-receipt.json",
-    "qa/global-corrected-live-scope-addendum.json",
-    "qa/global-initial-live-receipt.json",
-    "qa/initial-hosted-api-receipt.json",
-    "qa/local-snapshot-contract.json",
-    "qa/source-contract-implementation-binding-addendum.json",
-    "qa/source-contract-independent-final.json",
-    "static/frontend-test-report.json"
-  ],
-  "included_public_collector_data": "Canonical and legacy catalogs/provenance/recorded fixtures remain required source assets. No broad data-directory exclusion.",
-  "excluded_state": [
-    "credentials",
-    ".env",
-    "data-local",
-    "exports",
-    "SQLite/private user state",
-    "runtime logs",
-    "Site QA/setup artifacts",
-    "generated build output"
-  ],
+  "schema": "dormathon.source-export.v2",
+  "site_source_commit": "fce3901e7002507d34bbdd71778ae8745f8ca411",
   "files": [
     {
       "path": ".gitignore",
@@ -40,28 +14,38 @@
     },
     {
       "path": "GITHUB_PROGRESS.md",
-      "bytes": 3275,
-      "sha256": "796603f75902f1a8e4ce18628352dd4d414153cc1758732d9a80e236daa5d285"
+      "bytes": 4470,
+      "sha256": "d2a6ccfb72cd5439a4fae2a64cd127b8dd89de6a39a92fb00f1b7a74e45da421"
+    },
+    {
+      "path": "PIPELINE_HANDOFF.md",
+      "bytes": 3871,
+      "sha256": "3edfa23b957dee99f774a42f04bcc2e0e40169ba30efbbd36e9d88feec0df8a2"
     },
     {
       "path": "PROJECT_STATUS.md",
-      "bytes": 7455,
-      "sha256": "5de562f9d03f14e375aac78eacd9af1b027529c4ec01c35a4e6853a6b14073d6"
+      "bytes": 3985,
+      "sha256": "8d0eb93a4da49e841b340d6ed60f262aabc378c1529d093bdc69ca99f5f66111"
     },
     {
       "path": "README.md",
-      "bytes": 14971,
-      "sha256": "0bba464ed0fafd6b818d246337796adb71666627e6400b3a17f1d15eda0b5a12"
+      "bytes": 15922,
+      "sha256": "fb6cb8731a0ce3c3f282a84ed1ac3d680277e2370f59d8f4c065922dfa3cbee8"
     },
     {
       "path": "RELEASE_STATUS.json",
-      "bytes": 2473,
-      "sha256": "ced12950e4dee0b8b51ba3ec995bf4182742a93e7deeec0f68b19b2b45f46fff"
+      "bytes": 2633,
+      "sha256": "78abacbda94d1a3cd62f400f9aa514827e677b107dd48daf8edabbc5b0e71e9a"
     },
     {
       "path": "SOURCE_EXPORT_CORRECTION.json",
       "bytes": 1265,
       "sha256": "f72644e278ef98a9fe48955fc098feaf5acf575897f1e2120cc02fc5914b2127"
+    },
+    {
+      "path": "contracts/retrieval-v1.md",
+      "bytes": 10156,
+      "sha256": "c4d502fffd0e2da33e6aa1e4d0b0392f12515d71376d47a4b6e510fccf64ea6d"
     },
     {
       "path": "contracts/workspace-v1.md",
@@ -109,6 +93,16 @@
       "sha256": "fbfa842db7ef26225cd7d5c4007ae1d2545c3aeec15f1c917552999a3abf9184"
     },
     {
+      "path": "data/navigation/immersive-artwork-manifest.json",
+      "bytes": 1882,
+      "sha256": "fc9c9c7f54bca7429f90102a233e424967ff6b4bcd73c8e43908b61b3def75c2"
+    },
+    {
+      "path": "data/navigation/immersive-handoff-manifest.json",
+      "bytes": 5450,
+      "sha256": "301c7114209c11cc561f37b78f5c082543d08308fc5f002af2f51681ef6a7d11"
+    },
+    {
       "path": "data/navigation/vendor-receipt.json",
       "bytes": 2003,
       "sha256": "ed0f2006945efcf1dad50efe17cd49a9262ff803b31c5e0efe77e8d85c8453dc"
@@ -119,9 +113,1049 @@
       "sha256": "f3db5dfbd7bec00d77ef2aaf1d66cf3e6b6b52c222733d204d2ed46b09128b9e"
     },
     {
+      "path": "data/reviewed-acquisition-admission.json",
+      "bytes": 162440,
+      "sha256": "3ecc89f5cc9a433e4e06d1b266e519bef9ec7b7ce9e8125c7a6ea3396370b735"
+    },
+    {
+      "path": "datasets/reviewed-acquisitions/README.md",
+      "bytes": 1744,
+      "sha256": "63daf0dfd57885d53d561981506181dec93c3e9b7951b998b079925d07e6657a"
+    },
+    {
+      "path": "datasets/reviewed-acquisitions/admitted-intake-policies.v0.7.1.json",
+      "bytes": 103785,
+      "sha256": "d4824b8e6424e1a4204144e1b4ab1d46949fb22f97b39fe5a9f5ce021a6476a3"
+    },
+    {
+      "path": "datasets/reviewed-acquisitions/chunks/country_au_rba_releases-0000.json",
+      "bytes": 1624,
+      "sha256": "802abd8af047178cfb43c17a9ea06ea6ec8e70d42ddfd059d05c0c3a62fb90ad"
+    },
+    {
+      "path": "datasets/reviewed-acquisitions/chunks/country_ma_hcp_releases-0000.json",
+      "bytes": 7568,
+      "sha256": "eec5b28abb7d2d0cddfd54e9d23e09a2929c3e06132ee9730142c2c130bba4e1"
+    },
+    {
+      "path": "datasets/reviewed-acquisitions/chunks/country_un_m49_reference-0000.json",
+      "bytes": 233888,
+      "sha256": "12ca833fc4424260a3484eb9a8be27e1e6cf8c25bbb98fcb6cb8e361b49634bf"
+    },
+    {
+      "path": "datasets/reviewed-acquisitions/chunks/country_un_m49_reference-0001.json",
+      "bytes": 232755,
+      "sha256": "3a7a0488d3f6c522b23db90ded2e8cee5cec9a294f58e81d403c161cdb9c7b15"
+    },
+    {
+      "path": "datasets/reviewed-acquisitions/chunks/country_un_m49_reference-0002.json",
+      "bytes": 115331,
+      "sha256": "bfdeabee97310c28ec3a4f9d534aa0a5c88b5c9b02f180ae001ccca1c2e984c4"
+    },
+    {
+      "path": "datasets/reviewed-acquisitions/chunks/enterprise_cvm_registry-0000.json",
+      "bytes": 182982,
+      "sha256": "8b58302d911c8c9734e6688290694d48a6f122c8d4cfb690af1666cc1be946ba"
+    },
+    {
+      "path": "datasets/reviewed-acquisitions/chunks/enterprise_cvm_registry-0001.json",
+      "bytes": 182712,
+      "sha256": "98b8fea9b39f979cd84b1a7e4a63672e76c9da75df3603fbdf3f79cea39f7c42"
+    },
+    {
+      "path": "datasets/reviewed-acquisitions/chunks/enterprise_cvm_registry-0002.json",
+      "bytes": 180610,
+      "sha256": "689bedf5ec1201ad5d29b473b46c037fc613487c76d1aedf84aff0a57c176849"
+    },
+    {
+      "path": "datasets/reviewed-acquisitions/chunks/enterprise_cvm_registry-0003.json",
+      "bytes": 182604,
+      "sha256": "31e5050c20edddcc22a4b7bcb9a00e4da3af99b362c97ff2932a369d58c02452"
+    },
+    {
+      "path": "datasets/reviewed-acquisitions/chunks/enterprise_cvm_registry-0004.json",
+      "bytes": 183007,
+      "sha256": "6828cdeaa82d4ec250fad42cf128c4becc06b9a291845eecbef9e08e54516793"
+    },
+    {
+      "path": "datasets/reviewed-acquisitions/chunks/enterprise_cvm_registry-0005.json",
+      "bytes": 182703,
+      "sha256": "2a5624e1de6cd9759a7eccc1a5a33f52d9031028923cdcae01b629bed80b6906"
+    },
+    {
+      "path": "datasets/reviewed-acquisitions/chunks/enterprise_cvm_registry-0006.json",
+      "bytes": 182000,
+      "sha256": "af4798af5619109aecf92303d94786be61881dc9080c5f29bea59454758bfb99"
+    },
+    {
+      "path": "datasets/reviewed-acquisitions/chunks/enterprise_cvm_registry-0007.json",
+      "bytes": 182528,
+      "sha256": "eb786b2742271cbd3ba8725a8c4b80f2a54fe72d44d5fe5ee0dea15a88fc3383"
+    },
+    {
+      "path": "datasets/reviewed-acquisitions/chunks/enterprise_cvm_registry-0008.json",
+      "bytes": 184709,
+      "sha256": "4bd5c531c736a30aaf503d80e882ba1942aa70ca49a9d48726ebf2f205f0e4a5"
+    },
+    {
+      "path": "datasets/reviewed-acquisitions/chunks/enterprise_cvm_registry-0009.json",
+      "bytes": 182995,
+      "sha256": "ec40f8087a5a310256c1cddc5a9d8ba41a4d046c35fdf9a94c343fb9503b68ee"
+    },
+    {
+      "path": "datasets/reviewed-acquisitions/chunks/enterprise_cvm_registry-0010.json",
+      "bytes": 182972,
+      "sha256": "d1cca83cd08c749edddcf5050ce5a008d7f62e5a6164e8068b011179a9490749"
+    },
+    {
+      "path": "datasets/reviewed-acquisitions/chunks/enterprise_cvm_registry-0011.json",
+      "bytes": 182741,
+      "sha256": "b315cc7809c47ed1ffc680727a1129056a2710827b7f38a270f0ed6e0fa42ddf"
+    },
+    {
+      "path": "datasets/reviewed-acquisitions/chunks/enterprise_cvm_registry-0012.json",
+      "bytes": 182830,
+      "sha256": "67dd6242e7b6afd2999d22f97883314916f6f9ba35c3e901e3de7aa1b7297662"
+    },
+    {
+      "path": "datasets/reviewed-acquisitions/chunks/enterprise_cvm_registry-0013.json",
+      "bytes": 182447,
+      "sha256": "4c554582754c538afbc9b6fa8b60e8f4d654a6166d703b8f7d93848d6a728601"
+    },
+    {
+      "path": "datasets/reviewed-acquisitions/chunks/enterprise_cvm_registry-0014.json",
+      "bytes": 182784,
+      "sha256": "c0b674e9a2e894c89d2c50782ae9bd99eb7fb990f5cad27961f3b86cbeae0c6d"
+    },
+    {
+      "path": "datasets/reviewed-acquisitions/chunks/enterprise_cvm_registry-0015.json",
+      "bytes": 182800,
+      "sha256": "42f083483d6affa46a74ef160f111ec556717ccbdd0d54c61251c0442aff571a"
+    },
+    {
+      "path": "datasets/reviewed-acquisitions/chunks/enterprise_cvm_registry-0016.json",
+      "bytes": 182788,
+      "sha256": "9f60360a1f37f14772253e3563bf277f31f5653e151b1c7879ca5a26c8016716"
+    },
+    {
+      "path": "datasets/reviewed-acquisitions/chunks/enterprise_cvm_registry-0017.json",
+      "bytes": 182891,
+      "sha256": "6d8f45e4a3b5f801aac8272bb0fc0d965ba8f4d8a7a41bdec024e3bf95872c3f"
+    },
+    {
+      "path": "datasets/reviewed-acquisitions/chunks/enterprise_cvm_registry-0018.json",
+      "bytes": 182781,
+      "sha256": "77bf8fc527230294b116443664561ae6c9ee5442716e4705f449af8e484fcc18"
+    },
+    {
+      "path": "datasets/reviewed-acquisitions/chunks/enterprise_cvm_registry-0019.json",
+      "bytes": 182984,
+      "sha256": "6731ab973a915de75ab294a6ebdb9f93f626e17f25b8b2875da2fd1416e34c99"
+    },
+    {
+      "path": "datasets/reviewed-acquisitions/chunks/enterprise_cvm_registry-0020.json",
+      "bytes": 183222,
+      "sha256": "c785f86ead87d3d50eef5dfb5e7404c2fd23cc8d804b45c6c6c951aadf0079f6"
+    },
+    {
+      "path": "datasets/reviewed-acquisitions/chunks/enterprise_cvm_registry-0021.json",
+      "bytes": 182814,
+      "sha256": "7e20bdc3f3d927e01ca951c91eae32444fb68f8457576edff4e148b92e2774c1"
+    },
+    {
+      "path": "datasets/reviewed-acquisitions/chunks/enterprise_cvm_registry-0022.json",
+      "bytes": 182795,
+      "sha256": "8cb605ca9616c09aafa3b41ee4b1a8bb2286bc6016ea0b055fb1c6ea1e04bc60"
+    },
+    {
+      "path": "datasets/reviewed-acquisitions/chunks/enterprise_cvm_registry-0023.json",
+      "bytes": 182437,
+      "sha256": "4e73f91e9a6a1621f31f11b89d209c05e24d4226405d45c8f197ce49ffa7bbd9"
+    },
+    {
+      "path": "datasets/reviewed-acquisitions/chunks/enterprise_cvm_registry-0024.json",
+      "bytes": 183213,
+      "sha256": "347a4d8aa74dfe9202e2a3d98ca68026955df304c1f44fb66d92becf399eec5f"
+    },
+    {
+      "path": "datasets/reviewed-acquisitions/chunks/enterprise_cvm_registry-0025.json",
+      "bytes": 122606,
+      "sha256": "9936891907dc157841c3d2163d26cd0ec6a3b43a0ac2db766cce7783e40bf220"
+    },
+    {
+      "path": "datasets/reviewed-acquisitions/chunks/enterprise_gleif_reference-0000.json",
+      "bytes": 181828,
+      "sha256": "c835d161ac82acdca6df1e0006941de9774e01a2617efe342c6ef7320bd29a91"
+    },
+    {
+      "path": "datasets/reviewed-acquisitions/chunks/enterprise_gleif_reference-0001.json",
+      "bytes": 180849,
+      "sha256": "2eef23a219a92734b6a107a5131a51d0fee56c201c7ee8937f1b913939a76925"
+    },
+    {
+      "path": "datasets/reviewed-acquisitions/chunks/enterprise_gleif_reference-0002.json",
+      "bytes": 178907,
+      "sha256": "60c2eda6a19ca336e029b3abfa06b20a55a179b943100781620b4afe36c622bf"
+    },
+    {
+      "path": "datasets/reviewed-acquisitions/chunks/enterprise_gleif_reference-0003.json",
+      "bytes": 178772,
+      "sha256": "260b98aeba61241a244547f0d2614a6cfcc7655902a32097637adc4583085ca6"
+    },
+    {
+      "path": "datasets/reviewed-acquisitions/chunks/enterprise_gleif_reference-0004.json",
+      "bytes": 183429,
+      "sha256": "9c8a6364b06023d86ca50440bd65547a6e7bc5b76926f675c3dec6ee26fc099d"
+    },
+    {
+      "path": "datasets/reviewed-acquisitions/chunks/enterprise_gleif_reference-0005.json",
+      "bytes": 176573,
+      "sha256": "1bbbb42a30775501b05b49d6481c11912caf7e82efcd562a72875a58b32f4b06"
+    },
+    {
+      "path": "datasets/reviewed-acquisitions/chunks/enterprise_gleif_reference-0006.json",
+      "bytes": 179601,
+      "sha256": "6899fb1bb9a2e5209d9fc151d84a2e6082fdc521ff515bbe198707ac4dffa454"
+    },
+    {
+      "path": "datasets/reviewed-acquisitions/chunks/enterprise_gleif_reference-0007.json",
+      "bytes": 184155,
+      "sha256": "dd39ba122449c23ab894c0bc38137f8f17e345911c026809853c6954f377913b"
+    },
+    {
+      "path": "datasets/reviewed-acquisitions/chunks/enterprise_gleif_reference-0008.json",
+      "bytes": 178055,
+      "sha256": "a1c048e2b9aae68f832a2b09f48633b546aee110dc7825e887c7711cea011911"
+    },
+    {
+      "path": "datasets/reviewed-acquisitions/chunks/enterprise_gleif_reference-0009.json",
+      "bytes": 19186,
+      "sha256": "259fd9829658b827c222d045c531498422a12e898ccbcf5358fe767855cde928"
+    },
+    {
+      "path": "datasets/reviewed-acquisitions/chunks/enterprise_sec_disclosures-0000.json",
+      "bytes": 10390,
+      "sha256": "bdc5fbd2ee2997a7a022d075041dde4539f18a2826447621858c3b4bab0c2dd9"
+    },
+    {
+      "path": "datasets/reviewed-acquisitions/chunks/enterprise_sec_registry-0000.json",
+      "bytes": 138324,
+      "sha256": "9ad9938dca5b698ebb0eb837d4b3518103c21bad8984a00374da1cc19c678bc5"
+    },
+    {
+      "path": "datasets/reviewed-acquisitions/chunks/enterprise_sec_registry-0001.json",
+      "bytes": 139156,
+      "sha256": "670c73ed939b1b8c0457d581a2424f0ec1524e174485fc2e46d894a7ccde4087"
+    },
+    {
+      "path": "datasets/reviewed-acquisitions/chunks/enterprise_sec_registry-0002.json",
+      "bytes": 137637,
+      "sha256": "1cbc3a8cd3aa25d2aabbac87ca06a05d201481a7dc04a26055ebb8c1583fb7a7"
+    },
+    {
+      "path": "datasets/reviewed-acquisitions/chunks/enterprise_sec_registry-0003.json",
+      "bytes": 137654,
+      "sha256": "312271ea62f762ee7513ceed9f4fc43e838639b84cc91edcf8f6362c820f5c72"
+    },
+    {
+      "path": "datasets/reviewed-acquisitions/chunks/enterprise_sec_registry-0004.json",
+      "bytes": 137062,
+      "sha256": "d5c20559d16973268108f783f5dc3d6c1d612dea6534bab24276008003cc3750"
+    },
+    {
+      "path": "datasets/reviewed-acquisitions/chunks/enterprise_sec_registry-0005.json",
+      "bytes": 137106,
+      "sha256": "a386f85badfefe5eeb64782b1b9fe66fbe582389893d8ef84acaba51ee774ae2"
+    },
+    {
+      "path": "datasets/reviewed-acquisitions/chunks/enterprise_sec_registry-0006.json",
+      "bytes": 136382,
+      "sha256": "97a2fc7cb825ec72165dd8e4eab0e8e9bc555894e5412bd67a929a47ea90bd8a"
+    },
+    {
+      "path": "datasets/reviewed-acquisitions/chunks/enterprise_sec_registry-0007.json",
+      "bytes": 137121,
+      "sha256": "d7683a1797849cecd554a97f5fbfbe53095ba49ed539b794a67f974365c49ca8"
+    },
+    {
+      "path": "datasets/reviewed-acquisitions/chunks/enterprise_sec_registry-0008.json",
+      "bytes": 136406,
+      "sha256": "b862b8cfe6ad2cc3e7abae69feaf9c437038c92cac77648ded704cebbc7f057c"
+    },
+    {
+      "path": "datasets/reviewed-acquisitions/chunks/enterprise_sec_registry-0009.json",
+      "bytes": 136842,
+      "sha256": "3feb483085d0f329f523eeeb897dc3fc99b366fa5c5586b18c7863a2ed424398"
+    },
+    {
+      "path": "datasets/reviewed-acquisitions/chunks/enterprise_sec_registry-0010.json",
+      "bytes": 136384,
+      "sha256": "dd92172c5b7025eab3136a92e01b17bb23d6504d8dc3392631c61312a527f16f"
+    },
+    {
+      "path": "datasets/reviewed-acquisitions/chunks/enterprise_sec_registry-0011.json",
+      "bytes": 136013,
+      "sha256": "158ce1fb0d8764cb3370e26671eb506e8502ee4b6cfcc557d0a51a4c3bcd6219"
+    },
+    {
+      "path": "datasets/reviewed-acquisitions/chunks/enterprise_sec_registry-0012.json",
+      "bytes": 136261,
+      "sha256": "e475006d6c6b4d064291d5ad706e9a469eeb08f45fd905da7e9f4b22a55b03c3"
+    },
+    {
+      "path": "datasets/reviewed-acquisitions/chunks/enterprise_sec_registry-0013.json",
+      "bytes": 136034,
+      "sha256": "216bf307b008f7bcac556de861ad9f273570ecb9cf8318fe0ec8853454f6d414"
+    },
+    {
+      "path": "datasets/reviewed-acquisitions/chunks/enterprise_sec_registry-0014.json",
+      "bytes": 137132,
+      "sha256": "87063bebe7508e5822bcb9e486430d853eca2281d05912136033c71910ea52a9"
+    },
+    {
+      "path": "datasets/reviewed-acquisitions/chunks/enterprise_sec_registry-0015.json",
+      "bytes": 136190,
+      "sha256": "63344fd7e3048ea712770212a2c345d60c1b8f70d9f75ffdbbff985be82dd335"
+    },
+    {
+      "path": "datasets/reviewed-acquisitions/chunks/enterprise_sec_registry-0016.json",
+      "bytes": 136282,
+      "sha256": "d287b7ac60c07c5d526896b66c3912109036847664fdd2dda2d082db6992dd65"
+    },
+    {
+      "path": "datasets/reviewed-acquisitions/chunks/enterprise_sec_registry-0017.json",
+      "bytes": 135898,
+      "sha256": "8523db08ce02675c3ca5b3a3ecd6cceffb8148935ca493101a4b5e936f5c2818"
+    },
+    {
+      "path": "datasets/reviewed-acquisitions/chunks/enterprise_sec_registry-0018.json",
+      "bytes": 136371,
+      "sha256": "f4d423bf97d816d8ba10b9791ac60beae5f3a18de34619c9d5a7cb34de9d8906"
+    },
+    {
+      "path": "datasets/reviewed-acquisitions/chunks/enterprise_sec_registry-0019.json",
+      "bytes": 137341,
+      "sha256": "8af18598154a3a4ba61cfda8d1b7c51622c99225b1ac516dc1e15da4c4fc0441"
+    },
+    {
+      "path": "datasets/reviewed-acquisitions/chunks/enterprise_sec_registry-0020.json",
+      "bytes": 136632,
+      "sha256": "b60bfa21d52962180935b17b34055bcdfe94ab7a9085fb07c597890c87e37726"
+    },
+    {
+      "path": "datasets/reviewed-acquisitions/chunks/enterprise_sec_registry-0021.json",
+      "bytes": 136388,
+      "sha256": "5ba47f8d686ebeeaeb9e55a48c2eef32a29732f62bab81dc85f6d38f8484fe74"
+    },
+    {
+      "path": "datasets/reviewed-acquisitions/chunks/enterprise_sec_registry-0022.json",
+      "bytes": 136284,
+      "sha256": "f40af38d916e272864d6ba7cde6133a0fa49deda04cc65f3b15967185beb5be7"
+    },
+    {
+      "path": "datasets/reviewed-acquisitions/chunks/enterprise_sec_registry-0023.json",
+      "bytes": 136548,
+      "sha256": "7ad5893005cba28544207f57869f72cb4ff80c261eb27341b1ce11e0f44ed501"
+    },
+    {
+      "path": "datasets/reviewed-acquisitions/chunks/enterprise_sec_registry-0024.json",
+      "bytes": 136439,
+      "sha256": "bfc22e18940d6b0bd10a91d1210b1033f4b0d88fa467e4ceedf7886f88d76505"
+    },
+    {
+      "path": "datasets/reviewed-acquisitions/chunks/enterprise_sec_registry-0025.json",
+      "bytes": 136228,
+      "sha256": "7de0da068b882e8aba65b720d87fd947cf16503334a840465e8ecdc5021f000b"
+    },
+    {
+      "path": "datasets/reviewed-acquisitions/chunks/enterprise_sec_registry-0026.json",
+      "bytes": 136359,
+      "sha256": "e95ed754fe4bf6a18b377fe005c8cb68a72af9faebeb63b564aec521a016a877"
+    },
+    {
+      "path": "datasets/reviewed-acquisitions/chunks/enterprise_sec_registry-0027.json",
+      "bytes": 136525,
+      "sha256": "a6be37366cb895c3f2a6f651a9937bb764a6414283ffa8cb1dad29c09157d915"
+    },
+    {
+      "path": "datasets/reviewed-acquisitions/chunks/enterprise_sec_registry-0028.json",
+      "bytes": 136837,
+      "sha256": "95930de4705fe93081d9a04c6428fcbbc50f80234297da4a43c3443a2fa10927"
+    },
+    {
+      "path": "datasets/reviewed-acquisitions/chunks/enterprise_sec_registry-0029.json",
+      "bytes": 136842,
+      "sha256": "847b3ad33d2bb4c3748bcc24c16f2385b7b30f77167d2e1090045eaf12a4ba3f"
+    },
+    {
+      "path": "datasets/reviewed-acquisitions/chunks/enterprise_sec_registry-0030.json",
+      "bytes": 136944,
+      "sha256": "de44b8daba8e5cae39aabc2fed86ecee09ce3c3fbe0b2fd5e7686b0b9f06426d"
+    },
+    {
+      "path": "datasets/reviewed-acquisitions/chunks/enterprise_sec_registry-0031.json",
+      "bytes": 136695,
+      "sha256": "4814c04cf8cdefe1c567424eaa1366b689cb0bd4cac961ada0434196d30534b3"
+    },
+    {
+      "path": "datasets/reviewed-acquisitions/chunks/enterprise_sec_registry-0032.json",
+      "bytes": 137048,
+      "sha256": "c854b262715090f3d2257afc08f4b98d7a825bc6a1205838dbd7db2d45ad7359"
+    },
+    {
+      "path": "datasets/reviewed-acquisitions/chunks/enterprise_sec_registry-0033.json",
+      "bytes": 137313,
+      "sha256": "24d169944730ee75cf48052ff2f2c9c5792a28d27b4d34bf9764b8458145f20b"
+    },
+    {
+      "path": "datasets/reviewed-acquisitions/chunks/enterprise_sec_registry-0034.json",
+      "bytes": 137652,
+      "sha256": "00045e69513ecfa79623d04ff195979c31e04184301c9caa26df1c7d3d42a944"
+    },
+    {
+      "path": "datasets/reviewed-acquisitions/chunks/enterprise_sec_registry-0035.json",
+      "bytes": 138741,
+      "sha256": "61b9b40b469652443aef6bf718aef48c73c3c01b4a21b104c37d64446a1c7424"
+    },
+    {
+      "path": "datasets/reviewed-acquisitions/chunks/enterprise_sec_registry-0036.json",
+      "bytes": 138247,
+      "sha256": "7de24facc9fdbb21acc11ef33c99aa5005fd428feaa0b1ef1d92543686483f39"
+    },
+    {
+      "path": "datasets/reviewed-acquisitions/chunks/enterprise_sec_registry-0037.json",
+      "bytes": 138690,
+      "sha256": "93d66e025fb703b4fb8b3c7344d253498f2fea8d7a83efc8fe735a57f506068a"
+    },
+    {
+      "path": "datasets/reviewed-acquisitions/chunks/enterprise_sec_registry-0038.json",
+      "bytes": 138294,
+      "sha256": "61927e6e3f724651afca0c29a1c8e24d574a282dd87b2f99b29eced87b4a04d3"
+    },
+    {
+      "path": "datasets/reviewed-acquisitions/chunks/enterprise_sec_registry-0039.json",
+      "bytes": 137666,
+      "sha256": "6b7b7ddba45c62a076ae42167156353a5524439aa933ed64b82a413cb80e2af3"
+    },
+    {
+      "path": "datasets/reviewed-acquisitions/chunks/enterprise_sec_registry-0040.json",
+      "bytes": 138013,
+      "sha256": "9da551a61e2e14540fdc3f65c06db3e93a9b855b1b6d7917ee1ef7104588cdb7"
+    },
+    {
+      "path": "datasets/reviewed-acquisitions/chunks/enterprise_sec_registry-0041.json",
+      "bytes": 137448,
+      "sha256": "ab8a02236bad99071ab845a2bb1e343835905c5b92980625264c5d34663fe841"
+    },
+    {
+      "path": "datasets/reviewed-acquisitions/chunks/enterprise_sec_registry-0042.json",
+      "bytes": 137915,
+      "sha256": "64d8dd36a760239fd88bee9ac3134b611ae3e3b305d9aea9d5e567350d5df97a"
+    },
+    {
+      "path": "datasets/reviewed-acquisitions/chunks/enterprise_sec_registry-0043.json",
+      "bytes": 137853,
+      "sha256": "985caec3426919d95e17d71f32c58070b6d8599e71466f3aa3dca4cd9489674e"
+    },
+    {
+      "path": "datasets/reviewed-acquisitions/chunks/enterprise_sec_registry-0044.json",
+      "bytes": 137839,
+      "sha256": "3a818a487a66e8fa533b2b31497d415329083c21cd3f0df8e0dc60c8ef8ada34"
+    },
+    {
+      "path": "datasets/reviewed-acquisitions/chunks/enterprise_sec_registry-0045.json",
+      "bytes": 137061,
+      "sha256": "eb32754c060b1d146c7caeeddbff30163b1c5515848cc9145fc2a30f3aacb476"
+    },
+    {
+      "path": "datasets/reviewed-acquisitions/chunks/enterprise_sec_registry-0046.json",
+      "bytes": 136736,
+      "sha256": "244d48c94b4860c1af7a7e3a4fc77fb787d44cf6612cf60ebd9d8ecea4ec5e05"
+    },
+    {
+      "path": "datasets/reviewed-acquisitions/chunks/enterprise_sec_registry-0047.json",
+      "bytes": 136792,
+      "sha256": "7b7f416b4dfa6150805fb55ba848b4b3e779456848df4b79ec86c93b3386d362"
+    },
+    {
+      "path": "datasets/reviewed-acquisitions/chunks/enterprise_sec_registry-0048.json",
+      "bytes": 136959,
+      "sha256": "8b4bd193d68b78c7d3aacc275dec3442e5ada78cf1f285477f44497a17fbc9b8"
+    },
+    {
+      "path": "datasets/reviewed-acquisitions/chunks/enterprise_sec_registry-0049.json",
+      "bytes": 136730,
+      "sha256": "082969335167755f9b8f02fdce67bb010fc3b4dfe23305616ccdd9522e23d8e0"
+    },
+    {
+      "path": "datasets/reviewed-acquisitions/chunks/enterprise_sec_registry-0050.json",
+      "bytes": 136297,
+      "sha256": "b64bb8e818607c70ca90afb285377bba7d55636169abba1c68af180d1e7f693f"
+    },
+    {
+      "path": "datasets/reviewed-acquisitions/chunks/enterprise_sec_registry-0051.json",
+      "bytes": 136382,
+      "sha256": "205c8c53729c9737c72cc5cdb1ce29edffedcf5e27bfd590aab7b99d2df0e96d"
+    },
+    {
+      "path": "datasets/reviewed-acquisitions/chunks/enterprise_sec_registry-0052.json",
+      "bytes": 136745,
+      "sha256": "f3d16fc7fafd51101c81819e8394fe0718008eee6322c6d2a9c939a24394570c"
+    },
+    {
+      "path": "datasets/reviewed-acquisitions/chunks/enterprise_sec_registry-0053.json",
+      "bytes": 136793,
+      "sha256": "f9cf72872e8a7a7ba8f55640c5125d8e0b3dc11f1f4079608a4cfc4d5996a21b"
+    },
+    {
+      "path": "datasets/reviewed-acquisitions/chunks/enterprise_sec_registry-0054.json",
+      "bytes": 136121,
+      "sha256": "f62f2202f255c5ead15ab00766151421d46c5fbb71d4abf5842b5a4c5b41268f"
+    },
+    {
+      "path": "datasets/reviewed-acquisitions/chunks/enterprise_sec_registry-0055.json",
+      "bytes": 136258,
+      "sha256": "8a2be8511eff1341525aace3a5ebd1c85d6365162654964e4c38863f35b7b084"
+    },
+    {
+      "path": "datasets/reviewed-acquisitions/chunks/enterprise_sec_registry-0056.json",
+      "bytes": 136173,
+      "sha256": "14bffdba084ce3adba602f3f825f5a476da31c8aa4eeb646202c8a826a07c57d"
+    },
+    {
+      "path": "datasets/reviewed-acquisitions/chunks/enterprise_sec_registry-0057.json",
+      "bytes": 136248,
+      "sha256": "ba31ddd5baae66e96a10f8884eb728a32e92b6cbda96c06f1be4e8038183f853"
+    },
+    {
+      "path": "datasets/reviewed-acquisitions/chunks/enterprise_sec_registry-0058.json",
+      "bytes": 135989,
+      "sha256": "5f0cc8f6804e9175b3d6c19a97b50ebfd0c3c492dfdbf201d5529855c5614031"
+    },
+    {
+      "path": "datasets/reviewed-acquisitions/chunks/enterprise_sec_registry-0059.json",
+      "bytes": 136217,
+      "sha256": "f3a8b29796d2552f567b1326a5efc0d51cd17083b5f731d0157a83e5dbdcd4d9"
+    },
+    {
+      "path": "datasets/reviewed-acquisitions/chunks/enterprise_sec_registry-0060.json",
+      "bytes": 136202,
+      "sha256": "16825586f3773e40f8f446f1932c35976503abfdcc8676d2849a9155dfe3a047"
+    },
+    {
+      "path": "datasets/reviewed-acquisitions/chunks/enterprise_sec_registry-0061.json",
+      "bytes": 135987,
+      "sha256": "0461ab58221d6255820c95ebe6ae82a953af43aeb166cfae2080bd5529218229"
+    },
+    {
+      "path": "datasets/reviewed-acquisitions/chunks/enterprise_sec_registry-0062.json",
+      "bytes": 136108,
+      "sha256": "5fd79133a9e1ff6a5e650296327277596d8512334d0201c1c1ae3f9f65b374ff"
+    },
+    {
+      "path": "datasets/reviewed-acquisitions/chunks/enterprise_sec_registry-0063.json",
+      "bytes": 136087,
+      "sha256": "65d7c4ac605b0ee785aa5951d1475e671d1da5399131cbc46da47f818d59a763"
+    },
+    {
+      "path": "datasets/reviewed-acquisitions/chunks/enterprise_sec_registry-0064.json",
+      "bytes": 136145,
+      "sha256": "c05f01a8ff1f26bcf55994663e1e0c480dbc045c26bdbcc27ee0709e168f5da4"
+    },
+    {
+      "path": "datasets/reviewed-acquisitions/chunks/enterprise_sec_registry-0065.json",
+      "bytes": 136455,
+      "sha256": "7a982e7a7ae4acf640569c805182818bb6d14128d797100fa5cfd845a3521d5a"
+    },
+    {
+      "path": "datasets/reviewed-acquisitions/chunks/enterprise_sec_registry-0066.json",
+      "bytes": 136112,
+      "sha256": "377c567135c25f47a6cf8f2b5a5a272668125a9801be51593838d7643ef2ee26"
+    },
+    {
+      "path": "datasets/reviewed-acquisitions/chunks/enterprise_sec_registry-0067.json",
+      "bytes": 136014,
+      "sha256": "ca7ccac7c4c8c97c5a1fa944fec31be201998392b51608fa85cf2b407b7f8dce"
+    },
+    {
+      "path": "datasets/reviewed-acquisitions/chunks/enterprise_sec_registry-0068.json",
+      "bytes": 137026,
+      "sha256": "abf47f2a7fc6c6d92c23c25e9932483638f72551b745ddc55088dbfc8b27616f"
+    },
+    {
+      "path": "datasets/reviewed-acquisitions/chunks/enterprise_sec_registry-0069.json",
+      "bytes": 137754,
+      "sha256": "d3a7337469893aff1985c18d0ffeb304acbb17bcfee83647504b5bc899075e21"
+    },
+    {
+      "path": "datasets/reviewed-acquisitions/chunks/enterprise_sec_registry-0070.json",
+      "bytes": 137537,
+      "sha256": "dfe5f1ff24bbc5102afb439d2671efab8192783c2eed4ffb0e7df2d6c86c787c"
+    },
+    {
+      "path": "datasets/reviewed-acquisitions/chunks/enterprise_sec_registry-0071.json",
+      "bytes": 136591,
+      "sha256": "1b3281513163da25a04af4444e332da5a4bd6a6e9e2710ebb0c921db5d354f04"
+    },
+    {
+      "path": "datasets/reviewed-acquisitions/chunks/enterprise_sec_registry-0072.json",
+      "bytes": 137919,
+      "sha256": "1c1b1360e21eabedea977c29529b9cde204ef30a86e9bcd70bf9b0c3d12687e2"
+    },
+    {
+      "path": "datasets/reviewed-acquisitions/chunks/enterprise_sec_registry-0073.json",
+      "bytes": 137405,
+      "sha256": "ca076ea4c783a077cf39a674d65160f46df549203332d3a6832d15f4bd04e792"
+    },
+    {
+      "path": "datasets/reviewed-acquisitions/chunks/enterprise_sec_registry-0074.json",
+      "bytes": 137514,
+      "sha256": "84731c3829c881336e1385637c609760cb94d967f7bef30dbdaee79619179eac"
+    },
+    {
+      "path": "datasets/reviewed-acquisitions/chunks/enterprise_sec_registry-0075.json",
+      "bytes": 137809,
+      "sha256": "2dd4c32ac616c62dbebac9ebde217a8db66252dabe64c35925a5775874eced96"
+    },
+    {
+      "path": "datasets/reviewed-acquisitions/chunks/enterprise_sec_registry-0076.json",
+      "bytes": 136350,
+      "sha256": "c63200cc5a437dcd572b97fab79461a721ccfae7a0162a7a46ae4ef6f9a9614c"
+    },
+    {
+      "path": "datasets/reviewed-acquisitions/chunks/enterprise_sec_registry-0077.json",
+      "bytes": 136435,
+      "sha256": "11bdd9dfab0bca60fd4b7b5d62a77a65f15f921d65b84df1e1a7d027a17aeb01"
+    },
+    {
+      "path": "datasets/reviewed-acquisitions/chunks/enterprise_sec_registry-0078.json",
+      "bytes": 137575,
+      "sha256": "7dbe72054f7d34e62ac5e3c9f142ba94c3db6fa9d53ac2db549f70a4be838ad5"
+    },
+    {
+      "path": "datasets/reviewed-acquisitions/chunks/enterprise_sec_registry-0079.json",
+      "bytes": 135693,
+      "sha256": "8b9beb9bfc8140a631d39641ab8370e61ba03ba08f86dade910551bd149f7056"
+    },
+    {
+      "path": "datasets/reviewed-acquisitions/chunks/enterprise_sec_registry-0080.json",
+      "bytes": 21804,
+      "sha256": "56f8292b4be344b231f99b4dbcea35771ca6932a26f122feab5ec502e5036b74"
+    },
+    {
+      "path": "datasets/reviewed-acquisitions/chunks/enterprise_twse_registry-0000.json",
+      "bytes": 160717,
+      "sha256": "3e7184228ccde7b1d9b2963c26597d2bfd26db82778b87e028b7129bbe73eaca"
+    },
+    {
+      "path": "datasets/reviewed-acquisitions/chunks/enterprise_twse_registry-0001.json",
+      "bytes": 160504,
+      "sha256": "6ba7f74ef0632388e95d73741b6433a9adf16d8ea87ca69d7a9fb8d6f184b0a6"
+    },
+    {
+      "path": "datasets/reviewed-acquisitions/chunks/enterprise_twse_registry-0002.json",
+      "bytes": 160562,
+      "sha256": "09b4c5a979323424f487b4cf9d4ef0b8b1fecbf892a72029d459afc23e4946bc"
+    },
+    {
+      "path": "datasets/reviewed-acquisitions/chunks/enterprise_twse_registry-0003.json",
+      "bytes": 160409,
+      "sha256": "ccb48427b08476bddf4bd22111c2843dbce46c9779671b935e1ad3b5b7578ddc"
+    },
+    {
+      "path": "datasets/reviewed-acquisitions/chunks/enterprise_twse_registry-0004.json",
+      "bytes": 160944,
+      "sha256": "e74e36b5d33cb005b6ea992161bb2fe0d07344ee529afe4d483b601e24f4c8cc"
+    },
+    {
+      "path": "datasets/reviewed-acquisitions/chunks/enterprise_twse_registry-0005.json",
+      "bytes": 160522,
+      "sha256": "9f17ddbca959c5b6f8892265492ab396d357bea1b3bb9d0a8495be35ba50e85b"
+    },
+    {
+      "path": "datasets/reviewed-acquisitions/chunks/enterprise_twse_registry-0006.json",
+      "bytes": 160983,
+      "sha256": "184c7ed6dfe7e8fb933faa88fb6fa6afffa46bd36cf661d1804584334bc81b4f"
+    },
+    {
+      "path": "datasets/reviewed-acquisitions/chunks/enterprise_twse_registry-0007.json",
+      "bytes": 160950,
+      "sha256": "85d029e1d3682308a19b4e8546dcd53b66df0ded69b6d56e10d721796e6c7407"
+    },
+    {
+      "path": "datasets/reviewed-acquisitions/chunks/enterprise_twse_registry-0008.json",
+      "bytes": 160846,
+      "sha256": "c264940e39d9068137b1d05727d3dbf55fba6e19948e5f2e72ebe35a5034b9a2"
+    },
+    {
+      "path": "datasets/reviewed-acquisitions/chunks/enterprise_twse_registry-0009.json",
+      "bytes": 161485,
+      "sha256": "ec28eeaa378a089fc36d8d7d77fad66f699ae54726fee4307b8854ed6eb5a9a9"
+    },
+    {
+      "path": "datasets/reviewed-acquisitions/chunks/enterprise_twse_registry-0010.json",
+      "bytes": 153012,
+      "sha256": "fc6d366384ec47866bcb5f93dde4bd3156767fefc3a14054d54a285f1bfcb1f9"
+    },
+    {
+      "path": "datasets/reviewed-acquisitions/chunks/political_ca_commons_parties-0000.json",
+      "bytes": 10487,
+      "sha256": "ebdfb13c07b83b17f932a399e94d244c73079bca0974e01962cf9bfc00146ce7"
+    },
+    {
+      "path": "datasets/reviewed-acquisitions/chunks/political_jp_house_groups-0000.json",
+      "bytes": 15355,
+      "sha256": "d996e16d6867a569758b88dc283027511c494c209ca03405d131ff13ab22315c"
+    },
+    {
+      "path": "datasets/reviewed-acquisitions/chunks/political_za_assembly_parties-0000.json",
+      "bytes": 36955,
+      "sha256": "91c7006126f9d48308bb96c1cf53a181daba80fcefa9e9f2a6c13509c279dea9"
+    },
+    {
+      "path": "datasets/reviewed-acquisitions/chunks/stat_eurostat_sbs_size-0000.json",
+      "bytes": 212687,
+      "sha256": "451ed417a92992c262c0b1fe9f9a61d936cce5a86e54031811e9e47f5a89cb84"
+    },
+    {
+      "path": "datasets/reviewed-acquisitions/chunks/stat_eurostat_sbs_size-0001.json",
+      "bytes": 216076,
+      "sha256": "74435d762611a1b30638cd0c4c786c71fe96ea816e96d2d182770b9f0809de8b"
+    },
+    {
+      "path": "datasets/reviewed-acquisitions/chunks/stat_eurostat_sbs_size-0002.json",
+      "bytes": 217432,
+      "sha256": "2b9eedbea289cf3b0c5d13d793b027dc917531dc72ff95ca9dc8c2a6dc68b35d"
+    },
+    {
+      "path": "datasets/reviewed-acquisitions/chunks/stat_eurostat_sbs_size-0003.json",
+      "bytes": 217580,
+      "sha256": "72eaf5b8253e08eb654efec328a68227cbff5526584050c6da95e623f32fd7c8"
+    },
+    {
+      "path": "datasets/reviewed-acquisitions/chunks/stat_eurostat_sbs_size-0004.json",
+      "bytes": 218006,
+      "sha256": "6107e4ff5ac48eae8f21a635ad5b1efb18ebd6a51bb0bb9878c2eaa2b70e2f2f"
+    },
+    {
+      "path": "datasets/reviewed-acquisitions/chunks/stat_eurostat_sbs_size-0005.json",
+      "bytes": 217374,
+      "sha256": "6ece48b7e3fb3e371df8192893c2fef68f2e92dc27dae88e922bdcec90a801db"
+    },
+    {
+      "path": "datasets/reviewed-acquisitions/chunks/stat_eurostat_sbs_size-0006.json",
+      "bytes": 221539,
+      "sha256": "c35ced03079591fe29b8245cc0a9ef328c7bb79c6137f7593a2663d99a6ef29e"
+    },
+    {
+      "path": "datasets/reviewed-acquisitions/chunks/stat_eurostat_sbs_size-0007.json",
+      "bytes": 225858,
+      "sha256": "f52d62c0f25e2240678276c7bf149eb817e52eea4d431db99a4a94d7144da6dd"
+    },
+    {
+      "path": "datasets/reviewed-acquisitions/chunks/stat_eurostat_sbs_size-0008.json",
+      "bytes": 227402,
+      "sha256": "a63870de34635d6e90312d0702668afd0beb8d126a28dbc133252692a6dd0c83"
+    },
+    {
+      "path": "datasets/reviewed-acquisitions/chunks/stat_eurostat_sbs_size-0009.json",
+      "bytes": 227514,
+      "sha256": "6d4932d82e246dcd05819fe6ec2ca4850739d970ea9a3673acd47b27f14c2e60"
+    },
+    {
+      "path": "datasets/reviewed-acquisitions/chunks/stat_eurostat_sbs_size-0010.json",
+      "bytes": 228025,
+      "sha256": "a187b0fd7a45433f19b19103d0409f9a241a83a118590c8f90a2518dd293a679"
+    },
+    {
+      "path": "datasets/reviewed-acquisitions/chunks/stat_eurostat_sbs_size-0011.json",
+      "bytes": 228570,
+      "sha256": "1205cc3ac05be5060a0b7692b1617b5f493f47f3c2904b082ee63224b515de4c"
+    },
+    {
+      "path": "datasets/reviewed-acquisitions/chunks/stat_eurostat_sbs_size-0012.json",
+      "bytes": 228801,
+      "sha256": "dbef85af04731e302bcbd5cec5e947537eef5e81b719d1d824c767fd644c15f5"
+    },
+    {
+      "path": "datasets/reviewed-acquisitions/chunks/stat_eurostat_sbs_size-0013.json",
+      "bytes": 228784,
+      "sha256": "6ddd157c3edd5517c687416aa4ff11e06a69614a92afa28bdd0e499a731e0827"
+    },
+    {
+      "path": "datasets/reviewed-acquisitions/chunks/stat_eurostat_sbs_size-0014.json",
+      "bytes": 224542,
+      "sha256": "530a72979b226f37eb9fb290d71c64870151a8754a2a9a9d2997a373d7df3da7"
+    },
+    {
+      "path": "datasets/reviewed-acquisitions/chunks/stat_eurostat_sbs_size-0015.json",
+      "bytes": 216669,
+      "sha256": "20fcc5ecba9af655c2c063fff11abc69fb542bcd76993a595c7131d70eb26163"
+    },
+    {
+      "path": "datasets/reviewed-acquisitions/chunks/stat_eurostat_sbs_size-0016.json",
+      "bytes": 219503,
+      "sha256": "53eab3227b7fb9e85c7542c95efe79100e9add5ab770c3b7f3b9f2b0b477a88f"
+    },
+    {
+      "path": "datasets/reviewed-acquisitions/chunks/stat_eurostat_sbs_size-0017.json",
+      "bytes": 219657,
+      "sha256": "8125e0afef1eb6ce25465586aa84a984f35d782e4c9e1161d7ca588a00610fda"
+    },
+    {
+      "path": "datasets/reviewed-acquisitions/chunks/stat_eurostat_sbs_size-0018.json",
+      "bytes": 219724,
+      "sha256": "41a83ccadad100964d7d095c08e2580e6e200c8c60f2e37183a90ce509e99dd9"
+    },
+    {
+      "path": "datasets/reviewed-acquisitions/chunks/stat_eurostat_sbs_size-0019.json",
+      "bytes": 220712,
+      "sha256": "08510254aeebe41f3f54ea84358423765f919b63ef41aae7a0b7afaf6c3b5e8c"
+    },
+    {
+      "path": "datasets/reviewed-acquisitions/chunks/stat_eurostat_sbs_size-0020.json",
+      "bytes": 220530,
+      "sha256": "19d57f92486ac2897666632f3191f5495709a38ba9ffd736ca8b6adfb9021749"
+    },
+    {
+      "path": "datasets/reviewed-acquisitions/chunks/stat_eurostat_sbs_size-0021.json",
+      "bytes": 221197,
+      "sha256": "9d6f19021d22d690dbcc5e5b1d5b0a1fa2b264119ce401c299e532844f71a475"
+    },
+    {
+      "path": "datasets/reviewed-acquisitions/chunks/stat_eurostat_sbs_size-0022.json",
+      "bytes": 220209,
+      "sha256": "9b62701393a3f2a9dad3ef536808976f98734ba0ee8cde680bd222766348b959"
+    },
+    {
+      "path": "datasets/reviewed-acquisitions/chunks/stat_eurostat_sbs_size-0023.json",
+      "bytes": 214733,
+      "sha256": "eb0c15c438038423e297353b747e1f8c16da9c96580b76be6f28cbc6c06d9ddc"
+    },
+    {
+      "path": "datasets/reviewed-acquisitions/chunks/stat_eurostat_sbs_size-0024.json",
+      "bytes": 217392,
+      "sha256": "b481526bcac9957f55e9ac54c9d9ec2a5c6c5f0749406dac3627b0debc2474e3"
+    },
+    {
+      "path": "datasets/reviewed-acquisitions/chunks/stat_eurostat_sbs_size-0025.json",
+      "bytes": 218955,
+      "sha256": "b7758163ec43438c7b75524a1b0c3b8c175d1a2eed4e49399cab9b222f0942cd"
+    },
+    {
+      "path": "datasets/reviewed-acquisitions/chunks/stat_eurostat_sbs_size-0026.json",
+      "bytes": 219212,
+      "sha256": "f2e43edbbf757f20a745bcdec28b1b5571fae45902900051671e90d1fbd3eb50"
+    },
+    {
+      "path": "datasets/reviewed-acquisitions/chunks/stat_eurostat_sbs_size-0027.json",
+      "bytes": 219666,
+      "sha256": "cc6a0b384845344ef06263b90cbaaefc46ab117edef174d84d8bda8e72d5af94"
+    },
+    {
+      "path": "datasets/reviewed-acquisitions/chunks/stat_eurostat_sbs_size-0028.json",
+      "bytes": 219161,
+      "sha256": "b7ad7d0bbc00db9b267782bedce7f68945fc1d66bfe0b343592b16100d4c82d2"
+    },
+    {
+      "path": "datasets/reviewed-acquisitions/chunks/stat_eurostat_sbs_size-0029.json",
+      "bytes": 223105,
+      "sha256": "2e99f6c0dae18731c325248cdff83b2b6b93cfd697be94838db6525a2dfd95eb"
+    },
+    {
+      "path": "datasets/reviewed-acquisitions/chunks/stat_eurostat_sbs_size-0030.json",
+      "bytes": 227338,
+      "sha256": "9cb538bec525744e3e9589e6abad96350d0b51826d5c72ba0d5a0b7481863073"
+    },
+    {
+      "path": "datasets/reviewed-acquisitions/chunks/stat_eurostat_sbs_size-0031.json",
+      "bytes": 228929,
+      "sha256": "6c31122ccdea7adfabfaabff43a6610b221ad5722c0c9166c39ac7161616ed0b"
+    },
+    {
+      "path": "datasets/reviewed-acquisitions/chunks/stat_eurostat_sbs_size-0032.json",
+      "bytes": 229046,
+      "sha256": "ec7e05bfc250e38d6d5f6620dca9a70fc3d2a61bf01b719638441443ab535ab3"
+    },
+    {
+      "path": "datasets/reviewed-acquisitions/chunks/stat_eurostat_sbs_size-0033.json",
+      "bytes": 229586,
+      "sha256": "d8554936c51e35005a8a213fca77c769403accc7e5ab34b6ff8d5f183c2e3c5a"
+    },
+    {
+      "path": "datasets/reviewed-acquisitions/chunks/stat_eurostat_sbs_size-0034.json",
+      "bytes": 230198,
+      "sha256": "624a0e3e4a76f215c5e7c35b81c713d8eea001ff01dd620538f3546c35edf033"
+    },
+    {
+      "path": "datasets/reviewed-acquisitions/chunks/stat_eurostat_sbs_size-0035.json",
+      "bytes": 230453,
+      "sha256": "c5543d69d4e068bb83f02f432263586d4ffb21ac20d81215d59a1783042ec167"
+    },
+    {
+      "path": "datasets/reviewed-acquisitions/chunks/stat_eurostat_sbs_size-0036.json",
+      "bytes": 230477,
+      "sha256": "6c7150840a2f812e708fbfba721dd9787be0c392ca0d772e6e15257f26f2abd2"
+    },
+    {
+      "path": "datasets/reviewed-acquisitions/chunks/stat_eurostat_sbs_size-0037.json",
+      "bytes": 225626,
+      "sha256": "686712fd02ac520ce5c2732dd86f44398405efd2738e9b39d40ede01dc129db7"
+    },
+    {
+      "path": "datasets/reviewed-acquisitions/chunks/stat_eurostat_sbs_size-0038.json",
+      "bytes": 218400,
+      "sha256": "2abd5ff5408327d9824d098e1f4c5cc4ed445786f4f43f71f6e769610809503d"
+    },
+    {
+      "path": "datasets/reviewed-acquisitions/chunks/stat_eurostat_sbs_size-0039.json",
+      "bytes": 220998,
+      "sha256": "f8526264ba6a51fccf012a0fe97470eddb242181c98756643b51425ad3d25cd8"
+    },
+    {
+      "path": "datasets/reviewed-acquisitions/chunks/stat_eurostat_sbs_size-0040.json",
+      "bytes": 221176,
+      "sha256": "f5a930d14650212061ae12640a4dfd90b9de54fe5ac601e50c37865ed2e57f5a"
+    },
+    {
+      "path": "datasets/reviewed-acquisitions/chunks/stat_eurostat_sbs_size-0041.json",
+      "bytes": 221352,
+      "sha256": "584ab9cd0a8815a79749a92b86e4d9c768035262cdb6bad64119f8b61fe3bbb1"
+    },
+    {
+      "path": "datasets/reviewed-acquisitions/chunks/stat_eurostat_sbs_size-0042.json",
+      "bytes": 222341,
+      "sha256": "7b070156a8e50be1f1a55729886da9d057e9cd1f42c4375915c95c5d1de6b4d9"
+    },
+    {
+      "path": "datasets/reviewed-acquisitions/chunks/stat_eurostat_sbs_size-0043.json",
+      "bytes": 222402,
+      "sha256": "adc4e2fd9c130fa1fdb48260fb4311dc3d3f3b9af311a1d33a550fb0178e3364"
+    },
+    {
+      "path": "datasets/reviewed-acquisitions/chunks/stat_eurostat_sbs_size-0044.json",
+      "bytes": 222950,
+      "sha256": "3aa7829b06ba5191ffc6c5458637c048447137492cc6728075daeac89263a15e"
+    },
+    {
+      "path": "datasets/reviewed-acquisitions/chunks/stat_eurostat_sbs_size-0045.json",
+      "bytes": 221729,
+      "sha256": "ca17aaa395467756fd7560b964b3e2d324a27bbb64869ff89a72803ac151a391"
+    },
+    {
+      "path": "datasets/reviewed-acquisitions/chunks/stat_eurostat_sbs_size-0046.json",
+      "bytes": 215045,
+      "sha256": "9bcc860d0dd21649acb24ff6bf6718cac1baba146f3f523a078866de233d4dde"
+    },
+    {
+      "path": "datasets/reviewed-acquisitions/chunks/stat_eurostat_sbs_size-0047.json",
+      "bytes": 218114,
+      "sha256": "204c715a213267c1ae8502ce1d89439885c891b499126ce4b9bfa65e7883be69"
+    },
+    {
+      "path": "datasets/reviewed-acquisitions/chunks/stat_eurostat_sbs_size-0048.json",
+      "bytes": 219616,
+      "sha256": "bda5713dec176d39b679d72bca118b6ad100615df0e8fef9e28361837807808b"
+    },
+    {
+      "path": "datasets/reviewed-acquisitions/chunks/stat_eurostat_sbs_size-0049.json",
+      "bytes": 219782,
+      "sha256": "720733dd1e22718d56aa2fd62b62f8104edc7ffb29480bef1f2fb991ae019294"
+    },
+    {
+      "path": "datasets/reviewed-acquisitions/chunks/stat_eurostat_sbs_size-0050.json",
+      "bytes": 220264,
+      "sha256": "379fad3fa32191461de1112fe012f12cabcfb8c5babf2cb26667884d3bf299c4"
+    },
+    {
+      "path": "datasets/reviewed-acquisitions/chunks/stat_eurostat_sbs_size-0051.json",
+      "bytes": 219690,
+      "sha256": "b6f58e4586c8121b3b6c5e4b6222f108ab924491997f487a29519f1ca29917ee"
+    },
+    {
+      "path": "datasets/reviewed-acquisitions/chunks/stat_eurostat_sbs_size-0052.json",
+      "bytes": 224538,
+      "sha256": "7bcecc6925682630d1830c18f44c2d6fe1da989f2bd54f707e31afee539dcf35"
+    },
+    {
+      "path": "datasets/reviewed-acquisitions/chunks/stat_eurostat_sbs_size-0053.json",
+      "bytes": 228636,
+      "sha256": "78ceef19f42643b3e59182de7030d3be6e0f89e4020a8ec1e7c67700222a2b63"
+    },
+    {
+      "path": "datasets/reviewed-acquisitions/chunks/stat_eurostat_sbs_size-0054.json",
+      "bytes": 230474,
+      "sha256": "f207027039f0728ca836a1c45a3b6589397d1f19f8ada826de6ea595d3b6df26"
+    },
+    {
+      "path": "datasets/reviewed-acquisitions/chunks/stat_eurostat_sbs_size-0055.json",
+      "bytes": 230869,
+      "sha256": "6756ca77cdbcd59e2728ae19683abe3248460f11e06d9833d24d4f62c47c6095"
+    },
+    {
+      "path": "datasets/reviewed-acquisitions/chunks/stat_eurostat_sbs_size-0056.json",
+      "bytes": 231102,
+      "sha256": "70279a558be72fea30de5abc91a6e1a89488af99853b2e0083f178f45eb35278"
+    },
+    {
+      "path": "datasets/reviewed-acquisitions/chunks/stat_eurostat_sbs_size-0057.json",
+      "bytes": 230813,
+      "sha256": "ff7827dc6486c3da70b9682d4f33fddfe9d7ff337fd2da2c5303efe1b4812cae"
+    },
+    {
+      "path": "datasets/reviewed-acquisitions/chunks/stat_eurostat_sbs_size-0058.json",
+      "bytes": 223656,
+      "sha256": "544c8a08c39366f262756ad9679763b5f2065384daec7b86b6c5e7cb987e914a"
+    },
+    {
+      "path": "datasets/reviewed-acquisitions/chunks/stat_eurostat_sbs_size-0059.json",
+      "bytes": 219812,
+      "sha256": "fd1a1293bce884c862a28a3de721e077b3fd588e41d3b4cb27b8a3f3db5c88e4"
+    },
+    {
+      "path": "datasets/reviewed-acquisitions/chunks/stat_eurostat_sbs_size-0060.json",
+      "bytes": 222276,
+      "sha256": "e48c8cda61927b34cd11e3f0b1458023d24a9018f812e2c3bc27e74a8ca8f501"
+    },
+    {
+      "path": "datasets/reviewed-acquisitions/chunks/stat_eurostat_sbs_size-0061.json",
+      "bytes": 222961,
+      "sha256": "800c9af9497452f3c9190607419a076ce6c347bdbada409a62f47108fb623893"
+    },
+    {
+      "path": "datasets/reviewed-acquisitions/chunks/stat_eurostat_sbs_size-0062.json",
+      "bytes": 223179,
+      "sha256": "61e3b83a63ec519dccc189b4a1559f01973ccdea568ed9de01dcbf4fb45194be"
+    },
+    {
+      "path": "datasets/reviewed-acquisitions/chunks/stat_eurostat_sbs_size-0063.json",
+      "bytes": 223325,
+      "sha256": "5aa31503e18519376689f806efd33d215e852e3ad84ab42e9b5af3fb45634ec9"
+    },
+    {
+      "path": "datasets/reviewed-acquisitions/chunks/stat_eurostat_sbs_size-0064.json",
+      "bytes": 169046,
+      "sha256": "b0685fe2fd93f5a2319068c93002b8a9a73db1de5c8670ba9f628e76644e19ab"
+    },
+    {
+      "path": "datasets/reviewed-acquisitions/chunks/stat_worldbank_annual_fx-0000.json",
+      "bytes": 152980,
+      "sha256": "9a6c1880c2f0d8498dd328f59a6a264232225037c9065df4a5f83d0f97d9f118"
+    },
+    {
+      "path": "datasets/reviewed-acquisitions/chunks/stat_worldbank_annual_fx-0001.json",
+      "bytes": 18492,
+      "sha256": "08542c56d5feb22f314eb8af5743441cf6f4a2e9db9a39acddba9c0229f98cb2"
+    },
+    {
+      "path": "datasets/reviewed-acquisitions/manifest.json",
+      "bytes": 68546,
+      "sha256": "ba1ffb102f9d47765060598644a0cb5795c0592c8ca3df621aafbf9b31f4a646"
+    },
+    {
       "path": "db/schema.ts",
-      "bytes": 8052,
-      "sha256": "1deaadf80eacc1b52a1ad15461ab2a804e27f7bbd71a558639e77a0ba7e6708a"
+      "bytes": 8761,
+      "sha256": "a70524ab5971e1c5d163d753c6275a5050f74ac496a13ddd12da7b1b86fe7e98"
     },
     {
       "path": "docs/LOCAL_SNAPSHOT_HANDOFF.md",
@@ -132,11 +1166,6 @@
       "path": "docs/PRODUCT_SCHEDULER_BOUNDARY.md",
       "bytes": 3748,
       "sha256": "d84626e3aee970b069f6a35ecad75712b2912b6f4d82902022d39cefd278a438"
-    },
-    {
-      "path": "drizzle.config.ts",
-      "bytes": 133,
-      "sha256": "39966f3818721bb8bbc31f33ed0eeeaa35878d81a330127a1936b1b334e39ab8"
     },
     {
       "path": "drizzle/0000_broad_marvel_apes.sql",
@@ -154,6 +1183,21 @@
       "sha256": "5052e4909f40e2f946ba44d13736a4c6d64ab35144e458ab7f21a4a18cb6a8f6"
     },
     {
+      "path": "drizzle/0003_slimy_skullbuster.sql",
+      "bytes": 654,
+      "sha256": "9c79898d24da703d3cdc9e3e6bcfaa752c112fa04a491f21fe6b95312d0edb35"
+    },
+    {
+      "path": "drizzle/0004_intel_fts_index.sql",
+      "bytes": 437,
+      "sha256": "2f2cedc790b116319c7d59945cec4968071a5fdac97353f728ab5f188a3cb1df"
+    },
+    {
+      "path": "drizzle/0005_retrieval_cjk_terms.sql",
+      "bytes": 81,
+      "sha256": "2f27d359adb3049281fecc3a0d9247b03ebc4a802292d25627849c72700b0bce"
+    },
+    {
       "path": "drizzle/meta/0000_snapshot.json",
       "bytes": 14589,
       "sha256": "37a2c515f88faf37a4ee89871c5b19f089ca146db975dd12a4fd9b96a1235088"
@@ -169,9 +1213,29 @@
       "sha256": "0aa867c416c3d57ca6d2d0605b0154be0cb28597c24249d73780de46bd3a9752"
     },
     {
+      "path": "drizzle/meta/0003_snapshot.json",
+      "bytes": 43169,
+      "sha256": "91a49c490bf01ea661196cca5cbb00b3c33ca61b23f2bad5bb97eea3865ca51d"
+    },
+    {
+      "path": "drizzle/meta/0004_snapshot.json",
+      "bytes": 43169,
+      "sha256": "41617de6f282fb682bc77cb48a2c0b77a01c4de436a568aaa698c6d230df7c7d"
+    },
+    {
+      "path": "drizzle/meta/0005_snapshot.json",
+      "bytes": 43378,
+      "sha256": "2fc5faaef2e2ed1989de039436836076def51c10038b7db0d86aa517f3feee0f"
+    },
+    {
       "path": "drizzle/meta/_journal.json",
-      "bytes": 495,
-      "sha256": "edf15e329f3b221afe21b4ba099ec5f59510021120f457e0010d4c7871a23e45"
+      "bytes": 930,
+      "sha256": "f14fe5155b97e3aefc38371b9cdf9c39423c772b9e4058798d8600e6b8ac914b"
+    },
+    {
+      "path": "drizzle.config.ts",
+      "bytes": 133,
+      "sha256": "39966f3818721bb8bbc31f33ed0eeeaa35878d81a330127a1936b1b334e39ab8"
     },
     {
       "path": "lib/daily-collector.mjs",
@@ -880,8 +1944,8 @@
     },
     {
       "path": "scripts/build.mjs",
-      "bytes": 2843,
-      "sha256": "defa89f1993026a5d0edf70dc6f60bad544e6f052961804d6dfdf4620ee57567"
+      "bytes": 2408,
+      "sha256": "00df6c7845ea7f53334dbf4e3c2c4d6bfbbeb706f05ff7d2e255cb6e7abf116e"
     },
     {
       "path": "scripts/build.sh",
@@ -975,8 +2039,8 @@
     },
     {
       "path": "scripts/validate-artifact.mjs",
-      "bytes": 953,
-      "sha256": "39d9df53ac2461962466d5965c5f4d06f08024ceca40605952d8b753b88d41fd"
+      "bytes": 3227,
+      "sha256": "64ceabadb5e4e08353e5093e560f58650ffefa990523c5a591e924a9585c587b"
     },
     {
       "path": "scripts/validate-clean-export.mjs",
@@ -995,8 +2059,23 @@
     },
     {
       "path": "static/app.js",
-      "bytes": 95440,
-      "sha256": "c78772cd0e08e78f24496e4ae65bbef07680817808d0a9f86cb580b92fadfacb"
+      "bytes": 101736,
+      "sha256": "fc07df9204c2c3531e7538f82395959eb5b44711a8636bdb5d9eb6852d481c67"
+    },
+    {
+      "path": "static/collector-index.html",
+      "bytes": 7078,
+      "sha256": "de5f9676dd60841b9ccbdf4a70c4a2ad3b9694b1b5f87d994c7df93ce762003f"
+    },
+    {
+      "path": "static/collector-workbench.css",
+      "bytes": 5248,
+      "sha256": "3fd96c0ec13bdf0ea7575b3c2afd32f9da1a48baa1b6a94fd57235c25fce6185"
+    },
+    {
+      "path": "static/collector-workbench.js",
+      "bytes": 20395,
+      "sha256": "5d1597806223e51c899bd0804eebcdbc52a229d4583872432abe663cc38ec018"
     },
     {
       "path": "static/district.css",
@@ -1010,8 +2089,8 @@
     },
     {
       "path": "static/frontend.test.mjs",
-      "bytes": 27140,
-      "sha256": "d992ba5047bdfaa904146eff791c5df6df981d4292a18b22e76f896b0ced44d3"
+      "bytes": 31316,
+      "sha256": "c3127ef074b2eba8875116ccfb2013e6c9434fa629c6fd36396c44562c78d4f2"
     },
     {
       "path": "static/geo/countries.json",
@@ -2259,9 +3338,24 @@
       "sha256": "6bb0f32c9e26cbf26377276bab388a7f7086f331a762d959c168fe78a11e2934"
     },
     {
+      "path": "static/immersive.css",
+      "bytes": 10197,
+      "sha256": "365751aa63407c13a9771e6e4f455a069e663b0b2c3b2fc1fa68e1a644b333df"
+    },
+    {
+      "path": "static/immersive.js",
+      "bytes": 16646,
+      "sha256": "e38a493cbac2d6b4c0c78ff4a989f727c0fa167e1755be517a6f1b11ce097c2a"
+    },
+    {
+      "path": "static/immersive.test.mjs",
+      "bytes": 14628,
+      "sha256": "ae10aa64173e31fe1b484845de9564d7e9d69204364a2568003e6dc82ba9534e"
+    },
+    {
       "path": "static/index.html",
-      "bytes": 4257,
-      "sha256": "887eff1b90310a4a60d60e63cb2612e46857c7e6a9bedb4793d46b23cf7a7199"
+      "bytes": 1619,
+      "sha256": "7edafe9560e89d7de0837d7a7b11a1663dfb33ac412a80a44fc3260143a862bc"
     },
     {
       "path": "static/preparation.css",
@@ -2277,6 +3371,11 @@
       "path": "static/preparation.test.mjs",
       "bytes": 13000,
       "sha256": "71fcad6dbbd18280dad2cac3c8b1dc14c696984af81ffc177e1d2a3c1d2bafbc"
+    },
+    {
+      "path": "static/projected-map.js",
+      "bytes": 12090,
+      "sha256": "02cd23c09296040eb98dc128db4b8ecde9205a9c7d4c526e8be5cd11c905774b"
     },
     {
       "path": "static/raster-fallback.js",
@@ -2302,6 +3401,31 @@
       "path": "static/regional.test.mjs",
       "bytes": 15350,
       "sha256": "53bd64e7582c8846ee98c598661c54b074c11690b32cb50cd077964e91232402"
+    },
+    {
+      "path": "static/scene-assets/asset-manifest.json",
+      "bytes": 1756,
+      "sha256": "0b2abef9262398f835e9b5d6ce5c92fa13032b0a623045968e33ac884bde4ab5"
+    },
+    {
+      "path": "static/scene-assets/district-ground.webp",
+      "bytes": 348542,
+      "sha256": "4ea1184a8bdce601769d999330d29c4fa7a2d0e4d996dd57cb583b7dba7eda1f"
+    },
+    {
+      "path": "static/scene-assets/hive-cluster.webp",
+      "bytes": 282638,
+      "sha256": "6f523fe258bfe11114b63a5a6385b8b36dce4c60ae7641ee6f0b48607b4adf7f"
+    },
+    {
+      "path": "static/scene-assets/hive-ghost.webp",
+      "bytes": 278376,
+      "sha256": "147c61b9f9c974185f9e3e52f2a835762c7ef214abf29ad9ce4eadbab164bdc7"
+    },
+    {
+      "path": "static/scene-utilities.js",
+      "bytes": 2363,
+      "sha256": "e55f3fdaa0fb52a9e9dd9c08e9012ebe6abc154a5490efb0b4151d1051554e6f"
     },
     {
       "path": "static/styles.css",
@@ -2359,14 +3483,34 @@
       "sha256": "9f6aca6249c7bfd2dfd0179b2bfcddaf0aa7f0fb4d08a22f1c36e71738d1ff34"
     },
     {
+      "path": "static/workbench-shell.css",
+      "bytes": 2522,
+      "sha256": "642b7227ef4658f1d49fa25538228d358b65141294b8ea706c7c1e45b86ae68d"
+    },
+    {
+      "path": "static/workbench.html",
+      "bytes": 1621,
+      "sha256": "cc4971d0c35f80ae973424673a59b7c9490fa08d6ebd9f3fdb20fa318dd26957"
+    },
+    {
       "path": "tests/admitted-navigation.test.mjs",
-      "bytes": 8505,
-      "sha256": "dfa304a559bbe799c9f61b6ea610e46cbe21ebfc87f3fc50c279133384ff9821"
+      "bytes": 8723,
+      "sha256": "1e1cd84256790e0b11e77d5084ed7e5bb62f8efd684f0e5ccdab6f899c564635"
     },
     {
       "path": "tests/clean-source-export.test.mjs",
       "bytes": 989,
       "sha256": "bfcb3a237ef4c3e799538f43d7f3125aca429992cdddfaa3d9ac031de65d19f9"
+    },
+    {
+      "path": "tests/collector-workbench-behavior.test.mjs",
+      "bytes": 16925,
+      "sha256": "3c3954aac20e503685e3d25c69ed1ae6695739e0f240ea938f237434c03b2e8e"
+    },
+    {
+      "path": "tests/collector-workbench.test.mjs",
+      "bytes": 2718,
+      "sha256": "83edfdb838f9bd7ac14a61c39e5ec31503ead29d7a7fb3dbb1b56d25d29e8c58"
     },
     {
       "path": "tests/d1-adapter.mjs",
@@ -2385,8 +3529,8 @@
     },
     {
       "path": "tests/global-intelligence.test.mjs",
-      "bytes": 17972,
-      "sha256": "caac29d3013597deb89f214c966d2fc650c269c6d4549bac3f32a964d9d16dd7"
+      "bytes": 17981,
+      "sha256": "92b982bf9da8e037cad204ee609161fadfe100b45286e1698217ecfb8cf8152c"
     },
     {
       "path": "tests/global-normalized-fixtures.json",
@@ -2844,9 +3988,44 @@
       "sha256": "65fd169a1ea2622dd287a948660dadef2ac17f26b68923d9c3baad72150950c8"
     },
     {
+      "path": "tests/retrieval.test.mjs",
+      "bytes": 10404,
+      "sha256": "1ae0a263841e86f59262a8a3cdbaa47b240f32de59b2522bed9f62640e3fcc0e"
+    },
+    {
+      "path": "tests/reviewed-intake-fixtures/chunks/country_un_m49_reference-0000.json",
+      "bytes": 233888,
+      "sha256": "12ca833fc4424260a3484eb9a8be27e1e6cf8c25bbb98fcb6cb8e361b49634bf"
+    },
+    {
+      "path": "tests/reviewed-intake-fixtures/chunks/country_un_m49_reference-0001.json",
+      "bytes": 232755,
+      "sha256": "3a7a0488d3f6c522b23db90ded2e8cee5cec9a294f58e81d403c161cdb9c7b15"
+    },
+    {
+      "path": "tests/reviewed-intake-fixtures/chunks/country_un_m49_reference-0002.json",
+      "bytes": 115331,
+      "sha256": "bfdeabee97310c28ec3a4f9d534aa0a5c88b5c9b02f180ae001ccca1c2e984c4"
+    },
+    {
+      "path": "tests/reviewed-intake-fixtures/chunks/enterprise_sec_registry-0000.json",
+      "bytes": 138324,
+      "sha256": "9ad9938dca5b698ebb0eb837d4b3518103c21bad8984a00374da1cc19c678bc5"
+    },
+    {
+      "path": "tests/reviewed-intake.test.mjs",
+      "bytes": 5493,
+      "sha256": "4dd2eb6200b0da28b87510be8ca9a680764e5b2bc9051f1f87169cf239888ae2"
+    },
+    {
       "path": "tests/runtime-edges.test.mjs",
       "bytes": 5322,
       "sha256": "50b2ed035438493a40f41a450a38f47928f74c2dae3170b8c0cff7d6cabe8076"
+    },
+    {
+      "path": "tests/scene-assets.test.mjs",
+      "bytes": 1223,
+      "sha256": "d08665a5c6cb81044ab217615405da77a10902024074401eeae633b4b8ffc3a4"
     },
     {
       "path": "tests/source-adapters.test.mjs",
@@ -2855,8 +4034,8 @@
     },
     {
       "path": "tests/worker-api.test.mjs",
-      "bytes": 9421,
-      "sha256": "0c9def6b068e3add00085c9038dd55897cbbc3b7708bb5cb3f8ee1db90d509eb"
+      "bytes": 9458,
+      "sha256": "200cb23cbe1f84f2acf27b3a6fba3738bbb86adf8b69150938cfae66edcefb3a"
     },
     {
       "path": "tests/workspace-recorded-usgs.json",
@@ -2955,13 +4134,13 @@
     },
     {
       "path": "worker/global-store.js",
-      "bytes": 22678,
-      "sha256": "991c3158feeadffbec351b83187dbdd65bd6296be837ce61514028e30d6f441f"
+      "bytes": 25884,
+      "sha256": "c8ff2f35c67f6d04bbfa5db7f666abd6247b97274787a3e1573f4b465bd93c44"
     },
     {
       "path": "worker/index.js",
-      "bytes": 13121,
-      "sha256": "ce9ecd13f34ae192416a9e51046a094c0493c9135022fd7b970c9d71f38fac8c"
+      "bytes": 14327,
+      "sha256": "f51ab8332bacf92a822be7ad4ecab8d46c70359ef9d12dcba49c9e83dc7a21ed"
     },
     {
       "path": "worker/llm.js",
@@ -2970,8 +4149,8 @@
     },
     {
       "path": "worker/local-snapshot.js",
-      "bytes": 28274,
-      "sha256": "daa1b7a072387596bcf62889bd34761a860fb33f85410dcbeda3e83a5298346a"
+      "bytes": 28457,
+      "sha256": "bbf3350b634f5752fc0ae9e9bf353f903916e4eaec4305a5338f55be0119f3d3"
     },
     {
       "path": "worker/operations.js",
@@ -2984,6 +4163,21 @@
       "sha256": "586b18072008714cc6c8a233e1d9b961b950e72b83472962d8828bbe0476fd15"
     },
     {
+      "path": "worker/retrieval.js",
+      "bytes": 13670,
+      "sha256": "c43b06e2e52b36f89ec002f2f3772703626967e4eff02d923c61bbebab0dcbfd"
+    },
+    {
+      "path": "worker/source-intake-validation.js",
+      "bytes": 6294,
+      "sha256": "9f369b55738d34b660bc5c3d01af9d0012aaa11aa11c156680a795993762aada"
+    },
+    {
+      "path": "worker/source-intake.js",
+      "bytes": 9461,
+      "sha256": "cea9ff004129b374819ddeb05366a0a79b0f2804273b183a462ddd6a0b989bb4"
+    },
+    {
       "path": "worker/store.js",
       "bytes": 19082,
       "sha256": "ffd4114cc98a47629b91812d5e5b1c753a4756ae23d93ea7755b85687f76def4"
@@ -2994,5 +4188,27 @@
       "sha256": "d6bdda2a95aac2a35c1a7db542d0a07e5efd855423bfe96da2ed7a50f904116a"
     }
   ],
-  "accepted_release_status_sha256": "ced12950e4dee0b8b51ba3ec995bf4182742a93e7deeec0f68b19b2b45f46fff"
+  "excluded_paths": [
+    "SETUP_STATUS.md",
+    "qa/daily-schedule-creation-receipt.json",
+    "qa/global-corrected-data-quality-review.json",
+    "qa/global-corrected-live-receipt.json",
+    "qa/global-corrected-live-scope-addendum.json",
+    "qa/global-initial-live-receipt.json",
+    "qa/initial-hosted-api-receipt.json",
+    "qa/local-snapshot-contract.json",
+    "qa/source-contract-implementation-binding-addendum.json",
+    "qa/source-contract-independent-final.json",
+    "static/frontend-test-report.json"
+  ],
+  "runtime_user_state_included": false,
+  "retained_acquisition_rows": 19466,
+  "retained_acquisition_origin": "reviewed_external_snapshot",
+  "local_collector_manifest_assets": 136,
+  "code_and_live_commit": "fce3901e7002507d34bbdd71778ae8745f8ca411",
+  "later_acceptance_metadata": [
+    "RELEASE_STATUS.json",
+    "PIPELINE_HANDOFF.md",
+    "GITHUB_PROGRESS.md"
+  ]
 }

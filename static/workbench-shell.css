@@ -1,0 +1,23 @@
+html:has(body.immersive-app),body.immersive-app{height:100%;width:100%;overflow:hidden;margin:0;background:#eeede8}
+body.immersive-app #main{position:fixed;inset:0;padding:0;max-width:none;margin:0;outline:none;overflow:hidden}
+body.immersive-app #page-content{width:100%;height:100%;min-height:100%;padding:0;margin:0;overflow:hidden}
+.scene-connection-notice{position:fixed;bottom:16px;left:16px;right:16px;z-index:8;max-width:700px;padding:12px 16px;background:#fff7e8;border:1px solid #b19c74;font-size:14px;line-height:1.6}
+.scene-connection-notice[hidden]{display:none}
+.workbench-dialog{width:min(1190px,calc(100vw - 48px));max-width:calc(100vw - 32px);height:auto;max-height:calc(100dvh - 48px);margin:auto;padding:0;border:1px solid #858a80;background:#f7f8f3;color:#252a22;box-shadow:0 16px 60px #1f261a33;overflow:auto}
+.workbench-dialog::backdrop{background:#222b2445}
+.workbench-head{position:sticky;top:0;display:flex;align-items:center;justify-content:space-between;gap:20px;padding:13px 22px;border-bottom:1px solid #b9c3ac;background:#f7f8f3;z-index:5}
+.workbench-head h1{font-size:18px;line-height:1.5;margin:0;font-weight:500}
+.workbench-head>div{display:flex;gap:8px}
+#workbench-content{padding:26px;min-width:0}
+#workbench-content>.page-head{padding-top:0}
+#workbench-content .page-head h1{font-size:26px}
+#workbench-content .prep-shell{min-width:0}
+body.immersive-app .detail-dialog{z-index:20}
+body.immersive-app .toast-region{z-index:40}
+@media(max-width:700px){.workbench-dialog{width:calc(100vw - 16px);max-width:calc(100vw - 16px);max-height:calc(100dvh - 16px)}.workbench-head{padding:10px 14px}#workbench-content{padding:18px 14px}}
+@media(prefers-reduced-motion:reduce){.workbench-dialog,.detail-dialog{scroll-behavior:auto}}
+
+/* The fullscreen scene owns district scrolling; hidden outer shell must not clip later rows. */
+body.immersive-app #page-content .scene-district-world{height:100dvh;overflow-x:hidden;overflow-y:auto;overscroll-behavior:contain}
+
+.functional-home{max-width:1200px;margin:auto;padding:32px;overflow:auto;height:100dvh;background:#f4f4ee;color:#222}.functional-home h1{font-size:26px;font-weight:500}.functional-home nav{display:flex;flex-wrap:wrap;gap:12px;padding:20px 0;border-top:1px solid #aaa;border-bottom:1px solid #aaa}.functional-home a{color:inherit;padding:8px 12px;border:1px solid #999;text-decoration:none;background:#fafaf7}.functional-home p{max-width:800px;line-height:1.7}.functional-home a:focus-visible{outline:3px solid #222;outline-offset:3px}
