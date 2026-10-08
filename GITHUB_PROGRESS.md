@@ -13,3 +13,7 @@ Product acceptance at that checkpoint: 255 Worker checks, 74 deterministic sourc
 Current next work: two preparation races and regional/map integration are being corrected and reviewed in a newer Site candidate; its accepted clean export will follow incrementally. A separate collector v2/eleventh-source compatibility candidate is under offline development. These candidates are outside this initial delivered runtime.
 
 Owner-computer execution, OS scheduling and unattended Site synchronization remain unverified. Repository access follows existing organization permissions and does not grant private-Site access or deployment authority. Credentials, private user databases, raw runtime logs and local execution state are excluded.
+
+## Required-source export correction
+
+The initial embedded local collector omitted its public catalog and adapter-provenance files because the export filter treated the entire data directory as runtime state. Those two exact source assets are restored from the approved1.1 ZIP; SOURCE_EXPORT_CORRECTION.json binds their hashes and the original frozen input. All128 original collector manifest entries now verify. An independently reconstructed clean consumer passed20 runtime/provenance checks and74 source-contract cases with zero failures/skips; the source-contract runner reported zero network calls. No provider collection, user database, generated local configuration or runtime log is included.

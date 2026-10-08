@@ -1,0 +1,38 @@
+{
+  "schema": "dormathon.clean-source-assets-correction.v1",
+  "original_clean_source_zip_sha256": "d15946e28054a8b52e9fbf135576f4870bdc193be67c6516d92583d0bc27c688",
+  "original_local_collector_zip_sha256": "f24de7d9dc5703591ebcb0dc4e4e903913e801d13922cd585628db0b7816c6b8",
+  "cause": "An overbroad export data-directory filter omitted two required public source assets. They are not user runtime state.",
+  "restored_source_assets": [
+    {
+      "path": "local-collector/data/global-source-catalog.json",
+      "bytes": 58164,
+      "sha256": "8cb6d74e029b066e4dc6660ec32e804078f3e2c941b5140566052fc94191ef27"
+    },
+    {
+      "path": "local-collector/data/adapter-provenance.json",
+      "bytes": 2390,
+      "sha256": "040b244452c288f08e4e4f1887c883c74fcf0c321706fc62e9f975470b4d68aa"
+    }
+  ],
+  "original_collector_manifest_verified_files": 128,
+  "isolated_clean_consumer_tests": {
+    "runtime": {
+      "tests": 20,
+      "pass": 20,
+      "fail": 0,
+      "cancelled": 0,
+      "skipped": 0,
+      "todo": 0
+    },
+    "source_contracts": {
+      "source_count": 10,
+      "case_count": 74,
+      "passed": 74,
+      "failed": 0,
+      "network_calls": 0
+    }
+  },
+  "private_runtime_state_added": false,
+  "original_frozen_export_changed": false
+}
