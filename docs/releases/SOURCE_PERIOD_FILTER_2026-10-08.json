@@ -1,0 +1,83 @@
+{
+  "schema_version": "dormathon.source-period-filter.release.v1",
+  "runtime_commit": "5cd53b53dbc7aff5dc16e1aea42457f54de7eea7",
+  "deployment_id": "appgdep_6ac80bfc16608191992739637383bcbc",
+  "published_at": "2026-10-08T21:32:49.715264+00:00",
+  "source_evidence_unchanged": true,
+  "indexed_documents": 51471,
+  "period_contract": {
+    "grain": [
+      "year",
+      "month",
+      "day"
+    ],
+    "bounds": "inclusive canonical YYYY / YYYY-MM / YYYY-MM-DD",
+    "fields": [
+      "facts.observation_period",
+      "facts.report_period"
+    ],
+    "scope": "Statistical observation rows only; other grains, unknown periods and publication/event/acquisition/vintage dates excluded",
+    "first_seen_filters": "Remain independent; combine with source-period scope"
+  },
+  "actual_gui_examples": [
+    {
+      "source": "stat_worldbank_gdp_annual",
+      "query": "Malaysia",
+      "period": "2020..2025 year",
+      "results": 6
+    },
+    {
+      "source": "stat_worldbank_gdp_annual",
+      "query": "Malaysia",
+      "period": "2026 year",
+      "results": 0
+    },
+    {
+      "source": "stat_worldbank_commodity_monthly",
+      "query": "Gold",
+      "period": "2020-01..2020-02 month",
+      "results": 2
+    },
+    {
+      "source": "local__stat_ecb_fx_daily_reference",
+      "query": "USD",
+      "period": "2026-10-01..2026-10-08 day",
+      "results": 6
+    }
+  ],
+  "verification": {
+    "core_tests_passed": 343,
+    "core_tests_failed": 0,
+    "packed_worker_sha256": "7550125293832ac9ca5b4193e6893e505e6fb5bdb7debc7dad548ea77eac1826",
+    "independent_filter_label_review_sha256": "e42807aad36acb156135f2ea0b77ffa91cbb9bc2716d205c000349265e3d6744",
+    "independent_source_label_review_sha256": "cd4649d740190e077aa885d91a4c55a4dd1cee376185e8583c9137678f393252",
+    "actual_gui_receipt_sha256": "9cf479782169a70a3b6648a9368b94711977a7ff5310f566bb0aedf7f4f441d3"
+  },
+  "additional_local_foreground_validation": {
+    "original_profile_sha256": "3eb4fbdcf987c4c944ae90f512ba9ab73085d740f21b3b90c64b06bfe46aee7a",
+    "genuine_provider_requests": 10,
+    "ECB_repeated": false,
+    "local_versions": 6095,
+    "outputs_imported_to_Site": false,
+    "jobs": {
+      "gdp.current": "1590 annual2020–2025;2026 absent",
+      "employment.current": "1590 annual2020–2025;2026 absent",
+      "uk.current": "20 current publication metadata; partial feed",
+      "us.current": "atomic schema failure;zero versions",
+      "trade.current": "60 fixedQ4_2024 unambiguous cases",
+      "commodity.current": "2835 monthly2020-01–2026-09 cells"
+    },
+    "strict_part_and_raw_state_review_sha256s": [
+      "a91e83a221c050f37c707c788d13ebdd5fd6e0a52f72eb29e23014e5e46f792f",
+      "dd76d947cf716ce5ff09339cb1d92feffee0f44498f5b0376b33b7abfe49dc6b"
+    ],
+    "known_US_issue": "Supplied chapter-only CFR and an oversized optional action paragraph need a separately approved profile; original failure and zero rows preserved. A new saved-page successor is not included in this release."
+  },
+  "limits": [
+    "Lexical retrieval, not semantic embeddings or generated analysis",
+    "Source-period scope does not add missing history, source coverage or comparability",
+    "No new row ingestion in this correction",
+    "No unattended scheduling, automatic sync or verified Windows runtime",
+    "Desktop changed-flow acceptance; no new native500px claim"
+  ]
+}

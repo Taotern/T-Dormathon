@@ -7,7 +7,7 @@ import {fileURLToPath} from 'node:url';
 import {test} from 'node:test';
 const sourcePath=fileURLToPath(new URL('../static/collector-workbench.js',import.meta.url));
 const source=fs.readFileSync(sourcePath,'utf8');
-assert.equal(createHash('sha256').update(source).digest('hex'),'c802bb17753403bdf7d52002b2bf55d45b3a12dafeea3b7a7877b57c97d3365a','Rebind reviewed behavior tests only after intentional client changes');
+assert.equal(createHash('sha256').update(source).digest('hex'),'62cde116806aace18d6f0d3dd0993930cfa0052f9c93729848701ece01f66d2d','Rebind reviewed behavior tests only after intentional client changes');
 
 function deferred() {
   let resolve;
@@ -141,7 +141,7 @@ const initialItem = {
 function makeHarness(fetchOverride = null) {
   const ids = [
     'notice', 'collect-source', 'filter-source', 'collect', 'source-rows', 'run-rows',
-    'saved-from','saved-to','filter-sort','counts', 'runtime','reviewed-intake-state', 'index-status', 'index', 'filter-form', 'record-detail',
+    'saved-from','saved-to','filter-sort','observation-grain','observation-from','observation-to','counts', 'runtime','reviewed-intake-state', 'index-status', 'index', 'filter-form', 'record-detail',
     'item-scope', 'item-results', 'next-items', 'group-results', 'snapshot-save',
     'snapshot-state', 'reload', 'clear-filter', 'filter-query', 'filter-category',
     'filter-origin', 'filter-language', 'documents', 'snapshot-file', 'evidence', 'main',
@@ -149,8 +149,8 @@ function makeHarness(fetchOverride = null) {
   ];
   const elements = new Map(ids.map((id) => {
     const tag = id === 'filter-form' ? 'form'
-      : ['collect-source', 'filter-source', 'filter-category', 'filter-origin'].includes(id) ? 'select'
-      : ['filter-query', 'filter-language', 'snapshot-file'].includes(id) ? 'input'
+      : ['collect-source', 'filter-source', 'filter-category', 'filter-origin','observation-grain'].includes(id) ? 'select'
+      : ['filter-query', 'filter-language', 'snapshot-file','observation-from','observation-to'].includes(id) ? 'input'
       : id === 'collect' || id === 'index' || id === 'snapshot-save' || id === 'reload' || id === 'clear-filter' || id === 'next-items' || id === 'documents' ? 'button'
       : 'div';
     return [id, new MockElement(tag)];
@@ -168,7 +168,7 @@ function makeHarness(fetchOverride = null) {
   const skip = new MockElement('a');
   skip.className = 'skip';
 
-  const controls = ['filter-query', 'filter-source', 'filter-category', 'filter-origin', 'filter-language'].map((id) => elements.get(id));
+  const controls = ['filter-query', 'filter-source', 'filter-category', 'filter-origin', 'filter-language','observation-grain','observation-from','observation-to'].map((id) => elements.get(id));
   controls.push(new MockElement('button'));
   elements.get('filter-form')._formControls = controls;
 
@@ -400,3 +400,5 @@ for (const scenario of ['http failure', 'network uncertainty']) {
 process.stdout.write('All runtime behavior checks passed.\n');
 
 await run('narrow detail has a focused single surface and Back preserves query/scroll/row',async()=>{const h=await readyHarness();h.context.innerWidth=500;h.elements.get('filter-query').value='preserved draft';const row=h.elements.get('item-results').children[0].children[0];await h.app.selectItem(initialItem,row);assert.equal(h.elements.get('item-results').hidden,true);assert.equal(h.elements.get('filter-form').hidden,true);assert.equal(h.elements.get('record-detail').focused,true);const back=h.elements.get('record-detail').children[0];assert.equal(back.textContent,'返回结果');await back.click();assert.equal(h.elements.get('item-results').hidden,false);assert.equal(h.elements.get('filter-form').hidden,false);assert.equal(h.elements.get('filter-query').value,'preserved draft');assert.equal(row.focused,true);assert.equal(h.context.window.lastScroll,136);});
+
+await run('Source observation periods are sent as structured bounds and cleared independently of saved-date controls',async()=>{const h=await readyHarness();h.elements.get('observation-grain').value='year';h.elements.get('observation-from').value='2020';h.elements.get('observation-to').value='2025';h.elements.get('saved-from').value='2026-10-08';await h.app.loadItems();const browse=new URL(h.calls.at(-1).path,'https://private.example');assert.equal(browse.searchParams.get('observation_grain'),'year');assert.equal(browse.searchParams.get('observation_from'),'2020');assert.equal(browse.searchParams.get('observation_to'),'2025');assert.equal(browse.searchParams.get('saved_from'),'2026-10-08');h.elements.get('filter-query').value='GDP';await h.app.loadItems();const search=JSON.parse(h.calls.at(-1).init.body);assert.equal(search.observation_grain,'year');assert.equal(search.observation_to,'2025');assert.equal(search.saved_from,'2026-10-08');await h.elements.get('clear-filter').click();for(const id of ['observation-grain','observation-from','observation-to','saved-from'])assert.equal(h.elements.get(id).value,'');});

@@ -1,0 +1,528 @@
+{
+  "kind": "four_retained_actual_WorldBank_refresh_label_examples",
+  "source_mode": "genuine_acquisition_saved_bytes_only",
+  "items": [
+    {
+      "metadata": {
+        "category": "economy",
+        "content_depth": "structured_facts",
+        "entities": [],
+        "event_country": null,
+        "event_time": null,
+        "evidence_url": "https://api.worldbank.org/v2/country/all/indicator/NY.GDP.MKTP.CD",
+        "facts": {
+          "accounting_period_alignment": "Provider annual year label; country-specific calendar/fiscal alignment not independently verified",
+          "data_origin_basis": "Actual retained official World Bank API response; Site admission is separate",
+          "geography": {
+            "basis": "source_provided_countryiso3code_matched_WorldBank_dimension",
+            "classification_time_basis": "Current retained dimension snapshot; not a reconstruction of historical membership/borders or sovereign recognition",
+            "kind": "aggregate",
+            "label": "Latin America & Caribbean",
+            "provided_iso3code_raw": "LCN",
+            "provider": "World Bank",
+            "provider_country_alias": "ZJ",
+            "provider_geography_id": "LCN",
+            "region_id": "NA",
+            "region_label": "Aggregates"
+          },
+          "indicator": "NY.GDP.MKTP.CD",
+          "indicator_label": "GDP (current US$)",
+          "methodology": {
+            "country_method_changes": "Not exposed per observation in this API slice; preserve revision/vintage context, do not assume comparable national-accounting methods",
+            "indicator_definition": "Nominal annual gross domestic product for the reporting economic territory; not inflation-adjusted or PPP",
+            "source_organizations": [
+              "Country official national statistics/central banks",
+              "OECD national accounts",
+              "World Bank staff estimates"
+            ],
+            "value_interpretation": "Changes can reflect price/FX/method revisions; no derived real-growth or risk inference"
+          },
+          "missingness": "source_numeric_value",
+          "observation_granularity": "year",
+          "observation_period": "2025",
+          "price_basis": "current_prices_not_constant_or_PPP",
+          "provider_display_decimals": 0,
+          "provider_status": null,
+          "publication_clock": "unknown; annual observation period is not publication or occurrence",
+          "record_kind": "statistical_observation",
+          "series_id": "worldbank:wdi:NY.GDP.MKTP.CD:LCN",
+          "unit": "current_USD",
+          "unit_basis": "Official GDP indicator definition explicitly states current United States dollars; source row unit may be blank",
+          "unit_scale": 1,
+          "value": 7395989651242.09,
+          "vintage": {
+            "dataset_last_updated_date": "2026-07-13",
+            "date_precision": "date_only_dataset_vintage_not_per_observation_update",
+            "historical_vintages_in_this_batch": false,
+            "per_observation_revision_time": null
+          }
+        },
+        "fetched_at": "2026-10-08T21:17:57.318020+00:00",
+        "first_seen_at": "2026-10-08T21:17:57.318020+00:00",
+        "ingested_at": null,
+        "location": null,
+        "location_basis": "unknown",
+        "published_at": null,
+        "short_summary": null,
+        "source_country": null,
+        "source_id": "stat_worldbank_gdp_annual",
+        "source_language": "en",
+        "source_license": "World Bank WDI GDP (NY.GDP.MKTP.CD), explicitly CC BY4.0; attribute World Bank and listed data providers, indicate transformations, retain dataset terms and no endorsement",
+        "source_updated_at": null,
+        "title": "GDP (current US$) — Latin America & Caribbean — 2025",
+        "upstream_id": "NY.GDP.MKTP.CD:LCN:2025",
+        "url": "https://data.worldbank.org/indicator/NY.GDP.MKTP.CD?locations=ZJ"
+      },
+      "run": {
+        "body_complete": true,
+        "bytes_read": 336109,
+        "completed_at": "2026-10-08T21:17:57.318034+00:00",
+        "coverage": {
+          "provider_all_geographies_completeness": false,
+          "request_role": "data",
+          "requested_period": [
+            "2020",
+            "2026"
+          ],
+          "requested_window": {
+            "end": "2026",
+            "grain": "year",
+            "start": "2020"
+          },
+          "returned_count": 1590,
+          "returned_years": [
+            "2020",
+            "2021",
+            "2022",
+            "2023",
+            "2024",
+            "2025"
+          ],
+          "rows_changed": 1590,
+          "rows_parsed": 1590,
+          "source_null_count": 89,
+          "truncated": false
+        },
+        "error": null,
+        "fetched_at": "2026-10-08T21:17:57.318020+00:00",
+        "http_status": 200,
+        "id": "racq_d01515a1c24452b1d07669ed3feb",
+        "job_id": "gdp.current",
+        "no_change": false,
+        "requested_url": "https://api.worldbank.org/v2/country/all/indicator/NY.GDP.MKTP.CD?source=2&date=2020:2026&format=json&per_page=5000&page=1",
+        "rows_changed": 1590,
+        "source_id": "stat_worldbank_gdp_annual",
+        "source_snapshot": {
+          "country_dimension_policy": "Retained approved classification; unknown source IDs/aliases fail; historical borders not reconstructed",
+          "dataset_vintage_date": "2026-07-13",
+          "indicator_metadata": {
+            "id": "NY.GDP.MKTP.CD",
+            "name": "GDP (current US$)",
+            "sourceNote": "Gross domestic product is the total income earned through the production of goods and services in an economic territory during an accounting period. It can be measured in three different ways: using either the expenditure approach, the income approach, or the production approach. This indicator is expressed in current prices, meaning no adjustment has been made to account for price changes over time. This indicator is expressed in United States dollars.",
+            "sourceOrganization": "Country official statistics, National Statistical Organizations and/or Central Banks;\nNational Accounts data files, Organisation for Economic Co-operation and Development (OECD);\nStaff estimates, World Bank (WB)",
+            "unit": ""
+          },
+          "metadata_witness_id": "racq_7590bac741e1f3304721f25a1ed5"
+        },
+        "started_at": "2026-10-08T21:17:52.110143+00:00",
+        "status": "succeeded",
+        "transport_mode": "genuine_acquisition",
+        "upstream_raw_sha256": "35d0a4aaf0d325df2d9ef7711df9cc634d22490b3389804ed4f9d40fe78343d1"
+      },
+      "content_hash": "ba3bc07d6e67da07410e4d165d192c8309e6efc62b2153751d01d0825e9ff00b",
+      "metadata_sha256": "8e74a3301bc9f00a56379bd6d4b545a37359c50e9264b953e9a3db2a77e15228",
+      "source_part_sha256": "0f72ec4928c7587cb15ad2088e4e7fd13f72b1406f15182d0603b5437f9fb41c"
+    },
+    {
+      "metadata": {
+        "category": "economy",
+        "content_depth": "structured_facts",
+        "entities": [],
+        "event_country": null,
+        "event_time": null,
+        "evidence_url": "https://api.worldbank.org/v2/country/all/indicator/NY.GDP.MKTP.CD",
+        "facts": {
+          "accounting_period_alignment": "Provider annual year label; country-specific calendar/fiscal alignment not independently verified",
+          "data_origin_basis": "Actual retained official World Bank API response; Site admission is separate",
+          "geography": {
+            "basis": "source_provided_countryiso3code_matched_WorldBank_dimension",
+            "classification_time_basis": "Current retained dimension snapshot; not a reconstruction of historical membership/borders or sovereign recognition",
+            "kind": "aggregate",
+            "label": "Sub-Saharan Africa",
+            "provided_iso3code_raw": "SSF",
+            "provider": "World Bank",
+            "provider_country_alias": "ZG",
+            "provider_geography_id": "SSF",
+            "region_id": "NA",
+            "region_label": "Aggregates"
+          },
+          "indicator": "NY.GDP.MKTP.CD",
+          "indicator_label": "GDP (current US$)",
+          "methodology": {
+            "country_method_changes": "Not exposed per observation in this API slice; preserve revision/vintage context, do not assume comparable national-accounting methods",
+            "indicator_definition": "Nominal annual gross domestic product for the reporting economic territory; not inflation-adjusted or PPP",
+            "source_organizations": [
+              "Country official national statistics/central banks",
+              "OECD national accounts",
+              "World Bank staff estimates"
+            ],
+            "value_interpretation": "Changes can reflect price/FX/method revisions; no derived real-growth or risk inference"
+          },
+          "missingness": "source_numeric_value",
+          "observation_granularity": "year",
+          "observation_period": "2025",
+          "price_basis": "current_prices_not_constant_or_PPP",
+          "provider_display_decimals": 0,
+          "provider_status": null,
+          "publication_clock": "unknown; annual observation period is not publication or occurrence",
+          "record_kind": "statistical_observation",
+          "series_id": "worldbank:wdi:NY.GDP.MKTP.CD:SSF",
+          "unit": "current_USD",
+          "unit_basis": "Official GDP indicator definition explicitly states current United States dollars; source row unit may be blank",
+          "unit_scale": 1,
+          "value": 2211221046102.8,
+          "vintage": {
+            "dataset_last_updated_date": "2026-07-13",
+            "date_precision": "date_only_dataset_vintage_not_per_observation_update",
+            "historical_vintages_in_this_batch": false,
+            "per_observation_revision_time": null
+          }
+        },
+        "fetched_at": "2026-10-08T21:17:57.318020+00:00",
+        "first_seen_at": "2026-10-08T21:17:57.318020+00:00",
+        "ingested_at": null,
+        "location": null,
+        "location_basis": "unknown",
+        "published_at": null,
+        "short_summary": null,
+        "source_country": null,
+        "source_id": "stat_worldbank_gdp_annual",
+        "source_language": "en",
+        "source_license": "World Bank WDI GDP (NY.GDP.MKTP.CD), explicitly CC BY4.0; attribute World Bank and listed data providers, indicate transformations, retain dataset terms and no endorsement",
+        "source_updated_at": null,
+        "title": "GDP (current US$) — Sub-Saharan Africa — 2025",
+        "upstream_id": "NY.GDP.MKTP.CD:SSF:2025",
+        "url": "https://data.worldbank.org/indicator/NY.GDP.MKTP.CD?locations=ZG"
+      },
+      "run": {
+        "body_complete": true,
+        "bytes_read": 336109,
+        "completed_at": "2026-10-08T21:17:57.318034+00:00",
+        "coverage": {
+          "provider_all_geographies_completeness": false,
+          "request_role": "data",
+          "requested_period": [
+            "2020",
+            "2026"
+          ],
+          "requested_window": {
+            "end": "2026",
+            "grain": "year",
+            "start": "2020"
+          },
+          "returned_count": 1590,
+          "returned_years": [
+            "2020",
+            "2021",
+            "2022",
+            "2023",
+            "2024",
+            "2025"
+          ],
+          "rows_changed": 1590,
+          "rows_parsed": 1590,
+          "source_null_count": 89,
+          "truncated": false
+        },
+        "error": null,
+        "fetched_at": "2026-10-08T21:17:57.318020+00:00",
+        "http_status": 200,
+        "id": "racq_d01515a1c24452b1d07669ed3feb",
+        "job_id": "gdp.current",
+        "no_change": false,
+        "requested_url": "https://api.worldbank.org/v2/country/all/indicator/NY.GDP.MKTP.CD?source=2&date=2020:2026&format=json&per_page=5000&page=1",
+        "rows_changed": 1590,
+        "source_id": "stat_worldbank_gdp_annual",
+        "source_snapshot": {
+          "country_dimension_policy": "Retained approved classification; unknown source IDs/aliases fail; historical borders not reconstructed",
+          "dataset_vintage_date": "2026-07-13",
+          "indicator_metadata": {
+            "id": "NY.GDP.MKTP.CD",
+            "name": "GDP (current US$)",
+            "sourceNote": "Gross domestic product is the total income earned through the production of goods and services in an economic territory during an accounting period. It can be measured in three different ways: using either the expenditure approach, the income approach, or the production approach. This indicator is expressed in current prices, meaning no adjustment has been made to account for price changes over time. This indicator is expressed in United States dollars.",
+            "sourceOrganization": "Country official statistics, National Statistical Organizations and/or Central Banks;\nNational Accounts data files, Organisation for Economic Co-operation and Development (OECD);\nStaff estimates, World Bank (WB)",
+            "unit": ""
+          },
+          "metadata_witness_id": "racq_7590bac741e1f3304721f25a1ed5"
+        },
+        "started_at": "2026-10-08T21:17:52.110143+00:00",
+        "status": "succeeded",
+        "transport_mode": "genuine_acquisition",
+        "upstream_raw_sha256": "35d0a4aaf0d325df2d9ef7711df9cc634d22490b3389804ed4f9d40fe78343d1"
+      },
+      "content_hash": "b16390efbbc40e5f0a732a076c8ad84c992e2a7e9a03c3bb0a3a03beb809002f",
+      "metadata_sha256": "dc2de378065115ef032d0b1293c57fdad992365765b4868176f89c880ac50242",
+      "source_part_sha256": "be979a6ca4b5ec3e4bbbfa8a30231cc0f73f2b38ffd1ebb26f393695753ea327"
+    },
+    {
+      "metadata": {
+        "category": "economy",
+        "content_depth": "structured_facts",
+        "entities": [],
+        "event_country": null,
+        "event_time": null,
+        "evidence_url": "https://api.worldbank.org/v2/country/all/indicator/SL.UEM.TOTL.ZS",
+        "facts": {
+          "accounting_period_alignment": "Provider annual label; country-specific reference/calendar/fiscal alignment unverified",
+          "country_model_method_changes": "Not supplied per observation; modeled estimates and revisions may change",
+          "data_origin_basis": "Actual retained official World Bank API response; Site admission is separate",
+          "definition": "Share of labor force without work, available for work and seeking employment",
+          "domain": "employment",
+          "estimate_basis": "modeled_ILO_estimate",
+          "geography": {
+            "basis": "source_provided_countryiso3code_matched_WorldBank_dimension",
+            "classification_time_basis": "Current retained dimension snapshot; historical borders/group membership not reconstructed",
+            "kind": "aggregate",
+            "label": "Latin America & Caribbean",
+            "provided_iso3code_raw": "LCN",
+            "provider": "World Bank",
+            "provider_country_alias": "ZJ",
+            "provider_geography_id": "LCN",
+            "region_id": "NA",
+            "region_label": "Aggregates"
+          },
+          "indicator": "SL.UEM.TOTL.ZS",
+          "indicator_label": "Unemployment, total (% of total labor force) (modeled ILO estimate)",
+          "metadata_date_accessed_semantics": "Date accessed stated in exact indicator metadata; not model-release/publication/event time",
+          "missingness": "source_numeric_value",
+          "model_release_vintage": null,
+          "observation_granularity": "year",
+          "observation_period": "2025",
+          "original_provider": "ILO Modelled Estimates database (ILOEST), International Labour Organization / ILOSTAT",
+          "provider_display_decimals": 1,
+          "provider_metadata_date_accessed": "2026-01-17",
+          "provider_status": null,
+          "publication_clock": "unknown; annual observation label is not publication or occurrence",
+          "record_kind": "statistical_observation",
+          "reference_population": "Total labor force; not total population, unemployed headcount or individual talent",
+          "series_id": "worldbank:wdi:SL.UEM.TOTL.ZS:LCN",
+          "unit": "percent_of_total_labor_force",
+          "unit_basis": "Exact indicator metadata label defines percent of total labor force; row unit may be blank",
+          "unit_scale": 1,
+          "value": 5.45907691012021,
+          "value_interpretation": "Annual modeled labor aggregate; no real-time layoff, firm risk or person-level inference",
+          "vintage": {
+            "dataset_last_updated_date": "2026-07-13",
+            "date_precision": "date_only_dataset_vintage_not_per_observation_update",
+            "historical_vintages_in_this_batch": false,
+            "per_observation_revision_time": null
+          }
+        },
+        "fetched_at": "2026-10-08T21:18:20.470978+00:00",
+        "first_seen_at": "2026-10-08T21:18:20.470978+00:00",
+        "ingested_at": null,
+        "location": null,
+        "location_basis": "unknown",
+        "published_at": null,
+        "short_summary": null,
+        "source_country": null,
+        "source_id": "stat_worldbank_unemployment_ilo_annual",
+        "source_language": "en",
+        "source_license": "World Bank WDI total unemployment (SL.UEM.TOTL.ZS), explicitly CC BY4.0; attribute World Bank and ILOSTAT/ILOEST, indicate normalization, retain dataset terms and no endorsement",
+        "source_updated_at": null,
+        "title": "Modeled unemployment (% of labor force) — Latin America & Caribbean — 2025",
+        "upstream_id": "SL.UEM.TOTL.ZS:LCN:2025",
+        "url": "https://data.worldbank.org/indicator/SL.UEM.TOTL.ZS?locations=ZJ"
+      },
+      "run": {
+        "body_complete": true,
+        "bytes_read": 402927,
+        "completed_at": "2026-10-08T21:18:20.470993+00:00",
+        "coverage": {
+          "provider_all_geographies_completeness": false,
+          "request_role": "data",
+          "requested_period": [
+            "2020",
+            "2026"
+          ],
+          "requested_window": {
+            "end": "2026",
+            "grain": "year",
+            "start": "2020"
+          },
+          "returned_count": 1590,
+          "returned_years": [
+            "2020",
+            "2021",
+            "2022",
+            "2023",
+            "2024",
+            "2025"
+          ],
+          "rows_changed": 1590,
+          "rows_parsed": 1590,
+          "source_null_count": 200,
+          "truncated": false
+        },
+        "error": null,
+        "fetched_at": "2026-10-08T21:18:20.470978+00:00",
+        "http_status": 200,
+        "id": "racq_9541a9baa9cbdce1f5dc9c92e7e1",
+        "job_id": "employment.current",
+        "no_change": false,
+        "requested_url": "https://api.worldbank.org/v2/country/all/indicator/SL.UEM.TOTL.ZS?source=2&date=2020:2026&format=json&per_page=5000&page=1",
+        "rows_changed": 1590,
+        "source_id": "stat_worldbank_unemployment_ilo_annual",
+        "source_snapshot": {
+          "country_dimension_policy": "Retained approved classification; unknown source IDs/aliases fail; historical borders not reconstructed",
+          "dataset_vintage_date": "2026-07-13",
+          "indicator_metadata": {
+            "id": "SL.UEM.TOTL.ZS",
+            "name": "Unemployment, total (% of total labor force) (modeled ILO estimate)",
+            "sourceNote": "Unemployment refers to the share of the labor force that is without work but available for and seeking employment.",
+            "sourceOrganization": "ILO Modelled Estimates database (ILOEST), International Labour Organization (ILO), uri: https://ilostat.ilo.org/data/bulk/, publisher: ILOSTAT, type: external database, date accessed: January 17, 2026",
+            "unit": ""
+          },
+          "metadata_witness_id": "racq_fa2431d8f8035ea6522c807fec11"
+        },
+        "started_at": "2026-10-08T21:18:13.935732+00:00",
+        "status": "succeeded",
+        "transport_mode": "genuine_acquisition",
+        "upstream_raw_sha256": "4eb7989ef6eeb3a4cecd1374629bdfca5e3779e629930b468e7804352d540ff5"
+      },
+      "content_hash": "f3b683eb83d17a765c9573a1b5ad691a9d6cae45b4fd3366b0a06ccc9f973faf",
+      "metadata_sha256": "9c17292410c872607fcf4420d2cb3221eb55490211e609cbf37e21116e09baff",
+      "source_part_sha256": "4620bcca34140df911f2bd2e383c46a8416ba3d84adb8b30120418cc1da68582"
+    },
+    {
+      "metadata": {
+        "category": "economy",
+        "content_depth": "structured_facts",
+        "entities": [],
+        "event_country": null,
+        "event_time": null,
+        "evidence_url": "https://api.worldbank.org/v2/country/all/indicator/SL.UEM.TOTL.ZS",
+        "facts": {
+          "accounting_period_alignment": "Provider annual label; country-specific reference/calendar/fiscal alignment unverified",
+          "country_model_method_changes": "Not supplied per observation; modeled estimates and revisions may change",
+          "data_origin_basis": "Actual retained official World Bank API response; Site admission is separate",
+          "definition": "Share of labor force without work, available for work and seeking employment",
+          "domain": "employment",
+          "estimate_basis": "modeled_ILO_estimate",
+          "geography": {
+            "basis": "source_provided_countryiso3code_matched_WorldBank_dimension",
+            "classification_time_basis": "Current retained dimension snapshot; historical borders/group membership not reconstructed",
+            "kind": "aggregate",
+            "label": "Sub-Saharan Africa",
+            "provided_iso3code_raw": "SSF",
+            "provider": "World Bank",
+            "provider_country_alias": "ZG",
+            "provider_geography_id": "SSF",
+            "region_id": "NA",
+            "region_label": "Aggregates"
+          },
+          "indicator": "SL.UEM.TOTL.ZS",
+          "indicator_label": "Unemployment, total (% of total labor force) (modeled ILO estimate)",
+          "metadata_date_accessed_semantics": "Date accessed stated in exact indicator metadata; not model-release/publication/event time",
+          "missingness": "source_numeric_value",
+          "model_release_vintage": null,
+          "observation_granularity": "year",
+          "observation_period": "2025",
+          "original_provider": "ILO Modelled Estimates database (ILOEST), International Labour Organization / ILOSTAT",
+          "provider_display_decimals": 1,
+          "provider_metadata_date_accessed": "2026-01-17",
+          "provider_status": null,
+          "publication_clock": "unknown; annual observation label is not publication or occurrence",
+          "record_kind": "statistical_observation",
+          "reference_population": "Total labor force; not total population, unemployed headcount or individual talent",
+          "series_id": "worldbank:wdi:SL.UEM.TOTL.ZS:SSF",
+          "unit": "percent_of_total_labor_force",
+          "unit_basis": "Exact indicator metadata label defines percent of total labor force; row unit may be blank",
+          "unit_scale": 1,
+          "value": 5.66118665705316,
+          "value_interpretation": "Annual modeled labor aggregate; no real-time layoff, firm risk or person-level inference",
+          "vintage": {
+            "dataset_last_updated_date": "2026-07-13",
+            "date_precision": "date_only_dataset_vintage_not_per_observation_update",
+            "historical_vintages_in_this_batch": false,
+            "per_observation_revision_time": null
+          }
+        },
+        "fetched_at": "2026-10-08T21:18:20.470978+00:00",
+        "first_seen_at": "2026-10-08T21:18:20.470978+00:00",
+        "ingested_at": null,
+        "location": null,
+        "location_basis": "unknown",
+        "published_at": null,
+        "short_summary": null,
+        "source_country": null,
+        "source_id": "stat_worldbank_unemployment_ilo_annual",
+        "source_language": "en",
+        "source_license": "World Bank WDI total unemployment (SL.UEM.TOTL.ZS), explicitly CC BY4.0; attribute World Bank and ILOSTAT/ILOEST, indicate normalization, retain dataset terms and no endorsement",
+        "source_updated_at": null,
+        "title": "Modeled unemployment (% of labor force) — Sub-Saharan Africa — 2025",
+        "upstream_id": "SL.UEM.TOTL.ZS:SSF:2025",
+        "url": "https://data.worldbank.org/indicator/SL.UEM.TOTL.ZS?locations=ZG"
+      },
+      "run": {
+        "body_complete": true,
+        "bytes_read": 402927,
+        "completed_at": "2026-10-08T21:18:20.470993+00:00",
+        "coverage": {
+          "provider_all_geographies_completeness": false,
+          "request_role": "data",
+          "requested_period": [
+            "2020",
+            "2026"
+          ],
+          "requested_window": {
+            "end": "2026",
+            "grain": "year",
+            "start": "2020"
+          },
+          "returned_count": 1590,
+          "returned_years": [
+            "2020",
+            "2021",
+            "2022",
+            "2023",
+            "2024",
+            "2025"
+          ],
+          "rows_changed": 1590,
+          "rows_parsed": 1590,
+          "source_null_count": 200,
+          "truncated": false
+        },
+        "error": null,
+        "fetched_at": "2026-10-08T21:18:20.470978+00:00",
+        "http_status": 200,
+        "id": "racq_9541a9baa9cbdce1f5dc9c92e7e1",
+        "job_id": "employment.current",
+        "no_change": false,
+        "requested_url": "https://api.worldbank.org/v2/country/all/indicator/SL.UEM.TOTL.ZS?source=2&date=2020:2026&format=json&per_page=5000&page=1",
+        "rows_changed": 1590,
+        "source_id": "stat_worldbank_unemployment_ilo_annual",
+        "source_snapshot": {
+          "country_dimension_policy": "Retained approved classification; unknown source IDs/aliases fail; historical borders not reconstructed",
+          "dataset_vintage_date": "2026-07-13",
+          "indicator_metadata": {
+            "id": "SL.UEM.TOTL.ZS",
+            "name": "Unemployment, total (% of total labor force) (modeled ILO estimate)",
+            "sourceNote": "Unemployment refers to the share of the labor force that is without work but available for and seeking employment.",
+            "sourceOrganization": "ILO Modelled Estimates database (ILOEST), International Labour Organization (ILO), uri: https://ilostat.ilo.org/data/bulk/, publisher: ILOSTAT, type: external database, date accessed: January 17, 2026",
+            "unit": ""
+          },
+          "metadata_witness_id": "racq_fa2431d8f8035ea6522c807fec11"
+        },
+        "started_at": "2026-10-08T21:18:13.935732+00:00",
+        "status": "succeeded",
+        "transport_mode": "genuine_acquisition",
+        "upstream_raw_sha256": "4eb7989ef6eeb3a4cecd1374629bdfca5e3779e629930b468e7804352d540ff5"
+      },
+      "content_hash": "52c19e79bfe2ab1b18fcb865141e15fe9eccddc0a3beeae6abadbeaa761ffc67",
+      "metadata_sha256": "6804e70c2868cac64e08e83f852a72e73e0b9bbde7ecc8f1c66e5d61ee5577b6",
+      "source_part_sha256": "0d9fd846f671143b26bde51556de4d0b4f67ff179f853bcaae092de7882c4e88"
+    }
+  ]
+}

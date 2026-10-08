@@ -1,9 +1,9 @@
 {
   "schema_version": "dormathon.clean-teammate-export.v1",
-  "source_commit": "77ee60dc345d80f931aef859a9351a75c5ff5aef",
-  "accepted_runtime_commit": "2eb04de6c2d3c8b2488f4431d73619a9bb053462",
+  "source_commit": "cf43a95e5f89be52961746cd7fb7cb5fc9665721",
+  "accepted_runtime_commit": "5cd53b53dbc7aff5dc16e1aea42457f54de7eea7",
   "data_intake_runtime_commit": "2eb04de6c2d3c8b2488f4431d73619a9bb053462",
-  "file_count": 808,
+  "file_count": 811,
   "files": [
     {
       "path": ".gitignore",
@@ -17,18 +17,18 @@
     },
     {
       "path": "PROJECT_STATUS.md",
-      "bytes": 7644,
-      "sha256": "61a9b26df1046700f0a777a79dac9f2e877b3aa7c67f70e6e2be7db42a827b5e"
+      "bytes": 8935,
+      "sha256": "08ca41fe4eeccf837736d7521dbcea3fccee92ceccc07ab67caae0e1e95acc37"
     },
     {
       "path": "README.md",
-      "bytes": 11134,
-      "sha256": "204f154c1ad0a1f77b6156f034e1fbf887c528fddd8be418a14e4e3f1f1d4855"
+      "bytes": 11251,
+      "sha256": "563dd882fa46529780a40201a029a53ce4cb8074d64f0c6d9cae64606177cf18"
     },
     {
       "path": "contracts/retrieval-v1.md",
-      "bytes": 18872,
-      "sha256": "9bac2d2d728c15f0f5d212e576d41a22c73bd705577201cec75e446ace495ec0"
+      "bytes": 20442,
+      "sha256": "bb3f322c3b000e8c112846fafeae3a74f88564f8588ea480434bae3c4b842a36"
     },
     {
       "path": "contracts/workspace-v1.md",
@@ -1461,9 +1461,19 @@
       "sha256": "016f93f0eb066152c12a4f1fe4f73c8a69398356bd53abbca44a6bf018b87bec"
     },
     {
+      "path": "docs/releases/SOURCE_PERIOD_FILTER_2026-10-08.json",
+      "bytes": 3372,
+      "sha256": "7f60ff043729f5cdf821480a73d1a25bf2d9afc8da60e73dbc60540e418a1139"
+    },
+    {
       "path": "docs/releases/TRADE_REMEDY_2026-10-08.json",
       "bytes": 2857,
       "sha256": "f73f1354c4084cadcb30951c4f22c0cab6e11e6a0c3858fbb7ed8256bde308df"
+    },
+    {
+      "path": "drizzle.config.ts",
+      "bytes": 133,
+      "sha256": "39966f3818721bb8bbc31f33ed0eeeaa35878d81a330127a1936b1b334e39ab8"
     },
     {
       "path": "drizzle/0000_broad_marvel_apes.sql",
@@ -1529,11 +1539,6 @@
       "path": "drizzle/meta/_journal.json",
       "bytes": 930,
       "sha256": "f14fe5155b97e3aefc38371b9cdf9c39423c772b9e4058798d8600e6b8ac914b"
-    },
-    {
-      "path": "drizzle.config.ts",
-      "bytes": 133,
-      "sha256": "39966f3818721bb8bbc31f33ed0eeeaa35878d81a330127a1936b1b334e39ab8"
     },
     {
       "path": "lib/daily-collector.mjs",
@@ -3252,8 +3257,8 @@
     },
     {
       "path": "static/collector-index.html",
-      "bytes": 7214,
-      "sha256": "8d77ca22e1721c90a2039a9228ac555654398870222bc5516907f9181ac3289d"
+      "bytes": 8023,
+      "sha256": "4566039996293df0cfdf0b53a96cc78e660cdd03a22bfc2a5299761521cb7fbb"
     },
     {
       "path": "static/collector-workbench.css",
@@ -3262,8 +3267,8 @@
     },
     {
       "path": "static/collector-workbench.js",
-      "bytes": 31574,
-      "sha256": "c802bb17753403bdf7d52002b2bf55d45b3a12dafeea3b7a7877b57c97d3365a"
+      "bytes": 31962,
+      "sha256": "62cde116806aace18d6f0d3dd0993930cfa0052f9c93729848701ece01f66d2d"
     },
     {
       "path": "tests/built-history-boundary.test.mjs",
@@ -3277,8 +3282,8 @@
     },
     {
       "path": "tests/collector-workbench-behavior.test.mjs",
-      "bytes": 20559,
-      "sha256": "7c386ecd2509ebf26f68e7c4a055e019d93681bed267223808ea4b09d692e543"
+      "bytes": 21856,
+      "sha256": "0bd34dd6aff32fd47e90f9b094818fd02fed29300bfd2f33877eae509a57caf0"
     },
     {
       "path": "tests/collector-workbench.test.mjs",
@@ -3756,6 +3761,11 @@
       "sha256": "550b222694a3476f6370482ea1fe7daebdf751d2a06156fab0775569ffe41dc9"
     },
     {
+      "path": "tests/observation-period.test.mjs",
+      "bytes": 9237,
+      "sha256": "ec5b715c750941a383eca2c8161593c5652a0e1a2ecbbc552c84a9d057e86084"
+    },
+    {
       "path": "tests/operational-oracle.json",
       "bytes": 31997,
       "sha256": "795a7ab4e2a7cd87669e4050f09f918085f566224bf3f6f9d1016cc19bcbed1e"
@@ -3789,6 +3799,11 @@
       "path": "tests/refresh-snapshot-fixture.synthetic.json",
       "bytes": 30552,
       "sha256": "155234dab213a5c5f26e8c8b39d8d4f936da99812caee7dcefa5255d29a4859e"
+    },
+    {
+      "path": "tests/refresh-wb-label-fixture.json",
+      "bytes": 27013,
+      "sha256": "6df9f16125e720d0520989160c721a840755bfd13b9d3c40fbc29333faecc94d"
     },
     {
       "path": "tests/retrieval.test.mjs",
@@ -3842,8 +3857,8 @@
     },
     {
       "path": "tests/source-refresh.test.mjs",
-      "bytes": 16434,
-      "sha256": "1320fc2098d88d2a5c0ab4509017d6aebca49e04f72bcb40af8cdfd7141b7de5"
+      "bytes": 17735,
+      "sha256": "2134d1d1a3f59a627f5cc110a6a46260413c25eab3777731c6e31e12d1ffc24b"
     },
     {
       "path": "tests/statistical-context.test.mjs",
@@ -3962,8 +3977,8 @@
     },
     {
       "path": "worker/global-store.js",
-      "bytes": 28009,
-      "sha256": "85f289fbe7d37c51cff511f0d6ee30a40cb0ba4be368e6a901f44864ff6ee7ee"
+      "bytes": 28415,
+      "sha256": "bbe8068f2087e12da257bbe0f12bc69762b9f51b81b0e93554923bc718880b54"
     },
     {
       "path": "worker/history-validation.js",
@@ -3972,8 +3987,8 @@
     },
     {
       "path": "worker/index.js",
-      "bytes": 14651,
-      "sha256": "64046dae3ed93230b824105c1c0d145106e2126c13bf3992c8561b31665eb6f7"
+      "bytes": 14872,
+      "sha256": "069d8eee49c8c9b6e37e4946f97409fb21d69475c5f878aaa3393b6da2a0b923"
     },
     {
       "path": "worker/legal-validation.js",
@@ -4002,13 +4017,13 @@
     },
     {
       "path": "worker/refresh-validation.js",
-      "bytes": 26516,
-      "sha256": "4f0d81d3f521759823036d8986330d6a61782797c963f82927cd2e9c299ddfec"
+      "bytes": 26558,
+      "sha256": "1ba4fd6a891352b8cd40a1bd7c71166dd9b02e60a7adeb5569cb0f927eccceef"
     },
     {
       "path": "worker/retrieval.js",
-      "bytes": 20269,
-      "sha256": "da5d0f39f3b2739fac55480b4dd21882cfdf22e8472ccf1096f2248cd6e85fc5"
+      "bytes": 22887,
+      "sha256": "30e18c2339f62f3fafba6b771b84209d1184fd4c9a9957840761449e510a852d"
     },
     {
       "path": "worker/source-intake-validation.js",
@@ -4050,7 +4065,8 @@
     "credentials/environment/private config/owner business DB",
     "runtime/source HTTP bodies/SQLite/export files/cache/generated execution logs/dist",
     "retired presentation frontend/artwork",
-    "full external GDP/ILO/ECB/legal/trade/commodity bulk"
+    "full external GDP/ILO/ECB/legal/trade/commodity bulk",
+    "six-job foreground runtime/raw/SQLite/export parts and unadmitted US successor"
   ],
   "bulk_reference": {
     "prior_external_chunks": 433,
@@ -4076,6 +4092,10 @@
     "foreground_profile_sources": 7,
     "autonomous_daily": false,
     "automatic_sync": false,
-    "Windows_verified": false
+    "Windows_verified": false,
+    "six_additional_genuine_transport_requests": 10,
+    "six_job_local_versions_not_imported": 6095,
+    "US_original_atomic_failure_zero_versions": true,
+    "source_period_filter": "Explicit year/month/day inclusive metadata range, separate from first-seen clocks"
   }
 }
