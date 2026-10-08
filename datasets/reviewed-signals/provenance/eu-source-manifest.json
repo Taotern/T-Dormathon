@@ -1,0 +1,118 @@
+{
+  "schema_version": "dormathon.source-admission.v0.7",
+  "product_use_contract": "dormathon.product-use-source-admission.v0.8",
+  "sources": [
+    {
+      "id": "political_eu_council_releases_fr",
+      "name": "Conseil de l’Union européenne: communiqués de presse et déclarations (français)",
+      "provider_family": "org:eu-council-secretariat",
+      "endpoint": "https://www.consilium.europa.eu/fr/rss/pressreleases.ashx",
+      "official_url": "https://www.consilium.europa.eu/fr/about-site/rss/",
+      "format": "rss",
+      "category": "policy",
+      "source_country": null,
+      "source_language": "und",
+      "source_update_cadence": "Event-driven legislative, policy and meeting communications; no guaranteed daily release.",
+      "retention": "Feed retention undocumented; no complete lookback or withdrawal coverage guarantee.",
+      "version": "0.1.0",
+      "material_kind": "official_notice",
+      "coverage": {
+        "publisher_jurisdiction": null,
+        "language_edition": "fr",
+        "event_country": null,
+        "geographic_coverage_claim": "Bounded publisher release stream; no all-country or publisher-as-event-country inference."
+      },
+      "collection_cadence": "One root-authorized bounded acquisition; no recurring runtime",
+      "time_semantics": {
+        "publication": "Explicit timezone only; otherwise null with raw supplied calendar/date metadata preserved.",
+        "source_update": "Only explicit per-record updated/dateModified from source; feed generation time is separate.",
+        "event_time": null,
+        "reference_or_valid_period": "Only literal source title/date fields; no inferred occurrence time.",
+        "fetch": "Actual completed HTTPS acquisition timestamp; source Date/Last-Modified never replace it."
+      },
+      "rights": {
+        "status": "cleared_metadata_only",
+        "permission_basis": "Council copyright page permits reproduction with source acknowledgement, preserved meaning and clear indication of modifications. Third-party material and specially restricted material excluded. Title/link/date projection only.",
+        "primary_url": "https://www.consilium.europa.eu/fr/about-site/copyright/",
+        "allowed_fields": [
+          "title",
+          "url",
+          "upstream_id",
+          "published_at_raw",
+          "source_updated_at_raw"
+        ],
+        "attribution": "© Union européenne,2026. Source: Conseil de l’Union européenne; title/link/date metadata projection.",
+        "excluded_content": [
+          "description",
+          "summary",
+          "article_body",
+          "report_body",
+          "image",
+          "audio",
+          "video",
+          "contact",
+          "individual_profile",
+          "linked_content"
+        ],
+        "restrictions": [
+          "No altered or misleading meaning",
+          "No third-party or specially restricted material",
+          "No PRADO documents or media"
+        ],
+        "use_constraints": [
+          "No altered or misleading meaning",
+          "No third-party or specially restricted material",
+          "No PRADO documents or media"
+        ],
+        "permitted_use_scope": "team_product_metadata_or_facts",
+        "product_admission_eligible": true
+      },
+      "limits": {
+        "timeout_seconds": 20,
+        "max_body_bytes": 262144,
+        "max_items": 100,
+        "max_pages": 1,
+        "max_http_attempts": 2,
+        "origin_parallel_requests": 1,
+        "min_interval_between_attempts_seconds": 30,
+        "retry_policy": "No retry on denial/402/429/redirect/cap/wrong envelope; other retries require explicit receipt review."
+      },
+      "empty_policy": {
+        "empty_allowed": true,
+        "require_valid_feed_identity": true,
+        "reject_hidden_or_contradictory_records": true,
+        "empty_result": "Recorded from actual parsed count, not from this policy flag."
+      },
+      "adapter_path": "adapters/political_eu_council_releases_fr.mjs",
+      "adapter_export": [
+        "readEnvelope",
+        "project"
+      ],
+      "stage": "actually_collected",
+      "retrieval_allowed_text": {
+        "title": true,
+        "fact_paths": []
+      },
+      "collection_enabled": false,
+      "site_acceptance": false,
+      "recurring_operational": false,
+      "gaps": [
+        "No linked-body acquisition",
+        "Publisher language/jurisdiction does not identify event location",
+        "Removal from rolling feed does not imply retraction",
+        "Expected cadence is not guaranteed completeness",
+        "No semantic translation or business impact assessment",
+        "Feed declares French but retained headlines are English; actual content language is undetermined",
+        "Some supplied source-update dates may be in the future; clocks are retained and flagged"
+      ],
+      "rights_approved_research_candidate": true,
+      "receipt": "receipts/political_eu_council_releases_fr.json",
+      "requested_language": "fr",
+      "publisher_declared_language": "fr",
+      "language_note": "Feed declares fr, but retained source headlines are visibly English; no verified French-content coverage claimed and no translation performed.",
+      "ingestion_state": "candidate_actual_records_ready_for_independent_intake",
+      "content_depth": "headline_metadata"
+    }
+  ],
+  "prior_pins_unchanged": true
+}

@@ -1,0 +1,140 @@
+{
+  "source_id": "political_eu_council_releases_fr",
+  "requested_url": "https://www.consilium.europa.eu/fr/rss/pressreleases.ashx",
+  "started_at": "2026-10-08T10:39:28.438467+00:00",
+  "method": "GET",
+  "attempts": 1,
+  "timeout_seconds": 20,
+  "max_body_bytes": 262144,
+  "redirect_policy": "reject",
+  "authentication": "none",
+  "collection_kind": "single_bounded_public_response",
+  "daily_operational": false,
+  "http_status": 200,
+  "final_url": "https://www.consilium.europa.eu/fr/rss/pressreleases.ashx",
+  "content_type": "text/xml; charset=utf-8",
+  "response_date": "Thu, 08 Oct 2026 10:39:40 GMT",
+  "last_modified": "Thu, 08 Oct 2026 10:39:40 GMT",
+  "etag": null,
+  "bytes_read": 13624,
+  "body_sha256": "4c405baffbd3cdbd08ea9619f6a5a27d49b258422279da48be643c9c3d40dcde",
+  "truncated": false,
+  "fetch_status": "retrieved",
+  "declared_content_length": null,
+  "content_encoding": null,
+  "encoding": "utf-8",
+  "elapsed_seconds": 12.235,
+  "finished_at": "2026-10-08T10:39:40.673394+00:00",
+  "source_version": "0.1.0",
+  "adapter_version": "country-political-release-v0.2.1",
+  "normalized_count": 20,
+  "upstream_count_nullable": 20,
+  "empty_result": false,
+  "safe_projection_file_sha256": "5bfa91ac670f57ae7620c6e6f33f548f5d9a0f2beb9b435bec917f82f6eb643c",
+  "parse_status": "recognized_source_specific_feed",
+  "empty_allowed": true,
+  "selection": {
+    "policy": "Newest known per-record source-update/publication instant first; unknown times ordered by stable ID. No older records discarded solely for48hour age.",
+    "selected_count": 20,
+    "upstream_count": 20,
+    "selection_truncated": false
+  },
+  "first_last_source_times_nullable": {
+    "publication": [
+      null,
+      null
+    ],
+    "source_update": [
+      "2026-09-30T09:51:00.000Z",
+      "2026-10-08T12:20:00.000Z"
+    ]
+  },
+  "observed_published_in_last48h": 0,
+  "observed_source_updated_in_last48h": 5,
+  "unknown_publication_clock_count": 20,
+  "unknown_per_record_update_clock_count": 0,
+  "publisher_reported_language": "fr",
+  "request_started_at": "2026-10-08T10:39:28.438467+00:00",
+  "fetched_at": "2026-10-08T10:39:40.673394+00:00",
+  "http_status_nullable": 200,
+  "upstream_raw_sha256_nullable": "4c405baffbd3cdbd08ea9619f6a5a27d49b258422279da48be643c9c3d40dcde",
+  "bytes_read_nullable": 13624,
+  "body_cap": 262144,
+  "rights_basis": {
+    "status": "cleared_metadata_only",
+    "permission_basis": "Council copyright page permits reproduction with source acknowledgement, preserved meaning and clear indication of modifications. Third-party material and specially restricted material excluded. Title/link/date projection only.",
+    "primary_url": "https://www.consilium.europa.eu/fr/about-site/copyright/",
+    "allowed_fields": [
+      "title",
+      "url",
+      "upstream_id",
+      "published_at_raw",
+      "source_updated_at_raw"
+    ],
+    "attribution": "© Union européenne,2026. Source: Conseil de l’Union européenne; title/link/date metadata projection.",
+    "excluded_content": [
+      "description",
+      "summary",
+      "article_body",
+      "report_body",
+      "image",
+      "audio",
+      "video",
+      "contact",
+      "individual_profile",
+      "linked_content"
+    ],
+    "restrictions": [
+      "No altered or misleading meaning",
+      "No third-party or specially restricted material",
+      "No PRADO documents or media"
+    ]
+  },
+  "lookback_retention_gaps": [
+    "Feed retention undocumented; no complete lookback or withdrawal coverage guarantee.",
+    "No linked-body acquisition",
+    "Publisher language/jurisdiction does not identify event location",
+    "Removal from rolling feed does not imply retraction",
+    "Expected cadence is not guaranteed completeness",
+    "No semantic translation or business impact assessment"
+  ],
+  "cap_or_continuation_flags": {
+    "policy": "Newest known per-record source-update/publication instant first; unknown times ordered by stable ID. No older records discarded solely for48hour age.",
+    "selected_count": 20,
+    "upstream_count": 20,
+    "selection_truncated": false
+  },
+  "actual_covered_entities": [
+    "Conseil de l’Union européenne: communiqués de presse et déclarations (français)"
+  ],
+  "actual_subject_countries_basis": "Unknown; publisher jurisdiction only, not event geography.",
+  "failure_or_unknown_reason_nullable": null,
+  "site_acceptance": false,
+  "recurring_operational": false,
+  "expected_source_cadence": "Event-driven legislative, policy and meeting communications; no guaranteed daily release.",
+  "validity_gate": "No universal48hour expiry; reference/effective periods are source-specific and not inferred.",
+  "update_retraction_treatment": {
+    "stable_id_policy": "Source ID preferred; URL-derived identity stable across publication/title updates",
+    "source_update": "Preserve explicit per-record update clock and semantic changes",
+    "retraction": "Feed disappearance alone never tombstones or retracts an item; explicit provider retraction evidence required."
+  },
+  "downstream_use_constraints": null,
+  "language_mismatch_note": "Feed declares fr, but retained source headlines are visibly English; no verified French-content coverage claimed and no translation performed.",
+  "source_declared_language": "fr",
+  "source_language_verified": false,
+  "future_source_update_ids": [
+    "151031"
+  ],
+  "future_clock_policy": "Retain supplied future source-update value unchanged, flag it; exclude from past48h metrics and never treat it as event occurrence.",
+  "final_product_rights_status": "cleared_metadata_only",
+  "product_admission_eligible": true,
+  "product_ingestion_state": "candidate_actual_records_ready_for_independent_intake",
+  "product_use_scope": "team_product_metadata_or_facts",
+  "use_constraints": [
+    "No altered or misleading meaning",
+    "No third-party or specially restricted material",
+    "No PRADO documents or media"
+  ],
+  "parser_recovery_status": null,
+  "offline_projection_addendum": "Same retained factual whitelist; source rights scope/constraint/attribution copied into evidence metadata for downstream export. No extra source request."
+}

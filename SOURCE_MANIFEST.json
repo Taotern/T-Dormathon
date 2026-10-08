@@ -1,6 +1,7 @@
 {
-  "schema": "dormathon.clean-export.v3",
-  "source_commit": "297a4f47dd99805e64dba3bd934ecea3ebffbd3d",
+  "schema_version": "dormathon.clean-teammate-export.v1",
+  "source_commit": "dac3b927214524df782b3af84863a2cdca3881f5",
+  "accepted_runtime_commit": "f845922b133bb45588efb7d205cd78bcc6393ad7",
   "files": [
     {
       "path": ".gitignore",
@@ -13,24 +14,19 @@
       "sha256": "89228ffad8908b0bc4595728a1c9c80015e481e44730497f0c49142577e6250d"
     },
     {
-      "path": "CLEANUP_HANDOFF.json",
-      "bytes": 1570,
-      "sha256": "0bf1e881d7b45e153201babc9bc700ea4d27dc6059acddc32bb40afbcc1a642c"
-    },
-    {
       "path": "PROJECT_STATUS.md",
-      "bytes": 1682,
-      "sha256": "50fc68eae682184ef9fcf6ca03e37f3cfa188a1985382421b2a4fa166d3b45f8"
+      "bytes": 2721,
+      "sha256": "279a889d028e4af9566939e10796d04e3b6be45531273f7e5129cdc5b0805673"
     },
     {
       "path": "README.md",
-      "bytes": 7912,
-      "sha256": "509dcd1dc377c5a3f91e7194009b20059f328f1ef65a729f2b42604dcff2c688"
+      "bytes": 8373,
+      "sha256": "53c01e7c5edc0558fc1d80cfe4bcb8e0912d2ea866a457838f12504038d5ed07"
     },
     {
       "path": "contracts/retrieval-v1.md",
-      "bytes": 10156,
-      "sha256": "c4d502fffd0e2da33e6aa1e4d0b0392f12515d71376d47a4b6e510fccf64ea6d"
+      "bytes": 11107,
+      "sha256": "f4ac6c48a5af1ba75393912c595dc002716e5d6c74dffcaacc2d9670d4c4911a"
     },
     {
       "path": "contracts/workspace-v1.md",
@@ -76,6 +72,11 @@
       "path": "data/reviewed-acquisition-admission.json",
       "bytes": 162440,
       "sha256": "3ecc89f5cc9a433e4e06d1b266e519bef9ec7b7ce9e8125c7a6ea3396370b735"
+    },
+    {
+      "path": "data/reviewed-signal-admission.json",
+      "bytes": 91280,
+      "sha256": "7ff034fec2d6232c5d435672d14b50edb7c269fbce1eb4124b80907f92d72036"
     },
     {
       "path": "datasets/reviewed-acquisitions/README.md",
@@ -1113,9 +1114,184 @@
       "sha256": "ba1ffb102f9d47765060598644a0cb5795c0592c8ca3df621aafbf9b31f4a646"
     },
     {
+      "path": "datasets/reviewed-signals/README.md",
+      "bytes": 4103,
+      "sha256": "5402f02a573f2f48f49961901d8e0ef9e98ff9060d840badcfa0e521eb0d9546"
+    },
+    {
+      "path": "datasets/reviewed-signals/chunks/enterprise_notice_twse-0000.json",
+      "bytes": 129173,
+      "sha256": "903b8fbfa344a4851b93123e4f0b0562819ee30966df2dfa7e1523a9b2c3fe5b"
+    },
+    {
+      "path": "datasets/reviewed-signals/chunks/enterprise_notice_twse-0001.json",
+      "bytes": 56629,
+      "sha256": "9cf325a38471b823e5abc855527f5cdfbe81b62a7c923734bc31650b3ada7865"
+    },
+    {
+      "path": "datasets/reviewed-signals/chunks/political_eu_council_releases_fr-0000.json",
+      "bytes": 60794,
+      "sha256": "46529dd489cb2c49e02ce7c25e2aad5ba44f732a2f313747625e54d1ce03cce4"
+    },
+    {
+      "path": "datasets/reviewed-signals/chunks/stat_twse_monthly_revenue-0000.json",
+      "bytes": 203456,
+      "sha256": "1400c1269d5c55b385217bb8a1f30b374e6d7ad78f4190cba7597cf3de5579b0"
+    },
+    {
+      "path": "datasets/reviewed-signals/chunks/stat_twse_monthly_revenue-0001.json",
+      "bytes": 202974,
+      "sha256": "4e305dc35a4d58aa57911b96b51662b68e94a5310f0f2af9420ed903369f8e4c"
+    },
+    {
+      "path": "datasets/reviewed-signals/chunks/stat_twse_monthly_revenue-0002.json",
+      "bytes": 203288,
+      "sha256": "3b6bb23c9673442dca00273a642e8385c50723415ca9954d0615a7f5c6294442"
+    },
+    {
+      "path": "datasets/reviewed-signals/chunks/stat_twse_monthly_revenue-0003.json",
+      "bytes": 203369,
+      "sha256": "2a43f7e6eac566934b95afd17a148dc3e1bb89099175a8230a899621e9a9fde0"
+    },
+    {
+      "path": "datasets/reviewed-signals/chunks/stat_twse_monthly_revenue-0004.json",
+      "bytes": 203614,
+      "sha256": "a6f2eabfd494ea850b86d52693e445b59d9c733f46e161f6dd2896d519549741"
+    },
+    {
+      "path": "datasets/reviewed-signals/chunks/stat_twse_monthly_revenue-0005.json",
+      "bytes": 203893,
+      "sha256": "32f2979623ecfd2f62aa911d5d786b6d9dee61fc62c86b75e54798ff6d5e63de"
+    },
+    {
+      "path": "datasets/reviewed-signals/chunks/stat_twse_monthly_revenue-0006.json",
+      "bytes": 203774,
+      "sha256": "42d752e28727b5b7fd1a55d35ff91ce06d1d0f1b549deaefabb129ffc94c06a7"
+    },
+    {
+      "path": "datasets/reviewed-signals/chunks/stat_twse_monthly_revenue-0007.json",
+      "bytes": 203478,
+      "sha256": "c966a05537aa6d637d5f0fa0bec59ff282d371ce88cf192879abca2caa948a1c"
+    },
+    {
+      "path": "datasets/reviewed-signals/chunks/stat_twse_monthly_revenue-0008.json",
+      "bytes": 203415,
+      "sha256": "794f389ed6c662631a950f24a30c24d3f395a0063e424056196a0229b20a5b00"
+    },
+    {
+      "path": "datasets/reviewed-signals/chunks/stat_twse_monthly_revenue-0009.json",
+      "bytes": 203795,
+      "sha256": "5547402d2b375a5258398c145eb35dac7b9790502d0a0b664d071eb4358b5d03"
+    },
+    {
+      "path": "datasets/reviewed-signals/chunks/stat_twse_monthly_revenue-0010.json",
+      "bytes": 203620,
+      "sha256": "ae446bfd4b4bd388a3768e0d1e99b98e00db8c3e4900152f21c5a41cc7902d69"
+    },
+    {
+      "path": "datasets/reviewed-signals/chunks/stat_twse_monthly_revenue-0011.json",
+      "bytes": 203350,
+      "sha256": "a97070c1b74f76080f20968de3dd7c45ffdb045c2055af85db3eb9cf23cc1edf"
+    },
+    {
+      "path": "datasets/reviewed-signals/chunks/stat_twse_monthly_revenue-0012.json",
+      "bytes": 203691,
+      "sha256": "a46fbdfe34a7238e43a5cd503c81bb358e80ff40579e375ad7cfba3b4f289dcb"
+    },
+    {
+      "path": "datasets/reviewed-signals/chunks/stat_twse_monthly_revenue-0013.json",
+      "bytes": 203453,
+      "sha256": "42ed8d4ceb39fccc01ef4b6f86b716b6757df32e35ed519473059e81daeec7b7"
+    },
+    {
+      "path": "datasets/reviewed-signals/chunks/stat_twse_monthly_revenue-0014.json",
+      "bytes": 203529,
+      "sha256": "a6c063609123343a899db284c48625ab2841dde248ee92da043dcd7a90a66b84"
+    },
+    {
+      "path": "datasets/reviewed-signals/chunks/stat_twse_monthly_revenue-0015.json",
+      "bytes": 203505,
+      "sha256": "d5c4bf46b8e468e400216ea7aa96ac6a75295b320205fdab034be4291ccf002a"
+    },
+    {
+      "path": "datasets/reviewed-signals/chunks/stat_twse_monthly_revenue-0016.json",
+      "bytes": 203493,
+      "sha256": "a253cf4abd4522cd9bb82ddfb1ef2905b1bf112104f6e287b9b105094c1e0483"
+    },
+    {
+      "path": "datasets/reviewed-signals/chunks/stat_twse_monthly_revenue-0017.json",
+      "bytes": 203597,
+      "sha256": "8cc37be7b7f5cf80d7587d50820aa55159271862bb23f8f67ea47aacb1edf157"
+    },
+    {
+      "path": "datasets/reviewed-signals/chunks/stat_twse_monthly_revenue-0018.json",
+      "bytes": 203427,
+      "sha256": "8accadf90f85442df36a2c20b02c43b466309b76d21b96539be7d144f2b63b2d"
+    },
+    {
+      "path": "datasets/reviewed-signals/chunks/stat_twse_monthly_revenue-0019.json",
+      "bytes": 203579,
+      "sha256": "0a18b9eeb221edd24eb525bebcd65f9ee7cbaea0047493b01880347f454067e9"
+    },
+    {
+      "path": "datasets/reviewed-signals/chunks/stat_twse_monthly_revenue-0020.json",
+      "bytes": 203578,
+      "sha256": "6097009e65648d85ad9a9243dc8365fc39280118f7552f4b910490ff6588e6d6"
+    },
+    {
+      "path": "datasets/reviewed-signals/chunks/stat_twse_monthly_revenue-0021.json",
+      "bytes": 146452,
+      "sha256": "68b3434503740e5cfe826e55c7588040635d718abddaff5340c36bd0f84428e8"
+    },
+    {
+      "path": "datasets/reviewed-signals/manifest.json",
+      "bytes": 7169,
+      "sha256": "c1d5e1097c253244e287b0825de3842185a4f9d06ec34919749bb205dbbb6ac4"
+    },
+    {
+      "path": "datasets/reviewed-signals/policies/admitted-signal-policies.json",
+      "bytes": 84016,
+      "sha256": "8537739e8e4f318044c71e0019a0eedb4a38299c6eb72f34a60ebcb67fb45c85"
+    },
+    {
+      "path": "datasets/reviewed-signals/provenance/eu-acquisition-receipt.json",
+      "bytes": 6134,
+      "sha256": "eed7118d8e3391c10ffa50d91a4d389c0a9814e732d93b56e9d9a4d7d4a5aae8"
+    },
+    {
+      "path": "datasets/reviewed-signals/provenance/eu-original-safe-projection.json",
+      "bytes": 69649,
+      "sha256": "5bfa91ac670f57ae7620c6e6f33f548f5d9a0f2beb9b435bec917f82f6eb643c"
+    },
+    {
+      "path": "datasets/reviewed-signals/provenance/eu-source-manifest.json",
+      "bytes": 5352,
+      "sha256": "707aac2d7e9c8f9fb43d201fdfd2fc040e21ff3d906e892523880264f39af12d"
+    },
+    {
+      "path": "datasets/reviewed-signals/provenance/twse-input-manifest.json",
+      "bytes": 63726,
+      "sha256": "297debb9889cb598633062afc4a195499da19ea02f41086d463f34a33fa5100a"
+    },
+    {
+      "path": "datasets/reviewed-signals/provenance/twse-semantic-hash-addendum.json",
+      "bytes": 1001,
+      "sha256": "3d3c090670f97f8e4d9822a8d87625d92bc5d405468ae16e0e6e9de4a9e1d0c5"
+    },
+    {
+      "path": "datasets/reviewed-signals/provenance/twse-source-manifest.json",
+      "bytes": 12747,
+      "sha256": "6474720e456b2120cf450ec9eae5d55e4ae830e9fd17bf4d30cd813e243949cc"
+    },
+    {
       "path": "db/schema.ts",
       "bytes": 8761,
       "sha256": "a70524ab5971e1c5d163d753c6275a5050f74ac496a13ddd12da7b1b86fe7e98"
+    },
+    {
+      "path": "docs/COVERAGE_2026-10-08.md",
+      "bytes": 7620,
+      "sha256": "b838e00dc42ad9cd6ef2e5148d4f7320de1faa07a70138e0c62f9fb398e3b0ca"
     },
     {
       "path": "docs/LOCAL_SNAPSHOT_HANDOFF.md",
@@ -1141,6 +1317,16 @@
       "path": "docs/provenance/local-collector-1.2-input-manifest.sha256",
       "bytes": 15927,
       "sha256": "c19350396fc525b91f181780d8286c75f64f88101eec49de139eecadd5417fda"
+    },
+    {
+      "path": "docs/releases/EU_TWSE_2026-10-08.json",
+      "bytes": 2452,
+      "sha256": "c9c2b764e604076dadc72bff2df67bbeca600750e8ddd3779863541e400c90cf"
+    },
+    {
+      "path": "drizzle.config.ts",
+      "bytes": 133,
+      "sha256": "39966f3818721bb8bbc31f33ed0eeeaa35878d81a330127a1936b1b334e39ab8"
     },
     {
       "path": "drizzle/0000_broad_marvel_apes.sql",
@@ -1206,11 +1392,6 @@
       "path": "drizzle/meta/_journal.json",
       "bytes": 930,
       "sha256": "f14fe5155b97e3aefc38371b9cdf9c39423c772b9e4058798d8600e6b8ac914b"
-    },
-    {
-      "path": "drizzle.config.ts",
-      "bytes": 133,
-      "sha256": "39966f3818721bb8bbc31f33ed0eeeaa35878d81a330127a1936b1b334e39ab8"
     },
     {
       "path": "lib/daily-collector.mjs",
@@ -1914,8 +2095,8 @@
     },
     {
       "path": "scripts/build.mjs",
-      "bytes": 2408,
-      "sha256": "00df6c7845ea7f53334dbf4e3c2c4d6bfbbeb706f05ff7d2e255cb6e7abf116e"
+      "bytes": 2534,
+      "sha256": "d7000d06a37962f7ac376d2d3d284122c4984ab26a1157606acbec4eb673492f"
     },
     {
       "path": "scripts/build.sh",
@@ -2004,8 +2185,8 @@
     },
     {
       "path": "scripts/verify-offline-pipeline.mjs",
-      "bytes": 2039,
-      "sha256": "4b9e0827fbc6f687b6f75574f18fac778fb672b0487e0da489f3723cb4d21d0a"
+      "bytes": 2163,
+      "sha256": "fd763a6257317ffa50fc27ef45173c91e4278349df3f1b1533cf667566ad0209"
     },
     {
       "path": "static/collector-index.html",
@@ -2014,13 +2195,13 @@
     },
     {
       "path": "static/collector-workbench.css",
-      "bytes": 5248,
-      "sha256": "3fd96c0ec13bdf0ea7575b3c2afd32f9da1a48baa1b6a94fd57235c25fce6185"
+      "bytes": 5478,
+      "sha256": "a8f806bd274161c18dae519d26f2318e8c0e0d30c7f451265adb1f13331ed30a"
     },
     {
       "path": "static/collector-workbench.js",
-      "bytes": 20395,
-      "sha256": "5d1597806223e51c899bd0804eebcdbc52a229d4583872432abe663cc38ec018"
+      "bytes": 23243,
+      "sha256": "d9dc0c19c61f8b0e15633e228e931e1ba71d0feeee01ee8e2c660456ea603328"
     },
     {
       "path": "tests/clean-source-export.test.mjs",
@@ -2029,8 +2210,8 @@
     },
     {
       "path": "tests/collector-workbench-behavior.test.mjs",
-      "bytes": 16925,
-      "sha256": "3c3954aac20e503685e3d25c69ed1ae6695739e0f240ea938f237434c03b2e8e"
+      "bytes": 18875,
+      "sha256": "bd5b2b6dbaa674a8a7816819f9248ead57cef1b7876e698c5f90bf5c7293dc6c"
     },
     {
       "path": "tests/collector-workbench.test.mjs",
@@ -2543,6 +2724,11 @@
       "sha256": "4dd2eb6200b0da28b87510be8ca9a680764e5b2bc9051f1f87169cf239888ae2"
     },
     {
+      "path": "tests/reviewed-signals.test.mjs",
+      "bytes": 8710,
+      "sha256": "9622a0030d9dc991c7ff852db8f9d58a910c9e4004956df8541e53c1553d6171"
+    },
+    {
       "path": "tests/runtime-edges.test.mjs",
       "bytes": 5322,
       "sha256": "50b2ed035438493a40f41a450a38f47928f74c2dae3170b8c0cff7d6cabe8076"
@@ -2684,18 +2870,18 @@
     },
     {
       "path": "worker/retrieval.js",
-      "bytes": 13670,
-      "sha256": "c43b06e2e52b36f89ec002f2f3772703626967e4eff02d923c61bbebab0dcbfd"
+      "bytes": 13972,
+      "sha256": "85ea4d0b5121fa79b68b9f84a895b9722c85300a72e1536bbc24965e0aaaeb47"
     },
     {
       "path": "worker/source-intake-validation.js",
-      "bytes": 6294,
-      "sha256": "9f369b55738d34b660bc5c3d01af9d0012aaa11aa11c156680a795993762aada"
+      "bytes": 11228,
+      "sha256": "79301b91e6caa6263216b942108dd3afdab60f58ba1f95af21f26200359497dc"
     },
     {
       "path": "worker/source-intake.js",
-      "bytes": 9461,
-      "sha256": "cea9ff004129b374819ddeb05366a0a79b0f2804273b183a462ddd6a0b989bb4"
+      "bytes": 10386,
+      "sha256": "eecbbf01be46f3c37b8f56328f78ff5efd33482edbceedeb3f47414bad7009f9"
     },
     {
       "path": "worker/store.js",
@@ -2708,5 +2894,23 @@
       "sha256": "d6bdda2a95aac2a35c1a7db542d0a07e5efd855423bfe96da2ed7a50f904116a"
     }
   ],
-  "private_state_included": false
+  "file_count": 578,
+  "exclusions": [
+    ".git",
+    "dist",
+    "worker/generated.js",
+    "node_modules",
+    "credentials",
+    "local private config",
+    "SQLite/runtime state",
+    "provider raw article bodies",
+    "internal QA ledgers",
+    "old frontend"
+  ],
+  "includes": [
+    "current ordinary GUI/backend/migrations",
+    "old and incrementally admitted safe public datasets/policy/provenance",
+    "single current local collector and exact completeness manifests",
+    "reproducible tests/rights/contracts/docs"
+  ]
 }

@@ -1,0 +1,263 @@
+{
+  "schema_version": "dormathon.twse-incremental-source-admission.v0.8.0",
+  "prepared_at": "2026-10-08T10:52:23.479486+00:00",
+  "previous_pins_unchanged": true,
+  "source_family_count": 1,
+  "source_id_count": 2,
+  "sources": [
+    {
+      "id": "stat_twse_monthly_revenue",
+      "version": "0.8.0",
+      "name": "TWSE issuer-reported monthly operating revenue",
+      "provider_family": "TWSE",
+      "endpoint": "https://openapi.twse.com.tw/v1/opendata/t187ap05_L",
+      "official_url": "https://data.gov.tw/dataset/18420",
+      "format": "json",
+      "category": "economy",
+      "source_country": "TW",
+      "source_language": "zh-Hant",
+      "material_kind": "statistical_observation",
+      "coverage": {
+        "scope": "One fixed source-qualified listed-issuer dataset snapshot; not global enterprise/news/risk coverage",
+        "retention": "Current provider snapshot only; no historical completeness promised",
+        "company_qualification": "No major-company or SME status inferred from dataset membership"
+      },
+      "source_update_cadence": "Provider metadata says annual for18420 / daily for18415; empirical payload periods recorded separately, no assumed SLA",
+      "collection_cadence": "single bounded acquisition; recurring not scheduled or operational",
+      "time_semantics": {
+        "source_table_date": "dataset generation calendar date only, not company publication time",
+        "report_period": "Monthly ROC period mapped to Gregorian year-month; no release instant",
+        "publication": "Notice date/localclock supplied; timezone not established, published_at null",
+        "event": "Notice fact-occurrence date stays separate, event_time null",
+        "acquisition": "Exact local request/fetched receipt clocks, never provider publication clocks"
+      },
+      "rights": {
+        "status": "cleared_structured_facts",
+        "permission_basis": "Taiwan Government Open Data License v1.0; exact official dataset18420/18415 notice. Section2.1 permits any-purpose products/services derivatives; section3.2 requires explicit providing-agency attribution. CC-BY4.0 compatible, no patent/trademark rights.",
+        "primary_url": "https://data.gov.tw/dataset/18420",
+        "license_url": "https://data.gov.tw/license",
+        "allowed_fields": [
+          "出表日期",
+          "資料年月",
+          "公司代號",
+          "公司名稱",
+          "產業別",
+          "營業收入-當月營收",
+          "營業收入-上月營收",
+          "營業收入-去年當月營收",
+          "營業收入-上月比較增減(%)",
+          "營業收入-去年同月增減(%)",
+          "累計營業收入-當月累計營收",
+          "累計營業收入-去年累計營收",
+          "累計營業收入-前期比較增減(%)"
+        ],
+        "attribution": "Financial Supervisory Commission Securities and Futures Bureau / TWSE, 2026, 上市公司每月營業收入彙總表, source dataset 18420; Open Government Data License v1.0 (https://data.gov.tw/license). Filtered structured metadata/facts; no provider endorsement.",
+        "excluded_content": [
+          "notice說明",
+          "monthly備註",
+          "contacts",
+          "tax identifiers",
+          "person/entity matching beyond supplied corporate issuer codes",
+          "full linked documents/articles",
+          "images/logos"
+        ],
+        "permitted_use_scope": "team_product_metadata_or_facts",
+        "product_admission_eligible": true,
+        "use_constraints": [
+          "Keep providing-agency attribution and licence link on records,exports and cited answers",
+          "Do not imply regulator/provider endorses source claims or Dormathon",
+          "Issuer-reported statements are not independent confirmation",
+          "No amount scaling until the exact primary dataset schema establishes unit; percentagefields have explicit%label",
+          "No annualization, FX conversion or risk inference",
+          "No mixed-source licence flattening"
+        ]
+      },
+      "limits": {
+        "max_body_bytes": 2097152,
+        "dimension_row_limit": 20000,
+        "safe_chunk_max_items": 100,
+        "safe_chunk_max_bytes": 262144,
+        "timeout_seconds": 30,
+        "redirects": "reject",
+        "max_http_requests_for_this_sub_batch": 3,
+        "parallel_sources": 2,
+        "justification": "Rootapprovedlicensedstructuredexception, two fixed endpoints; thirdsame-targetread solely for offline-tested exactsubjectkey repair; nofurtherretry"
+      },
+      "empty_policy": "Coherent recognized array[] legitimate; HTML/error/wrongroot/missingrequiredsubject rejects",
+      "adapter_export": "monthlyRevenue",
+      "stage": "actually_collected_pending_core_admission",
+      "gaps": [
+        "One Taiwan exchange/provider; not worldwide company coverage",
+        "No independent audit or downstream risk assessment",
+        "Report/snapshot/pub/event/acquisition dates remain distinct",
+        "No recurring or Site-direct fetch claim",
+        "Actual payload is report month2026-08 with source-table date2026-09-17; collection on2026-10-08 does not make it an October financial observation"
+      ],
+      "retrieval_allowed_text": [
+        "title",
+        "entities[].name",
+        "facts.issuer_name",
+        "facts.issuer_code",
+        "facts.report_period",
+        "facts.industry_label",
+        "facts.metrics[].field_name",
+        "facts.metrics[].raw_value"
+      ],
+      "retrieval_excluded_text": [
+        "rights",
+        "source_license",
+        "facts.claim_origin",
+        "facts.major_eligibility",
+        "facts.unit_status",
+        "facts.publication_time_semantics",
+        "facts.source_table_date_semantics",
+        "parser/gap/retention/licence boilerplate"
+      ],
+      "safe_projection": {
+        "sha256": "e981f0b3fe62e0401cd159d18e12c7d2cce082ee2e650bcb00d1af84e14e68f5",
+        "bytes": 567755
+      },
+      "semantic_hash_excluded_fields": [
+        "first_seen_at",
+        "fetched_at",
+        "ingested_at",
+        "facts.source_table_date",
+        "facts.source_table_date_raw"
+      ],
+      "collection_enabled": false,
+      "ingestion_state": "candidate_pending_core_immutable_review",
+      "recurring_state": "not_scheduled"
+    },
+    {
+      "id": "enterprise_notice_twse",
+      "version": "0.8.0",
+      "name": "TWSE filed issuer material-notice metadata",
+      "provider_family": "TWSE",
+      "endpoint": "https://openapi.twse.com.tw/v1/opendata/t187ap04_L",
+      "official_url": "https://data.gov.tw/dataset/18415",
+      "format": "json",
+      "category": "business",
+      "source_country": "TW",
+      "source_language": "zh-Hant",
+      "material_kind": "official_notice",
+      "coverage": {
+        "scope": "One fixed source-qualified listed-issuer dataset snapshot; not global enterprise/news/risk coverage",
+        "retention": "Current provider snapshot only; no historical completeness promised",
+        "company_qualification": "No major-company or SME status inferred from dataset membership"
+      },
+      "source_update_cadence": "Provider metadata says annual for18420 / daily for18415; empirical payload periods recorded separately, no assumed SLA",
+      "collection_cadence": "single bounded acquisition; recurring not scheduled or operational",
+      "time_semantics": {
+        "source_table_date": "dataset generation calendar date only, not company publication time",
+        "report_period": "Monthly ROC period mapped to Gregorian year-month; no release instant",
+        "publication": "Notice date/localclock supplied; timezone not established, published_at null",
+        "event": "Notice fact-occurrence date stays separate, event_time null",
+        "acquisition": "Exact local request/fetched receipt clocks, never provider publication clocks"
+      },
+      "rights": {
+        "status": "cleared_metadata_only",
+        "permission_basis": "Taiwan Government Open Data License v1.0; exact official dataset18420/18415 notice. Section2.1 permits any-purpose products/services derivatives; section3.2 requires explicit providing-agency attribution. CC-BY4.0 compatible, no patent/trademark rights.",
+        "primary_url": "https://data.gov.tw/dataset/18415",
+        "license_url": "https://data.gov.tw/license",
+        "allowed_fields": [
+          "出表日期",
+          "發言日期",
+          "發言時間",
+          "公司代號",
+          "公司名稱",
+          "主旨 ",
+          "符合條款",
+          "事實發生日"
+        ],
+        "attribution": "Financial Supervisory Commission Securities and Futures Bureau / TWSE, 2026, 上市公司每日重大訊息, source dataset 18415; Open Government Data License v1.0 (https://data.gov.tw/license). Filtered structured metadata/facts; no provider endorsement.",
+        "excluded_content": [
+          "notice說明",
+          "monthly備註",
+          "contacts",
+          "tax identifiers",
+          "person/entity matching beyond supplied corporate issuer codes",
+          "full linked documents/articles",
+          "images/logos"
+        ],
+        "permitted_use_scope": "team_product_metadata_or_facts",
+        "product_admission_eligible": true,
+        "use_constraints": [
+          "Keep providing-agency attribution and licence link on records,exports and cited answers",
+          "Do not imply regulator/provider endorses source claims or Dormathon",
+          "Issuer-reported statements are not independent confirmation",
+          "No amount scaling until the exact primary dataset schema establishes unit; percentagefields have explicit%label",
+          "No annualization, FX conversion or risk inference",
+          "No mixed-source licence flattening"
+        ]
+      },
+      "limits": {
+        "max_body_bytes": 2097152,
+        "dimension_row_limit": 20000,
+        "safe_chunk_max_items": 100,
+        "safe_chunk_max_bytes": 262144,
+        "timeout_seconds": 30,
+        "redirects": "reject",
+        "max_http_requests_for_this_sub_batch": 3,
+        "parallel_sources": 2,
+        "justification": "Rootapprovedlicensedstructuredexception, two fixed endpoints; thirdsame-targetread solely for offline-tested exactsubjectkey repair; nofurtherretry"
+      },
+      "empty_policy": "Coherent recognized array[] legitimate; HTML/error/wrongroot/missingrequiredsubject rejects",
+      "adapter_export": "materialNotices",
+      "stage": "actually_collected_pending_core_admission",
+      "gaps": [
+        "One Taiwan exchange/provider; not worldwide company coverage",
+        "No independent audit or downstream risk assessment",
+        "Report/snapshot/pub/event/acquisition dates remain distinct",
+        "No recurring or Site-direct fetch claim",
+        "No provider noticeID. Derivedkey includes issuer/rawpublicationclock/headline; corrections can produce newkeys and lineage is unknown"
+      ],
+      "retrieval_allowed_text": [
+        "title",
+        "entities[].name",
+        "facts.issuer_name",
+        "facts.issuer_code",
+        "facts.publication_date",
+        "facts.event_date",
+        "facts.conformity_clause"
+      ],
+      "retrieval_excluded_text": [
+        "rights",
+        "source_license",
+        "facts.claim_origin",
+        "facts.major_eligibility",
+        "facts.unit_status",
+        "facts.publication_time_semantics",
+        "facts.source_table_date_semantics",
+        "parser/gap/retention/licence boilerplate"
+      ],
+      "safe_projection": {
+        "sha256": "4859788272e1e13087640342fe7fbfb1ad9f1f129f84ec0f03f71b3a4dc7c3ec",
+        "bytes": 19226
+      },
+      "semantic_hash_excluded_fields": [
+        "first_seen_at",
+        "fetched_at",
+        "ingested_at",
+        "facts.source_table_date",
+        "facts.source_table_date_raw"
+      ],
+      "collection_enabled": false,
+      "ingestion_state": "candidate_pending_core_immutable_review",
+      "recurring_state": "not_scheduled"
+    }
+  ],
+  "rights_proof": {
+    "monthly_dataset": "https://data.gov.tw/dataset/18420",
+    "notice_dataset": "https://data.gov.tw/dataset/18415",
+    "license": "https://data.gov.tw/license",
+    "primary_license_sections": [
+      "2.1products/servicesanypurpose",
+      "3.2providingagencyattribution",
+      "4.2CCBY4compatible"
+    ]
+  },
+  "quarantined_company_release_batch": "../batch2-20261008/contracts/rights-quarantine-manifest.json",
+  "quarantined_company_release_product_count": 0,
+  "source_manifest_original_sha256": "9005bcb5582539bee690b18d3e1b7705ef2ceafb09100503386878c4f6cde3f8",
+  "projection_note": "Preserves source facts, rights and input hashes; nonportable research file locations and repair-log paths omitted. Not an executable acquisition adapter."
+}

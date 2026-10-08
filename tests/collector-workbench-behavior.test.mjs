@@ -7,7 +7,7 @@ import {fileURLToPath} from 'node:url';
 import {test} from 'node:test';
 const sourcePath=fileURLToPath(new URL('../static/collector-workbench.js',import.meta.url));
 const source=fs.readFileSync(sourcePath,'utf8');
-assert.equal(createHash('sha256').update(source).digest('hex'),'5d1597806223e51c899bd0804eebcdbc52a229d4583872432abe663cc38ec018','Rebind reviewed behavior tests only after intentional client changes');
+assert.equal(createHash('sha256').update(source).digest('hex'),'d9dc0c19c61f8b0e15633e228e931e1ba71d0feeee01ee8e2c660456ea603328','Rebind reviewed behavior tests only after intentional client changes');
 
 function deferred() {
   let resolve;
@@ -234,6 +234,25 @@ async function readyHarness(fetchOverride = null) {
 }
 
 async function run(name,fn){await test(name,fn);}
+
+await run('Actual incremental source details disclose report periods, unknown amount units and original-acquisition anomalies',async()=>{
+ const admission=JSON.parse(fs.readFileSync(new URL('../data/reviewed-signal-admission.json',import.meta.url),'utf8'));
+ const harness=await readyHarness((path)=>{
+  if(path.startsWith('/api/global/items?'))return response({items:[initialItem]});
+  if(path.startsWith('/api/global/evidence?'))return response(harness.evidence);
+  return response({});
+ });
+ for(const sourceId of ['stat_twse_monthly_revenue','enterprise_notice_twse','political_eu_council_releases_fr']){
+  const chunk=admission.chunks.find(c=>c.source_id===sourceId),data=JSON.parse(fs.readFileSync(new URL('../datasets/reviewed-signals/'+chunk.path,import.meta.url),'utf8')),metadata=(Array.isArray(data)?data:data.items)[0];
+  harness.evidence={version_id:sourceId,material_kind:admission.policies.find(p=>p.id===sourceId).material_kind,data_origin:'reviewed_external_snapshot',metadata,collection_receipt:{raw_sha256:'0'.repeat(64)}};
+  await harness.app.selectItem({version_id:sourceId},new MockElement('button'));
+  const detail=textOf(harness.elements.get('record-detail'));
+  assert.match(detail,/本站没有回源/);assert.match(detail,/源记录更新时间/);
+  if(sourceId==='stat_twse_monthly_revenue'){assert.match(detail,/2026-08/);assert.match(detail,/金额币种与缩放单位未知/);assert.match(detail,/未年化、换汇或推断风险/);assert.match(detail,/原始数值/);assert.match(detail,/源字段明确 %/);assert.doesNotMatch(detail,/unit_status/);}
+  if(sourceId==='enterprise_notice_twse'){assert.match(detail,/2026-10-07/);assert.match(detail,/当地日期 \/ 时钟未确定时区/);assert.match(detail,/发生/);}
+  if(sourceId==='political_eu_council_releases_fr'){assert.match(detail,/相对原始取得时刻/);assert.match(detail,/栏目语言 fr/);assert.match(detail,/不代表发布时间/);}
+ }
+});
 
 await run('stale filter response cannot replace newer results', async () => {
   const pending = new Map();

@@ -1,0 +1,197 @@
+{
+  "schema": "dormathon.reviewed-signal-batch.v0.8.1",
+  "source_counts": {
+    "stat_twse_monthly_revenue": 1086,
+    "enterprise_notice_twse": 72,
+    "political_eu_council_releases_fr": 20
+  },
+  "expected_records": 1178,
+  "chunks": [
+    {
+      "path": "chunks/stat_twse_monthly_revenue-0000.json",
+      "source_id": "stat_twse_monthly_revenue",
+      "count": 50,
+      "bytes": 203456,
+      "sha256": "1400c1269d5c55b385217bb8a1f30b374e6d7ad78f4190cba7597cf3de5579b0"
+    },
+    {
+      "path": "chunks/stat_twse_monthly_revenue-0001.json",
+      "source_id": "stat_twse_monthly_revenue",
+      "count": 50,
+      "bytes": 202974,
+      "sha256": "4e305dc35a4d58aa57911b96b51662b68e94a5310f0f2af9420ed903369f8e4c"
+    },
+    {
+      "path": "chunks/stat_twse_monthly_revenue-0002.json",
+      "source_id": "stat_twse_monthly_revenue",
+      "count": 50,
+      "bytes": 203288,
+      "sha256": "3b6bb23c9673442dca00273a642e8385c50723415ca9954d0615a7f5c6294442"
+    },
+    {
+      "path": "chunks/stat_twse_monthly_revenue-0003.json",
+      "source_id": "stat_twse_monthly_revenue",
+      "count": 50,
+      "bytes": 203369,
+      "sha256": "2a43f7e6eac566934b95afd17a148dc3e1bb89099175a8230a899621e9a9fde0"
+    },
+    {
+      "path": "chunks/stat_twse_monthly_revenue-0004.json",
+      "source_id": "stat_twse_monthly_revenue",
+      "count": 50,
+      "bytes": 203614,
+      "sha256": "a6f2eabfd494ea850b86d52693e445b59d9c733f46e161f6dd2896d519549741"
+    },
+    {
+      "path": "chunks/stat_twse_monthly_revenue-0005.json",
+      "source_id": "stat_twse_monthly_revenue",
+      "count": 50,
+      "bytes": 203893,
+      "sha256": "32f2979623ecfd2f62aa911d5d786b6d9dee61fc62c86b75e54798ff6d5e63de"
+    },
+    {
+      "path": "chunks/stat_twse_monthly_revenue-0006.json",
+      "source_id": "stat_twse_monthly_revenue",
+      "count": 50,
+      "bytes": 203774,
+      "sha256": "42d752e28727b5b7fd1a55d35ff91ce06d1d0f1b549deaefabb129ffc94c06a7"
+    },
+    {
+      "path": "chunks/stat_twse_monthly_revenue-0007.json",
+      "source_id": "stat_twse_monthly_revenue",
+      "count": 50,
+      "bytes": 203478,
+      "sha256": "c966a05537aa6d637d5f0fa0bec59ff282d371ce88cf192879abca2caa948a1c"
+    },
+    {
+      "path": "chunks/stat_twse_monthly_revenue-0008.json",
+      "source_id": "stat_twse_monthly_revenue",
+      "count": 50,
+      "bytes": 203415,
+      "sha256": "794f389ed6c662631a950f24a30c24d3f395a0063e424056196a0229b20a5b00"
+    },
+    {
+      "path": "chunks/stat_twse_monthly_revenue-0009.json",
+      "source_id": "stat_twse_monthly_revenue",
+      "count": 50,
+      "bytes": 203795,
+      "sha256": "5547402d2b375a5258398c145eb35dac7b9790502d0a0b664d071eb4358b5d03"
+    },
+    {
+      "path": "chunks/stat_twse_monthly_revenue-0010.json",
+      "source_id": "stat_twse_monthly_revenue",
+      "count": 50,
+      "bytes": 203620,
+      "sha256": "ae446bfd4b4bd388a3768e0d1e99b98e00db8c3e4900152f21c5a41cc7902d69"
+    },
+    {
+      "path": "chunks/stat_twse_monthly_revenue-0011.json",
+      "source_id": "stat_twse_monthly_revenue",
+      "count": 50,
+      "bytes": 203350,
+      "sha256": "a97070c1b74f76080f20968de3dd7c45ffdb045c2055af85db3eb9cf23cc1edf"
+    },
+    {
+      "path": "chunks/stat_twse_monthly_revenue-0012.json",
+      "source_id": "stat_twse_monthly_revenue",
+      "count": 50,
+      "bytes": 203691,
+      "sha256": "a46fbdfe34a7238e43a5cd503c81bb358e80ff40579e375ad7cfba3b4f289dcb"
+    },
+    {
+      "path": "chunks/stat_twse_monthly_revenue-0013.json",
+      "source_id": "stat_twse_monthly_revenue",
+      "count": 50,
+      "bytes": 203453,
+      "sha256": "42ed8d4ceb39fccc01ef4b6f86b716b6757df32e35ed519473059e81daeec7b7"
+    },
+    {
+      "path": "chunks/stat_twse_monthly_revenue-0014.json",
+      "source_id": "stat_twse_monthly_revenue",
+      "count": 50,
+      "bytes": 203529,
+      "sha256": "a6c063609123343a899db284c48625ab2841dde248ee92da043dcd7a90a66b84"
+    },
+    {
+      "path": "chunks/stat_twse_monthly_revenue-0015.json",
+      "source_id": "stat_twse_monthly_revenue",
+      "count": 50,
+      "bytes": 203505,
+      "sha256": "d5c4bf46b8e468e400216ea7aa96ac6a75295b320205fdab034be4291ccf002a"
+    },
+    {
+      "path": "chunks/stat_twse_monthly_revenue-0016.json",
+      "source_id": "stat_twse_monthly_revenue",
+      "count": 50,
+      "bytes": 203493,
+      "sha256": "a253cf4abd4522cd9bb82ddfb1ef2905b1bf112104f6e287b9b105094c1e0483"
+    },
+    {
+      "path": "chunks/stat_twse_monthly_revenue-0017.json",
+      "source_id": "stat_twse_monthly_revenue",
+      "count": 50,
+      "bytes": 203597,
+      "sha256": "8cc37be7b7f5cf80d7587d50820aa55159271862bb23f8f67ea47aacb1edf157"
+    },
+    {
+      "path": "chunks/stat_twse_monthly_revenue-0018.json",
+      "source_id": "stat_twse_monthly_revenue",
+      "count": 50,
+      "bytes": 203427,
+      "sha256": "8accadf90f85442df36a2c20b02c43b466309b76d21b96539be7d144f2b63b2d"
+    },
+    {
+      "path": "chunks/stat_twse_monthly_revenue-0019.json",
+      "source_id": "stat_twse_monthly_revenue",
+      "count": 50,
+      "bytes": 203579,
+      "sha256": "0a18b9eeb221edd24eb525bebcd65f9ee7cbaea0047493b01880347f454067e9"
+    },
+    {
+      "path": "chunks/stat_twse_monthly_revenue-0020.json",
+      "source_id": "stat_twse_monthly_revenue",
+      "count": 50,
+      "bytes": 203578,
+      "sha256": "6097009e65648d85ad9a9243dc8365fc39280118f7552f4b910490ff6588e6d6"
+    },
+    {
+      "path": "chunks/stat_twse_monthly_revenue-0021.json",
+      "source_id": "stat_twse_monthly_revenue",
+      "count": 36,
+      "bytes": 146452,
+      "sha256": "68b3434503740e5cfe826e55c7588040635d718abddaff5340c36bd0f84428e8"
+    },
+    {
+      "path": "chunks/enterprise_notice_twse-0000.json",
+      "source_id": "enterprise_notice_twse",
+      "count": 50,
+      "bytes": 129173,
+      "sha256": "903b8fbfa344a4851b93123e4f0b0562819ee30966df2dfa7e1523a9b2c3fe5b"
+    },
+    {
+      "path": "chunks/enterprise_notice_twse-0001.json",
+      "source_id": "enterprise_notice_twse",
+      "count": 22,
+      "bytes": 56629,
+      "sha256": "9cf325a38471b823e5abc855527f5cdfbe81b62a7c923734bc31650b3ada7865"
+    },
+    {
+      "path": "chunks/political_eu_council_releases_fr-0000.json",
+      "source_id": "political_eu_council_releases_fr",
+      "count": 20,
+      "bytes": 60794,
+      "sha256": "46529dd489cb2c49e02ce7c25e2aad5ba44f732a2f313747625e54d1ce03cce4"
+    }
+  ],
+  "policy_sha256": "8537739e8e4f318044c71e0019a0eedb4a38299c6eb72f34a60ebcb67fb45c85",
+  "source_input_pins": {
+    "twse_manifest": "297debb9889cb598633062afc4a195499da19ea02f41086d463f34a33fa5100a",
+    "twse_semantic_addendum": "3d3c090670f97f8e4d9822a8d87625d92bc5d405468ae16e0e6e9de4a9e1d0c5",
+    "eu_safe_projection": "5bfa91ac670f57ae7620c6e6f33f548f5d9a0f2beb9b435bec917f82f6eb643c"
+  },
+  "transforms": [
+    "EU normalized projection adds explicit derived future-update-at-acquisition and originalfr/unverified-content language flags; original source fields/clocks preserved"
+  ],
+  "provider_fetches": 0,
+  "acquisition_receipt_transform": "TWSE nullable-named HTTP/byte/raw-response fields gain canonical aliases; all original witness fields remain retained."
+}

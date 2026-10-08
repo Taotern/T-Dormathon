@@ -1,0 +1,61 @@
+{
+  "schema_version": "dormathon.release-receipt.v1",
+  "release": "EU/TWSE dated public source intake",
+  "native_site_runtime_commit": "f845922b133bb45588efb7d205cd78bcc6393ad7",
+  "native_site_deployment_id": "appgdep_6ac794b82f9481919764a19831093408",
+  "published_at": "2026-10-08T13:03:58.676737+00:00",
+  "data_receiver_commit": "14c53f18a19f46072dd4b146cc8e191de24b18f7",
+  "data_receiver_deployment_id": "appgdep_6ac79177fda081918336368a3508ad21",
+  "source_review_sha256": "c06f56b65837ed66a0052ff6fb0c373044f968411d6b37ae6edd2a835ed75e35",
+  "manifest_sha256": "c1d5e1097c253244e287b0825de3842185a4f9d06ec34919749bb205dbbb6ac4",
+  "policy_sha256": "8537739e8e4f318044c71e0019a0eedb4a38299c6eb72f34a60ebcb67fb45c85",
+  "intake": {
+    "started_at": "2026-10-08T12:54:35.109884+00:00",
+    "finished_at": "2026-10-08T12:55:25.433869+00:00",
+    "client_state": "completed",
+    "confirmed_chunks": 25,
+    "provider_fetches": 0,
+    "maximum_concurrency": 4,
+    "passed": true
+  },
+  "exact_unique_submitted_chunks": 25,
+  "post_retries": 0,
+  "uncertain_outcomes": 0,
+  "live_readback": {
+    "checks": 24,
+    "requests": 17,
+    "passed": true,
+    "finished_at": "2026-10-08T12:58:30.041178+00:00",
+    "receipt_sha256": "a1bd672f921dce60223d0f20cfadefd06a5a5a19bbf21c4d306b78c2458e3ed2"
+  },
+  "saved": {
+    "items": 21113,
+    "versions": 21113,
+    "indexed_documents": 21113,
+    "pending": 0,
+    "site_direct": 369,
+    "uploaded_unverified": 100,
+    "reviewed_snapshot": 20644,
+    "original_batch_rows": 19466,
+    "signal_batch_rows": 1178,
+    "fixed_chunks_complete": 229,
+    "unchanged_rules": 8
+  },
+  "validation": {
+    "node_tests": 293,
+    "failures": 0,
+    "skips": 0,
+    "source_contracts": 74,
+    "offline_full_reviewed_rows": 20644,
+    "network_provider_calls": 0
+  },
+  "scope_limits": [
+    "No autonomous daily runtime or owner Windows execution verified",
+    "No new upstream source fetch by the Site during reviewed intake",
+    "TWSE monthly period2026-08/tabledaySeptember17, no currency/scale assumption",
+    "TWSE issuer notices are local/date-only self-reported claims; occurrence unconfirmed",
+    "EU record update clocks and feed language do not become publication/occurrence or translated content",
+    "Broad2020-present/1990 global history remains separate unfinished coverage work",
+    "No semantic embeddings, generated analysis, new rule signals, or automatic entity-name merging"
+  ]
+}
