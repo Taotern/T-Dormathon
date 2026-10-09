@@ -1,0 +1,294 @@
+[
+  {
+    "schema_version": "dormathon.outcome-admission.v1",
+    "manifest_sha256": "a314a586b4d2a09a65d6d47bf8ccbaf42f1506839da88ccd052a31063c3dae60",
+    "policy_sha256": "07e124dd06428d3e0ea9cb7554249bbef5d85c3944cd42fab321f62268d0f012",
+    "expected_records": 171,
+    "chunks": [
+      {
+        "path": "chunks/0000.json",
+        "sha256": "edc13d7e95055230615196310973cd8c7fbc2eede382189d8df3284550417e8e",
+        "bytes": 251046,
+        "count": 16,
+        "source_id": "outcome_worldbank_ttbd_cvd"
+      },
+      {
+        "path": "chunks/0001.json",
+        "sha256": "92bdd2a41b6502cc93725c827d3fdf784a16b3329a99949322f7244d22006ded",
+        "bytes": 253523,
+        "count": 13,
+        "source_id": "outcome_worldbank_ttbd_cvd"
+      },
+      {
+        "path": "chunks/0002.json",
+        "sha256": "5b1491a8337f05195f3dbae7b0c8c6901f1bc7c75afec28be0eb276feec07b14",
+        "bytes": 235259,
+        "count": 14,
+        "source_id": "outcome_worldbank_ttbd_cvd"
+      },
+      {
+        "path": "chunks/0003.json",
+        "sha256": "003c5f98eb51561e757a9bbfcff53942e3056ff4045125190f8a3c446283854e",
+        "bytes": 259660,
+        "count": 8,
+        "source_id": "outcome_worldbank_ttbd_cvd"
+      },
+      {
+        "path": "chunks/0004.json",
+        "sha256": "c76f3d7d3e5b45c04874e66b47d693df7ff713a06a185d325e607baae382a486",
+        "bytes": 250906,
+        "count": 14,
+        "source_id": "outcome_worldbank_ttbd_cvd"
+      },
+      {
+        "path": "chunks/0005.json",
+        "sha256": "23f5125f583f0502b4727cf17e220c0728e4ecdc88a384d2b721e4ad49fef080",
+        "bytes": 241929,
+        "count": 14,
+        "source_id": "outcome_worldbank_ttbd_cvd"
+      },
+      {
+        "path": "chunks/0006.json",
+        "sha256": "5b48c99f89119b07d26ce95742925126295521b57392a55fc4d436bc77489e4d",
+        "bytes": 244478,
+        "count": 12,
+        "source_id": "outcome_worldbank_ttbd_cvd"
+      },
+      {
+        "path": "chunks/0007.json",
+        "sha256": "9442e4894bdc937170bccebd81e28de2516af3018634a9de916d4fd29929031f",
+        "bytes": 260720,
+        "count": 13,
+        "source_id": "outcome_worldbank_ttbd_cvd"
+      },
+      {
+        "path": "chunks/0008.json",
+        "sha256": "af3786bff72f33b889e4d14bf0c631394086d340a45ec3f74b7de9e712bcd5c5",
+        "bytes": 247632,
+        "count": 13,
+        "source_id": "outcome_worldbank_ttbd_cvd"
+      },
+      {
+        "path": "chunks/0009.json",
+        "sha256": "51c0669819c37ddba813ba0c00e8202d1e42a7ee442bfd7211b29ef6d4588bdc",
+        "bytes": 244128,
+        "count": 12,
+        "source_id": "outcome_worldbank_ttbd_cvd"
+      },
+      {
+        "path": "chunks/0010.json",
+        "sha256": "c3e04d3c96cd3b22219c8fb49fa63c2a25ca355694b4eb92f151ea814b2c7c42",
+        "bytes": 261780,
+        "count": 14,
+        "source_id": "outcome_worldbank_ttbd_cvd"
+      },
+      {
+        "path": "chunks/0011.json",
+        "sha256": "31844934eb907819429c571fd21ab6432d03696cb36aa569e3011315003c8576",
+        "bytes": 257829,
+        "count": 16,
+        "source_id": "outcome_worldbank_ttbd_cvd"
+      },
+      {
+        "path": "chunks/0012.json",
+        "sha256": "c7ec052f4c1ce45ce0cb9ee5969e770aeb507ffa7f1f336f5dada2aea3261397",
+        "bytes": 188152,
+        "count": 12,
+        "source_id": "outcome_worldbank_ttbd_cvd"
+      }
+    ],
+    "profiles": [
+      {
+        "schema_version": "dormathon.outcome-source-profile.v0.21",
+        "id": "outcome_worldbank_ttbd_cvd",
+        "parser_version": "ttbd-cvd-trajectories-v0.21.0",
+        "domains": [
+          "policy_supply_chain"
+        ],
+        "rights": {
+          "status": "cleared_structured_facts",
+          "license_name": "CC-BY-4.0",
+          "license_url": "https://datacatalog.worldbank.org/search/dataset/0039583/temporary-trade-barriers-database-including-the-global-antidumping-database",
+          "attribution": "World Bank Temporary Trade Barriers Database (Bown, Cieszkowsky, Erbahar and Signoret), Global Countervailing Measures, vintage Q4_2024. CC BY4.0; filtered/normalized procedural trajectories and source party labels. No World Bank/WTO endorsement or causal interpretation.",
+          "permission_basis": "Retained dataset0039583 explicitlyCC BY4 and links the current landing; actual retained landing links this exact CVD ZIP. No contrary archive license found.",
+          "allowed_scope": "Original source procedural dates/codes/product/country labels and bounded organization-reference table rows only; no narrative NOTES, linked body or contact fields"
+        },
+        "source_urls": [
+          "https://thedocs.worldbank.org/en/doc/1b03ee05a4a6d2374c126196ddf0a128-0430012025/related/Global-countervailing-measures.zip"
+        ],
+        "action_types": [
+          "source_reported_INIT_DATE",
+          "source_reported_P_SUB_DATE",
+          "source_reported_P_INJ_DATE",
+          "source_reported_P_CVD_DATE",
+          "source_reported_F_SUB_DATE",
+          "source_reported_F_INJ_DATE",
+          "source_reported_F_CVD_DATE",
+          "source_reported_REVOKE_DATE",
+          "source_reported_TERM_DATE"
+        ],
+        "action_statuses": [
+          "reported"
+        ],
+        "action_evidence_fields": [
+          "INIT_DATE",
+          "P_SUB_DATE",
+          "P_INJ_DATE",
+          "P_CVD_DATE",
+          "F_SUB_DATE",
+          "F_INJ_DATE",
+          "F_CVD_DATE",
+          "REVOKE_DATE",
+          "TERM_DATE"
+        ],
+        "outcome_evidence_fields": [
+          "P_SUB_DEC",
+          "P_INJ_DEC",
+          "P_CVD_MEASURE",
+          "F_SUB_DEC",
+          "F_INJ_DEC",
+          "F_CVD_MEASURE",
+          "REVOKE_DATE"
+        ],
+        "context_fields": [
+          "V_NUMBER",
+          "CASE_ID",
+          "CASE_REPCODE",
+          "CVD_CTY_NAME",
+          "INV_CTY_NAME",
+          "INV_CTY_CODE",
+          "PRODUCT",
+          "RELATED_AD",
+          "REVOKE_YEAR",
+          "WTO_CITATION",
+          "INIT_DATE",
+          "P_SUB_DATE",
+          "P_INJ_DATE",
+          "P_CVD_DATE",
+          "F_SUB_DATE",
+          "F_INJ_DATE",
+          "F_CVD_DATE",
+          "REVOKE_DATE",
+          "TERM_DATE",
+          "P_SUB_DEC",
+          "P_INJ_DEC",
+          "P_CVD_MEASURE",
+          "F_SUB_DEC",
+          "F_INJ_DEC",
+          "F_CVD_MEASURE"
+        ],
+        "label_kinds": [
+          "reported"
+        ],
+        "attribution_statuses": [
+          "not_established"
+        ],
+        "confounding_statuses": [
+          "not_assessed"
+        ],
+        "registry_links_supported": false,
+        "historical_availability_supported": false,
+        "definition_qualification": "Retained linked codebook is antidumping-specific. CVD markers A/N/W/T/S/AVD/IF/MI/dot remain raw; no modern legal-status interpretation.",
+        "actor_identity_policy": "Case/table-row references only. Raw names are not matched across rows/cases; collective all-other labels are not actor identities.",
+        "actor_name_max_chars": 500,
+        "actor_case_max": 128,
+        "source_vintage_raw": "Q4_2024",
+        "profile_actual_source_clocks": {
+          "acquisition_completed_at": "2026-10-08T23:28:31.246958+00:00",
+          "http_date": "Thu, 08 Oct 2026 23:28:31 GMT",
+          "http_last_modified": "Thu, 24 Apr 2025 20:25:55 GMT",
+          "http_clocks_are_not_row_publication": true
+        }
+      }
+    ],
+    "acquisition": {
+      "schema_version": "dormathon.actor-source-acquisition.v0.21",
+      "role": "countervailing",
+      "requested_url": "https://thedocs.worldbank.org/en/doc/1b03ee05a4a6d2374c126196ddf0a128-0430012025/related/Global-countervailing-measures.zip",
+      "started_at": "2026-10-08T23:28:23.197427+00:00",
+      "status": "retrieved_pending_schema_validation",
+      "attempts": 1,
+      "body_cap": 2097152,
+      "strict_overall_deadline_seconds": 30,
+      "redirect_policy": "reject",
+      "authentication": "none",
+      "recurring_operational": false,
+      "http_status": 200,
+      "bytes_read": 1332534,
+      "body_complete": true,
+      "response_headers": {
+        "Date": "Thu, 08 Oct 2026 23:28:31 GMT",
+        "Last-Modified": "Thu, 24 Apr 2025 20:25:55 GMT",
+        "Content-Type": "application/zip"
+      },
+      "raw_sha256": "9151401fa3ff8d438d19e1d60dc7560f80f2f49f77ac45b3aa625881b3e4655b",
+      "retained_path": "source-data/countervailing.zip",
+      "fetched_at": "2026-10-08T23:28:31.246930+00:00",
+      "completed_at": "2026-10-08T23:28:31.246958+00:00",
+      "elapsed_seconds": 8.049
+    },
+    "supporting_rights": {
+      "landing_receipt": {
+        "schema_version": "dormathon.actor-source-acquisition.v0.21",
+        "role": "landing",
+        "requested_url": "https://www.worldbank.org/en/data/interactive/2021/03/02/temporary-trade-barriers-database",
+        "started_at": "2026-10-08T23:11:28.930426+00:00",
+        "status": "retrieved_pending_schema_validation",
+        "attempts": 1,
+        "body_cap": 262144,
+        "strict_overall_deadline_seconds": 30,
+        "redirect_policy": "reject",
+        "authentication": "none",
+        "recurring_operational": false,
+        "http_status": 200,
+        "bytes_read": 83451,
+        "body_complete": true,
+        "response_headers": {
+          "Date": "Thu, 08 Oct 2026 23:11:34 GMT",
+          "Last-Modified": "Wed, 07 Oct 2026 14:32:38 GMT",
+          "Content-Type": "text/html;charset=utf-8"
+        },
+        "raw_sha256": "41c0d815521fab84cb6a93f19a6128c673ad09889fed1ba216ee65742925788b",
+        "retained_path": "source-data/landing.html",
+        "fetched_at": "2026-10-08T23:11:34.455409+00:00",
+        "completed_at": "2026-10-08T23:11:34.455436+00:00",
+        "elapsed_seconds": 5.525
+      },
+      "license_lineage": {
+        "@type": "Dataset",
+        "name": "Temporary Trade Barriers Database including the Global Antidumping Database",
+        "url": "https://datacatalog.worldbank.org/5c4a36b6-1b7f-428e-ae2e-7e70d9349ebd/search/dataset/0039583/temporary-trade-barriers-database-including-the-global-antidumping-database",
+        "identifier": "0039583",
+        "license": {
+          "@type": "CreativeWork",
+          "name": "Creative Commons Attribution 4.0",
+          "url": "https://datacatalog.worldbank.org/public-licenses?fragment=cc"
+        },
+        "dateModified": "2023-01-19",
+        "temporalCoverage": "1980/2011",
+        "creator": {
+          "@type": "Organization",
+          "name": "World Bank Group",
+          "url": "https://www.worldbank.org/en/home"
+        },
+        "matching_distribution": [
+          {
+            "@type": "DataDownload",
+            "contentUrl": "https://www.worldbank.org/en/data/interactive/2021/03/02/temporary-trade-barriers-database",
+            "encodingFormat": "HTML",
+            "name": "Temporary Trade Barriers Database",
+            "contentSize": "0 B"
+          }
+        ],
+        "provenance": {
+          "original_catalog_response_sha256": "ed2808fc518d6812a7b243d43162d2acc9a2d1f0bca37b4e236f2fb8cf8b5557",
+          "catalog_response_retained_in_portable_delivery": false,
+          "snapshot_is_licence_evidence_not_current_data_coverage": true
+        }
+      }
+    },
+    "global_master_case_count": 1263,
+    "global_conflicted_master_ids": [],
+    "bulk_data_in_Git": false
+  }
+]

@@ -1,0 +1,206 @@
+{
+  "schema_version": "dormathon.reporting-geography-map.v1",
+  "recorded_at": "2026-10-08T22:33:23.829252+00:00",
+  "no_refetch": true,
+  "semantics": "Reporting/registry/legal/reference geography only. Never publisher-country fallback, operating footprint, affected country or event location. Keep each namespace and scope_kind explicit.",
+  "families": [
+    {
+      "source_ids": [
+        "stat_worldbank_gdp_annual",
+        "stat_worldbank_unemployment_ilo_annual"
+      ],
+      "namespace": "worldbank:economy",
+      "key_path": "facts.geography.provider_geography_id",
+      "label_path": "facts.geography.label",
+      "scope_kind_path": "facts.geography.kind",
+      "ISO2_path": "facts.geography.provider_country_alias",
+      "kind_values": [
+        "country_or_economy",
+        "aggregate"
+      ],
+      "aggregate_excluded_from_country_filter": true,
+      "crosswalk_basis": "Existing exact provider dimension snapshot; current classification, not historical borders/membership"
+    },
+    {
+      "source_ids": [
+        "stat_worldbank_annual_fx"
+      ],
+      "namespace": "source:iso3-country",
+      "key_path": "facts.country_code_iso3",
+      "label_path": "facts.country_label",
+      "scope_kind": "statistical_reporting_country",
+      "crosswalk": "Only supplied ISO3, e.g.AUS; currency_code is null and not a geography substitute"
+    },
+    {
+      "source_ids": [
+        "stat_eurostat_sbs_size"
+      ],
+      "namespace": "eurostat:geo",
+      "key_path": "facts.dimensions.geo",
+      "label_path": "facts.dimension_labels.geo",
+      "scope_kind": "statistical_reporting_area",
+      "aggregate_codes": [
+        "EU27_2020"
+      ],
+      "country_territory_codes": [
+        "AL",
+        "AT",
+        "BA",
+        "BE",
+        "BG",
+        "CH",
+        "CY",
+        "CZ",
+        "DE",
+        "DK",
+        "EE",
+        "EL",
+        "ES",
+        "FI",
+        "FR",
+        "HR",
+        "HU",
+        "IE",
+        "IS",
+        "IT",
+        "LT",
+        "LU",
+        "LV",
+        "ME",
+        "MK",
+        "MT",
+        "NL",
+        "NO",
+        "PL",
+        "PT",
+        "RO",
+        "RS",
+        "SE",
+        "SI",
+        "SK",
+        "UA"
+      ],
+      "crosswalk": "Preserve official Eurostat EL, not assume ISO2 GR without an explicit reviewed crosswalk; aggregate EU27_2020 never a country"
+    },
+    {
+      "source_ids": [
+        "enterprise_cvm_registry"
+      ],
+      "namespace": "source:registry-country",
+      "key_path": "facts.geography.registry_country",
+      "label_raw_path": "facts.geography.source_country_raw",
+      "scope_kind": "registry_country",
+      "unknown": null,
+      "not_headquarters": true
+    },
+    {
+      "source_ids": [
+        "enterprise_gleif_reference"
+      ],
+      "namespace": "source:legal-country",
+      "key_path": "facts.geography.legal_country",
+      "scope_kind": "legal_address_country",
+      "separate_alternative_fields": {
+        "legal_jurisdiction": "facts.geography.legal_jurisdiction",
+        "headquarters_country": "facts.geography.headquarters_country"
+      },
+      "not_operating_footprint": true
+    },
+    {
+      "source_ids": [
+        "enterprise_twse_registry",
+        "stat_twse_monthly_revenue",
+        "enterprise_notice_twse"
+      ],
+      "namespace": "authority:exchange-reporting",
+      "fixed_key": "TWSE",
+      "scope_kind": "exchange_reporting_system",
+      "fixed_label": "Taiwan Stock Exchange reporting system",
+      "basis": "Explicit source/dataset jurisdiction. Does not assert issuer nationality/HQ/operating country.",
+      "optional_entity_geography_raw": "facts.geography.foreign_registration_country_raw for registry only; no ISO mapping of fullwidth dash"
+    },
+    {
+      "source_ids": [
+        "enterprise_sec_registry",
+        "enterprise_sec_disclosures"
+      ],
+      "namespace": "authority:filing-reporting",
+      "fixed_key": "SEC",
+      "scope_kind": "US_SEC_reporting_system",
+      "basis": "Explicit SEC source system, not country/HQ of every issuer",
+      "address_field_warning": "facts.business_address_country_fields.stateOrCountry=AR is a SEC address code; do not interpret as ISO2 Argentina. country/countryCode nullable; state/country decoding requires explicit source-code crosswalk."
+    },
+    {
+      "source_ids": [
+        "legal_us_federal_register",
+        "legal_uk_legislation_publications"
+      ],
+      "namespace": "source:legal-jurisdiction",
+      "key_path": "facts.jurisdiction.country_code",
+      "scope_kind": "legal_publication_jurisdiction",
+      "basis_path": "facts.jurisdiction.basis",
+      "territorial_application": "unknown unless independently supplied; GB statutory family is not proof of extent/impact"
+    },
+    {
+      "source_ids": [
+        "political_jp_house_groups",
+        "political_za_assembly_parties",
+        "political_ca_commons_parties"
+      ],
+      "namespace": "unm49:statistical-area",
+      "key_path": "facts.area_id",
+      "scope_kind": "source_chamber_country_area",
+      "fixed_admitted_keys": {
+        "political_jp_house_groups": "unm49:392",
+        "political_za_assembly_parties": "unm49:710",
+        "political_ca_commons_parties": "unm49:124"
+      },
+      "basis": "Declared parliamentary/chamber source scope, not ideology/governing/operations/affected country"
+    },
+    {
+      "source_ids": [
+        "country_un_m49_reference"
+      ],
+      "namespace": "unm49:statistical-area",
+      "key_path": "facts.area_id",
+      "scope_kind": "identity_directory_area",
+      "exclude_from_non_directory_coverage": true
+    },
+    {
+      "source_ids": [
+        "policy_worldbank_ttbd_safeguards"
+      ],
+      "namespace": "worldbank-ttbd:source-jurisdiction",
+      "key_path": "facts.implementing_jurisdiction.source_case_prefix",
+      "label_path": "facts.implementing_jurisdiction.source_name",
+      "scope_kind": "unresolved_country_or_group_source_label",
+      "ISO_country": "facts.implementing_jurisdiction.canonical_country_code remains null; no label guessing"
+    },
+    {
+      "source_ids": [
+        "stat_ecb_fx_daily_reference"
+      ],
+      "scope_kind": "currency_reference_pair",
+      "key_paths": [
+        "facts.base_currency",
+        "facts.quote_currency"
+      ],
+      "country_filter_eligible": false,
+      "reason": "USD/MYR/EUR are currency dimensions, not reporting country/affected area"
+    },
+    {
+      "source_ids": [
+        "stat_worldbank_commodity_monthly"
+      ],
+      "scope_kind": "commodity_benchmark_reference",
+      "key_path": "facts.series_id",
+      "country_filter_eligible": false,
+      "reason": "facts.benchmark_location_references are literal quote-definition references, not country-impact/reporting territory"
+    }
+  ],
+  "local_namespace_handling": "Strip local__ only for selecting source family, preserve original source ID and immutable per-version profile. Do not replace record semantics from latest registry.",
+  "unsupported_sources": "Return unknown/unsupported explicitly; do not use source_country, title place-name, URL host or issuer label as generic fallback.",
+  "evidence": [
+    "Retained exact v0.7/source signal chunks; source-specific producer modules. No provider requests."
+  ]
+}

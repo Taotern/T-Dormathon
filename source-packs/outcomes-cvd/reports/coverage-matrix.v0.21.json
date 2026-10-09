@@ -1,0 +1,46 @@
+{
+  "schema_version": "dormathon.actor-action-coverage.v0.21",
+  "actual_cohort_rows": 171,
+  "event_groups": 123,
+  "initiation_years": {
+    "2020": 62,
+    "2021": 23,
+    "2024": 44,
+    "2023": 28,
+    "2022": 14
+  },
+  "reporting_jurisdictions": {
+    "Australia": 14,
+    "Brazil": 3,
+    "Canada": 9,
+    "China": 5,
+    "European Union": 12,
+    "United Kingdom": 15,
+    "India": 15,
+    "Mexico": 1,
+    "USA": 97
+  },
+  "all_archive_master_cases": 1263,
+  "all_archive_reporting_labels": 23,
+  "all_archive_onset_span": [
+    "1977-04-14",
+    "2024-09-16"
+  ],
+  "reported_dated_actions": 776,
+  "rows_with_source_final_code": 115,
+  "rows_with_source_final_measure_date": 84,
+  "rows_with_source_revocation_date": 1,
+  "outcome_interpretation": "Categorical source-reported marker/date cells only. Codes are not encoded as success/failure, legal status or causal effects.",
+  "actor_case_references": 1039,
+  "resolved_company_identities": 0,
+  "documented_individual_company_actions": 0,
+  "business_loss_recovery_metrics": 0,
+  "original_field_publication_availability_known": 0,
+  "no_event_negative_examples": 0,
+  "site_ingested": false,
+  "recurring_operational": false,
+  "source_failure": "AD target403 stopped; independent CVD archive200",
+  "bulk_external_to_git": true,
+  "max_actor_references_in_case": 111,
+  "max_case_bytes": 54827
+}

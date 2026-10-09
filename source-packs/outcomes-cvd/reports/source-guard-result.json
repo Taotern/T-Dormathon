@@ -1,0 +1,12 @@
+{
+  "schema_version": "dormathon.source-guard-result.v0.21",
+  "completed_at": "2026-10-08T23:39:00.187174+00:00",
+  "exit_code": 0,
+  "stdout": "",
+  "stderr": "....................\n----------------------------------------------------------------------\nRan 20 tests in 0.004s\n\nOK\n",
+  "tests": 20,
+  "provider_requests": 0,
+  "parser_sha256": "bfc17c695b010baaef42a830ba878bcc2e86b2b6c440e03c57ffa6637bb55b80",
+  "fixture_input_sha256": "d6b775fc9f693f4cc41bdf6781a9d3e0317504351da2bb1ea3e268b59df46a2a",
+  "fixture_output_sha256": "1fcb3d95e6936919b0e1f786b8daca07c3f476a62080021cb95224dfb06f36b1"
+}

@@ -23,6 +23,14 @@ A source collection or validated uploaded snapshot inserts its immutable version
 
 ## Minimal consumer
 
+### Reporting/reference country filter
+
+Browse and lexical search additionally accept `reporting_country`, an exact uppercase ISO3166-1 alpha2 code, such as `MY`, `JP` or `GB`. This is independent of the query text, source-period bounds and first-seen dates. It filters only supplied source-qualified fields covered by [the explicit mapping policy](../data/reporting-country-policy.v1.json). For example, `{ "query":"GDP", "reporting_country":"MY", "observation_grain":"year", "observation_from":"2020", "observation_to":"2025" }` requests Malaysian reporting-economy GDP observations in that source-period range, including retained null values. It does not search country names in titles or definitions.
+
+Each browse/search hit, immutable evidence envelope and document readback exposes `reporting_jurisdiction` with the exact code, source field/value, namespace, mapping policy and role: statistical reporting economy, legal-publication jurisdiction, political chamber jurisdiction, CVM registry country, or GLEIF legal-address country. These roles remain distinct. A CVM country is not headquarters; a GLEIF legal-address country is not its separate legal-jurisdiction/HQ field or operating footprint. SEC's `stateOrCountry='AR'` remains a SEC address code and does not become ISO2 Argentina. TWSE listing/reporting authority remains separate from issuer nationality. Eurostat's supplied `EL` stays unchanged; the query crosswalk to `GR` is explicitly bound to the [official convention addendum](reporting-geography-crosswalk-addendum.v1.1.json).
+
+Responses echo `reporting_country_filter`. Without this filter, unsupported/unknown records stay in the corpus and their context is null. When applied, unmatched sources, null/unresolved geography and aggregates are excluded. WB `CHI/JG` and `XKX/XK` retain their provider namespaces but are outside this canonical-code filter. TTBD labels with null canonical country, ECB currency pairs, commodity benchmark locations/definitions, UN directory identities, publisher `source_country` and event locations never supply a fallback. The 248-code mapping vocabulary is not a claim that all countries have records. A zero-result filtered view means no matching retained records in this supported scope; it does not establish an absence of activity. No source version, metadata, country label, index text, content hash or entity identity is migrated or rewritten.
+
 Inside an authorized same-origin client:
 
 ```js

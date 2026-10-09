@@ -1,0 +1,26 @@
+{
+  "schema_version": "dormathon.actor-source-acquisition.v0.21",
+  "role": "landing",
+  "requested_url": "https://www.worldbank.org/en/data/interactive/2021/03/02/temporary-trade-barriers-database",
+  "started_at": "2026-10-08T23:11:28.930426+00:00",
+  "status": "retrieved_pending_schema_validation",
+  "attempts": 1,
+  "body_cap": 262144,
+  "strict_overall_deadline_seconds": 30,
+  "redirect_policy": "reject",
+  "authentication": "none",
+  "recurring_operational": false,
+  "http_status": 200,
+  "bytes_read": 83451,
+  "body_complete": true,
+  "response_headers": {
+    "Date": "Thu, 08 Oct 2026 23:11:34 GMT",
+    "Last-Modified": "Wed, 07 Oct 2026 14:32:38 GMT",
+    "Content-Type": "text/html;charset=utf-8"
+  },
+  "raw_sha256": "41c0d815521fab84cb6a93f19a6128c673ad09889fed1ba216ee65742925788b",
+  "retained_path": "source-data/landing.html",
+  "fetched_at": "2026-10-08T23:11:34.455409+00:00",
+  "completed_at": "2026-10-08T23:11:34.455436+00:00",
+  "elapsed_seconds": 5.525
+}

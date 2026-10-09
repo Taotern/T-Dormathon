@@ -1,0 +1,102 @@
+{
+  "schema_version": "dormathon.outcome-source-profile.v0.21",
+  "id": "outcome_worldbank_ttbd_cvd",
+  "parser_version": "ttbd-cvd-trajectories-v0.21.0",
+  "domains": [
+    "policy_supply_chain"
+  ],
+  "rights": {
+    "status": "cleared_structured_facts",
+    "license_name": "CC-BY-4.0",
+    "license_url": "https://datacatalog.worldbank.org/search/dataset/0039583/temporary-trade-barriers-database-including-the-global-antidumping-database",
+    "attribution": "World Bank Temporary Trade Barriers Database (Bown, Cieszkowsky, Erbahar and Signoret), Global Countervailing Measures, vintage Q4_2024. CC BY4.0; filtered/normalized procedural trajectories and source party labels. No World Bank/WTO endorsement or causal interpretation.",
+    "permission_basis": "Retained dataset0039583 explicitlyCC BY4 and links the current landing; actual retained landing links this exact CVD ZIP. No contrary archive license found.",
+    "allowed_scope": "Original source procedural dates/codes/product/country labels and bounded organization-reference table rows only; no narrative NOTES, linked body or contact fields"
+  },
+  "source_urls": [
+    "https://thedocs.worldbank.org/en/doc/1b03ee05a4a6d2374c126196ddf0a128-0430012025/related/Global-countervailing-measures.zip"
+  ],
+  "action_types": [
+    "source_reported_INIT_DATE",
+    "source_reported_P_SUB_DATE",
+    "source_reported_P_INJ_DATE",
+    "source_reported_P_CVD_DATE",
+    "source_reported_F_SUB_DATE",
+    "source_reported_F_INJ_DATE",
+    "source_reported_F_CVD_DATE",
+    "source_reported_REVOKE_DATE",
+    "source_reported_TERM_DATE"
+  ],
+  "action_statuses": [
+    "reported"
+  ],
+  "action_evidence_fields": [
+    "INIT_DATE",
+    "P_SUB_DATE",
+    "P_INJ_DATE",
+    "P_CVD_DATE",
+    "F_SUB_DATE",
+    "F_INJ_DATE",
+    "F_CVD_DATE",
+    "REVOKE_DATE",
+    "TERM_DATE"
+  ],
+  "outcome_evidence_fields": [
+    "P_SUB_DEC",
+    "P_INJ_DEC",
+    "P_CVD_MEASURE",
+    "F_SUB_DEC",
+    "F_INJ_DEC",
+    "F_CVD_MEASURE",
+    "REVOKE_DATE"
+  ],
+  "context_fields": [
+    "V_NUMBER",
+    "CASE_ID",
+    "CASE_REPCODE",
+    "CVD_CTY_NAME",
+    "INV_CTY_NAME",
+    "INV_CTY_CODE",
+    "PRODUCT",
+    "RELATED_AD",
+    "REVOKE_YEAR",
+    "WTO_CITATION",
+    "INIT_DATE",
+    "P_SUB_DATE",
+    "P_INJ_DATE",
+    "P_CVD_DATE",
+    "F_SUB_DATE",
+    "F_INJ_DATE",
+    "F_CVD_DATE",
+    "REVOKE_DATE",
+    "TERM_DATE",
+    "P_SUB_DEC",
+    "P_INJ_DEC",
+    "P_CVD_MEASURE",
+    "F_SUB_DEC",
+    "F_INJ_DEC",
+    "F_CVD_MEASURE"
+  ],
+  "label_kinds": [
+    "reported"
+  ],
+  "attribution_statuses": [
+    "not_established"
+  ],
+  "confounding_statuses": [
+    "not_assessed"
+  ],
+  "registry_links_supported": false,
+  "historical_availability_supported": false,
+  "definition_qualification": "Retained linked codebook is antidumping-specific. CVD markers A/N/W/T/S/AVD/IF/MI/dot remain raw; no modern legal-status interpretation.",
+  "actor_identity_policy": "Case/table-row references only. Raw names are not matched across rows/cases; collective all-other labels are not actor identities.",
+  "actor_name_max_chars": 500,
+  "actor_case_max": 128,
+  "source_vintage_raw": "Q4_2024",
+  "profile_actual_source_clocks": {
+    "acquisition_completed_at": "2026-10-08T23:28:31.246958+00:00",
+    "http_date": "Thu, 08 Oct 2026 23:28:31 GMT",
+    "http_last_modified": "Thu, 24 Apr 2025 20:25:55 GMT",
+    "http_clocks_are_not_row_publication": true
+  }
+}

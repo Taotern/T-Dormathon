@@ -1,0 +1,97 @@
+{
+  "schema_version": "dormathon.cvd-source-assets.v0.21",
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 6648,
+      "sha256": "d748f8104a1e1fa7e4ea085f32d8e4b0513c463c3f2e9ea890bc9beadd94c61b"
+    },
+    {
+      "path": "acquire-pilot.py",
+      "bytes": 3271,
+      "sha256": "5a866cfc248ed000209dfc8a83935b503b02452aea2cd8bef6303199f5c60980"
+    },
+    {
+      "path": "extract-audit.py",
+      "bytes": 3672,
+      "sha256": "6a5da588d309d90389504c9ff78d3833dcaadddb14bfb5846caddaee2be1c51c"
+    },
+    {
+      "path": "build-pilot.py",
+      "bytes": 7332,
+      "sha256": "a31fcdfd81ed8f2d47a20e32c494562ef6c7deeb6f9083bf55a258cf18e6ac90"
+    },
+    {
+      "path": "test-contract.py",
+      "bytes": 4958,
+      "sha256": "181bbbf64f1ca5502be9737bca67d9e4a3d6a26182633c96743f39a62f82ba03"
+    },
+    {
+      "path": "adapters/ttbd-cvd.py",
+      "bytes": 10101,
+      "sha256": "bfc17c695b010baaef42a830ba878bcc2e86b2b6c440e03c57ffa6637bb55b80"
+    },
+    {
+      "path": "contracts/source-profile.v0.21.json",
+      "bytes": 3398,
+      "sha256": "07e124dd06428d3e0ea9cb7554249bbef5d85c3944cd42fab321f62268d0f012"
+    },
+    {
+      "path": "contracts/catalog-license-safe.v0.17.json",
+      "bytes": 1250,
+      "sha256": "2cadff6aa257d4567135e39c2cf4963d779ce357f60a8f3db01bb21e7e9a6dba"
+    },
+    {
+      "path": "fixtures/six-actual-inputs.safe.json",
+      "bytes": 35591,
+      "sha256": "d6b775fc9f693f4cc41bdf6781a9d3e0317504351da2bb1ea3e268b59df46a2a"
+    },
+    {
+      "path": "fixtures/six-actual-trajectories.json",
+      "bytes": 118043,
+      "sha256": "1fcb3d95e6936919b0e1f786b8daca07c3f476a62080021cb95224dfb06f36b1"
+    },
+    {
+      "path": "receipts/landing.json",
+      "bytes": 986,
+      "sha256": "1a1f80629693b7d991188565cb768bcd77d30ee2564d07eb0f7e13d3d73f8836"
+    },
+    {
+      "path": "receipts/countervailing.json",
+      "bytes": 1027,
+      "sha256": "ad5fd7e3d76e24592060398d62e5f7dc911217914b87410963353d4db5a7ec38"
+    },
+    {
+      "path": "reports/extraction-audit.json",
+      "bytes": 38552,
+      "sha256": "066bfdd8141303340cd1b4ab93969ae0ae452f1f3b0c740f8d47eda16de55df8"
+    },
+    {
+      "path": "reports/coverage-matrix.v0.21.json",
+      "bytes": 1362,
+      "sha256": "c3152fce783bc4eff5d5450c11f5245335272322ffc962a9a2528b5b071cd47d"
+    },
+    {
+      "path": "reports/producer-ready.json",
+      "bytes": 2233,
+      "sha256": "683d4b1cbc588721a6ef94caac33d364a602a5aa0897c94dd8e85f3f1920daa8"
+    },
+    {
+      "path": "reports/source-guard-result.json",
+      "bytes": 607,
+      "sha256": "0583f8a2cbba0f0a22f0c2b7e3ac278a603fb32076ee1e81a86db01a99afb652"
+    },
+    {
+      "path": "reports/core-shape-draft.json",
+      "bytes": 34,
+      "sha256": "691dca5551adca2cd983de24298334bf7fdacf9e52ac675bfa9ff335756e689f"
+    }
+  ],
+  "excluded": [
+    "source-data fullZIP/workbooks/researchHTML/fullsafe projections",
+    "data-local full171 trajectories/13chunks",
+    "__pycache__/runtime state/auth",
+    "verify-core-shape.mjs workspace-only helper"
+  ],
+  "source_only": true
+}

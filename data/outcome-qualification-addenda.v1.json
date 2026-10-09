@@ -1,0 +1,27 @@
+[
+  {
+    "original_sha256": "7ef5a30d80c481deea2f9e12c6e9c42427fc37636cc47d78dca6ddc16a315e73",
+    "qualification": {
+      "schema_version": "dormathon.cvd-date-epoch-qualification.v0.21.1",
+      "recorded_at": "2026-10-09T00:26:41.437277+00:00",
+      "source_id": "outcome_worldbank_ttbd_cvd",
+      "applies_to_profile_sha256": "07e124dd06428d3e0ea9cb7554249bbef5d85c3944cd42fab321f62268d0f012",
+      "applies_to_manifest_sha256": "a314a586b4d2a09a65d6d47bf8ccbaf42f1506839da88ccd052a31063c3dae60",
+      "issue": "The original action.time.basis sentence imprecisely places workbook date mode in environment.source_context. That context retains raw date-cell values only.",
+      "correct_location": {
+        "small_safe_fixture": "fixtures/six-actual-inputs.safe.json",
+        "small_safe_fixture_sha256": "d6b775fc9f693f4cc41bdf6781a9d3e0317504351da2bb1ea3e268b59df46a2a",
+        "date_epoch_pointer": "$.cases[*].master.date_mode",
+        "workbook_pointer": "$.cases[*].master.workbook",
+        "workbook_digest_pointer": "$.cases[*].master.workbook_sha256",
+        "sheet_row_pointer": "$.cases[*].master.sheet / $.cases[*].master.row",
+        "raw_date_cells_pointer": "$.cases[*].master.fields.{source_field}",
+        "full_external_witness": "source-data/master-with-witness.safe.json, each master.date_mode alongside workbook/sheet/row/fields"
+      },
+      "date_semantics": "BIFF numeric Excel day cells use the retained witness epoch; parsed day-only results remain source dates without guessed timezones. ISO date/midnight strings from XLSX are projected as date-only source cells without an epoch calculation.",
+      "qualification_only": true,
+      "values_clocks_profile_chunks_and_hashes_changed": false,
+      "prior_actual_date_parity_reused": true
+    }
+  }
+]

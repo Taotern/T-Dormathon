@@ -1,0 +1,1644 @@
+{
+  "schema_version": "dormathon.ttbd-cvd-extraction-audit.v0.21",
+  "books": [
+    {
+      "path": "Global countervailing measures/GCVD-ARG.xls",
+      "sha256": "dddcb593319b66e58a57bbd13b4ef1b0838cfd3e7eaf4d302ca11524ba91ff95",
+      "sheets": [
+        {
+          "sheet": "CVD-ARG-Master",
+          "rows": 11,
+          "headers": [
+            "V_NUMBER",
+            "CVD_CTY_NAME",
+            "CASE_ID",
+            "CASE_REPCODE",
+            "INV_CTY_NAME",
+            "INV_CTY_CODE",
+            "PRODUCT",
+            "INIT_DATE",
+            "P_SUB_DATE",
+            "P_INJ_DATE",
+            "P_SUB_DEC",
+            "P_INJ_DEC",
+            "P_CVD_DATE",
+            "P_CVD_MEASURE",
+            "F_SUB_DATE",
+            "F_INJ_DATE",
+            "F_SUB_DEC",
+            "F_INJ_DEC",
+            "F_CVD_DATE",
+            "F_CVD_MEASURE",
+            "REVOKE_DATE",
+            "REVOKE_YEAR",
+            "WTO_F_CVD_MEASURE",
+            "WTO_F_MARGIN_MIN",
+            "WTO_F_MARGIN_MAX",
+            "WTO_CITATION",
+            "RELATED_AD",
+            "INIT_GP",
+            "P_GP",
+            "P_MEASURES_GP",
+            "P_CVD_DUTY",
+            "F_GP",
+            "F_MEASURES_GP",
+            "F_CVD_DUTY",
+            "NOTES"
+          ]
+        },
+        {
+          "sheet": "CVD-ARG-Products",
+          "rows": 32,
+          "headers": [
+            "CASE_ID",
+            "HS_CODE",
+            "HS_DIGITS"
+          ]
+        },
+        {
+          "sheet": "CVD-ARG-Domestic-Firms",
+          "rows": 15,
+          "headers": [
+            "CASE_ID",
+            "D_FIRM"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "Global countervailing measures/GCVD-AUS.xls",
+      "sha256": "0fe3cb39f85b43f6a40758857a88004a0dc293f229c89c13816f9dfa91aa4184",
+      "sheets": [
+        {
+          "sheet": "CVD-AUS-Master",
+          "rows": 46,
+          "headers": [
+            "V_NUMBER",
+            "CVD_CTY_NAME",
+            "CASE_ID",
+            "CASE_REPCODE",
+            "INV_CTY_NAME",
+            "INV_CTY_CODE",
+            "PRODUCT",
+            "INIT_DATE",
+            "P_SUB_DATE",
+            "P_INJ_DATE",
+            "P_SUB_DEC",
+            "P_INJ_DEC",
+            "P_CVD_DATE",
+            "P_CVD_MEASURE",
+            "F_SUB_DATE",
+            "F_INJ_DATE",
+            "F_SUB_DEC",
+            "F_INJ_DEC",
+            "F_CVD_DATE",
+            "F_CVD_MEASURE",
+            "REVOKE_DATE",
+            "REVOKE_YEAR",
+            "WTO_F_CVD_MEASURE",
+            "WTO_F_MARGIN_MIN",
+            "WTO_F_MARGIN_MAX",
+            "WTO_CITATION",
+            "RELATED_AD",
+            "INIT_GP_ACDN",
+            "P_GP_ACDN",
+            "F_GP_ACDN",
+            "NOTES",
+            ""
+          ]
+        },
+        {
+          "sheet": "CVD-AUS-Products",
+          "rows": 169,
+          "headers": [
+            "CASE_ID",
+            "HS_CODE",
+            "HS_DIGITS",
+            "NOTES"
+          ]
+        },
+        {
+          "sheet": "CVD-AUS-Domestic-Firms",
+          "rows": 55,
+          "headers": [
+            "CASE_ID",
+            "D_FIRM",
+            "NOTES"
+          ]
+        },
+        {
+          "sheet": "CVD-AUS-Foreign-Firms",
+          "rows": 143,
+          "headers": [
+            "CASE_ID",
+            "F_FIRM",
+            "F_CVD_MEASURE_FIRM",
+            "NOTES"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "Global countervailing measures/GCVD-BRA.xls",
+      "sha256": "93d21460045d38f870a165f328ef273d13c934426c15142a744912ae6ee6a8d7",
+      "sheets": [
+        {
+          "sheet": "CVD-BRA-Master",
+          "rows": 28,
+          "headers": [
+            "V_NUMBER",
+            "CVD_CTY_NAME",
+            "CASE_ID",
+            "CASE_REPCODE",
+            "INV_CTY_NAME",
+            "INV_CTY_CODE",
+            "PRODUCT",
+            "INIT_DATE",
+            "P_SUB_DATE",
+            "P_INJ_DATE",
+            "P_SUB_DEC",
+            "P_INJ_DEC",
+            "P_CVD_DATE",
+            "P_CVD_MEASURE",
+            "F_SUB_DATE",
+            "F_INJ_DATE",
+            "F_SUB_DEC",
+            "F_INJ_DEC",
+            "F_CVD_DATE",
+            "F_CVD_MEASURE",
+            "REVOKE_DATE",
+            "REVOKE_YEAR",
+            "WTO_F_CVD_MEASURE",
+            "WTO_F_MARGIN_MIN",
+            "WTO_F_MARGIN_MAX",
+            "WTO_CITATION",
+            "RELATED_AD",
+            "P_CVD_DUTY",
+            "F_CVD_DUTY",
+            "FILING_DATE",
+            "NOTES"
+          ]
+        },
+        {
+          "sheet": "CVD-BRA-Products",
+          "rows": 101,
+          "headers": [
+            "CASE_ID",
+            "HS_CODE",
+            "HS_DIGITS"
+          ]
+        },
+        {
+          "sheet": "CVD-BRA-Domestic Firms",
+          "rows": 55,
+          "headers": [
+            "CASE_ID",
+            "D_FIRM"
+          ]
+        },
+        {
+          "sheet": "CVD-BRA-Foreign Firms",
+          "rows": 86,
+          "headers": [
+            "CASE_ID",
+            "F_FIRM",
+            "F_CVD_MEASURE_FIRM",
+            "NOTES"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "Global countervailing measures/GCVD-CAN.xls",
+      "sha256": "5f3406718089ddf1a43f4f2541672b18f10e39583c4144c26b48e98d9ddcf328",
+      "sheets": [
+        {
+          "sheet": "CVD-CAN-Master",
+          "rows": 92,
+          "headers": [
+            "V_NUMBER",
+            "CVD_CTY_NAME",
+            "CASE_ID",
+            "CASE_REPCODE",
+            "INV_CTY_NAME",
+            "INV_CTY_CODE",
+            "PRODUCT",
+            "INIT_DATE",
+            "P_SUB_DATE",
+            "P_INJ_DATE",
+            "P_SUB_DEC",
+            "P_INJ_DEC",
+            "P_CVD_DATE",
+            "P_CVD_MEASURE",
+            "F_SUB_DATE",
+            "F_INJ_DATE",
+            "F_SUB_DEC",
+            "F_INJ_DEC",
+            "F_CVD_DATE",
+            "F_CVD_MEASURE",
+            "REVOKE_DATE",
+            "REVOKE_YEAR",
+            "WTO_F_CVD_MEASURE",
+            "WTO_F_MARGIN_MIN",
+            "WTO_F_MARGIN_MAX",
+            "WTO_CITATION",
+            "RELATED_AD",
+            "CASE_CBSA",
+            "CASE_CITT",
+            "INIT_DATE_CBSA",
+            "INIT_DATE_CITT",
+            "P_AVG_DUTY",
+            "F_AVG_DUTY",
+            "TERM_DATE",
+            "NOTES"
+          ]
+        },
+        {
+          "sheet": "CVD-CAN-Products",
+          "rows": 910,
+          "headers": [
+            "CASE_ID",
+            "HS_CODE",
+            "HS_DIGITS",
+            ""
+          ]
+        },
+        {
+          "sheet": "CVD-CAN-Domestic-Firms",
+          "rows": 195,
+          "headers": [
+            "CASE_ID",
+            "D_FIRM",
+            "NOTES"
+          ]
+        },
+        {
+          "sheet": "CVD-CAN-Foreign-Firms",
+          "rows": 286,
+          "headers": [
+            "CASE_ID",
+            "F_FIRM",
+            "F_CVD_MEASURE_FIRM",
+            "F_CVD_MARGIN_FIRM",
+            "F_CVD_NDUTY_FIRM",
+            "F_CVD_DUTYPAYABLE_FIRM",
+            "F_CVD_EDUTY_FIRM",
+            "NOTES"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "Global countervailing measures/GCVD-CHL.xls",
+      "sha256": "32fe98b0691fa63bf2c589cf3b01f8dec2f5d7860c661919e41aecf48013f034",
+      "sheets": [
+        {
+          "sheet": "CVD-CHL-Master",
+          "rows": 10,
+          "headers": [
+            "V_NUMBER",
+            "CVD_CTY_NAME",
+            "CASE_ID",
+            "CASE_REPCODE",
+            "INV_CTY_NAME",
+            "INV_CTY_CODE",
+            "PRODUCT",
+            "INIT_DATE",
+            "P_SUB_DATE",
+            "P_INJ_DATE",
+            "P_SUB_DEC",
+            "P_INJ_DEC",
+            "P_CVD_DATE",
+            "P_CVD_MEASURE",
+            "F_SUB_DATE",
+            "F_INJ_DATE",
+            "F_SUB_DEC",
+            "F_INJ_DEC",
+            "F_CVD_DATE",
+            "F_CVD_MEASURE",
+            "REVOKE_DATE",
+            "REVOKE_YEAR",
+            "WTO_F_CVD_MEASURE",
+            "WTO_F_MARGIN_MIN",
+            "WTO_F_MARGIN_MAX",
+            "WTO_CITATION",
+            "RELATED_AD",
+            "P_CVD_DUTY",
+            "F_CVD_DUTY",
+            "NOTES",
+            ""
+          ]
+        },
+        {
+          "sheet": "CVD-CHL-Products",
+          "rows": 85,
+          "headers": [
+            "CASE_ID",
+            "HS_CODE",
+            "HS_DIGITS"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "Global countervailing measures/GCVD-CHN.xls",
+      "sha256": "f7687951ce9f746c576ca491c3a039896f1c2ac007a12d82116894a469d1392d",
+      "sheets": [
+        {
+          "sheet": "CVD-CHN-Master",
+          "rows": 18,
+          "headers": [
+            "V_NUMBER",
+            "CVD_CTY_NAME",
+            "CASE_ID",
+            "CASE_REPCODE",
+            "INV_CTY_NAME",
+            "INV_CTY_CODE",
+            "PRODUCT",
+            "INIT_DATE",
+            "P_SUB_DATE",
+            "P_INJ_DATE",
+            "P_SUB_DEC",
+            "P_INJ_DEC",
+            "P_CVD_DATE",
+            "P_CVD_MEASURE",
+            "F_SUB_DATE",
+            "F_INJ_DATE",
+            "F_SUB_DEC",
+            "F_INJ_DEC",
+            "F_CVD_DATE",
+            "F_CVD_MEASURE",
+            "REVOKE_DATE",
+            "REVOKE_YEAR",
+            "WTO_F_CVD_MEASURE",
+            "WTO_F_MARGIN_MIN",
+            "WTO_F_MARGIN_MAX",
+            "WTO_CITATION",
+            "RELATED_AD",
+            "INIT_GP",
+            "P_GP",
+            "P_CVD_DUTY",
+            "F_GP",
+            "F_CVD_DUTY",
+            "CHINA_OFFICIAL_CASE_ID",
+            "NOTES"
+          ]
+        },
+        {
+          "sheet": "CVD-CHN-Products",
+          "rows": 63,
+          "headers": [
+            "CASE_ID",
+            "HS_CODE",
+            "HS_DIGITS"
+          ]
+        },
+        {
+          "sheet": "CVD-CHN-Domestic-Firms",
+          "rows": 29,
+          "headers": [
+            "CASE_ID",
+            "D_FIRM"
+          ]
+        },
+        {
+          "sheet": "CVD-CHN-Foreign-Firms",
+          "rows": 114,
+          "headers": [
+            "CASE_ID",
+            "F_FIRM",
+            "F_CVD_MEASURE_FIRM",
+            "COUNTRY",
+            "NOTES"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "Global countervailing measures/GCVD-CRI.xls",
+      "sha256": "8f2fc760a01e25fdd64d86af25a00a26e5136a95d7d493f809f3cd8c4863a8b3",
+      "sheets": [
+        {
+          "sheet": "CVD-CRI-Master",
+          "rows": 1,
+          "headers": [
+            "V_NUMBER",
+            "CVD_CTY_NAME",
+            "CASE_ID",
+            "CASE_REPCODE",
+            "INV_CTY_NAME",
+            "INV_CTY_CODE",
+            "PRODUCT",
+            "INIT_DATE",
+            "P_SUB_DATE",
+            "P_INJ_DATE",
+            "P_SUB_DEC",
+            "P_INJ_DEC",
+            "P_CVD_DATE",
+            "P_CVD_MEASURE",
+            "F_SUB_DATE",
+            "F_INJ_DATE",
+            "F_SUB_DEC",
+            "F_INJ_DEC",
+            "F_CVD_DATE",
+            "F_CVD_MEASURE",
+            "REVOKE_DATE",
+            "REVOKE_YEAR",
+            "WTO_F_CVD_MEASURE",
+            "WTO_F_MARGIN_MIN",
+            "WTO_F_MARGIN_MAX",
+            "WTO_CITATION",
+            "RELATED_AD",
+            "P_CVD_DUTY",
+            "F_CVD_DUTY",
+            "NOTES"
+          ]
+        },
+        {
+          "sheet": "CVD-CRI-Products",
+          "rows": 2,
+          "headers": [
+            "CASE_ID",
+            "HS_CODE",
+            "HS_DIGITS"
+          ]
+        },
+        {
+          "sheet": "CVD-CRI-Domestic Firms",
+          "rows": 1,
+          "headers": [
+            "CASE_ID",
+            "D_FIRM"
+          ]
+        },
+        {
+          "sheet": "CVD-CRI-Foreign Firms",
+          "rows": 1,
+          "headers": [
+            "CASE_ID",
+            "F_FIRM",
+            "F_CVD_MEASURE_FIRM"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "Global countervailing measures/GCVD-EUN.xls",
+      "sha256": "ceabe6ef907481087d0f841e747feebc4e2d3447b02bf62856a337ab7d55ce71",
+      "sheets": [
+        {
+          "sheet": "CVD-EUN-Master",
+          "rows": 112,
+          "headers": [
+            "V_NUMBER",
+            "CVD_CTY_NAME",
+            "CASE_ID",
+            "CASE_REPCODE",
+            "INV_CTY_NAME",
+            "INV_CTY_CODE",
+            "PRODUCT",
+            "INIT_DATE",
+            "P_SUB_DATE",
+            "P_INJ_DATE",
+            "P_SUB_DEC",
+            "P_INJ_DEC",
+            "P_CVD_DATE",
+            "P_CVD_MEASURE",
+            "F_SUB_DATE",
+            "F_INJ_DATE",
+            "F_SUB_DEC",
+            "F_INJ_DEC",
+            "F_CVD_DATE",
+            "F_CVD_MEASURE",
+            "REVOKE_DATE",
+            "REVOKE_YEAR",
+            "WTO_F_CVD_MEASURE",
+            "WTO_F_MARGIN_MIN",
+            "WTO_F_MARGIN_MAX",
+            "WTO_CITATION",
+            "RELATED_AD",
+            "INIT_GP",
+            "P_CVD_DUTY",
+            "F_CVD_DUTY",
+            "P_CVD_MARGIN",
+            "F_CVD_MARGIN",
+            "P_GP",
+            "F_GP",
+            "NOTES"
+          ]
+        },
+        {
+          "sheet": "CVD-EUN-Products",
+          "rows": 487,
+          "headers": [
+            "CASE_ID",
+            "HS_CODE",
+            "HS_DIGITS",
+            "CN_ P_ex",
+            "P_HS_CODE",
+            "SIG_DIGITS_P_HSCODE",
+            "CN_F_ex",
+            "F_HS_CODE",
+            "SIG_DIGITS_F_HSCODE",
+            "NOTES"
+          ]
+        },
+        {
+          "sheet": "CVD-EUN-Domestic-Firms",
+          "rows": 470,
+          "headers": [
+            "CASE_ID",
+            "D_FIRM",
+            "COUNTRY",
+            "NOTES"
+          ]
+        },
+        {
+          "sheet": "CVD-EUN-Foreign-Firms",
+          "rows": 751,
+          "headers": [
+            "CASE_ID",
+            "F_FIRM",
+            "F_CVD_MEASURE_FIRM",
+            "P_CVD_MEASURE_FIRM",
+            "P_CVD_MARGIN",
+            "F_CVD_MARGIN",
+            "P_CVD_DUTY",
+            "F_CVD_DUTY",
+            "NOTES"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "Global countervailing measures/GCVD-GBR.xlsx",
+      "sha256": "8965452100a39afbe68fc4e5ed97660ec204422e11058d3c380c73fa0281801a",
+      "sheets": [
+        {
+          "sheet": "CVD-GBR-Master",
+          "rows": 64694,
+          "headers": [
+            "V_NUMBER",
+            "CVD_CTY_NAME",
+            "CASE_ID",
+            "CASE_REPCODE",
+            "INV_CTY_NAME",
+            "INV_CTY_CODE",
+            "PRODUCT",
+            "INIT_DATE",
+            "P_SUB_DATE",
+            "P_INJ_DATE",
+            "P_SUB_DEC",
+            "P_INJ_DEC",
+            "P_CVD_DATE",
+            "P_CVD_MEASURE",
+            "F_SUB_DATE",
+            "F_INJ_DATE",
+            "F_SUB_DEC",
+            "F_INJ_DEC",
+            "F_CVD_DATE",
+            "F_CVD_MEASURE",
+            "REVOKE_DATE",
+            "REVOKE_YEAR",
+            "WTO_F_CVD_MEASURE",
+            "WTO_F_MARGIN_MIN",
+            "WTO_F_MARGIN_MAX",
+            "WTO_CITATION",
+            "RELATED_AD",
+            "P_CVD_DUTY",
+            "F_CVD_DUTY",
+            "TRS_CODE",
+            "NOTES"
+          ]
+        },
+        {
+          "sheet": "CVD-GBR-Products",
+          "rows": 1032,
+          "headers": [
+            "CASE_ID",
+            "HS_CODE",
+            "HS_DIGITS",
+            "P_HS_CODE",
+            "P_HS_DIGITS",
+            "NOTES"
+          ]
+        },
+        {
+          "sheet": "CVD-GBR-Domestic-Firms",
+          "rows": 15,
+          "headers": [
+            "CASE_ID",
+            "D_FIRM",
+            "NOTES",
+            ""
+          ]
+        },
+        {
+          "sheet": "CVD-GBR-Foreign-Firms",
+          "rows": 438,
+          "headers": [
+            "CASE_ID",
+            "F_FIRM",
+            "P_CVD_MARGIN",
+            "P_INJ_MARGIN",
+            "P_CVD_DUTY",
+            "F_CVD_MARGIN",
+            "F_INJ_MARGIN",
+            "F_CVD_DUTY",
+            "NOTES"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "Global countervailing measures/GCVD-IND.xls",
+      "sha256": "2d3d514e5b9f859a995747c99edb6cd65b4716b78e50e8f348bba7f8f56bdcfe",
+      "sheets": [
+        {
+          "sheet": "CVD-IND-Master",
+          "rows": 37,
+          "headers": [
+            "V_NUMBER",
+            "CVD_CTY_NAME",
+            "CASE_ID",
+            "CASE_REPCODE",
+            "INV_CTY_NAME",
+            "INV_CTY_CODE",
+            "PRODUCT",
+            "INIT_DATE",
+            "P_SUB_DATE",
+            "P_INJ_DATE",
+            "P_SUB_DEC",
+            "P_INJ_DEC",
+            "P_CVD_DATE",
+            "P_CVD_MEASURE",
+            "F_SUB_DATE",
+            "F_INJ_DATE",
+            "F_SUB_DEC",
+            "F_INJ_DEC",
+            "F_CVD_DATE",
+            "F_CVD_MEASURE",
+            "REVOKE_DATE",
+            "REVOKE_YEAR",
+            "WTO_F_CVD_MEASURE",
+            "WTO_F_MARGIN_MIN",
+            "WTO_F_MARGIN_MAX",
+            "WTO_CITATION",
+            "RELATED_AD",
+            "NOTES"
+          ]
+        },
+        {
+          "sheet": "CVD-IND-Products",
+          "rows": 176,
+          "headers": [
+            "CASE_ID",
+            "HS_CODE",
+            "HS_DIGITS",
+            "NOTES"
+          ]
+        },
+        {
+          "sheet": "CVD-IND-Domestic-Firms",
+          "rows": 76,
+          "headers": [
+            "CASE_ID",
+            "D_FIRM",
+            "NOTES"
+          ]
+        },
+        {
+          "sheet": "CVD-IND-Foreign-Firms",
+          "rows": 86,
+          "headers": [
+            "CASE_ID",
+            "F_FIRM",
+            "F_CVD_MEASURE_FIRM",
+            "NOTES",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "path": "Global countervailing measures/GCVD-JPN.xls",
+      "sha256": "948fdc2e1ca4c16c1b7b90f2d3fbb8df8e7325bc94bcfde16e8bc28263ea2ca7",
+      "sheets": [
+        {
+          "sheet": "CVD-JPN-Master",
+          "rows": 1,
+          "headers": [
+            "V_NUMBER",
+            "CVD_CTY_NAME",
+            "CASE_ID",
+            "CASE_REPCODE",
+            "INV_CTY_NAME",
+            "INV_CTY_CODE",
+            "PRODUCT",
+            "INIT_DATE",
+            "P_SUB_DATE",
+            "P_INJ_DATE",
+            "P_SUB_DEC",
+            "P_INJ_DEC",
+            "P_CVD_DATE",
+            "P_CVD_MEASURE",
+            "F_SUB_DATE",
+            "F_INJ_DATE",
+            "F_SUB_DEC",
+            "F_INJ_DEC",
+            "F_CVD_DATE",
+            "F_CVD_MEASURE",
+            "REVOKE_DATE",
+            "REVOKE_YEAR",
+            "WTO_F_AD_MEASURE",
+            "WTO_F_MARGIN_MIN",
+            "WTO_F_MARGIN_MAX",
+            "WTO_CITATION",
+            "RELATED_AD",
+            "P_CVD_DUTY",
+            "F_CVD_DUTY",
+            "INIT_GP",
+            "P_GP",
+            "F_GP",
+            "REVOKE_GP",
+            "NOTES"
+          ]
+        },
+        {
+          "sheet": "CVD-JPN-Products",
+          "rows": 3,
+          "headers": [
+            "CASE_ID",
+            "HS_CODE",
+            "HS_DIGITS"
+          ]
+        },
+        {
+          "sheet": "CVD-JPN-Domestic-Firms",
+          "rows": 2,
+          "headers": [
+            "CASE_ID",
+            "D_FIRM"
+          ]
+        },
+        {
+          "sheet": "CVD-JPN-Foreign-Firms",
+          "rows": 1,
+          "headers": [
+            "CASE_ID",
+            "F_FIRM",
+            "F_CVD_MEASURE_FIRM",
+            "NOTES"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "Global countervailing measures/GCVD-MEX.xls",
+      "sha256": "7f3628f3f58cfb247acb440e76c4fc93950dc750e303d966187067e6e256c270",
+      "sheets": [
+        {
+          "sheet": "CVD-MEX-Master",
+          "rows": 24,
+          "headers": [
+            "V_NUMBER",
+            "CVD_CTY_NAME",
+            "CASE_ID",
+            "CASE_REPCODE",
+            "INV_CTY_NAME",
+            "INV_CTY_CODE",
+            "PRODUCT",
+            "INIT_DATE",
+            "P_SUB_DATE",
+            "P_INJ_DATE",
+            "P_SUB_DEC",
+            "P_INJ_DEC",
+            "P_CVD_DATE",
+            "P_CVD_MEASURE",
+            "F_SUB_DATE",
+            "F_INJ_DATE",
+            "F_SUB_DEC",
+            "F_INJ_DEC",
+            "F_CVD_DATE",
+            "F_CVD_MEASURE",
+            "REVOKE_DATE",
+            "REVOKE_YEAR",
+            "WTO_F_CVD_MEASURE",
+            "WTO_F_MARGIN_MIN",
+            "WTO_F_MARGIN_MAX",
+            "WTO_CITATION",
+            "RELATED_AD",
+            "P_CVD_DUTY",
+            "F_CVD_DUTY",
+            "NOTES"
+          ]
+        },
+        {
+          "sheet": "CVD-MEX-Products",
+          "rows": 67,
+          "headers": [
+            "CASE_ID",
+            "HS_CODE",
+            "HS_DIGITS"
+          ]
+        },
+        {
+          "sheet": "CVD-MEX-Domestic Firms",
+          "rows": 32,
+          "headers": [
+            "CASE_ID",
+            "D_FIRM"
+          ]
+        },
+        {
+          "sheet": "CVD-MEX-Foreign Firms",
+          "rows": 132,
+          "headers": [
+            "CASE_ID",
+            "F_FIRM",
+            "F_CVD_MEASURE_FIRM",
+            "F_CVD_MARGIN_FIRM",
+            "NOTES"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "Global countervailing measures/GCVD-OTH.xls",
+      "sha256": "bbbcdfa2b0b90960c74f03c75f7f98489f89808f0c80cfaf695df22ed09fc396",
+      "sheets": [
+        {
+          "sheet": "CVD-EGY-Master",
+          "rows": 12,
+          "headers": [
+            "V_NUMBER",
+            "CVD_CTY_NAME",
+            "CASE_ID",
+            "CASE_REPCODE",
+            "INV_CTY_NAME",
+            "INV_CTY_CODE",
+            "PRODUCT",
+            "INIT_DATE",
+            "P_DATE",
+            "P_DEC",
+            "P_MARGIN",
+            "F_DATE",
+            "F_DEC",
+            "F_MARGIN",
+            "REVOKE_DATE",
+            "REVOKE_YEAR",
+            "NOTES"
+          ]
+        },
+        {
+          "sheet": "CVD-ISR-Master",
+          "rows": 2,
+          "headers": [
+            "V_NUMBER",
+            "CVD_CTY_NAME",
+            "CASE_ID",
+            "CASE_REPCODE",
+            "INV_CTY_NAME",
+            "INV_CTY_CODE",
+            "PRODUCT",
+            "INIT_DATE",
+            "P_DATE",
+            "P_DEC",
+            "P_MARGIN",
+            "F_DATE",
+            "F_DEC",
+            "F_MARGIN",
+            "REVOKE_DATE",
+            "REVOKE_YEAR",
+            "NOTES"
+          ]
+        },
+        {
+          "sheet": "CVD-EAEU-Master",
+          "rows": 1,
+          "headers": [
+            "V_NUMBER",
+            "CVD_CTY_NAME",
+            "CASE_ID",
+            "CASE_REPCODE",
+            "INV_CTY_NAME",
+            "INV_CTY_CODE",
+            "PRODUCT",
+            "INIT_DATE",
+            "P_DATE",
+            "P_DEC",
+            "P_MARGIN",
+            "F_DATE",
+            "F_DEC",
+            "F_MARGIN",
+            "REVOKE_DATE",
+            "REVOKE_YEAR",
+            "NOTES"
+          ]
+        },
+        {
+          "sheet": "CVD-NZL-Master",
+          "rows": 9,
+          "headers": [
+            "V_NUMBER",
+            "CVD_CTY_NAME",
+            "CASE_ID",
+            "CASE_REPCODE",
+            "INV_CTY_NAME",
+            "INV_CTY_CODE",
+            "PRODUCT",
+            "INIT_DATE",
+            "P_DATE",
+            "P_DEC",
+            "P_MARGIN",
+            "F_DATE",
+            "F_DEC",
+            "F_MARGIN",
+            "REVOKE_DATE",
+            "REVOKE_YEAR",
+            "NOTES"
+          ]
+        },
+        {
+          "sheet": "CVD-UKR-Master",
+          "rows": 2,
+          "headers": [
+            "V_NUMBER",
+            "CVD_CTY_NAME",
+            "CASE_ID",
+            "CASE_REPCODE",
+            "INV_CTY_NAME",
+            "INV_CTY_CODE",
+            "PRODUCT",
+            "INIT_DATE",
+            "P_DATE",
+            "P_DEC",
+            "P_MARGIN",
+            "F_DATE",
+            "F_DEC",
+            "F_MARGIN",
+            "REVOKE_DATE",
+            "REVOKE_YEAR",
+            "NOTES"
+          ]
+        },
+        {
+          "sheet": "READ ME",
+          "rows": 1,
+          "headers": [
+            "Annotation"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "Global countervailing measures/GCVD-PAK.xls",
+      "sha256": "52fb52a1e399fa8524d5080848851b1397d717a27d5ecdd04a277b3059afe4e7",
+      "sheets": [
+        {
+          "sheet": "CVD-PAK-Master",
+          "rows": 3,
+          "headers": [
+            "V_NUMBER",
+            "CVD_CTY_NAME",
+            "CASE_ID",
+            "CASE_REPCODE",
+            "INV_CTY_NAME",
+            "INV_CTY_CODE",
+            "PRODUCT",
+            "INIT_DATE",
+            "P_SUB_DATE",
+            "P_INJ_DATE",
+            "P_SUB_DEC",
+            "P_INJ_DEC",
+            "P_CVD_DATE",
+            "P_CVD_MEASURE",
+            "F_SUB_DATE",
+            "F_INJ_DATE",
+            "F_SUB_DEC",
+            "F_INJ_DEC",
+            "F_CVD_DATE",
+            "F_CVD_MEASURE",
+            "REVOKE_DATE",
+            "REVOKE_YEAR",
+            "WTO_F_CVD_MEASURE",
+            "WTO_F_MARGIN_MIN",
+            "WTO_F_MARGIN_MAX",
+            "WTO_CITATION",
+            "RELATED_AD",
+            "P_CVD_DUTY",
+            "F_CVD_DUTY",
+            "CASE_NTC",
+            "NOTES"
+          ]
+        },
+        {
+          "sheet": "CVD-PAK-Products",
+          "rows": 26,
+          "headers": [
+            "CASE_ID",
+            "HS_CODE",
+            "HS_DIGITS"
+          ]
+        },
+        {
+          "sheet": "CVD-PAK-Domestic-Firms",
+          "rows": 3,
+          "headers": [
+            "CASE_ID",
+            "D_FIRM"
+          ]
+        },
+        {
+          "sheet": "CVD-PAK-Foreign-Firms",
+          "rows": 14,
+          "headers": [
+            "CASE_ID",
+            "F_FIRM",
+            "P_CVD_MEASURE_FIRM",
+            "P_SUB_MARGIN",
+            "P_CVD_DUTY",
+            "F_CVD_MEASURE_FIRM",
+            "F_SUB_MARGIN",
+            "F_CVD_DUTY",
+            "NOTES"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "Global countervailing measures/GCVD-PER.xls",
+      "sha256": "29397b7bb2fcdde161fc0c1c91653047e238625670d2c25f60c2729ed7ab09fc",
+      "sheets": [
+        {
+          "sheet": "CVD-PER-Master",
+          "rows": 17,
+          "headers": [
+            "V_NUMBER",
+            "CVD_CTY_NAME",
+            "CASE_ID",
+            "CASE_REPCODE",
+            "INV_CTY_NAME",
+            "INV_CTY_CODE",
+            "PRODUCT",
+            "INIT_DATE",
+            "P_SUB_DATE",
+            "P_INJ_DATE",
+            "P_SUB_DEC",
+            "P_INJ_DEC",
+            "P_CVD_DATE",
+            "P_CVD_MEASURE",
+            "F_SUB_DATE",
+            "F_INJ_DATE",
+            "F_SUB_DEC",
+            "F_INJ_DEC",
+            "F_CVD_DATE",
+            "F_CVD_MEASURE",
+            "REVOKE_DATE",
+            "REVOKE_YEAR",
+            "WTO_F_CVD_MEASURE",
+            "WTO_F_MARGIN_MIN",
+            "WTO_F_MARGIN_MAX",
+            "WTO_CITATION",
+            "RELATED_AD",
+            "P_CVD_DUTY",
+            "F_CVD_DUTY",
+            "INIT_GP",
+            "P_GP",
+            "F_GP",
+            "REVOKE_GP",
+            "NOTES"
+          ]
+        },
+        {
+          "sheet": "CVD-PER-Products",
+          "rows": 43,
+          "headers": [
+            "CASE_ID",
+            "HS_CODE",
+            "HS_DIGITS",
+            "HS_WTO",
+            "HS_DIG_WTO",
+            "NOTES"
+          ]
+        },
+        {
+          "sheet": "CVD-PER-Domestic-Firms",
+          "rows": 32,
+          "headers": [
+            "CASE_ID",
+            "D_FIRM",
+            ""
+          ]
+        },
+        {
+          "sheet": "CVD-PER-Foreign-Firms",
+          "rows": 71,
+          "headers": [
+            "CASE_ID",
+            "F_FIRM",
+            "F_CVD_MEASURE_FIRM",
+            "F_CVD_MARGIN_FIRM",
+            "NOTES"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "Global countervailing measures/GCVD-TUR.xls",
+      "sha256": "79c786d98b1a8d82165a1c47174b53efbe72361cd1e9cd5a6eda4934db852f68",
+      "sheets": [
+        {
+          "sheet": "CVD-TUR-Master",
+          "rows": 3,
+          "headers": [
+            "V_NUMBER",
+            "CVD_CTY_NAME",
+            "CASE_ID",
+            "CASE_REPCODE",
+            "INV_CTY_NAME",
+            "INV_CTY_CODE",
+            "PRODUCT",
+            "INIT_DATE",
+            "P_SUB_DATE",
+            "P_INJ_DATE",
+            "P_SUB_DEC",
+            "P_INJ_DEC",
+            "P_CVD_DATE",
+            "P_CVD_MEASURE",
+            "F_SUB_DATE",
+            "F_INJ_DATE",
+            "F_SUB_DEC",
+            "F_INJ_DEC",
+            "F_CVD_DATE",
+            "F_CVD_MEASURE",
+            "REVOKE_DATE",
+            "REVOKE_YEAR",
+            "WTO_F_CVD_MEASURE",
+            "WTO_F_MARGIN_MIN",
+            "WTO_F_MARGIN_MAX",
+            "WTO_CITATION",
+            "RELATED_AD",
+            "P_CVD_DUTY",
+            "F_CVD_DUTY",
+            "F_CVD_DOC",
+            "F_DOC_COM_NO",
+            ""
+          ]
+        },
+        {
+          "sheet": "CVD-TUR-Products",
+          "rows": 5,
+          "headers": [
+            "CASE_ID",
+            "HS_CODE",
+            "HS_DIGITS"
+          ]
+        },
+        {
+          "sheet": "CVD-TUR-Domestic-Firms",
+          "rows": 3,
+          "headers": [
+            "CASE_ID",
+            "D_FIRM"
+          ]
+        },
+        {
+          "sheet": "CVD-TUR-Foreign-Firms",
+          "rows": 6,
+          "headers": [
+            "CASE_ID",
+            "F_FIRM",
+            "F_CVD_MEASURE_FIRM"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "Global countervailing measures/GCVD-USA.xls",
+      "sha256": "14b6d1f9b03b74e2dee05c5406a0d60ffb7586dccaede34236c979ab110f10f8",
+      "sheets": [
+        {
+          "sheet": "CVD-USA-Master",
+          "rows": 803,
+          "headers": [
+            "V_NUMBER",
+            "CVD_CTY_NAME",
+            "CASE_ID",
+            "CASE_REPCODE",
+            "INV_CTY_NAME",
+            "INV_CTY_CODE",
+            "PRODUCT",
+            "INIT_DATE",
+            "P_SUB_DATE",
+            "P_INJ_DATE",
+            "P_SUB_DEC",
+            "P_INJ_DEC",
+            "P_CVD_DATE",
+            "P_CVD_MEASURE",
+            "F_SUB_DATE",
+            "F_INJ_DATE",
+            "F_SUB_DEC",
+            "F_INJ_DEC",
+            "F_CVD_DATE",
+            "F_CVD_MEASURE",
+            "REVOKE_DATE",
+            "REVOKE_YEAR",
+            "WTO_F_CVD_MEASURE",
+            "WTO_F_MARGIN_MIN",
+            "WTO_F_MARGIN_MAX",
+            "WTO_CITATION",
+            "RELATED_AD",
+            "CASE_ITA",
+            "CASE_ITC",
+            "ITC_REPCODE",
+            "INIT_DATE_ITA",
+            "INIT_DATE_ITC",
+            "TERM_DATE",
+            "P_CVD_DUTY",
+            "F_CVD_DUTY",
+            "INIT_ITA_GP",
+            "INIT_ITC_GP",
+            "P_SUB_GP",
+            "P_INJ_GP",
+            "F_SUB_GP",
+            "F_INJ_GP",
+            "F_CVD_MEASURE_GP",
+            "TERM_GP",
+            "REVOKE_GP",
+            "SUSP_GP",
+            "NOTES"
+          ]
+        },
+        {
+          "sheet": "CVD-USA-Products",
+          "rows": 13556,
+          "headers": [
+            "CASE_ID",
+            "HS_CODE",
+            "HS_DIGITS",
+            "TS_CODE",
+            "TS_DIGITS",
+            "CASE_ITC",
+            "NOTES"
+          ]
+        },
+        {
+          "sheet": "CVD-USA-Domestic-Firms",
+          "rows": 1639,
+          "headers": [
+            "CASE_ID",
+            "D_FIRM",
+            "CASE_ITC",
+            "NOTES"
+          ]
+        },
+        {
+          "sheet": "CVD-USA-Foreign-Firms",
+          "rows": 1962,
+          "headers": [
+            "CASE_ID",
+            "F_FIRM",
+            "F_CVD_MEASURE_FIRM",
+            "CASE_ITC",
+            "NOTES"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "Global countervailing measures/GCVD-VEN.xls",
+      "sha256": "4662d544c8f76384d8a2da78cc3346adffa3e9ba395b5c8250b506ab244eb5e7",
+      "sheets": [
+        {
+          "sheet": "CVD-VEN-Master",
+          "rows": 3,
+          "headers": [
+            "V_NUMBER",
+            "CVD_CTY_NAME",
+            "CASE_ID",
+            "CASE_REPCODE",
+            "INV_CTY_NAME",
+            "INV_CTY_CODE",
+            "PRODUCT",
+            "INIT_DATE",
+            "P_SUB_DATE",
+            "P_INJ_DATE",
+            "P_SUB_DEC",
+            "P_INJ_DEC",
+            "P_CVD_DATE",
+            "P_CVD_MEASURE",
+            "F_SUB_DATE",
+            "F_INJ_DATE",
+            "F_SUB_DEC",
+            "F_INJ_DEC",
+            "F_CVD_DATE",
+            "F_CVD_MEASURE",
+            "REVOKE_DATE",
+            "REVOKE_YEAR",
+            "WTO_F_CVD_MEASURE",
+            "WTO_F_MARGIN_MIN",
+            "WTO_F_MARGIN_MAX",
+            "WTO_CITATION",
+            "RELATED_AD",
+            "P_CVD_DUTY",
+            "F_CVD_DUTY",
+            "NOTES"
+          ]
+        },
+        {
+          "sheet": "CVD-VEN-Products",
+          "rows": 8,
+          "headers": [
+            "CASE_ID",
+            "HS_CODE",
+            "HS_DIGITS"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "Global countervailing measures/GCVD-ZAF.xls",
+      "sha256": "4654f0e94638ded3baac648fa1608b5a1c1bf7bad20be4216e8691034336d078",
+      "sheets": [
+        {
+          "sheet": "CVD-ZAF-Master",
+          "rows": 13,
+          "headers": [
+            "V_NUMBER",
+            "CVD_CTY_NAME",
+            "CASE_ID",
+            "CASE_REPCODE",
+            "INV_CTY_NAME",
+            "INV_CTY_CODE",
+            "PRODUCT",
+            "INIT_DATE",
+            "P_SUB_DATE",
+            "P_INJ_DATE",
+            "P_SUB_DEC",
+            "P_INJ_DEC",
+            "P_CVD_DATE",
+            "P_CVD_MEASURE",
+            "F_SUB_DATE",
+            "F_INJ_DATE",
+            "F_SUB_DEC",
+            "F_INJ_DEC",
+            "F_CVD_DATE",
+            "F_CVD_MEASURE",
+            "REVOKE_DATE",
+            "REVOKE_YEAR",
+            "WTO_F_CVD_MEASURE",
+            "WTO_F_MARGIN_MIN",
+            "WTO_F_MARGIN_MAX",
+            "WTO_CITATION",
+            "RELATED_AD",
+            "P_CVD_DUTY",
+            "F_CVD_DUTY",
+            "NOTES"
+          ]
+        },
+        {
+          "sheet": "CVD-ZAF-Products",
+          "rows": 20,
+          "headers": [
+            "CASE_ID",
+            "HS_CODE",
+            "HS_DIGITS"
+          ]
+        },
+        {
+          "sheet": "CVD-ZAF-Domestic-Firms",
+          "rows": 12,
+          "headers": [
+            "CASE_ID",
+            "D_FIRM",
+            "NOTES"
+          ]
+        }
+      ]
+    }
+  ],
+  "master_rows": 1263,
+  "unique_case_ids": 1263,
+  "duplicate_case_id_occurrences": {},
+  "reporting_labels": [
+    "Argentina",
+    "Australia",
+    "Brazil",
+    "Canada",
+    "Chile",
+    "China",
+    "Costa Rica",
+    "Egypt",
+    "Eurasian Economic Union",
+    "European Union",
+    "India",
+    "Israel",
+    "Japan",
+    "Mexico",
+    "New Zealand",
+    "Pakistan",
+    "Peru",
+    "South Africa",
+    "Turkey",
+    "USA",
+    "Ukraine",
+    "United Kingdom",
+    "Venezuela"
+  ],
+  "vintages": {
+    "Q4_2024": 1263
+  },
+  "selected2020_2024_rows": 171,
+  "selected_reporting_labels": {
+    "Australia": 14,
+    "Brazil": 3,
+    "Canada": 9,
+    "China": 5,
+    "European Union": 12,
+    "United Kingdom": 15,
+    "India": 15,
+    "Mexico": 1,
+    "USA": 97
+  },
+  "selected_init_years": {
+    "2020": 62,
+    "2021": 23,
+    "2024": 44,
+    "2023": 28,
+    "2022": 14
+  },
+  "selected_case_ids": [
+    "AUS-CVD-33",
+    "AUS-CVD-34",
+    "AUS-CVD-35",
+    "AUS-CVD-36",
+    "AUS-CVD-37",
+    "AUS-CVD-38",
+    "AUS-CVD-39",
+    "AUS-CVD-40",
+    "AUS-CVD-41",
+    "AUS-CVD-42",
+    "AUS-CVD-43",
+    "AUS-CVD-44",
+    "AUS-CVD-45",
+    "AUS-CVD-46",
+    "BRA-CVD-26",
+    "BRA-CVD-27",
+    "BRA-CVD-28",
+    "CAN-CVD-84",
+    "CAN-CVD-85",
+    "CAN-CVD-86",
+    "CAN-CVD-87",
+    "CAN-CVD-88",
+    "CAN-CVD-89",
+    "CAN-CVD-90",
+    "CAN-CVD-91",
+    "CAN-CVD-92",
+    "CHN-CVD-14",
+    "CHN-CVD-15",
+    "CHN-CVD-16",
+    "CHN-CVD-17",
+    "CHN-CVD-18",
+    "EUN-CVD-101",
+    "EUN-CVD-102",
+    "EUN-CVD-103",
+    "EUN-CVD-104",
+    "EUN-CVD-105",
+    "EUN-CVD-106",
+    "EUN-CVD-107",
+    "EUN-CVD-108",
+    "EUN-CVD-109",
+    "EUN-CVD-110",
+    "EUN-CVD-111",
+    "EUN-CVD-112",
+    "GBR-CVD-R1",
+    "GBR-CVD-R2",
+    "GBR-CVD-R3",
+    "GBR-CVD-R4",
+    "GBR-CVD-R5",
+    "GBR-CVD-R6",
+    "GBR-CVD-R7",
+    "GBR-CVD-R8",
+    "GBR-CVD-R9",
+    "GBR-CVD-R10",
+    "GBR-CVD-R11",
+    "GBR-CVD-R12",
+    "GBR-CVD-1",
+    "GBR-CVD-2",
+    "GBR-CVD-3",
+    "IND-CVD-23",
+    "IND-CVD-24",
+    "IND-CVD-25",
+    "IND-CVD-26",
+    "IND-CVD-27",
+    "IND-CVD-28",
+    "IND-CVD-29",
+    "IND-CVD-30",
+    "IND-CVD-31",
+    "IND-CVD-32",
+    "IND-CVD-33",
+    "IND-CVD-34",
+    "IND-CVD-35",
+    "IND-CVD-36",
+    "IND-CVD-37",
+    "MEX-CVD-24",
+    "USA-CVD-706",
+    "USA-CVD-707",
+    "USA-CVD-708",
+    "USA-CVD-709",
+    "USA-CVD-710",
+    "USA-CVD-711",
+    "USA-CVD-712",
+    "USA-CVD-713",
+    "USA-CVD-714",
+    "USA-CVD-715",
+    "USA-CVD-716",
+    "USA-CVD-717",
+    "USA-CVD-718",
+    "USA-CVD-719",
+    "USA-CVD-720",
+    "USA-CVD-721",
+    "USA-CVD-722",
+    "USA-CVD-723",
+    "USA-CVD-724",
+    "USA-CVD-725",
+    "USA-CVD-726",
+    "USA-CVD-727",
+    "USA-CVD-728",
+    "USA-CVD-729",
+    "USA-CVD-730",
+    "USA-CVD-731",
+    "USA-CVD-732",
+    "USA-CVD-733",
+    "USA-CVD-734",
+    "USA-CVD-735",
+    "USA-CVD-736",
+    "USA-CVD-737",
+    "USA-CVD-738",
+    "USA-CVD-739",
+    "USA-CVD-740",
+    "USA-CVD-741",
+    "USA-CVD-742",
+    "USA-CVD-743",
+    "USA-CVD-744",
+    "USA-CVD-745",
+    "USA-CVD-746",
+    "USA-CVD-747",
+    "USA-CVD-748",
+    "USA-CVD-749",
+    "USA-CVD-750",
+    "USA-CVD-751",
+    "USA-CVD-752",
+    "USA-CVD-753",
+    "USA-CVD-754",
+    "USA-CVD-755",
+    "USA-CVD-756",
+    "USA-CVD-757",
+    "USA-CVD-758",
+    "USA-CVD-759",
+    "USA-CVD-760",
+    "USA-CVD-761",
+    "USA-CVD-762",
+    "USA-CVD-763",
+    "USA-CVD-764",
+    "USA-CVD-765",
+    "USA-CVD-766",
+    "USA-CVD-767",
+    "USA-CVD-768",
+    "USA-CVD-769",
+    "USA-CVD-770",
+    "USA-CVD-771",
+    "USA-CVD-772",
+    "USA-CVD-773",
+    "USA-CVD-774",
+    "USA-CVD-775",
+    "USA-CVD-776",
+    "USA-CVD-777",
+    "USA-CVD-778",
+    "USA-CVD-779",
+    "USA-CVD-780",
+    "USA-CVD-781",
+    "USA-CVD-782",
+    "USA-CVD-783",
+    "USA-CVD-784",
+    "USA-CVD-785",
+    "USA-CVD-786",
+    "USA-CVD-788",
+    "USA-CVD-789",
+    "USA-CVD-790",
+    "USA-CVD-791",
+    "USA-CVD-792",
+    "USA-CVD-793",
+    "USA-CVD-794",
+    "USA-CVD-795",
+    "USA-CVD-796",
+    "USA-CVD-797",
+    "USA-CVD-798",
+    "USA-CVD-799",
+    "USA-CVD-800",
+    "USA-CVD-801",
+    "USA-CVD-802",
+    "USA-CVD-803"
+  ]
+}

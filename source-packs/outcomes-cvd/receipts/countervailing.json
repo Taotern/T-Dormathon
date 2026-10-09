@@ -1,0 +1,26 @@
+{
+  "schema_version": "dormathon.actor-source-acquisition.v0.21",
+  "role": "countervailing",
+  "requested_url": "https://thedocs.worldbank.org/en/doc/1b03ee05a4a6d2374c126196ddf0a128-0430012025/related/Global-countervailing-measures.zip",
+  "started_at": "2026-10-08T23:28:23.197427+00:00",
+  "status": "retrieved_pending_schema_validation",
+  "attempts": 1,
+  "body_cap": 2097152,
+  "strict_overall_deadline_seconds": 30,
+  "redirect_policy": "reject",
+  "authentication": "none",
+  "recurring_operational": false,
+  "http_status": 200,
+  "bytes_read": 1332534,
+  "body_complete": true,
+  "response_headers": {
+    "Date": "Thu, 08 Oct 2026 23:28:31 GMT",
+    "Last-Modified": "Thu, 24 Apr 2025 20:25:55 GMT",
+    "Content-Type": "application/zip"
+  },
+  "raw_sha256": "9151401fa3ff8d438d19e1d60dc7560f80f2f49f77ac45b3aa625881b3e4655b",
+  "retained_path": "source-data/countervailing.zip",
+  "fetched_at": "2026-10-08T23:28:31.246930+00:00",
+  "completed_at": "2026-10-08T23:28:31.246958+00:00",
+  "elapsed_seconds": 8.049
+}

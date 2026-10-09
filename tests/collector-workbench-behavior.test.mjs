@@ -7,7 +7,7 @@ import {fileURLToPath} from 'node:url';
 import {test} from 'node:test';
 const sourcePath=fileURLToPath(new URL('../static/collector-workbench.js',import.meta.url));
 const source=fs.readFileSync(sourcePath,'utf8');
-assert.equal(createHash('sha256').update(source).digest('hex'),'d66d35db8e19e0c7830496611f4e1af24e45e01347f0f1271e9678d2927538b9','Rebind reviewed behavior tests only after intentional client changes');
+assert.equal(createHash('sha256').update(source).digest('hex'),'51852fd393877c9d5da7b588740350c68bb9052006abe6aaa1c8fb981bb1163d','Rebind reviewed behavior tests only after intentional client changes');
 
 function deferred() {
   let resolve;
@@ -141,26 +141,26 @@ const initialItem = {
 function makeHarness(fetchOverride = null) {
   const ids = [
     'notice', 'collect-source', 'filter-source', 'collect', 'source-rows', 'run-rows',
-    'saved-from','saved-to','filter-sort','observation-grain','observation-from','observation-to','counts', 'runtime','reviewed-intake-state', 'index-status', 'index', 'filter-form', 'record-detail',
+    'reporting-country','saved-from','saved-to','filter-sort','observation-grain','observation-from','observation-to','counts', 'runtime','reviewed-intake-state', 'index-status', 'index', 'filter-form', 'record-detail',
     'item-scope', 'item-results', 'next-items', 'group-results', 'snapshot-save',
     'snapshot-state', 'reload', 'clear-filter', 'filter-query', 'filter-category',
     'filter-origin', 'filter-language', 'documents', 'snapshot-file', 'evidence', 'main',
-    'document-results', 'evidence-close',
+    'document-results', 'evidence-close', 'outcome-form','outcome-grain','outcome-source','outcome-from','outcome-to','outcome-query','outcome-status','outcome-scope','outcome-results','outcome-detail','outcome-next','outcome-clear','outcome-export','outcome-train-end','outcome-validation-end',
   ];
   const elements = new Map(ids.map((id) => {
-    const tag = id === 'filter-form' ? 'form'
+    const tag = ['filter-form','outcome-form'].includes(id) ? 'form'
       : ['collect-source', 'filter-source', 'filter-category', 'filter-origin','observation-grain'].includes(id) ? 'select'
       : ['filter-query', 'filter-language', 'snapshot-file','observation-from','observation-to'].includes(id) ? 'input'
       : id === 'collect' || id === 'index' || id === 'snapshot-save' || id === 'reload' || id === 'clear-filter' || id === 'next-items' || id === 'documents' ? 'button'
       : 'div';
     return [id, new MockElement(tag)];
   }));
-  const panes = ['collect', 'filter', 'organize', 'ingest'].map((view) => {
+  const panes = ['collect', 'filter', 'organize', 'ingest','outcomes'].map((view) => {
     const node = new MockElement('section');
     node.dataset.pane = view;
     return node;
   });
-  const views = ['collect', 'filter', 'organize', 'ingest'].map((view) => {
+  const views = ['collect', 'filter', 'organize', 'ingest','outcomes'].map((view) => {
     const node = new MockElement('button');
     node.dataset.view = view;
     return node;
@@ -168,9 +168,9 @@ function makeHarness(fetchOverride = null) {
   const skip = new MockElement('a');
   skip.className = 'skip';
 
-  const controls = ['filter-query', 'filter-source', 'filter-category', 'filter-origin', 'filter-language','observation-grain','observation-from','observation-to'].map((id) => elements.get(id));
+  const controls = ['reporting-country','filter-query', 'filter-source', 'filter-category', 'filter-origin', 'filter-language','observation-grain','observation-from','observation-to'].map((id) => elements.get(id));
   controls.push(new MockElement('button'));
-  elements.get('filter-form')._formControls = controls;
+  elements.get('filter-form')._formControls = controls;elements.get('outcome-form')._formControls=['outcome-source','outcome-from','outcome-to','outcome-query'].map(id=>elements.get(id));
 
   const selectors = new Map([...elements].map(([id, element]) => [`#${id}`, element]));
   selectors.set('.skip', skip);
@@ -185,6 +185,8 @@ function makeHarness(fetchOverride = null) {
   };
   const calls = [];
   const defaultFetch = async (path, init) => {
+    if (path === '/api/outcomes/status')return response({events:1,versions:1,metrics:7,batches:[],sources:[]});
+    if(path.startsWith('/api/outcomes/events?'))return response({events:[],watermark:0,next_cursor:null});
     if (path === '/api/global/status') return response({ item_count: 1, direct_item_count: 1, uploaded_item_count: 0, endpoint_count: 1, scheduler: { enabled: false } });
     if (path === '/api/global/sources') return response({ sources: [{ id: 'verified-source', name: 'Verified Source', enabled: true, freshness: 'fresh' }] });
     if (path === '/api/global/runs') return response({ runs: [] });
@@ -217,7 +219,7 @@ function makeHarness(fetchOverride = null) {
   };
   vm.createContext(context);
   // The exposure is appended only in the VM so the immutable input file remains untouched.
-  vm.runInContext(`${source}\n;globalThis.__test = { state, loadItems, selectItem, readSnapshot };`, context, { filename: sourcePath });
+  vm.runInContext(`${source}\n;globalThis.__test = { state, loadItems, selectItem, readSnapshot,outcomeRead,outcomeSelect,outcomeUI,show,filterValues,writeLocation,restoreLocation };`, context, { filename: sourcePath });
   return { app: context.__test, context, calls, elements, panes, views, document };
 }
 
@@ -402,3 +404,22 @@ process.stdout.write('All runtime behavior checks passed.\n');
 await run('narrow detail has a focused single surface and Back preserves query/scroll/row',async()=>{const h=await readyHarness();h.context.innerWidth=500;h.elements.get('filter-query').value='preserved draft';const row=h.elements.get('item-results').children[0].children[0];await h.app.selectItem(initialItem,row);assert.equal(h.elements.get('item-results').hidden,true);assert.equal(h.elements.get('filter-form').hidden,true);assert.equal(h.elements.get('record-detail').focused,true);const back=h.elements.get('record-detail').children[0];assert.equal(back.textContent,'返回结果');await back.click();assert.equal(h.elements.get('item-results').hidden,false);assert.equal(h.elements.get('filter-form').hidden,false);assert.equal(h.elements.get('filter-query').value,'preserved draft');assert.equal(row.focused,true);assert.equal(h.context.window.lastScroll,136);});
 
 await run('Source observation periods are sent as structured bounds and cleared independently of saved-date controls',async()=>{const h=await readyHarness();h.elements.get('observation-grain').value='year';h.elements.get('observation-from').value='2020';h.elements.get('observation-to').value='2025';h.elements.get('saved-from').value='2026-10-08';await h.app.loadItems();const browse=new URL(h.calls.at(-1).path,'https://private.example');assert.equal(browse.searchParams.get('observation_grain'),'year');assert.equal(browse.searchParams.get('observation_from'),'2020');assert.equal(browse.searchParams.get('observation_to'),'2025');assert.equal(browse.searchParams.get('saved_from'),'2026-10-08');h.elements.get('filter-query').value='GDP';await h.app.loadItems();const search=JSON.parse(h.calls.at(-1).init.body);assert.equal(search.observation_grain,'year');assert.equal(search.observation_to,'2025');assert.equal(search.saved_from,'2026-10-08');await h.elements.get('clear-filter').click();for(const id of ['observation-grain','observation-from','observation-to','saved-from'])assert.equal(h.elements.get(id).value,'');});
+
+await run('Historical outcome narrow detail restores selected row/query/scroll and displays source codes as unknown rather than zero',async()=>{
+ const actual=JSON.parse(fs.readFileSync(new URL('../source-packs/outcomes-cvd/fixtures/six-actual-trajectories.json',import.meta.url),'utf8'))[0];
+ const ev={version_id:'retained-case',trajectory:actual,conservative_label_available_at:actual.availability.acquired_at,actual_site_imported_at:'2026-10-08T23:30:00Z'};
+ const h=await readyHarness(path=>{if(path.startsWith('/api/global/items?'))return response({items:[initialItem]});if(path==='/api/outcomes/status')return response({events:1,versions:1,metrics:7,batches:[],sources:[]});if(path.startsWith('/api/outcomes/events?'))return response({events:[ev],watermark:1,next_cursor:null});if(path.startsWith('/api/outcomes/evidence?'))return response(ev);return response({});});
+ h.context.innerWidth=500;h.context.window.scrollY=652;h.app.state.view='outcomes';h.elements.get('outcome-query').value='Steel';await h.app.outcomeRead();const row=h.elements.get('outcome-results').children[0];await h.app.outcomeSelect(ev,row);assert.equal(h.elements.get('outcome-results').hidden,true);assert.equal(h.elements.get('outcome-detail').focused,true);assert.match(textOf(h.elements.get('outcome-detail')),/未知 \/ 未供给/);assert.match(textOf(h.elements.get('outcome-detail')),/原始值/);assert.match(textOf(h.elements.get('outcome-detail')),/没有当时环境/);await h.elements.get('outcome-detail').children[0].fire('click');assert.equal(h.elements.get('outcome-results').hidden,false);assert.equal(h.elements.get('outcome-detail').hidden,true);assert.equal(row.focused,true);assert.equal(h.context.window.lastScroll,652);assert.equal(h.elements.get('outcome-query').value,'Steel');
+});
+await run('Stale historical detail and later route cannot replace the newer selected trajectory',async()=>{
+ const actual=JSON.parse(fs.readFileSync(new URL('../source-packs/outcomes-cvd/fixtures/six-actual-trajectories.json',import.meta.url),'utf8'));const pending=deferred();
+ const h=await readyHarness(path=>{if(path.startsWith('/api/global/items?'))return response({items:[initialItem]});if(path.includes('version_id=older'))return pending.promise;if(path.includes('version_id=newer'))return response({version_id:'newer',trajectory:actual[1],conservative_label_available_at:actual[1].availability.acquired_at,actual_site_imported_at:'2026-10-08T23:30:00Z'});return response({});});h.app.state.view='outcomes';const old=h.app.outcomeSelect({version_id:'older'},new MockElement('button'));await h.app.outcomeSelect({version_id:'newer'},new MockElement('button'));pending.resolve(response({version_id:'older',trajectory:actual[0]}));await old;assert.match(textOf(h.elements.get('outcome-detail')),new RegExp(actual[1].source_record_id));assert.doesNotMatch(textOf(h.elements.get('outcome-detail')),new RegExp(actual[0].source_record_id));
+});
+await run('Explicit reporting country is sent and cleared without changing the literal query or source period',async()=>{const h=await readyHarness();h.elements.get('reporting-country').value='MY';h.elements.get('observation-grain').value='year';h.elements.get('observation-from').value='2020';await h.app.loadItems();const browse=new URL(h.calls.at(-1).path,'https://private.example');assert.equal(browse.searchParams.get('reporting_country'),'MY');assert.equal(browse.searchParams.get('observation_from'),'2020');h.elements.get('filter-query').value='Malaysia';await h.app.loadItems();const search=JSON.parse(h.calls.at(-1).init.body);assert.equal(search.reporting_country,'MY');assert.equal(search.query,'Malaysia');await h.elements.get('clear-filter').click();assert.equal(h.elements.get('reporting-country').value,'');assert.equal(h.elements.get('filter-query').value,'');});
+
+await run('formal workspace preserves query, source period and jurisdiction in the ordinary URL across view and reload',async()=>{const h=await readyHarness();h.context.window.location={href:'https://private.example/workbench.html'};h.context.window.history={replaceState(_s,_t,url){h.context.window.location.href=url;}};h.elements.get('filter-query').value='Malaysia';h.elements.get('reporting-country').value='MY';h.elements.get('observation-grain').value='year';h.elements.get('observation-from').value='2020';h.elements.get('observation-to').value='2025';h.app.writeLocation();const url=new URL(h.context.window.location.href);assert.equal(url.searchParams.get('query'),'Malaysia');assert.equal(url.searchParams.get('reporting_country'),'MY');assert.equal(url.searchParams.get('observation_grain'),'year');assert.equal(url.searchParams.get('observation_from'),'2020');h.app.show('collect');assert.equal(new URL(h.context.window.location.href).searchParams.get('view'),'collect');h.elements.get('filter-query').value='';assert.equal(h.app.restoreLocation(),'collect');assert.equal(h.elements.get('filter-query').value,'Malaysia');});
+await run('formal reader places source evidence actions before expandable clocks and keeps unknown fields exact',async()=>{const h=await readyHarness();h.evidence={version_id:'version-initial',metadata:{title:'Native GDP',url:'https://data.worldbank.org/',source_id:'stat_worldbank_gdp_annual',facts:{indicator_label:'GDP',observation_period:'2025',value:null,unit:'current_USD',vintage:{dataset_last_updated_date:'2026-07-13'}}},data_origin:'reviewed_external_snapshot',material_kind:'statistical_observation'};h.context.fetch=async()=>response(h.evidence);await h.app.selectItem(initialItem);const nodes=h.elements.get('record-detail').children;const actions=nodes.findIndex(n=>n.className==='detail-actions');const clocks=nodes.findIndex(n=>n.tagName==='details'&&n.textContent.includes('时间、地点与取得版本'));assert.ok(actions>=0&&actions<clocks);assert.match(textOf(nodes[actions]),/核验原始来源.*导出证据 JSON/);assert.match(textOf(h.elements.get('record-detail')),/2025/);assert.match(textOf(h.elements.get('record-detail')),/未提供/);assert.match(textOf(h.elements.get('record-detail')),/2026-07-13/);});
+
+await run('four information pages use the server primary filter and search pagination instead of filtering an already loaded sample',async()=>{const h=await readyHarness();h.app.show('event');await settle();assert.ok(h.calls.some(c=>c.path.startsWith('/api/global/items?')&&new URL(c.path,'https://private.example').searchParams.get('information_type')==='event'));h.elements.get('filter-query').value='km';let pages=0;h.context.fetch=async(path,init)=>{const body=JSON.parse(init.body);assert.equal(body.information_type,'event');if(++pages===1){assert.equal(body.cursor,undefined);return response({results:[{...initialItem,version_id:'first-search',metadata:{title:'First matching source event'}}],next_cursor:'bound-next'});}assert.equal(body.cursor,'bound-next');return response({results:[{...initialItem,version_id:'next-search',metadata:{title:'Next matching source event'}}],next_cursor:null});};await h.app.loadItems();await h.app.loadItems(true);assert.equal(h.app.state.items.length,2);assert.equal(h.app.state.items[1].version_id,'next-search');assert.equal(h.app.state.cursor,null);});
+
+await run('terminal query errors restore the previous result caption and never leave the loading caption over cached evidence',async()=>{const h=await readyHarness();const previous=h.elements.get('item-scope').textContent;h.context.fetch=async()=>response({message:'Bounded query rejected'},{ok:false,status:422});h.elements.get('filter-query').value='failed query';await h.app.loadItems();assert.match(h.elements.get('item-scope').textContent,/本次未取得新结果/);assert.ok(h.elements.get('item-scope').textContent.startsWith(previous));assert.doesNotMatch(h.elements.get('item-scope').textContent,/正在读取/);assert.equal(h.app.state.items[0].version_id,initialItem.version_id);assert.match(textOf(h.elements.get('notice')),/Bounded query rejected/);});

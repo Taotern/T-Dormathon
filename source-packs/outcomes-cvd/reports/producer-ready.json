@@ -1,0 +1,62 @@
+{
+  "schema_version": "dormathon.actor-outcome-producer-ready.v0.21",
+  "ready_at": "2026-10-08T23:36:19.661122+00:00",
+  "status": "ready_for_parallel_review_not_site_ingested",
+  "source": "outcome_worldbank_ttbd_cvd",
+  "native_coverage": {
+    "rows": 171,
+    "groups": 123,
+    "reporting_jurisdictions": 9,
+    "period": "2020–2024 initiation dates; Q4_2024 snapshot"
+  },
+  "checks": {
+    "pure_source_contract": 20,
+    "core_shape_actual_rows": 171,
+    "provider_requests": 2,
+    "current_antidumping_http403_retry": 0,
+    "site_writes": 0
+  },
+  "pins": [
+    {
+      "path": "contracts/source-profile.v0.21.json",
+      "bytes": 3398,
+      "sha256": "07e124dd06428d3e0ea9cb7554249bbef5d85c3944cd42fab321f62268d0f012"
+    },
+    {
+      "path": "data-local/manifest.json",
+      "bytes": 6383,
+      "sha256": "a314a586b4d2a09a65d6d47bf8ccbaf42f1506839da88ccd052a31063c3dae60"
+    },
+    {
+      "path": "fixtures/six-actual-trajectories.json",
+      "bytes": 118043,
+      "sha256": "1fcb3d95e6936919b0e1f786b8daca07c3f476a62080021cb95224dfb06f36b1"
+    },
+    {
+      "path": "fixtures/six-actual-inputs.safe.json",
+      "bytes": 35591,
+      "sha256": "d6b775fc9f693f4cc41bdf6781a9d3e0317504351da2bb1ea3e268b59df46a2a"
+    },
+    {
+      "path": "adapters/ttbd-cvd.py",
+      "bytes": 10101,
+      "sha256": "bfc17c695b010baaef42a830ba878bcc2e86b2b6c440e03c57ffa6637bb55b80"
+    },
+    {
+      "path": "reports/coverage-matrix.v0.21.json",
+      "bytes": 1362,
+      "sha256": "c3152fce783bc4eff5d5450c11f5245335272322ffc962a9a2528b5b071cd47d"
+    },
+    {
+      "path": "reports/core-shape-draft.json",
+      "bytes": 34,
+      "sha256": "691dca5551adca2cd983de24298334bf7fdacf9e52ac675bfa9ff335756e689f"
+    }
+  ],
+  "critical_limits": [
+    "Categorical source codes are uninterpreted reported values, not success/failure rewards.",
+    "No known historical per-field publication/revision availability; conservative availability is actual acquisition.",
+    "1039 party-table references are unresolved, case/row-scoped. No documented individual-company action trajectories or business-impact measures.",
+    "No post2024 source data, event-free negatives, causal effects, or unattended runtime claim."
+  ]
+}

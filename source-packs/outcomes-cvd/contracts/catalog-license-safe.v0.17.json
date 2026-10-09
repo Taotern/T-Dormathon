@@ -1,0 +1,32 @@
+{
+  "@type": "Dataset",
+  "name": "Temporary Trade Barriers Database including the Global Antidumping Database",
+  "url": "https://datacatalog.worldbank.org/5c4a36b6-1b7f-428e-ae2e-7e70d9349ebd/search/dataset/0039583/temporary-trade-barriers-database-including-the-global-antidumping-database",
+  "identifier": "0039583",
+  "license": {
+    "@type": "CreativeWork",
+    "name": "Creative Commons Attribution 4.0",
+    "url": "https://datacatalog.worldbank.org/public-licenses?fragment=cc"
+  },
+  "dateModified": "2023-01-19",
+  "temporalCoverage": "1980/2011",
+  "creator": {
+    "@type": "Organization",
+    "name": "World Bank Group",
+    "url": "https://www.worldbank.org/en/home"
+  },
+  "matching_distribution": [
+    {
+      "@type": "DataDownload",
+      "contentUrl": "https://www.worldbank.org/en/data/interactive/2021/03/02/temporary-trade-barriers-database",
+      "encodingFormat": "HTML",
+      "name": "Temporary Trade Barriers Database",
+      "contentSize": "0 B"
+    }
+  ],
+  "provenance": {
+    "original_catalog_response_sha256": "ed2808fc518d6812a7b243d43162d2acc9a2d1f0bca37b4e236f2fb8cf8b5557",
+    "catalog_response_retained_in_portable_delivery": false,
+    "snapshot_is_licence_evidence_not_current_data_coverage": true
+  }
+}

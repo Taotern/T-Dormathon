@@ -1,0 +1,23 @@
+{
+  "schema_version": "dormathon.reporting-geography-crosswalk-addendum.v1.1",
+  "recorded_at": "2026-10-08T22:35:25.156987+00:00",
+  "base_map_sha256": "192104e31b5f55aab0eb6471b76c571e5223485e7f38c0c5be51fe06fe605661",
+  "source_url": "https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Glossary:Country_codes&oldid=626434",
+  "primary_source": "Eurostat official Statistics Explained country-code glossary",
+  "provided_convention": [
+    {
+      "country": "Greece",
+      "source_code": "EL",
+      "target_code": "GR",
+      "target_namespace": "ISO3166-1_alpha2",
+      "basis": "Eurostat explicitly labels Greece EL; GR comes from pinned M49 supplied ISO2 of Greece, not a new event/exposure assertion"
+    }
+  ],
+  "explicit_noncanonical": [
+    "Eurostat states XK is used for practical reasons, not an official ISO country code"
+  ],
+  "not_applicable": "Do not map CN_X_HK to generic CN, UK to GB or other exceptional source labels without an explicit scope-specific crosswalk; not needed by admitted37-category SBS slice.",
+  "record_semantics": "Retain raw Eurostat geo=EL and its source label on every record; crosswalk is derived filtering identity only. EU27_2020 remains aggregate.",
+  "data_refetches": 0,
+  "documentation_read_only": true
+}

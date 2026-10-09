@@ -31,3 +31,10 @@ source-packs/*/source-data/
 source-packs/*/safe-data/
 source-packs/*/delivery/chunks/
 source-packs/*/reports/
+
+# Isolated outcome checks are execution output, not teammate source.
+.outcome-qa/
+
+# These are immutable producer evidence required by the exact source manifest.
+!source-packs/outcomes-cvd/reports/
+!source-packs/outcomes-cvd/reports/*.json

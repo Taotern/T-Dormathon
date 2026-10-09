@@ -1,0 +1,113 @@
+{
+  "schema_version": "dormathon.CVD-formal-workspace.release.v1",
+  "runtime_commit": "e2b14f7802d555b74adb10c3e97e5339518954c2",
+  "private_site_version": 36,
+  "version_id": "appgprj_6ac6c8d4361c81919d4a8dffabfab361~appgver_f7dd9f6c49dc81918419f18f5b0b681c",
+  "deployment_id": "appgdep_6ac84c805ff88191bf1594cffeea07d7",
+  "native_status": "succeeded",
+  "published_at": "2026-10-09T02:08:22.774706+00:00",
+  "worker_sha256": "3db46a0b76d54bc4765068f85b175377d1d70c57b6b2d65806c02ba13916f581",
+  "worker_bytes": 2360835,
+  "served_asset_hashes_empirically_captured": false,
+  "data_admission_runtime": "902088dd8e2462922197930591cd8151854ab78a",
+  "retained_version33_native_status": "publishing",
+  "intelligence": {
+    "indexed": 51471,
+    "direct": 369,
+    "uploaded_unverified": 114,
+    "reviewed": 50988,
+    "pending": 0,
+    "policy_mismatch": 0,
+    "saved_rule_alerts": 8
+  },
+  "information_types": {
+    "reference": 12872,
+    "observation": 37727,
+    "event": 754,
+    "interpretation": 118,
+    "unknown": 0,
+    "classifier_sha256": "d3e3979a5cc79d5334ed6bddeec3b9e3c263df115384fd164b428eca47a24bd7",
+    "counts_source_review_sha256": "e5744c180f15d5bd88b8a9a862189176a2ada7980a8b6dfcf46211d5f961b902"
+  },
+  "CVD": {
+    "events": 171,
+    "immutable_versions": 171,
+    "case_groups": 123,
+    "durable_chunks": 13,
+    "fields": 1197,
+    "reported_categorical_or_date_tokens": 677,
+    "unknown_fields": 520,
+    "reported_dated_stages": 776,
+    "reporting_jurisdictions": 9,
+    "initiation_years": "2020–2024",
+    "source_vintage": "Q4_2024",
+    "profile_sha256": "07e124dd06428d3e0ea9cb7554249bbef5d85c3944cd42fab321f62268d0f012",
+    "manifest_sha256": "a314a586b4d2a09a65d6d47bf8ccbaf42f1506839da88ccd052a31063c3dae60",
+    "date_epoch_qualification_sha256": "7ef5a30d80c481deea2f9e12c6e9c42427fc37636cc47d78dca6ddc16a315e73",
+    "source_value_review_sha256": "b0ea4d9676a8b840a27e1936a3ab38330357b1d2ca5cab4866aab31e9b39815e",
+    "readback_sha256": "0a8e281db36b095a2aa6c6896d2658f92e5399156067d48a6637eaf5c5455a6b",
+    "bulk_in_Git": false
+  },
+  "GUI": {
+    "status": "passed",
+    "accepted_four_flows_version": 34,
+    "accepted_density_error_date_version": 35,
+    "desktop_viewport": [
+      1188,
+      761
+    ],
+    "actual_narrow_viewport": [
+      500,
+      761
+    ],
+    "viewport_source": "native Linux Chromium window, measured innerWidth/innerHeight",
+    "accepted_narrow_Back_version": 36,
+    "record_Back_geometry": {
+      "sticky_nav_bottom": 78,
+      "Back_top": 113,
+      "Back_bottom": 151
+    },
+    "verified_workflows": [
+      "Four source-typed pages and all-record navigation; server filters/pagination and URL restore",
+      "Malaysia GDP source period2020–2025 / reporting MY / native current_USD / immutable evidence",
+      "Source warning publication versus unconfirmed hazard; legal publication versus unknown effect; separate CVD raw-code history",
+      "Forecast/no-match/clear; desktop density/native date tooltip/count contrast; failed read explicitly preserves previous results",
+      "Actual500px keyboard and pointer Back restore record and CVD row/query/filter/focus"
+    ],
+    "retained_evidence_sha256": {
+      "version34-evidence-manifest.json": "5b611fc9b224fcf23f8e72aa9809a3f0eaf513e312966a123d2b2b0ab653e3ac",
+      "version35-evidence-manifest.json": "043e76fd0a7ce4eaa2f2e9626b50a5071bc58a72a543b4dcbfd01527e0074f6b",
+      "version36-record-back-visible-geometry.json": "a15602eea6bc231ce6346d96e8c7b7b5a7162ffc0f5fa62f7e6cc3ef94dbff0b",
+      "version36-history-pointer-return.json": "42dfbea11ffcf463aadee1c3c21b9e429c643030fb19d99b3b49eca05922cd32"
+    }
+  },
+  "fresh_consumer": {
+    "platform": "Linux",
+    "node": "24.19.0",
+    "python": "3.12.14",
+    "install_required": false,
+    "core_tests": 385,
+    "source_contracts": 74,
+    "CVD_source_guards": 20,
+    "README_commands_passed": true,
+    "built_worker_matches_runtime": true,
+    "receipt_sha256": "de7c3ac003756048f6806553a375aa818d5ec1aa364a38b3e46f6bf24dda3b3a"
+  },
+  "excluded": [
+    "UCDP299 prepared, not admitted",
+    "CVM13689 disabled action-only candidate; financial outcomes unknown",
+    "US300 retained replay rows not uploaded",
+    "proposed product problem/specification draft pending owner review",
+    "Full CVD raw/bulk and all execution state/auth"
+  ],
+  "limitations": [
+    "Global fine-detail/domain/entity coverage remains incomplete",
+    "No company resolution, causal effect, model reward or absent-event negatives",
+    "Original historical publication/revision availability unknown; acquisition is conservative label-availability bound",
+    "Calendar/coarse-period temporal uncertainty and censoring remain explicit",
+    "No contemporaneously retained 2020 environment; context candidates do not prove actor relevance",
+    "Windows, unattended schedule and automatic sync unverified",
+    "Current record search pagination is not an immutable ranked snapshot"
+  ],
+  "hyperfrontend": "cancelled; inactive historical recovery only"
+}
