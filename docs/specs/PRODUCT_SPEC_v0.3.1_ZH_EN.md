@@ -1,60 +1,454 @@
 # T-Dormathon 产品规格 中英双语版 / Product Specification Chinese–English Edition
 
-双语翻译版 0.3.1，2026 年 10 月 9 日。原中文逐节原样保留，英文为完整对应翻译；翻译不改变 FR／AC、接口、职责或范围。
+[English](#english) · [中文](#chinese)
 
-Bilingual translation edition 0.3.1, 9 October 2026. Original Chinese is retained verbatim by section, followed by its complete English translation. Translation does not change FR/AC identifiers, interfaces, responsibilities or scope.
+<a id="english"></a>
 
-来源：[原中文文件](T-Dormathon_产品规格评审稿_v0.3.md)，私有仓库已发布提交 `3062a571e5931ad0d94bfa1a7b79f869bb7dd0e3`。原文保留评审时期措辞；实际已批准分工及后续补充以团队交接和最新补充为准，不表示所有目标已实现。
+# English version
+
+Bilingual translation edition 0.3.1, 9 October 2026. Translation does not change FR/AC identifiers, interfaces, responsibilities or scope.
 
 Source: [original Chinese file](T-Dormathon_产品规格评审稿_v0.3.md), published in private-repository commit `3062a571e5931ad0d94bfa1a7b79f869bb7dd0e3`. The original preserves review-era wording. The team handoff and latest addenda govern approved responsibilities and subsequent updates; not every target is already implemented.
 
-配套双语文档 / Companion bilingual document: [打开 / Open](../TEAM_HANDOFF_2026-10-09_ZH_EN.md)
+Companion bilingual document: [Open](../TEAM_HANDOFF_2026-10-09_ZH_EN.md#english)
 
-## 目录 / Contents
+## Contents
 
-- [最新补充 / Latest addenda](#latest-addenda)
-- [原文开头与版本说明 / Original opening and version note](#section-0)
-- [1 产品决策摘要 / 1 Product Decision Summary](#section-1)
-- [2 四类经营需求与追踪 / 2 Four Operational Requirements and Traceability](#section-2)
-- [3 依赖暴露与外部经营条件 / 3 Dependency Exposure and External Operating Conditions](#section-3)
-- [4 完整用户路径与相互影响 / 4 Complete User Journeys and Interactions](#section-4)
-- [5 情报与正式产品工作台 / 5 Intelligence and the Formal Product Workbench](#section-5)
-- [6 实体轴 时间轴与历史标签 / 6 Entity Axis, Time Axis and Historical Labels](#section-6)
-- [7 岗位能力与运行安全 / 7 Role Capability and Operational Safety](#section-7)
-- [8 风险 情景与受约束决策 / 8 Risk, Scenarios and Constrained Decisions](#section-8)
-- [9 四个后端模块与拟议契约 / 9 Four Backend Modules and Proposed Contracts](#section-9)
-- [10 验收 基线与完整性门槛 / 10 Acceptance, Baselines and Integrity Gates](#section-10)
-- [11 安全 分阶段交付与批准项 / 11 Safety, Staged Delivery and Approval Decisions](#section-11)
+- [Latest addenda](#en-latest-addenda)
+- [Original opening and version note](#en-section-0)
+- [1 Product Decision Summary](#en-section-1)
+- [2 Four Operational Requirements and Traceability](#en-section-2)
+- [3 Dependency Exposure and External Operating Conditions](#en-section-3)
+- [4 Complete User Journeys and Interactions](#en-section-4)
+- [5 Intelligence and the Formal Product Workbench](#en-section-5)
+- [6 Entity Axis, Time Axis and Historical Labels](#en-section-6)
+- [7 Role Capability and Operational Safety](#en-section-7)
+- [8 Risk, Scenarios and Constrained Decisions](#en-section-8)
+- [9 Four Backend Modules and Proposed Contracts](#en-section-9)
+- [10 Acceptance, Baselines and Integrity Gates](#en-section-10)
+- [11 Safety, Staged Delivery and Approval Decisions](#en-section-11)
 
-<a id="latest-addenda"></a>
+<a id="en-latest-addenda"></a>
 
-## 最新已确认补充 / Latest Confirmed Addenda
+## Latest Confirmed Addenda
 
-### 2026 年 10 月 9 日 产品语言 / Product Language
-
-最终 hackathon 产品必须以英语为默认语言并完整支持英语，涵盖界面、消息、分析与演示。中文和马来语是可选加分项，不得延迟或阻碍英语交付。中英双语文档不等于产品必须双语。
+### Product Language
 
 The final hackathon product must be English-based, with English as the default and fully supported across the UI, messages, analysis and demonstration. Chinese and Malay are optional bonus languages and must not delay or block English delivery. Chinese–English documentation does not imply a bilingual-product requirement.
 
-### 同日已发布的前端与产品意图 / Published Frontend and Product-Intent Notes
-
-**2026 年 10 月 9 日前端补充：**整体产品前端由用户与助手负责，既要抓眼，也要简洁、直接地完整展示产品。后续视觉整合采用虚实解构的黑白灰、强构图、层次、数据重点与适当动效，同时验收视觉吸引力和可用性；不恢复已取消的超前端或 PPT 式展示。队友当前只承担对应后端功能、契约和可运行示例，不承担视觉装修任务。
+### Published Frontend and Product-Intent Notes
 
 **Frontend addendum dated 9 October 2026:** The user and assistant own the overall product frontend. It must be eye-catching while presenting the complete product simply and directly. Subsequent visual integration uses Xushi Deconstruction in black, white and gray, with strong composition, layering, data emphasis and appropriate motion. Acceptance evaluates both visual appeal and usability. Do not restore the canceled super-frontend or a slide-style presentation. Teammates currently own only their backend functionality, contracts and runnable examples, not visual styling.
 
-**同日产品意图补充：**最小后端用于加快完整可用原型交付，不能因此做出薄弱原型。整体体验目标是串联全球数据、风险发现与预防建议、沙盘推演和 Agent 咨询；这是产品方向，已有能力与覆盖仍以实际验收为准。“自我改进”须有反馈、版本和评估证据后才作为能力声明。
-
 **Product-intent addendum on the same date:** The minimum backend accelerates delivery of a complete usable prototype; it must not result in a weak prototype. The overall experience aims to connect global data, risk discovery and preventive recommendations, sandbox simulation and Agent consultation. This is product direction; implemented capability and coverage remain subject to actual acceptance. Claim ‘self-improvement’ only when supported by feedback, versions and evaluation evidence.
-
-上述已发布补充来自[文档入口](../README.md)；它们补充原文，不把拟议接口或产品目标变成已实现能力。
 
 The published notes above come from the [documentation index](../README.md). They supplement the original text without turning proposed interfaces or product targets into implemented capabilities.
 
-<a id="section-0"></a>
+<a id="en-section-0"></a>
 
-### 中文原文 / Original Chinese
+T-Dormathon Product Specification Review Draft
 
-<!-- BEGIN_ZH_SECTION 0 -->
+Taotern team    9 October 2026    Draft 0.3
+
+The product is confirmed to serve the hackathon rather than production deployment. The owner should first refine and approve the problem, requirements, and acceptance criteria, then develop the demonstration. The word ‘must’ identifies requirements pending approval, not capabilities already implemented. The complete target and the runnable competition scope are described separately. Do not upload to GitHub before approval; after approval, update within the already-authorized private-repository scope.
+
+<a id="en-section-1"></a>
+
+## 1 Product Decision Summary
+
+### The problem we are solving
+
+Organizations struggle to identify four interconnected types of operational problem early from fragmented internal records and external information: supply, inventory and fulfilment; blockages in procurement, invoices and cash collection; delays in service and business processes; and waste of energy, food and other operating resources. They also struggle to assess the impact and choose evidence-grounded responses under limited funding, staffing, time and resources. These four directions together constitute the product problem statement.
+
+The product must organize internal operations, counterparty capability/history, actual dependencies/exposure, and external operating conditions into verifiable entities, relationships and historical states, identify operational problems that may become costly, and compare feasible actions and their costs. All four layers are core inputs. Global intelligence, the entity axis, the time axis and the RL sandbox support this shared end-to-end workflow.
+
+### Target users and what success means
+
+Core users are organizational leads responsible for operations, procurement and finance, service processes, and resource management. They need to know where problems may arise, which business objects will be affected, what evidence and unknowns exist, which actions are currently feasible, and how those actions compete for resources or change other problems.
+
+Success should mean earlier and more accurate identification of important problems, faster evidence verification, and explainable action comparisons under explicit constraints. Data volume, feature count, graph size or the use of RL alone does not demonstrate success. Claims of real operational benefit require appropriate operational data and evaluation.
+
+### Confirmed goals and scope
+
+Dormathon is the primary goal. Soundness takes priority over novelty, and every stage remains usable and demonstrable. The baseline must fully cover the first three problem types and provide a substantive entry point for the fourth; all four share core capabilities. Intelligence coverage goals still include countries worldwide, major political organizations and companies, SME trends, unicorns and information across domains. The minimum historical scope is 2020 to the present, with expansion back to 1990 prioritized.
+
+### Competition constraints and review proposals
+
+The official Track 1 theme asks how AI can identify problems before costs escalate and help someone choose a response. [O1] This is external motivation and a constraint, not a substitute for the product problem statement above. The detailed competition challenge for 10–11 October remains to be confirmed.
+
+The object contracts, staged plan, main demonstration path and acceptance thresholds proposed in this draft remain subject to review. The assumption is that legally usable public information can provide external context, while operational records come from user-authorized data, public benchmarks or clearly labeled synthetic data. External information alone cannot establish effects on inventory, cash flow, service commitments/processing deadlines or energy consumption. SLA means Service Level Agreement and defines external service-quality and timing commitments; internal processing targets do not necessarily constitute an SLA.
+
+Sources: confirmed direction and scope come from the owner's project discussion on 9 October 2026. Interfaces, evaluation details and the main case are proposals in this draft. [O1] Official Dormathon 2026 event page.
+
+https://www.aihackerdorm.com/events/dormathon-2026-malaysia-s-nationwide-hackathon-build-the-next-big-thing
+
+<a id="en-section-2"></a>
+
+## 2 Four Operational Requirements and Traceability
+
+All four business-object types share four layers of core input: internal operations; counterparty capability and evidence-supported history; routes, business dependencies and actual exposure; and weather, policy, operating calendars, local demand practices and security conditions. Each produces risks, impacts, feasible actions, assumptions and observable outcomes. When necessary inputs are missing, limit the conclusion rather than omit the layer.
+
+### FR01 Supply, Inventory and Fulfilment
+
+Inputs include SKUs, available/reserved inventory, goods in transit, demand, and supplier/carrier capability and history; route legs, roads/ports/borders, transport mode, planned transit time and alternative routes; and passability, weather, policies, holiday/festival congestion and security conditions for the relevant location and time. Identify shortages, excess stock and fulfilment risk through order exposure. Compare replenishment, reallocation, alternative counterparties, rerouting/retiming/mode changes, buffers and expedited delivery. Constraints include inventory conservation, lead time, capacity and funding. Record fulfilment, shortages, inventory and total cost as outcomes.
+
+### FR02 Blockages in Procurement, Invoices and Cash Collection
+
+Inputs include purchase orders, goods receipts, invoices, due dates, actual payments/receipts, approvals and cash; supplier/customer history, contractual payment dependencies, logistics milestones, and applicable banking days, payment cutoffs, policies and settlement practices. Distinguish not-yet-due, overdue, missing and blocked states; locate cash gaps; and compare additional documentation, follow-up, processing order and legally feasible retiming/alternative counterparties. A sales date is not a cash-receipt date. When record completeness has not been established, the absence of a payment record cannot establish nonpayment. Whether holidays extend a deadline depends on the applicable rule, not a universal assumption.
+
+### FR03 Delays in Service and Business Processes
+
+Inputs include requests/tasks, steps, dependencies, queues, role capability/authorization/shift and rest schedules, service-provider history and service commitments/processing deadlines; and on-site or upstream route exposure, operating days, holidays, festival demand and safe-access conditions. Identify bottlenecks and timeout risk; compare scheduling, qualified reassignment, escalation and capacity allocation. Record completion time, formal SLA breaches/internal processing overruns, waiting and resource usage. Distinguish paused, canceled, incomplete and failed work; do not describe internal targets as formal agreements.
+
+### FR04 Waste of Energy, Food and Other Operating Resources
+
+Inputs include actual energy consumption, output, resource use, losses, food batches/shelf life, pricing and disposal rules; supply/cold-chain capability, transport and storage exposure, weather, operating-day/festival demand, applicable policies and operating practices. Identify abnormal consumption, expiry, excess and inefficient use; compare energy-saving schedules, batch size, stock rotation, buffers and transport alternatives. Price is not consumption; separate monetary costs from physical quantities. Start the baseline with food-batch expiry/write-offs, comparing fixed batches with first-expiring-first-out/batch adjustments; all waste categories need not be completed simultaneously.
+
+### From Problem to Acceptance to Demonstration
+
+| Problem | Requirement | Acceptance | Evidence that must be demonstrated |
+| --- | --- | --- | --- |
+| PS1 Supply, inventory and fulfilment | FR01 | AC01 | Risk and feasible actions on the same order chain, with fulfilment/cost baseline comparisons |
+| PS2 Procurement, invoices and collections | FR02 | AC02 | Document and approval chains, correct date semantics, overdue/gap identification and processing comparisons |
+| PS3 Service-process delays | FR03 | AC03 | Step and resource dependencies, service-commitment/processing-deadline clocks, bottlenecks and scheduling baseline comparisons |
+| PS4 Operational waste | FR04 | AC04 | A substantive waste record, separation of physical quantities and costs, and waste-reduction action comparisons |
+
+Shared support: FR05–06 intelligence/workbench; FR07–09 entities/history; FR10–13 decisions; FR14–15 safety/reproducibility; FR16 dependency exposure/operating conditions; FR17 role capability/operational safety. Demonstrations must establish results through this requirements traceability.
+
+<a id="en-section-3"></a>
+
+## 3 Dependency Exposure and External Operating Conditions
+
+### FR16 Actual Applicability of the Four Input Layers
+
+Internal records define business objects and resources. The counterparty layer supplies roles, capability, capacity and evidence-supported history. The dependency layer specifies which routes, nodes, counterparties, equipment, roles or banks the business actually uses. The conditions layer supplies weather, policy, calendars, operating practices and security information for the corresponding location/entity and time. Without an exposure mapping, an external event can only be a lead requiring verification, not a direct business impact.
+
+### Routes and Spatial/Temporal Exposure
+
+Route/RouteLeg retain origins and destinations, legs and nodes, roads/ports/borders, carriers, transport modes, planned passage windows/transit times and feasible alternatives. Exposure connects orders, materials, invoices, tasks or resources to specific dependencies, impact windows and mapping evidence. Passability conditions must match the leg, direction and time; a country-level event cannot establish that a particular route is closed.
+
+The same condition can affect the four directions through different mechanisms: a detour changes fulfilment time and transport cost; logistics delays may affect post-receipt payment milestones; holidays change banking days and service clocks; festival demand or operating hours change inventory, food write-offs and energy consumption. Every propagation requires business relationships and applicable rules, not temporal co-occurrence alone.
+
+### Weather, Policies, Calendars and Operating Practices
+
+OperationalCondition retains the observation/forecast/announcement category, geographic and entity applicability, event and effective intervals, public-availability and acquisition times, sources, versions, conflicts and uncertainty. Policies must match the jurisdiction, business/product category, applicable entities and effective/withdrawal times. Holidays, festivals, local operating days and banking days are recorded separately; do not assume that all countries, organizations or businesses stop operating together.
+
+Cultural inputs are restricted to observable and supported operating calendars, demand seasonality, operating/payment practices or specific delivery agreements. Do not turn generalizations about nationality, religion or culture into integrity/capability scores. Security conditions use reported events, locations, times, impact types and evidence status. Protests, access disruption, violence, theft and delays are distinct assertions.
+
+### Counterparty Capability and History
+
+CounterpartyHistory records the relevant entity and role, commitments/obligations, period, evidence, event status, outcome/resolution and statistical denominators. Separate verified breaches, ongoing disputes, unilateral complaints and unresolved matters. History in supplier, carrier, customer and other roles is not interchangeable. No negative records means only that none were found within the existing coverage, not proof of good performance. Do not generate a ‘bad history’ blacklist.
+
+### Hypothetical Demonstration and Insufficient Data
+
+A protest in part of France affecting a freight-route leg is only a clearly labeled hypothetical fixture, not a verified current event. First check the actual route, time and official/operational evidence of passability. Return insufficient_data when conditions are insufficient. Compare rerouting, retiming, mode changes, buffers and alternative counterparties, explaining costs and assumptions without executing real actions.
+
+<a id="en-section-4"></a>
+
+## 4 Complete User Journeys and Interactions
+
+### J1 Supply, Inventory and Fulfilment Lead
+
+Set the organization, order/material, geography and time → verify inventory, counterparty history, actual routes and operating conditions → confirm affected orders and gaps → define funding/capacity/passability constraints → compare no action, rule-based replenishment, rerouting/retiming and candidate policies → make a human choice and save its evidence. Preserve filters, pagination and focus on returning to information pages. Unknown inventory, demand or exposure mappings limit the output to leads; do not fabricate impacts.
+
+### J2 Procurement and Finance Lead
+
+Enter the procurement/invoice/collections queue → distinguish due status, missing data and blockages → follow business keys to verify receipts, approvals, payments/collections and counterparty history → check logistics dependencies, applicable policies and banking days → view the state known at the time → set funding, deadline and resource constraints → compare follow-up, documentation, sequencing and feasible retiming → record the decision. The system does not automatically send collection reminders or make payments.
+
+### J3 Service-Process Lead
+
+Select a request/process → verify step dependencies, role capability/availability, on-site access and operating calendars → inspect service commitments/processing deadlines and pause/cancellation rules → locate bottlenecks → compare qualified reassignment, scheduling and escalation → inspect displacement of other tasks → save the decision. Preserve censoring for incomplete outcomes; do not treat the current state as the final result.
+
+### J4 Resource-Management Lead
+
+Select energy, food or resources → verify consumption, output, losses and supply/cold-chain capability → check transport exposure, weather, operating/festival demand and policies → set capacity, shelf-life, safety and service constraints → compare batch size, rotation, energy-saving schedules or transport alternatives → inspect waste reduction and effects on other directions → make a human decision. Price data alone cannot establish energy waste.
+
+### Business Connections and Trade-offs Across Problems
+
+Connect the four problem types only through reliable business keys or evidence-supported relationships, such as order_id, purchase_order_id, invoice_id, task_id, SKU/resource_id and stable entity identifiers. A shared name, simultaneous occurrence or news co-occurrence does not create a business dependency. If a link is missing, show ‘Relationship not yet established’ and allow verification.
+
+Action comparisons must present shared budgets and trade-offs: expedited replenishment may tie up more cash; delayed payment processing may affect supply; staff reassignment may transfer service-delay risk; larger batches may increase inventory or write-offs. These are scenario mechanisms requiring validation, not observed causal conclusions. The same resources cannot be allocated repeatedly across plans.
+
+### Context Retained for Every Decision
+
+Record the problem scope, business objects, evidence versions, entities and relationships, knowledge_as_of, world time, objectives and weights, hard constraints, candidate actions, baselines, unknowns and assumptions. Users can verify sources, change conditions, compare plans and reject recommendations. When data are insufficient, show missing fields and the limited path that can still proceed.
+
+<a id="en-section-5"></a>
+
+## 5 Intelligence and the Formal Product Workbench
+
+### FR05 Evidence Collection, Filtering, Organization and RAG
+
+Multi-source information must retain sources, locators, publication/acquisition times, versions, licenses and usage restrictions. Retrieval, summaries and explanations must include locatable evidence, applicable times, conflicts and gaps. Separate facts, source opinions, machine inferences, forecasts and unknowns; not finding something does not mean it does not exist. Operational records also require provenance and quality information; user-supplied records are not exempt from verification.
+
+Counterparty history, actual dependencies/exposure and external operating conditions are core state inputs, not merely reading context. Connect them to internal records through source-supported entity, business, spatial and temporal mappings. A country's GDP, news volume or political events still cannot alone establish impacts on a particular order, invoice or task.
+
+### FR06 Four Information Pages
+
+| Page name | Content and boundaries |
+| --- | --- |
+| Basic Information | Entity identity, classification, stable attributes, aliases, relationships and sources; ambiguities remain visible. |
+| State and Metrics | Observed inventory, amounts, durations, consumption and other values; retain units, frequency, windows and quality. |
+| Events and Changes | Actions, changes, announcements, implementation, withdrawal and timelines; distinguish the clocks. |
+| Explanations and Expectations | Explanations, opinions, forecasts, scenarios, policies, assumptions, confidence and scope of validity; do not present them as facts. |
+
+These four pages classify information, not the four operational problems. A unified risk/decision workspace can filter by the four problem types and reuse the information and evidence views; it need not become eight isolated page sets. Share query, geography, time and evidence context; preserve pagination, return position and focus. Choose tables, timelines, relationship structures and text views according to the source and task.
+
+The formal frontend uses restrained Xushi Deconstruction styling in black, white and gray with precise structural lines, supporting reading, verification and comparison. Visual acceptance primarily considers information hierarchy, understandable interaction and access to sources. Do not use a slide presentation, game interface or cinematic globe as the main interaction.
+
+### Global Intelligence and Historical Coverage Goals
+
+Coverage goals retain countries worldwide, major political organizations and companies, SME trends and unicorns, spanning law, policy, culture, foreign exchange, futures, the economy, employment, markets and talent. These are intelligence dimensions supporting the four operational problems, not a new primary user or a separate product.
+
+Publish a coverage matrix across entity type × geography × domain × information type × year × source quality, marking accepted coverage, partial coverage and gaps. The minimum historical range is 2020 to the present, prioritizing extension back to 1990. A minimum time range does not claim complete records for every entity and domain. Keep the expansion path explicit; existing datasets cannot substitute for target coverage.
+
+<a id="en-section-6"></a>
+
+## 6 Entity Axis, Time Axis and Historical Labels
+
+### FR07 Automatic Entity Disambiguation and Evidence-Based Relationship Fusion
+
+Companies, governments, political parties and international organizations use stable entity_id values. Retain time-valid names, aliases, external identifiers, jurisdictions and organizational changes. Disambiguation returns candidates, evidence and ambiguity status; refuse forced merging when evidence is insufficient. Tests must cover identical names, multiple languages, renaming, parent/subsidiary relationships, government terms, splits/mergers and succession.
+
+Relationships require types, directions, valid intervals, evidence and conflict status. Do not conflate ‘co-occurrence,’ ‘ownership,’ ‘supply,’ ‘traverses route’ or ‘depends on receipt/banking calendar.’ Route nodes, locations, counterparties and role resources require stable identifiers. Exposure references real business IDs and route-leg/time windows. Separate explicit source statements from inferences; retain merge, split and revision history. News does not generate business keys.
+
+### FR08 Multi-Clock As-of State Reconstruction and Replay
+
+Store event, impact, publication, acquisition, effective and revision times separately. Unknown values remain null; record precision and source time zone. Event/effective times may be intervals; a single date cannot substitute for all clocks. Queries specify both knowledge_as_of and world_time/an interval.
+
+knowledge_mode must be explicit: public_known uses provable historical public availability; system_known uses the system's actual acquired_at. An old article acquired today cannot be represented as having been held by the system at that historical time. Records with only a publication date and no proof of historical availability are marked availability_proxy and excluded from strict backtests or reported separately.
+
+Use only versions available by knowledge_as_of, and verify actual validity at world_time. This applies to route conditions, policy effectiveness, operating/banking calendars, counterparty history and role credentials. Later revisions, withdrawals and outcomes cannot enter the historical input. Replay displays changes, conflicts, applicability and gaps and is verifiable on frozen snapshots.
+
+### FR09 Environment, Actor Action and Outcome Records
+
+The dataset must systematically collect historical environments, actor actions and outcomes for companies, governments, political parties and international organizations, supporting world states and decision learning rather than a handful of case studies. Each operational direction also retains its corresponding orders, documents, tasks or resources and their mappings.
+
+Action status distinguishes at least announced, implemented, reversed and unknown. Outcome status distinguishes at least observed, estimated, proxy and unknown. Every outcome records the metric, unit, measurement window, observation end, revisions and censoring. Actual payments/collections, task completion and physical consumption require their corresponding observations, not nearby substitute fields.
+
+Missing outcomes are not negative outcomes. An event followed by an outcome does not establish causation. Labels must state their causal status and usage restrictions; simple post-event associations cannot directly produce causal rewards. Historical environments use only information known at the time, with entity/group-based grouping and temporal separation of training and testing.
+
+### Separating Observations from Counterfactuals
+
+Use distinct labels for historically observed outcomes, estimated/proxy labels and counterfactual simulation outputs. If only an assumed transition model is available, interpret outputs only as scenario outcomes under that model. Information replay, correct RAG or a usable interface cannot independently establish future-prediction or RL-policy quality.
+
+<a id="en-section-7"></a>
+
+## 7 Role Capability and Operational Safety
+
+### FR17 Role Constraints for Managers and Workers
+
+For managers and employees performing the work, use job-relevant capability and availability: lawfully authorized qualifications, training, licenses, role/equipment-operation permissions, work records, shifts, rest and available time windows. These verify whether a particular task can be performed safely and by a qualified person, rather than infer personality, private reliability or psychological dangerousness. Missing records do not establish lack of qualification; retain an insufficient-data state when qualification is uncertain.
+
+### Work Incidents and Verification Status
+
+Process only lawfully authorized, job-relevant work incidents. Record source, date, role, investigation status, findings and handling/resolution. Separate unilateral allegations, ongoing investigations and confirmed facts. Do not turn unverified ‘dark history’ into personal scores or blacklists. Private life, family/friend circumstances and private social relationships are not work-capability or safety labels.
+
+### Addressing Safety Through Operational Controls
+
+The product may support shift/rest and fatigue constraints, role and permission checks, segregation of duties, two-person review, incident reporting, emergency replacements and backup resources. Recommendations identify the specific task, constraints and factual basis. Do not infer from correlations or negative stories that a particular person will commit a crime, misuse alcohol, harm others or cause an accident.
+
+### Explicit Boundaries on Health and Sensitive Profiling
+
+The product does not design psychological-state or dangerousness inference from family, friends or social media, or collect this information for employee evaluations, private reliability scores, blacklists or automated employment decisions. Health, family and private-relationship labels do not enter RL states or employee evaluations. Human review does not make such inferences acceptable features.
+
+Medical fitness-for-duty assessments are handled only by qualified, authorized professionals. If necessary job restrictions are lawfully provided, the product receives only the minimum necessary task/time availability restrictions, not raw diagnoses or private reasons. Optimization services see operational constraints, not health labels. The product does not claim compliance with every labor, privacy or industry law worldwide.
+
+### Input and Output Contracts
+
+Extend existing task/resource objects with role_id, required qualifications/authorization, evidence validity, availability windows, shifts/rest, necessary operational restrictions and review status. Isolate personal mappings and incident evidence under least-privilege access. WorldState/RL inputs retain only task-relevant capability, availability and constraints. Outputs describe action feasibility/infeasibility and evidence still required, not rankings of people's morality or dangerousness.
+
+### AC10 Role and Sensitive-Field Boundaries
+
+Verify that restricted tasks cannot be allocated without valid authorization, rest/two-person-review constraints cannot be bypassed, and credential revisions follow as-of semantics. Reject sensitive psychological, health, family and social-relationship labels from states/evaluations. Express lawful necessary restrictions as operational fields without diagnoses or private reasons. Errors or allegations do not automatically trigger hiring, dismissal, promotion or other employment decisions.
+
+<a id="en-section-8"></a>
+
+## 8 Risk, Scenarios and Constrained Decisions
+
+### FR10 Early Detection and Explanation of Operational Risk
+
+Each risk record identifies the problem category, affected business objects/entities, metric, evidence, earliest discoverable time, prediction window, potential impact, confidence and trigger conditions. Explicitly separate observation, anomaly, prediction and recommendation; label source opinions separately. Prioritize by business importance, credibility and actionability. If a loss model is missing, show leads only, without invented monetary values.
+
+Explain the basis, missing data and failure conditions. If operational inputs, exposure, condition applicability or labels are insufficient, return a scoped insufficient_data result rather than pretend quality criteria are met. Cross-problem propagation follows verified business, route and temporal dependencies. A protest in a country does not imply a route closure, and a route closure does not automatically establish violence, theft or eventual delay.
+
+### FR11 Comparing Actions and Trade-offs from the Same State
+
+Inputs are a fixed as-of four-layer state, role-operation constraints, objectives, actions and budget. Outputs include gains/losses, costs, feasibility, cross-problem effects, assumptions and sensitivity. Actions include rerouting, retiming, mode changes, buffers, alternative counterparties, processing order and qualified reassignment. Retain no-action/rule baselines and applicable simple-planning baselines; recompute when conditions change.
+
+Do not use inventory, money, staff or equipment resources more than once. Do not recommend actions violating contracts, capacity, deadlines or safety requirements. Explicitly identify infeasible actions, insufficient data or model-unsupported actions. Display observed facts and counterfactual results separately. Historical simulations must not be promoted as validated predictions of the future.
+
+### FR12 Felix's RL Sandbox and Policy Service
+
+RL is the selected technical approach. Define state S, action A, transition T, reward R, hard constraints C, termination and feasibility. S includes frozen business data, counterparty capability/history, route exposure, operating conditions and role-operation fields; it excludes psychological, health, family and private-relationship labels. T distinguishes observed regularities from scenario assumptions. R's units/weights reflect business objectives. C includes passability, effective rules, calendars, capacity, funds, qualifications, rest and required review.
+
+State the supported training-action range, missing behavioral data, distribution shift, transition assumptions and reward proxies. Validate no action, rules or simple planning and simulation credibility before evaluating RL gains. Trade-off weights for cash, fulfilment, service commitments/processing deadlines and waste must be reviewable. Arbitrary scores cannot be packaged as business benefits.
+
+Historical offline evaluation and simulation report support, non-identifiability and uncertainty. Without credible counterfactual evaluation, report only simulated results. If action/outcome data are insufficient, retain usable baseline comparisons and explicitly state that RL is not currently applicable.
+
+### FR13 Human Choice and Reviewable Decisions
+
+Users may change conditions, inspect baselines, defer or reject recommendations. Each choice records evidence snapshots, object/state versions, objectives, constraints, candidate actions, policy versions and assumptions. The current product workflow ends with human choice and saved rationale; it does not automatically execute real orders, payments, trades, policy publication or third-party communications.
+
+### Demonstration Cannot Substitute for Validation
+
+Traceable sources establish the evidence chain; entity/time tests establish structural soundness; risk backtests establish warning performance within a limited scope; policy evaluation establishes comparison results under limited assumptions. Each conclusion requires its own validation evidence. These forms of evidence are not interchangeable.
+
+<a id="en-section-9"></a>
+
+## 9 Four Backend Modules and Proposed Contracts
+
+Specification v0.3 proposes contract version 0.2, following the previous draft's contract 0.1 and adding core operating-condition and operational-resource fields. Contract and specification versions are independent; this does not claim that APIs already exist. The four modules support the four problem types through one formal frontend.
+
+| Module | Responsibilities and outputs | Proposed service calls |
+| --- | --- | --- |
+| M1 Intelligence | Collection/filtering/organization/RAG; Evidence, Claim and coverage/quality information | query_evidence(query, filters, knowledge_as_of) → paginated evidence and claims |
+| M2 Entities | Automatic disambiguation and evidence-based relationship fusion; Entity, Relation, ambiguity and conflicts | resolve_entities(mentions, knowledge_as_of); fuse_relations(claim_refs) |
+| M3 Time | Historical as-of world state, environment-action-outcome records and replay; WorldState, EAORecord | reconstruct_state(scope, knowledge_as_of, world_time, knowledge_mode); replay(interval) |
+| M4 Decisions | Baseline/scenario/RL policy comparisons; ScenarioRun, PolicyComparison | compare_policies(state_ref, objectives, constraints, actions) |
+
+### Common Envelope and Object Identifiers
+
+The envelope contains schema_version, request_id, input_refs, knowledge_as_of, world_time, knowledge_mode, data_revision, status and warnings; do not use an ambiguous as_of field. Status values are ok, partial, insufficient_data and unsupported. Retain units, time zones and windows; do not fabricate defaults for unknown values.
+
+Stable identifiers include evidence_id, claim_id, entity_id, relation_id, state_id, record_id, run_id and comparison_id, together with existing order_id, purchase_order_id, invoice_id, task_id and resource_id. References must resolve to specific versions. Do not connect business records by display name.
+
+### Minimum Object Fields
+
+Evidence/Claim retain sources, locators, multiple clocks, availability, rights, assertion types and evidence. Entity/Relation retain identifiers, types, validity and conflicts. New minimum objects reuse the same evidence/time envelope: Route/RouteLeg include origins/destinations/nodes, mode/carrier, planned windows and alternatives; Exposure includes business references, dependency references, exposure windows and mapping evidence.
+
+OperationalCondition includes condition type, spatial/entity scope, effective interval, applicability rules, observation/forecast/announcement status, evidence and uncertainty. CounterpartyHistory includes entity and role, commitment/obligation, period, allegation/dispute/verification status, outcome/resolution, sample denominator and evidence. Role capability/availability extends existing resource objects; do not create a separate private-profiling interface.
+
+WorldState references business records, entities, routes/conditions/exposure, counterparty history and minimum role constraints, retaining the two time dimensions/knowledge mode, applicability, gaps and revisions. EAORecord retains environment references, actor actions, multiple clocks, outcome units/windows, label status and censoring.
+
+ScenarioRun includes state_ref, action set, objectives, constraints, assumptions, model version, random seed and outputs. PolicyComparison includes run/baseline references, metrics, units, gain/loss ranges, constraint checks, scope of validity and uncertainty.
+
+### Independent Development and Integration Rules
+
+Freeze contracts and representative fixtures for the four directions first; modules may develop in parallel using contract samples. Mark fixtures as samples, not real operational results. Version every interface change and supply contract tests and runnable examples. Check IDs, times, units, errors and missing-value semantics together. Integrate modules progressively by service status; evidence and baselines remain viewable when a service fails.
+
+<a id="en-section-10"></a>
+
+## 10 Acceptance, Baselines and Integrity Gates
+
+Acceptance comprises mandatory integrity/functional gates and quality proposals pending review. The following is an evaluation design, not achieved results. Freeze test data, rules, temporal cutoffs and baselines first. Every report includes sample size, groups, confidence intervals and failure cases. Synthetic data can establish a limited functional path but cannot replace validation of real warnings/operational benefits. With missing inputs or labels, quality acceptance is insufficient_data.
+
+| Acceptance | Measurements and baselines | Passing criteria |
+| --- | --- | --- |
+| AC01 Supply fulfilment | Shortage false positives/false negatives, warning lead time, on-time fulfilment, shortage quantity, inventory tied up and total cost; compare no action and rule-based replenishment. | The complete order chain is verifiable; inventory/capacity constraints pass; benefit claims distinguish real observations from simulations. |
+| AC02 Documents and collections | Overdue/blockage detection, processing time, payments/collections outstanding when due and peak cash gap; compare due-date ordering and fixed processing rules. | Document/approval chains are traceable; actual-payment semantics are correct; unobserved and unpaid are distinct. |
+| AC03 Service processes | Formal SLA breaches/internal processing overruns, waiting/completion time, overrun quantity and resource usage; compare FIFO/current scheduling rules. | Service-commitment/processing-deadline clocks are verifiable; dependencies/resources are feasible; cancellation, pausing and censoring are not mislabeled failures. |
+| AC04 Operational waste | Energy per unit of output, loss quantity/rate, write-offs and costs; compare fixed batches or current resource rules. | At least one substantive waste type has an end-to-end workflow; consumption/price are separate; reduction actions and trade-offs are viewable. |
+
+Quality proposal: with the same holdout set, budget and constraints, cost-weighted loss should be no worse than the baseline. Claims of improvement report differences and 95% confidence intervals; if an interval crosses zero, do not claim demonstrated gains. Calibrate business costs and false-positive budgets against the main case. Small samples/synthetic data support only limited functional or simulation conclusions.
+
+### AC05 Evidence and Outcome Integrity
+
+Important facts must be 100% locatable to evidence versions, with zero tolerance for unsupported facts. Outcomes have types, units, windows and observation status. Missing data are not negative labels; post-event associations do not create causal rewards.
+
+### AC06 Entity and Temporal Soundness
+
+Blind-test identical names, renaming, multiple languages and splits/mergers/conflicts. Report precision/recall, incorrect merges, relationship support and abstention coverage against a string-matching baseline. Temporal gold cases/adversarial revisions must have zero future leakage, covering late publication/acquisition, withdrawal, time zones and date intervals.
+
+### AC07 Warning and Policy Effectiveness
+
+Separate entities/groups and time and use rolling backtests to prevent duplicates across splits. Risk reports include false positives/false negatives, lead time, calibration and cost. Compare no action, rules, planning and RL; report gain distributions, sensitivity and support. Hard-constraint violations must be zero; unvalidated simulation cannot support real-benefit promises.
+
+### AC08 Usable Integrated Journeys
+
+The first three directions cover evidence → four-layer state → risk → action/baseline → human choice; the fourth provides a substantive waste-reduction entry point. Pagination/focus are correct, and missing-data states are recoverable. Report p50/p95 in a fixed environment. A p95 of at most 3 seconds for ordinary viewing is a proposal; long-running tasks display progress.
+
+### AC09 Applicability of Dependencies, Conditions and History
+
+Test route/time exposure; separation of protests/passability/violence/theft; policy/holiday applicability to business and banking clocks; and late-publication/revision leakage. History retains role, status, outcome, period and denominator. No records must not produce ‘good performance.’
+
+AC10 role constraints and sensitive-field boundaries are tested according to Section 7; this is not certification of worldwide legal compliance.
+
+<a id="en-section-11"></a>
+
+## 11 Safety, Staged Delivery and Approval Decisions
+
+### FR14 Data Rights, Privacy and Safety
+
+Use data according to source permissions, licenses and data minimization. Retain restrictions and versions; do not disclose restricted information without authorization. Isolate access, export and deletion of private operational data within the authorized scope, with an explicit retention period. Minimize personal information and exclude credentials. External content must not rewrite instructions or trigger actions. The competition prototype still follows these boundaries.
+
+### FR15 Reproducibility
+
+Freeze data, splits, configuration, code/model versions, seeds and run records. Preserve revisions, missingness and censoring so results can be verified. Report tolerances for nondeterministic outputs. Retrieval/interfaces cannot substitute for prediction/decision validation.
+
+### Target Specification and Runnable Competition Scope
+
+S0 retains the complete target: four directions, global coverage and entity/time/decision capabilities. New FRs do not constitute immediate work assignments. The confirmed sequence is to refine specifications first, then develop a product specifically for hackathon demonstration. The actual delivery scope below remains a draft pending approval. Do not upload to GitHub before approval.
+
+S1a first builds one genuinely runnable minimum backend workflow: load real snapshots → retrieve → locate evidence → analyze and save, paired with a formal interactive frontend and bounded scenario comparisons. Reflect the four input layers and necessary role constraints; label missing inputs explicitly. S1b still targets complete workflows for the first three directions and a substantive waste-reduction entry point for the fourth as the competition baseline, not a single-direction substitute.
+
+S2/S3 progressively introduce target capabilities for disambiguation/relationships, historical reconstruction/replay, coverage/backtesting, and validated RL/sensitivity reporting. Competition claims are limited to frozen entities, periods, data and scenarios. Label precomputed outputs/samples; do not disguise them as online algorithms or validated forecasts. Retain global coverage and extension to 1990 as goals.
+
+Competition requirements exclude comprehensive real-time collection, complete global history, production high availability, enterprise deployment and ongoing operations. Basic rights, privacy, evidence, temporal and operational constraints cannot be omitted for a demonstration. Retain usable baselines and insufficient-data states when advanced services are not ready.
+
+### Proposed Collaboration Boundaries Derived from Requirements
+
+The user and assistant own M1 intelligence and the unified formal frontend. Felix owns M4 RL sandbox and policy services. The two other confirmed teammates take M2 entity and M3 time modules respectively; names remain to be filled in. These are proposed module boundaries for owner confirmation, not work assignments yet. Each module delivers callable services, contract tests and fixed examples, sharing IDs, times, units and evaluation rules.
+
+### Demonstration and Scope Boundaries
+
+The main demonstration enters through supply interruption → fulfilment, using verifiable IDs to connect route exposure, operating conditions, counterparty history and document/cash/process trade-offs, with a separate food-waste reduction and holiday example. Qualified reassignment/rest constraints may be included without evaluating private lives. The France protest/freight scenario is hypothetical only. Do not combine unrelated public data to impersonate one company's operations. Without a real cross-business chain, synthetic data establish functionality only, not benefits. Show baselines and unknowns. Babel Street is a reference only.
+
+Non-goals: executing real operational actions automatically, fabricating complete global history, deriving causal rewards from associations alone, recruiting beta users, introducing a new brand or copying a commercial product.
+
+### Decisions Requiring Owner Confirmation
+
+The recommendation is to adopt the four-direction problem statement and target users in this draft, use a supply/documents/service-linked main path, and begin the fourth direction with food batches. Prioritize legally usable real operational data or real public benchmarks. Where cross-business links are missing, clearly labeled synthetic fixtures may establish functionality, not replace prediction/benefit acceptance. Default metrics are fulfilment delays, cash gaps, service-process waiting and write-offs; monetary metrics require real cost inputs.
+
+Freeze three matters: competition data/scenarios/constraints; first-stage coverage and global/1990 expansion order; and business losses/quality budgets. The proposal is to freeze evaluation sets using case entities and evidence-supported relationships, apply integrity gates, baseline non-inferiority and the p95 proposal, and make no benefit promises from undecided parameters. Develop only after specification approval; do not automatically turn review proposals into work assignments.
+
+
+---
+
+<a id="chinese"></a>
+
+# 中文版本
+
+双语翻译版 0.3.1，2026 年 10 月 9 日。翻译不改变 FR／AC、接口、职责或范围。
+
+来源：[原中文文件](T-Dormathon_产品规格评审稿_v0.3.md)，私有仓库已发布提交 `3062a571e5931ad0d94bfa1a7b79f869bb7dd0e3`。原文保留评审时期措辞；实际已批准分工及后续补充以团队交接和最新补充为准，不表示所有目标已实现。
+
+配套双语文档：[打开](../TEAM_HANDOFF_2026-10-09_ZH_EN.md#chinese)
+
+## 目录
+
+- [最新补充](#zh-latest-addenda)
+- [原文开头与版本说明](#zh-section-0)
+- [1 产品决策摘要](#zh-section-1)
+- [2 四类经营需求与追踪](#zh-section-2)
+- [3 依赖暴露与外部经营条件](#zh-section-3)
+- [4 完整用户路径与相互影响](#zh-section-4)
+- [5 情报与正式产品工作台](#zh-section-5)
+- [6 实体轴 时间轴与历史标签](#zh-section-6)
+- [7 岗位能力与运行安全](#zh-section-7)
+- [8 风险 情景与受约束决策](#zh-section-8)
+- [9 四个后端模块与拟议契约](#zh-section-9)
+- [10 验收 基线与完整性门槛](#zh-section-10)
+- [11 安全 分阶段交付与批准项](#zh-section-11)
+
+<a id="zh-latest-addenda"></a>
+
+## 最新已确认补充
+
+### 2026 年 10 月 9 日 产品语言
+
+最终 hackathon 产品必须以英语为默认语言并完整支持英语，涵盖界面、消息、分析与演示。中文和马来语是可选加分项，不得延迟或阻碍英语交付。中英双语文档不等于产品必须双语。
+
+### 同日已发布的前端与产品意图
+
+**2026 年 10 月 9 日前端补充：**整体产品前端由用户与助手负责，既要抓眼，也要简洁、直接地完整展示产品。后续视觉整合采用虚实解构的黑白灰、强构图、层次、数据重点与适当动效，同时验收视觉吸引力和可用性；不恢复已取消的超前端或 PPT 式展示。队友当前只承担对应后端功能、契约和可运行示例，不承担视觉装修任务。
+
+**同日产品意图补充：**最小后端用于加快完整可用原型交付，不能因此做出薄弱原型。整体体验目标是串联全球数据、风险发现与预防建议、沙盘推演和 Agent 咨询；这是产品方向，已有能力与覆盖仍以实际验收为准。“自我改进”须有反馈、版本和评估证据后才作为能力声明。
+
+上述已发布补充来自[文档入口](../README.md)；它们补充原文，不把拟议接口或产品目标变成已实现能力。
+
+<a id="zh-section-0"></a>
+
 T-Dormathon 产品规格评审稿
 
 Taotern 团队    2026 年 10 月 9 日    草案 0.3
@@ -62,25 +456,9 @@ Taotern 团队    2026 年 10 月 9 日    草案 0.3
 已确认产品服务于 hackathon，而非投产。本稿请负责人先完善并批准问题、需求与验收，再开发展示。文中的“必须”是待批准要求，不表示能力已实现；完整目标与竞赛可运行范围分别说明。审批前不上传 GitHub，批准后按已授权私有仓库范围更新。
 
 
-<!-- END_ZH_SECTION 0 -->
 
-### English Translation / 英文翻译
+<a id="zh-section-1"></a>
 
-<!-- BEGIN_EN_SECTION 0 -->
-T-Dormathon Product Specification Review Draft
-
-Taotern team    9 October 2026    Draft 0.3
-
-The product is confirmed to serve the hackathon rather than production deployment. The owner should first refine and approve the problem, requirements, and acceptance criteria, then develop the demonstration. The word ‘must’ identifies requirements pending approval, not capabilities already implemented. The complete target and the runnable competition scope are described separately. Do not upload to GitHub before approval; after approval, update within the already-authorized private-repository scope.
-<!-- END_EN_SECTION 0 -->
-
----
-
-<a id="section-1"></a>
-
-### 中文原文 / Original Chinese
-
-<!-- BEGIN_ZH_SECTION 1 -->
 ## 1 产品决策摘要
 
 ### 我们要解决的问题
@@ -114,47 +492,9 @@ https://www.aihackerdorm.com/events/dormathon-2026-malaysia-s-nationwide-hackath
 
 
 
-<!-- END_ZH_SECTION 1 -->
 
-### English Translation / 英文翻译
+<a id="zh-section-2"></a>
 
-<!-- BEGIN_EN_SECTION 1 -->
-## 1 Product Decision Summary
-
-### The problem we are solving
-
-Organizations struggle to identify four interconnected types of operational problem early from fragmented internal records and external information: supply, inventory and fulfilment; blockages in procurement, invoices and cash collection; delays in service and business processes; and waste of energy, food and other operating resources. They also struggle to assess the impact and choose evidence-grounded responses under limited funding, staffing, time and resources. These four directions together constitute the product problem statement.
-
-The product must organize internal operations, counterparty capability/history, actual dependencies/exposure, and external operating conditions into verifiable entities, relationships and historical states, identify operational problems that may become costly, and compare feasible actions and their costs. All four layers are core inputs. Global intelligence, the entity axis, the time axis and the RL sandbox support this shared end-to-end workflow.
-
-### Target users and what success means
-
-Core users are organizational leads responsible for operations, procurement and finance, service processes, and resource management. They need to know where problems may arise, which business objects will be affected, what evidence and unknowns exist, which actions are currently feasible, and how those actions compete for resources or change other problems.
-
-Success should mean earlier and more accurate identification of important problems, faster evidence verification, and explainable action comparisons under explicit constraints. Data volume, feature count, graph size or the use of RL alone does not demonstrate success. Claims of real operational benefit require appropriate operational data and evaluation.
-
-### Confirmed goals and scope
-
-Dormathon is the primary goal. Soundness takes priority over novelty, and every stage remains usable and demonstrable. The baseline must fully cover the first three problem types and provide a substantive entry point for the fourth; all four share core capabilities. Intelligence coverage goals still include countries worldwide, major political organizations and companies, SME trends, unicorns and information across domains. The minimum historical scope is 2020 to the present, with expansion back to 1990 prioritized.
-
-### Competition constraints and review proposals
-
-The official Track 1 theme asks how AI can identify problems before costs escalate and help someone choose a response. [O1] This is external motivation and a constraint, not a substitute for the product problem statement above. The detailed competition challenge for 10–11 October remains to be confirmed.
-
-The object contracts, staged plan, main demonstration path and acceptance thresholds proposed in this draft remain subject to review. The assumption is that legally usable public information can provide external context, while operational records come from user-authorized data, public benchmarks or clearly labeled synthetic data. External information alone cannot establish effects on inventory, cash flow, service commitments/processing deadlines or energy consumption. SLA means Service Level Agreement and defines external service-quality and timing commitments; internal processing targets do not necessarily constitute an SLA.
-
-Sources: confirmed direction and scope come from the owner's project discussion on 9 October 2026. Interfaces, evaluation details and the main case are proposals in this draft. [O1] Official Dormathon 2026 event page.
-
-https://www.aihackerdorm.com/events/dormathon-2026-malaysia-s-nationwide-hackathon-build-the-next-big-thing
-<!-- END_EN_SECTION 1 -->
-
----
-
-<a id="section-2"></a>
-
-### 中文原文 / Original Chinese
-
-<!-- BEGIN_ZH_SECTION 2 -->
 ## 2 四类经营需求与追踪
 
 四类业务对象共用四层核心输入：内部运营；交易对手的能力及有证据历史；路线、业务依赖和实际暴露；天气、政策、经营日历、当地需求习惯与安全条件。每类均输出风险、影响、可行行动、假设及可观测结果；缺少必要输入时限定结论，而非省略这一层。
@@ -198,50 +538,9 @@ https://www.aihackerdorm.com/events/dormathon-2026-malaysia-s-nationwide-hackath
 
 
 
-<!-- END_ZH_SECTION 2 -->
 
-### English Translation / 英文翻译
+<a id="zh-section-3"></a>
 
-<!-- BEGIN_EN_SECTION 2 -->
-## 2 Four Operational Requirements and Traceability
-
-All four business-object types share four layers of core input: internal operations; counterparty capability and evidence-supported history; routes, business dependencies and actual exposure; and weather, policy, operating calendars, local demand practices and security conditions. Each produces risks, impacts, feasible actions, assumptions and observable outcomes. When necessary inputs are missing, limit the conclusion rather than omit the layer.
-
-### FR01 Supply, Inventory and Fulfilment
-
-Inputs include SKUs, available/reserved inventory, goods in transit, demand, and supplier/carrier capability and history; route legs, roads/ports/borders, transport mode, planned transit time and alternative routes; and passability, weather, policies, holiday/festival congestion and security conditions for the relevant location and time. Identify shortages, excess stock and fulfilment risk through order exposure. Compare replenishment, reallocation, alternative counterparties, rerouting/retiming/mode changes, buffers and expedited delivery. Constraints include inventory conservation, lead time, capacity and funding. Record fulfilment, shortages, inventory and total cost as outcomes.
-
-### FR02 Blockages in Procurement, Invoices and Cash Collection
-
-Inputs include purchase orders, goods receipts, invoices, due dates, actual payments/receipts, approvals and cash; supplier/customer history, contractual payment dependencies, logistics milestones, and applicable banking days, payment cutoffs, policies and settlement practices. Distinguish not-yet-due, overdue, missing and blocked states; locate cash gaps; and compare additional documentation, follow-up, processing order and legally feasible retiming/alternative counterparties. A sales date is not a cash-receipt date. When record completeness has not been established, the absence of a payment record cannot establish nonpayment. Whether holidays extend a deadline depends on the applicable rule, not a universal assumption.
-
-### FR03 Delays in Service and Business Processes
-
-Inputs include requests/tasks, steps, dependencies, queues, role capability/authorization/shift and rest schedules, service-provider history and service commitments/processing deadlines; and on-site or upstream route exposure, operating days, holidays, festival demand and safe-access conditions. Identify bottlenecks and timeout risk; compare scheduling, qualified reassignment, escalation and capacity allocation. Record completion time, formal SLA breaches/internal processing overruns, waiting and resource usage. Distinguish paused, canceled, incomplete and failed work; do not describe internal targets as formal agreements.
-
-### FR04 Waste of Energy, Food and Other Operating Resources
-
-Inputs include actual energy consumption, output, resource use, losses, food batches/shelf life, pricing and disposal rules; supply/cold-chain capability, transport and storage exposure, weather, operating-day/festival demand, applicable policies and operating practices. Identify abnormal consumption, expiry, excess and inefficient use; compare energy-saving schedules, batch size, stock rotation, buffers and transport alternatives. Price is not consumption; separate monetary costs from physical quantities. Start the baseline with food-batch expiry/write-offs, comparing fixed batches with first-expiring-first-out/batch adjustments; all waste categories need not be completed simultaneously.
-
-### From Problem to Acceptance to Demonstration
-
-| Problem | Requirement | Acceptance | Evidence that must be demonstrated |
-| --- | --- | --- | --- |
-| PS1 Supply, inventory and fulfilment | FR01 | AC01 | Risk and feasible actions on the same order chain, with fulfilment/cost baseline comparisons |
-| PS2 Procurement, invoices and collections | FR02 | AC02 | Document and approval chains, correct date semantics, overdue/gap identification and processing comparisons |
-| PS3 Service-process delays | FR03 | AC03 | Step and resource dependencies, service-commitment/processing-deadline clocks, bottlenecks and scheduling baseline comparisons |
-| PS4 Operational waste | FR04 | AC04 | A substantive waste record, separation of physical quantities and costs, and waste-reduction action comparisons |
-
-Shared support: FR05–06 intelligence/workbench; FR07–09 entities/history; FR10–13 decisions; FR14–15 safety/reproducibility; FR16 dependency exposure/operating conditions; FR17 role capability/operational safety. Demonstrations must establish results through this requirements traceability.
-<!-- END_EN_SECTION 2 -->
-
----
-
-<a id="section-3"></a>
-
-### 中文原文 / Original Chinese
-
-<!-- BEGIN_ZH_SECTION 3 -->
 ## 3 依赖暴露与外部经营条件
 
 ### FR16 四层输入的实际适用关系
@@ -273,45 +572,9 @@ CounterpartyHistory 记录对应主体及角色、承诺／义务、时期、证
 
 
 
-<!-- END_ZH_SECTION 3 -->
 
-### English Translation / 英文翻译
+<a id="zh-section-4"></a>
 
-<!-- BEGIN_EN_SECTION 3 -->
-## 3 Dependency Exposure and External Operating Conditions
-
-### FR16 Actual Applicability of the Four Input Layers
-
-Internal records define business objects and resources. The counterparty layer supplies roles, capability, capacity and evidence-supported history. The dependency layer specifies which routes, nodes, counterparties, equipment, roles or banks the business actually uses. The conditions layer supplies weather, policy, calendars, operating practices and security information for the corresponding location/entity and time. Without an exposure mapping, an external event can only be a lead requiring verification, not a direct business impact.
-
-### Routes and Spatial/Temporal Exposure
-
-Route/RouteLeg retain origins and destinations, legs and nodes, roads/ports/borders, carriers, transport modes, planned passage windows/transit times and feasible alternatives. Exposure connects orders, materials, invoices, tasks or resources to specific dependencies, impact windows and mapping evidence. Passability conditions must match the leg, direction and time; a country-level event cannot establish that a particular route is closed.
-
-The same condition can affect the four directions through different mechanisms: a detour changes fulfilment time and transport cost; logistics delays may affect post-receipt payment milestones; holidays change banking days and service clocks; festival demand or operating hours change inventory, food write-offs and energy consumption. Every propagation requires business relationships and applicable rules, not temporal co-occurrence alone.
-
-### Weather, Policies, Calendars and Operating Practices
-
-OperationalCondition retains the observation/forecast/announcement category, geographic and entity applicability, event and effective intervals, public-availability and acquisition times, sources, versions, conflicts and uncertainty. Policies must match the jurisdiction, business/product category, applicable entities and effective/withdrawal times. Holidays, festivals, local operating days and banking days are recorded separately; do not assume that all countries, organizations or businesses stop operating together.
-
-Cultural inputs are restricted to observable and supported operating calendars, demand seasonality, operating/payment practices or specific delivery agreements. Do not turn generalizations about nationality, religion or culture into integrity/capability scores. Security conditions use reported events, locations, times, impact types and evidence status. Protests, access disruption, violence, theft and delays are distinct assertions.
-
-### Counterparty Capability and History
-
-CounterpartyHistory records the relevant entity and role, commitments/obligations, period, evidence, event status, outcome/resolution and statistical denominators. Separate verified breaches, ongoing disputes, unilateral complaints and unresolved matters. History in supplier, carrier, customer and other roles is not interchangeable. No negative records means only that none were found within the existing coverage, not proof of good performance. Do not generate a ‘bad history’ blacklist.
-
-### Hypothetical Demonstration and Insufficient Data
-
-A protest in part of France affecting a freight-route leg is only a clearly labeled hypothetical fixture, not a verified current event. First check the actual route, time and official/operational evidence of passability. Return insufficient_data when conditions are insufficient. Compare rerouting, retiming, mode changes, buffers and alternative counterparties, explaining costs and assumptions without executing real actions.
-<!-- END_EN_SECTION 3 -->
-
----
-
-<a id="section-4"></a>
-
-### 中文原文 / Original Chinese
-
-<!-- BEGIN_ZH_SECTION 4 -->
 ## 4 完整用户路径与相互影响
 
 ### J1 供应库存与履约负责人
@@ -345,47 +608,9 @@ A protest in part of France affecting a freight-route leg is only a clearly labe
 
 
 
-<!-- END_ZH_SECTION 4 -->
 
-### English Translation / 英文翻译
+<a id="zh-section-5"></a>
 
-<!-- BEGIN_EN_SECTION 4 -->
-## 4 Complete User Journeys and Interactions
-
-### J1 Supply, Inventory and Fulfilment Lead
-
-Set the organization, order/material, geography and time → verify inventory, counterparty history, actual routes and operating conditions → confirm affected orders and gaps → define funding/capacity/passability constraints → compare no action, rule-based replenishment, rerouting/retiming and candidate policies → make a human choice and save its evidence. Preserve filters, pagination and focus on returning to information pages. Unknown inventory, demand or exposure mappings limit the output to leads; do not fabricate impacts.
-
-### J2 Procurement and Finance Lead
-
-Enter the procurement/invoice/collections queue → distinguish due status, missing data and blockages → follow business keys to verify receipts, approvals, payments/collections and counterparty history → check logistics dependencies, applicable policies and banking days → view the state known at the time → set funding, deadline and resource constraints → compare follow-up, documentation, sequencing and feasible retiming → record the decision. The system does not automatically send collection reminders or make payments.
-
-### J3 Service-Process Lead
-
-Select a request/process → verify step dependencies, role capability/availability, on-site access and operating calendars → inspect service commitments/processing deadlines and pause/cancellation rules → locate bottlenecks → compare qualified reassignment, scheduling and escalation → inspect displacement of other tasks → save the decision. Preserve censoring for incomplete outcomes; do not treat the current state as the final result.
-
-### J4 Resource-Management Lead
-
-Select energy, food or resources → verify consumption, output, losses and supply/cold-chain capability → check transport exposure, weather, operating/festival demand and policies → set capacity, shelf-life, safety and service constraints → compare batch size, rotation, energy-saving schedules or transport alternatives → inspect waste reduction and effects on other directions → make a human decision. Price data alone cannot establish energy waste.
-
-### Business Connections and Trade-offs Across Problems
-
-Connect the four problem types only through reliable business keys or evidence-supported relationships, such as order_id, purchase_order_id, invoice_id, task_id, SKU/resource_id and stable entity identifiers. A shared name, simultaneous occurrence or news co-occurrence does not create a business dependency. If a link is missing, show ‘Relationship not yet established’ and allow verification.
-
-Action comparisons must present shared budgets and trade-offs: expedited replenishment may tie up more cash; delayed payment processing may affect supply; staff reassignment may transfer service-delay risk; larger batches may increase inventory or write-offs. These are scenario mechanisms requiring validation, not observed causal conclusions. The same resources cannot be allocated repeatedly across plans.
-
-### Context Retained for Every Decision
-
-Record the problem scope, business objects, evidence versions, entities and relationships, knowledge_as_of, world time, objectives and weights, hard constraints, candidate actions, baselines, unknowns and assumptions. Users can verify sources, change conditions, compare plans and reject recommendations. When data are insufficient, show missing fields and the limited path that can still proceed.
-<!-- END_EN_SECTION 4 -->
-
----
-
-<a id="section-5"></a>
-
-### 中文原文 / Original Chinese
-
-<!-- BEGIN_ZH_SECTION 5 -->
 ## 5 情报与正式产品工作台
 
 ### FR05 证据采集筛选组织与 RAG
@@ -425,46 +650,9 @@ Record the problem scope, business objects, evidence versions, entities and rela
 
 
 
-<!-- END_ZH_SECTION 5 -->
 
-### English Translation / 英文翻译
+<a id="zh-section-6"></a>
 
-<!-- BEGIN_EN_SECTION 5 -->
-## 5 Intelligence and the Formal Product Workbench
-
-### FR05 Evidence Collection, Filtering, Organization and RAG
-
-Multi-source information must retain sources, locators, publication/acquisition times, versions, licenses and usage restrictions. Retrieval, summaries and explanations must include locatable evidence, applicable times, conflicts and gaps. Separate facts, source opinions, machine inferences, forecasts and unknowns; not finding something does not mean it does not exist. Operational records also require provenance and quality information; user-supplied records are not exempt from verification.
-
-Counterparty history, actual dependencies/exposure and external operating conditions are core state inputs, not merely reading context. Connect them to internal records through source-supported entity, business, spatial and temporal mappings. A country's GDP, news volume or political events still cannot alone establish impacts on a particular order, invoice or task.
-
-### FR06 Four Information Pages
-
-| Page name | Content and boundaries |
-| --- | --- |
-| Basic Information | Entity identity, classification, stable attributes, aliases, relationships and sources; ambiguities remain visible. |
-| State and Metrics | Observed inventory, amounts, durations, consumption and other values; retain units, frequency, windows and quality. |
-| Events and Changes | Actions, changes, announcements, implementation, withdrawal and timelines; distinguish the clocks. |
-| Explanations and Expectations | Explanations, opinions, forecasts, scenarios, policies, assumptions, confidence and scope of validity; do not present them as facts. |
-
-These four pages classify information, not the four operational problems. A unified risk/decision workspace can filter by the four problem types and reuse the information and evidence views; it need not become eight isolated page sets. Share query, geography, time and evidence context; preserve pagination, return position and focus. Choose tables, timelines, relationship structures and text views according to the source and task.
-
-The formal frontend uses restrained Xushi Deconstruction styling in black, white and gray with precise structural lines, supporting reading, verification and comparison. Visual acceptance primarily considers information hierarchy, understandable interaction and access to sources. Do not use a slide presentation, game interface or cinematic globe as the main interaction.
-
-### Global Intelligence and Historical Coverage Goals
-
-Coverage goals retain countries worldwide, major political organizations and companies, SME trends and unicorns, spanning law, policy, culture, foreign exchange, futures, the economy, employment, markets and talent. These are intelligence dimensions supporting the four operational problems, not a new primary user or a separate product.
-
-Publish a coverage matrix across entity type × geography × domain × information type × year × source quality, marking accepted coverage, partial coverage and gaps. The minimum historical range is 2020 to the present, prioritizing extension back to 1990. A minimum time range does not claim complete records for every entity and domain. Keep the expansion path explicit; existing datasets cannot substitute for target coverage.
-<!-- END_EN_SECTION 5 -->
-
----
-
-<a id="section-6"></a>
-
-### 中文原文 / Original Chinese
-
-<!-- BEGIN_ZH_SECTION 6 -->
 ## 6 实体轴 时间轴与历史标签
 
 ### FR07 自动主体消歧与证据关系融合
@@ -498,47 +686,9 @@ knowledge_mode 必须明确：public_known 使用可证明的历史公开可用�
 
 
 
-<!-- END_ZH_SECTION 6 -->
 
-### English Translation / 英文翻译
+<a id="zh-section-7"></a>
 
-<!-- BEGIN_EN_SECTION 6 -->
-## 6 Entity Axis, Time Axis and Historical Labels
-
-### FR07 Automatic Entity Disambiguation and Evidence-Based Relationship Fusion
-
-Companies, governments, political parties and international organizations use stable entity_id values. Retain time-valid names, aliases, external identifiers, jurisdictions and organizational changes. Disambiguation returns candidates, evidence and ambiguity status; refuse forced merging when evidence is insufficient. Tests must cover identical names, multiple languages, renaming, parent/subsidiary relationships, government terms, splits/mergers and succession.
-
-Relationships require types, directions, valid intervals, evidence and conflict status. Do not conflate ‘co-occurrence,’ ‘ownership,’ ‘supply,’ ‘traverses route’ or ‘depends on receipt/banking calendar.’ Route nodes, locations, counterparties and role resources require stable identifiers. Exposure references real business IDs and route-leg/time windows. Separate explicit source statements from inferences; retain merge, split and revision history. News does not generate business keys.
-
-### FR08 Multi-Clock As-of State Reconstruction and Replay
-
-Store event, impact, publication, acquisition, effective and revision times separately. Unknown values remain null; record precision and source time zone. Event/effective times may be intervals; a single date cannot substitute for all clocks. Queries specify both knowledge_as_of and world_time/an interval.
-
-knowledge_mode must be explicit: public_known uses provable historical public availability; system_known uses the system's actual acquired_at. An old article acquired today cannot be represented as having been held by the system at that historical time. Records with only a publication date and no proof of historical availability are marked availability_proxy and excluded from strict backtests or reported separately.
-
-Use only versions available by knowledge_as_of, and verify actual validity at world_time. This applies to route conditions, policy effectiveness, operating/banking calendars, counterparty history and role credentials. Later revisions, withdrawals and outcomes cannot enter the historical input. Replay displays changes, conflicts, applicability and gaps and is verifiable on frozen snapshots.
-
-### FR09 Environment, Actor Action and Outcome Records
-
-The dataset must systematically collect historical environments, actor actions and outcomes for companies, governments, political parties and international organizations, supporting world states and decision learning rather than a handful of case studies. Each operational direction also retains its corresponding orders, documents, tasks or resources and their mappings.
-
-Action status distinguishes at least announced, implemented, reversed and unknown. Outcome status distinguishes at least observed, estimated, proxy and unknown. Every outcome records the metric, unit, measurement window, observation end, revisions and censoring. Actual payments/collections, task completion and physical consumption require their corresponding observations, not nearby substitute fields.
-
-Missing outcomes are not negative outcomes. An event followed by an outcome does not establish causation. Labels must state their causal status and usage restrictions; simple post-event associations cannot directly produce causal rewards. Historical environments use only information known at the time, with entity/group-based grouping and temporal separation of training and testing.
-
-### Separating Observations from Counterfactuals
-
-Use distinct labels for historically observed outcomes, estimated/proxy labels and counterfactual simulation outputs. If only an assumed transition model is available, interpret outputs only as scenario outcomes under that model. Information replay, correct RAG or a usable interface cannot independently establish future-prediction or RL-policy quality.
-<!-- END_EN_SECTION 6 -->
-
----
-
-<a id="section-7"></a>
-
-### 中文原文 / Original Chinese
-
-<!-- BEGIN_ZH_SECTION 7 -->
 ## 7 岗位能力与运行安全
 
 ### FR17 管理者与工作人员的岗位约束
@@ -572,47 +722,9 @@ Use distinct labels for historically observed outcomes, estimated/proxy labels a
 
 
 
-<!-- END_ZH_SECTION 7 -->
 
-### English Translation / 英文翻译
+<a id="zh-section-8"></a>
 
-<!-- BEGIN_EN_SECTION 7 -->
-## 7 Role Capability and Operational Safety
-
-### FR17 Role Constraints for Managers and Workers
-
-For managers and employees performing the work, use job-relevant capability and availability: lawfully authorized qualifications, training, licenses, role/equipment-operation permissions, work records, shifts, rest and available time windows. These verify whether a particular task can be performed safely and by a qualified person, rather than infer personality, private reliability or psychological dangerousness. Missing records do not establish lack of qualification; retain an insufficient-data state when qualification is uncertain.
-
-### Work Incidents and Verification Status
-
-Process only lawfully authorized, job-relevant work incidents. Record source, date, role, investigation status, findings and handling/resolution. Separate unilateral allegations, ongoing investigations and confirmed facts. Do not turn unverified ‘dark history’ into personal scores or blacklists. Private life, family/friend circumstances and private social relationships are not work-capability or safety labels.
-
-### Addressing Safety Through Operational Controls
-
-The product may support shift/rest and fatigue constraints, role and permission checks, segregation of duties, two-person review, incident reporting, emergency replacements and backup resources. Recommendations identify the specific task, constraints and factual basis. Do not infer from correlations or negative stories that a particular person will commit a crime, misuse alcohol, harm others or cause an accident.
-
-### Explicit Boundaries on Health and Sensitive Profiling
-
-The product does not design psychological-state or dangerousness inference from family, friends or social media, or collect this information for employee evaluations, private reliability scores, blacklists or automated employment decisions. Health, family and private-relationship labels do not enter RL states or employee evaluations. Human review does not make such inferences acceptable features.
-
-Medical fitness-for-duty assessments are handled only by qualified, authorized professionals. If necessary job restrictions are lawfully provided, the product receives only the minimum necessary task/time availability restrictions, not raw diagnoses or private reasons. Optimization services see operational constraints, not health labels. The product does not claim compliance with every labor, privacy or industry law worldwide.
-
-### Input and Output Contracts
-
-Extend existing task/resource objects with role_id, required qualifications/authorization, evidence validity, availability windows, shifts/rest, necessary operational restrictions and review status. Isolate personal mappings and incident evidence under least-privilege access. WorldState/RL inputs retain only task-relevant capability, availability and constraints. Outputs describe action feasibility/infeasibility and evidence still required, not rankings of people's morality or dangerousness.
-
-### AC10 Role and Sensitive-Field Boundaries
-
-Verify that restricted tasks cannot be allocated without valid authorization, rest/two-person-review constraints cannot be bypassed, and credential revisions follow as-of semantics. Reject sensitive psychological, health, family and social-relationship labels from states/evaluations. Express lawful necessary restrictions as operational fields without diagnoses or private reasons. Errors or allegations do not automatically trigger hiring, dismissal, promotion or other employment decisions.
-<!-- END_EN_SECTION 7 -->
-
----
-
-<a id="section-8"></a>
-
-### 中文原文 / Original Chinese
-
-<!-- BEGIN_ZH_SECTION 8 -->
 ## 8 风险 情景与受约束决策
 
 ### FR10 提前发现并解释经营风险
@@ -648,49 +760,9 @@ RL 是已选路线，必须明确状态 S、动作 A、转移 T、奖励 R、硬
 
 
 
-<!-- END_ZH_SECTION 8 -->
 
-### English Translation / 英文翻译
+<a id="zh-section-9"></a>
 
-<!-- BEGIN_EN_SECTION 8 -->
-## 8 Risk, Scenarios and Constrained Decisions
-
-### FR10 Early Detection and Explanation of Operational Risk
-
-Each risk record identifies the problem category, affected business objects/entities, metric, evidence, earliest discoverable time, prediction window, potential impact, confidence and trigger conditions. Explicitly separate observation, anomaly, prediction and recommendation; label source opinions separately. Prioritize by business importance, credibility and actionability. If a loss model is missing, show leads only, without invented monetary values.
-
-Explain the basis, missing data and failure conditions. If operational inputs, exposure, condition applicability or labels are insufficient, return a scoped insufficient_data result rather than pretend quality criteria are met. Cross-problem propagation follows verified business, route and temporal dependencies. A protest in a country does not imply a route closure, and a route closure does not automatically establish violence, theft or eventual delay.
-
-### FR11 Comparing Actions and Trade-offs from the Same State
-
-Inputs are a fixed as-of four-layer state, role-operation constraints, objectives, actions and budget. Outputs include gains/losses, costs, feasibility, cross-problem effects, assumptions and sensitivity. Actions include rerouting, retiming, mode changes, buffers, alternative counterparties, processing order and qualified reassignment. Retain no-action/rule baselines and applicable simple-planning baselines; recompute when conditions change.
-
-Do not use inventory, money, staff or equipment resources more than once. Do not recommend actions violating contracts, capacity, deadlines or safety requirements. Explicitly identify infeasible actions, insufficient data or model-unsupported actions. Display observed facts and counterfactual results separately. Historical simulations must not be promoted as validated predictions of the future.
-
-### FR12 Felix's RL Sandbox and Policy Service
-
-RL is the selected technical approach. Define state S, action A, transition T, reward R, hard constraints C, termination and feasibility. S includes frozen business data, counterparty capability/history, route exposure, operating conditions and role-operation fields; it excludes psychological, health, family and private-relationship labels. T distinguishes observed regularities from scenario assumptions. R's units/weights reflect business objectives. C includes passability, effective rules, calendars, capacity, funds, qualifications, rest and required review.
-
-State the supported training-action range, missing behavioral data, distribution shift, transition assumptions and reward proxies. Validate no action, rules or simple planning and simulation credibility before evaluating RL gains. Trade-off weights for cash, fulfilment, service commitments/processing deadlines and waste must be reviewable. Arbitrary scores cannot be packaged as business benefits.
-
-Historical offline evaluation and simulation report support, non-identifiability and uncertainty. Without credible counterfactual evaluation, report only simulated results. If action/outcome data are insufficient, retain usable baseline comparisons and explicitly state that RL is not currently applicable.
-
-### FR13 Human Choice and Reviewable Decisions
-
-Users may change conditions, inspect baselines, defer or reject recommendations. Each choice records evidence snapshots, object/state versions, objectives, constraints, candidate actions, policy versions and assumptions. The current product workflow ends with human choice and saved rationale; it does not automatically execute real orders, payments, trades, policy publication or third-party communications.
-
-### Demonstration Cannot Substitute for Validation
-
-Traceable sources establish the evidence chain; entity/time tests establish structural soundness; risk backtests establish warning performance within a limited scope; policy evaluation establishes comparison results under limited assumptions. Each conclusion requires its own validation evidence. These forms of evidence are not interchangeable.
-<!-- END_EN_SECTION 8 -->
-
----
-
-<a id="section-9"></a>
-
-### 中文原文 / Original Chinese
-
-<!-- BEGIN_ZH_SECTION 9 -->
 ## 9 四个后端模块与拟议契约
 
 本规格 v0.3 拟议使用契约版本 0.2，承接前稿契约 0.1，增加核心经营条件与运行资源字段；版本号独立，不声称已有 API。四模块支撑四类问题，共用正式前端。
@@ -734,50 +806,9 @@ ScenarioRun：state_ref、动作集、目标、约束、假设、模型版本、
 
 
 
-<!-- END_ZH_SECTION 9 -->
 
-### English Translation / 英文翻译
+<a id="zh-section-10"></a>
 
-<!-- BEGIN_EN_SECTION 9 -->
-## 9 Four Backend Modules and Proposed Contracts
-
-Specification v0.3 proposes contract version 0.2, following the previous draft's contract 0.1 and adding core operating-condition and operational-resource fields. Contract and specification versions are independent; this does not claim that APIs already exist. The four modules support the four problem types through one formal frontend.
-
-| Module | Responsibilities and outputs | Proposed service calls |
-| --- | --- | --- |
-| M1 Intelligence | Collection/filtering/organization/RAG; Evidence, Claim and coverage/quality information | query_evidence(query, filters, knowledge_as_of) → paginated evidence and claims |
-| M2 Entities | Automatic disambiguation and evidence-based relationship fusion; Entity, Relation, ambiguity and conflicts | resolve_entities(mentions, knowledge_as_of); fuse_relations(claim_refs) |
-| M3 Time | Historical as-of world state, environment-action-outcome records and replay; WorldState, EAORecord | reconstruct_state(scope, knowledge_as_of, world_time, knowledge_mode); replay(interval) |
-| M4 Decisions | Baseline/scenario/RL policy comparisons; ScenarioRun, PolicyComparison | compare_policies(state_ref, objectives, constraints, actions) |
-
-### Common Envelope and Object Identifiers
-
-The envelope contains schema_version, request_id, input_refs, knowledge_as_of, world_time, knowledge_mode, data_revision, status and warnings; do not use an ambiguous as_of field. Status values are ok, partial, insufficient_data and unsupported. Retain units, time zones and windows; do not fabricate defaults for unknown values.
-
-Stable identifiers include evidence_id, claim_id, entity_id, relation_id, state_id, record_id, run_id and comparison_id, together with existing order_id, purchase_order_id, invoice_id, task_id and resource_id. References must resolve to specific versions. Do not connect business records by display name.
-
-### Minimum Object Fields
-
-Evidence/Claim retain sources, locators, multiple clocks, availability, rights, assertion types and evidence. Entity/Relation retain identifiers, types, validity and conflicts. New minimum objects reuse the same evidence/time envelope: Route/RouteLeg include origins/destinations/nodes, mode/carrier, planned windows and alternatives; Exposure includes business references, dependency references, exposure windows and mapping evidence.
-
-OperationalCondition includes condition type, spatial/entity scope, effective interval, applicability rules, observation/forecast/announcement status, evidence and uncertainty. CounterpartyHistory includes entity and role, commitment/obligation, period, allegation/dispute/verification status, outcome/resolution, sample denominator and evidence. Role capability/availability extends existing resource objects; do not create a separate private-profiling interface.
-
-WorldState references business records, entities, routes/conditions/exposure, counterparty history and minimum role constraints, retaining the two time dimensions/knowledge mode, applicability, gaps and revisions. EAORecord retains environment references, actor actions, multiple clocks, outcome units/windows, label status and censoring.
-
-ScenarioRun includes state_ref, action set, objectives, constraints, assumptions, model version, random seed and outputs. PolicyComparison includes run/baseline references, metrics, units, gain/loss ranges, constraint checks, scope of validity and uncertainty.
-
-### Independent Development and Integration Rules
-
-Freeze contracts and representative fixtures for the four directions first; modules may develop in parallel using contract samples. Mark fixtures as samples, not real operational results. Version every interface change and supply contract tests and runnable examples. Check IDs, times, units, errors and missing-value semantics together. Integrate modules progressively by service status; evidence and baselines remain viewable when a service fails.
-<!-- END_EN_SECTION 9 -->
-
----
-
-<a id="section-10"></a>
-
-### 中文原文 / Original Chinese
-
-<!-- BEGIN_ZH_SECTION 10 -->
 ## 10 验收 基线与完整性门槛
 
 验收分为必须通过的完整性／功能门槛，以及待评审的质量提议。以下是测量设计，不是已实现结果。先冻结测试数据、规则、时间截点与基线；每次报告样本量、分组、置信区间和失败例。合成数据可证明限定的功能路径，不能替代真实预警／经营收益验证；缺输入或标签时质量验收为 insufficient_data。
@@ -825,54 +856,9 @@ AC10 岗位约束与敏感字段边界按第 7 节测试，不构成全球法律
 
 
 
-<!-- END_ZH_SECTION 10 -->
 
-### English Translation / 英文翻译
+<a id="zh-section-11"></a>
 
-<!-- BEGIN_EN_SECTION 10 -->
-## 10 Acceptance, Baselines and Integrity Gates
-
-Acceptance comprises mandatory integrity/functional gates and quality proposals pending review. The following is an evaluation design, not achieved results. Freeze test data, rules, temporal cutoffs and baselines first. Every report includes sample size, groups, confidence intervals and failure cases. Synthetic data can establish a limited functional path but cannot replace validation of real warnings/operational benefits. With missing inputs or labels, quality acceptance is insufficient_data.
-
-| Acceptance | Measurements and baselines | Passing criteria |
-| --- | --- | --- |
-| AC01 Supply fulfilment | Shortage false positives/false negatives, warning lead time, on-time fulfilment, shortage quantity, inventory tied up and total cost; compare no action and rule-based replenishment. | The complete order chain is verifiable; inventory/capacity constraints pass; benefit claims distinguish real observations from simulations. |
-| AC02 Documents and collections | Overdue/blockage detection, processing time, payments/collections outstanding when due and peak cash gap; compare due-date ordering and fixed processing rules. | Document/approval chains are traceable; actual-payment semantics are correct; unobserved and unpaid are distinct. |
-| AC03 Service processes | Formal SLA breaches/internal processing overruns, waiting/completion time, overrun quantity and resource usage; compare FIFO/current scheduling rules. | Service-commitment/processing-deadline clocks are verifiable; dependencies/resources are feasible; cancellation, pausing and censoring are not mislabeled failures. |
-| AC04 Operational waste | Energy per unit of output, loss quantity/rate, write-offs and costs; compare fixed batches or current resource rules. | At least one substantive waste type has an end-to-end workflow; consumption/price are separate; reduction actions and trade-offs are viewable. |
-
-Quality proposal: with the same holdout set, budget and constraints, cost-weighted loss should be no worse than the baseline. Claims of improvement report differences and 95% confidence intervals; if an interval crosses zero, do not claim demonstrated gains. Calibrate business costs and false-positive budgets against the main case. Small samples/synthetic data support only limited functional or simulation conclusions.
-
-### AC05 Evidence and Outcome Integrity
-
-Important facts must be 100% locatable to evidence versions, with zero tolerance for unsupported facts. Outcomes have types, units, windows and observation status. Missing data are not negative labels; post-event associations do not create causal rewards.
-
-### AC06 Entity and Temporal Soundness
-
-Blind-test identical names, renaming, multiple languages and splits/mergers/conflicts. Report precision/recall, incorrect merges, relationship support and abstention coverage against a string-matching baseline. Temporal gold cases/adversarial revisions must have zero future leakage, covering late publication/acquisition, withdrawal, time zones and date intervals.
-
-### AC07 Warning and Policy Effectiveness
-
-Separate entities/groups and time and use rolling backtests to prevent duplicates across splits. Risk reports include false positives/false negatives, lead time, calibration and cost. Compare no action, rules, planning and RL; report gain distributions, sensitivity and support. Hard-constraint violations must be zero; unvalidated simulation cannot support real-benefit promises.
-
-### AC08 Usable Integrated Journeys
-
-The first three directions cover evidence → four-layer state → risk → action/baseline → human choice; the fourth provides a substantive waste-reduction entry point. Pagination/focus are correct, and missing-data states are recoverable. Report p50/p95 in a fixed environment. A p95 of at most 3 seconds for ordinary viewing is a proposal; long-running tasks display progress.
-
-### AC09 Applicability of Dependencies, Conditions and History
-
-Test route/time exposure; separation of protests/passability/violence/theft; policy/holiday applicability to business and banking clocks; and late-publication/revision leakage. History retains role, status, outcome, period and denominator. No records must not produce ‘good performance.’
-
-AC10 role constraints and sensitive-field boundaries are tested according to Section 7; this is not certification of worldwide legal compliance.
-<!-- END_EN_SECTION 10 -->
-
----
-
-<a id="section-11"></a>
-
-### 中文原文 / Original Chinese
-
-<!-- BEGIN_ZH_SECTION 11 -->
 ## 11 安全 分阶段交付与批准项
 
 ### FR14 数据权利 隐私与安全
@@ -908,47 +894,4 @@ S2／S3 目标能力逐步接入消歧／关系、历史重建／回放、覆盖
 建议采用本稿四方向 PS 与目标用户，主路径为供应／单据／服务联动，第四先做食物批次。优先合法真实运营数据或真实公开基准；缺失跨业务链可用明确标记的合成 fixture 验证功能，不替代预测／收益验收。默认指标是履约延误、现金缺口、服务流程等待与报废量；金额需真实成本输入。
 
 需冻结三项：竞赛数据／场景／约束；首阶段覆盖与全球／1990 年扩展次序；业务损失及质量预算。提议用案例主体与有证据关系冻结评测集，采用完整性门槛、基线不劣及 p95 提议；未定参数不作收益承诺。规格批准后才开发，不将评审建议自动派工。
-<!-- END_ZH_SECTION 11 -->
-
-### English Translation / 英文翻译
-
-<!-- BEGIN_EN_SECTION 11 -->
-## 11 Safety, Staged Delivery and Approval Decisions
-
-### FR14 Data Rights, Privacy and Safety
-
-Use data according to source permissions, licenses and data minimization. Retain restrictions and versions; do not disclose restricted information without authorization. Isolate access, export and deletion of private operational data within the authorized scope, with an explicit retention period. Minimize personal information and exclude credentials. External content must not rewrite instructions or trigger actions. The competition prototype still follows these boundaries.
-
-### FR15 Reproducibility
-
-Freeze data, splits, configuration, code/model versions, seeds and run records. Preserve revisions, missingness and censoring so results can be verified. Report tolerances for nondeterministic outputs. Retrieval/interfaces cannot substitute for prediction/decision validation.
-
-### Target Specification and Runnable Competition Scope
-
-S0 retains the complete target: four directions, global coverage and entity/time/decision capabilities. New FRs do not constitute immediate work assignments. The confirmed sequence is to refine specifications first, then develop a product specifically for hackathon demonstration. The actual delivery scope below remains a draft pending approval. Do not upload to GitHub before approval.
-
-S1a first builds one genuinely runnable minimum backend workflow: load real snapshots → retrieve → locate evidence → analyze and save, paired with a formal interactive frontend and bounded scenario comparisons. Reflect the four input layers and necessary role constraints; label missing inputs explicitly. S1b still targets complete workflows for the first three directions and a substantive waste-reduction entry point for the fourth as the competition baseline, not a single-direction substitute.
-
-S2/S3 progressively introduce target capabilities for disambiguation/relationships, historical reconstruction/replay, coverage/backtesting, and validated RL/sensitivity reporting. Competition claims are limited to frozen entities, periods, data and scenarios. Label precomputed outputs/samples; do not disguise them as online algorithms or validated forecasts. Retain global coverage and extension to 1990 as goals.
-
-Competition requirements exclude comprehensive real-time collection, complete global history, production high availability, enterprise deployment and ongoing operations. Basic rights, privacy, evidence, temporal and operational constraints cannot be omitted for a demonstration. Retain usable baselines and insufficient-data states when advanced services are not ready.
-
-### Proposed Collaboration Boundaries Derived from Requirements
-
-The user and assistant own M1 intelligence and the unified formal frontend. Felix owns M4 RL sandbox and policy services. The two other confirmed teammates take M2 entity and M3 time modules respectively; names remain to be filled in. These are proposed module boundaries for owner confirmation, not work assignments yet. Each module delivers callable services, contract tests and fixed examples, sharing IDs, times, units and evaluation rules.
-
-### Demonstration and Scope Boundaries
-
-The main demonstration enters through supply interruption → fulfilment, using verifiable IDs to connect route exposure, operating conditions, counterparty history and document/cash/process trade-offs, with a separate food-waste reduction and holiday example. Qualified reassignment/rest constraints may be included without evaluating private lives. The France protest/freight scenario is hypothetical only. Do not combine unrelated public data to impersonate one company's operations. Without a real cross-business chain, synthetic data establish functionality only, not benefits. Show baselines and unknowns. Babel Street is a reference only.
-
-Non-goals: executing real operational actions automatically, fabricating complete global history, deriving causal rewards from associations alone, recruiting beta users, introducing a new brand or copying a commercial product.
-
-### Decisions Requiring Owner Confirmation
-
-The recommendation is to adopt the four-direction problem statement and target users in this draft, use a supply/documents/service-linked main path, and begin the fourth direction with food batches. Prioritize legally usable real operational data or real public benchmarks. Where cross-business links are missing, clearly labeled synthetic fixtures may establish functionality, not replace prediction/benefit acceptance. Default metrics are fulfilment delays, cash gaps, service-process waiting and write-offs; monetary metrics require real cost inputs.
-
-Freeze three matters: competition data/scenarios/constraints; first-stage coverage and global/1990 expansion order; and business losses/quality budgets. The proposal is to freeze evaluation sets using case entities and evidence-supported relationships, apply integrity gates, baseline non-inferiority and the p95 proposal, and make no benefit promises from undecided parameters. Develop only after specification approval; do not automatically turn review proposals into work assignments.
-<!-- END_EN_SECTION 11 -->
-
----
 
