@@ -2,11 +2,15 @@
 
 一个已有的 GPT-Site 产品：采集真实公开来源，按许可保留字段，去重与组织，保存不可变证据，提供可追溯的词项检索。队友负责在这些数据上实现客户分析与服务。本仓库当前界面是正式情报工作台：记录列表、证据阅读器和四类信息页面。展示型超前端已取消；旧版本只保留在 Git 历史中用于恢复。
 
-## 已批准的产品规格与竞赛分工
+## Product specs and team handoff · 产品规格与团队交接
 
-2026 年 10 月 9 日已批准的[产品规格 v0.3](docs/specs/T-Dormathon_产品规格评审稿_v0.3.md)与[Word 原文件](docs/specs/T-Dormathon_产品规格评审稿_v0.3.docx)完整保留。队友 1 负责 FR07，队友 2 负责 FR08，Felix 负责 FR12；用户与助手负责其余需求、统一正式前端和集成。详见[团队交接与接口边界](docs/TEAM_HANDOFF_2026-10-09.md)及[文档入口](docs/README.md)。后台做真实可运行的最小可行版本，面向 hackathon 原型。
+Start with the complete [Chinese–English product specification](docs/specs/PRODUCT_SPEC_v0.3.1_ZH_EN.md) and [Chinese–English team handoff](docs/TEAM_HANDOFF_2026-10-09_ZH_EN.md). Translation edition 0.3.1 preserves the approved Chinese v0.3 requirements. Teammate 1 owns FR07, teammate 2 FR08, and Felix FR12; the user and assistant own all remaining requirements, intelligence/data, the unified frontend and integration. Interface examples are proposed contracts, not claims of deployed services.
 
-同日补充：整体前端由用户与助手负责，既要抓眼，也要简洁、直接地完整展示产品；后续虚实解构视觉整合同时关注构图、层次、数据重点、适当动效与可用性。队友当前任务只包含功能、契约和可运行示例，视觉装修由我们后续完成。规格目标与下文已有能力分开阅读，不把拟议服务当作已部署接口。
+The Hackathon product must be English-based, with English as the default and fully supported. Chinese and Malay are optional bonuses. The backend must be genuinely runnable and minimum viable; the frontend must show the complete product simply, directly and attractively. The user and assistant own later visual integration. Teammates currently deliver functionality, contracts and runnable examples, with no visual-design obligation. Implemented capabilities and runtime limitations remain documented separately below.
+
+完整[中英双语产品规格](docs/specs/PRODUCT_SPEC_v0.3.1_ZH_EN.md)与[中英双语团队交接](docs/TEAM_HANDOFF_2026-10-09_ZH_EN.md)已发布。双语版 0.3.1 保留已批准中文 v0.3 的全部需求；队友 1 负责 FR07，队友 2 负责 FR08，Felix 负责 FR12，用户与助手负责其余需求、情报与数据、统一前端和集成。接口示例是拟议契约，不代表已部署服务。
+
+Hackathon 产品必须以英语为默认语言并完整支持英语；中文和马来语是可选加分项。后端须最小可行且真实可运行，前端须抓眼、简洁直接地完整展示产品。前端装修由用户与助手后续负责，队友当前只交付功能、契约和可运行示例。已实现能力及限制仍以下文实际状态为准。原中文[规格阅读版](docs/specs/T-Dormathon_产品规格评审稿_v0.3.md)、[Word 文件](docs/specs/T-Dormathon_产品规格评审稿_v0.3.docx)和[中文交接](docs/TEAM_HANDOFF_2026-10-09.md)保持原样；入口汇总见[文档目录 / Documentation index](docs/README.md)。
 
 ## 最快开始
 
