@@ -1,0 +1,85 @@
+{
+  "schema_version": "dormathon.operating-case.fixture.v0.2",
+  "fixture_id": "linked-operations-v0.2",
+  "data_basis": "synthetic_fixture",
+  "title": "How could a replenishment delay affect delivery, payment and the task queue?",
+  "organization": {
+    "entity_id": "fixture:organization:01",
+    "name": "Linked operations demo (synthetic)"
+  },
+  "knowledge_as_of": "2026-10-09T09:00:00Z",
+  "world_time": "2026-10-09T09:00:00Z",
+  "knowledge_mode": "system_known",
+  "inputs": {
+    "stock_units": 100,
+    "daily_use_units": 20,
+    "days_until_delivery": 7,
+    "delay_assumption_days": 3,
+    "invoice_amount": 1200,
+    "paid_amount": 0,
+    "cash_available": 1000,
+    "payment_ledger_complete": true,
+    "service_elapsed_hours": 30,
+    "service_target_hours": 24,
+    "food_units": 80,
+    "food_daily_use_units": 10,
+    "days_until_expiry": 2
+  },
+  "records": [
+    {
+      "record_id": "fixture:order:01",
+      "order_id": "fixture:order:01",
+      "sku": "fixture:sku:01",
+      "purchase_order_id": "fixture:po:01",
+      "quantity": 100,
+      "unit": "units",
+      "source_basis": "synthetic_fixture"
+    },
+    {
+      "record_id": "fixture:invoice:01",
+      "invoice_id": "fixture:invoice:01",
+      "purchase_order_id": "fixture:po:01",
+      "order_id": "fixture:order:01",
+      "currency": "MYR",
+      "due_date": "2026-10-08",
+      "status": "receipt_approval_pending",
+      "source_basis": "synthetic_fixture"
+    },
+    {
+      "record_id": "fixture:task:01",
+      "task_id": "fixture:task:01",
+      "invoice_id": "fixture:invoice:01",
+      "target_basis": "internal_processing_target_not_formal_SLA",
+      "status": "open",
+      "completion_observed": false,
+      "source_basis": "synthetic_fixture"
+    },
+    {
+      "record_id": "fixture:batch:01",
+      "resource_id": "fixture:batch:01",
+      "sku": "fixture:food:01",
+      "unit": "units",
+      "expiry_date": "2026-10-11",
+      "source_basis": "synthetic_fixture"
+    }
+  ],
+  "four_layers": {
+    "internal_operations": "synthetic linked order/PO/invoice/task/batch",
+    "counterparty_history": "insufficient_data: no independently verified performance history",
+    "dependency_exposure": "fixture-declared business IDs; no verified route closure",
+    "operating_conditions": "actual public evidence can be attached; applicability remains unconfirmed"
+  },
+  "resources": {
+    "role_id": "fixture:role:qualified_operator",
+    "availability_status": "unknown",
+    "authorization_status": "unknown",
+    "rest_constraint": "required_but_not_supplied",
+    "sensitive_person_fields": false
+  },
+  "limitations": [
+    "Synthetic operating records demonstrate function, not actual business gains.",
+    "Delay is an entered scenario assumption; public weather or FX does not prove a delivery delay.",
+    "Missing payments and explicit zero are distinct. An unfinished task has no final outcome.",
+    "Units and shared cash are retained. No policy solver, causal reward or automatic action."
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "schema_version": "dormathon.English-Hackathon-vertical.release.v1",
+  "runtime_commit": "0f0214b974206847d0fa87a4c3cc68f52ca68157",
+  "private_site_version": 38,
+  "version_id": "appgprj_6ac6c8d4361c81919d4a8dffabfab361~appgver_989c08e259048191b3dccc9163b821f3",
+  "deployment_id": "appgdep_6ac864ab363c8191b2a31d94b25f781c",
+  "native_status": "succeeded",
+  "published_at": "2026-10-09T03:51:29.809980+00:00",
+  "worker_sha256": "b9b593afbc905467d74556d6bb724194a6cb4fc54ca879209e5d2a0b111dafc4",
+  "worker_bytes": 2394351,
+  "default_language": "English",
+  "operating_data_basis": "synthetic_fixture_with_user_edits",
+  "public_evidence": "actual immutable retained sources, applicability unconfirmed",
+  "new_model_or_module_calls": 0,
+  "new_provider_calls": 0,
+  "new_migration": false,
+  "connected": [
+    "editable rule observations",
+    "case and public-evidence persistence",
+    "frozen input/evidence analysis",
+    "human decision without execution",
+    "pending feedback tied to newest decision",
+    "four preserved information views"
+  ],
+  "unsupported_services": [
+    "teammate FR07 entity/relations",
+    "teammate FR08 state/replay",
+    "Felix FR12 strategy/simulation"
+  ],
+  "feedback_quality_claim": {
+    "evaluated": false,
+    "trained": false,
+    "improvement": false
+  },
+  "tests": {
+    "reused_full_baseline": 389,
+    "focused_successor": 28,
+    "independent_client": 6,
+    "fresh_consumer_sha256": "b817723194cbd08bbaa5e586f7c860e32e27d1b89b5d778603cb6c64c5e585f1"
+  },
+  "actual_browser": {
+    "status": "passed",
+    "existing_case_reused_on_successor": true,
+    "initial_reload_case_query_source_period": true,
+    "editable_stock_gap5_to0": true,
+    "incomplete_payment_unknown": true,
+    "real_MYR_per_EUR": 4.5768,
+    "draft_evidence_roundtrip": true,
+    "two_QA_decisions_feedback_reopen": true,
+    "actual_500px_help_reader_Back": true,
+    "desktop_complete_English_nav": true,
+    "full_frozen_live_JSON_hash_comparison": false,
+    "full_frozen_proof_scope": "focused backend/produced-Worker; live large-cell projection truncated; denied direct browser case API not bypassed",
+    "QA_report_sha256": "53e8c25baa6ea3c6c616f506b2b3f407ce04b249049d0038186ffb55dfcb692e",
+    "QA_archive_sha256": "e867603e576b94d8fe161480016ca875e9d9ebb0a0c14570ed2d7a191d306f67",
+    "visual_scope": "Functional baseline passed; eye-catching consultant polish is pending and not claimed"
+  },
+  "preserved_data": {
+    "intelligence_indexed": 51471,
+    "direct": 369,
+    "uploaded_unverified": 114,
+    "reviewed": 50988,
+    "CVD_events": 171,
+    "CVD_versions": 171,
+    "CVD_fields": 1197,
+    "saved_rules": 8
+  },
+  "preserved_docs_head": "09af336fad86309cf2d67ed533ea01dbfbd9c421",
+  "English_Chinese_spec_sha256": "4d065b8544ca6e282eac35d7b2d7dcb0075a1e58d892e7ba11fac913828d79fd",
+  "English_Chinese_handoff_sha256": "4d745b7fd8219ec32de13978bf16ad7f21b8f5380986922266795f595f661dd0",
+  "port_examples_sha256": "f3770bb39295614e288bfbda4031f82c5c218480e7f6b18baffd542858da3b59",
+  "not_claimed": [
+    "production readiness",
+    "complete global/entity/history coverage",
+    "validated prediction or business benefit",
+    "causality or reward truth",
+    "trained/improving agent",
+    "automatic schedule/sync",
+    "connected teammate services"
+  ]
+}

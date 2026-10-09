@@ -5,6 +5,7 @@ import {retrievalStatus,retrievalDocuments,retrievalIndex} from './retrieval.js'
 import {PUBLIC_BUNDLE,ASSETS,SITE_ORIGIN,GLOBAL_CATALOG} from './generated.js';
 import {RiskStore} from './store.js';
 import {WorkspaceService} from './workspace.js';
+import {PrototypeService} from './prototype.js';
 import {importRefreshSnapshot} from './source-refresh.js';
 import {importLocalSnapshot} from './local-snapshot.js';
 import {DOMAINS,ValidationError,has,validDomain,textField,dateMicros} from './common.js';
@@ -23,6 +24,7 @@ export async function handleRequest(request,env,context={}){
    if(method==='GET'&&path==='/api/viewer-context')return responseJSON(200,viewerCountryContext(request));
    const store=new RiskStore(env.DB,PUBLIC_BUNDLE);await store.ensureSeed();if(path.startsWith('/api/reviewed-intake')||path.startsWith('/api/retrieval/')||path.startsWith('/api/global/')||path==='/api/workspace'||path.startsWith('/api/workspace/'))await intelEnsureRegistry(store);const workspace=(path==='/api/workspace'||path.startsWith('/api/workspace/'))?new WorkspaceService(store,env):null;const domain=url.searchParams.get('domain');if(domain&&!path.startsWith('/api/outcomes/'))validDomain(domain);
    if(method==='GET'){
+    if(path==='/api/prototype')return responseJSON(200,await new PrototypeService(store).read(url.searchParams.get('case_id')));
     if(path==='/api/outcomes/status')return responseJSON(200,await outcomeStatus(store));
     if(path==='/api/outcomes/events')return responseJSON(200,await outcomeEvents(store,Object.fromEntries(url.searchParams)));
     if(path==='/api/outcomes/export')return responseJSON(200,await outcomeEvents(store,Object.fromEntries(url.searchParams),{exporting:true}));
@@ -51,6 +53,11 @@ export async function handleRequest(request,env,context={}){
     const body=await readJSON(request);
     if(method==='POST'){
      if(path==='/api/outcomes/import-chunk')return responseJSON(200,await importOutcomeChunk(store,body));
+     if(path==='/api/prototype/start')return responseJSON(200,await new PrototypeService(store).start(body));
+     if(path==='/api/prototype/analyze')return responseJSON(200,await new PrototypeService(store).analyze(body));
+     if(path==='/api/prototype/save-analysis')return responseJSON(200,await new PrototypeService(store).analyze(body,true));
+     if(path==='/api/prototype/decide')return responseJSON(200,await new PrototypeService(store).decide(body));
+     if(path==='/api/prototype/feedback')return responseJSON(200,await new PrototypeService(store).feedback(body));
      if(path==='/api/workspace/projects')return responseJSON(200,await workspace.createProject(body));
      if(path==='/api/workspace/objects')return responseJSON(200,await workspace.createObject(body));
      if(path==='/api/workspace/cases')return responseJSON(200,await workspace.createCase(body));

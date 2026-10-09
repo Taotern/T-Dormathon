@@ -131,3 +131,10 @@ node local-collector/collector.mjs diagnose
 实施中的四类读合同见 [信息类型接口](contracts/information-types-v1.md)。统计的源观察期与首次见到 UTC 日期可分别筛选，预警刊登不会变成灾害发生，法律资源刊登不会变成已生效。页面 URL 保存查询与筛选；窄屏从阅读器返回会恢复结果、焦点与位置。历史行动入口独立显示 CVD 案件的原始阶段代码、未知结果与当时可用性限制。
 
 已验收私有 Site 当前版本36原生发布成功；实际1188×761桌面和500×761窄屏已走通查询→阅读→原证据、四类信息、空结果/失败保留及返回焦点。171条CVD历史层保持独立。完整版本/准入/验证边界见[本轮交付事实](docs/releases/CVD_FORMAL_WORKSPACE_2026-10-09.json)。
+
+
+## English-first Hackathon vertical
+
+The current prototype adds Risk & Decisions beside the preserved intelligence pages. Operating-case records are explicitly synthetic and editable; public evidence keeps its immutable source/version identity. Conditional rule calculations, a saved human decision and pending feedback are runnable. FR07 entity resolution, FR08 state reconstruction and Felix FR12 strategy/simulation are external ports and remain unsupported until connected. No gain, RL quality or self-improvement is inferred from a functional demo. See [current integration ports](contracts/prototype/ports-v0.2.md). The default interface is English; source quotations and units are preserved.
+
+Walkthrough and actual limits: [English Hackathon vertical](docs/ENGLISH_HACKATHON_VERTICAL.md). [Version38 release facts](docs/releases/ENGLISH_HACKATHON_VERTICAL_2026-10-09.json) separate deployed code, public evidence, synthetic operating inputs and pending teammate services.

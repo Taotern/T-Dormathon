@@ -38,3 +38,6 @@ source-packs/*/reports/
 # These are immutable producer evidence required by the exact source manifest.
 !source-packs/outcomes-cvd/reports/
 !source-packs/outcomes-cvd/reports/*.json
+
+# Prototype execution receipts are not source.
+.prototype-qa/

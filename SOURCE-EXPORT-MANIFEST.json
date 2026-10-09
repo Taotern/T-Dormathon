@@ -1,20 +1,23 @@
 {
   "schema_version": "dormathon-clean-source-export.v1",
-  "source_commit": "2ab4bad9d220ff9a390db5ab1ebebfc5de735004",
-  "runtime_commit": "e2b14f7802d555b74adb10c3e97e5339518954c2",
-  "source_files": 868,
-  "provider_requests": 0,
-  "Site_writes": 0,
-  "CVD_bulk_in_Git": false,
-  "unapproved_product_specs_included": false,
-  "fresh_consumer_receipt_sha256": "de7c3ac003756048f6806553a375aa818d5ec1aa364a38b3e46f6bf24dda3b3a",
-  "GUI_final_report_sha256": "78e1f8c54c0329fb67755f45563982cc4124c5154d4087d967debf72d8a009f9",
-  "GUI_manifest_sha256": "4ee42508654a0524621e44b5ae0146fd4962ac27e9882ada0e57cf2968b7f6c9",
+  "source_commit": "ddfda61d2134edc1065cafcf946f124aa76e901b",
+  "runtime_commit": "0f0214b974206847d0fa87a4c3cc68f52ca68157",
+  "source_files": 881,
+  "expected_private_main_parent": "09af336fad86309cf2d67ed533ea01dbfbd9c421",
+  "preserved_doc_pins": {
+    "docs/specs/PRODUCT_SPEC_v0.3.1_ZH_EN.md": "4d065b8544ca6e282eac35d7b2d7dcb0075a1e58d892e7ba11fac913828d79fd",
+    "docs/TEAM_HANDOFF_2026-10-09_ZH_EN.md": "4d745b7fd8219ec32de13978bf16ad7f21b8f5380986922266795f595f661dd0",
+    "docs/specs/T-Dormathon_产品规格评审稿_v0.3.md": "754e93412992086881f5d6c50f6b22668bc365eda9e463a5eb32b5e906e8f38e",
+    "docs/specs/T-Dormathon_产品规格评审稿_v0.3.docx": "1cc7d1f1db908b1c0d9a1634d00f4e178c0a1c98f1d59e00085798d95411a64f",
+    "contracts/prototype/port-examples.v0.2.json": "f3770bb39295614e288bfbda4031f82c5c218480e7f6b18baffd542858da3b59"
+  },
+  "fresh_consumer_receipt_sha256": "b817723194cbd08bbaa5e586f7c860e32e27d1b89b5d778603cb6c64c5e585f1",
+  "QA_report_sha256": "53e8c25baa6ea3c6c616f506b2b3f407ce04b249049d0038186ffb55dfcb692e",
   "files": [
     {
       "path": ".gitignore",
-      "bytes": 1073,
-      "sha256": "d1d31b9dea63d836a62bf79c2ae259d25b50de545fb080bf6257b3304df9a910",
+      "bytes": 1136,
+      "sha256": "d95a883e1302c69a739f06d02ccd161fe9b27aef278b167a8d017a9d925fbf57",
       "mode": "100644"
     },
     {
@@ -31,8 +34,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 13915,
-      "sha256": "b714b547f69910beafad7c51000988789267adce99bdb8786c3a56fe9e156571",
+      "bytes": 17058,
+      "sha256": "2c33f1580af248832bf13f3d86e9b4c7a230520b2f86b72aecf4fc8e151f24bc",
       "mode": "100644"
     },
     {
@@ -45,6 +48,18 @@
       "path": "contracts/outcome-trajectories-v1.md",
       "bytes": 5890,
       "sha256": "ada6cc2e4e2bcaee94c921140b9b753b4332b1a6a2924182f5281b8f98439e4a",
+      "mode": "100644"
+    },
+    {
+      "path": "contracts/prototype/port-examples.v0.2.json",
+      "bytes": 3488,
+      "sha256": "f3770bb39295614e288bfbda4031f82c5c218480e7f6b18baffd542858da3b59",
+      "mode": "100644"
+    },
+    {
+      "path": "contracts/prototype/ports-v0.2.md",
+      "bytes": 3262,
+      "sha256": "9750653a5421d58f5c1b772413cb7959aa36df552d48c7c55e7691621274332c",
       "mode": "100644"
     },
     {
@@ -123,6 +138,12 @@
       "path": "data/outcome-qualification-addenda.v1.json",
       "bytes": 1799,
       "sha256": "4fe1544728c110f948abade57ba472f86a78f3aec03efbdc1b27897e6e438303",
+      "mode": "100644"
+    },
+    {
+      "path": "data/prototype/linked-operations.v0.2.json",
+      "bytes": 3008,
+      "sha256": "1283b1bac168675bdaff47ac1a0ea8eeaa908d3c8ec33578db0607b1ae11bed8",
       "mode": "100644"
     },
     {
@@ -1734,6 +1755,12 @@
       "mode": "100644"
     },
     {
+      "path": "docs/ENGLISH_HACKATHON_VERTICAL.md",
+      "bytes": 4530,
+      "sha256": "328a600bbde53feec195402ce901683ce065cde26867fb7345cd7c4d17c122a3",
+      "mode": "100644"
+    },
+    {
       "path": "docs/LEGAL_METADATA_ADMISSION.md",
       "bytes": 4601,
       "sha256": "4b4806139fe9326d70879ac015655638b6dfa8402328791dbc9bee7deddd96a3",
@@ -1749,6 +1776,24 @@
       "path": "docs/PRODUCT_SCHEDULER_BOUNDARY.md",
       "bytes": 3789,
       "sha256": "243f9705a9248d53fe8489d95c7e0ca9e921cfba5770fa527d0be9bc0c4df870",
+      "mode": "100644"
+    },
+    {
+      "path": "docs/README.md",
+      "bytes": 4415,
+      "sha256": "5a20a143bcd3125c751fcd8201478d9754c2f1a3571b793fc0f24011e028d51c",
+      "mode": "100644"
+    },
+    {
+      "path": "docs/TEAM_HANDOFF_2026-10-09.md",
+      "bytes": 4182,
+      "sha256": "e2541665d686e6b98d417f80551fdcf65244927804944a84e869dff408ac37c6",
+      "mode": "100644"
+    },
+    {
+      "path": "docs/TEAM_HANDOFF_2026-10-09_ZH_EN.md",
+      "bytes": 14765,
+      "sha256": "4d745b7fd8219ec32de13978bf16ad7f21b8f5380986922266795f595f661dd0",
       "mode": "100644"
     },
     {
@@ -1806,6 +1851,12 @@
       "mode": "100644"
     },
     {
+      "path": "docs/releases/ENGLISH_HACKATHON_VERTICAL_2026-10-09.json",
+      "bytes": 3314,
+      "sha256": "69ba98c824b90ef5639bed17d250d00a71be7dc59f82e696264364542dc76b69",
+      "mode": "100644"
+    },
+    {
       "path": "docs/releases/EU_TWSE_2026-10-08.json",
       "bytes": 2452,
       "sha256": "c9c2b764e604076dadc72bff2df67bbeca600750e8ddd3779863541e400c90cf",
@@ -1839,6 +1890,24 @@
       "path": "docs/releases/US_REFRESH_SUCCESSOR_2026-10-08.json",
       "bytes": 2707,
       "sha256": "2a3fb5c90e1d02852a0cb2ca4bfdc33d66640c289444f538604d9459dd6546ff",
+      "mode": "100644"
+    },
+    {
+      "path": "docs/specs/PRODUCT_SPEC_v0.3.1_ZH_EN.md",
+      "bytes": 84912,
+      "sha256": "4d065b8544ca6e282eac35d7b2d7dcb0075a1e58d892e7ba11fac913828d79fd",
+      "mode": "100644"
+    },
+    {
+      "path": "docs/specs/T-Dormathon_产品规格评审稿_v0.3.docx",
+      "bytes": 55941,
+      "sha256": "1cc7d1f1db908b1c0d9a1634d00f4e178c0a1c98f1d59e00085798d95411a64f",
+      "mode": "100644"
+    },
+    {
+      "path": "docs/specs/T-Dormathon_产品规格评审稿_v0.3.md",
+      "bytes": 34097,
+      "sha256": "754e93412992086881f5d6c50f6b22668bc365eda9e463a5eb32b5e906e8f38e",
       "mode": "100644"
     },
     {
@@ -2779,8 +2848,8 @@
     },
     {
       "path": "scripts/build.mjs",
-      "bytes": 5774,
-      "sha256": "4ddd07f50647a25de8f62532c485787a009705d1d5191d69a0e68f2e765370e3",
+      "bytes": 5968,
+      "sha256": "5440724f28fb327733d3a3ef7bf1ae339da117692de8941636fc54b1ac823f9d",
       "mode": "100644"
     },
     {
@@ -4171,20 +4240,20 @@
     },
     {
       "path": "static/collector-index.html",
-      "bytes": 11736,
-      "sha256": "439e8acbec2eb8354c947c22d649cd925f12f2f94d812415855238db696ac14f",
+      "bytes": 14744,
+      "sha256": "dd017f99e3a4e9fe7916d7bdb850c749eb219846b87620da7ab9fdbd5c84786f",
       "mode": "100644"
     },
     {
       "path": "static/collector-workbench.css",
-      "bytes": 11631,
-      "sha256": "48d1c362d7b5354ed394afb4d10a4e37a344db35d4c44886068fd4bdd6c63158",
+      "bytes": 14353,
+      "sha256": "75537f535b87bf2ae75a1bd78ca8ded956bfb305cb9e5f19f1cca9463493d9a3",
       "mode": "100644"
     },
     {
       "path": "static/collector-workbench.js",
-      "bytes": 49222,
-      "sha256": "51852fd393877c9d5da7b588740350c68bb9052006abe6aaa1c8fb981bb1163d",
+      "bytes": 59917,
+      "sha256": "4df7fc4b01c974f005c4a29a1befe35e33942cef8359bd863ec27500baa0d275",
       "mode": "100644"
     },
     {
@@ -4201,14 +4270,14 @@
     },
     {
       "path": "tests/collector-workbench-behavior.test.mjs",
-      "bytes": 30587,
-      "sha256": "87f5ddbbcf5bc46ea21f924e73a3d8f3adfc0571f5c314d8d373eece64f587a8",
+      "bytes": 35094,
+      "sha256": "2d8508489c8f73e36a0c34a61c9fa974b1a3b6158a5ab40229f2fa7637a4ca29",
       "mode": "100644"
     },
     {
       "path": "tests/collector-workbench.test.mjs",
-      "bytes": 2718,
-      "sha256": "83edfdb838f9bd7ac14a61c39e5ec31503ead29d7a7fb3dbb1b56d25d29e8c58",
+      "bytes": 2716,
+      "sha256": "dc72ec40c9f3d4a1922d0384494de671786d24cefea29442cdc0d13d172fe762",
       "mode": "100644"
     },
     {
@@ -4830,6 +4899,12 @@
       "mode": "100644"
     },
     {
+      "path": "tests/prototype.test.mjs",
+      "bytes": 5999,
+      "sha256": "e194625282a2615750ad1b927bce8911c8b71a01cee4deeffe67154e550ac89a",
+      "mode": "100644"
+    },
+    {
       "path": "tests/python-oracle.json",
       "bytes": 37593,
       "sha256": "65fd169a1ea2622dd287a948660dadef2ac17f26b68923d9c3baad72150950c8",
@@ -5101,8 +5176,8 @@
     },
     {
       "path": "worker/index.js",
-      "bytes": 16163,
-      "sha256": "f4cd4730ed3693e9cbfad6d033fa51a9adb8ba8b9c428186463cb2e4b2c1f34f",
+      "bytes": 16918,
+      "sha256": "730f89d99127202981bbf1abaa301347b90a0e9c0759fcbaf79dee62b21e0d7f",
       "mode": "100644"
     },
     {
@@ -5145,6 +5220,12 @@
       "path": "worker/outcomes.js",
       "bytes": 20860,
       "sha256": "4df97f375a7de11ba0dd261c1f8165745748b6622bd8fe03dbf78c39f32e8f57",
+      "mode": "100644"
+    },
+    {
+      "path": "worker/prototype.js",
+      "bytes": 9845,
+      "sha256": "bde90624dc001c31817bfae088f99753ad802d895790ead6c747b85a319474a3",
       "mode": "100644"
     },
     {
@@ -5215,8 +5296,8 @@
     },
     {
       "path": "worker/workspace.js",
-      "bytes": 17795,
-      "sha256": "d6bdda2a95aac2a35c1a7db542d0a07e5efd855423bfe96da2ed7a50f904116a",
+      "bytes": 17954,
+      "sha256": "a3e345407423504148526929b17f2c69eb98dac9d3ae53083babf7014c92dd26",
       "mode": "100644"
     }
   ]

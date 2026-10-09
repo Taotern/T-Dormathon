@@ -1,0 +1,122 @@
+{
+  "schema_version": "dormathon.prototype-port-examples.v0.2",
+  "FR07": {
+    "schema_version": "dormathon.module-envelope.v0.2",
+    "request_id": "fixture:request:01",
+    "input_refs": {
+      "operating_snapshot": "fixture:linked-operations-v0.2",
+      "evidence_versions": []
+    },
+    "knowledge_as_of": "2026-10-09T09:00:00Z",
+    "world_time": "2026-10-09T09:00:00Z",
+    "knowledge_mode": "system_known",
+    "data_revision": "linked-operations-v0.2",
+    "data_basis": "synthetic_fixture",
+    "warnings": [
+      "Illustrative operating clocks/records, not historical availability evidence."
+    ],
+    "operation": "resolve_entities",
+    "mentions": [
+      {
+        "mention_id": "fixture:mention:supplier:01",
+        "name": "Example supplier",
+        "source_record_id": "fixture:po:01",
+        "identity_status": "fixture_declared_not_resolved"
+      }
+    ]
+  },
+  "FR08": {
+    "schema_version": "dormathon.module-envelope.v0.2",
+    "request_id": "fixture:request:01",
+    "input_refs": {
+      "operating_snapshot": "fixture:linked-operations-v0.2",
+      "evidence_versions": []
+    },
+    "knowledge_as_of": "2026-10-09T09:00:00Z",
+    "world_time": "2026-10-09T09:00:00Z",
+    "knowledge_mode": "system_known",
+    "data_revision": "linked-operations-v0.2",
+    "data_basis": "synthetic_fixture",
+    "warnings": [
+      "Illustrative operating clocks/records, not historical availability evidence."
+    ],
+    "operation": "reconstruct_state",
+    "scope": {
+      "order_id": "fixture:order:01",
+      "invoice_id": "fixture:invoice:01",
+      "task_id": "fixture:task:01",
+      "resource_id": "fixture:batch:01"
+    },
+    "business_refs": [
+      "fixture:order:01",
+      "fixture:invoice:01",
+      "fixture:task:01",
+      "fixture:batch:01"
+    ],
+    "missing": [
+      "verified route exposure",
+      "counterparty history",
+      "valid qualifications and availability"
+    ]
+  },
+  "FR12": {
+    "schema_version": "dormathon.module-envelope.v0.2",
+    "request_id": "fixture:request:01",
+    "input_refs": {
+      "operating_snapshot": "fixture:linked-operations-v0.2",
+      "evidence_versions": []
+    },
+    "knowledge_as_of": "2026-10-09T09:00:00Z",
+    "world_time": "2026-10-09T09:00:00Z",
+    "knowledge_mode": "system_known",
+    "data_revision": "linked-operations-v0.2",
+    "data_basis": "synthetic_fixture",
+    "warnings": [
+      "Illustrative operating clocks/records, not historical availability evidence."
+    ],
+    "operation": "compare_policies",
+    "state_ref": null,
+    "objectives": [
+      {
+        "metric": "fulfilment_gap",
+        "unit": "day"
+      },
+      {
+        "metric": "case_cash_gap",
+        "unit": "MYR"
+      },
+      {
+        "metric": "processing_wait",
+        "unit": "hour"
+      },
+      {
+        "metric": "expiry_surplus",
+        "unit": "units"
+      }
+    ],
+    "constraints": {
+      "cash_budget": {
+        "value": 1000,
+        "unit": "MYR",
+        "basis": "synthetic_fixture"
+      },
+      "qualified_role_available": null,
+      "route_passability": null,
+      "no_resource_double_allocation": true
+    },
+    "actions": [
+      "no_action",
+      "verify_eta",
+      "verify_documents",
+      "qualified_reassignment",
+      "first_expiry_first_out"
+    ],
+    "expected_when_state_missing": {
+      "status": "insufficient_data",
+      "comparison_id": null,
+      "warnings": [
+        "State/feasibility inputs missing; no policy gain claimed."
+      ]
+    }
+  }
+}
