@@ -1,15 +1,14 @@
 {
   "schema_version": "dormathon-clean-source-export.v1",
-  "source_commit": "ff857e0b6ac34961b63bd3e475c52ee6b8faeb30",
-  "runtime_commit": "ff857e0b6ac34961b63bd3e475c52ee6b8faeb30",
+  "source_commit": "366a2d179519be476770b94d99870b501c28305b",
+  "runtime_commit": "366a2d179519be476770b94d99870b501c28305b",
   "source_files": 959,
-  "delivered_payload_files": 960,
-  "site_version": 64,
+  "delivered_payload_files": 961,
+  "site_version": 65,
   "site_audience": "public_unchanged",
   "repository_visibility": "private",
-  "expected_private_main_parent": "cfba64abf5bd43d8d8a5da0d0977f8fac27c3f9c",
-  "fresh_consumer_receipt_sha256": "95e708e49b71b0553cc6ce34c4969b06598c9748d9de3d3ceb44bb2b293f604a",
-  "integrated_acceptance_sha256": "49dc05060007eb79489692a5eb7c2dcd7b14548a94a65619e6e79e26d397d7d7",
+  "expected_private_main_parent": "3fc5083c0ce4b7f9f48fc2739382ad6fdb6d6c26",
+  "fresh_consumer_receipt_sha256": "b806bcef5ee20b1b1297bb4703cfa5d9edd19a470da07929bd616b04d508960a",
   "preserved_doc_pins": {
     "docs/specs/PRODUCT_SPEC_v0.3.1_ZH_EN.md": "4d065b8544ca6e282eac35d7b2d7dcb0075a1e58d892e7ba11fac913828d79fd",
     "docs/TEAM_HANDOFF_2026-10-09_ZH_EN.md": "4d745b7fd8219ec32de13978bf16ad7f21b8f5380986922266795f595f661dd0",
@@ -26,9 +25,10 @@
     "README.md"
   ],
   "added_packaging_records": [
-    "docs/releases/v0.4.1-20261010/source-package-verification.json"
+    "docs/releases/v0.4.1-20261010/source-package-verification.json",
+    "docs/releases/v0.4.1-20261010/source-package-verification.v65.json"
   ],
-  "payload_inventory_sha256": "8cf79330ad5ae03a08e9ae94e73a70a336917c37d53c14a772edfc76b4276502",
+  "payload_inventory_sha256": "18910da158b25f33eba85eed4f88464a1ee2cb03e82a24ef78e62b56bd3a6b08",
   "files": [
     {
       "path": ".gitignore",
@@ -50,8 +50,8 @@
     },
     {
       "path": "README.md",
-      "sha256": "3bfe14b02ba0605d4cc22f03ba7c40b624629d1f7529193bd15bfc3eaf066c36",
-      "size_bytes": 19995,
+      "sha256": "9113946b6a3010942c64f0d7c94f5b0c5b5996d3819f37fa01661527dd7760a1",
+      "size_bytes": 20483,
       "git_mode": "100644",
       "canonical_sha256": "763eb6af72db16f6af82e68248548325770a70d566f7211b06786cf3ea072142",
       "packaging_overlay": "README checkpoint note only; application code unchanged"
@@ -2178,6 +2178,13 @@
       "path": "docs/releases/v0.4.1-20261010/source-package-verification.json",
       "sha256": "95e708e49b71b0553cc6ce34c4969b06598c9748d9de3d3ceb44bb2b293f604a",
       "size_bytes": 5879,
+      "git_mode": "100644",
+      "provenance": "GitHub packaging verification record"
+    },
+    {
+      "path": "docs/releases/v0.4.1-20261010/source-package-verification.v65.json",
+      "sha256": "b806bcef5ee20b1b1297bb4703cfa5d9edd19a470da07929bd616b04d508960a",
+      "size_bytes": 7045,
       "git_mode": "100644",
       "provenance": "GitHub packaging verification record"
     },
@@ -4637,8 +4644,8 @@
     },
     {
       "path": "static/mrdiy-workspace.js",
-      "sha256": "a3b51b526a33b42499f641296aaf78960ed252670a3ccfca9dd358c1e37f0250",
-      "size_bytes": 41482,
+      "sha256": "a119848f1d8308564bb13315918a296aeaa5f35b2047482a5ea87631290b14aa",
+      "size_bytes": 41795,
       "git_mode": "100644"
     },
     {
@@ -5285,8 +5292,8 @@
     },
     {
       "path": "tests/mrdiy-client-behavior.test.mjs",
-      "sha256": "17c988136a487aad05025e2486c0944ce1f0d890d78591e744e7a23a66bc4e74",
-      "size_bytes": 10698,
+      "sha256": "feddd227eda864406076b7c5ea49c65f38d45232e50929e0ad0be497d9979f64",
+      "size_bytes": 11925,
       "git_mode": "100644"
     },
     {

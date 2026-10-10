@@ -1,13 +1,13 @@
 {
   "schema_version": "dormathon.clean-source-assets.v1",
-  "source_commit": "ff857e0b6ac34961b63bd3e475c52ee6b8faeb30",
-  "source_tree": "619668b8ca7a5caea64ac8d0dc2f98680eaaa549",
-  "site_version": 64,
+  "source_commit": "366a2d179519be476770b94d99870b501c28305b",
+  "source_tree": "a59f63d6d3803f3eedde384cbb148e5f190235a8",
+  "site_version": 65,
   "site_audience": "public_unchanged",
   "repository_visibility": "private",
   "source_files": 959,
-  "delivered_payload_files": 960,
-  "payload_inventory_sha256": "8cf79330ad5ae03a08e9ae94e73a70a336917c37d53c14a772edfc76b4276502",
+  "delivered_payload_files": 961,
+  "payload_inventory_sha256": "18910da158b25f33eba85eed4f88464a1ee2cb03e82a24ef78e62b56bd3a6b08",
   "packaging_overlays": [
     "README.md"
   ],
@@ -32,8 +32,8 @@
     },
     {
       "path": "README.md",
-      "sha256": "3bfe14b02ba0605d4cc22f03ba7c40b624629d1f7529193bd15bfc3eaf066c36",
-      "size_bytes": 19995,
+      "sha256": "9113946b6a3010942c64f0d7c94f5b0c5b5996d3819f37fa01661527dd7760a1",
+      "size_bytes": 20483,
       "git_mode": "100644",
       "canonical_sha256": "763eb6af72db16f6af82e68248548325770a70d566f7211b06786cf3ea072142",
       "packaging_overlay": "README checkpoint note only; application code unchanged"
@@ -2160,6 +2160,13 @@
       "path": "docs/releases/v0.4.1-20261010/source-package-verification.json",
       "sha256": "95e708e49b71b0553cc6ce34c4969b06598c9748d9de3d3ceb44bb2b293f604a",
       "size_bytes": 5879,
+      "git_mode": "100644",
+      "provenance": "GitHub packaging verification record"
+    },
+    {
+      "path": "docs/releases/v0.4.1-20261010/source-package-verification.v65.json",
+      "sha256": "b806bcef5ee20b1b1297bb4703cfa5d9edd19a470da07929bd616b04d508960a",
+      "size_bytes": 7045,
       "git_mode": "100644",
       "provenance": "GitHub packaging verification record"
     },
@@ -4619,8 +4626,8 @@
     },
     {
       "path": "static/mrdiy-workspace.js",
-      "sha256": "a3b51b526a33b42499f641296aaf78960ed252670a3ccfca9dd358c1e37f0250",
-      "size_bytes": 41482,
+      "sha256": "a119848f1d8308564bb13315918a296aeaa5f35b2047482a5ea87631290b14aa",
+      "size_bytes": 41795,
       "git_mode": "100644"
     },
     {
@@ -5267,8 +5274,8 @@
     },
     {
       "path": "tests/mrdiy-client-behavior.test.mjs",
-      "sha256": "17c988136a487aad05025e2486c0944ce1f0d890d78591e744e7a23a66bc4e74",
-      "size_bytes": 10698,
+      "sha256": "feddd227eda864406076b7c5ea49c65f38d45232e50929e0ad0be497d9979f64",
+      "size_bytes": 11925,
       "git_mode": "100644"
     },
     {
