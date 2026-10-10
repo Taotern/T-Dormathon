@@ -1,0 +1,166 @@
+{
+  "schema_version": "dormathon.source-package-verification.v0.4.1-v74",
+  "prepared_at": "2026-10-10T06:30:38.503657+00:00",
+  "source_commit": "57437cdbdb9fd255165752735243188ec4d84284",
+  "previous_source_commit": "46622a0b36326915569ab2b1e05e397ca9f23ec6",
+  "target_repository": "Taotern/T-Dormathon",
+  "repository_visibility": "private",
+  "branch": "main",
+  "expected_private_main_parent": "2ed5e77b5fb35ac8c0263bd1bf797e89d53a4088",
+  "source_files": 989,
+  "canonical_tracked_files": 990,
+  "changed_source_files": [
+    {
+      "path": "static/mrdiy-workspace.css",
+      "sha256": "601271d630ced2f0ac01300c1fc46c35246af862def417bc1ed188751caeb9c0"
+    },
+    {
+      "path": "static/mrdiy-workspace.js",
+      "sha256": "4af086c648c37ba4ced0c8464c3b9aadc597c7a01677a36c077eafde3206eb2f"
+    },
+    {
+      "path": "tests/mrdiy-client-behavior.test.mjs",
+      "sha256": "337affd71daeb4e8a368f86cf453087bf6a0040313992b5bc29908b7f47169ed"
+    }
+  ],
+  "scope": "Three-file UI-only compact preamble; no backend, study data, schema, provider, ledger or saved-artifact changes.",
+  "visible_safety": "Synthetic scenario, comparison-only/no action executed, scenario range not stockout probability remain visible. Methodological context remains in working disclosure panels.",
+  "validation": {
+    "fresh_publisher": {
+      "actual_client_tests_passed": 17,
+      "asset_contract_tests_passed": 5,
+      "failed": 0,
+      "commands": [
+        "node --test --test-concurrency=1 tests/mrdiy-client-behavior.test.mjs",
+        "node --test --test-concurrency=1 tests/collector-workbench.test.mjs"
+      ],
+      "build_syntax_diff_passed": true,
+      "exact_assets": 12,
+      "worker_sha256": "8a1460fa84c9e6201bdadbb3a0558848c9f3fead6423ddf86132a7ee8f83d371",
+      "logs_sha256": {
+        "artifact.log": "aeb8bc6cc9102f9107d76c61cf3f9eae7093e1aef299ffbbdc3f8974c34b88b6",
+        "asset-contract.log": "da21eb19c75b8af035de0618a8b837001ab2390965a277331b9e37b9f3573057",
+        "build.log": "cefd619c1a4b9bc44fdd15a4e5378b7570042c1a15d3237d7660e3bd9a25cd9c",
+        "focused.log": "7d6fbe9215e3bb85c38ecb439f4abdb6e1359f529360abf2bbe0b7388cc6db2f"
+      }
+    },
+    "canonical_focused_tests_passed": 22,
+    "freeze_manifest_sha256": "7c7fb99d2b3d714cd7d748584b0302f05bf4dfdb002c42c8aa2559b1109ad3d0",
+    "full_suite_rerun": false,
+    "prior_expansion_full_result": "662/663; sole old asset allowlist corrected and focused 5/5 passed. No post-fix full rerun.",
+    "prior_v73_fresh_affected_passed": 78,
+    "prior_v73_canonical_affected_passed": 77,
+    "prior_v73_post_audit_UI_API_passed": 32
+  },
+  "deployment": {
+    "site_version": 74,
+    "saved_site_version_id": "appgprj_6ac6c8d4361c81919d4a8dffabfab361~appgver_87341d2f23408191bfd868bd55c6c8c8",
+    "deployment_id": "appgdep_6ac9da776f2481919bacb7a2cdd8412d",
+    "status": "SUCCESS",
+    "completed_at": "2026-10-10T06:26:04Z",
+    "environment_revision": 3,
+    "audience": "public_unchanged",
+    "local_gzip_bytes": 645464,
+    "local_gzip_sha256": "a446a09bef8f5786a4dcaaac2a168c56c96cf84cbe21c835a6f711f87d11f90c",
+    "local_decompressed_tar_sha256": "473bf801066c21071d144e2f0425e595dd3d8974014599c7dba44588d09fc737",
+    "native_stored_archive": {
+      "format": "tar",
+      "bytes": 4014080,
+      "content_hash": "sha256:009e99fef89a6ed91bd8ba7c18f3a2fb0145c7a239a88b1d34e5beb3cb5d5ae6"
+    },
+    "archive_note": "Server-stored tar and local gzip/decompressed tar are distinct representations; no digest equivalence asserted.",
+    "evidence": "Native result supplied by Site publishing owner; packaging performed no Site action."
+  },
+  "hosted_QA": {
+    "status": "PASS_UI_SCOPED",
+    "completed_at": "2026-10-10 06:28 UTC (minute precision)",
+    "report_sha256": "7d3dca2aa25fc8873cc1e9fee04ea7b18c5ddb55645c593acb68a128fd9bf1ca",
+    "screenshot_manifest_sha256": "b8df0171b4851abbf080a78545d11b897b5d30195eb31290a47c50da70feda6b",
+    "screenshots": [
+      {
+        "file": "v74-joint-frontier-desktop.png",
+        "bytes": 96526,
+        "sha256": "bf2e1da3ba000c552c56399998f17537df75087f750f8befdcba9e0bfe7b0e10"
+      },
+      {
+        "file": "v74-joint-frontier-narrow.png",
+        "bytes": 50961,
+        "sha256": "c057e0694b4cd64fc4ce67a22b9eddd6875e9d99dcdb3cd8872bdd102b6f28e0"
+      },
+      {
+        "file": "v74-joint-top-desktop.png",
+        "bytes": 91186,
+        "sha256": "b5537492d8b7916539578d33a3f505202727274567720198e419dda7d2ec25ce"
+      },
+      {
+        "file": "v74-sc01-outlook-desktop.png",
+        "bytes": 97409,
+        "sha256": "aa80d5721a0eb7d3a28155c8da9d3283ceb113661de9393e9d808feba3f879c0"
+      }
+    ],
+    "desktop_viewport": {
+      "width": 1342,
+      "height": 934
+    },
+    "narrow_viewport": {
+      "width": 500,
+      "height": 851,
+      "actual_window_resize": true,
+      "document_width": 485,
+      "page_horizontal_overflow": false
+    },
+    "checks": [
+      "Compact72/48 header, visible safety and unchanged conditional outcomes/five actions.",
+      "Both comparison and forecast disclosures open; all critical assumptions/limits remain available.",
+      "SC01 148-unit outlook, shortage dates and quantities remain unchanged.",
+      "Narrow badges, actions and outcomes readable with no page horizontal overflow; desktop restored."
+    ],
+    "initial_fold_limit": "Frozen-basis section remains before joint panel. Detailed numeric outcomes require one short scroll; no claim every outcome is above initial page fold.",
+    "backend_rerun": false,
+    "paid_calls": 0,
+    "new_saves": 0,
+    "production_writes": 0,
+    "inherited_v73_mechanics": "v73 source-package report separately records whole-plan calculation, abstention, old-reopen and study-label evidence; v73 screenshots are not relabeled as v74."
+  },
+  "preservation": {
+    "approved_and_legacy_specs": true,
+    "stable_case_IDs": 40,
+    "forecast_data_and_backend_unchanged": true,
+    "provider_payload_and_RM5_estimated_ledger_unchanged": true,
+    "old_saved_decision_schema_and_bytes_unchanged": true
+  },
+  "limits": [
+    "All internal operations/history and whole-plan outcomes remain synthetic conditional demonstrations; no real-company accuracy, calibrated stockout probability, observed savings, causal profit or RL validation.",
+    "Retrospective weekly 69.73% versus same-fold 77.21% and daily 108.53% refer to separate targets and previously exposed periods; original 103.41% retained.",
+    "Paid model remains case-scoped; no whole-plan LLM endorsement/all 40 model validation.",
+    "RM5 ledger is estimated application control; provider-enforced hard cap unverified."
+  ],
+  "excluded_outputs": "No credentials/native environment values, raw UCI customer/transaction data, runtime state, execution logs, transient QA reports or raw screenshots added.",
+  "reported_at": "2026-10-10T06:39:17.790685+00:00",
+  "presentation_update": {
+    "package_path": "docs/presentation/v74/",
+    "receipt_sha256": "f10a49ab9156191754889cd15f219f5bbc1f0718f588402d7cc907b3f9ba147b",
+    "original_delivery_receipt_sha256": "69573d4ca6399332528594b9322f02dd257100900e6fe5ef63a32baf7754c7c0",
+    "prior_presentation_byte_preserved": true,
+    "slides": {
+      "total": 17,
+      "visible": 6,
+      "evidence_appendices": 7,
+      "screenshot_fallbacks": 4
+    },
+    "author_QA": {
+      "all_final_slides_rendered": 17,
+      "all_final_slides_visually_inspected": true,
+      "English_pages_inspected": 5,
+      "Chinese_pages_inspected": 3,
+      "structural_package": "pass",
+      "native_charts": 2,
+      "native_tables": 2,
+      "chart_workbooks_verified": 2,
+      "desktop_PowerPoint_tested": false,
+      "original_benchmark_workbook_preserved": true,
+      "source_markdown_matches_DOCX": true,
+      "zip_integrity": "pass"
+    }
+  }
+}

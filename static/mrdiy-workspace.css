@@ -138,3 +138,11 @@ body[data-mrdiy="true"] .mrdiy-advisor-controls{display:flex;flex-wrap:wrap;gap:
 @media(max-width:850px){.mrdiy-outlook-summary{grid-template-columns:1fr;gap:8px}.mrdiy-outlook-summary>div{display:flex;align-items:baseline;gap:14px;padding:12px}.mrdiy-outlook-summary strong{font-size:20px}.mrdiy-outlook-summary span{margin:0}.mrdiy-expansion-table{min-width:580px}}
 .mrdiy-original-comparison>summary{font-size:16px;font-weight:550;line-height:1.5;cursor:pointer}
 .mrdiy-original-comparison:not([open]){padding-top:16px;padding-bottom:16px}
+/* Compact review header keeps the selected plan and its outcomes in view. */
+.mrdiy-plan-heading{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap}
+.mrdiy-plan-heading h3{margin:0}
+.mrdiy-plan-counts{display:flex;gap:6px;flex-wrap:wrap}
+.mrdiy-joint-plans>.mrdiy-plan-intro{margin:8px 0 4px}
+.mrdiy-joint-plans>.mrdiy-plan-safety,.mrdiy-plan-safety{font-size:12px;color:#555;margin:4px 0 10px}
+.mrdiy-joint-plans .mrdiy-plan-selector{margin:12px 0}
+.mrdiy-joint-plans .mrdiy-plan-summary{margin:10px 0;padding:8px 12px;font-size:13px}

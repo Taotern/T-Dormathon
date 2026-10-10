@@ -1,0 +1,115 @@
+{
+  "schema_version": "dormathon.final-presentation-backup.v74",
+  "packaged_at": "2026-10-10T06:39:17.789609+00:00",
+  "edition": "v74",
+  "target_repository": "Taotern/T-Dormathon",
+  "repository_visibility": "private",
+  "branch": "main",
+  "expected_private_main_parent": "2ed5e77b5fb35ac8c0263bd1bf797e89d53a4088",
+  "source_commit": "57437cdbdb9fd255165752735243188ec4d84284",
+  "original_delivery_receipt_sha256": "69573d4ca6399332528594b9322f02dd257100900e6fe5ef63a32baf7754c7c0",
+  "receipt_transformation": "Portable relative names replace executor-local paths; original final artifact hashes and sizes are unchanged. Internal QA paths are omitted.",
+  "pitch_minutes": 3,
+  "Q_and_A_minutes": 2,
+  "review_MYT": "2026-10-10T20:00:00+08:00",
+  "submission_deadline_MYT": "2026-10-11T09:00:00+08:00",
+  "slides": {
+    "total": 17,
+    "visible": 6,
+    "evidence_appendices": 7,
+    "screenshot_fallbacks": 4
+  },
+  "documents": {
+    "English_pages": 5,
+    "Chinese_pages": 3
+  },
+  "spoken_script_words": 273,
+  "files": [
+    {
+      "path": "docs/presentation/v74/Dormathon_3_Minute_Pitch_EN_v74.pptx",
+      "bytes": 565842,
+      "sha256": "12ce1ff9fb01f88bd01238871bb3cb7bf62f502c1d0468626b75840a8b1169f5"
+    },
+    {
+      "path": "docs/presentation/v74/Dormathon_Pitch_and_Demo_Runbook_EN_v74.docx",
+      "bytes": 42855,
+      "sha256": "76cc2b1b10f71dad15fa3da7a31ae3be7da1f3e196ea35705a8951f23d669c8d"
+    },
+    {
+      "path": "docs/presentation/v74/Dormathon_Presenter_Guide_ZH_v74.docx",
+      "bytes": 41293,
+      "sha256": "55764d97100d0069356ff7566779e3d9bc223209303391c35808e6c8d5d5f11e"
+    },
+    {
+      "path": "docs/presentation/v74/Dormathon_Pitch_and_Demo_Runbook_EN_v74.md",
+      "bytes": 11990,
+      "sha256": "830877605ea2eb9cd98353cc14445607e6afacfcfc76513c8d97dee09d3992ee"
+    },
+    {
+      "path": "docs/presentation/v74/Dormathon_Presenter_Guide_ZH_v74.md",
+      "bytes": 6532,
+      "sha256": "f411cb8d828caf31491c1a5bb9a99a55f079f3c28fb29a4585ee139aae05f3ec"
+    },
+    {
+      "path": "docs/presentation/v74/README.md",
+      "bytes": 3147,
+      "sha256": "0e89b6516910758f363673d15c240cc2320027cb8cdec9c6805a73b9d7e9823c"
+    }
+  ],
+  "omitted_redundant_ZIP": {
+    "file": "Dormathon_Portable_Presentation_Package_v74.zip",
+    "bytes": 1028883,
+    "sha256": "bbd8132564369bf12902892a39a66882e326ed44ed2337108334d2db752e4f33"
+  },
+  "author_validation": {
+    "all_final_slides_rendered": 17,
+    "all_final_slides_visually_inspected": true,
+    "English_pages_inspected": 5,
+    "Chinese_pages_inspected": 3,
+    "structural_package": "pass",
+    "native_charts": 2,
+    "native_tables": 2,
+    "chart_workbooks_verified": 2,
+    "desktop_PowerPoint_tested": false,
+    "original_benchmark_workbook_preserved": true,
+    "source_markdown_matches_DOCX": true,
+    "zip_integrity": "pass"
+  },
+  "publisher_Office_integrity": [
+    {
+      "file": "Dormathon_3_Minute_Pitch_EN_v74.pptx",
+      "ZIP_CRC_ok": true,
+      "slides": 17,
+      "visible_main": 6,
+      "hidden": 11,
+      "native_charts": 2,
+      "VBA_projects": 0
+    },
+    {
+      "file": "Dormathon_Pitch_and_Demo_Runbook_EN_v74.docx",
+      "ZIP_CRC_ok": true,
+      "review_comments": 0,
+      "tracked_changes": 0,
+      "VBA_projects": 0
+    },
+    {
+      "file": "Dormathon_Presenter_Guide_ZH_v74.docx",
+      "ZIP_CRC_ok": true,
+      "review_comments": 0,
+      "tracked_changes": 0,
+      "VBA_projects": 0
+    }
+  ],
+  "source_Markdown_author_confirmed": true,
+  "desktop_PowerPoint_tested": false,
+  "screenshots": "Correctly labeled v73/v74; no old image relabeled as current.",
+  "prior_release_byte_preserved": true,
+  "prior_release_path": "docs/presentation/",
+  "limits": [
+    "All company history/operations and outcomes are synthetic conditional demonstrations.",
+    "Weekly and daily exploratory WAPE are separate targets with prior exposure; original benchmark remains separate.",
+    "No real-company accuracy, calibrated stockout probability, observed savings, causal profit, trained RL or endorsement.",
+    "Whole-plan comparison executes nothing; case-scoped saved decisions and paid Advisor do not consume/save joint plans.",
+    "RM5 estimated application ledger is unchanged; provider-enforced hard cap remains unverified."
+  ]
+}
