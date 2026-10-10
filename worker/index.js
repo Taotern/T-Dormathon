@@ -71,6 +71,7 @@ export async function handleRequest(request,env,context={}){
     if(method==='POST'){
      if(path==='/api/journey/entries')return responseJSON(200,await new JourneyService(store).submit(body));
      if(path==='/api/mrdiy/advisor'){const r=await sovernAdvisorAnswer(env,body,{service:new MrdiyDemoService(store)});return responseJSON(r.status,r.body);}
+     if(path==='/api/mrdiy/sequential-plans')return responseJSON(200,new MrdiyDemoService(store).sequentialPlans(body));
      if(path==='/api/mrdiy/event-plan-stress')return responseJSON(200,new MrdiyDemoService(store).eventPlanStress(body));
      if(path==='/api/mrdiy/event-scenario')return responseJSON(200,new MrdiyDemoService(store).eventScenario(body));
      if(path==='/api/mrdiy/demand-outlook')return responseJSON(200,new MrdiyDemoService(store).demandOutlook(body));

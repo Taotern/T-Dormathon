@@ -1,3 +1,4 @@
+import {compareSequentialPlans} from './mrdiy-sequential-planner.js';
 import {comparePlanThresholds} from './mrdiy-plan-thresholds.js';
 import {MRDIY_EVENT_EVIDENCE} from './mrdiy-event-evidence.js';
 import {MRDIY_SCENARIO} from './mrdiy-fixture.js';
@@ -53,4 +54,17 @@ export function evaluateMrdiyEventPlanStress(body,options={}){
  const demand={status:'ok',demand_by_day:outlook.forecast.forecasts.map(x=>x.predicted_units),forecast_ref:outlook.forecast.request_id,scenarioDataMode:'SYNTHETIC_INTERNAL',basis:'Same authored historical demand model; external warning does not alter historical sales or predict demand change.'};
  const result=comparePlanThresholds({...replayOptions,demand,selected_package_id:body.selected_package_id,grid:{delay_days:[0,1,2,3,4,5],demand_multipliers:body.include_demand_stress?[.75,1,1.25,1.5,2]:[1]}});
  return{...result,event_id:event.id,event_source_url:event.sourceUrl,replay:true,confirmed_delay_days:body.total_delay_days,actual_company_exposure_established:false,source_provides_stress_values:false,comparison_only:true};
+}
+
+export function mrdiySequentialPlanComparison(body,options={}){
+ const opened=openCase(body.case_id,options);
+ eventAssert(opened.case.deep_demo===true,'Sequential rehearsal covers only the six linked deep-demo cases.');
+ const eventFields=['route_leg_id','total_delay_days','mapping_confirmed','impact_confirmed','replay_confirmed'];
+ let event=null;
+ if(body.event_id!==undefined)event=eventValidateReplay(body,options).event;
+ else eventAssert(eventFields.every(k=>body[k]===undefined),'Event-impact fields require a reviewed event and all replay confirmations.');
+ const assumptions={...(options.assumptions||{}),...(event?{delay_days:body.total_delay_days}:{})};
+ const commitments=eventClone(options.commitments||[]);
+ const result=compareSequentialPlans({snapshot:options.snapshot||MRDIY_SCENARIO,assumptions,commitments});
+ return{...result,selected_case_id:opened.case.case_id,comparison_only:true,resources_reserved:false,replanning_context:{basis:event?'confirmed_event_replay':'current_session_baseline',event_id:event?.id??null,event_title:event?.title??null,source_url:event?.sourceUrl??null,source_verified_at:event?.verifiedAt??null,total_delay_days:event?body.total_delay_days:opened.assumptions.delay_days,baseline_delay_days:opened.assumptions.delay_days,actual_company_exposure_established:false,observation_mode:'authored_synthetic_sales_receipts_and_carrier_update',forecast_and_scenarios_supplied_by_caller:false},input_request:{case_id:opened.case.case_id,assumptions:eventClone(options.assumptions||{}),commitments:commitments.map(c=>({case_id:c.case_id,action_id:c.action_id})),...(event?{event_id:event.id,route_leg_id:'DEMO_LEG01',total_delay_days:body.total_delay_days,mapping_confirmed:true,impact_confirmed:true,replay_confirmed:true}:{})}};
 }

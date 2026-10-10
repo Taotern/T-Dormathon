@@ -40,15 +40,15 @@
       "original_delivery_receipt_sha256": "a86caf80ac8f5b0d042c186a843bdf4993d886d7a055582f2ec4a25ea45d3c47"
     }
   ],
-  "source_commit": "758ea9eb797a999d90e619a9e3d9f9de1a9ee859",
-  "site_version": 75,
+  "source_commit": "b100ca9f157fe03946e1b87a48bf4514a7c862d0",
+  "site_version": 76,
   "site_audience": "public_unchanged",
   "repository_visibility": "private",
-  "canonical_tracked_files": 999,
-  "source_files": 998,
-  "delivered_payload_files": 1019,
-  "payload_inventory_sha256": "39022eefb2685667939705e97e0a92472e67983044d538ba80e47b0151063795",
-  "source_tree": "00916f71ea620cc4f24e3743e2e3f008a29a7359",
+  "canonical_tracked_files": 1003,
+  "source_files": 1002,
+  "delivered_payload_files": 1024,
+  "payload_inventory_sha256": "e250d97022ba53ab486af72638c3a6093a1271d405d66fa0aa57f2e315cb706f",
+  "source_tree": "22a1a294a511603923177e7caaacda96c535d828",
   "assets": [
     {
       "path": ".gitignore",
@@ -70,8 +70,8 @@
     },
     {
       "path": "README.md",
-      "sha256": "885af4017c7c6abeb89f0be523cddfa3a9a4f0b3fec1dbb581336cc756fd2547",
-      "size_bytes": 28414,
+      "sha256": "65f6d315f50f66b1aac274a468bd287f3c2b1e12e8da5d532b69bd8153bfa575",
+      "size_bytes": 31119,
       "git_mode": "100644",
       "canonical_sha256": "763eb6af72db16f6af82e68248548325770a70d566f7211b06786cf3ea072142",
       "packaging_overlay": "Dated README source/presentation checkpoint notes only."
@@ -2444,6 +2444,19 @@
       "provenance": "Scoped GitHub source packaging verification record"
     },
     {
+      "path": "docs/releases/v0.4.1-20261010/source-package-verification.v76.json",
+      "sha256": "40b9fada10b9f4741d7c6cfae2931c8729ad75e5e7ccf3ca83530167a881320f",
+      "size_bytes": 17580,
+      "git_mode": "100644",
+      "provenance": "Scoped GitHub source packaging verification record"
+    },
+    {
+      "path": "docs/sequential-contract.md",
+      "sha256": "2ebf840c2cecf55aaa5210a7e1e39e0ccc28625d7f929d1812de70d8143511c6",
+      "size_bytes": 5095,
+      "git_mode": "100644"
+    },
+    {
       "path": "docs/sovern-advisor-v0.4.1/README.md",
       "sha256": "f1648adcd7e352816d2260769ffe360b9c30c4848b9ee1af6b1d80911b9585ea",
       "size_bytes": 18013,
@@ -3483,8 +3496,8 @@
     },
     {
       "path": "scripts/build.mjs",
-      "sha256": "ffcf6cbc7bf74975e68be8fa4b206cece7fdf50c57f36aeec9e3ba3ee0291ff0",
-      "size_bytes": 7725,
+      "sha256": "095ff9ccc2760066d796a17180efe9a9596a8b5a973741c813cdc2ec3ef7a753",
+      "size_bytes": 7755,
       "git_mode": "100644"
     },
     {
@@ -4923,14 +4936,14 @@
     },
     {
       "path": "static/mrdiy-workspace.css",
-      "sha256": "13a5211c93a588dc3babdc3170574611102419f43bba3ce4d89274a90479a7a4",
-      "size_bytes": 16088,
+      "sha256": "8d06591c539fbc5c94e275b685b68de6a2378e113db4257ba72464116f804d98",
+      "size_bytes": 17399,
       "git_mode": "100644"
     },
     {
       "path": "static/mrdiy-workspace.js",
-      "sha256": "7da1f5e40eca64581e37bf5636c522431a40260775014ccc58c76d0aba70f14a",
-      "size_bytes": 81212,
+      "sha256": "37e4b26b25373afbe58db426dfafcc6dc923c2001d40098f2f1682aee6bf371b",
+      "size_bytes": 93285,
       "git_mode": "100644"
     },
     {
@@ -5589,8 +5602,8 @@
     },
     {
       "path": "tests/mrdiy-client-behavior.test.mjs",
-      "sha256": "5d4fae8d107b6d33da665872d98b7f5bf751404c153fc214fba199f6326c8609",
-      "size_bytes": 37347,
+      "sha256": "f8fdcb183bf5ada42a1b8791e84fb79adc1b2abcdcc7c3f05e1bea2aab85ec33",
+      "size_bytes": 46736,
       "git_mode": "100644"
     },
     {
@@ -5627,6 +5640,18 @@
       "path": "tests/mrdiy-plan-thresholds.test.mjs",
       "sha256": "a42b168400ca30efc154bdb6dac2cf0aa7237b6402cb36cf33c61d57f8851315",
       "size_bytes": 9161,
+      "git_mode": "100644"
+    },
+    {
+      "path": "tests/mrdiy-sequential-integration.test.mjs",
+      "sha256": "655476c46d0ffa0cdea4bf3f3b6622a556b2d0c5714bebe50e9a102a951d7bfc",
+      "size_bytes": 7960,
+      "git_mode": "100644"
+    },
+    {
+      "path": "tests/mrdiy-sequential-planner.test.mjs",
+      "sha256": "0fd35f187b3ba017349b65cbaf9fb51d6d70e6be4045c082efbbd74ae5a479ae",
+      "size_bytes": 19844,
       "git_mode": "100644"
     },
     {
@@ -5985,8 +6010,8 @@
     },
     {
       "path": "worker/index.js",
-      "sha256": "9e48081f83473233bb1a6fc05926f1500eaa813c529e23f19ee25dc8e61e1ea9",
-      "size_bytes": 21095,
+      "sha256": "248c90efdd2013875ebf2a3fe14c03dd9eb968661d2f2d46e72cc6a1c9d468bf",
+      "size_bytes": 21216,
       "git_mode": "100644"
     },
     {
@@ -6033,8 +6058,8 @@
     },
     {
       "path": "worker/mrdiy-event-scenarios.js",
-      "sha256": "342a8c108774d561c63c3165e210a019c6430b8ed4cb5a6d4875b192887f9fa0",
-      "size_bytes": 10974,
+      "sha256": "7b5fd2d2f538bc34cc485c6eca412c4b9c831fdf33e4727f65db12fbb429e0d9",
+      "size_bytes": 12820,
       "git_mode": "100644"
     },
     {
@@ -6068,9 +6093,15 @@
       "git_mode": "100644"
     },
     {
+      "path": "worker/mrdiy-sequential-planner.js",
+      "sha256": "c48a501d34ba8e0ac61e881decdcdfa5380cda36e99955ab13bada852572748d",
+      "size_bytes": 33555,
+      "git_mode": "100644"
+    },
+    {
       "path": "worker/mrdiy-service.js",
-      "sha256": "359cb23f733ad7ef869056184fcc13dbf420839138ae2981a5786c92dc55e349",
-      "size_bytes": 11422,
+      "sha256": "af93943209c3f95b5fe4cb919179dbf6cad5de5392cb9167fd970540f979a680",
+      "size_bytes": 11725,
       "git_mode": "100644"
     },
     {

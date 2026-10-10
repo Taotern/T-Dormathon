@@ -1,0 +1,362 @@
+{
+  "schema_version": "dormathon.source-package-verification.v0.4.1-v76",
+  "prepared_at": "2026-10-10T07:34:31.379300+00:00",
+  "source_commit": "b100ca9f157fe03946e1b87a48bf4514a7c862d0",
+  "previous_source_commit": "758ea9eb797a999d90e619a9e3d9f9de1a9ee859",
+  "target_repository": "Taotern/T-Dormathon",
+  "repository_visibility": "private",
+  "branch": "main",
+  "expected_private_main_parent": "8ddbbc6078ee738dfa70ead4506070b989180e6f",
+  "canonical_tracked_files": 1003,
+  "source_files": 1002,
+  "changed_source_files": [
+    {
+      "path": "docs/sequential-contract.md",
+      "sha256": "2ebf840c2cecf55aaa5210a7e1e39e0ccc28625d7f929d1812de70d8143511c6",
+      "bytes": 5095
+    },
+    {
+      "path": "scripts/build.mjs",
+      "sha256": "095ff9ccc2760066d796a17180efe9a9596a8b5a973741c813cdc2ec3ef7a753",
+      "bytes": 7755
+    },
+    {
+      "path": "static/mrdiy-workspace.css",
+      "sha256": "8d06591c539fbc5c94e275b685b68de6a2378e113db4257ba72464116f804d98",
+      "bytes": 17399
+    },
+    {
+      "path": "static/mrdiy-workspace.js",
+      "sha256": "37e4b26b25373afbe58db426dfafcc6dc923c2001d40098f2f1682aee6bf371b",
+      "bytes": 93285
+    },
+    {
+      "path": "tests/mrdiy-client-behavior.test.mjs",
+      "sha256": "f8fdcb183bf5ada42a1b8791e84fb79adc1b2abcdcc7c3f05e1bea2aab85ec33",
+      "bytes": 46736
+    },
+    {
+      "path": "tests/mrdiy-sequential-integration.test.mjs",
+      "sha256": "655476c46d0ffa0cdea4bf3f3b6622a556b2d0c5714bebe50e9a102a951d7bfc",
+      "bytes": 7960
+    },
+    {
+      "path": "tests/mrdiy-sequential-planner.test.mjs",
+      "sha256": "0fd35f187b3ba017349b65cbaf9fb51d6d70e6be4045c082efbbd74ae5a479ae",
+      "bytes": 19844
+    },
+    {
+      "path": "worker/index.js",
+      "sha256": "248c90efdd2013875ebf2a3fe14c03dd9eb968661d2f2d46e72cc6a1c9d468bf",
+      "bytes": 21216
+    },
+    {
+      "path": "worker/mrdiy-event-scenarios.js",
+      "sha256": "7b5fd2d2f538bc34cc485c6eca412c4b9c831fdf33e4727f65db12fbb429e0d9",
+      "bytes": 12820
+    },
+    {
+      "path": "worker/mrdiy-sequential-planner.js",
+      "sha256": "c48a501d34ba8e0ac61e881decdcdfa5380cda36e99955ab13bada852572748d",
+      "bytes": 33555
+    },
+    {
+      "path": "worker/mrdiy-service.js",
+      "sha256": "af93943209c3f95b5fe4cb919179dbf6cad5de5392cb9167fd970540f979a680",
+      "bytes": 11725
+    }
+  ],
+  "scope": "Additive seven-day/two-decision synthetic rehearsal after new information, integrated into Strategy with current forecast/commitments and optional fully confirmed event replay.",
+  "contract": {
+    "path": "docs/sequential-contract.md",
+    "endpoint": "POST /api/mrdiy/sequential-plans",
+    "read_only": true,
+    "decisions": "Day 0 common action, then day 2 action conditioned only on elapsed fulfilled sales/receipts, retained physical/cash balances and explicitly assumed carrier ETA. Equal observations share one action; censored unserved demand, hidden scenario identity and future demand are not policy inputs.",
+    "scenario_weights": [
+      0.5,
+      0.3,
+      0.2
+    ],
+    "weight_basis": "Authored finite-scenario assumptions; delayed branches retain conditional 0.6/0.4 uncertainty. No calibrated probability or validated carrier accuracy.",
+    "bounded_menu": "At most 72 first-action packages × six second-action combinations over three paths; path evaluation cap 6000. No stochastic sampler or MCTS.",
+    "comparators": "Retain existing commitments, fixed practical rule, bounded fixed two-epoch schedule, bounded observation-conditioned schedule. Both searches share paths, weights, objective and constraints; fixed comparator uses one literal second action across all paths.",
+    "objective": "Declared lexicographic continuity gap, unallocated service hours, unplanned invoice review, then weighted known conditional cost. Cost = new modeled cash commitments + holding + shortage − terminal inventory value; nonmonetized outcomes remain visible.",
+    "conservation": "Existing PO reserve charged once, unique one-time receipts, physical source/destination stock and cash residuals fail closed, irreversible elapsed commitments and cumulative fuel/staff/energy budgets retained. Only elapsed actual sales free storage; no reset or actual payment.",
+    "extra_assumptions": "Day-specific transport capacity and day-2 role windows are authored assumptions. Transfer is assumed usable on its decision day. Carrier ETA is accurate only within the tiny authored default set; later demand remains uncertain.",
+    "client_safety": "Detail opening performs no calculation; explicit run only, in-flight coalescing, input-signature invalidation/stale-response rejection, existing workflows retained as fallback. No saved choice, reservation, order, payment or provider call is created."
+  },
+  "illustrative_results": {
+    "baseline_two_day_delay": {
+      "adaptive_known_cost_myr": 71.016947,
+      "fixed_known_cost_myr": 93.972951,
+      "adaptive_weighted_unmet_units": 2.24085,
+      "fixed_weighted_unmet_units": 2.155276,
+      "continuity_gap_hours": 1.3
+    },
+    "confirmed_four_day_replay": {
+      "adaptive_known_cost_myr": 161.016947,
+      "fixed_known_cost_myr": 273.972951,
+      "adaptive_weighted_unmet_units": 2.24085,
+      "fixed_weighted_unmet_units": 2.155276,
+      "continuity_gap_hours": 1.3
+    },
+    "distinct_day2_delayed_actions": "Baseline day-5 ETA selects a 40-unit transfer only; confirmed four-day day-7 ETA selects transfer plus expedite. Both remaining later-demand paths share that observation-conditioned action.",
+    "interpretation": "Lower declared conditional cost has slightly higher weighted unmet demand, so this is not dominance or observed saving. Baseline and four-day replay figures have different assumptions and cannot be mixed. Staffing is planned, not demonstrated completion; elapsed outage remains."
+  },
+  "validation": {
+    "canonical": {
+      "affected_tests_passed": 179,
+      "failed": 0,
+      "full_suite_rerun": false,
+      "prior_v75_full_tests_passed": 698,
+      "build_passed": true,
+      "exact_assets": 12,
+      "freeze_receipt_sha256": "dda38113b992d2bc20d3d11b7b5a238fc345e2ab6e72062c4a0bd266db06607b",
+      "log_pins": {
+        "integrated-regression.log": {
+          "bytes": 18688,
+          "sha256": "041085ac8b23922d03c6e6bbe2cc0654de74419b6ce8ea973ef1b55843970cc5"
+        },
+        "build.log": {
+          "bytes": 182,
+          "sha256": "3e6325034f8bbf6e4cb1a45d7abdc453655f108698667dd5859b4469affa7557"
+        },
+        "artifact-validation.log": {
+          "bytes": 271,
+          "sha256": "023a07582a12c15e3d231d6666568d9e87fba4de0dc9863e2434c40d2adef1a1"
+        }
+      }
+    },
+    "fresh_publisher": {
+      "focused_tests_passed": 68,
+      "failed": 0,
+      "skipped": 0,
+      "full_suite_rerun": false,
+      "commands": [
+        "node scripts/build.mjs",
+        "node --check dist/server/index.js",
+        "node scripts/validate-artifact.mjs",
+        "node --test --test-concurrency=1 tests/mrdiy-sequential-planner.test.mjs tests/mrdiy-sequential-integration.test.mjs tests/mrdiy-client-behavior.test.mjs"
+      ],
+      "build_syntax_diff_passed": true,
+      "exact_assets": 12,
+      "worker_sha256": "f75ec4d830daba6129411f0e73ca7319f9dbf91c8733ecbf03bd46ad458fdd1c",
+      "client_sha256": "37e4b26b25373afbe58db426dfafcc6dc923c2001d40098f2f1682aee6bf371b",
+      "worker_exactly_matches_local_deployment_archive": true,
+      "logs_sha256": {
+        "build.log": "04056201dadbd79ab074d8be1a5495cbd60ab0456e207210430dc5a34274883c",
+        "artifact.log": "aeb8bc6cc9102f9107d76c61cf3f9eae7093e1aef299ffbbdc3f8974c34b88b6",
+        "focused.log": "a5d33bcc055bd845a0ba2a2a213d446e219baa41c9a4924fac84eff0593af2b2"
+      }
+    },
+    "independent_engine_audit": {
+      "status": "PASS_AT_EXACT_FINAL_MODULE_HASH",
+      "module_sha256": "c48a501d34ba8e0ac61e881decdcdfa5380cda36e99955ab13bada852572748d",
+      "receipt_sha256": "1d97aa5373be3157ec08dbff16f2604318e2cc9f7fe49b260c6e419903b95f80",
+      "evidence_sha256": "e41c6a4f8e9fd3440587f0ec34440f5eaea774682a4f65fda4cbb966bda89046",
+      "focused_tests_passed": 33,
+      "independent_schedule_pairs": 432,
+      "feasible_pairs": 168,
+      "objective_optima_recomputed": true,
+      "conservation_and_information_partitions_verified": true,
+      "rechecked_fixes": [
+        "Censored latent demand excluded from observations.",
+        "Generated receipt identity collisions resolved and uniqueness invariant enforced.",
+        "Source/destination transfer alias rejected and conservation invariants fail closed."
+      ],
+      "scope": "Pure final engine; separate from later service/UI integration and hosted checks."
+    }
+  },
+  "deployment": {
+    "site_version": 76,
+    "saved_site_version_id": "appgprj_6ac6c8d4361c81919d4a8dffabfab361~appgver_b751d56073b48191b2624ebf375f2a0b",
+    "deployment_id": "appgdep_6ac9e73952908191a674d26868d5c8e8",
+    "status": "SUCCESS",
+    "completed_at": "2026-10-10T07:20:30Z",
+    "environment_revision": 3,
+    "audience": "public_unchanged",
+    "local_gzip_bytes": 671923,
+    "local_gzip_sha256": "195698a3366816ed2b904d594b57c38891c0a3905c7be725cff20b0e26820f29",
+    "local_decompressed_tar_sha256": "e444a9aeadc200dbdd014313973e841cfe23080cd32a2370593a82a1eebe904f",
+    "native_stored_archive": {
+      "format": "tar",
+      "bytes": 4116480,
+      "file_count": 25,
+      "content_hash": "sha256:7ff6fc7ed3b7b48f43526e753bb98f886ae96baa0b04f1d6c71e8c5684f411cb"
+    },
+    "archive_note": "Server-stored tar and local gzip/decompressed tar are distinct representations; no digest equivalence asserted.",
+    "evidence": "Native result supplied by Site publishing owner; publisher performed no Site action."
+  },
+  "hosted_QA": {
+    "status": "PASS_SOURCE_BOUNDARY_AND_HOSTED_SCOPED",
+    "source_commit": "b100ca9f157fe03946e1b87a48bf4514a7c862d0",
+    "site_version": 76,
+    "audited_at": "2026-10-10 approximately 07:20–07:31 UTC",
+    "browser": "Independent cloud Chromium",
+    "report_sha256": "1ad9c6509134c5588799436ae9ace41f5255fcfe8f350e2523967e4cf09800e9",
+    "screenshot_manifest_sha256": "ebd82ec32d5f4a40f4a6ae6ecbeeef00e22815621145253290f8cd44c35abccc",
+    "screenshots": [
+      {
+        "file": "v76-baseline-sequential-desktop.png",
+        "bytes": 112001,
+        "sha256": "e115721869dcd76ab1cd3b860f356f8b85e114bfefe2baa6199d911e3ac9c302"
+      },
+      {
+        "file": "v76-event-evidence-desktop.png",
+        "bytes": 115729,
+        "sha256": "09e27f8af4c1a67b3be7b71cf539dfd486f0f947d63b02ab1f67c142e6564926"
+      },
+      {
+        "file": "v76-fictional-delay-confirmation-desktop.png",
+        "bytes": 98483,
+        "sha256": "ec107d47b874290e7dbbec33fe8f2d909bd6b8735b6af658157c49269e4ef394"
+      },
+      {
+        "file": "v76-four-day-event-comparison-desktop.png",
+        "bytes": 107548,
+        "sha256": "38a555b7649403940f5eb0144a85999ad1c9596a68e2d9ac51fdcf71ce5f32a3"
+      },
+      {
+        "file": "v76-four-day-event-summary-desktop.png",
+        "bytes": 100810,
+        "sha256": "dad569e2265b83044e2b860dc759d2848019561a2c0ef3aa38889351ff7601b2"
+      },
+      {
+        "file": "v76-four-day-narrow-resource-after-scroll.png",
+        "bytes": 57186,
+        "sha256": "fb16eedcf464e10d4c21da558638e152b7b92ae3f14518cc8e2192cc6f0dc0dc"
+      },
+      {
+        "file": "v76-four-day-narrow-resource-before-scroll.png",
+        "bytes": 62107,
+        "sha256": "5031897c27293a41ce26b32007a9120754e04fc01f3f587b8d6d9e9e752539e9"
+      },
+      {
+        "file": "v76-four-day-sequential-desktop.png",
+        "bytes": 111099,
+        "sha256": "5ba7f78818b17fde93a13b432d21de716e8af797c5fd0f10fd5c908b19ccb791"
+      },
+      {
+        "file": "v76-four-day-sequential-narrow-intro.png",
+        "bytes": 63977,
+        "sha256": "757b285d2c441f68f3b98ed8b2c42c9ed6bd961b70e20f1018b67e724bc25179"
+      },
+      {
+        "file": "v76-four-day-sequential-narrow-observed.png",
+        "bytes": 61258,
+        "sha256": "e04327234efa06dfd8c98465c9aff8ec6e86464a4e40dd8ecff9b303a93517f5"
+      },
+      {
+        "file": "v76-four-day-sequential-narrow-tradeoff.png",
+        "bytes": 58850,
+        "sha256": "7b62ebac212fadc840fdf78aefcb484eb74cc90bf39eb9cb02ed1530a9520381"
+      }
+    ],
+    "independent_targeted_tests": {
+      "sequential_engine_integration_passed": 41,
+      "client_passed": 27,
+      "total_passed": 68,
+      "failed": 0,
+      "full_suite_rerun": false
+    },
+    "independent_service_probe": {
+      "invalid_requests_rejected": 43,
+      "storage_accesses": 0,
+      "weighted_cost_shortage_recomputed": true,
+      "stock_cash_PO_receipts_and_equal_histories_verified": true,
+      "original_joint_comparison_after_rejection": {
+        "packages": 72,
+        "feasible": 48
+      },
+      "scope": "Local service calls. Zero-access proxy does not imply the general HTTP bootstrap performs no seed/read activity; no hosted invalid-input injection."
+    },
+    "desktop_viewport": {
+      "width": 1342,
+      "height": 934,
+      "approximate": true
+    },
+    "narrow_viewport": {
+      "width": 500,
+      "height": 864,
+      "actual_window_resize": true,
+      "document_client_width": 485,
+      "document_scroll_width": 485,
+      "page_horizontal_overflow": false,
+      "resource_table_local_width": 390,
+      "resource_table_content_width": 580,
+      "observed_horizontal_scroll": 190
+    },
+    "checks": [
+      "Opening opt-in detail does not calculate; explicit baseline run and on-time/delayed ETA report selection work.",
+      "Common day-0 allocations retained; indistinguishable delayed paths share one day-2 action with conditional 0.6/0.4 weights and residual demand uncertainty.",
+      "Baseline MYR71.016947/93.972951 with unmet2.240850/2.155276 and1.3-hour gap shown together.",
+      "Saved official MET facts, unknown raw-time offset and unverified exposure retained; strict fictional mapping/delay confirmations enable replay only when complete.",
+      "Four-day replay keeps148 demand, changes no-change unmet25.636→68 and preserves48 feasible packages; old rehearsal invalidated.",
+      "Four-day delayed ETA selects transfer+expedite, MYR161.016947/273.972951 and same shortage/gap pair; baseline selects transfer only.",
+      "Cash/stock/source/fuel/role/backup balances and original PO4160 carried forward; no actual execution.",
+      "On-time branch adds no action; completed four-day response/selection retained across navigation without rerun.",
+      "True narrow text and local horizontally scrolling resource table remain usable; desktop geometry restored."
+    ],
+    "four_day_delayed_carried_resources": {
+      "cash_myr": [
+        3840,
+        3620
+      ],
+      "stock_before_day2_receipts_demand_units": [
+        21.224,
+        61.224
+      ],
+      "source_units": [
+        170,
+        130
+      ],
+      "fuel_litres": [
+        30,
+        12
+      ],
+      "cumulative_role_hours": [
+        8,
+        10
+      ],
+      "backup_kwh": [
+        10.8,
+        10.8
+      ],
+      "prior_PO_reserved_myr": 4160
+    },
+    "single_click_to_visible_ms": {
+      "baseline": 732,
+      "four_day_sequential": 1682,
+      "limits": "Single cloud UI automation observations include overhead; not server-only/repeated performance or SLA. Event replay timing not validly remeasured here."
+    },
+    "paid_calls": 0,
+    "new_saves": 0,
+    "new_reservations": 0,
+    "production_writes": 0,
+    "limits": [
+      "Saved official source facts inspected, not independently refreshed.",
+      "Seven-day/two-epoch bounded synthetic scenario-conditioned planning with assumed weights and carrier model; no calibrated company risk, global optimum, trained RL/MCTS or observed savings.",
+      "Lower conditional cost has slightly greater shortage and1.3-hour continuity gap; staffing does not prove shipment-dependent service completion.",
+      "Full repository suite and all-case live model validation not rerun; independent engine audit remains a separate gate."
+    ]
+  },
+  "preservation": {
+    "approved_and_legacy_specs": true,
+    "stable_case_IDs": 40,
+    "old_saved_decision_schema_and_bytes_unchanged": true,
+    "provider_payload_and_RM5_estimated_ledger_unchanged": true,
+    "presentation_editions_byte_preserved": [
+      "v74",
+      "v71-v72"
+    ],
+    "current_presentation": "docs/presentation/v74/ depicts v73/v74; subsequent sequential/event-story refresh remains separate."
+  },
+  "limits": [
+    "Only a fixed synthetic seven-day/two-epoch episode and finite action menu is searched; no global optimal policy, trained RL/MCTS, real-company accuracy or causal-profit validation.",
+    "Finite scenario weights, carrier updates, transfer timing and role/transport availability are assumed; no calibrated failure probability or actual MRDIY disruption.",
+    "Conditional cost improvement has a shortage tradeoff and residual continuity/service dependency gaps; no actual savings, service completion or operational execution.",
+    "Optional paid Advisor and saved artifacts remain selected-case-only; no all-40 live model validation. RM5 ledger remains estimated application control; provider-enforced hard cap unverified.",
+    "Prior exploratory benchmark targets/exposure limits and saved-event geographic/time/replay limitations remain unchanged."
+  ],
+  "excluded_outputs": "No credentials/native environment values, raw UCI customer/transaction data, raw event transport bodies, runtime state, generated outputs, execution logs, transient QA reports or raw screenshots added."
+}
