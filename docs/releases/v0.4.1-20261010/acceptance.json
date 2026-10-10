@@ -1,0 +1,159 @@
+{
+  "schema_version": "dormathon.integrated-acceptance.v0.4.1",
+  "reported_at": "2026-10-10T04:13:24.336808+00:00",
+  "scope": "Prepublication source/API/client verification on approved v0.4.1; existing public Site identity preserved",
+  "site_project_id": "appgprj_6ac6c8d4361c81919d4a8dffabfab361",
+  "baseline_source_commit": "1ba8f9e693f2e15f4a4c4e91d9a49cb049da3b53",
+  "audience": "public_unchanged",
+  "operational_namespace": "org_mrdiy_my_demo",
+  "scenarioDataMode": "SYNTHETIC_INTERNAL",
+  "operational_engine_version": "dormathon.mrdiy-operations.v0.4.1.1",
+  "inventory_policy_version": "dormathon.inventory-policy.0.4.1.1",
+  "case_count": 40,
+  "case_distribution": {
+    "supply": 16,
+    "procurement": 10,
+    "service": 8,
+    "energy": 6
+  },
+  "deep_scenarios": [
+    "SC01",
+    "SC02",
+    "SC17",
+    "SC18",
+    "SC27",
+    "SC35"
+  ],
+  "full_tests": {
+    "passed": 516,
+    "failed": 0,
+    "command": "npm test"
+  },
+  "focused_tests": {
+    "passed": 46,
+    "failed": 0,
+    "command": "node --test tests/mrdiy-app-integration.test.mjs tests/mrdiy-client-behavior.test.mjs tests/mrdiy-operations.test.mjs tests/predictive-policy-engine.test.mjs"
+  },
+  "source_contract_tests": {
+    "passed": 74,
+    "failed": 0,
+    "sources": 10,
+    "network_calls": 0
+  },
+  "artifact_check": {
+    "passed": true,
+    "static_assets": 11,
+    "default_fetch": true,
+    "worker_sha256": "2b73d2c610f4c4486c352cdb46ba9e675ca93ad6d13a17686ab067e48283ca0d"
+  },
+  "offline_data_check": {
+    "passed": true,
+    "chunks": 229,
+    "records": 20644,
+    "indexed": 20644,
+    "network_requests": 0,
+    "live_site_writes": 0,
+    "private_user_data": 0,
+    "scope": "Git-bundled reviewed-source batches only; not total hosted corpus or company history"
+  },
+  "persistence_test_scope": "D1-compatible SQL API using LocalD1 in-memory node:sqlite; independent file-backed node:sqlite close/reopen also verified. Hosted Cloudflare D1 not exercised yet.",
+  "independent_checks": {
+    "groups_passed": 11,
+    "groups_failed": 0,
+    "focused_tests_passed": 59,
+    "source_hashes_match": true
+  },
+  "verified_behaviors": [
+    "All40 open/analyze/compare/save/reopen paths",
+    "Four normal/action-needed/risk/unknown state sets",
+    "Six deep cases share stable business keys and one resource ledger",
+    "Selected infeasible proposal rejected; deferred/rejected proposal may be saved without execution",
+    "Per-case human draft and pending-save identity survive room/case navigation",
+    "Physical stock includes reserved/quarantined units once; all committed in-transit receipts reserve hard storage",
+    "Shared cash, stock, qualified role hours, fuel, equipment and storage cannot be promised twice",
+    "Exact condition-specific route/facility exposure applies; unrelated grid and tariff-only notices abstain",
+    "Human records freeze source versions/state/assumptions/comparison plus predictive mechanics, checked with SHA256",
+    "Owner settings and immutable default fixture remain unchanged",
+    "All currently mounted primary content is English",
+    "Benchmark remains in its separate original retailer/year namespace"
+  ],
+  "upstream_delta": {
+    "original_upstream_operations_sha256": "a1266dd785531d5426f040dbc93b6c643d9712e5002ed1b474fc4eb198542f5e",
+    "integrated_operations_sha256": "1e39d37c10297318597e39ca12b7634a829a44911e503eea37e6245e264b22ff",
+    "reason": "Independent acceptance found outstanding committed inbound missing from main action-storage helper; corrected implementation and boundary/double-count regression supersede original25-test artifact for this helper. Original upstream evidence remains historical."
+  },
+  "benchmark": {
+    "namespace": "external_uci_online_retail_ii",
+    "scenarioDataMode": "EXTERNAL_BENCHMARK",
+    "delivery_mode": "precomputed",
+    "selected_model": "moving_average_28",
+    "test_dates": [
+      "2011-11-11",
+      "2011-12-08"
+    ],
+    "eligible_items": 3231,
+    "prediction_points": 497574,
+    "gates": {
+      "AC11": {
+        "status": "pass_with_declared_assumption",
+        "reason": "Official licensed bytes profiled; target, train-only eligible SKU catalog, full calendar split and incomplete trailing day frozen; interior zero dates rely on publisher complete-ledger declaration.",
+        "data_profile_ref": "data-profile.v1.json"
+      },
+      "AC12": {
+        "status": "pass_limited_predictive_scope",
+        "reason": "Frozen chronological known-item study with both baselines, compact lag/calendar candidate, validation-only tuning, untouched test metrics, dependence-aware comparisons, slices and sensitivity. No observed-business-utility or real alert-validity claim.",
+        "quality_warning": "Gate reflects reproducible limited-scope evaluation, not adequate accuracy. Selected moving-average WAPE exceeds 100%; zero-only posthoc diagnostic is 100%. No learned-model improvement established.",
+        "empirical_model_improvement_established": false
+      }
+    },
+    "quality": "Moving-average retained; compact candidate worse, errors high. No adequate-accuracy, company-performance or real-savings claim."
+  },
+  "advisor": {
+    "delivery_mode": "live_rule_based_scenario",
+    "llm_calls": 0,
+    "llm_connected_to_scenario": false,
+    "existing_adapter_preserved": true,
+    "credentials_added": false
+  },
+  "not_yet_verified": [
+    "Native deployment of this source snapshot",
+    "Hosted Cloudflare D1 save/reopen across reload",
+    "Mounted full-desktop/narrow browser visual acceptance and screenshots",
+    "Browser/network latency or usability metrics"
+  ],
+  "local_browser_qa": {
+    "status": "blocked_environment",
+    "reason": "Local preview server startup was not accompanied by reachable shell readiness. A sandbox mount preparation failure blocked the escalated readiness check. Owned servers stopped. No visual/browser pass is inferred."
+  },
+  "limits": [
+    "Synthetic operational mechanics do not validate real MR D.I.Y. risk, stockouts, costs or savings.",
+    "External benchmark is known-item chronological validation only; cross-company/cold-start accuracy is not established.",
+    "Simulated utility/warning labels are separate from actual sales forecast error and observed causal benefit.",
+    "FR07 generalized entity resolution and strict historical company state reconstruction are not validated by these fixtures.",
+    "No actual procurement, payments, communications, staff assignments or facility control occur."
+  ],
+  "source_sha256": {
+    "static/collector-index.html": "4546ae71b02448d978f1b0782cad8e4bd4221749ebc88f1e5b33802d476f28b9",
+    "static/collector-workbench.js": "6d5c2002564fa2f6277fd70d7ff1c9df53d9fc9b21ef9c833bffcce40d03a578",
+    "static/collector-workbench.css": "06640f64584022d4f8771c4d440d1f2fbf212ac3ba0f3f188ce2540c99fd2885",
+    "static/mrdiy-workspace.js": "a3b51b526a33b42499f641296aaf78960ed252670a3ccfca9dd358c1e37f0250",
+    "static/mrdiy-workspace.css": "3631cf6161311f5c577cbb7a3bc696e0f9d7d9fe67310b1c8e128e623b3c3004",
+    "worker/index.js": "59417b80ecb5b250edc681dbe274d130f1683a506431afa7e4242f838acb653f",
+    "worker/mrdiy-fixture.js": "3c99b947ff3056d1cfbe553460e045762f956fa489d9a98b0d615761fc9c8fa8",
+    "worker/mrdiy-operations.js": "1e39d37c10297318597e39ca12b7634a829a44911e503eea37e6245e264b22ff",
+    "worker/mrdiy-service.js": "a8558289866a6b0479e43939a7fd124c05bcd75783b546358202a86525fc3493",
+    "worker/mrdiy-forecast.js": "5bb442c0063b5e74ffb33ee2d52d7f8b098e48672cb66d1242a269aca4492437",
+    "worker/predictive-engine.js": "2d682cce556632517f7a138ce23b1372b4f2af962060246d69ef8864df642496",
+    "worker/policy-engine.js": "893aa1fbecfa0177fa1b47469d4d91efa82f8e931d006d63f3cac5ee619c7ad6",
+    "scripts/build.mjs": "fc0499a2ba1bb3306bc42dc2906ce1e6b3a2903e60f4b5a9830042328b495300",
+    "data/benchmark-report.v1.json": "c812d772db29dbfff3ced67b2bc511fb24c9e670a15174337fc1a45ae1bdde54",
+    "data/prototype/mrdiy-demo.v0.4.1.json": "8533f68a6426bf0da13778d69c09f739a0ec9317f9cad4ecdb23d310cf581224",
+    "data/prototype/mrdiy-case-crosswalk.v0.4.1.json": "d31003edba658c40af1b97011f2028f2fc82f0c060082032eeba0c8901ebc59f",
+    "tests/mrdiy-app-integration.test.mjs": "7805cf77462e2b0822591ce17d0d74eb32ec05f89d999f0e76a73242420a8c13",
+    "tests/mrdiy-client-behavior.test.mjs": "17c988136a487aad05025e2486c0944ce1f0d890d78591e744e7a23a66bc4e74",
+    "tests/mrdiy-operations.test.mjs": "45346a9520794c33f80097084bf2a11ae97708557e58b307943505617d7b1446",
+    "tests/predictive-policy-engine.test.mjs": "b0bd4fc59a3381f1c4a3accec8326187d590029afe66504fda0688920bce03dd",
+    "tests/collector-workbench.test.mjs": "a7558238a29903f5ab0c07daf04b3531611fd19c26e63b4964f0ce51e60414ae",
+    "dist/server/index.js": "2b73d2c610f4c4486c352cdb46ba9e675ca93ad6d13a17686ab067e48283ca0d"
+  }
+}

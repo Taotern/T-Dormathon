@@ -1,5 +1,24 @@
 # T-Dormathon 情报管线
 
+## Current implementation entrypoint · v0.4.1 · 10 October 2026
+
+The owner-approved [English specification](docs/specs/Dormathon_Product_Specifications_v0.4.1_EN.md), [Chinese specification](docs/specs/Dormathon_Product_Specifications_v0.4.1_ZH.md) and [approval record](docs/specs/approval-v0.4.1.json) govern current development. The existing Site's audience is public and unchanged. All 40 operational cases are isolated synthetic MR D.I.Y. Malaysia demonstrations (16 supply, 10 procurement, 8 service, 6 energy security/continuity), preserving the original 14 stable IDs. Six deep cases share one episode and resource snapshot.
+
+The user and assistant own remaining integration; Felix is not a dependency. FR12 currently uses explicit arithmetic and safe baseline simulators, with optional RL unimplemented. The separate UCI benchmark retains its original UK-retailer identity and 2009–2011 years. Its high errors and failed candidate improvement are reported honestly; no MR D.I.Y. accuracy or real savings are established.
+
+Current source is static/mrdiy-workspace.js and worker/mrdiy-*.js, with the retained source browser and legacy capabilities still available. Portable benchmark evidence is in docs/predictive-v0.4.1/. Operational package evidence is in docs/mrdiy-v0.4.1/. Tests exercise an in-memory node:sqlite D1-compatible adapter; actual hosted persistence, deployment and browser visual acceptance are separate gates.
+
+### Private GitHub source checkpoint · 10 October 2026
+
+This main-branch backup contains approved v0.4.1 source captured at `ff857e0b6ac34961b63bd3e475c52ee6b8faeb30`. GitHub remains private. The Site publishing owner reports native version 64 deployed on the existing public Site; hosted D1 persistence and mounted browser acceptance are pending at this packaging checkpoint.
+
+A separate clean checkout passed 516/516 app tests, 74/74 source contracts, the exact 11-static-asset Worker check, the 229-chunk/20,644-record offline pipeline, 32/32 collector tests, local handoff and 9/9 portable predictive tests. The emitted Worker exactly matches the integrated acceptance hash. Raw UCI customer transaction data, logs, credentials, runtime state and build outputs are excluded. Details: [source package verification](docs/releases/v0.4.1-20261010/source-package-verification.json).
+
+The integrated MR D.I.Y. regeneration paths are `scripts/mrdiy/generate_fixture.py` and `scripts/mrdiy/report_fixture.mjs`; the dated upstream package README retains its original relative paths. The external benchmark's portable commands run from `docs/predictive-v0.4.1/` and fetch the official external data only when explicitly run. Aggregate artifact checks and pure JS examples are included without raw data.
+
+The older sections below are retained historical handoff context. Their staffing, v0.3.1 scope, owner-private audience and dated corpus counts do not supersede this approved v0.4.1 entrypoint.
+
+
 一个已有的 GPT-Site 产品：采集真实公开来源，按许可保留字段，去重与组织，保存不可变证据，提供可追溯的词项检索。队友负责在这些数据上实现客户分析与服务。本仓库当前界面是正式情报工作台：记录列表、证据阅读器和四类信息页面。展示型超前端已取消；旧版本只保留在 Git 历史中用于恢复。
 
 ## Product specs and team handoff · 产品规格与团队交接

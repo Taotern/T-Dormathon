@@ -1,19 +1,34 @@
 {
   "schema_version": "dormathon-clean-source-export.v1",
-  "source_commit": "1ba8f9e693f2e15f4a4c4e91d9a49cb049da3b53",
-  "runtime_commit": "1ba8f9e693f2e15f4a4c4e91d9a49cb049da3b53",
-  "source_files": 902,
-  "site_version": 63,
-  "expected_private_main_parent": "c636629e9b1f8d743b10f85c88694318958767d8",
-  "fresh_consumer_receipt_sha256": "bb7f2cacbee24880a6465fa7bafc8cbfcca1611f7ed02094cdf5b8ab22eb5bee",
-  "QA_report_sha256": "7cd6bd356d4e3240e742dd190b7764fd857a675680a9656244ece25e9545d831",
+  "source_commit": "ff857e0b6ac34961b63bd3e475c52ee6b8faeb30",
+  "runtime_commit": "ff857e0b6ac34961b63bd3e475c52ee6b8faeb30",
+  "source_files": 959,
+  "delivered_payload_files": 960,
+  "site_version": 64,
+  "site_audience": "public_unchanged",
+  "repository_visibility": "private",
+  "expected_private_main_parent": "cfba64abf5bd43d8d8a5da0d0977f8fac27c3f9c",
+  "fresh_consumer_receipt_sha256": "95e708e49b71b0553cc6ce34c4969b06598c9748d9de3d3ceb44bb2b293f604a",
+  "integrated_acceptance_sha256": "49dc05060007eb79489692a5eb7c2dcd7b14548a94a65619e6e79e26d397d7d7",
   "preserved_doc_pins": {
     "docs/specs/PRODUCT_SPEC_v0.3.1_ZH_EN.md": "4d065b8544ca6e282eac35d7b2d7dcb0075a1e58d892e7ba11fac913828d79fd",
     "docs/TEAM_HANDOFF_2026-10-09_ZH_EN.md": "4d745b7fd8219ec32de13978bf16ad7f21b8f5380986922266795f595f661dd0",
-    "docs/specs/T-Dormathon_\u4ea7\u54c1\u89c4\u683c\u8bc4\u5ba1\u7a3f_v0.3.md": "754e93412992086881f5d6c50f6b22668bc365eda9e463a5eb32b5e906e8f38e",
-    "docs/specs/T-Dormathon_\u4ea7\u54c1\u89c4\u683c\u8bc4\u5ba1\u7a3f_v0.3.docx": "1cc7d1f1db908b1c0d9a1634d00f4e178c0a1c98f1d59e00085798d95411a64f",
+    "docs/specs/T-Dormathon_产品规格评审稿_v0.3.md": "754e93412992086881f5d6c50f6b22668bc365eda9e463a5eb32b5e906e8f38e",
+    "docs/specs/T-Dormathon_产品规格评审稿_v0.3.docx": "1cc7d1f1db908b1c0d9a1634d00f4e178c0a1c98f1d59e00085798d95411a64f",
     "contracts/prototype/port-examples.v0.2.json": "f3770bb39295614e288bfbda4031f82c5c218480e7f6b18baffd542858da3b59"
   },
+  "approved_spec_pins": {
+    "docs/specs/Dormathon_Product_Specifications_v0.4.1_EN.md": "3e1926f4ec5417dda4113b044acff2f8ec54e81ece67f00f5e5d56743583c579",
+    "docs/specs/Dormathon_Product_Specifications_v0.4.1_ZH.md": "e241fd6b9e300a8989780b6503276801db0e00ec62dbfc040f08626864175b31",
+    "docs/specs/approval-v0.4.1.json": "4153acb639f93c363a94970e7bc009fce071b1132b12afe8531d4d3ee7c8d009"
+  },
+  "packaging_overlays": [
+    "README.md"
+  ],
+  "added_packaging_records": [
+    "docs/releases/v0.4.1-20261010/source-package-verification.json"
+  ],
+  "payload_inventory_sha256": "8cf79330ad5ae03a08e9ae94e73a70a336917c37d53c14a772edfc76b4276502",
   "files": [
     {
       "path": ".gitignore",
@@ -29,15 +44,17 @@
     },
     {
       "path": "PROJECT_STATUS.md",
-      "sha256": "e6478171116b6630ac9406fc340054a38b5d0d7902351e631081e20cf5dc552d",
-      "size_bytes": 10356,
+      "sha256": "991963ce36f3413376d3a36156a5c44cce43e5ac7e125c0bea2964e501c8b379",
+      "size_bytes": 10705,
       "git_mode": "100644"
     },
     {
       "path": "README.md",
-      "sha256": "2c33f1580af248832bf13f3d86e9b4c7a230520b2f86b72aecf4fc8e151f24bc",
-      "size_bytes": 17058,
-      "git_mode": "100644"
+      "sha256": "3bfe14b02ba0605d4cc22f03ba7c40b624629d1f7529193bd15bfc3eaf066c36",
+      "size_bytes": 19995,
+      "git_mode": "100644",
+      "canonical_sha256": "763eb6af72db16f6af82e68248548325770a70d566f7211b06786cf3ea072142",
+      "packaging_overlay": "README checkpoint note only; application code unchanged"
     },
     {
       "path": "contracts/approved-call-journey-v1.md",
@@ -55,6 +72,12 @@
       "path": "contracts/information-types-v1.md",
       "sha256": "ee44f84b443e416a8442f9c61f8e8e65384c071f10ed97871c4b5038c2064f1c",
       "size_bytes": 4857,
+      "git_mode": "100644"
+    },
+    {
+      "path": "contracts/mrdiy-operations.v0.4.1.json",
+      "sha256": "88d8fa3db99a1277778a2f4208a5f1ff248c52b168abba893e30876a0a632953",
+      "size_bytes": 6227,
       "git_mode": "100644"
     },
     {
@@ -97,6 +120,12 @@
       "path": "contracts/workspace-v1.md",
       "sha256": "c8efd993567685463cbfd9472d0cb2a41f01501c3a98829df78bea05241192ae",
       "size_bytes": 4896,
+      "git_mode": "100644"
+    },
+    {
+      "path": "data/benchmark-report.v1.json",
+      "sha256": "c812d772db29dbfff3ced67b2bc511fb24c9e670a15174337fc1a45ae1bdde54",
+      "size_bytes": 147691,
       "git_mode": "100644"
     },
     {
@@ -169,6 +198,18 @@
       "path": "data/prototype/linked-operations.v0.2.json",
       "sha256": "1283b1bac168675bdaff47ac1a0ea8eeaa908d3c8ec33578db0607b1ae11bed8",
       "size_bytes": 3008,
+      "git_mode": "100644"
+    },
+    {
+      "path": "data/prototype/mrdiy-case-crosswalk.v0.4.1.json",
+      "sha256": "d31003edba658c40af1b97011f2028f2fc82f0c060082032eeba0c8901ebc59f",
+      "size_bytes": 15101,
+      "git_mode": "100644"
+    },
+    {
+      "path": "data/prototype/mrdiy-demo.v0.4.1.json",
+      "sha256": "8533f68a6426bf0da13778d69c09f739a0ec9317f9cad4ecdb23d310cf581224",
+      "size_bytes": 225256,
       "git_mode": "100644"
     },
     {
@@ -1846,6 +1887,210 @@
       "git_mode": "100644"
     },
     {
+      "path": "docs/mrdiy-v0.4.1/README.md",
+      "sha256": "9153a996e766e6f87a50956020494a37ee1ced278d1786f6ae8096dd22878118",
+      "size_bytes": 5919,
+      "git_mode": "100644"
+    },
+    {
+      "path": "docs/mrdiy-v0.4.1/manifest.json",
+      "sha256": "fdc5b4968ce0ebb2ac9f8f9ba78f8ea687ef9a32a00aede0f2d12250b7fb24c5",
+      "size_bytes": 2334,
+      "git_mode": "100644"
+    },
+    {
+      "path": "docs/mrdiy-v0.4.1/reports/functional-validation.v0.4.1.json",
+      "sha256": "e26d77eaa6efff874929c42ef6f39fcd7fe7dcd6d0163154c6ff13644fe8a927",
+      "size_bytes": 20343,
+      "git_mode": "100644"
+    },
+    {
+      "path": "docs/predictive-v0.4.1/.gitignore",
+      "sha256": "fb3d8a44638695a8876a9a3c82055c45d746bd9f47285ff9447fa3d2a3f63f77",
+      "size_bytes": 37,
+      "git_mode": "100644"
+    },
+    {
+      "path": "docs/predictive-v0.4.1/README.md",
+      "sha256": "0e2d2f6d484cfbc37df0ab1edd34fec88372b1dce32ee607d045dba044460982",
+      "size_bytes": 11423,
+      "git_mode": "100644"
+    },
+    {
+      "path": "docs/predictive-v0.4.1/artifacts/assumption-register.v1.json",
+      "sha256": "139a5fa271b73a65237ea5ea7ec64eb3fdedd1e89ed32378fd6f53c051f754ad",
+      "size_bytes": 6144,
+      "git_mode": "100644"
+    },
+    {
+      "path": "docs/predictive-v0.4.1/artifacts/benchmark-report.v1.json",
+      "sha256": "c812d772db29dbfff3ced67b2bc511fb24c9e670a15174337fc1a45ae1bdde54",
+      "size_bytes": 147691,
+      "git_mode": "100644"
+    },
+    {
+      "path": "docs/predictive-v0.4.1/artifacts/data-profile.v1.json",
+      "sha256": "fc71fb92a90a9ff6968a0930ee7e6a9910c45c709d9ff5e1635f13db062ab2c5",
+      "size_bytes": 63482,
+      "git_mode": "100644"
+    },
+    {
+      "path": "docs/predictive-v0.4.1/artifacts/example-forecast.v1.json",
+      "sha256": "8f23eff5a2b553a7fa5e375c9b859c7d9c51c585440f7e5cf3a282a3839e4760",
+      "size_bytes": 2661,
+      "git_mode": "100644"
+    },
+    {
+      "path": "docs/predictive-v0.4.1/artifacts/frozen-simulation-config.unsafe-capacity.v1.json",
+      "sha256": "4a80495aaa12a611f51956800796184595c306b7e188a4bfaf46511083b29e91",
+      "size_bytes": 1733,
+      "git_mode": "100644"
+    },
+    {
+      "path": "docs/predictive-v0.4.1/artifacts/frozen-simulation-config.v1.json",
+      "sha256": "8327183bd0d75b2c3060c631cb79e2f9c533baaa642dd14c346b9e369ad8162a",
+      "size_bytes": 1997,
+      "git_mode": "100644"
+    },
+    {
+      "path": "docs/predictive-v0.4.1/artifacts/frozen-split.v1.json",
+      "sha256": "34d83d969521b625fd070fd5d8a644d8dd9225631365dc7685acab4fb5dc352b",
+      "size_bytes": 43504,
+      "git_mode": "100644"
+    },
+    {
+      "path": "docs/predictive-v0.4.1/artifacts/integration-contract.v1.json",
+      "sha256": "e9be8044ce36706d13a5277c492c7fb672c3ff4941f5b44132ddf8a1c35383a9",
+      "size_bytes": 3276,
+      "git_mode": "100644"
+    },
+    {
+      "path": "docs/predictive-v0.4.1/artifacts/model-artifact.v1.json",
+      "sha256": "c9365013331bace05f4c2cb73d8dbf1de2ae045d2a89ca8cca3bd33109daab56",
+      "size_bytes": 92784,
+      "git_mode": "100644"
+    },
+    {
+      "path": "docs/predictive-v0.4.1/artifacts/primary-report-frozen.v1.json",
+      "sha256": "8a8ef0dcce211393273bfe9e038242eab29b42387cb4cb968610c2257d248510",
+      "size_bytes": 142280,
+      "git_mode": "100644"
+    },
+    {
+      "path": "docs/predictive-v0.4.1/artifacts/reproduction-check.v1.json",
+      "sha256": "d00f63a48ebc1768c75233358802603fc568d0bcc06a6ca0a6e667e05117509e",
+      "size_bytes": 1010,
+      "git_mode": "100644"
+    },
+    {
+      "path": "docs/predictive-v0.4.1/artifacts/run-manifest.v1.json",
+      "sha256": "91c1c696a436ad31f28c8d018738ff6fb69d2cce30292d280a939ab2e863bcd7",
+      "size_bytes": 6484,
+      "git_mode": "100644"
+    },
+    {
+      "path": "docs/predictive-v0.4.1/artifacts/simulated-policy-report.unsafe-capacity.v1.json",
+      "sha256": "a76adcba5a74298e6215b7100f484718384555e4d4db44aae6f39fa9051c41bd",
+      "size_bytes": 33018,
+      "git_mode": "100644"
+    },
+    {
+      "path": "docs/predictive-v0.4.1/artifacts/simulated-policy-report.v1.json",
+      "sha256": "eaa5f5705a6895f31c96dbe8bb3d439f8c5d99a58f1c6e7f8c144d08ac94fee9",
+      "size_bytes": 34853,
+      "git_mode": "100644"
+    },
+    {
+      "path": "docs/predictive-v0.4.1/artifacts/synthetic-example.v1.json",
+      "sha256": "0dbedf5b61642a2e2560ee54bbb71dfe143572970f777c774b22f3df68c56bcb",
+      "size_bytes": 14130,
+      "git_mode": "100644"
+    },
+    {
+      "path": "docs/predictive-v0.4.1/audit/policy-engine.unsafe-capacity.mjs.txt",
+      "sha256": "ee01d2cd951448404e446d7df673acb0646973f6ef4dabe135cc64ee45194616",
+      "size_bytes": 8883,
+      "git_mode": "100644"
+    },
+    {
+      "path": "docs/predictive-v0.4.1/config.json",
+      "sha256": "a798dc84a2a2f0464bebe329a5532602563977d94e9a0de785c01317004ccd57",
+      "size_bytes": 602,
+      "git_mode": "100644"
+    },
+    {
+      "path": "docs/predictive-v0.4.1/examples/run-example.mjs",
+      "sha256": "c15569b1edf5cec6d75ff3ad3f8a5345cc308cb35670a25dd473e7bf9bb32afc",
+      "size_bytes": 1543,
+      "git_mode": "100644"
+    },
+    {
+      "path": "docs/predictive-v0.4.1/requirements.txt",
+      "sha256": "7e7b4c990605a5f7fe85702bf01bae0a62800c1b9b6b73c5a882fa4d1eab4f53",
+      "size_bytes": 29,
+      "git_mode": "100644"
+    },
+    {
+      "path": "docs/predictive-v0.4.1/run-manifest.v1.json",
+      "sha256": "91c1c696a436ad31f28c8d018738ff6fb69d2cce30292d280a939ab2e863bcd7",
+      "size_bytes": 6484,
+      "git_mode": "100644"
+    },
+    {
+      "path": "docs/predictive-v0.4.1/src/check_artifacts.py",
+      "sha256": "a0d9175fe45966a09a8bbc7a5fbb0ce72e433d7334f0434e17e5715f8286f85c",
+      "size_bytes": 1842,
+      "git_mode": "100644"
+    },
+    {
+      "path": "docs/predictive-v0.4.1/src/download_data.py",
+      "sha256": "8449766a8ac2bbd2bb17437ef3d07f06f4b958cfcc129272d4ed6edaae933abb",
+      "size_bytes": 949,
+      "git_mode": "100644"
+    },
+    {
+      "path": "docs/predictive-v0.4.1/src/evaluate.py",
+      "sha256": "0e8af4ac1d523c1f9c95f826f34f9ddd3cf3fe062e267b21e0a0b36de99bb806",
+      "size_bytes": 16102,
+      "git_mode": "100644"
+    },
+    {
+      "path": "docs/predictive-v0.4.1/src/policy-engine.mjs",
+      "sha256": "893aa1fbecfa0177fa1b47469d4d91efa82f8e931d006d63f3cac5ee619c7ad6",
+      "size_bytes": 10160,
+      "git_mode": "100644"
+    },
+    {
+      "path": "docs/predictive-v0.4.1/src/posthoc_diagnostics.py",
+      "sha256": "97bfca1f93fca35e5fdca28db337d2a47907295aab5dcc6597ae364e64c7b88a",
+      "size_bytes": 4227,
+      "git_mode": "100644"
+    },
+    {
+      "path": "docs/predictive-v0.4.1/src/predictive-engine.mjs",
+      "sha256": "2d682cce556632517f7a138ce23b1372b4f2af962060246d69ef8864df642496",
+      "size_bytes": 4669,
+      "git_mode": "100644"
+    },
+    {
+      "path": "docs/predictive-v0.4.1/src/profile_data.py",
+      "sha256": "269c68c1dc7ca357ab4efda9d27a9965e93ab6b81bf670ddfb94fe2605225da7",
+      "size_bytes": 11374,
+      "git_mode": "100644"
+    },
+    {
+      "path": "docs/predictive-v0.4.1/src/simulate_benchmark_policies.py",
+      "sha256": "82e2bd2fff900faea072044566aec39021fca6ad5ec16b906ad7a0715940cff6",
+      "size_bytes": 11187,
+      "git_mode": "100644"
+    },
+    {
+      "path": "docs/predictive-v0.4.1/tests/engine.test.mjs",
+      "sha256": "a8752ed459064674c3d8ea511c743bd3f8874b6d45510d7e007795dad73273a0",
+      "size_bytes": 6333,
+      "git_mode": "100644"
+    },
+    {
       "path": "docs/provenance/local-collector-1.2-input-manifest.sha256",
       "sha256": "c19350396fc525b91f181780d8286c75f64f88101eec49de139eecadd5417fda",
       "size_bytes": 15927,
@@ -1918,21 +2163,58 @@
       "git_mode": "100644"
     },
     {
+      "path": "docs/releases/v0.4.1-20261010/README.md",
+      "sha256": "1f119512ea339f43effde7b248174f50a3affee9a2c9eefcfbceacce90bee5e4",
+      "size_bytes": 3801,
+      "git_mode": "100644"
+    },
+    {
+      "path": "docs/releases/v0.4.1-20261010/acceptance.json",
+      "sha256": "49dc05060007eb79489692a5eb7c2dcd7b14548a94a65619e6e79e26d397d7d7",
+      "size_bytes": 8827,
+      "git_mode": "100644"
+    },
+    {
+      "path": "docs/releases/v0.4.1-20261010/source-package-verification.json",
+      "sha256": "95e708e49b71b0553cc6ce34c4969b06598c9748d9de3d3ceb44bb2b293f604a",
+      "size_bytes": 5879,
+      "git_mode": "100644",
+      "provenance": "GitHub packaging verification record"
+    },
+    {
+      "path": "docs/specs/Dormathon_Product_Specifications_v0.4.1_EN.md",
+      "sha256": "3e1926f4ec5417dda4113b044acff2f8ec54e81ece67f00f5e5d56743583c579",
+      "size_bytes": 52212,
+      "git_mode": "100644"
+    },
+    {
+      "path": "docs/specs/Dormathon_Product_Specifications_v0.4.1_ZH.md",
+      "sha256": "e241fd6b9e300a8989780b6503276801db0e00ec62dbfc040f08626864175b31",
+      "size_bytes": 43281,
+      "git_mode": "100644"
+    },
+    {
       "path": "docs/specs/PRODUCT_SPEC_v0.3.1_ZH_EN.md",
       "sha256": "4d065b8544ca6e282eac35d7b2d7dcb0075a1e58d892e7ba11fac913828d79fd",
       "size_bytes": 84912,
       "git_mode": "100644"
     },
     {
-      "path": "docs/specs/T-Dormathon_\u4ea7\u54c1\u89c4\u683c\u8bc4\u5ba1\u7a3f_v0.3.docx",
+      "path": "docs/specs/T-Dormathon_产品规格评审稿_v0.3.docx",
       "sha256": "1cc7d1f1db908b1c0d9a1634d00f4e178c0a1c98f1d59e00085798d95411a64f",
       "size_bytes": 55941,
       "git_mode": "100644"
     },
     {
-      "path": "docs/specs/T-Dormathon_\u4ea7\u54c1\u89c4\u683c\u8bc4\u5ba1\u7a3f_v0.3.md",
+      "path": "docs/specs/T-Dormathon_产品规格评审稿_v0.3.md",
       "sha256": "754e93412992086881f5d6c50f6b22668bc365eda9e463a5eb32b5e906e8f38e",
       "size_bytes": 34097,
+      "git_mode": "100644"
+    },
+    {
+      "path": "docs/specs/approval-v0.4.1.json",
+      "sha256": "4153acb639f93c363a94970e7bc009fce071b1132b12afe8531d4d3ee7c8d009",
+      "size_bytes": 335,
       "git_mode": "100644"
     },
     {
@@ -2909,8 +3191,8 @@
     },
     {
       "path": "scripts/build.mjs",
-      "sha256": "21ecd9d8f054b4f01410fe706da967fa620ee70bfc4ea8bfb5fc96cca8ae766c",
-      "size_bytes": 6603,
+      "sha256": "fc0499a2ba1bb3306bc42dc2906ce1e6b3a2903e60f4b5a9830042328b495300",
+      "size_bytes": 6983,
       "git_mode": "100644"
     },
     {
@@ -2923,6 +3205,18 @@
       "path": "scripts/collect-daily.mjs",
       "sha256": "6d01f51e19d4ccad380090ab11ef6224b75ef1540c02a90d56ea5ba541f4f430",
       "size_bytes": 2052,
+      "git_mode": "100644"
+    },
+    {
+      "path": "scripts/mrdiy/generate_fixture.py",
+      "sha256": "a74381c24549b7751affe59815bc45ac8589a6d8e6781262553e3e32de1bdadd",
+      "size_bytes": 26870,
+      "git_mode": "100644"
+    },
+    {
+      "path": "scripts/mrdiy/report_fixture.mjs",
+      "sha256": "081611852a4d936d4a93f76aeb02ad7fd5d99cf16f9f0d37e4b859ea579228fb",
+      "size_bytes": 3745,
       "git_mode": "100644"
     },
     {
@@ -4313,8 +4607,8 @@
     },
     {
       "path": "static/collector-index.html",
-      "sha256": "14aec00ed1efae0ca9dbb8aac233027e4d6978b78e23609bd52abc2ce0628fc8",
-      "size_bytes": 30000,
+      "sha256": "4546ae71b02448d978f1b0782cad8e4bd4221749ebc88f1e5b33802d476f28b9",
+      "size_bytes": 30159,
       "git_mode": "100644"
     },
     {
@@ -4333,6 +4627,18 @@
       "path": "static/history-replay.js",
       "sha256": "8f79549832dbd0812f485d32e92023dfb52b18b782573f029bd61f5c621ef930",
       "size_bytes": 23856,
+      "git_mode": "100644"
+    },
+    {
+      "path": "static/mrdiy-workspace.css",
+      "sha256": "3631cf6161311f5c577cbb7a3bc696e0f9d7d9fe67310b1c8e128e623b3c3004",
+      "size_bytes": 12328,
+      "git_mode": "100644"
+    },
+    {
+      "path": "static/mrdiy-workspace.js",
+      "sha256": "a3b51b526a33b42499f641296aaf78960ed252670a3ccfca9dd358c1e37f0250",
+      "size_bytes": 41482,
       "git_mode": "100644"
     },
     {
@@ -4379,8 +4685,8 @@
     },
     {
       "path": "tests/collector-workbench.test.mjs",
-      "sha256": "5258f6bda72e03201a0aa9a5ab904d3ac912f0696a4db0cb0d4a42585cf43b04",
-      "size_bytes": 3383,
+      "sha256": "a7558238a29903f5ab0c07daf04b3531611fd19c26e63b4964f0ce51e60414ae",
+      "size_bytes": 3778,
       "git_mode": "100644"
     },
     {
@@ -4972,6 +5278,24 @@
       "git_mode": "100644"
     },
     {
+      "path": "tests/mrdiy-app-integration.test.mjs",
+      "sha256": "7805cf77462e2b0822591ce17d0d74eb32ec05f89d999f0e76a73242420a8c13",
+      "size_bytes": 7056,
+      "git_mode": "100644"
+    },
+    {
+      "path": "tests/mrdiy-client-behavior.test.mjs",
+      "sha256": "17c988136a487aad05025e2486c0944ce1f0d890d78591e744e7a23a66bc4e74",
+      "size_bytes": 10698,
+      "git_mode": "100644"
+    },
+    {
+      "path": "tests/mrdiy-operations.test.mjs",
+      "sha256": "45346a9520794c33f80097084bf2a11ae97708557e58b307943505617d7b1446",
+      "size_bytes": 19717,
+      "git_mode": "100644"
+    },
+    {
       "path": "tests/observation-period.test.mjs",
       "sha256": "ec5b715c750941a383eca2c8161593c5652a0e1a2ecbbc552c84a9d057e86084",
       "size_bytes": 9237,
@@ -5011,6 +5335,12 @@
       "path": "tests/parity.test.mjs",
       "sha256": "828317fef9172432fba252b08164129dec60f72145ebb02f38e185ca021c0816",
       "size_bytes": 2833,
+      "git_mode": "100644"
+    },
+    {
+      "path": "tests/predictive-policy-engine.test.mjs",
+      "sha256": "b0bd4fc59a3381f1c4a3accec8326187d590029afe66504fda0688920bce03dd",
+      "size_bytes": 6337,
       "git_mode": "100644"
     },
     {
@@ -5297,8 +5627,8 @@
     },
     {
       "path": "worker/index.js",
-      "sha256": "949344af838bbec0f7034b4e29fdfc1f82d2d95d9dbf55cb8a54b2060c1146aa",
-      "size_bytes": 19010,
+      "sha256": "59417b80ecb5b250edc681dbe274d130f1683a506431afa7e4242f838acb653f",
+      "size_bytes": 20197,
       "git_mode": "100644"
     },
     {
@@ -5332,6 +5662,30 @@
       "git_mode": "100644"
     },
     {
+      "path": "worker/mrdiy-fixture.js",
+      "sha256": "3c99b947ff3056d1cfbe553460e045762f956fa489d9a98b0d615761fc9c8fa8",
+      "size_bytes": 160271,
+      "git_mode": "100644"
+    },
+    {
+      "path": "worker/mrdiy-forecast.js",
+      "sha256": "5bb442c0063b5e74ffb33ee2d52d7f8b098e48672cb66d1242a269aca4492437",
+      "size_bytes": 5277,
+      "git_mode": "100644"
+    },
+    {
+      "path": "worker/mrdiy-operations.js",
+      "sha256": "1e39d37c10297318597e39ca12b7634a829a44911e503eea37e6245e264b22ff",
+      "size_bytes": 57182,
+      "git_mode": "100644"
+    },
+    {
+      "path": "worker/mrdiy-service.js",
+      "sha256": "a8558289866a6b0479e43939a7fd124c05bcd75783b546358202a86525fc3493",
+      "size_bytes": 8975,
+      "git_mode": "100644"
+    },
+    {
       "path": "worker/operations.js",
       "sha256": "7852937f6ffdf7955ec4ac6eb6fe71758a7ad3df862bc5f1f04d7277279ee562",
       "size_bytes": 10937,
@@ -5347,6 +5701,18 @@
       "path": "worker/outcomes.js",
       "sha256": "4df97f375a7de11ba0dd261c1f8165745748b6622bd8fe03dbf78c39f32e8f57",
       "size_bytes": 20860,
+      "git_mode": "100644"
+    },
+    {
+      "path": "worker/policy-engine.js",
+      "sha256": "893aa1fbecfa0177fa1b47469d4d91efa82f8e931d006d63f3cac5ee619c7ad6",
+      "size_bytes": 10160,
+      "git_mode": "100644"
+    },
+    {
+      "path": "worker/predictive-engine.js",
+      "sha256": "2d682cce556632517f7a138ce23b1372b4f2af962060246d69ef8864df642496",
+      "size_bytes": 4669,
       "git_mode": "100644"
     },
     {
@@ -5427,8 +5793,5 @@
       "size_bytes": 25514,
       "git_mode": "100644"
     }
-  ],
-  "accepted_source_zip_sha256": "579153272a673e04611c50c3b2c118478306dfc6a7590541707b77591011da6c",
-  "asset_manifest_sha256": "bd5c96ecb380c776f137c10ab706de2da21be0109b3e03c7593cf15c8e8b987a",
-  "qualification": "All902 source blobs/modes and exact acceptedASSET-MANIFEST are retained. This additional repository export index updates the established manifest identity; prior index remains in Git history."
+  ]
 }

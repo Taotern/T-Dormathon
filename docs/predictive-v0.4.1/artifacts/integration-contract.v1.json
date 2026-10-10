@@ -1,0 +1,42 @@
+{
+  "schema_version": "dormathon.predictive.v1",
+  "engine_version": "dormathon.sales-engine.0.4.1",
+  "benchmark_report_path": "artifacts/benchmark-report.v1.json",
+  "benchmark_report_frontend_path": "data/benchmark-report.v1.json",
+  "forecast_module_path": "src/predictive-engine.mjs",
+  "policy_module_path": "src/policy-engine.mjs",
+  "benchmark_namespace": "external_uci_online_retail_ii",
+  "benchmark_mode": "EXTERNAL_BENCHMARK",
+  "report_contract": {
+    "status": "ok | partial | insufficient_data",
+    "delivery_mode": "precomputed",
+    "gates": "AC11 and AC12 with status, evidence, limitations",
+    "provenance": "source URL, DOI, license, SHA256 and profile",
+    "target_definition": "daily positive item transaction-sales units, 7 daily horizons",
+    "split": "frozen train/validation/test dates and eligible IDs hash",
+    "sample_sizes": "items/origins/prediction points, volume/sparsity groups",
+    "models": "seasonal_naive_7, moving_average_28, ridge_lag_calendar with validation/test MAE WAPE MASE",
+    "selected_model": "validation-selected, retained only if supported by test comparative uncertainty",
+    "paired_comparisons": "candidate vs each baseline with declared dependence-aware bootstrap",
+    "sensitivity": "returns, gaps and input noise",
+    "limitations": "no MRDIY accuracy, cold-start/cross-company/causal savings unsupported"
+  },
+  "forecast_request": {
+    "org_id": "caller namespace",
+    "brand_scope": "caller scope",
+    "scenarioDataMode": "SYNTHETIC_INTERNAL | EXTERNAL_BENCHMARK",
+    "item_id": "stable item key",
+    "history": "array of {date:YYYY-MM-DD,positive_sales:number|null,observation_status:observed|source_declared_complete|unknown}",
+    "knowledge_as_of": "ISO8601",
+    "world_time": "ISO8601",
+    "knowledge_mode": "scenario | retrospective_transaction_time_assumption",
+    "horizon": 7,
+    "model": "seasonal_naive_7 | moving_average_28",
+    "assumption_set_id": "immutable ref"
+  },
+  "forecast_response": "shared envelope plus target_definition, training_cutoff, model_version, prediction_type=point, forecasts [{date,horizon,predicted_units}], uncertainty=null with reason; metrics belong only to benchmark report",
+  "policy_request": "state requires initial_stock_units=usable free stock plus reserved_stock_units explicitly; on_order [{arrival_day,quantity_units}]; seven demand_by_day simulation labels; lead_time_days, review_cadence_days, supplier_capacity_units_per_day, storage_capacity_units, max_order_units, budget, reorder_point_units, fixed_order_quantity_units, safety_stock_units, procurement_cost_per_unit, order_setup_cost, holding_cost_per_unit_day, shortage_cost_per_unit, terminal_inventory_value_per_unit, currency, shortage_treatment=lost_sales; forecast_units must be supplied separately from realized future path",
+  "policy_response": "same envelope, simulated output type, no replenishment/reorder-point/forecast-informed alternatives, feasibility checks, conservation, component cost, service/shortage/stock/order metrics",
+  "policy_version": "dormathon.inventory-policy.0.4.1.1",
+  "capacity_safety": "Known free+reserved on-hand plus all committed inbound bound proposed order; forecast consumption cannot release reservations; unknown inputs fail truthfully."
+}

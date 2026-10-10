@@ -1,3 +1,4 @@
+import {MrdiyDemoService} from './mrdiy-service.js';
 import {JourneyService,replayCatalog} from './journey.js';
 import {BusinessCaseService,retainedSourceHistory} from './business-cases.js';
 import {informationTypeStatus} from './information-types.js';
@@ -26,6 +27,10 @@ export async function handleRequest(request,env,context={}){
    if(method==='GET'&&path==='/api/viewer-context')return responseJSON(200,viewerCountryContext(request));
    const store=new RiskStore(env.DB,PUBLIC_BUNDLE);await store.ensureSeed();if(path.startsWith('/api/reviewed-intake')||path.startsWith('/api/retrieval/')||path.startsWith('/api/global/')||path==='/api/workspace'||path.startsWith('/api/workspace/'))await intelEnsureRegistry(store);const workspace=(path==='/api/workspace'||path.startsWith('/api/workspace/'))?new WorkspaceService(store,env):null;const domain=url.searchParams.get('domain');if(domain&&!path.startsWith('/api/outcomes/'))validDomain(domain);
    if(method==='GET'){
+    if(path==='/api/mrdiy/scenario')return responseJSON(200,new MrdiyDemoService(store).scenario());
+    if(path==='/api/mrdiy/case')return responseJSON(200,new MrdiyDemoService(store).open(url.searchParams.get('id')));
+    if(path==='/api/mrdiy/decisions')return responseJSON(200,await new MrdiyDemoService(store).list(url.searchParams.get('case_id')));
+    if(path==='/api/mrdiy/decision')return responseJSON(200,await new MrdiyDemoService(store).reopen(url.searchParams.get('id')));
     if(path==='/api/replay/run')return responseJSON(200,await new JourneyService(store).run(url.searchParams.get('id')));
     if(path==='/api/replay/cases')return responseJSON(200,replayCatalog(url.searchParams.get('id')));
     if(path==='/api/journey/entries')return responseJSON(200,await new JourneyService(store).list(url.searchParams.get('kind'),url.searchParams.get('project_id'),url.searchParams.get('parent_id')));
@@ -62,6 +67,12 @@ export async function handleRequest(request,env,context={}){
     const body=await readJSON(request);
     if(method==='POST'){
      if(path==='/api/journey/entries')return responseJSON(200,await new JourneyService(store).submit(body));
+     if(path==='/api/mrdiy/forecast-policy')return responseJSON(200,new MrdiyDemoService(store).forecast(body));
+     if(path==='/api/mrdiy/analyze')return responseJSON(200,new MrdiyDemoService(store).analyze(body));
+     if(path==='/api/mrdiy/compare')return responseJSON(200,new MrdiyDemoService(store).compare(body));
+     if(path==='/api/mrdiy/decisions')return responseJSON(200,await new MrdiyDemoService(store).save(body));
+     if(path==='/api/mrdiy/reconstruct')return responseJSON(200,new MrdiyDemoService(store).reconstruct(body));
+     if(path==='/api/mrdiy/exposure')return responseJSON(200,new MrdiyDemoService(store).exposure(body));
      if(path==='/api/replay/lock')return responseJSON(200,await new JourneyService(store).lock(body));
      if(path==='/api/replay/advance')return responseJSON(200,await new JourneyService(store).advance(body));
      if(path==='/api/replay/method-update')return responseJSON(200,await new JourneyService(store).methodUpdate(body));

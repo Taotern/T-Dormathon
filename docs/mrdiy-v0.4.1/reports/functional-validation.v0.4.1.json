@@ -1,0 +1,763 @@
+{
+  "schema_version": "dormathon.mrdiy-functional-validation.v0.4.1",
+  "reported_at": "2026-10-10T03:57:49.068Z",
+  "node": "v24.19.0",
+  "platform": "linux",
+  "arch": "x64",
+  "integrity": {
+    "schema_version": "dormathon.mrdiy-operations.v0.4.1",
+    "status": "ok",
+    "valid": true,
+    "errors": [],
+    "warnings": [
+      "Public context has no verified historical availability/ingestion clock; strict historical factual reconstruction is not established."
+    ],
+    "counts": {
+      "cases": 40,
+      "original_ids": 14,
+      "new_ids": 26,
+      "deep_cases": 6
+    },
+    "scope": "synthetic_fixture_integrity_only_not_empirical_validation"
+  },
+  "cases": [
+    {
+      "case_id": "demo_supply_01",
+      "scenario_ref": "SC01",
+      "category": "supply",
+      "state": "risk",
+      "deep_demo": true,
+      "open": true,
+      "analysis_status": "ok",
+      "action_count": 5,
+      "feasible_actions": [
+        "no_action",
+        "practical_rule",
+        "replenish",
+        "expedite"
+      ],
+      "decision_reopened": true,
+      "decision_bytes": 191344,
+      "numeric_risk_probabilities": 0
+    },
+    {
+      "case_id": "demo_supply_02",
+      "scenario_ref": "SC02",
+      "category": "supply",
+      "state": "risk",
+      "deep_demo": true,
+      "open": true,
+      "analysis_status": "ok",
+      "action_count": 5,
+      "feasible_actions": [
+        "no_action",
+        "practical_rule",
+        "replenish",
+        "expedite"
+      ],
+      "decision_reopened": true,
+      "decision_bytes": 191334,
+      "numeric_risk_probabilities": 0
+    },
+    {
+      "case_id": "demo_supply_03",
+      "scenario_ref": "SC03",
+      "category": "supply",
+      "state": "action_needed",
+      "deep_demo": false,
+      "open": true,
+      "analysis_status": "ok",
+      "action_count": 4,
+      "feasible_actions": [
+        "no_action",
+        "practical_rule",
+        "replenish"
+      ],
+      "decision_reopened": true,
+      "decision_bytes": 187045,
+      "numeric_risk_probabilities": 0
+    },
+    {
+      "case_id": "demo_supply_04",
+      "scenario_ref": "SC04",
+      "category": "supply",
+      "state": "risk",
+      "deep_demo": false,
+      "open": true,
+      "analysis_status": "ok",
+      "action_count": 5,
+      "feasible_actions": [
+        "no_action",
+        "practical_rule",
+        "replenish",
+        "receipt_review"
+      ],
+      "decision_reopened": true,
+      "decision_bytes": 191666,
+      "numeric_risk_probabilities": 0
+    },
+    {
+      "case_id": "mrdiy_supply_05",
+      "scenario_ref": "SC05",
+      "category": "supply",
+      "state": "action_needed",
+      "deep_demo": false,
+      "open": true,
+      "analysis_status": "ok",
+      "action_count": 4,
+      "feasible_actions": [
+        "no_action",
+        "practical_rule",
+        "replenish"
+      ],
+      "decision_reopened": true,
+      "decision_bytes": 187096,
+      "numeric_risk_probabilities": 0
+    },
+    {
+      "case_id": "mrdiy_supply_06",
+      "scenario_ref": "SC06",
+      "category": "supply",
+      "state": "action_needed",
+      "deep_demo": false,
+      "open": true,
+      "analysis_status": "ok",
+      "action_count": 5,
+      "feasible_actions": [
+        "no_action",
+        "practical_rule"
+      ],
+      "decision_reopened": true,
+      "decision_bytes": 191324,
+      "numeric_risk_probabilities": 0
+    },
+    {
+      "case_id": "mrdiy_supply_07",
+      "scenario_ref": "SC07",
+      "category": "supply",
+      "state": "risk",
+      "deep_demo": false,
+      "open": true,
+      "analysis_status": "ok",
+      "action_count": 4,
+      "feasible_actions": [
+        "no_action",
+        "practical_rule"
+      ],
+      "decision_reopened": true,
+      "decision_bytes": 187608,
+      "numeric_risk_probabilities": 0
+    },
+    {
+      "case_id": "mrdiy_supply_08",
+      "scenario_ref": "SC08",
+      "category": "supply",
+      "state": "risk",
+      "deep_demo": false,
+      "open": true,
+      "analysis_status": "ok",
+      "action_count": 5,
+      "feasible_actions": [
+        "no_action",
+        "practical_rule",
+        "replenish",
+        "expedite"
+      ],
+      "decision_reopened": true,
+      "decision_bytes": 191390,
+      "numeric_risk_probabilities": 0
+    },
+    {
+      "case_id": "mrdiy_supply_09",
+      "scenario_ref": "SC09",
+      "category": "supply",
+      "state": "risk",
+      "deep_demo": false,
+      "open": true,
+      "analysis_status": "ok",
+      "action_count": 4,
+      "feasible_actions": [
+        "no_action"
+      ],
+      "decision_reopened": true,
+      "decision_bytes": 187086,
+      "numeric_risk_probabilities": 0
+    },
+    {
+      "case_id": "mrdiy_supply_10",
+      "scenario_ref": "SC10",
+      "category": "supply",
+      "state": "action_needed",
+      "deep_demo": false,
+      "open": true,
+      "analysis_status": "ok",
+      "action_count": 5,
+      "feasible_actions": [
+        "no_action",
+        "practical_rule",
+        "replenish",
+        "consolidate"
+      ],
+      "decision_reopened": true,
+      "decision_bytes": 191285,
+      "numeric_risk_probabilities": 0
+    },
+    {
+      "case_id": "mrdiy_supply_11",
+      "scenario_ref": "SC11",
+      "category": "supply",
+      "state": "action_needed",
+      "deep_demo": false,
+      "open": true,
+      "analysis_status": "ok",
+      "action_count": 5,
+      "feasible_actions": [
+        "no_action",
+        "practical_rule",
+        "replenish",
+        "consolidate"
+      ],
+      "decision_reopened": true,
+      "decision_bytes": 191277,
+      "numeric_risk_probabilities": 0
+    },
+    {
+      "case_id": "mrdiy_supply_12",
+      "scenario_ref": "SC12",
+      "category": "supply",
+      "state": "action_needed",
+      "deep_demo": false,
+      "open": true,
+      "analysis_status": "ok",
+      "action_count": 5,
+      "feasible_actions": [
+        "no_action",
+        "practical_rule",
+        "replenish",
+        "review_return"
+      ],
+      "decision_reopened": true,
+      "decision_bytes": 191251,
+      "numeric_risk_probabilities": 0
+    },
+    {
+      "case_id": "mrdiy_supply_13",
+      "scenario_ref": "SC13",
+      "category": "supply",
+      "state": "action_needed",
+      "deep_demo": false,
+      "open": true,
+      "analysis_status": "ok",
+      "action_count": 5,
+      "feasible_actions": [
+        "no_action",
+        "practical_rule",
+        "replenish",
+        "receipt_review"
+      ],
+      "decision_reopened": true,
+      "decision_bytes": 191691,
+      "numeric_risk_probabilities": 0
+    },
+    {
+      "case_id": "mrdiy_supply_14",
+      "scenario_ref": "SC14",
+      "category": "supply",
+      "state": "action_needed",
+      "deep_demo": false,
+      "open": true,
+      "analysis_status": "ok",
+      "action_count": 5,
+      "feasible_actions": [
+        "no_action",
+        "practical_rule",
+        "replenish",
+        "expedite"
+      ],
+      "decision_reopened": true,
+      "decision_bytes": 191084,
+      "numeric_risk_probabilities": 0
+    },
+    {
+      "case_id": "mrdiy_supply_15",
+      "scenario_ref": "SC15",
+      "category": "supply",
+      "state": "normal",
+      "deep_demo": false,
+      "open": true,
+      "analysis_status": "ok",
+      "action_count": 4,
+      "feasible_actions": [
+        "no_action",
+        "practical_rule",
+        "replenish"
+      ],
+      "decision_reopened": true,
+      "decision_bytes": 186063,
+      "numeric_risk_probabilities": 0
+    },
+    {
+      "case_id": "mrdiy_supply_16",
+      "scenario_ref": "SC16",
+      "category": "supply",
+      "state": "unknown",
+      "deep_demo": false,
+      "open": true,
+      "analysis_status": "insufficient_data",
+      "action_count": 2,
+      "feasible_actions": [
+        "practical_rule"
+      ],
+      "decision_reopened": true,
+      "decision_bytes": 174823,
+      "numeric_risk_probabilities": 0
+    },
+    {
+      "case_id": "demo_procurement_01",
+      "scenario_ref": "SC17",
+      "category": "procurement",
+      "state": "risk",
+      "deep_demo": true,
+      "open": true,
+      "analysis_status": "ok",
+      "action_count": 4,
+      "feasible_actions": [
+        "no_action",
+        "practical_rule"
+      ],
+      "decision_reopened": true,
+      "decision_bytes": 180734,
+      "numeric_risk_probabilities": 0
+    },
+    {
+      "case_id": "demo_procurement_02",
+      "scenario_ref": "SC18",
+      "category": "procurement",
+      "state": "action_needed",
+      "deep_demo": true,
+      "open": true,
+      "analysis_status": "ok",
+      "action_count": 4,
+      "feasible_actions": [
+        "no_action",
+        "practical_rule"
+      ],
+      "decision_reopened": true,
+      "decision_bytes": 180746,
+      "numeric_risk_probabilities": 0
+    },
+    {
+      "case_id": "demo_procurement_03",
+      "scenario_ref": "SC19",
+      "category": "procurement",
+      "state": "risk",
+      "deep_demo": false,
+      "open": true,
+      "analysis_status": "ok",
+      "action_count": 4,
+      "feasible_actions": [
+        "no_action",
+        "practical_rule"
+      ],
+      "decision_reopened": true,
+      "decision_bytes": 180897,
+      "numeric_risk_probabilities": 0
+    },
+    {
+      "case_id": "demo_procurement_04",
+      "scenario_ref": "SC20",
+      "category": "procurement",
+      "state": "action_needed",
+      "deep_demo": false,
+      "open": true,
+      "analysis_status": "ok",
+      "action_count": 4,
+      "feasible_actions": [
+        "no_action",
+        "practical_rule"
+      ],
+      "decision_reopened": true,
+      "decision_bytes": 180660,
+      "numeric_risk_probabilities": 0
+    },
+    {
+      "case_id": "mrdiy_procurement_05",
+      "scenario_ref": "SC21",
+      "category": "procurement",
+      "state": "risk",
+      "deep_demo": false,
+      "open": true,
+      "analysis_status": "ok",
+      "action_count": 4,
+      "feasible_actions": [
+        "no_action",
+        "practical_rule"
+      ],
+      "decision_reopened": true,
+      "decision_bytes": 180730,
+      "numeric_risk_probabilities": 0
+    },
+    {
+      "case_id": "mrdiy_procurement_06",
+      "scenario_ref": "SC22",
+      "category": "procurement",
+      "state": "action_needed",
+      "deep_demo": false,
+      "open": true,
+      "analysis_status": "ok",
+      "action_count": 4,
+      "feasible_actions": [
+        "no_action",
+        "practical_rule",
+        "schedule_payment"
+      ],
+      "decision_reopened": true,
+      "decision_bytes": 180826,
+      "numeric_risk_probabilities": 0
+    },
+    {
+      "case_id": "mrdiy_procurement_07",
+      "scenario_ref": "SC23",
+      "category": "procurement",
+      "state": "action_needed",
+      "deep_demo": false,
+      "open": true,
+      "analysis_status": "ok",
+      "action_count": 4,
+      "feasible_actions": [
+        "no_action",
+        "practical_rule"
+      ],
+      "decision_reopened": true,
+      "decision_bytes": 180829,
+      "numeric_risk_probabilities": 0
+    },
+    {
+      "case_id": "mrdiy_procurement_08",
+      "scenario_ref": "SC24",
+      "category": "procurement",
+      "state": "risk",
+      "deep_demo": false,
+      "open": true,
+      "analysis_status": "ok",
+      "action_count": 5,
+      "feasible_actions": [
+        "no_action",
+        "practical_rule",
+        "budget_priority"
+      ],
+      "decision_reopened": true,
+      "decision_bytes": 182921,
+      "numeric_risk_probabilities": 0
+    },
+    {
+      "case_id": "mrdiy_procurement_09",
+      "scenario_ref": "SC25",
+      "category": "procurement",
+      "state": "normal",
+      "deep_demo": false,
+      "open": true,
+      "analysis_status": "ok",
+      "action_count": 4,
+      "feasible_actions": [
+        "no_action",
+        "practical_rule",
+        "schedule_payment"
+      ],
+      "decision_reopened": true,
+      "decision_bytes": 179616,
+      "numeric_risk_probabilities": 0
+    },
+    {
+      "case_id": "mrdiy_procurement_10",
+      "scenario_ref": "SC26",
+      "category": "procurement",
+      "state": "unknown",
+      "deep_demo": false,
+      "open": true,
+      "analysis_status": "insufficient_data",
+      "action_count": 2,
+      "feasible_actions": [
+        "practical_rule"
+      ],
+      "decision_reopened": true,
+      "decision_bytes": 175680,
+      "numeric_risk_probabilities": 0
+    },
+    {
+      "case_id": "demo_service_01",
+      "scenario_ref": "SC27",
+      "category": "service",
+      "state": "risk",
+      "deep_demo": true,
+      "open": true,
+      "analysis_status": "ok",
+      "action_count": 4,
+      "feasible_actions": [
+        "no_action",
+        "practical_rule",
+        "reassign"
+      ],
+      "decision_reopened": true,
+      "decision_bytes": 180067,
+      "numeric_risk_probabilities": 0
+    },
+    {
+      "case_id": "demo_service_02",
+      "scenario_ref": "SC28",
+      "category": "service",
+      "state": "action_needed",
+      "deep_demo": false,
+      "open": true,
+      "analysis_status": "ok",
+      "action_count": 5,
+      "feasible_actions": [
+        "no_action",
+        "practical_rule",
+        "reassign",
+        "quarantine_return"
+      ],
+      "decision_reopened": true,
+      "decision_bytes": 181582,
+      "numeric_risk_probabilities": 0
+    },
+    {
+      "case_id": "demo_service_03",
+      "scenario_ref": "SC29",
+      "category": "service",
+      "state": "action_needed",
+      "deep_demo": false,
+      "open": true,
+      "analysis_status": "ok",
+      "action_count": 4,
+      "feasible_actions": [
+        "no_action",
+        "practical_rule",
+        "reassign"
+      ],
+      "decision_reopened": true,
+      "decision_bytes": 179528,
+      "numeric_risk_probabilities": 0
+    },
+    {
+      "case_id": "demo_service_04",
+      "scenario_ref": "SC30",
+      "category": "service",
+      "state": "action_needed",
+      "deep_demo": false,
+      "open": true,
+      "analysis_status": "ok",
+      "action_count": 4,
+      "feasible_actions": [
+        "no_action",
+        "practical_rule",
+        "reassign"
+      ],
+      "decision_reopened": true,
+      "decision_bytes": 179530,
+      "numeric_risk_probabilities": 0
+    },
+    {
+      "case_id": "mrdiy_service_05",
+      "scenario_ref": "SC31",
+      "category": "service",
+      "state": "risk",
+      "deep_demo": false,
+      "open": true,
+      "analysis_status": "ok",
+      "action_count": 4,
+      "feasible_actions": [
+        "no_action",
+        "reassign"
+      ],
+      "decision_reopened": true,
+      "decision_bytes": 179540,
+      "numeric_risk_probabilities": 0
+    },
+    {
+      "case_id": "mrdiy_service_06",
+      "scenario_ref": "SC32",
+      "category": "service",
+      "state": "normal",
+      "deep_demo": false,
+      "open": true,
+      "analysis_status": "ok",
+      "action_count": 4,
+      "feasible_actions": [
+        "no_action",
+        "practical_rule",
+        "reassign"
+      ],
+      "decision_reopened": true,
+      "decision_bytes": 176902,
+      "numeric_risk_probabilities": 0
+    },
+    {
+      "case_id": "mrdiy_service_07",
+      "scenario_ref": "SC33",
+      "category": "service",
+      "state": "normal",
+      "deep_demo": false,
+      "open": true,
+      "analysis_status": "ok",
+      "action_count": 4,
+      "feasible_actions": [
+        "no_action",
+        "practical_rule",
+        "reassign"
+      ],
+      "decision_reopened": true,
+      "decision_bytes": 176945,
+      "numeric_risk_probabilities": 0
+    },
+    {
+      "case_id": "mrdiy_service_08",
+      "scenario_ref": "SC34",
+      "category": "service",
+      "state": "unknown",
+      "deep_demo": false,
+      "open": true,
+      "analysis_status": "insufficient_data",
+      "action_count": 2,
+      "feasible_actions": [
+        "practical_rule"
+      ],
+      "decision_reopened": true,
+      "decision_bytes": 174600,
+      "numeric_risk_probabilities": 0
+    },
+    {
+      "case_id": "demo_energy_01",
+      "scenario_ref": "SC35",
+      "category": "energy",
+      "state": "risk",
+      "deep_demo": true,
+      "open": true,
+      "analysis_status": "ok",
+      "action_count": 5,
+      "feasible_actions": [
+        "no_action",
+        "prioritize_safe_load",
+        "reallocate_queue"
+      ],
+      "decision_reopened": true,
+      "decision_bytes": 183605,
+      "numeric_risk_probabilities": 0
+    },
+    {
+      "case_id": "demo_energy_02",
+      "scenario_ref": "SC36",
+      "category": "energy",
+      "state": "risk",
+      "deep_demo": false,
+      "open": true,
+      "analysis_status": "ok",
+      "action_count": 5,
+      "feasible_actions": [
+        "no_action",
+        "prioritize_safe_load",
+        "reallocate_queue"
+      ],
+      "decision_reopened": true,
+      "decision_bytes": 183148,
+      "numeric_risk_probabilities": 0
+    },
+    {
+      "case_id": "mrdiy_energy_03",
+      "scenario_ref": "SC37",
+      "category": "energy",
+      "state": "action_needed",
+      "deep_demo": false,
+      "open": true,
+      "analysis_status": "ok",
+      "action_count": 3,
+      "feasible_actions": [
+        "no_action",
+        "practical_rule"
+      ],
+      "decision_reopened": true,
+      "decision_bytes": 177055,
+      "numeric_risk_probabilities": 0
+    },
+    {
+      "case_id": "mrdiy_energy_04",
+      "scenario_ref": "SC38",
+      "category": "energy",
+      "state": "risk",
+      "deep_demo": false,
+      "open": true,
+      "analysis_status": "ok",
+      "action_count": 5,
+      "feasible_actions": [
+        "no_action",
+        "prioritize_safe_load",
+        "reallocate_queue"
+      ],
+      "decision_reopened": true,
+      "decision_bytes": 183468,
+      "numeric_risk_probabilities": 0
+    },
+    {
+      "case_id": "mrdiy_energy_05",
+      "scenario_ref": "SC39",
+      "category": "energy",
+      "state": "normal",
+      "deep_demo": false,
+      "open": true,
+      "analysis_status": "ok",
+      "action_count": 5,
+      "feasible_actions": [
+        "no_action",
+        "prioritize_safe_load",
+        "reallocate_queue"
+      ],
+      "decision_reopened": true,
+      "decision_bytes": 182342,
+      "numeric_risk_probabilities": 0
+    },
+    {
+      "case_id": "mrdiy_energy_06",
+      "scenario_ref": "SC40",
+      "category": "energy",
+      "state": "unknown",
+      "deep_demo": false,
+      "open": true,
+      "analysis_status": "insufficient_data",
+      "action_count": 2,
+      "feasible_actions": [
+        "practical_rule"
+      ],
+      "decision_reopened": true,
+      "decision_bytes": 175504,
+      "numeric_risk_probabilities": 0
+    }
+  ],
+  "performance": {
+    "scope": "in-process open+analyze+compare triplet, not UI/network p95",
+    "samples": 400,
+    "p50_ms": 0.3204649999998992,
+    "p95_ms": 0.550057000000038
+  },
+  "acceptance_scope": {
+    "AC01": "bounded pure inventory conservation/constraints tested",
+    "AC02": "bounded pure PO/receipt/invoice/calendar/ledger tests",
+    "AC03": "bounded pure service/role/censoring tests",
+    "AC04": "all six functional energy cases and safety/runtime tests",
+    "AC05": "synthetic provenance and non-causal/unknown labels tested; no empirical facts validated",
+    "AC06": "generic temporal adversarial tests; blind generalized entity-resolution study not evaluated",
+    "AC07": "hard-constraint mechanics tested; empirical warnings/utility not evaluated here",
+    "AC08": "40 pure workflows and stable crosswalk tested; browser/usability/ordinary-view latency require canonical integration",
+    "AC09": "exact fixture exposure/time/calendar tests; current real counterparty history not supplied",
+    "AC10": "role/privacy fixtures tested; legal compliance certification not claimed",
+    "AC11": "not evaluated in this operational package",
+    "AC12": "not evaluated in this operational package"
+  },
+  "sources_sha256": {
+    "worker/mrdiy-fixture.js": "3c99b947ff3056d1cfbe553460e045762f956fa489d9a98b0d615761fc9c8fa8",
+    "worker/mrdiy-operations.js": "a1266dd785531d5426f040dbc93b6c643d9712e5002ed1b474fc4eb198542f5e",
+    "data/prototype/mrdiy-demo.v0.4.1.json": "8533f68a6426bf0da13778d69c09f739a0ec9317f9cad4ecdb23d310cf581224",
+    "data/prototype/mrdiy-case-crosswalk.v0.4.1.json": "d31003edba658c40af1b97011f2028f2fc82f0c060082032eeba0c8901ebc59f",
+    "contracts/mrdiy-operations.v0.4.1.json": "88d8fa3db99a1277778a2f4208a5f1ff248c52b168abba893e30876a0a632953",
+    "tests/mrdiy-operations.test.mjs": "74fb14d904f104eaa2eece75dee8d8f8bb982f4b95c9648ee6805a95673a2a9b"
+  }
+}

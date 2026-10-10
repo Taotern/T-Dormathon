@@ -1,0 +1,47 @@
+{
+  "schema_version": "dormathon.simulation-config.v1",
+  "version": "inventory-assumptions.0.4.1.1",
+  "currency": "GBP",
+  "initial_stock_rule": "ceil(training-only average daily positive sales * 3); illustrative assumption",
+  "initial_stock_cover_days": 3,
+  "on_order_units": 0,
+  "reserved_stock_units": 0,
+  "lead_time_days": 3,
+  "review_cadence_days": 1,
+  "supplier_capacity_rule": "ceil(max(training mean,1)*3) per item per day",
+  "max_order_rule": "ceil(max(training mean,1)*3)",
+  "storage_capacity_rule": "ceil(max(training mean,1)*10)",
+  "budget_rule": "max(training mean,1)*20 currency units per item episode",
+  "unit_procurement_cost": 1.0,
+  "order_setup_cost": 0.25,
+  "holding_cost_per_unit_day": 0.01,
+  "shortage_cost_per_unit": 4.0,
+  "terminal_inventory_value_per_unit": 1.0,
+  "shortage_treatment": "lost_sales",
+  "safety_stock_rule": "ceil(training mean)",
+  "fixed_order_rule": "ceil(max(training mean,1)*3)",
+  "reorder_point_rule": "ceil(training mean*3)",
+  "alert_unit": "SKU x nonoverlapping seven-calendar-day episode; one warning at day 0, deduplicated per episode",
+  "event_definition": "any unserved positive-sales unit under assumed no-replenishment inventory within seven days",
+  "threshold_candidates": [
+    0.75,
+    1,
+    1.25,
+    1.5,
+    2.0
+  ],
+  "threshold_validation_cost": "false_positive * 1 + false_negative * 4; 1 and 4 are declared utility weights, not real costs",
+  "lead_time_sensitivity_days": [
+    1,
+    3,
+    5
+  ],
+  "shortage_penalty_sensitivity_per_unit": [
+    1,
+    4,
+    10
+  ],
+  "assumption_owner_role": "engineering implementation within approved scenario scope",
+  "basis": "Illustrative bounded inventory mechanics; no recovered operational facts or calibrated monetary savings.",
+  "capacity_safety_rule": "v0.4.1.1 reservation: proposed orders bounded by current known on-hand + all outstanding committed inbound; no forecast future sales release capacity. Original v0.4.1 unsafe study is retained separately."
+}

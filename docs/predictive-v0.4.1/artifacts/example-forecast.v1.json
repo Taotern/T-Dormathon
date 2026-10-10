@@ -1,0 +1,75 @@
+{
+  "schema_version": "dormathon.forecast.v1",
+  "org_id": "external_uci_online_retail_ii",
+  "brand_scope": "Original single UK non-store retailer, 2009\u20132011",
+  "scenarioDataMode": "EXTERNAL_BENCHMARK",
+  "status": "ok",
+  "delivery_mode": "precomputed",
+  "item_id": "uci_sku_10002",
+  "target_definition": "Daily positive item transaction sales, units, seven daily horizons; observed-sales demand proxy, not latent demand",
+  "knowledge_mode": "retrospective_transaction_time_assumption",
+  "knowledge_as_of": "2011-12-08T23:59:59",
+  "world_time": "2011-12-08",
+  "training_cutoff": "2011-12-08",
+  "assumption_set_id": "uci_ledger_observability.v1",
+  "model_version": "dormathon.sales-engine.0.4.1:moving_average_28",
+  "prediction_type": "point",
+  "uncertainty": null,
+  "uncertainty_reason": "Point-only study; no calibrated prediction interval",
+  "provenance_refs": [
+    "uci-online-retail-ii:sha256:bcbe73b35f5b7babf197fb0cb983a11f5d9ff929078d4aa53d171b1f2df2e980"
+  ],
+  "input_refs": [
+    "0bed7aab01d16cf54f4104532f1a6c7ae86b1bf1e092b45fb99fdb00ede141f8"
+  ],
+  "data_revision": "bcbe73b35f5b7babf197fb0cb983a11f5d9ff929078d4aa53d171b1f2df2e980",
+  "request_id": "uci-example-seven-day-v1",
+  "warnings": [
+    "Point forecasts only: calibrated prediction intervals are not produced.",
+    "No empirical MR D.I.Y. accuracy claim; synthetic company mechanics are separate.",
+    "No inventory, lead-time, stockout, delivery or operating-cost ground truth.",
+    "Known-item temporal evaluation only; cold-start and cross-company performance not established.",
+    "Retrospective transaction-time availability assumption; historical system-known replay and late-update logs unavailable.",
+    "Complete-ledger observation scope is source-declared, not independently audited; missing SKU-day zeros mean zero recorded positive sales, never latent demand."
+  ],
+  "forecasts": [
+    {
+      "date": "2011-12-09",
+      "horizon": 1,
+      "predicted_units": 0.0
+    },
+    {
+      "date": "2011-12-10",
+      "horizon": 2,
+      "predicted_units": 0.0
+    },
+    {
+      "date": "2011-12-11",
+      "horizon": 3,
+      "predicted_units": 0.0
+    },
+    {
+      "date": "2011-12-12",
+      "horizon": 4,
+      "predicted_units": 0.0
+    },
+    {
+      "date": "2011-12-13",
+      "horizon": 5,
+      "predicted_units": 0.0
+    },
+    {
+      "date": "2011-12-14",
+      "horizon": 6,
+      "predicted_units": 0.0
+    },
+    {
+      "date": "2011-12-15",
+      "horizon": 7,
+      "predicted_units": 0.0
+    }
+  ],
+  "population_eligibility_cutoff": "2011-10-13",
+  "feature_information_cutoff": "2011-12-08",
+  "forecast_origin": "2011-12-08"
+}

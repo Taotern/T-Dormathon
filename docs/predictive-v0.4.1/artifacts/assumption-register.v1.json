@@ -1,0 +1,190 @@
+{
+  "schema_version": "dormathon.assumption-register.v1",
+  "scenario_version": "inventory-assumptions.0.4.1.1",
+  "owner_role": "engineering implementation",
+  "parameters": [
+    {
+      "parameter": "initial_stock_cover_days",
+      "unit": "days",
+      "value": 3,
+      "plausible_range": [
+        1,
+        7
+      ],
+      "basis": "Illustrative stock coverage; ceil(training mean*3)",
+      "owner_role": "engineering implementation",
+      "scenario_version": "inventory-assumptions.0.4.1.1",
+      "sensitivity_tested": false
+    },
+    {
+      "parameter": "reserved_stock_units",
+      "unit": "units",
+      "value": 0,
+      "plausible_range": [
+        0,
+        0
+      ],
+      "basis": "Explicitly no reserved commitments in external sandbox",
+      "owner_role": "engineering implementation",
+      "scenario_version": "inventory-assumptions.0.4.1.1",
+      "sensitivity_tested": false
+    },
+    {
+      "parameter": "on_order_units",
+      "unit": "units",
+      "value": 0,
+      "plausible_range": [
+        0,
+        0
+      ],
+      "basis": "No observed inbound; explicitly assume none",
+      "owner_role": "engineering implementation",
+      "scenario_version": "inventory-assumptions.0.4.1.1",
+      "sensitivity_tested": false
+    },
+    {
+      "parameter": "lead_time_days",
+      "unit": "calendar days",
+      "value": 3,
+      "plausible_range": [
+        1,
+        5
+      ],
+      "basis": "Invented scenario transition; tested1/3/5",
+      "owner_role": "engineering implementation",
+      "scenario_version": "inventory-assumptions.0.4.1.1",
+      "sensitivity_tested": true
+    },
+    {
+      "parameter": "review_cadence_days",
+      "unit": "calendar days",
+      "value": 1,
+      "plausible_range": [
+        1,
+        1
+      ],
+      "basis": "Daily rule review",
+      "owner_role": "engineering implementation",
+      "scenario_version": "inventory-assumptions.0.4.1.1",
+      "sensitivity_tested": false
+    },
+    {
+      "parameter": "procurement_cost_per_unit",
+      "unit": "GBP/unit",
+      "value": 1,
+      "plausible_range": [
+        0.5,
+        2
+      ],
+      "basis": "Illustrative value, unrelated to recorded sale price",
+      "owner_role": "engineering implementation",
+      "scenario_version": "inventory-assumptions.0.4.1.1",
+      "sensitivity_tested": false
+    },
+    {
+      "parameter": "order_setup_cost",
+      "unit": "GBP/order",
+      "value": 0.25,
+      "plausible_range": [
+        0,
+        1
+      ],
+      "basis": "Illustrative fixed transaction cost",
+      "owner_role": "engineering implementation",
+      "scenario_version": "inventory-assumptions.0.4.1.1",
+      "sensitivity_tested": false
+    },
+    {
+      "parameter": "holding_cost_per_unit_day",
+      "unit": "GBP/unit/day",
+      "value": 0.01,
+      "plausible_range": [
+        0,
+        0.05
+      ],
+      "basis": "Illustrative daily storage cost",
+      "owner_role": "engineering implementation",
+      "scenario_version": "inventory-assumptions.0.4.1.1",
+      "sensitivity_tested": false
+    },
+    {
+      "parameter": "shortage_cost_per_unit",
+      "unit": "GBP/unserved unit",
+      "value": 4,
+      "plausible_range": [
+        1,
+        10
+      ],
+      "basis": "Invented penalty, tested1/4/10 relative to unit procurement1",
+      "owner_role": "engineering implementation",
+      "scenario_version": "inventory-assumptions.0.4.1.1",
+      "sensitivity_tested": true
+    },
+    {
+      "parameter": "terminal_inventory_value_per_unit",
+      "unit": "GBP/on-hand unit",
+      "value": 1,
+      "plausible_range": [
+        0,
+        1
+      ],
+      "basis": "Inventory credit at procurement value; no terminal credit for on-order",
+      "owner_role": "engineering implementation",
+      "scenario_version": "inventory-assumptions.0.4.1.1",
+      "sensitivity_tested": false
+    },
+    {
+      "parameter": "supplier_capacity_units_per_day",
+      "unit": "units/day",
+      "value": "ceil(max(training mean,1)*3)",
+      "plausible_range": "[1, max training mean x3]",
+      "basis": "Declared scale-dependent capacity, not observed supplier history",
+      "owner_role": "engineering implementation",
+      "scenario_version": "inventory-assumptions.0.4.1.1",
+      "sensitivity_tested": false
+    },
+    {
+      "parameter": "storage_capacity_units",
+      "unit": "units",
+      "value": "ceil(max(training mean,1)*10)",
+      "plausible_range": "[10, max training mean x10]",
+      "basis": "Declared hard storage assumption, conservative free+reserved+inbound safety reservation",
+      "owner_role": "engineering implementation",
+      "scenario_version": "inventory-assumptions.0.4.1.1",
+      "sensitivity_tested": false
+    },
+    {
+      "parameter": "budget",
+      "unit": "GBP/episode",
+      "value": "max(training mean,1)*20",
+      "plausible_range": "[20, max training mean x20]",
+      "basis": "Declared isolated SKU-week budget; not company account assets",
+      "owner_role": "engineering implementation",
+      "scenario_version": "inventory-assumptions.0.4.1.1",
+      "sensitivity_tested": false
+    },
+    {
+      "parameter": "safety_stock_units",
+      "unit": "units",
+      "value": "ceil(training mean)",
+      "plausible_range": "[0, max training mean]",
+      "basis": "Illustrative buffer; no actual inventory evidence",
+      "owner_role": "engineering implementation",
+      "scenario_version": "inventory-assumptions.0.4.1.1",
+      "sensitivity_tested": false
+    },
+    {
+      "parameter": "shortage_treatment",
+      "unit": "category",
+      "value": "lost_sales",
+      "plausible_range": [
+        "lost_sales"
+      ],
+      "basis": "Backorders unsupported; not identified by transaction ledger",
+      "owner_role": "engineering implementation",
+      "scenario_version": "inventory-assumptions.0.4.1.1",
+      "sensitivity_tested": false
+    }
+  ],
+  "scope_note": "Plausible ranges are declared engineering exploration bounds, not statistically estimated or externally validated business ranges. Only lead-time and shortage-ratio grid was tested. Values remain scenario facts, never recovered operating facts."
+}

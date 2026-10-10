@@ -1,0 +1,402 @@
+[
+  {
+    "scenario_ref": "SC01",
+    "case_id": "demo_supply_01",
+    "original_case_id": "demo_supply_01",
+    "migration": "preserved_id_revised_synthetic_scope",
+    "original_fixture_version": "business-demo-v1",
+    "current_fixture_version": "mrdiy-demo-v0.4.1",
+    "legacy_content_preserved_in_repository_history": true,
+    "scope_change_note": "ID preserved; fictional campus content replaced by approved MR. DIY Malaysia synthetic workflow"
+  },
+  {
+    "scenario_ref": "SC02",
+    "case_id": "demo_supply_02",
+    "original_case_id": "demo_supply_02",
+    "migration": "preserved_id_revised_synthetic_scope",
+    "original_fixture_version": "business-demo-v1",
+    "current_fixture_version": "mrdiy-demo-v0.4.1",
+    "legacy_content_preserved_in_repository_history": true,
+    "scope_change_note": "ID preserved; fictional campus content replaced by approved MR. DIY Malaysia synthetic workflow"
+  },
+  {
+    "scenario_ref": "SC03",
+    "case_id": "demo_supply_03",
+    "original_case_id": "demo_supply_03",
+    "migration": "preserved_id_revised_synthetic_scope",
+    "original_fixture_version": "business-demo-v1",
+    "current_fixture_version": "mrdiy-demo-v0.4.1",
+    "legacy_content_preserved_in_repository_history": true,
+    "scope_change_note": "ID preserved; fictional campus content replaced by approved MR. DIY Malaysia synthetic workflow"
+  },
+  {
+    "scenario_ref": "SC04",
+    "case_id": "demo_supply_04",
+    "original_case_id": "demo_supply_04",
+    "migration": "preserved_id_revised_synthetic_scope",
+    "original_fixture_version": "business-demo-v1",
+    "current_fixture_version": "mrdiy-demo-v0.4.1",
+    "legacy_content_preserved_in_repository_history": true,
+    "scope_change_note": "ID preserved; fictional campus content replaced by approved MR. DIY Malaysia synthetic workflow"
+  },
+  {
+    "scenario_ref": "SC05",
+    "case_id": "mrdiy_supply_05",
+    "original_case_id": null,
+    "migration": "new_unique_id",
+    "original_fixture_version": null,
+    "current_fixture_version": "mrdiy-demo-v0.4.1",
+    "legacy_content_preserved_in_repository_history": false,
+    "scope_change_note": "Approved expansion"
+  },
+  {
+    "scenario_ref": "SC06",
+    "case_id": "mrdiy_supply_06",
+    "original_case_id": null,
+    "migration": "new_unique_id",
+    "original_fixture_version": null,
+    "current_fixture_version": "mrdiy-demo-v0.4.1",
+    "legacy_content_preserved_in_repository_history": false,
+    "scope_change_note": "Approved expansion"
+  },
+  {
+    "scenario_ref": "SC07",
+    "case_id": "mrdiy_supply_07",
+    "original_case_id": null,
+    "migration": "new_unique_id",
+    "original_fixture_version": null,
+    "current_fixture_version": "mrdiy-demo-v0.4.1",
+    "legacy_content_preserved_in_repository_history": false,
+    "scope_change_note": "Approved expansion"
+  },
+  {
+    "scenario_ref": "SC08",
+    "case_id": "mrdiy_supply_08",
+    "original_case_id": null,
+    "migration": "new_unique_id",
+    "original_fixture_version": null,
+    "current_fixture_version": "mrdiy-demo-v0.4.1",
+    "legacy_content_preserved_in_repository_history": false,
+    "scope_change_note": "Approved expansion"
+  },
+  {
+    "scenario_ref": "SC09",
+    "case_id": "mrdiy_supply_09",
+    "original_case_id": null,
+    "migration": "new_unique_id",
+    "original_fixture_version": null,
+    "current_fixture_version": "mrdiy-demo-v0.4.1",
+    "legacy_content_preserved_in_repository_history": false,
+    "scope_change_note": "Approved expansion"
+  },
+  {
+    "scenario_ref": "SC10",
+    "case_id": "mrdiy_supply_10",
+    "original_case_id": null,
+    "migration": "new_unique_id",
+    "original_fixture_version": null,
+    "current_fixture_version": "mrdiy-demo-v0.4.1",
+    "legacy_content_preserved_in_repository_history": false,
+    "scope_change_note": "Approved expansion"
+  },
+  {
+    "scenario_ref": "SC11",
+    "case_id": "mrdiy_supply_11",
+    "original_case_id": null,
+    "migration": "new_unique_id",
+    "original_fixture_version": null,
+    "current_fixture_version": "mrdiy-demo-v0.4.1",
+    "legacy_content_preserved_in_repository_history": false,
+    "scope_change_note": "Approved expansion"
+  },
+  {
+    "scenario_ref": "SC12",
+    "case_id": "mrdiy_supply_12",
+    "original_case_id": null,
+    "migration": "new_unique_id",
+    "original_fixture_version": null,
+    "current_fixture_version": "mrdiy-demo-v0.4.1",
+    "legacy_content_preserved_in_repository_history": false,
+    "scope_change_note": "Approved expansion"
+  },
+  {
+    "scenario_ref": "SC13",
+    "case_id": "mrdiy_supply_13",
+    "original_case_id": null,
+    "migration": "new_unique_id",
+    "original_fixture_version": null,
+    "current_fixture_version": "mrdiy-demo-v0.4.1",
+    "legacy_content_preserved_in_repository_history": false,
+    "scope_change_note": "Approved expansion"
+  },
+  {
+    "scenario_ref": "SC14",
+    "case_id": "mrdiy_supply_14",
+    "original_case_id": null,
+    "migration": "new_unique_id",
+    "original_fixture_version": null,
+    "current_fixture_version": "mrdiy-demo-v0.4.1",
+    "legacy_content_preserved_in_repository_history": false,
+    "scope_change_note": "Approved expansion"
+  },
+  {
+    "scenario_ref": "SC15",
+    "case_id": "mrdiy_supply_15",
+    "original_case_id": null,
+    "migration": "new_unique_id",
+    "original_fixture_version": null,
+    "current_fixture_version": "mrdiy-demo-v0.4.1",
+    "legacy_content_preserved_in_repository_history": false,
+    "scope_change_note": "Approved expansion"
+  },
+  {
+    "scenario_ref": "SC16",
+    "case_id": "mrdiy_supply_16",
+    "original_case_id": null,
+    "migration": "new_unique_id",
+    "original_fixture_version": null,
+    "current_fixture_version": "mrdiy-demo-v0.4.1",
+    "legacy_content_preserved_in_repository_history": false,
+    "scope_change_note": "Approved expansion"
+  },
+  {
+    "scenario_ref": "SC17",
+    "case_id": "demo_procurement_01",
+    "original_case_id": "demo_procurement_01",
+    "migration": "preserved_id_revised_synthetic_scope",
+    "original_fixture_version": "business-demo-v1",
+    "current_fixture_version": "mrdiy-demo-v0.4.1",
+    "legacy_content_preserved_in_repository_history": true,
+    "scope_change_note": "ID preserved; fictional campus content replaced by approved MR. DIY Malaysia synthetic workflow"
+  },
+  {
+    "scenario_ref": "SC18",
+    "case_id": "demo_procurement_02",
+    "original_case_id": "demo_procurement_02",
+    "migration": "preserved_id_revised_synthetic_scope",
+    "original_fixture_version": "business-demo-v1",
+    "current_fixture_version": "mrdiy-demo-v0.4.1",
+    "legacy_content_preserved_in_repository_history": true,
+    "scope_change_note": "ID preserved; fictional campus content replaced by approved MR. DIY Malaysia synthetic workflow"
+  },
+  {
+    "scenario_ref": "SC19",
+    "case_id": "demo_procurement_03",
+    "original_case_id": "demo_procurement_03",
+    "migration": "preserved_id_revised_synthetic_scope",
+    "original_fixture_version": "business-demo-v1",
+    "current_fixture_version": "mrdiy-demo-v0.4.1",
+    "legacy_content_preserved_in_repository_history": true,
+    "scope_change_note": "ID preserved; fictional campus content replaced by approved MR. DIY Malaysia synthetic workflow"
+  },
+  {
+    "scenario_ref": "SC20",
+    "case_id": "demo_procurement_04",
+    "original_case_id": "demo_procurement_04",
+    "migration": "preserved_id_revised_synthetic_scope",
+    "original_fixture_version": "business-demo-v1",
+    "current_fixture_version": "mrdiy-demo-v0.4.1",
+    "legacy_content_preserved_in_repository_history": true,
+    "scope_change_note": "ID preserved; fictional campus content replaced by approved MR. DIY Malaysia synthetic workflow"
+  },
+  {
+    "scenario_ref": "SC21",
+    "case_id": "mrdiy_procurement_05",
+    "original_case_id": null,
+    "migration": "new_unique_id",
+    "original_fixture_version": null,
+    "current_fixture_version": "mrdiy-demo-v0.4.1",
+    "legacy_content_preserved_in_repository_history": false,
+    "scope_change_note": "Approved expansion"
+  },
+  {
+    "scenario_ref": "SC22",
+    "case_id": "mrdiy_procurement_06",
+    "original_case_id": null,
+    "migration": "new_unique_id",
+    "original_fixture_version": null,
+    "current_fixture_version": "mrdiy-demo-v0.4.1",
+    "legacy_content_preserved_in_repository_history": false,
+    "scope_change_note": "Approved expansion"
+  },
+  {
+    "scenario_ref": "SC23",
+    "case_id": "mrdiy_procurement_07",
+    "original_case_id": null,
+    "migration": "new_unique_id",
+    "original_fixture_version": null,
+    "current_fixture_version": "mrdiy-demo-v0.4.1",
+    "legacy_content_preserved_in_repository_history": false,
+    "scope_change_note": "Approved expansion"
+  },
+  {
+    "scenario_ref": "SC24",
+    "case_id": "mrdiy_procurement_08",
+    "original_case_id": null,
+    "migration": "new_unique_id",
+    "original_fixture_version": null,
+    "current_fixture_version": "mrdiy-demo-v0.4.1",
+    "legacy_content_preserved_in_repository_history": false,
+    "scope_change_note": "Approved expansion"
+  },
+  {
+    "scenario_ref": "SC25",
+    "case_id": "mrdiy_procurement_09",
+    "original_case_id": null,
+    "migration": "new_unique_id",
+    "original_fixture_version": null,
+    "current_fixture_version": "mrdiy-demo-v0.4.1",
+    "legacy_content_preserved_in_repository_history": false,
+    "scope_change_note": "Approved expansion"
+  },
+  {
+    "scenario_ref": "SC26",
+    "case_id": "mrdiy_procurement_10",
+    "original_case_id": null,
+    "migration": "new_unique_id",
+    "original_fixture_version": null,
+    "current_fixture_version": "mrdiy-demo-v0.4.1",
+    "legacy_content_preserved_in_repository_history": false,
+    "scope_change_note": "Approved expansion"
+  },
+  {
+    "scenario_ref": "SC27",
+    "case_id": "demo_service_01",
+    "original_case_id": "demo_service_01",
+    "migration": "preserved_id_revised_synthetic_scope",
+    "original_fixture_version": "business-demo-v1",
+    "current_fixture_version": "mrdiy-demo-v0.4.1",
+    "legacy_content_preserved_in_repository_history": true,
+    "scope_change_note": "ID preserved; fictional campus content replaced by approved MR. DIY Malaysia synthetic workflow"
+  },
+  {
+    "scenario_ref": "SC28",
+    "case_id": "demo_service_02",
+    "original_case_id": "demo_service_02",
+    "migration": "preserved_id_revised_synthetic_scope",
+    "original_fixture_version": "business-demo-v1",
+    "current_fixture_version": "mrdiy-demo-v0.4.1",
+    "legacy_content_preserved_in_repository_history": true,
+    "scope_change_note": "ID preserved; fictional campus content replaced by approved MR. DIY Malaysia synthetic workflow"
+  },
+  {
+    "scenario_ref": "SC29",
+    "case_id": "demo_service_03",
+    "original_case_id": "demo_service_03",
+    "migration": "preserved_id_revised_synthetic_scope",
+    "original_fixture_version": "business-demo-v1",
+    "current_fixture_version": "mrdiy-demo-v0.4.1",
+    "legacy_content_preserved_in_repository_history": true,
+    "scope_change_note": "ID preserved; fictional campus content replaced by approved MR. DIY Malaysia synthetic workflow"
+  },
+  {
+    "scenario_ref": "SC30",
+    "case_id": "demo_service_04",
+    "original_case_id": "demo_service_04",
+    "migration": "preserved_id_revised_synthetic_scope",
+    "original_fixture_version": "business-demo-v1",
+    "current_fixture_version": "mrdiy-demo-v0.4.1",
+    "legacy_content_preserved_in_repository_history": true,
+    "scope_change_note": "ID preserved; fictional campus content replaced by approved MR. DIY Malaysia synthetic workflow"
+  },
+  {
+    "scenario_ref": "SC31",
+    "case_id": "mrdiy_service_05",
+    "original_case_id": null,
+    "migration": "new_unique_id",
+    "original_fixture_version": null,
+    "current_fixture_version": "mrdiy-demo-v0.4.1",
+    "legacy_content_preserved_in_repository_history": false,
+    "scope_change_note": "Approved expansion"
+  },
+  {
+    "scenario_ref": "SC32",
+    "case_id": "mrdiy_service_06",
+    "original_case_id": null,
+    "migration": "new_unique_id",
+    "original_fixture_version": null,
+    "current_fixture_version": "mrdiy-demo-v0.4.1",
+    "legacy_content_preserved_in_repository_history": false,
+    "scope_change_note": "Approved expansion"
+  },
+  {
+    "scenario_ref": "SC33",
+    "case_id": "mrdiy_service_07",
+    "original_case_id": null,
+    "migration": "new_unique_id",
+    "original_fixture_version": null,
+    "current_fixture_version": "mrdiy-demo-v0.4.1",
+    "legacy_content_preserved_in_repository_history": false,
+    "scope_change_note": "Approved expansion"
+  },
+  {
+    "scenario_ref": "SC34",
+    "case_id": "mrdiy_service_08",
+    "original_case_id": null,
+    "migration": "new_unique_id",
+    "original_fixture_version": null,
+    "current_fixture_version": "mrdiy-demo-v0.4.1",
+    "legacy_content_preserved_in_repository_history": false,
+    "scope_change_note": "Approved expansion"
+  },
+  {
+    "scenario_ref": "SC35",
+    "case_id": "demo_energy_01",
+    "original_case_id": "demo_energy_01",
+    "migration": "preserved_id_revised_synthetic_scope",
+    "original_fixture_version": "business-demo-v1",
+    "current_fixture_version": "mrdiy-demo-v0.4.1",
+    "legacy_content_preserved_in_repository_history": true,
+    "scope_change_note": "ID preserved; fictional campus content replaced by approved MR. DIY Malaysia synthetic workflow"
+  },
+  {
+    "scenario_ref": "SC36",
+    "case_id": "demo_energy_02",
+    "original_case_id": "demo_energy_02",
+    "migration": "preserved_id_revised_synthetic_scope",
+    "original_fixture_version": "business-demo-v1",
+    "current_fixture_version": "mrdiy-demo-v0.4.1",
+    "legacy_content_preserved_in_repository_history": true,
+    "scope_change_note": "ID preserved; fictional campus content replaced by approved MR. DIY Malaysia synthetic workflow"
+  },
+  {
+    "scenario_ref": "SC37",
+    "case_id": "mrdiy_energy_03",
+    "original_case_id": null,
+    "migration": "new_unique_id",
+    "original_fixture_version": null,
+    "current_fixture_version": "mrdiy-demo-v0.4.1",
+    "legacy_content_preserved_in_repository_history": false,
+    "scope_change_note": "Approved expansion"
+  },
+  {
+    "scenario_ref": "SC38",
+    "case_id": "mrdiy_energy_04",
+    "original_case_id": null,
+    "migration": "new_unique_id",
+    "original_fixture_version": null,
+    "current_fixture_version": "mrdiy-demo-v0.4.1",
+    "legacy_content_preserved_in_repository_history": false,
+    "scope_change_note": "Approved expansion"
+  },
+  {
+    "scenario_ref": "SC39",
+    "case_id": "mrdiy_energy_05",
+    "original_case_id": null,
+    "migration": "new_unique_id",
+    "original_fixture_version": null,
+    "current_fixture_version": "mrdiy-demo-v0.4.1",
+    "legacy_content_preserved_in_repository_history": false,
+    "scope_change_note": "Approved expansion"
+  },
+  {
+    "scenario_ref": "SC40",
+    "case_id": "mrdiy_energy_06",
+    "original_case_id": null,
+    "migration": "new_unique_id",
+    "original_fixture_version": null,
+    "current_fixture_version": "mrdiy-demo-v0.4.1",
+    "legacy_content_preserved_in_repository_history": false,
+    "scope_change_note": "Approved expansion"
+  }
+]

@@ -1,0 +1,182 @@
+{
+  "schema_version": "dormathon.run-manifest.v1",
+  "created_at": "2026-10-10T04:00:22.578511+00:00",
+  "scope": "FR10-12/15 limited external forecasting evidence; conditional inventory simulation; no UI/deploy/Git actions",
+  "dataset_namespace": "external_uci_online_retail_ii",
+  "scenario_namespace": "org_mrdiy_my_demo",
+  "raw_in_app_or_export": false,
+  "python": "Python 3.12.14",
+  "node": "v24.19.0",
+  "dependencies": {
+    "numpy": "2.3.5",
+    "openpyxl": "3.1.5"
+  },
+  "measured_resources": {
+    "wall_seconds": 4.101,
+    "peak_rss_mb": 277.0,
+    "cpu_threads": 1,
+    "GPU_used": false,
+    "python": "3.12.14",
+    "numpy": "2.3.5"
+  },
+  "profiling_wall_seconds": 57.723,
+  "seed": 41010,
+  "determinism_tolerance": {
+    "floating_point_relative": 1e-08,
+    "floating_point_absolute": 1e-08,
+    "counts_dates_hashes": "exact"
+  },
+  "checks": {
+    "node_tests": {
+      "passed": 9,
+      "failed": 0,
+      "adversarial_scenarios": 120
+    },
+    "artifact_boundary_assertions": "passed",
+    "browser_acceptance": "not performed by this package owner",
+    "deployment": "not performed",
+    "clean_isolated_reproduction": "passed; all 8 groups exactly match"
+  },
+  "files": {
+    "src/check_artifacts.py": {
+      "bytes": 1842,
+      "sha256": "a0d9175fe45966a09a8bbc7a5fbb0ce72e433d7334f0434e17e5715f8286f85c"
+    },
+    "src/download_data.py": {
+      "bytes": 949,
+      "sha256": "8449766a8ac2bbd2bb17437ef3d07f06f4b958cfcc129272d4ed6edaae933abb"
+    },
+    "src/evaluate.py": {
+      "bytes": 16102,
+      "sha256": "0e8af4ac1d523c1f9c95f826f34f9ddd3cf3fe062e267b21e0a0b36de99bb806"
+    },
+    "src/policy-engine.mjs": {
+      "bytes": 10160,
+      "sha256": "893aa1fbecfa0177fa1b47469d4d91efa82f8e931d006d63f3cac5ee619c7ad6"
+    },
+    "src/posthoc_diagnostics.py": {
+      "bytes": 4227,
+      "sha256": "97bfca1f93fca35e5fdca28db337d2a47907295aab5dcc6597ae364e64c7b88a"
+    },
+    "src/predictive-engine.mjs": {
+      "bytes": 4669,
+      "sha256": "2d682cce556632517f7a138ce23b1372b4f2af962060246d69ef8864df642496"
+    },
+    "src/profile_data.py": {
+      "bytes": 11374,
+      "sha256": "269c68c1dc7ca357ab4efda9d27a9965e93ab6b81bf670ddfb94fe2605225da7"
+    },
+    "src/simulate_benchmark_policies.py": {
+      "bytes": 11187,
+      "sha256": "82e2bd2fff900faea072044566aec39021fca6ad5ec16b906ad7a0715940cff6"
+    },
+    "tests/engine.test.mjs": {
+      "bytes": 6333,
+      "sha256": "a8752ed459064674c3d8ea511c743bd3f8874b6d45510d7e007795dad73273a0"
+    },
+    "examples/run-example.mjs": {
+      "bytes": 1543,
+      "sha256": "c15569b1edf5cec6d75ff3ad3f8a5345cc308cb35670a25dd473e7bf9bb32afc"
+    },
+    "audit/policy-engine.unsafe-capacity.mjs.txt": {
+      "bytes": 8883,
+      "sha256": "ee01d2cd951448404e446d7df673acb0646973f6ef4dabe135cc64ee45194616"
+    },
+    "artifacts/artifact-checks.log": {
+      "bytes": 65,
+      "sha256": "10f22113fb4315b8596f11c5934e7a342b0be4984ef9f7266862562fef124bcf"
+    },
+    "artifacts/assumption-register.v1.json": {
+      "bytes": 6144,
+      "sha256": "139a5fa271b73a65237ea5ea7ec64eb3fdedd1e89ed32378fd6f53c051f754ad"
+    },
+    "artifacts/benchmark-report.v1.json": {
+      "bytes": 147691,
+      "sha256": "c812d772db29dbfff3ced67b2bc511fb24c9e670a15174337fc1a45ae1bdde54"
+    },
+    "artifacts/data-profile.v1.json": {
+      "bytes": 63482,
+      "sha256": "fc71fb92a90a9ff6968a0930ee7e6a9910c45c709d9ff5e1635f13db062ab2c5"
+    },
+    "artifacts/evaluation-run.log": {
+      "bytes": 3002,
+      "sha256": "8fb2393d960f1d64f7f277bdab2e79b4f8970892ddf6307c0b910cdcf778f352"
+    },
+    "artifacts/example-forecast.v1.json": {
+      "bytes": 2661,
+      "sha256": "8f23eff5a2b553a7fa5e375c9b859c7d9c51c585440f7e5cf3a282a3839e4760"
+    },
+    "artifacts/frozen-simulation-config.unsafe-capacity.v1.json": {
+      "bytes": 1733,
+      "sha256": "4a80495aaa12a611f51956800796184595c306b7e188a4bfaf46511083b29e91"
+    },
+    "artifacts/frozen-simulation-config.v1.json": {
+      "bytes": 1997,
+      "sha256": "8327183bd0d75b2c3060c631cb79e2f9c533baaa642dd14c346b9e369ad8162a"
+    },
+    "artifacts/frozen-split.v1.json": {
+      "bytes": 43504,
+      "sha256": "34d83d969521b625fd070fd5d8a644d8dd9225631365dc7685acab4fb5dc352b"
+    },
+    "artifacts/integration-contract.v1.json": {
+      "bytes": 3276,
+      "sha256": "e9be8044ce36706d13a5277c492c7fb672c3ff4941f5b44132ddf8a1c35383a9"
+    },
+    "artifacts/js-tests.log": {
+      "bytes": 941,
+      "sha256": "8098e9cbe2509300ce7914299399721f0e5d1115193f3dc656eaacac2a724d1f"
+    },
+    "artifacts/model-artifact.v1.json": {
+      "bytes": 92784,
+      "sha256": "c9365013331bace05f4c2cb73d8dbf1de2ae045d2a89ca8cca3bd33109daab56"
+    },
+    "artifacts/primary-report-frozen.v1.json": {
+      "bytes": 142280,
+      "sha256": "8a8ef0dcce211393273bfe9e038242eab29b42387cb4cb968610c2257d248510"
+    },
+    "artifacts/profile-run.log": {
+      "bytes": 1345,
+      "sha256": "dbc9b2bba6c0899755500ccc54f622b4a77e4823cbd39eac98f247960c72fe29"
+    },
+    "artifacts/reproduction-check.v1.json": {
+      "bytes": 1010,
+      "sha256": "d00f63a48ebc1768c75233358802603fc568d0bcc06a6ca0a6e667e05117509e"
+    },
+    "artifacts/simulated-policy-report.unsafe-capacity.v1.json": {
+      "bytes": 33018,
+      "sha256": "a76adcba5a74298e6215b7100f484718384555e4d4db44aae6f39fa9051c41bd"
+    },
+    "artifacts/simulated-policy-report.v1.json": {
+      "bytes": 34853,
+      "sha256": "eaa5f5705a6895f31c96dbe8bb3d439f8c5d99a58f1c6e7f8c144d08ac94fee9"
+    },
+    "artifacts/simulation-run.log": {
+      "bytes": 2344,
+      "sha256": "a153f88fff0199b3cb74edb8861ca9d46a8f8ede7ec755693ad9c30ca884b439"
+    },
+    "artifacts/simulation-run.safe-capacity.log": {
+      "bytes": 2351,
+      "sha256": "06bc18aab6a1c9e731407bb8ee19e1f255438b9d3c7227945f3630364f132b1d"
+    },
+    "artifacts/synthetic-example.v1.json": {
+      "bytes": 14130,
+      "sha256": "0dbedf5b61642a2e2560ee54bbb71dfe143572970f777c774b22f3df68c56bcb"
+    },
+    "README.md": {
+      "bytes": 11423,
+      "sha256": "0e2d2f6d484cfbc37df0ab1edd34fec88372b1dce32ee607d045dba044460982"
+    },
+    "requirements.txt": {
+      "bytes": 29,
+      "sha256": "7e7b4c990605a5f7fe85702bf01bae0a62800c1b9b6b73c5a882fa4d1eab4f53"
+    },
+    "config.json": {
+      "bytes": 602,
+      "sha256": "a798dc84a2a2f0464bebe329a5532602563977d94e9a0de785c01317004ccd57"
+    },
+    ".gitignore": {
+      "bytes": 37,
+      "sha256": "fb3d8a44638695a8876a9a3c82055c45d746bd9f47285ff9447fa3d2a3f63f77"
+    }
+  }
+}

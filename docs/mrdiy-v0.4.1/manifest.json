@@ -1,0 +1,69 @@
+{
+  "schema_version": "dormathon.mrdiy-package-manifest.v0.4.1",
+  "fixture_snapshot": "mrdiy-snapshot-20261010T080000+0800-v041",
+  "implementation_scope": "isolated operational pure modules; no canonical UI, push or deployment",
+  "files": {
+    "worker/mrdiy-fixture.js": {
+      "sha256": "3c99b947ff3056d1cfbe553460e045762f956fa489d9a98b0d615761fc9c8fa8",
+      "bytes": 160271
+    },
+    "worker/mrdiy-operations.js": {
+      "sha256": "a1266dd785531d5426f040dbc93b6c643d9712e5002ed1b474fc4eb198542f5e",
+      "bytes": 56729
+    },
+    "data/prototype/mrdiy-demo.v0.4.1.json": {
+      "sha256": "8533f68a6426bf0da13778d69c09f739a0ec9317f9cad4ecdb23d310cf581224",
+      "bytes": 225256
+    },
+    "data/prototype/mrdiy-case-crosswalk.v0.4.1.json": {
+      "sha256": "d31003edba658c40af1b97011f2028f2fc82f0c060082032eeba0c8901ebc59f",
+      "bytes": 15101
+    },
+    "contracts/mrdiy-operations.v0.4.1.json": {
+      "sha256": "88d8fa3db99a1277778a2f4208a5f1ff248c52b168abba893e30876a0a632953",
+      "bytes": 6227
+    },
+    "tests/mrdiy-operations.test.mjs": {
+      "sha256": "74fb14d904f104eaa2eece75dee8d8f8bb982f4b95c9648ee6805a95673a2a9b",
+      "bytes": 18084
+    },
+    "scripts/generate_fixture.py": {
+      "sha256": "92670be41454e2c57f7424278d90c794e475ebdee5712d96443536376da531e3",
+      "bytes": 26870
+    },
+    "scripts/report_fixture.mjs": {
+      "sha256": "5d737c965ea66db637d9cd08bd310c01421eea977af6c2f86668298542e15f93",
+      "bytes": 3698
+    },
+    "README.md": {
+      "sha256": "9153a996e766e6f87a50956020494a37ee1ced278d1786f6ae8096dd22878118",
+      "bytes": 5919
+    },
+    "reports/node-tests.log": {
+      "sha256": "8acd381165c930f13e5671156c5d2ca72a2076d584f1687b88fa3898300c38b4",
+      "bytes": 2675
+    },
+    "reports/functional-validation.v0.4.1.json": {
+      "sha256": "e26d77eaa6efff874929c42ef6f39fcd7fe7dcd6d0163154c6ff13644fe8a927",
+      "bytes": 20343
+    },
+    "integration-additions.patch": {
+      "sha256": "0499180d75ca6af3a040877d8ac2fd1cb1e1d424c3b3c4896d74e838b441d9cc",
+      "bytes": 521851
+    }
+  },
+  "test_summary": {
+    "passed": 25,
+    "failed": 0,
+    "all_cases_open_analyze_compare_save_reopen": 40,
+    "source_foreign_keys_checked": [
+      "store",
+      "SKU",
+      "PO",
+      "goods_receipt",
+      "invoice",
+      "shipment",
+      "task"
+    ]
+  }
+}

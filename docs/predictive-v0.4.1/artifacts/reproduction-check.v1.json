@@ -1,0 +1,22 @@
+{
+  "schema_version": "dormathon.reproduction-check.v1",
+  "generated_at": "2026-10-10T03:59:41.131890+00:00",
+  "status": "pass",
+  "method": "Clean isolated workspace, same immutable official raw bytes, full streaming reprofile + frozen evaluation + safe simulation + posthoc diagnostics; final scripts rerun and Node tests repeated. No parameters or empirical selection changed.",
+  "checks": {
+    "split_configuration_sha256_exact": true,
+    "selected_model_exact": true,
+    "all_primary_model_metrics_exact": true,
+    "paired_bootstrap_exact": true,
+    "all_daily_arrays_exact": true,
+    "all_safe_policy_totals_exact": true,
+    "all_simulated_alert_counts_exact": true,
+    "model_coefficients_exact": true
+  },
+  "primary_forecast_report_preserved": true,
+  "raw_input_sha256": "bcbe73b35f5b7babf197fb0cb983a11f5d9ff929078d4aa53d171b1f2df2e980",
+  "model_scope": "Known-item chronological study only",
+  "numerical_tolerance_used": 0,
+  "rerun_wall_seconds": 4.146,
+  "rerun_peak_rss_mb": 277.2
+}

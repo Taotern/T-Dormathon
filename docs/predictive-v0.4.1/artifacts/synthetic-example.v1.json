@@ -1,0 +1,453 @@
+{
+  "forecast": {
+    "schema_version": "dormathon.forecast.v1",
+    "engine_version": "dormathon.sales-engine.0.4.1",
+    "org_id": "org_mrdiy_my_demo",
+    "brand_scope": "Malaysia synthetic operational demo",
+    "scenarioDataMode": "SYNTHETIC_INTERNAL",
+    "provenance_refs": [
+      "synthetic-example:seed-41010"
+    ],
+    "assumption_set_id": "mrdiy-mechanics-example.v1",
+    "request_id": "example-forecast",
+    "input_refs": [
+      "synthetic-seven-day-state.v1"
+    ],
+    "knowledge_as_of": "2026-10-10T08:00:00+08:00",
+    "world_time": "2026-10-10T08:00:00+08:00",
+    "knowledge_mode": "scenario",
+    "data_revision": "synthetic.v1",
+    "delivery_mode": "live_local_calculation",
+    "status": "ok",
+    "warnings": [
+      "Synthetic company sequence demonstrates mechanics only; external benchmark accuracy does not transfer.",
+      "Recorded sales may be demand-censored; no latent-demand, stockout, delivery or savings claim."
+    ],
+    "item_id": "DEMO_SKU01",
+    "target_definition": "Daily positive item transaction sales, units; demand proxy",
+    "horizon": 7,
+    "prediction_type": "point",
+    "uncertainty": null,
+    "uncertainty_reason": "Point baseline; no calibrated prediction intervals",
+    "forecasts": [
+      {
+        "date": "2026-10-10",
+        "horizon": 1,
+        "predicted_units": 20
+      },
+      {
+        "date": "2026-10-11",
+        "horizon": 2,
+        "predicted_units": 20
+      },
+      {
+        "date": "2026-10-12",
+        "horizon": 3,
+        "predicted_units": 20
+      },
+      {
+        "date": "2026-10-13",
+        "horizon": 4,
+        "predicted_units": 20
+      },
+      {
+        "date": "2026-10-14",
+        "horizon": 5,
+        "predicted_units": 20
+      },
+      {
+        "date": "2026-10-15",
+        "horizon": 6,
+        "predicted_units": 20
+      },
+      {
+        "date": "2026-10-16",
+        "horizon": 7,
+        "predicted_units": 20
+      }
+    ],
+    "training_cutoff": "2026-10-09",
+    "model_version": "dormathon.sales-engine.0.4.1:moving_average_28",
+    "model": "moving_average_28"
+  },
+  "policy_comparison": {
+    "schema_version": "dormathon.policy-comparison.v1",
+    "policy_version": "dormathon.inventory-policy.0.4.1.1",
+    "org_id": "org_mrdiy_my_demo",
+    "brand_scope": "Malaysia synthetic operational demo",
+    "scenarioDataMode": "SYNTHETIC_INTERNAL",
+    "provenance_refs": [
+      "synthetic-example:seed-41010"
+    ],
+    "assumption_set_id": "mrdiy-mechanics-example.v1",
+    "request_id": "example-comparison",
+    "input_refs": [
+      "synthetic-seven-day-state.v1"
+    ],
+    "knowledge_as_of": "2026-10-10T08:00:00+08:00",
+    "world_time": "2026-10-10T08:00:00+08:00",
+    "knowledge_mode": "scenario",
+    "data_revision": "synthetic.v1",
+    "status": "ok",
+    "delivery_mode": "live_local_calculation",
+    "output_type": "SIMULATED_COUNTERFACTUAL",
+    "forecast_ref": "example-forecast",
+    "warnings": [
+      "All inventory, transition and cost outcomes are simulated under the same frozen exogenous sales path. No observed or causal savings claim."
+    ],
+    "policies": [
+      {
+        "policy_id": "no_replenishment",
+        "policy_version": "dormathon.inventory-policy.0.4.1.1",
+        "output_type": "SIMULATED_COUNTERFACTUAL",
+        "feasible": true,
+        "constraint_checks": [],
+        "action_clipping": "Capacity/budget/storage blocked requested quantities are clipped and disclosed; no double allocation.",
+        "metrics": {
+          "total_demand_units": 140,
+          "served_units": 100,
+          "shortage_units": 40,
+          "service_level": 0.7142857142857143,
+          "ending_stock_units": 160,
+          "reserved_stock_units": 20,
+          "ending_physical_stock_units": 180,
+          "outstanding_units": 0,
+          "average_stock_held_units": 57.142857142857146,
+          "peak_stock_units": 220,
+          "ordered_units": 0,
+          "order_count": 0,
+          "budget_remaining": 1600
+        },
+        "component_costs": {
+          "currency": "MYR",
+          "procurement": 0,
+          "order_setup": 0,
+          "holding": 20,
+          "shortage": 480,
+          "terminal_inventory_credit": 1280,
+          "total": -780
+        },
+        "stock_conservation": {
+          "initial_plus_preexisting_on_order_units": 260,
+          "new_order_units": 0,
+          "served_units": 100,
+          "ending_stock_units": 160,
+          "reserved_stock_units": 20,
+          "ending_physical_stock_units": 180,
+          "outstanding_units": 0,
+          "delta_units": 0,
+          "pass": true
+        },
+        "days": [
+          {
+            "day": 0,
+            "arrival_units": 0,
+            "ordered_units": 0,
+            "demand_units": 20,
+            "served_units": 20,
+            "shortage_units": 0,
+            "end_stock_units": 40,
+            "budget_remaining": 1600
+          },
+          {
+            "day": 1,
+            "arrival_units": 0,
+            "ordered_units": 0,
+            "demand_units": 20,
+            "served_units": 20,
+            "shortage_units": 0,
+            "end_stock_units": 20,
+            "budget_remaining": 1600
+          },
+          {
+            "day": 2,
+            "arrival_units": 0,
+            "ordered_units": 0,
+            "demand_units": 20,
+            "served_units": 20,
+            "shortage_units": 0,
+            "end_stock_units": 0,
+            "budget_remaining": 1600
+          },
+          {
+            "day": 3,
+            "arrival_units": 0,
+            "ordered_units": 0,
+            "demand_units": 20,
+            "served_units": 0,
+            "shortage_units": 20,
+            "end_stock_units": 0,
+            "budget_remaining": 1600
+          },
+          {
+            "day": 4,
+            "arrival_units": 0,
+            "ordered_units": 0,
+            "demand_units": 20,
+            "served_units": 0,
+            "shortage_units": 20,
+            "end_stock_units": 0,
+            "budget_remaining": 1600
+          },
+          {
+            "day": 5,
+            "arrival_units": 200,
+            "ordered_units": 0,
+            "demand_units": 20,
+            "served_units": 20,
+            "shortage_units": 0,
+            "end_stock_units": 180,
+            "budget_remaining": 1600
+          },
+          {
+            "day": 6,
+            "arrival_units": 0,
+            "ordered_units": 0,
+            "demand_units": 20,
+            "served_units": 20,
+            "shortage_units": 0,
+            "end_stock_units": 160,
+            "budget_remaining": 1600
+          }
+        ]
+      },
+      {
+        "policy_id": "reorder_point",
+        "policy_version": "dormathon.inventory-policy.0.4.1.1",
+        "output_type": "SIMULATED_COUNTERFACTUAL",
+        "feasible": true,
+        "constraint_checks": [],
+        "action_clipping": "Capacity/budget/storage blocked requested quantities are clipped and disclosed; no double allocation.",
+        "metrics": {
+          "total_demand_units": 140,
+          "served_units": 100,
+          "shortage_units": 40,
+          "service_level": 0.7142857142857143,
+          "ending_stock_units": 160,
+          "reserved_stock_units": 20,
+          "ending_physical_stock_units": 180,
+          "outstanding_units": 0,
+          "average_stock_held_units": 57.142857142857146,
+          "peak_stock_units": 220,
+          "ordered_units": 0,
+          "order_count": 0,
+          "budget_remaining": 1600
+        },
+        "component_costs": {
+          "currency": "MYR",
+          "procurement": 0,
+          "order_setup": 0,
+          "holding": 20,
+          "shortage": 480,
+          "terminal_inventory_credit": 1280,
+          "total": -780
+        },
+        "stock_conservation": {
+          "initial_plus_preexisting_on_order_units": 260,
+          "new_order_units": 0,
+          "served_units": 100,
+          "ending_stock_units": 160,
+          "reserved_stock_units": 20,
+          "ending_physical_stock_units": 180,
+          "outstanding_units": 0,
+          "delta_units": 0,
+          "pass": true
+        },
+        "days": [
+          {
+            "day": 0,
+            "arrival_units": 0,
+            "ordered_units": 0,
+            "demand_units": 20,
+            "served_units": 20,
+            "shortage_units": 0,
+            "end_stock_units": 40,
+            "budget_remaining": 1600
+          },
+          {
+            "day": 1,
+            "arrival_units": 0,
+            "ordered_units": 0,
+            "demand_units": 20,
+            "served_units": 20,
+            "shortage_units": 0,
+            "end_stock_units": 20,
+            "budget_remaining": 1600
+          },
+          {
+            "day": 2,
+            "arrival_units": 0,
+            "ordered_units": 0,
+            "demand_units": 20,
+            "served_units": 20,
+            "shortage_units": 0,
+            "end_stock_units": 0,
+            "budget_remaining": 1600
+          },
+          {
+            "day": 3,
+            "arrival_units": 0,
+            "ordered_units": 0,
+            "demand_units": 20,
+            "served_units": 0,
+            "shortage_units": 20,
+            "end_stock_units": 0,
+            "budget_remaining": 1600
+          },
+          {
+            "day": 4,
+            "arrival_units": 0,
+            "ordered_units": 0,
+            "demand_units": 20,
+            "served_units": 0,
+            "shortage_units": 20,
+            "end_stock_units": 0,
+            "budget_remaining": 1600
+          },
+          {
+            "day": 5,
+            "arrival_units": 200,
+            "ordered_units": 0,
+            "demand_units": 20,
+            "served_units": 20,
+            "shortage_units": 0,
+            "end_stock_units": 180,
+            "budget_remaining": 1600
+          },
+          {
+            "day": 6,
+            "arrival_units": 0,
+            "ordered_units": 0,
+            "demand_units": 20,
+            "served_units": 20,
+            "shortage_units": 0,
+            "end_stock_units": 160,
+            "budget_remaining": 1600
+          }
+        ]
+      },
+      {
+        "policy_id": "forecast_informed",
+        "policy_version": "dormathon.inventory-policy.0.4.1.1",
+        "output_type": "SIMULATED_COUNTERFACTUAL",
+        "feasible": true,
+        "constraint_checks": [],
+        "action_clipping": "Capacity/budget/storage blocked requested quantities are clipped and disclosed; no double allocation.",
+        "metrics": {
+          "total_demand_units": 140,
+          "served_units": 100,
+          "shortage_units": 40,
+          "service_level": 0.7142857142857143,
+          "ending_stock_units": 160,
+          "reserved_stock_units": 20,
+          "ending_physical_stock_units": 180,
+          "outstanding_units": 0,
+          "average_stock_held_units": 57.142857142857146,
+          "peak_stock_units": 220,
+          "ordered_units": 0,
+          "order_count": 0,
+          "budget_remaining": 1600
+        },
+        "component_costs": {
+          "currency": "MYR",
+          "procurement": 0,
+          "order_setup": 0,
+          "holding": 20,
+          "shortage": 480,
+          "terminal_inventory_credit": 1280,
+          "total": -780
+        },
+        "stock_conservation": {
+          "initial_plus_preexisting_on_order_units": 260,
+          "new_order_units": 0,
+          "served_units": 100,
+          "ending_stock_units": 160,
+          "reserved_stock_units": 20,
+          "ending_physical_stock_units": 180,
+          "outstanding_units": 0,
+          "delta_units": 0,
+          "pass": true
+        },
+        "days": [
+          {
+            "day": 0,
+            "arrival_units": 0,
+            "ordered_units": 0,
+            "demand_units": 20,
+            "served_units": 20,
+            "shortage_units": 0,
+            "end_stock_units": 40,
+            "budget_remaining": 1600
+          },
+          {
+            "day": 1,
+            "arrival_units": 0,
+            "ordered_units": 0,
+            "demand_units": 20,
+            "served_units": 20,
+            "shortage_units": 0,
+            "end_stock_units": 20,
+            "budget_remaining": 1600
+          },
+          {
+            "day": 2,
+            "arrival_units": 0,
+            "ordered_units": 0,
+            "demand_units": 20,
+            "served_units": 20,
+            "shortage_units": 0,
+            "end_stock_units": 0,
+            "budget_remaining": 1600
+          },
+          {
+            "day": 3,
+            "arrival_units": 0,
+            "ordered_units": 0,
+            "demand_units": 20,
+            "served_units": 0,
+            "shortage_units": 20,
+            "end_stock_units": 0,
+            "budget_remaining": 1600
+          },
+          {
+            "day": 4,
+            "arrival_units": 0,
+            "ordered_units": 0,
+            "demand_units": 20,
+            "served_units": 0,
+            "shortage_units": 20,
+            "end_stock_units": 0,
+            "budget_remaining": 1600
+          },
+          {
+            "day": 5,
+            "arrival_units": 200,
+            "ordered_units": 0,
+            "demand_units": 20,
+            "served_units": 20,
+            "shortage_units": 0,
+            "end_stock_units": 180,
+            "budget_remaining": 1600
+          },
+          {
+            "day": 6,
+            "arrival_units": 0,
+            "ordered_units": 0,
+            "demand_units": 20,
+            "served_units": 20,
+            "shortage_units": 0,
+            "end_stock_units": 160,
+            "budget_remaining": 1600
+          }
+        ]
+      }
+    ],
+    "preferred_policy_id": "no_replenishment",
+    "objective": "Minimum declared simulated cost among feasible clipped policies; human choice required.",
+    "assumed_shortage_treatment": "lost_sales",
+    "exogenous_path_frozen": true,
+    "capacity_rule": "Conservative known usable and reserved on-hand plus all outstanding inbound reservation; no future forecast consumption releases hard capacity.",
+    "uncertainty": null,
+    "uncertainty_reason": "Deterministic scenario; sensitivity ranges, not empirical confidence intervals."
+  }
+}

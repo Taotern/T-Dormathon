@@ -1,5 +1,7 @@
 # 当前交接状态
 
+Current precedence: the approved v0.4.1 specification and README current-entrypoint govern the MR D.I.Y. 40-case implementation. The existing Site is public; no private operational data is added. The dated reports below retain their historical scope and are not current deployment/model-validation certificates. Felix is not a delivery dependency.
+
 现有 owner-private GPT-Site 的普通采集工作台与 API 已验证。当前51,471已存/已索引版本，0待处理：369本站直接取得、114上传未验证、50,988已审查外部快照。原204、EU/TWSE25及三个同来源GDP历史批34/31/46以及就业20/FX42，另有法律元数据5个分片，另有历史保障措施案件5个分片，另有月度商品46/204两个同源分片批，合计662个分片全部完成；8旧规则记录和原业务数据保留。
 
 GDP实际覆盖1990–2025年度、217个世界银行报告经济体和48个重叠汇总组。177个经济体全36年有数值，214个至少一年；411个经济体—年份单元由源返回null，2026没返回。单位当年价格美元、scale1，资料版本日2026-07-13。不是历史发布版本、细粒度事件、实际增长或全领域世界覆盖。原年度统计/身份参照/政策元数据仍分开，消费端负责下游分析。

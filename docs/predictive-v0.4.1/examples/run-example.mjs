@@ -1,0 +1,7 @@
+import {forecast} from '../src/predictive-engine.mjs';
+import {comparePolicies} from '../src/policy-engine.mjs';
+const base={org_id:'org_mrdiy_my_demo',brand_scope:'Malaysia synthetic operational demo',scenarioDataMode:'SYNTHETIC_INTERNAL',item_id:'DEMO_SKU01',knowledge_as_of:'2026-10-10T08:00:00+08:00',world_time:'2026-10-10T08:00:00+08:00',knowledge_mode:'scenario',assumption_set_id:'mrdiy-mechanics-example.v1',provenance_refs:['synthetic-example:seed-41010'],input_refs:['synthetic-seven-day-state.v1'],data_revision:'synthetic.v1'};
+const history=Array.from({length:28},(_,i)=>({date:new Date(Date.UTC(2026,8,12+i)).toISOString().slice(0,10),positive_sales:20,observation_status:'observed'}));
+const f=forecast({...base,history,model:'moving_average_28',request_id:'example-forecast'});
+const p=comparePolicies({...base,forecast_ref:f.request_id,forecast_units:f.forecasts.map(x=>x.predicted_units),request_id:'example-comparison',state:{initial_stock_units:60,reserved_stock_units:20,on_order:[{arrival_day:5,quantity_units:200}],demand_by_day:[20,20,20,20,20,20,20],lead_time_days:3,review_cadence_days:1,supplier_capacity_units_per_day:60,storage_capacity_units:400,max_order_units:60,budget:1600,reorder_point_units:40,fixed_order_quantity_units:60,safety_stock_units:20,procurement_cost_per_unit:8,order_setup_cost:5,holding_cost_per_unit_day:.05,shortage_cost_per_unit:12,terminal_inventory_value_per_unit:8,currency:'MYR',shortage_treatment:'lost_sales'}});
+console.log(JSON.stringify({forecast:f,policy_comparison:p},null,2));
