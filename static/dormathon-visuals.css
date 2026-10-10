@@ -1,0 +1,79 @@
+/* Scoped grayscale visuals. No shell, workflow or algorithm styles are changed. */
+.dv-panel{border:1px solid #c3c3c3;background:#fff;color:#242424;padding:18px;margin:16px 0;min-width:0}
+.dv-panel .dv-title{margin:0 0 8px;font-size:18px;font-weight:550;line-height:1.35}
+.dv-panel h5{font-size:14px;font-weight:550;line-height:1.4;margin:0 0 8px}
+.dv-panel p{line-height:1.5;margin:8px 0}
+.dv-panel .dv-note{font-size:12px;line-height:1.6;color:#595959;overflow-wrap:anywhere}
+.dv-toolbar{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin:12px 0}
+.dv-toolbar label{display:flex;align-items:center;gap:9px;font-size:12px}
+.dv-panel select{width:auto;max-width:100%;min-height:36px;background:#fff;color:#242424;border:1px solid #aaa;padding:6px 10px;margin:0;font-size:12px}
+.dv-badge{display:inline-block;background:#f1f1f1;border:1px solid #aaa;padding:4px 7px;font-size:10px;line-height:1.4;letter-spacing:.3px;margin-right:7px}
+.dv-panel .dv-button{border:1px solid #aaa;border-radius:0;background:#fff;color:#242424;min-height:38px;padding:8px 12px;font:inherit;font-size:12px;cursor:pointer}
+.dv-panel .dv-button:hover:enabled{background:#f0f0f0;color:#111}
+.dv-panel .dv-button:disabled{opacity:.45;cursor:default}
+.dv-panel button:focus-visible,.dv-panel select:focus-visible,.dv-panel input:focus-visible,.dv-panel summary:focus-visible{outline:2px solid #151515;outline-offset:3px}
+.dv-days{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:0;border:1px solid #a9a9a9;margin:14px 0}
+.dv-panel .dv-day{display:flex;flex-direction:column;gap:7px;text-align:left;border:0;border-right:1px solid #bbb;padding:10px 9px;min-height:62px;font-size:11px;white-space:normal}
+.dv-panel .dv-day:last-child{border-right:0}
+.dv-panel .dv-day[aria-pressed=true]{background:#272727;color:#fff}
+.dv-day strong{font-weight:550;font-size:11px}
+.dv-eyebrow{font-size:10px;letter-spacing:.8px}
+.dv-day-action{overflow-wrap:anywhere;line-height:1.45;flex:1}
+.dv-day-receipt{font-size:10px;padding-top:6px;border-top:1px solid #c7c7c7}
+.dv-day-detail{border-left:3px solid #373737;background:#f5f5f5;padding:14px;margin:12px 0}
+.dv-day-detail>p{font-size:12px}
+.dv-facts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px 16px;margin:12px 0}
+.dv-facts>div{min-width:0}
+.dv-facts dt{font-size:10px;line-height:1.5;color:#606060;margin-bottom:4px}
+.dv-facts dd{font-size:13px;line-height:1.45;font-variant-numeric:tabular-nums;margin:0;overflow-wrap:anywhere}
+.dv-chart{margin:15px 0;min-width:0}
+.dv-chart svg{width:100%;height:auto;display:block;overflow:visible}
+.dv-gridline{stroke:#dedede;stroke-width:1}
+.dv-axis{font:11px system-ui,sans-serif;fill:#5e5e5e}
+.dv-series{stroke-width:2;vector-effect:non-scaling-stroke}
+.dv-series-0{stroke:#222}
+.dv-series-1{stroke:#777}
+.dv-series-2{stroke:#a6a6a6}
+.dv-point{stroke-width:1.4;vector-effect:non-scaling-stroke}
+.dv-point-0{fill:#222;stroke:#222}
+.dv-point-1{fill:#777;stroke:#777}
+.dv-point-2{fill:#a6a6a6;stroke:#a6a6a6}
+.dv-point[fill="#fff"]{fill:#fff}
+.dv-selected-line{stroke:#888;stroke-width:1;stroke-dasharray:2 4}
+.dv-legend{display:flex;gap:14px;flex-wrap:wrap;font-size:10px;line-height:1.5;color:#555;margin-top:7px}
+.dv-legend>span{display:inline-flex;align-items:center;gap:6px}
+.dv-key{display:inline-block;width:20px;border-top:2px solid #222}
+.dv-key-1{border-color:#777}.dv-key-2{border-color:#a6a6a6}.dv-key-dashed{border-top-style:dashed}
+.dv-resources{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:16px 0}
+.dv-resource{border:1px solid #d0d0d0;padding:12px;min-width:0}
+.dv-resource .dv-value{font-size:18px;letter-spacing:-.3px;font-variant-numeric:tabular-nums;margin:4px 0}
+.dv-resource .dv-chart{margin:7px 0 0}
+.dv-resource .dv-legend{display:none}
+.dv-subpanel{border-top:1px solid #aaa;padding-top:18px;margin-top:20px}
+.dv-data{border-top:1px solid #d2d2d2;padding-top:10px;margin-top:14px}
+.dv-data summary{font-size:12px;cursor:pointer;min-height:30px;line-height:1.5}
+.dv-table-wrap{overflow-x:auto;margin-top:9px;-webkit-overflow-scrolling:touch}
+.dv-table-wrap table{border-collapse:collapse;width:100%;font-size:11px;line-height:1.5}
+.dv-table-wrap th,.dv-table-wrap td{text-align:left;border-bottom:1px solid #ddd;padding:8px;vertical-align:top;font-variant-numeric:tabular-nums}
+.dv-table-wrap thead th{background:#f2f2f2;font-weight:550;white-space:nowrap}
+.dv-table-wrap tbody th{font-weight:400}
+.dv-sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap}
+.dv-search-wrap{overflow-x:auto;margin:16px 0}
+.dv-search-svg{display:block;width:100%;min-width:640px;height:auto}
+.dv-tree-root{fill:#242424;stroke:#242424}
+.dv-tree-root-label{fill:#fff;font:10px system-ui,sans-serif}
+.dv-tree-edge{stroke:#777}
+.dv-tree-action{fill:#f8f8f8;stroke:#b4b4b4;stroke-width:1}
+.dv-tree-chosen{stroke:#222;stroke-width:2;fill:#e7e7e7}
+.dv-tree-label{fill:#333;font:10px system-ui,sans-serif}
+.dv-replay-controls{display:grid;grid-template-columns:auto minmax(80px,1fr) auto;align-items:center;gap:14px}
+.dv-replay-controls label{font-size:11px;color:#555}
+.dv-replay-controls input[type=range]{display:block;accent-color:#333;width:100%;min-height:30px;margin:5px 0}
+.dv-selected-date{font-size:13px;font-variant-numeric:tabular-nums}
+@media(max-width:900px){.dv-days{grid-template-columns:repeat(4,minmax(0,1fr))}.dv-panel .dv-day{border-bottom:1px solid #bbb;min-height:62px}.dv-resources{grid-template-columns:repeat(2,minmax(0,1fr))}.dv-facts{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:540px){.dv-panel{padding:13px}.dv-days{grid-template-columns:repeat(4,minmax(0,1fr))}.dv-panel .dv-day{min-height:62px}.dv-resources{grid-template-columns:1fr}.dv-toolbar label{width:100%;align-items:flex-start;flex-direction:column}.dv-toolbar select{width:100%}.dv-replay-controls{grid-template-columns:1fr 1fr;gap:10px}.dv-replay-controls label{grid-column:1/-1;grid-row:1}.dv-replay-controls .dv-button{width:100%}.dv-facts{gap:10px}.dv-chart{margin:12px 0}.dv-search-wrap{margin-right:-5px}.dv-badge{margin-bottom:5px}}
+@media(prefers-reduced-motion:reduce){.dv-panel *{scroll-behavior:auto!important;transition:none!important;animation:none!important}}
+@media print{.dv-panel button,.dv-panel select,.dv-replay-controls{display:none}.dv-data{break-inside:avoid}.dv-search-svg{min-width:0}.dv-panel{break-inside:avoid}.dv-data:not([open]){display:none}}
+/* SVG text is in viewBox units: compensate for narrow viewport scaling. */
+@media(max-width:540px){.dv-axis{font-size:24px}}
+@media(max-width:420px){.dv-axis{font-size:30px}}

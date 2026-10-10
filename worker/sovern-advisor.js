@@ -20,8 +20,9 @@ function sovernBytes(v){return new TextEncoder().encode(v).length;}
 function sovernAssert(ok){if(!ok)throw new Error('sovern_invalid_request');}
 function sovernCaseId(v){return typeof v==='string'&&/^(?:demo|mrdiy)_(supply|procurement|service|energy)_\d{2}$/.test(v);}
 function sovernRequest(body){
-  sovernAssert(sovernObject(body)&&Object.keys(body).every(k=>['case_id','assumptions','commitments','intent','idempotency_key'].includes(k)));
+  sovernAssert(sovernObject(body)&&Object.keys(body).every(k=>['case_id','assumptions','commitments','intent','idempotency_key','explanation_mode'].includes(k)));
   sovernAssert(sovernCaseId(body.case_id));
+  sovernAssert(body.explanation_mode===undefined||body.explanation_mode==='rules');
   const intent=body.intent??'explain_basis';sovernAssert(Object.hasOwn(sovernIntents,intent));
   const key=body.idempotency_key;sovernAssert(typeof key==='string'&&/^[a-zA-Z0-9_-]{16,100}$/.test(key));
   const assumptions=body.assumptions??{},commitments=body.commitments??[];
@@ -29,7 +30,7 @@ function sovernRequest(body){
   sovernAssert(sovernObject(assumptions)&&Object.keys(assumptions).every(k=>allowed.includes(k)&&typeof assumptions[k]==='number'&&Number.isFinite(assumptions[k])));
   sovernAssert(Array.isArray(commitments)&&commitments.length<=40&&sovernBytes(sovernStable(body))<=40000);
   for(const p of commitments)sovernAssert(sovernObject(p)&&sovernCaseId(p.case_id)&&typeof p.action_id==='string'&&/^[a-z][a-z0-9_]{0,49}$/.test(p.action_id));
-  return {case_id:body.case_id,assumptions,commitments,intent,idempotency_key:key};
+  return {case_id:body.case_id,assumptions,commitments,intent,idempotency_key:key,...(body.explanation_mode==='rules'?{explanation_mode:'rules'}:{})};
 }
 function sovernEnvelope(value,caseId){
   sovernAssert(value?.org_id==='org_mrdiy_my_demo'&&value.scenarioDataMode==='SYNTHETIC_INTERNAL'&&value.knowledge_mode==='synthetic_snapshot'&&value.case_id===caseId);
@@ -72,6 +73,17 @@ function sovernFallback(basis,reason,citations=[]){
   const answer=missing.length?'Rules abstain on missing inputs: '+missing.join(', ')+'. No validated probability is available. Review the case evidence before choosing.':recommended?'Rule-based review: consider “'+recommended.label+'” under the declared synthetic assumptions. Compare feasibility and trade-offs before choosing. These are conditional simulations; no actual company outcome is established.':'Rules abstain: review missing inputs or binding constraints before selecting an action. No validated probability or actual company outcome is established.';
   return {mode:'rules',reason,answer,citations,deterministic_basis:basis??null,configured:false,model:null,automatic_execution:false,public_demo:true,
     verification:'Rule-based fallback. No live LLM answer is claimed.',budget_scope:'Conservative usage-based estimate for this app only. No provider RM5 hard cap is verified; owner manual/provider usage is excluded.'};
+}
+function sovernExplicitRules(basis,intent,citations){
+  const result=sovernFallback(basis,'explicit_rules',citations),missing=basis.missing_inputs||[];
+  const display=v=>v===null||v===undefined?'unavailable':typeof v==='boolean'?(v?'yes':'no'):typeof v==='number'?v.toLocaleString('en',{maximumFractionDigits:3}):String(v);
+  const recommended=basis.actions.find(a=>a.id===basis.recommended_action_id&&a.feasible===true);
+  let answer;
+  if(intent==='missing_inputs')answer=missing.length?'Required evidence is missing: '+missing.join(', ')+'. Rules abstain where those inputs are necessary.':'No required inputs are flagged as missing in this synthetic case. This does not establish real-company completeness.';
+  else if(missing.length)answer='Rules abstain on missing evidence: '+missing.join(', ')+'. Resolve these inputs before comparing outcomes.';
+  else if(intent==='compare_options'){const feasible=basis.actions.filter(a=>a.feasible).slice(0,3);answer=feasible.length?'Feasible case responses: '+feasible.map(a=>a.label).join('; ')+'. '+(recommended?'Current rule suggestion: '+recommended.label+'. ':'')+'Compare their costs and constraints in Strategy.':'No feasible response is supplied under the current constraints. Review the blocking evidence in Strategy.';}
+  else {const facts=basis.metrics.slice(0,5).map(m=>m.metric.toLowerCase()+': '+display(m.value)+(m.unit&&m.unit!=='boolean'?' '+m.unit:''));answer='Conditional synthetic basis: '+facts.join('; ')+'. Review these coverage, timing or resource constraints before choosing a response.';}
+  return {...result,answer:answer+' Human review is required; no actual company outcome or action is established.',verification:'Explicit rule-based explanation from the authoritative synthetic case. No external inference was requested.',budget_scope:'No provider call or provider-budget reservation. Rules are calculated from the same case basis.'};
 }
 export function sovernAdvisorConfig(env={}){
   return {enabled:env.SOVERNSTACK_ADVISOR_ENABLED==='1',configured:env.SOVERNSTACK_ADVISOR_ENABLED==='1'&&typeof env.SOVERNSTACK_USER_ID==='string'&&env.SOVERNSTACK_USER_ID.trim().length>0&&env.SOVERNSTACK_BUDGET_MODE===SOVERN_ADVISOR_LIMITS.budgetMode,
@@ -154,7 +166,9 @@ async function sovernTransport(env,payload,fetcher,timeoutMs){
 }
 export async function sovernAdvisorAnswer(env,body,options={}){
   let request,context;try{request=sovernRequest(body);context=await sovernBuildBasis(options.service,request);}catch{return {status:400,body:sovernFallback(null,'invalid_or_non_synthetic_request')};}
-  const {basis,citations}=context,config=sovernAdvisorConfig(env);
+  const {basis,citations}=context;
+  if(request.explanation_mode==='rules')return {status:200,body:sovernExplicitRules(basis,request.intent,citations)};
+  const config=sovernAdvisorConfig(env);
   if(!config.configured)return {status:200,body:sovernFallback(basis,config.enabled&&!config.budget_mode_configured?'budget_mode_unconfigured':'unconfigured',citations)};
 
   // Owner-approved estimate mode: max_tokens and public model context are not

@@ -1,0 +1,55 @@
+/* Compact task-first surfaces. Exact evidence stays in native, keyboard-accessible disclosures. */
+.mv-shell{max-width:1100px;color:#202020;padding:8px 0 24px}
+.mv-shell h2{font-size:clamp(26px,3vw,38px);line-height:1.15;letter-spacing:-.7px;margin:8px 0 12px}
+.mv-shell h3{font-size:19px;margin:16px 0 8px}
+.mv-disclosure{font-size:12px;line-height:1.6;color:#555;border-left:2px solid #999;padding-left:10px;margin:12px 0 20px}
+.mv-tabs{display:flex;flex-wrap:wrap;gap:6px;margin:14px 0}
+.mv-tabs button{background:#fff;color:#333;border:1px solid #aaa;padding:9px 12px;min-height:40px;font-size:13px}
+.mv-tabs button[aria-pressed=true],.mv-tabs button[aria-pressed=true]:hover:enabled{background:#e9e9e9;border-color:#333;color:#111;font-weight:650;box-shadow:inset 0 -2px #333}
+.mv-shell button:focus-visible,.mv-shell select:focus-visible,.mv-shell input:focus-visible,.mv-full-evidence>summary:focus-visible{outline:2px solid #333;outline-offset:3px}
+.mv-label{display:grid;gap:7px;font-size:13px;margin:16px 0;max-width:650px}
+.mv-label select,.mv-label input{font-size:14px;width:100%;min-height:43px;border:1px solid #999;background:#fff;color:#222;padding:10px}
+.mv-assumptions{display:flex;align-items:center;gap:22px;flex-wrap:wrap}
+.mv-assumptions .mv-label{width:220px}
+.mv-confirm{display:flex;gap:10px;align-items:flex-start;font-size:13px;line-height:1.5;max-width:360px}
+.mv-confirm input{flex:none;width:18px;height:18px;margin-top:2px}
+.mv-primary{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:12px 22px!important;margin:12px 0 18px;font-size:14px!important;background:#242424!important;color:#fff!important;border:1px solid #242424!important}
+.mv-primary:disabled{background:#ddd!important;color:#666!important;border-color:#bbb!important}
+.mv-secondary{background:#fff;color:#333;border:1px solid #aaa;padding:9px 12px;min-height:40px;font-size:13px}
+.mv-source{border:1px solid #ccc;background:#fff;padding:14px 18px;max-width:780px}
+.mv-source p{font-size:14px;line-height:1.6;margin:0 0 8px}
+.mv-source small{display:block;font-size:12px;line-height:1.5;margin-top:7px;color:#555}
+.mv-source a{font-size:12px}
+.mv-metrics{display:flex;gap:12px;flex-wrap:wrap;margin:18px 0}
+.mv-metric{flex:1;min-width:140px;border-top:2px solid #777;padding:12px 14px;background:#fff}
+.mv-metric strong{display:block;font-size:25px;font-weight:500;line-height:1.3;overflow-wrap:anywhere}
+.mv-metric span{display:block;color:#555;font-size:12px;margin-top:7px}
+.mv-process{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));list-style:none;padding:0;margin:24px 0;gap:12px}
+.mv-process li{position:relative;border:1px solid #aaa;padding:18px 14px;font-size:14px;background:#fff}
+.mv-process li+li:before{content:'';position:absolute;left:-13px;top:50%;width:12px;border-top:1px solid #777}
+.mv-chart{min-width:0;margin:18px 0;overflow:hidden}
+.mv-source-list{margin:20px 0;border-top:1px solid #aaa}
+.mv-source-row{display:grid;grid-template-columns:minmax(180px,1fr) minmax(120px,.65fr) auto;align-items:center;gap:16px;padding:15px 0;border-bottom:1px solid #ccc;font-size:13px}
+.mv-source-row small{font-size:12px;color:#555;overflow-wrap:anywhere}
+.mv-answer{border-left:3px solid #333;background:#fff;padding:16px 20px;margin:15px 0;max-width:800px}
+.mv-answer p{line-height:1.7;font-size:15px;margin:0 0 12px}
+.mv-answer small{display:block;line-height:1.6;color:#555;margin:6px 0}
+.mv-full-evidence{border-top:1px solid #aaa;margin:16px 0 28px;padding-top:14px}
+.mv-full-evidence>summary{font-size:13px;color:#444;cursor:pointer;padding:8px 0}
+.mv-full-evidence[open]>summary{margin-bottom:22px}
+.mv-shell .hint{font-size:12px;line-height:1.6;max-width:780px}
+.mv-error{padding:10px 12px;border-left:3px solid #777;background:#eee;font-size:13px}
+.mv-runtime{font-size:12px;color:#444;line-height:1.5}
+@media(max-width:850px){.mv-shell{padding-top:3px}.mv-source-row{grid-template-columns:1fr;gap:6px}.mv-assumptions{gap:5px}.mv-tabs{gap:5px}.mv-tabs button{font-size:12px;padding:8px}.mv-metric{min-width:110px}.mv-metric strong{font-size:22px}.mv-process{gap:9px}.mv-process li{font-size:12px;padding:13px 9px}.mv-process li+li:before{left:-10px;width:9px}.mv-primary{max-width:100%;white-space:normal}}
+
+.mv-case-list{display:grid;gap:10px;margin:20px 0;max-width:800px}.mv-case-entry{text-align:left;justify-content:flex-start}.mv-case-network{display:flex;gap:10px;flex-wrap:wrap;border-top:1px solid #aaa;border-bottom:1px solid #aaa;padding:16px 0;margin:14px 0}.mv-case-network button{font-size:12px}.mv-shell details>button{display:block;margin:8px 0;text-align:left;max-width:100%}
+
+.mv-source-filters{display:grid;grid-template-columns:140px 170px minmax(150px,1fr);gap:14px;max-width:800px}.mv-source-filters .mv-label{margin:0}.mv-exposure{font-size:13px;line-height:1.6;max-width:720px}@media(max-width:600px){.mv-source-filters{grid-template-columns:1fr 1fr}.mv-source-filters .mv-label:last-child{grid-column:1/-1}}
+
+.mv-stepper{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0;list-style:none;padding:0;margin:20px 0;border:1px solid #bbb;max-width:800px}.mv-stepper li{padding:12px;font-size:13px;border-right:1px solid #bbb;color:#666;background:#fafafa}.mv-stepper li:last-child{border-right:0}.mv-stepper li[data-active=true]{background:#e5e5e5;color:#171717;font-weight:650;box-shadow:inset 0 -2px #333}@media(max-width:600px){.mv-stepper li{padding:10px 7px;font-size:11px}}
+
+/* Keep the next decision visible instead of spending the fold on repeated headers. */
+.mv-shell>.eyebrow{display:none}.mv-shell h2{font-size:clamp(24px,2.4vw,30px);margin:0 0 8px}.mv-shell>.mv-disclosure{margin:8px 0 12px}.mv-shell>.mv-tabs{margin:8px 0}.mv-shell>.mv-stepper{margin:12px 0}.mv-exposure,.mv-result-heading{scroll-margin-top:20px}.mv-exposure:focus,.mv-result-heading:focus{outline:none}
+/* Catalog status belongs to source browsing, not a case explanation. */
+body[data-mrdiy=true][data-view=advisor] .coverage{display:none}
+@media(max-width:850px){.mv-shell>.table-wrap .mrdiy-expansion-table{min-width:0;table-layout:fixed}.mv-shell>.table-wrap .mrdiy-expansion-table th,.mv-shell>.table-wrap .mrdiy-expansion-table td{padding:8px 5px;font-size:11px;overflow-wrap:anywhere}.mv-shell>.table-wrap .mrdiy-expansion-table th:first-child,.mv-shell>.table-wrap .mrdiy-expansion-table td:first-child{width:31%}}

@@ -1,0 +1,747 @@
+{
+  "schema_version": "dormathon.synthetic-history-replay.v1",
+  "data_mode": "SYNTHETIC_INTERNAL",
+  "observed_real_company_data": false,
+  "source_id": "authored-extension-seed410105-v1",
+  "generator_seed": 410105,
+  "source_artifact": "dynamics-observations-v1.json",
+  "display_semantics": "Last 60 already-authored dated synthetic sales releases. This interface replays supplied records; it is not evidence of 60 operating days or a live feed.",
+  "daily_accuracy_available": false,
+  "daily_accuracy_unavailable_reason": "No daily paired pre-release forecasts and uncensored outcomes were exported for this window. Forecast accuracy is unavailable; it is not synthesized.",
+  "days": [
+    {
+      "date": "2026-08-11",
+      "fulfilled_units": 29.029233134406752,
+      "censored": false,
+      "observation_mode": "AUTHORED_SYNTHETIC_SALES",
+      "thermal_rows": 4,
+      "mean_ending_temperature_c": 28.7396659957468,
+      "daily_accuracy": null
+    },
+    {
+      "date": "2026-08-12",
+      "fulfilled_units": 30.424252072804467,
+      "censored": false,
+      "observation_mode": "AUTHORED_SYNTHETIC_SALES",
+      "thermal_rows": 4,
+      "mean_ending_temperature_c": 29.9371032889306,
+      "daily_accuracy": null
+    },
+    {
+      "date": "2026-08-13",
+      "fulfilled_units": 31.476922967403056,
+      "censored": false,
+      "observation_mode": "AUTHORED_SYNTHETIC_SALES",
+      "thermal_rows": 4,
+      "mean_ending_temperature_c": 30.912944246166962,
+      "daily_accuracy": null
+    },
+    {
+      "date": "2026-08-14",
+      "fulfilled_units": 33.29422905805699,
+      "censored": false,
+      "observation_mode": "AUTHORED_SYNTHETIC_SALES",
+      "thermal_rows": 4,
+      "mean_ending_temperature_c": 31.655180596687522,
+      "daily_accuracy": null
+    },
+    {
+      "date": "2026-08-15",
+      "fulfilled_units": 29.84701378695245,
+      "censored": false,
+      "observation_mode": "AUTHORED_SYNTHETIC_SALES",
+      "thermal_rows": 4,
+      "mean_ending_temperature_c": 29.661413109652386,
+      "daily_accuracy": null
+    },
+    {
+      "date": "2026-08-16",
+      "fulfilled_units": 18,
+      "censored": true,
+      "observation_mode": "AUTHORED_SYNTHETIC_SALES",
+      "thermal_rows": 4,
+      "mean_ending_temperature_c": 29.0208832988124,
+      "daily_accuracy": null
+    },
+    {
+      "date": "2026-08-17",
+      "fulfilled_units": 25.30810196281492,
+      "censored": false,
+      "observation_mode": "AUTHORED_SYNTHETIC_SALES",
+      "thermal_rows": 4,
+      "mean_ending_temperature_c": 29.84299908972789,
+      "daily_accuracy": null
+    },
+    {
+      "date": "2026-08-18",
+      "fulfilled_units": 25.79208096318124,
+      "censored": false,
+      "observation_mode": "AUTHORED_SYNTHETIC_SALES",
+      "thermal_rows": 4,
+      "mean_ending_temperature_c": 31.502601642203082,
+      "daily_accuracy": null
+    },
+    {
+      "date": "2026-08-19",
+      "fulfilled_units": 27.16711404507681,
+      "censored": false,
+      "observation_mode": "AUTHORED_SYNTHETIC_SALES",
+      "thermal_rows": 4,
+      "mean_ending_temperature_c": 30.202280490443698,
+      "daily_accuracy": null
+    },
+    {
+      "date": "2026-08-20",
+      "fulfilled_units": 28.138452392043764,
+      "censored": false,
+      "observation_mode": "AUTHORED_SYNTHETIC_SALES",
+      "thermal_rows": 4,
+      "mean_ending_temperature_c": 31.878571495779525,
+      "daily_accuracy": null
+    },
+    {
+      "date": "2026-08-21",
+      "fulfilled_units": 24.39858750221696,
+      "censored": false,
+      "observation_mode": "AUTHORED_SYNTHETIC_SALES",
+      "thermal_rows": 4,
+      "mean_ending_temperature_c": 31.96949097400194,
+      "daily_accuracy": null
+    },
+    {
+      "date": "2026-08-22",
+      "fulfilled_units": 26.34219078895218,
+      "censored": false,
+      "observation_mode": "AUTHORED_SYNTHETIC_SALES",
+      "thermal_rows": 4,
+      "mean_ending_temperature_c": 31.022434939471253,
+      "daily_accuracy": null
+    },
+    {
+      "date": "2026-08-23",
+      "fulfilled_units": 25.124671230511908,
+      "censored": false,
+      "observation_mode": "AUTHORED_SYNTHETIC_SALES",
+      "thermal_rows": 4,
+      "mean_ending_temperature_c": 29.371667738061745,
+      "daily_accuracy": null
+    },
+    {
+      "date": "2026-08-24",
+      "fulfilled_units": 28.240568174799016,
+      "censored": false,
+      "observation_mode": "AUTHORED_SYNTHETIC_SALES",
+      "thermal_rows": 4,
+      "mean_ending_temperature_c": 28.9480419279824,
+      "daily_accuracy": null
+    },
+    {
+      "date": "2026-08-25",
+      "fulfilled_units": 26.301411410443233,
+      "censored": false,
+      "observation_mode": "AUTHORED_SYNTHETIC_SALES",
+      "thermal_rows": 4,
+      "mean_ending_temperature_c": 29.616557786110626,
+      "daily_accuracy": null
+    },
+    {
+      "date": "2026-08-26",
+      "fulfilled_units": 25.3414805608038,
+      "censored": false,
+      "observation_mode": "AUTHORED_SYNTHETIC_SALES",
+      "thermal_rows": 4,
+      "mean_ending_temperature_c": 31.77216248953619,
+      "daily_accuracy": null
+    },
+    {
+      "date": "2026-08-27",
+      "fulfilled_units": 18,
+      "censored": true,
+      "observation_mode": "AUTHORED_SYNTHETIC_SALES",
+      "thermal_rows": 4,
+      "mean_ending_temperature_c": 28.927157837929037,
+      "daily_accuracy": null
+    },
+    {
+      "date": "2026-08-28",
+      "fulfilled_units": 30.88219587336634,
+      "censored": false,
+      "observation_mode": "AUTHORED_SYNTHETIC_SALES",
+      "thermal_rows": 4,
+      "mean_ending_temperature_c": 30.722029756443668,
+      "daily_accuracy": null
+    },
+    {
+      "date": "2026-08-29",
+      "fulfilled_units": 26.64640418988371,
+      "censored": false,
+      "observation_mode": "AUTHORED_SYNTHETIC_SALES",
+      "thermal_rows": 4,
+      "mean_ending_temperature_c": 32.14120095021534,
+      "daily_accuracy": null
+    },
+    {
+      "date": "2026-08-30",
+      "fulfilled_units": 26.959383432879243,
+      "censored": false,
+      "observation_mode": "AUTHORED_SYNTHETIC_SALES",
+      "thermal_rows": 4,
+      "mean_ending_temperature_c": 30.41905897725894,
+      "daily_accuracy": null
+    },
+    {
+      "date": "2026-08-31",
+      "fulfilled_units": 22.92821452343136,
+      "censored": false,
+      "observation_mode": "AUTHORED_SYNTHETIC_SALES",
+      "thermal_rows": 4,
+      "mean_ending_temperature_c": 30.83849073704312,
+      "daily_accuracy": null
+    },
+    {
+      "date": "2026-09-01",
+      "fulfilled_units": 26.475914985493773,
+      "censored": false,
+      "observation_mode": "AUTHORED_SYNTHETIC_SALES",
+      "thermal_rows": 4,
+      "mean_ending_temperature_c": 31.285266659060415,
+      "daily_accuracy": null
+    },
+    {
+      "date": "2026-09-02",
+      "fulfilled_units": 25.374494978008986,
+      "censored": false,
+      "observation_mode": "AUTHORED_SYNTHETIC_SALES",
+      "thermal_rows": 4,
+      "mean_ending_temperature_c": 30.2898172345475,
+      "daily_accuracy": null
+    },
+    {
+      "date": "2026-09-03",
+      "fulfilled_units": 24.711250621402844,
+      "censored": false,
+      "observation_mode": "AUTHORED_SYNTHETIC_SALES",
+      "thermal_rows": 4,
+      "mean_ending_temperature_c": 30.17581687842989,
+      "daily_accuracy": null
+    },
+    {
+      "date": "2026-09-04",
+      "fulfilled_units": 30.819469301623776,
+      "censored": false,
+      "observation_mode": "AUTHORED_SYNTHETIC_SALES",
+      "thermal_rows": 4,
+      "mean_ending_temperature_c": 31.989888448484233,
+      "daily_accuracy": null
+    },
+    {
+      "date": "2026-09-05",
+      "fulfilled_units": 29.002525190934687,
+      "censored": false,
+      "observation_mode": "AUTHORED_SYNTHETIC_SALES",
+      "thermal_rows": 4,
+      "mean_ending_temperature_c": 31.367481967194195,
+      "daily_accuracy": null
+    },
+    {
+      "date": "2026-09-06",
+      "fulfilled_units": 27.102059220905666,
+      "censored": false,
+      "observation_mode": "AUTHORED_SYNTHETIC_SALES",
+      "thermal_rows": 4,
+      "mean_ending_temperature_c": 29.531847432475846,
+      "daily_accuracy": null
+    },
+    {
+      "date": "2026-09-07",
+      "fulfilled_units": 18,
+      "censored": true,
+      "observation_mode": "AUTHORED_SYNTHETIC_SALES",
+      "thermal_rows": 4,
+      "mean_ending_temperature_c": 31.560249565630365,
+      "daily_accuracy": null
+    },
+    {
+      "date": "2026-09-08",
+      "fulfilled_units": 20.31855091746398,
+      "censored": false,
+      "observation_mode": "AUTHORED_SYNTHETIC_SALES",
+      "thermal_rows": 4,
+      "mean_ending_temperature_c": 29.537195200961275,
+      "daily_accuracy": null
+    },
+    {
+      "date": "2026-09-09",
+      "fulfilled_units": 22.58159614254888,
+      "censored": false,
+      "observation_mode": "AUTHORED_SYNTHETIC_SALES",
+      "thermal_rows": 4,
+      "mean_ending_temperature_c": 30.590445532267772,
+      "daily_accuracy": null
+    },
+    {
+      "date": "2026-09-10",
+      "fulfilled_units": 25.178213933439007,
+      "censored": false,
+      "observation_mode": "AUTHORED_SYNTHETIC_SALES",
+      "thermal_rows": 4,
+      "mean_ending_temperature_c": 29.162144347749276,
+      "daily_accuracy": null
+    },
+    {
+      "date": "2026-09-11",
+      "fulfilled_units": 30.29313499367023,
+      "censored": false,
+      "observation_mode": "AUTHORED_SYNTHETIC_SALES",
+      "thermal_rows": 4,
+      "mean_ending_temperature_c": 30.2512816999368,
+      "daily_accuracy": null
+    },
+    {
+      "date": "2026-09-12",
+      "fulfilled_units": 26.28904181075894,
+      "censored": false,
+      "observation_mode": "AUTHORED_SYNTHETIC_SALES",
+      "thermal_rows": 4,
+      "mean_ending_temperature_c": 30.698653519465587,
+      "daily_accuracy": null
+    },
+    {
+      "date": "2026-09-13",
+      "fulfilled_units": 26.39889302699693,
+      "censored": false,
+      "observation_mode": "AUTHORED_SYNTHETIC_SALES",
+      "thermal_rows": 4,
+      "mean_ending_temperature_c": 30.82940287125676,
+      "daily_accuracy": null
+    },
+    {
+      "date": "2026-09-14",
+      "fulfilled_units": 21.538627118534347,
+      "censored": false,
+      "observation_mode": "AUTHORED_SYNTHETIC_SALES",
+      "thermal_rows": 4,
+      "mean_ending_temperature_c": 30.698220222784837,
+      "daily_accuracy": null
+    },
+    {
+      "date": "2026-09-15",
+      "fulfilled_units": 25.71936743428713,
+      "censored": false,
+      "observation_mode": "AUTHORED_SYNTHETIC_SALES",
+      "thermal_rows": 4,
+      "mean_ending_temperature_c": 30.9912377892341,
+      "daily_accuracy": null
+    },
+    {
+      "date": "2026-09-16",
+      "fulfilled_units": 23.678123932999522,
+      "censored": false,
+      "observation_mode": "AUTHORED_SYNTHETIC_SALES",
+      "thermal_rows": 4,
+      "mean_ending_temperature_c": 30.539909728240396,
+      "daily_accuracy": null
+    },
+    {
+      "date": "2026-09-17",
+      "fulfilled_units": 23.49261855832511,
+      "censored": false,
+      "observation_mode": "AUTHORED_SYNTHETIC_SALES",
+      "thermal_rows": 4,
+      "mean_ending_temperature_c": 30.695088448858083,
+      "daily_accuracy": null
+    },
+    {
+      "date": "2026-09-18",
+      "fulfilled_units": 18,
+      "censored": true,
+      "observation_mode": "AUTHORED_SYNTHETIC_SALES",
+      "thermal_rows": 4,
+      "mean_ending_temperature_c": 30.111836899737327,
+      "daily_accuracy": null
+    },
+    {
+      "date": "2026-09-19",
+      "fulfilled_units": 31.24525673370842,
+      "censored": false,
+      "observation_mode": "AUTHORED_SYNTHETIC_SALES",
+      "thermal_rows": 4,
+      "mean_ending_temperature_c": 29.736913961366483,
+      "daily_accuracy": null
+    },
+    {
+      "date": "2026-09-20",
+      "fulfilled_units": 29.176296037184485,
+      "censored": false,
+      "observation_mode": "AUTHORED_SYNTHETIC_SALES",
+      "thermal_rows": 4,
+      "mean_ending_temperature_c": 30.826592280874703,
+      "daily_accuracy": null
+    },
+    {
+      "date": "2026-09-21",
+      "fulfilled_units": 23.665532355871203,
+      "censored": false,
+      "observation_mode": "AUTHORED_SYNTHETIC_SALES",
+      "thermal_rows": 4,
+      "mean_ending_temperature_c": 30.303684019592957,
+      "daily_accuracy": null
+    },
+    {
+      "date": "2026-09-22",
+      "fulfilled_units": 25.99975923863639,
+      "censored": false,
+      "observation_mode": "AUTHORED_SYNTHETIC_SALES",
+      "thermal_rows": 4,
+      "mean_ending_temperature_c": 28.558959334352167,
+      "daily_accuracy": null
+    },
+    {
+      "date": "2026-09-23",
+      "fulfilled_units": 25.83196935753492,
+      "censored": false,
+      "observation_mode": "AUTHORED_SYNTHETIC_SALES",
+      "thermal_rows": 4,
+      "mean_ending_temperature_c": 29.702629328104567,
+      "daily_accuracy": null
+    },
+    {
+      "date": "2026-09-24",
+      "fulfilled_units": 26.61179729340755,
+      "censored": false,
+      "observation_mode": "AUTHORED_SYNTHETIC_SALES",
+      "thermal_rows": 4,
+      "mean_ending_temperature_c": 29.545207080829744,
+      "daily_accuracy": null
+    },
+    {
+      "date": "2026-09-25",
+      "fulfilled_units": 30.329211212507946,
+      "censored": false,
+      "observation_mode": "AUTHORED_SYNTHETIC_SALES",
+      "thermal_rows": 4,
+      "mean_ending_temperature_c": 31.39959733301705,
+      "daily_accuracy": null
+    },
+    {
+      "date": "2026-09-26",
+      "fulfilled_units": 26.486764118003066,
+      "censored": false,
+      "observation_mode": "AUTHORED_SYNTHETIC_SALES",
+      "thermal_rows": 4,
+      "mean_ending_temperature_c": 28.8418629777388,
+      "daily_accuracy": null
+    },
+    {
+      "date": "2026-09-27",
+      "fulfilled_units": 24.08930707178354,
+      "censored": false,
+      "observation_mode": "AUTHORED_SYNTHETIC_SALES",
+      "thermal_rows": 4,
+      "mean_ending_temperature_c": 30.52350369213237,
+      "daily_accuracy": null
+    },
+    {
+      "date": "2026-09-28",
+      "fulfilled_units": 24.66382922001578,
+      "censored": false,
+      "observation_mode": "AUTHORED_SYNTHETIC_SALES",
+      "thermal_rows": 4,
+      "mean_ending_temperature_c": 31.573361772816316,
+      "daily_accuracy": null
+    },
+    {
+      "date": "2026-09-29",
+      "fulfilled_units": 18,
+      "censored": true,
+      "observation_mode": "AUTHORED_SYNTHETIC_SALES",
+      "thermal_rows": 4,
+      "mean_ending_temperature_c": 31.46805875309134,
+      "daily_accuracy": null
+    },
+    {
+      "date": "2026-09-30",
+      "fulfilled_units": 25.15350953419068,
+      "censored": false,
+      "observation_mode": "AUTHORED_SYNTHETIC_SALES",
+      "thermal_rows": 4,
+      "mean_ending_temperature_c": 29.835498878763193,
+      "daily_accuracy": null
+    },
+    {
+      "date": "2026-10-01",
+      "fulfilled_units": 26.939033788924945,
+      "censored": false,
+      "observation_mode": "AUTHORED_SYNTHETIC_SALES",
+      "thermal_rows": 4,
+      "mean_ending_temperature_c": 29.643019540942696,
+      "daily_accuracy": null
+    },
+    {
+      "date": "2026-10-02",
+      "fulfilled_units": 28.77542671186661,
+      "censored": false,
+      "observation_mode": "AUTHORED_SYNTHETIC_SALES",
+      "thermal_rows": 4,
+      "mean_ending_temperature_c": 29.11304085712372,
+      "daily_accuracy": null
+    },
+    {
+      "date": "2026-10-03",
+      "fulfilled_units": 29.603557942362038,
+      "censored": false,
+      "observation_mode": "AUTHORED_SYNTHETIC_SALES",
+      "thermal_rows": 4,
+      "mean_ending_temperature_c": 30.819433655285057,
+      "daily_accuracy": null
+    },
+    {
+      "date": "2026-10-04",
+      "fulfilled_units": 27.49499386680752,
+      "censored": false,
+      "observation_mode": "AUTHORED_SYNTHETIC_SALES",
+      "thermal_rows": 4,
+      "mean_ending_temperature_c": 30.371582748545574,
+      "daily_accuracy": null
+    },
+    {
+      "date": "2026-10-05",
+      "fulfilled_units": 26.034627308717422,
+      "censored": false,
+      "observation_mode": "AUTHORED_SYNTHETIC_SALES",
+      "thermal_rows": 4,
+      "mean_ending_temperature_c": 30.14552165835378,
+      "daily_accuracy": null
+    },
+    {
+      "date": "2026-10-06",
+      "fulfilled_units": 27.416511843455165,
+      "censored": false,
+      "observation_mode": "AUTHORED_SYNTHETIC_SALES",
+      "thermal_rows": 4,
+      "mean_ending_temperature_c": 31.124487386612273,
+      "daily_accuracy": null
+    },
+    {
+      "date": "2026-10-07",
+      "fulfilled_units": 28.70311594943748,
+      "censored": false,
+      "observation_mode": "AUTHORED_SYNTHETIC_SALES",
+      "thermal_rows": 4,
+      "mean_ending_temperature_c": 30.818249942313468,
+      "daily_accuracy": null
+    },
+    {
+      "date": "2026-10-08",
+      "fulfilled_units": 30.102013168587366,
+      "censored": false,
+      "observation_mode": "AUTHORED_SYNTHETIC_SALES",
+      "thermal_rows": 4,
+      "mean_ending_temperature_c": 30.158436162438576,
+      "daily_accuracy": null
+    },
+    {
+      "date": "2026-10-09",
+      "fulfilled_units": 33.44280562056919,
+      "censored": false,
+      "observation_mode": "AUTHORED_SYNTHETIC_SALES",
+      "thermal_rows": 4,
+      "mean_ending_temperature_c": 30.321099558715403,
+      "daily_accuracy": null
+    }
+  ],
+  "fit_history_source_artifact": "dynamics-daily-updates.json",
+  "fit_history_semantics": "Replay one dated daily observation release at a time; refit only rows strictly before each as-of time; no automatic background ingest is claimed.",
+  "fit_history": [
+    {
+      "as_of": "2026-09-08T00:00:00Z",
+      "version": "calibrated-2026-09-08-db45561c",
+      "window_start": "2026-07-14",
+      "latest_training_date": "2026-09-07",
+      "uncensored_sales_rows": 51,
+      "demand_innovation_rmse_log_units": 0.09152117425237889,
+      "thermal_training_rmse_c": 0.041172902963488536,
+      "holdout_rows_used": 0
+    },
+    {
+      "as_of": "2026-09-09T00:00:00Z",
+      "version": "calibrated-2026-09-09-0dd8ab2a",
+      "window_start": "2026-07-15",
+      "latest_training_date": "2026-09-08",
+      "uncensored_sales_rows": 51,
+      "demand_innovation_rmse_log_units": 0.09094607408975121,
+      "thermal_training_rmse_c": 0.041325862686840076,
+      "holdout_rows_used": 0
+    },
+    {
+      "as_of": "2026-09-10T00:00:00Z",
+      "version": "calibrated-2026-09-10-29c1806f",
+      "window_start": "2026-07-16",
+      "latest_training_date": "2026-09-09",
+      "uncensored_sales_rows": 51,
+      "demand_innovation_rmse_log_units": 0.09103925387960898,
+      "thermal_training_rmse_c": 0.04146128201977484,
+      "holdout_rows_used": 0
+    },
+    {
+      "as_of": "2026-09-11T00:00:00Z",
+      "version": "calibrated-2026-09-11-c23a4846",
+      "window_start": "2026-07-17",
+      "latest_training_date": "2026-09-10",
+      "uncensored_sales_rows": 51,
+      "demand_innovation_rmse_log_units": 0.08993241466981988,
+      "thermal_training_rmse_c": 0.04052807473625278,
+      "holdout_rows_used": 0
+    },
+    {
+      "as_of": "2026-09-12T00:00:00Z",
+      "version": "calibrated-2026-09-12-a0a77b9c",
+      "window_start": "2026-07-18",
+      "latest_training_date": "2026-09-11",
+      "uncensored_sales_rows": 51,
+      "demand_innovation_rmse_log_units": 0.09029302218178059,
+      "thermal_training_rmse_c": 0.040412345173871767,
+      "holdout_rows_used": 0
+    },
+    {
+      "as_of": "2026-09-13T00:00:00Z",
+      "version": "calibrated-2026-09-13-f0199d48",
+      "window_start": "2026-07-19",
+      "latest_training_date": "2026-09-12",
+      "uncensored_sales_rows": 51,
+      "demand_innovation_rmse_log_units": 0.09204922803584928,
+      "thermal_training_rmse_c": 0.04061796069937155,
+      "holdout_rows_used": 0
+    },
+    {
+      "as_of": "2026-09-14T00:00:00Z",
+      "version": "calibrated-2026-09-14-c4a911db",
+      "window_start": "2026-07-20",
+      "latest_training_date": "2026-09-13",
+      "uncensored_sales_rows": 51,
+      "demand_innovation_rmse_log_units": 0.0846069672681547,
+      "thermal_training_rmse_c": 0.039821617431580254,
+      "holdout_rows_used": 0
+    },
+    {
+      "as_of": "2026-09-15T00:00:00Z",
+      "version": "calibrated-2026-09-15-f89c8eb4",
+      "window_start": "2026-07-21",
+      "latest_training_date": "2026-09-14",
+      "uncensored_sales_rows": 51,
+      "demand_innovation_rmse_log_units": 0.08742259871593241,
+      "thermal_training_rmse_c": 0.039483622991758685,
+      "holdout_rows_used": 0
+    },
+    {
+      "as_of": "2026-09-16T00:00:00Z",
+      "version": "calibrated-2026-09-16-268cd387",
+      "window_start": "2026-07-22",
+      "latest_training_date": "2026-09-15",
+      "uncensored_sales_rows": 51,
+      "demand_innovation_rmse_log_units": 0.08734701659920874,
+      "thermal_training_rmse_c": 0.03939804960799383,
+      "holdout_rows_used": 0
+    },
+    {
+      "as_of": "2026-09-17T00:00:00Z",
+      "version": "calibrated-2026-09-17-0fe4e804",
+      "window_start": "2026-07-23",
+      "latest_training_date": "2026-09-16",
+      "uncensored_sales_rows": 51,
+      "demand_innovation_rmse_log_units": 0.08440119620936283,
+      "thermal_training_rmse_c": 0.03921439944289615,
+      "holdout_rows_used": 0
+    },
+    {
+      "as_of": "2026-09-18T00:00:00Z",
+      "version": "calibrated-2026-09-18-07cc908f",
+      "window_start": "2026-07-24",
+      "latest_training_date": "2026-09-17",
+      "uncensored_sales_rows": 51,
+      "demand_innovation_rmse_log_units": 0.0833125936729106,
+      "thermal_training_rmse_c": 0.03899667196905762,
+      "holdout_rows_used": 0
+    },
+    {
+      "as_of": "2026-09-19T00:00:00Z",
+      "version": "calibrated-2026-09-19-95fea10a",
+      "window_start": "2026-07-25",
+      "latest_training_date": "2026-09-18",
+      "uncensored_sales_rows": 50,
+      "demand_innovation_rmse_log_units": 0.0827032321424955,
+      "thermal_training_rmse_c": 0.038834907449738804,
+      "holdout_rows_used": 0
+    },
+    {
+      "as_of": "2026-09-20T00:00:00Z",
+      "version": "calibrated-2026-09-20-8e4c0390",
+      "window_start": "2026-07-26",
+      "latest_training_date": "2026-09-19",
+      "uncensored_sales_rows": 51,
+      "demand_innovation_rmse_log_units": 0.08364022337179859,
+      "thermal_training_rmse_c": 0.038995597765612205,
+      "holdout_rows_used": 0
+    },
+    {
+      "as_of": "2026-09-21T00:00:00Z",
+      "version": "calibrated-2026-09-21-ca69bffd",
+      "window_start": "2026-07-27",
+      "latest_training_date": "2026-09-20",
+      "uncensored_sales_rows": 51,
+      "demand_innovation_rmse_log_units": 0.08008489798849304,
+      "thermal_training_rmse_c": 0.03885156908320048,
+      "holdout_rows_used": 0
+    },
+    {
+      "as_of": "2026-09-22T00:00:00Z",
+      "version": "calibrated-2026-09-22-22a8ff16",
+      "window_start": "2026-07-28",
+      "latest_training_date": "2026-09-21",
+      "uncensored_sales_rows": 51,
+      "demand_innovation_rmse_log_units": 0.08115431712750532,
+      "thermal_training_rmse_c": 0.039453816929470496,
+      "holdout_rows_used": 0
+    },
+    {
+      "as_of": "2026-09-23T00:00:00Z",
+      "version": "calibrated-2026-09-23-a8a81749",
+      "window_start": "2026-07-29",
+      "latest_training_date": "2026-09-22",
+      "uncensored_sales_rows": 51,
+      "demand_innovation_rmse_log_units": 0.07894441438263732,
+      "thermal_training_rmse_c": 0.039481267232831005,
+      "holdout_rows_used": 0
+    },
+    {
+      "as_of": "2026-09-24T00:00:00Z",
+      "version": "calibrated-2026-09-24-b308cd2a",
+      "window_start": "2026-07-30",
+      "latest_training_date": "2026-09-23",
+      "uncensored_sales_rows": 51,
+      "demand_innovation_rmse_log_units": 0.07680054307204642,
+      "thermal_training_rmse_c": 0.03985856790974656,
+      "holdout_rows_used": 0
+    },
+    {
+      "as_of": "2026-09-25T00:00:00Z",
+      "version": "calibrated-2026-09-25-52ce836e",
+      "window_start": "2026-07-31",
+      "latest_training_date": "2026-09-24",
+      "uncensored_sales_rows": 51,
+      "demand_innovation_rmse_log_units": 0.07414809383944707,
+      "thermal_training_rmse_c": 0.03973662179155762,
+      "holdout_rows_used": 0
+    },
+    {
+      "as_of": "2026-09-26T00:00:00Z",
+      "version": "calibrated-2026-09-26-d7d491a4",
+      "window_start": "2026-08-01",
+      "latest_training_date": "2026-09-25",
+      "uncensored_sales_rows": 51,
+      "demand_innovation_rmse_log_units": 0.07187690261315724,
+      "thermal_training_rmse_c": 0.039459980740978104,
+      "holdout_rows_used": 0
+    }
+  ]
+}

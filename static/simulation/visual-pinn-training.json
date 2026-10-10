@@ -1,0 +1,223 @@
+{
+  "schema_version": "dormathon.thermal-pinn.v1",
+  "version": "thermal-pinn-6d9ccfa2",
+  "data_mode": "SYNTHETIC_INTERNAL",
+  "architecture": {
+    "hidden_layers": 1,
+    "hidden_width": 12,
+    "activation": "tanh",
+    "trainable_parameters": 37,
+    "hard_initial_condition": "y(x)=1+x*N(x), hence y(0)=1 exactly"
+  },
+  "governing_constraint": "dy/dx + y = 0, x=k*t; one-zone constant-forcing RC thermal decay",
+  "domain": {
+    "min_x": 0,
+    "max_x": 3.6,
+    "thermal_k_per_hour": [
+      0.05,
+      0.45
+    ],
+    "hours": [
+      0,
+      8
+    ]
+  },
+  "training": {
+    "seed": 410106,
+    "steps": 8000,
+    "optimizer": "Adam, analytic exact derivatives",
+    "collocation_points": 41,
+    "synthetic_data_points": [
+      {
+        "x": 0.2,
+        "y": 0.8187307530779818
+      },
+      {
+        "x": 0.8,
+        "y": 0.44932896411722156
+      },
+      {
+        "x": 1.8,
+        "y": 0.16529888822158653
+      },
+      {
+        "x": 3.2,
+        "y": 0.040762203978366204
+      }
+    ],
+    "loss": "mean ODE residual squared + 2*mean sparse synthetic data error squared",
+    "loss_history": [
+      {
+        "step": 1,
+        "physics_residual_mse": 0.23187688892261413,
+        "sparse_synthetic_data_mse": 0.05271642353999276,
+        "total_loss": 0.3373097360025996
+      },
+      {
+        "step": 1000,
+        "physics_residual_mse": 5.087594370332869e-05,
+        "sparse_synthetic_data_mse": 1.873491598277344e-06,
+        "total_loss": 5.462292689988338e-05
+      },
+      {
+        "step": 2000,
+        "physics_residual_mse": 6.863316278952347e-06,
+        "sparse_synthetic_data_mse": 2.489275356227201e-08,
+        "total_loss": 6.913101786076891e-06
+      },
+      {
+        "step": 3000,
+        "physics_residual_mse": 3.017828657149871e-06,
+        "sparse_synthetic_data_mse": 3.7870842125030737e-08,
+        "total_loss": 3.0935703413999323e-06
+      },
+      {
+        "step": 4000,
+        "physics_residual_mse": 1.4187374146980547e-06,
+        "sparse_synthetic_data_mse": 2.451152600114818e-08,
+        "total_loss": 1.467760466700351e-06
+      },
+      {
+        "step": 5000,
+        "physics_residual_mse": 7.513916199052826e-07,
+        "sparse_synthetic_data_mse": 1.580612955438865e-08,
+        "total_loss": 7.830038790140598e-07
+      },
+      {
+        "step": 6000,
+        "physics_residual_mse": 4.6854132134530776e-07,
+        "sparse_synthetic_data_mse": 1.106536605650687e-08,
+        "total_loss": 4.906720534583214e-07
+      },
+      {
+        "step": 7000,
+        "physics_residual_mse": 3.2709666890748505e-07,
+        "sparse_synthetic_data_mse": 8.262733867253467e-09,
+        "total_loss": 3.4362213664199197e-07
+      },
+      {
+        "step": 8000,
+        "physics_residual_mse": 2.4824882930099427e-07,
+        "sparse_synthetic_data_mse": 6.487349978612084e-09,
+        "total_loss": 2.6122352925821847e-07
+      }
+    ]
+  },
+  "validation": {
+    "heldout_midpoint_count": 100,
+    "checked_x_locations": [
+      0.017821782178217824,
+      0.05346534653465347,
+      0.0891089108910891,
+      0.12475247524752475,
+      0.1603960396039604,
+      0.19603960396039605,
+      0.2316831683168317,
+      0.26732673267326734,
+      0.30297029702970296,
+      0.33861386138613864,
+      0.3742574257425743,
+      0.4099009900990099,
+      0.44554455445544555,
+      0.4811881188118812,
+      0.5168316831683168,
+      0.5524752475247525,
+      0.5881188118811881,
+      0.6237623762376238,
+      0.6594059405940594,
+      0.6950495049504951,
+      0.7306930693069307,
+      0.7663366336633664,
+      0.801980198019802,
+      0.8376237623762377,
+      0.8732673267326733,
+      0.9089108910891088,
+      0.9445544554455446,
+      0.9801980198019802,
+      1.0158415841584159,
+      1.0514851485148515,
+      1.0871287128712872,
+      1.1227722772277229,
+      1.1584158415841583,
+      1.1940594059405942,
+      1.2297029702970297,
+      1.2653465346534654,
+      1.300990099009901,
+      1.3366336633663367,
+      1.3722772277227722,
+      1.407920792079208,
+      1.4435643564356437,
+      1.4792079207920792,
+      1.5148514851485149,
+      1.5504950495049505,
+      1.5861386138613862,
+      1.621782178217822,
+      1.6574257425742576,
+      1.693069306930693,
+      1.7287128712871287,
+      1.7643564356435646,
+      1.8356435643564357,
+      1.8712871287128714,
+      1.9069306930693068,
+      1.9425742574257427,
+      1.9782178217821784,
+      2.013861386138614,
+      2.0495049504950495,
+      2.0851485148514852,
+      2.120792079207921,
+      2.1564356435643566,
+      2.1920792079207922,
+      2.227722772277228,
+      2.263366336633663,
+      2.2990099009900993,
+      2.334653465346535,
+      2.37029702970297,
+      2.405940594059406,
+      2.4415841584158415,
+      2.477227722772277,
+      2.512871287128713,
+      2.548514851485149,
+      2.5841584158415842,
+      2.61980198019802,
+      2.655445544554455,
+      2.6910891089108913,
+      2.726732673267327,
+      2.762376237623762,
+      2.7980198019801983,
+      2.8336633663366335,
+      2.8693069306930696,
+      2.9049504950495053,
+      2.9405940594059405,
+      2.9762376237623767,
+      3.011881188118812,
+      3.0475247524752476,
+      3.0831683168316837,
+      3.118811881188119,
+      3.1544554455445546,
+      3.19009900990099,
+      3.225742574257426,
+      3.2613861386138616,
+      3.297029702970297,
+      3.332673267326733,
+      3.368316831683168,
+      3.403960396039604,
+      3.43960396039604,
+      3.4752475247524752,
+      3.510891089108911,
+      3.5465346534653466,
+      3.5821782178217823
+    ],
+    "midpoints_do_not_equal_collocation_or_data_locations": true,
+    "decay_rmse": 6.2596792722476e-05,
+    "maximum_absolute_decay_error": 0.00014878484974523154,
+    "ode_residual_rmse": 0.00042072356873850314,
+    "hard_initial_condition_error": 0,
+    "domain_gate_passed": true
+  },
+  "limitations": [
+    "True trained physics-informed network on a known authored scalar ODE, not a conservation label.",
+    "Sparse training labels are exact synthetic ODE samples, not real thermometers.",
+    "Exact RC solver is simpler and more accurate; PINN is an optional portable demonstration, not an operational fidelity improvement.",
+    "No extrapolation outside x in [0,3.6]; exact solver remains production demonstration fallback."
+  ]
+}

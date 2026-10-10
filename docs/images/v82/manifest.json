@@ -1,0 +1,24 @@
+{
+  "interface_version": "v82",
+  "source_commit": "61e70e2bc5a9e11e8396e3fefabe70790c1be41c",
+  "captured_at_utc": "2026-10-10 17:07\u201317:13",
+  "capture_context": "Hosted desktop Chromium; screenshots show synthetic scenarios, not real company operations.",
+  "files": [
+    {
+      "file": "home.jpg",
+      "sha256": "8f0c38c655b39d02c1eda8a4498f1f6c189707f155e7d71ac1cc2c92eee7eb70"
+    },
+    {
+      "file": "strategy.jpg",
+      "sha256": "b1caca48c75545eb8301aae9c2b1d39357cf9106bd5168763ed0ce0f0df6bc71"
+    },
+    {
+      "file": "intelligence.jpg",
+      "sha256": "339833bd9be2abaffc9029d72a94e0abd81f2a01e544f6e1f99e9a70d7c2f70c"
+    },
+    {
+      "file": "advisor.jpg",
+      "sha256": "f68c0c1b98c4881202f552706e87b41f70f46d3a0c163735b64ee68a824b38d8"
+    }
+  ]
+}

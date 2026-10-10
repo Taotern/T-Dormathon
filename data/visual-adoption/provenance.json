@@ -1,0 +1,36 @@
+{
+  "schema_version": "dormathon.visual-evidence-adoption.v1",
+  "base_source": "763999c5c470f7d6f0badd9790d217041a57704f",
+  "sources": [
+    {
+      "file": "dynamics-observations-v1.json",
+      "sha256": "1ef8cbae55a952a4db3f9be229dbe916abde99d940df601c6bc3d75cd014ad09"
+    },
+    {
+      "file": "dynamics-daily-updates.json",
+      "sha256": "35a4fe1d669392cfb37b3b9edebaa9f4eeaef9d1d316b2c0e7a89289e218fdbb"
+    },
+    {
+      "file": "dynamics-thermal-pinn-v1.json",
+      "sha256": "7c75609c0e77a149ffbc8aa29fb7e1e134cc40a217947950af32261a8cdae959"
+    }
+  ],
+  "reproduction": "python3 scripts/export-visual-evidence.py <retained-dynamics-artifacts-directory> <output-directory>",
+  "exports": [
+    {
+      "path": "static/simulation/visual-replay-60d.json",
+      "sha256": "44f5fa2bae01357febffc28e8a99c0405e96f5629060c5efab42a2ec2a4c5430"
+    },
+    {
+      "path": "static/simulation/visual-pinn-training.json",
+      "sha256": "f749426325ce0cb6b7d7505112474484ee5d535ebb1d6a142a3765145a228ab0"
+    }
+  ],
+  "semantics": {
+    "replay": "Exact last60 authored demand dates, fulfilled values and censoring. Thermometer values are arithmetic means of four independent dated authored observations, computed in Python. They are not continuous real-room history.",
+    "fit_history": "19 projections of existing saved calibration artifacts; as-of dates are synthetic replay dates, not actual training execution dates.",
+    "pinn": "Original artifact except network weights; includes exact original training and full validation evidence. Actual inference weights remain unchanged in the audited runtime.",
+    "backtest": "Optional newly computed past-only fits and paired28-day-mean baseline on60 synthetic days. These are not saved daily operational accuracy or daily Q/PINN training.",
+    "chart_adaptation": "Pure rendering, root-only actual MCTS inspection. Two local display corrections suppress irrelevant Q missing text for PINN-only and retain tiny nonzero numbers in scientific notation."
+  }
+}
