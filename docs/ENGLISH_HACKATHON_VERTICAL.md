@@ -14,26 +14,29 @@ All interface/status/error explanations are English. Source quotations, names, v
 
 ## What is actually connected
 
-- Existing private persistent case/evidence/review/action tables; no new migration or service.
-- Actual saved intelligence/evidence and its four source-shaped information pages. The original51,471 indexed versions and separate CVD171 historical trajectories remain intact.
-- Editable deterministic rule observations and conditional arithmetic, frozen analysis, manual decision and pending feedback.
-- Source/version/rights and fixture/public-evidence distinctions.
+- Existing private case/evidence/review/action tables; no new migration or service.
+- Actual saved operating records from the D1 `records` and `sources` tables. A user selects exact record IDs; the service freezes their payload fingerprints, source IDs/hashes, source retrieval times, world time, knowledge clock, evidence references and assumptions in an append-only review.
+- FR12's shared daily hybrid simulator, seeded futures, no-action/rule-based/simple-planning/vector-Pareto-Q policies and candidate-first-action rollouts with simple-planner follow-ups. It uses common seed schedules, returns objective vectors without a hidden score, and shows daily P10/median/P90 summaries plus stepwise representative state/event/action paths, bounded to at most 100 futures/action and 30 days.
+- Exact public evidence versions remain separate from operating data. A version must be attached and explicitly confirmed, then manually mapped to a supported typed variable and record with a validity window. A mapping only changes a stated scenario assumption; it does not establish causation.
+- Explicit hard-constraint checks for available cash/action budget, route passability, storage, invoice approval, supplier state, task qualification/availability/rest, resource capacity, duplicate allocation and action cost. Unknown requirements are indeterminate; infeasible actions do not receive projected paths.
+- Offline transition-marginal and vector-Pareto-Q training on 4,000 simulator-generated synthetic episodes. The artifact includes two 100-seed held-out simulator configurations, per-metric errors/coverage and policy comparisons using shared seeds. The UI labels these as simulator fidelity only; it does not present them as operational accuracy. User feedback remains pending evaluation; there is no background or online training.
+- Actual saved intelligence/evidence and the four information pages remain intact. The original51,471 indexed versions and separate CVD171 historical trajectories are unchanged.
 
-FR07 entity resolution, FR08 as-of state reconstruction and Felix FR12 policy/simulation services are not connected. The deployed ports explicitly report unsupported. [Port request examples](../contracts/prototype/port-examples.v0.2.json) are proposed integration fixtures, not implemented teammate services. [Port contract and live prototype routes](../contracts/prototype/ports-v0.2.md) define the parallel boundary. We do not provide a local substitute resolver, reconstructor, policy ranking or RL solver.
+FR07 entity resolution and FR08 general-purpose as-of reconstruction are still separate unsupported services. FR12 performs its own bounded state freeze from user-selected D1 rows; it does not claim to provide those broader services. [Port request examples](../contracts/prototype/port-examples.v0.2.json) remain proposals for FR07/FR08. [Port contract and live prototype routes](../contracts/prototype/ports-v0.2.md) describe the implemented FR12 boundary.
 
-Four-layer route/exposure applicability, independently verified counterparty history, qualification/availability constraints, realistic business datasets and strategy evaluation remain incomplete. The prototype does not establish causal effects, prediction quality, reward truth, full global coverage, autonomous learning, automatic daily operation or production hardening. Broader integrations wait for the assigned modules and approved bounded data contracts.
+Four-layer route/exposure applicability, independently verified counterparty history, representative operational datasets, real-world transition calibration and operational out-of-sample strategy evaluation remain incomplete. The synthetic held-out checks measure whether this simulator's learned marginals transfer across changed synthetic configurations; observed errors and interval coverage are exposed for review and do not establish real-world accuracy. Public evidence-to-variable mappings are deliberately limited to reviewed delay assumptions. Synthetic policy performance is not operational performance; no causal effect, reward truth, autonomous learning, automatic daily operation or production hardening is claimed.
 
 ## Reproduce
 
-Verified Linux/Node24 entrypoints require no credentials or external call:
+Verified Node24 entrypoints require no credentials or external call:
 
 ```sh
 node scripts/build.mjs
 node scripts/validate-artifact.mjs
-node --test tests/prototype.test.mjs tests/collector-workbench-behavior.test.mjs tests/formal-workspace.test.mjs
+node --test tests/sandbox.test.mjs tests/fr12-database.test.mjs tests/prototype.test.mjs tests/collector-workbench-behavior.test.mjs tests/formal-workspace.test.mjs
 ```
 
-The complete389-check baseline and focused28-check successor results are retained separately. Independent client checks and actual private-Site browser acceptance are distinct from source/unit tests. Live native DB projection confirms saved analyses/evidence/QA decisions/feedback and the pending feedback target. Large analysis/action cells were truncated by that read surface; complete frozen-body/hash semantics rely on focused backend/produced-Worker tests rather than a claimed full live JSON comparison. The denied direct case-API browser route was not bypassed.
+Current FR12 database/simulator/produced-Worker tests pass 12/12 and the frontend behavior suite passes 25/25. The full Node24 suite reports 386/404 passing; 18 failures remain in unrelated CVD import, Windows absolute-path, reviewed source-chunk fingerprint and source-pack manifest checks. Those failures are outside the FR12 files changed here. These unit/integration checks do not claim a new private-Site browser acceptance run.
 
 English-before-Chinese approved specification and handoff blocks remain byte-pinned from private main09af336; original Chinese v0.3 files are preserved.
 

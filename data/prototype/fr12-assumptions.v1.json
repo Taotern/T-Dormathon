@@ -1,0 +1,77 @@
+{
+  "schema_version": "dormathon.fr12.synthetic-assumptions.v1",
+  "data_basis": "synthetic_demo_assumptions",
+  "label": "Illustrative simulator settings; not calibrated from company operations",
+  "cash_available": 500,
+  "disturbances": {
+    "demand_multiplier": [
+      { "value": 0.8, "weight": 0.25 },
+      { "value": 1.0, "weight": 0.5 },
+      { "value": 1.2, "weight": 0.25 }
+    ],
+    "delay_add_days": [
+      { "value": 0, "weight": 0.5 },
+      { "value": 1, "weight": 0.3 },
+      { "value": 2, "weight": 0.2 }
+    ],
+    "processing_multiplier": [
+      { "value": 0.8, "weight": 0.2 },
+      { "value": 1.0, "weight": 0.6 },
+      { "value": 1.25, "weight": 0.2 }
+    ],
+    "waste_use_multiplier": [
+      { "value": 0.8, "weight": 0.2 },
+      { "value": 1.0, "weight": 0.6 },
+      { "value": 1.2, "weight": 0.2 }
+    ],
+    "energy_use_multiplier": [
+      { "value": 0.9, "weight": 0.25 },
+      { "value": 1.0, "weight": 0.5 },
+      { "value": 1.1, "weight": 0.25 }
+    ]
+  },
+  "actions": {
+    "expedite_delivery": {
+      "days_saved": 1,
+      "cost": 150,
+      "currency": "MYR",
+      "basis": "explicit illustrative demo assumption"
+    },
+    "increase_buffer": {
+      "units": 20,
+      "cost": 200,
+      "currency": "MYR",
+      "basis": "explicit illustrative demo assumption"
+    },
+    "qualified_reassignment": {
+      "hours_saved": 4,
+      "cost": 50,
+      "currency": "MYR",
+      "resource_id": "fixture:operator:01",
+      "task_ids": ["fixture:task:01"],
+      "basis": "explicit illustrative demo assumption"
+    },
+    "waste_reduction": {
+      "fraction": 0.1,
+      "basis": "explicit illustrative demo assumption"
+    },
+    "energy_reduction": {
+      "fraction": 0.1,
+      "cost": 100,
+      "currency": "MYR",
+      "basis": "explicit illustrative demo assumption"
+    }
+  },
+  "limits": {
+    "max_candidate_actions": 10,
+    "default_horizon_days": 14,
+    "max_horizon_days": 30,
+    "default_scenarios_per_action": 100
+  },
+  "synthetic_energy_projection": {
+    "record_id": "fixture:energy:01",
+    "daily_kwh": 20,
+    "baseline_daily_kwh": 18,
+    "basis": "illustrative synthetic meter persistence assumption"
+  }
+}

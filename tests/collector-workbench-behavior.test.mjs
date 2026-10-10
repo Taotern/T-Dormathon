@@ -7,7 +7,7 @@ import {fileURLToPath} from 'node:url';
 import {test} from 'node:test';
 const sourcePath=fileURLToPath(new URL('../static/collector-workbench.js',import.meta.url));
 const source=fs.readFileSync(sourcePath,'utf8');
-assert.equal(createHash('sha256').update(source).digest('hex'),'4df7fc4b01c974f005c4a29a1befe35e33942cef8359bd863ec27500baa0d275','Rebind reviewed behavior tests only after intentional client changes');
+assert.equal(createHash('sha256').update(source).digest('hex'),'2e0b17027c0d8f85785fe7170eff8551a1a681ee9c618de700a396666f2a084c','Rebind reviewed behavior tests only after intentional client changes');
 
 function deferred() {
   let resolve;
@@ -145,11 +145,11 @@ function makeHarness(fetchOverride = null) {
     'item-scope', 'item-results', 'next-items', 'group-results', 'snapshot-save',
     'snapshot-state', 'reload', 'clear-filter', 'filter-query', 'filter-category',
     'filter-origin', 'filter-language', 'documents', 'snapshot-file', 'evidence', 'main',
-    'prototype-start','prototype-form','prototype-status','prototype-fields','prototype-layers','prototype-public-evidence','prototype-save','prototype-metrics','prototype-findings','prototype-ports','prototype-evidence','prototype-history','prototype-decide','prototype-feedback-save','prototype-decision-form','prototype-decision-title','prototype-decision-note','prototype-feedback-form','prototype-feedback','prototype-feedback-note','document-results', 'evidence-close', 'outcome-form','outcome-grain','outcome-source','outcome-from','outcome-to','outcome-query','outcome-status','outcome-scope','outcome-results','outcome-detail','outcome-next','outcome-clear','outcome-export','outcome-train-end','outcome-validation-end',
+    'prototype-start','prototype-form','prototype-status','prototype-fields','prototype-layers','prototype-branches','prototype-db-supply','prototype-db-procurement','prototype-db-service','prototype-db-energy','prototype-knowledge-clock','prototype-world-clock','prototype-assumptions','prototype-objectives','prototype-constraints','prototype-horizon','prototype-scenarios','prototype-seed','prototype-freeze-state','prototype-state-status','prototype-map-form','prototype-map-submit','prototype-mapping-evidence','prototype-mapping-record','prototype-mapping-value','prototype-mapping-from','prototype-mapping-to','prototype-mapping-note','prototype-public-evidence','prototype-save','prototype-metrics','prototype-findings','prototype-ports','prototype-evidence','prototype-history','prototype-decide','prototype-feedback-save','prototype-decision-form','prototype-decision-title','prototype-decision-note','prototype-feedback-form','prototype-feedback','prototype-feedback-note','document-results', 'evidence-close', 'outcome-form','outcome-grain','outcome-source','outcome-from','outcome-to','outcome-query','outcome-status','outcome-scope','outcome-results','outcome-detail','outcome-next','outcome-clear','outcome-export','outcome-train-end','outcome-validation-end',
   ];
   const elements = new Map(ids.map((id) => {
-    const tag = ['filter-form','outcome-form'].includes(id) ? 'form'
-      : ['collect-source', 'filter-source', 'filter-category', 'filter-origin','observation-grain'].includes(id) ? 'select'
+    const tag = ['filter-form','outcome-form','prototype-form','prototype-map-form','prototype-decision-form','prototype-feedback-form'].includes(id) ? 'form'
+      : ['collect-source', 'filter-source', 'filter-category', 'filter-origin','observation-grain','prototype-mapping-evidence','prototype-mapping-record'].includes(id) ? 'select'
       : ['filter-query', 'filter-language', 'snapshot-file','observation-from','observation-to'].includes(id) ? 'input'
       : id === 'collect' || id === 'index' || id === 'snapshot-save' || id === 'reload' || id === 'clear-filter' || id === 'next-items' || id === 'documents' ? 'button'
       : 'div';
@@ -219,7 +219,7 @@ function makeHarness(fetchOverride = null) {
   };
   vm.createContext(context);
   // The exposure is appended only in the VM so the immutable input file remains untouched.
-  vm.runInContext(`${source}\n;globalThis.__test = { state, loadItems, selectItem, readSnapshot,outcomeRead,outcomeSelect,outcomeUI,show,filterValues,writeLocation,restoreLocation,prototypeUI,prototypeRead,prototypeAnalyze };`, context, { filename: sourcePath });
+  vm.runInContext(`${source}\n;globalThis.__test = { state, loadItems, selectItem, readSnapshot,outcomeRead,outcomeSelect,outcomeUI,show,filterValues,writeLocation,restoreLocation,prototypeUI,prototypeRead,prototypeAnalyze,prototypeRenderMappingTargets,prototypeRenderHoldout };`, context, { filename: sourcePath });
   return { app: context.__test, context, calls, elements, panes, views, document };
 }
 
@@ -426,10 +426,22 @@ await run('terminal query errors restore the previous result caption and never l
 
 
 async function prototypeHarness(){const h=await readyHarness();h.context.window.location={href:'https://private.example/workbench.html?view=decisions&case_id=proto_case_linked_ops_v02'};const query=h.document.querySelector.bind(h.document);h.document.querySelector=selector=>{if(selector.startsWith('#proto-')){for(const label of h.elements.get('prototype-fields').children)for(const n of label.children)if('#'+n.id===selector)return n;}return query(selector);};const fixture=JSON.parse(fs.readFileSync(new URL('../data/prototype/linked-operations.v0.2.json',import.meta.url)));h.context.fetch=async path=>path.startsWith('/api/prototype?')?response({fixture,case:{reviews:[],evidence:[],actions:[{id:'newest',title:'Newest decision',created_at:'later'},{id:'older',title:'Older decision',created_at:'earlier'}]}}):response({metrics:[],findings:[],missing_fields:[]});h.app.state.view='decisions';await h.app.prototypeRead();return h;}
+await run('Evidence mappings can target only explicitly selected D1 supply records',async()=>{const h=await prototypeHarness();h.app.prototypeUI.dataRecords={supply:[{id:'selected-supply',occurred_at:'2026-10-01T00:00:00Z'},{id:'unselected-supply',occurred_at:'2026-10-02T00:00:00Z'}]};h.app.prototypeUI.selectedRecordIds=new Set(['selected-supply']);h.app.prototypeRenderMappingTargets();const options=h.elements.get('prototype-mapping-record').options;assert.deepEqual(options.map(item=>item.value).filter(Boolean),['selected-supply']);assert.equal(h.elements.get('prototype-mapping-record').disabled,false);});
+await run('UI labels synthetic held-out fidelity with units and keeps operational accuracy claims separate',async()=>{
+ const h=await prototypeHarness();
+ const holdout={claims:'synthetic simulator fidelity only',configurations:[{configuration_id:'heldout-demand',horizon_days:14,metrics:{
+  one_day:{fulfilment_gap_days:{count:4,mean_absolute_error:1.25,empirical_holdout_coverage:0.75}},
+  rollout:{energy_consumed_kwh:{count:4,mean_absolute_error:8.5,empirical_holdout_coverage:0.5}}
+ }}]};
+ h.app.prototypeRenderHoldout({model:{holdout_evaluation:holdout}});
+ assert.match(textOf(h.elements.get('prototype-ports')),/Synthetic held-out model fidelity/);
+ assert.match(textOf(h.elements.get('prototype-ports')),/MAE 8.50 kWh/);
+ assert.match(textOf(h.elements.get('prototype-ports')),/no operational outcomes used/);
+});
 await run('Feedback targets the newest displayed decision once, with a visible exact target',async()=>{const h=await prototypeHarness();assert.equal(h.app.prototypeUI.actionId,'newest');assert.match(textOf(h.elements.get('prototype-history')),/Feedback target: Newest decision/);});
 await run('An in-flight saved analysis cannot enable a decision after newer input edits',async()=>{const h=await prototypeHarness(),pending=deferred();h.context.fetch=async()=>pending.promise;const save=h.app.prototypeAnalyze(true);await h.elements.get('prototype-form').fire('input');pending.resolve(response({metrics:[],findings:[],missing_fields:[],analysis_id:'stale-analysis'}));await save;assert.equal(h.app.prototypeUI.savedAnalysis,null);assert.equal(h.elements.get('prototype-decide').disabled,true);});
 await run('English error surface retains an untranslated diagnostic only in a labelled disclosure',async()=>{const h=await prototypeHarness();h.context.fetch=async()=>response({message:'指定工作区记录不存在'},{ok:false,status:400});await h.app.prototypeRead();assert.match(h.elements.get('prototype-status').textContent,/Invalid or unsupported input/);assert.doesNotMatch(h.elements.get('prototype-status').textContent,/工作区/);assert.match(textOf(h.elements.get('notice')),/Original service diagnostic/);const detail=h.elements.get('notice').children.find(n=>n.tagName==='details');assert.ok(detail);assert.match(textOf(detail),/指定工作区记录不存在/);});
 
 await run('Same-case unsaved inputs survive the public-evidence navigation round trip',async()=>{const h=await prototypeHarness();h.document.querySelector('#proto-stock_units').value='400';await h.elements.get('prototype-form').fire('input');h.app.show('filter');h.app.state.view='decisions';await h.app.prototypeRead();assert.equal(String(h.document.querySelector('#proto-stock_units').value),'400');assert.equal(h.app.prototypeUI.savedAnalysis,null);});
 
-await run('Initial route restores the saved case before URL normalization and preserves query/source-period context',async()=>{const h=await prototypeHarness();h.app.prototypeUI.caseId=null;h.context.window.location={href:'https://private.example/workbench.html?view=decisions&case_id=proto_case_linked_ops_v02&query=MYR&source_id=stat_ecb_fx_daily_reference&observation_grain=day&observation_from=2026-10-08&observation_to=2026-10-08'};h.context.window.history={replaceState(_s,_t,url){h.context.window.location.href=url;}};const initial=h.app.restoreLocation();assert.equal(h.app.prototypeUI.caseId,'proto_case_linked_ops_v02');h.app.show(initial);await new Promise(resolve=>setTimeout(resolve,0));const url=new URL(h.context.window.location.href);assert.equal(url.searchParams.get('case_id'),'proto_case_linked_ops_v02');assert.equal(url.searchParams.get('query'),'MYR');assert.equal(url.searchParams.get('observation_from'),'2026-10-08');assert.match(h.elements.get('prototype-status').textContent,/Saved linked case/);assert.equal(h.app.prototypeUI.actionId,'newest');});
+await run('Initial route restores the saved case before URL normalization and preserves query/source-period context',async()=>{const h=await prototypeHarness();h.app.prototypeUI.caseId=null;h.context.window.location={href:'https://private.example/workbench.html?view=decisions&case_id=proto_case_linked_ops_v02&query=MYR&source_id=stat_ecb_fx_daily_reference&observation_grain=day&observation_from=2026-10-08&observation_to=2026-10-08'};h.context.window.history={replaceState(_s,_t,url){h.context.window.location.href=url;}};const initial=h.app.restoreLocation();assert.equal(h.app.prototypeUI.caseId,'proto_case_linked_ops_v02');h.app.show(initial);await new Promise(resolve=>setTimeout(resolve,0));const url=new URL(h.context.window.location.href);assert.equal(url.searchParams.get('case_id'),'proto_case_linked_ops_v02');assert.equal(url.searchParams.get('query'),'MYR');assert.equal(url.searchParams.get('observation_from'),'2026-10-08');assert.match(h.elements.get('prototype-status').textContent,/Linked workspace case/);assert.equal(h.app.prototypeUI.actionId,'newest');});

@@ -54,6 +54,9 @@ export async function handleRequest(request,env,context={}){
     if(method==='POST'){
      if(path==='/api/outcomes/import-chunk')return responseJSON(200,await importOutcomeChunk(store,body));
      if(path==='/api/prototype/start')return responseJSON(200,await new PrototypeService(store).start(body));
+     if(path==='/api/prototype/state')return responseJSON(200,await new PrototypeService(store).freezeState(body));
+     if(path==='/api/prototype/evidence-mapping')return responseJSON(200,await new PrototypeService(store).mapEvidence(body));
+     if(path==='/api/prototype/evidence-review')return responseJSON(200,await new PrototypeService(store).reviewEvidence(body));
      if(path==='/api/prototype/analyze')return responseJSON(200,await new PrototypeService(store).analyze(body));
      if(path==='/api/prototype/save-analysis')return responseJSON(200,await new PrototypeService(store).analyze(body,true));
      if(path==='/api/prototype/decide')return responseJSON(200,await new PrototypeService(store).decide(body));
