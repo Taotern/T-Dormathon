@@ -72,14 +72,6 @@
       "original_delivery_receipt_sha256": "a86caf80ac8f5b0d042c186a843bdf4993d886d7a055582f2ec4a25ea45d3c47"
     }
   ],
-  "source_commit": "529f4cb3ecb5e9d0d26f99eb5ed681770d9d5aa8",
-  "site_version": 77,
-  "site_audience": "public_unchanged",
-  "repository_visibility": "private",
-  "canonical_tracked_files": 1029,
-  "source_files": 1028,
-  "delivered_payload_files": 1145,
-  "payload_inventory_sha256": "3750d6e5a7c726c141e2b087c198efdb2044483859cc1c77c75e894521ef9ecb",
   "reproducibility_source_packages": {
     "version": "v77",
     "path": "source-packs/learning/",
@@ -168,7 +160,15 @@
     "manifest_path": "source-packs/learning/SOURCE-PACK-MANIFEST.json",
     "manifest_sha256": "ff90305685d7b2e11d6f44ead4137fed0bc7870ce1503ff4c550dee15872026e"
   },
-  "source_tree": "a1bf2820cf68aeee6b34b73c917d21bd62397b41",
+  "source_commit": "763999c5c470f7d6f0badd9790d217041a57704f",
+  "site_version": 79,
+  "site_audience": "public_unchanged",
+  "repository_visibility": "private",
+  "canonical_tracked_files": 1029,
+  "source_files": 1028,
+  "delivered_payload_files": 1147,
+  "payload_inventory_sha256": "64aacdb376065742a707e950a6836c9742f0021987e004e6ebb3e858eb1e4abe",
+  "source_tree": "dc97aa77861958c21c226c93be41de40c0d6e42d",
   "assets": [
     {
       "path": ".gitignore",
@@ -190,8 +190,8 @@
     },
     {
       "path": "README.md",
-      "sha256": "3c52684d1829bda9f56a882f76a51fb14ffd4f8e58b3058321ea94a79d33c080",
-      "size_bytes": 36400,
+      "sha256": "509c42b3e1f2f381126d029151433ef39dad3e3eb5bf13f1f711fe1e42154d99",
+      "size_bytes": 38443,
       "git_mode": "100644",
       "canonical_sha256": "763eb6af72db16f6af82e68248548325770a70d566f7211b06786cf3ea072142",
       "packaging_overlay": "Dated README source/presentation checkpoint notes only."
@@ -2686,6 +2686,20 @@
       "size_bytes": 28434,
       "git_mode": "100644",
       "provenance": "Scoped GitHub source packaging verification record"
+    },
+    {
+      "path": "docs/releases/v0.4.1-20261010/source-package-verification.v79.json",
+      "sha256": "57046b6d2036e58df8a7474872ad553d3fc51a0d93c43595a10419c045b2584c",
+      "size_bytes": 10665,
+      "git_mode": "100644",
+      "provenance": "Scoped v79 source packaging verification and live-demo wording supplement."
+    },
+    {
+      "path": "docs/releases/v0.4.1-20261010/v79-demo-click-guide.md",
+      "sha256": "48d58e8522174002954683316c825c94daadf327411a0902d5d1d243de30e1a6",
+      "size_bytes": 3002,
+      "git_mode": "100644",
+      "provenance": "Scoped v79 source packaging verification and live-demo wording supplement."
     },
     {
       "path": "docs/sequential-contract.md",
@@ -5733,14 +5747,14 @@
     },
     {
       "path": "static/mrdiy-workspace.css",
-      "sha256": "ecaa1e0fb68cfe1ae7520f704392baacd12a921aef1b49d0e467a90f8bcc2606",
-      "size_bytes": 18864,
+      "sha256": "91a43406dbf0a6aac8fd3b31db09f8f0edeb9e7a2160a33cd4163ee82427f597",
+      "size_bytes": 21009,
       "git_mode": "100644"
     },
     {
       "path": "static/mrdiy-workspace.js",
-      "sha256": "b4ca06dc7a2e77672d43b213740ee1c46ce6593c0db9bd68111e3d3fb7f83be6",
-      "size_bytes": 119512,
+      "sha256": "3938bb5a55214207b372a343a1cf24c0ef20abdd9726dbab8e16f1e5a8e8a710",
+      "size_bytes": 121979,
       "git_mode": "100644"
     },
     {
@@ -6537,8 +6551,8 @@
     },
     {
       "path": "tests/mrdiy-client-behavior.test.mjs",
-      "sha256": "5529cf69912d49e0a132d41db88b29435e733554ac0e36c19485cc2bb5264d11",
-      "size_bytes": 55776,
+      "sha256": "33dfc089453441f5fb52a83c1b819ce0c4afa2a13264d22b454f53a1e7b94f8c",
+      "size_bytes": 59740,
       "git_mode": "100644"
     },
     {

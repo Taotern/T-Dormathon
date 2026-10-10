@@ -199,3 +199,26 @@ body[data-mrdiy="true"] .mrdiy-advisor-controls{display:flex;flex-wrap:wrap;gap:
 .mrdiy-learning-backdrop input[type=number]{max-width:180px}
 .mrdiy-learning-backdrop>.mrdiy-check{display:flex;align-items:flex-start;gap:10px}
 @media(max-width:850px){.mrdiy-backdrop-grid{grid-template-columns:1fr}}
+
+/* Guided entry and visible acknowledgment after choosing an event. */
+.mrdiy-demo-entry{display:flex;align-items:center;justify-content:space-between;gap:24px;border:1px solid #ccc;border-top:3px solid #252525;background:#fff;padding:20px 24px;margin:0 0 24px}
+.mrdiy-demo-entry h3{font-size:19px;margin:6px 0}
+.mrdiy-demo-entry p{margin:5px 0}
+.mrdiy-demo-enter{flex-shrink:0;white-space:normal;text-align:left}
+.mrdiy-backdrop-card>.mrdiy-backdrop-action{display:block;border:1px solid #777;background:#fff;padding:10px 13px;text-align:left;min-height:42px;text-decoration:none;color:#222;max-width:100%;white-space:normal}
+.mrdiy-backdrop-card>.mrdiy-backdrop-action:hover{background:#eee;border-color:#222}
+.mrdiy-backdrop-action:focus-visible,.mrdiy-demo-enter:focus-visible{outline:2px solid #222;outline-offset:3px}
+.mrdiy-learning-backdrop{scroll-margin-top:20px}
+.mrdiy-learning-backdrop:focus{outline:2px solid #777;outline-offset:4px}
+@media(max-width:850px){.mrdiy-demo-entry{align-items:flex-start;flex-direction:column;gap:12px;padding:18px}.mrdiy-demo-enter{max-width:100%}}
+
+.mrdiy-learning-gate-hint{margin:0 0 14px;padding:9px 12px;border-left:2px solid #888;background:#f3f3f3}
+.mrdiy-learning-legend{max-width:760px;line-height:1.65}
+.mrdiy-learning-next{border:1px solid #777!important;padding:9px 13px!important;margin:0 0 12px;text-decoration:none!important}
+.mrdiy-learning-trajectory{margin:14px 0}
+.mrdiy-learning:focus{outline:2px solid #777;outline-offset:4px}
+.mrdiy-backdrop-card>.mrdiy-backdrop-action{border:1px solid #777!important}
+.mrdiy-learning .mrdiy-learning-tabs>button[aria-pressed=true],.mrdiy-learning .mrdiy-learning-tabs>button[aria-pressed=true]:hover:enabled,.mrdiy-learning .mrdiy-learning-tabs>button[aria-pressed=true]:focus-visible{background:#222;color:#fff;border:1px solid #222!important;text-decoration:none}
+.mrdiy-learning .mrdiy-learning-tabs>button:focus-visible{outline:2px solid #555;outline-offset:3px}
+/* Desktop Home can grow beyond its viewport; keep the heading reachable at scrollTop 0. */
+@media(min-width:851px){body[data-mrdiy=true] .home-pane{justify-content:flex-start}}

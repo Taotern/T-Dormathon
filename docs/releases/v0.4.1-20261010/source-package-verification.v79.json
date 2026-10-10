@@ -1,0 +1,224 @@
+{
+  "schema_version": "dormathon.source-package-verification.v0.4.1-v79",
+  "prepared_at": "2026-10-10T09:31:56.884816+00:00",
+  "source_commit": "763999c5c470f7d6f0badd9790d217041a57704f",
+  "previous_source_commit": "529f4cb3ecb5e9d0d26f99eb5ed681770d9d5aa8",
+  "target_repository": "Taotern/T-Dormathon",
+  "repository_visibility": "private",
+  "branch": "main",
+  "expected_private_main_parent": "bc7a1309eb44dd75ef0ad99ff10fa1345cbcc9f4",
+  "scope": "Three-file UI-only polish plus desktop Home overflow correction: direct event entrance, visible event action/confirmation reason, focused context, score legend, collapsed trajectory and comparison-to-update-to-comparison steps.",
+  "changed_source_files": [
+    {
+      "path": "static/mrdiy-workspace.css",
+      "sha256": "91a43406dbf0a6aac8fd3b31db09f8f0edeb9e7a2160a33cd4163ee82427f597",
+      "bytes": 21009
+    },
+    {
+      "path": "static/mrdiy-workspace.js",
+      "sha256": "3938bb5a55214207b372a343a1cf24c0ef20abdd9726dbab8e16f1e5a8e8a710",
+      "bytes": 121979
+    },
+    {
+      "path": "tests/mrdiy-client-behavior.test.mjs",
+      "sha256": "33dfc089453441f5fb52a83c1b819ce0c4afa2a13264d22b454f53a1e7b94f8c",
+      "bytes": 59740
+    }
+  ],
+  "unchanged_inputs": [
+    "All model, training, calibration, event-source, evaluation and output data files",
+    "Numeric precision and formulas",
+    "Source and hypothetical-exposure confirmation gates",
+    "Existing saved decisions, provider paths, environment and schemas"
+  ],
+  "deployment": {
+    "site_version": 79,
+    "environment_revision": 3,
+    "status": "SUCCESS",
+    "succeeded_at": "2026-10-10T09:27:47Z",
+    "deployment_id": "appgdep_6aca050f294881918c0450e8743514ee",
+    "saved_version_id": "appgprj_6ac6c8d4361c81919d4a8dffabfab361~appgver_f56af66745c88191805e6fd7fb9fa509",
+    "audience": "public_unchanged",
+    "native_environment_secrets_included": false,
+    "artifact_representations": {
+      "local_gzip": {
+        "sha256": "68a0b6f664269893628def4c5959a15dedfc3f5ce4749f965a45775502b3f6a9",
+        "bytes": 815233
+      },
+      "local_decompressed_tar": {
+        "sha256": "4521528c5fbf61dfcff322a1658a271d4dc9ab33be0882f57c8855247f985e75",
+        "bytes": 4792320
+      },
+      "native_server_stored": {
+        "archive_format": "tar",
+        "sha256": "34235c86365fcaa5229052601addbab2b4cbf943900ecd603d2fdc9b95e095e6",
+        "bytes": 4792320,
+        "files": 25
+      },
+      "representations_are_distinct": true
+    }
+  },
+  "validation": {
+    "canonical_final_home_repair": {
+      "freeze_receipt_sha256": "8321809b97eeccfcc8890471b92b7a8367b61ffb7be830f49c068ac88656730c",
+      "targeted_tests": 4,
+      "passed": 4,
+      "failed": 0,
+      "exact_static_assets": 35,
+      "maximum_owned_rss_mib": 161.48,
+      "full_suite": "not rerun; four targeted Home/CSS tests only",
+      "evidence_log_sha256": {
+        "build.log": "c035749606aabe7d9152582dae45282202d81e6478b41b2ce3cdce17ea86d9d3",
+        "build-resources.json": "ec06b5f6c7a45a92cffcd857fa6a2db571faaa934b86b39914bf556e944e1c47",
+        "targeted-home.log": "e9ebb385e5f847a4800b01b33a14b43e25a4310f09352ca6df387c54c268d5e1",
+        "targeted-home-resources.json": "bf135e14a31bd306613a3a16f4c0e6dab5db7c3eb8109a8a79a20c1993c5f27f",
+        "assets.log": "4ce5a09ee95b38e6ff89d204adce1d62396a9c57c3ddbfd5b263af6b93e024da",
+        "assets-resources.json": "5e30e4798964cfbf6a4e13c22c98f5cf80b1fed13c34624738f1bb1a7248d817"
+      }
+    },
+    "prior_polish": {
+      "site_version": 78,
+      "source_commit": "a5c9af351250071f81e528b039b8c85081c40002",
+      "freeze_receipt_sha256": "30784b94c64e2259387f4de027bdb51416e3673a40a7732ac8d83ff938f44dcd",
+      "affected_tests": 46,
+      "passed": 46,
+      "failed": 0,
+      "exact_static_assets": 35,
+      "maximum_owned_rss_mib": 222.0,
+      "limits": "Separate prior UI polish gate; desktop Home clipping was subsequently found in hosted QA and repaired before final publication. Counts are not summed as unique tests."
+    },
+    "publisher": {
+      "exact_canonical_source_objects": "passed",
+      "local_archive_worker_matches_final_freeze": true,
+      "worker_sha256": "64979193be212d84720e589b52a69b2eae243cc57ebcc0af8ef42b2106a73449",
+      "worker_bytes": 4238834,
+      "fresh_build_or_tests_for_final_css": "not repeated; final CSS-only package uses frozen build/test/assets, exact source/archive binding and separate hosted QA",
+      "intermediate_v78_redundant_test_attempt": {
+        "tests": 46,
+        "passed": 46,
+        "failed": 0,
+        "resource_gate": "FAILED; not accepted as a bounded test gate",
+        "process_exit_code": 2,
+        "maximum_owned_rss_mib": 318.78515625,
+        "limit_mib": 256,
+        "log_sha256": "427687a88a6c0290651867f44139add7fee7f0107d3f92219e00cd3010ef97a1",
+        "resource_receipt_sha256": "93a0cdfb78af07948f305d88e3f7a18a31ba4298f9e93bac5b93425bcd87f6fe",
+        "rerun_after_failure": false
+      },
+      "accepted_test_evidence": "Separate prior frozen 46-test/222MiB polish gate and final 4-test/161.48MiB Home repair gate. No replacement/full suite/training/full evaluation rerun."
+    }
+  },
+  "intermediate_v78_hosted_finding": {
+    "status": "BLOCKED before Git commit/push",
+    "finding": "New taller desktop Home was vertically centered and clipped its heading above the scrollable area at scrollTop0. Final CSS >=851px override top-aligns only synthetic Home.",
+    "intermediate_receipt_sha256": "f8a4800aead1fcf15e555c270898834e816a1c14774da9a964b449be4aca2114",
+    "intermediate_private_GitHub_push": false
+  },
+  "hosted_QA": {
+    "status": "PASS within the bounded visual, navigation, focus and actual desktop/narrow scope",
+    "verified_at": "2026-10-10T09:29:28.779568+00:00",
+    "site_version": 79,
+    "source_commit": "763999c5c470f7d6f0badd9790d217041a57704f",
+    "deployment_id": "appgdep_6aca050f294881918c0450e8743514ee",
+    "public_url": "https://dormathon-risk-private-20261007.liuyz8715.chatgpt.site/workbench.html",
+    "environment_revision": 3,
+    "report": "FINAL_REVIEW.md",
+    "report_sha256": "f974ff1c20a112ae692f966c5dd062384ade9eb00b83b020b142382e5a8099fb",
+    "receipt_sha256": "f64fbe63faa6eaa5b4d6b1634119e51fa2a40c4bff93c2bb175a846e6b6e491c",
+    "screenshot_manifest_sha256": "dff4d768479b56a9cc6c0e579e0e5d29ab07895200388a1c96b27a88d17c0a41",
+    "screenshots": {
+      "manifest": "screenshot-manifest.json",
+      "v77_count": 16,
+      "v78_count": 19,
+      "v79_count": 2,
+      "desktop_dimensions": [
+        1180,
+        757
+      ],
+      "narrow_dimensions": [
+        489,
+        734
+      ]
+    },
+    "all37_capture_bytes_and_hashes_checked_by_publisher": true,
+    "full_route_checked_on": {
+      "site_version": 78,
+      "source_commit": "a5c9af351250071f81e528b039b8c85081c40002",
+      "deployment": "appgdep_6aca027847f88191a2175ac57afe3027"
+    },
+    "final_v79_retest": "Desktop Home heading/CTA reachable at scrollTop0; unchanged actual narrow layout without page overflow. Final CSS-only increment, no repeated computation campaign.",
+    "verified_changes": [
+      "Home sourced-event entry",
+      "Visibly bounded event actions",
+      "Selected-context scroll and focus",
+      "Adjacent disabled-run instructions",
+      "Compact exact comparison with trade-off legend and collapsed daily actions",
+      "Visible compare-to-update-to-compare next steps",
+      "Active-tab contrast on click, hover and keyboard focus",
+      "Corrected reachable desktop Home top at scrollTop0"
+    ],
+    "v79_home": {
+      "desktop_scrollTop": 0,
+      "desktop_pane_top": 96,
+      "desktop_heading_top": 158.890625,
+      "desktop_heading_bottom": 208.4375,
+      "desktop_entry_button_top": 319.296875,
+      "desktop_entry_button_bottom": 359.484375,
+      "desktop_justify_content": "flex-start",
+      "narrow_heading_top": 257.046875,
+      "narrow_entry_button_top": 530.046875,
+      "narrow_justify_content": "center",
+      "narrow_document_clientWidth": 489,
+      "narrow_document_scrollWidth": 489
+    },
+    "functional_illustrations": {
+      "hormuz_delay": 3,
+      "seed": 400000,
+      "mcts_budget": 32,
+      "original_model": "calibrated-2026-09-26-d7d491a4",
+      "original_q_learned_choices": 4,
+      "original_q_fallbacks": 3,
+      "first_fit_reproduced_original": true,
+      "new_model": "calibrated-2026-09-27-c68b80cc",
+      "consumed_holdout_removed": true,
+      "old_comparison_invalidated": true,
+      "new_q_learned_choices": 0,
+      "new_q_fallbacks": 7,
+      "v77_illustration_numbers_preserved": true
+    },
+    "guardrails": {
+      "canonical_edits": false,
+      "publication_by_auditor": false,
+      "paid_advisor_calls": 0,
+      "new_saved_choices": 0,
+      "operational_execution": false,
+      "browser_geometry_restored": true
+    },
+    "presentation_compatibility": "Existing v77 Office bytes and screenshots remain accurate as v77 evidence. Separate click-guide supplement only: new event button label, daily-actions disclosure, optional Home entrance and next-step controls.",
+    "limits": [
+      "Not full accessibility certification",
+      "No full repository test-suite rerun by this auditor",
+      "No training reproduction or heavy rendering",
+      "No new official-source research",
+      "No runtime SLA or real-company benefit claim"
+    ]
+  },
+  "presentation": {
+    "current_edition": "v77",
+    "presentation_source_commit": "529f4cb3ecb5e9d0d26f99eb5ed681770d9d5aa8",
+    "screenshots_site_version": 77,
+    "all_four_editions_byte_preserved": true,
+    "supplement": "docs/releases/v0.4.1-20261010/v79-demo-click-guide.md",
+    "native_desktop_PowerPoint_tested": false
+  },
+  "reproducibility_source_pack": {
+    "version": "v77",
+    "files": 80,
+    "byte_preserved": true,
+    "training_and_evaluation_sources_and_frozen_studies_retained": true,
+    "training_or_full_evaluation_rerun": false
+  },
+  "performance_conclusion": "Unchanged protocol2: Q paired mean score difference -4.594158 with descriptive interval spanning zero and 58/96 losses; MCTS32/128 also underperform the stronger controller on mean score. No method superiority, real company savings, calibrated risk or physical fidelity established.",
+  "excluded": "node_modules, generated dist/Worker, raw upstream logs, runtime secrets/state, transient QA/screenshots, presentation drafts and redundant ZIPs; required runtime fixtures and synthetic learning artifacts retained.",
+  "prior_evidence": "source-package-verification.v77.json remains byte-identical and binds the original module audits, complete source packs, negative held-out results and final presentation."
+}
