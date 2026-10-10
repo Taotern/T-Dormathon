@@ -70,6 +70,8 @@ export async function handleRequest(request,env,context={}){
     if(method==='POST'){
      if(path==='/api/journey/entries')return responseJSON(200,await new JourneyService(store).submit(body));
      if(path==='/api/mrdiy/advisor'){const r=await sovernAdvisorAnswer(env,body,{service:new MrdiyDemoService(store)});return responseJSON(r.status,r.body);}
+     if(path==='/api/mrdiy/demand-outlook')return responseJSON(200,new MrdiyDemoService(store).demandOutlook(body));
+     if(path==='/api/mrdiy/joint-plans')return responseJSON(200,new MrdiyDemoService(store).jointPlans(body));
      if(path==='/api/mrdiy/forecast-policy')return responseJSON(200,new MrdiyDemoService(store).forecast(body));
      if(path==='/api/mrdiy/analyze')return responseJSON(200,new MrdiyDemoService(store).analyze(body));
      if(path==='/api/mrdiy/compare')return responseJSON(200,new MrdiyDemoService(store).compare(body));

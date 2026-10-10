@@ -1,0 +1,3094 @@
+{
+  "schema_version": "dormathon.forecast-rolling-report.v1",
+  "status": "ok",
+  "evaluation_status": "EXPLORATORY_RETROSPECTIVE_ROLLING",
+  "scenarioDataMode": "EXTERNAL_BENCHMARK",
+  "generated_at": "2026-10-10T05:58:12.271152+00:00",
+  "protocol_sha256": "afa728ec88539ace2f91d05a7d999b098d38bafb8832916d96f74e0c1acaa4a8",
+  "source_matrix_sha256": "c85082382ebfc06c4da1ea174999b9115f3ed8e3ba8918f76a550dbf6aef050c",
+  "source": {
+    "name": "UCI Online Retail II",
+    "url": "https://archive.ics.uci.edu/dataset/502/online+retail+ii",
+    "doi": "10.24432/C5CG6D",
+    "license": "CC BY 4.0",
+    "attribution": "Daqing Chen, UCI Machine Learning Repository",
+    "raw_file_sha256": "bcbe73b35f5b7babf197fb0cb983a11f5d9ff929078d4aa53d171b1f2df2e980"
+  },
+  "target": "Positive recorded transaction sales in original UCI Online Retail II; demand proxy, not latent demand",
+  "knowledge_mode": "retrospective_transaction_time_assumption",
+  "selection_unit": "global model across eligible SKU catalog per fold; no per-item test selection",
+  "aggregate": {
+    "zero": {
+      "daily_MAE_units": 4.038935304541413,
+      "daily_WAPE": 1.0,
+      "weekly_MAE_units": 28.27254713178989,
+      "weekly_WAPE": 1.0,
+      "weekly_bias_units": -28.27254713178989,
+      "weekly_zero_forecast_fraction": 1.0,
+      "actual_units": 2525417.0,
+      "weekly_forecasts": 89324,
+      "daily_prediction_points": 625268
+    },
+    "seasonal_naive_7": {
+      "daily_MAE_units": 5.687674725077887,
+      "daily_WAPE": 1.4082113963753313,
+      "weekly_MAE_units": 25.056793247055662,
+      "weekly_WAPE": 0.886258784192868,
+      "weekly_bias_units": -0.8312995387577806,
+      "weekly_zero_forecast_fraction": 0.44991267744391206,
+      "actual_units": 2525417.0,
+      "weekly_forecasts": 89324,
+      "daily_prediction_points": 625268
+    },
+    "mean_7": {
+      "daily_MAE_units": 5.298986537429893,
+      "daily_WAPE": 1.3119760872306292,
+      "weekly_MAE_units": 25.056793247055662,
+      "weekly_WAPE": 0.886258784192868,
+      "weekly_bias_units": -0.8312995387577806,
+      "weekly_zero_forecast_fraction": 0.44991267744391206,
+      "actual_units": 2525417.0,
+      "weekly_forecasts": 89324,
+      "daily_prediction_points": 625268
+    },
+    "mean_28": {
+      "daily_MAE_units": 5.099795721880173,
+      "daily_WAPE": 1.2626584328166681,
+      "weekly_MAE_units": 21.829709820429,
+      "weekly_WAPE": 0.7721168424858152,
+      "weekly_bias_units": -1.0286988939142896,
+      "weekly_zero_forecast_fraction": 0.26650172406072276,
+      "actual_units": 2525417.0,
+      "weekly_forecasts": 89324,
+      "daily_prediction_points": 625268
+    },
+    "mean_56": {
+      "daily_MAE_units": 5.061203584474406,
+      "daily_WAPE": 1.2531034054404253,
+      "weekly_MAE_units": 21.26733016882361,
+      "weekly_WAPE": 0.7522254740504242,
+      "weekly_bias_units": -1.3850812771483587,
+      "weekly_zero_forecast_fraction": 0.20726792351439702,
+      "actual_units": 2525417.0,
+      "weekly_forecasts": 89324,
+      "daily_prediction_points": 625268
+    },
+    "median_28": {
+      "daily_MAE_units": 3.868178125219906,
+      "daily_WAPE": 0.9577222296357394,
+      "weekly_MAE_units": 22.770520800680668,
+      "weekly_WAPE": 0.8053933271218179,
+      "weekly_bias_units": -21.457413461107876,
+      "weekly_zero_forecast_fraction": 0.8540705745376382,
+      "actual_units": 2525417.0,
+      "weekly_forecasts": 89324,
+      "daily_prediction_points": 625268
+    },
+    "trimmed_mean_56": {
+      "daily_MAE_units": 4.0981099652295185,
+      "daily_WAPE": 1.0146510543562233,
+      "weekly_MAE_units": 19.348763319853663,
+      "weekly_WAPE": 0.6843657640629681,
+      "weekly_bias_units": -15.08497667504522,
+      "weekly_zero_forecast_fraction": 0.4324369710268237,
+      "actual_units": 2525417.0,
+      "weekly_forecasts": 89324,
+      "daily_prediction_points": 625268
+    },
+    "ewma_005": {
+      "daily_MAE_units": 5.067264087868607,
+      "daily_WAPE": 1.2546039254877228,
+      "weekly_MAE_units": 21.229637158273245,
+      "weekly_WAPE": 0.7508922722566608,
+      "weekly_bias_units": -1.0957484398748905,
+      "weekly_zero_forecast_fraction": 0.0,
+      "actual_units": 2525417.0,
+      "weekly_forecasts": 89324,
+      "daily_prediction_points": 625268
+    },
+    "ewma_015": {
+      "daily_MAE_units": 5.158296958185062,
+      "daily_WAPE": 1.2771427540285256,
+      "weekly_MAE_units": 23.01311197063268,
+      "weekly_WAPE": 0.813973776871223,
+      "weekly_bias_units": -1.0575653142505879,
+      "weekly_zero_forecast_fraction": 0.0,
+      "actual_units": 2525417.0,
+      "weekly_forecasts": 89324,
+      "daily_prediction_points": 625268
+    },
+    "sba_01": {
+      "daily_MAE_units": 6.1363598384053,
+      "daily_WAPE": 1.5193013444670742,
+      "weekly_MAE_units": 28.99994363733099,
+      "weekly_WAPE": 1.0257280146054901,
+      "weekly_bias_units": 5.501981215206291,
+      "weekly_zero_forecast_fraction": 0.0,
+      "actual_units": 2525417.0,
+      "weekly_forecasts": 89324,
+      "daily_prediction_points": 625268
+    },
+    "tsb_01": {
+      "daily_MAE_units": 5.095214947072193,
+      "daily_WAPE": 1.2615242787729455,
+      "weekly_MAE_units": 21.49659198563877,
+      "weekly_WAPE": 0.7603344645756315,
+      "weekly_bias_units": -0.8084897280174963,
+      "weekly_zero_forecast_fraction": 0.0,
+      "actual_units": 2525417.0,
+      "weekly_forecasts": 89324,
+      "daily_prediction_points": 625268
+    },
+    "seasonal_mean_8weeks": {
+      "daily_MAE_units": 4.9553763346277115,
+      "daily_WAPE": 1.2269016364426153,
+      "weekly_MAE_units": 21.26733016882361,
+      "weekly_WAPE": 0.7522254740504242,
+      "weekly_bias_units": -1.3850812771483587,
+      "weekly_zero_forecast_fraction": 0.20726792351439702,
+      "actual_units": 2525417.0,
+      "weekly_forecasts": 89324,
+      "daily_prediction_points": 625268
+    },
+    "weekly_total_median_8weeks": {
+      "daily_MAE_units": 4.312868006127046,
+      "daily_WAPE": 1.0678229981246843,
+      "weekly_MAE_units": 19.02542989566074,
+      "weekly_WAPE": 0.6729294607583619,
+      "weekly_bias_units": -8.82056894003851,
+      "weekly_zero_forecast_fraction": 0.3937911423581568,
+      "actual_units": 2525417.0,
+      "weekly_forecasts": 89324,
+      "daily_prediction_points": 625268
+    },
+    "weekly_total_median_12weeks": {
+      "daily_MAE_units": 4.318633212123753,
+      "daily_WAPE": 1.0692504054887548,
+      "weekly_MAE_units": 19.310135014105953,
+      "weekly_WAPE": 0.6829994808778115,
+      "weekly_bias_units": -9.233571044736017,
+      "weekly_zero_forecast_fraction": 0.3904325825086203,
+      "actual_units": 2525417.0,
+      "weekly_forecasts": 89324,
+      "daily_prediction_points": 625268
+    },
+    "adaptive_past_validation": {
+      "daily_MAE_units": 4.383306894964825,
+      "daily_WAPE": 1.0852629627506531,
+      "weekly_MAE_units": 19.71552560001402,
+      "weekly_WAPE": 0.697338146015352,
+      "weekly_bias_units": -9.349475918639131,
+      "weekly_zero_forecast_fraction": 0.38889884017733195,
+      "actual_units": 2525417.0,
+      "weekly_forecasts": 89324,
+      "daily_prediction_points": 625268
+    }
+  },
+  "probabilistic_aggregate": {
+    "mean_pinball_units": 6.999566372606093,
+    "pinball_by_quantile": {
+      "0.1": 2.644000492588778,
+      "0.5": 9.586650844118042,
+      "0.9": 8.76804778111146
+    },
+    "fraction_actual_le_quantile": {
+      "0.1": 0.4884353589180959,
+      "0.5": 0.6347118355649097,
+      "0.9": 0.8874210738435359
+    },
+    "central80_inclusive_coverage": 0.8434127446151091,
+    "central80_mean_width_units": 50.44185213380502,
+    "daily_central80_inclusive_coverage": 0.9230777842461153,
+    "discrete_quantile_note": "Inclusive coverage can exceed nominal for zero-inflated/discrete outcomes. q0.9 exceedance is the upper-tail diagnostic; these are not calibrated operational stockout probabilities."
+  },
+  "paired_comparisons": {
+    "mean_28": {
+      "adaptive_minus_baseline_weekly_WAPE": -0.07477869647046323,
+      "weekly_WAPE_delta_95pct_interval": [
+        -0.11629673116838697,
+        -0.03710882146154061
+      ],
+      "weekly_MAE_delta_95pct_interval": [
+        -3.0946692118289545,
+        -1.0899678037097313
+      ],
+      "interpretation": "Descriptive paired two-way SKU/fold bootstrap; selection occurs within each fold past; previously exposed training data limits confirmation."
+    },
+    "zero": {
+      "adaptive_minus_baseline_weekly_WAPE": -0.302661853984648,
+      "weekly_WAPE_delta_95pct_interval": [
+        -0.3462574635354215,
+        -0.2479907215361615
+      ],
+      "weekly_MAE_delta_95pct_interval": [
+        -10.702058395651225,
+        -6.484702695248644
+      ],
+      "interpretation": "Descriptive paired two-way SKU/fold bootstrap; selection occurs within each fold past; previously exposed training data limits confirmation."
+    },
+    "seasonal_naive_7": {
+      "adaptive_minus_baseline_weekly_WAPE": -0.18892063817751598,
+      "weekly_WAPE_delta_95pct_interval": [
+        -0.2274998670338056,
+        -0.1480683580394949
+      ],
+      "weekly_MAE_delta_95pct_interval": [
+        -6.46400604727932,
+        -4.215201643849289
+      ],
+      "interpretation": "Descriptive paired two-way SKU/fold bootstrap; selection occurs within each fold past; previously exposed training data limits confirmation."
+    }
+  },
+  "folds": [
+    {
+      "fold": 1,
+      "validation_start": "2011-01-04",
+      "validation_end": "2011-01-31",
+      "test_start": "2011-02-01",
+      "test_end": "2011-02-28",
+      "training_eligibility_cutoff": "2011-01-03",
+      "item_count": 2559,
+      "eligible_item_ids_sha256": "d8132b9ba5b58a63ff0910477d4170b12949f52dcb0a7a4948afb0cf1239d52a",
+      "point_selected_from_past_validation": "mean_28",
+      "validation_weekly_WAPE": {
+        "zero": 1.0,
+        "seasonal_naive_7": 0.9829979583893809,
+        "mean_7": 0.9829979583893809,
+        "mean_28": 0.7830464381064233,
+        "mean_56": 1.0178461690781342,
+        "median_28": 0.9727591787126245,
+        "trimmed_mean_56": 0.8110557207995799,
+        "ewma_005": 0.8366655829140052,
+        "ewma_015": 0.8384056270626036,
+        "sba_01": 1.1770289804346685,
+        "tsb_01": 0.8337932505513441,
+        "seasonal_mean_8weeks": 1.0178461690781342,
+        "weekly_total_median_8weeks": 0.8720528087509304,
+        "weekly_total_median_12weeks": 1.015277938997494
+      },
+      "quantile_window_weeks_selected": 8,
+      "validation_quantile_mean_pinball": {
+        "8": 8.933665494333724,
+        "12": 9.327100429855411,
+        "24": 9.339885371890059
+      },
+      "models": {
+        "zero": {
+          "daily_MAE_units": 3.6182939764416906,
+          "daily_WAPE": 1.0,
+          "weekly_MAE_units": 25.328057835091833,
+          "weekly_WAPE": 1.0,
+          "weekly_bias_units": -25.328057835091833,
+          "weekly_zero_forecast_fraction": 1.0,
+          "actual_units": 259258.0,
+          "weekly_forecasts": 10236,
+          "daily_prediction_points": 71652
+        },
+        "seasonal_naive_7": {
+          "daily_MAE_units": 5.341511751242114,
+          "daily_WAPE": 1.476251456078501,
+          "weekly_MAE_units": 24.86674482219617,
+          "weekly_WAPE": 0.9817864829629173,
+          "weekly_bias_units": -0.6397030089878859,
+          "weekly_zero_forecast_fraction": 0.4276084407971864,
+          "actual_units": 259258.0,
+          "weekly_forecasts": 10236,
+          "daily_prediction_points": 71652
+        },
+        "mean_7": {
+          "daily_MAE_units": 5.010144268727421,
+          "daily_WAPE": 1.3846703173782764,
+          "weekly_MAE_units": 24.86674482219617,
+          "weekly_WAPE": 0.9817864829629173,
+          "weekly_bias_units": -0.6397030089878859,
+          "weekly_zero_forecast_fraction": 0.4276084407971864,
+          "actual_units": 259258.0,
+          "weekly_forecasts": 10236,
+          "daily_prediction_points": 71652
+        },
+        "mean_28": {
+          "daily_MAE_units": 4.937483551451061,
+          "daily_WAPE": 1.3645888320845314,
+          "weekly_MAE_units": 22.49130519734271,
+          "weekly_WAPE": 0.8879995988551944,
+          "weekly_bias_units": 0.3624951152794061,
+          "weekly_zero_forecast_fraction": 0.2198124267291911,
+          "actual_units": 259258.0,
+          "weekly_forecasts": 10236,
+          "daily_prediction_points": 71652
+        },
+        "mean_56": {
+          "daily_MAE_units": 4.780329628920737,
+          "daily_WAPE": 1.3211556772459427,
+          "weekly_MAE_units": 21.637211801484955,
+          "weekly_WAPE": 0.8542783636377662,
+          "weekly_bias_units": -1.9548163345056664,
+          "weekly_zero_forecast_fraction": 0.16158655724892537,
+          "actual_units": 259258.0,
+          "weekly_forecasts": 10236,
+          "daily_prediction_points": 71652
+        },
+        "median_28": {
+          "daily_MAE_units": 3.5500055825378216,
+          "daily_WAPE": 0.9811269083306976,
+          "weekly_MAE_units": 21.327764751856193,
+          "weekly_WAPE": 0.8420608042953351,
+          "weekly_bias_units": -19.837338804220398,
+          "weekly_zero_forecast_fraction": 0.8366549433372411,
+          "actual_units": 259258.0,
+          "weekly_forecasts": 10236,
+          "daily_prediction_points": 71652
+        },
+        "trimmed_mean_56": {
+          "daily_MAE_units": 3.7729017546159094,
+          "daily_WAPE": 1.0427294684126975,
+          "weekly_MAE_units": 19.514148699390045,
+          "weekly_WAPE": 0.7704557856920771,
+          "weekly_bias_units": -15.613992388331038,
+          "weekly_zero_forecast_fraction": 0.3712387651426338,
+          "actual_units": 259258.0,
+          "weekly_forecasts": 10236,
+          "daily_prediction_points": 71652
+        },
+        "ewma_005": {
+          "daily_MAE_units": 4.879455040906858,
+          "daily_WAPE": 1.3485512986718182,
+          "weekly_MAE_units": 21.820236792741355,
+          "weekly_WAPE": 0.8615045391482635,
+          "weekly_bias_units": -0.2341310213476914,
+          "weekly_zero_forecast_fraction": 0.0,
+          "actual_units": 259258.0,
+          "weekly_forecasts": 10236,
+          "daily_prediction_points": 71652
+        },
+        "ewma_015": {
+          "daily_MAE_units": 4.753430765727752,
+          "daily_WAPE": 1.313721548518946,
+          "weekly_MAE_units": 22.358231822109005,
+          "weekly_WAPE": 0.8827456083557992,
+          "weekly_bias_units": -2.441260778884252,
+          "weekly_zero_forecast_fraction": 0.0,
+          "actual_units": 259258.0,
+          "weekly_forecasts": 10236,
+          "daily_prediction_points": 71652
+        },
+        "sba_01": {
+          "daily_MAE_units": 6.109637324274556,
+          "daily_WAPE": 1.688540888068721,
+          "weekly_MAE_units": 30.42273672382319,
+          "weekly_WAPE": 1.2011476332651418,
+          "weekly_bias_units": 7.57308538436331,
+          "weekly_zero_forecast_fraction": 0.0,
+          "actual_units": 259258.0,
+          "weekly_forecasts": 10236,
+          "daily_prediction_points": 71652
+        },
+        "tsb_01": {
+          "daily_MAE_units": 4.803239615190318,
+          "daily_WAPE": 1.327487386725257,
+          "weekly_MAE_units": 21.378100026409708,
+          "weekly_WAPE": 0.8440481368765083,
+          "weekly_bias_units": -0.9342835211956125,
+          "weekly_zero_forecast_fraction": 0.0,
+          "actual_units": 259258.0,
+          "weekly_forecasts": 10236,
+          "daily_prediction_points": 71652
+        },
+        "seasonal_mean_8weeks": {
+          "daily_MAE_units": 4.72114525763412,
+          "daily_WAPE": 1.3047986947365173,
+          "weekly_MAE_units": 21.637211801484955,
+          "weekly_WAPE": 0.8542783636377662,
+          "weekly_bias_units": -1.9548163345056664,
+          "weekly_zero_forecast_fraction": 0.16158655724892537,
+          "actual_units": 259258.0,
+          "weekly_forecasts": 10236,
+          "daily_prediction_points": 71652
+        },
+        "weekly_total_median_8weeks": {
+          "daily_MAE_units": 3.9417435228516386,
+          "daily_WAPE": 1.0893928322341668,
+          "weekly_MAE_units": 18.561596326690115,
+          "weekly_WAPE": 0.7328472024006973,
+          "weekly_bias_units": -9.90772762797968,
+          "weekly_zero_forecast_fraction": 0.3484759671746776,
+          "actual_units": 259258.0,
+          "weekly_forecasts": 10236,
+          "daily_prediction_points": 71652
+        },
+        "weekly_total_median_12weeks": {
+          "daily_MAE_units": 4.318644047192035,
+          "daily_WAPE": 1.193558089892708,
+          "weekly_MAE_units": 19.90733685033216,
+          "weekly_WAPE": 0.7859796033295019,
+          "weekly_bias_units": -5.27974794841735,
+          "weekly_zero_forecast_fraction": 0.2866354044548652,
+          "actual_units": 259258.0,
+          "weekly_forecasts": 10236,
+          "daily_prediction_points": 71652
+        },
+        "adaptive_past_validation": {
+          "daily_MAE_units": 4.937483551451061,
+          "daily_WAPE": 1.3645888320845314,
+          "weekly_MAE_units": 22.49130519734271,
+          "weekly_WAPE": 0.8879995988551944,
+          "weekly_bias_units": 0.3624951152794061,
+          "weekly_zero_forecast_fraction": 0.2198124267291911,
+          "actual_units": 259258.0,
+          "weekly_forecasts": 10236,
+          "daily_prediction_points": 71652
+        }
+      },
+      "quantiles": {
+        "mean_pinball_units": 7.3622573922104975,
+        "pinball_by_quantile": {
+          "0.1": 2.5328057835091835,
+          "0.5": 9.293522860492379,
+          "0.9": 10.260443532629933
+        },
+        "fraction_actual_le_quantile": {
+          "0.1": 0.4282923016803439,
+          "0.5": 0.6028722157092614,
+          "0.9": 0.9159828057835092
+        },
+        "central80_inclusive_coverage": 0.9159828057835092,
+        "central80_mean_width_units": 78.73261039468542,
+        "daily_central80_inclusive_coverage": 0.9449561770780998,
+        "discrete_quantile_note": "Inclusive coverage can exceed nominal for zero-inflated/discrete outcomes. q0.9 exceedance is the upper-tail diagnostic; these are not calibrated operational stockout probabilities."
+      },
+      "slices": {
+        "sparse_lt25pct": {
+          "items": 1550,
+          "adaptive": {
+            "daily_MAE_units": 2.3652254772876895,
+            "daily_WAPE": 1.5405628784110597,
+            "weekly_MAE_units": 12.069354838709678,
+            "weekly_WAPE": 1.1230339776683875,
+            "weekly_bias_units": -0.7675806451612904,
+            "weekly_zero_forecast_fraction": 0.31790322580645164,
+            "actual_units": 66632.0,
+            "weekly_forecasts": 6200,
+            "daily_prediction_points": 43400
+          },
+          "mean28": {
+            "daily_MAE_units": 2.3652254772876895,
+            "daily_WAPE": 1.5405628784110597,
+            "weekly_MAE_units": 12.069354838709678,
+            "weekly_WAPE": 1.1230339776683875,
+            "weekly_bias_units": -0.7675806451612904,
+            "weekly_zero_forecast_fraction": 0.31790322580645164,
+            "actual_units": 66632.0,
+            "weekly_forecasts": 6200,
+            "daily_prediction_points": 43400
+          }
+        },
+        "intermittent_25to50pct": {
+          "items": 720,
+          "adaptive": {
+            "daily_MAE_units": 5.8656072845804985,
+            "daily_WAPE": 1.473124412711068,
+            "weekly_MAE_units": 27.026041666666668,
+            "weekly_WAPE": 0.9696407215467411,
+            "weekly_bias_units": 1.8204861111111117,
+            "weekly_zero_forecast_fraction": 0.090625,
+            "actual_units": 80272.0,
+            "weekly_forecasts": 2880,
+            "daily_prediction_points": 20160
+          },
+          "mean28": {
+            "daily_MAE_units": 5.8656072845804985,
+            "daily_WAPE": 1.473124412711068,
+            "weekly_MAE_units": 27.026041666666668,
+            "weekly_WAPE": 0.9696407215467411,
+            "weekly_bias_units": 1.8204861111111117,
+            "weekly_zero_forecast_fraction": 0.090625,
+            "actual_units": 80272.0,
+            "weekly_forecasts": 2880,
+            "daily_prediction_points": 20160
+          }
+        },
+        "frequent_ge50pct": {
+          "items": 289,
+          "adaptive": {
+            "daily_MAE_units": 16.421050773250478,
+            "daily_WAPE": 1.1826827959586919,
+            "weekly_MAE_units": 67.08996539792388,
+            "weekly_WAPE": 0.6902824999554978,
+            "weekly_bias_units": 2.791089965397923,
+            "weekly_zero_forecast_fraction": 0.015570934256055362,
+            "actual_units": 112354.0,
+            "weekly_forecasts": 1156,
+            "daily_prediction_points": 8092
+          },
+          "mean28": {
+            "daily_MAE_units": 16.421050773250478,
+            "daily_WAPE": 1.1826827959586919,
+            "weekly_MAE_units": 67.08996539792388,
+            "weekly_WAPE": 0.6902824999554978,
+            "weekly_bias_units": 2.791089965397923,
+            "weekly_zero_forecast_fraction": 0.015570934256055362,
+            "actual_units": 112354.0,
+            "weekly_forecasts": 1156,
+            "daily_prediction_points": 8092
+          }
+        },
+        "lower_half_training_volume": {
+          "items": 1281,
+          "adaptive": {
+            "daily_MAE_units": 1.475238573181029,
+            "daily_WAPE": 1.81224252150343,
+            "weekly_MAE_units": 7.588505074160812,
+            "weekly_WAPE": 1.3317179258853347,
+            "weekly_bias_units": 1.1232435597189696,
+            "weekly_zero_forecast_fraction": 0.296448087431694,
+            "actual_units": 29198.0,
+            "weekly_forecasts": 5124,
+            "daily_prediction_points": 35868
+          },
+          "mean28": {
+            "daily_MAE_units": 1.475238573181029,
+            "daily_WAPE": 1.81224252150343,
+            "weekly_MAE_units": 7.588505074160812,
+            "weekly_WAPE": 1.3317179258853347,
+            "weekly_bias_units": 1.1232435597189696,
+            "weekly_zero_forecast_fraction": 0.296448087431694,
+            "actual_units": 29198.0,
+            "weekly_forecasts": 5124,
+            "daily_prediction_points": 35868
+          }
+        },
+        "upper_half_training_volume": {
+          "items": 1278,
+          "adaptive": {
+            "daily_MAE_units": 8.407855865350834,
+            "daily_WAPE": 1.3077749903751814,
+            "weekly_MAE_units": 37.42908841940532,
+            "weekly_WAPE": 0.831685212553247,
+            "weekly_bias_units": -0.400039123630673,
+            "weekly_zero_forecast_fraction": 0.14299687010954618,
+            "actual_units": 230060.0,
+            "weekly_forecasts": 5112,
+            "daily_prediction_points": 35784
+          },
+          "mean28": {
+            "daily_MAE_units": 8.407855865350834,
+            "daily_WAPE": 1.3077749903751814,
+            "weekly_MAE_units": 37.42908841940532,
+            "weekly_WAPE": 0.831685212553247,
+            "weekly_bias_units": -0.400039123630673,
+            "weekly_zero_forecast_fraction": 0.14299687010954618,
+            "actual_units": 230060.0,
+            "weekly_forecasts": 5112,
+            "daily_prediction_points": 35784
+          }
+        }
+      }
+    },
+    {
+      "fold": 2,
+      "validation_start": "2011-02-01",
+      "validation_end": "2011-02-28",
+      "test_start": "2011-03-01",
+      "test_end": "2011-03-28",
+      "training_eligibility_cutoff": "2011-01-31",
+      "item_count": 2656,
+      "eligible_item_ids_sha256": "40a6089dcfd7951bc61a21dd0eee697819016ac3504caebe0c670bf3743f9bc9",
+      "point_selected_from_past_validation": "weekly_total_median_8weeks",
+      "validation_weekly_WAPE": {
+        "zero": 1.0,
+        "seasonal_naive_7": 0.9833474593674275,
+        "mean_7": 0.9833474593674275,
+        "mean_28": 0.8863622786350891,
+        "mean_56": 0.852029481717676,
+        "median_28": 0.837092600820679,
+        "trimmed_mean_56": 0.7673895105227725,
+        "ewma_005": 0.8588250415651467,
+        "ewma_015": 0.8822439177321951,
+        "sba_01": 1.1895306231659228,
+        "tsb_01": 0.8424201285293584,
+        "seasonal_mean_8weeks": 0.852029481717676,
+        "weekly_total_median_8weeks": 0.7319743715159412,
+        "weekly_total_median_12weeks": 0.7834590985972288
+      },
+      "quantile_window_weeks_selected": 12,
+      "validation_quantile_mean_pinball": {
+        "8": 7.308148217871485,
+        "12": 7.188030245983937,
+        "24": 8.343991591365462
+      },
+      "models": {
+        "zero": {
+          "daily_MAE_units": 3.8360181798623065,
+          "daily_WAPE": 1.0,
+          "weekly_MAE_units": 26.852127259036145,
+          "weekly_WAPE": 1.0,
+          "weekly_bias_units": -26.852127259036145,
+          "weekly_zero_forecast_fraction": 1.0,
+          "actual_units": 285277.0,
+          "weekly_forecasts": 10624,
+          "daily_prediction_points": 74368
+        },
+        "seasonal_naive_7": {
+          "daily_MAE_units": 5.455693308950086,
+          "daily_WAPE": 1.4222282202911556,
+          "weekly_MAE_units": 23.435335090361445,
+          "weekly_WAPE": 0.8727552519130529,
+          "weekly_bias_units": -0.575207078313253,
+          "weekly_zero_forecast_fraction": 0.4232868975903614,
+          "actual_units": 285277.0,
+          "weekly_forecasts": 10624,
+          "daily_prediction_points": 74368
+        },
+        "mean_7": {
+          "daily_MAE_units": 4.995349382222768,
+          "daily_WAPE": 1.302222551615247,
+          "weekly_MAE_units": 23.435335090361445,
+          "weekly_WAPE": 0.8727552519130529,
+          "weekly_bias_units": -0.575207078313253,
+          "weekly_zero_forecast_fraction": 0.4232868975903614,
+          "actual_units": 285277.0,
+          "weekly_forecasts": 10624,
+          "daily_prediction_points": 74368
+        },
+        "mean_28": {
+          "daily_MAE_units": 4.841439098229653,
+          "daily_WAPE": 1.2621001442708064,
+          "weekly_MAE_units": 20.6652390813253,
+          "weekly_WAPE": 0.7695941137911574,
+          "weekly_bias_units": -0.7750376506024095,
+          "weekly_zero_forecast_fraction": 0.24388177710843373,
+          "actual_units": 285277.0,
+          "weekly_forecasts": 10624,
+          "daily_prediction_points": 74368
+        },
+        "mean_56": {
+          "daily_MAE_units": 4.827906732158225,
+          "daily_WAPE": 1.258572432608107,
+          "weekly_MAE_units": 20.271731457078314,
+          "weekly_WAPE": 0.7549394974007719,
+          "weekly_bias_units": -0.9665968561746988,
+          "weekly_zero_forecast_fraction": 0.17676957831325302,
+          "actual_units": 285277.0,
+          "weekly_forecasts": 10624,
+          "daily_prediction_points": 74368
+        },
+        "median_28": {
+          "daily_MAE_units": 3.658421632960413,
+          "daily_WAPE": 0.9537028922766294,
+          "weekly_MAE_units": 21.56226468373494,
+          "weekly_WAPE": 0.8030002418701823,
+          "weekly_bias_units": -20.585137424698797,
+          "weekly_zero_forecast_fraction": 0.8482680722891566,
+          "actual_units": 285277.0,
+          "weekly_forecasts": 10624,
+          "daily_prediction_points": 74368
+        },
+        "trimmed_mean_56": {
+          "daily_MAE_units": 3.866027288501833,
+          "daily_WAPE": 1.0078229839464952,
+          "weekly_MAE_units": 18.145701692640127,
+          "weekly_WAPE": 0.6757640285848796,
+          "weekly_bias_units": -14.591198353195391,
+          "weekly_zero_forecast_fraction": 0.3898719879518072,
+          "actual_units": 285277.0,
+          "weekly_forecasts": 10624,
+          "daily_prediction_points": 74368
+        },
+        "ewma_005": {
+          "daily_MAE_units": 4.766985425813396,
+          "daily_WAPE": 1.2426910411526013,
+          "weekly_MAE_units": 19.915437152586502,
+          "weekly_WAPE": 0.7416707421526412,
+          "weekly_bias_units": -1.3522447304449567,
+          "weekly_zero_forecast_fraction": 0.0,
+          "actual_units": 285277.0,
+          "weekly_forecasts": 10624,
+          "daily_prediction_points": 74368
+        },
+        "ewma_015": {
+          "daily_MAE_units": 4.758810566640284,
+          "daily_WAPE": 1.2405599617911875,
+          "weekly_MAE_units": 21.054950150376847,
+          "weekly_WAPE": 0.7841073426795838,
+          "weekly_bias_units": -2.1086155132495783,
+          "weekly_zero_forecast_fraction": 0.0,
+          "actual_units": 285277.0,
+          "weekly_forecasts": 10624,
+          "daily_prediction_points": 74368
+        },
+        "sba_01": {
+          "daily_MAE_units": 5.915072874129178,
+          "daily_WAPE": 1.5419824924660548,
+          "weekly_MAE_units": 28.053277739315423,
+          "weekly_WAPE": 1.0447320418487542,
+          "weekly_bias_units": 5.948562017302222,
+          "weekly_zero_forecast_fraction": 0.0,
+          "actual_units": 285277.0,
+          "weekly_forecasts": 10624,
+          "daily_prediction_points": 74368
+        },
+        "tsb_01": {
+          "daily_MAE_units": 4.819492170507918,
+          "daily_WAPE": 1.2563788659314732,
+          "weekly_MAE_units": 20.301228263059574,
+          "weekly_WAPE": 0.7560379878740485,
+          "weekly_bias_units": -0.9118880901280039,
+          "weekly_zero_forecast_fraction": 0.0,
+          "actual_units": 285277.0,
+          "weekly_forecasts": 10624,
+          "daily_prediction_points": 74368
+        },
+        "seasonal_mean_8weeks": {
+          "daily_MAE_units": 4.741866461381239,
+          "daily_WAPE": 1.2361428541382586,
+          "weekly_MAE_units": 20.271731457078314,
+          "weekly_WAPE": 0.7549394974007719,
+          "weekly_bias_units": -0.9665968561746988,
+          "weekly_zero_forecast_fraction": 0.17676957831325302,
+          "actual_units": 285277.0,
+          "weekly_forecasts": 10624,
+          "daily_prediction_points": 74368
+        },
+        "weekly_total_median_8weeks": {
+          "daily_MAE_units": 4.0532046038651925,
+          "daily_WAPE": 1.056617673279818,
+          "weekly_MAE_units": 17.646037274096386,
+          "weekly_WAPE": 0.6571560272997823,
+          "weekly_bias_units": -8.70081890060241,
+          "weekly_zero_forecast_fraction": 0.35570406626506024,
+          "actual_units": 285277.0,
+          "weekly_forecasts": 10624,
+          "daily_prediction_points": 74368
+        },
+        "weekly_total_median_12weeks": {
+          "daily_MAE_units": 3.928475231915683,
+          "daily_WAPE": 1.0241023498112554,
+          "weekly_MAE_units": 17.839702560240966,
+          "weekly_WAPE": 0.6643683157071899,
+          "weekly_bias_units": -11.195689006024097,
+          "weekly_zero_forecast_fraction": 0.36624623493975905,
+          "actual_units": 285277.0,
+          "weekly_forecasts": 10624,
+          "daily_prediction_points": 74368
+        },
+        "adaptive_past_validation": {
+          "daily_MAE_units": 4.0532046038651925,
+          "daily_WAPE": 1.056617673279818,
+          "weekly_MAE_units": 17.646037274096386,
+          "weekly_WAPE": 0.6571560272997823,
+          "weekly_bias_units": -8.70081890060241,
+          "weekly_zero_forecast_fraction": 0.35570406626506024,
+          "actual_units": 285277.0,
+          "weekly_forecasts": 10624,
+          "daily_prediction_points": 74368
+        }
+      },
+      "quantiles": {
+        "mean_pinball_units": 6.645820783132529,
+        "pinball_by_quantile": {
+          "0.1": 2.4968938253012047,
+          "0.5": 9.011907003012048,
+          "0.9": 8.428661521084338
+        },
+        "fraction_actual_le_quantile": {
+          "0.1": 0.4402296686746988,
+          "0.5": 0.5975150602409639,
+          "0.9": 0.8829066265060241
+        },
+        "central80_inclusive_coverage": 0.8646460843373494,
+        "central80_mean_width_units": 48.63714231927711,
+        "daily_central80_inclusive_coverage": 0.9193604776247849,
+        "discrete_quantile_note": "Inclusive coverage can exceed nominal for zero-inflated/discrete outcomes. q0.9 exceedance is the upper-tail diagnostic; these are not calibrated operational stockout probabilities."
+      },
+      "slices": {
+        "sparse_lt25pct": {
+          "items": 1659,
+          "adaptive": {
+            "daily_MAE_units": 1.6822720593553016,
+            "daily_WAPE": 1.1451144705778329,
+            "weekly_MAE_units": 7.890898131404461,
+            "weekly_WAPE": 0.7673280384513935,
+            "weekly_bias_units": -4.067058468957203,
+            "weekly_zero_forecast_fraction": 0.5159734779987944,
+            "actual_units": 68242.0,
+            "weekly_forecasts": 6636,
+            "daily_prediction_points": 46452
+          },
+          "mean28": {
+            "daily_MAE_units": 2.232043676421744,
+            "daily_WAPE": 1.519341356600669,
+            "weekly_MAE_units": 10.57704189270645,
+            "weekly_WAPE": 1.028534480232115,
+            "weekly_bias_units": 0.897566305003014,
+            "weekly_zero_forecast_fraction": 0.34900542495479203,
+            "actual_units": 68242.0,
+            "weekly_forecasts": 6636,
+            "daily_prediction_points": 46452
+          }
+        },
+        "intermittent_25to50pct": {
+          "items": 707,
+          "adaptive": {
+            "daily_MAE_units": 5.127826118521466,
+            "daily_WAPE": 1.1603846118227132,
+            "weekly_MAE_units": 23.095473833097596,
+            "weekly_WAPE": 0.7466163694558756,
+            "weekly_bias_units": -10.651343705799151,
+            "weekly_zero_forecast_fraction": 0.1166902404526167,
+            "actual_units": 87480.0,
+            "weekly_forecasts": 2828,
+            "daily_prediction_points": 19796
+          },
+          "mean28": {
+            "daily_MAE_units": 6.025010463874375,
+            "daily_WAPE": 1.363410003919263,
+            "weekly_MAE_units": 26.655852192362094,
+            "weekly_WAPE": 0.86171410608139,
+            "weekly_bias_units": -1.1818422913719937,
+            "weekly_zero_forecast_fraction": 0.09193776520509193,
+            "actual_units": 87480.0,
+            "weekly_forecasts": 2828,
+            "daily_prediction_points": 19796
+          }
+        },
+        "frequent_ge50pct": {
+          "items": 290,
+          "adaptive": {
+            "daily_MAE_units": 14.996720743451126,
+            "daily_WAPE": 0.9399357217924676,
+            "weekly_MAE_units": 60.16681034482759,
+            "weekly_WAPE": 0.5387171471575779,
+            "weekly_bias_units": -30.453879310344828,
+            "weekly_zero_forecast_fraction": 0.021551724137931036,
+            "actual_units": 129555.0,
+            "weekly_forecasts": 1160,
+            "daily_prediction_points": 8120
+          },
+          "mean28": {
+            "daily_MAE_units": 16.88351513019001,
+            "daily_WAPE": 1.0581926043544663,
+            "weekly_MAE_units": 63.77198275862069,
+            "weekly_WAPE": 0.5709968739145537,
+            "weekly_bias_units": -9.351724137931035,
+            "weekly_zero_forecast_fraction": 0.01293103448275862,
+            "actual_units": 129555.0,
+            "weekly_forecasts": 1160,
+            "daily_prediction_points": 8120
+          }
+        },
+        "lower_half_training_volume": {
+          "items": 1328,
+          "adaptive": {
+            "daily_MAE_units": 1.0241496931520997,
+            "daily_WAPE": 1.2337042306002228,
+            "weekly_MAE_units": 4.886012801204819,
+            "weekly_WAPE": 0.8408222107036413,
+            "weekly_bias_units": -2.4027673192771086,
+            "weekly_zero_forecast_fraction": 0.4919051204819277,
+            "actual_units": 30868.0,
+            "weekly_forecasts": 5312,
+            "daily_prediction_points": 37184
+          },
+          "mean28": {
+            "daily_MAE_units": 1.300185755778215,
+            "daily_WAPE": 1.5662209130120883,
+            "weekly_MAE_units": 6.205619352409639,
+            "weekly_WAPE": 1.0679101334715564,
+            "weekly_bias_units": 0.07760730421686743,
+            "weekly_zero_forecast_fraction": 0.33245481927710846,
+            "actual_units": 30868.0,
+            "weekly_forecasts": 5312,
+            "daily_prediction_points": 37184
+          }
+        },
+        "upper_half_training_volume": {
+          "items": 1328,
+          "adaptive": {
+            "daily_MAE_units": 7.082259514578284,
+            "daily_WAPE": 1.035131374244146,
+            "weekly_MAE_units": 30.40606174698795,
+            "weekly_WAPE": 0.6348714078511374,
+            "weekly_bias_units": -14.99887048192771,
+            "weekly_zero_forecast_fraction": 0.21950301204819278,
+            "actual_units": 254409.0,
+            "weekly_forecasts": 5312,
+            "daily_prediction_points": 37184
+          },
+          "mean28": {
+            "daily_MAE_units": 8.38269244068109,
+            "daily_WAPE": 1.225200506720618,
+            "weekly_MAE_units": 35.124858810240966,
+            "weekly_WAPE": 0.7333987791312414,
+            "weekly_bias_units": -1.6276826054216869,
+            "weekly_zero_forecast_fraction": 0.15530873493975902,
+            "actual_units": 254409.0,
+            "weekly_forecasts": 5312,
+            "daily_prediction_points": 37184
+          }
+        }
+      }
+    },
+    {
+      "fold": 3,
+      "validation_start": "2011-03-04",
+      "validation_end": "2011-03-31",
+      "test_start": "2011-04-01",
+      "test_end": "2011-04-28",
+      "training_eligibility_cutoff": "2011-03-03",
+      "item_count": 2706,
+      "eligible_item_ids_sha256": "78d8c6d4a097406b6c01f0d9eb4c7f78e4886b082b9b2b468cb96623ba5f3d30",
+      "point_selected_from_past_validation": "weekly_total_median_8weeks",
+      "validation_weekly_WAPE": {
+        "zero": 1.0,
+        "seasonal_naive_7": 0.8283545551319268,
+        "mean_7": 0.8283545551319268,
+        "mean_28": 0.7338372654993888,
+        "mean_56": 0.724730871162466,
+        "median_28": 0.8072696374025908,
+        "trimmed_mean_56": 0.6868929202058267,
+        "ewma_005": 0.7236599410368925,
+        "ewma_015": 0.7991430193811655,
+        "sba_01": 0.9952724471192702,
+        "tsb_01": 0.7469264875139782,
+        "seasonal_mean_8weeks": 0.724730871162466,
+        "weekly_total_median_8weeks": 0.6491153810921197,
+        "weekly_total_median_12weeks": 0.6632699153760381
+      },
+      "quantile_window_weeks_selected": 12,
+      "validation_quantile_mean_pinball": {
+        "8": 7.16969696969697,
+        "12": 7.132163094358217,
+        "24": 7.8989283074648915
+      },
+      "models": {
+        "zero": {
+          "daily_MAE_units": 3.680669939816281,
+          "daily_WAPE": 1.0,
+          "weekly_MAE_units": 25.76468957871397,
+          "weekly_WAPE": 1.0,
+          "weekly_bias_units": -25.76468957871397,
+          "weekly_zero_forecast_fraction": 1.0,
+          "actual_units": 278877.0,
+          "weekly_forecasts": 10824,
+          "daily_prediction_points": 75768
+        },
+        "seasonal_naive_7": {
+          "daily_MAE_units": 5.89560236511456,
+          "daily_WAPE": 1.6017742589026704,
+          "weekly_MAE_units": 26.67110125646711,
+          "weekly_WAPE": 1.0351803841837082,
+          "weekly_bias_units": 4.725794530672579,
+          "weekly_zero_forecast_fraction": 0.42839985218034,
+          "actual_units": 278877.0,
+          "weekly_forecasts": 10824,
+          "daily_prediction_points": 75768
+        },
+        "mean_7": {
+          "daily_MAE_units": 5.469082311416806,
+          "daily_WAPE": 1.4858931664189896,
+          "weekly_MAE_units": 26.67110125646711,
+          "weekly_WAPE": 1.0351803841837082,
+          "weekly_bias_units": 4.725794530672579,
+          "weekly_zero_forecast_fraction": 0.42839985218034,
+          "actual_units": 278877.0,
+          "weekly_forecasts": 10824,
+          "daily_prediction_points": 75768
+        },
+        "mean_28": {
+          "daily_MAE_units": 5.173877588729505,
+          "daily_WAPE": 1.4056890928361148,
+          "weekly_MAE_units": 23.084118625277164,
+          "weekly_WAPE": 0.8959595090308631,
+          "weekly_bias_units": 3.842248706577975,
+          "weekly_zero_forecast_fraction": 0.243810051736881,
+          "actual_units": 278877.0,
+          "weekly_forecasts": 10824,
+          "daily_prediction_points": 75768
+        },
+        "mean_56": {
+          "daily_MAE_units": 5.022411459040379,
+          "daily_WAPE": 1.364537310099332,
+          "weekly_MAE_units": 21.94255820399113,
+          "weekly_WAPE": 0.8516523413547908,
+          "weekly_bias_units": 2.0902161862527717,
+          "weekly_zero_forecast_fraction": 0.19068736141906872,
+          "actual_units": 278877.0,
+          "weekly_forecasts": 10824,
+          "daily_prediction_points": 75768
+        },
+        "median_28": {
+          "daily_MAE_units": 3.652399429838454,
+          "daily_WAPE": 0.9923191944835895,
+          "weekly_MAE_units": 20.33046932742055,
+          "weekly_WAPE": 0.7890826421684112,
+          "weekly_bias_units": -17.605783444198078,
+          "weekly_zero_forecast_fraction": 0.83009977827051,
+          "actual_units": 278877.0,
+          "weekly_forecasts": 10824,
+          "daily_prediction_points": 75768
+        },
+        "trimmed_mean_56": {
+          "daily_MAE_units": 3.9430552877663168,
+          "daily_WAPE": 1.0712873885027387,
+          "weekly_MAE_units": 18.193505173688102,
+          "weekly_WAPE": 0.7061410586028967,
+          "weekly_bias_units": -11.789278656126482,
+          "weekly_zero_forecast_fraction": 0.42803030303030304,
+          "actual_units": 278877.0,
+          "weekly_forecasts": 10824,
+          "daily_prediction_points": 75768
+        },
+        "ewma_005": {
+          "daily_MAE_units": 5.178818762695679,
+          "daily_WAPE": 1.4070315587586146,
+          "weekly_MAE_units": 22.87604280752844,
+          "weekly_WAPE": 0.8878835018617091,
+          "weekly_bias_units": 4.044352750933608,
+          "weekly_zero_forecast_fraction": 0.0,
+          "actual_units": 278877.0,
+          "weekly_forecasts": 10824,
+          "daily_prediction_points": 75768
+        },
+        "ewma_015": {
+          "daily_MAE_units": 5.5398612180030895,
+          "daily_WAPE": 1.505123064166848,
+          "weekly_MAE_units": 26.080403020475284,
+          "weekly_WAPE": 1.0122537258132598,
+          "weekly_bias_units": 7.09778984074405,
+          "weekly_zero_forecast_fraction": 0.0,
+          "actual_units": 278877.0,
+          "weekly_forecasts": 10824,
+          "daily_prediction_points": 75768
+        },
+        "sba_01": {
+          "daily_MAE_units": 6.217966671877974,
+          "daily_WAPE": 1.6893573109107254,
+          "weekly_MAE_units": 30.220147708642237,
+          "weekly_WAPE": 1.1729288496302799,
+          "weekly_bias_units": 10.76656882877664,
+          "weekly_zero_forecast_fraction": 0.0,
+          "actual_units": 278877.0,
+          "weekly_forecasts": 10824,
+          "daily_prediction_points": 75768
+        },
+        "tsb_01": {
+          "daily_MAE_units": 5.3738167578190525,
+          "daily_WAPE": 1.4600104996340106,
+          "weekly_MAE_units": 24.163535694031484,
+          "weekly_WAPE": 0.9378547185755612,
+          "weekly_bias_units": 6.125680993200059,
+          "weekly_zero_forecast_fraction": 0.0,
+          "actual_units": 278877.0,
+          "weekly_forecasts": 10824,
+          "daily_prediction_points": 75768
+        },
+        "seasonal_mean_8weeks": {
+          "daily_MAE_units": 4.883493031358885,
+          "daily_WAPE": 1.3267946083757356,
+          "weekly_MAE_units": 21.94255820399113,
+          "weekly_WAPE": 0.8516523413547908,
+          "weekly_bias_units": 2.0902161862527717,
+          "weekly_zero_forecast_fraction": 0.19068736141906872,
+          "actual_units": 278877.0,
+          "weekly_forecasts": 10824,
+          "daily_prediction_points": 75768
+        },
+        "weekly_total_median_8weeks": {
+          "daily_MAE_units": 4.238418461789873,
+          "daily_WAPE": 1.1515345116768148,
+          "weekly_MAE_units": 19.145048041389504,
+          "weekly_WAPE": 0.7430731110848152,
+          "weekly_bias_units": -5.21359940872136,
+          "weekly_zero_forecast_fraction": 0.38035846267553586,
+          "actual_units": 278877.0,
+          "weekly_forecasts": 10824,
+          "daily_prediction_points": 75768
+        },
+        "weekly_total_median_12weeks": {
+          "daily_MAE_units": 4.144843964733271,
+          "daily_WAPE": 1.1261112874848427,
+          "weekly_MAE_units": 18.994964892830748,
+          "weekly_WAPE": 0.7372479623633358,
+          "weekly_bias_units": -6.877448263118995,
+          "weekly_zero_forecast_fraction": 0.3787878787878788,
+          "actual_units": 278877.0,
+          "weekly_forecasts": 10824,
+          "daily_prediction_points": 75768
+        },
+        "adaptive_past_validation": {
+          "daily_MAE_units": 4.238418461789873,
+          "daily_WAPE": 1.1515345116768148,
+          "weekly_MAE_units": 19.145048041389504,
+          "weekly_WAPE": 0.7430731110848152,
+          "weekly_bias_units": -5.21359940872136,
+          "weekly_zero_forecast_fraction": 0.38035846267553586,
+          "actual_units": 278877.0,
+          "weekly_forecasts": 10824,
+          "daily_prediction_points": 75768
+        }
+      },
+      "quantiles": {
+        "mean_pinball_units": 6.862660137965015,
+        "pinball_by_quantile": {
+          "0.1": 2.762518477457502,
+          "0.5": 9.377817812269031,
+          "0.9": 8.447644124168514
+        },
+        "fraction_actual_le_quantile": {
+          "0.1": 0.5305801921655581,
+          "0.5": 0.6809866962305987,
+          "0.9": 0.9004065040650406
+        },
+        "central80_inclusive_coverage": 0.8183665927568367,
+        "central80_mean_width_units": 46.31541019955654,
+        "daily_central80_inclusive_coverage": 0.9259977827050998,
+        "discrete_quantile_note": "Inclusive coverage can exceed nominal for zero-inflated/discrete outcomes. q0.9 exceedance is the upper-tail diagnostic; these are not calibrated operational stockout probabilities."
+      },
+      "slices": {
+        "sparse_lt25pct": {
+          "items": 1726,
+          "adaptive": {
+            "daily_MAE_units": 1.8010161567385998,
+            "daily_WAPE": 1.2542077411865336,
+            "weekly_MAE_units": 9.131155851680186,
+            "weekly_WAPE": 0.9084051413585406,
+            "weekly_bias_units": -3.346538238702202,
+            "weekly_zero_forecast_fraction": 0.5443221320973349,
+            "actual_units": 69398.0,
+            "weekly_forecasts": 6904,
+            "daily_prediction_points": 48328
+          },
+          "mean28": {
+            "daily_MAE_units": 2.2651915777898646,
+            "daily_WAPE": 1.5774543729131756,
+            "weekly_MAE_units": 10.954555330243338,
+            "weekly_WAPE": 1.0898044612236664,
+            "weekly_bias_units": 1.0385646002317497,
+            "weekly_zero_forecast_fraction": 0.3437137891077636,
+            "actual_units": 69398.0,
+            "weekly_forecasts": 6904,
+            "daily_prediction_points": 48328
+          }
+        },
+        "intermittent_25to50pct": {
+          "items": 697,
+          "adaptive": {
+            "daily_MAE_units": 5.329311364962117,
+            "daily_WAPE": 1.1975594491427728,
+            "weekly_MAE_units": 24.40638450502152,
+            "weekly_WAPE": 0.7834862807861921,
+            "weekly_bias_units": -8.594332855093256,
+            "weekly_zero_forecast_fraction": 0.12302725968436155,
+            "actual_units": 86849.0,
+            "weekly_forecasts": 2788,
+            "daily_prediction_points": 19516
+          },
+          "mean28": {
+            "daily_MAE_units": 6.663622156179545,
+            "daily_WAPE": 1.497394903798547,
+            "weekly_MAE_units": 30.94108680057389,
+            "weekly_WAPE": 0.9932612925882854,
+            "weekly_bias_units": 3.869350789096126,
+            "weekly_zero_forecast_fraction": 0.08859397417503587,
+            "actual_units": 86849.0,
+            "weekly_forecasts": 2788,
+            "daily_prediction_points": 19516
+          }
+        },
+        "frequent_ge50pct": {
+          "items": 283,
+          "adaptive": {
+            "daily_MAE_units": 16.41723127100345,
+            "daily_WAPE": 1.0608345477569219,
+            "weekly_MAE_units": 67.26104240282686,
+            "weekly_WAPE": 0.6208880371850282,
+            "weekly_bias_units": -8.27429328621908,
+            "weekly_zero_forecast_fraction": 0.014134275618374558,
+            "actual_units": 122630.0,
+            "weekly_forecasts": 1132,
+            "daily_prediction_points": 7924
+          },
+          "mean28": {
+            "daily_MAE_units": 19.244690632436722,
+            "daily_WAPE": 1.2435368879672883,
+            "weekly_MAE_units": 77.71068904593639,
+            "weekly_WAPE": 0.717348935823208,
+            "weekly_bias_units": 20.875,
+            "weekly_zero_forecast_fraction": 0.01678445229681979,
+            "actual_units": 122630.0,
+            "weekly_forecasts": 1132,
+            "daily_prediction_points": 7924
+          }
+        },
+        "lower_half_training_volume": {
+          "items": 1354,
+          "adaptive": {
+            "daily_MAE_units": 1.1014589191193456,
+            "daily_WAPE": 1.251979089214266,
+            "weekly_MAE_units": 5.711225997045791,
+            "weekly_WAPE": 0.9273850212868022,
+            "weekly_bias_units": -2.494830132939439,
+            "weekly_zero_forecast_fraction": 0.5308345642540621,
+            "actual_units": 33354.0,
+            "weekly_forecasts": 5416,
+            "daily_prediction_points": 37912
+          },
+          "mean28": {
+            "daily_MAE_units": 1.411191895517439,
+            "daily_WAPE": 1.6040387102853375,
+            "weekly_MAE_units": 6.758077917282127,
+            "weekly_WAPE": 1.0973721292798464,
+            "weekly_bias_units": 0.4753969719350074,
+            "weekly_zero_forecast_fraction": 0.3332717872968981,
+            "actual_units": 33354.0,
+            "weekly_forecasts": 5416,
+            "daily_prediction_points": 37912
+          }
+        },
+        "upper_half_training_volume": {
+          "items": 1352,
+          "adaptive": {
+            "daily_MAE_units": 7.380018477156657,
+            "daily_WAPE": 1.1378892383656212,
+            "weekly_MAE_units": 32.5987426035503,
+            "weekly_WAPE": 0.718034562953369,
+            "weekly_bias_units": -7.936390532544379,
+            "weekly_zero_forecast_fraction": 0.22965976331360946,
+            "actual_units": 245523.0,
+            "weekly_forecasts": 5408,
+            "daily_prediction_points": 37856
+          },
+          "mean28": {
+            "daily_MAE_units": 8.942129385038038,
+            "daily_WAPE": 1.378743539301817,
+            "weekly_MAE_units": 39.43431028106509,
+            "weekly_WAPE": 0.8685978503032302,
+            "weekly_bias_units": 7.21408099112426,
+            "weekly_zero_forecast_fraction": 0.15421597633136094,
+            "actual_units": 245523.0,
+            "weekly_forecasts": 5408,
+            "daily_prediction_points": 37856
+          }
+        }
+      }
+    },
+    {
+      "fold": 4,
+      "validation_start": "2011-04-03",
+      "validation_end": "2011-04-30",
+      "test_start": "2011-05-01",
+      "test_end": "2011-05-28",
+      "training_eligibility_cutoff": "2011-04-02",
+      "item_count": 2756,
+      "eligible_item_ids_sha256": "d0c9dc556a5d14d60e0c676fd51032bbd34982e2064749cb671fa8a89773080f",
+      "point_selected_from_past_validation": "trimmed_mean_56",
+      "validation_weekly_WAPE": {
+        "zero": 1.0,
+        "seasonal_naive_7": 1.0406314680593782,
+        "mean_7": 1.0406314680593782,
+        "mean_28": 0.9154756782420974,
+        "mean_56": 0.8743263017722946,
+        "median_28": 0.7738191502778252,
+        "trimmed_mean_56": 0.6949749075179392,
+        "ewma_005": 0.8729059577984662,
+        "ewma_015": 0.900233051355924,
+        "sba_01": 1.2037715846133379,
+        "tsb_01": 0.8780372710761104,
+        "seasonal_mean_8weeks": 0.8743263017722946,
+        "weekly_total_median_8weeks": 0.7429950221444097,
+        "weekly_total_median_12weeks": 0.7344710935703317
+      },
+      "quantile_window_weeks_selected": 12,
+      "validation_quantile_mean_pinball": {
+        "8": 6.842247218190614,
+        "12": 6.455859941944847,
+        "24": 7.154266448959845
+      },
+      "models": {
+        "zero": {
+          "daily_MAE_units": 4.128343354758449,
+          "daily_WAPE": 1.0,
+          "weekly_MAE_units": 28.898403483309142,
+          "weekly_WAPE": 1.0,
+          "weekly_bias_units": -28.898403483309142,
+          "weekly_zero_forecast_fraction": 1.0,
+          "actual_units": 318576.0,
+          "weekly_forecasts": 11024,
+          "daily_prediction_points": 77168
+        },
+        "seasonal_naive_7": {
+          "daily_MAE_units": 5.446454488907319,
+          "daily_WAPE": 1.3192833107327608,
+          "weekly_MAE_units": 24.552975326560233,
+          "weekly_WAPE": 0.849630857315052,
+          "weekly_bias_units": -3.181966618287373,
+          "weekly_zero_forecast_fraction": 0.4931966618287373,
+          "actual_units": 318576.0,
+          "weekly_forecasts": 11024,
+          "daily_prediction_points": 77168
+        },
+        "mean_7": {
+          "daily_MAE_units": 5.1264995112704,
+          "daily_WAPE": 1.2417812838560163,
+          "weekly_MAE_units": 24.552975326560233,
+          "weekly_WAPE": 0.849630857315052,
+          "weekly_bias_units": -3.181966618287373,
+          "weekly_zero_forecast_fraction": 0.4931966618287373,
+          "actual_units": 318576.0,
+          "weekly_forecasts": 11024,
+          "daily_prediction_points": 77168
+        },
+        "mean_28": {
+          "daily_MAE_units": 4.947108905245698,
+          "daily_WAPE": 1.198327871528301,
+          "weekly_MAE_units": 21.489205370101597,
+          "weekly_WAPE": 0.7436121992868264,
+          "weekly_bias_units": -3.7457365747460085,
+          "weekly_zero_forecast_fraction": 0.27358490566037735,
+          "actual_units": 318576.0,
+          "weekly_forecasts": 11024,
+          "daily_prediction_points": 77168
+        },
+        "mean_56": {
+          "daily_MAE_units": 5.098261723956636,
+          "daily_WAPE": 1.234941303532864,
+          "weekly_MAE_units": 21.36213035195936,
+          "weekly_WAPE": 0.7392148969162774,
+          "weekly_bias_units": -1.4887858309143687,
+          "weekly_zero_forecast_fraction": 0.19856676342525398,
+          "actual_units": 318576.0,
+          "weekly_forecasts": 11024,
+          "daily_prediction_points": 77168
+        },
+        "median_28": {
+          "daily_MAE_units": 3.9079216773792247,
+          "daily_WAPE": 0.9466077168399377,
+          "weekly_MAE_units": 24.14246190130624,
+          "weekly_WAPE": 0.835425455778213,
+          "weekly_bias_units": -23.496961175616836,
+          "weekly_zero_forecast_fraction": 0.8948657474600871,
+          "actual_units": 318576.0,
+          "weekly_forecasts": 11024,
+          "daily_prediction_points": 77168
+        },
+        "trimmed_mean_56": {
+          "daily_MAE_units": 4.150618582606893,
+          "daily_WAPE": 1.0053956819804653,
+          "weekly_MAE_units": 19.632274641888056,
+          "weekly_WAPE": 0.6793549911235433,
+          "weekly_bias_units": -15.28917736795608,
+          "weekly_zero_forecast_fraction": 0.44829462989840346,
+          "actual_units": 318576.0,
+          "weekly_forecasts": 11024,
+          "daily_prediction_points": 77168
+        },
+        "ewma_005": {
+          "daily_MAE_units": 4.9629181125643775,
+          "daily_WAPE": 1.202157302842549,
+          "weekly_MAE_units": 20.95164180495433,
+          "weekly_WAPE": 0.7250103562660607,
+          "weekly_bias_units": -3.0162722053533613,
+          "weekly_zero_forecast_fraction": 0.0,
+          "actual_units": 318576.0,
+          "weekly_forecasts": 11024,
+          "daily_prediction_points": 77168
+        },
+        "ewma_015": {
+          "daily_MAE_units": 4.944792982535679,
+          "daily_WAPE": 1.1977668904007623,
+          "weekly_MAE_units": 22.192321509168874,
+          "weekly_WAPE": 0.7679428215467506,
+          "weekly_bias_units": -4.175591903055881,
+          "weekly_zero_forecast_fraction": 0.0,
+          "actual_units": 318576.0,
+          "weekly_forecasts": 11024,
+          "daily_prediction_points": 77168
+        },
+        "sba_01": {
+          "daily_MAE_units": 6.135086688848383,
+          "daily_WAPE": 1.4860892521880245,
+          "weekly_MAE_units": 28.979448887330133,
+          "weekly_WAPE": 1.0028044941675687,
+          "weekly_bias_units": 5.163039727426771,
+          "weekly_zero_forecast_fraction": 0.0,
+          "actual_units": 318576.0,
+          "weekly_forecasts": 11024,
+          "daily_prediction_points": 77168
+        },
+        "tsb_01": {
+          "daily_MAE_units": 4.883750720153481,
+          "daily_WAPE": 1.182980750504758,
+          "weekly_MAE_units": 20.69625895538285,
+          "weekly_WAPE": 0.7161730912690866,
+          "weekly_bias_units": -4.022331459169064,
+          "weekly_zero_forecast_fraction": 0.0,
+          "actual_units": 318576.0,
+          "weekly_forecasts": 11024,
+          "daily_prediction_points": 77168
+        },
+        "seasonal_mean_8weeks": {
+          "daily_MAE_units": 4.99494123211694,
+          "daily_WAPE": 1.2099141962985285,
+          "weekly_MAE_units": 21.36213035195936,
+          "weekly_WAPE": 0.7392148969162774,
+          "weekly_bias_units": -1.4887858309143687,
+          "weekly_zero_forecast_fraction": 0.19856676342525398,
+          "actual_units": 318576.0,
+          "weekly_forecasts": 11024,
+          "daily_prediction_points": 77168
+        },
+        "weekly_total_median_8weeks": {
+          "daily_MAE_units": 4.3456176076915645,
+          "daily_WAPE": 1.0526298891013217,
+          "weekly_MAE_units": 19.142099056603772,
+          "weekly_WAPE": 0.6623929611772387,
+          "weekly_bias_units": -8.976369738751814,
+          "weekly_zero_forecast_fraction": 0.40738388969521044,
+          "actual_units": 318576.0,
+          "weekly_forecasts": 11024,
+          "daily_prediction_points": 77168
+        },
+        "weekly_total_median_12weeks": {
+          "daily_MAE_units": 4.3147421486274515,
+          "daily_WAPE": 1.04515099105169,
+          "weekly_MAE_units": 19.203737300435414,
+          "weekly_WAPE": 0.6645258902114409,
+          "weekly_bias_units": -9.874455732946299,
+          "weekly_zero_forecast_fraction": 0.4006712626995646,
+          "actual_units": 318576.0,
+          "weekly_forecasts": 11024,
+          "daily_prediction_points": 77168
+        },
+        "adaptive_past_validation": {
+          "daily_MAE_units": 4.150618582606893,
+          "daily_WAPE": 1.0053956819804653,
+          "weekly_MAE_units": 19.632274641888056,
+          "weekly_WAPE": 0.6793549911235433,
+          "weekly_bias_units": -15.28917736795608,
+          "weekly_zero_forecast_fraction": 0.44829462989840346,
+          "actual_units": 318576.0,
+          "weekly_forecasts": 11024,
+          "daily_prediction_points": 77168
+        }
+      },
+      "quantiles": {
+        "mean_pinball_units": 6.904091074020319,
+        "pinball_by_quantile": {
+          "0.1": 2.600371915820029,
+          "0.5": 9.615475326560233,
+          "0.9": 8.496425979680696
+        },
+        "fraction_actual_le_quantile": {
+          "0.1": 0.5150580551523948,
+          "0.5": 0.6528483309143687,
+          "0.9": 0.8896952104499274
+        },
+        "central80_inclusive_coverage": 0.8388969521044993,
+        "central80_mean_width_units": 46.03782656023222,
+        "daily_central80_inclusive_coverage": 0.9242172921418205,
+        "discrete_quantile_note": "Inclusive coverage can exceed nominal for zero-inflated/discrete outcomes. q0.9 exceedance is the upper-tail diagnostic; these are not calibrated operational stockout probabilities."
+      },
+      "slices": {
+        "sparse_lt25pct": {
+          "items": 1774,
+          "adaptive": {
+            "daily_MAE_units": 1.5550909619276367,
+            "daily_WAPE": 1.1129526440583468,
+            "weekly_MAE_units": 8.096692564089995,
+            "weekly_WAPE": 0.8278096741557901,
+            "weekly_bias_units": -5.951295279643155,
+            "weekly_zero_forecast_fraction": 0.6395152198421646,
+            "actual_units": 69405.0,
+            "weekly_forecasts": 7096,
+            "daily_prediction_points": 49672
+          },
+          "mean28": {
+            "daily_MAE_units": 2.095858114948347,
+            "daily_WAPE": 1.4999706690543086,
+            "weekly_MAE_units": 10.03745067643743,
+            "weekly_WAPE": 1.0262337007420215,
+            "weekly_bias_units": -0.27004650507328076,
+            "weekly_zero_forecast_fraction": 0.3834554678692221,
+            "actual_units": 69405.0,
+            "weekly_forecasts": 7096,
+            "daily_prediction_points": 49672
+          }
+        },
+        "intermittent_25to50pct": {
+          "items": 702,
+          "adaptive": {
+            "daily_MAE_units": 5.164437012263099,
+            "daily_WAPE": 1.0626208930497592,
+            "weekly_MAE_units": 24.832822370865845,
+            "weekly_WAPE": 0.7299336880288003,
+            "weekly_bias_units": -19.501161278335193,
+            "weekly_zero_forecast_fraction": 0.1346153846153846,
+            "actual_units": 95530.0,
+            "weekly_forecasts": 2808,
+            "daily_prediction_points": 19656
+          },
+          "mean28": {
+            "daily_MAE_units": 6.277490697133555,
+            "daily_WAPE": 1.2916398737868433,
+            "weekly_MAE_units": 27.498219373219374,
+            "weekly_WAPE": 0.8082801214278237,
+            "weekly_bias_units": -4.215990028490029,
+            "weekly_zero_forecast_fraction": 0.09508547008547008,
+            "actual_units": 95530.0,
+            "weekly_forecasts": 2808,
+            "daily_prediction_points": 19656
+          }
+        },
+        "frequent_ge50pct": {
+          "items": 280,
+          "adaptive": {
+            "daily_MAE_units": 18.053352373558123,
+            "daily_WAPE": 0.9212272935524741,
+            "weekly_MAE_units": 79.67991071428571,
+            "weekly_WAPE": 0.5808443058818935,
+            "weekly_bias_units": -63.8912849378882,
+            "weekly_zero_forecast_fraction": 0.023214285714285715,
+            "actual_units": 153641.0,
+            "weekly_forecasts": 1120,
+            "daily_prediction_points": 7840
+          },
+          "mean28": {
+            "daily_MAE_units": 19.676362062682216,
+            "daily_WAPE": 1.0040463064639555,
+            "weekly_MAE_units": 78.97879464285714,
+            "weekly_WAPE": 0.575733365442818,
+            "weekly_bias_units": -24.587723214285713,
+            "weekly_zero_forecast_fraction": 0.025,
+            "actual_units": 153641.0,
+            "weekly_forecasts": 1120,
+            "daily_prediction_points": 7840
+          }
+        },
+        "lower_half_training_volume": {
+          "items": 1378,
+          "adaptive": {
+            "daily_MAE_units": 0.9423262852815766,
+            "daily_WAPE": 1.1394502300700227,
+            "weekly_MAE_units": 4.940221335268505,
+            "weekly_WAPE": 0.8533799241593281,
+            "weekly_bias_units": -3.7041514166719245,
+            "weekly_zero_forecast_fraction": 0.6318940493468795,
+            "actual_units": 31909.0,
+            "weekly_forecasts": 5512,
+            "daily_prediction_points": 38584
+          },
+          "mean28": {
+            "daily_MAE_units": 1.262789350137733,
+            "daily_WAPE": 1.526950524482569,
+            "weekly_MAE_units": 5.887291364296082,
+            "weekly_WAPE": 1.0169779685982012,
+            "weekly_bias_units": -0.3157202467343977,
+            "weekly_zero_forecast_fraction": 0.37536284470246734,
+            "actual_units": 31909.0,
+            "weekly_forecasts": 5512,
+            "daily_prediction_points": 38584
+          }
+        },
+        "upper_half_training_volume": {
+          "items": 1378,
+          "adaptive": {
+            "daily_MAE_units": 7.358910879932208,
+            "daily_WAPE": 0.9904740252324276,
+            "weekly_MAE_units": 34.3243279485076,
+            "weekly_WAPE": 0.6599842174096561,
+            "weekly_bias_units": -26.874203319240234,
+            "weekly_zero_forecast_fraction": 0.26469521044992744,
+            "actual_units": 286667.0,
+            "weekly_forecasts": 5512,
+            "daily_prediction_points": 38584
+          },
+          "mean28": {
+            "daily_MAE_units": 8.631428460353662,
+            "daily_WAPE": 1.1617487737140504,
+            "weekly_MAE_units": 37.09111937590711,
+            "weekly_WAPE": 0.7131837637398096,
+            "weekly_bias_units": -7.17575290275762,
+            "weekly_zero_forecast_fraction": 0.17180696661828737,
+            "actual_units": 286667.0,
+            "weekly_forecasts": 5512,
+            "daily_prediction_points": 38584
+          }
+        }
+      }
+    },
+    {
+      "fold": 5,
+      "validation_start": "2011-05-04",
+      "validation_end": "2011-05-31",
+      "test_start": "2011-06-01",
+      "test_end": "2011-06-28",
+      "training_eligibility_cutoff": "2011-05-03",
+      "item_count": 2806,
+      "eligible_item_ids_sha256": "4eb6b769927bfc4082bc4bd704a5c0b547300fa8067037efe3e18781c56f041e",
+      "point_selected_from_past_validation": "weekly_total_median_8weeks",
+      "validation_weekly_WAPE": {
+        "zero": 1.0,
+        "seasonal_naive_7": 0.9111293231635577,
+        "mean_7": 0.9111293231635577,
+        "mean_28": 0.7627005783361428,
+        "mean_56": 0.7463613405726242,
+        "median_28": 0.8398136161996207,
+        "trimmed_mean_56": 0.6886050139202077,
+        "ewma_005": 0.7467858120752698,
+        "ewma_015": 0.8265388603018798,
+        "sba_01": 1.016147742508713,
+        "tsb_01": 0.7591491887944095,
+        "seasonal_mean_8weeks": 0.7463613405726242,
+        "weekly_total_median_8weeks": 0.6679285756415868,
+        "weekly_total_median_12weeks": 0.6794813290245273
+      },
+      "quantile_window_weeks_selected": 12,
+      "validation_quantile_mean_pinball": {
+        "8": 7.283184842005227,
+        "12": 6.974153599429794,
+        "24": 7.144511760513186
+      },
+      "models": {
+        "zero": {
+          "daily_MAE_units": 3.662903472151512,
+          "daily_WAPE": 1.0,
+          "weekly_MAE_units": 25.640324305060584,
+          "weekly_WAPE": 1.0,
+          "weekly_bias_units": -25.640324305060584,
+          "weekly_zero_forecast_fraction": 1.0,
+          "actual_units": 287787.0,
+          "weekly_forecasts": 11224,
+          "daily_prediction_points": 78568
+        },
+        "seasonal_naive_7": {
+          "daily_MAE_units": 5.213127481926484,
+          "daily_WAPE": 1.423222730700136,
+          "weekly_MAE_units": 22.067266571632217,
+          "weekly_WAPE": 0.8606469367970061,
+          "weekly_bias_units": -0.7402886671418389,
+          "weekly_zero_forecast_fraction": 0.478528153955809,
+          "actual_units": 287787.0,
+          "weekly_forecasts": 11224,
+          "daily_prediction_points": 78568
+        },
+        "mean_7": {
+          "daily_MAE_units": 4.828361601233508,
+          "daily_WAPE": 1.3181787720978162,
+          "weekly_MAE_units": 22.067266571632217,
+          "weekly_WAPE": 0.8606469367970061,
+          "weekly_bias_units": -0.7402886671418389,
+          "weekly_zero_forecast_fraction": 0.478528153955809,
+          "actual_units": 287787.0,
+          "weekly_forecasts": 11224,
+          "daily_prediction_points": 78568
+        },
+        "mean_28": {
+          "daily_MAE_units": 4.7585140078839805,
+          "daily_WAPE": 1.2991098575384872,
+          "weekly_MAE_units": 20.031895937277262,
+          "weekly_WAPE": 0.7812653108027813,
+          "weekly_bias_units": 0.5661974340698502,
+          "weekly_zero_forecast_fraction": 0.28991446899501067,
+          "actual_units": 287787.0,
+          "weekly_forecasts": 11224,
+          "daily_prediction_points": 78568
+        },
+        "mean_56": {
+          "daily_MAE_units": 4.717299482159221,
+          "daily_WAPE": 1.2878579842532347,
+          "weekly_MAE_units": 19.712045616535995,
+          "weekly_WAPE": 0.7687908070899658,
+          "weekly_bias_units": 0.00189326443335693,
+          "weekly_zero_forecast_fraction": 0.22059871703492517,
+          "actual_units": 287787.0,
+          "weekly_forecasts": 11224,
+          "daily_prediction_points": 78568
+        },
+        "median_28": {
+          "daily_MAE_units": 3.51317966602179,
+          "daily_WAPE": 0.9591242828897761,
+          "weekly_MAE_units": 20.25708303635068,
+          "weekly_WAPE": 0.7900478478875002,
+          "weekly_bias_units": -18.671195652173914,
+          "weekly_zero_forecast_fraction": 0.8660014255167499,
+          "actual_units": 287787.0,
+          "weekly_forecasts": 11224,
+          "daily_prediction_points": 78568
+        },
+        "trimmed_mean_56": {
+          "daily_MAE_units": 3.7504670559537465,
+          "daily_WAPE": 1.0239055122440344,
+          "weekly_MAE_units": 17.473445876847748,
+          "weekly_WAPE": 0.6814830291908222,
+          "weekly_bias_units": -12.979167312281135,
+          "weekly_zero_forecast_fraction": 0.4888631503920171,
+          "actual_units": 287787.0,
+          "weekly_forecasts": 11224,
+          "daily_prediction_points": 78568
+        },
+        "ewma_005": {
+          "daily_MAE_units": 4.680390801261395,
+          "daily_WAPE": 1.277781638758892,
+          "weekly_MAE_units": 19.20470763834481,
+          "weekly_WAPE": 0.7490040847320488,
+          "weekly_bias_units": -0.10426118349459275,
+          "weekly_zero_forecast_fraction": 0.0,
+          "actual_units": 287787.0,
+          "weekly_forecasts": 11224,
+          "daily_prediction_points": 78568
+        },
+        "ewma_015": {
+          "daily_MAE_units": 4.648114741180011,
+          "daily_WAPE": 1.2689700333407385,
+          "weekly_MAE_units": 19.870635390852563,
+          "weekly_WAPE": 0.774975977465727,
+          "weekly_bias_units": -1.4362021463232812,
+          "weekly_zero_forecast_fraction": 0.0,
+          "actual_units": 287787.0,
+          "weekly_forecasts": 11224,
+          "daily_prediction_points": 78568
+        },
+        "sba_01": {
+          "daily_MAE_units": 5.751266904975675,
+          "daily_WAPE": 1.5701388116562904,
+          "weekly_MAE_units": 26.97815226463188,
+          "weekly_WAPE": 1.0521767175662147,
+          "weekly_bias_units": 6.4453003956821595,
+          "weekly_zero_forecast_fraction": 0.0,
+          "actual_units": 287787.0,
+          "weekly_forecasts": 11224,
+          "daily_prediction_points": 78568
+        },
+        "tsb_01": {
+          "daily_MAE_units": 4.687948702760905,
+          "daily_WAPE": 1.2798450023055898,
+          "weekly_MAE_units": 19.28781531380724,
+          "weekly_WAPE": 0.7522453727311257,
+          "weekly_bias_units": -0.09609786109463468,
+          "weekly_zero_forecast_fraction": 0.0,
+          "actual_units": 287787.0,
+          "weekly_forecasts": 11224,
+          "daily_prediction_points": 78568
+        },
+        "seasonal_mean_8weeks": {
+          "daily_MAE_units": 4.648342836778332,
+          "daily_WAPE": 1.2690323051423449,
+          "weekly_MAE_units": 19.712045616535995,
+          "weekly_WAPE": 0.7687908070899658,
+          "weekly_bias_units": 0.001893264433357092,
+          "weekly_zero_forecast_fraction": 0.22059871703492517,
+          "actual_units": 287787.0,
+          "weekly_forecasts": 11224,
+          "daily_prediction_points": 78568
+        },
+        "weekly_total_median_8weeks": {
+          "daily_MAE_units": 4.021717995379196,
+          "daily_WAPE": 1.0979590442269895,
+          "weekly_MAE_units": 17.630256593014966,
+          "weekly_WAPE": 0.6875988144009285,
+          "weekly_bias_units": -7.062990021382752,
+          "weekly_zero_forecast_fraction": 0.44458303635067714,
+          "actual_units": 287787.0,
+          "weekly_forecasts": 11224,
+          "daily_prediction_points": 78568
+        },
+        "weekly_total_median_12weeks": {
+          "daily_MAE_units": 4.043822309717471,
+          "daily_WAPE": 1.1039936871015101,
+          "weekly_MAE_units": 17.86511047754811,
+          "weekly_WAPE": 0.6967583664307283,
+          "weekly_bias_units": -6.97647897362794,
+          "weekly_zero_forecast_fraction": 0.434248039914469,
+          "actual_units": 287787.0,
+          "weekly_forecasts": 11224,
+          "daily_prediction_points": 78568
+        },
+        "adaptive_past_validation": {
+          "daily_MAE_units": 4.021717995379196,
+          "daily_WAPE": 1.0979590442269895,
+          "weekly_MAE_units": 17.630256593014966,
+          "weekly_WAPE": 0.6875988144009285,
+          "weekly_bias_units": -7.062990021382752,
+          "weekly_zero_forecast_fraction": 0.44458303635067714,
+          "actual_units": 287787.0,
+          "weekly_forecasts": 11224,
+          "daily_prediction_points": 78568
+        }
+      },
+      "quantiles": {
+        "mean_pinball_units": 6.216541933951057,
+        "pinball_by_quantile": {
+          "0.1": 2.408134354953671,
+          "0.5": 8.863061297220243,
+          "0.9": 7.378430149679259
+        },
+        "fraction_actual_le_quantile": {
+          "0.1": 0.5114041339985744,
+          "0.5": 0.6574305060584462,
+          "0.9": 0.8913934426229508
+        },
+        "central80_inclusive_coverage": 0.8394511760513186,
+        "central80_mean_width_units": 46.30826799714897,
+        "daily_central80_inclusive_coverage": 0.9265858873841768,
+        "discrete_quantile_note": "Inclusive coverage can exceed nominal for zero-inflated/discrete outcomes. q0.9 exceedance is the upper-tail diagnostic; these are not calibrated operational stockout probabilities."
+      },
+      "slices": {
+        "sparse_lt25pct": {
+          "items": 1847,
+          "adaptive": {
+            "daily_MAE_units": 1.7441315494256604,
+            "daily_WAPE": 1.172320443068032,
+            "weekly_MAE_units": 8.7347049269085,
+            "weekly_WAPE": 0.8387205781053014,
+            "weekly_bias_units": -5.084731997834326,
+            "weekly_zero_forecast_fraction": 0.6150514347590688,
+            "actual_units": 76941.0,
+            "weekly_forecasts": 7388,
+            "daily_prediction_points": 51716
+          },
+          "mean28": {
+            "daily_MAE_units": 2.1566902478370884,
+            "daily_WAPE": 1.4496223451364405,
+            "weekly_MAE_units": 10.27751082837033,
+            "weekly_WAPE": 0.9868633108485723,
+            "weekly_bias_units": -1.0274431510557662,
+            "weekly_zero_forecast_fraction": 0.3969951272333514,
+            "actual_units": 76941.0,
+            "weekly_forecasts": 7388,
+            "daily_prediction_points": 51716
+          }
+        },
+        "intermittent_25to50pct": {
+          "items": 696,
+          "adaptive": {
+            "daily_MAE_units": 5.267849901205843,
+            "daily_WAPE": 1.1591994091609115,
+            "weekly_MAE_units": 22.68444683908046,
+            "weekly_WAPE": 0.7131073497363399,
+            "weekly_bias_units": -9.52819683908046,
+            "weekly_zero_forecast_fraction": 0.14619252873563218,
+            "actual_units": 88561.0,
+            "weekly_forecasts": 2784,
+            "daily_prediction_points": 19488
+          },
+          "mean28": {
+            "daily_MAE_units": 6.253481996246776,
+            "daily_WAPE": 1.3760894427892318,
+            "weekly_MAE_units": 25.185165229885058,
+            "weekly_WAPE": 0.791719831528551,
+            "weekly_bias_units": 1.5465158045977012,
+            "weekly_zero_forecast_fraction": 0.10560344827586207,
+            "actual_units": 88561.0,
+            "weekly_forecasts": 2784,
+            "daily_prediction_points": 19488
+          }
+        },
+        "frequent_ge50pct": {
+          "items": 263,
+          "adaptive": {
+            "daily_MAE_units": 16.719034950591485,
+            "daily_WAPE": 1.0068199155755464,
+            "weekly_MAE_units": 66.72671102661597,
+            "weekly_WAPE": 0.5740401521036922,
+            "weekly_bias_units": -14.43203422053232,
+            "weekly_zero_forecast_fraction": 0.0370722433460076,
+            "actual_units": 122285.0,
+            "weekly_forecasts": 1052,
+            "daily_prediction_points": 7364
+          },
+          "mean28": {
+            "daily_MAE_units": 19.074372429580198,
+            "daily_WAPE": 1.1486582865554122,
+            "weekly_MAE_units": 74.89757604562737,
+            "weekly_WAPE": 0.6443329108230772,
+            "weekly_bias_units": 9.163735741444867,
+            "weekly_zero_forecast_fraction": 0.025665399239543727,
+            "actual_units": 122285.0,
+            "weekly_forecasts": 1052,
+            "daily_prediction_points": 7364
+          }
+        },
+        "lower_half_training_volume": {
+          "items": 1403,
+          "adaptive": {
+            "daily_MAE_units": 0.9642769828016239,
+            "daily_WAPE": 1.1845849331533864,
+            "weekly_MAE_units": 4.803635067712046,
+            "weekly_WAPE": 0.843017074238539,
+            "weekly_bias_units": -2.944048467569494,
+            "weekly_zero_forecast_fraction": 0.6149322879543835,
+            "actual_units": 31978.0,
+            "weekly_forecasts": 5612,
+            "daily_prediction_points": 39284
+          },
+          "mean28": {
+            "daily_MAE_units": 1.2401077501563704,
+            "daily_WAPE": 1.5234346380994075,
+            "weekly_MAE_units": 5.980443692088382,
+            "weekly_WAPE": 1.0495418725373695,
+            "weekly_bias_units": -0.3913488952245189,
+            "weekly_zero_forecast_fraction": 0.40092658588738417,
+            "actual_units": 31978.0,
+            "weekly_forecasts": 5612,
+            "daily_prediction_points": 39284
+          }
+        },
+        "upper_half_training_volume": {
+          "items": 1403,
+          "adaptive": {
+            "daily_MAE_units": 7.079159007956768,
+            "daily_WAPE": 1.087130173170505,
+            "weekly_MAE_units": 30.45687811831789,
+            "weekly_WAPE": 0.6681703927539688,
+            "weekly_bias_units": -11.181931575196009,
+            "weekly_zero_forecast_fraction": 0.2742337847469708,
+            "actual_units": 255809.0,
+            "weekly_forecasts": 5612,
+            "daily_prediction_points": 39284
+          },
+          "mean28": {
+            "daily_MAE_units": 8.27692026561159,
+            "daily_WAPE": 1.2710676157378578,
+            "weekly_MAE_units": 34.083348182466146,
+            "weekly_WAPE": 0.7477287742026277,
+            "weekly_bias_units": 1.5237437633642195,
+            "weekly_zero_forecast_fraction": 0.17890235210263722,
+            "actual_units": 255809.0,
+            "weekly_forecasts": 5612,
+            "daily_prediction_points": 39284
+          }
+        }
+      }
+    },
+    {
+      "fold": 6,
+      "validation_start": "2011-06-03",
+      "validation_end": "2011-06-30",
+      "test_start": "2011-07-01",
+      "test_end": "2011-07-28",
+      "training_eligibility_cutoff": "2011-06-02",
+      "item_count": 2860,
+      "eligible_item_ids_sha256": "a33385602504236c505f8297b88fba4e0e478ad2e1bb2233daf99843651c9462",
+      "point_selected_from_past_validation": "weekly_total_median_8weeks",
+      "validation_weekly_WAPE": {
+        "zero": 1.0,
+        "seasonal_naive_7": 0.8880211147459387,
+        "mean_7": 0.8880211147459387,
+        "mean_28": 0.777684451124668,
+        "mean_56": 0.7683431899377495,
+        "median_28": 0.7800094309038932,
+        "trimmed_mean_56": 0.6779048757232103,
+        "ewma_005": 0.7718385016217786,
+        "ewma_015": 0.8689515877978352,
+        "sba_01": 1.0512000550723066,
+        "tsb_01": 0.7930211726556919,
+        "seasonal_mean_8weeks": 0.7683431899377495,
+        "weekly_total_median_8weeks": 0.67747618533036,
+        "weekly_total_median_12weeks": 0.6822243834710311
+      },
+      "quantile_window_weeks_selected": 12,
+      "validation_quantile_mean_pinball": {
+        "8": 6.945754662004662,
+        "12": 6.574125874125874,
+        "24": 6.649988344988344
+      },
+      "models": {
+        "zero": {
+          "daily_MAE_units": 3.742495004995005,
+          "daily_WAPE": 1.0,
+          "weekly_MAE_units": 26.197465034965035,
+          "weekly_WAPE": 1.0,
+          "weekly_bias_units": -26.197465034965035,
+          "weekly_zero_forecast_fraction": 1.0,
+          "actual_units": 299699.0,
+          "weekly_forecasts": 11440,
+          "daily_prediction_points": 80080
+        },
+        "seasonal_naive_7": {
+          "daily_MAE_units": 5.168406593406593,
+          "daily_WAPE": 1.3810056089609908,
+          "weekly_MAE_units": 21.491083916083916,
+          "weekly_WAPE": 0.8203497509167531,
+          "weekly_bias_units": -1.2786713286713287,
+          "weekly_zero_forecast_fraction": 0.42893356643356645,
+          "actual_units": 299699.0,
+          "weekly_forecasts": 11440,
+          "daily_prediction_points": 80080
+        },
+        "mean_7": {
+          "daily_MAE_units": 4.795718567147139,
+          "daily_WAPE": 1.2814228371037037,
+          "weekly_MAE_units": 21.491083916083916,
+          "weekly_WAPE": 0.8203497509167531,
+          "weekly_bias_units": -1.2786713286713287,
+          "weekly_zero_forecast_fraction": 0.42893356643356645,
+          "actual_units": 299699.0,
+          "weekly_forecasts": 11440,
+          "daily_prediction_points": 80080
+        },
+        "mean_28": {
+          "daily_MAE_units": 4.653139271442843,
+          "daily_WAPE": 1.2433254460546843,
+          "weekly_MAE_units": 18.749147727272728,
+          "weekly_WAPE": 0.7156855711897604,
+          "weekly_bias_units": -0.8449519230769231,
+          "weekly_zero_forecast_fraction": 0.2759615384615385,
+          "actual_units": 299699.0,
+          "weekly_forecasts": 11440,
+          "daily_prediction_points": 80080
+        },
+        "mean_56": {
+          "daily_MAE_units": 4.708517152490367,
+          "daily_WAPE": 1.2581224948078857,
+          "weekly_MAE_units": 18.7515625,
+          "weekly_WAPE": 0.7157777470061628,
+          "weekly_bias_units": -0.0907233391608392,
+          "weekly_zero_forecast_fraction": 0.2291958041958042,
+          "actual_units": 299699.0,
+          "weekly_forecasts": 11440,
+          "daily_prediction_points": 80080
+        },
+        "median_28": {
+          "daily_MAE_units": 3.56860014985015,
+          "daily_WAPE": 0.9535350468303198,
+          "weekly_MAE_units": 20.753015734265734,
+          "weekly_WAPE": 0.7921764837386844,
+          "weekly_bias_units": -19.75152972027972,
+          "weekly_zero_forecast_fraction": 0.8534090909090909,
+          "actual_units": 299699.0,
+          "weekly_forecasts": 11440,
+          "daily_prediction_points": 80080
+        },
+        "trimmed_mean_56": {
+          "daily_MAE_units": 3.7886230617208874,
+          "daily_WAPE": 1.01232548250948,
+          "weekly_MAE_units": 16.875921632715112,
+          "weekly_WAPE": 0.6441814736727879,
+          "weekly_bias_units": -13.023101626634235,
+          "weekly_zero_forecast_fraction": 0.4486888111888112,
+          "actual_units": 299699.0,
+          "weekly_forecasts": 11440,
+          "daily_prediction_points": 80080
+        },
+        "ewma_005": {
+          "daily_MAE_units": 4.717552623026986,
+          "daily_WAPE": 1.260536785414703,
+          "weekly_MAE_units": 18.597375714726063,
+          "weekly_WAPE": 0.7098921857479209,
+          "weekly_bias_units": 0.29316544009790335,
+          "weekly_zero_forecast_fraction": 0.0,
+          "actual_units": 299699.0,
+          "weekly_forecasts": 11440,
+          "daily_prediction_points": 80080
+        },
+        "ewma_015": {
+          "daily_MAE_units": 4.937410591069263,
+          "daily_WAPE": 1.3192831478677827,
+          "weekly_MAE_units": 21.031742163341907,
+          "weekly_WAPE": 0.8028159264750013,
+          "weekly_bias_units": 1.8736056694459837,
+          "weekly_zero_forecast_fraction": 0.0,
+          "actual_units": 299699.0,
+          "weekly_forecasts": 11440,
+          "daily_prediction_points": 80080
+        },
+        "sba_01": {
+          "daily_MAE_units": 5.68313732192483,
+          "daily_WAPE": 1.5185423933337796,
+          "weekly_MAE_units": 25.88945242716041,
+          "weekly_WAPE": 0.988242656020591,
+          "weekly_bias_units": 5.735173260655625,
+          "weekly_zero_forecast_fraction": 0.0,
+          "actual_units": 299699.0,
+          "weekly_forecasts": 11440,
+          "daily_prediction_points": 80080
+        },
+        "tsb_01": {
+          "daily_MAE_units": 4.811763360895551,
+          "daily_WAPE": 1.2857100288640124,
+          "weekly_MAE_units": 19.086070150441312,
+          "weekly_WAPE": 0.7285464500083371,
+          "weekly_bias_units": 1.3968922278344484,
+          "weekly_zero_forecast_fraction": 0.0,
+          "actual_units": 299699.0,
+          "weekly_forecasts": 11440,
+          "daily_prediction_points": 80080
+        },
+        "seasonal_mean_8weeks": {
+          "daily_MAE_units": 4.5857439435564435,
+          "daily_WAPE": 1.225317318376104,
+          "weekly_MAE_units": 18.7515625,
+          "weekly_WAPE": 0.7157777470061628,
+          "weekly_bias_units": -0.09072333916083916,
+          "weekly_zero_forecast_fraction": 0.2291958041958042,
+          "actual_units": 299699.0,
+          "weekly_forecasts": 11440,
+          "daily_prediction_points": 80080
+        },
+        "weekly_total_median_8weeks": {
+          "daily_MAE_units": 4.01899910075829,
+          "daily_WAPE": 1.073882288525233,
+          "weekly_MAE_units": 16.737674825174825,
+          "weekly_WAPE": 0.6389043673819399,
+          "weekly_bias_units": -6.821328671328671,
+          "weekly_zero_forecast_fraction": 0.40603146853146854,
+          "actual_units": 299699.0,
+          "weekly_forecasts": 11440,
+          "daily_prediction_points": 80080
+        },
+        "weekly_total_median_12weeks": {
+          "daily_MAE_units": 3.9790716243498174,
+          "daily_WAPE": 1.0632136099150593,
+          "weekly_MAE_units": 16.837456293706293,
+          "weekly_WAPE": 0.6427131888995292,
+          "weekly_bias_units": -7.727928321678322,
+          "weekly_zero_forecast_fraction": 0.42980769230769234,
+          "actual_units": 299699.0,
+          "weekly_forecasts": 11440,
+          "daily_prediction_points": 80080
+        },
+        "adaptive_past_validation": {
+          "daily_MAE_units": 4.01899910075829,
+          "daily_WAPE": 1.073882288525233,
+          "weekly_MAE_units": 16.737674825174825,
+          "weekly_WAPE": 0.6389043673819399,
+          "weekly_bias_units": -6.821328671328671,
+          "weekly_zero_forecast_fraction": 0.40603146853146854,
+          "actual_units": 299699.0,
+          "weekly_forecasts": 11440,
+          "daily_prediction_points": 80080
+        }
+      },
+      "quantiles": {
+        "mean_pinball_units": 5.919265734265735,
+        "pinball_by_quantile": {
+          "0.1": 2.347054195804196,
+          "0.5": 8.436844405594405,
+          "0.9": 6.973898601398601
+        },
+        "fraction_actual_le_quantile": {
+          "0.1": 0.4744755244755245,
+          "0.5": 0.6128496503496503,
+          "0.9": 0.8731643356643357
+        },
+        "central80_inclusive_coverage": 0.8284965034965035,
+        "central80_mean_width_units": 43.859877622377624,
+        "daily_central80_inclusive_coverage": 0.914547952047952,
+        "discrete_quantile_note": "Inclusive coverage can exceed nominal for zero-inflated/discrete outcomes. q0.9 exceedance is the upper-tail diagnostic; these are not calibrated operational stockout probabilities."
+      },
+      "slices": {
+        "sparse_lt25pct": {
+          "items": 1918,
+          "adaptive": {
+            "daily_MAE_units": 1.993623471430699,
+            "daily_WAPE": 1.106803759895324,
+            "weekly_MAE_units": 9.508016162669447,
+            "weekly_WAPE": 0.7540833626232762,
+            "weekly_bias_units": -5.68645724713243,
+            "weekly_zero_forecast_fraction": 0.5527893639207507,
+            "actual_units": 96734.0,
+            "weekly_forecasts": 7672,
+            "daily_prediction_points": 53704
+          },
+          "mean28": {
+            "daily_MAE_units": 2.4043593454065673,
+            "daily_WAPE": 1.3348327815009644,
+            "weekly_MAE_units": 10.352580813347236,
+            "weekly_WAPE": 0.8210660160853475,
+            "weekly_bias_units": -1.5759906152241918,
+            "weekly_zero_forecast_fraction": 0.3669186652763295,
+            "actual_units": 96734.0,
+            "weekly_forecasts": 7672,
+            "daily_prediction_points": 53704
+          }
+        },
+        "intermittent_25to50pct": {
+          "items": 679,
+          "adaptive": {
+            "daily_MAE_units": 5.167146559975688,
+            "daily_WAPE": 1.1601335695016153,
+            "weekly_MAE_units": 20.959499263622973,
+            "weekly_WAPE": 0.6722643425683176,
+            "weekly_bias_units": -6.820692194403534,
+            "weekly_zero_forecast_fraction": 0.13586156111929307,
+            "actual_units": 84678.0,
+            "weekly_forecasts": 2716,
+            "daily_prediction_points": 19012
+          },
+          "mean28": {
+            "daily_MAE_units": 5.878490276817648,
+            "daily_WAPE": 1.3198452625576553,
+            "weekly_MAE_units": 23.99079528718704,
+            "weekly_WAPE": 0.7694914853917192,
+            "weekly_bias_units": 0.22993372606774692,
+            "weekly_zero_forecast_fraction": 0.11377025036818851,
+            "actual_units": 84678.0,
+            "weekly_forecasts": 2716,
+            "daily_prediction_points": 19012
+          }
+        },
+        "frequent_ge50pct": {
+          "items": 263,
+          "adaptive": {
+            "daily_MAE_units": 15.825380592171618,
+            "daily_WAPE": 0.98521479689866,
+            "weekly_MAE_units": 58.56226235741445,
+            "weekly_WAPE": 0.5208306914538369,
+            "weekly_bias_units": -15.099334600760455,
+            "weekly_zero_forecast_fraction": 0.03326996197718631,
+            "actual_units": 118287.0,
+            "weekly_forecasts": 1052,
+            "daily_prediction_points": 7364
+          },
+          "mean28": {
+            "daily_MAE_units": 17.88943799953441,
+            "daily_WAPE": 1.113713437897414,
+            "weekly_MAE_units": 66.45080798479087,
+            "weekly_WAPE": 0.5909884433623306,
+            "weekly_bias_units": 1.7112642585551328,
+            "weekly_zero_forecast_fraction": 0.03136882129277566,
+            "actual_units": 118287.0,
+            "weekly_forecasts": 1052,
+            "daily_prediction_points": 7364
+          }
+        },
+        "lower_half_training_volume": {
+          "items": 1431,
+          "adaptive": {
+            "daily_MAE_units": 0.9137474767873303,
+            "daily_WAPE": 1.1897840211853228,
+            "weekly_MAE_units": 4.479122990915443,
+            "weekly_WAPE": 0.8331762641362277,
+            "weekly_bias_units": -2.4094164919636616,
+            "weekly_zero_forecast_fraction": 0.5683088749126485,
+            "actual_units": 30772.0,
+            "weekly_forecasts": 5724,
+            "daily_prediction_points": 40068
+          },
+          "mean28": {
+            "daily_MAE_units": 1.1267675309117358,
+            "daily_WAPE": 1.4671559023973557,
+            "weekly_MAE_units": 4.925183438155137,
+            "weekly_WAPE": 0.9161494215520604,
+            "weekly_bias_units": -0.21143431167016072,
+            "weekly_zero_forecast_fraction": 0.3787561146051712,
+            "actual_units": 30772.0,
+            "weekly_forecasts": 5724,
+            "daily_prediction_points": 40068
+          }
+        },
+        "upper_half_training_volume": {
+          "items": 1429,
+          "adaptive": {
+            "daily_MAE_units": 7.128596773188272,
+            "daily_WAPE": 1.0606202206874322,
+            "weekly_MAE_units": 29.013383484954513,
+            "weekly_WAPE": 0.6166747853506713,
+            "weekly_bias_units": -11.23941567529741,
+            "weekly_zero_forecast_fraction": 0.24352694191742477,
+            "actual_units": 268927.0,
+            "weekly_forecasts": 5716,
+            "daily_prediction_points": 40012
+          },
+          "mean28": {
+            "daily_MAE_units": 8.184446451778753,
+            "daily_WAPE": 1.2177136227622047,
+            "weekly_MAE_units": 32.59245976207138,
+            "weekly_WAPE": 0.692747474221629,
+            "weekly_bias_units": -1.4793561931420574,
+            "weekly_zero_forecast_fraction": 0.1730230930720784,
+            "actual_units": 268927.0,
+            "weekly_forecasts": 5716,
+            "daily_prediction_points": 40012
+          }
+        }
+      }
+    },
+    {
+      "fold": 7,
+      "validation_start": "2011-07-04",
+      "validation_end": "2011-07-31",
+      "test_start": "2011-08-01",
+      "test_end": "2011-08-28",
+      "training_eligibility_cutoff": "2011-07-03",
+      "item_count": 2941,
+      "eligible_item_ids_sha256": "f7cb7f42ef4a8e3a451d73bbd95a6add455b6c50a3af034d738da71c07e26669",
+      "point_selected_from_past_validation": "weekly_total_median_8weeks",
+      "validation_weekly_WAPE": {
+        "zero": 1.0,
+        "seasonal_naive_7": 0.8570438922145052,
+        "mean_7": 0.8570438922145052,
+        "mean_28": 0.7242763083882504,
+        "mean_56": 0.7111476484833413,
+        "median_28": 0.7945701665571285,
+        "trimmed_mean_56": 0.6577826887575804,
+        "ewma_005": 0.6901344875669849,
+        "ewma_015": 0.7326532051317348,
+        "sba_01": 0.970499794421166,
+        "tsb_01": 0.7566849720656849,
+        "seasonal_mean_8weeks": 0.7111476484833413,
+        "weekly_total_median_8weeks": 0.6444008265686153,
+        "weekly_total_median_12weeks": 0.647672167255804
+      },
+      "quantile_window_weeks_selected": 12,
+      "validation_quantile_mean_pinball": {
+        "8": 6.871135101439419,
+        "12": 6.667652725830216,
+        "24": 6.9542615890286745
+      },
+      "models": {
+        "zero": {
+          "daily_MAE_units": 4.18251809394278,
+          "daily_WAPE": 1.0,
+          "weekly_MAE_units": 29.277626657599455,
+          "weekly_WAPE": 1.0,
+          "weekly_bias_units": -29.277626657599455,
+          "weekly_zero_forecast_fraction": 1.0,
+          "actual_units": 344422.0,
+          "weekly_forecasts": 11764,
+          "daily_prediction_points": 82348
+        },
+        "seasonal_naive_7": {
+          "daily_MAE_units": 5.835867294894837,
+          "daily_WAPE": 1.3952999518033111,
+          "weekly_MAE_units": 25.790037402244135,
+          "weekly_WAPE": 0.8808786895146071,
+          "weekly_bias_units": 0.47500850051003063,
+          "weekly_zero_forecast_fraction": 0.47696361781706903,
+          "actual_units": 344422.0,
+          "weekly_forecasts": 11764,
+          "daily_prediction_points": 82348
+        },
+        "mean_7": {
+          "daily_MAE_units": 5.634144987474759,
+          "daily_WAPE": 1.3470700809720966,
+          "weekly_MAE_units": 25.790037402244135,
+          "weekly_WAPE": 0.8808786895146071,
+          "weekly_bias_units": 0.47500850051003063,
+          "weekly_zero_forecast_fraction": 0.47696361781706903,
+          "actual_units": 344422.0,
+          "weekly_forecasts": 11764,
+          "daily_prediction_points": 82348
+        },
+        "mean_28": {
+          "daily_MAE_units": 5.436192396033559,
+          "daily_WAPE": 1.2997415131105778,
+          "weekly_MAE_units": 22.285234614076845,
+          "weekly_WAPE": 0.7611694374923785,
+          "weekly_bias_units": 0.356128867732064,
+          "weekly_zero_forecast_fraction": 0.2843420605236314,
+          "actual_units": 344422.0,
+          "weekly_forecasts": 11764,
+          "daily_prediction_points": 82348
+        },
+        "mean_56": {
+          "daily_MAE_units": 5.280747125439771,
+          "daily_WAPE": 1.2625760383648963,
+          "weekly_MAE_units": 21.241031961917717,
+          "weekly_WAPE": 0.7255038876726806,
+          "weekly_bias_units": -1.2610931655899353,
+          "weekly_zero_forecast_fraction": 0.23308398503910235,
+          "actual_units": 344422.0,
+          "weekly_forecasts": 11764,
+          "daily_prediction_points": 82348
+        },
+        "median_28": {
+          "daily_MAE_units": 3.99963569242726,
+          "daily_WAPE": 0.9562745701494098,
+          "weekly_MAE_units": 22.802448146888814,
+          "weekly_WAPE": 0.7788352660399162,
+          "weekly_bias_units": -21.41482488949337,
+          "weekly_zero_forecast_fraction": 0.847245834750085,
+          "actual_units": 344422.0,
+          "weekly_forecasts": 11764,
+          "daily_prediction_points": 82348
+        },
+        "trimmed_mean_56": {
+          "daily_MAE_units": 4.277504165777897,
+          "daily_WAPE": 1.0227102596334676,
+          "weekly_MAE_units": 19.282179974276715,
+          "weekly_WAPE": 0.6585977818414367,
+          "weekly_bias_units": -14.995838445958931,
+          "weekly_zero_forecast_fraction": 0.43344100646038763,
+          "actual_units": 344422.0,
+          "weekly_forecasts": 11764,
+          "daily_prediction_points": 82348
+        },
+        "ewma_005": {
+          "daily_MAE_units": 5.300168698935736,
+          "daily_WAPE": 1.267219550493174,
+          "weekly_MAE_units": 21.242715839419347,
+          "weekly_WAPE": 0.7255614018121062,
+          "weekly_bias_units": -1.0546359227432371,
+          "weekly_zero_forecast_fraction": 0.0,
+          "actual_units": 344422.0,
+          "weekly_forecasts": 11764,
+          "daily_prediction_points": 82348
+        },
+        "ewma_015": {
+          "daily_MAE_units": 5.321950445980967,
+          "daily_WAPE": 1.272427357502252,
+          "weekly_MAE_units": 22.821972104767173,
+          "weekly_WAPE": 0.7795021219332128,
+          "weekly_bias_units": -2.062793720477641,
+          "weekly_zero_forecast_fraction": 0.0,
+          "actual_units": 344422.0,
+          "weekly_forecasts": 11764,
+          "daily_prediction_points": 82348
+        },
+        "sba_01": {
+          "daily_MAE_units": 6.326430679956894,
+          "daily_WAPE": 1.5125889566667932,
+          "weekly_MAE_units": 28.803246206400573,
+          "weekly_WAPE": 0.9837971685086794,
+          "weekly_bias_units": 5.571986517585502,
+          "weekly_zero_forecast_fraction": 0.0,
+          "actual_units": 344422.0,
+          "weekly_forecasts": 11764,
+          "daily_prediction_points": 82348
+        },
+        "tsb_01": {
+          "daily_MAE_units": 5.267173463000841,
+          "daily_WAPE": 1.259330705736548,
+          "weekly_MAE_units": 21.46839301799943,
+          "weekly_WAPE": 0.7332695805254754,
+          "weekly_bias_units": -1.6429794205731831,
+          "weekly_zero_forecast_fraction": 0.0,
+          "actual_units": 344422.0,
+          "weekly_forecasts": 11764,
+          "daily_prediction_points": 82348
+        },
+        "seasonal_mean_8weeks": {
+          "daily_MAE_units": 5.082552095982902,
+          "daily_WAPE": 1.2151895058968358,
+          "weekly_MAE_units": 21.241031961917717,
+          "weekly_WAPE": 0.7255038876726806,
+          "weekly_bias_units": -1.2610931655899353,
+          "weekly_zero_forecast_fraction": 0.23308398503910235,
+          "actual_units": 344422.0,
+          "weekly_forecasts": 11764,
+          "daily_prediction_points": 82348
+        },
+        "weekly_total_median_8weeks": {
+          "daily_MAE_units": 4.506054493431885,
+          "daily_WAPE": 1.0773544530405401,
+          "weekly_MAE_units": 19.037104726283577,
+          "weekly_WAPE": 0.6502270470527435,
+          "weekly_bias_units": -8.39293607616457,
+          "weekly_zero_forecast_fraction": 0.3930635838150289,
+          "actual_units": 344422.0,
+          "weekly_forecasts": 11764,
+          "daily_prediction_points": 82348
+        },
+        "weekly_total_median_12weeks": {
+          "daily_MAE_units": 4.458569820537094,
+          "daily_WAPE": 1.0660013227424165,
+          "weekly_MAE_units": 18.981426385583134,
+          "weekly_WAPE": 0.6483253102298924,
+          "weekly_bias_units": -9.039994899693982,
+          "weekly_zero_forecast_fraction": 0.41329479768786126,
+          "actual_units": 344422.0,
+          "weekly_forecasts": 11764,
+          "daily_prediction_points": 82348
+        },
+        "adaptive_past_validation": {
+          "daily_MAE_units": 4.506054493431885,
+          "daily_WAPE": 1.0773544530405401,
+          "weekly_MAE_units": 19.037104726283577,
+          "weekly_WAPE": 0.6502270470527435,
+          "weekly_bias_units": -8.39293607616457,
+          "weekly_zero_forecast_fraction": 0.3930635838150289,
+          "actual_units": 344422.0,
+          "weekly_forecasts": 11764,
+          "daily_prediction_points": 82348
+        }
+      },
+      "quantiles": {
+        "mean_pinball_units": 6.856896747138161,
+        "pinball_by_quantile": {
+          "0.1": 2.6464212852771167,
+          "0.5": 9.463617817069023,
+          "0.9": 8.460651139068343
+        },
+        "fraction_actual_le_quantile": {
+          "0.1": 0.5335770146208773,
+          "0.5": 0.6719653179190751,
+          "0.9": 0.8955287317239035
+        },
+        "central80_inclusive_coverage": 0.8384903094185651,
+        "central80_mean_width_units": 46.8799727983679,
+        "daily_central80_inclusive_coverage": 0.9287535823577986,
+        "discrete_quantile_note": "Inclusive coverage can exceed nominal for zero-inflated/discrete outcomes. q0.9 exceedance is the upper-tail diagnostic; these are not calibrated operational stockout probabilities."
+      },
+      "slices": {
+        "sparse_lt25pct": {
+          "items": 2019,
+          "adaptive": {
+            "daily_MAE_units": 2.3609535757385194,
+            "daily_WAPE": 1.1551294088333548,
+            "weekly_MAE_units": 10.845715700842002,
+            "weekly_WAPE": 0.758059630447012,
+            "weekly_bias_units": -4.627909856364537,
+            "weekly_zero_forecast_fraction": 0.5260029717682021,
+            "actual_units": 115545.0,
+            "weekly_forecasts": 8076,
+            "daily_prediction_points": 56532
+          },
+          "mean28": {
+            "daily_MAE_units": 2.97144537607019,
+            "daily_WAPE": 1.453821022112597,
+            "weekly_MAE_units": 13.03042966815255,
+            "weekly_WAPE": 0.9107598771041585,
+            "weekly_bias_units": 0.9142211490837049,
+            "weekly_zero_forecast_fraction": 0.37543338286280337,
+            "actual_units": 115545.0,
+            "weekly_forecasts": 8076,
+            "daily_prediction_points": 56532
+          }
+        },
+        "intermittent_25to50pct": {
+          "items": 668,
+          "adaptive": {
+            "daily_MAE_units": 5.673567104835698,
+            "daily_WAPE": 1.1651631508723141,
+            "weekly_MAE_units": 24.229229041916167,
+            "weekly_WAPE": 0.710840397031051,
+            "weekly_bias_units": -9.460516467065869,
+            "weekly_zero_forecast_fraction": 0.12911676646706588,
+            "actual_units": 91076.0,
+            "weekly_forecasts": 2672,
+            "daily_prediction_points": 18704
+          },
+          "mean28": {
+            "daily_MAE_units": 6.821394201393132,
+            "daily_WAPE": 1.4008888965573494,
+            "weekly_MAE_units": 28.553705089820358,
+            "weekly_WAPE": 0.8377124599235803,
+            "weekly_bias_units": 1.6770209580838322,
+            "weekly_zero_forecast_fraction": 0.10741017964071856,
+            "actual_units": 91076.0,
+            "weekly_forecasts": 2672,
+            "daily_prediction_points": 18704
+          }
+        },
+        "frequent_ge50pct": {
+          "items": 254,
+          "adaptive": {
+            "daily_MAE_units": 18.486606967467946,
+            "daily_WAPE": 0.9541059118049363,
+            "weekly_MAE_units": 70.49409448818898,
+            "weekly_WAPE": 0.5197494938353132,
+            "weekly_bias_units": -35.51279527559055,
+            "weekly_zero_forecast_fraction": 0.03051181102362205,
+            "actual_units": 137801.0,
+            "weekly_forecasts": 1016,
+            "daily_prediction_points": 7112
+          },
+          "mean28": {
+            "daily_MAE_units": 21.38504840912743,
+            "daily_WAPE": 1.103696375829742,
+            "weekly_MAE_units": 79.36441929133858,
+            "weekly_WAPE": 0.5851499626272668,
+            "weekly_bias_units": -7.553887795275592,
+            "weekly_zero_forecast_fraction": 0.025590551181102362,
+            "actual_units": 137801.0,
+            "weekly_forecasts": 1016,
+            "daily_prediction_points": 7112
+          }
+        },
+        "lower_half_training_volume": {
+          "items": 1472,
+          "adaptive": {
+            "daily_MAE_units": 0.9583341866314368,
+            "daily_WAPE": 1.3195263525155776,
+            "weekly_MAE_units": 4.547214673913044,
+            "weekly_WAPE": 0.8944344223959377,
+            "weekly_bias_units": -1.7039741847826086,
+            "weekly_zero_forecast_fraction": 0.5565557065217391,
+            "actual_units": 29934.0,
+            "weekly_forecasts": 5888,
+            "daily_prediction_points": 41216
+          },
+          "mean28": {
+            "daily_MAE_units": 1.167486101098048,
+            "daily_WAPE": 1.607506752951732,
+            "weekly_MAE_units": 5.285283627717392,
+            "weekly_WAPE": 1.0396121467227901,
+            "weekly_bias_units": 0.1064453125,
+            "weekly_zero_forecast_fraction": 0.4008152173913043,
+            "actual_units": 29934.0,
+            "weekly_forecasts": 5888,
+            "daily_prediction_points": 41216
+          }
+        },
+        "upper_half_training_volume": {
+          "items": 1469,
+          "adaptive": {
+            "daily_MAE_units": 8.061019974446356,
+            "daily_WAPE": 1.0543037368323356,
+            "weekly_MAE_units": 33.55658611300204,
+            "weekly_WAPE": 0.6269825875709089,
+            "weekly_bias_units": -15.095558202859088,
+            "weekly_zero_forecast_fraction": 0.22923757658270932,
+            "actual_units": 314488.0,
+            "weekly_forecasts": 5876,
+            "daily_prediction_points": 41132
+          },
+          "mean28": {
+            "daily_MAE_units": 9.713616266792625,
+            "daily_WAPE": 1.2704474074868175,
+            "weekly_MAE_units": 39.319902995234855,
+            "weekly_WAPE": 0.7346663465696625,
+            "weekly_bias_units": 0.6063223281143637,
+            "weekly_zero_forecast_fraction": 0.16763104152484684,
+            "actual_units": 314488.0,
+            "weekly_forecasts": 5876,
+            "daily_prediction_points": 41132
+          }
+        }
+      }
+    },
+    {
+      "fold": 8,
+      "validation_start": "2011-08-04",
+      "validation_end": "2011-08-31",
+      "test_start": "2011-09-01",
+      "test_end": "2011-09-28",
+      "training_eligibility_cutoff": "2011-08-03",
+      "item_count": 3047,
+      "eligible_item_ids_sha256": "c56f9fde42dbf2c4f631141e7a6293f0ce6489a29a12d7164ebc9ce8e050112b",
+      "point_selected_from_past_validation": "trimmed_mean_56",
+      "validation_weekly_WAPE": {
+        "zero": 1.0,
+        "seasonal_naive_7": 1.00220778547012,
+        "mean_7": 1.00220778547012,
+        "mean_28": 0.8357073271961124,
+        "mean_56": 0.8046462931685469,
+        "median_28": 0.7831268698444174,
+        "trimmed_mean_56": 0.6828486347394506,
+        "ewma_005": 0.814666801524389,
+        "ewma_015": 0.9018980105277821,
+        "sba_01": 1.052611470580412,
+        "tsb_01": 0.8349098384523109,
+        "seasonal_mean_8weeks": 0.8046462931685469,
+        "weekly_total_median_8weeks": 0.7070288856736051,
+        "weekly_total_median_12weeks": 0.6982222427180549
+      },
+      "quantile_window_weeks_selected": 12,
+      "validation_quantile_mean_pinball": {
+        "8": 7.441431462640849,
+        "12": 7.2578547204901,
+        "24": 7.359000656383328
+      },
+      "models": {
+        "zero": {
+          "daily_MAE_units": 5.292336724647194,
+          "daily_WAPE": 1.0,
+          "weekly_MAE_units": 37.046357072530355,
+          "weekly_WAPE": 1.0,
+          "weekly_bias_units": -37.046357072530355,
+          "weekly_zero_forecast_fraction": 1.0,
+          "actual_units": 451521.0,
+          "weekly_forecasts": 12188,
+          "daily_prediction_points": 85316
+        },
+        "seasonal_naive_7": {
+          "daily_MAE_units": 6.995510806882648,
+          "daily_WAPE": 1.3218189187213885,
+          "weekly_MAE_units": 31.044059730882836,
+          "weekly_WAPE": 0.8379787429599066,
+          "weekly_bias_units": -4.9492123400065635,
+          "weekly_zero_forecast_fraction": 0.43903839842468,
+          "actual_units": 451521.0,
+          "weekly_forecasts": 12188,
+          "daily_prediction_points": 85316
+        },
+        "mean_7": {
+          "daily_MAE_units": 6.393480037239707,
+          "daily_WAPE": 1.2080637287238973,
+          "weekly_MAE_units": 31.044059730882836,
+          "weekly_WAPE": 0.8379787429599066,
+          "weekly_bias_units": -4.9492123400065635,
+          "weekly_zero_forecast_fraction": 0.43903839842468,
+          "actual_units": 451521.0,
+          "weekly_forecasts": 12188,
+          "daily_prediction_points": 85316
+        },
+        "mean_28": {
+          "daily_MAE_units": 5.94246808503513,
+          "daily_WAPE": 1.122843914552938,
+          "weekly_MAE_units": 25.59051936330817,
+          "weekly_WAPE": 0.6907701967350356,
+          "weekly_bias_units": -7.264337873318017,
+          "weekly_zero_forecast_fraction": 0.2915162454873646,
+          "actual_units": 451521.0,
+          "weekly_forecasts": 12188,
+          "daily_prediction_points": 85316
+        },
+        "mean_56": {
+          "daily_MAE_units": 5.937223506895375,
+          "daily_WAPE": 1.121852938654649,
+          "weekly_MAE_units": 24.958145306859205,
+          "weekly_WAPE": 0.673700392672766,
+          "weekly_bias_units": -6.8758102231703315,
+          "weekly_zero_forecast_fraction": 0.23703642927469643,
+          "actual_units": 451521.0,
+          "weekly_forecasts": 12188,
+          "daily_prediction_points": 85316
+        },
+        "median_28": {
+          "daily_MAE_units": 4.9551432322190445,
+          "daily_WAPE": 0.936286462866622,
+          "weekly_MAE_units": 30.13898916967509,
+          "weekly_WAPE": 0.8135479855864954,
+          "weekly_bias_units": -29.362323596980637,
+          "weekly_zero_forecast_fraction": 0.854364949130292,
+          "actual_units": 451521.0,
+          "weekly_forecasts": 12188,
+          "daily_prediction_points": 85316
+        },
+        "trimmed_mean_56": {
+          "daily_MAE_units": 5.101229037012273,
+          "daily_WAPE": 0.9638897338589769,
+          "weekly_MAE_units": 25.140417873603404,
+          "weekly_WAPE": 0.678620513870846,
+          "weekly_bias_units": -21.773891996404164,
+          "weekly_zero_forecast_fraction": 0.4423203150639974,
+          "actual_units": 451521.0,
+          "weekly_forecasts": 12188,
+          "daily_prediction_points": 85316
+        },
+        "ewma_005": {
+          "daily_MAE_units": 5.941771080309901,
+          "daily_WAPE": 1.1227122138011734,
+          "weekly_MAE_units": 24.991339756755675,
+          "weekly_WAPE": 0.6745964173434639,
+          "weekly_bias_units": -6.67996045232505,
+          "weekly_zero_forecast_fraction": 0.0,
+          "actual_units": 451521.0,
+          "weekly_forecasts": 12188,
+          "daily_prediction_points": 85316
+        },
+        "ewma_015": {
+          "daily_MAE_units": 6.219994994129569,
+          "daily_WAPE": 1.1752833044734536,
+          "weekly_MAE_units": 28.226559395252558,
+          "weekly_WAPE": 0.7619253720410306,
+          "weekly_bias_units": -4.834054013952488,
+          "weekly_zero_forecast_fraction": 0.0,
+          "actual_units": 451521.0,
+          "weekly_forecasts": 12188,
+          "daily_prediction_points": 85316
+        },
+        "sba_01": {
+          "daily_MAE_units": 6.876954069752263,
+          "daily_WAPE": 1.299417332560355,
+          "weekly_MAE_units": 32.53642772925023,
+          "weekly_WAPE": 0.8782625418620658,
+          "weekly_bias_units": -2.1506915730898246,
+          "weekly_zero_forecast_fraction": 0.0,
+          "actual_units": 451521.0,
+          "weekly_forecasts": 12188,
+          "daily_prediction_points": 85316
+        },
+        "tsb_01": {
+          "daily_MAE_units": 5.999748619866383,
+          "daily_WAPE": 1.1336672120510902,
+          "weekly_MAE_units": 25.31737573390377,
+          "weekly_WAPE": 0.6833971740955994,
+          "weekly_bias_units": -5.784569669129577,
+          "weekly_zero_forecast_fraction": 0.0,
+          "actual_units": 451521.0,
+          "weekly_forecasts": 12188,
+          "daily_prediction_points": 85316
+        },
+        "seasonal_mean_8weeks": {
+          "daily_MAE_units": 5.87320227155516,
+          "daily_WAPE": 1.1097559692683174,
+          "weekly_MAE_units": 24.958145306859205,
+          "weekly_WAPE": 0.673700392672766,
+          "weekly_bias_units": -6.8758102231703315,
+          "weekly_zero_forecast_fraction": 0.23703642927469643,
+          "actual_units": 451521.0,
+          "weekly_forecasts": 12188,
+          "daily_prediction_points": 85316
+        },
+        "weekly_total_median_8weeks": {
+          "daily_MAE_units": 5.244882004986064,
+          "daily_WAPE": 0.9910333143694114,
+          "weekly_MAE_units": 23.826509681654088,
+          "weekly_WAPE": 0.6431539175365044,
+          "weekly_bias_units": -14.982154578273711,
+          "weekly_zero_forecast_fraction": 0.4071217591073187,
+          "actual_units": 451521.0,
+          "weekly_forecasts": 12188,
+          "daily_prediction_points": 85316
+        },
+        "weekly_total_median_12weeks": {
+          "daily_MAE_units": 5.253303809685028,
+          "daily_WAPE": 0.9926246350160632,
+          "weekly_MAE_units": 24.43538726616344,
+          "weekly_WAPE": 0.6595894764584593,
+          "weekly_bias_units": -16.03523957991467,
+          "weekly_zero_forecast_fraction": 0.4003938299967181,
+          "actual_units": 451521.0,
+          "weekly_forecasts": 12188,
+          "daily_prediction_points": 85316
+        },
+        "adaptive_past_validation": {
+          "daily_MAE_units": 5.101229037012273,
+          "daily_WAPE": 0.9638897338589769,
+          "weekly_MAE_units": 25.140417873603404,
+          "weekly_WAPE": 0.678620513870846,
+          "weekly_bias_units": -21.773891996404164,
+          "weekly_zero_forecast_fraction": 0.4423203150639974,
+          "actual_units": 451521.0,
+          "weekly_forecasts": 12188,
+          "daily_prediction_points": 85316
+        }
+      },
+      "quantiles": {
+        "mean_pinball_units": 9.084055354993984,
+        "pinball_by_quantile": {
+          "0.1": 3.293419757138169,
+          "0.5": 12.357564817853627,
+          "0.9": 11.601181489990152
+        },
+        "fraction_actual_le_quantile": {
+          "0.1": 0.4678372169346899,
+          "0.5": 0.6000164095831966,
+          "0.9": 0.855677715786019
+        },
+        "central80_inclusive_coverage": 0.8126846078109616,
+        "central80_mean_width_units": 49.32589432228421,
+        "daily_central80_inclusive_coverage": 0.9036171409817619,
+        "discrete_quantile_note": "Inclusive coverage can exceed nominal for zero-inflated/discrete outcomes. q0.9 exceedance is the upper-tail diagnostic; these are not calibrated operational stockout probabilities."
+      },
+      "slices": {
+        "sparse_lt25pct": {
+          "items": 2121,
+          "adaptive": {
+            "daily_MAE_units": 2.993433016771065,
+            "daily_WAPE": 0.9966586309356955,
+            "weekly_MAE_units": 15.570306254227907,
+            "weekly_WAPE": 0.7405868602392194,
+            "weekly_bias_units": -13.624151856179408,
+            "weekly_zero_forecast_fraction": 0.5899339933993399,
+            "actual_units": 178370.0,
+            "weekly_forecasts": 8484,
+            "daily_prediction_points": 59388
+          },
+          "mean28": {
+            "daily_MAE_units": 3.567323004166306,
+            "daily_WAPE": 1.1877343643630016,
+            "weekly_MAE_units": 16.117073314474304,
+            "weekly_WAPE": 0.7665933172618714,
+            "weekly_bias_units": -5.09243870815653,
+            "weekly_zero_forecast_fraction": 0.3857850070721358,
+            "actual_units": 178370.0,
+            "weekly_forecasts": 8484,
+            "daily_prediction_points": 59388
+          }
+        },
+        "intermittent_25to50pct": {
+          "items": 667,
+          "adaptive": {
+            "daily_MAE_units": 6.543232653859406,
+            "daily_WAPE": 1.0124643780995242,
+            "weekly_MAE_units": 33.24738445994394,
+            "weekly_WAPE": 0.7349314542957193,
+            "weekly_bias_units": -28.876694804771525,
+            "weekly_zero_forecast_fraction": 0.13530734632683658,
+            "actual_units": 120697.0,
+            "weekly_forecasts": 2668,
+            "daily_prediction_points": 18676
+          },
+          "mean28": {
+            "daily_MAE_units": 7.696623626962029,
+            "daily_WAPE": 1.1909338496991875,
+            "weekly_MAE_units": 33.85326086956522,
+            "weekly_WAPE": 0.7483243162630389,
+            "weekly_bias_units": -9.649362818590705,
+            "weekly_zero_forecast_fraction": 0.09782608695652174,
+            "actual_units": 120697.0,
+            "weekly_forecasts": 2668,
+            "daily_prediction_points": 18676
+          }
+        },
+        "frequent_ge50pct": {
+          "items": 259,
+          "adaptive": {
+            "daily_MAE_units": 18.648792536991294,
+            "daily_WAPE": 0.8870940970932928,
+            "weekly_MAE_units": 82.63408594930334,
+            "weekly_WAPE": 0.5615393039439979,
+            "weekly_bias_units": -70.22188181970792,
+            "weekly_zero_forecast_fraction": 0.02413127413127413,
+            "actual_units": 152454.0,
+            "weekly_forecasts": 1036,
+            "daily_prediction_points": 7252
+          },
+          "mean28": {
+            "daily_MAE_units": 20.87552202348121,
+            "daily_WAPE": 0.9930161603781189,
+            "weekly_MAE_units": 81.89140926640927,
+            "weekly_WAPE": 0.5564924501816941,
+            "weekly_bias_units": -18.908301158301157,
+            "weekly_zero_forecast_fraction": 0.01833976833976834,
+            "actual_units": 152454.0,
+            "weekly_forecasts": 1036,
+            "daily_prediction_points": 7252
+          }
+        },
+        "lower_half_training_volume": {
+          "items": 1525,
+          "adaptive": {
+            "daily_MAE_units": 1.1786391406170451,
+            "daily_WAPE": 1.028527166360415,
+            "weekly_MAE_units": 6.3334889522451885,
+            "weekly_WAPE": 0.7895504497812402,
+            "weekly_bias_units": -5.605541696364932,
+            "weekly_zero_forecast_fraction": 0.6427868852459017,
+            "actual_units": 48932.0,
+            "weekly_forecasts": 6100,
+            "daily_prediction_points": 42700
+          },
+          "mean28": {
+            "daily_MAE_units": 1.4755879892940784,
+            "daily_WAPE": 1.2876564853849657,
+            "weekly_MAE_units": 6.850368852459017,
+            "weekly_WAPE": 0.8539861440366222,
+            "weekly_bias_units": -1.820860655737705,
+            "weekly_zero_forecast_fraction": 0.41540983606557375,
+            "actual_units": 48932.0,
+            "weekly_forecasts": 6100,
+            "daily_prediction_points": 42700
+          }
+        },
+        "upper_half_training_volume": {
+          "items": 1522,
+          "adaptive": {
+            "daily_MAE_units": 9.031550713755193,
+            "daily_WAPE": 0.9560334863033796,
+            "weekly_MAE_units": 43.98441695709307,
+            "weekly_WAPE": 0.6651377221801454,
+            "weekly_bias_units": -37.97411158087185,
+            "weekly_zero_forecast_fraction": 0.24145860709592643,
+            "actual_units": 402589.0,
+            "weekly_forecasts": 6088,
+            "daily_prediction_points": 42616
+          },
+          "mean28": {
+            "daily_MAE_units": 10.418152806457668,
+            "daily_WAPE": 1.1028120490127649,
+            "weekly_MAE_units": 44.36760840998686,
+            "weekly_WAPE": 0.6709323901050451,
+            "weekly_bias_units": -12.71854467805519,
+            "weekly_zero_forecast_fraction": 0.1673784494086728,
+            "actual_units": 402589.0,
+            "weekly_forecasts": 6088,
+            "daily_prediction_points": 42616
+          }
+        }
+      }
+    }
+  ],
+  "original_test_policy": "2011-11-11 through 2011-12-08 stays previously exposed diagnostic; never reevaluated or used to select these models.",
+  "operational_promotion": false,
+  "limitations": [
+    "Historical targets belonged to prior training periods; predeclared analysis is exploratory, not an untouched holdout.",
+    "Eight folds, one retailer, 2009\u20132011; no cross-company or MRDIY predictive validation.",
+    "Observed sales are a demand proxy and can be inventory-censored.",
+    "Transaction-time availability is assumed; historical ingestion timestamps unavailable.",
+    "Source completeness assumption permits zero recorded sales on calendar dates; does not establish latent demand.",
+    "No real inventory, arrivals, shortage outcomes, operational calibration or causal savings evidence.",
+    "Point selection minimizes seven-day absolute error; it need not yield an unbiased mean or optimal inventory decision.",
+    "Empirical intervals are evaluated, not guaranteed calibrated. Marginal daily quantiles are not jointly coherent demand trajectories."
+  ],
+  "resource": {
+    "wall_seconds": 2.362,
+    "peak_rss_mb": 407.2,
+    "cpu_threads": 1,
+    "GPU": false
+  },
+  "protocol_summary": {
+    "schema_version": "dormathon.forecast-expansion-protocol.v1",
+    "study_status": "PREDECLARED_NEW_ANALYSIS_OF_PREVIOUSLY_EXPOSED_TRAINING_PERIODS",
+    "frozen_at": "2026-10-10T05:56:00Z",
+    "interpretation": "Exploratory retrospective rolling-origin evidence. Historical targets belonged to the prior study training period; not an untouched external or prospective holdout.",
+    "source_target": "Positive recorded transaction sales in original UCI Online Retail II; demand proxy, not latent demand",
+    "old_test_policy": "2011-11-11 through 2011-12-08 stays previously exposed diagnostic; never reevaluated or used to select these models.",
+    "fold_test_starts": [
+      "2011-02-01",
+      "2011-03-01",
+      "2011-04-01",
+      "2011-05-01",
+      "2011-06-01",
+      "2011-07-01",
+      "2011-08-01",
+      "2011-09-01"
+    ],
+    "test_days": 28,
+    "validation_days": 28,
+    "origin_stride_days": 7,
+    "horizon_days": 7,
+    "minimum_training_calendar_days": 180,
+    "minimum_nonzero_training_days": 26,
+    "eligibility_policy": "Freeze fold SKU catalog from days strictly before validation. Retain discontinued/zero-test items; no future-based exclusions.",
+    "point_candidates": [
+      "zero",
+      "seasonal_naive_7",
+      "mean_7",
+      "mean_28",
+      "mean_56",
+      "median_28",
+      "trimmed_mean_56",
+      "ewma_005",
+      "ewma_015",
+      "sba_01",
+      "tsb_01",
+      "seasonal_mean_8weeks",
+      "weekly_total_median_8weeks",
+      "weekly_total_median_12weeks"
+    ],
+    "point_selection": "Lowest validation seven-day cumulative WAPE, exact ties by listed candidate order. If validation actual total is zero, lowest absolute error. Select each fold solely on its preceding validation window. No test-based replacement or grid tuning.",
+    "primary_metric": "WAPE of seven-day total per item and non-overlapping weekly origin",
+    "secondary_metrics": [
+      "daily MAE",
+      "daily WAPE",
+      "weekly MAE",
+      "mean bias",
+      "weekly zero prediction fraction",
+      "volume and sparsity slices"
+    ],
+    "quantile_candidates_weeks": [
+      8,
+      12,
+      24
+    ],
+    "quantiles": [
+      0.1,
+      0.5,
+      0.9
+    ],
+    "quantile_selection": "Lowest mean validation pinball loss over q0.1/0.5/0.9 on seven-day totals; ties choose smaller window. Empirical inverted-CDF order statistic, no outcome-based recalibration.",
+    "probabilistic_metrics": [
+      "pinball loss",
+      "fraction actual <= q0.1/q0.5/q0.9",
+      "central80 inclusive coverage",
+      "central80 interval width",
+      "daily inclusive interval coverage"
+    ],
+    "uncertainty": "400 paired bootstrap replicates; globally shared SKU resampling and fold-block resampling preserve seven-day forecast trajectories. Descriptive, only eight fold blocks and one retailer.",
+    "seed": 410102,
+    "synthetic_inventory_policy": "Any stock, arrivals, cost, lead time and actual stockout labels remain separately declared hypothetical inputs. No actual shortage accuracy or savings claim.",
+    "resource_policy": "One process, one BLAS thread, NumPy-only, no GPU or paid API.",
+    "promotion_policy": "No operational model promotion from this exposed-data study. Freeze a future candidate only after descriptive results; require unseen operational transaction/stock/arrival evaluation before deployment claims.",
+    "source_artifact_ref": "uci-online-retail-ii/derived/daily-sales.npz"
+  },
+  "publication_projection": {
+    "source_report_sha256": "d0919ca770d6113eaf710235e58c040c28dd23899b3e801bae0ddbdfb6205389",
+    "change": "Replaced original frozen_protocol with protocol_summary, omitting executor-local source_matrix path and adding portable source_artifact_ref. All metrics/folds, original protocol_sha256 and source matrix hash unchanged.",
+    "original_protocol_hash_applies_to": "original protocol.json bytes, not this portable summary"
+  }
+}

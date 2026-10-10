@@ -1,0 +1,75 @@
+{
+  "schema_version": "dormathon.forecast-study-audit.v1",
+  "status": "pass",
+  "checks": [
+    {
+      "check": "frozen_analysis",
+      "status": "pass",
+      "detail": "Exact pre-run protocol and evaluator hashes unchanged; source report is not overwritten by audit."
+    },
+    {
+      "check": "source_and_population",
+      "status": "pass",
+      "detail": "All 4,707 qualifying product IDs persisted before old 3,231-SKU eligibility mask. New study ignores old eligible mask; product-code/row-validity filters are fixed, not future-activity filters. Workbook SHA verified. Returns/cancellations excluded from positive-sales target and separately preserved; no new net-demand relabeling."
+    },
+    {
+      "check": "calendar_zero_assumption",
+      "status": "pass",
+      "detail": "Missing SKU-date is zero recorded positive sales only within publisher-declared complete ledger. Whole-ledger zero dates are disclosed separately. Unknown dates supplied to engine remain null and block applicable forecasts."
+    },
+    {
+      "check": "fold_past_only_eligibility",
+      "status": "pass",
+      "detail": "Each fold recomputed on 4,707-item matrix using only pre-validation days; catalog hashes verified, no test inactivity exclusions."
+    },
+    {
+      "check": "fold_target_nonoverlap",
+      "status": "pass",
+      "detail": "Eight disjoint 28-day test windows, four disjoint 7-day origins each; validation precedes own test. Prior folds may become later history, as allowed in rolling evaluation. Original Oct\u2013Dec period not scored."
+    },
+    {
+      "check": "past_selection_and_ties",
+      "status": "pass",
+      "detail": "Each reported winner and quantile window equals predeclared validation argmin, using candidate-order and shorter-window exact tie breaking. No test winner replacement."
+    },
+    {
+      "check": "future_perturbation_invariance",
+      "status": "pass",
+      "detail": "Four SKU prefixes: every label after origin replaced by 1,234,567; all four recurrence states, all 14 point candidates, all three empirical quantile windows unchanged at and before origin."
+    },
+    {
+      "check": "independent_reference_formulas",
+      "status": "pass",
+      "detail": "280 independent point predictions across intermittent, zero-heavy and burst demand match vectorized evaluator."
+    },
+    {
+      "check": "zero_denominator_and_ties",
+      "status": "pass",
+      "detail": "Zero actual total returns null WAPE, never 0% accuracy; absolute error remains defined. All-zero tie chooses zero and 8-week window."
+    },
+    {
+      "check": "independent_rerun",
+      "status": "pass",
+      "detail": "Exact equality of all aggregate/fold metrics, quantile diagnostics and 400-replicate paired intervals on a clean isolated output rerun; nondeterministic runtime/timestamp excluded."
+    },
+    {
+      "check": "bootstrap_units",
+      "status": "pass",
+      "detail": "Verified source arrays are SKU \u00d7 fold; each replicate resamples one shared SKU index list and fold blocks, preserving each selected SKU trajectory across folds and all seven daily horizons. Only eight time blocks, one retailer: intervals remain descriptive."
+    },
+    {
+      "check": "portable_evidence",
+      "status": "pass",
+      "detail": "Publication copy removes only executor path and renames the protocol projection; all metrics, original hashes and source identity remain unchanged."
+    }
+  ],
+  "check_count": 12,
+  "frozen_protocol_sha256": "afa728ec88539ace2f91d05a7d999b098d38bafb8832916d96f74e0c1acaa4a8",
+  "frozen_evaluator_sha256": "844103c3a5fba6d0cc20522f9cbde0b0c19383aa0fd53c79851541fa0c50be9f",
+  "frozen_report_sha256": "d0919ca770d6113eaf710235e58c040c28dd23899b3e801bae0ddbdfb6205389",
+  "limits": [
+    "Audit does not make previously exposed data pristine.",
+    "Raw workbook bytes and profiled handling verified; audit does not independently reparse all 1,067,371 rows.",
+    "No actual stockout labels exist; no operational-warning accuracy audit possible."
+  ]
+}

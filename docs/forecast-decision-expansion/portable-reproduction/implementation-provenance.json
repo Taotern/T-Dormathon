@@ -1,0 +1,13 @@
+{
+  "original_evaluator_sha256": "844103c3a5fba6d0cc20522f9cbde0b0c19383aa0fd53c79851541fa0c50be9f",
+  "portable_evaluator_sha256": "240333ca60d45cb626bed331bbf3071c2b9f9f5dad161f01050e6df74b59fafa",
+  "original_protocol_sha256": "afa728ec88539ace2f91d05a7d999b098d38bafb8832916d96f74e0c1acaa4a8",
+  "portable_protocol_sha256": "4a96ca7b566952d6c68daf084f853e542bacb8d3b35f78a15b6a2542b548a0a2",
+  "transformations": [
+    "Replace hard-coded source path with required --data argument.",
+    "Add derived-array content verification against supplied manifest.",
+    "Require fresh --output directory to avoid modifying frozen evidence.",
+    "Portable protocol retains identical grids/folds/rules, replacing path with named input reference."
+  ],
+  "model_and_scoring_changes": false
+}

@@ -1,0 +1,57 @@
+{
+  "matrix_sha256": "c85082382ebfc06c4da1ea174999b9115f3ed8e3ba8918f76a550dbf6aef050c",
+  "arrays": {
+    "sales": {
+      "shape": [
+        4707,
+        738
+      ],
+      "dtype": "float32",
+      "sha256": "16f19e9f393a8e950637f404d31e4618d0822cc32c5338eb61c967718f433293"
+    },
+    "returns": {
+      "shape": [
+        4707,
+        738
+      ],
+      "dtype": "float32",
+      "sha256": "f2c1fc41fa03aaaf60c6025bd436e698037e824ad06e9ca3076854f275c81d37"
+    },
+    "with_duplicates": {
+      "shape": [
+        4707,
+        738
+      ],
+      "dtype": "float32",
+      "sha256": "163a2810ec62465c023607ef89a3b8c159333ab08e4ee3763903f3d442edf910"
+    },
+    "dates": {
+      "shape": [
+        738
+      ],
+      "dtype": "<U10",
+      "sha256": "6e7ab86f52d04e3de5165c31604b93a9037d201b90461a0f7b3bfad8be2235f5"
+    },
+    "items": {
+      "shape": [
+        4707
+      ],
+      "dtype": "<U7",
+      "sha256": "287821364100d77b245ac6a473cf471f87699bc5e2cf899f5de39727c846f0ed"
+    },
+    "eligible": {
+      "shape": [
+        4707
+      ],
+      "dtype": "bool",
+      "sha256": "353b8af0d10ec336c183b9ce33618a1128f76ae3850d3a0cef9bb52b7dab351d"
+    },
+    "ledger_day_observed": {
+      "shape": [
+        738
+      ],
+      "dtype": "bool",
+      "sha256": "97c3369fa48f2fa505159aacb96b31a939f191d14eaf297a99ddf17381f0f897"
+    }
+  }
+}

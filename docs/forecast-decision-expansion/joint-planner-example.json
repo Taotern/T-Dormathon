@@ -1,0 +1,1955 @@
+{
+  "schema_version": "dormathon.mrdiy-joint-plans.v0.4.2",
+  "org_id": "org_mrdiy_my_demo",
+  "snapshot_id": "mrdiy-snapshot-20261010T080000+0800-v041",
+  "data_revision": "mrdiy-synthetic-20261010-v041",
+  "knowledge_as_of": "2026-10-10T08:00:00+08:00",
+  "world_time": "2026-10-10T08:00:00+08:00",
+  "scenarioDataMode": "SYNTHETIC_INTERNAL",
+  "component_data_modes": [
+    "SYNTHETIC_INTERNAL",
+    "HYPOTHETICAL_EVENT",
+    "SIMULATED_OUTCOME"
+  ],
+  "delivery_mode": "live_bounded_deterministic_package_enumeration",
+  "trained_model": false,
+  "trained_rl": false,
+  "automatic_execution": false,
+  "implementation_status": "planned_only",
+  "human_choice_required": true,
+  "scope": "six_linked_deep_demo_cases_only",
+  "supported_scenario_refs": [
+    "SC01",
+    "SC02",
+    "SC17",
+    "SC18",
+    "SC27",
+    "SC35"
+  ],
+  "pinned_actions": {},
+  "assumption_set_id": "assumptions-mrdiy-v041-20261010",
+  "provenance_refs": [
+    "FIXTURE_LEDGER_V041",
+    "HYP_ROUTE_DELAY01",
+    "HYP_POWER01"
+  ],
+  "input_refs": [
+    "mrdiy-snapshot-20261010T080000+0800-v041",
+    "demo_supply_01",
+    "demo_supply_02",
+    "demo_procurement_01",
+    "demo_service_01",
+    "demo_energy_01",
+    "demo_procurement_02"
+  ],
+  "reservation_pins": [],
+  "warnings": [],
+  "status": "ok",
+  "missing_inputs": [],
+  "decision_slots": [
+    {
+      "slot": "inventory",
+      "case_id": "demo_supply_01",
+      "scenario_ref": "SC01",
+      "action_ids": [
+        "no_action",
+        "practical_rule",
+        "replenish"
+      ],
+      "actions": [
+        {
+          "action_id": "no_action",
+          "label": "No change / current operating state"
+        },
+        {
+          "action_id": "practical_rule",
+          "label": "Reorder-point rule: transfer available buffer"
+        },
+        {
+          "action_id": "replenish",
+          "label": "Plan new replenishment under declared demand"
+        }
+      ]
+    },
+    {
+      "slot": "route",
+      "case_id": "demo_supply_02",
+      "scenario_ref": "SC02",
+      "action_ids": [
+        "no_action",
+        "expedite"
+      ],
+      "actions": [
+        {
+          "action_id": "no_action",
+          "label": "No change / current operating state"
+        },
+        {
+          "action_id": "expedite",
+          "label": "Compare qualified alternative carrier / two-day expedite"
+        }
+      ]
+    },
+    {
+      "slot": "invoice",
+      "case_id": "demo_procurement_01",
+      "scenario_ref": "SC17",
+      "action_ids": [
+        "no_action",
+        "practical_rule"
+      ],
+      "actions": [
+        {
+          "action_id": "no_action",
+          "label": "No change / current operating state"
+        },
+        {
+          "action_id": "practical_rule",
+          "label": "Current due-date rule: review then retain approval hold"
+        }
+      ]
+    },
+    {
+      "slot": "service",
+      "case_id": "demo_service_01",
+      "scenario_ref": "SC27",
+      "action_ids": [
+        "no_action",
+        "practical_rule"
+      ],
+      "actions": [
+        {
+          "action_id": "no_action",
+          "label": "No change / current operating state"
+        },
+        {
+          "action_id": "practical_rule",
+          "label": "FIFO / current qualified scheduling"
+        }
+      ]
+    },
+    {
+      "slot": "energy",
+      "case_id": "demo_energy_01",
+      "scenario_ref": "SC35",
+      "action_ids": [
+        "no_action",
+        "practical_rule",
+        "prioritize_safe_load"
+      ],
+      "actions": [
+        {
+          "action_id": "no_action",
+          "label": "No change / current operating state"
+        },
+        {
+          "action_id": "practical_rule",
+          "label": "Current continuity rule: allocate critical load"
+        },
+        {
+          "action_id": "prioritize_safe_load",
+          "label": "Prioritize safety-minimum loads and reschedule receiving"
+        }
+      ]
+    }
+  ],
+  "baseline": {
+    "package_id": "joint_no_action__no_action__no_action__no_action__no_action",
+    "actions": [
+      {
+        "slot": "inventory",
+        "case_id": "demo_supply_01",
+        "scenario_ref": "SC01",
+        "action_id": "no_action",
+        "label": "No change / current operating state"
+      },
+      {
+        "slot": "route",
+        "case_id": "demo_supply_02",
+        "scenario_ref": "SC02",
+        "action_id": "no_action",
+        "label": "No change / current operating state"
+      },
+      {
+        "slot": "invoice",
+        "case_id": "demo_procurement_01",
+        "scenario_ref": "SC17",
+        "action_id": "no_action",
+        "label": "No change / current operating state"
+      },
+      {
+        "slot": "service",
+        "case_id": "demo_service_01",
+        "scenario_ref": "SC27",
+        "action_id": "no_action",
+        "label": "No change / current operating state"
+      },
+      {
+        "slot": "energy",
+        "case_id": "demo_energy_01",
+        "scenario_ref": "SC35",
+        "action_id": "no_action",
+        "label": "No change / current operating state"
+      }
+    ],
+    "action_ids": {
+      "inventory": "no_action",
+      "route": "no_action",
+      "invoice": "no_action",
+      "service": "no_action",
+      "energy": "no_action"
+    },
+    "feasible": true,
+    "status": "ok",
+    "binding_constraints": [],
+    "resource_ledger": {
+      "rows": [
+        {
+          "constraint": "shared_cash",
+          "resource_key": "uncommitted_cash",
+          "capacity": 3840,
+          "prior_reserved": 0,
+          "package_required": 0,
+          "remaining": 3840,
+          "passed": true,
+          "binding": false,
+          "unit": "MYR"
+        },
+        {
+          "constraint": "shared_fuel",
+          "resource_key": "global_fuel",
+          "capacity": 30,
+          "prior_reserved": 0,
+          "package_required": 0,
+          "remaining": 30,
+          "passed": true,
+          "binding": false,
+          "unit": "litres"
+        },
+        {
+          "constraint": "transport_capacity",
+          "resource_key": "review_day_transport",
+          "capacity": 300,
+          "prior_reserved": 0,
+          "package_required": 0,
+          "remaining": 300,
+          "passed": true,
+          "binding": false,
+          "unit": "units/review day"
+        }
+      ],
+      "prior": {
+        "cash_myr": 0,
+        "fuel_litres": 0,
+        "transport_units": 0,
+        "stock": {},
+        "storage": {},
+        "role_hours": {},
+        "energy": {}
+      },
+      "package": {
+        "cash_myr": 0,
+        "fuel_litres": 0,
+        "transport_units": 0,
+        "stock": {},
+        "storage": {},
+        "role_hours": {},
+        "energy": {}
+      },
+      "total": {
+        "cash_myr": 0,
+        "fuel_litres": 0,
+        "transport_units": 0,
+        "stock": {},
+        "storage": {},
+        "role_hours": {},
+        "energy": {}
+      },
+      "feasible": true,
+      "reservation_semantics": "One review-day sandbox allocation. Physical stock plus every in-transit receipt retain hard storage; future sales do not free reservations."
+    },
+    "outcomes": {
+      "inventory": {
+        "node_id": "DEMO_ST01",
+        "sku_id": "DEMO_SKU01",
+        "initial_available_units": 60,
+        "events": [
+          {
+            "event_id": "DEMO_SHIP01",
+            "kind": "existing_inbound",
+            "day": 5,
+            "units": 200,
+            "node_id": "DEMO_ST01",
+            "sku_id": "DEMO_SKU01"
+          },
+          {
+            "event_id": "DEMO_SHIP02",
+            "kind": "existing_inbound",
+            "day": 3,
+            "units": 20,
+            "node_id": "DEMO_ST01",
+            "sku_id": "DEMO_SKU01"
+          }
+        ],
+        "days": [
+          {
+            "day": 0,
+            "demand_units": 20,
+            "arrival_units": 0,
+            "fulfilled_units": 20,
+            "lost_sales_units": 0,
+            "ending_available_units": 40
+          },
+          {
+            "day": 1,
+            "demand_units": 20,
+            "arrival_units": 0,
+            "fulfilled_units": 20,
+            "lost_sales_units": 0,
+            "ending_available_units": 20
+          },
+          {
+            "day": 2,
+            "demand_units": 20,
+            "arrival_units": 0,
+            "fulfilled_units": 20,
+            "lost_sales_units": 0,
+            "ending_available_units": 0
+          },
+          {
+            "day": 3,
+            "demand_units": 20,
+            "arrival_units": 20,
+            "fulfilled_units": 20,
+            "lost_sales_units": 0,
+            "ending_available_units": 0
+          },
+          {
+            "day": 4,
+            "demand_units": 20,
+            "arrival_units": 0,
+            "fulfilled_units": 0,
+            "lost_sales_units": 20,
+            "ending_available_units": 0
+          },
+          {
+            "day": 5,
+            "demand_units": 20,
+            "arrival_units": 200,
+            "fulfilled_units": 20,
+            "lost_sales_units": 0,
+            "ending_available_units": 180
+          },
+          {
+            "day": 6,
+            "demand_units": 20,
+            "arrival_units": 0,
+            "fulfilled_units": 20,
+            "lost_sales_units": 0,
+            "ending_available_units": 160
+          }
+        ],
+        "total_demand_units": 140,
+        "fulfilled_units": 120,
+        "shortage_units": 20,
+        "ending_available_units": 160,
+        "stock_conservation_residual_units": 0,
+        "existing_shipment_counted_once": true,
+        "source_stock_reduction_units": 0,
+        "transfer_network_net_units": 0
+      },
+      "cash": {
+        "prior_po_reserved_myr": 4160,
+        "incremental_package_cash_myr": 0,
+        "uncommitted_cash_after_package_myr": 3840,
+        "existing_payable_recharged": false
+      },
+      "transport": {
+        "shipment_id": "DEMO_SHIP01",
+        "route_leg_id": "DEMO_LEG01",
+        "original_arrival_day": 5,
+        "planned_arrival_day": 5,
+        "package_fuel_litres": 0,
+        "package_transport_units": 0
+      },
+      "energy": {
+        "facility_id": "DEMO_ST01",
+        "planned_load_kw": null,
+        "supported_hours": 0,
+        "continuity_gap_hours": 4,
+        "receiving_exposure": [
+          {
+            "event_id": "DEMO_SHIP01",
+            "day": 5,
+            "units": 200,
+            "facility_id": "DEMO_ST01",
+            "arrival_at": "2026-10-15T00:00:00.000Z",
+            "arrives_during_interruption": false,
+            "arrives_during_uncovered_interval": false,
+            "remaining_uncovered_hours_at_arrival": 0
+          },
+          {
+            "event_id": "DEMO_SHIP02",
+            "day": 3,
+            "units": 20,
+            "facility_id": "DEMO_ST01",
+            "arrival_at": "2026-10-13T00:00:00.000Z",
+            "arrives_during_interruption": false,
+            "arrives_during_uncovered_interval": false,
+            "remaining_uncovered_hours_at_arrival": 0
+          }
+        ],
+        "receiving_delay_inferred": false,
+        "assumption": "Backup covers the beginning of the interruption; arrivals occur at scenario clock time on their day. Exposure does not establish receiving downtime or change demand."
+      },
+      "service": {
+        "task_id": "DEMO_TASK01",
+        "planned_work_hours": 0,
+        "unallocated_work_hours": 4,
+        "shipment_dependency_id": "DEMO_SHIP01",
+        "shipment_dependency_arrival_day": 5,
+        "shortage_days": 1,
+        "completion_status": "not_observed_or_guaranteed",
+        "note": "Staff scheduling does not resolve shipment dependency or prove enquiry completion."
+      },
+      "procurement": {
+        "invoice_id": "DEMO_INV01",
+        "linked_scenario_refs": [
+          "SC17",
+          "SC18"
+        ],
+        "review_planned": false,
+        "current_unmatched_units": 200,
+        "planned_arrival_does_not_match_invoice": true,
+        "payment_executed": false
+      },
+      "cost": {
+        "known_conditional_total_myr": 256,
+        "components": {
+          "new_cash_commitment_myr": 0,
+          "holding_myr": 16,
+          "shortage_myr": 240,
+          "terminal_value_myr": 0
+        },
+        "excluded_unpriced_consequences": [
+          "energy continuity loss",
+          "service delay",
+          "invoice review labor"
+        ],
+        "basis": "SIMULATED_OUTCOME",
+        "scope": "known conditional cost components, not total business value or observed savings"
+      }
+    },
+    "score_vector": {
+      "continuity_gap_hours": 4,
+      "shortage_units": 20,
+      "known_conditional_cost_myr": 256,
+      "unallocated_service_hours": 4,
+      "invoice_review_not_planned": 1
+    },
+    "scenarioDataMode": "SIMULATED_OUTCOME",
+    "automatic_execution": false,
+    "implementation_status": "planned_only",
+    "comparison_semantics": "Counterfactual no-change episode with its own reservations released; unrelated existing reservations remain. This does not change session state."
+  },
+  "practical_baseline": {
+    "package_id": "joint_practical_rule__no_action__practical_rule__practical_rule__practical_rule",
+    "actions": [
+      {
+        "slot": "inventory",
+        "case_id": "demo_supply_01",
+        "scenario_ref": "SC01",
+        "action_id": "practical_rule",
+        "label": "Reorder-point rule: transfer available buffer"
+      },
+      {
+        "slot": "route",
+        "case_id": "demo_supply_02",
+        "scenario_ref": "SC02",
+        "action_id": "no_action",
+        "label": "No change / current operating state"
+      },
+      {
+        "slot": "invoice",
+        "case_id": "demo_procurement_01",
+        "scenario_ref": "SC17",
+        "action_id": "practical_rule",
+        "label": "Current due-date rule: review then retain approval hold"
+      },
+      {
+        "slot": "service",
+        "case_id": "demo_service_01",
+        "scenario_ref": "SC27",
+        "action_id": "practical_rule",
+        "label": "FIFO / current qualified scheduling"
+      },
+      {
+        "slot": "energy",
+        "case_id": "demo_energy_01",
+        "scenario_ref": "SC35",
+        "action_id": "practical_rule",
+        "label": "Current continuity rule: allocate critical load"
+      }
+    ],
+    "action_ids": {
+      "inventory": "practical_rule",
+      "route": "no_action",
+      "invoice": "practical_rule",
+      "service": "practical_rule",
+      "energy": "practical_rule"
+    },
+    "feasible": false,
+    "status": "infeasible",
+    "binding_constraints": [
+      {
+        "constraint": "backup_energy:DEMO_ST01",
+        "slot": null,
+        "passed": false,
+        "required": 24,
+        "remaining": -13.2,
+        "reason": "Shared resource reservation across the whole package"
+      },
+      {
+        "constraint": "backup_duration",
+        "slot": "energy",
+        "passed": false,
+        "required": null,
+        "remaining": null,
+        "reason": "Usable runtime must cover disruption duration"
+      }
+    ],
+    "resource_ledger": {
+      "rows": [
+        {
+          "constraint": "shared_cash",
+          "resource_key": "uncommitted_cash",
+          "capacity": 3840,
+          "prior_reserved": 0,
+          "package_required": 40,
+          "remaining": 3800,
+          "passed": true,
+          "binding": false,
+          "unit": "MYR"
+        },
+        {
+          "constraint": "shared_fuel",
+          "resource_key": "global_fuel",
+          "capacity": 30,
+          "prior_reserved": 0,
+          "package_required": 0,
+          "remaining": 30,
+          "passed": true,
+          "binding": false,
+          "unit": "litres"
+        },
+        {
+          "constraint": "transport_capacity",
+          "resource_key": "review_day_transport",
+          "capacity": 300,
+          "prior_reserved": 0,
+          "package_required": 40,
+          "remaining": 260,
+          "passed": true,
+          "binding": false,
+          "unit": "units/review day"
+        },
+        {
+          "constraint": "stock:DEMO_ST02|DEMO_SKU01",
+          "resource_key": "DEMO_ST02|DEMO_SKU01",
+          "capacity": 170,
+          "prior_reserved": 0,
+          "package_required": 40,
+          "remaining": 130,
+          "passed": true,
+          "binding": false,
+          "unit": "units"
+        },
+        {
+          "constraint": "storage:DEMO_ST01",
+          "resource_key": "DEMO_ST01",
+          "capacity": 3561,
+          "prior_reserved": 0,
+          "package_required": 40,
+          "remaining": 3521,
+          "passed": true,
+          "binding": false,
+          "unit": "fixture-equivalent units"
+        },
+        {
+          "constraint": "role_capacity:DEMO_ROLE01",
+          "resource_key": "DEMO_ROLE01",
+          "capacity": 6,
+          "prior_reserved": 0,
+          "package_required": 1,
+          "remaining": 5,
+          "passed": true,
+          "binding": false,
+          "unit": "hours"
+        },
+        {
+          "constraint": "role_capacity:DEMO_ROLE02",
+          "resource_key": "DEMO_ROLE02",
+          "capacity": 5,
+          "prior_reserved": 0,
+          "package_required": 2,
+          "remaining": 3,
+          "passed": true,
+          "binding": false,
+          "unit": "hours"
+        },
+        {
+          "constraint": "role_capacity:DEMO_ROLE03",
+          "resource_key": "DEMO_ROLE03",
+          "capacity": 6,
+          "prior_reserved": 0,
+          "package_required": 4,
+          "remaining": 2,
+          "passed": true,
+          "binding": false,
+          "unit": "hours"
+        },
+        {
+          "constraint": "role_capacity:DEMO_ROLE04",
+          "resource_key": "DEMO_ROLE04",
+          "capacity": 4,
+          "prior_reserved": 0,
+          "package_required": 1,
+          "remaining": 3,
+          "passed": true,
+          "binding": false,
+          "unit": "hours"
+        },
+        {
+          "constraint": "backup_energy:DEMO_ST01",
+          "resource_key": "DEMO_ST01",
+          "capacity": 10.8,
+          "prior_reserved": 0,
+          "package_required": 24,
+          "remaining": -13.2,
+          "passed": false,
+          "binding": true,
+          "unit": "kWh"
+        }
+      ],
+      "prior": {
+        "cash_myr": 0,
+        "fuel_litres": 0,
+        "transport_units": 0,
+        "stock": {},
+        "storage": {},
+        "role_hours": {},
+        "energy": {}
+      },
+      "package": {
+        "cash_myr": 40,
+        "fuel_litres": 0,
+        "transport_units": 40,
+        "stock": {
+          "DEMO_ST02|DEMO_SKU01": 40
+        },
+        "storage": {
+          "DEMO_ST01": 40
+        },
+        "role_hours": {
+          "DEMO_ROLE01": 1,
+          "DEMO_ROLE02": 2,
+          "DEMO_ROLE03": 4,
+          "DEMO_ROLE04": 1
+        },
+        "energy": {
+          "DEMO_ST01": 24
+        }
+      },
+      "total": {
+        "cash_myr": 40,
+        "fuel_litres": 0,
+        "transport_units": 40,
+        "stock": {
+          "DEMO_ST02|DEMO_SKU01": 40
+        },
+        "storage": {
+          "DEMO_ST01": 40
+        },
+        "role_hours": {
+          "DEMO_ROLE01": 1,
+          "DEMO_ROLE02": 2,
+          "DEMO_ROLE03": 4,
+          "DEMO_ROLE04": 1
+        },
+        "energy": {
+          "DEMO_ST01": 24
+        }
+      },
+      "feasible": false,
+      "reservation_semantics": "One review-day sandbox allocation. Physical stock plus every in-transit receipt retain hard storage; future sales do not free reservations."
+    },
+    "outcomes": {
+      "inventory": {
+        "node_id": "DEMO_ST01",
+        "sku_id": "DEMO_SKU01",
+        "initial_available_units": 60,
+        "events": [
+          {
+            "event_id": "DEMO_SHIP01",
+            "kind": "existing_inbound",
+            "day": 5,
+            "units": 200,
+            "node_id": "DEMO_ST01",
+            "sku_id": "DEMO_SKU01"
+          },
+          {
+            "event_id": "DEMO_SHIP02",
+            "kind": "existing_inbound",
+            "day": 3,
+            "units": 20,
+            "node_id": "DEMO_ST01",
+            "sku_id": "DEMO_SKU01"
+          },
+          {
+            "event_id": "planned_transfer:demo_supply_01",
+            "kind": "internal_transfer",
+            "day": 0,
+            "units": 40,
+            "source_node_id": "DEMO_ST02",
+            "node_id": "DEMO_ST01",
+            "sku_id": "DEMO_SKU01"
+          }
+        ],
+        "days": [
+          {
+            "day": 0,
+            "demand_units": 20,
+            "arrival_units": 40,
+            "fulfilled_units": 20,
+            "lost_sales_units": 0,
+            "ending_available_units": 80
+          },
+          {
+            "day": 1,
+            "demand_units": 20,
+            "arrival_units": 0,
+            "fulfilled_units": 20,
+            "lost_sales_units": 0,
+            "ending_available_units": 60
+          },
+          {
+            "day": 2,
+            "demand_units": 20,
+            "arrival_units": 0,
+            "fulfilled_units": 20,
+            "lost_sales_units": 0,
+            "ending_available_units": 40
+          },
+          {
+            "day": 3,
+            "demand_units": 20,
+            "arrival_units": 20,
+            "fulfilled_units": 20,
+            "lost_sales_units": 0,
+            "ending_available_units": 40
+          },
+          {
+            "day": 4,
+            "demand_units": 20,
+            "arrival_units": 0,
+            "fulfilled_units": 20,
+            "lost_sales_units": 0,
+            "ending_available_units": 20
+          },
+          {
+            "day": 5,
+            "demand_units": 20,
+            "arrival_units": 200,
+            "fulfilled_units": 20,
+            "lost_sales_units": 0,
+            "ending_available_units": 200
+          },
+          {
+            "day": 6,
+            "demand_units": 20,
+            "arrival_units": 0,
+            "fulfilled_units": 20,
+            "lost_sales_units": 0,
+            "ending_available_units": 180
+          }
+        ],
+        "total_demand_units": 140,
+        "fulfilled_units": 140,
+        "shortage_units": 0,
+        "ending_available_units": 180,
+        "stock_conservation_residual_units": 0,
+        "existing_shipment_counted_once": true,
+        "source_stock_reduction_units": 40,
+        "transfer_network_net_units": 0
+      },
+      "cash": {
+        "prior_po_reserved_myr": 4160,
+        "incremental_package_cash_myr": 40,
+        "uncommitted_cash_after_package_myr": 3800,
+        "existing_payable_recharged": false
+      },
+      "transport": {
+        "shipment_id": "DEMO_SHIP01",
+        "route_leg_id": "DEMO_LEG01",
+        "original_arrival_day": 5,
+        "planned_arrival_day": 5,
+        "package_fuel_litres": 0,
+        "package_transport_units": 40
+      },
+      "energy": {
+        "facility_id": "DEMO_ST01",
+        "planned_load_kw": 6,
+        "supported_hours": 1.8,
+        "continuity_gap_hours": 2.2,
+        "receiving_exposure": [
+          {
+            "event_id": "DEMO_SHIP01",
+            "day": 5,
+            "units": 200,
+            "facility_id": "DEMO_ST01",
+            "arrival_at": "2026-10-15T00:00:00.000Z",
+            "arrives_during_interruption": false,
+            "arrives_during_uncovered_interval": false,
+            "remaining_uncovered_hours_at_arrival": 0
+          },
+          {
+            "event_id": "DEMO_SHIP02",
+            "day": 3,
+            "units": 20,
+            "facility_id": "DEMO_ST01",
+            "arrival_at": "2026-10-13T00:00:00.000Z",
+            "arrives_during_interruption": false,
+            "arrives_during_uncovered_interval": false,
+            "remaining_uncovered_hours_at_arrival": 0
+          },
+          {
+            "event_id": "planned_transfer:demo_supply_01",
+            "day": 0,
+            "units": 40,
+            "facility_id": "DEMO_ST01",
+            "arrival_at": "2026-10-10T00:00:00.000Z",
+            "arrives_during_interruption": true,
+            "arrives_during_uncovered_interval": false,
+            "remaining_uncovered_hours_at_arrival": 2.2
+          }
+        ],
+        "receiving_delay_inferred": false,
+        "assumption": "Backup covers the beginning of the interruption; arrivals occur at scenario clock time on their day. Exposure does not establish receiving downtime or change demand."
+      },
+      "service": {
+        "task_id": "DEMO_TASK01",
+        "planned_work_hours": 4,
+        "unallocated_work_hours": 0,
+        "shipment_dependency_id": "DEMO_SHIP01",
+        "shipment_dependency_arrival_day": 5,
+        "shortage_days": 0,
+        "completion_status": "not_observed_or_guaranteed",
+        "note": "Staff scheduling does not resolve shipment dependency or prove enquiry completion."
+      },
+      "procurement": {
+        "invoice_id": "DEMO_INV01",
+        "linked_scenario_refs": [
+          "SC17",
+          "SC18"
+        ],
+        "review_planned": true,
+        "current_unmatched_units": 200,
+        "planned_arrival_does_not_match_invoice": true,
+        "payment_executed": false
+      },
+      "cost": {
+        "known_conditional_total_myr": 64.8,
+        "components": {
+          "new_cash_commitment_myr": 40,
+          "holding_myr": 24.8,
+          "shortage_myr": 0,
+          "terminal_value_myr": 0
+        },
+        "excluded_unpriced_consequences": [
+          "energy continuity loss",
+          "service delay",
+          "invoice review labor"
+        ],
+        "basis": "SIMULATED_OUTCOME",
+        "scope": "known conditional cost components, not total business value or observed savings"
+      }
+    },
+    "score_vector": {
+      "continuity_gap_hours": 2.2,
+      "shortage_units": 0,
+      "known_conditional_cost_myr": 64.8,
+      "unallocated_service_hours": 0,
+      "invoice_review_not_planned": 0
+    },
+    "scenarioDataMode": "SIMULATED_OUTCOME",
+    "automatic_execution": false,
+    "implementation_status": "planned_only",
+    "comparison_semantics": "Existing practical rules combined; may be infeasible under shared resources or intrinsic constraints."
+  },
+  "packages": [
+    {
+      "package_id": "joint_practical_rule__no_action__practical_rule__practical_rule__prioritize_safe_load",
+      "actions": [
+        {
+          "slot": "inventory",
+          "case_id": "demo_supply_01",
+          "scenario_ref": "SC01",
+          "action_id": "practical_rule",
+          "label": "Reorder-point rule: transfer available buffer"
+        },
+        {
+          "slot": "route",
+          "case_id": "demo_supply_02",
+          "scenario_ref": "SC02",
+          "action_id": "no_action",
+          "label": "No change / current operating state"
+        },
+        {
+          "slot": "invoice",
+          "case_id": "demo_procurement_01",
+          "scenario_ref": "SC17",
+          "action_id": "practical_rule",
+          "label": "Current due-date rule: review then retain approval hold"
+        },
+        {
+          "slot": "service",
+          "case_id": "demo_service_01",
+          "scenario_ref": "SC27",
+          "action_id": "practical_rule",
+          "label": "FIFO / current qualified scheduling"
+        },
+        {
+          "slot": "energy",
+          "case_id": "demo_energy_01",
+          "scenario_ref": "SC35",
+          "action_id": "prioritize_safe_load",
+          "label": "Prioritize safety-minimum loads and reschedule receiving"
+        }
+      ],
+      "action_ids": {
+        "inventory": "practical_rule",
+        "route": "no_action",
+        "invoice": "practical_rule",
+        "service": "practical_rule",
+        "energy": "prioritize_safe_load"
+      },
+      "feasible": true,
+      "status": "ok",
+      "binding_constraints": [
+        {
+          "constraint": "backup_energy:DEMO_ST01",
+          "slot": null,
+          "passed": true,
+          "required": 10.8,
+          "remaining": 0,
+          "reason": "Shared resource reservation across the whole package"
+        }
+      ],
+      "resource_ledger": {
+        "rows": [
+          {
+            "constraint": "shared_cash",
+            "resource_key": "uncommitted_cash",
+            "capacity": 3840,
+            "prior_reserved": 0,
+            "package_required": 40,
+            "remaining": 3800,
+            "passed": true,
+            "binding": false,
+            "unit": "MYR"
+          },
+          {
+            "constraint": "shared_fuel",
+            "resource_key": "global_fuel",
+            "capacity": 30,
+            "prior_reserved": 0,
+            "package_required": 0,
+            "remaining": 30,
+            "passed": true,
+            "binding": false,
+            "unit": "litres"
+          },
+          {
+            "constraint": "transport_capacity",
+            "resource_key": "review_day_transport",
+            "capacity": 300,
+            "prior_reserved": 0,
+            "package_required": 40,
+            "remaining": 260,
+            "passed": true,
+            "binding": false,
+            "unit": "units/review day"
+          },
+          {
+            "constraint": "stock:DEMO_ST02|DEMO_SKU01",
+            "resource_key": "DEMO_ST02|DEMO_SKU01",
+            "capacity": 170,
+            "prior_reserved": 0,
+            "package_required": 40,
+            "remaining": 130,
+            "passed": true,
+            "binding": false,
+            "unit": "units"
+          },
+          {
+            "constraint": "storage:DEMO_ST01",
+            "resource_key": "DEMO_ST01",
+            "capacity": 3561,
+            "prior_reserved": 0,
+            "package_required": 40,
+            "remaining": 3521,
+            "passed": true,
+            "binding": false,
+            "unit": "fixture-equivalent units"
+          },
+          {
+            "constraint": "role_capacity:DEMO_ROLE01",
+            "resource_key": "DEMO_ROLE01",
+            "capacity": 6,
+            "prior_reserved": 0,
+            "package_required": 2,
+            "remaining": 4,
+            "passed": true,
+            "binding": false,
+            "unit": "hours"
+          },
+          {
+            "constraint": "role_capacity:DEMO_ROLE02",
+            "resource_key": "DEMO_ROLE02",
+            "capacity": 5,
+            "prior_reserved": 0,
+            "package_required": 2,
+            "remaining": 3,
+            "passed": true,
+            "binding": false,
+            "unit": "hours"
+          },
+          {
+            "constraint": "role_capacity:DEMO_ROLE03",
+            "resource_key": "DEMO_ROLE03",
+            "capacity": 6,
+            "prior_reserved": 0,
+            "package_required": 4,
+            "remaining": 2,
+            "passed": true,
+            "binding": false,
+            "unit": "hours"
+          },
+          {
+            "constraint": "role_capacity:DEMO_ROLE04",
+            "resource_key": "DEMO_ROLE04",
+            "capacity": 4,
+            "prior_reserved": 0,
+            "package_required": 1,
+            "remaining": 3,
+            "passed": true,
+            "binding": false,
+            "unit": "hours"
+          },
+          {
+            "constraint": "backup_energy:DEMO_ST01",
+            "resource_key": "DEMO_ST01",
+            "capacity": 10.8,
+            "prior_reserved": 0,
+            "package_required": 10.8,
+            "remaining": 0,
+            "passed": true,
+            "binding": true,
+            "unit": "kWh"
+          }
+        ],
+        "prior": {
+          "cash_myr": 0,
+          "fuel_litres": 0,
+          "transport_units": 0,
+          "stock": {},
+          "storage": {},
+          "role_hours": {},
+          "energy": {}
+        },
+        "package": {
+          "cash_myr": 40,
+          "fuel_litres": 0,
+          "transport_units": 40,
+          "stock": {
+            "DEMO_ST02|DEMO_SKU01": 40
+          },
+          "storage": {
+            "DEMO_ST01": 40
+          },
+          "role_hours": {
+            "DEMO_ROLE01": 2,
+            "DEMO_ROLE02": 2,
+            "DEMO_ROLE03": 4,
+            "DEMO_ROLE04": 1
+          },
+          "energy": {
+            "DEMO_ST01": 10.8
+          }
+        },
+        "total": {
+          "cash_myr": 40,
+          "fuel_litres": 0,
+          "transport_units": 40,
+          "stock": {
+            "DEMO_ST02|DEMO_SKU01": 40
+          },
+          "storage": {
+            "DEMO_ST01": 40
+          },
+          "role_hours": {
+            "DEMO_ROLE01": 2,
+            "DEMO_ROLE02": 2,
+            "DEMO_ROLE03": 4,
+            "DEMO_ROLE04": 1
+          },
+          "energy": {
+            "DEMO_ST01": 10.8
+          }
+        },
+        "feasible": true,
+        "reservation_semantics": "One review-day sandbox allocation. Physical stock plus every in-transit receipt retain hard storage; future sales do not free reservations."
+      },
+      "outcomes": {
+        "inventory": {
+          "node_id": "DEMO_ST01",
+          "sku_id": "DEMO_SKU01",
+          "initial_available_units": 60,
+          "events": [
+            {
+              "event_id": "DEMO_SHIP01",
+              "kind": "existing_inbound",
+              "day": 5,
+              "units": 200,
+              "node_id": "DEMO_ST01",
+              "sku_id": "DEMO_SKU01"
+            },
+            {
+              "event_id": "DEMO_SHIP02",
+              "kind": "existing_inbound",
+              "day": 3,
+              "units": 20,
+              "node_id": "DEMO_ST01",
+              "sku_id": "DEMO_SKU01"
+            },
+            {
+              "event_id": "planned_transfer:demo_supply_01",
+              "kind": "internal_transfer",
+              "day": 0,
+              "units": 40,
+              "source_node_id": "DEMO_ST02",
+              "node_id": "DEMO_ST01",
+              "sku_id": "DEMO_SKU01"
+            }
+          ],
+          "days": [
+            {
+              "day": 0,
+              "demand_units": 20,
+              "arrival_units": 40,
+              "fulfilled_units": 20,
+              "lost_sales_units": 0,
+              "ending_available_units": 80
+            },
+            {
+              "day": 1,
+              "demand_units": 20,
+              "arrival_units": 0,
+              "fulfilled_units": 20,
+              "lost_sales_units": 0,
+              "ending_available_units": 60
+            },
+            {
+              "day": 2,
+              "demand_units": 20,
+              "arrival_units": 0,
+              "fulfilled_units": 20,
+              "lost_sales_units": 0,
+              "ending_available_units": 40
+            },
+            {
+              "day": 3,
+              "demand_units": 20,
+              "arrival_units": 20,
+              "fulfilled_units": 20,
+              "lost_sales_units": 0,
+              "ending_available_units": 40
+            },
+            {
+              "day": 4,
+              "demand_units": 20,
+              "arrival_units": 0,
+              "fulfilled_units": 20,
+              "lost_sales_units": 0,
+              "ending_available_units": 20
+            },
+            {
+              "day": 5,
+              "demand_units": 20,
+              "arrival_units": 200,
+              "fulfilled_units": 20,
+              "lost_sales_units": 0,
+              "ending_available_units": 200
+            },
+            {
+              "day": 6,
+              "demand_units": 20,
+              "arrival_units": 0,
+              "fulfilled_units": 20,
+              "lost_sales_units": 0,
+              "ending_available_units": 180
+            }
+          ],
+          "total_demand_units": 140,
+          "fulfilled_units": 140,
+          "shortage_units": 0,
+          "ending_available_units": 180,
+          "stock_conservation_residual_units": 0,
+          "existing_shipment_counted_once": true,
+          "source_stock_reduction_units": 40,
+          "transfer_network_net_units": 0
+        },
+        "cash": {
+          "prior_po_reserved_myr": 4160,
+          "incremental_package_cash_myr": 40,
+          "uncommitted_cash_after_package_myr": 3800,
+          "existing_payable_recharged": false
+        },
+        "transport": {
+          "shipment_id": "DEMO_SHIP01",
+          "route_leg_id": "DEMO_LEG01",
+          "original_arrival_day": 5,
+          "planned_arrival_day": 5,
+          "package_fuel_litres": 0,
+          "package_transport_units": 40
+        },
+        "energy": {
+          "facility_id": "DEMO_ST01",
+          "planned_load_kw": 4,
+          "supported_hours": 2.7,
+          "continuity_gap_hours": 1.3,
+          "receiving_exposure": [
+            {
+              "event_id": "DEMO_SHIP01",
+              "day": 5,
+              "units": 200,
+              "facility_id": "DEMO_ST01",
+              "arrival_at": "2026-10-15T00:00:00.000Z",
+              "arrives_during_interruption": false,
+              "arrives_during_uncovered_interval": false,
+              "remaining_uncovered_hours_at_arrival": 0
+            },
+            {
+              "event_id": "DEMO_SHIP02",
+              "day": 3,
+              "units": 20,
+              "facility_id": "DEMO_ST01",
+              "arrival_at": "2026-10-13T00:00:00.000Z",
+              "arrives_during_interruption": false,
+              "arrives_during_uncovered_interval": false,
+              "remaining_uncovered_hours_at_arrival": 0
+            },
+            {
+              "event_id": "planned_transfer:demo_supply_01",
+              "day": 0,
+              "units": 40,
+              "facility_id": "DEMO_ST01",
+              "arrival_at": "2026-10-10T00:00:00.000Z",
+              "arrives_during_interruption": true,
+              "arrives_during_uncovered_interval": false,
+              "remaining_uncovered_hours_at_arrival": 1.3
+            }
+          ],
+          "receiving_delay_inferred": false,
+          "assumption": "Backup covers the beginning of the interruption; arrivals occur at scenario clock time on their day. Exposure does not establish receiving downtime or change demand."
+        },
+        "service": {
+          "task_id": "DEMO_TASK01",
+          "planned_work_hours": 4,
+          "unallocated_work_hours": 0,
+          "shipment_dependency_id": "DEMO_SHIP01",
+          "shipment_dependency_arrival_day": 5,
+          "shortage_days": 0,
+          "completion_status": "not_observed_or_guaranteed",
+          "note": "Staff scheduling does not resolve shipment dependency or prove enquiry completion."
+        },
+        "procurement": {
+          "invoice_id": "DEMO_INV01",
+          "linked_scenario_refs": [
+            "SC17",
+            "SC18"
+          ],
+          "review_planned": true,
+          "current_unmatched_units": 200,
+          "planned_arrival_does_not_match_invoice": true,
+          "payment_executed": false
+        },
+        "cost": {
+          "known_conditional_total_myr": 64.8,
+          "components": {
+            "new_cash_commitment_myr": 40,
+            "holding_myr": 24.8,
+            "shortage_myr": 0,
+            "terminal_value_myr": 0
+          },
+          "excluded_unpriced_consequences": [
+            "energy continuity loss",
+            "service delay",
+            "invoice review labor"
+          ],
+          "basis": "SIMULATED_OUTCOME",
+          "scope": "known conditional cost components, not total business value or observed savings"
+        }
+      },
+      "score_vector": {
+        "continuity_gap_hours": 1.3,
+        "shortage_units": 0,
+        "known_conditional_cost_myr": 64.8,
+        "unallocated_service_hours": 0,
+        "invoice_review_not_planned": 0
+      },
+      "scenarioDataMode": "SIMULATED_OUTCOME",
+      "automatic_execution": false,
+      "implementation_status": "planned_only",
+      "pareto_efficient": true,
+      "delta_from_baseline": {
+        "against_package_id": "joint_no_action__no_action__no_action__no_action__no_action",
+        "values": {
+          "continuity_gap_hours": -2.7,
+          "shortage_units": -20,
+          "known_conditional_cost_myr": -191.2,
+          "unallocated_service_hours": -4,
+          "invoice_review_not_planned": -1,
+          "cash_reserved_myr": 40,
+          "arrival_days": 0,
+          "fuel_litres": 0
+        },
+        "explanations": [
+          {
+            "cause": "inventory:practical_rule",
+            "effect": "Recompute the one shared stock trajectory and reserve new cash, source stock, storage and transport."
+          },
+          {
+            "cause": "invoice:practical_rule",
+            "effect": "Reserve invoice-review hours once across SC17/SC18; retain current mismatch and existing PO cash reserve."
+          },
+          {
+            "cause": "service:practical_rule",
+            "effect": "Reserve qualified service hours; keep physical dependency and unfinished outcome visible."
+          },
+          {
+            "cause": "energy:prioritize_safe_load",
+            "effect": "Recompute usable runtime, continuity gap, arrival-window exposure and shared role/energy allocations."
+          },
+          {
+            "cause": "whole_package",
+            "effect": "All proposed actions fit the same shared resource ledger."
+          }
+        ]
+      }
+    },
+    {
+      "package_id": "joint_replenish__expedite__practical_rule__practical_rule__prioritize_safe_load",
+      "actions": [
+        {
+          "slot": "inventory",
+          "case_id": "demo_supply_01",
+          "scenario_ref": "SC01",
+          "action_id": "replenish",
+          "label": "Plan new replenishment under declared demand"
+        },
+        {
+          "slot": "route",
+          "case_id": "demo_supply_02",
+          "scenario_ref": "SC02",
+          "action_id": "expedite",
+          "label": "Compare qualified alternative carrier / two-day expedite"
+        },
+        {
+          "slot": "invoice",
+          "case_id": "demo_procurement_01",
+          "scenario_ref": "SC17",
+          "action_id": "practical_rule",
+          "label": "Current due-date rule: review then retain approval hold"
+        },
+        {
+          "slot": "service",
+          "case_id": "demo_service_01",
+          "scenario_ref": "SC27",
+          "action_id": "practical_rule",
+          "label": "FIFO / current qualified scheduling"
+        },
+        {
+          "slot": "energy",
+          "case_id": "demo_energy_01",
+          "scenario_ref": "SC35",
+          "action_id": "prioritize_safe_load",
+          "label": "Prioritize safety-minimum loads and reschedule receiving"
+        }
+      ],
+      "action_ids": {
+        "inventory": "replenish",
+        "route": "expedite",
+        "invoice": "practical_rule",
+        "service": "practical_rule",
+        "energy": "prioritize_safe_load"
+      },
+      "feasible": true,
+      "status": "ok",
+      "binding_constraints": [
+        {
+          "constraint": "transport_capacity",
+          "slot": null,
+          "passed": true,
+          "required": 300,
+          "remaining": 0,
+          "reason": "Shared resource reservation across the whole package"
+        },
+        {
+          "constraint": "backup_energy:DEMO_ST01",
+          "slot": null,
+          "passed": true,
+          "required": 10.8,
+          "remaining": 0,
+          "reason": "Shared resource reservation across the whole package"
+        }
+      ],
+      "resource_ledger": {
+        "rows": [
+          {
+            "constraint": "shared_cash",
+            "resource_key": "uncommitted_cash",
+            "capacity": 3840,
+            "prior_reserved": 0,
+            "package_required": 1005,
+            "remaining": 2835,
+            "passed": true,
+            "binding": false,
+            "unit": "MYR"
+          },
+          {
+            "constraint": "shared_fuel",
+            "resource_key": "global_fuel",
+            "capacity": 30,
+            "prior_reserved": 0,
+            "package_required": 18,
+            "remaining": 12,
+            "passed": true,
+            "binding": false,
+            "unit": "litres"
+          },
+          {
+            "constraint": "transport_capacity",
+            "resource_key": "review_day_transport",
+            "capacity": 300,
+            "prior_reserved": 0,
+            "package_required": 300,
+            "remaining": 0,
+            "passed": true,
+            "binding": true,
+            "unit": "units/review day"
+          },
+          {
+            "constraint": "storage:DEMO_ST01",
+            "resource_key": "DEMO_ST01",
+            "capacity": 3561,
+            "prior_reserved": 0,
+            "package_required": 100,
+            "remaining": 3461,
+            "passed": true,
+            "binding": false,
+            "unit": "fixture-equivalent units"
+          },
+          {
+            "constraint": "role_capacity:DEMO_ROLE01",
+            "resource_key": "DEMO_ROLE01",
+            "capacity": 6,
+            "prior_reserved": 0,
+            "package_required": 3,
+            "remaining": 3,
+            "passed": true,
+            "binding": false,
+            "unit": "hours"
+          },
+          {
+            "constraint": "role_capacity:DEMO_ROLE02",
+            "resource_key": "DEMO_ROLE02",
+            "capacity": 5,
+            "prior_reserved": 0,
+            "package_required": 2,
+            "remaining": 3,
+            "passed": true,
+            "binding": false,
+            "unit": "hours"
+          },
+          {
+            "constraint": "role_capacity:DEMO_ROLE03",
+            "resource_key": "DEMO_ROLE03",
+            "capacity": 6,
+            "prior_reserved": 0,
+            "package_required": 4,
+            "remaining": 2,
+            "passed": true,
+            "binding": false,
+            "unit": "hours"
+          },
+          {
+            "constraint": "role_capacity:DEMO_ROLE04",
+            "resource_key": "DEMO_ROLE04",
+            "capacity": 4,
+            "prior_reserved": 0,
+            "package_required": 1,
+            "remaining": 3,
+            "passed": true,
+            "binding": false,
+            "unit": "hours"
+          },
+          {
+            "constraint": "backup_energy:DEMO_ST01",
+            "resource_key": "DEMO_ST01",
+            "capacity": 10.8,
+            "prior_reserved": 0,
+            "package_required": 10.8,
+            "remaining": 0,
+            "passed": true,
+            "binding": true,
+            "unit": "kWh"
+          }
+        ],
+        "prior": {
+          "cash_myr": 0,
+          "fuel_litres": 0,
+          "transport_units": 0,
+          "stock": {},
+          "storage": {},
+          "role_hours": {},
+          "energy": {}
+        },
+        "package": {
+          "cash_myr": 1005,
+          "fuel_litres": 18,
+          "transport_units": 300,
+          "stock": {},
+          "storage": {
+            "DEMO_ST01": 100
+          },
+          "role_hours": {
+            "DEMO_ROLE01": 3,
+            "DEMO_ROLE02": 2,
+            "DEMO_ROLE03": 4,
+            "DEMO_ROLE04": 1
+          },
+          "energy": {
+            "DEMO_ST01": 10.8
+          }
+        },
+        "total": {
+          "cash_myr": 1005,
+          "fuel_litres": 18,
+          "transport_units": 300,
+          "stock": {},
+          "storage": {
+            "DEMO_ST01": 100
+          },
+          "role_hours": {
+            "DEMO_ROLE01": 3,
+            "DEMO_ROLE02": 2,
+            "DEMO_ROLE03": 4,
+            "DEMO_ROLE04": 1
+          },
+          "energy": {
+            "DEMO_ST01": 10.8
+          }
+        },
+        "feasible": true,
+        "reservation_semantics": "One review-day sandbox allocation. Physical stock plus every in-transit receipt retain hard storage; future sales do not free reservations."
+      },
+      "outcomes": {
+        "inventory": {
+          "node_id": "DEMO_ST01",
+          "sku_id": "DEMO_SKU01",
+          "initial_available_units": 60,
+          "events": [
+            {
+              "event_id": "DEMO_SHIP01",
+              "kind": "existing_inbound",
+              "day": 3,
+              "units": 200,
+              "node_id": "DEMO_ST01",
+              "sku_id": "DEMO_SKU01"
+            },
+            {
+              "event_id": "DEMO_SHIP02",
+              "kind": "existing_inbound",
+              "day": 3,
+              "units": 20,
+              "node_id": "DEMO_ST01",
+              "sku_id": "DEMO_SKU01"
+            },
+            {
+              "event_id": "planned_new_order:demo_supply_01",
+              "kind": "new_replenishment",
+              "day": 3,
+              "units": 100,
+              "node_id": "DEMO_ST01",
+              "sku_id": "DEMO_SKU01"
+            }
+          ],
+          "days": [
+            {
+              "day": 0,
+              "demand_units": 20,
+              "arrival_units": 0,
+              "fulfilled_units": 20,
+              "lost_sales_units": 0,
+              "ending_available_units": 40
+            },
+            {
+              "day": 1,
+              "demand_units": 20,
+              "arrival_units": 0,
+              "fulfilled_units": 20,
+              "lost_sales_units": 0,
+              "ending_available_units": 20
+            },
+            {
+              "day": 2,
+              "demand_units": 20,
+              "arrival_units": 0,
+              "fulfilled_units": 20,
+              "lost_sales_units": 0,
+              "ending_available_units": 0
+            },
+            {
+              "day": 3,
+              "demand_units": 20,
+              "arrival_units": 320,
+              "fulfilled_units": 20,
+              "lost_sales_units": 0,
+              "ending_available_units": 300
+            },
+            {
+              "day": 4,
+              "demand_units": 20,
+              "arrival_units": 0,
+              "fulfilled_units": 20,
+              "lost_sales_units": 0,
+              "ending_available_units": 280
+            },
+            {
+              "day": 5,
+              "demand_units": 20,
+              "arrival_units": 0,
+              "fulfilled_units": 20,
+              "lost_sales_units": 0,
+              "ending_available_units": 260
+            },
+            {
+              "day": 6,
+              "demand_units": 20,
+              "arrival_units": 0,
+              "fulfilled_units": 20,
+              "lost_sales_units": 0,
+              "ending_available_units": 240
+            }
+          ],
+          "total_demand_units": 140,
+          "fulfilled_units": 140,
+          "shortage_units": 0,
+          "ending_available_units": 240,
+          "stock_conservation_residual_units": 0,
+          "existing_shipment_counted_once": true,
+          "source_stock_reduction_units": 0,
+          "transfer_network_net_units": 0
+        },
+        "cash": {
+          "prior_po_reserved_myr": 4160,
+          "incremental_package_cash_myr": 1005,
+          "uncommitted_cash_after_package_myr": 2835,
+          "existing_payable_recharged": false
+        },
+        "transport": {
+          "shipment_id": "DEMO_SHIP01",
+          "route_leg_id": "DEMO_LEG01",
+          "original_arrival_day": 5,
+          "planned_arrival_day": 3,
+          "package_fuel_litres": 18,
+          "package_transport_units": 300
+        },
+        "energy": {
+          "facility_id": "DEMO_ST01",
+          "planned_load_kw": 4,
+          "supported_hours": 2.7,
+          "continuity_gap_hours": 1.3,
+          "receiving_exposure": [
+            {
+              "event_id": "DEMO_SHIP01",
+              "day": 3,
+              "units": 200,
+              "facility_id": "DEMO_ST01",
+              "arrival_at": "2026-10-13T00:00:00.000Z",
+              "arrives_during_interruption": false,
+              "arrives_during_uncovered_interval": false,
+              "remaining_uncovered_hours_at_arrival": 0
+            },
+            {
+              "event_id": "DEMO_SHIP02",
+              "day": 3,
+              "units": 20,
+              "facility_id": "DEMO_ST01",
+              "arrival_at": "2026-10-13T00:00:00.000Z",
+              "arrives_during_interruption": false,
+              "arrives_during_uncovered_interval": false,
+              "remaining_uncovered_hours_at_arrival": 0
+            },
+            {
+              "event_id": "planned_new_order:demo_supply_01",
+              "day": 3,
+              "units": 100,
+              "facility_id": "DEMO_ST01",
+              "arrival_at": "2026-10-13T00:00:00.000Z",
+              "arrives_during_interruption": false,
+              "arrives_during_uncovered_interval": false,
+              "remaining_uncovered_hours_at_arrival": 0
+            }
+          ],
+          "receiving_delay_inferred": false,
+          "assumption": "Backup covers the beginning of the interruption; arrivals occur at scenario clock time on their day. Exposure does not establish receiving downtime or change demand."
+        },
+        "service": {
+          "task_id": "DEMO_TASK01",
+          "planned_work_hours": 4,
+          "unallocated_work_hours": 0,
+          "shipment_dependency_id": "DEMO_SHIP01",
+          "shipment_dependency_arrival_day": 3,
+          "shortage_days": 0,
+          "completion_status": "not_observed_or_guaranteed",
+          "note": "Staff scheduling does not resolve shipment dependency or prove enquiry completion."
+        },
+        "procurement": {
+          "invoice_id": "DEMO_INV01",
+          "linked_scenario_refs": [
+            "SC17",
+            "SC18"
+          ],
+          "review_planned": true,
+          "current_unmatched_units": 200,
+          "planned_arrival_does_not_match_invoice": true,
+          "payment_executed": false
+        },
+        "cost": {
+          "known_conditional_total_myr": 1050.6,
+          "components": {
+            "new_cash_commitment_myr": 1005,
+            "holding_myr": 45.6,
+            "shortage_myr": 0,
+            "terminal_value_myr": 0
+          },
+          "excluded_unpriced_consequences": [
+            "energy continuity loss",
+            "service delay",
+            "invoice review labor"
+          ],
+          "basis": "SIMULATED_OUTCOME",
+          "scope": "known conditional cost components, not total business value or observed savings"
+        }
+      },
+      "score_vector": {
+        "continuity_gap_hours": 1.3,
+        "shortage_units": 0,
+        "known_conditional_cost_myr": 1050.6,
+        "unallocated_service_hours": 0,
+        "invoice_review_not_planned": 0
+      },
+      "scenarioDataMode": "SIMULATED_OUTCOME",
+      "automatic_execution": false,
+      "implementation_status": "planned_only",
+      "pareto_efficient": false,
+      "delta_from_baseline": {
+        "against_package_id": "joint_no_action__no_action__no_action__no_action__no_action",
+        "values": {
+          "continuity_gap_hours": -2.7,
+          "shortage_units": -20,
+          "known_conditional_cost_myr": 794.6,
+          "unallocated_service_hours": -4,
+          "invoice_review_not_planned": -1,
+          "cash_reserved_myr": 1005,
+          "arrival_days": -2,
+          "fuel_litres": 18
+        },
+        "explanations": [
+          {
+            "cause": "inventory:replenish",
+            "effect": "Recompute the one shared stock trajectory and reserve new cash, source stock, storage and transport."
+          },
+          {
+            "cause": "route:expedite",
+            "effect": "Move the existing shipment once; recompute lost demand and linked task arrival while reserving fuel and transport."
+          },
+          {
+            "cause": "invoice:practical_rule",
+            "effect": "Reserve invoice-review hours once across SC17/SC18; retain current mismatch and existing PO cash reserve."
+          },
+          {
+            "cause": "service:practical_rule",
+            "effect": "Reserve qualified service hours; keep physical dependency and unfinished outcome visible."
+          },
+          {
+            "cause": "energy:prioritize_safe_load",
+            "effect": "Recompute usable runtime, continuity gap, arrival-window exposure and shared role/energy allocations."
+          },
+          {
+            "cause": "whole_package",
+            "effect": "All proposed actions fit the same shared resource ledger."
+          }
+        ]
+      }
+    }
+  ],
+  "pareto_package_ids": [
+    "joint_practical_rule__no_action__practical_rule__practical_rule__prioritize_safe_load"
+  ],
+  "recommended_package_id": null,
+  "counts": {
+    "evaluated": 72,
+    "feasible": 48,
+    "infeasible": 24,
+    "pareto": 1,
+    "bound": 72
+  },
+  "frozen_basis": {
+    "demand": {
+      "status": "ok",
+      "demand_by_day": [
+        20,
+        20,
+        20,
+        20,
+        20,
+        20,
+        20
+      ],
+      "forecast_ref": null,
+      "scenarioDataMode": "SYNTHETIC_INTERNAL",
+      "basis": "declared_constant_fixture_demand"
+    },
+    "assumptions": {
+      "id": "assumptions-mrdiy-v041-20261010",
+      "version": "0.4.1",
+      "seed": 41010,
+      "scope": "SYNTHETIC_INTERNAL",
+      "owner_role": "regional_operations",
+      "horizon_days": 7,
+      "unmet_demand": "lost_sales",
+      "order_setup_myr": 25,
+      "holding_myr_per_unit_day": 0.04,
+      "shortage_myr_per_unit": 12,
+      "terminal_inventory_value_myr_per_unit": 0,
+      "transfer_myr_per_unit": 1,
+      "expediting_myr": 180,
+      "delay_days": 2,
+      "bank_calendar": {
+        "id": "DEMO_BANK_CAL01",
+        "timezone": "Asia/Kuala_Lumpur",
+        "closed_weekdays": [
+          0,
+          6
+        ],
+        "holidays": [],
+        "basis": "synthetic_calendar_rule_not_real_bank_calendar"
+      },
+      "parameter_register": [
+        {
+          "parameter": "shortage_myr_per_unit",
+          "value": 12,
+          "unit": "MYR/unit",
+          "plausible_range": [
+            2,
+            24
+          ],
+          "basis": "illustrative_conditional_cost_not_sales_price",
+          "owner_role": "regional_operations",
+          "scenario_version": "0.4.1",
+          "sensitivity_required": true
+        },
+        {
+          "parameter": "holding_myr_per_unit_day",
+          "value": 0.04,
+          "unit": "MYR/unit/day",
+          "plausible_range": [
+            0.01,
+            0.12
+          ],
+          "basis": "illustrative_cost",
+          "owner_role": "regional_operations",
+          "scenario_version": "0.4.1",
+          "sensitivity_required": true
+        },
+        {
+          "parameter": "order_setup_myr",
+          "value": 25,
+          "unit": "MYR/order",
+          "plausible_range": [
+            10,
+            50
+          ],
+          "basis": "illustrative_cost",
+          "owner_role": "regional_operations",
+          "scenario_version": "0.4.1",
+          "sensitivity_required": true
+        },
+        {
+          "parameter": "delay_days",
+          "value": 2,
+          "unit": "days",
+          "plausible_range": [
+            0,
+            5
+          ],
+          "basis": "hypothetical_disruption",
+          "owner_role": "regional_operations",
+          "scenario_version": "0.4.1",
+          "sensitivity_required": true
+        },
+        {
+          "parameter": "transfer_myr_per_unit",
+          "value": 1,
+          "unit": "MYR/unit",
+          "plausible_range": [
+            0.5,
+            2
+          ],
+          "basis": "illustrative_transfer_cost",
+          "owner_role": "regional_operations",
+          "scenario_version": "0.4.1",
+          "sensitivity_required": true
+        },
+        {
+          "parameter": "expediting_myr",
+          "value": 180,
+          "unit": "MYR/shipment",
+          "plausible_range": [
+            90,
+            360
+          ],
+          "basis": "illustrative_expedite_cost",
+          "owner_role": "regional_operations",
+          "scenario_version": "0.4.1",
+          "sensitivity_required": true
+        }
+      ]
+    },
+    "external_commitments": [],
+    "scenario_clock": "2026-10-10T08:00:00+08:00",
+    "comparison_rule": "Identical demand path, opening stock, PO reserves and exogenous conditions for every package."
+  },
+  "objective": "Pareto tradeoffs: continuity gap, shortage, known conditional costs, unallocated service hours, review planned. No hidden scalar weighting; human chooses.",
+  "limitations": [
+    "Bounded six-case episode, not all 40 cases or a globally optimal policy.",
+    "SC01 and SC02 share one stock trajectory and shipment; SC17 and SC18 share one invoice-review decision.",
+    "No trained RL, causal company savings, validated stockout probability, completed task, accepted receipt, payment or physical execution is claimed.",
+    "Receiving energy exposure is shown explicitly; without an operational conversion rule it does not invent downtime, demand loss or automatic receipt delay.",
+    "Transport and role reservations use the existing conservative review-day capacity rules, not a detailed vehicle-routing or shift schedule."
+  ],
+  "input_checksum": "fnv1a32:f9ef2494"
+}

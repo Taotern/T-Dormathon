@@ -1,0 +1,266 @@
+{
+  "schema_version": "dormathon.source-package-verification.v0.4.1-v73",
+  "reported_at": "2026-10-10T06:20:09.114303+00:00",
+  "source_commit": "46622a0b36326915569ab2b1e05e397ca9f23ec6",
+  "previous_source_commit": "b0611be16b3ea2c623f22e043ff18189428d6216",
+  "target_repository": "Taotern/T-Dormathon",
+  "repository_visibility": "private",
+  "branch": "main",
+  "expected_private_main_parent": "ee1f91b3d6bd943df6592ed7e6e0e53cbda7740e",
+  "source_files": 989,
+  "canonical_tracked_files": 990,
+  "excluded_tracked_inputs": {
+    "docs/sovern-advisor-v0.4.1/test-results.txt": "Dated upstream raw test execution log; not runtime source. Its original digest remains in the upstream provenance manifest."
+  },
+  "changed_source_files": [
+    {
+      "path": "data/forecast-rolling-report.v1.json",
+      "bytes": 125251,
+      "sha256": "f51dcceea5dc1bd13bae3e087904847d12024f65a3a72c9379c7b15192eae83b"
+    },
+    {
+      "path": "docs/forecast-decision-expansion/INTEGRATION_VERIFICATION.md",
+      "bytes": 3472,
+      "sha256": "7874e2485a0362257df73a1b67e8302f6dd1cee4511a2a8db31f69677e018b4c"
+    },
+    {
+      "path": "docs/forecast-decision-expansion/README.md",
+      "bytes": 2451,
+      "sha256": "1f0b601ee4f45851eadc6cc1435618be8f02a172bbbfbb800c0d5bbccbeaee87"
+    },
+    {
+      "path": "docs/forecast-decision-expansion/forecast-audit-report.v1.json",
+      "bytes": 4029,
+      "sha256": "a67f487a309c88719f64ea1df6c9831c896f078abeb9081f77c088336707bd6e"
+    },
+    {
+      "path": "docs/forecast-decision-expansion/joint-planner-contract.md",
+      "bytes": 8311,
+      "sha256": "948f7565d06602c1572337f41fed2ac6e0a727a35a83dc9b2736ee1c94a8e8c3"
+    },
+    {
+      "path": "docs/forecast-decision-expansion/joint-planner-example.json",
+      "bytes": 60500,
+      "sha256": "90bc403d67f530923da74845c3a6ced49bcffa233f108b23a59a018be5fbdd4b"
+    },
+    {
+      "path": "docs/forecast-decision-expansion/portable-reproduction/README.md",
+      "bytes": 6819,
+      "sha256": "6ddea7a25bde9549657d2a800f1201c7575d05e0e76dd6b2b73f7e97f1da9cd3"
+    },
+    {
+      "path": "docs/forecast-decision-expansion/portable-reproduction/implementation-provenance.json",
+      "bytes": 785,
+      "sha256": "b55246b94ed4c5b7adaffd18368035eb0fe701187108e53d89e090fb02278a9d"
+    },
+    {
+      "path": "docs/forecast-decision-expansion/portable-reproduction/input-manifest.json",
+      "bytes": 1351,
+      "sha256": "640ea9a02af1e9bf3bcc96eeb23660a8523fd000dd800e7aa451eb4382021895"
+    },
+    {
+      "path": "docs/forecast-decision-expansion/portable-reproduction/protocol.json",
+      "bytes": 3520,
+      "sha256": "4a96ca7b566952d6c68daf084f853e542bacb8d3b35f78a15b6a2542b548a0a2"
+    },
+    {
+      "path": "docs/forecast-decision-expansion/portable-reproduction/requirements.txt",
+      "bytes": 13,
+      "sha256": "7bd6b8946940b79948c548c8048e545684b91c8edc9444d8dfc0c8f76a97c0a7"
+    },
+    {
+      "path": "docs/forecast-decision-expansion/portable-reproduction/src/evaluate_rolling.py",
+      "bytes": 13199,
+      "sha256": "240333ca60d45cb626bed331bbf3071c2b9f9f5dad161f01050e6df74b59fafa"
+    },
+    {
+      "path": "docs/forecast-decision-expansion/portable-reproduction/src/verify_reproduction.py",
+      "bytes": 715,
+      "sha256": "fdd09d8dba245da9a053542ce4372feebdfff99eb158702513b2cdff50fd3d8b"
+    },
+    {
+      "path": "scripts/build.mjs",
+      "bytes": 7188,
+      "sha256": "acf39205f35e9c6bc29e458a925571110c38f406617248ae94bb8a60ac064297"
+    },
+    {
+      "path": "static/mrdiy-workspace.css",
+      "bytes": 14262,
+      "sha256": "d7e23b84ed346c27283a279e27bba09cb6ac2e187a5a009c098b428c0e9657f3"
+    },
+    {
+      "path": "static/mrdiy-workspace.js",
+      "bytes": 60521,
+      "sha256": "0089aac9ce960561fb8199dbb1568f6cb12a5ec476d7a19dc629024a228b94df"
+    },
+    {
+      "path": "tests/collector-workbench.test.mjs",
+      "bytes": 4094,
+      "sha256": "dab5a3c1dafb1e9848fb58e4124398ec3549c7750de66561f8b3b25eaddeded6"
+    },
+    {
+      "path": "tests/demand-risk-parity-fixtures.json",
+      "bytes": 30290,
+      "sha256": "f3244f0921845bd7f35ee39e886edd295c9c2a5edf4b8a4ad555dfcac3714b82"
+    },
+    {
+      "path": "tests/demand-risk.test.mjs",
+      "bytes": 8998,
+      "sha256": "9dd19b751111afa41130081a902d5fa26370d9551d6ca7951e3b5b114a959a2a"
+    },
+    {
+      "path": "tests/mrdiy-client-behavior.test.mjs",
+      "bytes": 26856,
+      "sha256": "7d79417420af339c9252fbc92e950e3acc64545a0701a61630b70398cae97729"
+    },
+    {
+      "path": "tests/mrdiy-expansion-integration.test.mjs",
+      "bytes": 5196,
+      "sha256": "e50abd67a07e3f0fc82964a144803e551eeb8dba7fbc277936e6ca6dc6c90987"
+    },
+    {
+      "path": "tests/mrdiy-joint-forecast-parity.test.mjs",
+      "bytes": 2096,
+      "sha256": "0e08801807113427a42dd0152135a44fa44f3d3d6644fadbd6c9bad6b2d73918"
+    },
+    {
+      "path": "tests/mrdiy-joint-planner.test.mjs",
+      "bytes": 14675,
+      "sha256": "b8a861eb00c0dfac949844b83c02ba6ba9984dfb82351e77460422d9481353b3"
+    },
+    {
+      "path": "worker/demand-risk-engine.js",
+      "bytes": 16014,
+      "sha256": "33cd4c2aa54d262753afa0e9ab84dbe76ba69bb0f3e601cf3e83d877d78711d9"
+    },
+    {
+      "path": "worker/index.js",
+      "bytes": 20753,
+      "sha256": "ca832a769408da0555309f61a2cd649683891fdb3d6283dab2b3cd87b5b8fb6c"
+    },
+    {
+      "path": "worker/mrdiy-demand-outlook.js",
+      "bytes": 7172,
+      "sha256": "1b6255071e4231ef828af1f4f0adefdbca4f3b58d2f2b4fc5c3e2bc528e74889"
+    },
+    {
+      "path": "worker/mrdiy-joint-planner.js",
+      "bytes": 25960,
+      "sha256": "59e50e5db5d6a1e36e6c5949faa81dd57f8c39b1c4adcda54e620cff44e1e21b"
+    },
+    {
+      "path": "worker/mrdiy-service.js",
+      "bytes": 10673,
+      "sha256": "fd1dc22b1d1f7d64919f097c10586445f31935285aa0c94359fef6fe012184f3"
+    }
+  ],
+  "features": [
+    "Dated demand outlook from 196 days of authored synthetic sales history with authoritative arrivals and session commitments.",
+    "Bounded whole-episode planner enumerates 72 plans across six linked cases, without double-counting shared stock and invoice outcomes.",
+    "Exploratory eight-fold rolling external-retailer study and portable explicit-input evaluator; original benchmark is retained separately.",
+    "Read-only outlook/planner routes; additive forecast freezing in new case decisions preserves previously saved artifact bytes."
+  ],
+  "forecast_scope": {
+    "default_horizon_units": 148,
+    "default_model": "weekly_total_median_12weeks",
+    "horizon_start": "2026-10-10",
+    "horizon_end": "2026-10-16",
+    "historical_days": 196,
+    "company_history": "authored_synthetic",
+    "historical_ranges": "uncalibrated_conditional_scenarios"
+  },
+  "external_study": {
+    "folds": 8,
+    "weekly_selector_WAPE_pct": 69.73,
+    "same_fold_mean28_weekly_WAPE_pct": 77.21,
+    "selector_daily_WAPE_pct": 108.53,
+    "status": "exploratory_retrospective_previously_exposed_training_periods",
+    "entity": "original UCI Online Retail II UK retailer, 2009-2011",
+    "original_test_WAPE_pct_retained": 103.41,
+    "daily_weekly_targets_distinct": true,
+    "company_promotion": false
+  },
+  "validation": {
+    "fresh_publisher": {
+      "affected_passed": 78,
+      "failed": 0,
+      "command": "node --test --test-concurrency=1 tests/demand-risk.test.mjs tests/mrdiy-joint-planner.test.mjs tests/mrdiy-joint-forecast-parity.test.mjs tests/mrdiy-expansion-integration.test.mjs tests/mrdiy-client-behavior.test.mjs tests/mrdiy-app-integration.test.mjs tests/collector-workbench.test.mjs tests/sovern-advisor-app.test.mjs",
+      "build_syntax_and_diff_passed": true,
+      "exact_assets": 12,
+      "worker_sha256": "9f2a6a5af98f26a65e533053604a45f8d2badeb8a901d970d333fb985f435905",
+      "logs_sha256": {
+        "affected.log": "f7e859b72b1141aa1cb3be48686325327b779dbd2c6fc517b1c39032c77fa81b",
+        "artifact.log": "aeb8bc6cc9102f9107d76c61cf3f9eae7093e1aef299ffbbdc3f8974c34b88b6",
+        "build.log": "6d345a616b78f8269d1e7ddeeebf3b659f52da5babb816f7e90e0d244382709e"
+      }
+    },
+    "canonical_freeze_sha256": "c4d415e485ef19045605095f307941f02e7af15d3361da14f3c974bcd7afe067",
+    "canonical_full_suite": {
+      "tests": 663,
+      "passed": 662,
+      "failed": 1,
+      "failure": "old static-asset allowlist corrected; focused 5/5 passed"
+    },
+    "canonical_final_affected_tests": {
+      "tests": 77,
+      "passed": 77,
+      "failed": 0
+    },
+    "canonical_post_audit_story_tests": {
+      "tests": 32,
+      "passed": 32,
+      "failed": 0
+    },
+    "publisher_full_suite_rerun": false,
+    "independent_source_audit": {
+      "report_sha256": "f2e47f7027be8a5a65b9c65aa71abe39835bacc686e8ba89336e4ae1e2c2577f",
+      "result": "No algorithmic blocker; independently recomputed all 72 inventory trajectories and 48 feasible shared-ledger balances; all six cases agree. Seven focused source/emitted-route checks passed; malformed inputs rejected and old artifacts retained.",
+      "timing": "Pre-v2 UI-copy clarification; no algorithm, fixture or study changed in the subsequent copy-only patch.",
+      "hosted_QA_in_that_source_report": "pending"
+    }
+  },
+  "deployment": {
+    "site_version": 73,
+    "source_commit": "46622a0b36326915569ab2b1e05e397ca9f23ec6",
+    "saved_site_version_id": "appgprj_6ac6c8d4361c81919d4a8dffabfab361~appgver_e4f9553b3d488191bd4122773234eb73",
+    "deployment_id": "appgdep_6ac9d81e7ea48191b818cb0cb605bc28",
+    "status": "SUCCESS",
+    "completed_at": "2026-10-10T06:16:04Z",
+    "environment_revision": 3,
+    "audience": "public_unchanged",
+    "local_gzip_bytes": 645209,
+    "local_gzip_sha256": "92cb6f5f3ce11c5b41efcf92ba4d3b36f9f347a7d3e9f787b4a72869166afc30",
+    "local_decompressed_tar_sha256": "c2bd5e5a08f57e5a041458b8b29c82540505540d7d0635a82707cd14430570a8",
+    "native_stored_archive": {
+      "format": "tar",
+      "bytes": 4014080,
+      "content_hash": "sha256:e0f074bc33de1a1ff672324777354d035256ae67e5574fe07b42e1502ba1cd31"
+    },
+    "archive_note": "Native server-stored tar metadata and local gzip/decompressed tar are distinct representations; no digest identity equivalence asserted.",
+    "evidence": "Native result supplied by the Site publishing owner; this backup performs no Site action."
+  },
+  "hosted_QA": {
+    "status": "pending",
+    "note": "Actual deployed API, browser layout and persistence acceptance remain separate gates; no hosted pass asserted by this source package."
+  },
+  "preservation": {
+    "stable_case_IDs": 40,
+    "schema_migration": false,
+    "original_benchmark_retained": true,
+    "old_saved_decision_bytes_preserved": true,
+    "Advisor_source_provider_payload_and_budget_unchanged": true,
+    "original_and_approved_specs_pinned": true,
+    "previous_presentation_byte_preserved": true,
+    "presentation_basis": "Earlier v71 screenshots/current-at-delivery v72; presentation expansion update is a separate pending deliverable."
+  },
+  "limits": [
+    "All internal operations, company history, arrivals, constraints and whole-plan outcomes are synthetic conditional demonstrations.",
+    "The original case arithmetic and 28-day/140-unit baseline remain separate from the new 196-day/148-unit/all-arrivals outlook and whole-plan calculation; old 496/61.6 costs are not new whole-plan results.",
+    "Eight retrospective folds reuse previously exposed historical training periods, not a pristine prospective holdout. Daily and weekly WAPE are different targets.",
+    "No real company forecasting accuracy, calibrated stockout probability, observed saving, causal-profit result, trained reinforcement learning or endorsement is established.",
+    "The optional LLM remains case-scoped; no whole-plan LLM endorsement or new paid provider validation was performed.",
+    "Existing RM5 estimated ledger/.50 reservation/rate2/min/100-attempt ceiling/unknown halt is unchanged; provider-enforced hard cap remains unverified.",
+    "Original full regression reported 662/663, with one stale allowlist failure corrected and verified 5/5; no post-fix full rerun was performed."
+  ],
+  "secrets_and_outputs": "No credentials, native environment values, raw UCI transaction/customer data, runtime databases, build outputs, execution logs or temporary QA screenshots added."
+}

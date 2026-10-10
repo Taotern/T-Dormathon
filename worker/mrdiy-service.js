@@ -1,3 +1,5 @@
+import {mrdiyDemandOutlook} from './mrdiy-demand-outlook.js';
+import {compareJointPackages} from './mrdiy-joint-planner.js';
 import {mrdiyForecastPolicy} from './mrdiy-forecast.js';
 import {MRDIY_SCENARIO} from './mrdiy-fixture.js';
 import {listCases,openCase,analyzeCase,compareCaseActions,createDecisionRecord,reopenDecisionRecord,reconstructState,checkExposure,validateMrdiySnapshot} from './mrdiy-operations.js';
@@ -5,7 +7,7 @@ import {ValidationError,textField,stableJSON,nowISO,uid,sha256} from './common.j
 
 async function mrdiyStored(value){const saved=JSON.parse(value);if(saved.schema_version==='dormathon.mrdiy-app-decision.v0.4.1'){if(saved.content_hash!==await sha256(stableJSON({record:saved.record,predictive_mechanics:saved.predictive_mechanics})))throw new ValidationError('Saved decision artifact hash mismatch.');return saved;}return{record:saved,predictive_mechanics:null};}
 function mrdiyCompute(fn){try{return fn();}catch(e){throw new ValidationError(e.message);}}
-function mrdiyDecisionForecast(id,options){return mrdiyForecastPolicy(id,options);}
+function mrdiyDecisionForecast(id,options){return {...mrdiyForecastPolicy(id,options),demand_outlook:mrdiyDemandOutlook(id,options)};}
 const mrdiyDecisionPrefix='dormathon_mrdiy_v041_decision:';
 function mrdiyRequestFields(body,allowed){if(!body||typeof body!=='object'||Array.isArray(body)||Object.keys(body).some(k=>!allowed.includes(k)))throw new ValidationError('Unsupported MR D.I.Y. demo request field.');}
 function mrdiyDecisionKey(id){return mrdiyDecisionPrefix+textField(id,'decision_id',100,true);}
@@ -17,6 +19,17 @@ export class MrdiyDemoService{
  analyze(body){mrdiyRequestFields(body,['case_id','assumptions','commitments']);return mrdiyCompute(()=>analyzeCase(textField(body.case_id,'case_id',100,true),mrdiyOptions(body)));}
  compare(body){mrdiyRequestFields(body,['case_id','assumptions','commitments']);return mrdiyCompute(()=>compareCaseActions(textField(body.case_id,'case_id',100,true),mrdiyOptions(body)));}
  forecast(body){mrdiyRequestFields(body,['case_id','assumptions','commitments']);return mrdiyCompute(()=>mrdiyForecastPolicy(textField(body.case_id,'case_id',100,true),mrdiyOptions(body)));}
+ demandOutlook(body){mrdiyRequestFields(body,['case_id','assumptions','commitments']);return mrdiyCompute(()=>mrdiyDemandOutlook(textField(body.case_id,'case_id',100,true),mrdiyOptions(body)));}
+ jointPlans(body){
+  mrdiyRequestFields(body,['case_id','assumptions','commitments']);
+  return mrdiyCompute(()=>{
+   const caseId=textField(body.case_id,'case_id',100,true),options=mrdiyOptions(body),opened=openCase(caseId,options);
+   if(!opened.case.deep_demo)return{status:'unsupported',case_id:caseId,snapshot_id:MRDIY_SCENARIO.snapshot_id,warnings:['The joint plan experiment covers only the six linked deep-demo cases.'],automatic_execution:false};
+   const outlook=mrdiyDemandOutlook('demo_supply_01',options);
+   if(outlook.status!=='ok'||outlook.forecast?.status!=='ok')return{status:'insufficient_data',selected_case_id:caseId,snapshot_id:MRDIY_SCENARIO.snapshot_id,demand_outlook:outlook,warnings:['Whole-episode comparison abstains because its demand outlook is unavailable.'],comparison_only:true,resources_reserved:false,automatic_execution:false};
+   return {...compareJointPackages({...options,demand:{status:'ok',demand_by_day:outlook.forecast.forecasts.map(x=>x.predicted_units),forecast_ref:outlook.forecast.request_id||outlook.forecast.model_version,scenarioDataMode:'SYNTHETIC_INTERNAL',basis:'Authored synthetic history-derived point demand; not observed future demand.'}}),selected_case_id:caseId,demand_outlook:outlook,comparison_only:true,resources_reserved:false,automatic_execution:false};
+  });
+ }
  async save(body){
   mrdiyRequestFields(body,['case_id','action_id','disposition','rationale','actor_role','decision_id','assumptions','commitments']);
   const id=textField(body.decision_id,'decision_id',100,true);if(!/^mrdiy_decision_[A-Za-z0-9_-]{8,80}$/.test(id))throw new ValidationError('Use a stable synthetic decision reference.');

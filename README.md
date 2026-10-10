@@ -8,6 +8,16 @@ The user and assistant own remaining integration; Felix is not a dependency. FR1
 
 Current source is static/mrdiy-workspace.js and worker/mrdiy-*.js, with the retained source browser and legacy capabilities still available. Portable benchmark evidence is in docs/predictive-v0.4.1/. Operational package evidence is in docs/mrdiy-v0.4.1/. Tests exercise an in-memory node:sqlite D1-compatible adapter; actual hosted persistence, deployment and browser visual acceptance are separate gates.
 
+### Private GitHub source checkpoint · native Site v73 · 10 October 2026
+
+This normal private-main update backs up source `46622a0b36326915569ab2b1e05e397ca9f23ec6`, successfully deployed as native Site v73. Supply views now show a dated outlook from 196 days of authored synthetic history, and the six linked deep cases share 72 bounded whole-episode alternatives with one resource ledger. The default outlook is 148 units for 10–16 October, with authoritative dated arrivals. The retained original selected-case comparison and 28-day/140-unit inventory experiment have separate assumptions; their MYR 496/61.60 costs are not results of the new whole-plan calculation. New saved case artifacts freeze the added outlook; older saved bytes remain intact. The planner compares scenarios and executes no operation. It is not trained reinforcement learning.
+
+The separate eight-fold UK-retailer study reports exploratory weekly selector WAPE 69.73% versus same-fold mean28 77.21%, with daily WAPE 108.53%. Previously exposed training periods remain an explicit limitation; weekly and daily targets differ. The original 103.41% benchmark remains available. Historical ranges are uncalibrated, and no company forecasting accuracy, stockout probability, observed saving or causal-profit validation is claimed. The optional LLM and estimated-spend ledger remain case-scoped and unchanged.
+
+The independent source audit recomputed all 72 inventory trajectories and 48 feasible shared balances. This separate publisher passes 78 affected tests, build/syntax and 12 exact assets. The canonical full run was 662/663; its sole stale asset-allowlist failure was corrected and its focused suite passed 5/5. Canonical final affected checks passed 77/77 and the last UI clarification passed 32/32. No full rerun was made. Actual hosted browser/API acceptance is pending at this checkpoint. [Detailed v73 package evidence](docs/releases/v0.4.1-20261010/source-package-verification.v73.json) keeps these gates distinct.
+
+The approved specifications and [final presentation delivery](docs/presentation/README.md) remain byte-pinned. That presentation depicts the earlier v71/v72 checkpoint; its expansion update will follow separately after hosted QA.
+
 ### Private GitHub source checkpoint · native Site v72 · 10 October 2026
 
 This normal private-main increment contains approved v0.4.1 source at `b0611be16b3ea2c623f22e043ff18189428d6216`. Native version 72 deployed successfully on the existing public Site. Cold Home now gives a neutral Advisor availability hint. Case selection synchronizes the visible case and URL, preserves separate unsaved drafts and global explanation intent, and supports room-level Back/Forward. Selection replaces the current history entry; Back does not traverse every case selection. Targeted mounted checks passed without provider calls or saved records.

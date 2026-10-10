@@ -122,3 +122,19 @@ body[data-mrdiy=true] #home-dashboard .mrdiy-disclosure{margin-top:18px;font-siz
 body[data-mrdiy=true] .home-retained-search{display:none}
 
 body[data-mrdiy="true"] .mrdiy-advisor-controls{display:flex;flex-wrap:wrap;gap:12px;margin:16px 0}body[data-mrdiy="true"] .mrdiy-advisor-controls select{flex:1;min-width:200px}body[data-mrdiy="true"] #mrdiy-advisor-result{overflow-wrap:anywhere}
+/* Progressive forecast and whole-episode review, within the existing rooms. */
+.mrdiy-outlook-summary{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:18px 0}
+.mrdiy-outlook-summary>div{border:1px solid #c5c5c5;padding:15px;min-width:0;background:#fafafa}
+.mrdiy-outlook-summary strong{display:block;font-size:22px;font-weight:500;line-height:1.3;font-variant-numeric:tabular-nums;overflow-wrap:anywhere}
+.mrdiy-outlook-summary span{display:block;font-size:12px;margin-top:6px;color:#555}
+.mrdiy-expansion-table{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums}
+.mrdiy-expansion-table th,.mrdiy-expansion-table td{font-size:12px;max-width:none;min-width:0;padding:10px 12px;text-align:left;vertical-align:top;border-bottom:1px solid #ddd;white-space:normal}
+.mrdiy-expansion-table tr[data-shortage=true]{background:#f0f0f0;border-left:3px solid #333}
+.mrdiy-plan-summary{border-left:3px solid #333;padding:12px 16px;background:#f4f4f4;margin:16px 0}
+.mrdiy-plan-summary>p{margin:5px 0;font-size:13px}
+.mrdiy-plan-selector{max-width:650px;margin:18px 0}
+.mrdiy-plan-steps{list-style:decimal;padding-left:22px;font-size:13px;line-height:1.6}
+.mrdiy-plan-steps li{padding:5px 0}
+@media(max-width:850px){.mrdiy-outlook-summary{grid-template-columns:1fr;gap:8px}.mrdiy-outlook-summary>div{display:flex;align-items:baseline;gap:14px;padding:12px}.mrdiy-outlook-summary strong{font-size:20px}.mrdiy-outlook-summary span{margin:0}.mrdiy-expansion-table{min-width:580px}}
+.mrdiy-original-comparison>summary{font-size:16px;font-weight:550;line-height:1.5;cursor:pointer}
+.mrdiy-original-comparison:not([open]){padding-top:16px;padding-bottom:16px}

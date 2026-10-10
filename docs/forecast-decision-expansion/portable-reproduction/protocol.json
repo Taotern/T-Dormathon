@@ -1,0 +1,77 @@
+{
+  "schema_version": "dormathon.forecast-expansion-protocol.v1",
+  "study_status": "PREDECLARED_NEW_ANALYSIS_OF_PREVIOUSLY_EXPOSED_TRAINING_PERIODS",
+  "frozen_at": "2026-10-10T05:56:00Z",
+  "interpretation": "Exploratory retrospective rolling-origin evidence. Historical targets belonged to the prior study training period; not an untouched external or prospective holdout.",
+  "source_target": "Positive recorded transaction sales in original UCI Online Retail II; demand proxy, not latent demand",
+  "old_test_policy": "2011-11-11 through 2011-12-08 stays previously exposed diagnostic; never reevaluated or used to select these models.",
+  "fold_test_starts": [
+    "2011-02-01",
+    "2011-03-01",
+    "2011-04-01",
+    "2011-05-01",
+    "2011-06-01",
+    "2011-07-01",
+    "2011-08-01",
+    "2011-09-01"
+  ],
+  "test_days": 28,
+  "validation_days": 28,
+  "origin_stride_days": 7,
+  "horizon_days": 7,
+  "minimum_training_calendar_days": 180,
+  "minimum_nonzero_training_days": 26,
+  "eligibility_policy": "Freeze fold SKU catalog from days strictly before validation. Retain discontinued/zero-test items; no future-based exclusions.",
+  "point_candidates": [
+    "zero",
+    "seasonal_naive_7",
+    "mean_7",
+    "mean_28",
+    "mean_56",
+    "median_28",
+    "trimmed_mean_56",
+    "ewma_005",
+    "ewma_015",
+    "sba_01",
+    "tsb_01",
+    "seasonal_mean_8weeks",
+    "weekly_total_median_8weeks",
+    "weekly_total_median_12weeks"
+  ],
+  "point_selection": "Lowest validation seven-day cumulative WAPE, exact ties by listed candidate order. If validation actual total is zero, lowest absolute error. Select each fold solely on its preceding validation window. No test-based replacement or grid tuning.",
+  "primary_metric": "WAPE of seven-day total per item and non-overlapping weekly origin",
+  "secondary_metrics": [
+    "daily MAE",
+    "daily WAPE",
+    "weekly MAE",
+    "mean bias",
+    "weekly zero prediction fraction",
+    "volume and sparsity slices"
+  ],
+  "quantile_candidates_weeks": [
+    8,
+    12,
+    24
+  ],
+  "quantiles": [
+    0.1,
+    0.5,
+    0.9
+  ],
+  "quantile_selection": "Lowest mean validation pinball loss over q0.1/0.5/0.9 on seven-day totals; ties choose smaller window. Empirical inverted-CDF order statistic, no outcome-based recalibration.",
+  "probabilistic_metrics": [
+    "pinball loss",
+    "fraction actual <= q0.1/q0.5/q0.9",
+    "central80 inclusive coverage",
+    "central80 interval width",
+    "daily inclusive interval coverage"
+  ],
+  "uncertainty": "400 paired bootstrap replicates; globally shared SKU resampling and fold-block resampling preserve seven-day forecast trajectories. Descriptive, only eight fold blocks and one retailer.",
+  "seed": 410102,
+  "synthetic_inventory_policy": "Any stock, arrivals, cost, lead time and actual stockout labels remain separately declared hypothetical inputs. No actual shortage accuracy or savings claim.",
+  "resource_policy": "One process, one BLAS thread, NumPy-only, no GPU or paid API.",
+  "promotion_policy": "No operational model promotion from this exposed-data study. Freeze a future candidate only after descriptive results; require unseen operational transaction/stock/arrival evaluation before deployment claims.",
+  "source_artifact_ref": "uci-online-retail-ii/derived/daily-sales.npz",
+  "original_protocol_sha256": "afa728ec88539ace2f91d05a7d999b098d38bafb8832916d96f74e0c1acaa4a8",
+  "portability_note": "Source path replaced by explicit --data argument; candidate grid, folds and selection unchanged."
+}
