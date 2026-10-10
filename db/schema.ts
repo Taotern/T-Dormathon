@@ -1,4 +1,5 @@
-import { sqliteTable, text, integer, real, index, uniqueIndex } from 'drizzle-orm/sqlite-core';
+import { sql } from 'drizzle-orm';
+import { sqliteTable, text, integer, real, index, uniqueIndex, check } from 'drizzle-orm/sqlite-core';
 export const sources = sqliteTable('sources', {
   id:text('id').primaryKey(),title:text('title').notNull(),url:text('url').default(''),publisher:text('publisher').default(''),
   retrievedAt:text('retrieved_at'),kind:text('kind').notNull(),license:text('license').default(''),domainTags:text('domain_tags').notNull().default('[]'),
@@ -56,3 +57,12 @@ export const outcomeMetrics=sqliteTable('outcome_metrics',{id:text('id').primary
 export const journeyEntries=sqliteTable('journey_entries',{
  id:text('id').primaryKey(),kind:text('kind').notNull(),projectId:text('project_id').references(()=>workspaceProjects.id),caseId:text('case_id'),parentId:text('parent_id'),payloadHash:text('payload_hash').notNull(),payload:text('payload').notNull(),createdAt:text('created_at').notNull()
 },t=>[index('journey_kind_created_idx').on(t.kind,t.createdAt),index('journey_project_created_idx').on(t.projectId,t.createdAt)]);
+
+
+// Isolated, lifetime-bounded optional Advisor. Admission uses one atomic INSERT against the request ledger; no compound triggers.
+export const sovernAdvisorBudget=sqliteTable('sovern_advisor_budget',{
+ id:text('id').primaryKey(),limitNanomyr:integer('limit_nanomyr').notNull(),bookedNanomyr:integer('booked_nanomyr').notNull(),requestCount:integer('request_count').notNull(),blocked:integer('blocked').notNull().default(0)
+},t=>[check('sovern_advisor_budget_id',sql`${t.id} = 'dormathon-sovern-demo-v1'`),check('sovern_advisor_limit',sql`${t.limitNanomyr} = 5000000000`),check('sovern_advisor_booked',sql`${t.bookedNanomyr} >= 3006050 AND ${t.bookedNanomyr} <= ${t.limitNanomyr}`),check('sovern_advisor_count',sql`${t.requestCount} BETWEEN 0 AND 9`),check('sovern_advisor_blocked',sql`${t.blocked} IN (0,1)`)]);
+export const sovernAdvisorRequests=sqliteTable('sovern_advisor_requests',{
+ requestKey:text('request_key').primaryKey(),fingerprint:text('fingerprint').notNull().unique(),caseId:text('case_id').notNull(),createdMs:integer('created_ms').notNull(),attemptToken:text('attempt_token').notNull().unique(),reservationNanomyr:integer('reservation_nanomyr').notNull(),bookedNanomyr:integer('booked_nanomyr').notNull(),observedCostNanomyr:integer('observed_cost_nanomyr'),state:text('state').notNull(),resultJson:text('result_json')
+},t=>[index('sovern_advisor_created_idx').on(t.createdMs),check('sovern_advisor_reservation',sql`${t.reservationNanomyr} = 500000000`),check('sovern_advisor_request_booked',sql`${t.bookedNanomyr} BETWEEN 0 AND ${t.reservationNanomyr}`),check('sovern_advisor_state',sql`${t.state} IN ('reserved','complete','failed','unknown','billing_overrun')`),check('sovern_advisor_usage_hold',sql`(${t.state} IN ('reserved','unknown','billing_overrun') AND ${t.bookedNanomyr} = ${t.reservationNanomyr}) OR (${t.state} IN ('complete','failed') AND ${t.observedCostNanomyr} IS NOT NULL AND ${t.observedCostNanomyr} = ${t.bookedNanomyr})`),check('sovern_advisor_result',sql`(${t.state} = 'reserved' AND ${t.resultJson} IS NULL) OR (${t.state} <> 'reserved' AND ${t.resultJson} IS NOT NULL)`)]);

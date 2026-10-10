@@ -1,0 +1,123 @@
+{
+  "schema_version": "dormathon.source-package-verification.v0.4.1-v71",
+  "reported_at": "2026-10-10T05:26:34.824126+00:00",
+  "source_commit": "7ab8622d73c9fc916573e9e74da47b110abc31fd",
+  "previous_published_source_commit": "366a2d179519be476770b94d99870b501c28305b",
+  "target_repository": "Taotern/T-Dormathon",
+  "repository_visibility": "private",
+  "branch": "main",
+  "expected_private_main_parent": "6c20caa247742b7a8dcf9061b16cce8b04e6dbd2",
+  "canonical_tracked_files": 969,
+  "selected_source_files": 968,
+  "excluded_tracked_inputs": {
+    "docs/sovern-advisor-v0.4.1/test-results.txt": "Dated upstream raw test execution log; not runtime source. Its original digest remains in the upstream provenance manifest."
+  },
+  "package_scope": "Approved same-project source/progress backup; original two Chinese v0.3 documents retained despite their omission from the 967-entry integration inventory. No server environment or secret store was read.",
+  "functionality": "Optional explicit-click GPT-OSS 120B Advisor gateway explains server-recomputed synthetic case facts. Strict output/citation/number/uncertainty guards retain honest rule fallback. No generated explanation selects or executes an action.",
+  "validation": {
+    "fresh_publisher": {
+      "focused_tests_passed": 103,
+      "failed": 0,
+      "command": "node --test --test-concurrency=1 tests/sovern-advisor-engine.test.mjs tests/sovern-advisor-app.test.mjs tests/mrdiy-client-behavior.test.mjs",
+      "artifact_static_assets_verified": 11,
+      "worker_sha256": "5636c31aea3b024d0f2c4b7b7d3353d4c963d688e180c92d0cac4bb1b1304d52",
+      "syntax_checks_passed": true,
+      "logs_sha256": {
+        "artifact-check.log": "03f17c313e660c7647ca7beb3a848f2522cb3b2f9ef8b1af4bbe2ddfa048e2cc",
+        "build.log": "984f0f530baae88a957f11f35712c7ec57102da7c360042f61ddb81f6a6c23d4",
+        "focused-tests.log": "ef637ab2dcb3528570ce91be8d36f5e49265fd6fb69413941506426ae115c885"
+      }
+    },
+    "canonical_current": {
+      "focused_tests_passed": 103,
+      "build_and_exact_assets_passed": true,
+      "verification_receipt_sha256": "a7dc13f5e92955cb5a71a839167a5bda17d22439915557b1bb99115375107c55"
+    },
+    "full_suite_scope": {
+      "current_count_only_patch_full_run": false,
+      "previous_v69_full_passed": 612,
+      "previous_v69_full_log_sha256": "4c9067255f03f2cbab103d56a90b53942ea3ddb2b522883ddbb9c8e83207bf38",
+      "fresh_publisher_v68_full_passed": 609,
+      "reason": "Later deltas only change bounded output compatibility and one lifetime count constant; current affected tests and exact artifact checks rerun. No current full-suite pass is fabricated."
+    },
+    "concurrency_and_accounting": "Independent canonical trigger-free SQL review used two SQLite WAL connections; reservation/dedup/rate/cap/unknown/pending/reconciliation/restart behavior passed. Current focused tests exercise the same schema and new 100-attempt bound."
+  },
+  "deployment": {
+    "site_version": 71,
+    "source_commit": "7ab8622d73c9fc916573e9e74da47b110abc31fd",
+    "saved_site_version_id": "appgprj_6ac6c8d4361c81919d4a8dffabfab361~appgver_7b6cfe67426c8191accbe7d29dfd273e",
+    "deployment_id": "appgdep_6ac9ca57a33c8191ae5363e84aa7391a",
+    "status": "SUCCESS",
+    "completed_at": "2026-10-10T05:17:16.670Z",
+    "environment_revision": 3,
+    "audience": "public_unchanged",
+    "evidence": "Native Site publishing result reported by the publishing owner; no Site tool or provider request was made by this source-packaging check."
+  },
+  "hosted_provider_qa": {
+    "artifact_sha256": "04d842723f786aadf131aef3243eafbd8cd8f6db229c83d66aba2498cbebe19b",
+    "tested_version": 70,
+    "tested_source_commit": "7db39316822c86dc0d611107d7aa219531008820",
+    "model": "GPT-OSS 120B",
+    "tested_scenarios": [
+      {
+        "case": "SC01",
+        "intent": "explain_basis",
+        "result": "live_llm",
+        "observed_estimated_myr": 0.0020661
+      },
+      {
+        "case": "SC01",
+        "intent": "explain_basis",
+        "result": "replay"
+      },
+      {
+        "case": "SC16",
+        "intent": "missing_inputs",
+        "result": "live_llm",
+        "observed_estimated_myr": 0.0013631
+      }
+    ],
+    "site_request_rows": 5,
+    "earlier_format_rejected_rows_preserved": 3,
+    "prior_playground_estimated_myr": 0.00300605,
+    "total_usage_priced_estimate_myr": 0.01524005,
+    "current_v71_count_only_delta": "Provider explanation, prompt and citation semantics unchanged from v70. Publishing owner reports clean v71 Home/Organization/SC01 Strategy, planned save/reopen and cached live SC01 result passed.",
+    "scope": "Actual SC01 conditional explanation and SC16 missing-input explanation passed; identical SC01 replay made no additional request. This is two scenarios, not all 40 live provider outputs or independent model truth verification."
+  },
+  "budget_controls": {
+    "estimated_app_cap_myr": 5,
+    "reservation_myr": 0.5,
+    "global_rate_per_minute": 2,
+    "lifetime_attempt_ceiling": 100,
+    "unknown_or_pending_accounting_halts_new_calls": true,
+    "actual_provider_hard_cap_verified": false,
+    "existing_ledger_not_reset": true,
+    "applied_migration_0010_unchanged_since_v67": true
+  },
+  "migration_history": "v66 failed with incomplete-input SQLITE_ERROR before either Advisor table existed. The same unapplied 0010 was repaired as ordinary table/index DDL, applied successfully on v67; applied 0000-0009 untouched. Subsequent output/count patches retain 0010 and its metadata.",
+  "known_remaining_ui_issue": "One Home helper still says LLM unavailable despite gateway activation. Advisor activation/status and live output work; this minor copy fix is separate from the requested v71 checkpoint.",
+  "limits": [
+    "All 40 MR D.I.Y. operating cases and counterparties remain synthetic; public disclosures provide context only.",
+    "External benchmark keeps original UK-retailer identity and 103.41% moving-average WAPE; no company accuracy or observed savings is established.",
+    "Usage-priced spending is an estimate, not a provider-enforced RM5 hard cap.",
+    "Current live QA does not validate all 40 model explanations, general reliability, real business outcomes or model truth."
+  ],
+  "preserved_doc_pins": {
+    "docs/specs/PRODUCT_SPEC_v0.3.1_ZH_EN.md": "4d065b8544ca6e282eac35d7b2d7dcb0075a1e58d892e7ba11fac913828d79fd",
+    "docs/TEAM_HANDOFF_2026-10-09_ZH_EN.md": "4d745b7fd8219ec32de13978bf16ad7f21b8f5380986922266795f595f661dd0",
+    "docs/specs/T-Dormathon_产品规格评审稿_v0.3.md": "754e93412992086881f5d6c50f6b22668bc365eda9e463a5eb32b5e906e8f38e",
+    "docs/specs/T-Dormathon_产品规格评审稿_v0.3.docx": "1cc7d1f1db908b1c0d9a1634d00f4e178c0a1c98f1d59e00085798d95411a64f",
+    "contracts/prototype/port-examples.v0.2.json": "f3770bb39295614e288bfbda4031f82c5c218480e7f6b18baffd542858da3b59"
+  },
+  "secrets": "Server-only native environment values and billing identifiers were never read or copied into this package.",
+  "excluded": [
+    "credentials",
+    "server environment values",
+    "raw UCI transaction data",
+    "node_modules",
+    "generated Worker/build outputs",
+    "runtime databases and state",
+    "logs",
+    "temporary QA/screenshots/raw provider responses"
+  ]
+}

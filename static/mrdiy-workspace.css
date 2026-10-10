@@ -120,3 +120,5 @@ body[data-mrdiy=true] #home-dashboard .mrdiy-search{max-width:none;margin:28px 0
 body[data-mrdiy=true] #home-dashboard .mrdiy-disclosure{margin-top:18px;font-size:11px}
 @media(max-width:850px){body[data-mrdiy=true] #home-dashboard{padding:24px 0 16px}.mrdiy-home-status{padding:22px 20px}.mrdiy-home-status:after{width:25px;height:25px;right:14px;top:14px}body[data-mrdiy=true] #home-dashboard .mrdiy-search{margin:22px 0 30px}}
 body[data-mrdiy=true] .home-retained-search{display:none}
+
+body[data-mrdiy="true"] .mrdiy-advisor-controls{display:flex;flex-wrap:wrap;gap:12px;margin:16px 0}body[data-mrdiy="true"] .mrdiy-advisor-controls select{flex:1;min-width:200px}body[data-mrdiy="true"] #mrdiy-advisor-result{overflow-wrap:anywhere}

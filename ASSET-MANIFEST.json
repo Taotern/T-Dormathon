@@ -1,16 +1,20 @@
 {
   "schema_version": "dormathon.clean-source-assets.v1",
-  "source_commit": "366a2d179519be476770b94d99870b501c28305b",
-  "source_tree": "a59f63d6d3803f3eedde384cbb148e5f190235a8",
-  "site_version": 65,
+  "source_commit": "7ab8622d73c9fc916573e9e74da47b110abc31fd",
+  "site_version": 71,
   "site_audience": "public_unchanged",
   "repository_visibility": "private",
-  "source_files": 959,
-  "delivered_payload_files": 961,
-  "payload_inventory_sha256": "18910da158b25f33eba85eed4f88464a1ee2cb03e82a24ef78e62b56bd3a6b08",
+  "canonical_tracked_files": 969,
+  "source_files": 968,
+  "delivered_payload_files": 971,
+  "excluded_tracked_inputs": {
+    "docs/sovern-advisor-v0.4.1/test-results.txt": "Dated upstream raw test execution log; not runtime source. Its original digest remains in the upstream provenance manifest."
+  },
+  "payload_inventory_sha256": "3a89859a4549449b4645bb9bb62995a86cd549fc2a586bd96ec7cd21dae40c99",
   "packaging_overlays": [
     "README.md"
   ],
+  "source_tree": "0f6c7224e574735e3d0d41d2dca4295a34adfee3",
   "assets": [
     {
       "path": ".gitignore",
@@ -32,8 +36,8 @@
     },
     {
       "path": "README.md",
-      "sha256": "9113946b6a3010942c64f0d7c94f5b0c5b5996d3819f37fa01661527dd7760a1",
-      "size_bytes": 20483,
+      "sha256": "7203a0d1a2de6f618fbe3ab0e1d8bd63a261ebbadfaac9a098eabe297736931a",
+      "size_bytes": 20730,
       "git_mode": "100644",
       "canonical_sha256": "763eb6af72db16f6af82e68248548325770a70d566f7211b06786cf3ea072142",
       "packaging_overlay": "README checkpoint note only; application code unchanged"
@@ -1762,8 +1766,8 @@
     },
     {
       "path": "db/schema.ts",
-      "sha256": "92101ea2f88a303055e59059a3f37192fcac57c7a1392cae5271a3e162825695",
-      "size_bytes": 12482,
+      "sha256": "469cee81ecaa72102c95cc282bb411d49bdd4acf931a49af6c53f7d102aa9bfc",
+      "size_bytes": 14642,
       "git_mode": "100644"
     },
     {
@@ -2171,6 +2175,31 @@
       "provenance": "GitHub packaging verification record"
     },
     {
+      "path": "docs/releases/v0.4.1-20261010/source-package-verification.v71.json",
+      "sha256": "b5b6d03db503c45866f55673bb44c41194e0b94e1cf410c95ed9444a1f8aa21d",
+      "size_bytes": 7260,
+      "git_mode": "100644",
+      "provenance": "GitHub packaging verification record"
+    },
+    {
+      "path": "docs/sovern-advisor-v0.4.1/README.md",
+      "sha256": "f1648adcd7e352816d2260769ffe360b9c30c4848b9ee1af6b1d80911b9585ea",
+      "size_bytes": 18013,
+      "git_mode": "100644"
+    },
+    {
+      "path": "docs/sovern-advisor-v0.4.1/SHA256SUMS.txt",
+      "sha256": "2e0376e5e6b1ef4c1c35874d3575a4126bb08de3b205e473a96d744723d0f8d2",
+      "size_bytes": 531,
+      "git_mode": "100644"
+    },
+    {
+      "path": "docs/sovern-advisor-v0.4.1/upstream-budget.sql",
+      "sha256": "f4eda4d55f86ace057c726417f4a72410e3c13a982aa4170d6590b954a4d6f6e",
+      "size_bytes": 3500,
+      "git_mode": "100644"
+    },
+    {
       "path": "docs/specs/Dormathon_Product_Specifications_v0.4.1_EN.md",
       "sha256": "3e1926f4ec5417dda4113b044acff2f8ec54e81ece67f00f5e5d56743583c579",
       "size_bytes": 52212,
@@ -2273,6 +2302,12 @@
       "git_mode": "100644"
     },
     {
+      "path": "drizzle/0010_sovern_advisor_budget.sql",
+      "sha256": "2177061045f3dc16940fe9effd2e477b5f10347a91d9991967ab387df3f4a4c7",
+      "size_bytes": 2677,
+      "git_mode": "100644"
+    },
+    {
       "path": "drizzle/meta/0000_snapshot.json",
       "sha256": "37a2c515f88faf37a4ee89871c5b19f089ca146db975dd12a4fd9b96a1235088",
       "size_bytes": 14589,
@@ -2333,9 +2368,15 @@
       "git_mode": "100644"
     },
     {
+      "path": "drizzle/meta/0010_snapshot.json",
+      "sha256": "814f819d55d63beabab549af85ac2f1ad56a6e186ab4f76e75e9dd7a413c9547",
+      "size_bytes": 67221,
+      "git_mode": "100644"
+    },
+    {
       "path": "drizzle/meta/_journal.json",
-      "sha256": "52031addfbca0b0de914c2e634bb42610b3f53ee378d18579434f5b539b37b99",
-      "size_bytes": 1507,
+      "sha256": "c12d2e9b17b502cd9cf8952b3bb77aed5b9110efe1550edb13d8401aa1595538",
+      "size_bytes": 1657,
       "git_mode": "100644"
     },
     {
@@ -3180,8 +3221,8 @@
     },
     {
       "path": "scripts/build.mjs",
-      "sha256": "fc0499a2ba1bb3306bc42dc2906ce1e6b3a2903e60f4b5a9830042328b495300",
-      "size_bytes": 6983,
+      "sha256": "96b723e41ac9d9be83c4104b8d77fc7675478d1c225ac98108bc9ccd14b80194",
+      "size_bytes": 7003,
       "git_mode": "100644"
     },
     {
@@ -4596,8 +4637,8 @@
     },
     {
       "path": "static/collector-index.html",
-      "sha256": "4546ae71b02448d978f1b0782cad8e4bd4221749ebc88f1e5b33802d476f28b9",
-      "size_bytes": 30159,
+      "sha256": "475811bac617f2b0eed3e113dc8a8d323320427d5e19daf1c771d6e0412b86b6",
+      "size_bytes": 30163,
       "git_mode": "100644"
     },
     {
@@ -4620,14 +4661,14 @@
     },
     {
       "path": "static/mrdiy-workspace.css",
-      "sha256": "3631cf6161311f5c577cbb7a3bc696e0f9d7d9fe67310b1c8e128e623b3c3004",
-      "size_bytes": 12328,
+      "sha256": "adf6cc8d6580876eedefcc9a616dcb5f7d513a5448f3e54eb60904d4b72a7487",
+      "size_bytes": 12576,
       "git_mode": "100644"
     },
     {
       "path": "static/mrdiy-workspace.js",
-      "sha256": "a119848f1d8308564bb13315918a296aeaa5f35b2047482a5ea87631290b14aa",
-      "size_bytes": 41795,
+      "sha256": "c80a375cadcad6b8fc17f720c464d2d4b42c52bc16a15b2bf1a05903c75ad8bf",
+      "size_bytes": 45656,
       "git_mode": "100644"
     },
     {
@@ -5274,8 +5315,8 @@
     },
     {
       "path": "tests/mrdiy-client-behavior.test.mjs",
-      "sha256": "feddd227eda864406076b7c5ea49c65f38d45232e50929e0ad0be497d9979f64",
-      "size_bytes": 11925,
+      "sha256": "354550823cb4be0a3c03eeff194b0691b5dd38edd5501c6a48825a6a5c4ff775",
+      "size_bytes": 17499,
       "git_mode": "100644"
     },
     {
@@ -5459,6 +5500,24 @@
       "git_mode": "100644"
     },
     {
+      "path": "tests/sovern-advisor-app.test.mjs",
+      "sha256": "f633f3b28c7fcc756972558bea30626c2eae0b1f0724442e7e3a96cfe39020f1",
+      "size_bytes": 7868,
+      "git_mode": "100644"
+    },
+    {
+      "path": "tests/sovern-advisor-engine.test.mjs",
+      "sha256": "1b458b5f1bf7bbf45b1ff0aba25c4d8e348faee8b33652a831e9bb2dbe5ad03c",
+      "size_bytes": 28852,
+      "git_mode": "100644"
+    },
+    {
+      "path": "tests/sovern-d1-adapter.mjs",
+      "sha256": "13732faa75e72f41942f9fe22381238bb09771d56ae25241221a48f462042143",
+      "size_bytes": 1543,
+      "git_mode": "100644"
+    },
+    {
       "path": "tests/statistical-context.test.mjs",
       "sha256": "bbdca9dfc2753fc4956b9c69fdd2dc5ac91941558e48b2e86b10bf43502ba76c",
       "size_bytes": 6977,
@@ -5616,8 +5675,8 @@
     },
     {
       "path": "worker/index.js",
-      "sha256": "59417b80ecb5b250edc681dbe274d130f1683a506431afa7e4242f838acb653f",
-      "size_bytes": 20197,
+      "sha256": "f08dd376207b672dffcd9379410113b118633ded5c8039944a2bb6dd94262255",
+      "size_bytes": 20525,
       "git_mode": "100644"
     },
     {
@@ -5756,6 +5815,12 @@
       "path": "worker/source-refresh.js",
       "sha256": "9dce566d84b15aeaa8a1a7b78966e1230878cb60f5383d7ff987577b085fd720",
       "size_bytes": 8476,
+      "git_mode": "100644"
+    },
+    {
+      "path": "worker/sovern-advisor.js",
+      "sha256": "e9f442c228e5bddd4e5ed534d8a2eb344ef4cd65a0f3f32aa42cbcee44c45cb8",
+      "size_bytes": 24154,
       "git_mode": "100644"
     },
     {
