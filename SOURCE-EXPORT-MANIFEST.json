@@ -10,7 +10,7 @@
   "excluded_tracked_inputs": {
     "docs/sovern-advisor-v0.4.1/test-results.txt": "Dated upstream raw test execution log; not runtime source. Its original digest remains in the upstream provenance manifest."
   },
-  "payload_inventory_sha256": "4c3a86d587a2b671331fc0d45fcc5f18bbdf5aabfc9161c375b95e6cf7a72902",
+  "payload_inventory_sha256": "1f01fa3c706378cfa610909cf0d202c3201425b49c65c7f4255a21152184c222",
   "packaging_overlays": [
     "README.md"
   ],
@@ -30,8 +30,8 @@
     "original_delivery_receipt_sha256": "a86caf80ac8f5b0d042c186a843bdf4993d886d7a055582f2ec4a25ea45d3c47"
   },
   "runtime_commit": "46622a0b36326915569ab2b1e05e397ca9f23ec6",
-  "expected_private_main_parent": "ee1f91b3d6bd943df6592ed7e6e0e53cbda7740e",
-  "fresh_consumer_receipt_sha256": "f8d5c19520d99007b089f485f7ad7be92603555fb5fa0828453837cb08df1152",
+  "expected_private_main_parent": "31dc8ab937f76f529b7aa996234e2fb07dfb1d24",
+  "fresh_consumer_receipt_sha256": "d8ff7d4c4d62c439c629fdfc77a53dd1a48cdde1b2b6eba91d55d16168131e35",
   "preserved_doc_pins": {
     "docs/specs/PRODUCT_SPEC_v0.3.1_ZH_EN.md": "4d065b8544ca6e282eac35d7b2d7dcb0075a1e58d892e7ba11fac913828d79fd",
     "docs/TEAM_HANDOFF_2026-10-09_ZH_EN.md": "4d745b7fd8219ec32de13978bf16ad7f21b8f5380986922266795f595f661dd0",
@@ -72,8 +72,8 @@
     },
     {
       "path": "README.md",
-      "sha256": "0ab1742538291eeefcab05f92c8008c9687a724cd901e3525f4aeaa66ab1ed63",
-      "size_bytes": 23633,
+      "sha256": "63749c6c5e13a41908d4daef546d94068ff9dff71c46babdeb0eb70022d16e8c",
+      "size_bytes": 23994,
       "git_mode": "100644",
       "canonical_sha256": "763eb6af72db16f6af82e68248548325770a70d566f7211b06786cf3ea072142",
       "packaging_overlay": "README source/presentation checkpoint notes only; application code unchanged"
@@ -2353,8 +2353,8 @@
     },
     {
       "path": "docs/releases/v0.4.1-20261010/source-package-verification.v73.json",
-      "sha256": "f8d5c19520d99007b089f485f7ad7be92603555fb5fa0828453837cb08df1152",
-      "size_bytes": 12254,
+      "sha256": "d8ff7d4c4d62c439c629fdfc77a53dd1a48cdde1b2b6eba91d55d16168131e35",
+      "size_bytes": 15764,
       "git_mode": "100644",
       "provenance": "GitHub packaging verification record"
     },

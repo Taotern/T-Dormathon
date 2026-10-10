@@ -240,8 +240,80 @@
     "evidence": "Native result supplied by the Site publishing owner; this backup performs no Site action."
   },
   "hosted_QA": {
-    "status": "pending",
-    "note": "Actual deployed API, browser layout and persistence acceptance remain separate gates; no hosted pass asserted by this source package."
+    "status": "PASS_SCOPED",
+    "completed_at": "2026-10-10 06:21 UTC; additional captures 06:22 UTC (minute precision)",
+    "report_sha256": "9795e791a90de200cb950252153b04803ef985218f17ca1c14f343a77e6b8656",
+    "screenshot_manifest_sha256": "12c24950e952fea103b426ec2bc364302ac46fd79b67e8d754389bb970fc89e8",
+    "screenshots": [
+      {
+        "file": "v73-joint-frontier-desktop.png",
+        "bytes": 110748,
+        "sha256": "eea6b848038e4e9101f86ae3bd32e161fb2a4901c4a8ce15352379633c4a09a4"
+      },
+      {
+        "file": "v73-joint-frontier-narrow.png",
+        "bytes": 66499,
+        "sha256": "f2dcb4b4b51e59c624c7aec445fd18ab835a6fef1c51e9cd492c47d3fd66bc72"
+      },
+      {
+        "file": "v73-joint-ledger-desktop.png",
+        "bytes": 98901,
+        "sha256": "765687bb6a3bb27c6538b7a49d3bbc67e4af8df62a518beebd7efb3adadd6459"
+      },
+      {
+        "file": "v73-joint-outcomes-narrow.png",
+        "bytes": 57236,
+        "sha256": "d33b33de1a150cbcccba4b7344ad77848aba817d1eca329d9eac5a07bf766364"
+      },
+      {
+        "file": "v73-rolling-study-desktop.png",
+        "bytes": 100259,
+        "sha256": "d075b27c4a8734eb566b27d658ac34cb5541061174bc780f9bf70b373f864509"
+      },
+      {
+        "file": "v73-sc01-outlook-desktop.png",
+        "bytes": 108724,
+        "sha256": "a088f669df46a3872a19aa96be4fdc99bcafd477b9a04e38a6bd462bb8b1b969"
+      },
+      {
+        "file": "v73-sc01-outlook-narrow.png",
+        "bytes": 57461,
+        "sha256": "f67e9c3d744843dfb246ff0da384c31d738098fe977b15ad5a3633c293072bdc"
+      },
+      {
+        "file": "v73-sc16-abstention-desktop.png",
+        "bytes": 109328,
+        "sha256": "f1b6b95dcb8fda5ccb1069a613656ee64a41769dcb7bda8a26891ccdcc81b646"
+      }
+    ],
+    "browser": "Actual cloud Chromium, not owner desktop or a mocked DOM",
+    "desktop_viewport": {
+      "width": 1343,
+      "height": 935
+    },
+    "narrow_viewport": {
+      "width": 500,
+      "height": 851,
+      "actual_window_resize": true,
+      "device_emulation": false,
+      "document_width": 485,
+      "page_horizontal_overflow": false,
+      "forecast_table_locally_scrollable": true
+    },
+    "checks": [
+      "SC01 dated 148-unit demand outlook, next arrivals and uncalibrated low/high scenarios visible; original baseline/case-only analysis separate.",
+      "Whole-episode 72 checked/48 feasible plan selectors update outcomes; blocked reference clearly identifies constraints; all ten default-frontier resource ledger rows pass.",
+      "Delay assumption recalculates arrivals/outcomes and assumption ID; reload restores default browser-session basis.",
+      "SC16 missing lead time explicitly abstains without fabricated timing/zero demand.",
+      "Previously saved case reopens with Verification ok and preserves original 61.6/496 costs.",
+      "Intelligence retains original daily benchmark and separate eight-fold weekly/daily/prior-exposure qualifications.",
+      "Narrow cards/nav/outcomes usable, table scroll contained; browser restored to desktop."
+    ],
+    "new_production_saves": 0,
+    "new_session_reservations": 0,
+    "paid_provider_calls": 0,
+    "boundary": "Scoped hosted visual/read-only acceptance only; no all-40 model validation, execution test, real-company forecast validation or stockout calibration.",
+    "console_note": "Sampled warnings were extension metadata errors; no comprehensive console-log certification is claimed."
   },
   "preservation": {
     "stable_case_IDs": 40,
@@ -262,5 +334,11 @@
     "Existing RM5 estimated ledger/.50 reservation/rate2/min/100-attempt ceiling/unknown halt is unchanged; provider-enforced hard cap remains unverified.",
     "Original full regression reported 662/663, with one stale allowlist failure corrected and verified 5/5; no post-fix full rerun was performed."
   ],
-  "secrets_and_outputs": "No credentials, native environment values, raw UCI transaction/customer data, runtime databases, build outputs, execution logs or temporary QA screenshots added."
+  "secrets_and_outputs": "No credentials, native environment values, raw UCI transaction/customer data, runtime databases, build outputs, execution logs or temporary QA screenshots added.",
+  "hosted_QA_documentation_followup": {
+    "recorded_at": "2026-10-10T06:24:12.930249+00:00",
+    "previous_verified_private_main": "31dc8ab937f76f529b7aa996234e2fb07dfb1d24",
+    "source_code_changed": false,
+    "tests_and_build_repeated": false
+  }
 }
