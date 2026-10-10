@@ -52,11 +52,20 @@
     "completed_at": "2026-10-10T05:30:22Z",
     "environment_revision": 3,
     "audience": "public_unchanged",
-    "auxiliary_archive_sha256_observed": "6ca3982fbd2e93453740cb01ed9f2ef086db80a14152809a78f0843562cde1af",
-    "auxiliary_archive_digest_supplied_by_owner": "a764ee7e15924d7d13e5f17e359611c3ae29e8622ecf587c3b4942a3fc98e8b9",
-    "auxiliary_archive_identity_verified": false,
-    "archive_note": "Quoted auxiliary archive digest differs from the local file. Not used to establish this Git source-package identity; canonical source b0611be1 and its exact matching Worker are verified separately.",
-    "evidence": "Native Site result supplied by its publishing owner; no Site action was performed by this source-packaging check."
+    "evidence": "Native Site result supplied by its publishing owner; no Site action was performed by this source-packaging check.",
+    "local_gzip_archive": {
+      "size_bytes": 602144,
+      "sha256": "6ca3982fbd2e93453740cb01ed9f2ef086db80a14152809a78f0843562cde1af",
+      "decompressed_tar_sha256": "59b447ada39ae571e0b7d3ec980b8d4e3d506794e2d1134265302202dbc1c2e9"
+    },
+    "server_stored_archive": {
+      "archive_format": "tar",
+      "content_hash": "sha256:a764ee7e15924d7d13e5f17e359611c3ae29e8622ecf587c3b4942a3fc98e8b9",
+      "size_bytes": 3809280,
+      "file_count": 25,
+      "evidence": "Native save_site_version archive_storage metadata supplied and reconciled by the publishing owner."
+    },
+    "archive_identity_note": "Local gzip bytes, decompressed local tar bytes and the server-stored tar are distinct representations with separately recorded hashes. No identity equivalence is claimed. Canonical Git source and emitted Worker binding are verified independently."
   },
   "targeted_mounted_QA": {
     "receipt_sha256": "5b61ad2256cd3b89c991e8e216ec99063efdea935fb499b9b464c09621c6bd73",

@@ -10,7 +10,7 @@
   "excluded_tracked_inputs": {
     "docs/sovern-advisor-v0.4.1/test-results.txt": "Dated upstream raw test execution log; not runtime source. Its original digest remains in the upstream provenance manifest."
   },
-  "payload_inventory_sha256": "7a9b9473f03a4dc61d463b90d15c8c07498615b5ec0b2bb46706a53062eb64d6",
+  "payload_inventory_sha256": "1e97d312672273e39116261841a3308c9a6143f60e452ba98893cbb7815b9737",
   "packaging_overlays": [
     "README.md"
   ],
@@ -2183,8 +2183,8 @@
     },
     {
       "path": "docs/releases/v0.4.1-20261010/source-package-verification.v72.json",
-      "sha256": "80f8db7c0ccca57cdc153c99eb27013d2652f50f76fbee3bd37bf734ef26569f",
-      "size_bytes": 6195,
+      "sha256": "21c4c6fbaf8c25aa97c1792bd4399d7cc192a606f99473dd2dd1c84abe1499cc",
+      "size_bytes": 6561,
       "git_mode": "100644",
       "provenance": "GitHub packaging verification record"
     },
