@@ -1,0 +1,154 @@
+{
+  "schemaVersion": "dormathon.real-event-evidence.v1",
+  "builtAt": "2026-10-10T06:41:19.211678Z",
+  "mode": "pinned_replay_not_live_alert",
+  "events": [
+    {
+      "replay": true,
+      "businessImpactVerified": false,
+      "operationalImpacts": null,
+      "impactAssumptionRequired": true,
+      "geographicMatchVerified": false,
+      "id": "met-warning-20261010-1345-thunderstorms",
+      "title": "Malaysia thunderstorm warning — 10 October 2026",
+      "category": "weather_warning",
+      "observationKind": "official_warning_not_observed_incident",
+      "location": {
+        "countryCode": "MY",
+        "name": "Named Malaysian states and districts; includes Selangor (Klang and Petaling)",
+        "coordinates": null,
+        "basis": "Explicit place names in warning text, not company/site coordinates",
+        "placesText": "Perlis • Kedah (Langkawi, Kubang Pasu, Padang Terap, Sik and Baling) • Penang (Timor Laut and Barat Daya) • Perak (Larut Matang, Kerian, Selama, Manjung, Bagan Datuk, Perak Tengah, Hilir Perak and Hulu Perak) • Kelantan (Kuala Krai and Jeli) • Terengganu • Pahang (Rompin and Jerantut) • Selangor (Sabak Bernam, Hulu Selangor, Gombak, Kuala Selangor, Klang, Petaling and Hulu Langat) • W.P. Kuala Lumpur • Negeri Sembilan • Melaka • Johor (Kulai and Johor Bahru) • Sarawak: Sri Aman (Lubok Antu) • Sabah: Tawau (Tawau, Semporna, Kunak and Lahad Datu), Sandakan (Kinabatangan, Sandakan, Telupid, Labuk & Sugut and Paitan), West Coast (Kota Belud and Ranau), Kudat (Kota Marudu)"
+      },
+      "occurredAt": null,
+      "dateRange": {
+        "from": null,
+        "to": null,
+        "basis": "No observed occurrence supplied"
+      },
+      "publishedAt": null,
+      "sourceIssuedAtRaw": "2026-10-10T13:45:00",
+      "validFromRaw": "2026-10-10T13:00:00",
+      "validToRaw": "2026-10-10T18:00:00",
+      "sourceTimezone": null,
+      "verifiedAt": "2026-10-10T06:39:16.586109Z",
+      "retrievedAt": "2026-10-10T06:39:16.586109Z",
+      "retrievedAtBasis": "Local file capture mtime immediately after successful HTTP 200 body read; not HTTP Date or publisher time",
+      "sourceName": "MET Malaysia via data.gov.my",
+      "sourceId": "my_warning",
+      "sourceUrl": "https://api.data.gov.my/weather/warning/?sort=-warning_issue__issued&limit=100",
+      "sourceDocumentationUrl": "https://developer.data.gov.my/realtime-api/weather",
+      "factualSummary": "The official API supplied a thunderstorm warning dated 10 October 2026, with Selangor districts including Klang and Petaling among the named areas. This records expected weather, not an observed flood or business disruption.",
+      "relevanceTags": [
+        "MY",
+        "weather",
+        "warning",
+        "Selangor",
+        "Klang",
+        "Petaling"
+      ],
+      "sourceLimits": [
+        "Saved warning replay, not a live alert. Expiry may have passed when viewed.",
+        "API issue/validity timestamps omit UTC offset; preserve raw clocks and do not infer UTC.",
+        "No observed occurrence, road closure, flood depth, company exposure, delivery delay or quantitative likelihood is established.",
+        "Warning text names administrative areas, not a verified footprint for a synthetic route.",
+        "Live endpoint may revise or remove this warning; no guaranteed historic archive."
+      ],
+      "license": {
+        "url": "https://www.met.gov.my/en/info/data-terbuka/",
+        "basis": "Official Open Data page expressly permits integration and reuse and links Weather Forecast and Warnings. Structured warning facts only; no portal images or articles."
+      },
+      "evidenceSnapshot": "met-warning-facts.snapshot.json"
+    },
+    {
+      "replay": true,
+      "businessImpactVerified": false,
+      "operationalImpacts": null,
+      "impactAssumptionRequired": true,
+      "geographicMatchVerified": false,
+      "id": "gdacs-FL-1104141-ep10",
+      "title": "Vietnam flood report — 3 September to 7 October 2026",
+      "category": "flood",
+      "observationKind": "source_reported_hazard",
+      "location": {
+        "countryCode": "VN",
+        "sourceCountryCode": "VNM",
+        "name": "Vietnam; report narrative identifies Lam Dong Province",
+        "coordinates": {
+          "latitude": 11.6614957,
+          "longitude": 108.1335279
+        },
+        "basis": "GDACS-supplied event point; not a company site or flood boundary"
+      },
+      "occurredAt": "2026-09-03T01:00:00Z",
+      "dateRange": {
+        "from": "2026-09-03T01:00:00Z",
+        "to": "2026-10-07T01:00:00Z",
+        "basis": "GDACS event range, not exact local onset or confirmation of continuing conditions"
+      },
+      "publishedAt": "2026-09-05T06:09:30Z",
+      "sourceUpdatedAt": "2026-10-07T09:16:42Z",
+      "verifiedAt": "2026-10-10T06:38:57.588304Z",
+      "retrievedAt": "2026-10-10T06:38:57.588304Z",
+      "retrievedAtBasis": "Local file capture mtime immediately after successful HTTP 200 body read; not HTTP Date or publisher time",
+      "sourceName": "GDACS / European Commission JRC and UN",
+      "sourceId": "gdacs",
+      "sourceUrl": "https://www.gdacs.org/report.aspx?eventtype=FL&eventid=1104141",
+      "sourceFeedUrl": "https://www.gdacs.org/xml/rss.xml",
+      "factualSummary": "GDACS lists flood event FL1104141 in Vietnam for 3 September–7 October 2026. Its report describes flooding and landslides in Lam Dong Province in early October. The saved source record is a regional historical scenario reference.",
+      "relevanceTags": [
+        "VN",
+        "SEA",
+        "flood",
+        "historical_scenario"
+      ],
+      "sourceLimits": [
+        "Historical event replay; source iscurrent flag is not a claim of active conditions at a business location.",
+        "GDACS impact indicators are model-based/indicative; no losses, casualties or business impacts are imported.",
+        "Event page HTML title carries an earlier end date than the body/feed; this snapshot uses RSS todate (7 October) and preserves the discrepancy.",
+        "Vietnam event cannot establish exposure for a synthetic Malaysian route; any geographic analogy requires explicit user confirmation.",
+        "The event point does not define the affected footprint."
+      ],
+      "license": {
+        "url": "https://www.gdacs.org/About/termofuse.aspx",
+        "basis": "Existing catalog permits GDACS feed integration; retain attribution and source links. Terms checked again; impact estimates require independent validation."
+      },
+      "evidenceSnapshot": "gdacs-FL1104141-facts.snapshot.json"
+    }
+  ],
+  "scenarioContract": {
+    "requiresExplicitConfirmation": [
+      "event identity",
+      "hypothetical mapping to synthetic DEMO_LEG01",
+      "user-entered total delay days",
+      "scenario effective date"
+    ],
+    "sourceNeverProvides": [
+      "delayDays",
+      "MRDIY disruption",
+      "route exposure",
+      "stockout probability"
+    ],
+    "demoRoute": "DEMO_LEG01",
+    "companyDataStatus": "Synthetic operational route, supplier, DC, shipment, store and inventory; not actual MR DIY operations",
+    "autoApply": false
+  },
+  "retrievalAudit": [
+    {
+      "source": "my_warning",
+      "httpStatusObserved": 200,
+      "captureAt": "2026-10-10T06:39:16.586109Z",
+      "captureClockBasis": "file mtime at successful read completion",
+      "rawResponseBytes": 7688,
+      "rawResponseSha256": "2bcdd87b9af4195c74a9928422553566a3c2319f18f7a34040da91b70227c85f"
+    },
+    {
+      "source": "gdacs",
+      "httpStatusObserved": 200,
+      "captureAt": "2026-10-10T06:38:57.588304Z",
+      "captureClockBasis": "file mtime at successful read completion",
+      "rawResponseBytes": 656130,
+      "rawResponseSha256": "2821f0c649424d698bfa991e7d1d51f6b51405c72e3c7f3a115e2e3eab6c7b96"
+    }
+  ]
+}

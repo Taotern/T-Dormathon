@@ -1,16 +1,8 @@
 {
   "schema_version": "dormathon.clean-source-assets.v1",
-  "source_commit": "57437cdbdb9fd255165752735243188ec4d84284",
-  "site_version": 74,
-  "site_audience": "public_unchanged",
-  "repository_visibility": "private",
-  "canonical_tracked_files": 990,
-  "source_files": 989,
-  "delivered_payload_files": 1009,
   "excluded_tracked_inputs": {
     "docs/sovern-advisor-v0.4.1/test-results.txt": "Dated upstream raw test execution log; not runtime source. Its original digest remains in the upstream provenance manifest."
   },
-  "payload_inventory_sha256": "110adc82f43070e1fa12a805b4f5276214f4585339ef276fde0c5e366e29b0e2",
   "packaging_overlays": [
     "README.md"
   ],
@@ -48,7 +40,15 @@
       "original_delivery_receipt_sha256": "a86caf80ac8f5b0d042c186a843bdf4993d886d7a055582f2ec4a25ea45d3c47"
     }
   ],
-  "source_tree": "ad2554dc4bf83a733e27d045f8d374d794b040be",
+  "source_commit": "758ea9eb797a999d90e619a9e3d9f9de1a9ee859",
+  "site_version": 75,
+  "site_audience": "public_unchanged",
+  "repository_visibility": "private",
+  "canonical_tracked_files": 999,
+  "source_files": 998,
+  "delivered_payload_files": 1019,
+  "payload_inventory_sha256": "39022eefb2685667939705e97e0a92472e67983044d538ba80e47b0151063795",
+  "source_tree": "00916f71ea620cc4f24e3743e2e3f008a29a7359",
   "assets": [
     {
       "path": ".gitignore",
@@ -70,11 +70,11 @@
     },
     {
       "path": "README.md",
-      "sha256": "0e4b99df4f76cc2b39093934a661e360df1ce5f7bdfd3f59dbda126166c58d26",
-      "size_bytes": 25862,
+      "sha256": "885af4017c7c6abeb89f0be523cddfa3a9a4f0b3fec1dbb581336cc756fd2547",
+      "size_bytes": 28414,
       "git_mode": "100644",
       "canonical_sha256": "763eb6af72db16f6af82e68248548325770a70d566f7211b06786cf3ea072142",
-      "packaging_overlay": "README source/presentation checkpoint notes only; application code unchanged"
+      "packaging_overlay": "Dated README source/presentation checkpoint notes only."
     },
     {
       "path": "contracts/approved-call-journey-v1.md",
@@ -164,6 +164,24 @@
       "path": "data/commodity-source-qualification.v0.18.2.json",
       "sha256": "1fb906db7ce134b656250ce3ea400df1cc399b75affaed595d72d9f77c286479",
       "size_bytes": 2384,
+      "git_mode": "100644"
+    },
+    {
+      "path": "data/event-evidence/events.v1.json",
+      "sha256": "87be98c56a7405e8647098ca5ac8c2996e30d2104a702cc0532069e754a410bf",
+      "size_bytes": 7800,
+      "git_mode": "100644"
+    },
+    {
+      "path": "data/event-evidence/gdacs-FL1104141-facts.snapshot.json",
+      "sha256": "daed16894c6badab72f79aa335ac9b739677b28da9508af852ce8354061c31a3",
+      "size_bytes": 503,
+      "git_mode": "100644"
+    },
+    {
+      "path": "data/event-evidence/met-warning-facts.snapshot.json",
+      "sha256": "3f3f191ad88c4d77bf658ec05462c7fd35b27d4390a4b67cc07cc2bfd62afff8",
+      "size_bytes": 1097,
       "git_mode": "100644"
     },
     {
@@ -2003,6 +2021,12 @@
       "git_mode": "100644"
     },
     {
+      "path": "docs/plan-threshold-contract.md",
+      "sha256": "d4958a6a38937c3622fa2547ae245b13f0bd629d3d0c394be7957e93814910b9",
+      "size_bytes": 7248,
+      "git_mode": "100644"
+    },
+    {
       "path": "docs/predictive-v0.4.1/.gitignore",
       "sha256": "fb3d8a44638695a8876a9a3c82055c45d746bd9f47285ff9447fa3d2a3f63f77",
       "size_bytes": 37,
@@ -2411,6 +2435,13 @@
       "size_bytes": 7802,
       "git_mode": "100644",
       "provenance": "GitHub packaging verification record"
+    },
+    {
+      "path": "docs/releases/v0.4.1-20261010/source-package-verification.v75.json",
+      "sha256": "202df6a7969feae2e89c1798f5c5a0624746d6ba5df759b33a387f9210d056b9",
+      "size_bytes": 14205,
+      "git_mode": "100644",
+      "provenance": "Scoped GitHub source packaging verification record"
     },
     {
       "path": "docs/sovern-advisor-v0.4.1/README.md",
@@ -3452,8 +3483,8 @@
     },
     {
       "path": "scripts/build.mjs",
-      "sha256": "acf39205f35e9c6bc29e458a925571110c38f406617248ae94bb8a60ac064297",
-      "size_bytes": 7188,
+      "sha256": "ffcf6cbc7bf74975e68be8fa4b206cece7fdf50c57f36aeec9e3ba3ee0291ff0",
+      "size_bytes": 7725,
       "git_mode": "100644"
     },
     {
@@ -4892,14 +4923,14 @@
     },
     {
       "path": "static/mrdiy-workspace.css",
-      "sha256": "601271d630ced2f0ac01300c1fc46c35246af862def417bc1ed188751caeb9c0",
-      "size_bytes": 14834,
+      "sha256": "13a5211c93a588dc3babdc3170574611102419f43bba3ce4d89274a90479a7a4",
+      "size_bytes": 16088,
       "git_mode": "100644"
     },
     {
       "path": "static/mrdiy-workspace.js",
-      "sha256": "4af086c648c37ba4ced0c8464c3b9aadc597c7a01677a36c077eafde3206eb2f",
-      "size_bytes": 61113,
+      "sha256": "7da1f5e40eca64581e37bf5636c522431a40260775014ccc58c76d0aba70f14a",
+      "size_bytes": 81212,
       "git_mode": "100644"
     },
     {
@@ -5558,8 +5589,14 @@
     },
     {
       "path": "tests/mrdiy-client-behavior.test.mjs",
-      "sha256": "337affd71daeb4e8a368f86cf453087bf6a0040313992b5bc29908b7f47169ed",
-      "size_bytes": 28374,
+      "sha256": "5d4fae8d107b6d33da665872d98b7f5bf751404c153fc214fba199f6326c8609",
+      "size_bytes": 37347,
+      "git_mode": "100644"
+    },
+    {
+      "path": "tests/mrdiy-event-scenarios.test.mjs",
+      "sha256": "c80e52e717af2200102ebca76966165e9bb9d6c22819b0b8afa4500f888b6637",
+      "size_bytes": 12287,
       "git_mode": "100644"
     },
     {
@@ -5584,6 +5621,12 @@
       "path": "tests/mrdiy-operations.test.mjs",
       "sha256": "45346a9520794c33f80097084bf2a11ae97708557e58b307943505617d7b1446",
       "size_bytes": 19717,
+      "git_mode": "100644"
+    },
+    {
+      "path": "tests/mrdiy-plan-thresholds.test.mjs",
+      "sha256": "a42b168400ca30efc154bdb6dac2cf0aa7237b6402cb36cf33c61d57f8851315",
+      "size_bytes": 9161,
       "git_mode": "100644"
     },
     {
@@ -5942,8 +5985,8 @@
     },
     {
       "path": "worker/index.js",
-      "sha256": "ca832a769408da0555309f61a2cd649683891fdb3d6283dab2b3cd87b5b8fb6c",
-      "size_bytes": 20753,
+      "sha256": "9e48081f83473233bb1a6fc05926f1500eaa813c529e23f19ee25dc8e61e1ea9",
+      "size_bytes": 21095,
       "git_mode": "100644"
     },
     {
@@ -5983,6 +6026,18 @@
       "git_mode": "100644"
     },
     {
+      "path": "worker/mrdiy-event-evidence.js",
+      "sha256": "7625de9a8c272a19fde2fe22e9a801bf5001946f0693b77f7eb765ede03755db",
+      "size_bytes": 6865,
+      "git_mode": "100644"
+    },
+    {
+      "path": "worker/mrdiy-event-scenarios.js",
+      "sha256": "342a8c108774d561c63c3165e210a019c6430b8ed4cb5a6d4875b192887f9fa0",
+      "size_bytes": 10974,
+      "git_mode": "100644"
+    },
+    {
       "path": "worker/mrdiy-fixture.js",
       "sha256": "3c99b947ff3056d1cfbe553460e045762f956fa489d9a98b0d615761fc9c8fa8",
       "size_bytes": 160271,
@@ -6007,9 +6062,15 @@
       "git_mode": "100644"
     },
     {
+      "path": "worker/mrdiy-plan-thresholds.js",
+      "sha256": "2f9d1a137db0dc6afd5b827c0cb77a6fb65d70b1721be6191108f1a020d84581",
+      "size_bytes": 9464,
+      "git_mode": "100644"
+    },
+    {
       "path": "worker/mrdiy-service.js",
-      "sha256": "fd1dc22b1d1f7d64919f097c10586445f31935285aa0c94359fef6fe012184f3",
-      "size_bytes": 10673,
+      "sha256": "359cb23f733ad7ef869056184fcc13dbf420839138ae2981a5786c92dc55e349",
+      "size_bytes": 11422,
       "git_mode": "100644"
     },
     {

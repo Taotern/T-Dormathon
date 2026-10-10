@@ -29,6 +29,7 @@ export async function handleRequest(request,env,context={}){
    const store=new RiskStore(env.DB,PUBLIC_BUNDLE);await store.ensureSeed();if(path.startsWith('/api/reviewed-intake')||path.startsWith('/api/retrieval/')||path.startsWith('/api/global/')||path==='/api/workspace'||path.startsWith('/api/workspace/'))await intelEnsureRegistry(store);const workspace=(path==='/api/workspace'||path.startsWith('/api/workspace/'))?new WorkspaceService(store,env):null;const domain=url.searchParams.get('domain');if(domain&&!path.startsWith('/api/outcomes/'))validDomain(domain);
    if(method==='GET'){
     if(path==='/api/mrdiy/advisor/config')return responseJSON(200,sovernAdvisorConfig(env));
+    if(path==='/api/mrdiy/events')return responseJSON(200,new MrdiyDemoService(store).eventCatalog());
     if(path==='/api/mrdiy/scenario')return responseJSON(200,new MrdiyDemoService(store).scenario());
     if(path==='/api/mrdiy/case')return responseJSON(200,new MrdiyDemoService(store).open(url.searchParams.get('id')));
     if(path==='/api/mrdiy/decisions')return responseJSON(200,await new MrdiyDemoService(store).list(url.searchParams.get('case_id')));
@@ -70,6 +71,8 @@ export async function handleRequest(request,env,context={}){
     if(method==='POST'){
      if(path==='/api/journey/entries')return responseJSON(200,await new JourneyService(store).submit(body));
      if(path==='/api/mrdiy/advisor'){const r=await sovernAdvisorAnswer(env,body,{service:new MrdiyDemoService(store)});return responseJSON(r.status,r.body);}
+     if(path==='/api/mrdiy/event-plan-stress')return responseJSON(200,new MrdiyDemoService(store).eventPlanStress(body));
+     if(path==='/api/mrdiy/event-scenario')return responseJSON(200,new MrdiyDemoService(store).eventScenario(body));
      if(path==='/api/mrdiy/demand-outlook')return responseJSON(200,new MrdiyDemoService(store).demandOutlook(body));
      if(path==='/api/mrdiy/joint-plans')return responseJSON(200,new MrdiyDemoService(store).jointPlans(body));
      if(path==='/api/mrdiy/forecast-policy')return responseJSON(200,new MrdiyDemoService(store).forecast(body));

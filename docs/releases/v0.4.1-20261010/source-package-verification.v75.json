@@ -1,0 +1,301 @@
+{
+  "schema_version": "dormathon.source-package-verification.v0.4.1-v75",
+  "prepared_at": "2026-10-10T07:08:47.647438+00:00",
+  "source_commit": "758ea9eb797a999d90e619a9e3d9f9de1a9ee859",
+  "previous_source_commit": "57437cdbdb9fd255165752735243188ec4d84284",
+  "target_repository": "Taotern/T-Dormathon",
+  "repository_visibility": "private",
+  "branch": "main",
+  "expected_private_main_parent": "ebab9032ace86ba2edb2c4a50acdae203809f137",
+  "canonical_tracked_files": 999,
+  "source_files": 998,
+  "changed_source_files": [
+    {
+      "path": "data/event-evidence/events.v1.json",
+      "bytes": 7800,
+      "sha256": "87be98c56a7405e8647098ca5ac8c2996e30d2104a702cc0532069e754a410bf"
+    },
+    {
+      "path": "data/event-evidence/gdacs-FL1104141-facts.snapshot.json",
+      "bytes": 503,
+      "sha256": "daed16894c6badab72f79aa335ac9b739677b28da9508af852ce8354061c31a3"
+    },
+    {
+      "path": "data/event-evidence/met-warning-facts.snapshot.json",
+      "bytes": 1097,
+      "sha256": "3f3f191ad88c4d77bf658ec05462c7fd35b27d4390a4b67cc07cc2bfd62afff8"
+    },
+    {
+      "path": "docs/plan-threshold-contract.md",
+      "bytes": 7248,
+      "sha256": "d4958a6a38937c3622fa2547ae245b13f0bd629d3d0c394be7957e93814910b9"
+    },
+    {
+      "path": "scripts/build.mjs",
+      "bytes": 7725,
+      "sha256": "ffcf6cbc7bf74975e68be8fa4b206cece7fdf50c57f36aeec9e3ba3ee0291ff0"
+    },
+    {
+      "path": "static/mrdiy-workspace.css",
+      "bytes": 16088,
+      "sha256": "13a5211c93a588dc3babdc3170574611102419f43bba3ce4d89274a90479a7a4"
+    },
+    {
+      "path": "static/mrdiy-workspace.js",
+      "bytes": 81212,
+      "sha256": "7da1f5e40eca64581e37bf5636c522431a40260775014ccc58c76d0aba70f14a"
+    },
+    {
+      "path": "tests/mrdiy-client-behavior.test.mjs",
+      "bytes": 37347,
+      "sha256": "5d4fae8d107b6d33da665872d98b7f5bf751404c153fc214fba199f6326c8609"
+    },
+    {
+      "path": "tests/mrdiy-event-scenarios.test.mjs",
+      "bytes": 12287,
+      "sha256": "c80e52e717af2200102ebca76966165e9bb9d6c22819b0b8afa4500f888b6637"
+    },
+    {
+      "path": "tests/mrdiy-plan-thresholds.test.mjs",
+      "bytes": 9161,
+      "sha256": "a42b168400ca30efc154bdb6dac2cf0aa7237b6402cb36cf33c61d57f8851315"
+    },
+    {
+      "path": "worker/index.js",
+      "bytes": 21095,
+      "sha256": "9e48081f83473233bb1a6fc05926f1500eaa813c529e23f19ee25dc8e61e1ea9"
+    },
+    {
+      "path": "worker/mrdiy-event-evidence.js",
+      "bytes": 6865,
+      "sha256": "7625de9a8c272a19fde2fe22e9a801bf5001946f0693b77f7eb765ede03755db"
+    },
+    {
+      "path": "worker/mrdiy-event-scenarios.js",
+      "bytes": 10974,
+      "sha256": "342a8c108774d561c63c3165e210a019c6430b8ed4cb5a6d4875b192887f9fa0"
+    },
+    {
+      "path": "worker/mrdiy-plan-thresholds.js",
+      "bytes": 9464,
+      "sha256": "2f9d1a137db0dc6afd5b827c0cb77a6fb65d70b1721be6191108f1a020d84581"
+    },
+    {
+      "path": "worker/mrdiy-service.js",
+      "bytes": 11422,
+      "sha256": "359cb23f733ad7ef869056184fcc13dbf420839138ae2981a5786c92dc55e349"
+    }
+  ],
+  "scope": "Pinned official-event fact replays, explicitly confirmed fictional arrival-delay mapping and click-only bounded whole-plan sensitivity, integrated into existing read-only comparison UI.",
+  "event_evidence": {
+    "mode": "pinned_replay_not_live_alert",
+    "catalog": "data/event-evidence/events.v1.json",
+    "sources": [
+      {
+        "source": "MET Malaysia official weather warning via data.gov.my",
+        "URL": "https://api.data.gov.my/weather/warning/?sort=-warning_issue__issued&limit=100",
+        "facts": "data/event-evidence/met-warning-facts.snapshot.json",
+        "retrieved_at": "2026-10-10T06:39:16Z",
+        "time_limits": "Raw local issuance 13:45 / expiry 18:00 has no supplied UTC offset; publication and observed occurrence are unknown. Expected weather is not an observed business disruption; saved warning may be expired."
+      },
+      {
+        "source": "GDACS historical Vietnam flood FL1104141 episode 10",
+        "URL": "https://www.gdacs.org/report.aspx?eventtype=FL&eventid=1104141",
+        "facts": "data/event-evidence/gdacs-FL1104141-facts.snapshot.json",
+        "time_limits": "Occurrence September 3 and publication September 5 remain distinct; source HTML/feed end-date discrepancy is retained."
+      }
+    ],
+    "impact_limits": "No verified company route/facility exposure or operational impact. Vietnam event does not establish exposure for a Malaysian fictional route. No automatic numeric delay, demand impact or likelihood is inferred.",
+    "mapping": "Exact catalog identity, deep-demo scope, fictional DEMO_LEG01, strict true mapping/impact/replay confirmations and user-declared integer total delay 0–5. Changing assumptions invalidates confirmation.",
+    "license_and_attribution": "Source attribution and documented fact-reuse limits retained in catalog; no full warning portal/article/images or raw transport responses added."
+  },
+  "plan_stress": {
+    "trigger": "Explicit click only; no polling/live refresh or automatic plan switch.",
+    "grid": "Six delay points 0–5 at demand multiplier 1; separately requested 30 points = six delays × multipliers 0.75, 1, 1.25, 1.5, 2.",
+    "invariants": "Fixed selected package and same history-generated base forecast, 72 package identities/actions, shared constraints and resource accounting. Hypothetical demand multipliers scale the same path; they are not new model forecasts.",
+    "boundary": "Discrete tested sensitivity only. Feasibility, demand coverage, continuity and Pareto status are distinct; no exact continuous threshold or calibrated stockout probability.",
+    "integration": "Existing service/UI now consumes the standalone plan-threshold component; its original component contract remains intact."
+  },
+  "validation": {
+    "canonical": {
+      "full_tests_passed": 698,
+      "full_tests_failed": 0,
+      "final_UI_tests_passed": 21,
+      "exact_assets": 12,
+      "log_pins": {
+        "dormathon-event-final-suite.log": {
+          "bytes": 67808,
+          "sha256": "031991dcd6fda7645074d680d9511d532f4e0228f96e444653735910546c6908"
+        },
+        "dormathon-event-ui-freeze.log": {
+          "bytes": 2647,
+          "sha256": "c6fdf008553b1346b4da2c0fd87e66832647076e0599a736ae6dfd7f51b579ea"
+        },
+        "dormathon-event-artifact-freeze.log": {
+          "bytes": 271,
+          "sha256": "023a07582a12c15e3d231d6666568d9e87fba4de0dc9863e2434c40d2adef1a1"
+        }
+      },
+      "evidence": "Integrator/root execution logs independently read and hash-pinned by publisher."
+    },
+    "fresh_publisher": {
+      "focused_tests_passed": 58,
+      "failed": 0,
+      "skipped": 0,
+      "full_suite_rerun": false,
+      "commands": [
+        "node scripts/build.mjs",
+        "node --check dist/server/index.js",
+        "node scripts/validate-artifact.mjs",
+        "node --test --test-concurrency=1 tests/mrdiy-event-scenarios.test.mjs tests/mrdiy-plan-thresholds.test.mjs tests/mrdiy-client-behavior.test.mjs tests/collector-workbench.test.mjs tests/mrdiy-expansion-integration.test.mjs"
+      ],
+      "build_syntax_diff_passed": true,
+      "exact_assets": 12,
+      "worker_sha256": "9adb038c9196e3476973d759366140a77832723b701b7ceffafce45a053b2106",
+      "client_sha256": "7da1f5e40eca64581e37bf5636c522431a40260775014ccc58c76d0aba70f14a",
+      "worker_exactly_matches_local_deployment_archive": true,
+      "logs_sha256": {
+        "build.log": "73c8c3b78f652bd50b6553ebb46d7936045863e03dc9c6a3a5dce6b86b92c9d9",
+        "artifact.log": "aeb8bc6cc9102f9107d76c61cf3f9eae7093e1aef299ffbbdc3f8974c34b88b6",
+        "focused.log": "4a19b3232e940b6124c6df4db0c5cadc9bc1e6333cf799c3994b9a5bde308cbe"
+      }
+    },
+    "independent_source": {
+      "focused_event_tests_passed": 13,
+      "invalid_input_probes_rejected": 36,
+      "database_proxy_accesses": 0,
+      "full_suite_rerun": false,
+      "scope": "Successful replay/stress and rejected injected confirmation/forecast/source/execution/grid requests; local service probes are separate from hosted UI."
+    }
+  },
+  "deployment": {
+    "site_version": 75,
+    "saved_site_version_id": "appgprj_6ac6c8d4361c81919d4a8dffabfab361~appgver_56d70d594b5881918617b6920b9f3725",
+    "deployment_id": "appgdep_6ac9e138803c81918cca4a8d5b6f2af0",
+    "status": "SUCCESS",
+    "completed_at": "2026-10-10T06:54:54Z",
+    "environment_revision": 3,
+    "audience": "public_unchanged",
+    "local_gzip_bytes": 658986,
+    "local_gzip_sha256": "dc78af1823336234f217046b8f5649b8d7d296c991412abedc51d8c12b13b991",
+    "local_decompressed_tar_sha256": "6bc304c1d79063994c12d159c9f60b14a848ac54ce03a4f1177096d801b044c8",
+    "native_stored_archive": {
+      "format": "tar",
+      "bytes": 4065280,
+      "content_hash": "sha256:4da6ccfd052cac8d92e3c8cea3344198c2f71e93f76c6e01d124697237295116"
+    },
+    "archive_note": "Server-stored tar and local gzip/decompressed tar are distinct representations; no digest equivalence asserted.",
+    "evidence": "Native deployment result supplied by Site publishing owner; publisher performed no Site action."
+  },
+  "hosted_QA": {
+    "status": "PASS_SOURCE_AND_HOSTED_SCOPED",
+    "audited_at": "2026-10-10 approximately 06:55–07:02 UTC",
+    "browser": "Independent cloud Chromium",
+    "report_sha256": "1f562d534370ea7520e4406a8e8f0a52093f322c995423dd5cd104ece8ee5c69",
+    "screenshot_manifest_sha256": "1900fb2171d538d822d679bf0ad56ef7e68e4bec9c781d4a13fbe2c14c083d55",
+    "screenshots": [
+      {
+        "file": "v75-confirmation-desktop.png",
+        "sha256": "2fb1d6a767356ff5700e380e46b892f79b7053da7b87a25afd93558b20cc8f3d",
+        "bytes": 103739
+      },
+      {
+        "file": "v75-historical-source-desktop.png",
+        "sha256": "e04acf775fe5e49adb2a985a991a7ddbb7bb0a2311beb8450c8c6a78e0e2cfa9",
+        "bytes": 126214
+      },
+      {
+        "file": "v75-reconfirmation-narrow.png",
+        "sha256": "437c958760001c51ea356e5c6162d4285e0dc3108abde2dbe55c60875294184e",
+        "bytes": 53432
+      },
+      {
+        "file": "v75-replay-desktop.png",
+        "sha256": "0da28cdc195b9b3b3ef4f62a18781463b7395d3b89e0b95f24db59e19daa944c",
+        "bytes": 102309
+      },
+      {
+        "file": "v75-replay-narrow-after-column.png",
+        "sha256": "1d6a1cb11824c5dc67b1014467ac76c99cbdca458793f17d44a9c1706894a234",
+        "bytes": 50268
+      },
+      {
+        "file": "v75-replay-narrow.png",
+        "sha256": "ac682d4458d3918209ec4b016510b2fbab31f11e62ecb846b1906262e67d70d3",
+        "bytes": 53732
+      },
+      {
+        "file": "v75-source-desktop.png",
+        "sha256": "09e27f8af4c1a67b3be7b71cf539dfd486f0f947d63b02ab1f67c142e6564926",
+        "bytes": 115729
+      },
+      {
+        "file": "v75-stress6-desktop.png",
+        "sha256": "95df649ad2e0abcf6486ea42e5baf2b8fa7545417e58e867026bf213c8fb69bc",
+        "bytes": 107380
+      }
+    ],
+    "desktop_viewport": {
+      "width": 1342,
+      "height": 934,
+      "approximate": true
+    },
+    "narrow_viewport": {
+      "width": 500,
+      "height": 851,
+      "actual_window_resize": true,
+      "document_width": 485,
+      "page_horizontal_overflow": false,
+      "table_local_scroll": true
+    },
+    "checks": [
+      "Explicit MET fictional mapping/impact confirmations and reconfirmation after changed delay.",
+      "Same 148-unit forecast, affected arrival October 15→17 and unmet 25.636→68 at total delay 4; same 72 packages/48 feasible.",
+      "Read-only inspected frontier example retains zero unmet and 1.3-hour continuity gap; conditional holding cost arithmetic is not observed saving.",
+      "Explicit six/30-point stress results, stale invalidation after shortage-cost 12→13, local narrow table scroll and preserved existing decision verification.",
+      "GDACS geographic/time limitations and previously exposed weekly/daily study labeling remain visible."
+    ],
+    "stress_observed": {
+      "six_points": {
+        "feasible": 6,
+        "covers_demand": 5,
+        "Pareto": 3,
+        "coverage_transition": "Between tested delays 4 and 5; delay 5 unmet 7.031."
+      },
+      "thirty_points": {
+        "feasible": 30,
+        "covers_demand": 20,
+        "Pareto": 17,
+        "example_unmet": "Delay 4 ×1.25: 12.045; delay 5 ×2: 134.062."
+      }
+    },
+    "single_click_to_visible_ms": {
+      "replay": 532,
+      "six_point_stress": 885,
+      "thirty_point_stress": 780,
+      "limits": "Single cloud observations include automation overhead; not server-only/repeated performance, SLA or proof larger grid is faster."
+    },
+    "paid_calls": 0,
+    "new_saves": 0,
+    "production_writes": 0,
+    "limits": "Saved official facts inspected, not independently refreshed. Hosted arithmetic exercised through real UI; invalid-input probes are local. No full security or all-case model acceptance claim."
+  },
+  "preservation": {
+    "approved_and_legacy_specs": true,
+    "stable_case_IDs": 40,
+    "old_saved_decision_schema_and_bytes_unchanged": true,
+    "provider_payload_and_RM5_estimated_ledger_unchanged": true,
+    "presentation_editions_byte_preserved": [
+      "v74",
+      "v71-v72"
+    ],
+    "current_presentation": "docs/presentation/v74/; depicts v73/v74 and awaits a separate event-story update."
+  },
+  "limits": [
+    "Company history, arrivals, route mapping and plan outcomes are synthetic conditional demonstrations; no verified MRDIY disruption, actual accuracy, calibrated probability, observed saving or operational approval.",
+    "Plans and replay/stress execute no order, payment, assignment or facility action; saved choices and optional paid Advisor remain selected-case-only.",
+    "Weekly 69.73% versus same-fold 77.21% and daily 108.53% are separate exploratory targets with prior exposure; original 103.41% benchmark remains separate.",
+    "No trained RL, causal-profit validation or all-40 live model validation. RM5 ledger remains estimated application control; provider-enforced hard cap unverified."
+  ],
+  "excluded_outputs": "No credentials/native environment values, raw UCI customer/transaction data, raw event transport bodies, runtime state, build outputs, execution logs, transient QA reports or raw screenshots added."
+}

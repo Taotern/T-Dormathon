@@ -1,0 +1,16 @@
+{
+  "title": "Green flood alert in Vietnam",
+  "link": "https://www.gdacs.org/report.aspx?eventtype=FL&eventid=1104141",
+  "pubDate": "Sat, 05 Sep 2026 06:09:30 GMT",
+  "datemodified": "Wed, 07 Oct 2026 09:16:42 GMT",
+  "fromdate": "Thu, 03 Sep 2026 01:00:00 GMT",
+  "todate": "Wed, 07 Oct 2026 01:00:00 GMT",
+  "eventtype": "FL",
+  "eventid": "1104141",
+  "episodeid": "10",
+  "alertlevel": "Green",
+  "iso3": "VNM",
+  "country": "Vietnam",
+  "point": "11.6614957 108.1335279",
+  "iscurrent": "true"
+}

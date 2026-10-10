@@ -146,3 +146,20 @@ body[data-mrdiy="true"] .mrdiy-advisor-controls{display:flex;flex-wrap:wrap;gap:
 .mrdiy-joint-plans>.mrdiy-plan-safety,.mrdiy-plan-safety{font-size:12px;color:#555;margin:4px 0 10px}
 .mrdiy-joint-plans .mrdiy-plan-selector{margin:12px 0}
 .mrdiy-joint-plans .mrdiy-plan-summary{margin:10px 0;padding:8px 12px;font-size:13px}
+/* Reviewed events lead to an explicit, read-only impact replay. */
+.mrdiy-event-grid{display:grid;grid-template-columns:minmax(0,1fr);gap:16px;margin-top:18px}
+.mrdiy-event-card{border:1px solid #d7d7d7;padding:18px;min-width:0}
+.mrdiy-event-card h4{font-size:17px;line-height:1.4;margin:12px 0}
+.mrdiy-event-card>p{font-size:13px;line-height:1.6}
+.mrdiy-event-card>.mrdiy-primary{margin-top:14px}
+.mrdiy-event-route,.mrdiy-event-confirmed{padding:12px 14px;background:#f3f3f3;border-left:3px solid #333;font-size:13px;line-height:1.6}
+.mrdiy-event-form{max-width:720px;display:grid;gap:16px;margin-top:18px}
+.mrdiy-event-form>label{display:grid;gap:8px;font-size:13px}
+.mrdiy-event-form input[type=number]{max-width:180px}
+.mrdiy-event-form label small{color:#666;font-size:12px}
+.mrdiy-event-form>.mrdiy-check{display:flex;align-items:flex-start;line-height:1.5}
+.mrdiy-event-form>.mrdiy-check input{flex:0 0 auto;margin-top:3px}
+.mrdiy-event-form button{justify-self:start}
+.mrdiy-event-comparison>label{display:grid;gap:8px;margin:18px 0;font-size:13px}
+.mrdiy-event-comparison select{max-width:100%;width:100%}
+@media(max-width:850px){.mrdiy-event-grid{grid-template-columns:1fr}.mrdiy-event-card{padding:14px}.mrdiy-event-form button{width:100%}}

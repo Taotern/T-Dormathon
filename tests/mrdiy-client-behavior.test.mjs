@@ -87,3 +87,55 @@ test('new whole-episode story is primary and original selected-case arithmetic i
 test('compact plan header preserves visible synthetic read-only status and collapses methodological preamble',async()=>{
  const h=await setupMrdiy('https://private.example/workbench.html?view=strategy&mrdiy_case=demo_supply_01');try{await waitFor(()=>h.document.querySelector('#mrdiy-strategy')?.querySelectorAll('.mrdiy-joint-plans').length===1);const panel=h.document.querySelector('#mrdiy-strategy').querySelectorAll('.mrdiy-joint-plans')[0],heading=panel.querySelectorAll('.mrdiy-plan-heading')[0],safety=panel.querySelectorAll('.mrdiy-plan-safety')[0],details=panel.querySelectorAll('.mrdiy-comparison-explanation')[0];assert.match(textOf(heading),/72 plans/);assert.match(textOf(heading),/48 feasible/);assert.match(textOf(safety),/Synthetic scenario · Comparison only · no action executed/);assert.notEqual(details.open,true);assert.match(textOf(details),/How this comparison works/);assert.match(textOf(details),/costs and shortages are not directly comparable/);assert.match(textOf(details),/selected-case-only/);assert.match(textOf(details),/one physical inventory stream/);const selector=panel.querySelectorAll('.mrdiy-plan-selector')[0];assert.ok(panel.children.indexOf(selector)<panel.children.indexOf(details));const forecast=h.document.querySelector('#mrdiy-strategy').querySelectorAll('.mrdiy-demand-outlook')[0];assert.match(textOf(forecast),/Scenario range, not stockout probability/);assert.match(textOf(forecast),/Forecast assumptions/);}finally{await settle();await settle();h.db.close();}
 });
+
+function eventClientState(h){return vm.runInContext('mrdiyEventUI',h.context);}
+async function openEventReview(h){
+ await waitFor(()=>h.document.querySelector('#mrdiy-intelligence')?.querySelectorAll('.mrdiy-event-card').length===2);
+ const card=h.document.querySelector('#mrdiy-intelligence').querySelectorAll('.mrdiy-event-card')[0];
+ await card.querySelectorAll('.mrdiy-primary').find(b=>/Review synthetic impact/.test(textOf(b))).click();
+ await waitFor(()=>h.document.querySelector('#mrdiy-event-delay')&&/Review an external event/.test(textOf(h.document.querySelector('#mrdiy-organization'))));
+}
+async function confirmEventReview(h,value='4'){
+ const delay=h.document.querySelector('#mrdiy-event-delay');delay.value=value;await delay.fire('input');const mapping=h.document.querySelector('#mrdiy-event-mapping');mapping.checked=true;await mapping.fire('change');const impact=h.document.querySelector('#mrdiy-event-impact');impact.checked=true;await impact.fire('change');
+ assert.equal(h.document.querySelector('#mrdiy-event-confirm').disabled,false);await h.document.querySelector('#mrdiy-organization').querySelectorAll('.mrdiy-event-form')[0].fire('submit');
+ await waitFor(()=>/Event replay · before & after/.test(textOf(h.document.querySelector('#mrdiy-strategy')))&&h.document.querySelector('#mrdiy-event-package'));
+}
+
+test('real event replay journey requires explicit assumptions, compares identical plans and preserves baseline and saved decisions',async()=>{
+ const h=await setupMrdiy('https://private.example/workbench.html?view=intelligence');try{
+  await openEventReview(h);const form=h.document.querySelector('#mrdiy-organization').querySelectorAll('.mrdiy-event-form')[0];assert.equal(h.document.querySelector('#mrdiy-event-confirm').disabled,true);assert.equal(h.document.querySelector('#mrdiy-event-delay').value,'');await form.fire('submit');assert.equal(eventClientState(h).result,null);
+  const baseline=JSON.stringify(h.app.mrdiyUI.assumptions),commitments=JSON.stringify(h.app.mrdiyUI.commitments);
+  await confirmEventReview(h);const r=eventClientState(h).result;assert.equal(r.summary.point_demand_after,148);assert.ok(Math.abs(r.summary.unmet_units_after-68)<1e-6);assert.equal(r.package_comparisons.length,72);assert.equal(JSON.stringify(h.app.mrdiyUI.assumptions),baseline);assert.equal(JSON.stringify(h.app.mrdiyUI.commitments),commitments);
+  const pane=h.document.querySelector('#mrdiy-strategy');assert.match(textOf(pane),/2026-10-15/);assert.match(textOf(pane),/2026-10-17/);assert.match(textOf(pane),/not saved as a decision or sent to the paid Advisor/);assert.equal(h.document.querySelector('#mrdiy-event-package').options.length,72);assert.match(textOf(pane),/Example feasible plan, not an automatic selection/);const initialPair=r.package_comparisons.find(p=>p.package_id===h.document.querySelector('#mrdiy-event-package').value);assert.equal(initialPair.after.feasible,true);assert.equal(initialPair.after.pareto_efficient,true);
+  const chosen=h.document.querySelector('#mrdiy-event-package');chosen.value=r.package_comparisons[1].package_id;await chosen.fire('change');assert.equal(eventClientState(h).packageId,chosen.value);
+  h.app.show('advisor');await waitFor(()=>/Evidence, explanation, options/.test(textOf(h.elements.get('advisor-room'))));assert.equal(h.app.mrdiyUI.detail.assumptions.delay_days,2);
+  h.app.show('strategy');await waitFor(()=>h.document.querySelector('#mrdiy-event-package')?.value===chosen.value);assert.equal(eventClientState(h).result.provenance.total_delay_days,4);
+  assert.equal(h.db.db.prepare("SELECT COUNT(*) n FROM settings WHERE key GLOB 'dormathon_mrdiy_v041_decision:*'").get().n,0);assert.equal(h.db.db.prepare('SELECT COUNT(*) n FROM sovern_advisor_requests').get().n,0);assert.equal(h.db.db.prepare('SELECT COUNT(*) n FROM sovern_advisor_budget').get().n,0);
+ }finally{await settle();await settle();h.db.close();}
+});
+
+test('changing replay delay removes confirmation, source changes reset it, and stale baseline cannot reuse old comparison',async()=>{
+ const h=await setupMrdiy('https://private.example/workbench.html?view=intelligence');try{
+  await openEventReview(h);const delay=h.document.querySelector('#mrdiy-event-delay'),mapping=h.document.querySelector('#mrdiy-event-mapping'),impact=h.document.querySelector('#mrdiy-event-impact');delay.value='4';await delay.fire('input');mapping.checked=true;await mapping.fire('change');impact.checked=true;await impact.fire('change');assert.equal(h.document.querySelector('#mrdiy-event-confirm').disabled,false);delay.value='5';await delay.fire('input');assert.equal(impact.checked,false);assert.equal(h.document.querySelector('#mrdiy-event-confirm').disabled,true);
+  await confirmEventReview(h);h.app.mrdiyUI.assumptions={delay_days:1};h.app.show('strategy');await waitFor(()=>/Comparison is outdated/.test(textOf(h.document.querySelector('#mrdiy-strategy'))));assert.equal(h.document.querySelector('#mrdiy-strategy').querySelectorAll('.mrdiy-event-comparison')[0].querySelectorAll('.mrdiy-expansion-table').length,0);
+  h.app.show('organization');await waitFor(()=>/Confirm again/.test(textOf(h.document.querySelector('#mrdiy-organization'))));assert.equal(h.document.querySelector('#mrdiy-event-mapping').checked,false);assert.equal(h.document.querySelector('#mrdiy-event-impact').checked,false);
+  h.app.show('intelligence');await waitFor(()=>h.document.querySelector('#mrdiy-intelligence')?.querySelectorAll('.mrdiy-event-card').length===2);const other=h.document.querySelector('#mrdiy-intelligence').querySelectorAll('.mrdiy-event-card')[1];await other.querySelectorAll('.mrdiy-primary').find(b=>/Review synthetic impact/.test(textOf(b))).click();await waitFor(()=>/Vietnam location does not establish/.test(textOf(h.document.querySelector('#mrdiy-organization'))));assert.equal(h.document.querySelector('#mrdiy-event-delay').value,'');assert.equal(eventClientState(h).result,null);assert.equal(h.app.mrdiyUI.assumptions.delay_days,1);
+ }finally{await settle();await settle();h.db.close();}
+});
+
+test('event catalog failure remains visible while original Intelligence evidence and case workflow stay available',async()=>{
+ const {LocalD1}=await import('./d1-adapter.mjs'),db=new LocalD1(),worker=(await import('../worker/index.js')).default,base='https://dormathon-risk-private-20261007.liuyz8715.chatgpt.site';
+ const h=await setup('https://private.example/workbench.html?view=intelligence',(path,init={})=>path==='/api/mrdiy/events'?Promise.resolve(new Response(JSON.stringify({message:'Saved source read failed'}),{status:503})):worker.fetch(new Request(base+path,{...init,headers:{...(init.headers||{}),Origin:base}}),{DB:db},{}));try{
+  await waitFor(()=>/could not be refreshed/.test(textOf(h.document.querySelector('#mrdiy-intelligence'))));assert.match(textOf(h.document.querySelector('#mrdiy-intelligence')),/No new impact has been applied/);assert.equal(eventClientState(h).result,null);assert.equal(eventClientState(h).catalog,null);h.app.mrdiyOpen('demo_supply_01','organization');await waitFor(()=>/Demand, stock & arrival outlook/.test(textOf(h.document.querySelector('#mrdiy-organization'))));assert.equal(h.app.mrdiyUI.demandOutlook.status,'ok');
+ }finally{await settle();await settle();db.close();}
+});
+
+test('progressive selected-plan stress checks run only after an explicit click, six points first and thirty only on further request',async()=>{
+ const h=await setupMrdiy('https://private.example/workbench.html?view=intelligence');try{
+  await openEventReview(h);await confirmEventReview(h);assert.equal(eventClientState(h).stress,null);let pane=h.document.querySelector('#mrdiy-strategy');assert.equal(pane.querySelectorAll('.mrdiy-event-stress').length,1);assert.equal(pane.querySelectorAll('.mrdiy-event-stress')[0].open,undefined);
+  await pane.querySelectorAll('.mrdiy-stress-run')[0].click();await waitFor(()=>eventClientState(h).stress?.result.points.length===6);assert.match(textOf(pane),/6 tested combinations/);assert.match(textOf(pane),/No exact continuous threshold/);assert.equal(eventClientState(h).stress.result.current.delay_days,4);
+  await pane.querySelectorAll('.mrdiy-stress-expand')[0].click();await waitFor(()=>eventClientState(h).stress?.result.points.length===30);assert.match(textOf(pane),/30 tested combinations/);
+  const select=h.document.querySelector('#mrdiy-event-package');select.value=eventClientState(h).result.package_comparisons.find(p=>p.package_id!==select.value).package_id;await select.fire('change');assert.doesNotMatch(textOf(pane.querySelectorAll('.mrdiy-event-stress')[0]),/30 tested combinations/);assert.equal(pane.querySelectorAll('.mrdiy-stress-run')[0].disabled,false);
+  assert.equal(h.db.db.prepare('SELECT COUNT(*) n FROM sovern_advisor_requests').get().n,0);assert.equal(h.db.db.prepare('SELECT COUNT(*) n FROM sovern_advisor_budget').get().n,0);assert.equal(h.app.mrdiyUI.commitments.length,0);
+ }finally{await settle();await settle();h.db.close();}
+});

@@ -1,3 +1,4 @@
+import {mrdiyEventCatalog,evaluateMrdiyEventScenario,evaluateMrdiyEventPlanStress} from './mrdiy-event-scenarios.js';
 import {mrdiyDemandOutlook} from './mrdiy-demand-outlook.js';
 import {compareJointPackages} from './mrdiy-joint-planner.js';
 import {mrdiyForecastPolicy} from './mrdiy-forecast.js';
@@ -30,6 +31,9 @@ export class MrdiyDemoService{
    return {...compareJointPackages({...options,demand:{status:'ok',demand_by_day:outlook.forecast.forecasts.map(x=>x.predicted_units),forecast_ref:outlook.forecast.request_id||outlook.forecast.model_version,scenarioDataMode:'SYNTHETIC_INTERNAL',basis:'Authored synthetic history-derived point demand; not observed future demand.'}}),selected_case_id:caseId,demand_outlook:outlook,comparison_only:true,resources_reserved:false,automatic_execution:false};
   });
  }
+ eventCatalog(){return mrdiyEventCatalog();}
+ eventScenario(body){mrdiyRequestFields(body,['case_id','event_id','route_leg_id','total_delay_days','mapping_confirmed','impact_confirmed','replay_confirmed','assumptions','commitments']);return mrdiyCompute(()=>evaluateMrdiyEventScenario(body,mrdiyOptions(body)));}
+ eventPlanStress(body){mrdiyRequestFields(body,['case_id','event_id','route_leg_id','total_delay_days','mapping_confirmed','impact_confirmed','replay_confirmed','assumptions','commitments','selected_package_id','include_demand_stress']);return mrdiyCompute(()=>evaluateMrdiyEventPlanStress(body,mrdiyOptions(body)));}
  async save(body){
   mrdiyRequestFields(body,['case_id','action_id','disposition','rationale','actor_role','decision_id','assumptions','commitments']);
   const id=textField(body.decision_id,'decision_id',100,true);if(!/^mrdiy_decision_[A-Za-z0-9_-]{8,80}$/.test(id))throw new ValidationError('Use a stable synthetic decision reference.');
