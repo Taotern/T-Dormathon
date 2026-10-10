@@ -1,0 +1,789 @@
+[
+  {
+    "policy": "trained_q_seed41",
+    "cases": [
+      {
+        "evaluation_seed": 400023,
+        "reward_minus_controller": -97.56775899999997,
+        "total_reward": -431.062126,
+        "metrics": {
+          "unserved_units": 14.679805,
+          "fulfilled_units": 185.159601,
+          "heat_degree_hours": 63.399138,
+          "cash_commitment_myr": 163,
+          "holding_myr": 31.876476,
+          "backlog_myr": 34.668333,
+          "shortage_myr": 176.157662,
+          "heat_myr": 25.359655
+        },
+        "actual_action_history": [
+          {
+            "date": "2026-10-10",
+            "fulfilled_units": 26.590492591940126,
+            "censored": false,
+            "receipt_ids": [],
+            "action_id": "transfer40_support_none"
+          },
+          {
+            "date": "2026-10-11",
+            "fulfilled_units": 25.775702595120688,
+            "censored": true,
+            "receipt_ids": [],
+            "action_id": "transfer40_normal_none"
+          },
+          {
+            "date": "2026-10-12",
+            "fulfilled_units": 26.38659135576751,
+            "censored": false,
+            "receipt_ids": [],
+            "action_id": "none_normal_none"
+          },
+          {
+            "date": "2026-10-13",
+            "fulfilled_units": 29.284183344429245,
+            "censored": false,
+            "receipt_ids": [
+              "DEMO_SHIP02"
+            ],
+            "action_id": "none_support_none"
+          },
+          {
+            "date": "2026-10-14",
+            "fulfilled_units": 25.430130319490686,
+            "censored": true,
+            "receipt_ids": [],
+            "action_id": "transfer40_normal_none"
+          },
+          {
+            "date": "2026-10-15",
+            "fulfilled_units": 25.247845933097295,
+            "censored": true,
+            "receipt_ids": [
+              "DEMO_SHIP01"
+            ],
+            "action_id": "none_normal_none"
+          },
+          {
+            "date": "2026-10-16",
+            "fulfilled_units": 26.44465523844225,
+            "censored": true,
+            "receipt_ids": [],
+            "action_id": "none_normal_cool"
+          }
+        ],
+        "retained_resources": {
+          "fuel_remaining_litres": 6,
+          "staff_hours_remaining": 0.75,
+          "backup_energy_remaining_kwh": 4.800000000000001
+        },
+        "pending_orders": []
+      },
+      {
+        "evaluation_seed": 400034,
+        "reward_minus_controller": -94.299327,
+        "total_reward": -578.359548,
+        "metrics": {
+          "unserved_units": 26.63042,
+          "fulfilled_units": 184.112536,
+          "heat_degree_hours": 72.903118,
+          "cash_commitment_myr": 163,
+          "holding_myr": 32,
+          "backlog_myr": 34.633255,
+          "shortage_myr": 319.565046,
+          "heat_myr": 29.161247
+        },
+        "actual_action_history": [
+          {
+            "date": "2026-10-10",
+            "fulfilled_units": 27.174923223444683,
+            "censored": false,
+            "receipt_ids": [],
+            "action_id": "transfer40_support_none"
+          },
+          {
+            "date": "2026-10-11",
+            "fulfilled_units": 25.471512370844515,
+            "censored": true,
+            "receipt_ids": [],
+            "action_id": "transfer40_normal_none"
+          },
+          {
+            "date": "2026-10-12",
+            "fulfilled_units": 25.719580598833943,
+            "censored": true,
+            "receipt_ids": [],
+            "action_id": "none_normal_none"
+          },
+          {
+            "date": "2026-10-13",
+            "fulfilled_units": 29.069112567749364,
+            "censored": false,
+            "receipt_ids": [
+              "DEMO_SHIP02"
+            ],
+            "action_id": "none_support_none"
+          },
+          {
+            "date": "2026-10-14",
+            "fulfilled_units": 25.186910381341832,
+            "censored": true,
+            "receipt_ids": [],
+            "action_id": "transfer40_normal_none"
+          },
+          {
+            "date": "2026-10-15",
+            "fulfilled_units": 25.02087297102577,
+            "censored": true,
+            "receipt_ids": [
+              "DEMO_SHIP01"
+            ],
+            "action_id": "none_normal_none"
+          },
+          {
+            "date": "2026-10-16",
+            "fulfilled_units": 26.469623538543306,
+            "censored": true,
+            "receipt_ids": [],
+            "action_id": "none_normal_cool"
+          }
+        ],
+        "retained_resources": {
+          "fuel_remaining_litres": 6,
+          "staff_hours_remaining": 0.75,
+          "backup_energy_remaining_kwh": 4.800000000000001
+        },
+        "pending_orders": []
+      }
+    ]
+  },
+  {
+    "policy": "trained_q_seed43",
+    "cases": [
+      {
+        "evaluation_seed": 400044,
+        "reward_minus_controller": -186.870552,
+        "total_reward": -366.317946,
+        "metrics": {
+          "unserved_units": 7.033031,
+          "fulfilled_units": 168.046501,
+          "heat_degree_hours": 81.310337,
+          "cash_commitment_myr": 180,
+          "holding_myr": 38.670016,
+          "backlog_myr": 30.727418,
+          "shortage_myr": 84.396377,
+          "heat_myr": 32.524135
+        },
+        "actual_action_history": [
+          {
+            "date": "2026-10-10",
+            "fulfilled_units": 22.570071439480095,
+            "censored": false,
+            "receipt_ids": [],
+            "action_id": "transfer40_support_none"
+          },
+          {
+            "date": "2026-10-11",
+            "fulfilled_units": 21.097301994795576,
+            "censored": false,
+            "receipt_ids": [],
+            "action_id": "transfer40_support_none"
+          },
+          {
+            "date": "2026-10-12",
+            "fulfilled_units": 22.44350516226936,
+            "censored": false,
+            "receipt_ids": [],
+            "action_id": "transfer40_support_none"
+          },
+          {
+            "date": "2026-10-13",
+            "fulfilled_units": 26.13155609638731,
+            "censored": true,
+            "receipt_ids": [
+              "DEMO_SHIP02"
+            ],
+            "action_id": "none_normal_none"
+          },
+          {
+            "date": "2026-10-14",
+            "fulfilled_units": 25.10339769622463,
+            "censored": false,
+            "receipt_ids": [],
+            "action_id": "none_normal_none"
+          },
+          {
+            "date": "2026-10-15",
+            "fulfilled_units": 25.92067548165041,
+            "censored": true,
+            "receipt_ids": [
+              "DEMO_SHIP01"
+            ],
+            "action_id": "none_normal_none"
+          },
+          {
+            "date": "2026-10-16",
+            "fulfilled_units": 24.779993248334794,
+            "censored": true,
+            "receipt_ids": [],
+            "action_id": "none_normal_none"
+          }
+        ],
+        "retained_resources": {
+          "fuel_remaining_litres": 6,
+          "staff_hours_remaining": 0,
+          "backup_energy_remaining_kwh": 10.8
+        },
+        "pending_orders": []
+      },
+      {
+        "evaluation_seed": 400086,
+        "reward_minus_controller": -183.35163500000002,
+        "total_reward": -354.886382,
+        "metrics": {
+          "unserved_units": 6.260477,
+          "fulfilled_units": 167.440157,
+          "heat_degree_hours": 77.098459,
+          "cash_commitment_myr": 180,
+          "holding_myr": 38.52563,
+          "backlog_myr": 30.395646,
+          "shortage_myr": 75.125722,
+          "heat_myr": 30.839384
+        },
+        "actual_action_history": [
+          {
+            "date": "2026-10-10",
+            "fulfilled_units": 25.080978920948514,
+            "censored": false,
+            "receipt_ids": [],
+            "action_id": "transfer40_support_none"
+          },
+          {
+            "date": "2026-10-11",
+            "fulfilled_units": 21.846870415117063,
+            "censored": false,
+            "receipt_ids": [],
+            "action_id": "transfer40_support_none"
+          },
+          {
+            "date": "2026-10-12",
+            "fulfilled_units": 21.005869397549958,
+            "censored": false,
+            "receipt_ids": [],
+            "action_id": "transfer40_support_none"
+          },
+          {
+            "date": "2026-10-13",
+            "fulfilled_units": 23.86075594318546,
+            "censored": false,
+            "receipt_ids": [
+              "DEMO_SHIP02"
+            ],
+            "action_id": "none_normal_none"
+          },
+          {
+            "date": "2026-10-14",
+            "fulfilled_units": 24.34536877702676,
+            "censored": false,
+            "receipt_ids": [],
+            "action_id": "none_normal_none"
+          },
+          {
+            "date": "2026-10-15",
+            "fulfilled_units": 25.402381829423426,
+            "censored": true,
+            "receipt_ids": [
+              "DEMO_SHIP01"
+            ],
+            "action_id": "none_normal_none"
+          },
+          {
+            "date": "2026-10-16",
+            "fulfilled_units": 25.89793176693005,
+            "censored": true,
+            "receipt_ids": [],
+            "action_id": "none_normal_none"
+          }
+        ],
+        "retained_resources": {
+          "fuel_remaining_litres": 6,
+          "staff_hours_remaining": 0,
+          "backup_energy_remaining_kwh": 10.8
+        },
+        "pending_orders": []
+      }
+    ]
+  },
+  {
+    "policy": "trained_q_seed47",
+    "cases": [
+      {
+        "evaluation_seed": 400019,
+        "reward_minus_controller": -711.4415630000001,
+        "total_reward": -1105.003584,
+        "metrics": {
+          "unserved_units": 4.160409,
+          "fulfilled_units": 192.680425,
+          "heat_degree_hours": 72.432179,
+          "cash_commitment_myr": 968,
+          "holding_myr": 25.277413,
+          "backlog_myr": 32.828395,
+          "shortage_myr": 49.924905,
+          "heat_myr": 28.972872
+        },
+        "actual_action_history": [
+          {
+            "date": "2026-10-10",
+            "fulfilled_units": 33.03701598515251,
+            "censored": false,
+            "receipt_ids": [],
+            "action_id": "none_support_none"
+          },
+          {
+            "date": "2026-10-11",
+            "fulfilled_units": 34.15495115270627,
+            "censored": false,
+            "receipt_ids": [],
+            "action_id": "transfer40_support_none"
+          },
+          {
+            "date": "2026-10-12",
+            "fulfilled_units": 25.168562723415473,
+            "censored": false,
+            "receipt_ids": [],
+            "action_id": "transfer40_support_none"
+          },
+          {
+            "date": "2026-10-13",
+            "fulfilled_units": 23.87865175646601,
+            "censored": false,
+            "receipt_ids": [
+              "DEMO_SHIP02"
+            ],
+            "action_id": "order100_normal_none"
+          },
+          {
+            "date": "2026-10-14",
+            "fulfilled_units": 24.085525506531123,
+            "censored": false,
+            "receipt_ids": [],
+            "action_id": "none_normal_none"
+          },
+          {
+            "date": "2026-10-15",
+            "fulfilled_units": 25.906152810814707,
+            "censored": true,
+            "receipt_ids": [
+              "DEMO_SHIP01"
+            ],
+            "action_id": "none_normal_none"
+          },
+          {
+            "date": "2026-10-16",
+            "fulfilled_units": 26.449564959775895,
+            "censored": true,
+            "receipt_ids": [
+              "model_order:day3"
+            ],
+            "action_id": "none_normal_cool"
+          }
+        ],
+        "retained_resources": {
+          "fuel_remaining_litres": 14,
+          "staff_hours_remaining": 0.25,
+          "backup_energy_remaining_kwh": 4.800000000000001
+        },
+        "pending_orders": []
+      },
+      {
+        "evaluation_seed": 400089,
+        "reward_minus_controller": -88.652411,
+        "total_reward": -220.294125,
+        "metrics": {
+          "unserved_units": 0,
+          "fulfilled_units": 163.039641,
+          "heat_degree_hours": 53.168852,
+          "cash_commitment_myr": 143,
+          "holding_myr": 26.17604,
+          "backlog_myr": 29.850544,
+          "shortage_myr": 0,
+          "heat_myr": 21.267541
+        },
+        "actual_action_history": [
+          {
+            "date": "2026-10-10",
+            "fulfilled_units": 24.53478065515661,
+            "censored": false,
+            "receipt_ids": [],
+            "action_id": "none_support_none"
+          },
+          {
+            "date": "2026-10-11",
+            "fulfilled_units": 24.11432359371389,
+            "censored": false,
+            "receipt_ids": [],
+            "action_id": "transfer40_normal_cool"
+          },
+          {
+            "date": "2026-10-12",
+            "fulfilled_units": 21.275207038476882,
+            "censored": false,
+            "receipt_ids": [],
+            "action_id": "none_support_none"
+          },
+          {
+            "date": "2026-10-13",
+            "fulfilled_units": 20.641593892850256,
+            "censored": false,
+            "receipt_ids": [
+              "DEMO_SHIP02"
+            ],
+            "action_id": "transfer40_normal_none"
+          },
+          {
+            "date": "2026-10-14",
+            "fulfilled_units": 22.057806821915865,
+            "censored": false,
+            "receipt_ids": [],
+            "action_id": "none_normal_none"
+          },
+          {
+            "date": "2026-10-15",
+            "fulfilled_units": 23.637841188647524,
+            "censored": false,
+            "receipt_ids": [
+              "DEMO_SHIP01"
+            ],
+            "action_id": "none_normal_none"
+          },
+          {
+            "date": "2026-10-16",
+            "fulfilled_units": 26.778087605253006,
+            "censored": false,
+            "receipt_ids": [],
+            "action_id": "none_support_none"
+          }
+        ],
+        "retained_resources": {
+          "fuel_remaining_litres": 14,
+          "staff_hours_remaining": 0.75,
+          "backup_energy_remaining_kwh": 4.800000000000001
+        },
+        "pending_orders": []
+      }
+    ]
+  },
+  {
+    "policy": "mcts_32",
+    "cases": [
+      {
+        "evaluation_seed": 400013,
+        "reward_minus_controller": -215.548491,
+        "total_reward": -389.714463,
+        "metrics": {
+          "unserved_units": 11.09797,
+          "fulfilled_units": 171.602718,
+          "heat_degree_hours": 58.160134,
+          "cash_commitment_myr": 163,
+          "holding_myr": 35.950455,
+          "backlog_myr": 34.324314,
+          "shortage_myr": 133.17564,
+          "heat_myr": 23.264054
+        },
+        "actual_action_history": [
+          {
+            "date": "2026-10-10",
+            "fulfilled_units": 26.007314279615294,
+            "censored": true,
+            "receipt_ids": [],
+            "action_id": "transfer40_normal_cool"
+          },
+          {
+            "date": "2026-10-11",
+            "fulfilled_units": 23.340164522541865,
+            "censored": false,
+            "receipt_ids": [],
+            "action_id": "transfer40_support_none"
+          },
+          {
+            "date": "2026-10-12",
+            "fulfilled_units": 24.05542994623942,
+            "censored": false,
+            "receipt_ids": [],
+            "action_id": "none_support_none"
+          },
+          {
+            "date": "2026-10-13",
+            "fulfilled_units": 21.19690385030369,
+            "censored": false,
+            "receipt_ids": [
+              "DEMO_SHIP02"
+            ],
+            "action_id": "transfer40_normal_none"
+          },
+          {
+            "date": "2026-10-14",
+            "fulfilled_units": 25.488012715644118,
+            "censored": false,
+            "receipt_ids": [],
+            "action_id": "none_normal_none"
+          },
+          {
+            "date": "2026-10-15",
+            "fulfilled_units": 26.10273126236139,
+            "censored": true,
+            "receipt_ids": [
+              "DEMO_SHIP01"
+            ],
+            "action_id": "none_normal_none"
+          },
+          {
+            "date": "2026-10-16",
+            "fulfilled_units": 25.412161319121648,
+            "censored": true,
+            "receipt_ids": [],
+            "action_id": "none_normal_none"
+          }
+        ],
+        "retained_resources": {
+          "fuel_remaining_litres": 6,
+          "staff_hours_remaining": 0.75,
+          "backup_energy_remaining_kwh": 4.800000000000001
+        },
+        "pending_orders": []
+      },
+      {
+        "evaluation_seed": 400011,
+        "reward_minus_controller": -187.40929600000004,
+        "total_reward": -341.50886,
+        "metrics": {
+          "unserved_units": 7.357195,
+          "fulfilled_units": 167.460126,
+          "heat_degree_hours": 53.121681,
+          "cash_commitment_myr": 163,
+          "holding_myr": 35.174332,
+          "backlog_myr": 33.799521,
+          "shortage_myr": 88.286334,
+          "heat_myr": 21.248672
+        },
+        "actual_action_history": [
+          {
+            "date": "2026-10-10",
+            "fulfilled_units": 25.60813380511663,
+            "censored": true,
+            "receipt_ids": [],
+            "action_id": "transfer40_normal_cool"
+          },
+          {
+            "date": "2026-10-11",
+            "fulfilled_units": 21.693029854050476,
+            "censored": false,
+            "receipt_ids": [],
+            "action_id": "transfer40_support_none"
+          },
+          {
+            "date": "2026-10-12",
+            "fulfilled_units": 21.19837017419086,
+            "censored": false,
+            "receipt_ids": [],
+            "action_id": "none_normal_none"
+          },
+          {
+            "date": "2026-10-13",
+            "fulfilled_units": 24.947956093886713,
+            "censored": false,
+            "receipt_ids": [
+              "DEMO_SHIP02"
+            ],
+            "action_id": "none_normal_none"
+          },
+          {
+            "date": "2026-10-14",
+            "fulfilled_units": 23.15754824004637,
+            "censored": false,
+            "receipt_ids": [],
+            "action_id": "transfer40_normal_none"
+          },
+          {
+            "date": "2026-10-15",
+            "fulfilled_units": 25.11517355382235,
+            "censored": false,
+            "receipt_ids": [
+              "DEMO_SHIP01"
+            ],
+            "action_id": "none_support_none"
+          },
+          {
+            "date": "2026-10-16",
+            "fulfilled_units": 25.739914032052546,
+            "censored": true,
+            "receipt_ids": [],
+            "action_id": "none_normal_none"
+          }
+        ],
+        "retained_resources": {
+          "fuel_remaining_litres": 6,
+          "staff_hours_remaining": 0.75,
+          "backup_energy_remaining_kwh": 4.800000000000001
+        },
+        "pending_orders": []
+      }
+    ]
+  },
+  {
+    "policy": "mcts_128",
+    "cases": [
+      {
+        "evaluation_seed": 400011,
+        "reward_minus_controller": -160.20449000000002,
+        "total_reward": -314.304054,
+        "metrics": {
+          "unserved_units": 7.331572,
+          "fulfilled_units": 167.485748,
+          "heat_degree_hours": 53.121681,
+          "cash_commitment_myr": 143,
+          "holding_myr": 30.373307,
+          "backlog_myr": 31.703213,
+          "shortage_myr": 87.978862,
+          "heat_myr": 21.248672
+        },
+        "actual_action_history": [
+          {
+            "date": "2026-10-10",
+            "fulfilled_units": 25.60813380511663,
+            "censored": true,
+            "receipt_ids": [],
+            "action_id": "transfer40_normal_cool"
+          },
+          {
+            "date": "2026-10-11",
+            "fulfilled_units": 21.693029854050476,
+            "censored": false,
+            "receipt_ids": [],
+            "action_id": "transfer40_support_none"
+          },
+          {
+            "date": "2026-10-12",
+            "fulfilled_units": 21.19837017419086,
+            "censored": false,
+            "receipt_ids": [],
+            "action_id": "none_normal_none"
+          },
+          {
+            "date": "2026-10-13",
+            "fulfilled_units": 24.947956093886713,
+            "censored": false,
+            "receipt_ids": [
+              "DEMO_SHIP02"
+            ],
+            "action_id": "none_normal_none"
+          },
+          {
+            "date": "2026-10-14",
+            "fulfilled_units": 23.15754824004637,
+            "censored": false,
+            "receipt_ids": [],
+            "action_id": "none_support_none"
+          },
+          {
+            "date": "2026-10-15",
+            "fulfilled_units": 25.11517355382235,
+            "censored": false,
+            "receipt_ids": [
+              "DEMO_SHIP01"
+            ],
+            "action_id": "none_support_none"
+          },
+          {
+            "date": "2026-10-16",
+            "fulfilled_units": 25.765536743339464,
+            "censored": true,
+            "receipt_ids": [],
+            "action_id": "none_normal_none"
+          }
+        ],
+        "retained_resources": {
+          "fuel_remaining_litres": 14,
+          "staff_hours_remaining": 0.75,
+          "backup_energy_remaining_kwh": 4.800000000000001
+        },
+        "pending_orders": []
+      },
+      {
+        "evaluation_seed": 400064,
+        "reward_minus_controller": -158.449188,
+        "total_reward": -404.83553,
+        "metrics": {
+          "unserved_units": 17.057859,
+          "fulfilled_units": 171.886776,
+          "heat_degree_hours": 67.763489,
+          "cash_commitment_myr": 123,
+          "holding_myr": 19.666571,
+          "backlog_myr": 30.369253,
+          "shortage_myr": 204.69431,
+          "heat_myr": 27.105396
+        },
+        "actual_action_history": [
+          {
+            "date": "2026-10-10",
+            "fulfilled_units": 25.661060608744183,
+            "censored": true,
+            "receipt_ids": [],
+            "action_id": "transfer40_normal_cool"
+          },
+          {
+            "date": "2026-10-11",
+            "fulfilled_units": 24.933316241898346,
+            "censored": false,
+            "receipt_ids": [],
+            "action_id": "none_support_none"
+          },
+          {
+            "date": "2026-10-12",
+            "fulfilled_units": 23.770771249342342,
+            "censored": false,
+            "receipt_ids": [],
+            "action_id": "none_support_none"
+          },
+          {
+            "date": "2026-10-13",
+            "fulfilled_units": 25.05645569688498,
+            "censored": false,
+            "receipt_ids": [
+              "DEMO_SHIP02"
+            ],
+            "action_id": "none_support_none"
+          },
+          {
+            "date": "2026-10-14",
+            "fulfilled_units": 20.578396203130154,
+            "censored": true,
+            "receipt_ids": [],
+            "action_id": "none_support_none"
+          },
+          {
+            "date": "2026-10-15",
+            "fulfilled_units": 26.406750440817284,
+            "censored": true,
+            "receipt_ids": [
+              "DEMO_SHIP01"
+            ],
+            "action_id": "none_normal_none"
+          },
+          {
+            "date": "2026-10-16",
+            "fulfilled_units": 25.480025295226802,
+            "censored": true,
+            "receipt_ids": [],
+            "action_id": "none_normal_none"
+          }
+        ],
+        "retained_resources": {
+          "fuel_remaining_litres": 22,
+          "staff_hours_remaining": 0.75,
+          "backup_energy_remaining_kwh": 4.800000000000001
+        },
+        "pending_orders": []
+      }
+    ]
+  }
+]

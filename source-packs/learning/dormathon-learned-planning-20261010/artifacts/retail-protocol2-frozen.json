@@ -1,0 +1,41 @@
+{
+  "schema_version": "dormathon.protocol2-prespecification.v1",
+  "frozen_at": "2026-10-10T08:14:22.163Z",
+  "evaluation_seed_start": 400000,
+  "evaluation_episodes": 96,
+  "mcts_budgets": [
+    32,
+    128
+  ],
+  "planning_seed": 11003,
+  "primary_rl_training_seed": 41,
+  "rl_artifacts_retrained_or_selected_after_first_study": false,
+  "legacy_q_fallback_and_mcts_rollout_retained": true,
+  "new_controller": "dormathon.cover-thermal-myopic.v1",
+  "reference_policy": "cover_thermal_myopic_v1",
+  "controller_config": {
+    "daily_cover_multiplier": 1,
+    "order_lead_days": 3,
+    "forecast": "OU lognormal conditional mean from public point belief",
+    "authored_outdoor_mean_c": 34,
+    "staff_and_cooling": "minimum feasible deterministic one-day declared model cost"
+  },
+  "first_study_preserved_sha256": "787dd0aea147ecf30e6e1608261ad887c372206f2dac6582c794b371970369f9",
+  "first_study_note": "Original practical rule was passive on all96 seeds; design correction diagnosed on first study, so corrected controller is tested only on a new untouched block.",
+  "source_sha256": {
+    "worker/retail-cover-thermal-heuristic.js": "2a005020a27b40e56fb65eb11eff94abc49b1e5435f479da4c4b5e9814bbf4ba",
+    "worker/retail-heuristics.js": "77d8e07126c46a01f813eb5588e7bdb07deda5dbf4096da536a40f26d6aa8e38",
+    "worker/retail-mcts.js": "220134b5ba6d1feb56950eabf71d5e258ee8c74e0da1e90d6e731bfcfcb09758",
+    "worker/retail-q-policy.js": "ea5dab56eaaf82cdfafe2fa9e51ff89fffd75edf0d775169ef92e883fb755784",
+    "worker/retail-planning-utils.js": "f122ff2c1bccafa3121834c123cf337127f94044ab6687f14c22fc6b19714ebf",
+    "scripts/evaluate-retail-planners.mjs": "5a94726a0a6ab58f885e27aaccd1e68a4eca770d51e7e258305f25e1d1744c8b",
+    "artifacts/retail-q-seed41.json": "39f4565038f714ab4f0005f01e4dbc3c665a3223be0565ea06c5af1e8b652765",
+    "artifacts/retail-q-seed43.json": "4f8a077e75df60e7ee402a4248fc55ae2f2bde85e2ae78494014b9b8a0ff76d7",
+    "artifacts/retail-q-seed47.json": "f574cfe3b38a2196086a0a88f340cb61b3dc12e2a9db0e3a9925de4aa1557f5e",
+    "artifacts/retail-training-calibration.json": "9acc07df08b249d1e90bb8c3b8ae36ff81029a25325968e3e3861c1a6915fee0",
+    "docs/protocol2-prespecification.md": "83f28f97ba66e0ef772ae0b51d2c75fe23c6baeb472eb9084b2dae98fa606972",
+    "../dormathon-dynamics-expansion-20261010/worker/mrdiy-dynamics.js": "7b6c4f80434fce672100d15ef1826a4013c2bbe36932d9678c6a87635aa7af97",
+    "../dormathon-dynamics-expansion-20261010/worker/mrdiy-thermal-pinn.js": "e46ef39fe630ac38263aeb16ab786db6075d3803afa86b640e6bcb9378cbcf85",
+    "../dormathon-dynamics-expansion-20261010/artifacts/dynamics-fixed-world-evaluator-only.json": "6e62ba13e52d05f8a527a089a9e1cb0387788af3b8688ff611898b881f23aef0"
+  }
+}

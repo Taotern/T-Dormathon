@@ -1,0 +1,437 @@
+{
+  "schemaVersion": "real-event-backdrops.v1",
+  "asOf": "2026-10-10",
+  "preparedAt": "2026-10-10T08:30:05Z",
+  "disclaimer": "External events are sourced. Retailer exposures and stress settings are hypothetical. This demo contains no measured MR DIY exposure, calibrated event probability, live operational instruction or automatic execution.",
+  "integrationRules": {
+    "preserveOfficialWeatherReplay": true,
+    "newsAutomaticallyChangesModel": false,
+    "parametersRequireExplicitUserSelection": true,
+    "defaultAdditionalDelayDays": 0,
+    "comparePoliciesUnderSameAssumptions": true,
+    "eventFactsTrainLearner": false,
+    "learnerDataMode": "SYNTHETIC_INTERNAL",
+    "automaticExecution": false
+  },
+  "events": [
+    {
+      "id": "iran-hormuz-2026",
+      "title": "US-Iran conflict and Hormuz disruption",
+      "eventDate": {
+        "start": "2026-02-28",
+        "end": null,
+        "precision": "day",
+        "note": "Start of military action identified in the May EIA report; not an assertion of uninterrupted total closure through October."
+      },
+      "sourceAsOf": "2026-10-06",
+      "status": "Historical effective closure; partial flows and ongoing route constraints in the October update",
+      "category": "Geopolitics / energy and freight",
+      "simulationMode": "retail_stress_test",
+      "facts": [
+        {
+          "text": "EIA's May outlook described effective Hormuz closure following military action beginning on 28 February 2026.",
+          "sourceIds": [
+            "eia-may-2026"
+          ]
+        },
+        {
+          "text": "EIA's July release described increased shipping following the 18 June US-Iran memorandum of understanding.",
+          "sourceIds": [
+            "eia-july-2026"
+          ]
+        },
+        {
+          "text": "Its 6 October update described partial Hormuz shipments, constrained export routes, higher tanker insurance costs and longer voyages.",
+          "sourceIds": [
+            "eia-october-2026"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "id": "eia-may-2026",
+          "publisher": "U.S. Energy Information Administration",
+          "title": "May 2026 Short-Term Energy Outlook",
+          "url": "https://www.eia.gov/outlooks/steo/archives/may26.pdf",
+          "publishedAt": "2026-05-12",
+          "checkedAt": "2026-10-10T08:23:05Z",
+          "evidenceLocation": "Report pages 5 and 7; PDF pages 6 and 8",
+          "verification": "primary_full_text_read",
+          "sourceNature": "Government analysis; historical assessment and separately identified forecasts"
+        },
+        {
+          "id": "eia-july-2026",
+          "publisher": "U.S. Energy Information Administration",
+          "title": "Hormuz reopening update",
+          "url": "https://www.eia.gov/pressroom/releases/press590.php",
+          "publishedAt": "2026-07-07",
+          "checkedAt": "2026-10-10T08:24:36Z",
+          "evidenceLocation": "Opening paragraph",
+          "verification": "primary_full_text_read",
+          "sourceNature": "Government analysis"
+        },
+        {
+          "id": "eia-october-2026",
+          "publisher": "U.S. Energy Information Administration",
+          "title": "October 2026 global oil markets",
+          "url": "https://www.eia.gov/outlooks/steo/report/global_oil.php",
+          "publishedAt": "2026-10-06",
+          "forecastCompletedAt": "2026-10-01",
+          "checkedAt": "2026-10-10T08:23:27Z",
+          "evidenceLocation": "Global oil prices paragraphs 3-6",
+          "verification": "primary_full_text_read",
+          "sourceNature": "Dated government analysis; live URL can change on the next release",
+          "archivalUrl": "https://www.eia.gov/outlooks/steo/archives/oct26.pdf",
+          "archivalVerification": "Indexed excerpt available; full archival PDF timed out"
+        }
+      ],
+      "whyReview": "Review freight quotes, fuel-sensitive costs and exposed purchase orders before testing replenishment choices.",
+      "exposure": {
+        "kind": "hypothetical",
+        "statement": "Assume one demo purchase order depends on a supplier or logistics service affected by this disruption. No actual MR DIY supplier, route or loss is asserted.",
+        "activationGate": "The user must identify the hypothetical affected receipt and select an additional delay. A Malaysia-bound shipment is not automatically a Hormuz transit."
+      },
+      "parameterBridge": {
+        "kind": "user_selected_assumptions",
+        "automaticCalibration": false,
+        "parameters": [
+          {
+            "id": "additional_arrival_delay_days",
+            "label": "Assumed additional arrival delay",
+            "unit": "whole days",
+            "baseline": 0,
+            "min": 0,
+            "max": 5,
+            "choices": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5
+            ],
+            "modelField": "state.orders[id=DEMO_SHIP01].reported_arrival_day",
+            "implementationStatus": "wrapper_supported",
+            "mappingNote": "Before a new episode, shift the synthetic pending receipt from day 5 to day 5 + the chosen delay. Apply the identical receipt schedule to every compared policy; a delay of 2-5 days places this receipt outside the seven decision days. This is an authored stress setting, not an EIA estimate."
+          }
+        ],
+        "inputRequirement": "Explicitly select a delay; selecting this event alone leaves the model unchanged.",
+        "outputsLabel": "Synthetic seven-day policy comparison under your chosen shipping assumption"
+      },
+      "safeChoices": [
+        {
+          "id": "baseline",
+          "label": "Keep the no-delay baseline",
+          "scope": "simulation_only"
+        },
+        {
+          "id": "test_delay",
+          "label": "Choose a delay and compare policies",
+          "scope": "simulation_only"
+        },
+        {
+          "id": "verify_exposure",
+          "label": "Check the assumed supplier and lane",
+          "scope": "review_only"
+        }
+      ],
+      "limitations": [
+        "No event-to-delay or oil-to-retail-cost calibration is claimed.",
+        "Do not label Hormuz completely closed as of October 2026.",
+        "Oil-market estimates and forecasts are not Malaysian retail operating measurements."
+      ]
+    },
+    {
+      "id": "noto-earthquake-2024",
+      "title": "Japan's Noto Peninsula earthquake",
+      "eventDate": {
+        "start": "2024-01-01T16:10:00+09:00",
+        "end": "2024-01-01T16:10:00+09:00",
+        "precision": "minute",
+        "note": "Historical event in Ishikawa's Noto region; not a current earthquake alert."
+      },
+      "sourceAsOf": "2024-01-05",
+      "status": "Verified historical event",
+      "category": "Earthquake / supplier continuity",
+      "simulationMode": "retail_stress_test",
+      "facts": [
+        {
+          "text": "JMA records a magnitude 7.6 earthquake at 16:10 JST on 1 January 2024 in the Noto region, with maximum seismic intensity 7.",
+          "sourceIds": [
+            "jma-event-index"
+          ]
+        },
+        {
+          "text": "Its 5 January release warned of building-collapse and landslide hazards in strongly shaken areas.",
+          "sourceIds": [
+            "jma-january-5"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "id": "jma-event-index",
+          "publisher": "Japan Meteorological Agency",
+          "title": "2024 Noto earthquake event records",
+          "url": "https://www.jma.go.jp/jma/menu/20240101_noto_jishin.html",
+          "publishedAt": null,
+          "checkedAt": "2026-10-10T08:23:55Z",
+          "evidenceLocation": "Table of earthquakes with maximum intensity 5-upper or greater; 1 January 16:10 row",
+          "verification": "primary_full_text_read",
+          "sourceNature": "Official seismic record; maintained index",
+          "englishContextUrl": "https://www.jma.go.jp/jma/en/2024_Noto_Peninsula_Earthquake/index.html"
+        },
+        {
+          "id": "jma-january-5",
+          "publisher": "Japan Meteorological Agency",
+          "title": "Noto earthquake release, report 9",
+          "url": "https://www.jma.go.jp/jma/press/2401/05b/202401051400.html",
+          "publishedAt": "2024-01-05",
+          "checkedAt": "2026-10-10T08:22:56Z",
+          "evidenceLocation": "Summary and disaster-prevention precautions",
+          "verification": "primary_full_text_read",
+          "sourceNature": "Historical official hazard communication"
+        }
+      ],
+      "whyReview": "A localized disaster is a reason to confirm supplier location, recovery status and alternative stock before assuming Japan-wide disruption.",
+      "exposure": {
+        "kind": "hypothetical",
+        "statement": "Assume the demo order comes from a supplier or consolidation point in the affected region. The demo contains no evidence of an actual MR DIY connection.",
+        "activationGate": "Explicitly choose an affected demo receipt. If there is no assumed regional link, retain the baseline."
+      },
+      "parameterBridge": {
+        "kind": "user_selected_assumptions",
+        "automaticCalibration": false,
+        "parameters": [
+          {
+            "id": "additional_arrival_delay_days",
+            "label": "Assumed additional arrival delay",
+            "unit": "whole days",
+            "baseline": 0,
+            "min": 0,
+            "max": 5,
+            "choices": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5
+            ],
+            "modelField": "state.orders[id=DEMO_SHIP01].reported_arrival_day",
+            "implementationStatus": "wrapper_supported",
+            "mappingNote": "For a new synthetic episode, shift day 5 to day 5 + the selected delay consistently for every policy. This neither replays earthquake recovery nor converts magnitude into a delay."
+          }
+        ],
+        "inputRequirement": "User selects an assumed delay after specifying the hypothetical supplier exposure; no shock is auto-applied.",
+        "outputsLabel": "Synthetic seven-day comparison; historical earthquake is context only"
+      },
+      "safeChoices": [
+        {
+          "id": "baseline",
+          "label": "Keep the no-delay baseline",
+          "scope": "simulation_only"
+        },
+        {
+          "id": "test_delay",
+          "label": "Choose a delay and compare policies",
+          "scope": "simulation_only"
+        },
+        {
+          "id": "verify_exposure",
+          "label": "Check the assumed regional supplier",
+          "scope": "review_only"
+        }
+      ],
+      "limitations": [
+        "Magnitude is JMA magnitude; do not relabel it as a different magnitude scale.",
+        "This is a dated historical backdrop, not a live hazard warning or estimated recurrence probability.",
+        "A local earthquake does not establish disruption to every Japanese supplier or Malaysian store."
+      ]
+    },
+    {
+      "id": "red-sea-rerouting-2024",
+      "title": "Red Sea shipping rerouted around Africa",
+      "eventDate": {
+        "start": "2024-01-05",
+        "end": "2024-01-05",
+        "precision": "day",
+        "note": "Date of the selected Maersk update; historical carrier decision, not an assertion about every carrier today."
+      },
+      "sourceAsOf": "2024-01-05",
+      "status": "Verified historical carrier decision",
+      "category": "Maritime security / route disruption",
+      "simulationMode": "retail_stress_test",
+      "facts": [
+        {
+          "text": "On 5 January 2024, Maersk said its vessels due to transit the Red Sea or Gulf of Aden would divert around the Cape of Good Hope because of elevated security risk.",
+          "sourceIds": [
+            "maersk-january-5"
+          ]
+        },
+        {
+          "text": "The carrier also warned customers of rerouting delays and continuing disruption-related surcharges.",
+          "sourceIds": [
+            "maersk-january-5"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "id": "maersk-january-5",
+          "publisher": "A.P. Moller - Maersk",
+          "title": "Red Sea / Gulf of Aden operations, update 7",
+          "url": "https://www.maersk.com/news/articles/2023/12/15/maersk-operations-through-red-sea-gulf-of-aden",
+          "publishedAt": "2024-01-05",
+          "checkedAt": "2026-10-10T08:24:01Z",
+          "evidenceLocation": "05 January 2024 - Update 07",
+          "verification": "primary_full_text_read",
+          "sourceNature": "Carrier's own dated operational announcement; URL contains the original 2023 page date"
+        }
+      ],
+      "whyReview": "Check whether a purchase order actually uses the affected Asia-Europe or related service before testing delayed replenishment and a transfer alternative.",
+      "exposure": {
+        "kind": "hypothetical",
+        "statement": "Assume the selected demo receipt uses a diverted carrier service. This does not claim ordinary China-Malaysia freight passes through Suez.",
+        "activationGate": "User explicitly assumes a relevant shipping lane or network knock-on; otherwise no delay is applied."
+      },
+      "parameterBridge": {
+        "kind": "user_selected_assumptions",
+        "automaticCalibration": false,
+        "parameters": [
+          {
+            "id": "additional_arrival_delay_days",
+            "label": "Assumed additional arrival delay",
+            "unit": "whole days",
+            "baseline": 0,
+            "min": 0,
+            "max": 5,
+            "choices": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5
+            ],
+            "modelField": "state.orders[id=DEMO_SHIP01].reported_arrival_day",
+            "implementationStatus": "wrapper_supported",
+            "mappingNote": "Shift the synthetic pending receipt from day 5 to day 5 + the user's delay for every compared policy. The 0-5 day range is a demo sensitivity range, not a measurement or upper bound on actual Cape rerouting time."
+          }
+        ],
+        "inputRequirement": "Explicitly choose a delay; the historical headline cannot infer the order's arrival date.",
+        "outputsLabel": "Synthetic seven-day replenishment comparison under an assumed receipt delay"
+      },
+      "safeChoices": [
+        {
+          "id": "baseline",
+          "label": "Keep the no-delay baseline",
+          "scope": "simulation_only"
+        },
+        {
+          "id": "test_delay",
+          "label": "Choose a delay and compare policies",
+          "scope": "simulation_only"
+        },
+        {
+          "id": "verify_exposure",
+          "label": "Check the assumed carrier and route",
+          "scope": "review_only"
+        }
+      ],
+      "limitations": [
+        "A carrier-specific historical decision is not a current universal closure claim.",
+        "No freight surcharge or actual voyage duration is mapped into a model coefficient.",
+        "Days beyond this short horizon remain outstanding receipts, not canceled orders."
+      ]
+    },
+    {
+      "id": "kimi-funding-2026",
+      "title": "Kimi funding and AI vendor review",
+      "eventDate": {
+        "start": "2026-05-07",
+        "end": "2026-05-07",
+        "precision": "report_day",
+        "note": "Date of the selected funding report; exact transaction closing date is not established here."
+      },
+      "sourceAsOf": "2026-09-10",
+      "status": "Historical funding report; company enterprise announcement verified",
+      "category": "AI ecosystem / strategic procurement",
+      "simulationMode": "strategic_context_only",
+      "facts": [
+        {
+          "text": "On 7 May, SCMP reported an approximately US$2 billion Moonshot AI raise at a valuation above US$20 billion, citing financial adviser HF Capital.",
+          "sourceIds": [
+            "scmp-may-2026"
+          ]
+        },
+        {
+          "text": "Kimi's own 10 September announcement launched an enterprise partnership program for AI deployment with service providers and integrators.",
+          "sourceIds": [
+            "kimi-enterprise-september-2026"
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "id": "scmp-may-2026",
+          "publisher": "South China Morning Post",
+          "title": "Kimi developer funding report",
+          "url": "https://www.scmp.com/tech/article/3352751/kimi-developer-moonshot-ai-valued-us20b-it-navigates-chinas-new-ipo-rules",
+          "publishedAt": "2026-05-07T18:27:00+08:00",
+          "updatedAt": "2026-05-07T19:52:00+08:00",
+          "checkedAt": "2026-10-10T08:24:36Z",
+          "evidenceLocation": "Opening two paragraphs",
+          "verification": "secondary_full_text_excerpt_read",
+          "sourceNature": "Publisher report citing financial adviser; original adviser statement not directly located"
+        },
+        {
+          "id": "kimi-enterprise-september-2026",
+          "publisher": "Kimi / Moonshot AI",
+          "title": "Enterprise partner program",
+          "url": "https://www.kimi.com/news/kimi-enterprise-partner-program",
+          "publishedAt": "2026-09-10",
+          "checkedAt": "2026-10-10T08:24:36Z",
+          "evidenceLocation": "Dated announcement and first program description",
+          "verification": "primary_full_text_read",
+          "sourceNature": "Company announcement about enterprise deployment; does not confirm financing amounts"
+        }
+      ],
+      "whyReview": "A changing AI vendor landscape can justify a benchmark and procurement review if the retailer is considering AI-assisted planning.",
+      "exposure": {
+        "kind": "hypothetical",
+        "statement": "Assume the retailer is evaluating AI tools. No existing MR DIY-Kimi contract, system dependency or affected inventory is asserted.",
+        "activationGate": "Use only as a strategic discussion. Financing does not establish model quality, lower prices, uptime or physical supply disruption."
+      },
+      "parameterBridge": {
+        "kind": "context_only",
+        "automaticCalibration": false,
+        "parameters": [],
+        "inputRequirement": "No retail stock, demand, delay, route, staffing or energy parameter can be inferred from this funding news.",
+        "outputsLabel": "Strategic review context; no retail simulation output is generated"
+      },
+      "safeChoices": [
+        {
+          "id": "review_requirements",
+          "label": "Review AI evaluation requirements",
+          "scope": "review_only"
+        },
+        {
+          "id": "benchmark",
+          "label": "Plan a small vendor benchmark",
+          "scope": "review_only"
+        },
+        {
+          "id": "no_shock",
+          "label": "Keep retail assumptions unchanged",
+          "scope": "no_model_change"
+        }
+      ],
+      "limitations": [
+        "Funding amount is adviser-reported in an accessible dated publisher report; primary financial confirmation was not located.",
+        "IPO plans and funding valuation are not a completed public listing, liquidity guarantee or performance forecast.",
+        "No funding amount, valuation or event likelihood trains or changes the synthetic retail learner."
+      ]
+    }
+  ]
+}

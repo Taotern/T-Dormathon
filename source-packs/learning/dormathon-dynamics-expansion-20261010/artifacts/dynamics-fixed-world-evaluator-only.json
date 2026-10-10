@@ -1,0 +1,38 @@
+{
+  "version": "authored-hidden-world-v1",
+  "data_mode": "SYNTHETIC_INTERNAL",
+  "as_of": "2026-10-10T00:00:00Z",
+  "demand": {
+    "base_units": 25.5,
+    "weekday_multipliers": [
+      1.05,
+      0.94,
+      0.96,
+      0.98,
+      1.02,
+      1.16,
+      1.12
+    ],
+    "kappa_per_day": 0.7,
+    "sigma_per_sqrt_day": 0.12
+  },
+  "thermal": {
+    "k_per_hour": 0.23,
+    "cooling_gain_c_per_kwh": 0.62
+  },
+  "fatigue": {
+    "build_per_hour": 0.065,
+    "recovery_per_hour": 0.09
+  },
+  "service": {
+    "processing_units_per_day": 29,
+    "backlog_resolution_per_hour": 0.12
+  },
+  "costs": {
+    "shortage_myr_per_unit": 12,
+    "holding_myr_per_unit_day": 0.04,
+    "backlog_myr_per_hour_day": 3,
+    "heat_myr_per_degree_hour": 0.4,
+    "terminal_inventory_value_myr_per_unit": 0
+  }
+}

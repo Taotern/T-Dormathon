@@ -1,0 +1,445 @@
+{
+  "started_at": "2026-10-10T07:59:16.442Z",
+  "completed_at": "2026-10-10T08:00:55.611Z",
+  "calibration": {
+    "version": "calibrated-2026-09-26-d7d491a4",
+    "data_mode": "SYNTHETIC_INTERNAL",
+    "as_of": "2026-09-26T00:00:00Z",
+    "demand": {
+      "base_units": 26.651442382997125,
+      "weekday_multipliers": [
+        1.0080846862818136,
+        0.9564495799924664,
+        0.9732863324383381,
+        0.9763380429608227,
+        0.9954648480240507,
+        1.0722261580307964,
+        1.022557499599467
+      ],
+      "kappa_per_day": 0.8275136322748271,
+      "sigma_per_sqrt_day": 0.10281133091603802
+    },
+    "thermal": {
+      "k_per_hour": 0.22999999999999998,
+      "cooling_gain_c_per_kwh": 0.6197315790162056
+    },
+    "fatigue": {
+      "build_per_hour": 0.065,
+      "recovery_per_hour": 0.09
+    },
+    "service": {
+      "processing_units_per_day": 29,
+      "backlog_resolution_per_hour": 0.12
+    },
+    "costs": {
+      "shortage_myr_per_unit": 12,
+      "holding_myr_per_unit_day": 0.04,
+      "backlog_myr_per_hour_day": 3,
+      "heat_myr_per_degree_hour": 0.4,
+      "terminal_inventory_value_myr_per_unit": 0
+    }
+  },
+  "curves": [
+    {
+      "training_seed": 41,
+      "episodes": 2000,
+      "exploratory_mean_return": -2019.962375,
+      "greedy_validation_mean_return": -466.642393,
+      "validation_fallback_rate": 0.07142857142857142,
+      "states": 1066,
+      "visited_state_actions": 2449,
+      "rss_mib": 86.832031
+    },
+    {
+      "training_seed": 41,
+      "episodes": 4000,
+      "exploratory_mean_return": -1827.367546,
+      "greedy_validation_mean_return": -398.861514,
+      "validation_fallback_rate": 0.0625,
+      "states": 1364,
+      "visited_state_actions": 3401,
+      "rss_mib": 105.832031
+    },
+    {
+      "training_seed": 41,
+      "episodes": 6000,
+      "exploratory_mean_return": -1674.508683,
+      "greedy_validation_mean_return": -389.388169,
+      "validation_fallback_rate": 0.0625,
+      "states": 1554,
+      "visited_state_actions": 4175,
+      "rss_mib": 107.578125
+    },
+    {
+      "training_seed": 41,
+      "episodes": 8000,
+      "exploratory_mean_return": -1472.817497,
+      "greedy_validation_mean_return": -296.662221,
+      "validation_fallback_rate": 0.005952380952380952,
+      "states": 1681,
+      "visited_state_actions": 4797,
+      "rss_mib": 108.453125
+    },
+    {
+      "training_seed": 41,
+      "episodes": 10000,
+      "exploratory_mean_return": -1261.983452,
+      "greedy_validation_mean_return": -294.288694,
+      "validation_fallback_rate": 0.002976190476190476,
+      "states": 1793,
+      "visited_state_actions": 5314,
+      "rss_mib": 108.578125
+    },
+    {
+      "training_seed": 41,
+      "episodes": 12000,
+      "exploratory_mean_return": -1046.916754,
+      "greedy_validation_mean_return": -282.896682,
+      "validation_fallback_rate": 0.002976190476190476,
+      "states": 1871,
+      "visited_state_actions": 5771,
+      "rss_mib": 141.078125
+    },
+    {
+      "training_seed": 41,
+      "episodes": 14000,
+      "exploratory_mean_return": -827.473703,
+      "greedy_validation_mean_return": -284.807607,
+      "validation_fallback_rate": 0.002976190476190476,
+      "states": 1919,
+      "visited_state_actions": 6106,
+      "rss_mib": 142.203125
+    },
+    {
+      "training_seed": 41,
+      "episodes": 16000,
+      "exploratory_mean_return": -600.593859,
+      "greedy_validation_mean_return": -308.264854,
+      "validation_fallback_rate": 0,
+      "states": 1951,
+      "visited_state_actions": 6343,
+      "rss_mib": 143.546875
+    },
+    {
+      "training_seed": 41,
+      "episodes": 18000,
+      "exploratory_mean_return": -466.369651,
+      "greedy_validation_mean_return": -295.328261,
+      "validation_fallback_rate": 0,
+      "states": 1966,
+      "visited_state_actions": 6430,
+      "rss_mib": 144.882813
+    },
+    {
+      "training_seed": 41,
+      "episodes": 20000,
+      "exploratory_mean_return": -461.312977,
+      "greedy_validation_mean_return": -290.036414,
+      "validation_fallback_rate": 0,
+      "states": 1977,
+      "visited_state_actions": 6510,
+      "rss_mib": 146.257813
+    },
+    {
+      "training_seed": 43,
+      "episodes": 2000,
+      "exploratory_mean_return": -1974.436792,
+      "greedy_validation_mean_return": -409.555177,
+      "validation_fallback_rate": 0.05952380952380952,
+      "states": 1064,
+      "visited_state_actions": 2481,
+      "rss_mib": 148.957031
+    },
+    {
+      "training_seed": 43,
+      "episodes": 4000,
+      "exploratory_mean_return": -1849.984282,
+      "greedy_validation_mean_return": -747.819426,
+      "validation_fallback_rate": 0.05952380952380952,
+      "states": 1342,
+      "visited_state_actions": 3408,
+      "rss_mib": 149.9375
+    },
+    {
+      "training_seed": 43,
+      "episodes": 6000,
+      "exploratory_mean_return": -1647.517945,
+      "greedy_validation_mean_return": -743.301784,
+      "validation_fallback_rate": 0.01488095238095238,
+      "states": 1526,
+      "visited_state_actions": 4125,
+      "rss_mib": 151.050781
+    },
+    {
+      "training_seed": 43,
+      "episodes": 8000,
+      "exploratory_mean_return": -1460.542755,
+      "greedy_validation_mean_return": -294.55535,
+      "validation_fallback_rate": 0.017857142857142856,
+      "states": 1652,
+      "visited_state_actions": 4741,
+      "rss_mib": 152.425781
+    },
+    {
+      "training_seed": 43,
+      "episodes": 10000,
+      "exploratory_mean_return": -1278.247592,
+      "greedy_validation_mean_return": -330.93948,
+      "validation_fallback_rate": 0.008928571428571428,
+      "states": 1746,
+      "visited_state_actions": 5278,
+      "rss_mib": 153.632813
+    },
+    {
+      "training_seed": 43,
+      "episodes": 12000,
+      "exploratory_mean_return": -1045.773765,
+      "greedy_validation_mean_return": -319.428134,
+      "validation_fallback_rate": 0,
+      "states": 1819,
+      "visited_state_actions": 5732,
+      "rss_mib": 165.007813
+    },
+    {
+      "training_seed": 43,
+      "episodes": 14000,
+      "exploratory_mean_return": -840.085029,
+      "greedy_validation_mean_return": -288.456571,
+      "validation_fallback_rate": 0,
+      "states": 1875,
+      "visited_state_actions": 6071,
+      "rss_mib": 219.132813
+    },
+    {
+      "training_seed": 43,
+      "episodes": 16000,
+      "exploratory_mean_return": -590.134227,
+      "greedy_validation_mean_return": -298.31305,
+      "validation_fallback_rate": 0,
+      "states": 1911,
+      "visited_state_actions": 6280,
+      "rss_mib": 220.496094
+    },
+    {
+      "training_seed": 43,
+      "episodes": 18000,
+      "exploratory_mean_return": -464.107314,
+      "greedy_validation_mean_return": -285.528083,
+      "validation_fallback_rate": 0.005952380952380952,
+      "states": 1924,
+      "visited_state_actions": 6378,
+      "rss_mib": 220.59375
+    },
+    {
+      "training_seed": 43,
+      "episodes": 20000,
+      "exploratory_mean_return": -448.658732,
+      "greedy_validation_mean_return": -294.212644,
+      "validation_fallback_rate": 0,
+      "states": 1940,
+      "visited_state_actions": 6465,
+      "rss_mib": 220.84375
+    },
+    {
+      "training_seed": 47,
+      "episodes": 2000,
+      "exploratory_mean_return": -2013.744163,
+      "greedy_validation_mean_return": -433.416723,
+      "validation_fallback_rate": 0.15178571428571427,
+      "states": 1037,
+      "visited_state_actions": 2443,
+      "rss_mib": 223.0625
+    },
+    {
+      "training_seed": 47,
+      "episodes": 4000,
+      "exploratory_mean_return": -1856.480947,
+      "greedy_validation_mean_return": -365.171467,
+      "validation_fallback_rate": 0.02976190476190476,
+      "states": 1364,
+      "visited_state_actions": 3437,
+      "rss_mib": 223.6875
+    },
+    {
+      "training_seed": 47,
+      "episodes": 6000,
+      "exploratory_mean_return": -1662.662158,
+      "greedy_validation_mean_return": -362.64567,
+      "validation_fallback_rate": 0.011904761904761904,
+      "states": 1554,
+      "visited_state_actions": 4166,
+      "rss_mib": 223.9375
+    },
+    {
+      "training_seed": 47,
+      "episodes": 8000,
+      "exploratory_mean_return": -1477.34183,
+      "greedy_validation_mean_return": -454.706702,
+      "validation_fallback_rate": 0.023809523809523808,
+      "states": 1692,
+      "visited_state_actions": 4809,
+      "rss_mib": 224.398438
+    },
+    {
+      "training_seed": 47,
+      "episodes": 10000,
+      "exploratory_mean_return": -1266.504131,
+      "greedy_validation_mean_return": -286.952295,
+      "validation_fallback_rate": 0.002976190476190476,
+      "states": 1788,
+      "visited_state_actions": 5346,
+      "rss_mib": 224.648438
+    },
+    {
+      "training_seed": 47,
+      "episodes": 12000,
+      "exploratory_mean_return": -1056.0475,
+      "greedy_validation_mean_return": -281.24887,
+      "validation_fallback_rate": 0.002976190476190476,
+      "states": 1872,
+      "visited_state_actions": 5758,
+      "rss_mib": 225.648438
+    },
+    {
+      "training_seed": 47,
+      "episodes": 14000,
+      "exploratory_mean_return": -848.093558,
+      "greedy_validation_mean_return": -292.628888,
+      "validation_fallback_rate": 0.002976190476190476,
+      "states": 1914,
+      "visited_state_actions": 6104,
+      "rss_mib": 223.832031
+    },
+    {
+      "training_seed": 47,
+      "episodes": 16000,
+      "exploratory_mean_return": -579.34175,
+      "greedy_validation_mean_return": -290.758371,
+      "validation_fallback_rate": 0.002976190476190476,
+      "states": 1955,
+      "visited_state_actions": 6317,
+      "rss_mib": 221.0625
+    },
+    {
+      "training_seed": 47,
+      "episodes": 18000,
+      "exploratory_mean_return": -455.380757,
+      "greedy_validation_mean_return": -311.350065,
+      "validation_fallback_rate": 0.002976190476190476,
+      "states": 1972,
+      "visited_state_actions": 6432,
+      "rss_mib": 221.1875
+    },
+    {
+      "training_seed": 47,
+      "episodes": 20000,
+      "exploratory_mean_return": -441.405376,
+      "greedy_validation_mean_return": -284.264145,
+      "validation_fallback_rate": 0.002976190476190476,
+      "states": 1983,
+      "visited_state_actions": 6497,
+      "rss_mib": 221.1875
+    }
+  ],
+  "summaries": [
+    {
+      "filename": "retail-q-seed41.json",
+      "artifact_id": "retail-q-seed41-episodes20000",
+      "policy_digest": "fnv1a32:f44b7eff",
+      "training": {
+        "episodes": 20000,
+        "training_rng_seed": 41,
+        "environment_seed_start": 100000,
+        "environment_seed_end": 119999,
+        "epsilon_schedule": "linear 1.0 to 0.08 over first 80%; then 0.08",
+        "gamma": 1,
+        "alpha": "max(0.035, 0.45 / visit_count^0.55)",
+        "state_aggregation": "coarse bins of public day/inventory/source/cash/fuel/staff/battery/fatigue/backlog/temperature/public log-demand belief/order ETA/units and feasible mask",
+        "validation_seed_start": 200000,
+        "validation_episodes": 48,
+        "validation_used_for_model_selection": false,
+        "oracle_targets_used": false,
+        "initial_q_value": 0,
+        "bellman_max": "all feasible actions, including initialized unvisited estimates",
+        "portable_unvisited_estimates": "exported null, inference excludes values with zero interaction visits",
+        "completed_at": "2026-10-10T07:59:50.712Z",
+        "peak_rss_mib": 144.882813
+      },
+      "validation": {
+        "mean_return": -290.036414,
+        "calls": 336,
+        "fallbacks": 0,
+        "fallback_rate": 0,
+        "calibration_mismatch_calls": 0
+      },
+      "states": 1977
+    },
+    {
+      "filename": "retail-q-seed43.json",
+      "artifact_id": "retail-q-seed43-episodes20000",
+      "policy_digest": "fnv1a32:76365358",
+      "training": {
+        "episodes": 20000,
+        "training_rng_seed": 43,
+        "environment_seed_start": 130000,
+        "environment_seed_end": 149999,
+        "epsilon_schedule": "linear 1.0 to 0.08 over first 80%; then 0.08",
+        "gamma": 1,
+        "alpha": "max(0.035, 0.45 / visit_count^0.55)",
+        "state_aggregation": "coarse bins of public day/inventory/source/cash/fuel/staff/battery/fatigue/backlog/temperature/public log-demand belief/order ETA/units and feasible mask",
+        "validation_seed_start": 200000,
+        "validation_episodes": 48,
+        "validation_used_for_model_selection": false,
+        "oracle_targets_used": false,
+        "initial_q_value": 0,
+        "bellman_max": "all feasible actions, including initialized unvisited estimates",
+        "portable_unvisited_estimates": "exported null, inference excludes values with zero interaction visits",
+        "completed_at": "2026-10-10T08:00:23.781Z",
+        "peak_rss_mib": 220.59375
+      },
+      "validation": {
+        "mean_return": -294.212644,
+        "calls": 336,
+        "fallbacks": 0,
+        "fallback_rate": 0,
+        "calibration_mismatch_calls": 0
+      },
+      "states": 1940
+    },
+    {
+      "filename": "retail-q-seed47.json",
+      "artifact_id": "retail-q-seed47-episodes20000",
+      "policy_digest": "fnv1a32:979b71c8",
+      "training": {
+        "episodes": 20000,
+        "training_rng_seed": 47,
+        "environment_seed_start": 160000,
+        "environment_seed_end": 179999,
+        "epsilon_schedule": "linear 1.0 to 0.08 over first 80%; then 0.08",
+        "gamma": 1,
+        "alpha": "max(0.035, 0.45 / visit_count^0.55)",
+        "state_aggregation": "coarse bins of public day/inventory/source/cash/fuel/staff/battery/fatigue/backlog/temperature/public log-demand belief/order ETA/units and feasible mask",
+        "validation_seed_start": 200000,
+        "validation_episodes": 48,
+        "validation_used_for_model_selection": false,
+        "oracle_targets_used": false,
+        "initial_q_value": 0,
+        "bellman_max": "all feasible actions, including initialized unvisited estimates",
+        "portable_unvisited_estimates": "exported null, inference excludes values with zero interaction visits",
+        "completed_at": "2026-10-10T08:00:55.608Z",
+        "peak_rss_mib": 225.773438
+      },
+      "validation": {
+        "mean_return": -284.264145,
+        "calls": 336,
+        "fallbacks": 1,
+        "fallback_rate": 0.002976190476190476,
+        "calibration_mismatch_calls": 0
+      },
+      "states": 1983
+    }
+  ],
+  "primary_policy": "retail-q-seed41.json",
+  "primary_policy_chosen_before_training": true,
+  "disclosure": "Synthetic interaction-trained tabular Q-learning; coarse state aggregation is not proven Markov and no convergence or real company benefit is claimed."
+}

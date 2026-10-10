@@ -1,0 +1,45 @@
+{
+  "audit_completed_at": "2026-10-10T08:32:20Z",
+  "decision": "approved_for_source_pack_adoption",
+  "scope": "Source provenance, dated wording, hypothetical bridge contract and receipt conservation source review. Browser UI and integrated adapter are excluded.",
+  "inputs": {
+    "events.json": {
+      "sha256": "103756853af9cda64791f16e4f9dc50d27a496ce85a2b51df7b30440679cc5d8",
+      "bytes": 19259
+    },
+    "verification.md": {
+      "sha256": "fa158efe05722bedefd6b9cd177ae532d9b980dd7757fd91b5a817f8ecfac097",
+      "bytes": 7735
+    },
+    "checks.json": {
+      "sha256": "f23b8e52389813899f066776406be6ddbae864591b8d90c543d6eefc9a07863e",
+      "bytes": 1803
+    },
+    "validate_contract.py": {
+      "sha256": "25498ddc6d09cba9882301e614c5af7dfc9ff467069d4f08182b7d96e8e9e87c",
+      "bytes": 1831
+    },
+    "test_delay_bridge.mjs": {
+      "sha256": "9b1ce1a9f217745213c992e29312260dfb71b83751d4a5f9bf73ddb1236b29b5",
+      "bytes": 1787
+    }
+  },
+  "checks": {
+    "independent_python_contract": "passed: four cards; three retail delay cards; one strategic-only card",
+    "independent_source_reads": "All eight linked fact-source documents re-read with web tool: May EIA PDF; July EIA release; dated October EIA HTML; JMA index; JMA January5 release; Maersk January5 section; SCMP May7 accessible opening; official Kimi September10 announcement",
+    "eia_dated_status": "Historical effective closure followed by increased July traffic and constrained/partial October oil shipments. Forecasts are not asserted as observed outcomes.",
+    "jma_and_maersk": "Historical localized Noto2024 earthquake and carrier-specific January5 2024 decision; no current universal hazard/route claim",
+    "kimi": "Funding is correctly attributed to May7 secondary report citing adviser; September10 official announcement supports enterprise context only; no physical simulation parameter",
+    "bridge": "Only explicit user-chosen0..5 whole-day delay on synthetic DEMO_SHIP01 before a new episode; authored exposure and sensitivity range; event selection alone no change; identical state/schedule across policies",
+    "ledger": "Existing audited kernel accepts outstanding future receipts, posts exactly on matching day, preserves pending orders and storage/opening reserve after terminal day7. Producer six delay test assertions and saved outcomes are consistent with source; not independently rerun while integration owns serial compute slot.",
+    "no_probability_or_training_inference": true,
+    "no_engine_edits_or_heavy_evaluation": true
+  },
+  "integration_requirements": [
+    "Show dated source fact, fictional exposure, explicit delay input and synthetic outcome separately.",
+    "Default delay0; selecting card alone changes no model; require explicit affected demo receipt assumption.",
+    "Show day7..10 terminal arrivals as outstanding, not canceled; do not reset reservations/cash.",
+    "Kimi retail-run disabled or context-only with no physical shock.",
+    "Retain official weather replay and unchanged frozen learned policy artifacts; no headline training/probability claim."
+  ]
+}

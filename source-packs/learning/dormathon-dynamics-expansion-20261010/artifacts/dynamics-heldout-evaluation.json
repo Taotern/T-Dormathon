@@ -1,0 +1,43 @@
+{
+  "schema_version": "dormathon.calibration-comparison.v1",
+  "data_mode": "SYNTHETIC_INTERNAL",
+  "frozen_holdout": {
+    "start": "2026-09-26",
+    "end": "2026-10-10"
+  },
+  "before": {
+    "schema_version": "dormathon.calibration-heldout.v1",
+    "calibration_version": "calibrated-2026-08-03-ce73ba5b",
+    "start_inclusive": "2026-09-26",
+    "end_exclusive": "2026-10-10",
+    "data_mode": "SYNTHETIC_INTERNAL",
+    "sales_rows": 13,
+    "censored_sales_excluded": 1,
+    "thermal_rows": 56,
+    "demand_mean_absolute_error_units": 7.133523768650793,
+    "demand_rmse_units": 7.4201789998266126,
+    "demand_marginal_negative_log_likelihood": 7.889118652830979,
+    "thermal_rmse_c": 0.042963477102453226,
+    "prediction_rule": "Frozen weekday level; thermal one-step prediction from current measured initial/forcing. Test rows never enter either fit.",
+    "real_operational_validation": false
+  },
+  "after": {
+    "schema_version": "dormathon.calibration-heldout.v1",
+    "calibration_version": "calibrated-2026-09-26-d7d491a4",
+    "start_inclusive": "2026-09-26",
+    "end_exclusive": "2026-10-10",
+    "data_mode": "SYNTHETIC_INTERNAL",
+    "sales_rows": 13,
+    "censored_sales_excluded": 1,
+    "thermal_rows": 56,
+    "demand_mean_absolute_error_units": 1.6896381706285761,
+    "demand_rmse_units": 2.1834154851279584,
+    "demand_marginal_negative_log_likelihood": 2.1667781086165587,
+    "thermal_rmse_c": 0.04183708508111105,
+    "prediction_rule": "Frozen weekday level; thermal one-step prediction from current measured initial/forcing. Test rows never enter either fit.",
+    "real_operational_validation": false
+  },
+  "training_heldout_disjoint": true,
+  "selected_hyperparameters_without_holdout": true,
+  "real_operational_validation": false
+}

@@ -1,0 +1,2472 @@
+{
+  "schema_version": "dormathon.bounded-uct-oracle-comparison.v1",
+  "scope": "Two-day three-path finite miniature on the SAME dynamics/reward/resource kernel; not the seven-day held-out benchmark.",
+  "oracle": {
+    "scope": "two-day three-path finite miniature only",
+    "expected_reward": -47.592816,
+    "first_action_id": "none_support_none",
+    "second_choices": [
+      {
+        "observation": {
+          "schema_version": "dormathon.mrdiy-dynamics.v1",
+          "data_mode": "SYNTHETIC_INTERNAL",
+          "automatic_execution": false,
+          "calibration_version": "authored-prior-v1",
+          "day": 1,
+          "start_date": "2026-10-10",
+          "date": "2026-10-11",
+          "horizon_days": 7,
+          "inventory_units": 40,
+          "source_units": 170,
+          "cash_available_myr": 3820,
+          "opening_po_reserved_myr": 4160,
+          "storage_capacity_units": 600,
+          "orders": [
+            {
+              "id": "DEMO_SHIP01",
+              "kind": "existing_inbound",
+              "units": 200,
+              "reported_arrival_day": 5,
+              "received": false
+            },
+            {
+              "id": "DEMO_SHIP02",
+              "kind": "existing_inbound",
+              "units": 20,
+              "reported_arrival_day": 3,
+              "received": false
+            }
+          ],
+          "resources": {
+            "fuel_remaining_litres": 30,
+            "staff_hours_remaining": 5,
+            "backup_energy_remaining_kwh": 10.8
+          },
+          "fatigue": 0.06381119532100729,
+          "backlog_hours": 1.5325593166142697,
+          "indoor_temperature_c": 27.465074731551823,
+          "last_sales": {
+            "date": "2026-10-10",
+            "fulfilled_units": 20,
+            "censored": false
+          },
+          "demand_belief": {
+            "log_deviation": -0.11332868530700324,
+            "uncensored_rows": 1,
+            "basis": "assumed_prior_then_only_uncensored_elapsed_sales"
+          },
+          "history": [
+            {
+              "date": "2026-10-10",
+              "fulfilled_units": 20,
+              "censored": false,
+              "receipt_ids": [],
+              "action_id": "none_support_none"
+            }
+          ],
+          "cumulative": {
+            "fulfilled_units": 20,
+            "transferred_units": 0,
+            "received_units": 0,
+            "new_cash_commitments_myr": 20,
+            "fuel_litres": 0,
+            "staff_hours": 1,
+            "backup_energy_kwh": 0,
+            "support_hours": 1,
+            "heat_degree_hours": 3.2801832756523512
+          },
+          "initial": {
+            "inventory_units": 60,
+            "source_units": 170,
+            "cash_available_myr": 3840,
+            "fuel_litres": 30,
+            "staff_hours": 6,
+            "backup_energy_kwh": 10.8
+          }
+        },
+        "assumed_observation_weight": 0.6,
+        "conditional_future_count": 2,
+        "action_id": "none_support_none"
+      },
+      {
+        "observation": {
+          "schema_version": "dormathon.mrdiy-dynamics.v1",
+          "data_mode": "SYNTHETIC_INTERNAL",
+          "automatic_execution": false,
+          "calibration_version": "authored-prior-v1",
+          "day": 1,
+          "start_date": "2026-10-10",
+          "date": "2026-10-11",
+          "horizon_days": 7,
+          "inventory_units": 30,
+          "source_units": 170,
+          "cash_available_myr": 3820,
+          "opening_po_reserved_myr": 4160,
+          "storage_capacity_units": 600,
+          "orders": [
+            {
+              "id": "DEMO_SHIP01",
+              "kind": "existing_inbound",
+              "units": 200,
+              "reported_arrival_day": 5,
+              "received": false
+            },
+            {
+              "id": "DEMO_SHIP02",
+              "kind": "existing_inbound",
+              "units": 20,
+              "reported_arrival_day": 3,
+              "received": false
+            }
+          ],
+          "resources": {
+            "fuel_remaining_litres": 30,
+            "staff_hours_remaining": 5,
+            "backup_energy_remaining_kwh": 10.8
+          },
+          "fatigue": 0.06381119532100729,
+          "backlog_hours": 1.788855601675749,
+          "indoor_temperature_c": 27.60852122242085,
+          "last_sales": {
+            "date": "2026-10-10",
+            "fulfilled_units": 30,
+            "censored": false
+          },
+          "demand_belief": {
+            "log_deviation": 0.29213642280116114,
+            "uncensored_rows": 1,
+            "basis": "assumed_prior_then_only_uncensored_elapsed_sales"
+          },
+          "history": [
+            {
+              "date": "2026-10-10",
+              "fulfilled_units": 30,
+              "censored": false,
+              "receipt_ids": [],
+              "action_id": "none_support_none"
+            }
+          ],
+          "cumulative": {
+            "fulfilled_units": 30,
+            "transferred_units": 0,
+            "received_units": 0,
+            "new_cash_commitments_myr": 20,
+            "fuel_litres": 0,
+            "staff_hours": 1,
+            "backup_energy_kwh": 0,
+            "support_hours": 1,
+            "heat_degree_hours": 8.58605174713902
+          },
+          "initial": {
+            "inventory_units": 60,
+            "source_units": 170,
+            "cash_available_myr": 3840,
+            "fuel_litres": 30,
+            "staff_hours": 6,
+            "backup_energy_kwh": 10.8
+          }
+        },
+        "assumed_observation_weight": 0.4,
+        "conditional_future_count": 1,
+        "action_id": "none_normal_cool"
+      }
+    ],
+    "first_candidates": [
+      {
+        "first_action_id": "none_normal_none",
+        "expected_reward": -51.773215,
+        "second_choices": [
+          {
+            "observation": {
+              "schema_version": "dormathon.mrdiy-dynamics.v1",
+              "data_mode": "SYNTHETIC_INTERNAL",
+              "automatic_execution": false,
+              "calibration_version": "authored-prior-v1",
+              "day": 1,
+              "start_date": "2026-10-10",
+              "date": "2026-10-11",
+              "horizon_days": 7,
+              "inventory_units": 40,
+              "source_units": 170,
+              "cash_available_myr": 3840,
+              "opening_po_reserved_myr": 4160,
+              "storage_capacity_units": 600,
+              "orders": [
+                {
+                  "id": "DEMO_SHIP01",
+                  "kind": "existing_inbound",
+                  "units": 200,
+                  "reported_arrival_day": 5,
+                  "received": false
+                },
+                {
+                  "id": "DEMO_SHIP02",
+                  "kind": "existing_inbound",
+                  "units": 20,
+                  "reported_arrival_day": 3,
+                  "received": false
+                }
+              ],
+              "resources": {
+                "fuel_remaining_litres": 30,
+                "staff_hours_remaining": 6,
+                "backup_energy_remaining_kwh": 10.8
+              },
+              "fatigue": 0.08426971011079547,
+              "backlog_hours": 2.5091335113637676,
+              "indoor_temperature_c": 27.465074731551823,
+              "last_sales": {
+                "date": "2026-10-10",
+                "fulfilled_units": 20,
+                "censored": false
+              },
+              "demand_belief": {
+                "log_deviation": -0.11332868530700324,
+                "uncensored_rows": 1,
+                "basis": "assumed_prior_then_only_uncensored_elapsed_sales"
+              },
+              "history": [
+                {
+                  "date": "2026-10-10",
+                  "fulfilled_units": 20,
+                  "censored": false,
+                  "receipt_ids": [],
+                  "action_id": "none_normal_none"
+                }
+              ],
+              "cumulative": {
+                "fulfilled_units": 20,
+                "transferred_units": 0,
+                "received_units": 0,
+                "new_cash_commitments_myr": 0,
+                "fuel_litres": 0,
+                "staff_hours": 0,
+                "backup_energy_kwh": 0,
+                "support_hours": 0,
+                "heat_degree_hours": 3.2801832756523512
+              },
+              "initial": {
+                "inventory_units": 60,
+                "source_units": 170,
+                "cash_available_myr": 3840,
+                "fuel_litres": 30,
+                "staff_hours": 6,
+                "backup_energy_kwh": 10.8
+              }
+            },
+            "assumed_observation_weight": 0.6,
+            "conditional_future_count": 2,
+            "action_id": "none_support_none"
+          },
+          {
+            "observation": {
+              "schema_version": "dormathon.mrdiy-dynamics.v1",
+              "data_mode": "SYNTHETIC_INTERNAL",
+              "automatic_execution": false,
+              "calibration_version": "authored-prior-v1",
+              "day": 1,
+              "start_date": "2026-10-10",
+              "date": "2026-10-11",
+              "horizon_days": 7,
+              "inventory_units": 34.2961086093243,
+              "source_units": 170,
+              "cash_available_myr": 3840,
+              "opening_po_reserved_myr": 4160,
+              "storage_capacity_units": 600,
+              "orders": [
+                {
+                  "id": "DEMO_SHIP01",
+                  "kind": "existing_inbound",
+                  "units": 200,
+                  "reported_arrival_day": 5,
+                  "received": false
+                },
+                {
+                  "id": "DEMO_SHIP02",
+                  "kind": "existing_inbound",
+                  "units": 20,
+                  "reported_arrival_day": 3,
+                  "received": false
+                }
+              ],
+              "resources": {
+                "fuel_remaining_litres": 30,
+                "staff_hours_remaining": 6,
+                "backup_energy_remaining_kwh": 10.8
+              },
+              "fatigue": 0.08426971011079547,
+              "backlog_hours": 2.711919553946355,
+              "indoor_temperature_c": 27.60852122242085,
+              "last_sales": {
+                "date": "2026-10-10",
+                "fulfilled_units": 25.7038913906757,
+                "censored": true
+              },
+              "demand_belief": {
+                "log_deviation": 0,
+                "uncensored_rows": 0,
+                "basis": "assumed_prior_then_only_uncensored_elapsed_sales"
+              },
+              "history": [
+                {
+                  "date": "2026-10-10",
+                  "fulfilled_units": 25.7038913906757,
+                  "censored": true,
+                  "receipt_ids": [],
+                  "action_id": "none_normal_none"
+                }
+              ],
+              "cumulative": {
+                "fulfilled_units": 25.7038913906757,
+                "transferred_units": 0,
+                "received_units": 0,
+                "new_cash_commitments_myr": 0,
+                "fuel_litres": 0,
+                "staff_hours": 0,
+                "backup_energy_kwh": 0,
+                "support_hours": 0,
+                "heat_degree_hours": 8.58605174713902
+              },
+              "initial": {
+                "inventory_units": 60,
+                "source_units": 170,
+                "cash_available_myr": 3840,
+                "fuel_litres": 30,
+                "staff_hours": 6,
+                "backup_energy_kwh": 10.8
+              }
+            },
+            "assumed_observation_weight": 0.4,
+            "conditional_future_count": 1,
+            "action_id": "none_normal_none"
+          }
+        ]
+      },
+      {
+        "first_action_id": "none_normal_cool",
+        "expected_reward": -49.328358,
+        "second_choices": [
+          {
+            "observation": {
+              "schema_version": "dormathon.mrdiy-dynamics.v1",
+              "data_mode": "SYNTHETIC_INTERNAL",
+              "automatic_execution": false,
+              "calibration_version": "authored-prior-v1",
+              "day": 1,
+              "start_date": "2026-10-10",
+              "date": "2026-10-11",
+              "horizon_days": 7,
+              "inventory_units": 40,
+              "source_units": 170,
+              "cash_available_myr": 3837,
+              "opening_po_reserved_myr": 4160,
+              "storage_capacity_units": 600,
+              "orders": [
+                {
+                  "id": "DEMO_SHIP01",
+                  "kind": "existing_inbound",
+                  "units": 200,
+                  "reported_arrival_day": 5,
+                  "received": false
+                },
+                {
+                  "id": "DEMO_SHIP02",
+                  "kind": "existing_inbound",
+                  "units": 20,
+                  "reported_arrival_day": 3,
+                  "received": false
+                }
+              ],
+              "resources": {
+                "fuel_remaining_litres": 30,
+                "staff_hours_remaining": 5.75,
+                "backup_energy_remaining_kwh": 4.800000000000001
+              },
+              "fatigue": 0.08426971011079547,
+              "backlog_hours": 2.5091335113637676,
+              "indoor_temperature_c": 27.347738114989667,
+              "last_sales": {
+                "date": "2026-10-10",
+                "fulfilled_units": 20,
+                "censored": false
+              },
+              "demand_belief": {
+                "log_deviation": -0.11332868530700324,
+                "uncensored_rows": 1,
+                "basis": "assumed_prior_then_only_uncensored_elapsed_sales"
+              },
+              "history": [
+                {
+                  "date": "2026-10-10",
+                  "fulfilled_units": 20,
+                  "censored": false,
+                  "receipt_ids": [],
+                  "action_id": "none_normal_cool"
+                }
+              ],
+              "cumulative": {
+                "fulfilled_units": 20,
+                "transferred_units": 0,
+                "received_units": 0,
+                "new_cash_commitments_myr": 3,
+                "fuel_litres": 0,
+                "staff_hours": 0.25,
+                "backup_energy_kwh": 6,
+                "support_hours": 0,
+                "heat_degree_hours": 0.09261799417523209
+              },
+              "initial": {
+                "inventory_units": 60,
+                "source_units": 170,
+                "cash_available_myr": 3840,
+                "fuel_litres": 30,
+                "staff_hours": 6,
+                "backup_energy_kwh": 10.8
+              }
+            },
+            "assumed_observation_weight": 0.6,
+            "conditional_future_count": 2,
+            "action_id": "none_support_none"
+          },
+          {
+            "observation": {
+              "schema_version": "dormathon.mrdiy-dynamics.v1",
+              "data_mode": "SYNTHETIC_INTERNAL",
+              "automatic_execution": false,
+              "calibration_version": "authored-prior-v1",
+              "day": 1,
+              "start_date": "2026-10-10",
+              "date": "2026-10-11",
+              "horizon_days": 7,
+              "inventory_units": 33.56630982579304,
+              "source_units": 170,
+              "cash_available_myr": 3837,
+              "opening_po_reserved_myr": 4160,
+              "storage_capacity_units": 600,
+              "orders": [
+                {
+                  "id": "DEMO_SHIP01",
+                  "kind": "existing_inbound",
+                  "units": 200,
+                  "reported_arrival_day": 5,
+                  "received": false
+                },
+                {
+                  "id": "DEMO_SHIP02",
+                  "kind": "existing_inbound",
+                  "units": 20,
+                  "reported_arrival_day": 3,
+                  "received": false
+                }
+              ],
+              "resources": {
+                "fuel_remaining_litres": 30,
+                "staff_hours_remaining": 5.75,
+                "backup_energy_remaining_kwh": 4.800000000000001
+              },
+              "fatigue": 0.08426971011079547,
+              "backlog_hours": 2.6797502134974795,
+              "indoor_temperature_c": 27.491184605858695,
+              "last_sales": {
+                "date": "2026-10-10",
+                "fulfilled_units": 26.433690174206955,
+                "censored": true
+              },
+              "demand_belief": {
+                "log_deviation": 0,
+                "uncensored_rows": 0,
+                "basis": "assumed_prior_then_only_uncensored_elapsed_sales"
+              },
+              "history": [
+                {
+                  "date": "2026-10-10",
+                  "fulfilled_units": 26.433690174206955,
+                  "censored": true,
+                  "receipt_ids": [],
+                  "action_id": "none_normal_cool"
+                }
+              ],
+              "cumulative": {
+                "fulfilled_units": 26.433690174206955,
+                "transferred_units": 0,
+                "received_units": 0,
+                "new_cash_commitments_myr": 3,
+                "fuel_litres": 0,
+                "staff_hours": 0.25,
+                "backup_energy_kwh": 6,
+                "support_hours": 0,
+                "heat_degree_hours": 2.393372151467081
+              },
+              "initial": {
+                "inventory_units": 60,
+                "source_units": 170,
+                "cash_available_myr": 3840,
+                "fuel_litres": 30,
+                "staff_hours": 6,
+                "backup_energy_kwh": 10.8
+              }
+            },
+            "assumed_observation_weight": 0.4,
+            "conditional_future_count": 1,
+            "action_id": "none_normal_none"
+          }
+        ]
+      },
+      {
+        "first_action_id": "none_support_none",
+        "expected_reward": -47.592816,
+        "second_choices": [
+          {
+            "observation": {
+              "schema_version": "dormathon.mrdiy-dynamics.v1",
+              "data_mode": "SYNTHETIC_INTERNAL",
+              "automatic_execution": false,
+              "calibration_version": "authored-prior-v1",
+              "day": 1,
+              "start_date": "2026-10-10",
+              "date": "2026-10-11",
+              "horizon_days": 7,
+              "inventory_units": 40,
+              "source_units": 170,
+              "cash_available_myr": 3820,
+              "opening_po_reserved_myr": 4160,
+              "storage_capacity_units": 600,
+              "orders": [
+                {
+                  "id": "DEMO_SHIP01",
+                  "kind": "existing_inbound",
+                  "units": 200,
+                  "reported_arrival_day": 5,
+                  "received": false
+                },
+                {
+                  "id": "DEMO_SHIP02",
+                  "kind": "existing_inbound",
+                  "units": 20,
+                  "reported_arrival_day": 3,
+                  "received": false
+                }
+              ],
+              "resources": {
+                "fuel_remaining_litres": 30,
+                "staff_hours_remaining": 5,
+                "backup_energy_remaining_kwh": 10.8
+              },
+              "fatigue": 0.06381119532100729,
+              "backlog_hours": 1.5325593166142697,
+              "indoor_temperature_c": 27.465074731551823,
+              "last_sales": {
+                "date": "2026-10-10",
+                "fulfilled_units": 20,
+                "censored": false
+              },
+              "demand_belief": {
+                "log_deviation": -0.11332868530700324,
+                "uncensored_rows": 1,
+                "basis": "assumed_prior_then_only_uncensored_elapsed_sales"
+              },
+              "history": [
+                {
+                  "date": "2026-10-10",
+                  "fulfilled_units": 20,
+                  "censored": false,
+                  "receipt_ids": [],
+                  "action_id": "none_support_none"
+                }
+              ],
+              "cumulative": {
+                "fulfilled_units": 20,
+                "transferred_units": 0,
+                "received_units": 0,
+                "new_cash_commitments_myr": 20,
+                "fuel_litres": 0,
+                "staff_hours": 1,
+                "backup_energy_kwh": 0,
+                "support_hours": 1,
+                "heat_degree_hours": 3.2801832756523512
+              },
+              "initial": {
+                "inventory_units": 60,
+                "source_units": 170,
+                "cash_available_myr": 3840,
+                "fuel_litres": 30,
+                "staff_hours": 6,
+                "backup_energy_kwh": 10.8
+              }
+            },
+            "assumed_observation_weight": 0.6,
+            "conditional_future_count": 2,
+            "action_id": "none_support_none"
+          },
+          {
+            "observation": {
+              "schema_version": "dormathon.mrdiy-dynamics.v1",
+              "data_mode": "SYNTHETIC_INTERNAL",
+              "automatic_execution": false,
+              "calibration_version": "authored-prior-v1",
+              "day": 1,
+              "start_date": "2026-10-10",
+              "date": "2026-10-11",
+              "horizon_days": 7,
+              "inventory_units": 30,
+              "source_units": 170,
+              "cash_available_myr": 3820,
+              "opening_po_reserved_myr": 4160,
+              "storage_capacity_units": 600,
+              "orders": [
+                {
+                  "id": "DEMO_SHIP01",
+                  "kind": "existing_inbound",
+                  "units": 200,
+                  "reported_arrival_day": 5,
+                  "received": false
+                },
+                {
+                  "id": "DEMO_SHIP02",
+                  "kind": "existing_inbound",
+                  "units": 20,
+                  "reported_arrival_day": 3,
+                  "received": false
+                }
+              ],
+              "resources": {
+                "fuel_remaining_litres": 30,
+                "staff_hours_remaining": 5,
+                "backup_energy_remaining_kwh": 10.8
+              },
+              "fatigue": 0.06381119532100729,
+              "backlog_hours": 1.788855601675749,
+              "indoor_temperature_c": 27.60852122242085,
+              "last_sales": {
+                "date": "2026-10-10",
+                "fulfilled_units": 30,
+                "censored": false
+              },
+              "demand_belief": {
+                "log_deviation": 0.29213642280116114,
+                "uncensored_rows": 1,
+                "basis": "assumed_prior_then_only_uncensored_elapsed_sales"
+              },
+              "history": [
+                {
+                  "date": "2026-10-10",
+                  "fulfilled_units": 30,
+                  "censored": false,
+                  "receipt_ids": [],
+                  "action_id": "none_support_none"
+                }
+              ],
+              "cumulative": {
+                "fulfilled_units": 30,
+                "transferred_units": 0,
+                "received_units": 0,
+                "new_cash_commitments_myr": 20,
+                "fuel_litres": 0,
+                "staff_hours": 1,
+                "backup_energy_kwh": 0,
+                "support_hours": 1,
+                "heat_degree_hours": 8.58605174713902
+              },
+              "initial": {
+                "inventory_units": 60,
+                "source_units": 170,
+                "cash_available_myr": 3840,
+                "fuel_litres": 30,
+                "staff_hours": 6,
+                "backup_energy_kwh": 10.8
+              }
+            },
+            "assumed_observation_weight": 0.4,
+            "conditional_future_count": 1,
+            "action_id": "none_normal_cool"
+          }
+        ]
+      },
+      {
+        "first_action_id": "none_support_cool",
+        "expected_reward": -48.455404,
+        "second_choices": [
+          {
+            "observation": {
+              "schema_version": "dormathon.mrdiy-dynamics.v1",
+              "data_mode": "SYNTHETIC_INTERNAL",
+              "automatic_execution": false,
+              "calibration_version": "authored-prior-v1",
+              "day": 1,
+              "start_date": "2026-10-10",
+              "date": "2026-10-11",
+              "horizon_days": 7,
+              "inventory_units": 40,
+              "source_units": 170,
+              "cash_available_myr": 3817,
+              "opening_po_reserved_myr": 4160,
+              "storage_capacity_units": 600,
+              "orders": [
+                {
+                  "id": "DEMO_SHIP01",
+                  "kind": "existing_inbound",
+                  "units": 200,
+                  "reported_arrival_day": 5,
+                  "received": false
+                },
+                {
+                  "id": "DEMO_SHIP02",
+                  "kind": "existing_inbound",
+                  "units": 20,
+                  "reported_arrival_day": 3,
+                  "received": false
+                }
+              ],
+              "resources": {
+                "fuel_remaining_litres": 30,
+                "staff_hours_remaining": 4.75,
+                "backup_energy_remaining_kwh": 4.800000000000001
+              },
+              "fatigue": 0.06381119532100729,
+              "backlog_hours": 1.5325593166142697,
+              "indoor_temperature_c": 27.347738114989667,
+              "last_sales": {
+                "date": "2026-10-10",
+                "fulfilled_units": 20,
+                "censored": false
+              },
+              "demand_belief": {
+                "log_deviation": -0.11332868530700324,
+                "uncensored_rows": 1,
+                "basis": "assumed_prior_then_only_uncensored_elapsed_sales"
+              },
+              "history": [
+                {
+                  "date": "2026-10-10",
+                  "fulfilled_units": 20,
+                  "censored": false,
+                  "receipt_ids": [],
+                  "action_id": "none_support_cool"
+                }
+              ],
+              "cumulative": {
+                "fulfilled_units": 20,
+                "transferred_units": 0,
+                "received_units": 0,
+                "new_cash_commitments_myr": 23,
+                "fuel_litres": 0,
+                "staff_hours": 1.25,
+                "backup_energy_kwh": 6,
+                "support_hours": 1,
+                "heat_degree_hours": 0.09261799417523209
+              },
+              "initial": {
+                "inventory_units": 60,
+                "source_units": 170,
+                "cash_available_myr": 3840,
+                "fuel_litres": 30,
+                "staff_hours": 6,
+                "backup_energy_kwh": 10.8
+              }
+            },
+            "assumed_observation_weight": 0.6,
+            "conditional_future_count": 2,
+            "action_id": "none_support_none"
+          },
+          {
+            "observation": {
+              "schema_version": "dormathon.mrdiy-dynamics.v1",
+              "data_mode": "SYNTHETIC_INTERNAL",
+              "automatic_execution": false,
+              "calibration_version": "authored-prior-v1",
+              "day": 1,
+              "start_date": "2026-10-10",
+              "date": "2026-10-11",
+              "horizon_days": 7,
+              "inventory_units": 30,
+              "source_units": 170,
+              "cash_available_myr": 3817,
+              "opening_po_reserved_myr": 4160,
+              "storage_capacity_units": 600,
+              "orders": [
+                {
+                  "id": "DEMO_SHIP01",
+                  "kind": "existing_inbound",
+                  "units": 200,
+                  "reported_arrival_day": 5,
+                  "received": false
+                },
+                {
+                  "id": "DEMO_SHIP02",
+                  "kind": "existing_inbound",
+                  "units": 20,
+                  "reported_arrival_day": 3,
+                  "received": false
+                }
+              ],
+              "resources": {
+                "fuel_remaining_litres": 30,
+                "staff_hours_remaining": 4.75,
+                "backup_energy_remaining_kwh": 4.800000000000001
+              },
+              "fatigue": 0.06381119532100729,
+              "backlog_hours": 1.7374369325161836,
+              "indoor_temperature_c": 27.491184605858695,
+              "last_sales": {
+                "date": "2026-10-10",
+                "fulfilled_units": 30,
+                "censored": false
+              },
+              "demand_belief": {
+                "log_deviation": 0.29213642280116114,
+                "uncensored_rows": 1,
+                "basis": "assumed_prior_then_only_uncensored_elapsed_sales"
+              },
+              "history": [
+                {
+                  "date": "2026-10-10",
+                  "fulfilled_units": 30,
+                  "censored": false,
+                  "receipt_ids": [],
+                  "action_id": "none_support_cool"
+                }
+              ],
+              "cumulative": {
+                "fulfilled_units": 30,
+                "transferred_units": 0,
+                "received_units": 0,
+                "new_cash_commitments_myr": 23,
+                "fuel_litres": 0,
+                "staff_hours": 1.25,
+                "backup_energy_kwh": 6,
+                "support_hours": 1,
+                "heat_degree_hours": 2.393372151467081
+              },
+              "initial": {
+                "inventory_units": 60,
+                "source_units": 170,
+                "cash_available_myr": 3840,
+                "fuel_litres": 30,
+                "staff_hours": 6,
+                "backup_energy_kwh": 10.8
+              }
+            },
+            "assumed_observation_weight": 0.4,
+            "conditional_future_count": 1,
+            "action_id": "none_normal_none"
+          }
+        ]
+      },
+      {
+        "first_action_id": "transfer40_normal_none",
+        "expected_reward": -94.973215,
+        "second_choices": [
+          {
+            "observation": {
+              "schema_version": "dormathon.mrdiy-dynamics.v1",
+              "data_mode": "SYNTHETIC_INTERNAL",
+              "automatic_execution": false,
+              "calibration_version": "authored-prior-v1",
+              "day": 1,
+              "start_date": "2026-10-10",
+              "date": "2026-10-11",
+              "horizon_days": 7,
+              "inventory_units": 80,
+              "source_units": 130,
+              "cash_available_myr": 3800,
+              "opening_po_reserved_myr": 4160,
+              "storage_capacity_units": 600,
+              "orders": [
+                {
+                  "id": "DEMO_SHIP01",
+                  "kind": "existing_inbound",
+                  "units": 200,
+                  "reported_arrival_day": 5,
+                  "received": false
+                },
+                {
+                  "id": "DEMO_SHIP02",
+                  "kind": "existing_inbound",
+                  "units": 20,
+                  "reported_arrival_day": 3,
+                  "received": false
+                }
+              ],
+              "resources": {
+                "fuel_remaining_litres": 22,
+                "staff_hours_remaining": 5,
+                "backup_energy_remaining_kwh": 10.8
+              },
+              "fatigue": 0.08426971011079547,
+              "backlog_hours": 2.5091335113637676,
+              "indoor_temperature_c": 27.465074731551823,
+              "last_sales": {
+                "date": "2026-10-10",
+                "fulfilled_units": 20,
+                "censored": false
+              },
+              "demand_belief": {
+                "log_deviation": -0.11332868530700324,
+                "uncensored_rows": 1,
+                "basis": "assumed_prior_then_only_uncensored_elapsed_sales"
+              },
+              "history": [
+                {
+                  "date": "2026-10-10",
+                  "fulfilled_units": 20,
+                  "censored": false,
+                  "receipt_ids": [],
+                  "action_id": "transfer40_normal_none"
+                }
+              ],
+              "cumulative": {
+                "fulfilled_units": 20,
+                "transferred_units": 40,
+                "received_units": 0,
+                "new_cash_commitments_myr": 40,
+                "fuel_litres": 8,
+                "staff_hours": 1,
+                "backup_energy_kwh": 0,
+                "support_hours": 0,
+                "heat_degree_hours": 3.2801832756523512
+              },
+              "initial": {
+                "inventory_units": 60,
+                "source_units": 170,
+                "cash_available_myr": 3840,
+                "fuel_litres": 30,
+                "staff_hours": 6,
+                "backup_energy_kwh": 10.8
+              }
+            },
+            "assumed_observation_weight": 0.6,
+            "conditional_future_count": 2,
+            "action_id": "none_support_none"
+          },
+          {
+            "observation": {
+              "schema_version": "dormathon.mrdiy-dynamics.v1",
+              "data_mode": "SYNTHETIC_INTERNAL",
+              "automatic_execution": false,
+              "calibration_version": "authored-prior-v1",
+              "day": 1,
+              "start_date": "2026-10-10",
+              "date": "2026-10-11",
+              "horizon_days": 7,
+              "inventory_units": 74.2961086093243,
+              "source_units": 130,
+              "cash_available_myr": 3800,
+              "opening_po_reserved_myr": 4160,
+              "storage_capacity_units": 600,
+              "orders": [
+                {
+                  "id": "DEMO_SHIP01",
+                  "kind": "existing_inbound",
+                  "units": 200,
+                  "reported_arrival_day": 5,
+                  "received": false
+                },
+                {
+                  "id": "DEMO_SHIP02",
+                  "kind": "existing_inbound",
+                  "units": 20,
+                  "reported_arrival_day": 3,
+                  "received": false
+                }
+              ],
+              "resources": {
+                "fuel_remaining_litres": 22,
+                "staff_hours_remaining": 5,
+                "backup_energy_remaining_kwh": 10.8
+              },
+              "fatigue": 0.08426971011079547,
+              "backlog_hours": 2.711919553946355,
+              "indoor_temperature_c": 27.60852122242085,
+              "last_sales": {
+                "date": "2026-10-10",
+                "fulfilled_units": 25.7038913906757,
+                "censored": true
+              },
+              "demand_belief": {
+                "log_deviation": 0,
+                "uncensored_rows": 0,
+                "basis": "assumed_prior_then_only_uncensored_elapsed_sales"
+              },
+              "history": [
+                {
+                  "date": "2026-10-10",
+                  "fulfilled_units": 25.7038913906757,
+                  "censored": true,
+                  "receipt_ids": [],
+                  "action_id": "transfer40_normal_none"
+                }
+              ],
+              "cumulative": {
+                "fulfilled_units": 25.7038913906757,
+                "transferred_units": 40,
+                "received_units": 0,
+                "new_cash_commitments_myr": 40,
+                "fuel_litres": 8,
+                "staff_hours": 1,
+                "backup_energy_kwh": 0,
+                "support_hours": 0,
+                "heat_degree_hours": 8.58605174713902
+              },
+              "initial": {
+                "inventory_units": 60,
+                "source_units": 170,
+                "cash_available_myr": 3840,
+                "fuel_litres": 30,
+                "staff_hours": 6,
+                "backup_energy_kwh": 10.8
+              }
+            },
+            "assumed_observation_weight": 0.4,
+            "conditional_future_count": 1,
+            "action_id": "none_normal_none"
+          }
+        ]
+      },
+      {
+        "first_action_id": "transfer40_normal_cool",
+        "expected_reward": -92.528358,
+        "second_choices": [
+          {
+            "observation": {
+              "schema_version": "dormathon.mrdiy-dynamics.v1",
+              "data_mode": "SYNTHETIC_INTERNAL",
+              "automatic_execution": false,
+              "calibration_version": "authored-prior-v1",
+              "day": 1,
+              "start_date": "2026-10-10",
+              "date": "2026-10-11",
+              "horizon_days": 7,
+              "inventory_units": 80,
+              "source_units": 130,
+              "cash_available_myr": 3797,
+              "opening_po_reserved_myr": 4160,
+              "storage_capacity_units": 600,
+              "orders": [
+                {
+                  "id": "DEMO_SHIP01",
+                  "kind": "existing_inbound",
+                  "units": 200,
+                  "reported_arrival_day": 5,
+                  "received": false
+                },
+                {
+                  "id": "DEMO_SHIP02",
+                  "kind": "existing_inbound",
+                  "units": 20,
+                  "reported_arrival_day": 3,
+                  "received": false
+                }
+              ],
+              "resources": {
+                "fuel_remaining_litres": 22,
+                "staff_hours_remaining": 4.75,
+                "backup_energy_remaining_kwh": 4.800000000000001
+              },
+              "fatigue": 0.08426971011079547,
+              "backlog_hours": 2.5091335113637676,
+              "indoor_temperature_c": 27.347738114989667,
+              "last_sales": {
+                "date": "2026-10-10",
+                "fulfilled_units": 20,
+                "censored": false
+              },
+              "demand_belief": {
+                "log_deviation": -0.11332868530700324,
+                "uncensored_rows": 1,
+                "basis": "assumed_prior_then_only_uncensored_elapsed_sales"
+              },
+              "history": [
+                {
+                  "date": "2026-10-10",
+                  "fulfilled_units": 20,
+                  "censored": false,
+                  "receipt_ids": [],
+                  "action_id": "transfer40_normal_cool"
+                }
+              ],
+              "cumulative": {
+                "fulfilled_units": 20,
+                "transferred_units": 40,
+                "received_units": 0,
+                "new_cash_commitments_myr": 43,
+                "fuel_litres": 8,
+                "staff_hours": 1.25,
+                "backup_energy_kwh": 6,
+                "support_hours": 0,
+                "heat_degree_hours": 0.09261799417523209
+              },
+              "initial": {
+                "inventory_units": 60,
+                "source_units": 170,
+                "cash_available_myr": 3840,
+                "fuel_litres": 30,
+                "staff_hours": 6,
+                "backup_energy_kwh": 10.8
+              }
+            },
+            "assumed_observation_weight": 0.6,
+            "conditional_future_count": 2,
+            "action_id": "none_support_none"
+          },
+          {
+            "observation": {
+              "schema_version": "dormathon.mrdiy-dynamics.v1",
+              "data_mode": "SYNTHETIC_INTERNAL",
+              "automatic_execution": false,
+              "calibration_version": "authored-prior-v1",
+              "day": 1,
+              "start_date": "2026-10-10",
+              "date": "2026-10-11",
+              "horizon_days": 7,
+              "inventory_units": 73.56630982579304,
+              "source_units": 130,
+              "cash_available_myr": 3797,
+              "opening_po_reserved_myr": 4160,
+              "storage_capacity_units": 600,
+              "orders": [
+                {
+                  "id": "DEMO_SHIP01",
+                  "kind": "existing_inbound",
+                  "units": 200,
+                  "reported_arrival_day": 5,
+                  "received": false
+                },
+                {
+                  "id": "DEMO_SHIP02",
+                  "kind": "existing_inbound",
+                  "units": 20,
+                  "reported_arrival_day": 3,
+                  "received": false
+                }
+              ],
+              "resources": {
+                "fuel_remaining_litres": 22,
+                "staff_hours_remaining": 4.75,
+                "backup_energy_remaining_kwh": 4.800000000000001
+              },
+              "fatigue": 0.08426971011079547,
+              "backlog_hours": 2.6797502134974795,
+              "indoor_temperature_c": 27.491184605858695,
+              "last_sales": {
+                "date": "2026-10-10",
+                "fulfilled_units": 26.433690174206955,
+                "censored": true
+              },
+              "demand_belief": {
+                "log_deviation": 0,
+                "uncensored_rows": 0,
+                "basis": "assumed_prior_then_only_uncensored_elapsed_sales"
+              },
+              "history": [
+                {
+                  "date": "2026-10-10",
+                  "fulfilled_units": 26.433690174206955,
+                  "censored": true,
+                  "receipt_ids": [],
+                  "action_id": "transfer40_normal_cool"
+                }
+              ],
+              "cumulative": {
+                "fulfilled_units": 26.433690174206955,
+                "transferred_units": 40,
+                "received_units": 0,
+                "new_cash_commitments_myr": 43,
+                "fuel_litres": 8,
+                "staff_hours": 1.25,
+                "backup_energy_kwh": 6,
+                "support_hours": 0,
+                "heat_degree_hours": 2.393372151467081
+              },
+              "initial": {
+                "inventory_units": 60,
+                "source_units": 170,
+                "cash_available_myr": 3840,
+                "fuel_litres": 30,
+                "staff_hours": 6,
+                "backup_energy_kwh": 10.8
+              }
+            },
+            "assumed_observation_weight": 0.4,
+            "conditional_future_count": 1,
+            "action_id": "none_normal_none"
+          }
+        ]
+      },
+      {
+        "first_action_id": "transfer40_support_none",
+        "expected_reward": -90.792816,
+        "second_choices": [
+          {
+            "observation": {
+              "schema_version": "dormathon.mrdiy-dynamics.v1",
+              "data_mode": "SYNTHETIC_INTERNAL",
+              "automatic_execution": false,
+              "calibration_version": "authored-prior-v1",
+              "day": 1,
+              "start_date": "2026-10-10",
+              "date": "2026-10-11",
+              "horizon_days": 7,
+              "inventory_units": 80,
+              "source_units": 130,
+              "cash_available_myr": 3780,
+              "opening_po_reserved_myr": 4160,
+              "storage_capacity_units": 600,
+              "orders": [
+                {
+                  "id": "DEMO_SHIP01",
+                  "kind": "existing_inbound",
+                  "units": 200,
+                  "reported_arrival_day": 5,
+                  "received": false
+                },
+                {
+                  "id": "DEMO_SHIP02",
+                  "kind": "existing_inbound",
+                  "units": 20,
+                  "reported_arrival_day": 3,
+                  "received": false
+                }
+              ],
+              "resources": {
+                "fuel_remaining_litres": 22,
+                "staff_hours_remaining": 4,
+                "backup_energy_remaining_kwh": 10.8
+              },
+              "fatigue": 0.06381119532100729,
+              "backlog_hours": 1.5325593166142697,
+              "indoor_temperature_c": 27.465074731551823,
+              "last_sales": {
+                "date": "2026-10-10",
+                "fulfilled_units": 20,
+                "censored": false
+              },
+              "demand_belief": {
+                "log_deviation": -0.11332868530700324,
+                "uncensored_rows": 1,
+                "basis": "assumed_prior_then_only_uncensored_elapsed_sales"
+              },
+              "history": [
+                {
+                  "date": "2026-10-10",
+                  "fulfilled_units": 20,
+                  "censored": false,
+                  "receipt_ids": [],
+                  "action_id": "transfer40_support_none"
+                }
+              ],
+              "cumulative": {
+                "fulfilled_units": 20,
+                "transferred_units": 40,
+                "received_units": 0,
+                "new_cash_commitments_myr": 60,
+                "fuel_litres": 8,
+                "staff_hours": 2,
+                "backup_energy_kwh": 0,
+                "support_hours": 1,
+                "heat_degree_hours": 3.2801832756523512
+              },
+              "initial": {
+                "inventory_units": 60,
+                "source_units": 170,
+                "cash_available_myr": 3840,
+                "fuel_litres": 30,
+                "staff_hours": 6,
+                "backup_energy_kwh": 10.8
+              }
+            },
+            "assumed_observation_weight": 0.6,
+            "conditional_future_count": 2,
+            "action_id": "none_support_none"
+          },
+          {
+            "observation": {
+              "schema_version": "dormathon.mrdiy-dynamics.v1",
+              "data_mode": "SYNTHETIC_INTERNAL",
+              "automatic_execution": false,
+              "calibration_version": "authored-prior-v1",
+              "day": 1,
+              "start_date": "2026-10-10",
+              "date": "2026-10-11",
+              "horizon_days": 7,
+              "inventory_units": 70,
+              "source_units": 130,
+              "cash_available_myr": 3780,
+              "opening_po_reserved_myr": 4160,
+              "storage_capacity_units": 600,
+              "orders": [
+                {
+                  "id": "DEMO_SHIP01",
+                  "kind": "existing_inbound",
+                  "units": 200,
+                  "reported_arrival_day": 5,
+                  "received": false
+                },
+                {
+                  "id": "DEMO_SHIP02",
+                  "kind": "existing_inbound",
+                  "units": 20,
+                  "reported_arrival_day": 3,
+                  "received": false
+                }
+              ],
+              "resources": {
+                "fuel_remaining_litres": 22,
+                "staff_hours_remaining": 4,
+                "backup_energy_remaining_kwh": 10.8
+              },
+              "fatigue": 0.06381119532100729,
+              "backlog_hours": 1.788855601675749,
+              "indoor_temperature_c": 27.60852122242085,
+              "last_sales": {
+                "date": "2026-10-10",
+                "fulfilled_units": 30,
+                "censored": false
+              },
+              "demand_belief": {
+                "log_deviation": 0.29213642280116114,
+                "uncensored_rows": 1,
+                "basis": "assumed_prior_then_only_uncensored_elapsed_sales"
+              },
+              "history": [
+                {
+                  "date": "2026-10-10",
+                  "fulfilled_units": 30,
+                  "censored": false,
+                  "receipt_ids": [],
+                  "action_id": "transfer40_support_none"
+                }
+              ],
+              "cumulative": {
+                "fulfilled_units": 30,
+                "transferred_units": 40,
+                "received_units": 0,
+                "new_cash_commitments_myr": 60,
+                "fuel_litres": 8,
+                "staff_hours": 2,
+                "backup_energy_kwh": 0,
+                "support_hours": 1,
+                "heat_degree_hours": 8.58605174713902
+              },
+              "initial": {
+                "inventory_units": 60,
+                "source_units": 170,
+                "cash_available_myr": 3840,
+                "fuel_litres": 30,
+                "staff_hours": 6,
+                "backup_energy_kwh": 10.8
+              }
+            },
+            "assumed_observation_weight": 0.4,
+            "conditional_future_count": 1,
+            "action_id": "none_normal_cool"
+          }
+        ]
+      },
+      {
+        "first_action_id": "transfer40_support_cool",
+        "expected_reward": -91.655404,
+        "second_choices": [
+          {
+            "observation": {
+              "schema_version": "dormathon.mrdiy-dynamics.v1",
+              "data_mode": "SYNTHETIC_INTERNAL",
+              "automatic_execution": false,
+              "calibration_version": "authored-prior-v1",
+              "day": 1,
+              "start_date": "2026-10-10",
+              "date": "2026-10-11",
+              "horizon_days": 7,
+              "inventory_units": 80,
+              "source_units": 130,
+              "cash_available_myr": 3777,
+              "opening_po_reserved_myr": 4160,
+              "storage_capacity_units": 600,
+              "orders": [
+                {
+                  "id": "DEMO_SHIP01",
+                  "kind": "existing_inbound",
+                  "units": 200,
+                  "reported_arrival_day": 5,
+                  "received": false
+                },
+                {
+                  "id": "DEMO_SHIP02",
+                  "kind": "existing_inbound",
+                  "units": 20,
+                  "reported_arrival_day": 3,
+                  "received": false
+                }
+              ],
+              "resources": {
+                "fuel_remaining_litres": 22,
+                "staff_hours_remaining": 3.75,
+                "backup_energy_remaining_kwh": 4.800000000000001
+              },
+              "fatigue": 0.06381119532100729,
+              "backlog_hours": 1.5325593166142697,
+              "indoor_temperature_c": 27.347738114989667,
+              "last_sales": {
+                "date": "2026-10-10",
+                "fulfilled_units": 20,
+                "censored": false
+              },
+              "demand_belief": {
+                "log_deviation": -0.11332868530700324,
+                "uncensored_rows": 1,
+                "basis": "assumed_prior_then_only_uncensored_elapsed_sales"
+              },
+              "history": [
+                {
+                  "date": "2026-10-10",
+                  "fulfilled_units": 20,
+                  "censored": false,
+                  "receipt_ids": [],
+                  "action_id": "transfer40_support_cool"
+                }
+              ],
+              "cumulative": {
+                "fulfilled_units": 20,
+                "transferred_units": 40,
+                "received_units": 0,
+                "new_cash_commitments_myr": 63,
+                "fuel_litres": 8,
+                "staff_hours": 2.25,
+                "backup_energy_kwh": 6,
+                "support_hours": 1,
+                "heat_degree_hours": 0.09261799417523209
+              },
+              "initial": {
+                "inventory_units": 60,
+                "source_units": 170,
+                "cash_available_myr": 3840,
+                "fuel_litres": 30,
+                "staff_hours": 6,
+                "backup_energy_kwh": 10.8
+              }
+            },
+            "assumed_observation_weight": 0.6,
+            "conditional_future_count": 2,
+            "action_id": "none_support_none"
+          },
+          {
+            "observation": {
+              "schema_version": "dormathon.mrdiy-dynamics.v1",
+              "data_mode": "SYNTHETIC_INTERNAL",
+              "automatic_execution": false,
+              "calibration_version": "authored-prior-v1",
+              "day": 1,
+              "start_date": "2026-10-10",
+              "date": "2026-10-11",
+              "horizon_days": 7,
+              "inventory_units": 70,
+              "source_units": 130,
+              "cash_available_myr": 3777,
+              "opening_po_reserved_myr": 4160,
+              "storage_capacity_units": 600,
+              "orders": [
+                {
+                  "id": "DEMO_SHIP01",
+                  "kind": "existing_inbound",
+                  "units": 200,
+                  "reported_arrival_day": 5,
+                  "received": false
+                },
+                {
+                  "id": "DEMO_SHIP02",
+                  "kind": "existing_inbound",
+                  "units": 20,
+                  "reported_arrival_day": 3,
+                  "received": false
+                }
+              ],
+              "resources": {
+                "fuel_remaining_litres": 22,
+                "staff_hours_remaining": 3.75,
+                "backup_energy_remaining_kwh": 4.800000000000001
+              },
+              "fatigue": 0.06381119532100729,
+              "backlog_hours": 1.7374369325161836,
+              "indoor_temperature_c": 27.491184605858695,
+              "last_sales": {
+                "date": "2026-10-10",
+                "fulfilled_units": 30,
+                "censored": false
+              },
+              "demand_belief": {
+                "log_deviation": 0.29213642280116114,
+                "uncensored_rows": 1,
+                "basis": "assumed_prior_then_only_uncensored_elapsed_sales"
+              },
+              "history": [
+                {
+                  "date": "2026-10-10",
+                  "fulfilled_units": 30,
+                  "censored": false,
+                  "receipt_ids": [],
+                  "action_id": "transfer40_support_cool"
+                }
+              ],
+              "cumulative": {
+                "fulfilled_units": 30,
+                "transferred_units": 40,
+                "received_units": 0,
+                "new_cash_commitments_myr": 63,
+                "fuel_litres": 8,
+                "staff_hours": 2.25,
+                "backup_energy_kwh": 6,
+                "support_hours": 1,
+                "heat_degree_hours": 2.393372151467081
+              },
+              "initial": {
+                "inventory_units": 60,
+                "source_units": 170,
+                "cash_available_myr": 3840,
+                "fuel_litres": 30,
+                "staff_hours": 6,
+                "backup_energy_kwh": 10.8
+              }
+            },
+            "assumed_observation_weight": 0.4,
+            "conditional_future_count": 1,
+            "action_id": "none_normal_none"
+          }
+        ]
+      },
+      {
+        "first_action_id": "order100_normal_none",
+        "expected_reward": -876.773215,
+        "second_choices": [
+          {
+            "observation": {
+              "schema_version": "dormathon.mrdiy-dynamics.v1",
+              "data_mode": "SYNTHETIC_INTERNAL",
+              "automatic_execution": false,
+              "calibration_version": "authored-prior-v1",
+              "day": 1,
+              "start_date": "2026-10-10",
+              "date": "2026-10-11",
+              "horizon_days": 7,
+              "inventory_units": 40,
+              "source_units": 170,
+              "cash_available_myr": 3015,
+              "opening_po_reserved_myr": 4160,
+              "storage_capacity_units": 600,
+              "orders": [
+                {
+                  "id": "DEMO_SHIP01",
+                  "kind": "existing_inbound",
+                  "units": 200,
+                  "reported_arrival_day": 5,
+                  "received": false
+                },
+                {
+                  "id": "DEMO_SHIP02",
+                  "kind": "existing_inbound",
+                  "units": 20,
+                  "reported_arrival_day": 3,
+                  "received": false
+                },
+                {
+                  "id": "model_order:day0",
+                  "kind": "new_order",
+                  "units": 100,
+                  "reported_arrival_day": 3,
+                  "received": false
+                }
+              ],
+              "resources": {
+                "fuel_remaining_litres": 30,
+                "staff_hours_remaining": 5.5,
+                "backup_energy_remaining_kwh": 10.8
+              },
+              "fatigue": 0.08426971011079547,
+              "backlog_hours": 2.5091335113637676,
+              "indoor_temperature_c": 27.465074731551823,
+              "last_sales": {
+                "date": "2026-10-10",
+                "fulfilled_units": 20,
+                "censored": false
+              },
+              "demand_belief": {
+                "log_deviation": -0.11332868530700324,
+                "uncensored_rows": 1,
+                "basis": "assumed_prior_then_only_uncensored_elapsed_sales"
+              },
+              "history": [
+                {
+                  "date": "2026-10-10",
+                  "fulfilled_units": 20,
+                  "censored": false,
+                  "receipt_ids": [],
+                  "action_id": "order100_normal_none"
+                }
+              ],
+              "cumulative": {
+                "fulfilled_units": 20,
+                "transferred_units": 0,
+                "received_units": 0,
+                "new_cash_commitments_myr": 825,
+                "fuel_litres": 0,
+                "staff_hours": 0.5,
+                "backup_energy_kwh": 0,
+                "support_hours": 0,
+                "heat_degree_hours": 3.2801832756523512
+              },
+              "initial": {
+                "inventory_units": 60,
+                "source_units": 170,
+                "cash_available_myr": 3840,
+                "fuel_litres": 30,
+                "staff_hours": 6,
+                "backup_energy_kwh": 10.8
+              }
+            },
+            "assumed_observation_weight": 0.6,
+            "conditional_future_count": 2,
+            "action_id": "none_support_none"
+          },
+          {
+            "observation": {
+              "schema_version": "dormathon.mrdiy-dynamics.v1",
+              "data_mode": "SYNTHETIC_INTERNAL",
+              "automatic_execution": false,
+              "calibration_version": "authored-prior-v1",
+              "day": 1,
+              "start_date": "2026-10-10",
+              "date": "2026-10-11",
+              "horizon_days": 7,
+              "inventory_units": 34.2961086093243,
+              "source_units": 170,
+              "cash_available_myr": 3015,
+              "opening_po_reserved_myr": 4160,
+              "storage_capacity_units": 600,
+              "orders": [
+                {
+                  "id": "DEMO_SHIP01",
+                  "kind": "existing_inbound",
+                  "units": 200,
+                  "reported_arrival_day": 5,
+                  "received": false
+                },
+                {
+                  "id": "DEMO_SHIP02",
+                  "kind": "existing_inbound",
+                  "units": 20,
+                  "reported_arrival_day": 3,
+                  "received": false
+                },
+                {
+                  "id": "model_order:day0",
+                  "kind": "new_order",
+                  "units": 100,
+                  "reported_arrival_day": 3,
+                  "received": false
+                }
+              ],
+              "resources": {
+                "fuel_remaining_litres": 30,
+                "staff_hours_remaining": 5.5,
+                "backup_energy_remaining_kwh": 10.8
+              },
+              "fatigue": 0.08426971011079547,
+              "backlog_hours": 2.711919553946355,
+              "indoor_temperature_c": 27.60852122242085,
+              "last_sales": {
+                "date": "2026-10-10",
+                "fulfilled_units": 25.7038913906757,
+                "censored": true
+              },
+              "demand_belief": {
+                "log_deviation": 0,
+                "uncensored_rows": 0,
+                "basis": "assumed_prior_then_only_uncensored_elapsed_sales"
+              },
+              "history": [
+                {
+                  "date": "2026-10-10",
+                  "fulfilled_units": 25.7038913906757,
+                  "censored": true,
+                  "receipt_ids": [],
+                  "action_id": "order100_normal_none"
+                }
+              ],
+              "cumulative": {
+                "fulfilled_units": 25.7038913906757,
+                "transferred_units": 0,
+                "received_units": 0,
+                "new_cash_commitments_myr": 825,
+                "fuel_litres": 0,
+                "staff_hours": 0.5,
+                "backup_energy_kwh": 0,
+                "support_hours": 0,
+                "heat_degree_hours": 8.58605174713902
+              },
+              "initial": {
+                "inventory_units": 60,
+                "source_units": 170,
+                "cash_available_myr": 3840,
+                "fuel_litres": 30,
+                "staff_hours": 6,
+                "backup_energy_kwh": 10.8
+              }
+            },
+            "assumed_observation_weight": 0.4,
+            "conditional_future_count": 1,
+            "action_id": "none_normal_none"
+          }
+        ]
+      },
+      {
+        "first_action_id": "order100_normal_cool",
+        "expected_reward": -874.328358,
+        "second_choices": [
+          {
+            "observation": {
+              "schema_version": "dormathon.mrdiy-dynamics.v1",
+              "data_mode": "SYNTHETIC_INTERNAL",
+              "automatic_execution": false,
+              "calibration_version": "authored-prior-v1",
+              "day": 1,
+              "start_date": "2026-10-10",
+              "date": "2026-10-11",
+              "horizon_days": 7,
+              "inventory_units": 40,
+              "source_units": 170,
+              "cash_available_myr": 3012,
+              "opening_po_reserved_myr": 4160,
+              "storage_capacity_units": 600,
+              "orders": [
+                {
+                  "id": "DEMO_SHIP01",
+                  "kind": "existing_inbound",
+                  "units": 200,
+                  "reported_arrival_day": 5,
+                  "received": false
+                },
+                {
+                  "id": "DEMO_SHIP02",
+                  "kind": "existing_inbound",
+                  "units": 20,
+                  "reported_arrival_day": 3,
+                  "received": false
+                },
+                {
+                  "id": "model_order:day0",
+                  "kind": "new_order",
+                  "units": 100,
+                  "reported_arrival_day": 3,
+                  "received": false
+                }
+              ],
+              "resources": {
+                "fuel_remaining_litres": 30,
+                "staff_hours_remaining": 5.25,
+                "backup_energy_remaining_kwh": 4.800000000000001
+              },
+              "fatigue": 0.08426971011079547,
+              "backlog_hours": 2.5091335113637676,
+              "indoor_temperature_c": 27.347738114989667,
+              "last_sales": {
+                "date": "2026-10-10",
+                "fulfilled_units": 20,
+                "censored": false
+              },
+              "demand_belief": {
+                "log_deviation": -0.11332868530700324,
+                "uncensored_rows": 1,
+                "basis": "assumed_prior_then_only_uncensored_elapsed_sales"
+              },
+              "history": [
+                {
+                  "date": "2026-10-10",
+                  "fulfilled_units": 20,
+                  "censored": false,
+                  "receipt_ids": [],
+                  "action_id": "order100_normal_cool"
+                }
+              ],
+              "cumulative": {
+                "fulfilled_units": 20,
+                "transferred_units": 0,
+                "received_units": 0,
+                "new_cash_commitments_myr": 828,
+                "fuel_litres": 0,
+                "staff_hours": 0.75,
+                "backup_energy_kwh": 6,
+                "support_hours": 0,
+                "heat_degree_hours": 0.09261799417523209
+              },
+              "initial": {
+                "inventory_units": 60,
+                "source_units": 170,
+                "cash_available_myr": 3840,
+                "fuel_litres": 30,
+                "staff_hours": 6,
+                "backup_energy_kwh": 10.8
+              }
+            },
+            "assumed_observation_weight": 0.6,
+            "conditional_future_count": 2,
+            "action_id": "none_support_none"
+          },
+          {
+            "observation": {
+              "schema_version": "dormathon.mrdiy-dynamics.v1",
+              "data_mode": "SYNTHETIC_INTERNAL",
+              "automatic_execution": false,
+              "calibration_version": "authored-prior-v1",
+              "day": 1,
+              "start_date": "2026-10-10",
+              "date": "2026-10-11",
+              "horizon_days": 7,
+              "inventory_units": 33.56630982579304,
+              "source_units": 170,
+              "cash_available_myr": 3012,
+              "opening_po_reserved_myr": 4160,
+              "storage_capacity_units": 600,
+              "orders": [
+                {
+                  "id": "DEMO_SHIP01",
+                  "kind": "existing_inbound",
+                  "units": 200,
+                  "reported_arrival_day": 5,
+                  "received": false
+                },
+                {
+                  "id": "DEMO_SHIP02",
+                  "kind": "existing_inbound",
+                  "units": 20,
+                  "reported_arrival_day": 3,
+                  "received": false
+                },
+                {
+                  "id": "model_order:day0",
+                  "kind": "new_order",
+                  "units": 100,
+                  "reported_arrival_day": 3,
+                  "received": false
+                }
+              ],
+              "resources": {
+                "fuel_remaining_litres": 30,
+                "staff_hours_remaining": 5.25,
+                "backup_energy_remaining_kwh": 4.800000000000001
+              },
+              "fatigue": 0.08426971011079547,
+              "backlog_hours": 2.6797502134974795,
+              "indoor_temperature_c": 27.491184605858695,
+              "last_sales": {
+                "date": "2026-10-10",
+                "fulfilled_units": 26.433690174206955,
+                "censored": true
+              },
+              "demand_belief": {
+                "log_deviation": 0,
+                "uncensored_rows": 0,
+                "basis": "assumed_prior_then_only_uncensored_elapsed_sales"
+              },
+              "history": [
+                {
+                  "date": "2026-10-10",
+                  "fulfilled_units": 26.433690174206955,
+                  "censored": true,
+                  "receipt_ids": [],
+                  "action_id": "order100_normal_cool"
+                }
+              ],
+              "cumulative": {
+                "fulfilled_units": 26.433690174206955,
+                "transferred_units": 0,
+                "received_units": 0,
+                "new_cash_commitments_myr": 828,
+                "fuel_litres": 0,
+                "staff_hours": 0.75,
+                "backup_energy_kwh": 6,
+                "support_hours": 0,
+                "heat_degree_hours": 2.393372151467081
+              },
+              "initial": {
+                "inventory_units": 60,
+                "source_units": 170,
+                "cash_available_myr": 3840,
+                "fuel_litres": 30,
+                "staff_hours": 6,
+                "backup_energy_kwh": 10.8
+              }
+            },
+            "assumed_observation_weight": 0.4,
+            "conditional_future_count": 1,
+            "action_id": "none_normal_none"
+          }
+        ]
+      },
+      {
+        "first_action_id": "order100_support_none",
+        "expected_reward": -872.592816,
+        "second_choices": [
+          {
+            "observation": {
+              "schema_version": "dormathon.mrdiy-dynamics.v1",
+              "data_mode": "SYNTHETIC_INTERNAL",
+              "automatic_execution": false,
+              "calibration_version": "authored-prior-v1",
+              "day": 1,
+              "start_date": "2026-10-10",
+              "date": "2026-10-11",
+              "horizon_days": 7,
+              "inventory_units": 40,
+              "source_units": 170,
+              "cash_available_myr": 2995,
+              "opening_po_reserved_myr": 4160,
+              "storage_capacity_units": 600,
+              "orders": [
+                {
+                  "id": "DEMO_SHIP01",
+                  "kind": "existing_inbound",
+                  "units": 200,
+                  "reported_arrival_day": 5,
+                  "received": false
+                },
+                {
+                  "id": "DEMO_SHIP02",
+                  "kind": "existing_inbound",
+                  "units": 20,
+                  "reported_arrival_day": 3,
+                  "received": false
+                },
+                {
+                  "id": "model_order:day0",
+                  "kind": "new_order",
+                  "units": 100,
+                  "reported_arrival_day": 3,
+                  "received": false
+                }
+              ],
+              "resources": {
+                "fuel_remaining_litres": 30,
+                "staff_hours_remaining": 4.5,
+                "backup_energy_remaining_kwh": 10.8
+              },
+              "fatigue": 0.06381119532100729,
+              "backlog_hours": 1.5325593166142697,
+              "indoor_temperature_c": 27.465074731551823,
+              "last_sales": {
+                "date": "2026-10-10",
+                "fulfilled_units": 20,
+                "censored": false
+              },
+              "demand_belief": {
+                "log_deviation": -0.11332868530700324,
+                "uncensored_rows": 1,
+                "basis": "assumed_prior_then_only_uncensored_elapsed_sales"
+              },
+              "history": [
+                {
+                  "date": "2026-10-10",
+                  "fulfilled_units": 20,
+                  "censored": false,
+                  "receipt_ids": [],
+                  "action_id": "order100_support_none"
+                }
+              ],
+              "cumulative": {
+                "fulfilled_units": 20,
+                "transferred_units": 0,
+                "received_units": 0,
+                "new_cash_commitments_myr": 845,
+                "fuel_litres": 0,
+                "staff_hours": 1.5,
+                "backup_energy_kwh": 0,
+                "support_hours": 1,
+                "heat_degree_hours": 3.2801832756523512
+              },
+              "initial": {
+                "inventory_units": 60,
+                "source_units": 170,
+                "cash_available_myr": 3840,
+                "fuel_litres": 30,
+                "staff_hours": 6,
+                "backup_energy_kwh": 10.8
+              }
+            },
+            "assumed_observation_weight": 0.6,
+            "conditional_future_count": 2,
+            "action_id": "none_support_none"
+          },
+          {
+            "observation": {
+              "schema_version": "dormathon.mrdiy-dynamics.v1",
+              "data_mode": "SYNTHETIC_INTERNAL",
+              "automatic_execution": false,
+              "calibration_version": "authored-prior-v1",
+              "day": 1,
+              "start_date": "2026-10-10",
+              "date": "2026-10-11",
+              "horizon_days": 7,
+              "inventory_units": 30,
+              "source_units": 170,
+              "cash_available_myr": 2995,
+              "opening_po_reserved_myr": 4160,
+              "storage_capacity_units": 600,
+              "orders": [
+                {
+                  "id": "DEMO_SHIP01",
+                  "kind": "existing_inbound",
+                  "units": 200,
+                  "reported_arrival_day": 5,
+                  "received": false
+                },
+                {
+                  "id": "DEMO_SHIP02",
+                  "kind": "existing_inbound",
+                  "units": 20,
+                  "reported_arrival_day": 3,
+                  "received": false
+                },
+                {
+                  "id": "model_order:day0",
+                  "kind": "new_order",
+                  "units": 100,
+                  "reported_arrival_day": 3,
+                  "received": false
+                }
+              ],
+              "resources": {
+                "fuel_remaining_litres": 30,
+                "staff_hours_remaining": 4.5,
+                "backup_energy_remaining_kwh": 10.8
+              },
+              "fatigue": 0.06381119532100729,
+              "backlog_hours": 1.788855601675749,
+              "indoor_temperature_c": 27.60852122242085,
+              "last_sales": {
+                "date": "2026-10-10",
+                "fulfilled_units": 30,
+                "censored": false
+              },
+              "demand_belief": {
+                "log_deviation": 0.29213642280116114,
+                "uncensored_rows": 1,
+                "basis": "assumed_prior_then_only_uncensored_elapsed_sales"
+              },
+              "history": [
+                {
+                  "date": "2026-10-10",
+                  "fulfilled_units": 30,
+                  "censored": false,
+                  "receipt_ids": [],
+                  "action_id": "order100_support_none"
+                }
+              ],
+              "cumulative": {
+                "fulfilled_units": 30,
+                "transferred_units": 0,
+                "received_units": 0,
+                "new_cash_commitments_myr": 845,
+                "fuel_litres": 0,
+                "staff_hours": 1.5,
+                "backup_energy_kwh": 0,
+                "support_hours": 1,
+                "heat_degree_hours": 8.58605174713902
+              },
+              "initial": {
+                "inventory_units": 60,
+                "source_units": 170,
+                "cash_available_myr": 3840,
+                "fuel_litres": 30,
+                "staff_hours": 6,
+                "backup_energy_kwh": 10.8
+              }
+            },
+            "assumed_observation_weight": 0.4,
+            "conditional_future_count": 1,
+            "action_id": "none_normal_cool"
+          }
+        ]
+      },
+      {
+        "first_action_id": "order100_support_cool",
+        "expected_reward": -873.455404,
+        "second_choices": [
+          {
+            "observation": {
+              "schema_version": "dormathon.mrdiy-dynamics.v1",
+              "data_mode": "SYNTHETIC_INTERNAL",
+              "automatic_execution": false,
+              "calibration_version": "authored-prior-v1",
+              "day": 1,
+              "start_date": "2026-10-10",
+              "date": "2026-10-11",
+              "horizon_days": 7,
+              "inventory_units": 40,
+              "source_units": 170,
+              "cash_available_myr": 2992,
+              "opening_po_reserved_myr": 4160,
+              "storage_capacity_units": 600,
+              "orders": [
+                {
+                  "id": "DEMO_SHIP01",
+                  "kind": "existing_inbound",
+                  "units": 200,
+                  "reported_arrival_day": 5,
+                  "received": false
+                },
+                {
+                  "id": "DEMO_SHIP02",
+                  "kind": "existing_inbound",
+                  "units": 20,
+                  "reported_arrival_day": 3,
+                  "received": false
+                },
+                {
+                  "id": "model_order:day0",
+                  "kind": "new_order",
+                  "units": 100,
+                  "reported_arrival_day": 3,
+                  "received": false
+                }
+              ],
+              "resources": {
+                "fuel_remaining_litres": 30,
+                "staff_hours_remaining": 4.25,
+                "backup_energy_remaining_kwh": 4.800000000000001
+              },
+              "fatigue": 0.06381119532100729,
+              "backlog_hours": 1.5325593166142697,
+              "indoor_temperature_c": 27.347738114989667,
+              "last_sales": {
+                "date": "2026-10-10",
+                "fulfilled_units": 20,
+                "censored": false
+              },
+              "demand_belief": {
+                "log_deviation": -0.11332868530700324,
+                "uncensored_rows": 1,
+                "basis": "assumed_prior_then_only_uncensored_elapsed_sales"
+              },
+              "history": [
+                {
+                  "date": "2026-10-10",
+                  "fulfilled_units": 20,
+                  "censored": false,
+                  "receipt_ids": [],
+                  "action_id": "order100_support_cool"
+                }
+              ],
+              "cumulative": {
+                "fulfilled_units": 20,
+                "transferred_units": 0,
+                "received_units": 0,
+                "new_cash_commitments_myr": 848,
+                "fuel_litres": 0,
+                "staff_hours": 1.75,
+                "backup_energy_kwh": 6,
+                "support_hours": 1,
+                "heat_degree_hours": 0.09261799417523209
+              },
+              "initial": {
+                "inventory_units": 60,
+                "source_units": 170,
+                "cash_available_myr": 3840,
+                "fuel_litres": 30,
+                "staff_hours": 6,
+                "backup_energy_kwh": 10.8
+              }
+            },
+            "assumed_observation_weight": 0.6,
+            "conditional_future_count": 2,
+            "action_id": "none_support_none"
+          },
+          {
+            "observation": {
+              "schema_version": "dormathon.mrdiy-dynamics.v1",
+              "data_mode": "SYNTHETIC_INTERNAL",
+              "automatic_execution": false,
+              "calibration_version": "authored-prior-v1",
+              "day": 1,
+              "start_date": "2026-10-10",
+              "date": "2026-10-11",
+              "horizon_days": 7,
+              "inventory_units": 30,
+              "source_units": 170,
+              "cash_available_myr": 2992,
+              "opening_po_reserved_myr": 4160,
+              "storage_capacity_units": 600,
+              "orders": [
+                {
+                  "id": "DEMO_SHIP01",
+                  "kind": "existing_inbound",
+                  "units": 200,
+                  "reported_arrival_day": 5,
+                  "received": false
+                },
+                {
+                  "id": "DEMO_SHIP02",
+                  "kind": "existing_inbound",
+                  "units": 20,
+                  "reported_arrival_day": 3,
+                  "received": false
+                },
+                {
+                  "id": "model_order:day0",
+                  "kind": "new_order",
+                  "units": 100,
+                  "reported_arrival_day": 3,
+                  "received": false
+                }
+              ],
+              "resources": {
+                "fuel_remaining_litres": 30,
+                "staff_hours_remaining": 4.25,
+                "backup_energy_remaining_kwh": 4.800000000000001
+              },
+              "fatigue": 0.06381119532100729,
+              "backlog_hours": 1.7374369325161836,
+              "indoor_temperature_c": 27.491184605858695,
+              "last_sales": {
+                "date": "2026-10-10",
+                "fulfilled_units": 30,
+                "censored": false
+              },
+              "demand_belief": {
+                "log_deviation": 0.29213642280116114,
+                "uncensored_rows": 1,
+                "basis": "assumed_prior_then_only_uncensored_elapsed_sales"
+              },
+              "history": [
+                {
+                  "date": "2026-10-10",
+                  "fulfilled_units": 30,
+                  "censored": false,
+                  "receipt_ids": [],
+                  "action_id": "order100_support_cool"
+                }
+              ],
+              "cumulative": {
+                "fulfilled_units": 30,
+                "transferred_units": 0,
+                "received_units": 0,
+                "new_cash_commitments_myr": 848,
+                "fuel_litres": 0,
+                "staff_hours": 1.75,
+                "backup_energy_kwh": 6,
+                "support_hours": 1,
+                "heat_degree_hours": 2.393372151467081
+              },
+              "initial": {
+                "inventory_units": 60,
+                "source_units": 170,
+                "cash_available_myr": 3840,
+                "fuel_litres": 30,
+                "staff_hours": 6,
+                "backup_energy_kwh": 10.8
+              }
+            },
+            "assumed_observation_weight": 0.4,
+            "conditional_future_count": 1,
+            "action_id": "none_normal_none"
+          }
+        ]
+      }
+    ],
+    "model_transitions": 360,
+    "nonanticipative": true,
+    "automatic_execution": false,
+    "globally_optimal": false,
+    "exact_within_declared_scope": true,
+    "assumed_distribution": true
+  },
+  "results": [
+    {
+      "policy": "no_action",
+      "expected_reward": -66.554606,
+      "oracle_minus_policy_reward": 18.96179,
+      "trace": [
+        {
+          "assumed_path": "same early sales, later high",
+          "assumed_weight": 0.3,
+          "first_action": "none_normal_none",
+          "second_action": "none_normal_none",
+          "return": -104.327917
+        },
+        {
+          "assumed_path": "same early sales, later low",
+          "assumed_weight": 0.3,
+          "first_action": "none_normal_none",
+          "second_action": "none_normal_none",
+          "return": -18.412506
+        },
+        {
+          "assumed_path": "higher early sales",
+          "assumed_weight": 0.4,
+          "first_action": "none_normal_none",
+          "second_action": "none_normal_none",
+          "return": -74.331199
+        }
+      ]
+    },
+    {
+      "policy": "practical_heuristic",
+      "expected_reward": -66.554606,
+      "oracle_minus_policy_reward": 18.96179,
+      "trace": [
+        {
+          "assumed_path": "same early sales, later high",
+          "assumed_weight": 0.3,
+          "first_action": "none_normal_none",
+          "second_action": "none_normal_none",
+          "return": -104.327917
+        },
+        {
+          "assumed_path": "same early sales, later low",
+          "assumed_weight": 0.3,
+          "first_action": "none_normal_none",
+          "second_action": "none_normal_none",
+          "return": -18.412506
+        },
+        {
+          "assumed_path": "higher early sales",
+          "assumed_weight": 0.4,
+          "first_action": "none_normal_none",
+          "second_action": "none_normal_none",
+          "return": -74.331199
+        }
+      ]
+    },
+    {
+      "policy": "mcts_32",
+      "expected_reward": -91.655404,
+      "oracle_minus_policy_reward": 44.062588,
+      "trace": [
+        {
+          "assumed_path": "same early sales, later high",
+          "assumed_weight": 0.3,
+          "first_action": "transfer40_support_cool",
+          "second_action": "none_support_none",
+          "return": -98.223339
+        },
+        {
+          "assumed_path": "same early sales, later low",
+          "assumed_weight": 0.3,
+          "first_action": "transfer40_support_cool",
+          "second_action": "none_support_none",
+          "return": -97.767533
+        },
+        {
+          "assumed_path": "higher early sales",
+          "assumed_weight": 0.4,
+          "first_action": "transfer40_support_cool",
+          "second_action": "none_normal_none",
+          "return": -82.145357
+        }
+      ]
+    },
+    {
+      "policy": "mcts_256",
+      "expected_reward": -49.328358,
+      "oracle_minus_policy_reward": 1.735542,
+      "trace": [
+        {
+          "assumed_path": "same early sales, later high",
+          "assumed_weight": 0.3,
+          "first_action": "none_normal_cool",
+          "second_action": "none_support_none",
+          "return": -38.587974
+        },
+        {
+          "assumed_path": "same early sales, later low",
+          "assumed_weight": 0.3,
+          "first_action": "none_normal_cool",
+          "second_action": "none_support_none",
+          "return": -38.128306
+        },
+        {
+          "assumed_path": "higher early sales",
+          "assumed_weight": 0.4,
+          "first_action": "none_normal_cool",
+          "second_action": "none_normal_none",
+          "return": -65.783683
+        }
+      ]
+    },
+    {
+      "policy": "mcts_1024",
+      "expected_reward": -49.328358,
+      "oracle_minus_policy_reward": 1.735542,
+      "trace": [
+        {
+          "assumed_path": "same early sales, later high",
+          "assumed_weight": 0.3,
+          "first_action": "none_normal_cool",
+          "second_action": "none_support_none",
+          "return": -38.587974
+        },
+        {
+          "assumed_path": "same early sales, later low",
+          "assumed_weight": 0.3,
+          "first_action": "none_normal_cool",
+          "second_action": "none_support_none",
+          "return": -38.128306
+        },
+        {
+          "assumed_path": "higher early sales",
+          "assumed_weight": 0.4,
+          "first_action": "none_normal_cool",
+          "second_action": "none_normal_none",
+          "return": -65.783683
+        }
+      ]
+    }
+  ],
+  "paths": [
+    {
+      "label": "same early sales, later high",
+      "weight": 0.3,
+      "exogenous": [
+        {
+          "demand_units": 20,
+          "outdoor_temperature_c": 33
+        },
+        {
+          "demand_units": 34,
+          "outdoor_temperature_c": 34
+        }
+      ]
+    },
+    {
+      "label": "same early sales, later low",
+      "weight": 0.3,
+      "exogenous": [
+        {
+          "demand_units": 20,
+          "outdoor_temperature_c": 33
+        },
+        {
+          "demand_units": 12,
+          "outdoor_temperature_c": 34
+        }
+      ]
+    },
+    {
+      "label": "higher early sales",
+      "weight": 0.4,
+      "exogenous": [
+        {
+          "demand_units": 30,
+          "outdoor_temperature_c": 35
+        },
+        {
+          "demand_units": 26,
+          "outdoor_temperature_c": 35
+        }
+      ]
+    }
+  ],
+  "assumed_probabilities": true,
+  "actual_future_given_to_policy": false,
+  "limitations": [
+    "Oracle can enumerate the finite prior but shares second actions across identical observable histories; no perfect-information realized future supplied.",
+    "This tractable miniature does not prove the seven-day model optimality or general MCTS superiority.",
+    "Training tabular Q uses seven-day returns and is not relabeled as optimized for this different two-day objective."
+  ]
+}

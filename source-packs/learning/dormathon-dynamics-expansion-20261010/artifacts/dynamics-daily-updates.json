@@ -1,0 +1,1375 @@
+{
+  "schema_version": "dormathon.daily-updates.v1",
+  "data_mode": "SYNTHETIC_INTERNAL",
+  "update_semantics": "Replay one dated daily observation release at a time; refit only rows strictly before each as-of time; no automatic background ingest is claimed.",
+  "artifacts": [
+    {
+      "schema_version": "dormathon.dated-calibration.v1",
+      "calibration": {
+        "version": "calibrated-2026-09-08-db45561c",
+        "data_mode": "SYNTHETIC_INTERNAL",
+        "as_of": "2026-09-08T00:00:00Z",
+        "demand": {
+          "base_units": 24.559730548162193,
+          "weekday_multipliers": [
+            1.005391870905556,
+            0.9640861686061056,
+            0.967998909274132,
+            0.9785509684708779,
+            0.9890651515150075,
+            1.0530103345249329,
+            1.0457621655155116
+          ],
+          "kappa_per_day": 0.26825071880749884,
+          "sigma_per_sqrt_day": 0.10403355571273488
+        },
+        "thermal": {
+          "k_per_hour": 0.22999999999999998,
+          "cooling_gain_c_per_kwh": 0.6216197341931692
+        },
+        "fatigue": {
+          "build_per_hour": 0.065,
+          "recovery_per_hour": 0.09
+        },
+        "service": {
+          "processing_units_per_day": 29,
+          "backlog_resolution_per_hour": 0.12
+        },
+        "costs": {
+          "shortage_myr_per_unit": 12,
+          "holding_myr_per_unit_day": 0.04,
+          "backlog_myr_per_hour_day": 3,
+          "heat_myr_per_degree_hour": 0.4,
+          "terminal_inventory_value_myr_per_unit": 0
+        }
+      },
+      "provenance": {
+        "data_mode": "SYNTHETIC_INTERNAL",
+        "observation_source": "authored-extension-seed410105-v1",
+        "observed_real_company_data": false,
+        "window_start": "2026-07-14",
+        "as_of_exclusive": "2026-09-08",
+        "selected_observation_hash": "fnv1a32:b4e9ddc1",
+        "effective_parameter_hash": "fnv1a32:db45561c",
+        "selected_sales_rows": 56,
+        "uncensored_sales_rows": 51,
+        "censored_sales_excluded": 5,
+        "adjacent_uncensored_pairs": 46,
+        "selected_thermal_rows": 224,
+        "latest_training_date": "2026-09-07",
+        "holdout_rows_used": 0
+      },
+      "fit": {
+        "demand_method": "weekday-shrunk log-linear fit + adjacent residual AR(1) conditional moments converted to OU parameters",
+        "demand_innovation_rmse_log_units": 0.09152117425237889,
+        "raw_ar1_phi": 0.7647160283751514,
+        "ar1_phi_clipped": false,
+        "thermal_method": "bounded least-squares grid for RC conductance rate; conditional linear fit for cooling gain",
+        "thermal_training_rmse_c": 0.041172902963488536
+      },
+      "limitations": [
+        "These observations are a generated synthetic extension, not real MR DIY operational records.",
+        "Stock/processing-censored fulfilled sales are excluded; latent lost demand is never fitted.",
+        "Small rolling-window weekday and OU estimates are approximate; process/observation noise are not separately identifiable.",
+        "Fatigue, service and reward weights stay authored; they are not fitted from these records.",
+        "Thermal model is a one-zone lumped RC assumption, not a validated building model."
+      ]
+    },
+    {
+      "schema_version": "dormathon.dated-calibration.v1",
+      "calibration": {
+        "version": "calibrated-2026-09-09-0dd8ab2a",
+        "data_mode": "SYNTHETIC_INTERNAL",
+        "as_of": "2026-09-09T00:00:00Z",
+        "demand": {
+          "base_units": 24.62387468804551,
+          "weekday_multipliers": [
+            1.0037619244819866,
+            0.9625231871975561,
+            0.9775488230422937,
+            0.9769645366550896,
+            0.9874616740520985,
+            1.0512168246997269,
+            1.0440667705646345
+          ],
+          "kappa_per_day": 0.23898279740675782,
+          "sigma_per_sqrt_day": 0.10200356534727076
+        },
+        "thermal": {
+          "k_per_hour": 0.22999999999999998,
+          "cooling_gain_c_per_kwh": 0.6212985790102619
+        },
+        "fatigue": {
+          "build_per_hour": 0.065,
+          "recovery_per_hour": 0.09
+        },
+        "service": {
+          "processing_units_per_day": 29,
+          "backlog_resolution_per_hour": 0.12
+        },
+        "costs": {
+          "shortage_myr_per_unit": 12,
+          "holding_myr_per_unit_day": 0.04,
+          "backlog_myr_per_hour_day": 3,
+          "heat_myr_per_degree_hour": 0.4,
+          "terminal_inventory_value_myr_per_unit": 0
+        }
+      },
+      "provenance": {
+        "data_mode": "SYNTHETIC_INTERNAL",
+        "observation_source": "authored-extension-seed410105-v1",
+        "observed_real_company_data": false,
+        "window_start": "2026-07-15",
+        "as_of_exclusive": "2026-09-09",
+        "selected_observation_hash": "fnv1a32:3042fcf2",
+        "effective_parameter_hash": "fnv1a32:0dd8ab2a",
+        "selected_sales_rows": 56,
+        "uncensored_sales_rows": 51,
+        "censored_sales_excluded": 5,
+        "adjacent_uncensored_pairs": 45,
+        "selected_thermal_rows": 224,
+        "latest_training_date": "2026-09-08",
+        "holdout_rows_used": 0
+      },
+      "fit": {
+        "demand_method": "weekday-shrunk log-linear fit + adjacent residual AR(1) conditional moments converted to OU parameters",
+        "demand_innovation_rmse_log_units": 0.09094607408975121,
+        "raw_ar1_phi": 0.7874284280671324,
+        "ar1_phi_clipped": false,
+        "thermal_method": "bounded least-squares grid for RC conductance rate; conditional linear fit for cooling gain",
+        "thermal_training_rmse_c": 0.041325862686840076
+      },
+      "limitations": [
+        "These observations are a generated synthetic extension, not real MR DIY operational records.",
+        "Stock/processing-censored fulfilled sales are excluded; latent lost demand is never fitted.",
+        "Small rolling-window weekday and OU estimates are approximate; process/observation noise are not separately identifiable.",
+        "Fatigue, service and reward weights stay authored; they are not fitted from these records.",
+        "Thermal model is a one-zone lumped RC assumption, not a validated building model."
+      ]
+    },
+    {
+      "schema_version": "dormathon.dated-calibration.v1",
+      "calibration": {
+        "version": "calibrated-2026-09-10-29c1806f",
+        "data_mode": "SYNTHETIC_INTERNAL",
+        "as_of": "2026-09-10T00:00:00Z",
+        "demand": {
+          "base_units": 24.66224326580567,
+          "weekday_multipliers": [
+            1.0027582248824947,
+            0.9615607237747775,
+            0.9765260446109643,
+            0.982937697440071,
+            0.986474273690931,
+            1.050116969767052,
+            1.0430227686216447
+          ],
+          "kappa_per_day": 0.24321969130855225,
+          "sigma_per_sqrt_day": 0.10230726153579425
+        },
+        "thermal": {
+          "k_per_hour": 0.22999999999999998,
+          "cooling_gain_c_per_kwh": 0.6214301424579693
+        },
+        "fatigue": {
+          "build_per_hour": 0.065,
+          "recovery_per_hour": 0.09
+        },
+        "service": {
+          "processing_units_per_day": 29,
+          "backlog_resolution_per_hour": 0.12
+        },
+        "costs": {
+          "shortage_myr_per_unit": 12,
+          "holding_myr_per_unit_day": 0.04,
+          "backlog_myr_per_hour_day": 3,
+          "heat_myr_per_degree_hour": 0.4,
+          "terminal_inventory_value_myr_per_unit": 0
+        }
+      },
+      "provenance": {
+        "data_mode": "SYNTHETIC_INTERNAL",
+        "observation_source": "authored-extension-seed410105-v1",
+        "observed_real_company_data": false,
+        "window_start": "2026-07-16",
+        "as_of_exclusive": "2026-09-10",
+        "selected_observation_hash": "fnv1a32:ef0d4547",
+        "effective_parameter_hash": "fnv1a32:29c1806f",
+        "selected_sales_rows": 56,
+        "uncensored_sales_rows": 51,
+        "censored_sales_excluded": 5,
+        "adjacent_uncensored_pairs": 45,
+        "selected_thermal_rows": 224,
+        "latest_training_date": "2026-09-09",
+        "holdout_rows_used": 0
+      },
+      "fit": {
+        "demand_method": "weekday-shrunk log-linear fit + adjacent residual AR(1) conditional moments converted to OU parameters",
+        "demand_innovation_rmse_log_units": 0.09103925387960898,
+        "raw_ar1_phi": 0.7840992350611963,
+        "ar1_phi_clipped": false,
+        "thermal_method": "bounded least-squares grid for RC conductance rate; conditional linear fit for cooling gain",
+        "thermal_training_rmse_c": 0.04146128201977484
+      },
+      "limitations": [
+        "These observations are a generated synthetic extension, not real MR DIY operational records.",
+        "Stock/processing-censored fulfilled sales are excluded; latent lost demand is never fitted.",
+        "Small rolling-window weekday and OU estimates are approximate; process/observation noise are not separately identifiable.",
+        "Fatigue, service and reward weights stay authored; they are not fitted from these records.",
+        "Thermal model is a one-zone lumped RC assumption, not a validated building model."
+      ]
+    },
+    {
+      "schema_version": "dormathon.dated-calibration.v1",
+      "calibration": {
+        "version": "calibrated-2026-09-11-c23a4846",
+        "data_mode": "SYNTHETIC_INTERNAL",
+        "as_of": "2026-09-11T00:00:00Z",
+        "demand": {
+          "base_units": 24.710939676479924,
+          "weekday_multipliers": [
+            1.0014880425235788,
+            0.9603427258186816,
+            0.9752317860157076,
+            0.9816926215162628,
+            0.9941217771461981,
+            1.04872517594686,
+            1.0417015836263221
+          ],
+          "kappa_per_day": 0.2614490715678578,
+          "sigma_per_sqrt_day": 0.10191097087431376
+        },
+        "thermal": {
+          "k_per_hour": 0.22999999999999998,
+          "cooling_gain_c_per_kwh": 0.6216126318868618
+        },
+        "fatigue": {
+          "build_per_hour": 0.065,
+          "recovery_per_hour": 0.09
+        },
+        "service": {
+          "processing_units_per_day": 29,
+          "backlog_resolution_per_hour": 0.12
+        },
+        "costs": {
+          "shortage_myr_per_unit": 12,
+          "holding_myr_per_unit_day": 0.04,
+          "backlog_myr_per_hour_day": 3,
+          "heat_myr_per_degree_hour": 0.4,
+          "terminal_inventory_value_myr_per_unit": 0
+        }
+      },
+      "provenance": {
+        "data_mode": "SYNTHETIC_INTERNAL",
+        "observation_source": "authored-extension-seed410105-v1",
+        "observed_real_company_data": false,
+        "window_start": "2026-07-17",
+        "as_of_exclusive": "2026-09-11",
+        "selected_observation_hash": "fnv1a32:fda51f61",
+        "effective_parameter_hash": "fnv1a32:c23a4846",
+        "selected_sales_rows": 56,
+        "uncensored_sales_rows": 51,
+        "censored_sales_excluded": 5,
+        "adjacent_uncensored_pairs": 45,
+        "selected_thermal_rows": 224,
+        "latest_training_date": "2026-09-10",
+        "holdout_rows_used": 0
+      },
+      "fit": {
+        "demand_method": "weekday-shrunk log-linear fit + adjacent residual AR(1) conditional moments converted to OU parameters",
+        "demand_innovation_rmse_log_units": 0.08993241466981988,
+        "raw_ar1_phi": 0.7699350860126476,
+        "ar1_phi_clipped": false,
+        "thermal_method": "bounded least-squares grid for RC conductance rate; conditional linear fit for cooling gain",
+        "thermal_training_rmse_c": 0.04052807473625278
+      },
+      "limitations": [
+        "These observations are a generated synthetic extension, not real MR DIY operational records.",
+        "Stock/processing-censored fulfilled sales are excluded; latent lost demand is never fitted.",
+        "Small rolling-window weekday and OU estimates are approximate; process/observation noise are not separately identifiable.",
+        "Fatigue, service and reward weights stay authored; they are not fitted from these records.",
+        "Thermal model is a one-zone lumped RC assumption, not a validated building model."
+      ]
+    },
+    {
+      "schema_version": "dormathon.dated-calibration.v1",
+      "calibration": {
+        "version": "calibrated-2026-09-12-a0a77b9c",
+        "data_mode": "SYNTHETIC_INTERNAL",
+        "as_of": "2026-09-12T00:00:00Z",
+        "demand": {
+          "base_units": 24.873144580481046,
+          "weekday_multipliers": [
+            0.9974204362021882,
+            0.9564422337744648,
+            0.9710706943945608,
+            0.9777054155353706,
+            0.9900840893723506,
+            1.0748706990875,
+            1.0374706474926425
+          ],
+          "kappa_per_day": 0.25406226810272214,
+          "sigma_per_sqrt_day": 0.10197461137416594
+        },
+        "thermal": {
+          "k_per_hour": 0.22999999999999998,
+          "cooling_gain_c_per_kwh": 0.6209564186099614
+        },
+        "fatigue": {
+          "build_per_hour": 0.065,
+          "recovery_per_hour": 0.09
+        },
+        "service": {
+          "processing_units_per_day": 29,
+          "backlog_resolution_per_hour": 0.12
+        },
+        "costs": {
+          "shortage_myr_per_unit": 12,
+          "holding_myr_per_unit_day": 0.04,
+          "backlog_myr_per_hour_day": 3,
+          "heat_myr_per_degree_hour": 0.4,
+          "terminal_inventory_value_myr_per_unit": 0
+        }
+      },
+      "provenance": {
+        "data_mode": "SYNTHETIC_INTERNAL",
+        "observation_source": "authored-extension-seed410105-v1",
+        "observed_real_company_data": false,
+        "window_start": "2026-07-18",
+        "as_of_exclusive": "2026-09-12",
+        "selected_observation_hash": "fnv1a32:e58306d3",
+        "effective_parameter_hash": "fnv1a32:a0a77b9c",
+        "selected_sales_rows": 56,
+        "uncensored_sales_rows": 51,
+        "censored_sales_excluded": 5,
+        "adjacent_uncensored_pairs": 45,
+        "selected_thermal_rows": 224,
+        "latest_training_date": "2026-09-11",
+        "holdout_rows_used": 0
+      },
+      "fit": {
+        "demand_method": "weekday-shrunk log-linear fit + adjacent residual AR(1) conditional moments converted to OU parameters",
+        "demand_innovation_rmse_log_units": 0.09029302218178059,
+        "raw_ar1_phi": 0.7756435026934356,
+        "ar1_phi_clipped": false,
+        "thermal_method": "bounded least-squares grid for RC conductance rate; conditional linear fit for cooling gain",
+        "thermal_training_rmse_c": 0.040412345173871767
+      },
+      "limitations": [
+        "These observations are a generated synthetic extension, not real MR DIY operational records.",
+        "Stock/processing-censored fulfilled sales are excluded; latent lost demand is never fitted.",
+        "Small rolling-window weekday and OU estimates are approximate; process/observation noise are not separately identifiable.",
+        "Fatigue, service and reward weights stay authored; they are not fitted from these records.",
+        "Thermal model is a one-zone lumped RC assumption, not a validated building model."
+      ]
+    },
+    {
+      "schema_version": "dormathon.dated-calibration.v1",
+      "calibration": {
+        "version": "calibrated-2026-09-13-f0199d48",
+        "data_mode": "SYNTHETIC_INTERNAL",
+        "as_of": "2026-09-13T00:00:00Z",
+        "demand": {
+          "base_units": 24.967497178384484,
+          "weekday_multipliers": [
+            0.9949968418842177,
+            0.9541182108458099,
+            0.9686018815326133,
+            0.9753297260029173,
+            0.9876783213669822,
+            1.0721379890776563,
+            1.0529630641969308
+          ],
+          "kappa_per_day": 0.2767131611020166,
+          "sigma_per_sqrt_day": 0.10503729330244257
+        },
+        "thermal": {
+          "k_per_hour": 0.22999999999999998,
+          "cooling_gain_c_per_kwh": 0.6208565813052457
+        },
+        "fatigue": {
+          "build_per_hour": 0.065,
+          "recovery_per_hour": 0.09
+        },
+        "service": {
+          "processing_units_per_day": 29,
+          "backlog_resolution_per_hour": 0.12
+        },
+        "costs": {
+          "shortage_myr_per_unit": 12,
+          "holding_myr_per_unit_day": 0.04,
+          "backlog_myr_per_hour_day": 3,
+          "heat_myr_per_degree_hour": 0.4,
+          "terminal_inventory_value_myr_per_unit": 0
+        }
+      },
+      "provenance": {
+        "data_mode": "SYNTHETIC_INTERNAL",
+        "observation_source": "authored-extension-seed410105-v1",
+        "observed_real_company_data": false,
+        "window_start": "2026-07-19",
+        "as_of_exclusive": "2026-09-13",
+        "selected_observation_hash": "fnv1a32:b483d599",
+        "effective_parameter_hash": "fnv1a32:f0199d48",
+        "selected_sales_rows": 56,
+        "uncensored_sales_rows": 51,
+        "censored_sales_excluded": 5,
+        "adjacent_uncensored_pairs": 45,
+        "selected_thermal_rows": 224,
+        "latest_training_date": "2026-09-12",
+        "holdout_rows_used": 0
+      },
+      "fit": {
+        "demand_method": "weekday-shrunk log-linear fit + adjacent residual AR(1) conditional moments converted to OU parameters",
+        "demand_innovation_rmse_log_units": 0.09204922803584928,
+        "raw_ar1_phi": 0.7582719678151084,
+        "ar1_phi_clipped": false,
+        "thermal_method": "bounded least-squares grid for RC conductance rate; conditional linear fit for cooling gain",
+        "thermal_training_rmse_c": 0.04061796069937155
+      },
+      "limitations": [
+        "These observations are a generated synthetic extension, not real MR DIY operational records.",
+        "Stock/processing-censored fulfilled sales are excluded; latent lost demand is never fitted.",
+        "Small rolling-window weekday and OU estimates are approximate; process/observation noise are not separately identifiable.",
+        "Fatigue, service and reward weights stay authored; they are not fitted from these records.",
+        "Thermal model is a one-zone lumped RC assumption, not a validated building model."
+      ]
+    },
+    {
+      "schema_version": "dormathon.dated-calibration.v1",
+      "calibration": {
+        "version": "calibrated-2026-09-14-c4a911db",
+        "data_mode": "SYNTHETIC_INTERNAL",
+        "as_of": "2026-09-14T00:00:00Z",
+        "demand": {
+          "base_units": 25.061498857022173,
+          "weekday_multipliers": [
+            1.0097431915485109,
+            0.9518171326875062,
+            0.9661577175716112,
+            0.9729774913383467,
+            0.9852963051902729,
+            1.0694325627470997,
+            1.0504235986663693
+          ],
+          "kappa_per_day": 0.3179585677212711,
+          "sigma_per_sqrt_day": 0.09835656640869518
+        },
+        "thermal": {
+          "k_per_hour": 0.22999999999999998,
+          "cooling_gain_c_per_kwh": 0.6207613019603755
+        },
+        "fatigue": {
+          "build_per_hour": 0.065,
+          "recovery_per_hour": 0.09
+        },
+        "service": {
+          "processing_units_per_day": 29,
+          "backlog_resolution_per_hour": 0.12
+        },
+        "costs": {
+          "shortage_myr_per_unit": 12,
+          "holding_myr_per_unit_day": 0.04,
+          "backlog_myr_per_hour_day": 3,
+          "heat_myr_per_degree_hour": 0.4,
+          "terminal_inventory_value_myr_per_unit": 0
+        }
+      },
+      "provenance": {
+        "data_mode": "SYNTHETIC_INTERNAL",
+        "observation_source": "authored-extension-seed410105-v1",
+        "observed_real_company_data": false,
+        "window_start": "2026-07-20",
+        "as_of_exclusive": "2026-09-14",
+        "selected_observation_hash": "fnv1a32:4ae6d1fb",
+        "effective_parameter_hash": "fnv1a32:c4a911db",
+        "selected_sales_rows": 56,
+        "uncensored_sales_rows": 51,
+        "censored_sales_excluded": 5,
+        "adjacent_uncensored_pairs": 45,
+        "selected_thermal_rows": 224,
+        "latest_training_date": "2026-09-13",
+        "holdout_rows_used": 0
+      },
+      "fit": {
+        "demand_method": "weekday-shrunk log-linear fit + adjacent residual AR(1) conditional moments converted to OU parameters",
+        "demand_innovation_rmse_log_units": 0.0846069672681547,
+        "raw_ar1_phi": 0.7276329352806513,
+        "ar1_phi_clipped": false,
+        "thermal_method": "bounded least-squares grid for RC conductance rate; conditional linear fit for cooling gain",
+        "thermal_training_rmse_c": 0.039821617431580254
+      },
+      "limitations": [
+        "These observations are a generated synthetic extension, not real MR DIY operational records.",
+        "Stock/processing-censored fulfilled sales are excluded; latent lost demand is never fitted.",
+        "Small rolling-window weekday and OU estimates are approximate; process/observation noise are not separately identifiable.",
+        "Fatigue, service and reward weights stay authored; they are not fitted from these records.",
+        "Thermal model is a one-zone lumped RC assumption, not a validated building model."
+      ]
+    },
+    {
+      "schema_version": "dormathon.dated-calibration.v1",
+      "calibration": {
+        "version": "calibrated-2026-09-15-f89c8eb4",
+        "data_mode": "SYNTHETIC_INTERNAL",
+        "as_of": "2026-09-15T00:00:00Z",
+        "demand": {
+          "base_units": 25.17523928674663,
+          "weekday_multipliers": [
+            1.0068095129704795,
+            0.968840786811343,
+            0.9632207409581658,
+            0.9701506307592043,
+            0.98243365388671,
+            1.0661816458736728,
+            1.0473717284135575
+          ],
+          "kappa_per_day": 0.3026681484009713,
+          "sigma_per_sqrt_day": 0.10093503235249479
+        },
+        "thermal": {
+          "k_per_hour": 0.22999999999999998,
+          "cooling_gain_c_per_kwh": 0.6207366833653565
+        },
+        "fatigue": {
+          "build_per_hour": 0.065,
+          "recovery_per_hour": 0.09
+        },
+        "service": {
+          "processing_units_per_day": 29,
+          "backlog_resolution_per_hour": 0.12
+        },
+        "costs": {
+          "shortage_myr_per_unit": 12,
+          "holding_myr_per_unit_day": 0.04,
+          "backlog_myr_per_hour_day": 3,
+          "heat_myr_per_degree_hour": 0.4,
+          "terminal_inventory_value_myr_per_unit": 0
+        }
+      },
+      "provenance": {
+        "data_mode": "SYNTHETIC_INTERNAL",
+        "observation_source": "authored-extension-seed410105-v1",
+        "observed_real_company_data": false,
+        "window_start": "2026-07-21",
+        "as_of_exclusive": "2026-09-15",
+        "selected_observation_hash": "fnv1a32:f1981f9f",
+        "effective_parameter_hash": "fnv1a32:f89c8eb4",
+        "selected_sales_rows": 56,
+        "uncensored_sales_rows": 51,
+        "censored_sales_excluded": 5,
+        "adjacent_uncensored_pairs": 45,
+        "selected_thermal_rows": 224,
+        "latest_training_date": "2026-09-14",
+        "holdout_rows_used": 0
+      },
+      "fit": {
+        "demand_method": "weekday-shrunk log-linear fit + adjacent residual AR(1) conditional moments converted to OU parameters",
+        "demand_innovation_rmse_log_units": 0.08742259871593241,
+        "raw_ar1_phi": 0.7388442423354448,
+        "ar1_phi_clipped": false,
+        "thermal_method": "bounded least-squares grid for RC conductance rate; conditional linear fit for cooling gain",
+        "thermal_training_rmse_c": 0.039483622991758685
+      },
+      "limitations": [
+        "These observations are a generated synthetic extension, not real MR DIY operational records.",
+        "Stock/processing-censored fulfilled sales are excluded; latent lost demand is never fitted.",
+        "Small rolling-window weekday and OU estimates are approximate; process/observation noise are not separately identifiable.",
+        "Fatigue, service and reward weights stay authored; they are not fitted from these records.",
+        "Thermal model is a one-zone lumped RC assumption, not a validated building model."
+      ]
+    },
+    {
+      "schema_version": "dormathon.dated-calibration.v1",
+      "calibration": {
+        "version": "calibrated-2026-09-16-268cd387",
+        "data_mode": "SYNTHETIC_INTERNAL",
+        "as_of": "2026-09-16T00:00:00Z",
+        "demand": {
+          "base_units": 25.290154696702388,
+          "weekday_multipliers": [
+            1.0039613095226334,
+            0.9660999946020318,
+            0.9798737537916669,
+            0.9674061330802879,
+            0.9796544082754677,
+            1.0630129922478733,
+            1.0444087769022605
+          ],
+          "kappa_per_day": 0.36760664519321123,
+          "sigma_per_sqrt_day": 0.10380158898316487
+        },
+        "thermal": {
+          "k_per_hour": 0.22999999999999998,
+          "cooling_gain_c_per_kwh": 0.6209248391325828
+        },
+        "fatigue": {
+          "build_per_hour": 0.065,
+          "recovery_per_hour": 0.09
+        },
+        "service": {
+          "processing_units_per_day": 29,
+          "backlog_resolution_per_hour": 0.12
+        },
+        "costs": {
+          "shortage_myr_per_unit": 12,
+          "holding_myr_per_unit_day": 0.04,
+          "backlog_myr_per_hour_day": 3,
+          "heat_myr_per_degree_hour": 0.4,
+          "terminal_inventory_value_myr_per_unit": 0
+        }
+      },
+      "provenance": {
+        "data_mode": "SYNTHETIC_INTERNAL",
+        "observation_source": "authored-extension-seed410105-v1",
+        "observed_real_company_data": false,
+        "window_start": "2026-07-22",
+        "as_of_exclusive": "2026-09-16",
+        "selected_observation_hash": "fnv1a32:418816e1",
+        "effective_parameter_hash": "fnv1a32:268cd387",
+        "selected_sales_rows": 56,
+        "uncensored_sales_rows": 51,
+        "censored_sales_excluded": 5,
+        "adjacent_uncensored_pairs": 45,
+        "selected_thermal_rows": 224,
+        "latest_training_date": "2026-09-15",
+        "holdout_rows_used": 0
+      },
+      "fit": {
+        "demand_method": "weekday-shrunk log-linear fit + adjacent residual AR(1) conditional moments converted to OU parameters",
+        "demand_innovation_rmse_log_units": 0.08734701659920874,
+        "raw_ar1_phi": 0.6923894828609852,
+        "ar1_phi_clipped": false,
+        "thermal_method": "bounded least-squares grid for RC conductance rate; conditional linear fit for cooling gain",
+        "thermal_training_rmse_c": 0.03939804960799383
+      },
+      "limitations": [
+        "These observations are a generated synthetic extension, not real MR DIY operational records.",
+        "Stock/processing-censored fulfilled sales are excluded; latent lost demand is never fitted.",
+        "Small rolling-window weekday and OU estimates are approximate; process/observation noise are not separately identifiable.",
+        "Fatigue, service and reward weights stay authored; they are not fitted from these records.",
+        "Thermal model is a one-zone lumped RC assumption, not a validated building model."
+      ]
+    },
+    {
+      "schema_version": "dormathon.dated-calibration.v1",
+      "calibration": {
+        "version": "calibrated-2026-09-17-0fe4e804",
+        "data_mode": "SYNTHETIC_INTERNAL",
+        "as_of": "2026-09-17T00:00:00Z",
+        "demand": {
+          "base_units": 25.404974013847138,
+          "weekday_multipliers": [
+            1.0010433877465592,
+            0.9632921132769487,
+            0.9768940187498703,
+            0.9847148463993184,
+            0.9768071322860242,
+            1.059780435961281,
+            1.041373298259468
+          ],
+          "kappa_per_day": 0.4388196481088036,
+          "sigma_per_sqrt_day": 0.10344564110565987
+        },
+        "thermal": {
+          "k_per_hour": 0.22999999999999998,
+          "cooling_gain_c_per_kwh": 0.6208753074606504
+        },
+        "fatigue": {
+          "build_per_hour": 0.065,
+          "recovery_per_hour": 0.09
+        },
+        "service": {
+          "processing_units_per_day": 29,
+          "backlog_resolution_per_hour": 0.12
+        },
+        "costs": {
+          "shortage_myr_per_unit": 12,
+          "holding_myr_per_unit_day": 0.04,
+          "backlog_myr_per_hour_day": 3,
+          "heat_myr_per_degree_hour": 0.4,
+          "terminal_inventory_value_myr_per_unit": 0
+        }
+      },
+      "provenance": {
+        "data_mode": "SYNTHETIC_INTERNAL",
+        "observation_source": "authored-extension-seed410105-v1",
+        "observed_real_company_data": false,
+        "window_start": "2026-07-23",
+        "as_of_exclusive": "2026-09-17",
+        "selected_observation_hash": "fnv1a32:922e5ce6",
+        "effective_parameter_hash": "fnv1a32:0fe4e804",
+        "selected_sales_rows": 56,
+        "uncensored_sales_rows": 51,
+        "censored_sales_excluded": 5,
+        "adjacent_uncensored_pairs": 45,
+        "selected_thermal_rows": 224,
+        "latest_training_date": "2026-09-16",
+        "holdout_rows_used": 0
+      },
+      "fit": {
+        "demand_method": "weekday-shrunk log-linear fit + adjacent residual AR(1) conditional moments converted to OU parameters",
+        "demand_innovation_rmse_log_units": 0.08440119620936283,
+        "raw_ar1_phi": 0.6447970595129587,
+        "ar1_phi_clipped": false,
+        "thermal_method": "bounded least-squares grid for RC conductance rate; conditional linear fit for cooling gain",
+        "thermal_training_rmse_c": 0.03921439944289615
+      },
+      "limitations": [
+        "These observations are a generated synthetic extension, not real MR DIY operational records.",
+        "Stock/processing-censored fulfilled sales are excluded; latent lost demand is never fitted.",
+        "Small rolling-window weekday and OU estimates are approximate; process/observation noise are not separately identifiable.",
+        "Fatigue, service and reward weights stay authored; they are not fitted from these records.",
+        "Thermal model is a one-zone lumped RC assumption, not a validated building model."
+      ]
+    },
+    {
+      "schema_version": "dormathon.dated-calibration.v1",
+      "calibration": {
+        "version": "calibrated-2026-09-18-07cc908f",
+        "data_mode": "SYNTHETIC_INTERNAL",
+        "as_of": "2026-09-18T00:00:00Z",
+        "demand": {
+          "base_units": 25.547497489859623,
+          "weekday_multipliers": [
+            0.9974514076404654,
+            0.9598355936599151,
+            0.9732264991109099,
+            0.9811814569561257,
+            0.9984365874063743,
+            1.0558017386949718,
+            1.0376366049091568
+          ],
+          "kappa_per_day": 0.38509601399048166,
+          "sigma_per_sqrt_day": 0.09976825094332611
+        },
+        "thermal": {
+          "k_per_hour": 0.22999999999999998,
+          "cooling_gain_c_per_kwh": 0.6205946216333578
+        },
+        "fatigue": {
+          "build_per_hour": 0.065,
+          "recovery_per_hour": 0.09
+        },
+        "service": {
+          "processing_units_per_day": 29,
+          "backlog_resolution_per_hour": 0.12
+        },
+        "costs": {
+          "shortage_myr_per_unit": 12,
+          "holding_myr_per_unit_day": 0.04,
+          "backlog_myr_per_hour_day": 3,
+          "heat_myr_per_degree_hour": 0.4,
+          "terminal_inventory_value_myr_per_unit": 0
+        }
+      },
+      "provenance": {
+        "data_mode": "SYNTHETIC_INTERNAL",
+        "observation_source": "authored-extension-seed410105-v1",
+        "observed_real_company_data": false,
+        "window_start": "2026-07-24",
+        "as_of_exclusive": "2026-09-18",
+        "selected_observation_hash": "fnv1a32:349e8903",
+        "effective_parameter_hash": "fnv1a32:07cc908f",
+        "selected_sales_rows": 56,
+        "uncensored_sales_rows": 51,
+        "censored_sales_excluded": 5,
+        "adjacent_uncensored_pairs": 45,
+        "selected_thermal_rows": 224,
+        "latest_training_date": "2026-09-17",
+        "holdout_rows_used": 0
+      },
+      "fit": {
+        "demand_method": "weekday-shrunk log-linear fit + adjacent residual AR(1) conditional moments converted to OU parameters",
+        "demand_innovation_rmse_log_units": 0.0833125936729106,
+        "raw_ar1_phi": 0.68038530656001,
+        "ar1_phi_clipped": false,
+        "thermal_method": "bounded least-squares grid for RC conductance rate; conditional linear fit for cooling gain",
+        "thermal_training_rmse_c": 0.03899667196905762
+      },
+      "limitations": [
+        "These observations are a generated synthetic extension, not real MR DIY operational records.",
+        "Stock/processing-censored fulfilled sales are excluded; latent lost demand is never fitted.",
+        "Small rolling-window weekday and OU estimates are approximate; process/observation noise are not separately identifiable.",
+        "Fatigue, service and reward weights stay authored; they are not fitted from these records.",
+        "Thermal model is a one-zone lumped RC assumption, not a validated building model."
+      ]
+    },
+    {
+      "schema_version": "dormathon.dated-calibration.v1",
+      "calibration": {
+        "version": "calibrated-2026-09-19-95fea10a",
+        "data_mode": "SYNTHETIC_INTERNAL",
+        "as_of": "2026-09-19T00:00:00Z",
+        "demand": {
+          "base_units": 25.60915518462482,
+          "weekday_multipliers": [
+            0.9956634512777204,
+            0.9581150645757636,
+            0.9714320649820177,
+            0.9794226648831144,
+            0.9966468650844885,
+            1.0672834490912595,
+            1.035776615584611
+          ],
+          "kappa_per_day": 0.38076682589388755,
+          "sigma_per_sqrt_day": 0.09885142908795357
+        },
+        "thermal": {
+          "k_per_hour": 0.22999999999999998,
+          "cooling_gain_c_per_kwh": 0.6197436303918982
+        },
+        "fatigue": {
+          "build_per_hour": 0.065,
+          "recovery_per_hour": 0.09
+        },
+        "service": {
+          "processing_units_per_day": 29,
+          "backlog_resolution_per_hour": 0.12
+        },
+        "costs": {
+          "shortage_myr_per_unit": 12,
+          "holding_myr_per_unit_day": 0.04,
+          "backlog_myr_per_hour_day": 3,
+          "heat_myr_per_degree_hour": 0.4,
+          "terminal_inventory_value_myr_per_unit": 0
+        }
+      },
+      "provenance": {
+        "data_mode": "SYNTHETIC_INTERNAL",
+        "observation_source": "authored-extension-seed410105-v1",
+        "observed_real_company_data": false,
+        "window_start": "2026-07-25",
+        "as_of_exclusive": "2026-09-19",
+        "selected_observation_hash": "fnv1a32:ad9be8f2",
+        "effective_parameter_hash": "fnv1a32:95fea10a",
+        "selected_sales_rows": 56,
+        "uncensored_sales_rows": 50,
+        "censored_sales_excluded": 6,
+        "adjacent_uncensored_pairs": 45,
+        "selected_thermal_rows": 224,
+        "latest_training_date": "2026-09-18",
+        "holdout_rows_used": 0
+      },
+      "fit": {
+        "demand_method": "weekday-shrunk log-linear fit + adjacent residual AR(1) conditional moments converted to OU parameters",
+        "demand_innovation_rmse_log_units": 0.0827032321424955,
+        "raw_ar1_phi": 0.6833372075873181,
+        "ar1_phi_clipped": false,
+        "thermal_method": "bounded least-squares grid for RC conductance rate; conditional linear fit for cooling gain",
+        "thermal_training_rmse_c": 0.038834907449738804
+      },
+      "limitations": [
+        "These observations are a generated synthetic extension, not real MR DIY operational records.",
+        "Stock/processing-censored fulfilled sales are excluded; latent lost demand is never fitted.",
+        "Small rolling-window weekday and OU estimates are approximate; process/observation noise are not separately identifiable.",
+        "Fatigue, service and reward weights stay authored; they are not fitted from these records.",
+        "Thermal model is a one-zone lumped RC assumption, not a validated building model."
+      ]
+    },
+    {
+      "schema_version": "dormathon.dated-calibration.v1",
+      "calibration": {
+        "version": "calibrated-2026-09-20-8e4c0390",
+        "data_mode": "SYNTHETIC_INTERNAL",
+        "as_of": "2026-09-20T00:00:00Z",
+        "demand": {
+          "base_units": 25.694748542770903,
+          "weekday_multipliers": [
+            0.9937578200978056,
+            0.9562812984184754,
+            0.9694580076736885,
+            0.9775481174483145,
+            0.9947393517183685,
+            1.0652407421747956,
+            1.0478752067915156
+          ],
+          "kappa_per_day": 0.39544476038099663,
+          "sigma_per_sqrt_day": 0.1006131339833506
+        },
+        "thermal": {
+          "k_per_hour": 0.22999999999999998,
+          "cooling_gain_c_per_kwh": 0.6199169413538469
+        },
+        "fatigue": {
+          "build_per_hour": 0.065,
+          "recovery_per_hour": 0.09
+        },
+        "service": {
+          "processing_units_per_day": 29,
+          "backlog_resolution_per_hour": 0.12
+        },
+        "costs": {
+          "shortage_myr_per_unit": 12,
+          "holding_myr_per_unit_day": 0.04,
+          "backlog_myr_per_hour_day": 3,
+          "heat_myr_per_degree_hour": 0.4,
+          "terminal_inventory_value_myr_per_unit": 0
+        }
+      },
+      "provenance": {
+        "data_mode": "SYNTHETIC_INTERNAL",
+        "observation_source": "authored-extension-seed410105-v1",
+        "observed_real_company_data": false,
+        "window_start": "2026-07-26",
+        "as_of_exclusive": "2026-09-20",
+        "selected_observation_hash": "fnv1a32:95093bc1",
+        "effective_parameter_hash": "fnv1a32:8e4c0390",
+        "selected_sales_rows": 56,
+        "uncensored_sales_rows": 51,
+        "censored_sales_excluded": 5,
+        "adjacent_uncensored_pairs": 45,
+        "selected_thermal_rows": 224,
+        "latest_training_date": "2026-09-19",
+        "holdout_rows_used": 0
+      },
+      "fit": {
+        "demand_method": "weekday-shrunk log-linear fit + adjacent residual AR(1) conditional moments converted to OU parameters",
+        "demand_innovation_rmse_log_units": 0.08364022337179859,
+        "raw_ar1_phi": 0.6733804796789937,
+        "ar1_phi_clipped": false,
+        "thermal_method": "bounded least-squares grid for RC conductance rate; conditional linear fit for cooling gain",
+        "thermal_training_rmse_c": 0.038995597765612205
+      },
+      "limitations": [
+        "These observations are a generated synthetic extension, not real MR DIY operational records.",
+        "Stock/processing-censored fulfilled sales are excluded; latent lost demand is never fitted.",
+        "Small rolling-window weekday and OU estimates are approximate; process/observation noise are not separately identifiable.",
+        "Fatigue, service and reward weights stay authored; they are not fitted from these records.",
+        "Thermal model is a one-zone lumped RC assumption, not a validated building model."
+      ]
+    },
+    {
+      "schema_version": "dormathon.dated-calibration.v1",
+      "calibration": {
+        "version": "calibrated-2026-09-21-ca69bffd",
+        "data_mode": "SYNTHETIC_INTERNAL",
+        "as_of": "2026-09-21T00:00:00Z",
+        "demand": {
+          "base_units": 25.908020561072878,
+          "weekday_multipliers": [
+            1.0264421643436092,
+            0.9512156474869653,
+            0.9640851501834136,
+            0.9723698110860154,
+            0.9894699792732777,
+            1.05959790698937,
+            1.0420677513791938
+          ],
+          "kappa_per_day": 0.45330214738916974,
+          "sigma_per_sqrt_day": 0.09876374465322159
+        },
+        "thermal": {
+          "k_per_hour": 0.22999999999999998,
+          "cooling_gain_c_per_kwh": 0.6197849744519278
+        },
+        "fatigue": {
+          "build_per_hour": 0.065,
+          "recovery_per_hour": 0.09
+        },
+        "service": {
+          "processing_units_per_day": 29,
+          "backlog_resolution_per_hour": 0.12
+        },
+        "costs": {
+          "shortage_myr_per_unit": 12,
+          "holding_myr_per_unit_day": 0.04,
+          "backlog_myr_per_hour_day": 3,
+          "heat_myr_per_degree_hour": 0.4,
+          "terminal_inventory_value_myr_per_unit": 0
+        }
+      },
+      "provenance": {
+        "data_mode": "SYNTHETIC_INTERNAL",
+        "observation_source": "authored-extension-seed410105-v1",
+        "observed_real_company_data": false,
+        "window_start": "2026-07-27",
+        "as_of_exclusive": "2026-09-21",
+        "selected_observation_hash": "fnv1a32:4de80893",
+        "effective_parameter_hash": "fnv1a32:ca69bffd",
+        "selected_sales_rows": 56,
+        "uncensored_sales_rows": 51,
+        "censored_sales_excluded": 5,
+        "adjacent_uncensored_pairs": 45,
+        "selected_thermal_rows": 224,
+        "latest_training_date": "2026-09-20",
+        "holdout_rows_used": 0
+      },
+      "fit": {
+        "demand_method": "weekday-shrunk log-linear fit + adjacent residual AR(1) conditional moments converted to OU parameters",
+        "demand_innovation_rmse_log_units": 0.08008489798849304,
+        "raw_ar1_phi": 0.6355260820674908,
+        "ar1_phi_clipped": false,
+        "thermal_method": "bounded least-squares grid for RC conductance rate; conditional linear fit for cooling gain",
+        "thermal_training_rmse_c": 0.03885156908320048
+      },
+      "limitations": [
+        "These observations are a generated synthetic extension, not real MR DIY operational records.",
+        "Stock/processing-censored fulfilled sales are excluded; latent lost demand is never fitted.",
+        "Small rolling-window weekday and OU estimates are approximate; process/observation noise are not separately identifiable.",
+        "Fatigue, service and reward weights stay authored; they are not fitted from these records.",
+        "Thermal model is a one-zone lumped RC assumption, not a validated building model."
+      ]
+    },
+    {
+      "schema_version": "dormathon.dated-calibration.v1",
+      "calibration": {
+        "version": "calibrated-2026-09-22-22a8ff16",
+        "data_mode": "SYNTHETIC_INTERNAL",
+        "as_of": "2026-09-22T00:00:00Z",
+        "demand": {
+          "base_units": 26.042150227510152,
+          "weekday_multipliers": [
+            1.0230420611628939,
+            0.9706408231662566,
+            0.9607438171502678,
+            0.9691488232872345,
+            0.9861923469422825,
+            1.056087974974703,
+            1.0384561457032877
+          ],
+          "kappa_per_day": 0.5915324368963473,
+          "sigma_per_sqrt_day": 0.10598443382396187
+        },
+        "thermal": {
+          "k_per_hour": 0.22999999999999998,
+          "cooling_gain_c_per_kwh": 0.6200657510025889
+        },
+        "fatigue": {
+          "build_per_hour": 0.065,
+          "recovery_per_hour": 0.09
+        },
+        "service": {
+          "processing_units_per_day": 29,
+          "backlog_resolution_per_hour": 0.12
+        },
+        "costs": {
+          "shortage_myr_per_unit": 12,
+          "holding_myr_per_unit_day": 0.04,
+          "backlog_myr_per_hour_day": 3,
+          "heat_myr_per_degree_hour": 0.4,
+          "terminal_inventory_value_myr_per_unit": 0
+        }
+      },
+      "provenance": {
+        "data_mode": "SYNTHETIC_INTERNAL",
+        "observation_source": "authored-extension-seed410105-v1",
+        "observed_real_company_data": false,
+        "window_start": "2026-07-28",
+        "as_of_exclusive": "2026-09-22",
+        "selected_observation_hash": "fnv1a32:7b3dc4ac",
+        "effective_parameter_hash": "fnv1a32:22a8ff16",
+        "selected_sales_rows": 56,
+        "uncensored_sales_rows": 51,
+        "censored_sales_excluded": 5,
+        "adjacent_uncensored_pairs": 45,
+        "selected_thermal_rows": 224,
+        "latest_training_date": "2026-09-21",
+        "holdout_rows_used": 0
+      },
+      "fit": {
+        "demand_method": "weekday-shrunk log-linear fit + adjacent residual AR(1) conditional moments converted to OU parameters",
+        "demand_innovation_rmse_log_units": 0.08115431712750532,
+        "raw_ar1_phi": 0.553478463699176,
+        "ar1_phi_clipped": false,
+        "thermal_method": "bounded least-squares grid for RC conductance rate; conditional linear fit for cooling gain",
+        "thermal_training_rmse_c": 0.039453816929470496
+      },
+      "limitations": [
+        "These observations are a generated synthetic extension, not real MR DIY operational records.",
+        "Stock/processing-censored fulfilled sales are excluded; latent lost demand is never fitted.",
+        "Small rolling-window weekday and OU estimates are approximate; process/observation noise are not separately identifiable.",
+        "Fatigue, service and reward weights stay authored; they are not fitted from these records.",
+        "Thermal model is a one-zone lumped RC assumption, not a validated building model."
+      ]
+    },
+    {
+      "schema_version": "dormathon.dated-calibration.v1",
+      "calibration": {
+        "version": "calibrated-2026-09-23-a8a81749",
+        "data_mode": "SYNTHETIC_INTERNAL",
+        "as_of": "2026-09-23T00:00:00Z",
+        "demand": {
+          "base_units": 26.210113649934854,
+          "weekday_multipliers": [
+            1.018958962758464,
+            0.9667668651475221,
+            0.9842746783114801,
+            0.9652808200406026,
+            0.9822563207014027,
+            1.0518729858855396,
+            1.0341021140734261
+          ],
+          "kappa_per_day": 0.659779132249315,
+          "sigma_per_sqrt_day": 0.10593970678994775
+        },
+        "thermal": {
+          "k_per_hour": 0.22999999999999998,
+          "cooling_gain_c_per_kwh": 0.620008664870367
+        },
+        "fatigue": {
+          "build_per_hour": 0.065,
+          "recovery_per_hour": 0.09
+        },
+        "service": {
+          "processing_units_per_day": 29,
+          "backlog_resolution_per_hour": 0.12
+        },
+        "costs": {
+          "shortage_myr_per_unit": 12,
+          "holding_myr_per_unit_day": 0.04,
+          "backlog_myr_per_hour_day": 3,
+          "heat_myr_per_degree_hour": 0.4,
+          "terminal_inventory_value_myr_per_unit": 0
+        }
+      },
+      "provenance": {
+        "data_mode": "SYNTHETIC_INTERNAL",
+        "observation_source": "authored-extension-seed410105-v1",
+        "observed_real_company_data": false,
+        "window_start": "2026-07-29",
+        "as_of_exclusive": "2026-09-23",
+        "selected_observation_hash": "fnv1a32:df84eb62",
+        "effective_parameter_hash": "fnv1a32:a8a81749",
+        "selected_sales_rows": 56,
+        "uncensored_sales_rows": 51,
+        "censored_sales_excluded": 5,
+        "adjacent_uncensored_pairs": 45,
+        "selected_thermal_rows": 224,
+        "latest_training_date": "2026-09-22",
+        "holdout_rows_used": 0
+      },
+      "fit": {
+        "demand_method": "weekday-shrunk log-linear fit + adjacent residual AR(1) conditional moments converted to OU parameters",
+        "demand_innovation_rmse_log_units": 0.07894441438263732,
+        "raw_ar1_phi": 0.5169655028909816,
+        "ar1_phi_clipped": false,
+        "thermal_method": "bounded least-squares grid for RC conductance rate; conditional linear fit for cooling gain",
+        "thermal_training_rmse_c": 0.039481267232831005
+      },
+      "limitations": [
+        "These observations are a generated synthetic extension, not real MR DIY operational records.",
+        "Stock/processing-censored fulfilled sales are excluded; latent lost demand is never fitted.",
+        "Small rolling-window weekday and OU estimates are approximate; process/observation noise are not separately identifiable.",
+        "Fatigue, service and reward weights stay authored; they are not fitted from these records.",
+        "Thermal model is a one-zone lumped RC assumption, not a validated building model."
+      ]
+    },
+    {
+      "schema_version": "dormathon.dated-calibration.v1",
+      "calibration": {
+        "version": "calibrated-2026-09-24-b308cd2a",
+        "data_mode": "SYNTHETIC_INTERNAL",
+        "as_of": "2026-09-24T00:00:00Z",
+        "demand": {
+          "base_units": 26.33763104880121,
+          "weekday_multipliers": [
+            1.0157862191464428,
+            0.9637566326378565,
+            0.9810680888519379,
+            0.9837970388439806,
+            0.979197858505402,
+            1.0485977575214929,
+            1.030733195810928
+          ],
+          "kappa_per_day": 0.7709641368072814,
+          "sigma_per_sqrt_day": 0.10756631606510028
+        },
+        "thermal": {
+          "k_per_hour": 0.22999999999999998,
+          "cooling_gain_c_per_kwh": 0.6201840168403663
+        },
+        "fatigue": {
+          "build_per_hour": 0.065,
+          "recovery_per_hour": 0.09
+        },
+        "service": {
+          "processing_units_per_day": 29,
+          "backlog_resolution_per_hour": 0.12
+        },
+        "costs": {
+          "shortage_myr_per_unit": 12,
+          "holding_myr_per_unit_day": 0.04,
+          "backlog_myr_per_hour_day": 3,
+          "heat_myr_per_degree_hour": 0.4,
+          "terminal_inventory_value_myr_per_unit": 0
+        }
+      },
+      "provenance": {
+        "data_mode": "SYNTHETIC_INTERNAL",
+        "observation_source": "authored-extension-seed410105-v1",
+        "observed_real_company_data": false,
+        "window_start": "2026-07-30",
+        "as_of_exclusive": "2026-09-24",
+        "selected_observation_hash": "fnv1a32:a3ad0c1f",
+        "effective_parameter_hash": "fnv1a32:b308cd2a",
+        "selected_sales_rows": 56,
+        "uncensored_sales_rows": 51,
+        "censored_sales_excluded": 5,
+        "adjacent_uncensored_pairs": 45,
+        "selected_thermal_rows": 224,
+        "latest_training_date": "2026-09-23",
+        "holdout_rows_used": 0
+      },
+      "fit": {
+        "demand_method": "weekday-shrunk log-linear fit + adjacent residual AR(1) conditional moments converted to OU parameters",
+        "demand_innovation_rmse_log_units": 0.07680054307204642,
+        "raw_ar1_phi": 0.4625668754998368,
+        "ar1_phi_clipped": false,
+        "thermal_method": "bounded least-squares grid for RC conductance rate; conditional linear fit for cooling gain",
+        "thermal_training_rmse_c": 0.03985856790974656
+      },
+      "limitations": [
+        "These observations are a generated synthetic extension, not real MR DIY operational records.",
+        "Stock/processing-censored fulfilled sales are excluded; latent lost demand is never fitted.",
+        "Small rolling-window weekday and OU estimates are approximate; process/observation noise are not separately identifiable.",
+        "Fatigue, service and reward weights stay authored; they are not fitted from these records.",
+        "Thermal model is a one-zone lumped RC assumption, not a validated building model."
+      ]
+    },
+    {
+      "schema_version": "dormathon.dated-calibration.v1",
+      "calibration": {
+        "version": "calibrated-2026-09-25-52ce836e",
+        "data_mode": "SYNTHETIC_INTERNAL",
+        "as_of": "2026-09-25T00:00:00Z",
+        "demand": {
+          "base_units": 26.477198043212,
+          "weekday_multipliers": [
+            1.0123424658382691,
+            0.9604892718198392,
+            0.9775881241374125,
+            0.9804617363529334,
+            0.9996693260175811,
+            1.0450427654096264,
+            1.027077063079397
+          ],
+          "kappa_per_day": 0.9484511445884966,
+          "sigma_per_sqrt_day": 0.11076979489124554
+        },
+        "thermal": {
+          "k_per_hour": 0.22999999999999998,
+          "cooling_gain_c_per_kwh": 0.6201563775641536
+        },
+        "fatigue": {
+          "build_per_hour": 0.065,
+          "recovery_per_hour": 0.09
+        },
+        "service": {
+          "processing_units_per_day": 29,
+          "backlog_resolution_per_hour": 0.12
+        },
+        "costs": {
+          "shortage_myr_per_unit": 12,
+          "holding_myr_per_unit_day": 0.04,
+          "backlog_myr_per_hour_day": 3,
+          "heat_myr_per_degree_hour": 0.4,
+          "terminal_inventory_value_myr_per_unit": 0
+        }
+      },
+      "provenance": {
+        "data_mode": "SYNTHETIC_INTERNAL",
+        "observation_source": "authored-extension-seed410105-v1",
+        "observed_real_company_data": false,
+        "window_start": "2026-07-31",
+        "as_of_exclusive": "2026-09-25",
+        "selected_observation_hash": "fnv1a32:49fd3029",
+        "effective_parameter_hash": "fnv1a32:52ce836e",
+        "selected_sales_rows": 56,
+        "uncensored_sales_rows": 51,
+        "censored_sales_excluded": 5,
+        "adjacent_uncensored_pairs": 45,
+        "selected_thermal_rows": 224,
+        "latest_training_date": "2026-09-24",
+        "holdout_rows_used": 0
+      },
+      "fit": {
+        "demand_method": "weekday-shrunk log-linear fit + adjacent residual AR(1) conditional moments converted to OU parameters",
+        "demand_innovation_rmse_log_units": 0.07414809383944707,
+        "raw_ar1_phi": 0.3873404935079055,
+        "ar1_phi_clipped": false,
+        "thermal_method": "bounded least-squares grid for RC conductance rate; conditional linear fit for cooling gain",
+        "thermal_training_rmse_c": 0.03973662179155762
+      },
+      "limitations": [
+        "These observations are a generated synthetic extension, not real MR DIY operational records.",
+        "Stock/processing-censored fulfilled sales are excluded; latent lost demand is never fitted.",
+        "Small rolling-window weekday and OU estimates are approximate; process/observation noise are not separately identifiable.",
+        "Fatigue, service and reward weights stay authored; they are not fitted from these records.",
+        "Thermal model is a one-zone lumped RC assumption, not a validated building model."
+      ]
+    },
+    {
+      "schema_version": "dormathon.dated-calibration.v1",
+      "calibration": {
+        "version": "calibrated-2026-09-26-d7d491a4",
+        "data_mode": "SYNTHETIC_INTERNAL",
+        "as_of": "2026-09-26T00:00:00Z",
+        "demand": {
+          "base_units": 26.651442382997125,
+          "weekday_multipliers": [
+            1.0080846862818136,
+            0.9564495799924664,
+            0.9732863324383381,
+            0.9763380429608227,
+            0.9954648480240507,
+            1.0722261580307964,
+            1.022557499599467
+          ],
+          "kappa_per_day": 0.8275136322748271,
+          "sigma_per_sqrt_day": 0.10281133091603802
+        },
+        "thermal": {
+          "k_per_hour": 0.22999999999999998,
+          "cooling_gain_c_per_kwh": 0.6197315790162056
+        },
+        "fatigue": {
+          "build_per_hour": 0.065,
+          "recovery_per_hour": 0.09
+        },
+        "service": {
+          "processing_units_per_day": 29,
+          "backlog_resolution_per_hour": 0.12
+        },
+        "costs": {
+          "shortage_myr_per_unit": 12,
+          "holding_myr_per_unit_day": 0.04,
+          "backlog_myr_per_hour_day": 3,
+          "heat_myr_per_degree_hour": 0.4,
+          "terminal_inventory_value_myr_per_unit": 0
+        }
+      },
+      "provenance": {
+        "data_mode": "SYNTHETIC_INTERNAL",
+        "observation_source": "authored-extension-seed410105-v1",
+        "observed_real_company_data": false,
+        "window_start": "2026-08-01",
+        "as_of_exclusive": "2026-09-26",
+        "selected_observation_hash": "fnv1a32:1222ff9b",
+        "effective_parameter_hash": "fnv1a32:d7d491a4",
+        "selected_sales_rows": 56,
+        "uncensored_sales_rows": 51,
+        "censored_sales_excluded": 5,
+        "adjacent_uncensored_pairs": 45,
+        "selected_thermal_rows": 224,
+        "latest_training_date": "2026-09-25",
+        "holdout_rows_used": 0
+      },
+      "fit": {
+        "demand_method": "weekday-shrunk log-linear fit + adjacent residual AR(1) conditional moments converted to OU parameters",
+        "demand_innovation_rmse_log_units": 0.07187690261315724,
+        "raw_ar1_phi": 0.4371348141450728,
+        "ar1_phi_clipped": false,
+        "thermal_method": "bounded least-squares grid for RC conductance rate; conditional linear fit for cooling gain",
+        "thermal_training_rmse_c": 0.039459980740978104
+      },
+      "limitations": [
+        "These observations are a generated synthetic extension, not real MR DIY operational records.",
+        "Stock/processing-censored fulfilled sales are excluded; latent lost demand is never fitted.",
+        "Small rolling-window weekday and OU estimates are approximate; process/observation noise are not separately identifiable.",
+        "Fatigue, service and reward weights stay authored; they are not fitted from these records.",
+        "Thermal model is a one-zone lumped RC assumption, not a validated building model."
+      ]
+    }
+  ]
+}

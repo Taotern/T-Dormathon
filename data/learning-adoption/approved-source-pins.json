@@ -1,0 +1,118 @@
+{
+  "dynamics_manifest_sha256": "7ed2364dbe1788750bc09dc59496c4a3fd82e815c85e953c5da737009b8f8014",
+  "planning_manifest_sha256": "09b37d3ff020d3b2122fe2b3263cadcf57cb2425008d37abe7cf5c116b1a5476",
+  "runtime_files": [
+    {
+      "path": "static/simulation/mrdiy-calibrated-artifacts.js",
+      "source_sha256": "f972863fd80e002924fca90963aa51c3d99b1c0cd6c3296bb7e2dda7ec1b7623",
+      "installed_sha256": "f972863fd80e002924fca90963aa51c3d99b1c0cd6c3296bb7e2dda7ec1b7623",
+      "transformation": null
+    },
+    {
+      "path": "static/simulation/mrdiy-calibration.js",
+      "source_sha256": "a1c8f9fe3a0be41277742e2ba452cddbffb6c509cc01410c1ce68307cfd897d2",
+      "installed_sha256": "a1c8f9fe3a0be41277742e2ba452cddbffb6c509cc01410c1ce68307cfd897d2",
+      "transformation": null
+    },
+    {
+      "path": "static/simulation/mrdiy-dated-observations.js",
+      "source_sha256": "038136b5db96010a3938ce6efa274c73a96634f3ac2dbb39abd1fd472e879327",
+      "installed_sha256": "038136b5db96010a3938ce6efa274c73a96634f3ac2dbb39abd1fd472e879327",
+      "transformation": null
+    },
+    {
+      "path": "static/simulation/mrdiy-dynamics-demo.js",
+      "source_sha256": "db842cea11b4d19b6c611aeec3c00e403af999041a2b0dce3feb83290c747f9b",
+      "installed_sha256": "db842cea11b4d19b6c611aeec3c00e403af999041a2b0dce3feb83290c747f9b",
+      "transformation": null
+    },
+    {
+      "path": "static/simulation/mrdiy-dynamics-task-worker.js",
+      "source_sha256": "df373adae35481f83b932f67cc693a910a0418e8ab1af58f487c1a4d4e52e8d4",
+      "installed_sha256": "df373adae35481f83b932f67cc693a910a0418e8ab1af58f487c1a4d4e52e8d4",
+      "transformation": null
+    },
+    {
+      "path": "static/simulation/mrdiy-dynamics.js",
+      "source_sha256": "7b6c4f80434fce672100d15ef1826a4013c2bbe36932d9678c6a87635aa7af97",
+      "installed_sha256": "7b6c4f80434fce672100d15ef1826a4013c2bbe36932d9678c6a87635aa7af97",
+      "transformation": null
+    },
+    {
+      "path": "static/simulation/mrdiy-thermal-pinn.js",
+      "source_sha256": "e46ef39fe630ac38263aeb16ab786db6075d3803afa86b640e6bcb9378cbcf85",
+      "installed_sha256": "e46ef39fe630ac38263aeb16ab786db6075d3803afa86b640e6bcb9378cbcf85",
+      "transformation": null
+    },
+    {
+      "path": "static/simulation/retail-bounded-oracle.js",
+      "source_sha256": "835ef62e2ac277c223ac3d9f77c895ac3abcce62c2eee88b999c5dce0dc2b8e8",
+      "installed_sha256": "835ef62e2ac277c223ac3d9f77c895ac3abcce62c2eee88b999c5dce0dc2b8e8",
+      "transformation": null
+    },
+    {
+      "path": "static/simulation/retail-browser-worker.js",
+      "source_sha256": "fef4afbac4c54f8f28280cf8233f332dc70b60e89edfdd5db283496f9b9fc5cb",
+      "installed_sha256": "fef4afbac4c54f8f28280cf8233f332dc70b60e89edfdd5db283496f9b9fc5cb",
+      "transformation": null
+    },
+    {
+      "path": "static/simulation/retail-cover-thermal-heuristic.js",
+      "source_sha256": "2a005020a27b40e56fb65eb11eff94abc49b1e5435f479da4c4b5e9814bbf4ba",
+      "installed_sha256": "2a005020a27b40e56fb65eb11eff94abc49b1e5435f479da4c4b5e9814bbf4ba",
+      "transformation": null
+    },
+    {
+      "path": "static/simulation/retail-dynamics-adapter.js",
+      "source_sha256": "de8580565eca78d0df933f948f86e255d8337d28545a90f1e89caf0cafd6a72a",
+      "installed_sha256": "8f4dde858ad2a860477c8afb6f0d5160598e014099b78a48bd78ab5c21bea550",
+      "transformation": "producer-approved same-origin adapter import relocation"
+    },
+    {
+      "path": "static/simulation/retail-heuristics.js",
+      "source_sha256": "77d8e07126c46a01f813eb5588e7bdb07deda5dbf4096da536a40f26d6aa8e38",
+      "installed_sha256": "77d8e07126c46a01f813eb5588e7bdb07deda5dbf4096da536a40f26d6aa8e38",
+      "transformation": null
+    },
+    {
+      "path": "static/simulation/retail-mcts.js",
+      "source_sha256": "220134b5ba6d1feb56950eabf71d5e258ee8c74e0da1e90d6e731bfcfcb09758",
+      "installed_sha256": "220134b5ba6d1feb56950eabf71d5e258ee8c74e0da1e90d6e731bfcfcb09758",
+      "transformation": null
+    },
+    {
+      "path": "static/simulation/retail-planning-demo.js",
+      "source_sha256": "89d8f49acbd1bc339aa4d0e64086a6e3c00f6e0e8cde8a5167eb69fa9a55fbd5",
+      "installed_sha256": "89d8f49acbd1bc339aa4d0e64086a6e3c00f6e0e8cde8a5167eb69fa9a55fbd5",
+      "transformation": null
+    },
+    {
+      "path": "static/simulation/retail-planning-utils.js",
+      "source_sha256": "f122ff2c1bccafa3121834c123cf337127f94044ab6687f14c22fc6b19714ebf",
+      "installed_sha256": "f122ff2c1bccafa3121834c123cf337127f94044ab6687f14c22fc6b19714ebf",
+      "transformation": null
+    },
+    {
+      "path": "static/simulation/retail-q-learning.js",
+      "source_sha256": "e82bcc6f286e2887590efce3f633fec49bdaae567b8a8793be3ab8f0cdb224bd",
+      "installed_sha256": "e82bcc6f286e2887590efce3f633fec49bdaae567b8a8793be3ab8f0cdb224bd",
+      "transformation": null
+    },
+    {
+      "path": "static/simulation/retail-q-policy.js",
+      "source_sha256": "ea5dab56eaaf82cdfafe2fa9e51ff89fffd75edf0d775169ef92e883fb755784",
+      "installed_sha256": "ea5dab56eaaf82cdfafe2fa9e51ff89fffd75edf0d775169ef92e883fb755784",
+      "transformation": null
+    },
+    {
+      "path": "static/simulation/retail-trained-policy.js",
+      "source_sha256": "416479de31462398e512762995326d476a46e69d4a48a40fc300253ea4827730",
+      "installed_sha256": "416479de31462398e512762995326d476a46e69d4a48a40fc300253ea4827730",
+      "transformation": null
+    }
+  ],
+  "heldout_summary_sha256": "ad747a608c70fcd82d76f669cb18f057d7d0ffcbfcc05a1ed6e36c98d7f711d8",
+  "evaluation_world_source_sha256": "6e62ba13e52d05f8a527a089a9e1cb0387788af3b8688ff611898b881f23aef0",
+  "real_event_json_sha256": "103756853af9cda64791f16e4f9dc50d27a496ce85a2b51df7b30440679cc5d8",
+  "independent_adoption_receipt_sha256": "040b6566a6a7810777fb6be16cd70dfd80cbfb46ba50a311ed1fd8b9824c8df7"
+}

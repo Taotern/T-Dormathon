@@ -1,0 +1,16 @@
+{
+  "name": "dormathon-learned-planning-isolated",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test tests/*.test.mjs",
+    "train": "node --max-old-space-size=192 scripts/train-retail-q.mjs",
+    "evaluate": "node --max-old-space-size=192 scripts/evaluate-retail-planners.mjs",
+    "demo": "node scripts/run-retail-demo.mjs",
+    "oracle": "node scripts/run-bounded-oracle-comparison.mjs",
+    "evaluate:protocol2": "node --max-old-space-size=96 --max-semi-space-size=8 scripts/evaluate-retail-planners.mjs protocol=2 seed_start=400000 calibration=artifacts/retail-training-calibration.json world=../dormathon-dynamics-expansion-20261010/artifacts/dynamics-fixed-world-evaluator-only.json"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}

@@ -1,0 +1,17 @@
+# Portable learning and dynamics source packages
+
+This private source checkpoint preserves the audited original calibration/PINN training sources and tabular Q-learning/UCT evaluation sources, beyond the exact Site runtime under `static/simulation/`. No training or full evaluation was rerun during packaging. All observations, worlds, policies and results in these packages are synthetic.
+
+- [Dynamics](dormathon-dynamics-expansion-20261010/README.md): generated dated observations, fitting code, scalar thermal PINN training, frozen parameters/weights and holdout artifacts.
+- [Planning](dormathon-learned-planning-20261010/README.md): interaction training, three seeded Q artifacts/visits/curves, UCT, fixed small oracle, full first and corrected protocol-2 per-episode evaluation, adverse cases, frozen protocol inputs and summary.
+- [Event context](event-context/verification.md): four dated source cards and explicit fictional receipt-delay contract. Kimi is context-only. These facts do not train the models.
+
+Keep the two original package folder names as siblings: the original adapter and frozen protocol use those relative paths. Run from the individual package folder using Node24; no package installation, GPU, network or credentials is required. Inspect source package commands before use. Reproduction writes artifacts in place, so use a separate working copy and one bounded process at a time. The planning package's generic npm train/evaluate commands use a192MiB heap; prefer the explicit128MiB training and96MiB evaluation commands in its README, and retain an external256MiB total-RSS guard while other work runs. Do not launch reproduction concurrently with the compiler.
+
+To reproduce the meaningful corrected study, use `npm run evaluate:protocol2` in the planning folder, retaining its frozen calibration, hidden evaluator world, primary policy chosen before training and new400000–400095 seed block. Do not regenerate the prespecification or select a new primary policy after seeing results. Training timestamps and later diagnostic metadata can differ; exact historical metadata is not a universal reproducibility claim.
+
+Protocol2 does **not** support Q or MCTS mean-score superiority over the stronger inventory-cover/myopic thermal controller. Primary Q has paired mean reward difference−4.594158 (descriptive95% interval−14.96845 to5.780135), is worse on58/96 episodes, and has less unmet demand at greater cash cost. MCTS32/128 differences are−51.029553/−38.153755. The first study is preserved: its old practical rule was identical to no-action on all96 heldout seeds, so apparent gains against it are not meaningful controller superiority.
+
+The actual PINN approximates an authored scalar RC ODE; exact analytic RC is simpler and more accurate. Dated synthetic demand/thermal fitting and untouched narrow holdouts do not establish real MRDIY forecasting accuracy, physical fidelity, calibrated business risk, observed savings or autonomous execution. The original producer manifests are date-bound delivery records, including historical pending-adoption wording; the portable independent audit receipts and current source-package checkpoint record the later gates.
+
+[Inventory](SOURCE-PACK-MANIFEST.json) pins every packaged source/artifact. Runtime hashes are separately bound by the root source-export manifest and canonical commit. Full raw execution logs, node_modules, transient outputs and raw event source documents are excluded.

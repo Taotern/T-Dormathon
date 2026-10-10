@@ -1,0 +1,99 @@
+{
+  "schema_version": "dormathon.independent-learning-adoption-audit.v1",
+  "audit_completed_at": "2026-10-10T08:28:30Z",
+  "scope": "Portable synthetic dynamics, genuine scalar PINN, dated calibration, observation-history UCT, interaction-trained tabular Q and comparable frozen study artifacts",
+  "decision": "APPROVED_FOR_ISOLATED_MODULE_ADOPTION",
+  "browser_ui_integration_approval": "NOT_ASSESSED_HERE",
+  "canonical_fallback_commit": "b100ca9f157fe03946e1b87a48bf4514a7c862d0",
+  "canonical_changed_by_auditor": false,
+  "published_or_deployed_by_auditor": false,
+  "dynamics": {
+    "source": "dormathon-dynamics-expansion-20261010",
+    "manifest": "artifacts/dynamics-portable-manifest.json",
+    "manifest_sha256": "7ed2364dbe1788750bc09dc59496c4a3fd82e815c85e953c5da737009b8f8014",
+    "portable_files_independently_verified": 7,
+    "calibration_version": "calibrated-2026-09-26-d7d491a4",
+    "pinn_version": "thermal-pinn-6d9ccfa2",
+    "chronological_fit_end_exclusive": "2026-09-26",
+    "untouched_static_observation_holdout": [
+      "2026-09-26",
+      "2026-10-10"
+    ],
+    "holdout_uncensored_sales_rows": 13,
+    "holdout_thermal_rows": 56,
+    "dated_rolling_refits": 19,
+    "independent_future_label_poisoning_fit_invariance": true,
+    "pinn_parameter_gradients_checked": 37,
+    "pinn_final_validation_points_exclude_training_locations": 100,
+    "runnable_optional_neural_workday_calls": 224,
+    "ledger_immutability_conservation_and_domain_fallback_checked": true
+  },
+  "planning": {
+    "source": "dormathon-learned-planning-20261010",
+    "manifest": "artifacts/retail-adoption-manifest.json",
+    "manifest_sha256": "09b37d3ff020d3b2122fe2b3263cadcf57cb2425008d37abe7cf5c116b1a5476",
+    "pinned_files_independently_verified": 45,
+    "frozen_protocol2_inputs_independently_verified": 14,
+    "original_study_unchanged": true,
+    "primary_policy_digest": "fnv1a32:f44b7eff",
+    "training_runs": 3,
+    "episodes_per_training_run": 20000,
+    "interaction_updates_per_training_run": 140000,
+    "primary_independent_full_training_reproduction": {
+      "q_table_exactly_equal": true,
+      "state_action_visits_exactly_equal": true,
+      "validation_core_metrics_equal": true,
+      "runtime_seconds": 34.44961667060852,
+      "maximum_observed_total_owned_rss_mib": 80.50390625,
+      "rss_guard_mib": 256,
+      "runtime_guard_seconds": 120,
+      "guard_stopped": false,
+      "watched_training_dependencies_unchanged": true,
+      "metadata_note": "Current validation includes two new effective-parameter diagnostics. Core score/call/fallback metrics match; entire historical metadata is not claimed byte-identical."
+    },
+    "standard_full_feasible_bellman_target_and_terminal_no_bootstrap_checked": true,
+    "unknown_unvisited_entries_exported_null": true,
+    "real_uct_selection_expansion_rollout_backup_checked": true,
+    "window_message_guard_and_interactive_256_iteration_cap_checked": true,
+    "changed_effective_model_triggers_disclosed_q_fallback": true,
+    "evaluation_rows_independently_reconciled": 1440,
+    "protocol2_report_sha256": "fdb45348acd0cd5850e755afd3d74da1e39549764ee2a2408573e6826ab8bbd9"
+  },
+  "independent_focused_tests": {
+    "passed": 29,
+    "failed": 0
+  },
+  "material_performance_conclusion": {
+    "first_study": "Frozen legacy practical heuristic was identical to no-action on every one of 96 held-out seeds. Its apparent gains are not evidence against a meaningful business controller.",
+    "second_study": "A separately prespecified public-model inventory-cover/myopic thermal controller was frozen before a new untouched 400000-400095 block; prior trained Q/fallback/MCTS policies were retained.",
+    "primary_q_minus_stronger_controller_mean_reward": -4.594158,
+    "primary_q_paired_descriptive_95pct_interval": [
+      -14.96845,
+      5.780135
+    ],
+    "primary_q_worse_than_stronger_controller_episodes": 58,
+    "primary_q_unserved_units_mean": 3.418055,
+    "stronger_controller_unserved_units_mean": 7.665113,
+    "primary_q_cash_commitment_mean_synthetic_myr": 144.208333,
+    "stronger_controller_cash_commitment_mean_synthetic_myr": 89.25,
+    "primary_q_fallbacks_of_672_decisions": 7,
+    "mcts32_minus_stronger_controller_mean_reward": -51.029553,
+    "mcts128_minus_stronger_controller_mean_reward": -38.153755,
+    "q_or_mcts_superiority_over_stronger_controller_supported": false
+  },
+  "integration_requirements": [
+    "Keep this authored compact daily synthetic model distinct from the v76 bounded sequential fallback and its different objective.",
+    "Run CPU-heavy planning/live fitting in a dedicated browser/background Worker; no cloud-edge CPU readiness claim follows from this audit.",
+    "Use the actual new fitted calibration when claiming replan-after-update; stale Q must visibly fall back rather than silently remain valid.",
+    "Retain score tradeoffs, weak-baseline provenance, adverse cases, online model-call/runtime costs and prespecified primary policy.",
+    "Exercise actual browser Worker loading, cancellation, stale request handling, progress and repeated button flows before UI adoption."
+  ],
+  "limits": [
+    "No real MR DIY operational observations, high-fidelity physical validation, live execution or real-company savings are established.",
+    "Demand/thermal fit uses an authored generated dated extension with a declared demand regime shift. Other operational/reward parameters remain authored.",
+    "PINN is an actual trained approximation to an assumed scalar RC ODE; the exact solver is simpler and more accurate.",
+    "Finite-pool UCT/public-point-belief search and coarse tabular state aggregation are approximations with no optimality or convergence guarantee.",
+    "Scenario seed holdouts and narrow chronological synthetic-row holdouts do not establish calibrated real-world outcome probabilities or broad out-of-distribution robustness."
+  ],
+  "receipt_transformation": "Only executor source-root paths are replaced with package-relative names; original audit receipt SHA256040b6566a6a7810777fb6be16cd70dfd80cbfb46ba50a311ed1fd8b9824c8df7 is retained."
+}

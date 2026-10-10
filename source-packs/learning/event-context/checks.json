@@ -1,0 +1,63 @@
+{
+  "checkedAt": "2026-10-10T08:30:05Z",
+  "contract": {
+    "contract": "passed",
+    "cards": 4,
+    "retail_delay_cards": 3,
+    "strategic_cards": 1
+  },
+  "delayBridge": {
+    "delay_bridge": "passed",
+    "settings": 6,
+    "results": [
+      {
+        "additional_delay_days": 0,
+        "reported_arrival_day": 5,
+        "received_within_horizon": true,
+        "pending_at_terminal": false,
+        "receipt_posted_at_most_once": true,
+        "opening_reservation_unchanged": true
+      },
+      {
+        "additional_delay_days": 1,
+        "reported_arrival_day": 6,
+        "received_within_horizon": true,
+        "pending_at_terminal": false,
+        "receipt_posted_at_most_once": true,
+        "opening_reservation_unchanged": true
+      },
+      {
+        "additional_delay_days": 2,
+        "reported_arrival_day": 7,
+        "received_within_horizon": false,
+        "pending_at_terminal": true,
+        "receipt_posted_at_most_once": true,
+        "opening_reservation_unchanged": true
+      },
+      {
+        "additional_delay_days": 3,
+        "reported_arrival_day": 8,
+        "received_within_horizon": false,
+        "pending_at_terminal": true,
+        "receipt_posted_at_most_once": true,
+        "opening_reservation_unchanged": true
+      },
+      {
+        "additional_delay_days": 4,
+        "reported_arrival_day": 9,
+        "received_within_horizon": false,
+        "pending_at_terminal": true,
+        "receipt_posted_at_most_once": true,
+        "opening_reservation_unchanged": true
+      },
+      {
+        "additional_delay_days": 5,
+        "reported_arrival_day": 10,
+        "received_within_horizon": false,
+        "pending_at_terminal": true,
+        "receipt_posted_at_most_once": true,
+        "opening_reservation_unchanged": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "schema_version": "dormathon.dated-calibration.v1",
+  "calibration": {
+    "version": "calibrated-2026-08-03-ce73ba5b",
+    "data_mode": "SYNTHETIC_INTERNAL",
+    "as_of": "2026-08-03T00:00:00Z",
+    "demand": {
+      "base_units": 20.40375354952797,
+      "weekday_multipliers": [
+        1.0061556753114533,
+        0.9344964099559401,
+        0.967144771001252,
+        0.9857097587038023,
+        0.9998394738464089,
+        1.069570882479821,
+        1.0432221200328513
+      ],
+      "kappa_per_day": 1.6525577608477133,
+      "sigma_per_sqrt_day": 0.15836410227854777
+    },
+    "thermal": {
+      "k_per_hour": 0.22999999999999998,
+      "cooling_gain_c_per_kwh": 0.6242517477239827
+    },
+    "fatigue": {
+      "build_per_hour": 0.065,
+      "recovery_per_hour": 0.09
+    },
+    "service": {
+      "processing_units_per_day": 29,
+      "backlog_resolution_per_hour": 0.12
+    },
+    "costs": {
+      "shortage_myr_per_unit": 12,
+      "holding_myr_per_unit_day": 0.04,
+      "backlog_myr_per_hour_day": 3,
+      "heat_myr_per_degree_hour": 0.4,
+      "terminal_inventory_value_myr_per_unit": 0
+    }
+  },
+  "provenance": {
+    "data_mode": "SYNTHETIC_INTERNAL",
+    "observation_source": "authored-extension-seed410105-v1",
+    "observed_real_company_data": false,
+    "window_start": "2026-06-08",
+    "as_of_exclusive": "2026-08-03",
+    "selected_observation_hash": "fnv1a32:d606d95b",
+    "effective_parameter_hash": "fnv1a32:ce73ba5b",
+    "selected_sales_rows": 56,
+    "uncensored_sales_rows": 52,
+    "censored_sales_excluded": 4,
+    "adjacent_uncensored_pairs": 47,
+    "selected_thermal_rows": 224,
+    "latest_training_date": "2026-08-02",
+    "holdout_rows_used": 0
+  },
+  "fit": {
+    "demand_method": "weekday-shrunk log-linear fit + adjacent residual AR(1) conditional moments converted to OU parameters",
+    "demand_innovation_rmse_log_units": 0.08549590913325264,
+    "raw_ar1_phi": 0.19155931855716457,
+    "ar1_phi_clipped": false,
+    "thermal_method": "bounded least-squares grid for RC conductance rate; conditional linear fit for cooling gain",
+    "thermal_training_rmse_c": 0.03844400965107711
+  },
+  "limitations": [
+    "These observations are a generated synthetic extension, not real MR DIY operational records.",
+    "Stock/processing-censored fulfilled sales are excluded; latent lost demand is never fitted.",
+    "Small rolling-window weekday and OU estimates are approximate; process/observation noise are not separately identifiable.",
+    "Fatigue, service and reward weights stay authored; they are not fitted from these records.",
+    "Thermal model is a one-zone lumped RC assumption, not a validated building model."
+  ]
+}

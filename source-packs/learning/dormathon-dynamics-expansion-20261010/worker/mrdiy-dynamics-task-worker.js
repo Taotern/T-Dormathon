@@ -1,0 +1,7 @@
+import {runCoupledDynamicsDemo,runDatedCalibrationReplay,runSingleDayModelUpdate,compareThermalSolvers} from './mrdiy-dynamics-demo.js';
+const tasks={dynamics:runCoupledDynamicsDemo,calibration_replay:runDatedCalibrationReplay,one_day_update:runSingleDayModelUpdate,pinn_comparison:compareThermalSolvers};
+export function runDynamicsTask(message){
+ if(!message||typeof message!=='object'||Array.isArray(message)||typeof message.request_id!=='string'||message.request_id.length<1||message.request_id.length>128||!Object.keys(message).every(k=>['request_id','task','options'].includes(k))||!Object.hasOwn(tasks,message.task)||message.options!==undefined&&(message.options===null||typeof message.options!=='object'||Array.isArray(message.options)))throw new Error('Bounded known dynamics Worker request required');
+ return {request_id:message.request_id,task:message.task,status:'ok',result:tasks[message.task](message.options??{}),execution:'local_dedicated_web_worker_compatible',network_calls:0,automatic_execution:false};
+}
+if(typeof WorkerGlobalScope!=='undefined'&&globalThis instanceof WorkerGlobalScope&&typeof globalThis.postMessage==='function')globalThis.addEventListener('message',event=>{try{globalThis.postMessage(runDynamicsTask(event.data));}catch(error){globalThis.postMessage({request_id:typeof event.data?.request_id==='string'?event.data.request_id.slice(0,128):null,status:'error',error:error?.message??'Unknown dynamics failure',automatic_execution:false});}});

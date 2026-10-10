@@ -1,0 +1,580 @@
+{
+  "schema_version": "dormathon.source-package-verification.v0.4.1-v77",
+  "source_commit": "529f4cb3ecb5e9d0d26f99eb5ed681770d9d5aa8",
+  "previous_source_commit": "b100ca9f157fe03946e1b87a48bf4514a7c862d0",
+  "target_repository": "Taotern/T-Dormathon",
+  "repository_visibility": "private",
+  "branch": "main",
+  "expected_private_main_parent": "49fb4338974b59e500ff9df1a240699b7bb01604",
+  "scope": "Optional browser-local real dated synthetic fitting, actual scalar thermal PINN, coupled ODE/SDE retail dynamics, genuinely trained tabular Q and observation-history UCT, with four dated public-event contexts and explicit fictional shipment-delay confirmation.",
+  "changed_source_files": [
+    {
+      "path": "data/learning-adoption/approved-source-pins.json",
+      "bytes": 5831,
+      "sha256": "9cfa757d1d578cfc6d2959910da3c62c34dbd8ae43c15db480a698fc4d04c6c0"
+    },
+    {
+      "path": "docs/learning-integration.md",
+      "bytes": 3939,
+      "sha256": "59c45cee6d99c4cebd490b6547f9f229f859deff2168d3563311f5632d2be963"
+    },
+    {
+      "path": "scripts/build.mjs",
+      "bytes": 8018,
+      "sha256": "8eff109ebf2ec5c1b79e5f53af45bd10520147068ac3c1dcf3c53a22f8d44745"
+    },
+    {
+      "path": "static/mrdiy-workspace.css",
+      "bytes": 18864,
+      "sha256": "ecaa1e0fb68cfe1ae7520f704392baacd12a921aef1b49d0e467a90f8bcc2606"
+    },
+    {
+      "path": "static/mrdiy-workspace.js",
+      "bytes": 119512,
+      "sha256": "b4ca06dc7a2e77672d43b213740ee1c46ce6593c0db9bd68111e3d3fb7f83be6"
+    },
+    {
+      "path": "static/simulation/event-backdrops.json",
+      "bytes": 19259,
+      "sha256": "103756853af9cda64791f16e4f9dc50d27a496ce85a2b51df7b30440679cc5d8"
+    },
+    {
+      "path": "static/simulation/heldout-summary.json",
+      "bytes": 61603,
+      "sha256": "ad747a608c70fcd82d76f669cb18f057d7d0ffcbfcc05a1ed6e36c98d7f711d8"
+    },
+    {
+      "path": "static/simulation/learning-evaluation-world.js",
+      "bytes": 718,
+      "sha256": "3f9e881372a0e83cc232774578b31d42c6328b4daeb229875f6197fbd8291899"
+    },
+    {
+      "path": "static/simulation/learning-event-backdrops.js",
+      "bytes": 14807,
+      "sha256": "8d65ec666fee95e64bd37dc5f0b10f03424c7bcd233a8519ad89f4aae9f0a30a"
+    },
+    {
+      "path": "static/simulation/learning-task-worker.js",
+      "bytes": 4905,
+      "sha256": "e55d3924873c71ffc25fc7942533a1652817e494cbc6970e34da0786e74e1d36"
+    },
+    {
+      "path": "static/simulation/mrdiy-calibrated-artifacts.js",
+      "bytes": 7899,
+      "sha256": "f972863fd80e002924fca90963aa51c3d99b1c0cd6c3296bb7e2dda7ec1b7623"
+    },
+    {
+      "path": "static/simulation/mrdiy-calibration.js",
+      "bytes": 8590,
+      "sha256": "a1c8f9fe3a0be41277742e2ba452cddbffb6c509cc01410c1ce68307cfd897d2"
+    },
+    {
+      "path": "static/simulation/mrdiy-dated-observations.js",
+      "bytes": 209695,
+      "sha256": "038136b5db96010a3938ce6efa274c73a96634f3ac2dbb39abd1fd472e879327"
+    },
+    {
+      "path": "static/simulation/mrdiy-dynamics-demo.js",
+      "bytes": 8009,
+      "sha256": "db842cea11b4d19b6c611aeec3c00e403af999041a2b0dce3feb83290c747f9b"
+    },
+    {
+      "path": "static/simulation/mrdiy-dynamics-task-worker.js",
+      "bytes": 1481,
+      "sha256": "df373adae35481f83b932f67cc693a910a0418e8ab1af58f487c1a4d4e52e8d4"
+    },
+    {
+      "path": "static/simulation/mrdiy-dynamics.js",
+      "bytes": 22812,
+      "sha256": "7b6c4f80434fce672100d15ef1826a4013c2bbe36932d9678c6a87635aa7af97"
+    },
+    {
+      "path": "static/simulation/mrdiy-thermal-pinn.js",
+      "bytes": 1625,
+      "sha256": "e46ef39fe630ac38263aeb16ab786db6075d3803afa86b640e6bcb9378cbcf85"
+    },
+    {
+      "path": "static/simulation/retail-bounded-oracle.js",
+      "bytes": 3841,
+      "sha256": "835ef62e2ac277c223ac3d9f77c895ac3abcce62c2eee88b999c5dce0dc2b8e8"
+    },
+    {
+      "path": "static/simulation/retail-browser-worker.js",
+      "bytes": 2523,
+      "sha256": "fef4afbac4c54f8f28280cf8233f332dc70b60e89edfdd5db283496f9b9fc5cb"
+    },
+    {
+      "path": "static/simulation/retail-cover-thermal-heuristic.js",
+      "bytes": 2432,
+      "sha256": "2a005020a27b40e56fb65eb11eff94abc49b1e5435f479da4c4b5e9814bbf4ba"
+    },
+    {
+      "path": "static/simulation/retail-dynamics-adapter.js",
+      "bytes": 201,
+      "sha256": "8f4dde858ad2a860477c8afb6f0d5160598e014099b78a48bd78ab5c21bea550"
+    },
+    {
+      "path": "static/simulation/retail-heuristics.js",
+      "bytes": 1290,
+      "sha256": "77d8e07126c46a01f813eb5588e7bdb07deda5dbf4096da536a40f26d6aa8e38"
+    },
+    {
+      "path": "static/simulation/retail-mcts.js",
+      "bytes": 5398,
+      "sha256": "220134b5ba6d1feb56950eabf71d5e258ee8c74e0da1e90d6e731bfcfcb09758"
+    },
+    {
+      "path": "static/simulation/retail-planning-demo.js",
+      "bytes": 4500,
+      "sha256": "89d8f49acbd1bc339aa4d0e64086a6e3c00f6e0e8cde8a5167eb69fa9a55fbd5"
+    },
+    {
+      "path": "static/simulation/retail-planning-utils.js",
+      "bytes": 858,
+      "sha256": "f122ff2c1bccafa3121834c123cf337127f94044ab6687f14c22fc6b19714ebf"
+    },
+    {
+      "path": "static/simulation/retail-q-learning.js",
+      "bytes": 922,
+      "sha256": "e82bcc6f286e2887590efce3f633fec49bdaae567b8a8793be3ab8f0cdb224bd"
+    },
+    {
+      "path": "static/simulation/retail-q-policy.js",
+      "bytes": 3555,
+      "sha256": "ea5dab56eaaf82cdfafe2fa9e51ff89fffd75edf0d775169ef92e883fb755784"
+    },
+    {
+      "path": "static/simulation/retail-trained-policy.js",
+      "bytes": 228854,
+      "sha256": "416479de31462398e512762995326d476a46e69d4a48a40fc300253ea4827730"
+    },
+    {
+      "path": "tests/mrdiy-client-behavior.test.mjs",
+      "bytes": 55776,
+      "sha256": "5529cf69912d49e0a132d41db88b29435e733554ac0e36c19485cc2bb5264d11"
+    },
+    {
+      "path": "tests/mrdiy-learning-integration.test.mjs",
+      "bytes": 9074,
+      "sha256": "72cd763c898863d50b815d285f0c74923a1bd30e67fe8b5e23b63af3aaa96ba1"
+    },
+    {
+      "path": "worker/index.js",
+      "bytes": 21216,
+      "sha256": "6ff529d5e89cd08228eb1e63bc72823c8242b9309723f9d606c64884b1986b1b"
+    }
+  ],
+  "runtime_contract": {
+    "compute": "One same-origin dedicated browser Worker; edge serves bytes only. Explicit on-click tasks, progress, cancellation/termination,30-second hard timeout, bounded seeds/iterations and stale request/view/case/model/event rejection.",
+    "model_update": "September25 release actually refits and reproduces shipped September26 model using only released data; September26 release installs a newer fit, with old-Q mismatch fallback and consumed holdout scores withheld. Previous episode/operational decisions are not rewritten.",
+    "dynamics": "Authored daily stock/cash/staff/fatigue/backlog/thermal model with demand OU SDE and exact piecewise scalar RC ODE.37-parameter trained PINN is an optional approximation; exact RC is simpler/more accurate.",
+    "methods": "Interaction-trained tabular Q, genuine selection/expansion/rollout/backprop UCT and bounded small oracle. No global policy/convergence/physical-fidelity guarantee.",
+    "events": "Historical/dated Hormuz,Noto,RedSea source cards show facts/exposure/assumption/outcome separately; additional0..5 whole arrival days on fictional DEMO_SHIP01 require confirmation, selecting a card changes no physics, pending arrivals after horizon are not canceled. Kimi is context-only. Event facts do not train learner or supply probability.",
+    "execution": "No provider request, network feed, database write, autonomous action or background training added by these local tasks."
+  },
+  "reproducibility_source_pack": {
+    "path": "source-packs/learning/",
+    "manifest_path": "source-packs/learning/SOURCE-PACK-MANIFEST.json",
+    "manifest_sha256": "ff90305685d7b2e11d6f44ead4137fed0bc7870ce1503ff4c550dee15872026e",
+    "packaged_files": 80,
+    "original_source_artifact_files_byte_exact": 76,
+    "training_sources_included": true,
+    "full_frozen_studies_included": true,
+    "relative_sibling_dependencies_preserved": true,
+    "training_and_full_evaluation_rerun_by_publisher": false,
+    "excluded": "Raw execution logs, node_modules, transient QA and raw full source documents. Required synthetic observations, three Q tables/visits/curves, PINN weights/training code, evaluator world and both full per-episode studies retained."
+  },
+  "independent_audit": {
+    "adoption_receipt_sha256": "040b6566a6a7810777fb6be16cd70dfd80cbfb46ba50a311ed1fd8b9824c8df7",
+    "event_receipt_sha256": "d8db301bc096c78b8d6ee7aaba671507df1630caba0da6318ee1d6c934bc1152",
+    "scope": "Independent module/source/protocol audit, separate from later integration and hosted UI.",
+    "dynamics": {
+      "manifest": "artifacts/dynamics-portable-manifest.json",
+      "manifest_sha256": "7ed2364dbe1788750bc09dc59496c4a3fd82e815c85e953c5da737009b8f8014",
+      "portable_files_independently_verified": 7,
+      "calibration_version": "calibrated-2026-09-26-d7d491a4",
+      "pinn_version": "thermal-pinn-6d9ccfa2",
+      "chronological_fit_end_exclusive": "2026-09-26",
+      "untouched_static_observation_holdout": [
+        "2026-09-26",
+        "2026-10-10"
+      ],
+      "holdout_uncensored_sales_rows": 13,
+      "holdout_thermal_rows": 56,
+      "dated_rolling_refits": 19,
+      "independent_future_label_poisoning_fit_invariance": true,
+      "pinn_parameter_gradients_checked": 37,
+      "pinn_final_validation_points_exclude_training_locations": 100,
+      "runnable_optional_neural_workday_calls": 224,
+      "ledger_immutability_conservation_and_domain_fallback_checked": true
+    },
+    "planning": {
+      "manifest": "artifacts/retail-adoption-manifest.json",
+      "manifest_sha256": "09b37d3ff020d3b2122fe2b3263cadcf57cb2425008d37abe7cf5c116b1a5476",
+      "pinned_files_independently_verified": 45,
+      "frozen_protocol2_inputs_independently_verified": 14,
+      "original_study_unchanged": true,
+      "primary_policy_digest": "fnv1a32:f44b7eff",
+      "training_runs": 3,
+      "episodes_per_training_run": 20000,
+      "interaction_updates_per_training_run": 140000,
+      "primary_independent_full_training_reproduction": {
+        "q_table_exactly_equal": true,
+        "state_action_visits_exactly_equal": true,
+        "validation_core_metrics_equal": true,
+        "runtime_seconds": 34.44961667060852,
+        "maximum_observed_total_owned_rss_mib": 80.50390625,
+        "rss_guard_mib": 256,
+        "runtime_guard_seconds": 120,
+        "guard_stopped": false,
+        "watched_training_dependencies_unchanged": true,
+        "metadata_note": "Current validation includes two new effective-parameter diagnostics. Core score/call/fallback metrics match; entire historical metadata is not claimed byte-identical."
+      },
+      "standard_full_feasible_bellman_target_and_terminal_no_bootstrap_checked": true,
+      "unknown_unvisited_entries_exported_null": true,
+      "real_uct_selection_expansion_rollout_backup_checked": true,
+      "window_message_guard_and_interactive_256_iteration_cap_checked": true,
+      "changed_effective_model_triggers_disclosed_q_fallback": true,
+      "evaluation_rows_independently_reconciled": 1440,
+      "protocol2_report_sha256": "fdb45348acd0cd5850e755afd3d74da1e39549764ee2a2408573e6826ab8bbd9"
+    },
+    "focused_tests": {
+      "passed": 29,
+      "failed": 0
+    },
+    "material_performance_conclusion": {
+      "first_study": "Frozen legacy practical heuristic was identical to no-action on every one of 96 held-out seeds. Its apparent gains are not evidence against a meaningful business controller.",
+      "second_study": "A separately prespecified public-model inventory-cover/myopic thermal controller was frozen before a new untouched 400000-400095 block; prior trained Q/fallback/MCTS policies were retained.",
+      "primary_q_minus_stronger_controller_mean_reward": -4.594158,
+      "primary_q_paired_descriptive_95pct_interval": [
+        -14.96845,
+        5.780135
+      ],
+      "primary_q_worse_than_stronger_controller_episodes": 58,
+      "primary_q_unserved_units_mean": 3.418055,
+      "stronger_controller_unserved_units_mean": 7.665113,
+      "primary_q_cash_commitment_mean_synthetic_myr": 144.208333,
+      "stronger_controller_cash_commitment_mean_synthetic_myr": 89.25,
+      "primary_q_fallbacks_of_672_decisions": 7,
+      "mcts32_minus_stronger_controller_mean_reward": -51.029553,
+      "mcts128_minus_stronger_controller_mean_reward": -38.153755,
+      "q_or_mcts_superiority_over_stronger_controller_supported": false
+    }
+  },
+  "strong_baseline_protocol2": {
+    "first_study": "Frozen legacy practical heuristic was identical to no-action on every one of 96 held-out seeds. Its apparent gains are not evidence against a meaningful business controller.",
+    "second_study": "A separately prespecified public-model inventory-cover/myopic thermal controller was frozen before a new untouched 400000-400095 block; prior trained Q/fallback/MCTS policies were retained.",
+    "primary_q_minus_stronger_controller_mean_reward": -4.594158,
+    "primary_q_paired_descriptive_95pct_interval": [
+      -14.96845,
+      5.780135
+    ],
+    "primary_q_worse_than_stronger_controller_episodes": 58,
+    "primary_q_unserved_units_mean": 3.418055,
+    "stronger_controller_unserved_units_mean": 7.665113,
+    "primary_q_cash_commitment_mean_synthetic_myr": 144.208333,
+    "stronger_controller_cash_commitment_mean_synthetic_myr": 89.25,
+    "primary_q_fallbacks_of_672_decisions": 7,
+    "mcts32_minus_stronger_controller_mean_reward": -51.029553,
+    "mcts128_minus_stronger_controller_mean_reward": -38.153755,
+    "q_or_mcts_superiority_over_stronger_controller_supported": false
+  },
+  "validation": {
+    "canonical": {
+      "combined_focused_and_affected_tests": 87,
+      "passed": 87,
+      "failed": 0,
+      "static_assets_byte_exact": 35,
+      "browser_module_graph": "passed",
+      "full_repository_suite": "not rerun; scoped affected regressions only",
+      "hosted_browser_qa": "See separate final hosted_QA record.",
+      "max_owned_test_rss_mib": 217.461,
+      "training_or_full_heldout_rerun": false,
+      "freeze_receipt_sha256": "5c4fee02522cb550b0da0d0a53c1079a226038880860de92031245b8deb438aa",
+      "log_pins": {
+        "build-freeze.log": "490ed5d1f19fd1b527be5021a7b6025608a0a74746c8066a1804ba842b60d38e",
+        "build-freeze-resources.json": "2284a58ff8de65f7225e7fc70f24de6a2ebc2327b605894ebcadc2890a6dbba0",
+        "final-87-regression.log": "a72c97cbbeb532ee7a530ac347bfe06b3dcde5585819cd606cbd69d82c91cdda",
+        "final-87-regression-resources.json": "4c4d73dc8db3eb6b68caea873122bf321ea3090b7d54b5e8f083abb74a05d11a",
+        "final-artifact.log": "4ce5a09ee95b38e6ff89d204adce1d62396a9c57c3ddbfd5b263af6b93e024da",
+        "final-artifact-resources.json": "25a0142ad1836c07fd0fb653f946756a1b0a5498a8d27ac6ca50d8c0fa80df1f"
+      }
+    },
+    "fresh_publisher": {
+      "focused_tests_passed": 9,
+      "failed": 0,
+      "full_suite_rerun": false,
+      "training_or_full_evaluation_rerun": false,
+      "build_syntax_diff_passed": true,
+      "exact_assets": 35,
+      "worker_sha256": "8a059adc53a68cc0a1df2d87364d766dfd1b0c03fe5936388c7de89bbaae4d17",
+      "client_sha256": "b4ca06dc7a2e77672d43b213740ee1c46ce6593c0db9bd68111e3d3fb7f83be6",
+      "worker_exactly_matches_local_deployment_archive": true,
+      "resources": {
+        "build-resources.json": {
+          "maximum_rss_mib": 78.7734375,
+          "guard_mib": 256,
+          "exit_code": 0
+        },
+        "artifact-resources.json": {
+          "maximum_rss_mib": 163.1328125,
+          "guard_mib": 256,
+          "exit_code": 0
+        },
+        "test-resources.json": {
+          "maximum_rss_mib": 131.796875,
+          "guard_mib": 256,
+          "exit_code": 0
+        },
+        "source-pack-import-resources.json": {
+          "maximum_rss_mib": 47.91015625,
+          "guard_mib": 256,
+          "exit_code": 0
+        }
+      },
+      "source_pack_actual_import_and_frozen_Q_PINN_lookup": "PASS; no training, MCTS episode or full evaluation. First harness incorrectly expected a wrapper status; corrected to documented direct artifact result, final inference checks passed.",
+      "four_card_contract": "PASS via original packaged Python contract.",
+      "logs_sha256": {
+        "build.log": "490ed5d1f19fd1b527be5021a7b6025608a0a74746c8066a1804ba842b60d38e",
+        "artifact.log": "4ce5a09ee95b38e6ff89d204adce1d62396a9c57c3ddbfd5b263af6b93e024da",
+        "focused.log": "78f85752d5da55a549c0fa287a6f64d39bb5c97ea3a0bc16b510cfa7a4b19733",
+        "source-pack-import.log": "ddb96a59809705089b91c358482f84fb9ee5282df76023165e7d2b966d58f411"
+      }
+    }
+  },
+  "deployment": {
+    "site_version": 77,
+    "saved_site_version_id": "appgprj_6ac6c8d4361c81919d4a8dffabfab361~appgver_5a15c51c640c81919d87695f4a31cfe2",
+    "deployment_id": "appgdep_6ac9f9497b48819181832e1495a1a6c4",
+    "status": "SUCCESS",
+    "completed_at": "2026-10-10T08:37:34.549440Z",
+    "environment_revision": 3,
+    "audience": "public_unchanged",
+    "local_gzip_bytes": 814042,
+    "local_gzip_sha256": "581a33ffcc351ce4a481cc682aa7af3a531878ab5d58a4a444328ba5f700f97c",
+    "local_decompressed_tar_sha256": "8c4514d9721a0fd8733754201cb04ca32747b573928ff398b03d7c4c696271f5",
+    "worker_sha256": "8a059adc53a68cc0a1df2d87364d766dfd1b0c03fe5936388c7de89bbaae4d17",
+    "native_stored_archive": {
+      "format": "tar",
+      "bytes": 4792320,
+      "file_count": 25,
+      "content_hash": "sha256:4774dd0bc5c6b3b2a8c1043ac6a5194329a3446931ac72fcfc2ba948e677763d"
+    },
+    "archive_note": "Server-stored tar, local gzip and local decompressed tar are distinct representations; no hash equivalence asserted.",
+    "evidence": "Native result supplied by publishing owner; source packaging made no Site call."
+  },
+  "preservation": {
+    "approved_and_legacy_specs": true,
+    "stable_case_IDs": 40,
+    "existing_v76_workflows_and_saved_decisions_preserved": true,
+    "provider_payload_and_RM5_estimated_ledger_unchanged": true,
+    "presentation_editions_byte_preserved": [
+      "v76",
+      "v74",
+      "v71-v72"
+    ],
+    "current_presentation": "v77 with actual v77 screenshots; v76/v74/original remain byte-identical independent fallbacks."
+  },
+  "limits": [
+    "No real MR DIY operational observations, high-fidelity physical validation, live execution or real-company savings are established.",
+    "Demand/thermal fit uses an authored generated dated extension with a declared demand regime shift. Other operational/reward parameters remain authored.",
+    "PINN is an actual trained approximation to an assumed scalar RC ODE; the exact solver is simpler and more accurate.",
+    "Finite-pool UCT/public-point-belief search and coarse tabular state aggregation are approximations with no optimality or convergence guarantee.",
+    "Scenario seed holdouts and narrow chronological synthetic-row holdouts do not establish calibrated real-world outcome probabilities or broad out-of-distribution robustness.",
+    "Protocol2 primary Q/MCTS show no stronger-controller mean-score superiority; weak legacy-baseline gains are not meaningful business-controller evidence.",
+    "Real event facts are dated context; company exposure/delay is explicit fiction, not verified company impact or calibrated probability.",
+    "Interactive demonstrations are not new held-out results. Updated calibration cannot inherit an already consumed holdout score.",
+    "No real savings/execution or high-fidelity physical validation; optional Advisor remains selected-case-only and estimated RM5 ledger does not establish provider-enforced cap."
+  ],
+  "excluded_outputs": "No credentials/native environment values, raw UCI customer/transaction data, full event source documents, runtime state, execution logs or raw screenshots added.",
+  "prepared_at": "2026-10-10T09:02:16.297703+00:00",
+  "hosted_QA": {
+    "status": "PASS_WITH_SCOPED_LIMITATIONS",
+    "source_commit": "529f4cb3ecb5e9d0d26f99eb5ed681770d9d5aa8",
+    "site_version": 77,
+    "audited_at": "2026-10-10 approximately 08:38–08:57 UTC",
+    "frozen_at": "2026-10-10T09:00:02.310561+00:00",
+    "browser": "Independent cloud Chromium",
+    "report_sha256": "2878a3987adf27a1f1c76380e2249188bad9c7a2b24c57f461bab9f537c2dc7b",
+    "screenshot_manifest_sha256": "3c967a523c93466fc50389a0dc8c8718052a0a9cea396a38a1657abbbc72d69e",
+    "qa_receipt_sha256": "1f8912855d4a33776d2352a1fb0a9a4bee815d9149a09ad62f1fa2605578d535",
+    "screenshots": [
+      {
+        "file": "v77-first-release-refit-desktop.png",
+        "bytes": 80967,
+        "sha256": "88a2fd60c2030bf62fdd431cce67ba70bbfae50abbb3416c7e11e4f99fc2ef40"
+      },
+      {
+        "file": "v77-heldout-comparison-narrow-left.png",
+        "bytes": 53222,
+        "sha256": "5dac393ceb25cb839d20edab16bad70ff3829836455ef1adea2084585611e4b4"
+      },
+      {
+        "file": "v77-heldout-comparison-narrow-right.png",
+        "bytes": 50740,
+        "sha256": "57f088130503e05723a2f6ea62629aaddae43e0668a6cf383c9dbf23581eb045"
+      },
+      {
+        "file": "v77-heldout-honest-comparison-desktop.png",
+        "bytes": 82930,
+        "sha256": "bdd855dc2bfeca06e395ce63f37453c59a0ac603c74c65441047d69c960d1891"
+      },
+      {
+        "file": "v77-hormuz-confirmed-assumption-desktop.png",
+        "bytes": 91676,
+        "sha256": "0c4a9a8b9205d33e971b2764874460956b4c16ba828632bc5fc416d575a058d7"
+      },
+      {
+        "file": "v77-hormuz-facts-exposure-desktop.png",
+        "bytes": 91781,
+        "sha256": "1dbd0ae7bb3d0f6a972fa6e334daeae297760dc55378b85557d0458ce0a16740"
+      },
+      {
+        "file": "v77-hormuz-policy-comparison-desktop.png",
+        "bytes": 85450,
+        "sha256": "24958ec7664cdd52f58d0eaee2eb5137e7bdc48b76c38898c60c5ca3bdd3a524"
+      },
+      {
+        "file": "v77-kimi-context-only-desktop.png",
+        "bytes": 97944,
+        "sha256": "5e2a1b119f05b6a496a2af48fbd9d78de70e0126a29b4a6bc3aaa2f4d3bc9f74"
+      },
+      {
+        "file": "v77-next-release-no-holdout-desktop.png",
+        "bytes": 86617,
+        "sha256": "44a73132f189526fb6daa9a76ef2d0e7eba1082d9f58bbac5b99c1848c61799a"
+      },
+      {
+        "file": "v77-no-holdout-narrow.png",
+        "bytes": 45658,
+        "sha256": "528b430b55def2d83fb320339a3f5d9ee25fa5917e1fea7eda5fc6a4c33a1a4e"
+      },
+      {
+        "file": "v77-noto-source-boundary-desktop.png",
+        "bytes": 104182,
+        "sha256": "73228763e23a804193f7ca4a2a1c66ac6f63e686aa25adbcc04304f51e495ffd"
+      },
+      {
+        "file": "v77-preserved-v76-replan-desktop.png",
+        "bytes": 83284,
+        "sha256": "a7410d361247ec2c39fb01501b97069aa141222e75e46f96e7453461443465e1"
+      },
+      {
+        "file": "v77-rc-pinn-comparison-desktop.png",
+        "bytes": 80010,
+        "sha256": "6b1065ca82fbbf835f89fa36114a5807c9c5c42f0eacf04aeaab717139528960"
+      },
+      {
+        "file": "v77-real-event-cards-desktop.png",
+        "bytes": 95232,
+        "sha256": "8fcc68075a9957553079a841c3a348760aa64db9ed3ce616ae9f0614021d671d"
+      },
+      {
+        "file": "v77-real-event-cards-narrow.png",
+        "bytes": 50454,
+        "sha256": "b0ded0079bedacfedd160096ab97b9b544161b2e9475ff261867716b369744be"
+      },
+      {
+        "file": "v77-redsea-kimi-cards-desktop.png",
+        "bytes": 99217,
+        "sha256": "b6bc8daac4f33d5a301404348ff11cfb3ca4e08c051345f0cbbb623f3fc50699"
+      },
+      {
+        "file": "v77-redsea-source-boundary-desktop.png",
+        "bytes": 93266,
+        "sha256": "115e4356351d6b9fc958fb0f0afa518389956f1252ebea2db47b71e31c374a7d"
+      },
+      {
+        "file": "v77-refit-narrow.png",
+        "bytes": 49061,
+        "sha256": "2c69022980a67c46fe017321b8499f4fb70dc21e1a35b29037daf7d44570b4b3"
+      },
+      {
+        "file": "v77-refitted-mcts-daily-response-desktop.png",
+        "bytes": 88420,
+        "sha256": "92abcaf09eb4ea27f90602a17abb580820b9b972f13b156b23eae80bb510c0ae"
+      },
+      {
+        "file": "v77-refitted-model-q-fallback-desktop.png",
+        "bytes": 81713,
+        "sha256": "97d6b3cf49a350c1b237452badc96816d597c4c16bd633ebc56f6e9196e743e8"
+      }
+    ],
+    "independent_source_tests": {
+      "learning_integration_passed": 9,
+      "client_learning_passed": 7,
+      "failed": 0
+    },
+    "desktop_capture_pixels": [
+      1180,
+      757
+    ],
+    "narrow_layout": {
+      "actual_cloud_OS_resize": true,
+      "window_pixels": [
+        510,
+        850
+      ],
+      "capture_pixels": [
+        487,
+        736
+      ],
+      "page_overflow": "None visually observed; no DOM-width measurement or exhaustive accessibility claim.",
+      "local_table_scroll": "Actual left/right scroll exposes evidence columns without moving surrounding page."
+    },
+    "checks": [
+      "All four dated event cards and source limits inspected; blank0–5 whole-day delay and explicit fictional confirmation. Selecting a card has no effect; Kimi remains context-only and disabled.",
+      "Actual Hormuz+3/seed400000/MCTS32 episode on shipped model, with identical evaluator demand and feasible masks across policies. Q:4 learned/3 fallback choices; MCTS:896 transitions/depth3.",
+      "Actual September25 fit reproduces the shipped after-version. September26 fit installs calibrated-2026-09-27-c68b80cc and hides consumed holdout scores; newer parameters change actual planning actions.",
+      "Actual newer-model Q:0 learned/7 fallback choices, with changed MCTS parameters. This is not retrained-policy performance.",
+      "Actual224 trained PINN segments,0 exact fallbacks, and maximum daily mean temperature difference0.000158134°C. Exact RC accuracy advantage remains explicit.",
+      "Actual128-iteration completion, cancel, navigation stop and input invalidation. Source tests cover wrong IDs, stale progress and30-second hard stop.",
+      "Event/source/evidence/fit/fallback views usable in the narrow layout with local table scrolling; desktop geometry restored.",
+      "Legacy v76 joint72/48 and baseline rehearsal costs71.016947/93.972951, unmet2.240850/2.155276 and gap1.3 preserved on actual rerun."
+    ],
+    "material_interpretation": "One selected authored stress episode can favorQ/MCTS on score/cashwhileincreasing shortages/heat;notgeneral superiority. Stronger-controllernegative96episode result remainsvisible.",
+    "model_hash_boundary": "Browser before-fit version calibrated-2026-09-25-971cd44d differs from Node earlier52ce836e. No cross-runtime bitwise equality of that earlier fit is claimed; shipped first after-versiond7d491a4 matches exactly.",
+    "single_episode_click_to_visible_ms": 2193,
+    "timing_limits": "One UI automation observation includes overhead; not server-only, repeated performance or an SLA. No reliable fit/dynamics timing asserted.",
+    "paid_calls": 0,
+    "new_saved_choices": 0,
+    "operational_execution": false,
+    "not_performed": [
+      "New official-source refresh",
+      "Full repository suite",
+      "Training or full held-out rerun",
+      "Whole-app HTTP database-write audit",
+      "Live forced30-second timeout or unsupported-Worker injection",
+      "Entire prior v76 four-day event journey"
+    ],
+    "progress_scope": "Start/completion/cancel visually observed; per-day phases too brief to capture reliably. All35 real computation progress messages and source-client display tested.",
+    "limits": [
+      "Authored synthetic episodes and evaluator world",
+      "No general Q/MCTS superiority against stronger controller",
+      "No real-company exposure or savings",
+      "No production scheduler/live observation feed",
+      "No whole-app HTTP database-write audit",
+      "Live 30-second timeout/unsupported Worker not injected; source-client checks cover those",
+      "Four-day v76 UI journey remains prior receipt; baseline rerun passed on v77"
+    ]
+  },
+  "canonical_tracked_files": 1029,
+  "source_files": 1028,
+  "presentation_update": {
+    "package_path": "docs/presentation/v77/",
+    "receipt_sha256": "022589c713ca9ebbfc69c3b9576494473f38c40445e091ff6ddff846d1e110a7",
+    "original_delivery_receipt_sha256": "2fe7b813661425a4fc94bcbe2955312667f22cc9071e4c4e4df5828883f58558",
+    "slides": {
+      "total": 20,
+      "visible": 6,
+      "evidence_appendices": 10,
+      "screenshot_fallbacks": 4
+    },
+    "documents": {
+      "English_pages": 6,
+      "Chinese_pages": 3
+    },
+    "all_prior_editions_byte_preserved": true,
+    "native_desktop_PowerPoint_tested": false
+  }
+}

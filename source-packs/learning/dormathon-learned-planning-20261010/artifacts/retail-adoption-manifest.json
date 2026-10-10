@@ -1,0 +1,129 @@
+{
+  "schema_version": "dormathon.learned-planning-adoption.v1",
+  "generated_at": "2026-10-10T08:21:27.109Z",
+  "canonical_source_commit": "b100ca9f157fe03946e1b87a48bf4514a7c862d0",
+  "canonical_edited": false,
+  "pushed": false,
+  "deployed": false,
+  "primary_policy_digest": "fnv1a32:f44b7eff",
+  "primary_policy_bytes": 228854,
+  "primary_training_episodes": 20000,
+  "primary_training_interactions": 140000,
+  "independent_full_training_reproduction": true,
+  "tests_passed": 25,
+  "protocol2_frozen_sources_unchanged": true,
+  "original_study_preserved": true,
+  "browser_worker_entry": "worker/retail-browser-worker.js",
+  "browser_contract": {
+    "request_fields": [
+      "request_id",
+      "operation",
+      "seed",
+      "iterations",
+      "observation",
+      "calibration"
+    ],
+    "operations": [
+      "demo",
+      "mcts",
+      "learned_action"
+    ],
+    "progress": {
+      "status": "progress",
+      "fields": [
+        "policy",
+        "day",
+        "completed_days",
+        "total_days"
+      ],
+      "demo_event_bound": 35
+    },
+    "completion": {
+      "status": "ok",
+      "field": "result"
+    },
+    "error": {
+      "status": "error",
+      "field": "error"
+    },
+    "cancel": "terminate Worker; ignore stale request IDs",
+    "interactive_mcts_iteration_range": [
+      1,
+      256
+    ],
+    "no_network_or_node_in_worker_modules": true
+  },
+  "integration": {
+    "copy_worker_files": [
+      "worker/retail-bounded-oracle.js",
+      "worker/retail-browser-worker.js",
+      "worker/retail-cover-thermal-heuristic.js",
+      "worker/retail-dynamics-adapter.js",
+      "worker/retail-heuristics.js",
+      "worker/retail-mcts.js",
+      "worker/retail-planning-demo.js",
+      "worker/retail-planning-utils.js",
+      "worker/retail-q-learning.js",
+      "worker/retail-q-policy.js",
+      "worker/retail-trained-policy.js"
+    ],
+    "dynamics_dependency_files": [
+      "../dormathon-dynamics-expansion-20261010/worker/mrdiy-dynamics.js",
+      "../dormathon-dynamics-expansion-20261010/worker/mrdiy-thermal-pinn.js"
+    ],
+    "adapter_only_import_rewrite": "export * from './mrdiy-dynamics.js';",
+    "serve_all_imports_same_origin": true,
+    "csp_requirement": "worker-src 'self'",
+    "legacy_fallback": "Existing v76 remains available",
+    "summary_file": "artifacts/retail-results-summary.json",
+    "protocol2_reference": "cover_thermal_myopic_v1",
+    "no_score_superiority_claim": true
+  },
+  "sha256": {
+    "worker/retail-bounded-oracle.js": "835ef62e2ac277c223ac3d9f77c895ac3abcce62c2eee88b999c5dce0dc2b8e8",
+    "worker/retail-browser-worker.js": "fef4afbac4c54f8f28280cf8233f332dc70b60e89edfdd5db283496f9b9fc5cb",
+    "worker/retail-cover-thermal-heuristic.js": "2a005020a27b40e56fb65eb11eff94abc49b1e5435f479da4c4b5e9814bbf4ba",
+    "worker/retail-dynamics-adapter.js": "de8580565eca78d0df933f948f86e255d8337d28545a90f1e89caf0cafd6a72a",
+    "worker/retail-heuristics.js": "77d8e07126c46a01f813eb5588e7bdb07deda5dbf4096da536a40f26d6aa8e38",
+    "worker/retail-mcts.js": "220134b5ba6d1feb56950eabf71d5e258ee8c74e0da1e90d6e731bfcfcb09758",
+    "worker/retail-planning-demo.js": "89d8f49acbd1bc339aa4d0e64086a6e3c00f6e0e8cde8a5167eb69fa9a55fbd5",
+    "worker/retail-planning-utils.js": "f122ff2c1bccafa3121834c123cf337127f94044ab6687f14c22fc6b19714ebf",
+    "worker/retail-q-learning.js": "e82bcc6f286e2887590efce3f633fec49bdaae567b8a8793be3ab8f0cdb224bd",
+    "worker/retail-q-policy.js": "ea5dab56eaaf82cdfafe2fa9e51ff89fffd75edf0d775169ef92e883fb755784",
+    "worker/retail-trained-policy.js": "416479de31462398e512762995326d476a46e69d4a48a40fc300253ea4827730",
+    "scripts/evaluate-retail-planners.mjs": "5a94726a0a6ab58f885e27aaccd1e68a4eca770d51e7e258305f25e1d1744c8b",
+    "scripts/export-portable-policy.mjs": "93884863519fd9aa94fa2377b3274cba990422fa5239769986a00c7b537b3d39",
+    "scripts/freeze-protocol2.mjs": "206ba9b3c978549cf10e7f1b6b5f6154a26b1a09aa84cf623e91a364654d84ed",
+    "scripts/run-bounded-oracle-comparison.mjs": "44b3a11f3ad7e038b020ba86fbfeb045a7acf927f29ab03167820cb82391f6c0",
+    "scripts/run-retail-demo.mjs": "3525a6e64120e293b157027b3d20152207e3d17dc8a3c4440f336e7ec9d89ec6",
+    "scripts/summarize-planning-evidence.mjs": "70c9a1aa6ad634acec49e4e9e806428f058cccf9e2613f52d226a325108e2226",
+    "scripts/train-retail-q.mjs": "3271485b4e723ccbaf86370b9fbb2c741d7758d678a1d8d78154e1f19f95fca5",
+    "scripts/write-adoption-manifest.mjs": "7f4f28f9c8407a7ed74afa07ec4ae93b7684b23a07072c012e82650b18a2c384",
+    "tests/retail-cover-thermal.test.mjs": "fbaaaa9ddcc458015e3da5fca0eaca94caececbbe37afd54935bfa9b11ca00fe",
+    "tests/retail-mcts.test.mjs": "1802def7311ae7f3609653941b608d2919a7d3aa0c09951c4938d01338849929",
+    "tests/retail-q-learning.test.mjs": "cfbd507039da9280bcf19165c1878fb9f0fe1e11df8da0e3e5039d9f5a922258",
+    "tests/retail-q-policy.test.mjs": "b1340cef248b7b15871f7af79d6fc014def63753ee8aabb056536d4a347554b9",
+    "tests/retail-real-environment.test.mjs": "6bab8662ec76e9d2b2d122398adc7b09764ada882427705d6927a4fadb3d0064",
+    "tests/retail-trained-artifact.test.mjs": "63ce13abe4cfdeea60b6f55d5952edab48f6d73e251a0b7522727ed3b839595b",
+    "docs/evaluation-findings.md": "185b90ab31c0ba40f8ce483581cd0a3bcb6e022dee6fa1d7a3dc407ef4115c89",
+    "docs/planning-integration-contract.md": "b3d6e312ef8dd56f532bcca23f72e51abb4aa289f11631170d94813167b1bc1d",
+    "docs/protocol2-prespecification.md": "83f28f97ba66e0ef772ae0b51d2c75fe23c6baeb472eb9084b2dae98fa606972",
+    "README.md": "242e2af730d4a74e83d3ab5fd287e5e94a0c0fd27a20756fca2a1ceb52a6a7d4",
+    "package.json": "d88863dde6741d7da5a3ec48fe98bc4360d76791591b0d4f7aa390bb6ae30d7f",
+    "artifacts/retail-q-seed41.json": "39f4565038f714ab4f0005f01e4dbc3c665a3223be0565ea06c5af1e8b652765",
+    "artifacts/retail-q-seed43.json": "4f8a077e75df60e7ee402a4248fc55ae2f2bde85e2ae78494014b9b8a0ff76d7",
+    "artifacts/retail-q-seed47.json": "f574cfe3b38a2196086a0a88f340cb61b3dc12e2a9db0e3a9925de4aa1557f5e",
+    "artifacts/retail-training-calibration.json": "9acc07df08b249d1e90bb8c3b8ae36ff81029a25325968e3e3861c1a6915fee0",
+    "artifacts/retail-q-training-curve.json": "8898942e4fc4aea011fad8c665d444369057c727e1aa2e97aa65b87727a41665",
+    "artifacts/retail-heldout-evaluation.json": "787dd0aea147ecf30e6e1608261ad887c372206f2dac6582c794b371970369f9",
+    "artifacts/retail-protocol2-frozen.json": "1ef22f584218e2703b203b0e50c425d67b8fbfc759ea4224e1d27945a8eafafc",
+    "artifacts/retail-heldout-protocol2-evaluation.json": "fdb45348acd0cd5850e755afd3d74da1e39549764ee2a2408573e6826ab8bbd9",
+    "artifacts/retail-results-summary.json": "ad747a608c70fcd82d76f669cb18f057d7d0ffcbfcc05a1ed6e36c98d7f711d8",
+    "artifacts/retail-protocol2-failure-cases.json": "5a49124450ba5d9ddbe4f666ab775ce7949ddb088fab03c6604f9dbd5881ff2c",
+    "artifacts/retail-protocol2-summary.csv": "a09596a4c14e6e8a17b645e250d492da53d1ae25dc7d5ac6efd96cdc4d1f01da",
+    "artifacts/retail-bounded-oracle-comparison.json": "38a80b1165b9e12784312ce860242ccfc6e86a017ac2a6d926c8f0f35588f377",
+    "artifacts/retail-runnable-demo.json": "3f420472d9d8f62cb5fe4bca69f7d1f81c728314f814115618b18b48f460dfe0",
+    "../dormathon-dynamics-expansion-20261010/worker/mrdiy-dynamics.js": "7b6c4f80434fce672100d15ef1826a4013c2bbe36932d9678c6a87635aa7af97",
+    "../dormathon-dynamics-expansion-20261010/worker/mrdiy-thermal-pinn.js": "e46ef39fe630ac38263aeb16ab786db6075d3803afa86b640e6bcb9378cbcf85"
+  }
+}

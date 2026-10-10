@@ -1,0 +1,565 @@
+{
+  "schema_version": "dormathon.portable-learning-source-pack.v1",
+  "canonical_source_commit": "529f4cb3ecb5e9d0d26f99eb5ed681770d9d5aa8",
+  "data_mode": "SYNTHETIC_INTERNAL",
+  "original_file_count": 76,
+  "original_files_byte_exact": true,
+  "training_and_full_evaluation_rerun_by_publisher": false,
+  "source_package_relocation": "Original dynamics/planning folder names remain siblings; no training/evaluation/source rewrites. Event contract folder is a sibling so its relative imports resolve.",
+  "files": [
+    {
+      "path": "source-packs/learning/README.md",
+      "bytes": 3479,
+      "sha256": "7f5664f5f49274ad566e10c35518c4044e3e16caed16ca0b754326fa22958370",
+      "source_package": "packaging",
+      "source_relative_path": null
+    },
+    {
+      "path": "source-packs/learning/dormathon-dynamics-expansion-20261010/README.md",
+      "bytes": 10495,
+      "sha256": "4510349db041e5150a7f247f79b549f09897e70fc8d067bb40145203466420ea",
+      "source_package": "dormathon-dynamics-expansion-20261010",
+      "source_relative_path": "README.md"
+    },
+    {
+      "path": "source-packs/learning/dormathon-dynamics-expansion-20261010/artifacts/dynamics-calibration-pre-update.json",
+      "bytes": 2679,
+      "sha256": "fd7187003ddaaf4296d99377ac8d0b081f012ca7b1e5cbf5fb0ec974484cf083",
+      "source_package": "dormathon-dynamics-expansion-20261010",
+      "source_relative_path": "artifacts/dynamics-calibration-pre-update.json"
+    },
+    {
+      "path": "source-packs/learning/dormathon-dynamics-expansion-20261010/artifacts/dynamics-calibration-v1.json",
+      "bytes": 2681,
+      "sha256": "5c21e2a9fb52fdcd4b5d2f530cfc9b26063061b7e47628e4421bb95b6ebb7a64",
+      "source_package": "dormathon-dynamics-expansion-20261010",
+      "source_relative_path": "artifacts/dynamics-calibration-v1.json"
+    },
+    {
+      "path": "source-packs/learning/dormathon-dynamics-expansion-20261010/artifacts/dynamics-daily-updates.json",
+      "bytes": 56690,
+      "sha256": "35a4fe1d669392cfb37b3b9edebaa9f4eeaef9d1d316b2c0e7a89289e218fdbb",
+      "source_package": "dormathon-dynamics-expansion-20261010",
+      "source_relative_path": "artifacts/dynamics-daily-updates.json"
+    },
+    {
+      "path": "source-packs/learning/dormathon-dynamics-expansion-20261010/artifacts/dynamics-demo-output.json",
+      "bytes": 90985,
+      "sha256": "faaad10a88b811a505f093d8aaa2ff3e527f19716d779767160b2be806fb99a9",
+      "source_package": "dormathon-dynamics-expansion-20261010",
+      "source_relative_path": "artifacts/dynamics-demo-output.json"
+    },
+    {
+      "path": "source-packs/learning/dormathon-dynamics-expansion-20261010/artifacts/dynamics-fixed-world-evaluator-only.json",
+      "bytes": 797,
+      "sha256": "6e62ba13e52d05f8a527a089a9e1cb0387788af3b8688ff611898b881f23aef0",
+      "source_package": "dormathon-dynamics-expansion-20261010",
+      "source_relative_path": "artifacts/dynamics-fixed-world-evaluator-only.json"
+    },
+    {
+      "path": "source-packs/learning/dormathon-dynamics-expansion-20261010/artifacts/dynamics-heldout-evaluation.json",
+      "bytes": 1772,
+      "sha256": "c0acedd9cf45f9117e92148ce3acc571b1c8680be00259e1e5f66d571c5068a0",
+      "source_package": "dormathon-dynamics-expansion-20261010",
+      "source_relative_path": "artifacts/dynamics-heldout-evaluation.json"
+    },
+    {
+      "path": "source-packs/learning/dormathon-dynamics-expansion-20261010/artifacts/dynamics-observations-v1.json",
+      "bytes": 270420,
+      "sha256": "1ef8cbae55a952a4db3f9be229dbe916abde99d940df601c6bc3d75cd014ad09",
+      "source_package": "dormathon-dynamics-expansion-20261010",
+      "source_relative_path": "artifacts/dynamics-observations-v1.json"
+    },
+    {
+      "path": "source-packs/learning/dormathon-dynamics-expansion-20261010/artifacts/dynamics-portable-manifest.json",
+      "bytes": 2198,
+      "sha256": "7ed2364dbe1788750bc09dc59496c4a3fd82e815c85e953c5da737009b8f8014",
+      "source_package": "dormathon-dynamics-expansion-20261010",
+      "source_relative_path": "artifacts/dynamics-portable-manifest.json"
+    },
+    {
+      "path": "source-packs/learning/dormathon-dynamics-expansion-20261010/artifacts/dynamics-thermal-pinn-v1.json",
+      "bytes": 7385,
+      "sha256": "7c75609c0e77a149ffbc8aa29fb7e1e134cc40a217947950af32261a8cdae959",
+      "source_package": "dormathon-dynamics-expansion-20261010",
+      "source_relative_path": "artifacts/dynamics-thermal-pinn-v1.json"
+    },
+    {
+      "path": "source-packs/learning/dormathon-dynamics-expansion-20261010/docs/portable-contract.md",
+      "bytes": 5363,
+      "sha256": "42720a02e39834a7e3710cdd9053374604a401ad7f571207a47e30cdbd6bc53e",
+      "source_package": "dormathon-dynamics-expansion-20261010",
+      "source_relative_path": "docs/portable-contract.md"
+    },
+    {
+      "path": "source-packs/learning/dormathon-dynamics-expansion-20261010/package.json",
+      "bytes": 287,
+      "sha256": "3b4a3d6f05d85a95c6db3aef659799b5bb83c85f283af1cbf29db6ee2ef3242a",
+      "source_package": "dormathon-dynamics-expansion-20261010",
+      "source_relative_path": "package.json"
+    },
+    {
+      "path": "source-packs/learning/dormathon-dynamics-expansion-20261010/scripts/calibrate.mjs",
+      "bytes": 2753,
+      "sha256": "8f2ea85cd8095119dcfe4a91b79d765a531458182e7ab9cf456a5c69edafb4f4",
+      "source_package": "dormathon-dynamics-expansion-20261010",
+      "source_relative_path": "scripts/calibrate.mjs"
+    },
+    {
+      "path": "source-packs/learning/dormathon-dynamics-expansion-20261010/scripts/generate-observations.mjs",
+      "bytes": 1864,
+      "sha256": "a949f0e4afef8590984b90755b663a4dd35086394987804511bd15fdd188b2aa",
+      "source_package": "dormathon-dynamics-expansion-20261010",
+      "source_relative_path": "scripts/generate-observations.mjs"
+    },
+    {
+      "path": "source-packs/learning/dormathon-dynamics-expansion-20261010/scripts/run-dynamics-demo.mjs",
+      "bytes": 762,
+      "sha256": "b73bec5b3c14d554c9e3a882d1443d237653a55136b8124f17f1d822483fa022",
+      "source_package": "dormathon-dynamics-expansion-20261010",
+      "source_relative_path": "scripts/run-dynamics-demo.mjs"
+    },
+    {
+      "path": "source-packs/learning/dormathon-dynamics-expansion-20261010/scripts/train-thermal-pinn.mjs",
+      "bytes": 4603,
+      "sha256": "e0081050688663cbc66181742c466268d39efb3dfadcf3dc5ff51eb15fcdec5d",
+      "source_package": "dormathon-dynamics-expansion-20261010",
+      "source_relative_path": "scripts/train-thermal-pinn.mjs"
+    },
+    {
+      "path": "source-packs/learning/dormathon-dynamics-expansion-20261010/scripts/write-manifest.mjs",
+      "bytes": 1605,
+      "sha256": "df14f5421f3f00b5db286fdc64ea9d0c54ffeffca9109fe2051a97b41e69501f",
+      "source_package": "dormathon-dynamics-expansion-20261010",
+      "source_relative_path": "scripts/write-manifest.mjs"
+    },
+    {
+      "path": "source-packs/learning/dormathon-dynamics-expansion-20261010/tests/calibration-contract.test.mjs",
+      "bytes": 3858,
+      "sha256": "4575377dad6134f77bddeb12f25a06e1e79116b2983135a96b041d114e03c077",
+      "source_package": "dormathon-dynamics-expansion-20261010",
+      "source_relative_path": "tests/calibration-contract.test.mjs"
+    },
+    {
+      "path": "source-packs/learning/dormathon-dynamics-expansion-20261010/tests/dynamics-contract.test.mjs",
+      "bytes": 9548,
+      "sha256": "f7d68c590295c02941bcd4960fdc6ce34d70305fd03673f07f1c3ce70bed46be",
+      "source_package": "dormathon-dynamics-expansion-20261010",
+      "source_relative_path": "tests/dynamics-contract.test.mjs"
+    },
+    {
+      "path": "source-packs/learning/dormathon-dynamics-expansion-20261010/tests/report-contract.test.mjs",
+      "bytes": 2867,
+      "sha256": "16e727203a0c278bfcd97043d9c11a90757a1c679572a5cddb5c8d648e7b4ff9",
+      "source_package": "dormathon-dynamics-expansion-20261010",
+      "source_relative_path": "tests/report-contract.test.mjs"
+    },
+    {
+      "path": "source-packs/learning/dormathon-dynamics-expansion-20261010/worker/mrdiy-calibrated-artifacts.js",
+      "bytes": 7899,
+      "sha256": "f972863fd80e002924fca90963aa51c3d99b1c0cd6c3296bb7e2dda7ec1b7623",
+      "source_package": "dormathon-dynamics-expansion-20261010",
+      "source_relative_path": "worker/mrdiy-calibrated-artifacts.js"
+    },
+    {
+      "path": "source-packs/learning/dormathon-dynamics-expansion-20261010/worker/mrdiy-calibration.js",
+      "bytes": 8590,
+      "sha256": "a1c8f9fe3a0be41277742e2ba452cddbffb6c509cc01410c1ce68307cfd897d2",
+      "source_package": "dormathon-dynamics-expansion-20261010",
+      "source_relative_path": "worker/mrdiy-calibration.js"
+    },
+    {
+      "path": "source-packs/learning/dormathon-dynamics-expansion-20261010/worker/mrdiy-dated-observations.js",
+      "bytes": 209695,
+      "sha256": "038136b5db96010a3938ce6efa274c73a96634f3ac2dbb39abd1fd472e879327",
+      "source_package": "dormathon-dynamics-expansion-20261010",
+      "source_relative_path": "worker/mrdiy-dated-observations.js"
+    },
+    {
+      "path": "source-packs/learning/dormathon-dynamics-expansion-20261010/worker/mrdiy-dynamics-demo.js",
+      "bytes": 8009,
+      "sha256": "db842cea11b4d19b6c611aeec3c00e403af999041a2b0dce3feb83290c747f9b",
+      "source_package": "dormathon-dynamics-expansion-20261010",
+      "source_relative_path": "worker/mrdiy-dynamics-demo.js"
+    },
+    {
+      "path": "source-packs/learning/dormathon-dynamics-expansion-20261010/worker/mrdiy-dynamics-task-worker.js",
+      "bytes": 1481,
+      "sha256": "df373adae35481f83b932f67cc693a910a0418e8ab1af58f487c1a4d4e52e8d4",
+      "source_package": "dormathon-dynamics-expansion-20261010",
+      "source_relative_path": "worker/mrdiy-dynamics-task-worker.js"
+    },
+    {
+      "path": "source-packs/learning/dormathon-dynamics-expansion-20261010/worker/mrdiy-dynamics.js",
+      "bytes": 22812,
+      "sha256": "7b6c4f80434fce672100d15ef1826a4013c2bbe36932d9678c6a87635aa7af97",
+      "source_package": "dormathon-dynamics-expansion-20261010",
+      "source_relative_path": "worker/mrdiy-dynamics.js"
+    },
+    {
+      "path": "source-packs/learning/dormathon-dynamics-expansion-20261010/worker/mrdiy-thermal-pinn.js",
+      "bytes": 1625,
+      "sha256": "e46ef39fe630ac38263aeb16ab786db6075d3803afa86b640e6bcb9378cbcf85",
+      "source_package": "dormathon-dynamics-expansion-20261010",
+      "source_relative_path": "worker/mrdiy-thermal-pinn.js"
+    },
+    {
+      "path": "source-packs/learning/dormathon-learned-planning-20261010/README.md",
+      "bytes": 3038,
+      "sha256": "242e2af730d4a74e83d3ab5fd287e5e94a0c0fd27a20756fca2a1ceb52a6a7d4",
+      "source_package": "dormathon-learned-planning-20261010",
+      "source_relative_path": "README.md"
+    },
+    {
+      "path": "source-packs/learning/dormathon-learned-planning-20261010/artifacts/retail-adoption-manifest.json",
+      "bytes": 7435,
+      "sha256": "09b37d3ff020d3b2122fe2b3263cadcf57cb2425008d37abe7cf5c116b1a5476",
+      "source_package": "dormathon-learned-planning-20261010",
+      "source_relative_path": "artifacts/retail-adoption-manifest.json"
+    },
+    {
+      "path": "source-packs/learning/dormathon-learned-planning-20261010/artifacts/retail-bounded-oracle-comparison.json",
+      "bytes": 86659,
+      "sha256": "38a80b1165b9e12784312ce860242ccfc6e86a017ac2a6d926c8f0f35588f377",
+      "source_package": "dormathon-learned-planning-20261010",
+      "source_relative_path": "artifacts/retail-bounded-oracle-comparison.json"
+    },
+    {
+      "path": "source-packs/learning/dormathon-learned-planning-20261010/artifacts/retail-heldout-evaluation.json",
+      "bytes": 5369630,
+      "sha256": "787dd0aea147ecf30e6e1608261ad887c372206f2dac6582c794b371970369f9",
+      "source_package": "dormathon-learned-planning-20261010",
+      "source_relative_path": "artifacts/retail-heldout-evaluation.json"
+    },
+    {
+      "path": "source-packs/learning/dormathon-learned-planning-20261010/artifacts/retail-heldout-protocol2-evaluation.json",
+      "bytes": 6215292,
+      "sha256": "fdb45348acd0cd5850e755afd3d74da1e39549764ee2a2408573e6826ab8bbd9",
+      "source_package": "dormathon-learned-planning-20261010",
+      "source_relative_path": "artifacts/retail-heldout-protocol2-evaluation.json"
+    },
+    {
+      "path": "source-packs/learning/dormathon-learned-planning-20261010/artifacts/retail-protocol2-failure-cases.json",
+      "bytes": 23640,
+      "sha256": "5a49124450ba5d9ddbe4f666ab775ce7949ddb088fab03c6604f9dbd5881ff2c",
+      "source_package": "dormathon-learned-planning-20261010",
+      "source_relative_path": "artifacts/retail-protocol2-failure-cases.json"
+    },
+    {
+      "path": "source-packs/learning/dormathon-learned-planning-20261010/artifacts/retail-protocol2-frozen.json",
+      "bytes": 2731,
+      "sha256": "1ef22f584218e2703b203b0e50c425d67b8fbfc759ea4224e1d27945a8eafafc",
+      "source_package": "dormathon-learned-planning-20261010",
+      "source_relative_path": "artifacts/retail-protocol2-frozen.json"
+    },
+    {
+      "path": "source-packs/learning/dormathon-learned-planning-20261010/artifacts/retail-protocol2-summary.csv",
+      "bytes": 904,
+      "sha256": "a09596a4c14e6e8a17b645e250d492da53d1ae25dc7d5ac6efd96cdc4d1f01da",
+      "source_package": "dormathon-learned-planning-20261010",
+      "source_relative_path": "artifacts/retail-protocol2-summary.csv"
+    },
+    {
+      "path": "source-packs/learning/dormathon-learned-planning-20261010/artifacts/retail-q-seed41.json",
+      "bytes": 344554,
+      "sha256": "39f4565038f714ab4f0005f01e4dbc3c665a3223be0565ea06c5af1e8b652765",
+      "source_package": "dormathon-learned-planning-20261010",
+      "source_relative_path": "artifacts/retail-q-seed41.json"
+    },
+    {
+      "path": "source-packs/learning/dormathon-learned-planning-20261010/artifacts/retail-q-seed43.json",
+      "bytes": 338626,
+      "sha256": "4f8a077e75df60e7ee402a4248fc55ae2f2bde85e2ae78494014b9b8a0ff76d7",
+      "source_package": "dormathon-learned-planning-20261010",
+      "source_relative_path": "artifacts/retail-q-seed43.json"
+    },
+    {
+      "path": "source-packs/learning/dormathon-learned-planning-20261010/artifacts/retail-q-seed47.json",
+      "bytes": 345454,
+      "sha256": "f574cfe3b38a2196086a0a88f340cb61b3dc12e2a9db0e3a9925de4aa1557f5e",
+      "source_package": "dormathon-learned-planning-20261010",
+      "source_relative_path": "artifacts/retail-q-seed47.json"
+    },
+    {
+      "path": "source-packs/learning/dormathon-learned-planning-20261010/artifacts/retail-q-training-curve.json",
+      "bytes": 14523,
+      "sha256": "8898942e4fc4aea011fad8c665d444369057c727e1aa2e97aa65b87727a41665",
+      "source_package": "dormathon-learned-planning-20261010",
+      "source_relative_path": "artifacts/retail-q-training-curve.json"
+    },
+    {
+      "path": "source-packs/learning/dormathon-learned-planning-20261010/artifacts/retail-results-summary.json",
+      "bytes": 61603,
+      "sha256": "ad747a608c70fcd82d76f669cb18f057d7d0ffcbfcc05a1ed6e36c98d7f711d8",
+      "source_package": "dormathon-learned-planning-20261010",
+      "source_relative_path": "artifacts/retail-results-summary.json"
+    },
+    {
+      "path": "source-packs/learning/dormathon-learned-planning-20261010/artifacts/retail-runnable-demo.json",
+      "bytes": 365266,
+      "sha256": "3f420472d9d8f62cb5fe4bca69f7d1f81c728314f814115618b18b48f460dfe0",
+      "source_package": "dormathon-learned-planning-20261010",
+      "source_relative_path": "artifacts/retail-runnable-demo.json"
+    },
+    {
+      "path": "source-packs/learning/dormathon-learned-planning-20261010/artifacts/retail-training-calibration.json",
+      "bytes": 972,
+      "sha256": "9acc07df08b249d1e90bb8c3b8ae36ff81029a25325968e3e3861c1a6915fee0",
+      "source_package": "dormathon-learned-planning-20261010",
+      "source_relative_path": "artifacts/retail-training-calibration.json"
+    },
+    {
+      "path": "source-packs/learning/dormathon-learned-planning-20261010/docs/evaluation-findings.md",
+      "bytes": 4171,
+      "sha256": "185b90ab31c0ba40f8ce483581cd0a3bcb6e022dee6fa1d7a3dc407ef4115c89",
+      "source_package": "dormathon-learned-planning-20261010",
+      "source_relative_path": "docs/evaluation-findings.md"
+    },
+    {
+      "path": "source-packs/learning/dormathon-learned-planning-20261010/docs/planning-integration-contract.md",
+      "bytes": 7200,
+      "sha256": "b3d6e312ef8dd56f532bcca23f72e51abb4aa289f11631170d94813167b1bc1d",
+      "source_package": "dormathon-learned-planning-20261010",
+      "source_relative_path": "docs/planning-integration-contract.md"
+    },
+    {
+      "path": "source-packs/learning/dormathon-learned-planning-20261010/docs/protocol2-prespecification.md",
+      "bytes": 3400,
+      "sha256": "83f28f97ba66e0ef772ae0b51d2c75fe23c6baeb472eb9084b2dae98fa606972",
+      "source_package": "dormathon-learned-planning-20261010",
+      "source_relative_path": "docs/protocol2-prespecification.md"
+    },
+    {
+      "path": "source-packs/learning/dormathon-learned-planning-20261010/package.json",
+      "bytes": 765,
+      "sha256": "d88863dde6741d7da5a3ec48fe98bc4360d76791591b0d4f7aa390bb6ae30d7f",
+      "source_package": "dormathon-learned-planning-20261010",
+      "source_relative_path": "package.json"
+    },
+    {
+      "path": "source-packs/learning/dormathon-learned-planning-20261010/scripts/evaluate-retail-planners.mjs",
+      "bytes": 10144,
+      "sha256": "5a94726a0a6ab58f885e27aaccd1e68a4eca770d51e7e258305f25e1d1744c8b",
+      "source_package": "dormathon-learned-planning-20261010",
+      "source_relative_path": "scripts/evaluate-retail-planners.mjs"
+    },
+    {
+      "path": "source-packs/learning/dormathon-learned-planning-20261010/scripts/export-portable-policy.mjs",
+      "bytes": 1042,
+      "sha256": "93884863519fd9aa94fa2377b3274cba990422fa5239769986a00c7b537b3d39",
+      "source_package": "dormathon-learned-planning-20261010",
+      "source_relative_path": "scripts/export-portable-policy.mjs"
+    },
+    {
+      "path": "source-packs/learning/dormathon-learned-planning-20261010/scripts/freeze-protocol2.mjs",
+      "bytes": 2202,
+      "sha256": "206ba9b3c978549cf10e7f1b6b5f6154a26b1a09aa84cf623e91a364654d84ed",
+      "source_package": "dormathon-learned-planning-20261010",
+      "source_relative_path": "scripts/freeze-protocol2.mjs"
+    },
+    {
+      "path": "source-packs/learning/dormathon-learned-planning-20261010/scripts/run-bounded-oracle-comparison.mjs",
+      "bytes": 2748,
+      "sha256": "44b3a11f3ad7e038b020ba86fbfeb045a7acf927f29ab03167820cb82391f6c0",
+      "source_package": "dormathon-learned-planning-20261010",
+      "source_relative_path": "scripts/run-bounded-oracle-comparison.mjs"
+    },
+    {
+      "path": "source-packs/learning/dormathon-learned-planning-20261010/scripts/run-retail-demo.mjs",
+      "bytes": 1004,
+      "sha256": "3525a6e64120e293b157027b3d20152207e3d17dc8a3c4440f336e7ec9d89ec6",
+      "source_package": "dormathon-learned-planning-20261010",
+      "source_relative_path": "scripts/run-retail-demo.mjs"
+    },
+    {
+      "path": "source-packs/learning/dormathon-learned-planning-20261010/scripts/summarize-planning-evidence.mjs",
+      "bytes": 4111,
+      "sha256": "70c9a1aa6ad634acec49e4e9e806428f058cccf9e2613f52d226a325108e2226",
+      "source_package": "dormathon-learned-planning-20261010",
+      "source_relative_path": "scripts/summarize-planning-evidence.mjs"
+    },
+    {
+      "path": "source-packs/learning/dormathon-learned-planning-20261010/scripts/train-retail-q.mjs",
+      "bytes": 6318,
+      "sha256": "3271485b4e723ccbaf86370b9fbb2c741d7758d678a1d8d78154e1f19f95fca5",
+      "source_package": "dormathon-learned-planning-20261010",
+      "source_relative_path": "scripts/train-retail-q.mjs"
+    },
+    {
+      "path": "source-packs/learning/dormathon-learned-planning-20261010/scripts/write-adoption-manifest.mjs",
+      "bytes": 3481,
+      "sha256": "7f4f28f9c8407a7ed74afa07ec4ae93b7684b23a07072c012e82650b18a2c384",
+      "source_package": "dormathon-learned-planning-20261010",
+      "source_relative_path": "scripts/write-adoption-manifest.mjs"
+    },
+    {
+      "path": "source-packs/learning/dormathon-learned-planning-20261010/tests/retail-cover-thermal.test.mjs",
+      "bytes": 1674,
+      "sha256": "fbaaaa9ddcc458015e3da5fca0eaca94caececbbe37afd54935bfa9b11ca00fe",
+      "source_package": "dormathon-learned-planning-20261010",
+      "source_relative_path": "tests/retail-cover-thermal.test.mjs"
+    },
+    {
+      "path": "source-packs/learning/dormathon-learned-planning-20261010/tests/retail-mcts.test.mjs",
+      "bytes": 2112,
+      "sha256": "1802def7311ae7f3609653941b608d2919a7d3aa0c09951c4938d01338849929",
+      "source_package": "dormathon-learned-planning-20261010",
+      "source_relative_path": "tests/retail-mcts.test.mjs"
+    },
+    {
+      "path": "source-packs/learning/dormathon-learned-planning-20261010/tests/retail-q-learning.test.mjs",
+      "bytes": 897,
+      "sha256": "cfbd507039da9280bcf19165c1878fb9f0fe1e11df8da0e3e5039d9f5a922258",
+      "source_package": "dormathon-learned-planning-20261010",
+      "source_relative_path": "tests/retail-q-learning.test.mjs"
+    },
+    {
+      "path": "source-packs/learning/dormathon-learned-planning-20261010/tests/retail-q-policy.test.mjs",
+      "bytes": 2637,
+      "sha256": "b1340cef248b7b15871f7af79d6fc014def63753ee8aabb056536d4a347554b9",
+      "source_package": "dormathon-learned-planning-20261010",
+      "source_relative_path": "tests/retail-q-policy.test.mjs"
+    },
+    {
+      "path": "source-packs/learning/dormathon-learned-planning-20261010/tests/retail-real-environment.test.mjs",
+      "bytes": 2604,
+      "sha256": "6bab8662ec76e9d2b2d122398adc7b09764ada882427705d6927a4fadb3d0064",
+      "source_package": "dormathon-learned-planning-20261010",
+      "source_relative_path": "tests/retail-real-environment.test.mjs"
+    },
+    {
+      "path": "source-packs/learning/dormathon-learned-planning-20261010/tests/retail-trained-artifact.test.mjs",
+      "bytes": 5488,
+      "sha256": "63ce13abe4cfdeea60b6f55d5952edab48f6d73e251a0b7522727ed3b839595b",
+      "source_package": "dormathon-learned-planning-20261010",
+      "source_relative_path": "tests/retail-trained-artifact.test.mjs"
+    },
+    {
+      "path": "source-packs/learning/dormathon-learned-planning-20261010/worker/retail-bounded-oracle.js",
+      "bytes": 3841,
+      "sha256": "835ef62e2ac277c223ac3d9f77c895ac3abcce62c2eee88b999c5dce0dc2b8e8",
+      "source_package": "dormathon-learned-planning-20261010",
+      "source_relative_path": "worker/retail-bounded-oracle.js"
+    },
+    {
+      "path": "source-packs/learning/dormathon-learned-planning-20261010/worker/retail-browser-worker.js",
+      "bytes": 2523,
+      "sha256": "fef4afbac4c54f8f28280cf8233f332dc70b60e89edfdd5db283496f9b9fc5cb",
+      "source_package": "dormathon-learned-planning-20261010",
+      "source_relative_path": "worker/retail-browser-worker.js"
+    },
+    {
+      "path": "source-packs/learning/dormathon-learned-planning-20261010/worker/retail-cover-thermal-heuristic.js",
+      "bytes": 2432,
+      "sha256": "2a005020a27b40e56fb65eb11eff94abc49b1e5435f479da4c4b5e9814bbf4ba",
+      "source_package": "dormathon-learned-planning-20261010",
+      "source_relative_path": "worker/retail-cover-thermal-heuristic.js"
+    },
+    {
+      "path": "source-packs/learning/dormathon-learned-planning-20261010/worker/retail-dynamics-adapter.js",
+      "bytes": 250,
+      "sha256": "de8580565eca78d0df933f948f86e255d8337d28545a90f1e89caf0cafd6a72a",
+      "source_package": "dormathon-learned-planning-20261010",
+      "source_relative_path": "worker/retail-dynamics-adapter.js"
+    },
+    {
+      "path": "source-packs/learning/dormathon-learned-planning-20261010/worker/retail-heuristics.js",
+      "bytes": 1290,
+      "sha256": "77d8e07126c46a01f813eb5588e7bdb07deda5dbf4096da536a40f26d6aa8e38",
+      "source_package": "dormathon-learned-planning-20261010",
+      "source_relative_path": "worker/retail-heuristics.js"
+    },
+    {
+      "path": "source-packs/learning/dormathon-learned-planning-20261010/worker/retail-mcts.js",
+      "bytes": 5398,
+      "sha256": "220134b5ba6d1feb56950eabf71d5e258ee8c74e0da1e90d6e731bfcfcb09758",
+      "source_package": "dormathon-learned-planning-20261010",
+      "source_relative_path": "worker/retail-mcts.js"
+    },
+    {
+      "path": "source-packs/learning/dormathon-learned-planning-20261010/worker/retail-planning-demo.js",
+      "bytes": 4500,
+      "sha256": "89d8f49acbd1bc339aa4d0e64086a6e3c00f6e0e8cde8a5167eb69fa9a55fbd5",
+      "source_package": "dormathon-learned-planning-20261010",
+      "source_relative_path": "worker/retail-planning-demo.js"
+    },
+    {
+      "path": "source-packs/learning/dormathon-learned-planning-20261010/worker/retail-planning-utils.js",
+      "bytes": 858,
+      "sha256": "f122ff2c1bccafa3121834c123cf337127f94044ab6687f14c22fc6b19714ebf",
+      "source_package": "dormathon-learned-planning-20261010",
+      "source_relative_path": "worker/retail-planning-utils.js"
+    },
+    {
+      "path": "source-packs/learning/dormathon-learned-planning-20261010/worker/retail-q-learning.js",
+      "bytes": 922,
+      "sha256": "e82bcc6f286e2887590efce3f633fec49bdaae567b8a8793be3ab8f0cdb224bd",
+      "source_package": "dormathon-learned-planning-20261010",
+      "source_relative_path": "worker/retail-q-learning.js"
+    },
+    {
+      "path": "source-packs/learning/dormathon-learned-planning-20261010/worker/retail-q-policy.js",
+      "bytes": 3555,
+      "sha256": "ea5dab56eaaf82cdfafe2fa9e51ff89fffd75edf0d775169ef92e883fb755784",
+      "source_package": "dormathon-learned-planning-20261010",
+      "source_relative_path": "worker/retail-q-policy.js"
+    },
+    {
+      "path": "source-packs/learning/dormathon-learned-planning-20261010/worker/retail-trained-policy.js",
+      "bytes": 228854,
+      "sha256": "416479de31462398e512762995326d476a46e69d4a48a40fc300253ea4827730",
+      "source_package": "dormathon-learned-planning-20261010",
+      "source_relative_path": "worker/retail-trained-policy.js"
+    },
+    {
+      "path": "source-packs/learning/event-context/checks.json",
+      "bytes": 1803,
+      "sha256": "f23b8e52389813899f066776406be6ddbae864591b8d90c543d6eefc9a07863e",
+      "source_package": "event-context",
+      "source_relative_path": "checks.json"
+    },
+    {
+      "path": "source-packs/learning/event-context/events.json",
+      "bytes": 19259,
+      "sha256": "103756853af9cda64791f16e4f9dc50d27a496ce85a2b51df7b30440679cc5d8",
+      "source_package": "event-context",
+      "source_relative_path": "events.json"
+    },
+    {
+      "path": "source-packs/learning/event-context/test_delay_bridge.mjs",
+      "bytes": 1787,
+      "sha256": "9b1ce1a9f217745213c992e29312260dfb71b83751d4a5f9bf73ddb1236b29b5",
+      "source_package": "event-context",
+      "source_relative_path": "test_delay_bridge.mjs"
+    },
+    {
+      "path": "source-packs/learning/event-context/validate_contract.py",
+      "bytes": 1831,
+      "sha256": "25498ddc6d09cba9882301e614c5af7dfc9ff467069d4f08182b7d96e8e9e87c",
+      "source_package": "event-context",
+      "source_relative_path": "validate_contract.py"
+    },
+    {
+      "path": "source-packs/learning/event-context/verification.md",
+      "bytes": 7735,
+      "sha256": "fa158efe05722bedefd6b9cd177ae532d9b980dd7757fd91b5a817f8ecfac097",
+      "source_package": "event-context",
+      "source_relative_path": "verification.md"
+    },
+    {
+      "path": "source-packs/learning/independent-adoption-receipt.json",
+      "bytes": 6119,
+      "sha256": "38eeb86db9335ceea4af4b2a559bb8c37f82e90e6e192d0baa917513ef83f7a9",
+      "source_package": "packaging",
+      "source_relative_path": null
+    },
+    {
+      "path": "source-packs/learning/real-event-pack-receipt.json",
+      "bytes": 3111,
+      "sha256": "d8db301bc096c78b8d6ee7aaba671507df1630caba0da6318ee1d6c934bc1152",
+      "source_package": "packaging",
+      "source_relative_path": null
+    }
+  ],
+  "scope_limits": "Reproduction sources and frozen artifacts included; current hosted/UI gate is separately recorded. No operational or algorithm-superiority claim."
+}

@@ -1,0 +1,128 @@
+{
+  "schema_version": "dormathon.final-presentation-backup.v77",
+  "packaged_at": "2026-10-10T09:05:16.463166+00:00",
+  "edition": "v77",
+  "target_repository": "Taotern/T-Dormathon",
+  "repository_visibility": "private",
+  "branch": "main",
+  "expected_private_main_parent": "49fb4338974b59e500ff9df1a240699b7bb01604",
+  "source_commit": "529f4cb3ecb5e9d0d26f99eb5ed681770d9d5aa8",
+  "live_site_version": 77,
+  "embedded_screenshot_site_versions": [
+    77
+  ],
+  "original_delivery_receipt_sha256": "2fe7b813661425a4fc94bcbe2955312667f22cc9071e4c4e4df5828883f58558",
+  "receipt_transformation": "Portable relative names replace executor paths; final delivered Office/Markdown bytes are unchanged. Internal QA paths are omitted.",
+  "pitch_minutes": 3,
+  "Q_and_A_minutes": 2,
+  "review_MYT": "2026-10-10T20:00:00+08:00",
+  "submission_deadline_MYT": "2026-10-11T09:00:00+08:00",
+  "slides": {
+    "total": 20,
+    "visible": 6,
+    "evidence_appendices": 10,
+    "screenshot_fallbacks": 4
+  },
+  "documents": {
+    "English_pages": 6,
+    "Chinese_pages": 3
+  },
+  "spoken_script_words": 275,
+  "files": [
+    {
+      "path": "docs/presentation/v77/Dormathon_3_Minute_Pitch_EN_v77.pptx",
+      "bytes": 670446,
+      "sha256": "ef2686f733995c400d49c3ec3af7a57b232d1fc93f05b37eb48e53d2ab8e32ee"
+    },
+    {
+      "path": "docs/presentation/v77/Dormathon_Pitch_and_Demo_Runbook_EN_v77.docx",
+      "bytes": 43998,
+      "sha256": "8627f60e90dcf17b9de8293d5956bdf4d8e2a79c4fb6a8cb7dfe6b553ff3e848"
+    },
+    {
+      "path": "docs/presentation/v77/Dormathon_Presenter_Guide_ZH_v77.docx",
+      "bytes": 41352,
+      "sha256": "7f9469b8dee6ea57297ae78c36bc6e8738c1af29acadb2843ce18a59992dfc7e"
+    },
+    {
+      "path": "docs/presentation/v77/Dormathon_Pitch_and_Demo_Runbook_EN_v77.md",
+      "bytes": 14294,
+      "sha256": "df7a3b0ee637b644182961af5bea5807806ff0f654b3872fb13d068dec452806"
+    },
+    {
+      "path": "docs/presentation/v77/Dormathon_Presenter_Guide_ZH_v77.md",
+      "bytes": 6433,
+      "sha256": "2261874d6361a4c344f5d83b81dbd2d5d8bac28be9c004411b0c7d84a1954352"
+    },
+    {
+      "path": "docs/presentation/v77/README.md",
+      "bytes": 3580,
+      "sha256": "050a855a779dc4f363a32108cb1f70eaf61ce8f0a8820459a568e24cd215dfc1"
+    }
+  ],
+  "omitted_redundant_ZIP": {
+    "file": "Dormathon_Portable_Presentation_Package_v77.zip",
+    "bytes": 1294077,
+    "sha256": "6aa63e8d5fed4d3727db8b930ac89a527a26d0342642afba14ec181ffc7510d6"
+  },
+  "author_validation": {
+    "all_final_slides_rendered": 20,
+    "all_final_slides_visually_inspected": true,
+    "English_pages_inspected": 6,
+    "Chinese_pages_inspected": 3,
+    "unchanged_renders_compared_by_sha256": true,
+    "structural_package": "pass",
+    "native_charts": 4,
+    "native_tables": 2,
+    "chart_workbooks_verified": 4,
+    "desktop_PowerPoint_tested": false,
+    "both_source_chart_workbooks_preserved": true,
+    "new_display_data_workbook_snapshots": 2,
+    "source_markdown_matches_DOCX": true,
+    "zip_integrity": "pass",
+    "prior_v76_hashes_unchanged": true
+  },
+  "publisher_Office_integrity": [
+    {
+      "file": "Dormathon_3_Minute_Pitch_EN_v77.pptx",
+      "ZIP_CRC_ok": true,
+      "slides": 20,
+      "visible_main": 6,
+      "hidden": 14,
+      "native_charts": 4,
+      "native_tables": 2,
+      "chart_workbooks": 4,
+      "two_prior_source_workbooks_byte_preserved": true,
+      "VBA_projects": 0
+    },
+    {
+      "file": "Dormathon_Pitch_and_Demo_Runbook_EN_v77.docx",
+      "ZIP_CRC_ok": true,
+      "review_comments": 0,
+      "tracked_changes": 0,
+      "VBA_projects": 0
+    },
+    {
+      "file": "Dormathon_Presenter_Guide_ZH_v77.docx",
+      "ZIP_CRC_ok": true,
+      "review_comments": 0,
+      "tracked_changes": 0,
+      "VBA_projects": 0
+    }
+  ],
+  "author_validation_report_sha256": "f0ee85ce85d5449c6eac993df8ef8c032c649b080829290d9b2fa85db49a2f49",
+  "hosted_QA_report_sha256": "2878a3987adf27a1f1c76380e2249188bad9c7a2b24c57f461bab9f537c2dc7b",
+  "desktop_PowerPoint_tested": false,
+  "presentation_application_code_changed": false,
+  "prior_editions_byte_preserved": [
+    "v76",
+    "v74",
+    "v71-v72"
+  ],
+  "limits": [
+    "Dated public facts do not establish company exposure; delay and operations are explicit synthetic assumptions.",
+    "No Q/MCTS stronger-controller mean-score superiority, physical-fidelity advantage, actual savings or execution.",
+    "Earlier browser fit fingerprint differs from Node; shipped after-version agrees. New fit cannot inherit consumed holdout scores.",
+    "Full training/evaluation, whole-app HTTP database-write audit and live forced-timeout/unsupported-Worker injection were not rerun in hosted QA."
+  ]
+}

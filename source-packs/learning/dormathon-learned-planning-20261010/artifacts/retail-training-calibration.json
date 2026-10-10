@@ -1,0 +1,38 @@
+{
+  "version": "calibrated-2026-09-26-d7d491a4",
+  "data_mode": "SYNTHETIC_INTERNAL",
+  "as_of": "2026-09-26T00:00:00Z",
+  "demand": {
+    "base_units": 26.651442382997125,
+    "weekday_multipliers": [
+      1.0080846862818136,
+      0.9564495799924664,
+      0.9732863324383381,
+      0.9763380429608227,
+      0.9954648480240507,
+      1.0722261580307964,
+      1.022557499599467
+    ],
+    "kappa_per_day": 0.8275136322748271,
+    "sigma_per_sqrt_day": 0.10281133091603802
+  },
+  "thermal": {
+    "k_per_hour": 0.22999999999999998,
+    "cooling_gain_c_per_kwh": 0.6197315790162056
+  },
+  "fatigue": {
+    "build_per_hour": 0.065,
+    "recovery_per_hour": 0.09
+  },
+  "service": {
+    "processing_units_per_day": 29,
+    "backlog_resolution_per_hour": 0.12
+  },
+  "costs": {
+    "shortage_myr_per_unit": 12,
+    "holding_myr_per_unit_day": 0.04,
+    "backlog_myr_per_hour_day": 3,
+    "heat_myr_per_degree_hour": 0.4,
+    "terminal_inventory_value_myr_per_unit": 0
+  }
+}

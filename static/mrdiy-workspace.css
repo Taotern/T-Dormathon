@@ -178,3 +178,24 @@ body[data-mrdiy="true"] .mrdiy-advisor-controls{display:flex;flex-wrap:wrap;gap:
 .mrdiy-replan-tradeoff h4{margin:0 0 8px}
 .mrdiy-replan-tradeoff p{font-size:13px;line-height:1.6;margin:7px 0}
 @media(max-width:600px){.mrdiy-replan-timeline{padding-left:14px}.mrdiy-replan-timeline>li{padding-left:7px}.mrdiy-replan-timeline>li:before{left:-20px}.mrdiy-sequential-run{max-width:100%;white-space:normal}}
+
+/* One optional experience, three explicit local-compute paths. */
+.mrdiy-learning>summary{font-size:16px;font-weight:550;cursor:pointer;line-height:1.5}
+.mrdiy-learning>div{margin-top:14px}
+.mrdiy-learning-tabs{display:flex;flex-wrap:wrap;gap:8px;margin:16px 0}
+.mrdiy-learning-tabs button[aria-pressed=true]{background:#222;color:#fff;border-color:#222}
+.mrdiy-learning h4{font-size:17px;margin:18px 0 10px}
+.mrdiy-learning label{display:grid;gap:7px;font-size:13px;max-width:100%;margin:14px 0}
+.mrdiy-learning select{max-width:100%}
+.mrdiy-learning .mrdiy-details label{max-width:440px}
+.mrdiy-learning-run{margin:6px 0 12px}
+.mrdiy-learning .mrdiy-event-confirmed{overflow-wrap:anywhere}
+@media(max-width:600px){.mrdiy-learning-tabs{display:grid;grid-template-columns:1fr}.mrdiy-learning-tabs button{text-align:left}.mrdiy-learning-run{max-width:100%;white-space:normal}}
+.mrdiy-backdrop-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin:16px 0}
+.mrdiy-backdrop-card{border:1px solid #d7d7d7;padding:16px;min-width:0}
+.mrdiy-backdrop-card h4{font-size:16px;line-height:1.45;margin:8px 0}
+.mrdiy-backdrop-card>button{margin-top:12px}
+.mrdiy-learning-backdrop{border:1px solid #d7d7d7;padding:14px;margin:14px 0}
+.mrdiy-learning-backdrop input[type=number]{max-width:180px}
+.mrdiy-learning-backdrop>.mrdiy-check{display:flex;align-items:flex-start;gap:10px}
+@media(max-width:850px){.mrdiy-backdrop-grid{grid-template-columns:1fr}}

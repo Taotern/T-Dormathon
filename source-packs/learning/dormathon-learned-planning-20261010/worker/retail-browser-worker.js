@@ -1,0 +1,12 @@
+import {RETAIL_TRAINED_POLICY} from './retail-trained-policy.js';import {runRetailPlanningDemo} from './retail-planning-demo.js';import {planMcts} from './retail-mcts.js';import {createQPolicy} from './retail-q-policy.js';import {createEnvironment,createInitialState} from './retail-dynamics-adapter.js';import {practicalPolicy} from './retail-heuristics.js';import {assert} from './retail-planning-utils.js';
+/** Dedicated module Web Worker entry. No HTTP, filesystem, credentials or paid APIs. */
+export function dispatchRetailPlanningMessage(message,{onProgress}={}){
+ assert(message&&typeof message==='object'&&!Array.isArray(message)&&Object.keys(message).every(k=>['request_id','operation','seed','iterations','observation','calibration'].includes(k)),'Unknown worker message field');assert(typeof message.request_id==='string'&&message.request_id.length<=100,'Worker request ID required');
+ const calibration=message.calibration??RETAIL_TRAINED_POLICY.model_parameters;
+ if(message.operation==='demo')return runRetailPlanningDemo({seed:message.seed??300000,mctsIterations:message.iterations??32,calibration,artifact:RETAIL_TRAINED_POLICY,onProgress});
+ const observation=message.observation??createInitialState({calibration_version:calibration.version});
+ if(message.operation==='mcts'){const iterations=message.iterations??128;assert(Number.isInteger(iterations)&&iterations>=1&&iterations<=256,'Interactive MCTS iteration bound1..256 required');return planMcts({observation,createEnvironment,calibration,rolloutPolicy:practicalPolicy,iterations,horizon:observation.horizon_days-observation.day,seed:11003});}
+ if(message.operation==='learned_action'){const p=createQPolicy(RETAIL_TRAINED_POLICY,{fallback:practicalPolicy,calibration}),env=createEnvironment({state:observation,calibration,mode:'planning',seed:11003});return {action_id:p.choose(env.observation(),env.legalActions()),diagnostics:p.diagnostics(),artifact_id:p.artifact_id,policy_digest:p.policy_digest};}
+ throw new Error('Unknown worker operation');
+}
+if(typeof DedicatedWorkerGlobalScope!=='undefined'&&typeof self!=='undefined'&&self instanceof DedicatedWorkerGlobalScope&&typeof self.postMessage==='function')self.onmessage=event=>{const request_id=event.data?.request_id;try{const result=dispatchRetailPlanningMessage(event.data,{onProgress:progress=>self.postMessage({request_id,status:'progress',progress})});self.postMessage({request_id,status:'ok',result});}catch(error){self.postMessage({request_id,status:'error',error:error.message});}};

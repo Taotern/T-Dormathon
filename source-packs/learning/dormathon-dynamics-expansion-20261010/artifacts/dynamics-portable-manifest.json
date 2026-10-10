@@ -1,0 +1,66 @@
+{
+  "schema_version": "dormathon.portable-dynamics-manifest.v1",
+  "canonical_base_commit": "b100ca9f157fe03946e1b87a48bf4514a7c862d0",
+  "data_mode": "SYNTHETIC_INTERNAL",
+  "automatic_execution": false,
+  "observed_real_company_data": false,
+  "trained_parameter_version": "calibrated-2026-09-26-d7d491a4",
+  "thermal_neural_version": "thermal-pinn-6d9ccfa2",
+  "browser_worker_entry": "worker/mrdiy-dynamics-task-worker.js",
+  "browser_worker_task_names": [
+    "dynamics",
+    "calibration_replay",
+    "one_day_update",
+    "pinn_comparison"
+  ],
+  "external_runtime_dependencies": [],
+  "network_calls_required": 0,
+  "files": [
+    {
+      "path": "worker/mrdiy-calibrated-artifacts.js",
+      "sha256": "f972863fd80e002924fca90963aa51c3d99b1c0cd6c3296bb7e2dda7ec1b7623",
+      "bytes": 7899
+    },
+    {
+      "path": "worker/mrdiy-calibration.js",
+      "sha256": "a1c8f9fe3a0be41277742e2ba452cddbffb6c509cc01410c1ce68307cfd897d2",
+      "bytes": 8590
+    },
+    {
+      "path": "worker/mrdiy-dated-observations.js",
+      "sha256": "038136b5db96010a3938ce6efa274c73a96634f3ac2dbb39abd1fd472e879327",
+      "bytes": 209695
+    },
+    {
+      "path": "worker/mrdiy-dynamics-demo.js",
+      "sha256": "db842cea11b4d19b6c611aeec3c00e403af999041a2b0dce3feb83290c747f9b",
+      "bytes": 8009
+    },
+    {
+      "path": "worker/mrdiy-dynamics-task-worker.js",
+      "sha256": "df373adae35481f83b932f67cc693a910a0418e8ab1af58f487c1a4d4e52e8d4",
+      "bytes": 1481
+    },
+    {
+      "path": "worker/mrdiy-dynamics.js",
+      "sha256": "7b6c4f80434fce672100d15ef1826a4013c2bbe36932d9678c6a87635aa7af97",
+      "bytes": 22812
+    },
+    {
+      "path": "worker/mrdiy-thermal-pinn.js",
+      "sha256": "e46ef39fe630ac38263aeb16ab786db6075d3803afa86b640e6bcb9378cbcf85",
+      "bytes": 1625
+    }
+  ],
+  "validation": {
+    "producer_test_count": 44,
+    "producer_tests_command": "node --test --test-concurrency=1 tests/*.test.mjs",
+    "independent_audit_receipt": "pending_external_auditor",
+    "heldout_static_interval": {
+      "start": "2026-09-26",
+      "end_exclusive": "2026-10-10"
+    },
+    "fitted_training_latest": "2026-09-25",
+    "high_fidelity_real_world_validation": false
+  }
+}

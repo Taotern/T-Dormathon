@@ -1,0 +1,1864 @@
+{
+  "schema_version": "dormathon.learned-planning-evidence-summary.v1",
+  "scenarioDataMode": "SYNTHETIC_INTERNAL",
+  "automatic_execution": false,
+  "primary_policy": "trained_q_seed41",
+  "primary_policy_chosen_before_training": true,
+  "training": {
+    "summaries": [
+      {
+        "filename": "retail-q-seed41.json",
+        "artifact_id": "retail-q-seed41-episodes20000",
+        "policy_digest": "fnv1a32:f44b7eff",
+        "training": {
+          "episodes": 20000,
+          "training_rng_seed": 41,
+          "environment_seed_start": 100000,
+          "environment_seed_end": 119999,
+          "epsilon_schedule": "linear 1.0 to 0.08 over first 80%; then 0.08",
+          "gamma": 1,
+          "alpha": "max(0.035, 0.45 / visit_count^0.55)",
+          "state_aggregation": "coarse bins of public day/inventory/source/cash/fuel/staff/battery/fatigue/backlog/temperature/public log-demand belief/order ETA/units and feasible mask",
+          "validation_seed_start": 200000,
+          "validation_episodes": 48,
+          "validation_used_for_model_selection": false,
+          "oracle_targets_used": false,
+          "initial_q_value": 0,
+          "bellman_max": "all feasible actions, including initialized unvisited estimates",
+          "portable_unvisited_estimates": "exported null, inference excludes values with zero interaction visits",
+          "completed_at": "2026-10-10T07:59:50.712Z",
+          "peak_rss_mib": 144.882813
+        },
+        "validation": {
+          "mean_return": -290.036414,
+          "calls": 336,
+          "fallbacks": 0,
+          "fallback_rate": 0,
+          "calibration_mismatch_calls": 0
+        },
+        "states": 1977
+      },
+      {
+        "filename": "retail-q-seed43.json",
+        "artifact_id": "retail-q-seed43-episodes20000",
+        "policy_digest": "fnv1a32:76365358",
+        "training": {
+          "episodes": 20000,
+          "training_rng_seed": 43,
+          "environment_seed_start": 130000,
+          "environment_seed_end": 149999,
+          "epsilon_schedule": "linear 1.0 to 0.08 over first 80%; then 0.08",
+          "gamma": 1,
+          "alpha": "max(0.035, 0.45 / visit_count^0.55)",
+          "state_aggregation": "coarse bins of public day/inventory/source/cash/fuel/staff/battery/fatigue/backlog/temperature/public log-demand belief/order ETA/units and feasible mask",
+          "validation_seed_start": 200000,
+          "validation_episodes": 48,
+          "validation_used_for_model_selection": false,
+          "oracle_targets_used": false,
+          "initial_q_value": 0,
+          "bellman_max": "all feasible actions, including initialized unvisited estimates",
+          "portable_unvisited_estimates": "exported null, inference excludes values with zero interaction visits",
+          "completed_at": "2026-10-10T08:00:23.781Z",
+          "peak_rss_mib": 220.59375
+        },
+        "validation": {
+          "mean_return": -294.212644,
+          "calls": 336,
+          "fallbacks": 0,
+          "fallback_rate": 0,
+          "calibration_mismatch_calls": 0
+        },
+        "states": 1940
+      },
+      {
+        "filename": "retail-q-seed47.json",
+        "artifact_id": "retail-q-seed47-episodes20000",
+        "policy_digest": "fnv1a32:979b71c8",
+        "training": {
+          "episodes": 20000,
+          "training_rng_seed": 47,
+          "environment_seed_start": 160000,
+          "environment_seed_end": 179999,
+          "epsilon_schedule": "linear 1.0 to 0.08 over first 80%; then 0.08",
+          "gamma": 1,
+          "alpha": "max(0.035, 0.45 / visit_count^0.55)",
+          "state_aggregation": "coarse bins of public day/inventory/source/cash/fuel/staff/battery/fatigue/backlog/temperature/public log-demand belief/order ETA/units and feasible mask",
+          "validation_seed_start": 200000,
+          "validation_episodes": 48,
+          "validation_used_for_model_selection": false,
+          "oracle_targets_used": false,
+          "initial_q_value": 0,
+          "bellman_max": "all feasible actions, including initialized unvisited estimates",
+          "portable_unvisited_estimates": "exported null, inference excludes values with zero interaction visits",
+          "completed_at": "2026-10-10T08:00:55.608Z",
+          "peak_rss_mib": 225.773438
+        },
+        "validation": {
+          "mean_return": -284.264145,
+          "calls": 336,
+          "fallbacks": 1,
+          "fallback_rate": 0.002976190476190476,
+          "calibration_mismatch_calls": 0
+        },
+        "states": 1983
+      }
+    ],
+    "curves": [
+      {
+        "training_seed": 41,
+        "episodes": 2000,
+        "exploratory_mean_return": -2019.962375,
+        "greedy_validation_mean_return": -466.642393,
+        "validation_fallback_rate": 0.07142857142857142,
+        "states": 1066,
+        "visited_state_actions": 2449,
+        "rss_mib": 86.832031
+      },
+      {
+        "training_seed": 41,
+        "episodes": 4000,
+        "exploratory_mean_return": -1827.367546,
+        "greedy_validation_mean_return": -398.861514,
+        "validation_fallback_rate": 0.0625,
+        "states": 1364,
+        "visited_state_actions": 3401,
+        "rss_mib": 105.832031
+      },
+      {
+        "training_seed": 41,
+        "episodes": 6000,
+        "exploratory_mean_return": -1674.508683,
+        "greedy_validation_mean_return": -389.388169,
+        "validation_fallback_rate": 0.0625,
+        "states": 1554,
+        "visited_state_actions": 4175,
+        "rss_mib": 107.578125
+      },
+      {
+        "training_seed": 41,
+        "episodes": 8000,
+        "exploratory_mean_return": -1472.817497,
+        "greedy_validation_mean_return": -296.662221,
+        "validation_fallback_rate": 0.005952380952380952,
+        "states": 1681,
+        "visited_state_actions": 4797,
+        "rss_mib": 108.453125
+      },
+      {
+        "training_seed": 41,
+        "episodes": 10000,
+        "exploratory_mean_return": -1261.983452,
+        "greedy_validation_mean_return": -294.288694,
+        "validation_fallback_rate": 0.002976190476190476,
+        "states": 1793,
+        "visited_state_actions": 5314,
+        "rss_mib": 108.578125
+      },
+      {
+        "training_seed": 41,
+        "episodes": 12000,
+        "exploratory_mean_return": -1046.916754,
+        "greedy_validation_mean_return": -282.896682,
+        "validation_fallback_rate": 0.002976190476190476,
+        "states": 1871,
+        "visited_state_actions": 5771,
+        "rss_mib": 141.078125
+      },
+      {
+        "training_seed": 41,
+        "episodes": 14000,
+        "exploratory_mean_return": -827.473703,
+        "greedy_validation_mean_return": -284.807607,
+        "validation_fallback_rate": 0.002976190476190476,
+        "states": 1919,
+        "visited_state_actions": 6106,
+        "rss_mib": 142.203125
+      },
+      {
+        "training_seed": 41,
+        "episodes": 16000,
+        "exploratory_mean_return": -600.593859,
+        "greedy_validation_mean_return": -308.264854,
+        "validation_fallback_rate": 0,
+        "states": 1951,
+        "visited_state_actions": 6343,
+        "rss_mib": 143.546875
+      },
+      {
+        "training_seed": 41,
+        "episodes": 18000,
+        "exploratory_mean_return": -466.369651,
+        "greedy_validation_mean_return": -295.328261,
+        "validation_fallback_rate": 0,
+        "states": 1966,
+        "visited_state_actions": 6430,
+        "rss_mib": 144.882813
+      },
+      {
+        "training_seed": 41,
+        "episodes": 20000,
+        "exploratory_mean_return": -461.312977,
+        "greedy_validation_mean_return": -290.036414,
+        "validation_fallback_rate": 0,
+        "states": 1977,
+        "visited_state_actions": 6510,
+        "rss_mib": 146.257813
+      },
+      {
+        "training_seed": 43,
+        "episodes": 2000,
+        "exploratory_mean_return": -1974.436792,
+        "greedy_validation_mean_return": -409.555177,
+        "validation_fallback_rate": 0.05952380952380952,
+        "states": 1064,
+        "visited_state_actions": 2481,
+        "rss_mib": 148.957031
+      },
+      {
+        "training_seed": 43,
+        "episodes": 4000,
+        "exploratory_mean_return": -1849.984282,
+        "greedy_validation_mean_return": -747.819426,
+        "validation_fallback_rate": 0.05952380952380952,
+        "states": 1342,
+        "visited_state_actions": 3408,
+        "rss_mib": 149.9375
+      },
+      {
+        "training_seed": 43,
+        "episodes": 6000,
+        "exploratory_mean_return": -1647.517945,
+        "greedy_validation_mean_return": -743.301784,
+        "validation_fallback_rate": 0.01488095238095238,
+        "states": 1526,
+        "visited_state_actions": 4125,
+        "rss_mib": 151.050781
+      },
+      {
+        "training_seed": 43,
+        "episodes": 8000,
+        "exploratory_mean_return": -1460.542755,
+        "greedy_validation_mean_return": -294.55535,
+        "validation_fallback_rate": 0.017857142857142856,
+        "states": 1652,
+        "visited_state_actions": 4741,
+        "rss_mib": 152.425781
+      },
+      {
+        "training_seed": 43,
+        "episodes": 10000,
+        "exploratory_mean_return": -1278.247592,
+        "greedy_validation_mean_return": -330.93948,
+        "validation_fallback_rate": 0.008928571428571428,
+        "states": 1746,
+        "visited_state_actions": 5278,
+        "rss_mib": 153.632813
+      },
+      {
+        "training_seed": 43,
+        "episodes": 12000,
+        "exploratory_mean_return": -1045.773765,
+        "greedy_validation_mean_return": -319.428134,
+        "validation_fallback_rate": 0,
+        "states": 1819,
+        "visited_state_actions": 5732,
+        "rss_mib": 165.007813
+      },
+      {
+        "training_seed": 43,
+        "episodes": 14000,
+        "exploratory_mean_return": -840.085029,
+        "greedy_validation_mean_return": -288.456571,
+        "validation_fallback_rate": 0,
+        "states": 1875,
+        "visited_state_actions": 6071,
+        "rss_mib": 219.132813
+      },
+      {
+        "training_seed": 43,
+        "episodes": 16000,
+        "exploratory_mean_return": -590.134227,
+        "greedy_validation_mean_return": -298.31305,
+        "validation_fallback_rate": 0,
+        "states": 1911,
+        "visited_state_actions": 6280,
+        "rss_mib": 220.496094
+      },
+      {
+        "training_seed": 43,
+        "episodes": 18000,
+        "exploratory_mean_return": -464.107314,
+        "greedy_validation_mean_return": -285.528083,
+        "validation_fallback_rate": 0.005952380952380952,
+        "states": 1924,
+        "visited_state_actions": 6378,
+        "rss_mib": 220.59375
+      },
+      {
+        "training_seed": 43,
+        "episodes": 20000,
+        "exploratory_mean_return": -448.658732,
+        "greedy_validation_mean_return": -294.212644,
+        "validation_fallback_rate": 0,
+        "states": 1940,
+        "visited_state_actions": 6465,
+        "rss_mib": 220.84375
+      },
+      {
+        "training_seed": 47,
+        "episodes": 2000,
+        "exploratory_mean_return": -2013.744163,
+        "greedy_validation_mean_return": -433.416723,
+        "validation_fallback_rate": 0.15178571428571427,
+        "states": 1037,
+        "visited_state_actions": 2443,
+        "rss_mib": 223.0625
+      },
+      {
+        "training_seed": 47,
+        "episodes": 4000,
+        "exploratory_mean_return": -1856.480947,
+        "greedy_validation_mean_return": -365.171467,
+        "validation_fallback_rate": 0.02976190476190476,
+        "states": 1364,
+        "visited_state_actions": 3437,
+        "rss_mib": 223.6875
+      },
+      {
+        "training_seed": 47,
+        "episodes": 6000,
+        "exploratory_mean_return": -1662.662158,
+        "greedy_validation_mean_return": -362.64567,
+        "validation_fallback_rate": 0.011904761904761904,
+        "states": 1554,
+        "visited_state_actions": 4166,
+        "rss_mib": 223.9375
+      },
+      {
+        "training_seed": 47,
+        "episodes": 8000,
+        "exploratory_mean_return": -1477.34183,
+        "greedy_validation_mean_return": -454.706702,
+        "validation_fallback_rate": 0.023809523809523808,
+        "states": 1692,
+        "visited_state_actions": 4809,
+        "rss_mib": 224.398438
+      },
+      {
+        "training_seed": 47,
+        "episodes": 10000,
+        "exploratory_mean_return": -1266.504131,
+        "greedy_validation_mean_return": -286.952295,
+        "validation_fallback_rate": 0.002976190476190476,
+        "states": 1788,
+        "visited_state_actions": 5346,
+        "rss_mib": 224.648438
+      },
+      {
+        "training_seed": 47,
+        "episodes": 12000,
+        "exploratory_mean_return": -1056.0475,
+        "greedy_validation_mean_return": -281.24887,
+        "validation_fallback_rate": 0.002976190476190476,
+        "states": 1872,
+        "visited_state_actions": 5758,
+        "rss_mib": 225.648438
+      },
+      {
+        "training_seed": 47,
+        "episodes": 14000,
+        "exploratory_mean_return": -848.093558,
+        "greedy_validation_mean_return": -292.628888,
+        "validation_fallback_rate": 0.002976190476190476,
+        "states": 1914,
+        "visited_state_actions": 6104,
+        "rss_mib": 223.832031
+      },
+      {
+        "training_seed": 47,
+        "episodes": 16000,
+        "exploratory_mean_return": -579.34175,
+        "greedy_validation_mean_return": -290.758371,
+        "validation_fallback_rate": 0.002976190476190476,
+        "states": 1955,
+        "visited_state_actions": 6317,
+        "rss_mib": 221.0625
+      },
+      {
+        "training_seed": 47,
+        "episodes": 18000,
+        "exploratory_mean_return": -455.380757,
+        "greedy_validation_mean_return": -311.350065,
+        "validation_fallback_rate": 0.002976190476190476,
+        "states": 1972,
+        "visited_state_actions": 6432,
+        "rss_mib": 221.1875
+      },
+      {
+        "training_seed": 47,
+        "episodes": 20000,
+        "exploratory_mean_return": -441.405376,
+        "greedy_validation_mean_return": -284.264145,
+        "validation_fallback_rate": 0.002976190476190476,
+        "states": 1983,
+        "visited_state_actions": 6497,
+        "rss_mib": 221.1875
+      }
+    ]
+  },
+  "first_study": {
+    "seed_range": [
+      300000,
+      300095
+    ],
+    "summary": [
+      {
+        "policy": "no_action",
+        "episodes": 96,
+        "mean_reward": -721.223917,
+        "mean_metrics": {
+          "unserved_units": 53.570551,
+          "fulfilled_units": 131.981496,
+          "heat_degree_hours": 70.406638,
+          "cash_commitment_myr": 0,
+          "holding_myr": 14.693183,
+          "backlog_myr": 35.521469,
+          "shortage_myr": 642.84661,
+          "heat_myr": 28.162655
+        },
+        "paired_reward_minus_heuristic": {
+          "mean": 0,
+          "standard_deviation": 0,
+          "approx_95pct_interval": [
+            0,
+            0
+          ]
+        },
+        "paired_reward_minus_no_action": {
+          "mean": 0,
+          "standard_deviation": 0,
+          "approx_95pct_interval": [
+            0,
+            0
+          ]
+        },
+        "worse_than_heuristic_episodes": 0,
+        "tied_with_heuristic_episodes": 96,
+        "mean_runtime_ms": 1.439157,
+        "diagnostics": {},
+        "artifact_id": null,
+        "policy_digest": null
+      },
+      {
+        "policy": "practical_heuristic",
+        "episodes": 96,
+        "mean_reward": -721.223917,
+        "mean_metrics": {
+          "unserved_units": 53.570551,
+          "fulfilled_units": 131.981496,
+          "heat_degree_hours": 70.406638,
+          "cash_commitment_myr": 0,
+          "holding_myr": 14.693183,
+          "backlog_myr": 35.521469,
+          "shortage_myr": 642.84661,
+          "heat_myr": 28.162655
+        },
+        "paired_reward_minus_heuristic": {
+          "mean": 0,
+          "standard_deviation": 0,
+          "approx_95pct_interval": [
+            0,
+            0
+          ]
+        },
+        "paired_reward_minus_no_action": {
+          "mean": 0,
+          "standard_deviation": 0,
+          "approx_95pct_interval": [
+            0,
+            0
+          ]
+        },
+        "worse_than_heuristic_episodes": 0,
+        "tied_with_heuristic_episodes": 96,
+        "mean_runtime_ms": 1.50572,
+        "diagnostics": {},
+        "artifact_id": null,
+        "policy_digest": null
+      },
+      {
+        "policy": "trained_q_seed41",
+        "episodes": 96,
+        "mean_reward": -267.661965,
+        "mean_metrics": {
+          "unserved_units": 3.221529,
+          "fulfilled_units": 182.330517,
+          "heat_degree_hours": 66.054476,
+          "cash_commitment_myr": 144.5,
+          "holding_myr": 26.032211,
+          "backlog_myr": 32.049609,
+          "shortage_myr": 38.658354,
+          "heat_myr": 26.42179
+        },
+        "paired_reward_minus_heuristic": {
+          "mean": 453.561952,
+          "standard_deviation": 80.684952,
+          "approx_95pct_interval": [
+            437.4216,
+            469.702304
+          ]
+        },
+        "paired_reward_minus_no_action": {
+          "mean": 453.561952,
+          "standard_deviation": 80.684952,
+          "approx_95pct_interval": [
+            437.4216,
+            469.702304
+          ]
+        },
+        "worse_than_heuristic_episodes": 0,
+        "tied_with_heuristic_episodes": 0,
+        "mean_runtime_ms": 1.66808,
+        "diagnostics": {
+          "calls": 672,
+          "fallbacks": 12,
+          "fallback_rate": 0.017857142857142856,
+          "calibration_mismatch_calls": 0
+        },
+        "artifact_id": "retail-q-seed41-episodes20000",
+        "policy_digest": "fnv1a32:f44b7eff"
+      },
+      {
+        "policy": "trained_q_seed43",
+        "episodes": 96,
+        "mean_reward": -267.421411,
+        "mean_metrics": {
+          "unserved_units": 3.13723,
+          "fulfilled_units": 182.414816,
+          "heat_degree_hours": 63.685543,
+          "cash_commitment_myr": 142.34375,
+          "holding_myr": 28.772132,
+          "backlog_myr": 33.184551,
+          "shortage_myr": 37.646761,
+          "heat_myr": 25.474217
+        },
+        "paired_reward_minus_heuristic": {
+          "mean": 453.802506,
+          "standard_deviation": 88.713611,
+          "approx_95pct_interval": [
+            436.056088,
+            471.548924
+          ]
+        },
+        "paired_reward_minus_no_action": {
+          "mean": 453.802506,
+          "standard_deviation": 88.713611,
+          "approx_95pct_interval": [
+            436.056088,
+            471.548924
+          ]
+        },
+        "worse_than_heuristic_episodes": 0,
+        "tied_with_heuristic_episodes": 0,
+        "mean_runtime_ms": 1.592218,
+        "diagnostics": {
+          "calls": 672,
+          "fallbacks": 7,
+          "fallback_rate": 0.010416666666666666,
+          "calibration_mismatch_calls": 0
+        },
+        "artifact_id": "retail-q-seed43-episodes20000",
+        "policy_digest": "fnv1a32:76365358"
+      },
+      {
+        "policy": "trained_q_seed47",
+        "episodes": 96,
+        "mean_reward": -263.214626,
+        "mean_metrics": {
+          "unserved_units": 3.591864,
+          "fulfilled_units": 181.960183,
+          "heat_degree_hours": 65.797228,
+          "cash_commitment_myr": 141.40625,
+          "holding_myr": 21.425859,
+          "backlog_myr": 30.96126,
+          "shortage_myr": 43.102365,
+          "heat_myr": 26.318891
+        },
+        "paired_reward_minus_heuristic": {
+          "mean": 458.009291,
+          "standard_deviation": 70.818108,
+          "approx_95pct_interval": [
+            443.842719,
+            472.175863
+          ]
+        },
+        "paired_reward_minus_no_action": {
+          "mean": 458.009291,
+          "standard_deviation": 70.818108,
+          "approx_95pct_interval": [
+            443.842719,
+            472.175863
+          ]
+        },
+        "worse_than_heuristic_episodes": 0,
+        "tied_with_heuristic_episodes": 0,
+        "mean_runtime_ms": 1.598211,
+        "diagnostics": {
+          "calls": 672,
+          "fallbacks": 3,
+          "fallback_rate": 0.004464285714285714,
+          "calibration_mismatch_calls": 0
+        },
+        "artifact_id": "retail-q-seed47-episodes20000",
+        "policy_digest": "fnv1a32:979b71c8"
+      },
+      {
+        "policy": "mcts_32",
+        "episodes": 96,
+        "mean_reward": -324.639594,
+        "mean_metrics": {
+          "unserved_units": 7.801688,
+          "fulfilled_units": 177.750358,
+          "heat_degree_hours": 62.545738,
+          "cash_commitment_myr": 141.333333,
+          "holding_myr": 29.410421,
+          "backlog_myr": 35.257289,
+          "shortage_myr": 93.620256,
+          "heat_myr": 25.018295
+        },
+        "paired_reward_minus_heuristic": {
+          "mean": 396.584323,
+          "standard_deviation": 74.52888,
+          "approx_95pct_interval": [
+            381.675442,
+            411.493204
+          ]
+        },
+        "paired_reward_minus_no_action": {
+          "mean": 396.584323,
+          "standard_deviation": 74.52888,
+          "approx_95pct_interval": [
+            381.675442,
+            411.493204
+          ]
+        },
+        "worse_than_heuristic_episodes": 0,
+        "tied_with_heuristic_episodes": 0,
+        "mean_runtime_ms": 235.747668,
+        "diagnostics": {
+          "model_transitions": 86016,
+          "maximum_tree_depth": 3
+        },
+        "artifact_id": null,
+        "policy_digest": null
+      },
+      {
+        "policy": "mcts_128",
+        "episodes": 96,
+        "mean_reward": -307.390807,
+        "mean_metrics": {
+          "unserved_units": 7.299685,
+          "fulfilled_units": 178.252361,
+          "heat_degree_hours": 62.545738,
+          "cash_commitment_myr": 131.541667,
+          "holding_myr": 27.891802,
+          "backlog_myr": 35.342825,
+          "shortage_myr": 87.596219,
+          "heat_myr": 25.018295
+        },
+        "paired_reward_minus_heuristic": {
+          "mean": 413.833109,
+          "standard_deviation": 81.436294,
+          "approx_95pct_interval": [
+            397.542458,
+            430.123761
+          ]
+        },
+        "paired_reward_minus_no_action": {
+          "mean": 413.833109,
+          "standard_deviation": 81.436294,
+          "approx_95pct_interval": [
+            397.542458,
+            430.123761
+          ]
+        },
+        "worse_than_heuristic_episodes": 0,
+        "tied_with_heuristic_episodes": 0,
+        "mean_runtime_ms": 934.79026,
+        "diagnostics": {
+          "model_transitions": 344064,
+          "maximum_tree_depth": 4
+        },
+        "artifact_id": null,
+        "policy_digest": null
+      }
+    ],
+    "baseline_limitation": "The original fixed toy practical rule was passive on all96 seeds and equals no-action; do not treat this as validated manual operations."
+  },
+  "second_study": {
+    "frozen_at": "2026-10-10T08:14:22.163Z",
+    "seed_range": [
+      400000,
+      400095
+    ],
+    "reference_policy": "cover_thermal_myopic_v1",
+    "summary": [
+      {
+        "policy": "no_action",
+        "episodes": 96,
+        "mean_reward": -709.230333,
+        "mean_metrics": {
+          "unserved_units": 52.524982,
+          "fulfilled_units": 131.596516,
+          "heat_degree_hours": 71.740079,
+          "cash_commitment_myr": 0,
+          "holding_myr": 14.735011,
+          "backlog_myr": 35.499511,
+          "shortage_myr": 630.29978,
+          "heat_myr": 28.696031
+        },
+        "paired_reward_minus_heuristic": {
+          "mean": -442.580646,
+          "standard_deviation": 53.494915,
+          "approx_95pct_interval": [
+            -453.281858,
+            -431.879434
+          ]
+        },
+        "paired_reward_minus_no_action": {
+          "mean": 0,
+          "standard_deviation": 0,
+          "approx_95pct_interval": [
+            0,
+            0
+          ]
+        },
+        "worse_than_heuristic_episodes": 96,
+        "tied_with_heuristic_episodes": 0,
+        "mean_runtime_ms": 1.34955,
+        "diagnostics": {},
+        "artifact_id": null,
+        "policy_digest": null
+      },
+      {
+        "policy": "practical_heuristic",
+        "episodes": 96,
+        "mean_reward": -709.230333,
+        "mean_metrics": {
+          "unserved_units": 52.524982,
+          "fulfilled_units": 131.596516,
+          "heat_degree_hours": 71.740079,
+          "cash_commitment_myr": 0,
+          "holding_myr": 14.735011,
+          "backlog_myr": 35.499511,
+          "shortage_myr": 630.29978,
+          "heat_myr": 28.696031
+        },
+        "paired_reward_minus_heuristic": {
+          "mean": -442.580646,
+          "standard_deviation": 53.494915,
+          "approx_95pct_interval": [
+            -453.281858,
+            -431.879434
+          ]
+        },
+        "paired_reward_minus_no_action": {
+          "mean": 0,
+          "standard_deviation": 0,
+          "approx_95pct_interval": [
+            0,
+            0
+          ]
+        },
+        "worse_than_heuristic_episodes": 96,
+        "tied_with_heuristic_episodes": 0,
+        "mean_runtime_ms": 1.384118,
+        "diagnostics": {},
+        "artifact_id": null,
+        "policy_digest": null
+      },
+      {
+        "policy": "cover_thermal_myopic_v1",
+        "episodes": 96,
+        "mean_reward": -266.649687,
+        "mean_metrics": {
+          "unserved_units": 7.665113,
+          "fulfilled_units": 176.456384,
+          "heat_degree_hours": 63.935562,
+          "cash_commitment_myr": 89.25,
+          "holding_myr": 19.892028,
+          "backlog_myr": 39.952073,
+          "shortage_myr": 91.981361,
+          "heat_myr": 25.574225
+        },
+        "paired_reward_minus_heuristic": {
+          "mean": 0,
+          "standard_deviation": 0,
+          "approx_95pct_interval": [
+            0,
+            0
+          ]
+        },
+        "paired_reward_minus_no_action": {
+          "mean": 442.580646,
+          "standard_deviation": 53.494915,
+          "approx_95pct_interval": [
+            431.879434,
+            453.281858
+          ]
+        },
+        "worse_than_heuristic_episodes": 0,
+        "tied_with_heuristic_episodes": 96,
+        "mean_runtime_ms": 2.958156,
+        "diagnostics": {
+          "calls": 672,
+          "one_day_model_transitions": 1536,
+          "forecast": "one-step OU lognormal mean from approximate public point belief",
+          "outdoor_mean_c": 34
+        },
+        "artifact_id": null,
+        "policy_digest": null
+      },
+      {
+        "policy": "trained_q_seed41",
+        "episodes": 96,
+        "mean_reward": -271.243845,
+        "mean_metrics": {
+          "unserved_units": 3.418055,
+          "fulfilled_units": 180.703443,
+          "heat_degree_hours": 66.821845,
+          "cash_commitment_myr": 144.208333,
+          "holding_myr": 27.051113,
+          "backlog_myr": 32.239002,
+          "shortage_myr": 41.016659,
+          "heat_myr": 26.728738
+        },
+        "paired_reward_minus_heuristic": {
+          "mean": -4.594158,
+          "standard_deviation": 51.86066,
+          "approx_95pct_interval": [
+            -14.96845,
+            5.780135
+          ]
+        },
+        "paired_reward_minus_no_action": {
+          "mean": 437.986488,
+          "standard_deviation": 79.862082,
+          "approx_95pct_interval": [
+            422.010745,
+            453.962232
+          ]
+        },
+        "worse_than_heuristic_episodes": 58,
+        "tied_with_heuristic_episodes": 0,
+        "mean_runtime_ms": 1.5766,
+        "diagnostics": {
+          "calls": 672,
+          "fallbacks": 7,
+          "fallback_rate": 0.010416666666666666,
+          "calibration_mismatch_calls": 0,
+          "effective_parameter_mismatch_calls": 0,
+          "current_parameter_fingerprint_checked": true
+        },
+        "artifact_id": "retail-q-seed41-episodes20000",
+        "policy_digest": "fnv1a32:f44b7eff"
+      },
+      {
+        "policy": "trained_q_seed43",
+        "episodes": 96,
+        "mean_reward": -267.685981,
+        "mean_metrics": {
+          "unserved_units": 3.112754,
+          "fulfilled_units": 181.008744,
+          "heat_degree_hours": 65.291422,
+          "cash_commitment_myr": 142.395833,
+          "holding_myr": 28.830338,
+          "backlog_myr": 32.990199,
+          "shortage_myr": 37.353042,
+          "heat_myr": 26.116569
+        },
+        "paired_reward_minus_heuristic": {
+          "mean": -1.036294,
+          "standard_deviation": 66.040076,
+          "approx_95pct_interval": [
+            -14.247061,
+            12.174473
+          ]
+        },
+        "paired_reward_minus_no_action": {
+          "mean": 441.544352,
+          "standard_deviation": 98.451417,
+          "approx_95pct_interval": [
+            421.849967,
+            461.238737
+          ]
+        },
+        "worse_than_heuristic_episodes": 44,
+        "tied_with_heuristic_episodes": 0,
+        "mean_runtime_ms": 1.53945,
+        "diagnostics": {
+          "calls": 672,
+          "fallbacks": 7,
+          "fallback_rate": 0.010416666666666666,
+          "calibration_mismatch_calls": 0,
+          "effective_parameter_mismatch_calls": 0,
+          "current_parameter_fingerprint_checked": true
+        },
+        "artifact_id": "retail-q-seed43-episodes20000",
+        "policy_digest": "fnv1a32:76365358"
+      },
+      {
+        "policy": "trained_q_seed47",
+        "episodes": 96,
+        "mean_reward": -263.89436,
+        "mean_metrics": {
+          "unserved_units": 2.709624,
+          "fulfilled_units": 181.411874,
+          "heat_degree_hours": 67.880387,
+          "cash_commitment_myr": 151.5625,
+          "holding_myr": 21.81424,
+          "backlog_myr": 30.849978,
+          "shortage_myr": 32.515487,
+          "heat_myr": 27.152155
+        },
+        "paired_reward_minus_heuristic": {
+          "mean": 2.755327,
+          "standard_deviation": 84.971607,
+          "approx_95pct_interval": [
+            -14.242534,
+            19.753189
+          ]
+        },
+        "paired_reward_minus_no_action": {
+          "mean": 445.335973,
+          "standard_deviation": 105.289232,
+          "approx_95pct_interval": [
+            424.27374,
+            466.398206
+          ]
+        },
+        "worse_than_heuristic_episodes": 39,
+        "tied_with_heuristic_episodes": 0,
+        "mean_runtime_ms": 1.477896,
+        "diagnostics": {
+          "calls": 672,
+          "fallbacks": 3,
+          "fallback_rate": 0.004464285714285714,
+          "calibration_mismatch_calls": 0,
+          "effective_parameter_mismatch_calls": 0,
+          "current_parameter_fingerprint_checked": true
+        },
+        "artifact_id": "retail-q-seed47-episodes20000",
+        "policy_digest": "fnv1a32:979b71c8"
+      },
+      {
+        "policy": "mcts_32",
+        "episodes": 96,
+        "mean_reward": -317.67924,
+        "mean_metrics": {
+          "unserved_units": 7.444979,
+          "fulfilled_units": 176.676518,
+          "heat_degree_hours": 63.935562,
+          "cash_commitment_myr": 138.208333,
+          "holding_myr": 29.423788,
+          "backlog_myr": 35.133141,
+          "shortage_myr": 89.339752,
+          "heat_myr": 25.574225
+        },
+        "paired_reward_minus_heuristic": {
+          "mean": -51.029553,
+          "standard_deviation": 51.197082,
+          "approx_95pct_interval": [
+            -61.271102,
+            -40.788004
+          ]
+        },
+        "paired_reward_minus_no_action": {
+          "mean": 391.551093,
+          "standard_deviation": 76.189557,
+          "approx_95pct_interval": [
+            376.310008,
+            406.792179
+          ]
+        },
+        "worse_than_heuristic_episodes": 87,
+        "tied_with_heuristic_episodes": 0,
+        "mean_runtime_ms": 229.000867,
+        "diagnostics": {
+          "model_transitions": 86016,
+          "maximum_tree_depth": 3
+        },
+        "artifact_id": null,
+        "policy_digest": null
+      },
+      {
+        "policy": "mcts_128",
+        "episodes": 96,
+        "mean_reward": -304.803442,
+        "mean_metrics": {
+          "unserved_units": 7.318035,
+          "fulfilled_units": 176.803463,
+          "heat_degree_hours": 63.935562,
+          "cash_commitment_myr": 128.625,
+          "holding_myr": 27.382709,
+          "backlog_myr": 35.405089,
+          "shortage_myr": 87.81642,
+          "heat_myr": 25.574225
+        },
+        "paired_reward_minus_heuristic": {
+          "mean": -38.153755,
+          "standard_deviation": 43.434228,
+          "approx_95pct_interval": [
+            -46.84241,
+            -29.4651
+          ]
+        },
+        "paired_reward_minus_no_action": {
+          "mean": 404.426891,
+          "standard_deviation": 71.684513,
+          "approx_95pct_interval": [
+            390.087002,
+            418.76678
+          ]
+        },
+        "worse_than_heuristic_episodes": 82,
+        "tied_with_heuristic_episodes": 0,
+        "mean_runtime_ms": 905.30726,
+        "diagnostics": {
+          "model_transitions": 344064,
+          "maximum_tree_depth": 4
+        },
+        "artifact_id": null,
+        "policy_digest": null
+      }
+    ],
+    "peak_rss_mib": 95.078125,
+    "failure_cases": [
+      {
+        "policy": "trained_q_seed41",
+        "cases": [
+          {
+            "evaluation_seed": 400023,
+            "reward_minus_controller": -97.56775899999997,
+            "total_reward": -431.062126,
+            "metrics": {
+              "unserved_units": 14.679805,
+              "fulfilled_units": 185.159601,
+              "heat_degree_hours": 63.399138,
+              "cash_commitment_myr": 163,
+              "holding_myr": 31.876476,
+              "backlog_myr": 34.668333,
+              "shortage_myr": 176.157662,
+              "heat_myr": 25.359655
+            },
+            "actual_action_history": [
+              {
+                "date": "2026-10-10",
+                "fulfilled_units": 26.590492591940126,
+                "censored": false,
+                "receipt_ids": [],
+                "action_id": "transfer40_support_none"
+              },
+              {
+                "date": "2026-10-11",
+                "fulfilled_units": 25.775702595120688,
+                "censored": true,
+                "receipt_ids": [],
+                "action_id": "transfer40_normal_none"
+              },
+              {
+                "date": "2026-10-12",
+                "fulfilled_units": 26.38659135576751,
+                "censored": false,
+                "receipt_ids": [],
+                "action_id": "none_normal_none"
+              },
+              {
+                "date": "2026-10-13",
+                "fulfilled_units": 29.284183344429245,
+                "censored": false,
+                "receipt_ids": [
+                  "DEMO_SHIP02"
+                ],
+                "action_id": "none_support_none"
+              },
+              {
+                "date": "2026-10-14",
+                "fulfilled_units": 25.430130319490686,
+                "censored": true,
+                "receipt_ids": [],
+                "action_id": "transfer40_normal_none"
+              },
+              {
+                "date": "2026-10-15",
+                "fulfilled_units": 25.247845933097295,
+                "censored": true,
+                "receipt_ids": [
+                  "DEMO_SHIP01"
+                ],
+                "action_id": "none_normal_none"
+              },
+              {
+                "date": "2026-10-16",
+                "fulfilled_units": 26.44465523844225,
+                "censored": true,
+                "receipt_ids": [],
+                "action_id": "none_normal_cool"
+              }
+            ],
+            "retained_resources": {
+              "fuel_remaining_litres": 6,
+              "staff_hours_remaining": 0.75,
+              "backup_energy_remaining_kwh": 4.800000000000001
+            },
+            "pending_orders": []
+          },
+          {
+            "evaluation_seed": 400034,
+            "reward_minus_controller": -94.299327,
+            "total_reward": -578.359548,
+            "metrics": {
+              "unserved_units": 26.63042,
+              "fulfilled_units": 184.112536,
+              "heat_degree_hours": 72.903118,
+              "cash_commitment_myr": 163,
+              "holding_myr": 32,
+              "backlog_myr": 34.633255,
+              "shortage_myr": 319.565046,
+              "heat_myr": 29.161247
+            },
+            "actual_action_history": [
+              {
+                "date": "2026-10-10",
+                "fulfilled_units": 27.174923223444683,
+                "censored": false,
+                "receipt_ids": [],
+                "action_id": "transfer40_support_none"
+              },
+              {
+                "date": "2026-10-11",
+                "fulfilled_units": 25.471512370844515,
+                "censored": true,
+                "receipt_ids": [],
+                "action_id": "transfer40_normal_none"
+              },
+              {
+                "date": "2026-10-12",
+                "fulfilled_units": 25.719580598833943,
+                "censored": true,
+                "receipt_ids": [],
+                "action_id": "none_normal_none"
+              },
+              {
+                "date": "2026-10-13",
+                "fulfilled_units": 29.069112567749364,
+                "censored": false,
+                "receipt_ids": [
+                  "DEMO_SHIP02"
+                ],
+                "action_id": "none_support_none"
+              },
+              {
+                "date": "2026-10-14",
+                "fulfilled_units": 25.186910381341832,
+                "censored": true,
+                "receipt_ids": [],
+                "action_id": "transfer40_normal_none"
+              },
+              {
+                "date": "2026-10-15",
+                "fulfilled_units": 25.02087297102577,
+                "censored": true,
+                "receipt_ids": [
+                  "DEMO_SHIP01"
+                ],
+                "action_id": "none_normal_none"
+              },
+              {
+                "date": "2026-10-16",
+                "fulfilled_units": 26.469623538543306,
+                "censored": true,
+                "receipt_ids": [],
+                "action_id": "none_normal_cool"
+              }
+            ],
+            "retained_resources": {
+              "fuel_remaining_litres": 6,
+              "staff_hours_remaining": 0.75,
+              "backup_energy_remaining_kwh": 4.800000000000001
+            },
+            "pending_orders": []
+          }
+        ]
+      },
+      {
+        "policy": "trained_q_seed43",
+        "cases": [
+          {
+            "evaluation_seed": 400044,
+            "reward_minus_controller": -186.870552,
+            "total_reward": -366.317946,
+            "metrics": {
+              "unserved_units": 7.033031,
+              "fulfilled_units": 168.046501,
+              "heat_degree_hours": 81.310337,
+              "cash_commitment_myr": 180,
+              "holding_myr": 38.670016,
+              "backlog_myr": 30.727418,
+              "shortage_myr": 84.396377,
+              "heat_myr": 32.524135
+            },
+            "actual_action_history": [
+              {
+                "date": "2026-10-10",
+                "fulfilled_units": 22.570071439480095,
+                "censored": false,
+                "receipt_ids": [],
+                "action_id": "transfer40_support_none"
+              },
+              {
+                "date": "2026-10-11",
+                "fulfilled_units": 21.097301994795576,
+                "censored": false,
+                "receipt_ids": [],
+                "action_id": "transfer40_support_none"
+              },
+              {
+                "date": "2026-10-12",
+                "fulfilled_units": 22.44350516226936,
+                "censored": false,
+                "receipt_ids": [],
+                "action_id": "transfer40_support_none"
+              },
+              {
+                "date": "2026-10-13",
+                "fulfilled_units": 26.13155609638731,
+                "censored": true,
+                "receipt_ids": [
+                  "DEMO_SHIP02"
+                ],
+                "action_id": "none_normal_none"
+              },
+              {
+                "date": "2026-10-14",
+                "fulfilled_units": 25.10339769622463,
+                "censored": false,
+                "receipt_ids": [],
+                "action_id": "none_normal_none"
+              },
+              {
+                "date": "2026-10-15",
+                "fulfilled_units": 25.92067548165041,
+                "censored": true,
+                "receipt_ids": [
+                  "DEMO_SHIP01"
+                ],
+                "action_id": "none_normal_none"
+              },
+              {
+                "date": "2026-10-16",
+                "fulfilled_units": 24.779993248334794,
+                "censored": true,
+                "receipt_ids": [],
+                "action_id": "none_normal_none"
+              }
+            ],
+            "retained_resources": {
+              "fuel_remaining_litres": 6,
+              "staff_hours_remaining": 0,
+              "backup_energy_remaining_kwh": 10.8
+            },
+            "pending_orders": []
+          },
+          {
+            "evaluation_seed": 400086,
+            "reward_minus_controller": -183.35163500000002,
+            "total_reward": -354.886382,
+            "metrics": {
+              "unserved_units": 6.260477,
+              "fulfilled_units": 167.440157,
+              "heat_degree_hours": 77.098459,
+              "cash_commitment_myr": 180,
+              "holding_myr": 38.52563,
+              "backlog_myr": 30.395646,
+              "shortage_myr": 75.125722,
+              "heat_myr": 30.839384
+            },
+            "actual_action_history": [
+              {
+                "date": "2026-10-10",
+                "fulfilled_units": 25.080978920948514,
+                "censored": false,
+                "receipt_ids": [],
+                "action_id": "transfer40_support_none"
+              },
+              {
+                "date": "2026-10-11",
+                "fulfilled_units": 21.846870415117063,
+                "censored": false,
+                "receipt_ids": [],
+                "action_id": "transfer40_support_none"
+              },
+              {
+                "date": "2026-10-12",
+                "fulfilled_units": 21.005869397549958,
+                "censored": false,
+                "receipt_ids": [],
+                "action_id": "transfer40_support_none"
+              },
+              {
+                "date": "2026-10-13",
+                "fulfilled_units": 23.86075594318546,
+                "censored": false,
+                "receipt_ids": [
+                  "DEMO_SHIP02"
+                ],
+                "action_id": "none_normal_none"
+              },
+              {
+                "date": "2026-10-14",
+                "fulfilled_units": 24.34536877702676,
+                "censored": false,
+                "receipt_ids": [],
+                "action_id": "none_normal_none"
+              },
+              {
+                "date": "2026-10-15",
+                "fulfilled_units": 25.402381829423426,
+                "censored": true,
+                "receipt_ids": [
+                  "DEMO_SHIP01"
+                ],
+                "action_id": "none_normal_none"
+              },
+              {
+                "date": "2026-10-16",
+                "fulfilled_units": 25.89793176693005,
+                "censored": true,
+                "receipt_ids": [],
+                "action_id": "none_normal_none"
+              }
+            ],
+            "retained_resources": {
+              "fuel_remaining_litres": 6,
+              "staff_hours_remaining": 0,
+              "backup_energy_remaining_kwh": 10.8
+            },
+            "pending_orders": []
+          }
+        ]
+      },
+      {
+        "policy": "trained_q_seed47",
+        "cases": [
+          {
+            "evaluation_seed": 400019,
+            "reward_minus_controller": -711.4415630000001,
+            "total_reward": -1105.003584,
+            "metrics": {
+              "unserved_units": 4.160409,
+              "fulfilled_units": 192.680425,
+              "heat_degree_hours": 72.432179,
+              "cash_commitment_myr": 968,
+              "holding_myr": 25.277413,
+              "backlog_myr": 32.828395,
+              "shortage_myr": 49.924905,
+              "heat_myr": 28.972872
+            },
+            "actual_action_history": [
+              {
+                "date": "2026-10-10",
+                "fulfilled_units": 33.03701598515251,
+                "censored": false,
+                "receipt_ids": [],
+                "action_id": "none_support_none"
+              },
+              {
+                "date": "2026-10-11",
+                "fulfilled_units": 34.15495115270627,
+                "censored": false,
+                "receipt_ids": [],
+                "action_id": "transfer40_support_none"
+              },
+              {
+                "date": "2026-10-12",
+                "fulfilled_units": 25.168562723415473,
+                "censored": false,
+                "receipt_ids": [],
+                "action_id": "transfer40_support_none"
+              },
+              {
+                "date": "2026-10-13",
+                "fulfilled_units": 23.87865175646601,
+                "censored": false,
+                "receipt_ids": [
+                  "DEMO_SHIP02"
+                ],
+                "action_id": "order100_normal_none"
+              },
+              {
+                "date": "2026-10-14",
+                "fulfilled_units": 24.085525506531123,
+                "censored": false,
+                "receipt_ids": [],
+                "action_id": "none_normal_none"
+              },
+              {
+                "date": "2026-10-15",
+                "fulfilled_units": 25.906152810814707,
+                "censored": true,
+                "receipt_ids": [
+                  "DEMO_SHIP01"
+                ],
+                "action_id": "none_normal_none"
+              },
+              {
+                "date": "2026-10-16",
+                "fulfilled_units": 26.449564959775895,
+                "censored": true,
+                "receipt_ids": [
+                  "model_order:day3"
+                ],
+                "action_id": "none_normal_cool"
+              }
+            ],
+            "retained_resources": {
+              "fuel_remaining_litres": 14,
+              "staff_hours_remaining": 0.25,
+              "backup_energy_remaining_kwh": 4.800000000000001
+            },
+            "pending_orders": []
+          },
+          {
+            "evaluation_seed": 400089,
+            "reward_minus_controller": -88.652411,
+            "total_reward": -220.294125,
+            "metrics": {
+              "unserved_units": 0,
+              "fulfilled_units": 163.039641,
+              "heat_degree_hours": 53.168852,
+              "cash_commitment_myr": 143,
+              "holding_myr": 26.17604,
+              "backlog_myr": 29.850544,
+              "shortage_myr": 0,
+              "heat_myr": 21.267541
+            },
+            "actual_action_history": [
+              {
+                "date": "2026-10-10",
+                "fulfilled_units": 24.53478065515661,
+                "censored": false,
+                "receipt_ids": [],
+                "action_id": "none_support_none"
+              },
+              {
+                "date": "2026-10-11",
+                "fulfilled_units": 24.11432359371389,
+                "censored": false,
+                "receipt_ids": [],
+                "action_id": "transfer40_normal_cool"
+              },
+              {
+                "date": "2026-10-12",
+                "fulfilled_units": 21.275207038476882,
+                "censored": false,
+                "receipt_ids": [],
+                "action_id": "none_support_none"
+              },
+              {
+                "date": "2026-10-13",
+                "fulfilled_units": 20.641593892850256,
+                "censored": false,
+                "receipt_ids": [
+                  "DEMO_SHIP02"
+                ],
+                "action_id": "transfer40_normal_none"
+              },
+              {
+                "date": "2026-10-14",
+                "fulfilled_units": 22.057806821915865,
+                "censored": false,
+                "receipt_ids": [],
+                "action_id": "none_normal_none"
+              },
+              {
+                "date": "2026-10-15",
+                "fulfilled_units": 23.637841188647524,
+                "censored": false,
+                "receipt_ids": [
+                  "DEMO_SHIP01"
+                ],
+                "action_id": "none_normal_none"
+              },
+              {
+                "date": "2026-10-16",
+                "fulfilled_units": 26.778087605253006,
+                "censored": false,
+                "receipt_ids": [],
+                "action_id": "none_support_none"
+              }
+            ],
+            "retained_resources": {
+              "fuel_remaining_litres": 14,
+              "staff_hours_remaining": 0.75,
+              "backup_energy_remaining_kwh": 4.800000000000001
+            },
+            "pending_orders": []
+          }
+        ]
+      },
+      {
+        "policy": "mcts_32",
+        "cases": [
+          {
+            "evaluation_seed": 400013,
+            "reward_minus_controller": -215.548491,
+            "total_reward": -389.714463,
+            "metrics": {
+              "unserved_units": 11.09797,
+              "fulfilled_units": 171.602718,
+              "heat_degree_hours": 58.160134,
+              "cash_commitment_myr": 163,
+              "holding_myr": 35.950455,
+              "backlog_myr": 34.324314,
+              "shortage_myr": 133.17564,
+              "heat_myr": 23.264054
+            },
+            "actual_action_history": [
+              {
+                "date": "2026-10-10",
+                "fulfilled_units": 26.007314279615294,
+                "censored": true,
+                "receipt_ids": [],
+                "action_id": "transfer40_normal_cool"
+              },
+              {
+                "date": "2026-10-11",
+                "fulfilled_units": 23.340164522541865,
+                "censored": false,
+                "receipt_ids": [],
+                "action_id": "transfer40_support_none"
+              },
+              {
+                "date": "2026-10-12",
+                "fulfilled_units": 24.05542994623942,
+                "censored": false,
+                "receipt_ids": [],
+                "action_id": "none_support_none"
+              },
+              {
+                "date": "2026-10-13",
+                "fulfilled_units": 21.19690385030369,
+                "censored": false,
+                "receipt_ids": [
+                  "DEMO_SHIP02"
+                ],
+                "action_id": "transfer40_normal_none"
+              },
+              {
+                "date": "2026-10-14",
+                "fulfilled_units": 25.488012715644118,
+                "censored": false,
+                "receipt_ids": [],
+                "action_id": "none_normal_none"
+              },
+              {
+                "date": "2026-10-15",
+                "fulfilled_units": 26.10273126236139,
+                "censored": true,
+                "receipt_ids": [
+                  "DEMO_SHIP01"
+                ],
+                "action_id": "none_normal_none"
+              },
+              {
+                "date": "2026-10-16",
+                "fulfilled_units": 25.412161319121648,
+                "censored": true,
+                "receipt_ids": [],
+                "action_id": "none_normal_none"
+              }
+            ],
+            "retained_resources": {
+              "fuel_remaining_litres": 6,
+              "staff_hours_remaining": 0.75,
+              "backup_energy_remaining_kwh": 4.800000000000001
+            },
+            "pending_orders": []
+          },
+          {
+            "evaluation_seed": 400011,
+            "reward_minus_controller": -187.40929600000004,
+            "total_reward": -341.50886,
+            "metrics": {
+              "unserved_units": 7.357195,
+              "fulfilled_units": 167.460126,
+              "heat_degree_hours": 53.121681,
+              "cash_commitment_myr": 163,
+              "holding_myr": 35.174332,
+              "backlog_myr": 33.799521,
+              "shortage_myr": 88.286334,
+              "heat_myr": 21.248672
+            },
+            "actual_action_history": [
+              {
+                "date": "2026-10-10",
+                "fulfilled_units": 25.60813380511663,
+                "censored": true,
+                "receipt_ids": [],
+                "action_id": "transfer40_normal_cool"
+              },
+              {
+                "date": "2026-10-11",
+                "fulfilled_units": 21.693029854050476,
+                "censored": false,
+                "receipt_ids": [],
+                "action_id": "transfer40_support_none"
+              },
+              {
+                "date": "2026-10-12",
+                "fulfilled_units": 21.19837017419086,
+                "censored": false,
+                "receipt_ids": [],
+                "action_id": "none_normal_none"
+              },
+              {
+                "date": "2026-10-13",
+                "fulfilled_units": 24.947956093886713,
+                "censored": false,
+                "receipt_ids": [
+                  "DEMO_SHIP02"
+                ],
+                "action_id": "none_normal_none"
+              },
+              {
+                "date": "2026-10-14",
+                "fulfilled_units": 23.15754824004637,
+                "censored": false,
+                "receipt_ids": [],
+                "action_id": "transfer40_normal_none"
+              },
+              {
+                "date": "2026-10-15",
+                "fulfilled_units": 25.11517355382235,
+                "censored": false,
+                "receipt_ids": [
+                  "DEMO_SHIP01"
+                ],
+                "action_id": "none_support_none"
+              },
+              {
+                "date": "2026-10-16",
+                "fulfilled_units": 25.739914032052546,
+                "censored": true,
+                "receipt_ids": [],
+                "action_id": "none_normal_none"
+              }
+            ],
+            "retained_resources": {
+              "fuel_remaining_litres": 6,
+              "staff_hours_remaining": 0.75,
+              "backup_energy_remaining_kwh": 4.800000000000001
+            },
+            "pending_orders": []
+          }
+        ]
+      },
+      {
+        "policy": "mcts_128",
+        "cases": [
+          {
+            "evaluation_seed": 400011,
+            "reward_minus_controller": -160.20449000000002,
+            "total_reward": -314.304054,
+            "metrics": {
+              "unserved_units": 7.331572,
+              "fulfilled_units": 167.485748,
+              "heat_degree_hours": 53.121681,
+              "cash_commitment_myr": 143,
+              "holding_myr": 30.373307,
+              "backlog_myr": 31.703213,
+              "shortage_myr": 87.978862,
+              "heat_myr": 21.248672
+            },
+            "actual_action_history": [
+              {
+                "date": "2026-10-10",
+                "fulfilled_units": 25.60813380511663,
+                "censored": true,
+                "receipt_ids": [],
+                "action_id": "transfer40_normal_cool"
+              },
+              {
+                "date": "2026-10-11",
+                "fulfilled_units": 21.693029854050476,
+                "censored": false,
+                "receipt_ids": [],
+                "action_id": "transfer40_support_none"
+              },
+              {
+                "date": "2026-10-12",
+                "fulfilled_units": 21.19837017419086,
+                "censored": false,
+                "receipt_ids": [],
+                "action_id": "none_normal_none"
+              },
+              {
+                "date": "2026-10-13",
+                "fulfilled_units": 24.947956093886713,
+                "censored": false,
+                "receipt_ids": [
+                  "DEMO_SHIP02"
+                ],
+                "action_id": "none_normal_none"
+              },
+              {
+                "date": "2026-10-14",
+                "fulfilled_units": 23.15754824004637,
+                "censored": false,
+                "receipt_ids": [],
+                "action_id": "none_support_none"
+              },
+              {
+                "date": "2026-10-15",
+                "fulfilled_units": 25.11517355382235,
+                "censored": false,
+                "receipt_ids": [
+                  "DEMO_SHIP01"
+                ],
+                "action_id": "none_support_none"
+              },
+              {
+                "date": "2026-10-16",
+                "fulfilled_units": 25.765536743339464,
+                "censored": true,
+                "receipt_ids": [],
+                "action_id": "none_normal_none"
+              }
+            ],
+            "retained_resources": {
+              "fuel_remaining_litres": 14,
+              "staff_hours_remaining": 0.75,
+              "backup_energy_remaining_kwh": 4.800000000000001
+            },
+            "pending_orders": []
+          },
+          {
+            "evaluation_seed": 400064,
+            "reward_minus_controller": -158.449188,
+            "total_reward": -404.83553,
+            "metrics": {
+              "unserved_units": 17.057859,
+              "fulfilled_units": 171.886776,
+              "heat_degree_hours": 67.763489,
+              "cash_commitment_myr": 123,
+              "holding_myr": 19.666571,
+              "backlog_myr": 30.369253,
+              "shortage_myr": 204.69431,
+              "heat_myr": 27.105396
+            },
+            "actual_action_history": [
+              {
+                "date": "2026-10-10",
+                "fulfilled_units": 25.661060608744183,
+                "censored": true,
+                "receipt_ids": [],
+                "action_id": "transfer40_normal_cool"
+              },
+              {
+                "date": "2026-10-11",
+                "fulfilled_units": 24.933316241898346,
+                "censored": false,
+                "receipt_ids": [],
+                "action_id": "none_support_none"
+              },
+              {
+                "date": "2026-10-12",
+                "fulfilled_units": 23.770771249342342,
+                "censored": false,
+                "receipt_ids": [],
+                "action_id": "none_support_none"
+              },
+              {
+                "date": "2026-10-13",
+                "fulfilled_units": 25.05645569688498,
+                "censored": false,
+                "receipt_ids": [
+                  "DEMO_SHIP02"
+                ],
+                "action_id": "none_support_none"
+              },
+              {
+                "date": "2026-10-14",
+                "fulfilled_units": 20.578396203130154,
+                "censored": true,
+                "receipt_ids": [],
+                "action_id": "none_support_none"
+              },
+              {
+                "date": "2026-10-15",
+                "fulfilled_units": 26.406750440817284,
+                "censored": true,
+                "receipt_ids": [
+                  "DEMO_SHIP01"
+                ],
+                "action_id": "none_normal_none"
+              },
+              {
+                "date": "2026-10-16",
+                "fulfilled_units": 25.480025295226802,
+                "censored": true,
+                "receipt_ids": [],
+                "action_id": "none_normal_none"
+              }
+            ],
+            "retained_resources": {
+              "fuel_remaining_litres": 22,
+              "staff_hours_remaining": 0.75,
+              "backup_energy_remaining_kwh": 4.800000000000001
+            },
+            "pending_orders": []
+          }
+        ]
+      }
+    ]
+  },
+  "bounded_oracle": {
+    "scope": "Two-day three-path finite miniature on the SAME dynamics/reward/resource kernel; not the seven-day held-out benchmark.",
+    "oracle_reward": -47.592816,
+    "results": [
+      {
+        "policy": "no_action",
+        "expected_reward": -66.554606,
+        "oracle_minus_policy_reward": 18.96179
+      },
+      {
+        "policy": "practical_heuristic",
+        "expected_reward": -66.554606,
+        "oracle_minus_policy_reward": 18.96179
+      },
+      {
+        "policy": "mcts_32",
+        "expected_reward": -91.655404,
+        "oracle_minus_policy_reward": 44.062588
+      },
+      {
+        "policy": "mcts_256",
+        "expected_reward": -49.328358,
+        "oracle_minus_policy_reward": 1.735542
+      },
+      {
+        "policy": "mcts_1024",
+        "expected_reward": -49.328358,
+        "oracle_minus_policy_reward": 1.735542
+      }
+    ]
+  },
+  "interpretation": [
+    "No demonstrated score gain of primary trained Q over the corrected calibrated controller on fresh protocol2 seeds; paired interval includes zero.",
+    "Q reduces mean unserved units but spends more modeled cash and has different heat/holding/backlog outcomes. It loses58 of96 seeds by the declared scalar score.",
+    "Finite-budget MCTS illustrates actual tree search, but trails the calibrated controller and costs many online model calls. Increasing its budget helps this sample without establishing superiority.",
+    "An alternate RL seed has a catastrophic held-out failure; all seeds and negative outcomes are retained and primary seed is not replaced.",
+    "Synthetic seed holdouts, fitted authored records, and declared score weights do not establish observed company savings or high-fidelity business validation."
+  ]
+}

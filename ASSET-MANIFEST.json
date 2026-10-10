@@ -7,22 +7,38 @@
     "README.md"
   ],
   "presentation_package": {
-    "edition": "v76",
+    "edition": "v77",
     "files": [
-      "docs/presentation/v76/Dormathon_3_Minute_Pitch_EN_v76.pptx",
-      "docs/presentation/v76/Dormathon_Pitch_and_Demo_Runbook_EN_v76.docx",
-      "docs/presentation/v76/Dormathon_Presenter_Guide_ZH_v76.docx",
-      "docs/presentation/v76/Dormathon_Pitch_and_Demo_Runbook_EN_v76.md",
-      "docs/presentation/v76/Dormathon_Presenter_Guide_ZH_v76.md",
-      "docs/presentation/v76/README.md",
-      "docs/presentation/v76/delivery-receipt.json"
+      "docs/presentation/v77/Dormathon_3_Minute_Pitch_EN_v77.pptx",
+      "docs/presentation/v77/Dormathon_Pitch_and_Demo_Runbook_EN_v77.docx",
+      "docs/presentation/v77/Dormathon_Presenter_Guide_ZH_v77.docx",
+      "docs/presentation/v77/Dormathon_Pitch_and_Demo_Runbook_EN_v77.md",
+      "docs/presentation/v77/Dormathon_Presenter_Guide_ZH_v77.md",
+      "docs/presentation/v77/README.md",
+      "docs/presentation/v77/delivery-receipt.json"
     ],
-    "receipt_path": "docs/presentation/v76/delivery-receipt.json",
-    "receipt_sha256": "c88c55e41d976c5af4e62d5c769a46e8ceb8d3bee6770df0baf27902b9e59675",
-    "original_delivery_receipt_sha256": "20f61f2aa9ebbb776b0318c17c5e8f48e733b3cde987201afca1ee5a95a3a5d9",
+    "receipt_path": "docs/presentation/v77/delivery-receipt.json",
+    "receipt_sha256": "022589c713ca9ebbfc69c3b9576494473f38c40445e091ff6ddff846d1e110a7",
+    "original_delivery_receipt_sha256": "2fe7b813661425a4fc94bcbe2955312667f22cc9071e4c4e4df5828883f58558",
     "presentation_application_code_changed": false
   },
   "retained_presentation_packages": [
+    {
+      "edition": "v76",
+      "files": [
+        "docs/presentation/v76/Dormathon_3_Minute_Pitch_EN_v76.pptx",
+        "docs/presentation/v76/Dormathon_Pitch_and_Demo_Runbook_EN_v76.docx",
+        "docs/presentation/v76/Dormathon_Presenter_Guide_ZH_v76.docx",
+        "docs/presentation/v76/Dormathon_Pitch_and_Demo_Runbook_EN_v76.md",
+        "docs/presentation/v76/Dormathon_Presenter_Guide_ZH_v76.md",
+        "docs/presentation/v76/README.md",
+        "docs/presentation/v76/delivery-receipt.json"
+      ],
+      "receipt_path": "docs/presentation/v76/delivery-receipt.json",
+      "receipt_sha256": "c88c55e41d976c5af4e62d5c769a46e8ceb8d3bee6770df0baf27902b9e59675",
+      "original_delivery_receipt_sha256": "20f61f2aa9ebbb776b0318c17c5e8f48e733b3cde987201afca1ee5a95a3a5d9",
+      "presentation_application_code_changed": false
+    },
     {
       "edition": "v74",
       "files": [
@@ -56,15 +72,103 @@
       "original_delivery_receipt_sha256": "a86caf80ac8f5b0d042c186a843bdf4993d886d7a055582f2ec4a25ea45d3c47"
     }
   ],
-  "source_commit": "b100ca9f157fe03946e1b87a48bf4514a7c862d0",
-  "site_version": 76,
+  "source_commit": "529f4cb3ecb5e9d0d26f99eb5ed681770d9d5aa8",
+  "site_version": 77,
   "site_audience": "public_unchanged",
   "repository_visibility": "private",
-  "canonical_tracked_files": 1003,
-  "source_files": 1002,
-  "delivered_payload_files": 1031,
-  "payload_inventory_sha256": "902046b757bcac807e21b02487f924906f028d965a9008b4adf0bb632bcdb05a",
-  "source_tree": "22a1a294a511603923177e7caaacda96c535d828",
+  "canonical_tracked_files": 1029,
+  "source_files": 1028,
+  "delivered_payload_files": 1145,
+  "payload_inventory_sha256": "3750d6e5a7c726c141e2b087c198efdb2044483859cc1c77c75e894521ef9ecb",
+  "reproducibility_source_packages": {
+    "version": "v77",
+    "path": "source-packs/learning/",
+    "files": [
+      "source-packs/learning/README.md",
+      "source-packs/learning/SOURCE-PACK-MANIFEST.json",
+      "source-packs/learning/dormathon-dynamics-expansion-20261010/README.md",
+      "source-packs/learning/dormathon-dynamics-expansion-20261010/artifacts/dynamics-calibration-pre-update.json",
+      "source-packs/learning/dormathon-dynamics-expansion-20261010/artifacts/dynamics-calibration-v1.json",
+      "source-packs/learning/dormathon-dynamics-expansion-20261010/artifacts/dynamics-daily-updates.json",
+      "source-packs/learning/dormathon-dynamics-expansion-20261010/artifacts/dynamics-demo-output.json",
+      "source-packs/learning/dormathon-dynamics-expansion-20261010/artifacts/dynamics-fixed-world-evaluator-only.json",
+      "source-packs/learning/dormathon-dynamics-expansion-20261010/artifacts/dynamics-heldout-evaluation.json",
+      "source-packs/learning/dormathon-dynamics-expansion-20261010/artifacts/dynamics-observations-v1.json",
+      "source-packs/learning/dormathon-dynamics-expansion-20261010/artifacts/dynamics-portable-manifest.json",
+      "source-packs/learning/dormathon-dynamics-expansion-20261010/artifacts/dynamics-thermal-pinn-v1.json",
+      "source-packs/learning/dormathon-dynamics-expansion-20261010/docs/portable-contract.md",
+      "source-packs/learning/dormathon-dynamics-expansion-20261010/package.json",
+      "source-packs/learning/dormathon-dynamics-expansion-20261010/scripts/calibrate.mjs",
+      "source-packs/learning/dormathon-dynamics-expansion-20261010/scripts/generate-observations.mjs",
+      "source-packs/learning/dormathon-dynamics-expansion-20261010/scripts/run-dynamics-demo.mjs",
+      "source-packs/learning/dormathon-dynamics-expansion-20261010/scripts/train-thermal-pinn.mjs",
+      "source-packs/learning/dormathon-dynamics-expansion-20261010/scripts/write-manifest.mjs",
+      "source-packs/learning/dormathon-dynamics-expansion-20261010/tests/calibration-contract.test.mjs",
+      "source-packs/learning/dormathon-dynamics-expansion-20261010/tests/dynamics-contract.test.mjs",
+      "source-packs/learning/dormathon-dynamics-expansion-20261010/tests/report-contract.test.mjs",
+      "source-packs/learning/dormathon-dynamics-expansion-20261010/worker/mrdiy-calibrated-artifacts.js",
+      "source-packs/learning/dormathon-dynamics-expansion-20261010/worker/mrdiy-calibration.js",
+      "source-packs/learning/dormathon-dynamics-expansion-20261010/worker/mrdiy-dated-observations.js",
+      "source-packs/learning/dormathon-dynamics-expansion-20261010/worker/mrdiy-dynamics-demo.js",
+      "source-packs/learning/dormathon-dynamics-expansion-20261010/worker/mrdiy-dynamics-task-worker.js",
+      "source-packs/learning/dormathon-dynamics-expansion-20261010/worker/mrdiy-dynamics.js",
+      "source-packs/learning/dormathon-dynamics-expansion-20261010/worker/mrdiy-thermal-pinn.js",
+      "source-packs/learning/dormathon-learned-planning-20261010/README.md",
+      "source-packs/learning/dormathon-learned-planning-20261010/artifacts/retail-adoption-manifest.json",
+      "source-packs/learning/dormathon-learned-planning-20261010/artifacts/retail-bounded-oracle-comparison.json",
+      "source-packs/learning/dormathon-learned-planning-20261010/artifacts/retail-heldout-evaluation.json",
+      "source-packs/learning/dormathon-learned-planning-20261010/artifacts/retail-heldout-protocol2-evaluation.json",
+      "source-packs/learning/dormathon-learned-planning-20261010/artifacts/retail-protocol2-failure-cases.json",
+      "source-packs/learning/dormathon-learned-planning-20261010/artifacts/retail-protocol2-frozen.json",
+      "source-packs/learning/dormathon-learned-planning-20261010/artifacts/retail-protocol2-summary.csv",
+      "source-packs/learning/dormathon-learned-planning-20261010/artifacts/retail-q-seed41.json",
+      "source-packs/learning/dormathon-learned-planning-20261010/artifacts/retail-q-seed43.json",
+      "source-packs/learning/dormathon-learned-planning-20261010/artifacts/retail-q-seed47.json",
+      "source-packs/learning/dormathon-learned-planning-20261010/artifacts/retail-q-training-curve.json",
+      "source-packs/learning/dormathon-learned-planning-20261010/artifacts/retail-results-summary.json",
+      "source-packs/learning/dormathon-learned-planning-20261010/artifacts/retail-runnable-demo.json",
+      "source-packs/learning/dormathon-learned-planning-20261010/artifacts/retail-training-calibration.json",
+      "source-packs/learning/dormathon-learned-planning-20261010/docs/evaluation-findings.md",
+      "source-packs/learning/dormathon-learned-planning-20261010/docs/planning-integration-contract.md",
+      "source-packs/learning/dormathon-learned-planning-20261010/docs/protocol2-prespecification.md",
+      "source-packs/learning/dormathon-learned-planning-20261010/package.json",
+      "source-packs/learning/dormathon-learned-planning-20261010/scripts/evaluate-retail-planners.mjs",
+      "source-packs/learning/dormathon-learned-planning-20261010/scripts/export-portable-policy.mjs",
+      "source-packs/learning/dormathon-learned-planning-20261010/scripts/freeze-protocol2.mjs",
+      "source-packs/learning/dormathon-learned-planning-20261010/scripts/run-bounded-oracle-comparison.mjs",
+      "source-packs/learning/dormathon-learned-planning-20261010/scripts/run-retail-demo.mjs",
+      "source-packs/learning/dormathon-learned-planning-20261010/scripts/summarize-planning-evidence.mjs",
+      "source-packs/learning/dormathon-learned-planning-20261010/scripts/train-retail-q.mjs",
+      "source-packs/learning/dormathon-learned-planning-20261010/scripts/write-adoption-manifest.mjs",
+      "source-packs/learning/dormathon-learned-planning-20261010/tests/retail-cover-thermal.test.mjs",
+      "source-packs/learning/dormathon-learned-planning-20261010/tests/retail-mcts.test.mjs",
+      "source-packs/learning/dormathon-learned-planning-20261010/tests/retail-q-learning.test.mjs",
+      "source-packs/learning/dormathon-learned-planning-20261010/tests/retail-q-policy.test.mjs",
+      "source-packs/learning/dormathon-learned-planning-20261010/tests/retail-real-environment.test.mjs",
+      "source-packs/learning/dormathon-learned-planning-20261010/tests/retail-trained-artifact.test.mjs",
+      "source-packs/learning/dormathon-learned-planning-20261010/worker/retail-bounded-oracle.js",
+      "source-packs/learning/dormathon-learned-planning-20261010/worker/retail-browser-worker.js",
+      "source-packs/learning/dormathon-learned-planning-20261010/worker/retail-cover-thermal-heuristic.js",
+      "source-packs/learning/dormathon-learned-planning-20261010/worker/retail-dynamics-adapter.js",
+      "source-packs/learning/dormathon-learned-planning-20261010/worker/retail-heuristics.js",
+      "source-packs/learning/dormathon-learned-planning-20261010/worker/retail-mcts.js",
+      "source-packs/learning/dormathon-learned-planning-20261010/worker/retail-planning-demo.js",
+      "source-packs/learning/dormathon-learned-planning-20261010/worker/retail-planning-utils.js",
+      "source-packs/learning/dormathon-learned-planning-20261010/worker/retail-q-learning.js",
+      "source-packs/learning/dormathon-learned-planning-20261010/worker/retail-q-policy.js",
+      "source-packs/learning/dormathon-learned-planning-20261010/worker/retail-trained-policy.js",
+      "source-packs/learning/event-context/checks.json",
+      "source-packs/learning/event-context/events.json",
+      "source-packs/learning/event-context/test_delay_bridge.mjs",
+      "source-packs/learning/event-context/validate_contract.py",
+      "source-packs/learning/event-context/verification.md",
+      "source-packs/learning/independent-adoption-receipt.json",
+      "source-packs/learning/real-event-pack-receipt.json"
+    ],
+    "manifest_path": "source-packs/learning/SOURCE-PACK-MANIFEST.json",
+    "manifest_sha256": "ff90305685d7b2e11d6f44ead4137fed0bc7870ce1503ff4c550dee15872026e"
+  },
+  "source_tree": "a1bf2820cf68aeee6b34b73c917d21bd62397b41",
   "assets": [
     {
       "path": ".gitignore",
@@ -86,8 +190,8 @@
     },
     {
       "path": "README.md",
-      "sha256": "bc11e0b8284d5a9bbcb3780aeb9778bf74f580d36122d069793a9e0e1275ba1b",
-      "size_bytes": 32333,
+      "sha256": "3c52684d1829bda9f56a882f76a51fb14ffd4f8e58b3058321ea94a79d33c080",
+      "size_bytes": 36400,
       "git_mode": "100644",
       "canonical_sha256": "763eb6af72db16f6af82e68248548325770a70d566f7211b06786cf3ea072142",
       "packaging_overlay": "Dated README source/presentation checkpoint notes only."
@@ -228,6 +332,12 @@
       "path": "data/global-source-research-manifest.json",
       "sha256": "fb40b409a915d0655aca2f6961efc59d2cb85cb084f1b99484f7cc6f262522cc",
       "size_bytes": 2774,
+      "git_mode": "100644"
+    },
+    {
+      "path": "data/learning-adoption/approved-source-pins.json",
+      "sha256": "9cfa757d1d578cfc6d2959910da3c62c34dbd8ae43c15db480a698fc4d04c6c0",
+      "size_bytes": 5831,
       "git_mode": "100644"
     },
     {
@@ -2019,6 +2129,12 @@
       "git_mode": "100644"
     },
     {
+      "path": "docs/learning-integration.md",
+      "sha256": "59c45cee6d99c4cebd490b6547f9f229f859deff2168d3563311f5632d2be963",
+      "size_bytes": 3939,
+      "git_mode": "100644"
+    },
+    {
       "path": "docs/mrdiy-v0.4.1/README.md",
       "sha256": "9153a996e766e6f87a50956020494a37ee1ced278d1786f6ae8096dd22878118",
       "size_bytes": 5919,
@@ -2376,6 +2492,55 @@
       "provenance": "Final owner-delivered v76 presentation; documentation-only addition"
     },
     {
+      "path": "docs/presentation/v77/Dormathon_3_Minute_Pitch_EN_v77.pptx",
+      "sha256": "ef2686f733995c400d49c3ec3af7a57b232d1fc93f05b37eb48e53d2ab8e32ee",
+      "size_bytes": 670446,
+      "git_mode": "100644",
+      "provenance": "Final owner-delivered v77 presentation; exact Office/Markdown bytes preserved."
+    },
+    {
+      "path": "docs/presentation/v77/Dormathon_Pitch_and_Demo_Runbook_EN_v77.docx",
+      "sha256": "8627f60e90dcf17b9de8293d5956bdf4d8e2a79c4fb6a8cb7dfe6b553ff3e848",
+      "size_bytes": 43998,
+      "git_mode": "100644",
+      "provenance": "Final owner-delivered v77 presentation; exact Office/Markdown bytes preserved."
+    },
+    {
+      "path": "docs/presentation/v77/Dormathon_Pitch_and_Demo_Runbook_EN_v77.md",
+      "sha256": "df7a3b0ee637b644182961af5bea5807806ff0f654b3872fb13d068dec452806",
+      "size_bytes": 14294,
+      "git_mode": "100644",
+      "provenance": "Final owner-delivered v77 presentation; exact Office/Markdown bytes preserved."
+    },
+    {
+      "path": "docs/presentation/v77/Dormathon_Presenter_Guide_ZH_v77.docx",
+      "sha256": "7f9469b8dee6ea57297ae78c36bc6e8738c1af29acadb2843ce18a59992dfc7e",
+      "size_bytes": 41352,
+      "git_mode": "100644",
+      "provenance": "Final owner-delivered v77 presentation; exact Office/Markdown bytes preserved."
+    },
+    {
+      "path": "docs/presentation/v77/Dormathon_Presenter_Guide_ZH_v77.md",
+      "sha256": "2261874d6361a4c344f5d83b81dbd2d5d8bac28be9c004411b0c7d84a1954352",
+      "size_bytes": 6433,
+      "git_mode": "100644",
+      "provenance": "Final owner-delivered v77 presentation; exact Office/Markdown bytes preserved."
+    },
+    {
+      "path": "docs/presentation/v77/README.md",
+      "sha256": "050a855a779dc4f363a32108cb1f70eaf61ce8f0a8820459a568e24cd215dfc1",
+      "size_bytes": 3580,
+      "git_mode": "100644",
+      "provenance": "Final owner-delivered v77 presentation; exact Office/Markdown bytes preserved."
+    },
+    {
+      "path": "docs/presentation/v77/delivery-receipt.json",
+      "sha256": "022589c713ca9ebbfc69c3b9576494473f38c40445e091ff6ddff846d1e110a7",
+      "size_bytes": 4683,
+      "git_mode": "100644",
+      "provenance": "Final owner-delivered v77 presentation; exact Office/Markdown bytes preserved."
+    },
+    {
       "path": "docs/provenance/local-collector-1.2-input-manifest.sha256",
       "sha256": "c19350396fc525b91f181780d8286c75f64f88101eec49de139eecadd5417fda",
       "size_bytes": 15927,
@@ -2512,6 +2677,13 @@
       "path": "docs/releases/v0.4.1-20261010/source-package-verification.v76.json",
       "sha256": "40b9fada10b9f4741d7c6cfae2931c8729ad75e5e7ccf3ca83530167a881320f",
       "size_bytes": 17580,
+      "git_mode": "100644",
+      "provenance": "Scoped GitHub source packaging verification record"
+    },
+    {
+      "path": "docs/releases/v0.4.1-20261010/source-package-verification.v77.json",
+      "sha256": "f2579fa239076f1451af1bca64a7bec2ede256dda6b9bbd9fa064d24675644f7",
+      "size_bytes": 28434,
       "git_mode": "100644",
       "provenance": "Scoped GitHub source packaging verification record"
     },
@@ -3561,8 +3733,8 @@
     },
     {
       "path": "scripts/build.mjs",
-      "sha256": "095ff9ccc2760066d796a17180efe9a9596a8b5a973741c813cdc2ec3ef7a753",
-      "size_bytes": 7755,
+      "sha256": "8eff109ebf2ec5c1b79e5f53af45bd10520147068ac3c1dcf3c53a22f8d44745",
+      "size_bytes": 8018,
       "git_mode": "100644"
     },
     {
@@ -4292,6 +4464,566 @@
       "git_mode": "100644"
     },
     {
+      "path": "source-packs/learning/README.md",
+      "sha256": "7f5664f5f49274ad566e10c35518c4044e3e16caed16ca0b754326fa22958370",
+      "size_bytes": 3479,
+      "git_mode": "100644",
+      "provenance": "Audited synthetic training/evaluation source package; original source-relative paths retained."
+    },
+    {
+      "path": "source-packs/learning/SOURCE-PACK-MANIFEST.json",
+      "sha256": "ff90305685d7b2e11d6f44ead4137fed0bc7870ce1503ff4c550dee15872026e",
+      "size_bytes": 28178,
+      "git_mode": "100644",
+      "provenance": "Audited synthetic training/evaluation source package; original source-relative paths retained."
+    },
+    {
+      "path": "source-packs/learning/dormathon-dynamics-expansion-20261010/README.md",
+      "sha256": "4510349db041e5150a7f247f79b549f09897e70fc8d067bb40145203466420ea",
+      "size_bytes": 10495,
+      "git_mode": "100644",
+      "provenance": "Audited synthetic training/evaluation source package; original source-relative paths retained."
+    },
+    {
+      "path": "source-packs/learning/dormathon-dynamics-expansion-20261010/artifacts/dynamics-calibration-pre-update.json",
+      "sha256": "fd7187003ddaaf4296d99377ac8d0b081f012ca7b1e5cbf5fb0ec974484cf083",
+      "size_bytes": 2679,
+      "git_mode": "100644",
+      "provenance": "Audited synthetic training/evaluation source package; original source-relative paths retained."
+    },
+    {
+      "path": "source-packs/learning/dormathon-dynamics-expansion-20261010/artifacts/dynamics-calibration-v1.json",
+      "sha256": "5c21e2a9fb52fdcd4b5d2f530cfc9b26063061b7e47628e4421bb95b6ebb7a64",
+      "size_bytes": 2681,
+      "git_mode": "100644",
+      "provenance": "Audited synthetic training/evaluation source package; original source-relative paths retained."
+    },
+    {
+      "path": "source-packs/learning/dormathon-dynamics-expansion-20261010/artifacts/dynamics-daily-updates.json",
+      "sha256": "35a4fe1d669392cfb37b3b9edebaa9f4eeaef9d1d316b2c0e7a89289e218fdbb",
+      "size_bytes": 56690,
+      "git_mode": "100644",
+      "provenance": "Audited synthetic training/evaluation source package; original source-relative paths retained."
+    },
+    {
+      "path": "source-packs/learning/dormathon-dynamics-expansion-20261010/artifacts/dynamics-demo-output.json",
+      "sha256": "faaad10a88b811a505f093d8aaa2ff3e527f19716d779767160b2be806fb99a9",
+      "size_bytes": 90985,
+      "git_mode": "100644",
+      "provenance": "Audited synthetic training/evaluation source package; original source-relative paths retained."
+    },
+    {
+      "path": "source-packs/learning/dormathon-dynamics-expansion-20261010/artifacts/dynamics-fixed-world-evaluator-only.json",
+      "sha256": "6e62ba13e52d05f8a527a089a9e1cb0387788af3b8688ff611898b881f23aef0",
+      "size_bytes": 797,
+      "git_mode": "100644",
+      "provenance": "Audited synthetic training/evaluation source package; original source-relative paths retained."
+    },
+    {
+      "path": "source-packs/learning/dormathon-dynamics-expansion-20261010/artifacts/dynamics-heldout-evaluation.json",
+      "sha256": "c0acedd9cf45f9117e92148ce3acc571b1c8680be00259e1e5f66d571c5068a0",
+      "size_bytes": 1772,
+      "git_mode": "100644",
+      "provenance": "Audited synthetic training/evaluation source package; original source-relative paths retained."
+    },
+    {
+      "path": "source-packs/learning/dormathon-dynamics-expansion-20261010/artifacts/dynamics-observations-v1.json",
+      "sha256": "1ef8cbae55a952a4db3f9be229dbe916abde99d940df601c6bc3d75cd014ad09",
+      "size_bytes": 270420,
+      "git_mode": "100644",
+      "provenance": "Audited synthetic training/evaluation source package; original source-relative paths retained."
+    },
+    {
+      "path": "source-packs/learning/dormathon-dynamics-expansion-20261010/artifacts/dynamics-portable-manifest.json",
+      "sha256": "7ed2364dbe1788750bc09dc59496c4a3fd82e815c85e953c5da737009b8f8014",
+      "size_bytes": 2198,
+      "git_mode": "100644",
+      "provenance": "Audited synthetic training/evaluation source package; original source-relative paths retained."
+    },
+    {
+      "path": "source-packs/learning/dormathon-dynamics-expansion-20261010/artifacts/dynamics-thermal-pinn-v1.json",
+      "sha256": "7c75609c0e77a149ffbc8aa29fb7e1e134cc40a217947950af32261a8cdae959",
+      "size_bytes": 7385,
+      "git_mode": "100644",
+      "provenance": "Audited synthetic training/evaluation source package; original source-relative paths retained."
+    },
+    {
+      "path": "source-packs/learning/dormathon-dynamics-expansion-20261010/docs/portable-contract.md",
+      "sha256": "42720a02e39834a7e3710cdd9053374604a401ad7f571207a47e30cdbd6bc53e",
+      "size_bytes": 5363,
+      "git_mode": "100644",
+      "provenance": "Audited synthetic training/evaluation source package; original source-relative paths retained."
+    },
+    {
+      "path": "source-packs/learning/dormathon-dynamics-expansion-20261010/package.json",
+      "sha256": "3b4a3d6f05d85a95c6db3aef659799b5bb83c85f283af1cbf29db6ee2ef3242a",
+      "size_bytes": 287,
+      "git_mode": "100644",
+      "provenance": "Audited synthetic training/evaluation source package; original source-relative paths retained."
+    },
+    {
+      "path": "source-packs/learning/dormathon-dynamics-expansion-20261010/scripts/calibrate.mjs",
+      "sha256": "8f2ea85cd8095119dcfe4a91b79d765a531458182e7ab9cf456a5c69edafb4f4",
+      "size_bytes": 2753,
+      "git_mode": "100644",
+      "provenance": "Audited synthetic training/evaluation source package; original source-relative paths retained."
+    },
+    {
+      "path": "source-packs/learning/dormathon-dynamics-expansion-20261010/scripts/generate-observations.mjs",
+      "sha256": "a949f0e4afef8590984b90755b663a4dd35086394987804511bd15fdd188b2aa",
+      "size_bytes": 1864,
+      "git_mode": "100644",
+      "provenance": "Audited synthetic training/evaluation source package; original source-relative paths retained."
+    },
+    {
+      "path": "source-packs/learning/dormathon-dynamics-expansion-20261010/scripts/run-dynamics-demo.mjs",
+      "sha256": "b73bec5b3c14d554c9e3a882d1443d237653a55136b8124f17f1d822483fa022",
+      "size_bytes": 762,
+      "git_mode": "100644",
+      "provenance": "Audited synthetic training/evaluation source package; original source-relative paths retained."
+    },
+    {
+      "path": "source-packs/learning/dormathon-dynamics-expansion-20261010/scripts/train-thermal-pinn.mjs",
+      "sha256": "e0081050688663cbc66181742c466268d39efb3dfadcf3dc5ff51eb15fcdec5d",
+      "size_bytes": 4603,
+      "git_mode": "100644",
+      "provenance": "Audited synthetic training/evaluation source package; original source-relative paths retained."
+    },
+    {
+      "path": "source-packs/learning/dormathon-dynamics-expansion-20261010/scripts/write-manifest.mjs",
+      "sha256": "df14f5421f3f00b5db286fdc64ea9d0c54ffeffca9109fe2051a97b41e69501f",
+      "size_bytes": 1605,
+      "git_mode": "100644",
+      "provenance": "Audited synthetic training/evaluation source package; original source-relative paths retained."
+    },
+    {
+      "path": "source-packs/learning/dormathon-dynamics-expansion-20261010/tests/calibration-contract.test.mjs",
+      "sha256": "4575377dad6134f77bddeb12f25a06e1e79116b2983135a96b041d114e03c077",
+      "size_bytes": 3858,
+      "git_mode": "100644",
+      "provenance": "Audited synthetic training/evaluation source package; original source-relative paths retained."
+    },
+    {
+      "path": "source-packs/learning/dormathon-dynamics-expansion-20261010/tests/dynamics-contract.test.mjs",
+      "sha256": "f7d68c590295c02941bcd4960fdc6ce34d70305fd03673f07f1c3ce70bed46be",
+      "size_bytes": 9548,
+      "git_mode": "100644",
+      "provenance": "Audited synthetic training/evaluation source package; original source-relative paths retained."
+    },
+    {
+      "path": "source-packs/learning/dormathon-dynamics-expansion-20261010/tests/report-contract.test.mjs",
+      "sha256": "16e727203a0c278bfcd97043d9c11a90757a1c679572a5cddb5c8d648e7b4ff9",
+      "size_bytes": 2867,
+      "git_mode": "100644",
+      "provenance": "Audited synthetic training/evaluation source package; original source-relative paths retained."
+    },
+    {
+      "path": "source-packs/learning/dormathon-dynamics-expansion-20261010/worker/mrdiy-calibrated-artifacts.js",
+      "sha256": "f972863fd80e002924fca90963aa51c3d99b1c0cd6c3296bb7e2dda7ec1b7623",
+      "size_bytes": 7899,
+      "git_mode": "100644",
+      "provenance": "Audited synthetic training/evaluation source package; original source-relative paths retained."
+    },
+    {
+      "path": "source-packs/learning/dormathon-dynamics-expansion-20261010/worker/mrdiy-calibration.js",
+      "sha256": "a1c8f9fe3a0be41277742e2ba452cddbffb6c509cc01410c1ce68307cfd897d2",
+      "size_bytes": 8590,
+      "git_mode": "100644",
+      "provenance": "Audited synthetic training/evaluation source package; original source-relative paths retained."
+    },
+    {
+      "path": "source-packs/learning/dormathon-dynamics-expansion-20261010/worker/mrdiy-dated-observations.js",
+      "sha256": "038136b5db96010a3938ce6efa274c73a96634f3ac2dbb39abd1fd472e879327",
+      "size_bytes": 209695,
+      "git_mode": "100644",
+      "provenance": "Audited synthetic training/evaluation source package; original source-relative paths retained."
+    },
+    {
+      "path": "source-packs/learning/dormathon-dynamics-expansion-20261010/worker/mrdiy-dynamics-demo.js",
+      "sha256": "db842cea11b4d19b6c611aeec3c00e403af999041a2b0dce3feb83290c747f9b",
+      "size_bytes": 8009,
+      "git_mode": "100644",
+      "provenance": "Audited synthetic training/evaluation source package; original source-relative paths retained."
+    },
+    {
+      "path": "source-packs/learning/dormathon-dynamics-expansion-20261010/worker/mrdiy-dynamics-task-worker.js",
+      "sha256": "df373adae35481f83b932f67cc693a910a0418e8ab1af58f487c1a4d4e52e8d4",
+      "size_bytes": 1481,
+      "git_mode": "100644",
+      "provenance": "Audited synthetic training/evaluation source package; original source-relative paths retained."
+    },
+    {
+      "path": "source-packs/learning/dormathon-dynamics-expansion-20261010/worker/mrdiy-dynamics.js",
+      "sha256": "7b6c4f80434fce672100d15ef1826a4013c2bbe36932d9678c6a87635aa7af97",
+      "size_bytes": 22812,
+      "git_mode": "100644",
+      "provenance": "Audited synthetic training/evaluation source package; original source-relative paths retained."
+    },
+    {
+      "path": "source-packs/learning/dormathon-dynamics-expansion-20261010/worker/mrdiy-thermal-pinn.js",
+      "sha256": "e46ef39fe630ac38263aeb16ab786db6075d3803afa86b640e6bcb9378cbcf85",
+      "size_bytes": 1625,
+      "git_mode": "100644",
+      "provenance": "Audited synthetic training/evaluation source package; original source-relative paths retained."
+    },
+    {
+      "path": "source-packs/learning/dormathon-learned-planning-20261010/README.md",
+      "sha256": "242e2af730d4a74e83d3ab5fd287e5e94a0c0fd27a20756fca2a1ceb52a6a7d4",
+      "size_bytes": 3038,
+      "git_mode": "100644",
+      "provenance": "Audited synthetic training/evaluation source package; original source-relative paths retained."
+    },
+    {
+      "path": "source-packs/learning/dormathon-learned-planning-20261010/artifacts/retail-adoption-manifest.json",
+      "sha256": "09b37d3ff020d3b2122fe2b3263cadcf57cb2425008d37abe7cf5c116b1a5476",
+      "size_bytes": 7435,
+      "git_mode": "100644",
+      "provenance": "Audited synthetic training/evaluation source package; original source-relative paths retained."
+    },
+    {
+      "path": "source-packs/learning/dormathon-learned-planning-20261010/artifacts/retail-bounded-oracle-comparison.json",
+      "sha256": "38a80b1165b9e12784312ce860242ccfc6e86a017ac2a6d926c8f0f35588f377",
+      "size_bytes": 86659,
+      "git_mode": "100644",
+      "provenance": "Audited synthetic training/evaluation source package; original source-relative paths retained."
+    },
+    {
+      "path": "source-packs/learning/dormathon-learned-planning-20261010/artifacts/retail-heldout-evaluation.json",
+      "sha256": "787dd0aea147ecf30e6e1608261ad887c372206f2dac6582c794b371970369f9",
+      "size_bytes": 5369630,
+      "git_mode": "100644",
+      "provenance": "Audited synthetic training/evaluation source package; original source-relative paths retained."
+    },
+    {
+      "path": "source-packs/learning/dormathon-learned-planning-20261010/artifacts/retail-heldout-protocol2-evaluation.json",
+      "sha256": "fdb45348acd0cd5850e755afd3d74da1e39549764ee2a2408573e6826ab8bbd9",
+      "size_bytes": 6215292,
+      "git_mode": "100644",
+      "provenance": "Audited synthetic training/evaluation source package; original source-relative paths retained."
+    },
+    {
+      "path": "source-packs/learning/dormathon-learned-planning-20261010/artifacts/retail-protocol2-failure-cases.json",
+      "sha256": "5a49124450ba5d9ddbe4f666ab775ce7949ddb088fab03c6604f9dbd5881ff2c",
+      "size_bytes": 23640,
+      "git_mode": "100644",
+      "provenance": "Audited synthetic training/evaluation source package; original source-relative paths retained."
+    },
+    {
+      "path": "source-packs/learning/dormathon-learned-planning-20261010/artifacts/retail-protocol2-frozen.json",
+      "sha256": "1ef22f584218e2703b203b0e50c425d67b8fbfc759ea4224e1d27945a8eafafc",
+      "size_bytes": 2731,
+      "git_mode": "100644",
+      "provenance": "Audited synthetic training/evaluation source package; original source-relative paths retained."
+    },
+    {
+      "path": "source-packs/learning/dormathon-learned-planning-20261010/artifacts/retail-protocol2-summary.csv",
+      "sha256": "a09596a4c14e6e8a17b645e250d492da53d1ae25dc7d5ac6efd96cdc4d1f01da",
+      "size_bytes": 904,
+      "git_mode": "100644",
+      "provenance": "Audited synthetic training/evaluation source package; original source-relative paths retained."
+    },
+    {
+      "path": "source-packs/learning/dormathon-learned-planning-20261010/artifacts/retail-q-seed41.json",
+      "sha256": "39f4565038f714ab4f0005f01e4dbc3c665a3223be0565ea06c5af1e8b652765",
+      "size_bytes": 344554,
+      "git_mode": "100644",
+      "provenance": "Audited synthetic training/evaluation source package; original source-relative paths retained."
+    },
+    {
+      "path": "source-packs/learning/dormathon-learned-planning-20261010/artifacts/retail-q-seed43.json",
+      "sha256": "4f8a077e75df60e7ee402a4248fc55ae2f2bde85e2ae78494014b9b8a0ff76d7",
+      "size_bytes": 338626,
+      "git_mode": "100644",
+      "provenance": "Audited synthetic training/evaluation source package; original source-relative paths retained."
+    },
+    {
+      "path": "source-packs/learning/dormathon-learned-planning-20261010/artifacts/retail-q-seed47.json",
+      "sha256": "f574cfe3b38a2196086a0a88f340cb61b3dc12e2a9db0e3a9925de4aa1557f5e",
+      "size_bytes": 345454,
+      "git_mode": "100644",
+      "provenance": "Audited synthetic training/evaluation source package; original source-relative paths retained."
+    },
+    {
+      "path": "source-packs/learning/dormathon-learned-planning-20261010/artifacts/retail-q-training-curve.json",
+      "sha256": "8898942e4fc4aea011fad8c665d444369057c727e1aa2e97aa65b87727a41665",
+      "size_bytes": 14523,
+      "git_mode": "100644",
+      "provenance": "Audited synthetic training/evaluation source package; original source-relative paths retained."
+    },
+    {
+      "path": "source-packs/learning/dormathon-learned-planning-20261010/artifacts/retail-results-summary.json",
+      "sha256": "ad747a608c70fcd82d76f669cb18f057d7d0ffcbfcc05a1ed6e36c98d7f711d8",
+      "size_bytes": 61603,
+      "git_mode": "100644",
+      "provenance": "Audited synthetic training/evaluation source package; original source-relative paths retained."
+    },
+    {
+      "path": "source-packs/learning/dormathon-learned-planning-20261010/artifacts/retail-runnable-demo.json",
+      "sha256": "3f420472d9d8f62cb5fe4bca69f7d1f81c728314f814115618b18b48f460dfe0",
+      "size_bytes": 365266,
+      "git_mode": "100644",
+      "provenance": "Audited synthetic training/evaluation source package; original source-relative paths retained."
+    },
+    {
+      "path": "source-packs/learning/dormathon-learned-planning-20261010/artifacts/retail-training-calibration.json",
+      "sha256": "9acc07df08b249d1e90bb8c3b8ae36ff81029a25325968e3e3861c1a6915fee0",
+      "size_bytes": 972,
+      "git_mode": "100644",
+      "provenance": "Audited synthetic training/evaluation source package; original source-relative paths retained."
+    },
+    {
+      "path": "source-packs/learning/dormathon-learned-planning-20261010/docs/evaluation-findings.md",
+      "sha256": "185b90ab31c0ba40f8ce483581cd0a3bcb6e022dee6fa1d7a3dc407ef4115c89",
+      "size_bytes": 4171,
+      "git_mode": "100644",
+      "provenance": "Audited synthetic training/evaluation source package; original source-relative paths retained."
+    },
+    {
+      "path": "source-packs/learning/dormathon-learned-planning-20261010/docs/planning-integration-contract.md",
+      "sha256": "b3d6e312ef8dd56f532bcca23f72e51abb4aa289f11631170d94813167b1bc1d",
+      "size_bytes": 7200,
+      "git_mode": "100644",
+      "provenance": "Audited synthetic training/evaluation source package; original source-relative paths retained."
+    },
+    {
+      "path": "source-packs/learning/dormathon-learned-planning-20261010/docs/protocol2-prespecification.md",
+      "sha256": "83f28f97ba66e0ef772ae0b51d2c75fe23c6baeb472eb9084b2dae98fa606972",
+      "size_bytes": 3400,
+      "git_mode": "100644",
+      "provenance": "Audited synthetic training/evaluation source package; original source-relative paths retained."
+    },
+    {
+      "path": "source-packs/learning/dormathon-learned-planning-20261010/package.json",
+      "sha256": "d88863dde6741d7da5a3ec48fe98bc4360d76791591b0d4f7aa390bb6ae30d7f",
+      "size_bytes": 765,
+      "git_mode": "100644",
+      "provenance": "Audited synthetic training/evaluation source package; original source-relative paths retained."
+    },
+    {
+      "path": "source-packs/learning/dormathon-learned-planning-20261010/scripts/evaluate-retail-planners.mjs",
+      "sha256": "5a94726a0a6ab58f885e27aaccd1e68a4eca770d51e7e258305f25e1d1744c8b",
+      "size_bytes": 10144,
+      "git_mode": "100644",
+      "provenance": "Audited synthetic training/evaluation source package; original source-relative paths retained."
+    },
+    {
+      "path": "source-packs/learning/dormathon-learned-planning-20261010/scripts/export-portable-policy.mjs",
+      "sha256": "93884863519fd9aa94fa2377b3274cba990422fa5239769986a00c7b537b3d39",
+      "size_bytes": 1042,
+      "git_mode": "100644",
+      "provenance": "Audited synthetic training/evaluation source package; original source-relative paths retained."
+    },
+    {
+      "path": "source-packs/learning/dormathon-learned-planning-20261010/scripts/freeze-protocol2.mjs",
+      "sha256": "206ba9b3c978549cf10e7f1b6b5f6154a26b1a09aa84cf623e91a364654d84ed",
+      "size_bytes": 2202,
+      "git_mode": "100644",
+      "provenance": "Audited synthetic training/evaluation source package; original source-relative paths retained."
+    },
+    {
+      "path": "source-packs/learning/dormathon-learned-planning-20261010/scripts/run-bounded-oracle-comparison.mjs",
+      "sha256": "44b3a11f3ad7e038b020ba86fbfeb045a7acf927f29ab03167820cb82391f6c0",
+      "size_bytes": 2748,
+      "git_mode": "100644",
+      "provenance": "Audited synthetic training/evaluation source package; original source-relative paths retained."
+    },
+    {
+      "path": "source-packs/learning/dormathon-learned-planning-20261010/scripts/run-retail-demo.mjs",
+      "sha256": "3525a6e64120e293b157027b3d20152207e3d17dc8a3c4440f336e7ec9d89ec6",
+      "size_bytes": 1004,
+      "git_mode": "100644",
+      "provenance": "Audited synthetic training/evaluation source package; original source-relative paths retained."
+    },
+    {
+      "path": "source-packs/learning/dormathon-learned-planning-20261010/scripts/summarize-planning-evidence.mjs",
+      "sha256": "70c9a1aa6ad634acec49e4e9e806428f058cccf9e2613f52d226a325108e2226",
+      "size_bytes": 4111,
+      "git_mode": "100644",
+      "provenance": "Audited synthetic training/evaluation source package; original source-relative paths retained."
+    },
+    {
+      "path": "source-packs/learning/dormathon-learned-planning-20261010/scripts/train-retail-q.mjs",
+      "sha256": "3271485b4e723ccbaf86370b9fbb2c741d7758d678a1d8d78154e1f19f95fca5",
+      "size_bytes": 6318,
+      "git_mode": "100644",
+      "provenance": "Audited synthetic training/evaluation source package; original source-relative paths retained."
+    },
+    {
+      "path": "source-packs/learning/dormathon-learned-planning-20261010/scripts/write-adoption-manifest.mjs",
+      "sha256": "7f4f28f9c8407a7ed74afa07ec4ae93b7684b23a07072c012e82650b18a2c384",
+      "size_bytes": 3481,
+      "git_mode": "100644",
+      "provenance": "Audited synthetic training/evaluation source package; original source-relative paths retained."
+    },
+    {
+      "path": "source-packs/learning/dormathon-learned-planning-20261010/tests/retail-cover-thermal.test.mjs",
+      "sha256": "fbaaaa9ddcc458015e3da5fca0eaca94caececbbe37afd54935bfa9b11ca00fe",
+      "size_bytes": 1674,
+      "git_mode": "100644",
+      "provenance": "Audited synthetic training/evaluation source package; original source-relative paths retained."
+    },
+    {
+      "path": "source-packs/learning/dormathon-learned-planning-20261010/tests/retail-mcts.test.mjs",
+      "sha256": "1802def7311ae7f3609653941b608d2919a7d3aa0c09951c4938d01338849929",
+      "size_bytes": 2112,
+      "git_mode": "100644",
+      "provenance": "Audited synthetic training/evaluation source package; original source-relative paths retained."
+    },
+    {
+      "path": "source-packs/learning/dormathon-learned-planning-20261010/tests/retail-q-learning.test.mjs",
+      "sha256": "cfbd507039da9280bcf19165c1878fb9f0fe1e11df8da0e3e5039d9f5a922258",
+      "size_bytes": 897,
+      "git_mode": "100644",
+      "provenance": "Audited synthetic training/evaluation source package; original source-relative paths retained."
+    },
+    {
+      "path": "source-packs/learning/dormathon-learned-planning-20261010/tests/retail-q-policy.test.mjs",
+      "sha256": "b1340cef248b7b15871f7af79d6fc014def63753ee8aabb056536d4a347554b9",
+      "size_bytes": 2637,
+      "git_mode": "100644",
+      "provenance": "Audited synthetic training/evaluation source package; original source-relative paths retained."
+    },
+    {
+      "path": "source-packs/learning/dormathon-learned-planning-20261010/tests/retail-real-environment.test.mjs",
+      "sha256": "6bab8662ec76e9d2b2d122398adc7b09764ada882427705d6927a4fadb3d0064",
+      "size_bytes": 2604,
+      "git_mode": "100644",
+      "provenance": "Audited synthetic training/evaluation source package; original source-relative paths retained."
+    },
+    {
+      "path": "source-packs/learning/dormathon-learned-planning-20261010/tests/retail-trained-artifact.test.mjs",
+      "sha256": "63ce13abe4cfdeea60b6f55d5952edab48f6d73e251a0b7522727ed3b839595b",
+      "size_bytes": 5488,
+      "git_mode": "100644",
+      "provenance": "Audited synthetic training/evaluation source package; original source-relative paths retained."
+    },
+    {
+      "path": "source-packs/learning/dormathon-learned-planning-20261010/worker/retail-bounded-oracle.js",
+      "sha256": "835ef62e2ac277c223ac3d9f77c895ac3abcce62c2eee88b999c5dce0dc2b8e8",
+      "size_bytes": 3841,
+      "git_mode": "100644",
+      "provenance": "Audited synthetic training/evaluation source package; original source-relative paths retained."
+    },
+    {
+      "path": "source-packs/learning/dormathon-learned-planning-20261010/worker/retail-browser-worker.js",
+      "sha256": "fef4afbac4c54f8f28280cf8233f332dc70b60e89edfdd5db283496f9b9fc5cb",
+      "size_bytes": 2523,
+      "git_mode": "100644",
+      "provenance": "Audited synthetic training/evaluation source package; original source-relative paths retained."
+    },
+    {
+      "path": "source-packs/learning/dormathon-learned-planning-20261010/worker/retail-cover-thermal-heuristic.js",
+      "sha256": "2a005020a27b40e56fb65eb11eff94abc49b1e5435f479da4c4b5e9814bbf4ba",
+      "size_bytes": 2432,
+      "git_mode": "100644",
+      "provenance": "Audited synthetic training/evaluation source package; original source-relative paths retained."
+    },
+    {
+      "path": "source-packs/learning/dormathon-learned-planning-20261010/worker/retail-dynamics-adapter.js",
+      "sha256": "de8580565eca78d0df933f948f86e255d8337d28545a90f1e89caf0cafd6a72a",
+      "size_bytes": 250,
+      "git_mode": "100644",
+      "provenance": "Audited synthetic training/evaluation source package; original source-relative paths retained."
+    },
+    {
+      "path": "source-packs/learning/dormathon-learned-planning-20261010/worker/retail-heuristics.js",
+      "sha256": "77d8e07126c46a01f813eb5588e7bdb07deda5dbf4096da536a40f26d6aa8e38",
+      "size_bytes": 1290,
+      "git_mode": "100644",
+      "provenance": "Audited synthetic training/evaluation source package; original source-relative paths retained."
+    },
+    {
+      "path": "source-packs/learning/dormathon-learned-planning-20261010/worker/retail-mcts.js",
+      "sha256": "220134b5ba6d1feb56950eabf71d5e258ee8c74e0da1e90d6e731bfcfcb09758",
+      "size_bytes": 5398,
+      "git_mode": "100644",
+      "provenance": "Audited synthetic training/evaluation source package; original source-relative paths retained."
+    },
+    {
+      "path": "source-packs/learning/dormathon-learned-planning-20261010/worker/retail-planning-demo.js",
+      "sha256": "89d8f49acbd1bc339aa4d0e64086a6e3c00f6e0e8cde8a5167eb69fa9a55fbd5",
+      "size_bytes": 4500,
+      "git_mode": "100644",
+      "provenance": "Audited synthetic training/evaluation source package; original source-relative paths retained."
+    },
+    {
+      "path": "source-packs/learning/dormathon-learned-planning-20261010/worker/retail-planning-utils.js",
+      "sha256": "f122ff2c1bccafa3121834c123cf337127f94044ab6687f14c22fc6b19714ebf",
+      "size_bytes": 858,
+      "git_mode": "100644",
+      "provenance": "Audited synthetic training/evaluation source package; original source-relative paths retained."
+    },
+    {
+      "path": "source-packs/learning/dormathon-learned-planning-20261010/worker/retail-q-learning.js",
+      "sha256": "e82bcc6f286e2887590efce3f633fec49bdaae567b8a8793be3ab8f0cdb224bd",
+      "size_bytes": 922,
+      "git_mode": "100644",
+      "provenance": "Audited synthetic training/evaluation source package; original source-relative paths retained."
+    },
+    {
+      "path": "source-packs/learning/dormathon-learned-planning-20261010/worker/retail-q-policy.js",
+      "sha256": "ea5dab56eaaf82cdfafe2fa9e51ff89fffd75edf0d775169ef92e883fb755784",
+      "size_bytes": 3555,
+      "git_mode": "100644",
+      "provenance": "Audited synthetic training/evaluation source package; original source-relative paths retained."
+    },
+    {
+      "path": "source-packs/learning/dormathon-learned-planning-20261010/worker/retail-trained-policy.js",
+      "sha256": "416479de31462398e512762995326d476a46e69d4a48a40fc300253ea4827730",
+      "size_bytes": 228854,
+      "git_mode": "100644",
+      "provenance": "Audited synthetic training/evaluation source package; original source-relative paths retained."
+    },
+    {
+      "path": "source-packs/learning/event-context/checks.json",
+      "sha256": "f23b8e52389813899f066776406be6ddbae864591b8d90c543d6eefc9a07863e",
+      "size_bytes": 1803,
+      "git_mode": "100644",
+      "provenance": "Audited synthetic training/evaluation source package; original source-relative paths retained."
+    },
+    {
+      "path": "source-packs/learning/event-context/events.json",
+      "sha256": "103756853af9cda64791f16e4f9dc50d27a496ce85a2b51df7b30440679cc5d8",
+      "size_bytes": 19259,
+      "git_mode": "100644",
+      "provenance": "Audited synthetic training/evaluation source package; original source-relative paths retained."
+    },
+    {
+      "path": "source-packs/learning/event-context/test_delay_bridge.mjs",
+      "sha256": "9b1ce1a9f217745213c992e29312260dfb71b83751d4a5f9bf73ddb1236b29b5",
+      "size_bytes": 1787,
+      "git_mode": "100644",
+      "provenance": "Audited synthetic training/evaluation source package; original source-relative paths retained."
+    },
+    {
+      "path": "source-packs/learning/event-context/validate_contract.py",
+      "sha256": "25498ddc6d09cba9882301e614c5af7dfc9ff467069d4f08182b7d96e8e9e87c",
+      "size_bytes": 1831,
+      "git_mode": "100644",
+      "provenance": "Audited synthetic training/evaluation source package; original source-relative paths retained."
+    },
+    {
+      "path": "source-packs/learning/event-context/verification.md",
+      "sha256": "fa158efe05722bedefd6b9cd177ae532d9b980dd7757fd91b5a817f8ecfac097",
+      "size_bytes": 7735,
+      "git_mode": "100644",
+      "provenance": "Audited synthetic training/evaluation source package; original source-relative paths retained."
+    },
+    {
+      "path": "source-packs/learning/independent-adoption-receipt.json",
+      "sha256": "38eeb86db9335ceea4af4b2a559bb8c37f82e90e6e192d0baa917513ef83f7a9",
+      "size_bytes": 6119,
+      "git_mode": "100644",
+      "provenance": "Audited synthetic training/evaluation source package; original source-relative paths retained."
+    },
+    {
+      "path": "source-packs/learning/real-event-pack-receipt.json",
+      "sha256": "d8db301bc096c78b8d6ee7aaba671507df1630caba0da6318ee1d6c934bc1152",
+      "size_bytes": 3111,
+      "git_mode": "100644",
+      "provenance": "Audited synthetic training/evaluation source package; original source-relative paths retained."
+    },
+    {
       "path": "source-packs/legal/MANIFEST-SHA256.txt",
       "sha256": "c10b748695d5f5392d69b0011089ead307e2030ee6925f8c3793e04b721b9fc9",
       "size_bytes": 2857,
@@ -5001,14 +5733,152 @@
     },
     {
       "path": "static/mrdiy-workspace.css",
-      "sha256": "8d06591c539fbc5c94e275b685b68de6a2378e113db4257ba72464116f804d98",
-      "size_bytes": 17399,
+      "sha256": "ecaa1e0fb68cfe1ae7520f704392baacd12a921aef1b49d0e467a90f8bcc2606",
+      "size_bytes": 18864,
       "git_mode": "100644"
     },
     {
       "path": "static/mrdiy-workspace.js",
-      "sha256": "37e4b26b25373afbe58db426dfafcc6dc923c2001d40098f2f1682aee6bf371b",
-      "size_bytes": 93285,
+      "sha256": "b4ca06dc7a2e77672d43b213740ee1c46ce6593c0db9bd68111e3d3fb7f83be6",
+      "size_bytes": 119512,
+      "git_mode": "100644"
+    },
+    {
+      "path": "static/simulation/event-backdrops.json",
+      "sha256": "103756853af9cda64791f16e4f9dc50d27a496ce85a2b51df7b30440679cc5d8",
+      "size_bytes": 19259,
+      "git_mode": "100644"
+    },
+    {
+      "path": "static/simulation/heldout-summary.json",
+      "sha256": "ad747a608c70fcd82d76f669cb18f057d7d0ffcbfcc05a1ed6e36c98d7f711d8",
+      "size_bytes": 61603,
+      "git_mode": "100644"
+    },
+    {
+      "path": "static/simulation/learning-evaluation-world.js",
+      "sha256": "3f9e881372a0e83cc232774578b31d42c6328b4daeb229875f6197fbd8291899",
+      "size_bytes": 718,
+      "git_mode": "100644"
+    },
+    {
+      "path": "static/simulation/learning-event-backdrops.js",
+      "sha256": "8d65ec666fee95e64bd37dc5f0b10f03424c7bcd233a8519ad89f4aae9f0a30a",
+      "size_bytes": 14807,
+      "git_mode": "100644"
+    },
+    {
+      "path": "static/simulation/learning-task-worker.js",
+      "sha256": "e55d3924873c71ffc25fc7942533a1652817e494cbc6970e34da0786e74e1d36",
+      "size_bytes": 4905,
+      "git_mode": "100644"
+    },
+    {
+      "path": "static/simulation/mrdiy-calibrated-artifacts.js",
+      "sha256": "f972863fd80e002924fca90963aa51c3d99b1c0cd6c3296bb7e2dda7ec1b7623",
+      "size_bytes": 7899,
+      "git_mode": "100644"
+    },
+    {
+      "path": "static/simulation/mrdiy-calibration.js",
+      "sha256": "a1c8f9fe3a0be41277742e2ba452cddbffb6c509cc01410c1ce68307cfd897d2",
+      "size_bytes": 8590,
+      "git_mode": "100644"
+    },
+    {
+      "path": "static/simulation/mrdiy-dated-observations.js",
+      "sha256": "038136b5db96010a3938ce6efa274c73a96634f3ac2dbb39abd1fd472e879327",
+      "size_bytes": 209695,
+      "git_mode": "100644"
+    },
+    {
+      "path": "static/simulation/mrdiy-dynamics-demo.js",
+      "sha256": "db842cea11b4d19b6c611aeec3c00e403af999041a2b0dce3feb83290c747f9b",
+      "size_bytes": 8009,
+      "git_mode": "100644"
+    },
+    {
+      "path": "static/simulation/mrdiy-dynamics-task-worker.js",
+      "sha256": "df373adae35481f83b932f67cc693a910a0418e8ab1af58f487c1a4d4e52e8d4",
+      "size_bytes": 1481,
+      "git_mode": "100644"
+    },
+    {
+      "path": "static/simulation/mrdiy-dynamics.js",
+      "sha256": "7b6c4f80434fce672100d15ef1826a4013c2bbe36932d9678c6a87635aa7af97",
+      "size_bytes": 22812,
+      "git_mode": "100644"
+    },
+    {
+      "path": "static/simulation/mrdiy-thermal-pinn.js",
+      "sha256": "e46ef39fe630ac38263aeb16ab786db6075d3803afa86b640e6bcb9378cbcf85",
+      "size_bytes": 1625,
+      "git_mode": "100644"
+    },
+    {
+      "path": "static/simulation/retail-bounded-oracle.js",
+      "sha256": "835ef62e2ac277c223ac3d9f77c895ac3abcce62c2eee88b999c5dce0dc2b8e8",
+      "size_bytes": 3841,
+      "git_mode": "100644"
+    },
+    {
+      "path": "static/simulation/retail-browser-worker.js",
+      "sha256": "fef4afbac4c54f8f28280cf8233f332dc70b60e89edfdd5db283496f9b9fc5cb",
+      "size_bytes": 2523,
+      "git_mode": "100644"
+    },
+    {
+      "path": "static/simulation/retail-cover-thermal-heuristic.js",
+      "sha256": "2a005020a27b40e56fb65eb11eff94abc49b1e5435f479da4c4b5e9814bbf4ba",
+      "size_bytes": 2432,
+      "git_mode": "100644"
+    },
+    {
+      "path": "static/simulation/retail-dynamics-adapter.js",
+      "sha256": "8f4dde858ad2a860477c8afb6f0d5160598e014099b78a48bd78ab5c21bea550",
+      "size_bytes": 201,
+      "git_mode": "100644"
+    },
+    {
+      "path": "static/simulation/retail-heuristics.js",
+      "sha256": "77d8e07126c46a01f813eb5588e7bdb07deda5dbf4096da536a40f26d6aa8e38",
+      "size_bytes": 1290,
+      "git_mode": "100644"
+    },
+    {
+      "path": "static/simulation/retail-mcts.js",
+      "sha256": "220134b5ba6d1feb56950eabf71d5e258ee8c74e0da1e90d6e731bfcfcb09758",
+      "size_bytes": 5398,
+      "git_mode": "100644"
+    },
+    {
+      "path": "static/simulation/retail-planning-demo.js",
+      "sha256": "89d8f49acbd1bc339aa4d0e64086a6e3c00f6e0e8cde8a5167eb69fa9a55fbd5",
+      "size_bytes": 4500,
+      "git_mode": "100644"
+    },
+    {
+      "path": "static/simulation/retail-planning-utils.js",
+      "sha256": "f122ff2c1bccafa3121834c123cf337127f94044ab6687f14c22fc6b19714ebf",
+      "size_bytes": 858,
+      "git_mode": "100644"
+    },
+    {
+      "path": "static/simulation/retail-q-learning.js",
+      "sha256": "e82bcc6f286e2887590efce3f633fec49bdaae567b8a8793be3ab8f0cdb224bd",
+      "size_bytes": 922,
+      "git_mode": "100644"
+    },
+    {
+      "path": "static/simulation/retail-q-policy.js",
+      "sha256": "ea5dab56eaaf82cdfafe2fa9e51ff89fffd75edf0d775169ef92e883fb755784",
+      "size_bytes": 3555,
+      "git_mode": "100644"
+    },
+    {
+      "path": "static/simulation/retail-trained-policy.js",
+      "sha256": "416479de31462398e512762995326d476a46e69d4a48a40fc300253ea4827730",
+      "size_bytes": 228854,
       "git_mode": "100644"
     },
     {
@@ -5667,8 +6537,8 @@
     },
     {
       "path": "tests/mrdiy-client-behavior.test.mjs",
-      "sha256": "f8fdcb183bf5ada42a1b8791e84fb79adc1b2abcdcc7c3f05e1bea2aab85ec33",
-      "size_bytes": 46736,
+      "sha256": "5529cf69912d49e0a132d41db88b29435e733554ac0e36c19485cc2bb5264d11",
+      "size_bytes": 55776,
       "git_mode": "100644"
     },
     {
@@ -5693,6 +6563,12 @@
       "path": "tests/mrdiy-joint-planner.test.mjs",
       "sha256": "b8a861eb00c0dfac949844b83c02ba6ba9984dfb82351e77460422d9481353b3",
       "size_bytes": 14675,
+      "git_mode": "100644"
+    },
+    {
+      "path": "tests/mrdiy-learning-integration.test.mjs",
+      "sha256": "72cd763c898863d50b815d285f0c74923a1bd30e67fe8b5e23b63af3aaa96ba1",
+      "size_bytes": 9074,
       "git_mode": "100644"
     },
     {
@@ -6075,7 +6951,7 @@
     },
     {
       "path": "worker/index.js",
-      "sha256": "248c90efdd2013875ebf2a3fe14c03dd9eb968661d2f2d46e72cc6a1c9d468bf",
+      "sha256": "6ff529d5e89cd08228eb1e63bc72823c8242b9309723f9d606c64884b1986b1b",
       "size_bytes": 21216,
       "git_mode": "100644"
     },
