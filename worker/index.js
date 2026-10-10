@@ -1,3 +1,5 @@
+import {JourneyService,replayCatalog} from './journey.js';
+import {BusinessCaseService,retainedSourceHistory} from './business-cases.js';
 import {informationTypeStatus} from './information-types.js';
 import {importReviewedChunk,reviewedIntakeStatus} from './source-intake.js';
 import {importOutcomeChunk,outcomeStatus,outcomeEvents,outcomeEvidence,outcomeContext} from './outcomes.js';
@@ -24,6 +26,9 @@ export async function handleRequest(request,env,context={}){
    if(method==='GET'&&path==='/api/viewer-context')return responseJSON(200,viewerCountryContext(request));
    const store=new RiskStore(env.DB,PUBLIC_BUNDLE);await store.ensureSeed();if(path.startsWith('/api/reviewed-intake')||path.startsWith('/api/retrieval/')||path.startsWith('/api/global/')||path==='/api/workspace'||path.startsWith('/api/workspace/'))await intelEnsureRegistry(store);const workspace=(path==='/api/workspace'||path.startsWith('/api/workspace/'))?new WorkspaceService(store,env):null;const domain=url.searchParams.get('domain');if(domain&&!path.startsWith('/api/outcomes/'))validDomain(domain);
    if(method==='GET'){
+    if(path==='/api/replay/run')return responseJSON(200,await new JourneyService(store).run(url.searchParams.get('id')));
+    if(path==='/api/replay/cases')return responseJSON(200,replayCatalog(url.searchParams.get('id')));
+    if(path==='/api/journey/entries')return responseJSON(200,await new JourneyService(store).list(url.searchParams.get('kind'),url.searchParams.get('project_id'),url.searchParams.get('parent_id')));
     if(path==='/api/prototype')return responseJSON(200,await new PrototypeService(store).read(url.searchParams.get('case_id')));
     if(path==='/api/outcomes/status')return responseJSON(200,await outcomeStatus(store));
     if(path==='/api/outcomes/events')return responseJSON(200,await outcomeEvents(store,Object.fromEntries(url.searchParams)));
@@ -32,6 +37,10 @@ export async function handleRequest(request,env,context={}){
     if(path==='/api/outcomes/context')return responseJSON(200,await outcomeContext(store,Object.fromEntries(url.searchParams)));
     if(path==='/api/reviewed-intake/status')return responseJSON(200,await reviewedIntakeStatus(store));if(path==='/api/retrieval/status')return responseJSON(200,await retrievalStatus(store));if(path==='/api/retrieval/documents')return responseJSON(200,await retrievalDocuments(store,Object.fromEntries(url.searchParams)));if(path==='/api/workspace')return responseJSON(200,await workspace.bootstrap());
     if(path==='/api/workspace/leads')return responseJSON(200,await workspace.leads(url.searchParams.get('object_id')));
+    if(path==='/api/workspace/organization-evidence')return responseJSON(200,await workspace.organizationEvidence(url.searchParams.get('project_id')));
+    if(path==='/api/workspace/projects')return responseJSON(200,await workspace.projectDetail(url.searchParams.get('id')));
+    if(path==='/api/workspace/business-cases')return responseJSON(200,await new BusinessCaseService(store).detail(url.searchParams.get('id'),url.searchParams.get('project_id')));
+    if(path==='/api/global/source-history')return responseJSON(200,await retainedSourceHistory(store,url.searchParams.get('version_id')));
     if(path==='/api/workspace/cases')return responseJSON(200,await workspace.detail(url.searchParams.get('id')));
     if(path==='/api/global/types')return responseJSON(200,await informationTypeStatus(store));
     if(path==='/api/global/sources')return responseJSON(200,{sources:await intelSources(store)});
@@ -52,12 +61,19 @@ export async function handleRequest(request,env,context={}){
    if(['POST','PATCH'].includes(method)){
     const body=await readJSON(request);
     if(method==='POST'){
+     if(path==='/api/journey/entries')return responseJSON(200,await new JourneyService(store).submit(body));
+     if(path==='/api/replay/lock')return responseJSON(200,await new JourneyService(store).lock(body));
+     if(path==='/api/replay/advance')return responseJSON(200,await new JourneyService(store).advance(body));
+     if(path==='/api/replay/method-update')return responseJSON(200,await new JourneyService(store).methodUpdate(body));
      if(path==='/api/outcomes/import-chunk')return responseJSON(200,await importOutcomeChunk(store,body));
      if(path==='/api/prototype/start')return responseJSON(200,await new PrototypeService(store).start(body));
      if(path==='/api/prototype/analyze')return responseJSON(200,await new PrototypeService(store).analyze(body));
      if(path==='/api/prototype/save-analysis')return responseJSON(200,await new PrototypeService(store).analyze(body,true));
      if(path==='/api/prototype/decide')return responseJSON(200,await new PrototypeService(store).decide(body));
      if(path==='/api/prototype/feedback')return responseJSON(200,await new PrototypeService(store).feedback(body));
+     if(path==='/api/workspace/business-cases')return responseJSON(200,await new BusinessCaseService(store).create(body));
+     if(path==='/api/workspace/business-compare')return responseJSON(200,await new BusinessCaseService(store).compare(body));
+     if(path==='/api/workspace/organization-evidence')return responseJSON(200,await workspace.saveOrganizationEvidence(body));
      if(path==='/api/workspace/projects')return responseJSON(200,await workspace.createProject(body));
      if(path==='/api/workspace/objects')return responseJSON(200,await workspace.createObject(body));
      if(path==='/api/workspace/cases')return responseJSON(200,await workspace.createCase(body));
@@ -81,6 +97,7 @@ export async function handleRequest(request,env,context={}){
      if(path==='/api/intelligence/refresh'){if(Object.keys(body).length!==1||body.domain!=='energy')throw new ValidationError('在线重新采集仅支持固定NESO能源源');const result=await refreshEnergy(store);return responseJSON(result.status==='in_progress'?409:200,result)}
      if(path==='/api/demo/load'){const rows=[{domain:'supply',sku:'DEMO-DRINK',on_hand:40,daily_demand:15,lead_time_days:5,reorder_point:60,ordered_qty:100,fulfilled_qty:85,occurred_at:'2026-10-01T08:00:00Z'},{domain:'procurement',invoice_id:'DEMO-INV-01',vendor:'演示供应商',amount:1000,currency:'USD',due_date:'2026-10-01',paid_amount:0,po_amount:1000,received_amount:900,occurred_at:'2026-10-01T08:00:00Z'},{domain:'service',ticket_id:'DEMO-TICKET-01',opened_at:'2026-10-01T08:00:00Z',sla_hours:24,status:'resolved',resolved_at:'2026-10-02T12:00:00Z',occurred_at:'2026-10-02T12:00:00Z'},{domain:'energy',meter_id:'DEMO-METER-01',period_start:'2026-10-01',period_end:'2026-10-02',kwh:140,baseline_kwh:100,waste_kg:30,recycled_kg:10,occurred_at:'2026-10-02T12:00:00Z'}];return responseJSON(200,await store.importRecords({format:'json',content:JSON.stringify(rows),source:{title:'显式演示 · 合成业务场景',publisher:'Dormathon demo',license:'Synthetic demonstration only'}},true))}
     }
+    if(method==='PATCH'&&path==='/api/workspace/projects')return responseJSON(200,await workspace.updateProject(body));
     if(method==='PATCH'&&path==='/api/workspace/cases')return responseJSON(200,await workspace.updateCase(body));
     if(method==='PATCH'&&path==='/api/workspace/evidence')return responseJSON(200,await workspace.updateEvidence(body));
     if(method==='PATCH'&&path==='/api/workspace/actions')return responseJSON(200,await workspace.updateAction(body));

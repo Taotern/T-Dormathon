@@ -41,3 +41,6 @@ source-packs/*/reports/
 
 # Prototype execution receipts are not source.
 .prototype-qa/
+
+# Current approved-call execution receipts.
+.call-qa/

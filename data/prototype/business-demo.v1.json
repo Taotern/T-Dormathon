@@ -1,0 +1,740 @@
+{
+  "schema_version": "dormathon.business-demo.v1",
+  "id": "serai-campus-demo-v1",
+  "organization": {
+    "name": "Serai Campus Services",
+    "region": "Kuching / Sarawak / Malaysia",
+    "kind": "synthetic_demo",
+    "industry": "Campus services",
+    "objective": "Review supplies, payments, service deadlines and resource waste."
+  },
+  "world_time": "2026-10-09T08:00:00+08:00",
+  "authored_at": "2026-10-09",
+  "disclosure": "Synthetic operating cases and authored risk probabilities. Public evidence is real when retrieved and remains separate. No calibrated predictions or trained agent are claimed.",
+  "cases": [
+    {
+      "id": "demo_supply_01",
+      "case_type": "supply",
+      "title": "Campus pantry replenishment",
+      "status": "Review now",
+      "operations": {
+        "stock_units": 240,
+        "daily_use_units": 120,
+        "delivery_days": 5
+      },
+      "locations": [
+        "Kuching"
+      ],
+      "counterparties": [
+        "Demo supplier / internal team"
+      ],
+      "route": "Kuching campus operations",
+      "window_start": "2026-10-09",
+      "window_end": "2026-10-14",
+      "deadline": "2026-10-14",
+      "currency": "MYR",
+      "notes": "Stock would run out before the planned delivery.",
+      "input_basis": "synthetic_operational_scenario",
+      "evidence": {
+        "query": "Rice",
+        "role": "public_background_only",
+        "applicability": "unverified",
+        "note": "Search returns actual saved source facts. It does not establish this fictional business exposure."
+      },
+      "prediction": {
+        "probability": 0.72,
+        "severity": "High",
+        "horizon_start": "2026-10-09",
+        "horizon_end": "2026-10-14",
+        "basis": "authored_demo_script",
+        "target": "Stock would run out before the planned delivery.",
+        "calibrated": false,
+        "trained_model": false
+      },
+      "next_action": "Verify the supplier ETA and a qualified local backup.",
+      "documents": [
+        {
+          "title": "Demo operating ledger",
+          "basis": "authored_fixture",
+          "asof": "2026-10-09T08:00:00+08:00",
+          "fields": {
+            "stock_units": 240,
+            "daily_use_units": 120,
+            "delivery_days": 5
+          }
+        }
+      ]
+    },
+    {
+      "id": "demo_supply_02",
+      "case_type": "supply",
+      "title": "Clinic consumables buffer",
+      "status": "On track",
+      "operations": {
+        "stock_units": 900,
+        "daily_use_units": 75,
+        "delivery_days": 6
+      },
+      "locations": [
+        "Kuching"
+      ],
+      "counterparties": [
+        "Demo supplier / internal team"
+      ],
+      "route": "Kuching campus operations",
+      "window_start": "2026-10-09",
+      "window_end": "2026-10-15",
+      "deadline": "2026-10-15",
+      "currency": "MYR",
+      "notes": "Stock covers the stated delivery lead time.",
+      "input_basis": "synthetic_operational_scenario",
+      "evidence": {
+        "query": "Malaysia",
+        "role": "public_background_only",
+        "applicability": "unverified",
+        "note": "Search returns actual saved source facts. It does not establish this fictional business exposure."
+      },
+      "prediction": {
+        "probability": null,
+        "severity": "Low",
+        "horizon_start": "2026-10-09",
+        "horizon_end": "2026-10-15",
+        "basis": "not_assessed",
+        "target": "Stock covers the stated delivery lead time.",
+        "calibrated": false,
+        "trained_model": false
+      },
+      "next_action": "Keep the delivery confirmation and consumption log current.",
+      "documents": [
+        {
+          "title": "Demo operating ledger",
+          "basis": "authored_fixture",
+          "asof": "2026-10-09T08:00:00+08:00",
+          "fields": {
+            "stock_units": 900,
+            "daily_use_units": 75,
+            "delivery_days": 6
+          }
+        }
+      ]
+    },
+    {
+      "id": "demo_supply_03",
+      "case_type": "supply",
+      "title": "Chilled ingredients route",
+      "status": "Awaiting confirmation",
+      "operations": {
+        "stock_units": 360,
+        "daily_use_units": 60,
+        "delivery_days": 4
+      },
+      "locations": [
+        "Sarawak"
+      ],
+      "counterparties": [
+        "Demo supplier / internal team"
+      ],
+      "route": "Sarawak campus operations",
+      "window_start": "2026-10-09",
+      "window_end": "2026-10-13",
+      "deadline": "2026-10-13",
+      "currency": "MYR",
+      "notes": "Cold-chain arrival conditions are not yet confirmed.",
+      "input_basis": "synthetic_operational_scenario",
+      "evidence": {
+        "query": "Sarawak",
+        "role": "public_background_only",
+        "applicability": "unverified",
+        "note": "Search returns actual saved source facts. It does not establish this fictional business exposure."
+      },
+      "prediction": {
+        "probability": null,
+        "severity": "Medium",
+        "horizon_start": "2026-10-09",
+        "horizon_end": "2026-10-13",
+        "basis": "not_assessed",
+        "target": "Cold-chain arrival conditions are not yet confirmed.",
+        "calibrated": false,
+        "trained_model": false
+      },
+      "next_action": "Confirm cold-chain handling; no disruption has been established.",
+      "documents": [
+        {
+          "title": "Demo operating ledger",
+          "basis": "authored_fixture",
+          "asof": "2026-10-09T08:00:00+08:00",
+          "fields": {
+            "stock_units": 360,
+            "daily_use_units": 60,
+            "delivery_days": 4
+          }
+        }
+      ]
+    },
+    {
+      "id": "demo_supply_04",
+      "case_type": "supply",
+      "title": "Workshop spare parts handoff",
+      "status": "Completed",
+      "operations": {
+        "stock_units": 100,
+        "daily_use_units": 10,
+        "delivery_days": 2
+      },
+      "locations": [
+        "Malaysia"
+      ],
+      "counterparties": [
+        "Demo supplier / internal team"
+      ],
+      "route": "Malaysia campus operations",
+      "window_start": "2026-10-06",
+      "window_end": "2026-10-08",
+      "deadline": "2026-10-08",
+      "currency": "MYR",
+      "notes": "Demo handoff is recorded as complete.",
+      "input_basis": "synthetic_operational_scenario",
+      "evidence": {
+        "query": "Malaysia",
+        "role": "public_background_only",
+        "applicability": "unverified",
+        "note": "Search returns actual saved source facts. It does not establish this fictional business exposure."
+      },
+      "prediction": {
+        "probability": null,
+        "severity": "Low",
+        "horizon_start": "2026-10-06",
+        "horizon_end": "2026-10-08",
+        "basis": "not_assessed",
+        "target": "Demo handoff is recorded as complete.",
+        "calibrated": false,
+        "trained_model": false
+      },
+      "next_action": "Retain the authored delivery acknowledgement.",
+      "documents": [
+        {
+          "title": "Demo operating ledger",
+          "basis": "authored_fixture",
+          "asof": "2026-10-09T08:00:00+08:00",
+          "fields": {
+            "stock_units": 100,
+            "daily_use_units": 10,
+            "delivery_days": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "demo_procurement_01",
+      "case_type": "procurement",
+      "title": "Invoice approval queue",
+      "status": "Review now",
+      "operations": {
+        "amount_due": 18000,
+        "paid_amount": 6000
+      },
+      "locations": [
+        "Kuching"
+      ],
+      "counterparties": [
+        "Demo supplier / internal team"
+      ],
+      "route": "Kuching campus operations",
+      "window_start": "2026-10-09",
+      "window_end": "2026-10-12",
+      "deadline": "2026-10-12",
+      "currency": "MYR",
+      "notes": "Approval dependency could leave MYR12,000 unresolved by the demo deadline.",
+      "input_basis": "synthetic_operational_scenario",
+      "evidence": {
+        "query": "MYR",
+        "role": "public_background_only",
+        "applicability": "unverified",
+        "note": "Search returns actual saved source facts. It does not establish this fictional business exposure."
+      },
+      "prediction": {
+        "probability": 0.6,
+        "severity": "Medium",
+        "horizon_start": "2026-10-09",
+        "horizon_end": "2026-10-12",
+        "basis": "authored_demo_script",
+        "target": "Approval dependency could leave MYR12,000 unresolved by the demo deadline.",
+        "calibrated": false,
+        "trained_model": false
+      },
+      "next_action": "Confirm approval ownership and reconcile the payment ledger.",
+      "documents": [
+        {
+          "title": "Demo operating ledger",
+          "basis": "authored_fixture",
+          "asof": "2026-10-09T08:00:00+08:00",
+          "fields": {
+            "amount_due": 18000,
+            "paid_amount": 6000
+          }
+        }
+      ]
+    },
+    {
+      "id": "demo_procurement_02",
+      "case_type": "procurement",
+      "title": "Supplier instalment schedule",
+      "status": "Scheduled",
+      "operations": {
+        "amount_due": 12000,
+        "paid_amount": 8000
+      },
+      "locations": [
+        "Malaysia"
+      ],
+      "counterparties": [
+        "Demo supplier / internal team"
+      ],
+      "route": "Malaysia campus operations",
+      "window_start": "2026-10-09",
+      "window_end": "2026-10-16",
+      "deadline": "2026-10-16",
+      "currency": "MYR",
+      "notes": "The remaining instalment is scheduled in this authored scenario.",
+      "input_basis": "synthetic_operational_scenario",
+      "evidence": {
+        "query": "MYR",
+        "role": "public_background_only",
+        "applicability": "unverified",
+        "note": "Search returns actual saved source facts. It does not establish this fictional business exposure."
+      },
+      "prediction": {
+        "probability": null,
+        "severity": "Low",
+        "horizon_start": "2026-10-09",
+        "horizon_end": "2026-10-16",
+        "basis": "not_assessed",
+        "target": "The remaining instalment is scheduled in this authored scenario.",
+        "calibrated": false,
+        "trained_model": false
+      },
+      "next_action": "Check the recorded schedule against bank confirmation.",
+      "documents": [
+        {
+          "title": "Demo operating ledger",
+          "basis": "authored_fixture",
+          "asof": "2026-10-09T08:00:00+08:00",
+          "fields": {
+            "amount_due": 12000,
+            "paid_amount": 8000
+          }
+        }
+      ]
+    },
+    {
+      "id": "demo_procurement_03",
+      "case_type": "procurement",
+      "title": "Laboratory purchase-order match",
+      "status": "Needs information",
+      "operations": {
+        "amount_due": 7000,
+        "paid_amount": 0
+      },
+      "locations": [
+        "Sarawak"
+      ],
+      "counterparties": [
+        "Demo supplier / internal team"
+      ],
+      "route": "Sarawak campus operations",
+      "window_start": "2026-10-09",
+      "window_end": "2026-10-17",
+      "deadline": "2026-10-17",
+      "currency": "MYR",
+      "notes": "Invoice and goods-receipt matching are incomplete; zero recorded payment does not prove nonpayment.",
+      "input_basis": "synthetic_operational_scenario",
+      "evidence": {
+        "query": "Malaysia",
+        "role": "public_background_only",
+        "applicability": "unverified",
+        "note": "Search returns actual saved source facts. It does not establish this fictional business exposure."
+      },
+      "prediction": {
+        "probability": null,
+        "severity": "Medium",
+        "horizon_start": "2026-10-09",
+        "horizon_end": "2026-10-17",
+        "basis": "not_assessed",
+        "target": "Invoice and goods-receipt matching are incomplete; zero recorded payment does not prove nonpayment.",
+        "calibrated": false,
+        "trained_model": false
+      },
+      "next_action": "Obtain the missing goods-receipt reference.",
+      "documents": [
+        {
+          "title": "Demo operating ledger",
+          "basis": "authored_fixture",
+          "asof": "2026-10-09T08:00:00+08:00",
+          "fields": {
+            "amount_due": 7000,
+            "paid_amount": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "demo_procurement_04",
+      "case_type": "procurement",
+      "title": "Vendor credit-note reconciliation",
+      "status": "In review",
+      "operations": {
+        "amount_due": 4500,
+        "paid_amount": 4500
+      },
+      "locations": [
+        "Malaysia"
+      ],
+      "counterparties": [
+        "Demo supplier / internal team"
+      ],
+      "route": "Malaysia campus operations",
+      "window_start": "2026-10-09",
+      "window_end": "2026-10-18",
+      "deadline": "2026-10-18",
+      "currency": "MYR",
+      "notes": "Recorded payments cover the invoice; the credit note still needs reconciliation.",
+      "input_basis": "synthetic_operational_scenario",
+      "evidence": {
+        "query": "MYR",
+        "role": "public_background_only",
+        "applicability": "unverified",
+        "note": "Search returns actual saved source facts. It does not establish this fictional business exposure."
+      },
+      "prediction": {
+        "probability": null,
+        "severity": "Low",
+        "horizon_start": "2026-10-09",
+        "horizon_end": "2026-10-18",
+        "basis": "not_assessed",
+        "target": "Recorded payments cover the invoice; the credit note still needs reconciliation.",
+        "calibrated": false,
+        "trained_model": false
+      },
+      "next_action": "Reconcile the credit note without inferring a dispute.",
+      "documents": [
+        {
+          "title": "Demo operating ledger",
+          "basis": "authored_fixture",
+          "asof": "2026-10-09T08:00:00+08:00",
+          "fields": {
+            "amount_due": 4500,
+            "paid_amount": 4500
+          }
+        }
+      ]
+    },
+    {
+      "id": "demo_service_01",
+      "case_type": "service",
+      "title": "Facilities maintenance deadline",
+      "status": "Review now",
+      "operations": {
+        "remaining_hours": 40,
+        "available_hours": 24
+      },
+      "locations": [
+        "Kuching"
+      ],
+      "counterparties": [
+        "Demo supplier / internal team"
+      ],
+      "route": "Kuching campus operations",
+      "window_start": "2026-10-09",
+      "window_end": "2026-10-11",
+      "deadline": "2026-10-11",
+      "currency": "MYR",
+      "notes": "The stated qualified capacity is sixteen hours short.",
+      "input_basis": "synthetic_operational_scenario",
+      "evidence": {
+        "query": "Sarawak",
+        "role": "public_background_only",
+        "applicability": "unverified",
+        "note": "Search returns actual saved source facts. It does not establish this fictional business exposure."
+      },
+      "prediction": {
+        "probability": 0.8,
+        "severity": "High",
+        "horizon_start": "2026-10-09",
+        "horizon_end": "2026-10-11",
+        "basis": "authored_demo_script",
+        "target": "The stated qualified capacity is sixteen hours short.",
+        "calibrated": false,
+        "trained_model": false
+      },
+      "next_action": "Confirm qualified capacity or negotiate the delivery scope.",
+      "documents": [
+        {
+          "title": "Demo operating ledger",
+          "basis": "authored_fixture",
+          "asof": "2026-10-09T08:00:00+08:00",
+          "fields": {
+            "remaining_hours": 40,
+            "available_hours": 24
+          }
+        }
+      ]
+    },
+    {
+      "id": "demo_service_02",
+      "case_type": "service",
+      "title": "Supplier registration review",
+      "status": "On track",
+      "operations": {
+        "remaining_hours": 12,
+        "available_hours": 20
+      },
+      "locations": [
+        "Malaysia"
+      ],
+      "counterparties": [
+        "Demo supplier / internal team"
+      ],
+      "route": "Malaysia campus operations",
+      "window_start": "2026-10-09",
+      "window_end": "2026-10-13",
+      "deadline": "2026-10-13",
+      "currency": "MYR",
+      "notes": "Entered capacity covers the remaining review work.",
+      "input_basis": "synthetic_operational_scenario",
+      "evidence": {
+        "query": "Malaysia",
+        "role": "public_background_only",
+        "applicability": "unverified",
+        "note": "Search returns actual saved source facts. It does not establish this fictional business exposure."
+      },
+      "prediction": {
+        "probability": null,
+        "severity": "Low",
+        "horizon_start": "2026-10-09",
+        "horizon_end": "2026-10-13",
+        "basis": "not_assessed",
+        "target": "Entered capacity covers the remaining review work.",
+        "calibrated": false,
+        "trained_model": false
+      },
+      "next_action": "Verify that the reviewer can access the full document set.",
+      "documents": [
+        {
+          "title": "Demo operating ledger",
+          "basis": "authored_fixture",
+          "asof": "2026-10-09T08:00:00+08:00",
+          "fields": {
+            "remaining_hours": 12,
+            "available_hours": 20
+          }
+        }
+      ]
+    },
+    {
+      "id": "demo_service_03",
+      "case_type": "service",
+      "title": "Support handover dependencies",
+      "status": "Waiting on documents",
+      "operations": {
+        "remaining_hours": 8,
+        "available_hours": 10
+      },
+      "locations": [
+        "Sarawak"
+      ],
+      "counterparties": [
+        "Demo supplier / internal team"
+      ],
+      "route": "Sarawak campus operations",
+      "window_start": "2026-10-09",
+      "window_end": "2026-10-12",
+      "deadline": "2026-10-12",
+      "currency": "MYR",
+      "notes": "Capacity is sufficient but the dependency checklist is incomplete.",
+      "input_basis": "synthetic_operational_scenario",
+      "evidence": {
+        "query": "Sarawak",
+        "role": "public_background_only",
+        "applicability": "unverified",
+        "note": "Search returns actual saved source facts. It does not establish this fictional business exposure."
+      },
+      "prediction": {
+        "probability": null,
+        "severity": "Medium",
+        "horizon_start": "2026-10-09",
+        "horizon_end": "2026-10-12",
+        "basis": "not_assessed",
+        "target": "Capacity is sufficient but the dependency checklist is incomplete.",
+        "calibrated": false,
+        "trained_model": false
+      },
+      "next_action": "Ask for the missing handover document; no SLA breach is asserted.",
+      "documents": [
+        {
+          "title": "Demo operating ledger",
+          "basis": "authored_fixture",
+          "asof": "2026-10-09T08:00:00+08:00",
+          "fields": {
+            "remaining_hours": 8,
+            "available_hours": 10
+          }
+        }
+      ]
+    },
+    {
+      "id": "demo_service_04",
+      "case_type": "service",
+      "title": "Scheduled equipment repair",
+      "status": "Completed",
+      "operations": {
+        "remaining_hours": 0,
+        "available_hours": 8
+      },
+      "locations": [
+        "Kuching"
+      ],
+      "counterparties": [
+        "Demo supplier / internal team"
+      ],
+      "route": "Kuching campus operations",
+      "window_start": "2026-10-06",
+      "window_end": "2026-10-08",
+      "deadline": "2026-10-08",
+      "currency": "MYR",
+      "notes": "The authored repair log is complete.",
+      "input_basis": "synthetic_operational_scenario",
+      "evidence": {
+        "query": "Malaysia",
+        "role": "public_background_only",
+        "applicability": "unverified",
+        "note": "Search returns actual saved source facts. It does not establish this fictional business exposure."
+      },
+      "prediction": {
+        "probability": null,
+        "severity": "Low",
+        "horizon_start": "2026-10-06",
+        "horizon_end": "2026-10-08",
+        "basis": "not_assessed",
+        "target": "The authored repair log is complete.",
+        "calibrated": false,
+        "trained_model": false
+      },
+      "next_action": "Review the completion evidence in the demonstration.",
+      "documents": [
+        {
+          "title": "Demo operating ledger",
+          "basis": "authored_fixture",
+          "asof": "2026-10-09T08:00:00+08:00",
+          "fields": {
+            "remaining_hours": 0,
+            "available_hours": 8
+          }
+        }
+      ]
+    },
+    {
+      "id": "demo_energy_01",
+      "case_type": "energy",
+      "title": "Cafeteria prepared-food batch",
+      "status": "Review now",
+      "operations": {
+        "batch_units": 300,
+        "daily_demand_units": 110,
+        "shelf_life_days": 2
+      },
+      "locations": [
+        "Kuching"
+      ],
+      "counterparties": [
+        "Demo supplier / internal team"
+      ],
+      "route": "Kuching campus operations",
+      "window_start": "2026-10-09",
+      "window_end": "2026-10-11",
+      "deadline": "2026-10-11",
+      "currency": "MYR",
+      "notes": "Eighty portions could remain at expiry under unchanged demand.",
+      "input_basis": "synthetic_operational_scenario",
+      "evidence": {
+        "query": "Food",
+        "role": "public_background_only",
+        "applicability": "unverified",
+        "note": "Search returns actual saved source facts. It does not establish this fictional business exposure."
+      },
+      "prediction": {
+        "probability": 0.68,
+        "severity": "Medium",
+        "horizon_start": "2026-10-09",
+        "horizon_end": "2026-10-11",
+        "basis": "authored_demo_script",
+        "target": "Eighty portions could remain at expiry under unchanged demand.",
+        "calibrated": false,
+        "trained_model": false
+      },
+      "next_action": "Compare a smaller batch with the service requirement.",
+      "documents": [
+        {
+          "title": "Demo operating ledger",
+          "basis": "authored_fixture",
+          "asof": "2026-10-09T08:00:00+08:00",
+          "fields": {
+            "batch_units": 300,
+            "daily_demand_units": 110,
+            "shelf_life_days": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "demo_energy_02",
+      "case_type": "energy",
+      "title": "Campus energy review",
+      "status": "Monitoring",
+      "operations": {
+        "kwh": 12400,
+        "baseline_kwh": 12000
+      },
+      "locations": [
+        "Sarawak"
+      ],
+      "counterparties": [
+        "Demo supplier / internal team"
+      ],
+      "route": "Sarawak campus operations",
+      "window_start": "2026-10-01",
+      "window_end": "2026-10-31",
+      "deadline": "2026-10-31",
+      "currency": "MYR",
+      "notes": "Metered usage in this scenario is3.3% above its stated comparison baseline.",
+      "input_basis": "synthetic_operational_scenario",
+      "evidence": {
+        "query": "Energy",
+        "role": "public_background_only",
+        "applicability": "unverified",
+        "note": "Search returns actual saved source facts. It does not establish this fictional business exposure."
+      },
+      "prediction": {
+        "probability": null,
+        "severity": "Low",
+        "horizon_start": "2026-10-01",
+        "horizon_end": "2026-10-31",
+        "basis": "not_assessed",
+        "target": "Metered usage in this scenario is3.3% above its stated comparison baseline.",
+        "calibrated": false,
+        "trained_model": false
+      },
+      "next_action": "Check occupancy and meter scope before attributing waste.",
+      "documents": [
+        {
+          "title": "Demo operating ledger",
+          "basis": "authored_fixture",
+          "asof": "2026-10-09T08:00:00+08:00",
+          "fields": {
+            "kwh": 12400,
+            "baseline_kwh": 12000
+          }
+        }
+      ]
+    }
+  ]
+}

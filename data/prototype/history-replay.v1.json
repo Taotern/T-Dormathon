@@ -1,0 +1,1155 @@
+{
+  "schemaVersion": "dormathon-history-replay-v1",
+  "scope": "Ten manually authored retrospective risk-detection cases across employment/inflation, food, ports, policy/trade and energy. These demonstrate product interaction, not actual historical predictions or model performance.",
+  "displayNotice": "Historical facts are sourced. Probabilities and method updates are authored demonstrations; no model training or verified accuracy is claimed.",
+  "clockPolicy": "Only facts with known safe availability at or before asOf are input. Date-only sources use conservative bounds. Unknown original availability is explicit; later revisions cannot be backdated.",
+  "sourceBodyPolicy": "Only factual paraphrases and source links retained. No full external page, personal contacts, photo or logo asset is copied.",
+  "sources": [
+    {
+      "id": "bls_jobs_20200306",
+      "url": "https://www.bls.gov/news.release/archives/empsit_03062020.htm",
+      "title": "Employment Situation — February 2020",
+      "publisher": "US Bureau of Labor Statistics",
+      "publicationAt": "2020-03-06T13:30:00Z",
+      "publicationPrecision": "minute",
+      "publicationTimezone": "America/New_York",
+      "revisionAt": null,
+      "originalCaptureHeld": false,
+      "availabilityBasis": "publisher_embargo_clock",
+      "historicalAvailabilityUnknown": false,
+      "capturedAt": "2026-10-09",
+      "evidence": "opened_primary_page",
+      "rights": "Only factual paraphrases and citations retained; no images or full source text licensed or copied.",
+      "note": "September 23 reissue corrected household occupation tables A-8/A-9/A-13/A-14. Retained total-nonfarm establishment headline is outside those tables; later vintages are excluded."
+    },
+    {
+      "id": "bls_jobs_20200403",
+      "url": "https://www.bls.gov/news.release/archives/empsit_04032020.htm",
+      "title": "Employment Situation — March 2020",
+      "publisher": "US Bureau of Labor Statistics",
+      "publicationAt": "2020-04-03T12:30:00Z",
+      "publicationPrecision": "minute",
+      "publicationTimezone": "America/New_York",
+      "revisionAt": null,
+      "originalCaptureHeld": false,
+      "availabilityBasis": "publisher_embargo_clock",
+      "historicalAvailabilityUnknown": false,
+      "capturedAt": "2026-10-09",
+      "evidence": "opened_primary_page",
+      "rights": "Only factual paraphrases and citations retained; no images or full source text licensed or copied.",
+      "note": "September 23 reissue corrected household occupation tables; retained establishment headline is outside those tables. March headline -701,000 is this release vintage, not later revised -881,000/-1.4 m."
+    },
+    {
+      "id": "bls_cpi_20220210",
+      "url": "https://www.bls.gov/news.release/archives/cpi_02102022.htm",
+      "title": "Consumer Price Index — January 2022",
+      "publisher": "US Bureau of Labor Statistics",
+      "publicationAt": "2022-02-10T13:30:00Z",
+      "publicationPrecision": "minute",
+      "publicationTimezone": "America/New_York",
+      "revisionAt": null,
+      "originalCaptureHeld": false,
+      "availabilityBasis": "publisher_embargo_clock",
+      "historicalAvailabilityUnknown": false,
+      "capturedAt": "2026-10-09",
+      "evidence": "opened_primary_page",
+      "rights": "Only factual paraphrases and citations retained; no images or full source text licensed or copied.",
+      "note": "Only all-items 12-month change before seasonal adjustment is retained. Do not substitute later seasonally adjusted revisions."
+    },
+    {
+      "id": "bls_cpi_20220310",
+      "url": "https://www.bls.gov/news.release/archives/cpi_03102022.htm",
+      "title": "Consumer Price Index — February 2022",
+      "publisher": "US Bureau of Labor Statistics",
+      "publicationAt": "2022-03-10T13:30:00Z",
+      "publicationPrecision": "minute",
+      "publicationTimezone": "America/New_York",
+      "revisionAt": null,
+      "originalCaptureHeld": false,
+      "availabilityBasis": "publisher_embargo_clock",
+      "historicalAvailabilityUnknown": false,
+      "capturedAt": "2026-10-09",
+      "evidence": "opened_primary_page",
+      "rights": "Only factual paraphrases and citations retained; no images or full source text licensed or copied.",
+      "note": "All-items 12-month change before seasonal adjustment."
+    },
+    {
+      "id": "tyson_20210703",
+      "url": "https://www.tysonfoods.com/news/news-releases/2021/7/tyson-foods-voluntarily-recalls-frozen-fully-cooked-chicken",
+      "title": "Tyson recalls frozen fully cooked chicken",
+      "publisher": "Tyson Foods",
+      "publicationAt": "2021-07-03",
+      "publicationPrecision": "date",
+      "publicationTimezone": null,
+      "revisionAt": null,
+      "originalCaptureHeld": false,
+      "availabilityBasis": "publisher_declared_date",
+      "historicalAvailabilityUnknown": false,
+      "capturedAt": "2026-10-09",
+      "evidence": "opened_primary_page",
+      "rights": "Only factual paraphrases and citations retained; no images or full source text licensed or copied.",
+      "note": "Time/timezone absent. Conservative availability is July 5 12:00 UTC, beyond the entire stated date in any civil timezone. Company report, not independent proof of contamination."
+    },
+    {
+      "id": "fsis_tyson_20210708",
+      "url": "https://www.fsis.usda.gov/recalls-alerts/tyson-foods-inc--recalls-ready-eat-chicken-products-due-possible-listeria",
+      "title": "Tyson recall expansion editor note",
+      "publisher": "USDA Food Safety and Inspection Service",
+      "publicationAt": "2021-07-03",
+      "publicationPrecision": "date",
+      "publicationTimezone": null,
+      "revisionAt": "2021-07-08",
+      "originalCaptureHeld": false,
+      "availabilityBasis": "publisher_declared_date",
+      "historicalAvailabilityUnknown": false,
+      "capturedAt": "2026-10-09",
+      "evidence": "primary_indexed_excerpt_only",
+      "rights": "Only factual paraphrases and citations retained; no images or full source text licensed or copied.",
+      "note": "Retained outcome is explicitly dated July 8 editor note expanding 8,492,832 to 8,955,296 pounds. Current July 3 body already contains July 8 amount; it is NEVER an input at July 5. Direct page returned 403; editor note independently read in indexed official search result."
+    },
+    {
+      "id": "bls_cpi_20230613",
+      "url": "https://www.bls.gov/news.release/archives/cpi_06132023.htm",
+      "title": "Consumer Price Index — May 2023",
+      "publisher": "US Bureau of Labor Statistics",
+      "publicationAt": "2023-06-13T12:30:00Z",
+      "publicationPrecision": "minute",
+      "publicationTimezone": "America/New_York",
+      "revisionAt": null,
+      "originalCaptureHeld": false,
+      "availabilityBasis": "publisher_embargo_clock",
+      "historicalAvailabilityUnknown": false,
+      "capturedAt": "2026-10-09",
+      "evidence": "opened_primary_page",
+      "rights": "Only factual paraphrases and citations retained; no images or full source text licensed or copied.",
+      "note": "Retain the unadjusted 12-month headline and stated May energy change from this release, not later seasonal revisions."
+    },
+    {
+      "id": "bls_cpi_20230712",
+      "url": "https://www.bls.gov/news.release/archives/cpi_07122023.htm",
+      "title": "Consumer Price Index — June 2023",
+      "publisher": "US Bureau of Labor Statistics",
+      "publicationAt": "2023-07-12T12:30:00Z",
+      "publicationPrecision": "minute",
+      "publicationTimezone": "America/New_York",
+      "revisionAt": null,
+      "originalCaptureHeld": false,
+      "availabilityBasis": "publisher_embargo_clock",
+      "historicalAvailabilityUnknown": false,
+      "capturedAt": "2026-10-09",
+      "evidence": "opened_primary_page",
+      "rights": "Only factual paraphrases and citations retained; no images or full source text licensed or copied.",
+      "note": "All-items 12-month change before seasonal adjustment."
+    },
+    {
+      "id": "ncdhhs_jif_20220523",
+      "url": "https://www.ncdhhs.gov/news/press-releases/2022/05/23/jif-peanut-butter-recalled-nationwide-ncdhhs-urges-consumers-check-labels",
+      "title": "Jif peanut butter recalled nationwide",
+      "publisher": "North Carolina Department of Health and Human Services",
+      "publicationAt": "2022-05-23",
+      "publicationPrecision": "date",
+      "publicationTimezone": null,
+      "revisionAt": null,
+      "originalCaptureHeld": false,
+      "availabilityBasis": "publisher_declared_date",
+      "historicalAvailabilityUnknown": false,
+      "capturedAt": "2026-10-09",
+      "evidence": "opened_primary_page",
+      "rights": "Only factual paraphrases and citations retained; no images or full source text licensed or copied.",
+      "note": "Date-only state publication. Current FDA recall-completion labels and undated corrected product lists are excluded."
+    },
+    {
+      "id": "fda_delmonte_20220525",
+      "url": "https://www.fda.gov/safety/recalls-market-withdrawals-safety-alerts/supplier-jm-smucker-cos-jif-recall-prompts-fresh-del-monte-voluntarily-recall-select-ready-eat",
+      "title": "Jif supplier recall prompts Fresh Del Monte recall",
+      "publisher": "FDA hosting Fresh Del Monte company announcement",
+      "publicationAt": "2022-05-25",
+      "publicationPrecision": "date",
+      "publicationTimezone": null,
+      "revisionAt": null,
+      "originalCaptureHeld": false,
+      "availabilityBasis": "publisher_declared_date",
+      "historicalAvailabilityUnknown": false,
+      "capturedAt": "2026-10-09",
+      "evidence": "opened_primary_page",
+      "rights": "Only factual paraphrases and citations retained; no images or full source text licensed or copied.",
+      "note": "Company announcement: May 24. FDA publication: May 25. The target is the FDA notice, not contamination onset. The current termination banner is excluded."
+    },
+    {
+      "id": "port_july_20220817",
+      "url": "https://portoflosangeles.org/references/news_081722_july_cargo",
+      "title": "Port LA breaks July cargo record",
+      "publisher": "Port of Los Angeles",
+      "publicationAt": "2022-08-17",
+      "publicationPrecision": "date",
+      "publicationTimezone": null,
+      "revisionAt": null,
+      "originalCaptureHeld": false,
+      "availabilityBasis": "publisher_declared_date",
+      "historicalAvailabilityUnknown": false,
+      "capturedAt": "2026-10-09",
+      "evidence": "opened_primary_page",
+      "rights": "Only factual paraphrases and citations retained; no images or full source text licensed or copied.",
+      "note": "July was estimated at 935,345 TEUs in this news release. Later final statistics are not substituted."
+    },
+    {
+      "id": "port_aug_20220915",
+      "url": "https://portoflosangeles.org/references/2022-news-releases/news_091522_august_cargo",
+      "title": "Port LA cargo volume eases in August",
+      "publisher": "Port of Los Angeles",
+      "publicationAt": "2022-09-15",
+      "publicationPrecision": "date",
+      "publicationTimezone": null,
+      "revisionAt": null,
+      "originalCaptureHeld": false,
+      "availabilityBasis": "publisher_declared_date",
+      "historicalAvailabilityUnknown": false,
+      "capturedAt": "2026-10-09",
+      "evidence": "opened_primary_page",
+      "rights": "Only factual paraphrases and citations retained; no images or full source text licensed or copied.",
+      "note": "This release estimated 806,000 TEUs, not later final 805,672. Its approximately 15% decline is year-on-year, not month-on-month."
+    },
+    {
+      "id": "port_sept_20221019",
+      "url": "https://portoflosangeles.org/references/2022-news-releases/news_101922_sept_cargo",
+      "title": "Port LA cargo pace cools in September",
+      "publisher": "Port of Los Angeles",
+      "publicationAt": "2022-10-19",
+      "publicationPrecision": "date",
+      "publicationTimezone": null,
+      "revisionAt": null,
+      "originalCaptureHeld": false,
+      "availabilityBasis": "publisher_declared_date",
+      "historicalAvailabilityUnknown": false,
+      "capturedAt": "2026-10-09",
+      "evidence": "opened_primary_page",
+      "rights": "Only factual paraphrases and citations retained; no images or full source text licensed or copied.",
+      "note": "The release reports 709,873 TEUs and a 21.5% year-on-year decline. The demo’s month-on-month calculation is separately labelled."
+    },
+    {
+      "id": "eu_cbam_adoption_20230425",
+      "url": "https://www.consilium.europa.eu/en/press/press-releases/2023/04/25/fit-for-55-council-adopts-key-pieces-of-legislation-delivering-on-2030-climate-targets/pdf",
+      "title": "Council adopts Fit for 55 legislation",
+      "publisher": "Council of the European Union",
+      "publicationAt": "2023-04-25",
+      "publicationPrecision": "date",
+      "publicationTimezone": null,
+      "revisionAt": null,
+      "originalCaptureHeld": false,
+      "availabilityBasis": "publisher_declared_date",
+      "historicalAvailabilityUnknown": false,
+      "capturedAt": "2026-10-09",
+      "evidence": "opened_primary_page",
+      "rights": "Only factual paraphrases and citations retained; no images or full source text licensed or copied.",
+      "note": "Official dated two-page press-release PDF 288/23 inspected. Reporting-only phase and selected-sector scope retained. No current-law advice."
+    },
+    {
+      "id": "eu_cbam_faq_20231222",
+      "url": "https://taxation-customs.ec.europa.eu/system/files/2023-11/CBAM%20Frequently%20Asked%20Questions_November%202023.pdf",
+      "title": "CBAM Questions and Answers — revised 22 December 2023",
+      "publisher": "European Commission Directorate-General for Taxation and Customs Union",
+      "publicationAt": null,
+      "publicationPrecision": "unknown",
+      "publicationTimezone": null,
+      "revisionAt": "2023-12-22",
+      "originalCaptureHeld": false,
+      "availabilityBasis": "publisher_declared_date",
+      "historicalAvailabilityUnknown": true,
+      "capturedAt": "2026-10-09",
+      "evidence": "opened_primary_page",
+      "rights": "Only factual paraphrases and citations retained; no images or full source text licensed or copied.",
+      "note": "The filename says November, but page one says last updated on 22 December 2023. Original historical publication is unknown. This revision is outcome-only."
+    },
+    {
+      "id": "eu_oilcap_20221203",
+      "url": "https://www.consilium.europa.eu/en/press/press-releases/2022/12/03/russian-oil-eu-agrees-on-level-of-price-cap/",
+      "title": "EU agrees Russian oil price-cap level",
+      "publisher": "Council of the European Union",
+      "publicationAt": "2022-12-03",
+      "publicationPrecision": "date",
+      "publicationTimezone": null,
+      "revisionAt": null,
+      "originalCaptureHeld": false,
+      "availabilityBasis": "publisher_declared_date",
+      "historicalAvailabilityUnknown": false,
+      "capturedAt": "2026-10-09",
+      "evidence": "opened_primary_page",
+      "rights": "Only factual paraphrases and citations retained; no images or full source text licensed or copied.",
+      "note": "The page prints 17:20 without an explicit timezone. Its date is used conservatively. Transition and exemption provisions remain relevant."
+    },
+    {
+      "id": "eu_oilcap_effective_20221205",
+      "url": "https://austria.representation.ec.europa.eu/news/olembargo-gegen-russland-kraft-getreten-preisobergrenze-60-usd-pro-barrel-rohol-2022-12-05_de",
+      "title": "Oil embargo takes effect; crude-oil capUSD 60",
+      "publisher": "European Commission Representation in Austria",
+      "publicationAt": "2022-12-05",
+      "publicationPrecision": "date",
+      "publicationTimezone": null,
+      "revisionAt": null,
+      "originalCaptureHeld": false,
+      "availabilityBasis": "publisher_declared_date",
+      "historicalAvailabilityUnknown": false,
+      "capturedAt": "2026-10-09",
+      "evidence": "opened_primary_page",
+      "rights": "Only factual paraphrases and citations retained; no images or full source text licensed or copied.",
+      "note": "Official German text inspected and paraphrased in English. Seaborne scope and temporary pipeline exception retained; no blanket ban on all energy."
+    },
+    {
+      "id": "eia_colonial_20210511",
+      "url": "https://www.eia.gov/todayinenergy/detail.php?id=47917",
+      "title": "Cyberattack halts fuel movement on Colonial pipeline",
+      "publisher": "US Energy Information Administration",
+      "publicationAt": "2021-05-11",
+      "publicationPrecision": "date",
+      "publicationTimezone": null,
+      "revisionAt": null,
+      "originalCaptureHeld": false,
+      "availabilityBasis": "publisher_declared_date",
+      "historicalAvailabilityUnknown": false,
+      "capturedAt": "2026-10-09",
+      "evidence": "opened_primary_page",
+      "rights": "Only factual paraphrases and citations retained; no images or full source text licensed or copied.",
+      "note": "The dated article reports main-line status as of May 10. A later map update is excluded. No later restart statement is input."
+    },
+    {
+      "id": "colonial_update_20210517",
+      "url": "https://www.colpipe.com/news-insights/media-resources/post/media-statement-update-colonial-pipeline-system-disruption/",
+      "title": "Colonial Pipeline system-disruption updates",
+      "publisher": "Colonial Pipeline",
+      "publicationAt": "2021-05-17",
+      "publicationPrecision": "date",
+      "publicationTimezone": null,
+      "revisionAt": null,
+      "originalCaptureHeld": false,
+      "availabilityBasis": "publisher_declared_date",
+      "historicalAvailabilityUnknown": false,
+      "capturedAt": "2026-10-09",
+      "evidence": "opened_primary_page",
+      "rights": "Only factual paraphrases and citations retained; no images or full source text licensed or copied.",
+      "note": "The rolling statement retains dated May 13 and May 17 sections. Outcome only. Original May 13 availability is unknown; safe reveal waits after the final May 17 date."
+    }
+  ],
+  "cases": [
+    {
+      "id": "jobs-march-2020",
+      "title": "A strong jobs headline misses a sudden contraction",
+      "domain": "employment",
+      "businessTrack": "service_process",
+      "asOf": "2020-03-06T14:00:00Z",
+      "timezone": "UTC",
+      "preAsOfFacts": [
+        {
+          "id": "jobs-feb",
+          "paraphrase": "February total nonfarm employment increased by 273,000; unemployment was 3.5%.",
+          "eventAt": "2020-02",
+          "eventClockPrecision": "month",
+          "availableAt": "2020-03-06T13:30:00Z",
+          "availabilityClockPrecision": "minute",
+          "sourceId": "bls_jobs_20200306",
+          "availabilityNote": ""
+        }
+      ],
+      "authoredPrediction": {
+        "target": "March 2020 US total nonfarm payroll employment change, in the first BLS release, is below zero.",
+        "windowStart": "2020-03-08T00:00:00Z",
+        "windowEnd": "2020-03-31T23:59:59Z",
+        "windowMeaning": "Target reference period or event deadline; distinct from later publication/reveal clock.",
+        "probability": 0.25,
+        "probability_basis": "authored_demo",
+        "severity": "Illustrative material exposure; not a quantified organization loss.",
+        "threshold": 0.5,
+        "thresholdLockedBeforeReveal": true,
+        "rationale": "An intentionally weak persistence method treats the latest positive payroll headline as dominant. This retrospective authored estimate uses only the stated February release.",
+        "ruleVersion": "demo-method-v1",
+        "authoredDemo": true,
+        "authoredAt": "2026-10-09",
+        "actuallyPredictedHistorically": false
+      },
+      "outcome": {
+        "revealedAt": "2020-04-03T12:30:00Z",
+        "revealBasis": "Only reveal after all retained outcome facts are safely publicly available.",
+        "eventAt": "2020-03",
+        "eventClockPrecision": "month",
+        "targetOccurred": true,
+        "facts": [
+          {
+            "id": "jobs-mar",
+            "paraphrase": "The April 3 release reported a March payroll decline of 701,000.",
+            "eventAt": "2020-03",
+            "eventClockPrecision": "month",
+            "availableAt": "2020-04-03T12:30:00Z",
+            "availabilityClockPrecision": "minute",
+            "sourceId": "bls_jobs_20200403",
+            "availabilityNote": ""
+          }
+        ],
+        "sourceIds": [
+          "bls_jobs_20200403"
+        ]
+      },
+      "evaluation": {
+        "classification": "miss",
+        "threshold": 0.5,
+        "leadTimeHours": null,
+        "leadTimeBasis": "A precise physical-risk onset is not established. Hourly risk-warning lead time is therefore unknown.",
+        "publicationLeadHours": 670.5,
+        "publicationLeadLabel": "Time from replay cutoff to safe public reveal. This is not physical-risk warning lead time.",
+        "limitations": [
+          "Curated retrospective demonstration; probabilities authored with knowledge of history. Not out-of-sample validation or an accuracy estimate.",
+          "The employment survey measures a reference pay period including the12th, not daily onset. The prediction object is the first release vintage."
+        ]
+      },
+      "learningStep": {
+        "error": "Miss: the locked 25% forecast did not raise an alert at the fixed 50% threshold.",
+        "attribution": "Authored demonstration diagnosis, not a proven causal explanation of the historical event.",
+        "methodologyUpdate": "Require a freshness/coverage check and explicit missing-event-evidence state before treating a monthly headline as a current operating signal. Add timely sources only if they were already public at the new cutoff.",
+        "versionBefore": "demo-method-v1",
+        "versionAfter": "demo-method-v2",
+        "updateStatus": "demonstrated_method_edit",
+        "transferCaseId": "port-august-2022",
+        "transferStatus": "scripted_retest_not_validated_improvement",
+        "parameterTraining": "proposed_not_executed",
+        "rl": "not_implemented"
+      }
+    },
+    {
+      "id": "cpi-february-2022",
+      "title": "A rising inflation trend crosses the wrong threshold",
+      "domain": "inflation",
+      "businessTrack": "procurement_invoice_payment",
+      "asOf": "2022-02-10T14:00:00Z",
+      "timezone": "UTC",
+      "preAsOfFacts": [
+        {
+          "id": "cpi-jan",
+          "paraphrase": "January all-items CPI-U rose 7.5% over 12 months, before seasonal adjustment.",
+          "eventAt": "2022-01",
+          "eventClockPrecision": "month",
+          "availableAt": "2022-02-10T13:30:00Z",
+          "availabilityClockPrecision": "minute",
+          "sourceId": "bls_cpi_20220210",
+          "availabilityNote": ""
+        }
+      ],
+      "authoredPrediction": {
+        "target": "February 2022 all-items CPI-U 12-month change, before seasonal adjustment, is at least 8.0% in the next BLS release.",
+        "windowStart": "2022-02-11T00:00:00Z",
+        "windowEnd": "2022-02-28T23:59:59Z",
+        "windowMeaning": "Target reference period or event deadline; distinct from later publication/reveal clock.",
+        "probability": 0.68,
+        "probability_basis": "authored_demo",
+        "severity": "Illustrative material exposure; not a quantified organization loss.",
+        "threshold": 0.5,
+        "thresholdLockedBeforeReveal": true,
+        "rationale": "An authored trend-extrapolation branch assigns 68% to the specific 8.0% threshold. It does not treat high existing inflation as proof that the next threshold will be crossed.",
+        "ruleVersion": "demo-method-v1",
+        "authoredDemo": true,
+        "authoredAt": "2026-10-09",
+        "actuallyPredictedHistorically": false
+      },
+      "outcome": {
+        "revealedAt": "2022-03-10T13:30:00Z",
+        "revealBasis": "Only reveal after all retained outcome facts are safely publicly available.",
+        "eventAt": "2022-02",
+        "eventClockPrecision": "month",
+        "targetOccurred": false,
+        "facts": [
+          {
+            "id": "cpi-feb",
+            "paraphrase": "The March 10 release reported February 12-month CPI-U inflation of 7.9%, below the locked 8.0% target.",
+            "eventAt": "2022-02",
+            "eventClockPrecision": "month",
+            "availableAt": "2022-03-10T13:30:00Z",
+            "availabilityClockPrecision": "minute",
+            "sourceId": "bls_cpi_20220310",
+            "availabilityNote": ""
+          }
+        ],
+        "sourceIds": [
+          "bls_cpi_20220310"
+        ]
+      },
+      "evaluation": {
+        "classification": "false_alarm",
+        "threshold": 0.5,
+        "leadTimeHours": null,
+        "leadTimeBasis": "A precise physical-risk onset is not established. Hourly risk-warning lead time is therefore unknown.",
+        "publicationLeadHours": 671.5,
+        "publicationLeadLabel": "Time from replay cutoff to safe public reveal. This is not physical-risk warning lead time.",
+        "limitations": [
+          "Curated retrospective demonstration; probabilities authored with knowledge of history. Not out-of-sample validation or an accuracy estimate.",
+          "Monthly aggregate partly overlaps the cutoff. The forecast is for the unobserved month-end statistic, not an assertion that every future day has the same rate."
+        ]
+      },
+      "learningStep": {
+        "error": "False alarm: inflation remained high, but the exact forecast target did not occur.",
+        "attribution": "Authored demonstration diagnosis, not a proven causal explanation of the historical event.",
+        "methodologyUpdate": "Keep event thresholds separate from severity; show a near-threshold uncertainty interval instead of turning a directional trend into a confident binary alert.",
+        "versionBefore": "demo-method-v1",
+        "versionAfter": "demo-method-v2",
+        "updateStatus": "demonstrated_method_edit",
+        "transferCaseId": "cpi-june-2023",
+        "transferStatus": "scripted_retest_not_validated_improvement",
+        "parameterTraining": "proposed_not_executed",
+        "rl": "not_implemented"
+      }
+    },
+    {
+      "id": "tyson-recall-2021",
+      "title": "A recall scope expands after the initial announcement",
+      "domain": "food_safety",
+      "businessTrack": "energy_food_waste",
+      "asOf": "2021-07-05T12:00:00Z",
+      "timezone": "UTC",
+      "preAsOfFacts": [
+        {
+          "id": "tyson-initial",
+          "paraphrase": "Tyson announced an approximately 8.5 million-pound recall of frozen fully cooked chicken, including branded and private-label products.",
+          "eventAt": "2021-07-03",
+          "eventClockPrecision": "date",
+          "availableAt": "2021-07-05T12:00:00Z",
+          "availabilityClockPrecision": "conservative_date_bound",
+          "sourceId": "tyson_20210703",
+          "availabilityNote": "Conservative safe bound for the stated publication or revision date. The exact historical publication hour is unknown. See source note."
+        }
+      ],
+      "authoredPrediction": {
+        "target": "USDA publishes a material expansion in the stated scope/poundage of this Tyson recall by July 12,2021.",
+        "windowStart": "2021-07-05T12:00:00Z",
+        "windowEnd": "2021-07-12T23:59:59Z",
+        "windowMeaning": "Target reference period or event deadline; distinct from later publication/reveal clock.",
+        "probability": 0.75,
+        "probability_basis": "authored_demo",
+        "severity": "Illustrative material exposure; not a quantified organization loss.",
+        "threshold": 0.5,
+        "thresholdLockedBeforeReveal": true,
+        "rationale": "A broad distributed-product recall may gain additional affected codes as traceability work continues. The 75% probability is an authored demonstration, not a USDA forecast or a proven contamination probability.",
+        "ruleVersion": "demo-method-v1",
+        "authoredDemo": true,
+        "authoredAt": "2026-10-09",
+        "actuallyPredictedHistorically": false
+      },
+      "outcome": {
+        "revealedAt": "2021-07-10T12:00:00Z",
+        "revealBasis": "Only reveal after all retained outcome facts are safely publicly available.",
+        "eventAt": "2021-07-08",
+        "eventClockPrecision": "date",
+        "targetOccurred": true,
+        "facts": [
+          {
+            "id": "tyson-expansion",
+            "paraphrase": "The July 8 USDA editor note expanded the stated recall from 8,492,832 to 8,955,296 pounds and added date codes.",
+            "eventAt": "2021-07-08",
+            "eventClockPrecision": "date",
+            "availableAt": "2021-07-10T12:00:00Z",
+            "availabilityClockPrecision": "conservative_date_bound",
+            "sourceId": "fsis_tyson_20210708",
+            "availabilityNote": "Conservative safe bound for the stated publication or revision date. The exact historical publication hour is unknown. See source note."
+          }
+        ],
+        "sourceIds": [
+          "fsis_tyson_20210708"
+        ]
+      },
+      "evaluation": {
+        "classification": "hit",
+        "threshold": 0.5,
+        "leadTimeHours": null,
+        "leadTimeBasis": "A precise physical-risk onset is not established. Hourly risk-warning lead time is therefore unknown.",
+        "publicationLeadHours": 120,
+        "publicationLeadLabel": "Time from replay cutoff to safe public reveal. This is not physical-risk warning lead time.",
+        "limitations": [
+          "Curated retrospective demonstration; probabilities authored with knowledge of history. Not out-of-sample validation or an accuracy estimate.",
+          "USDA full page was not retrievable; the official indexed editor-note excerpt was inspected and is explicitly labelled. No historical raw page capture is held."
+        ]
+      },
+      "learningStep": {
+        "error": "Hit for scope expansion only. This does not prove every recalled unit was contaminated or quantify any organization loss.",
+        "attribution": "Authored demonstration diagnosis, not a proven causal explanation of the historical event.",
+        "methodologyUpdate": "Track supplier/ingredient scope and later revisions as separate versions; never retroactively enlarge the initial visible recall.",
+        "versionBefore": "demo-method-v1",
+        "versionAfter": "demo-method-v2",
+        "updateStatus": "demonstrated_method_edit",
+        "transferCaseId": "jif-downstream-2022",
+        "transferStatus": "scripted_retest_not_validated_improvement",
+        "parameterTraining": "proposed_not_executed",
+        "rl": "not_implemented"
+      }
+    },
+    {
+      "id": "cpi-june-2023",
+      "title": "A lower alert probability survives the next inflation release",
+      "domain": "inflation",
+      "businessTrack": "procurement_invoice_payment",
+      "asOf": "2023-06-13T13:00:00Z",
+      "timezone": "UTC",
+      "preAsOfFacts": [
+        {
+          "id": "cpi-may",
+          "paraphrase": "May all-items CPI-U increased 4.0% over 12 months. This release reported a seasonally adjusted May energy-index decline of 3.6%.",
+          "eventAt": "2023-05",
+          "eventClockPrecision": "month",
+          "availableAt": "2023-06-13T12:30:00Z",
+          "availabilityClockPrecision": "minute",
+          "sourceId": "bls_cpi_20230613",
+          "availabilityNote": ""
+        }
+      ],
+      "authoredPrediction": {
+        "target": "June 2023 all-items CPI-U 12-month change before seasonal adjustment is at least 4.0% in the next BLS release.",
+        "windowStart": "2023-06-14T00:00:00Z",
+        "windowEnd": "2023-06-30T23:59:59Z",
+        "windowMeaning": "Target reference period or event deadline; distinct from later publication/reveal clock.",
+        "probability": 0.35,
+        "probability_basis": "authored_demo",
+        "severity": "Illustrative material exposure; not a quantified organization loss.",
+        "threshold": 0.5,
+        "thresholdLockedBeforeReveal": true,
+        "rationale": "The scripted v2 method separates an existing high price level from the probability of the next exact threshold. The stated May energy component is part of the available evidence.",
+        "ruleVersion": "demo-method-v2",
+        "authoredDemo": true,
+        "authoredAt": "2026-10-09",
+        "actuallyPredictedHistorically": false
+      },
+      "outcome": {
+        "revealedAt": "2023-07-12T12:30:00Z",
+        "revealBasis": "Only reveal after all retained outcome facts are safely publicly available.",
+        "eventAt": "2023-06",
+        "eventClockPrecision": "month",
+        "targetOccurred": false,
+        "facts": [
+          {
+            "id": "cpi-june",
+            "paraphrase": "The July 12 release reported June 12-month CPI-U inflation of 3.0%, below the locked 4.0% target.",
+            "eventAt": "2023-06",
+            "eventClockPrecision": "month",
+            "availableAt": "2023-07-12T12:30:00Z",
+            "availabilityClockPrecision": "minute",
+            "sourceId": "bls_cpi_20230712",
+            "availabilityNote": ""
+          }
+        ],
+        "sourceIds": [
+          "bls_cpi_20230712"
+        ]
+      },
+      "evaluation": {
+        "classification": "correct_rejection",
+        "threshold": 0.5,
+        "leadTimeHours": null,
+        "leadTimeBasis": "A precise physical-risk onset is not established. Hourly risk-warning lead time is therefore unknown.",
+        "publicationLeadHours": 695.5,
+        "publicationLeadLabel": "Time from replay cutoff to safe public reveal. This is not physical-risk warning lead time.",
+        "limitations": [
+          "Curated retrospective demonstration; probabilities authored with knowledge of history. Not out-of-sample validation or an accuracy estimate.",
+          "The reference month partly precedes the cutoff, but its month-end statistic is not yet public. No daily inflation onset or customer invoice outcome is asserted."
+        ]
+      },
+      "learningStep": {
+        "error": "Correct rejection at the fixed 50% alert threshold. This does not establish an improved calibrated model.",
+        "attribution": "Authored demonstration diagnosis, not a proven causal explanation of the historical event.",
+        "methodologyUpdate": "Retain threshold specificity and a component/uncertainty review. Do not suppress every future price-risk alert.",
+        "versionBefore": "demo-method-v1",
+        "versionAfter": "demo-method-v2",
+        "updateStatus": "demonstrated_method_edit",
+        "transferCaseId": "eu-oilcap-2022",
+        "transferStatus": "scripted_retest_not_validated_improvement",
+        "parameterTraining": "proposed_not_executed",
+        "rl": "not_implemented"
+      }
+    },
+    {
+      "id": "jif-downstream-2022",
+      "title": "A supplier recall appears in a downstream food notice",
+      "domain": "food_safety",
+      "businessTrack": "energy_food_waste",
+      "asOf": "2022-05-24T12:00:00Z",
+      "timezone": "UTC",
+      "preAsOfFacts": [
+        {
+          "id": "jif-nc",
+          "paraphrase": "The May 23 state notice reports an existing Jif recall for potential Salmonella contamination and multiple peanut-butter product forms.",
+          "eventAt": "2022-05-20",
+          "eventClockPrecision": "date",
+          "availableAt": "2022-05-24T12:00:00Z",
+          "availabilityClockPrecision": "conservative_date_bound",
+          "sourceId": "ncdhhs_jif_20220523",
+          "availabilityNote": "Conservative safe bound for the stated publication or revision date. The exact historical publication hour is unknown. See source note."
+        }
+      ],
+      "authoredPrediction": {
+        "target": "FDA publishes an additional downstream food-product recall linked to the Jif supplier recall, with a declared publish date from May 25 through May 31, 2022.",
+        "windowStart": "2022-05-25T00:00:00Z",
+        "windowEnd": "2022-05-31T23:59:59Z",
+        "windowMeaning": "Target reference period or event deadline; distinct from later publication/reveal clock.",
+        "probability": 0.8,
+        "probability_basis": "authored_demo",
+        "severity": "Illustrative material exposure; not a quantified organization loss.",
+        "threshold": 0.5,
+        "thresholdLockedBeforeReveal": true,
+        "rationale": "A scripted scope-tracing check keeps a supplier recall and downstream applicability separate. The initial state notice supplies recall context; a connection to other products is not yet established by this input.",
+        "ruleVersion": "demo-method-v2",
+        "authoredDemo": true,
+        "authoredAt": "2026-10-09",
+        "actuallyPredictedHistorically": false
+      },
+      "outcome": {
+        "revealedAt": "2022-05-27T12:00:00Z",
+        "revealBasis": "Only reveal after all retained outcome facts are safely publicly available.",
+        "eventAt": "2022-05-25",
+        "eventClockPrecision": "date",
+        "targetOccurred": true,
+        "facts": [
+          {
+            "id": "jif-delmonte",
+            "paraphrase": "FDA published Fresh Del Monte’s notice on May 25. The company’s May 24 recall covered ready-to-eat products containing Jif peanut-butter dip and cited the supplier recall.",
+            "eventAt": "2022-05-25",
+            "eventClockPrecision": "date",
+            "availableAt": "2022-05-27T12:00:00Z",
+            "availabilityClockPrecision": "conservative_date_bound",
+            "sourceId": "fda_delmonte_20220525",
+            "availabilityNote": "Conservative safe bound for the stated publication or revision date. The exact historical publication hour is unknown. See source note."
+          }
+        ],
+        "sourceIds": [
+          "fda_delmonte_20220525"
+        ]
+      },
+      "evaluation": {
+        "classification": "hit",
+        "threshold": 0.5,
+        "leadTimeHours": null,
+        "leadTimeBasis": "A precise physical-risk onset is not established. Hourly risk-warning lead time is therefore unknown.",
+        "publicationLeadHours": 72,
+        "publicationLeadLabel": "Time from replay cutoff to safe public reveal. This is not physical-risk warning lead time.",
+        "limitations": [
+          "Curated retrospective demonstration; probabilities authored with knowledge of history. Not out-of-sample validation or an accuracy estimate.",
+          "The user’s organization has no verified Jif exposure. Date-only source and event precision do not support hourly risk lead time."
+        ]
+      },
+      "learningStep": {
+        "error": "Hit for a later FDA public notice. No contamination onset, illness probability or organization loss is inferred.",
+        "attribution": "Authored demonstration diagnosis, not a proven causal explanation of the historical event.",
+        "methodologyUpdate": "Version supplier and downstream notices separately. Verify an ingredient link before asserting business applicability.",
+        "versionBefore": "demo-method-v1",
+        "versionAfter": "demo-method-v2",
+        "updateStatus": "demonstrated_method_edit",
+        "transferCaseId": "port-september-2022",
+        "transferStatus": "scripted_retest_not_validated_improvement",
+        "parameterTraining": "proposed_not_executed",
+        "rl": "not_implemented"
+      }
+    },
+    {
+      "id": "port-august-2022",
+      "title": "Record cargo obscures a later throughput decline",
+      "domain": "shipping_ports",
+      "businessTrack": "supply_inventory_fulfillment",
+      "asOf": "2022-08-19T12:00:00Z",
+      "timezone": "UTC",
+      "preAsOfFacts": [
+        {
+          "id": "port-july",
+          "paraphrase": "The Port’s August 17 release estimated July throughput at 935,345 TEUs and described record cargo volumes.",
+          "eventAt": "2022-07",
+          "eventClockPrecision": "month",
+          "availableAt": "2022-08-19T12:00:00Z",
+          "availabilityClockPrecision": "conservative_date_bound",
+          "sourceId": "port_july_20220817",
+          "availabilityNote": "Conservative safe bound for the stated publication or revision date. The exact historical publication hour is unknown. See source note."
+        }
+      ],
+      "authoredPrediction": {
+        "target": "The next Port LA August release reports total TEUs at least 10% below the prior July release estimate of 935,345.",
+        "windowStart": "2022-08-20T00:00:00Z",
+        "windowEnd": "2022-08-31T23:59:59Z",
+        "windowMeaning": "Target reference period or event deadline; distinct from later publication/reveal clock.",
+        "probability": 0.2,
+        "probability_basis": "authored_demo",
+        "severity": "Illustrative material exposure; not a quantified organization loss.",
+        "threshold": 0.5,
+        "thresholdLockedBeforeReveal": true,
+        "rationale": "The deliberately weak v1 branch extrapolates the record throughput in the stated July release. The probability is an authored demonstration based on that available signal.",
+        "ruleVersion": "demo-method-v1",
+        "authoredDemo": true,
+        "authoredAt": "2026-10-09",
+        "actuallyPredictedHistorically": false
+      },
+      "outcome": {
+        "revealedAt": "2022-09-17T12:00:00Z",
+        "revealBasis": "Only reveal after all retained outcome facts are safely publicly available.",
+        "eventAt": "2022-08",
+        "eventClockPrecision": "month",
+        "targetOccurred": true,
+        "facts": [
+          {
+            "id": "port-august",
+            "paraphrase": "The September 15 release estimated August at 806,000 TEUs, approximately 13.83% below the prior issued July estimate.",
+            "eventAt": "2022-08",
+            "eventClockPrecision": "month",
+            "availableAt": "2022-09-17T12:00:00Z",
+            "availabilityClockPrecision": "conservative_date_bound",
+            "sourceId": "port_aug_20220915",
+            "availabilityNote": "Derived change: (806,000 − 935,345) / 935,345. The source’s approximately 15% figure is year-on-year."
+          }
+        ],
+        "sourceIds": [
+          "port_aug_20220915"
+        ]
+      },
+      "evaluation": {
+        "classification": "miss",
+        "threshold": 0.5,
+        "leadTimeHours": null,
+        "leadTimeBasis": "A precise physical-risk onset is not established. Hourly risk-warning lead time is therefore unknown.",
+        "publicationLeadHours": 696,
+        "publicationLeadLabel": "Time from replay cutoff to safe public reveal. This is not physical-risk warning lead time.",
+        "limitations": [
+          "Curated retrospective demonstration; probabilities authored with knowledge of history. Not out-of-sample validation or an accuracy estimate.",
+          "TEUs are aggregate activity, not a measure of supplierdelay, customer stockout or causal economic damage. Future daily throughput is not available."
+        ]
+      },
+      "learningStep": {
+        "error": "Miss: the locked 20% forecast remains below the 50% alert threshold although the selected release-vintage decline occurs.",
+        "attribution": "Authored demonstration diagnosis, not a proven causal explanation of the historical event.",
+        "methodologyUpdate": "Check leading inventory and shipment-timing context. Preserve provisional values and the comparison denominator.",
+        "versionBefore": "demo-method-v1",
+        "versionAfter": "demo-method-v2",
+        "updateStatus": "demonstrated_method_edit",
+        "transferCaseId": "port-september-2022",
+        "transferStatus": "scripted_retest_not_validated_improvement",
+        "parameterTraining": "proposed_not_executed",
+        "rl": "not_implemented"
+      }
+    },
+    {
+      "id": "port-september-2022",
+      "title": "Inventory context identifies continued cargo softening",
+      "domain": "shipping_ports",
+      "businessTrack": "supply_inventory_fulfillment",
+      "asOf": "2022-09-17T12:00:00Z",
+      "timezone": "UTC",
+      "preAsOfFacts": [
+        {
+          "id": "port-aug-input",
+          "paraphrase": "The September 15 release estimated August at 806,000 TEUs. It described earlier holiday arrivals, elevated inventory and more cautious retailers.",
+          "eventAt": "2022-08",
+          "eventClockPrecision": "month",
+          "availableAt": "2022-09-17T12:00:00Z",
+          "availabilityClockPrecision": "conservative_date_bound",
+          "sourceId": "port_aug_20220915",
+          "availabilityNote": "Conservative safe bound for the stated publication or revision date. The exact historical publication hour is unknown. See source note."
+        }
+      ],
+      "authoredPrediction": {
+        "target": "The next Port LA September release reports total TEUs at least 10% below the issued August estimate of 806,000.",
+        "windowStart": "2022-09-18T00:00:00Z",
+        "windowEnd": "2022-09-30T23:59:59Z",
+        "windowMeaning": "Target reference period or event deadline; distinct from later publication/reveal clock.",
+        "probability": 0.7,
+        "probability_basis": "authored_demo",
+        "severity": "Illustrative material exposure; not a quantified organization loss.",
+        "threshold": 0.5,
+        "thresholdLockedBeforeReveal": true,
+        "rationale": "The scripted v2 branch adds dated inventory and timing context already public in the September 15 release. This is a manual method edit, not trained transfer learning.",
+        "ruleVersion": "demo-method-v2",
+        "authoredDemo": true,
+        "authoredAt": "2026-10-09",
+        "actuallyPredictedHistorically": false
+      },
+      "outcome": {
+        "revealedAt": "2022-10-21T12:00:00Z",
+        "revealBasis": "Only reveal after all retained outcome facts are safely publicly available.",
+        "eventAt": "2022-09",
+        "eventClockPrecision": "month",
+        "targetOccurred": true,
+        "facts": [
+          {
+            "id": "port-sept",
+            "paraphrase": "The October 19 release reported September at 709,873 TEUs, approximately 11.93% below the issued August estimate.",
+            "eventAt": "2022-09",
+            "eventClockPrecision": "month",
+            "availableAt": "2022-10-21T12:00:00Z",
+            "availabilityClockPrecision": "conservative_date_bound",
+            "sourceId": "port_sept_20221019",
+            "availabilityNote": "Derived change: (709,873 − 806,000) / 806,000. The source’s 21.5% figure compares September 2021."
+          }
+        ],
+        "sourceIds": [
+          "port_sept_20221019"
+        ]
+      },
+      "evaluation": {
+        "classification": "hit",
+        "threshold": 0.5,
+        "leadTimeHours": null,
+        "leadTimeBasis": "A precise physical-risk onset is not established. Hourly risk-warning lead time is therefore unknown.",
+        "publicationLeadHours": 816,
+        "publicationLeadLabel": "Time from replay cutoff to safe public reveal. This is not physical-risk warning lead time.",
+        "limitations": [
+          "Curated retrospective demonstration; probabilities authored with knowledge of history. Not out-of-sample validation or an accuracy estimate.",
+          "A hand-authoredhit after a demonstratedmethod edit does not show validated accuracy improvement."
+        ]
+      },
+      "learningStep": {
+        "error": "Hit on the exact release-to-release 10% threshold. It does not automatically establish supplier-delivery risk.",
+        "attribution": "Authored demonstration diagnosis, not a proven causal explanation of the historical event.",
+        "methodologyUpdate": "Keep aggregate activity separate from business consequences. Require actual shipment and stock records before asserting an organization alert.",
+        "versionBefore": "demo-method-v1",
+        "versionAfter": "demo-method-v2",
+        "updateStatus": "demonstrated_method_edit",
+        "transferCaseId": "eu-cbam-2023",
+        "transferStatus": "scripted_retest_not_validated_improvement",
+        "parameterTraining": "proposed_not_executed",
+        "rl": "not_implemented"
+      }
+    },
+    {
+      "id": "eu-cbam-2023",
+      "title": "An adopted policy becomes a reporting-only obligation",
+      "domain": "policy_trade",
+      "businessTrack": "service_process",
+      "asOf": "2023-04-27T12:00:00Z",
+      "timezone": "UTC",
+      "preAsOfFacts": [
+        {
+          "id": "cbam-adopt",
+          "paraphrase": "The April 25 Council press release announces adopted CBAM legislation and a reporting-only phase through 2025 for specified carbon-intensive sectors.",
+          "eventAt": "2023-04-25",
+          "eventClockPrecision": "date",
+          "availableAt": "2023-04-27T12:00:00Z",
+          "availabilityClockPrecision": "conservative_date_bound",
+          "sourceId": "eu_cbam_adoption_20230425",
+          "availabilityNote": "Conservative safe bound for the stated publication or revision date. The exact historical publication hour is unknown. See source note."
+        }
+      ],
+      "authoredPrediction": {
+        "target": "CBAM’s transitional reporting-only regime enters application by October 31, 2023, without requiring a financial adjustment during that phase.",
+        "windowStart": "2023-04-28T00:00:00Z",
+        "windowEnd": "2023-10-31T23:59:59Z",
+        "windowMeaning": "Target reference period or event deadline; distinct from later publication/reveal clock.",
+        "probability": 0.85,
+        "probability_basis": "authored_demo",
+        "severity": "Illustrative material exposure; not a quantified organization loss.",
+        "threshold": 0.5,
+        "thresholdLockedBeforeReveal": true,
+        "rationale": "An authored schedule-monitoring branch detects a coming reporting obligation after legislative adoption. It forecasts an implementation state, not an optimal business action.",
+        "ruleVersion": "demo-method-v1",
+        "authoredDemo": true,
+        "authoredAt": "2026-10-09",
+        "actuallyPredictedHistorically": false
+      },
+      "outcome": {
+        "revealedAt": "2023-12-24T12:00:00Z",
+        "revealBasis": "Only reveal after all retained outcome facts are safely publicly available.",
+        "eventAt": "2023-10-01",
+        "eventClockPrecision": "date",
+        "targetOccurred": true,
+        "facts": [
+          {
+            "id": "cbam-start",
+            "paraphrase": "The inspected December 22 FAQ says CBAM entered its transitional period on October 1, 2023, with quarterly reporting and no financial adjustment during that period.",
+            "eventAt": "2023-10-01",
+            "eventClockPrecision": "date",
+            "availableAt": "2023-12-24T12:00:00Z",
+            "availabilityClockPrecision": "conservative_date_bound",
+            "sourceId": "eu_cbam_faq_20231222",
+            "availabilityNote": "Safe after the actual December 22 PDF revision, not the November filename. Original availability remains unknown."
+          }
+        ],
+        "sourceIds": [
+          "eu_cbam_faq_20231222"
+        ]
+      },
+      "evaluation": {
+        "classification": "hit",
+        "threshold": 0.5,
+        "leadTimeHours": null,
+        "leadTimeBasis": "A precise physical-risk onset is not established. Hourly risk-warning lead time is therefore unknown.",
+        "publicationLeadHours": 5784,
+        "publicationLeadLabel": "Time from replay cutoff to safe public reveal. This is not physical-risk warning lead time.",
+        "limitations": [
+          "Curated retrospective demonstration; probabilities authored with knowledge of history. Not out-of-sample validation or an accuracy estimate.",
+          "The checked FAQ’s originalavailability is unknown, so the safe reveal uses its December22 revision. This is historicalpolicy demonstration, not currentcompliance advice."
+        ]
+      },
+      "learningStep": {
+        "error": "Hit on reporting-only application. Treating this as an immediate carbon-payment obligation would be a classification error.",
+        "attribution": "Authored demonstration diagnosis, not a proven causal explanation of the historical event.",
+        "methodologyUpdate": "Separate adoption, application, reporting deadlines and financial obligations. Verify jurisdiction and product applicability separately.",
+        "versionBefore": "demo-method-v1",
+        "versionAfter": "demo-method-v2",
+        "updateStatus": "demonstrated_method_edit",
+        "transferCaseId": "eu-oilcap-2022",
+        "transferStatus": "scripted_retest_not_validated_improvement",
+        "parameterTraining": "proposed_not_executed",
+        "rl": "not_implemented"
+      }
+    },
+    {
+      "id": "eu-oilcap-2022",
+      "title": "A scheduled crude-oil rule reaches its effective date",
+      "domain": "policy_trade_energy",
+      "businessTrack": "procurement_invoice_payment",
+      "asOf": "2022-12-04T12:00:00Z",
+      "timezone": "UTC",
+      "preAsOfFacts": [
+        {
+          "id": "oilcap-decision",
+          "paraphrase": "The December 3 Council decision sets a USD 60-per-barrel cap for Russian crude oil, applicable December 5, with transition and exemption provisions.",
+          "eventAt": "2022-12-03",
+          "eventClockPrecision": "date",
+          "availableAt": "2022-12-04T12:00:00Z",
+          "availabilityClockPrecision": "conservative_date_bound",
+          "sourceId": "eu_oilcap_20221203",
+          "availabilityNote": "Conservative safe bound for the stated publication or revision date. The exact historical publication hour is unknown. See source note."
+        }
+      ],
+      "authoredPrediction": {
+        "target": "The announced Russian seaborne crude-oil cap and embargo framework starts application on December 5, 2022, with its stated exceptions.",
+        "windowStart": "2022-12-05T00:00:00Z",
+        "windowEnd": "2022-12-06T23:59:59Z",
+        "windowMeaning": "Target reference period or event deadline; distinct from later publication/reveal clock.",
+        "probability": 0.95,
+        "probability_basis": "authored_demo",
+        "severity": "Illustrative material exposure; not a quantified organization loss.",
+        "threshold": 0.5,
+        "thresholdLockedBeforeReveal": true,
+        "rationale": "The authored 95% forecast demonstrates detecting an announced near-term deadline. It is scheduled-state recognition, not novel model discovery or a price forecast.",
+        "ruleVersion": "demo-method-v2",
+        "authoredDemo": true,
+        "authoredAt": "2026-10-09",
+        "actuallyPredictedHistorically": false
+      },
+      "outcome": {
+        "revealedAt": "2022-12-07T12:00:00Z",
+        "revealBasis": "Only reveal after all retained outcome facts are safely publicly available.",
+        "eventAt": "2022-12-05",
+        "eventClockPrecision": "date",
+        "targetOccurred": true,
+        "facts": [
+          {
+            "id": "oilcap-effective",
+            "paraphrase": "The Commission’s December 5 Austrian article reports the seaborne crude-oil embargo taking effect that day, a USD 60 cap and a temporary pipeline exception.",
+            "eventAt": "2022-12-05",
+            "eventClockPrecision": "date",
+            "availableAt": "2022-12-07T12:00:00Z",
+            "availabilityClockPrecision": "conservative_date_bound",
+            "sourceId": "eu_oilcap_effective_20221205",
+            "availabilityNote": "Conservative safe bound for the stated publication or revision date. The exact historical publication hour is unknown. See source note."
+          }
+        ],
+        "sourceIds": [
+          "eu_oilcap_effective_20221205"
+        ]
+      },
+      "evaluation": {
+        "classification": "hit",
+        "threshold": 0.5,
+        "leadTimeHours": null,
+        "leadTimeBasis": "A precise physical-risk onset is not established. Hourly risk-warning lead time is therefore unknown.",
+        "publicationLeadHours": 72,
+        "publicationLeadLabel": "Time from replay cutoff to safe public reveal. This is not physical-risk warning lead time.",
+        "limitations": [
+          "Curated retrospective demonstration; probabilities authored with knowledge of history. Not out-of-sample validation or an accuracy estimate.",
+          "EUcurrentpolicymayhavelaterchanged; thisonlyreplays the December2022 state. No transaction orfinancialadvice is supplied."
+        ]
+      },
+      "learningStep": {
+        "error": "Hit on the implementation state. Price effects, counterparty eligibility and organization exposure remain unassessed.",
+        "attribution": "Authored demonstration diagnosis, not a proven causal explanation of the historical event.",
+        "methodologyUpdate": "Preserve product scope, transport scope and exceptions. An effective policy is not measured cost or liquidity damage.",
+        "versionBefore": "demo-method-v1",
+        "versionAfter": "demo-method-v2",
+        "updateStatus": "demonstrated_method_edit",
+        "transferCaseId": "eu-cbam-2023",
+        "transferStatus": "scripted_retest_not_validated_improvement",
+        "parameterTraining": "proposed_not_executed",
+        "rl": "not_implemented"
+      }
+    },
+    {
+      "id": "colonial-restart-2021",
+      "title": "A restart refutes a longer full-outage warning",
+      "domain": "energy_supply",
+      "businessTrack": "energy_food_waste",
+      "asOf": "2021-05-12T12:00:00Z",
+      "timezone": "UTC",
+      "preAsOfFacts": [
+        {
+          "id": "colonial-outage",
+          "paraphrase": "The May 11 EIA article says Colonial’s main lines had not resumed as of May 10. The company hoped to restore service by the end of the week.",
+          "eventAt": "2021-05-10",
+          "eventClockPrecision": "date",
+          "availableAt": "2021-05-12T12:00:00Z",
+          "availabilityClockPrecision": "conservative_date_bound",
+          "sourceId": "eia_colonial_20210511",
+          "availabilityNote": "Conservative safe bound for the stated publication or revision date. The exact historical publication hour is unknown. See source note."
+        }
+      ],
+      "authoredPrediction": {
+        "target": "Colonial’s entire pipeline system has not restarted deliveries by May 17, 2021.",
+        "windowStart": "2021-05-12T12:00:00Z",
+        "windowEnd": "2021-05-17T23:59:59Z",
+        "windowMeaning": "Target reference period or event deadline; distinct from later publication/reveal clock.",
+        "probability": 0.65,
+        "probability_basis": "authored_demo",
+        "severity": "Illustrative material exposure; not a quantified organization loss.",
+        "threshold": 0.5,
+        "thresholdLockedBeforeReveal": true,
+        "rationale": "The authored baseline overweights the reported outage duration and assigns 65% to no restart by May 17, while retaining the stated expectation of restoration by the end of the week.",
+        "ruleVersion": "demo-method-v1",
+        "authoredDemo": true,
+        "authoredAt": "2026-10-09",
+        "actuallyPredictedHistorically": false
+      },
+      "outcome": {
+        "revealedAt": "2021-05-19T12:00:00Z",
+        "revealBasis": "Only reveal after all retained outcome facts are safely publicly available.",
+        "eventAt": "2021-05-13",
+        "eventClockPrecision": "date",
+        "targetOccurred": false,
+        "facts": [
+          {
+            "id": "colonial-restarted",
+            "paraphrase": "Colonial’s May 13 statement reports its entire system restarted and deliveries commenced to all served markets. The May 17 update reports normal pipeline levels while market catch-up still takes time.",
+            "eventAt": "2021-05-13",
+            "eventClockPrecision": "date",
+            "availableAt": "2021-05-19T12:00:00Z",
+            "availabilityClockPrecision": "conservative_date_bound",
+            "sourceId": "colonial_update_20210517",
+            "availabilityNote": "Safe after the final May 17 statement date. The original May 13 publication hour is not held."
+          }
+        ],
+        "sourceIds": [
+          "colonial_update_20210517"
+        ]
+      },
+      "evaluation": {
+        "classification": "false_alarm",
+        "threshold": 0.5,
+        "leadTimeHours": null,
+        "leadTimeBasis": "A precise physical-risk onset is not established. Hourly risk-warning lead time is therefore unknown.",
+        "publicationLeadHours": 168,
+        "publicationLeadLabel": "Time from replay cutoff to safe public reveal. This is not physical-risk warning lead time.",
+        "limitations": [
+          "Curated retrospective demonstration; probabilities authored with knowledge of history. Not out-of-sample validation or an accuracy estimate.",
+          "Thecompanyisaprimaryreporterofitsoperations,notindependentassuranceofeverymarket’sfuelavailability."
+        ]
+      },
+      "learningStep": {
+        "error": "False alarm for a complete system outage. A restart does not prove every retail station’s fuel supply has normalized.",
+        "attribution": "Authored demonstration diagnosis, not a proven causal explanation of the historical event.",
+        "methodologyUpdate": "Separate infrastructure operation from downstream delivery and retail stock. Track restoration milestones using their own publication clocks.",
+        "versionBefore": "demo-method-v1",
+        "versionAfter": "demo-method-v2",
+        "updateStatus": "demonstrated_method_edit",
+        "transferCaseId": "port-september-2022",
+        "transferStatus": "scripted_retest_not_validated_improvement",
+        "parameterTraining": "proposed_not_executed",
+        "rl": "not_implemented"
+      }
+    }
+  ],
+  "sourceVerification": "Facts were checked through primary publisher pages or an explicitly labelled primary indexed excerpt on 2026-10-09. Contemporaneous raw snapshots are not held."
+}
