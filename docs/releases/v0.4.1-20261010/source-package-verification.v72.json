@@ -1,0 +1,101 @@
+{
+  "schema_version": "dormathon.source-package-verification.v0.4.1-v72",
+  "reported_at": "2026-10-10T05:37:26.362053+00:00",
+  "source_commit": "b0611be16b3ea2c623f22e043ff18189428d6216",
+  "previous_source_commit": "7ab8622d73c9fc916573e9e74da47b110abc31fd",
+  "target_repository": "Taotern/T-Dormathon",
+  "repository_visibility": "private",
+  "branch": "main",
+  "expected_private_main_parent": "a458991f3821c7d73f40c7f9ceb46d9df4d9d506",
+  "source_files": 968,
+  "canonical_tracked_files": 969,
+  "excluded_tracked_inputs": {
+    "docs/sovern-advisor-v0.4.1/test-results.txt": "Dated upstream raw test execution log; not runtime source. Its original digest remains in the upstream provenance manifest."
+  },
+  "changed_source_paths": [
+    "static/mrdiy-workspace.js",
+    "tests/mrdiy-client-behavior.test.mjs"
+  ],
+  "fixes": [
+    "Cold Home remains neutral until actual Advisor configuration establishes activation; no false unavailable label.",
+    "Case selector synchronizes visible case and URL, preserves separate unsaved drafts and global explanation intent, and supports consistent room-level Back/Forward."
+  ],
+  "history_semantics": "Case selection replaces the current URL/history entry. Back/Forward restores room-level navigation; it does not step through every case selection.",
+  "validation": {
+    "fresh_publisher": {
+      "focused_passed": 31,
+      "failed": 0,
+      "command": "node --test --test-concurrency=1 tests/mrdiy-client-behavior.test.mjs tests/call-client-behavior.test.mjs tests/call-navigation-style.test.mjs tests/sovern-advisor-app.test.mjs",
+      "additional_client_API_smoke_passed": 18,
+      "exact_assets_verified": 11,
+      "worker_sha256": "3a396a278e0fe98b79d4ef8daa10a0b06c3b10500236569d0876056ad4921ee4",
+      "syntax_and_diff_checks_passed": true,
+      "logs_sha256": {
+        "artifact-check.log": "03f17c313e660c7647ca7beb3a848f2522cb3b2f9ef8b1af4bbe2ddfa048e2cc",
+        "build.log": "41d6eccdbdd03db4518a33a47bf85fc66209572bebe1189550e3456c115b1411",
+        "client-api-smoke18.log": "1a1bf999217f8dc5b7dcd2fdd73c57193c178c64021ec0e0bd0ef2a2f69a32db",
+        "focused-tests.log": "05274f8446f37a61f735549700bf8155f22dceaed5a402e4c88d48e8829cf128"
+      }
+    },
+    "canonical_receipt_sha256": "48ebde6171997c06b24099fc56010c51c1fa67ff0f8612ae8d35a150f18b6125",
+    "full_suite_current_patch_run": false,
+    "previous_v69_full_passed": 612,
+    "unchanged_v71_backend_focused_passed": 103,
+    "scope": "Current two-file client delta only; backend, prompt/output guards, applied schema and estimated-spend ledger are unchanged. No full-suite rerun or actual provider call was made by this packaging check."
+  },
+  "deployment": {
+    "site_version": 72,
+    "source_commit": "b0611be16b3ea2c623f22e043ff18189428d6216",
+    "saved_site_version_id": "appgprj_6ac6c8d4361c81919d4a8dffabfab361~appgver_693eb2c5da6881919cb665ad8b0467ec",
+    "deployment_id": "appgdep_6ac9cd69515c819196e1f89eccaed335",
+    "status": "SUCCESS",
+    "completed_at": "2026-10-10T05:30:22Z",
+    "environment_revision": 3,
+    "audience": "public_unchanged",
+    "auxiliary_archive_sha256_observed": "6ca3982fbd2e93453740cb01ed9f2ef086db80a14152809a78f0843562cde1af",
+    "auxiliary_archive_digest_supplied_by_owner": "a764ee7e15924d7d13e5f17e359611c3ae29e8622ecf587c3b4942a3fc98e8b9",
+    "auxiliary_archive_identity_verified": false,
+    "archive_note": "Quoted auxiliary archive digest differs from the local file. Not used to establish this Git source-package identity; canonical source b0611be1 and its exact matching Worker are verified separately.",
+    "evidence": "Native Site result supplied by its publishing owner; no Site action was performed by this source-packaging check."
+  },
+  "targeted_mounted_QA": {
+    "receipt_sha256": "5b61ad2256cd3b89c991e8e216ec99063efdea935fb499b9b464c09621c6bd73",
+    "scope": "Fresh cloud-browser tab, 05:30-05:32 UTC on v72",
+    "cold_Home_neutral": true,
+    "SC01_SC16_visible_case_and_URL_sync": true,
+    "separate_unsaved_drafts_preserved": true,
+    "global_explanation_intent_preserved": true,
+    "room_Back_Forward_consistent": true,
+    "case_selection_history_mode": "replace",
+    "provider_calls": 0,
+    "saved_records_created": 0,
+    "reservations_created": 0
+  },
+  "provider_evidence_inherited": {
+    "record": "source-package-verification.v71.json",
+    "scope": "Actual v70 SC01 conditional and SC16 missing-input live explanations plus identical no-charge SC01 replay remain the two tested scenarios. No new provider-format/budget/backend change on v72 and no all-40 live validation is implied."
+  },
+  "budget_controls_unchanged": {
+    "estimated_app_cap_myr": 5,
+    "reservation_myr": 0.5,
+    "global_rate_per_minute": 2,
+    "lifetime_attempt_ceiling": 100,
+    "unknown_and_pending_halt": true,
+    "provider_hard_cap_verified": false,
+    "ledger_reset": false
+  },
+  "limits": [
+    "All operational cases are synthetic; no real company incident, observed saving or company forecasting accuracy is established.",
+    "The separate original UK-retailer benchmark retains its 103.41% WAPE and high-error warning.",
+    "Two live provider scenarios are not a semantic truth verifier or validation of every model response.",
+    "RM5 is the app estimate/ledger constraint, not a verified provider-enforced hard cap."
+  ],
+  "preserved_doc_pins": {
+    "docs/specs/PRODUCT_SPEC_v0.3.1_ZH_EN.md": "4d065b8544ca6e282eac35d7b2d7dcb0075a1e58d892e7ba11fac913828d79fd",
+    "docs/TEAM_HANDOFF_2026-10-09_ZH_EN.md": "4d745b7fd8219ec32de13978bf16ad7f21b8f5380986922266795f595f661dd0",
+    "docs/specs/T-Dormathon_产品规格评审稿_v0.3.md": "754e93412992086881f5d6c50f6b22668bc365eda9e463a5eb32b5e906e8f38e",
+    "docs/specs/T-Dormathon_产品规格评审稿_v0.3.docx": "1cc7d1f1db908b1c0d9a1634d00f4e178c0a1c98f1d59e00085798d95411a64f",
+    "contracts/prototype/port-examples.v0.2.json": "f3770bb39295614e288bfbda4031f82c5c218480e7f6b18baffd542858da3b59"
+  },
+  "secrets_and_outputs": "No native environment values, billing identifier, credentials, raw provider response/reasoning, raw UCI transaction data, logs, screenshots, runtime databases or build outputs included."
+}

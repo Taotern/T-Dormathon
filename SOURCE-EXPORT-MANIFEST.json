@@ -1,22 +1,22 @@
 {
   "schema_version": "dormathon-clean-source-export.v1",
-  "source_commit": "7ab8622d73c9fc916573e9e74da47b110abc31fd",
-  "site_version": 71,
+  "source_commit": "b0611be16b3ea2c623f22e043ff18189428d6216",
+  "site_version": 72,
   "site_audience": "public_unchanged",
   "repository_visibility": "private",
   "canonical_tracked_files": 969,
   "source_files": 968,
-  "delivered_payload_files": 971,
+  "delivered_payload_files": 972,
   "excluded_tracked_inputs": {
     "docs/sovern-advisor-v0.4.1/test-results.txt": "Dated upstream raw test execution log; not runtime source. Its original digest remains in the upstream provenance manifest."
   },
-  "payload_inventory_sha256": "3a89859a4549449b4645bb9bb62995a86cd549fc2a586bd96ec7cd21dae40c99",
+  "payload_inventory_sha256": "7a9b9473f03a4dc61d463b90d15c8c07498615b5ec0b2bb46706a53062eb64d6",
   "packaging_overlays": [
     "README.md"
   ],
-  "runtime_commit": "7ab8622d73c9fc916573e9e74da47b110abc31fd",
-  "expected_private_main_parent": "6c20caa247742b7a8dcf9061b16cce8b04e6dbd2",
-  "fresh_consumer_receipt_sha256": "b5b6d03db503c45866f55673bb44c41194e0b94e1cf410c95ed9444a1f8aa21d",
+  "runtime_commit": "b0611be16b3ea2c623f22e043ff18189428d6216",
+  "expected_private_main_parent": "a458991f3821c7d73f40c7f9ceb46d9df4d9d506",
+  "fresh_consumer_receipt_sha256": "80f8db7c0ccca57cdc153c99eb27013d2652f50f76fbee3bd37bf734ef26569f",
   "preserved_doc_pins": {
     "docs/specs/PRODUCT_SPEC_v0.3.1_ZH_EN.md": "4d065b8544ca6e282eac35d7b2d7dcb0075a1e58d892e7ba11fac913828d79fd",
     "docs/TEAM_HANDOFF_2026-10-09_ZH_EN.md": "4d745b7fd8219ec32de13978bf16ad7f21b8f5380986922266795f595f661dd0",
@@ -32,7 +32,8 @@
   "added_packaging_records": [
     "docs/releases/v0.4.1-20261010/source-package-verification.json",
     "docs/releases/v0.4.1-20261010/source-package-verification.v65.json",
-    "docs/releases/v0.4.1-20261010/source-package-verification.v71.json"
+    "docs/releases/v0.4.1-20261010/source-package-verification.v71.json",
+    "docs/releases/v0.4.1-20261010/source-package-verification.v72.json"
   ],
   "files": [
     {
@@ -55,8 +56,8 @@
     },
     {
       "path": "README.md",
-      "sha256": "7203a0d1a2de6f618fbe3ab0e1d8bd63a261ebbadfaac9a098eabe297736931a",
-      "size_bytes": 20730,
+      "sha256": "20aeb39b70734309d58e840d24a4645231dd69f8676153154c24da15054f3bf6",
+      "size_bytes": 20698,
       "git_mode": "100644",
       "canonical_sha256": "763eb6af72db16f6af82e68248548325770a70d566f7211b06786cf3ea072142",
       "packaging_overlay": "README checkpoint note only; application code unchanged"
@@ -2197,6 +2198,13 @@
       "path": "docs/releases/v0.4.1-20261010/source-package-verification.v71.json",
       "sha256": "b5b6d03db503c45866f55673bb44c41194e0b94e1cf410c95ed9444a1f8aa21d",
       "size_bytes": 7260,
+      "git_mode": "100644",
+      "provenance": "GitHub packaging verification record"
+    },
+    {
+      "path": "docs/releases/v0.4.1-20261010/source-package-verification.v72.json",
+      "sha256": "80f8db7c0ccca57cdc153c99eb27013d2652f50f76fbee3bd37bf734ef26569f",
+      "size_bytes": 6195,
       "git_mode": "100644",
       "provenance": "GitHub packaging verification record"
     },
@@ -4686,8 +4694,8 @@
     },
     {
       "path": "static/mrdiy-workspace.js",
-      "sha256": "c80a375cadcad6b8fc17f720c464d2d4b42c52bc16a15b2bf1a05903c75ad8bf",
-      "size_bytes": 45656,
+      "sha256": "9dea82f0606093c5f826917bc073ec21359f46d9ea368a1425863264a212197e",
+      "size_bytes": 45968,
       "git_mode": "100644"
     },
     {
@@ -5334,8 +5342,8 @@
     },
     {
       "path": "tests/mrdiy-client-behavior.test.mjs",
-      "sha256": "354550823cb4be0a3c03eeff194b0691b5dd38edd5501c6a48825a6a5c4ff775",
-      "size_bytes": 17499,
+      "sha256": "d07868ff23fdaab1ae29b4727f4f2799fdbc45a88a02cca5fd610b7e9813132e",
+      "size_bytes": 21030,
       "git_mode": "100644"
     },
     {
