@@ -1,0 +1,128 @@
+{
+  "schema_version": "dormathon.final-presentation-backup.v76",
+  "packaged_at": "2026-10-10T07:42:48.406764+00:00",
+  "edition": "v76",
+  "target_repository": "Taotern/T-Dormathon",
+  "repository_visibility": "private",
+  "branch": "main",
+  "expected_private_main_parent": "1beb2a5d78add6765743775e8bd07b064e60abc1",
+  "source_commit": "b100ca9f157fe03946e1b87a48bf4514a7c862d0",
+  "live_site_version": 76,
+  "embedded_screenshot_site_versions": [
+    76
+  ],
+  "original_delivery_receipt_sha256": "20f61f2aa9ebbb776b0318c17c5e8f48e733b3cde987201afca1ee5a95a3a5d9",
+  "receipt_transformation": "Portable relative names replace executor-local paths; final artifact hashes and byte sizes are unchanged. Raw QA paths and rendered artifacts are omitted.",
+  "pitch_minutes": 3,
+  "Q_and_A_minutes": 2,
+  "review_MYT": "2026-10-10T20:00:00+08:00",
+  "submission_deadline_MYT": "2026-10-11T09:00:00+08:00",
+  "slides": {
+    "total": 18,
+    "visible": 6,
+    "evidence_appendices": 8,
+    "screenshot_fallbacks": 4
+  },
+  "documents": {
+    "English_pages": 5,
+    "Chinese_pages": 3
+  },
+  "spoken_script_words": 273,
+  "files": [
+    {
+      "path": "docs/presentation/v76/Dormathon_3_Minute_Pitch_EN_v76.pptx",
+      "bytes": 686145,
+      "sha256": "381bc65d5e0cb7bd82bb79f8f7d00b348b6b383be884bb4a35a4083d03b238d4"
+    },
+    {
+      "path": "docs/presentation/v76/Dormathon_Pitch_and_Demo_Runbook_EN_v76.docx",
+      "bytes": 42930,
+      "sha256": "6ffddc23e6ef9e0130e46668597db3dbfd1f7dab1949e76e98df51cecbd6c9d9"
+    },
+    {
+      "path": "docs/presentation/v76/Dormathon_Presenter_Guide_ZH_v76.docx",
+      "bytes": 41238,
+      "sha256": "8c0cca0c28ee89184ced0d94032a64ec6215ef14cbe51dad4a9a238079453baa"
+    },
+    {
+      "path": "docs/presentation/v76/Dormathon_Pitch_and_Demo_Runbook_EN_v76.md",
+      "bytes": 12266,
+      "sha256": "b78b905080d1182d95f9c2a38274ddb75f722299f6103078601c76078af08b7a"
+    },
+    {
+      "path": "docs/presentation/v76/Dormathon_Presenter_Guide_ZH_v76.md",
+      "bytes": 6588,
+      "sha256": "faf9939a2e27596d3747effe76f36d781e8a00354dced53eca06c0019f8f8b60"
+    },
+    {
+      "path": "docs/presentation/v76/README.md",
+      "bytes": 4453,
+      "sha256": "c1c005c233e538ae1cc64754a333bf493bc89a3497b0035240afb381a80cfb66"
+    }
+  ],
+  "omitted_redundant_ZIP": {
+    "file": "Dormathon_Portable_Presentation_Package_v76.zip",
+    "bytes": 1174384,
+    "sha256": "beaa94af3971cbd1a8a54622beaf5999c9fe162545b54538c15efffb90a9731f"
+  },
+  "author_validation": {
+    "all_final_slides_rendered": 18,
+    "all_final_slides_visually_inspected": true,
+    "English_pages_inspected": 5,
+    "Chinese_pages_inspected": 3,
+    "unchanged_renders_compared_by_sha256": true,
+    "structural_package": "pass",
+    "native_charts": 2,
+    "native_tables": 1,
+    "chart_workbooks_verified": 2,
+    "desktop_PowerPoint_tested": false,
+    "both_source_chart_workbooks_preserved": true,
+    "source_markdown_matches_DOCX": true,
+    "zip_integrity": "pass",
+    "prior_v74_hashes_unchanged": true
+  },
+  "publisher_Office_integrity": [
+    {
+      "file": "Dormathon_3_Minute_Pitch_EN_v76.pptx",
+      "ZIP_CRC_ok": true,
+      "slides": 18,
+      "visible_main": 6,
+      "hidden": 12,
+      "native_charts": 2,
+      "native_tables": 1,
+      "prior_chart_XML_and_workbooks_byte_preserved": true,
+      "VBA_projects": 0
+    },
+    {
+      "file": "Dormathon_Pitch_and_Demo_Runbook_EN_v76.docx",
+      "ZIP_CRC_ok": true,
+      "review_comments": 0,
+      "tracked_changes": 0,
+      "VBA_projects": 0
+    },
+    {
+      "file": "Dormathon_Presenter_Guide_ZH_v76.docx",
+      "ZIP_CRC_ok": true,
+      "review_comments": 0,
+      "tracked_changes": 0,
+      "VBA_projects": 0
+    }
+  ],
+  "author_validation_report_sha256": "dddb8d683c61b830f27232dbe2b7a386bee9e97468a3a67131257aacd2d21064",
+  "hosted_QA_report_sha256": "1ad9c6509134c5588799436ae9ace41f5255fcfe8f350e2523967e4cf09800e9",
+  "source_Markdown_author_confirmed": true,
+  "desktop_PowerPoint_tested": false,
+  "prior_editions_byte_preserved": [
+    "v74",
+    "v71-v72"
+  ],
+  "application_code_changed": false,
+  "application_tests_rerun_for_presentation_only_backup": false,
+  "evidence_boundary": "Zero storage accesses were proved for the local rehearsal-service probe. Hosted QA made no new saved choice, reservation or paid call; general HTTP bootstrap database activity was not audited.",
+  "limits": [
+    "Saved public event evidence does not establish company exposure/impact; route and total delay are fictional explicit assumptions.",
+    "Plan costs/outcomes are conditional simulations; lower sequential cost has a shortage tradeoff and1.3-hour continuity gap. No actual savings, service completion or execution.",
+    "Scenario weights/carrier observation model are assumed; no calibrated probabilities, trained RL/MCTS, global optimum or real company validation.",
+    "Separate exploratory benchmark targets/prior exposure remain explicit; no all-40 live model validation or provider-enforced budget cap established."
+  ]
+}

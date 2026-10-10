@@ -7,22 +7,38 @@
     "README.md"
   ],
   "presentation_package": {
-    "edition": "v74",
+    "edition": "v76",
     "files": [
-      "docs/presentation/v74/Dormathon_3_Minute_Pitch_EN_v74.pptx",
-      "docs/presentation/v74/Dormathon_Pitch_and_Demo_Runbook_EN_v74.docx",
-      "docs/presentation/v74/Dormathon_Presenter_Guide_ZH_v74.docx",
-      "docs/presentation/v74/Dormathon_Pitch_and_Demo_Runbook_EN_v74.md",
-      "docs/presentation/v74/Dormathon_Presenter_Guide_ZH_v74.md",
-      "docs/presentation/v74/README.md",
-      "docs/presentation/v74/delivery-receipt.json"
+      "docs/presentation/v76/Dormathon_3_Minute_Pitch_EN_v76.pptx",
+      "docs/presentation/v76/Dormathon_Pitch_and_Demo_Runbook_EN_v76.docx",
+      "docs/presentation/v76/Dormathon_Presenter_Guide_ZH_v76.docx",
+      "docs/presentation/v76/Dormathon_Pitch_and_Demo_Runbook_EN_v76.md",
+      "docs/presentation/v76/Dormathon_Presenter_Guide_ZH_v76.md",
+      "docs/presentation/v76/README.md",
+      "docs/presentation/v76/delivery-receipt.json"
     ],
-    "receipt_path": "docs/presentation/v74/delivery-receipt.json",
-    "receipt_sha256": "f10a49ab9156191754889cd15f219f5bbc1f0718f588402d7cc907b3f9ba147b",
-    "original_delivery_receipt_sha256": "69573d4ca6399332528594b9322f02dd257100900e6fe5ef63a32baf7754c7c0",
+    "receipt_path": "docs/presentation/v76/delivery-receipt.json",
+    "receipt_sha256": "c88c55e41d976c5af4e62d5c769a46e8ceb8d3bee6770df0baf27902b9e59675",
+    "original_delivery_receipt_sha256": "20f61f2aa9ebbb776b0318c17c5e8f48e733b3cde987201afca1ee5a95a3a5d9",
     "presentation_application_code_changed": false
   },
   "retained_presentation_packages": [
+    {
+      "edition": "v74",
+      "files": [
+        "docs/presentation/v74/Dormathon_3_Minute_Pitch_EN_v74.pptx",
+        "docs/presentation/v74/Dormathon_Pitch_and_Demo_Runbook_EN_v74.docx",
+        "docs/presentation/v74/Dormathon_Presenter_Guide_ZH_v74.docx",
+        "docs/presentation/v74/Dormathon_Pitch_and_Demo_Runbook_EN_v74.md",
+        "docs/presentation/v74/Dormathon_Presenter_Guide_ZH_v74.md",
+        "docs/presentation/v74/README.md",
+        "docs/presentation/v74/delivery-receipt.json"
+      ],
+      "receipt_path": "docs/presentation/v74/delivery-receipt.json",
+      "receipt_sha256": "f10a49ab9156191754889cd15f219f5bbc1f0718f588402d7cc907b3f9ba147b",
+      "original_delivery_receipt_sha256": "69573d4ca6399332528594b9322f02dd257100900e6fe5ef63a32baf7754c7c0",
+      "presentation_application_code_changed": false
+    },
     {
       "edition": "v71-v72",
       "files": [
@@ -46,8 +62,8 @@
   "repository_visibility": "private",
   "canonical_tracked_files": 1003,
   "source_files": 1002,
-  "delivered_payload_files": 1024,
-  "payload_inventory_sha256": "e250d97022ba53ab486af72638c3a6093a1271d405d66fa0aa57f2e315cb706f",
+  "delivered_payload_files": 1031,
+  "payload_inventory_sha256": "902046b757bcac807e21b02487f924906f028d965a9008b4adf0bb632bcdb05a",
   "source_tree": "22a1a294a511603923177e7caaacda96c535d828",
   "assets": [
     {
@@ -70,8 +86,8 @@
     },
     {
       "path": "README.md",
-      "sha256": "65f6d315f50f66b1aac274a468bd287f3c2b1e12e8da5d532b69bd8153bfa575",
-      "size_bytes": 31119,
+      "sha256": "bc11e0b8284d5a9bbcb3780aeb9778bf74f580d36122d069793a9e0e1275ba1b",
+      "size_bytes": 32333,
       "git_mode": "100644",
       "canonical_sha256": "763eb6af72db16f6af82e68248548325770a70d566f7211b06786cf3ea072142",
       "packaging_overlay": "Dated README source/presentation checkpoint notes only."
@@ -2309,6 +2325,55 @@
       "size_bytes": 4287,
       "git_mode": "100644",
       "provenance": "Final v74 presentation deliverable"
+    },
+    {
+      "path": "docs/presentation/v76/Dormathon_3_Minute_Pitch_EN_v76.pptx",
+      "sha256": "381bc65d5e0cb7bd82bb79f8f7d00b348b6b383be884bb4a35a4083d03b238d4",
+      "size_bytes": 686145,
+      "git_mode": "100644",
+      "provenance": "Final owner-delivered v76 presentation; documentation-only addition"
+    },
+    {
+      "path": "docs/presentation/v76/Dormathon_Pitch_and_Demo_Runbook_EN_v76.docx",
+      "sha256": "6ffddc23e6ef9e0130e46668597db3dbfd1f7dab1949e76e98df51cecbd6c9d9",
+      "size_bytes": 42930,
+      "git_mode": "100644",
+      "provenance": "Final owner-delivered v76 presentation; documentation-only addition"
+    },
+    {
+      "path": "docs/presentation/v76/Dormathon_Pitch_and_Demo_Runbook_EN_v76.md",
+      "sha256": "b78b905080d1182d95f9c2a38274ddb75f722299f6103078601c76078af08b7a",
+      "size_bytes": 12266,
+      "git_mode": "100644",
+      "provenance": "Final owner-delivered v76 presentation; documentation-only addition"
+    },
+    {
+      "path": "docs/presentation/v76/Dormathon_Presenter_Guide_ZH_v76.docx",
+      "sha256": "8c0cca0c28ee89184ced0d94032a64ec6215ef14cbe51dad4a9a238079453baa",
+      "size_bytes": 41238,
+      "git_mode": "100644",
+      "provenance": "Final owner-delivered v76 presentation; documentation-only addition"
+    },
+    {
+      "path": "docs/presentation/v76/Dormathon_Presenter_Guide_ZH_v76.md",
+      "sha256": "faf9939a2e27596d3747effe76f36d781e8a00354dced53eca06c0019f8f8b60",
+      "size_bytes": 6588,
+      "git_mode": "100644",
+      "provenance": "Final owner-delivered v76 presentation; documentation-only addition"
+    },
+    {
+      "path": "docs/presentation/v76/README.md",
+      "sha256": "c1c005c233e538ae1cc64754a333bf493bc89a3497b0035240afb381a80cfb66",
+      "size_bytes": 4453,
+      "git_mode": "100644",
+      "provenance": "Final owner-delivered v76 presentation; documentation-only addition"
+    },
+    {
+      "path": "docs/presentation/v76/delivery-receipt.json",
+      "sha256": "c88c55e41d976c5af4e62d5c769a46e8ceb8d3bee6770df0baf27902b9e59675",
+      "size_bytes": 5040,
+      "git_mode": "100644",
+      "provenance": "Final owner-delivered v76 presentation; documentation-only addition"
     },
     {
       "path": "docs/provenance/local-collector-1.2-input-manifest.sha256",

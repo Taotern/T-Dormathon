@@ -8,6 +8,12 @@ The user and assistant own remaining integration; Felix is not a dependency. FR1
 
 Current source is static/mrdiy-workspace.js and worker/mrdiy-*.js, with the retained source browser and legacy capabilities still available. Portable benchmark evidence is in docs/predictive-v0.4.1/. Operational package evidence is in docs/mrdiy-v0.4.1/. Tests exercise an in-memory node:sqlite D1-compatible adapter; actual hosted persistence, deployment and browser visual acceptance are separate gates.
 
+### Current presentation · Site v76 story · 10 October 2026
+
+Use the final [v76 presentation](docs/presentation/v76/README.md) for the 3-minute pitch and 2-minute Q&A. It has 18 slides: 6 main + 8 appendices + 4 actual v76 screenshot fallbacks, plus a 5-page English runbook, 3-page Chinese guide and matching Markdown sources. The story follows saved official warning evidence, a confirmed fictional delay, dated shortage, a feasible constrained response and optional observation-conditioned replanning. Cost/shortage tradeoffs, assumed weights and the residual 1.3-hour gap remain explicit. All final slide/page renders were inspected; native desktop PowerPoint remains untested.
+
+The [delivery receipt](docs/presentation/v76/delivery-receipt.json) pins the exact Office bytes. The [v74](docs/presentation/v74/README.md) and [original](docs/presentation/README.md) packages remain byte-identical fallbacks. This increment changes presentation/docs only; source remains `b100ca9f157fe03946e1b87a48bf4514a7c862d0`, Site v76. Review: 10 October 20:00 MYT; submission: 11 October 09:00 MYT. QA's zero-storage-access proof is local to the rehearsal-service probe; no general HTTP bootstrap write audit is claimed.
+
 ### Private GitHub source checkpoint · native Site v76 · 10 October 2026
 
 Current source is `b100ca9f157fe03946e1b87a48bf4514a7c862d0`, deployed as Site v76. Strategy adds an optional seven-day, two-decision rehearsal: one common initial action, then a day-2 action conditioned on elapsed fulfilled synthetic sales/receipts and an explicitly assumed carrier update. Identical observations receive identical actions; future demand and unserved latent demand are excluded from the decision information. Prior stock, PO reserves, cash, fuel, staff and energy commitments carry forward without reset. Opening the disclosure performs no calculation; running remains an explicit read-only click.
