@@ -16,6 +16,10 @@ The separate publisher checkout passes 31 current affected tests, 18 additional 
 
 The optional explicit-click GPT-OSS 120B Advisor retains actual SC01 conditional guidance, SC16 missing-input guidance and verified no-charge replay from v70. These are two live-tested scenarios, not all 40 model responses or real company outcomes. The same RM5 estimated ledger, RM0.50 reservation, two-per-minute rate, 100-attempt ceiling and unknown-accounting halt remain; no provider-enforced hard cap is claimed. All operating cases remain synthetic, and the original UK-retailer benchmark still reports 103.41% WAPE. Server secrets, billing identifiers, raw UCI transactions, runtime state, build outputs, logs and screenshots are excluded. Both original Chinese v0.3 documents and approved v0.4.1 specs remain pinned. The [verified v71 source checkpoint](https://github.com/Taotern/T-Dormathon/commit/a458991f3821c7d73f40c7f9ceb46d9df4d9d506) remains in history.
 
+### Presentation delivery checkpoint · 10 October 2026
+
+The final [presentation package](docs/presentation/README.md) includes the editable English 17-slide deck, English/Chinese presenter documents and final Markdown scripts for a 3-minute pitch and 2-minute Q&A. It preserves delivered v71 screenshots with the current v72 live-app context and all synthetic-data, scenario-cost, high-error benchmark and limited live-Advisor qualifications. Review target: 10 October 20:00 MYT; submission deadline: 11 October 09:00 MYT. [Exact delivery hashes](docs/presentation/delivery-receipt.json) accompany the files. This documentation-only increment leaves the canonical v72 application code unchanged.
+
 The older sections below are retained historical handoff context. Their staffing, v0.3.1 scope, owner-private audience and dated corpus counts do not supersede this approved v0.4.1 entrypoint.
 
 

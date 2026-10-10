@@ -6,16 +6,16 @@
   "repository_visibility": "private",
   "canonical_tracked_files": 969,
   "source_files": 968,
-  "delivered_payload_files": 972,
+  "delivered_payload_files": 979,
   "excluded_tracked_inputs": {
     "docs/sovern-advisor-v0.4.1/test-results.txt": "Dated upstream raw test execution log; not runtime source. Its original digest remains in the upstream provenance manifest."
   },
-  "payload_inventory_sha256": "1e97d312672273e39116261841a3308c9a6143f60e452ba98893cbb7815b9737",
+  "payload_inventory_sha256": "1bf359303d8b16b117c6eff09d241f5bcf5c7c88b53047958d7c101a6b4ab6f6",
   "packaging_overlays": [
     "README.md"
   ],
   "runtime_commit": "b0611be16b3ea2c623f22e043ff18189428d6216",
-  "expected_private_main_parent": "a458991f3821c7d73f40c7f9ceb46d9df4d9d506",
+  "expected_private_main_parent": "801d2327e29b4cd0113b789bb601144dab5b6d9e",
   "fresh_consumer_receipt_sha256": "21c4c6fbaf8c25aa97c1792bd4399d7cc192a606f99473dd2dd1c84abe1499cc",
   "preserved_doc_pins": {
     "docs/specs/PRODUCT_SPEC_v0.3.1_ZH_EN.md": "4d065b8544ca6e282eac35d7b2d7dcb0075a1e58d892e7ba11fac913828d79fd",
@@ -56,8 +56,8 @@
     },
     {
       "path": "README.md",
-      "sha256": "20aeb39b70734309d58e840d24a4645231dd69f8676153154c24da15054f3bf6",
-      "size_bytes": 20698,
+      "sha256": "87955688af16d4d514e067d80aac8a4d31a5726993a692b28da2f69e89ad5a63",
+      "size_bytes": 21396,
       "git_mode": "100644",
       "canonical_sha256": "763eb6af72db16f6af82e68248548325770a70d566f7211b06786cf3ea072142",
       "packaging_overlay": "README checkpoint note only; application code unchanged"
@@ -2095,6 +2095,55 @@
       "sha256": "a8752ed459064674c3d8ea511c743bd3f8874b6d45510d7e007795dad73273a0",
       "size_bytes": 6333,
       "git_mode": "100644"
+    },
+    {
+      "path": "docs/presentation/Dormathon_3_Minute_Pitch_EN.pptx",
+      "sha256": "db94eedd13e77c99f24124dea2d0bcf4e91ef91a9aa656a722cbb0480961f36b",
+      "size_bytes": 557893,
+      "git_mode": "100644",
+      "provenance": "Final owner-delivered presentation package; documentation-only backup"
+    },
+    {
+      "path": "docs/presentation/Dormathon_Pitch_and_Demo_Runbook_EN.docx",
+      "sha256": "5beb03f5031ba0ef56795380d861d4e56e013dae67a7578d6c68c7d383839b81",
+      "size_bytes": 43024,
+      "git_mode": "100644",
+      "provenance": "Final owner-delivered presentation package; documentation-only backup"
+    },
+    {
+      "path": "docs/presentation/Dormathon_Pitch_and_Demo_Runbook_EN.md",
+      "sha256": "adcc720119c8718b43871667e6228459acd8a0f5067f0089577df62299f4c7ec",
+      "size_bytes": 12433,
+      "git_mode": "100644",
+      "provenance": "Final owner-delivered presentation package; documentation-only backup"
+    },
+    {
+      "path": "docs/presentation/Dormathon_Presenter_Guide_ZH.docx",
+      "sha256": "b3e6b21784b7b397dfc1a29c15db8ce76adea41c3e1f8f451176b8b1be6d161d",
+      "size_bytes": 41471,
+      "git_mode": "100644",
+      "provenance": "Final owner-delivered presentation package; documentation-only backup"
+    },
+    {
+      "path": "docs/presentation/Dormathon_Presenter_Guide_ZH.md",
+      "sha256": "c6e03e29dc0ace75f565b537fb2b3a816af287bd3a968053ecb58009b810e81e",
+      "size_bytes": 6654,
+      "git_mode": "100644",
+      "provenance": "Final owner-delivered presentation package; documentation-only backup"
+    },
+    {
+      "path": "docs/presentation/README.md",
+      "sha256": "129ea90bd46be29b3bf56a85c26d04d9afda257d08e81e2ef788778eea6413eb",
+      "size_bytes": 2888,
+      "git_mode": "100644",
+      "provenance": "Final owner-delivered presentation package; documentation-only backup"
+    },
+    {
+      "path": "docs/presentation/delivery-receipt.json",
+      "sha256": "15aceff58385bd6ebd8568b71cd9826e21d5f8d1abedeeacfa2fef6129a3c837",
+      "size_bytes": 3937,
+      "git_mode": "100644",
+      "provenance": "Final owner-delivered presentation package; documentation-only backup"
     },
     {
       "path": "docs/provenance/local-collector-1.2-input-manifest.sha256",
@@ -5874,5 +5923,20 @@
       "size_bytes": 25514,
       "git_mode": "100644"
     }
-  ]
+  ],
+  "presentation_package": {
+    "files": [
+      "docs/presentation/Dormathon_3_Minute_Pitch_EN.pptx",
+      "docs/presentation/Dormathon_Pitch_and_Demo_Runbook_EN.docx",
+      "docs/presentation/Dormathon_Presenter_Guide_ZH.docx",
+      "docs/presentation/Dormathon_Pitch_and_Demo_Runbook_EN.md",
+      "docs/presentation/Dormathon_Presenter_Guide_ZH.md",
+      "docs/presentation/README.md",
+      "docs/presentation/delivery-receipt.json"
+    ],
+    "receipt_path": "docs/presentation/delivery-receipt.json",
+    "receipt_sha256": "15aceff58385bd6ebd8568b71cd9826e21d5f8d1abedeeacfa2fef6129a3c837",
+    "application_code_changed": false,
+    "original_delivery_receipt_sha256": "a86caf80ac8f5b0d042c186a843bdf4993d886d7a055582f2ec4a25ea45d3c47"
+  }
 }

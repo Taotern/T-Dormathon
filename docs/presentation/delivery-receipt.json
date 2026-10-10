@@ -1,0 +1,104 @@
+{
+  "schema_version": "dormathon.final-presentation-backup.v1",
+  "packaged_at": "2026-10-10T05:48:55.559701+00:00",
+  "target_repository": "Taotern/T-Dormathon",
+  "repository_visibility": "private",
+  "branch": "main",
+  "expected_private_main_parent": "801d2327e29b4cd0113b789bb601144dab5b6d9e",
+  "canonical_source_commit_unchanged": "b0611be16b3ea2c623f22e043ff18189428d6216",
+  "live_site_version": 72,
+  "embedded_screenshot_site_version": 71,
+  "original_delivery_receipt_sha256": "a86caf80ac8f5b0d042c186a843bdf4993d886d7a055582f2ec4a25ea45d3c47",
+  "receipt_transformation": "Portable relative file names replace executor-local paths; final artifact hashes and byte sizes are unchanged.",
+  "pitch_minutes": 3,
+  "Q_and_A_minutes": 2,
+  "review_ready_target_MYT": "2026-10-10T20:00:00+08:00",
+  "submission_deadline_MYT": "2026-10-11T09:00:00+08:00",
+  "slides": {
+    "total": 17,
+    "visible_main": 6,
+    "evidence_appendices": 7,
+    "hidden_saved_screen_fallbacks": 4
+  },
+  "documents": {
+    "english_pages": 5,
+    "chinese_pages": 3
+  },
+  "files": [
+    {
+      "path": "docs/presentation/Dormathon_3_Minute_Pitch_EN.pptx",
+      "bytes": 557893,
+      "sha256": "db94eedd13e77c99f24124dea2d0bcf4e91ef91a9aa656a722cbb0480961f36b"
+    },
+    {
+      "path": "docs/presentation/Dormathon_Pitch_and_Demo_Runbook_EN.docx",
+      "bytes": 43024,
+      "sha256": "5beb03f5031ba0ef56795380d861d4e56e013dae67a7578d6c68c7d383839b81"
+    },
+    {
+      "path": "docs/presentation/Dormathon_Presenter_Guide_ZH.docx",
+      "bytes": 41471,
+      "sha256": "b3e6b21784b7b397dfc1a29c15db8ce76adea41c3e1f8f451176b8b1be6d161d"
+    },
+    {
+      "path": "docs/presentation/Dormathon_Pitch_and_Demo_Runbook_EN.md",
+      "bytes": 12433,
+      "sha256": "adcc720119c8718b43871667e6228459acd8a0f5067f0089577df62299f4c7ec"
+    },
+    {
+      "path": "docs/presentation/Dormathon_Presenter_Guide_ZH.md",
+      "bytes": 6654,
+      "sha256": "c6e03e29dc0ace75f565b537fb2b3a816af287bd3a968053ecb58009b810e81e"
+    },
+    {
+      "path": "docs/presentation/README.md",
+      "bytes": 2888,
+      "sha256": "129ea90bd46be29b3bf56a85c26d04d9afda257d08e81e2ef788778eea6413eb"
+    }
+  ],
+  "omitted_redundant_portable_ZIP": {
+    "file": "Dormathon_Portable_Presentation_Package.zip",
+    "bytes": 1095910,
+    "sha256": "ebc67c40c333ec694ba0997911d3420d5922b579acbdad2b773123d751de4fbc"
+  },
+  "excluded_inputs": [
+    "Earlier drafts and rendered QA outputs",
+    "Raw screenshots duplicated by embedded presentation fallback slides",
+    "Execution logs and temporary files"
+  ],
+  "publisher_validation": [
+    {
+      "file": "Dormathon_3_Minute_Pitch_EN.pptx",
+      "ZIP_CRC_ok": true,
+      "slides": 17,
+      "visible_slides": 6,
+      "hidden_slides": 11,
+      "VBA_projects": 0
+    },
+    {
+      "file": "Dormathon_Pitch_and_Demo_Runbook_EN.docx",
+      "ZIP_CRC_ok": true,
+      "review_comments": 0,
+      "tracked_changes": 0,
+      "VBA_projects": 0
+    },
+    {
+      "file": "Dormathon_Presenter_Guide_ZH.docx",
+      "ZIP_CRC_ok": true,
+      "review_comments": 0,
+      "tracked_changes": 0,
+      "VBA_projects": 0
+    }
+  ],
+  "author_validation": "Final delivery author reports all slide and document-page renders inspected; native editable chart workbook and tables checked.",
+  "desktop_PowerPoint_tested": false,
+  "application_tests_rerun_for_document_only_backup": false,
+  "application_code_changed": false,
+  "limitations": [
+    "Synthetic internal operations and incidents; conditional scenario costs, not observed company savings.",
+    "Separate UK-retailer benchmark WAPE remains 103.41%; no MR D.I.Y. predictive validation.",
+    "Actual provider validation covers SC01, SC16 and replay, not all 40 cases or semantic model truth.",
+    "RM5 estimated application ledger; provider-enforced hard cap unverified.",
+    "No reinforcement-learning or causal-profit validation and no company endorsement."
+  ]
+}
